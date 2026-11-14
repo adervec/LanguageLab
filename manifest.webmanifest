@@ -1,0 +1,10 @@
+{
+  "name": "LanguageLab",
+  "short_name": "LanguageLab",
+  "description": "Learn a language by reading, listening, dictation and writing, measured honestly",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f6f4ef",
+  "theme_color": "#1f5f8b",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

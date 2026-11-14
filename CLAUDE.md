@@ -1,6 +1,6 @@
 # LanguageLab (working name; rename freely)
 
-Notes for the coding agent that works on this repo. New project: nothing is built yet.
+Notes for the coding agent that works on this repo.
 
 ## House standards (shared across every app by this maker)
 
@@ -9,7 +9,28 @@ Notes for the coding agent that works on this repo. New project: nothing is buil
 For this app:
 - Check the standards: `node ../CoworkSyncHub/standards.mjs languagelab -v` (once it is added to the
   portal in `../CoworkSyncHub/portal.py` APPS). Keep it all `ok` before pushing.
-- Work on `main`; push your own work when it passes.
+- Test: `node core.test.mjs`, then `npm i --no-save playwright-core && node .github/smoke.mjs && node .github/flow.mjs`
+  (the flow test walks one whole sitting, a review and the cowork reply handling in headless Chrome).
+- Work on `main`; push your own work when it passes. Add user-visible changes to `whatsnew.json`.
+
+## What is built (v0.1)
+
+No build step: `index.html` (shell, CSS), `app.js` (screens, speech, sync, cowork), `core.js` (all the
+logic, no DOM, tested), `sync.js` (Drive), `content/<lang>.json` (starter stories).
+
+- **A sitting** is the graded session: one story through listen (speech synthesis, text hidden),
+  read (tap unknown words), dictation at natural speed (the only thing the app scores itself), and
+  a retelling from memory, typed or spoken. The retelling is graded only by the `sitting-review`
+  cowork channel, stored beside the app's score.
+- **Review**: tapped words come back as a blank in the sentence they were met in, typed, on
+  learning-pit's scheduler (cut down, in `core.js`).
+- **Progress** shows ability numbers only. No streak, no points: do not add them.
+- **Stories** come from `content/`, pasted text, or the `stories` cowork channel (written at the
+  learner's level, with glosses in the interface language).
+- Another language is one entry in `LANGS` (`app.js`) plus `content/<code>.json`; word lists are
+  already kept per language.
+- Speech uses the browser's own synthesis and recognition, as SpeechImprover does. Tachyread's
+  reading engine is not used yet.
 
 ## Why this app exists
 

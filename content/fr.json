@@ -1,0 +1,55 @@
+[
+ {
+  "id": "fr-marche",
+  "title": "Le marché du samedi",
+  "level": "A2",
+  "text": "Chaque samedi matin, Claire va au marché avec son panier. Elle aime ce moment de la semaine. Les marchands crient leurs prix et l'air sent le pain chaud. D'abord, elle achète des tomates et des courgettes chez un vieux monsieur qui lui donne toujours une pomme en plus. Ensuite, elle s'arrête devant le fromager. Il lui fait goûter un fromage de chèvre très doux. « Il est délicieux, dit Claire, j'en prends deux. » Avant de rentrer, elle boit un café en terrasse et regarde les gens passer. Une petite fille court après un chien, un homme porte un énorme bouquet de fleurs. Claire sourit. Elle n'a pas dépensé beaucoup d'argent, mais son panier est plein et sa matinée a été parfaite.",
+  "gloss": {
+   "marché": "market", "panier": "basket", "marchands": "stallholders, sellers", "crient": "shout", "prix": "prices",
+   "sent": "smells", "courgettes": "zucchini", "arrête": "stops (s'arrêter: to stop)", "fromager": "cheese seller",
+   "goûter": "to taste", "chèvre": "goat", "doux": "mild, soft", "rentrer": "to go home", "terrasse": "outdoor seating",
+   "court": "runs", "bouquet": "bunch (of flowers)", "sourit": "smiles", "dépensé": "spent", "plein": "full",
+   "matinée": "morning (as a stretch of time)", "parfaite": "perfect"
+  }
+ },
+ {
+  "id": "fr-train",
+  "title": "Le train du matin",
+  "level": "A2",
+  "text": "Marc prend le même train tous les matins. Aujourd'hui, il arrive à la gare en retard et il doit courir. Les portes se ferment juste derrière lui. Il cherche une place et s'assoit en face d'une femme qui lit un gros livre. Marc reconnaît la couverture : c'est son roman préféré. Il hésite, puis il lui demande si elle aime l'histoire. Elle lève les yeux et répond qu'elle ne peut plus s'arrêter de lire. Ils parlent des personnages pendant tout le voyage. Quand le train entre en ville, la femme range son livre dans son sac. « Demain, je vous dirai comment ça finit », dit-elle en riant. Marc descend du train de très bonne humeur. Pour une fois, il espère que demain arrivera vite.",
+  "gloss": {
+   "gare": "train station", "retard": "delay (en retard: late)", "courir": "to run", "ferment": "close",
+   "derrière": "behind", "assoit": "sits down (s'asseoir)", "face": "en face de: opposite", "reconnaît": "recognises",
+   "couverture": "cover", "roman": "novel", "hésite": "hesitates", "lève": "raises", "personnages": "characters",
+   "voyage": "journey", "range": "puts away", "dirai": "will tell", "riant": "laughing", "humeur": "mood",
+   "espère": "hopes"
+  }
+ },
+ {
+  "id": "fr-panne",
+  "title": "La panne",
+  "level": "B1",
+  "text": "Hier soir, pendant que nous préparions le dîner, toutes les lumières de l'immeuble se sont éteintes d'un seul coup. Mon frère a d'abord cru que c'était une blague. Nous avons cherché des bougies dans les tiroirs, mais nous n'en avions qu'une seule, toute petite. Alors nous sommes sortis sur le palier, où les voisins se rassemblaient déjà avec leurs lampes de poche. La dame du troisième, que je connaissais à peine, a proposé de partager son repas froid avec tout le monde. Bientôt, il y avait une dizaine de personnes assises dans l'escalier, en train de manger et de raconter des histoires. Quand le courant est revenu, presque deux heures plus tard, personne n'avait vraiment envie de rentrer chez soi. Depuis, on se dit bonjour dans l'ascenseur, et quelqu'un a même parlé d'organiser une vraie fête.",
+  "gloss": {
+   "immeuble": "apartment building", "éteintes": "gone out, switched off", "coup": "d'un seul coup: all at once",
+   "cru": "believed", "blague": "joke", "bougies": "candles", "tiroirs": "drawers", "palier": "landing (of a staircase)",
+   "voisins": "neighbours", "rassemblaient": "were gathering", "poche": "pocket (lampe de poche: torch)",
+   "troisième": "third (floor)", "peine": "à peine: hardly", "partager": "to share", "dizaine": "about ten",
+   "assises": "sitting", "escalier": "staircase", "raconter": "to tell", "courant": "power, current",
+   "envie": "avoir envie de: to feel like", "ascenseur": "lift, elevator", "fête": "party"
+  }
+ },
+ {
+  "id": "fr-velo",
+  "title": "Le vélo de Lucie",
+  "level": "B1",
+  "text": "Lucie avait décidé d'aller au travail à vélo pour faire un peu d'exercice. Le premier jour, tout s'est bien passé jusqu'au pont. Là, elle a entendu un bruit étrange, et son pneu arrière s'est dégonflé en quelques secondes. Elle n'avait ni pompe ni outils. Un cycliste s'est arrêté à côté d'elle et lui a demandé si elle avait besoin d'aide. Il a sorti une petite trousse de sa sacoche et il a réparé le pneu en lui expliquant chaque geste. « La prochaine fois, vous saurez le faire toute seule », a-t-il dit avant de repartir. Lucie est arrivée au bureau avec vingt minutes de retard et les mains sales, mais fière d'elle. Le soir même, elle a acheté une pompe, une trousse de réparation, et elle s'est entraînée dans son salon jusqu'à ce qu'elle y arrive sans regarder la notice.",
+  "gloss": {
+   "pont": "bridge", "bruit": "noise", "étrange": "strange", "pneu": "tyre", "arrière": "rear",
+   "dégonflé": "gone flat", "pompe": "pump", "outils": "tools", "besoin": "need", "trousse": "kit, small case",
+   "sacoche": "saddlebag", "réparé": "repaired", "geste": "movement, step", "saurez": "will know how",
+   "repartir": "to set off again", "sales": "dirty", "fière": "proud", "entraînée": "practised",
+   "notice": "instructions"
+  }
+ }
+]
