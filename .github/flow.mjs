@@ -23,6 +23,10 @@ const errors = [];
 page.on('pageerror', e => errors.push(e.message));
 // the browser's on-device translator cannot fetch its language packs here: a stand-in that wraps the text it is given
 await page.addInitScript(() => { self.Translator = { create: async () => ({ translate: async s => 'EN[' + s + ']' }) }; });
+// likewise the browser's own language model: it opens, answers once with a correction, and never answers a message that says "attends"
+await page.addInitScript(() => { self.LanguageModel = { availability: async () => 'available', create: async o => { let n = 0; self.lmSystem = o.initialPrompts[0].content;
+  return { prompt: text => text.includes('attends') ? new Promise(() => {}) : Promise.resolve(JSON.stringify(n++ ? { reply: 'Très bien. Et que faites-vous demain ?', evil: '<b>',
+    corrections: [{ wrong: 'je suis allé bien', right: 'je vais bien', why: 'present tense', x: 1 }, { wrong: 'no right form' }] } : { reply: 'Bonjour ! Comment allez-vous ?', corrections: [] })) }; } }; });
 await page.goto(`http://localhost:${server.address().port}/`);
 const btn = name => page.getByRole('button', { name, exact: true });
 const click = name => btn(name).first().click();
@@ -181,6 +185,38 @@ await click('Finish');
 assert.match(await main(), /Role-play done[\s\S]*100%\s+of your words understood/);
 await click('Done');
 
+// a live conversation: the partner opens, answers, corrects; a reply can also come through the cowork folder; the corrections become review cards
+await click('Talk with an AI partner');
+assert.match(await main(), /It runs on this device/);
+await page.selectOption('#scene', { label: 'Au guichet' });
+await click('Start the conversation');
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('Comment allez-vous'));
+assert.match(await main(), /Au guichet · You play Voyageur/);
+assert.match(await page.evaluate(() => self.lmSystem), /learning French at CEFR level A2[\s\S]*You play Employé; the learner plays Voyageur/);
+await page.fill('#ans', 'je suis allé bien');
+await click('Send');
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('que faites-vous demain'));
+assert.match(await main(), /je suis allé bien\s*→\s*je vais bien\s*present tense/);
+await page.fill('#ans', 'attends un moment');                    // the on-device model stays silent: the answer arrives the cowork way
+await page.keyboard.press('Enter');
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('Waiting for the reply'));
+const talk = await page.evaluate(() => {
+  const { channels: ch, files } = document.querySelector('cowork-panel')._cfg, req = files('chat')['chat/request.json'];
+  const reply = { requestHash: req.requestHash, turnId: req.payload.turnId, reply: 'Je vous attends ici.', corrections: [{ wrong: 'attends un moment', right: 'attendez un moment', why: 'vous' }] };
+  const stale = ch.chat.preview({ ...reply, turnId: 'another turn' }).length, rows = ch.chat.preview(reply).length, res = ch.chat.apply(reply, ['reply']);
+  return { turns: req.payload.turns.map(x => x.who).join(' '), scene: req.payload.scene.roles[1], stale, rows, undo: res.undo };
+});
+assert.deepEqual([talk.turns, talk.scene, talk.stale, talk.rows], ['you learner you learner', 'Voyageur', 0, 1]);
+assert.match(await main(), /attends un moment\s*→\s*attendez un moment[\s\S]*Je vous attends ici\./);
+await page.evaluate(u => document.querySelector('cowork-panel')._cfg.channels.chat.undo(u), talk.undo);      // undo takes the line and its correction away again
+assert.doesNotMatch(await main(), /Je vous attends ici|attendez un moment/);
+await page.evaluate(() => { const { channels: ch, files } = document.querySelector('cowork-panel')._cfg, req = files('chat')['chat/request.json'];
+  ch.chat.apply({ turnId: req.payload.turnId, reply: 'Je vous attends ici.', corrections: [] }, null); });
+await click('Finish');
+assert.match(await main(), /Conversation done: you said 2 things/);
+await click('Today');
+assert.match(await main(), /2 items are due/);          // "panier" again, and the correction from the conversation
+
 // your own recording with its subtitles: the real sound is played, whole and cue by cue, and it stays on this device
 const wav = Buffer.alloc(44 + 16000, 128);              // two seconds of silence
 wav.write('RIFF', 0); wav.writeUInt32LE(36 + 16000, 4); wav.write('WAVEfmt ', 8); wav.writeUInt32LE(16, 16); wav.writeUInt16LE(1, 20); wav.writeUInt16LE(1, 22);
@@ -234,4 +270,4 @@ assert.match(await main(), /Le marché du samedi[\s\S]*Au guichet|Au guichet[\s\
 await browser.close();
 server.close();
 assert.deepEqual(errors, []);
-console.log('flow ok: sitting, review, pen pal, cowork, reading, words, role-play, a second language, reload');
+console.log('flow ok: sitting, review, pen pal, cowork, reading, words, role-play, conversation, a recording, a second language, reload');

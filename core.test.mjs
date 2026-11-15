@@ -138,6 +138,9 @@ assert.deepEqual([rv.fixes.length, rv.corrections], [1, [{ wrong: 'je suis allé
 assert.equal(c.cleanPalReply({ id: 'm', text: ' ' }), null);
 assert.deepEqual(c.cleanPalReply({ id: 'm', text: 'Salut', gloss: { Salut: 'hi' }, corrections: [{ wrong: 'a', right: 'b' }], x: 1 }),
   { id: 'm', text: 'Salut', gloss: { salut: 'hi' }, corrections: [{ wrong: 'a', right: 'b', why: '' }] });
+assert.equal(c.cleanChatReply({ reply: ' ' }), null);
+assert.deepEqual(c.cleanChatReply({ turnId: 't1', reply: 'Bonjour !', corrections: [{ wrong: 'a', right: 'b', why: 'c', x: 1 }, 5], evil: '<b>' }),
+  { turnId: 't1', reply: 'Bonjour !', corrections: [{ wrong: 'a', right: 'b', why: 'c' }] });
 assert.throws(() => c.cleanState({ v: 1 }));
 const state = c.cleanState(JSON.parse(JSON.stringify({ app: 'languagelab', v: 1, level: 'B1', gone: { z: 5 }, langs: { fr: { known: { Chat: 1 }, cards: { chien: { gloss: 'dog', srs: { due: 5 } } } }, '<b>': {} },
   sittings: [{ id: 's1', day: '2026-01-01', score: 250, ai: { grade: 'A', summary: 'ok' } }, { nope: 1 }],
@@ -185,6 +188,15 @@ console.log('core.test: ok');
     assert.equal(m.langs.fr.fixes['x:0'].srs.t, 6);
     assert.deepEqual([m.langs.fr.pal.persona, m.langs.fr.pal.msgs.length, m.langs.fr.pal.msgs[0].reply.text], ['Camille', 2, 'Salut !']);
   }
+  // a conversation in progress: the longer copy wins; once finished on one device it does not come back from the other
+  const turn = (id, who, text) => ({ id, who, text, at: 1 });
+  const p = mk(9, { langs: { fr: { chat: { id: 'c1', wait: 't2', scene: { title: 'Au café', roles: ['Serveur', 'Client'], evil: 1 }, turns: [turn('t1', 0, 'Bonjour !'), turn('t2', 1, 'Un café')] } } } });
+  const q = mk(8, { langs: { fr: { chat: { id: 'c1', turns: [turn('t1', 0, 'Bonjour !')] } } } });
+  const done = mk(7, { sittings: [{ id: 'c1', mode: 'chat', at: 5 }], langs: { fr: {} } });
+  assert.deepEqual([p.langs.fr.chat.scene, p.langs.fr.chat.turns[1].who], [{ title: 'Au café', roles: ['Serveur', 'Client'] }, 1]);
+  assert.equal(c.mergeState(q, p).langs.fr.chat.turns.length, 2);
+  assert.equal(c.mergeState(p, done).langs.fr.chat, null);
+  assert.equal(c.mergeState(done, p).sittings[0].mode, 'chat');
   console.log('merge: ok');
 }
 

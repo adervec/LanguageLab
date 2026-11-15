@@ -254,7 +254,7 @@ export function cleanPalReply(r) {
 }
 const cleanSrs = s => s && typeof s === 'object'
   ? { reps: num(s.reps), lapses: num(s.lapses), ease: num(s.ease, 2.5), interval: num(s.interval), due: num(s.due), t: num(s.t) } : null;
-const MODES = ['sitting', 'read', 'listen', 'talk'];
+const MODES = ['sitting', 'read', 'listen', 'talk', 'chat'];
 function cleanSitting(s) {
   s = obj(s);
   if (!str(s.id, 80)) return null;
@@ -285,7 +285,22 @@ function cleanMsg(m) {
   if (!str(m.id, 80) || !text) return null;
   return { id: m.id, at: num(m.at), text, ...(back ? { reply: { text: back, at: num(r.at), storyId: str(r.storyId, 80) }, fixes: cleanFixes(m.fixes) } : {}) };
 }
-export const emptyLang = () => ({ known: {}, cards: {}, fixes: {}, level: 'A2', pal: { persona: '', msgs: [] } });
+// The conversation in progress: who 1 is the learner, who 0 the AI partner; wait names the turn still unanswered ('open' before the first line).
+function cleanChat(c) {
+  c = obj(c);
+  const scene = obj(c.scene), roles = arr(scene.roles).slice(0, 2).map(r => str(r, 40).trim()).filter(Boolean), title = str(scene.title, 120).trim();
+  if (!str(c.id, 80)) return null;
+  return { id: c.id, t0: num(c.t0), wait: str(c.wait, 80), scene: title && roles.length === 2 ? { title, roles } : null,
+    turns: arr(c.turns).slice(-200).map(x => { const fixes = cleanFixes(obj(x).fixes);
+      return { id: str(obj(x).id, 80), who: obj(x).who ? 1 : 0, text: str(obj(x).text, 2000).trim(), at: num(obj(x).at), ...(fixes.length ? { fixes } : {}) }; }).filter(x => x.id && x.text) };
+}
+// One line from the conversation partner (the on-device model or the cowork agent), with corrections of the learner's last message.
+export function cleanChatReply(r) {
+  r = obj(r);
+  const reply = str(r.reply, 1500).trim();
+  return reply ? { turnId: str(r.turnId, 80), reply, corrections: cleanFixes(r.corrections).slice(0, 3) } : null;
+}
+export const emptyLang = () => ({ known: {}, cards: {}, fixes: {}, level: 'A2', pal: { persona: '', msgs: [] }, chat: null });
 // A whole saved state (an import file, the Drive copy). Throws when it is not one.
 // Older saves (one level for every language, no corrections or letters) come through with the gaps filled.
 export function cleanState(o) {
@@ -305,6 +320,7 @@ export function cleanState(o) {
     }
     out.level = LEVELS.includes(L.level) ? L.level : LEVELS.includes(o.level) ? o.level : 'A2';
     out.pal = { persona: str(pal.persona, 400), msgs: arr(pal.msgs).slice(-500).map(cleanMsg).filter(Boolean) };
+    out.chat = cleanChat(L.chat);
     langs[code] = out;
   }
   for (const [id, t] of Object.entries(obj(o.gone)).slice(0, 5000)) if (id.length <= 80) gone[id] = num(t);
@@ -325,16 +341,20 @@ export function mergeState(a, b) {
   const stamp = c => Math.max(c.srs?.t || 0, c.retired || 0, c.edited || 0);
   const newest = (H, L) => { const out = { ...L, ...H }; for (const k in L) if (H[k] && stamp(L[k]) > stamp(H[k])) out[k] = L[k]; return out; };
   const langs = {}, gone = { ...lo.gone, ...hi.gone };
+  const sittings = join(hi.sittings, lo.sittings, (v, o) => (v.ai || !o.ai ? v : { ...v, ai: o.ai })).sort((x, y) => x.at - y.at);
+  // the longer copy of a conversation in progress; none once it has been finished (it is then a session) on either device
+  const talk = (x, y) => { const c = !y || (x && x.turns.length >= y.turns.length) ? x : y; return c && !sittings.some(s => s.id === c.id) ? c : null; };
   for (const code of new Set([...Object.keys(hi.langs), ...Object.keys(lo.langs)])) {
     const H = hi.langs[code] || emptyLang(), L = lo.langs[code] || emptyLang();
     const cards = newest(H.cards, L.cards), known = { ...L.known, ...H.known };
     for (const k in cards) if (cards[k].retired) known[k] = 1; else delete known[k];
     langs[code] = { known, cards, fixes: newest(H.fixes, L.fixes), level: (hi.langs[code] || L).level,
+      chat: talk(H.chat, L.chat),
       pal: { persona: H.pal.persona || L.pal.persona, msgs: join(H.pal.msgs, L.pal.msgs, (v, o) => (v.reply || !o.reply ? v : o)).sort((x, y) => x.at - y.at) } };
   }
   return {
     ...hi, langs, gone, welcomed: hi.welcomed || lo.welcomed,
     stories: join(hi.stories, lo.stories, (v, o) => ({ ...v, readAt: Math.max(v.readAt || 0, o.readAt || 0) })).filter(s => !gone[s.id]),
-    sittings: join(hi.sittings, lo.sittings, (v, o) => (v.ai || !o.ai ? v : { ...v, ai: o.ai })).sort((x, y) => x.at - y.at),
+    sittings,
   };
 }
