@@ -703,6 +703,7 @@ const ACT = {
   mic(b) { const box = $('#ans'); hear(b, true, text => { box.value = (box.value + ' ' + text).trim(); if (sit) sit.spoken = true; }); },
   // ponytail: the recogniser guesses towards real words, so this flatters a little; it is "was I
   // understood", not a pronunciation score. SpeechImprover's per-take analysis is the upgrade.
+  // It also writes numbers as digits, so a number word in a line is marked as missed: the bundled dialogues avoid them.
   sayit(b) {
     const d = sit.speak[sit.si];
     if (!recog) d.said = '';

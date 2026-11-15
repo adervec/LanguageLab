@@ -5,16 +5,47 @@
   "level": "A2",
   "text": "Chaque samedi matin, Claire va au marché avec son panier. Elle aime ce moment de la semaine. Les marchands crient leurs prix et l'air sent le pain chaud. D'abord, elle achète des tomates et des courgettes chez un vieux monsieur qui lui donne toujours une pomme en plus. Ensuite, elle s'arrête devant le fromager. Il lui fait goûter un fromage de chèvre très doux. « Il est délicieux, dit Claire, j'en prends deux. » Avant de rentrer, elle boit un café en terrasse et regarde les gens passer. Une petite fille court après un chien, un homme porte un énorme bouquet de fleurs. Claire sourit. Elle n'a pas dépensé beaucoup d'argent, mais son panier est plein et sa matinée a été parfaite.",
   "gloss": {
-   "marché": "market", "panier": "basket", "marchands": "stallholders, sellers", "crient": "shout", "prix": "prices",
-   "sent": "smells", "courgettes": "zucchini", "arrête": "stops (s'arrêter: to stop)", "fromager": "cheese seller",
-   "goûter": "to taste", "chèvre": "goat", "doux": "mild, soft", "rentrer": "to go home", "terrasse": "outdoor seating",
-   "court": "runs", "bouquet": "bunch (of flowers)", "sourit": "smiles", "dépensé": "spent", "plein": "full",
-   "matinée": "morning (as a stretch of time)", "parfaite": "perfect"
+   "marché": "market",
+   "panier": "basket",
+   "marchands": "stallholders, sellers",
+   "crient": "shout",
+   "prix": "prices",
+   "sent": "smells",
+   "courgettes": "zucchini",
+   "arrête": "stops (s'arrêter: to stop)",
+   "fromager": "cheese seller",
+   "goûter": "to taste",
+   "chèvre": "goat",
+   "doux": "mild, soft",
+   "rentrer": "to go home",
+   "terrasse": "outdoor seating",
+   "court": "runs",
+   "bouquet": "bunch (of flowers)",
+   "sourit": "smiles",
+   "dépensé": "spent",
+   "plein": "full",
+   "matinée": "morning (as a stretch of time)",
+   "parfaite": "perfect"
   },
   "questions": [
-   { "q": "Où va Claire chaque samedi matin ?", "a": ["marché"] },
-   { "q": "Que lui donne toujours le vieux monsieur ?", "a": ["pomme"] },
-   { "q": "Que boit Claire avant de rentrer ?", "a": ["café"] }
+   {
+    "q": "Où va Claire chaque samedi matin ?",
+    "a": [
+     "marché"
+    ]
+   },
+   {
+    "q": "Que lui donne toujours le vieux monsieur ?",
+    "a": [
+     "pomme"
+    ]
+   },
+   {
+    "q": "Que boit Claire avant de rentrer ?",
+    "a": [
+     "café"
+    ]
+   }
   ],
   "notice": "Chez + a person means at that person's shop or home: \"chez un vieux monsieur\". Lui before the verb means to her or to him: \"qui lui donne\", \"il lui fait goûter\"."
  },
@@ -24,16 +55,48 @@
   "level": "A2",
   "text": "Marc prend le même train tous les matins. Aujourd'hui, il arrive à la gare en retard et il doit courir. Les portes se ferment juste derrière lui. Il cherche une place et s'assoit en face d'une femme qui lit un gros livre. Marc reconnaît la couverture : c'est son roman préféré. Il hésite, puis il lui demande si elle aime l'histoire. Elle lève les yeux et répond qu'elle ne peut plus s'arrêter de lire. Ils parlent des personnages pendant tout le voyage. Quand le train entre en ville, la femme range son livre dans son sac. « Demain, je vous dirai comment ça finit », dit-elle en riant. Marc descend du train de très bonne humeur. Pour une fois, il espère que demain arrivera vite.",
   "gloss": {
-   "gare": "train station", "retard": "delay (en retard: late)", "courir": "to run", "ferment": "close",
-   "derrière": "behind", "assoit": "sits down (s'asseoir)", "face": "en face de: opposite", "reconnaît": "recognises",
-   "couverture": "cover", "roman": "novel", "hésite": "hesitates", "lève": "raises", "personnages": "characters",
-   "voyage": "journey", "range": "puts away", "dirai": "will tell", "riant": "laughing", "humeur": "mood",
+   "gare": "train station",
+   "retard": "delay (en retard: late)",
+   "courir": "to run",
+   "ferment": "close",
+   "derrière": "behind",
+   "assoit": "sits down (s'asseoir)",
+   "face": "en face de: opposite",
+   "reconnaît": "recognises",
+   "couverture": "cover",
+   "roman": "novel",
+   "hésite": "hesitates",
+   "lève": "raises",
+   "personnages": "characters",
+   "voyage": "journey",
+   "range": "puts away",
+   "dirai": "will tell",
+   "riant": "laughing",
+   "humeur": "mood",
    "espère": "hopes"
   },
   "questions": [
-   { "q": "Pourquoi Marc doit-il courir ce matin ?", "a": ["retard"] },
-   { "q": "De quoi Marc et la femme parlent-ils pendant le voyage ?", "a": ["personnages", "roman", "histoire", "livre"] },
-   { "q": "Où la femme range-t-elle son livre quand le train entre en ville ?", "a": ["sac"] }
+   {
+    "q": "Pourquoi Marc doit-il courir ce matin ?",
+    "a": [
+     "retard"
+    ]
+   },
+   {
+    "q": "De quoi Marc et la femme parlent-ils pendant le voyage ?",
+    "a": [
+     "personnages",
+     "roman",
+     "histoire",
+     "livre"
+    ]
+   },
+   {
+    "q": "Quand la femme dira-t-elle à Marc comment ça finit ?",
+    "a": [
+     "demain"
+    ]
+   }
   ],
   "notice": "To report a question or an answer, French uses si (if, whether) after demander and que (that) after répondre: \"il lui demande si elle aime l'histoire\", \"répond qu'elle ne peut plus s'arrêter de lire\"."
  },
@@ -43,17 +106,50 @@
   "level": "B1",
   "text": "Hier soir, pendant que nous préparions le dîner, toutes les lumières de l'immeuble se sont éteintes d'un seul coup. Mon frère a d'abord cru que c'était une blague. Nous avons cherché des bougies dans les tiroirs, mais nous n'en avions qu'une seule, toute petite. Alors nous sommes sortis sur le palier, où les voisins se rassemblaient déjà avec leurs lampes de poche. La dame du troisième, que je connaissais à peine, a proposé de partager son repas froid avec tout le monde. Bientôt, il y avait une dizaine de personnes assises dans l'escalier, en train de manger et de raconter des histoires. Quand le courant est revenu, presque deux heures plus tard, personne n'avait vraiment envie de rentrer chez soi. Depuis, on se dit bonjour dans l'ascenseur, et quelqu'un a même parlé d'organiser une vraie fête.",
   "gloss": {
-   "immeuble": "apartment building", "éteintes": "gone out, switched off", "coup": "d'un seul coup: all at once",
-   "cru": "believed", "blague": "joke", "bougies": "candles", "tiroirs": "drawers", "palier": "landing (of a staircase)",
-   "voisins": "neighbours", "rassemblaient": "were gathering", "poche": "pocket (lampe de poche: torch)",
-   "troisième": "third (floor)", "peine": "à peine: hardly", "partager": "to share", "dizaine": "about ten",
-   "assises": "sitting", "escalier": "staircase", "raconter": "to tell", "courant": "power, current",
-   "envie": "avoir envie de: to feel like", "ascenseur": "lift, elevator", "fête": "party"
+   "immeuble": "apartment building",
+   "éteintes": "gone out, switched off",
+   "coup": "d'un seul coup: all at once",
+   "cru": "believed",
+   "blague": "joke",
+   "bougies": "candles",
+   "tiroirs": "drawers",
+   "palier": "landing (of a staircase)",
+   "voisins": "neighbours",
+   "rassemblaient": "were gathering",
+   "poche": "pocket (lampe de poche: torch)",
+   "troisième": "third (floor)",
+   "peine": "à peine: hardly",
+   "partager": "to share",
+   "dizaine": "about ten",
+   "assises": "sitting",
+   "escalier": "staircase",
+   "raconter": "to tell",
+   "courant": "power, current",
+   "envie": "avoir envie de: to feel like",
+   "ascenseur": "lift, elevator",
+   "fête": "party"
   },
   "questions": [
-   { "q": "Qu'ont-ils cherché dans les tiroirs quand les lumières se sont éteintes ?", "a": ["bougie"] },
-   { "q": "Qu'a proposé de partager la dame du troisième ?", "a": ["repas", "dîner", "manger"] },
-   { "q": "Qu'est-ce que quelqu'un a parlé d'organiser à la fin ?", "a": ["fête"] }
+   {
+    "q": "Qu'ont-ils cherché dans les tiroirs quand les lumières se sont éteintes ?",
+    "a": [
+     "bougie"
+    ]
+   },
+   {
+    "q": "Qu'a proposé de partager la dame du troisième ?",
+    "a": [
+     "repas",
+     "dîner",
+     "manger"
+    ]
+   },
+   {
+    "q": "Qu'est-ce que quelqu'un a parlé d'organiser à la fin ?",
+    "a": [
+     "fête"
+    ]
+   }
   ],
   "notice": "The imparfait describes what was going on, and the passé composé says what suddenly happened: \"pendant que nous préparions le dîner\", \"toutes les lumières de l'immeuble se sont éteintes\"."
  },
@@ -63,90 +159,1903 @@
   "level": "B1",
   "text": "Lucie avait décidé d'aller au travail à vélo pour faire un peu d'exercice. Le premier jour, tout s'est bien passé jusqu'au pont. Là, elle a entendu un bruit étrange, et son pneu arrière s'est dégonflé en quelques secondes. Elle n'avait ni pompe ni outils. Un cycliste s'est arrêté à côté d'elle et lui a demandé si elle avait besoin d'aide. Il a sorti une petite trousse de sa sacoche et il a réparé le pneu en lui expliquant chaque geste. « La prochaine fois, vous saurez le faire toute seule », a-t-il dit avant de repartir. Lucie est arrivée au bureau avec vingt minutes de retard et les mains sales, mais fière d'elle. Le soir même, elle a acheté une pompe, une trousse de réparation, et elle s'est entraînée dans son salon jusqu'à ce qu'elle y arrive sans regarder la notice.",
   "gloss": {
-   "pont": "bridge", "bruit": "noise", "étrange": "strange", "pneu": "tyre", "arrière": "rear",
-   "dégonflé": "gone flat", "pompe": "pump", "outils": "tools", "besoin": "need", "trousse": "kit, small case",
-   "sacoche": "saddlebag", "réparé": "repaired", "geste": "movement, step", "saurez": "will know how",
-   "repartir": "to set off again", "sales": "dirty", "fière": "proud", "entraînée": "practised",
+   "pont": "bridge",
+   "bruit": "noise",
+   "étrange": "strange",
+   "pneu": "tyre",
+   "arrière": "rear",
+   "dégonflé": "gone flat",
+   "pompe": "pump",
+   "outils": "tools",
+   "besoin": "need",
+   "trousse": "kit, small case",
+   "sacoche": "saddlebag",
+   "réparé": "repaired",
+   "geste": "movement, step",
+   "saurez": "will know how",
+   "repartir": "to set off again",
+   "sales": "dirty",
+   "fière": "proud",
+   "entraînée": "practised",
    "notice": "instructions"
   },
   "questions": [
-   { "q": "Pourquoi Lucie avait-elle décidé d'aller au travail à vélo ?", "a": ["exercice"] },
-   { "q": "Qui s'est arrêté pour aider Lucie sur le pont ?", "a": ["cycliste"] },
-   { "q": "Qu'est-ce que Lucie a acheté le soir même ?", "a": ["pompe", "trousse"] }
+   {
+    "q": "Pourquoi Lucie avait-elle décidé d'aller au travail à vélo ?",
+    "a": [
+     "exercice"
+    ]
+   },
+   {
+    "q": "Qui s'est arrêté pour aider Lucie sur le pont ?",
+    "a": [
+     "cycliste"
+    ]
+   },
+   {
+    "q": "Qu'est-ce que Lucie a acheté le soir même ?",
+    "a": [
+     "pompe",
+     "trousse"
+    ]
+   }
   ],
   "notice": "Jusqu'à means as far as or until. Before a noun, à joins le to make au: \"jusqu'au pont\". Before a verb it becomes jusqu'à ce que, followed by the subjunctive: \"jusqu'à ce qu'elle y arrive\"."
  },
- {"id":"fr-famille","title":"Ma famille","level":"A1","text":"Je m'appelle Léa et j'ai dix ans. J'habite à Lyon avec ma famille. Mon père s'appelle Paul. Il est grand et il aime faire la cuisine. Ma mère s'appelle Anne. Elle travaille dans une école. J'ai un petit frère, Hugo. Il a six ans et il parle beaucoup. Nous avons aussi un chat noir. Il dort toute la journée sur le canapé. Le soir, nous mangeons ensemble dans la cuisine. Mon père prépare souvent des pâtes ou une soupe. Après le repas, je lis un livre et Hugo regarde un dessin animé. Le dimanche, nous allons chez ma grand-mère. Elle a un grand jardin avec des fleurs. J'aime beaucoup ma famille.","gloss":{"habite":"live","grand":"tall, big","cuisine":"cooking; kitchen","travaille":"works","école":"school","frère":"brother","parle":"talks","chat":"cat","noir":"black","dort":"sleeps","journée":"day","canapé":"sofa","soir":"evening","mangeons":"(we) eat","ensemble":"together","prépare":"makes, prepares","souvent":"often","pâtes":"pasta","repas":"meal","lis":"(I) read","livre":"book","dessin":"drawing (dessin animé: cartoon)","dimanche":"Sunday","jardin":"garden","fleurs":"flowers"},"questions":[{"q":"Où travaille la mère de Léa ?","a":["école"]},{"q":"Où dort le chat toute la journée ?","a":["canapé"]},{"q":"Chez qui la famille va-t-elle le dimanche ?","a":["grand-mère"]}],"notice":"My changes with the gender of the noun: mon for a masculine noun, ma for a feminine one: \"Mon père s'appelle Paul\", \"Ma mère s'appelle Anne\"."},
- {"id":"fr-cafe","title":"Au café","level":"A1","text":"Il est neuf heures. Sophie entre dans un petit café près de la gare. Elle a faim et elle a un peu froid. « Bonjour madame, dit le serveur. Vous désirez ? » Sophie regarde la carte. « Je voudrais un café au lait et un croissant, s'il vous plaît. » Le serveur revient avec un grand bol et un croissant chaud. Sophie boit son café lentement. Par la fenêtre, elle voit la pluie dans la rue. Les gens marchent vite avec leurs parapluies. Sophie n'est pas pressée. Elle ouvre son sac et prend un journal. Elle lit les nouvelles et finit son croissant. À dix heures, elle paie et dit au revoir. Dehors, il ne pleut plus.","gloss":{"entre":"goes in","près":"near","gare":"station","faim":"hunger (avoir faim: to be hungry)","froid":"cold","serveur":"waiter","désirez":"would like","carte":"menu","voudrais":"would like","lait":"milk","revient":"comes back","bol":"bowl","chaud":"warm","boit":"drinks","lentement":"slowly","fenêtre":"window","pluie":"rain","rue":"street","marchent":"walk","vite":"fast","parapluies":"umbrellas","pressée":"in a hurry","ouvre":"opens","sac":"bag","journal":"newspaper","nouvelles":"news","paie":"pays","dehors":"outside","pleut":"rains"},"questions":[{"q":"Où est le petit café ?","a":["gare"]},{"q":"Que voit Sophie par la fenêtre ?","a":["pluie","parapluies","gens"]},{"q":"Que lit Sophie avant de payer ?","a":["journal","nouvelles"]}],"notice":"Negation goes around the verb: ne … pas means not, and ne … plus means no longer: \"Sophie n'est pas pressée\", \"il ne pleut plus\"."},
- {"id":"fr-journee","title":"Ma journée","level":"A1","text":"Je me lève à sept heures tous les jours. Je prends une douche et je m'habille. Ensuite, je mange du pain avec du beurre et je bois un thé. À huit heures, je prends le bus pour aller au travail. Je travaille dans un bureau au centre de la ville. Mes collègues sont gentils. À midi, nous mangeons ensemble dans un petit restaurant. L'après-midi, j'écris des messages et je parle au téléphone. Je finis à cinq heures. Après le travail, je fais des courses au supermarché. Le soir, je prépare le dîner et j'écoute de la musique. Parfois, j'appelle mon amie Julie. Je me couche vers onze heures. Je suis fatigué, mais content de ma journée.","gloss":{"lève":"get up (se lever)","douche":"shower","habille":"get dressed","pain":"bread","beurre":"butter","bois":"(I) drink","thé":"tea","travail":"work","bureau":"office","ville":"city","collègues":"colleagues","gentils":"kind","midi":"noon","écris":"(I) write","courses":"shopping","dîner":"dinner","écoute":"listen to","parfois":"sometimes","appelle":"call","couche":"go to bed (se coucher)","vers":"around","fatigué":"tired","content":"happy"},"questions":[{"q":"Qu'est-ce qu'il prend pour aller au travail ?","a":["bus"]},{"q":"Où mange-t-il à midi avec ses collègues ?","a":["restaurant"]},{"q":"Qui appelle-t-il parfois le soir ?","a":["Julie","amie"]}],"notice":"Some everyday verbs take me (m' before a vowel) because you do the action to yourself: \"Je me lève à sept heures\", \"je m'habille\"."},
- {"id":"fr-mer","title":"Un week-end à la mer","level":"A2","text":"Le week-end dernier, nous sommes allés à la mer en voiture. Le voyage a duré trois heures, et les enfants ont dormi presque tout le temps. Quand nous sommes arrivés, le soleil brillait et il y avait peu de monde sur la plage. Nous avons posé nos serviettes près des rochers. L'eau était froide, mais mon fils a couru dans les vagues sans hésiter. Ma fille a préféré chercher des coquillages. À midi, nous avons mangé des sandwichs et des fruits. L'après-midi, le vent s'est levé et le ciel est devenu gris. Nous avons ramassé nos affaires juste avant la pluie. Sur la route du retour, tout le monde chantait dans la voiture. C'était une journée simple, mais nous étions heureux.","gloss":{"dernier":"last","mer":"sea","voiture":"car","voyage":"trip","duré":"lasted","dormi":"slept","presque":"almost","soleil":"sun","brillait":"was shining","monde":"people (peu de monde: few people)","plage":"beach","posé":"put down","serviettes":"towels","rochers":"rocks","couru":"ran","vagues":"waves","hésiter":"to hesitate","coquillages":"seashells","vent":"wind","levé":"risen (se lever: to rise)","ciel":"sky","devenu":"became","gris":"grey","ramassé":"picked up","affaires":"things, belongings","route":"road","retour":"way back","chantait":"was singing","heureux":"happy"},"questions":[{"q":"Comment la famille est-elle allée à la mer ?","a":["voiture"]},{"q":"Qu'est-ce que la famille a mangé à midi ?","a":["sandwich","fruit"]},{"q":"Comment le temps a-t-il changé l'après-midi ?","a":["vent","gris","pluie"]}],"notice":"A few verbs of movement, such as aller and arriver, form the past with être, and the participle then agrees with the subject; most verbs use avoir: \"nous sommes allés à la mer\", \"nous avons mangé des sandwichs\"."},
- {"id":"fr-appartement","title":"Le nouvel appartement","level":"A2","text":"Julie vient de déménager dans un nouvel appartement. Il est au troisième étage, sans ascenseur, et les cartons sont lourds. Heureusement, son frère et deux amis sont venus l'aider. Ils ont monté le lit, la table et une vieille armoire qui ne passait pas par la porte. Il a fallu enlever les portes de l'armoire pour la faire entrer. Vers deux heures, tout le monde avait faim. Julie a commandé des pizzas et ils ont mangé par terre, au milieu des cartons. L'appartement est petit, mais il est clair et il donne sur un parc. Le soir, Julie a accroché ses photos au mur. Elle s'est assise sur le lit et elle a regardé autour d'elle. Pour la première fois, elle se sentait chez elle.","gloss":{"vient":"comes (vient de: has just)","déménager":"to move house","étage":"floor","ascenseur":"lift, elevator","cartons":"boxes","lourds":"heavy","heureusement":"luckily","aider":"to help","monté":"carried up","lit":"bed","armoire":"wardrobe","passait":"fit through","fallu":"been necessary (il a fallu: they had to)","enlever":"to take off","commandé":"ordered","terre":"ground (par terre: on the floor)","milieu":"middle","clair":"bright","donne":"gives (donne sur: looks out on)","accroché":"hung","mur":"wall","assise":"sat down","autour":"around","sentait":"felt"},"questions":[{"q":"Qui est venu aider Julie ?","a":["frère","amis"]},{"q":"Qu'est-ce qui ne passait pas par la porte ?","a":["armoire"]},{"q":"Qu'est-ce que Julie a accroché au mur le soir ?","a":["photo"]}],"notice":"Venir de + infinitive means to have just done something; without de, venir + infinitive means to come and do it: \"Julie vient de déménager\", \"sont venus l'aider\"."},
- {"id":"fr-medecin","title":"Chez le médecin","level":"A2","text":"Depuis trois jours, Thomas a mal à la gorge et il tousse beaucoup. Ce matin, il a décidé d'aller chez le médecin. Dans la salle d'attente, il y a une dame âgée et un enfant qui pleure. Thomas attend une demi-heure en lisant un vieux magazine. Enfin, le médecin l'appelle. « Qu'est-ce qui ne va pas ? » Thomas explique qu'il est fatigué et qu'il dort mal. Le médecin regarde sa gorge et écoute sa respiration. « Ce n'est pas grave, dit-il. C'est un gros rhume. » Il lui conseille de boire beaucoup d'eau, de se reposer et de rester au chaud. Thomas passe à la pharmacie, puis il rentre chez lui. Il se prépare une tisane au miel et se met au lit. Demain, il ira sûrement mieux.","gloss":{"depuis":"for, since","mal":"pain; badly (avoir mal: to hurt)","gorge":"throat","tousse":"coughs","salle":"room","attente":"waiting","âgée":"elderly","pleure":"is crying","attend":"waits","lisant":"reading","enfin":"at last","explique":"explains","respiration":"breathing","grave":"serious","rhume":"cold","conseille":"advises","reposer":"to rest","rester":"to stay","tisane":"herbal tea","miel":"honey","met":"puts (se met au lit: gets into bed)","demain":"tomorrow","ira":"will go (ira mieux: will feel better)","sûrement":"surely","mieux":"better"},"questions":[{"q":"Où Thomas a-t-il mal depuis trois jours ?","a":["gorge"]},{"q":"Quelle maladie Thomas a-t-il, selon le médecin ?","a":["rhume"]},{"q":"Où Thomas passe-t-il avant de rentrer chez lui ?","a":["pharmacie"]}],"notice":"Some verbs need de before a following infinitive (d' before a vowel): \"il a décidé d'aller chez le médecin\", \"Il lui conseille de boire beaucoup d'eau\"."},
- {"id":"fr-concert","title":"Le concert sous la pluie","level":"B1","text":"Nous attendions ce concert depuis des mois. Les billets étaient chers, mais c'était le groupe préféré de ma sœur, et je voulais lui faire plaisir pour son anniversaire. Le concert avait lieu en plein air, dans un ancien théâtre romain. Dès notre arrivée, de gros nuages noirs ont couvert le ciel. La première chanson commençait à peine quand l'orage a éclaté. En quelques minutes, nous étions trempés jusqu'aux os. Certains spectateurs sont partis en courant, mais la plupart sont restés. Le chanteur a ri, il a enlevé sa veste et il a continué à chanter sous la pluie. Alors tout le public s'est mis à danser dans les flaques. Ma sœur avait perdu sa voix à force de crier. Je crois que nous n'oublierons jamais cette soirée, justement parce que rien ne s'est passé comme prévu.","gloss":{"attendions":"had been waiting for","billets":"tickets","chers":"expensive","plaisir":"pleasure (faire plaisir: to please)","anniversaire":"birthday","lieu":"place (avoir lieu: to take place)","plein":"full (en plein air: in the open air)","ancien":"ancient","dès":"as soon as, from","nuages":"clouds","couvert":"covered","chanson":"song","peine":"à peine: barely","orage":"storm","éclaté":"broke out","trempés":"soaked","os":"bones","spectateurs":"audience members","courant":"running","plupart":"la plupart: most","ri":"laughed","veste":"jacket","public":"audience","mis":"put (s'est mis à: started to)","flaques":"puddles","perdu":"lost","voix":"voice","force":"à force de: from so much","crier":"to shout","oublierons":"will forget","justement":"precisely","prévu":"planned"},"questions":[{"q":"Où le concert avait-il lieu ?","a":["théâtre","plein air"]},{"q":"Qu'est-ce qui a éclaté pendant la première chanson ?","a":["orage"]},{"q":"Qu'est-ce que la sœur avait perdu à force de crier ?","a":["voix"]}],"notice":"Some verbs link to a following infinitive with à: \"il a continué à chanter\", \"tout le public s'est mis à danser\" (se mettre à: to start doing)."},
- {"id":"fr-lettre","title":"La lettre retrouvée","level":"B1","text":"En vidant le grenier de ses parents, Camille a trouvé une boîte en métal cachée derrière de vieux livres. À l'intérieur, il y avait des photos jaunies et une lettre qui n'avait jamais été ouverte. L'enveloppe portait le nom de sa grand-mère et un timbre d'Argentine. Camille a hésité longtemps. Avait-elle le droit de lire une lettre qui ne lui était pas adressée ? Finalement, la curiosité a été la plus forte. La lettre venait d'un certain Emilio, qui racontait sa nouvelle vie à Buenos Aires et demandait à sa grand-mère de le rejoindre. Camille n'avait jamais entendu ce prénom. Le soir même, elle a téléphoné à sa mère pour lui poser des questions. Il y a eu un long silence au bout du fil. « Viens dimanche, a répondu sa mère. Je crois qu'il est temps que je te raconte cette histoire. »","gloss":{"vidant":"emptying","grenier":"attic","boîte":"box","cachée":"hidden","derrière":"behind","intérieur":"inside","jaunies":"yellowed","ouverte":"opened","enveloppe":"envelope","portait":"bore","timbre":"stamp","hésité":"hesitated","longtemps":"for a long time","droit":"right","adressée":"addressed","curiosité":"curiosity","forte":"strong","racontait":"told about","rejoindre":"to join","entendu":"heard","prénom":"first name","poser":"to put (poser des questions: to ask questions)","bout":"end","fil":"wire (au bout du fil: on the other end of the line)","répondu":"answered","raconte":"tell","histoire":"story"},"questions":[{"q":"Où Camille a-t-elle trouvé la boîte en métal ?","a":["grenier","livres"]},{"q":"À qui la lettre était-elle adressée ?","a":["grand-mère"]},{"q":"Quel jour la mère demande-t-elle à Camille de venir ?","a":["dimanche"]}],"notice":"The plus-que-parfait (avait or était + past participle) tells what had, or had not, happened before the main events: \"une lettre qui n'avait jamais été ouverte\", \"Camille n'avait jamais entendu ce prénom\"."},
- {"id":"fr-nager","title":"Apprendre à nager","level":"B1","text":"À quarante ans, Bruno ne savait toujours pas nager. Enfant, il avait eu très peur dans une rivière, et depuis, il évitait l'eau autant que possible. Mais l'été dernier, sa fille de sept ans lui a demandé de venir jouer avec elle dans la piscine. Il a eu honte de rester assis au bord. En septembre, il s'est donc inscrit à un cours pour adultes débutants. La première séance a été difficile. Il tenait le bord si fort que ses mains lui faisaient mal. Le professeur, une femme calme et patiente, lui a simplement appris à respirer et à flotter. Semaine après semaine, la peur a diminué. Au bout de trois mois, Bruno a traversé le bassin tout seul, lentement, sans s'arrêter. Sa fille l'attendait de l'autre côté et elle a applaudi. Il n'avait pas été aussi fier depuis longtemps.","gloss":{"savait":"knew how","nager":"to swim","peur":"fear","rivière":"river","évitait":"avoided","autant":"as much","été":"summer; also: been","piscine":"swimming pool","honte":"shame","assis":"sitting","bord":"edge","inscrit":"signed up","cours":"class","débutants":"beginners","séance":"session","tenait":"held","mains":"hands","appris":"taught","respirer":"to breathe","flotter":"to float","diminué":"lessened","traversé":"crossed","bassin":"pool","seul":"alone","arrêter":"to stop","côté":"side","applaudi":"clapped","fier":"proud"},"questions":[{"q":"Où Bruno avait-il eu très peur quand il était enfant ?","a":["rivière"]},{"q":"À quoi Bruno s'est-il inscrit en septembre ?","a":["cours"]},{"q":"Qu'est-ce que Bruno a traversé tout seul au bout de trois mois ?","a":["bassin","piscine"]}],"notice":"For feelings French often uses avoir + a noun where English uses to be: avoir peur (to be afraid), avoir honte (to be ashamed): \"il avait eu très peur\", \"Il a eu honte de rester assis au bord\"."},
- {"id":"fr-libraire","title":"Le dernier libraire","level":"B2","text":"Depuis que la grande surface s'est installée à la sortie de la ville, la librairie de monsieur Vasseur perd des clients chaque année. Pourtant, il refuse de baisser les bras. Selon lui, un libraire ne vend pas seulement des livres : il conseille, il écoute, il devine parfois ce dont un lecteur a besoin avant que celui-ci le sache. L'hiver dernier, alors que la fermeture semblait inévitable, une habituée a lancé une pétition, puis une collecte en ligne. À la surprise générale, des centaines de personnes ont répondu, dont certaines n'avaient jamais mis les pieds dans la boutique. Grâce à cet argent, monsieur Vasseur a pu rénover la vitrine et organiser des rencontres avec des auteurs. Il reste lucide : rien ne garantit que cet élan durera. Mais il a compris que sa librairie comptait bien davantage qu'il ne l'imaginait pour le quartier.","gloss":{"surface":"grande surface: big-box store","installée":"set up","sortie":"edge, exit","librairie":"bookshop","perd":"loses","pourtant":"yet","baisser":"to lower (baisser les bras: to give up)","bras":"arms","selon":"according to","libraire":"bookseller","vend":"sells","devine":"guesses","dont":"of which; including","lecteur":"reader","besoin":"need","celui":"celui-ci: the latter","sache":"knows (subjunctive)","hiver":"winter","fermeture":"closure","semblait":"seemed","inévitable":"unavoidable","habituée":"regular customer","lancé":"started","collecte":"fundraiser","ligne":"line (en ligne: online)","centaines":"hundreds","pieds":"feet (mettre les pieds: to set foot)","boutique":"shop","grâce":"grâce à: thanks to","rénover":"to renovate","vitrine":"shop window","rencontres":"meetings, events","auteurs":"authors","lucide":"clear-eyed","garantit":"guarantees","élan":"momentum","durera":"will last","compris":"understood","comptait":"mattered","davantage":"more","quartier":"neighbourhood"},"questions":[{"q":"Que perd la librairie de monsieur Vasseur chaque année ?","a":["client"]},{"q":"Qu'est-ce qu'une habituée a lancé pour sauver la librairie ?","a":["pétition","collecte"]},{"q":"Qu'est-ce que monsieur Vasseur a pu rénover grâce à l'argent reçu ?","a":["vitrine"]}],"notice":"Dont stands for de + a noun. With avoir besoin de it gives ce dont (what … needs); after a group it means of whom, including: \"ce dont un lecteur a besoin\", \"dont certaines n'avaient jamais mis les pieds dans la boutique\"."},
- {"id":"fr-teletravail","title":"Le télétravail","level":"B2","text":"Lorsque son entreprise a généralisé le télétravail, Nadia s'en est d'abord réjouie. Finis les embouteillages, les réunions interminables et les déjeuners avalés en dix minutes. Elle s'imaginait déjà travailler au calme, une tasse de thé à portée de main. Les premiers mois lui ont donné raison. Peu à peu, cependant, quelque chose s'est déréglé. Les journées s'allongeaient sans qu'elle s'en aperçoive, et la frontière entre vie professionnelle et vie privée devenait floue. Il lui arrivait de répondre à des courriels à onze heures du soir, encore en pyjama. Surtout, les conversations sans importance autour de la machine à café lui manquaient plus qu'elle ne l'aurait cru. Elle a fini par négocier un compromis avec sa responsable : trois jours chez elle, deux au bureau. Ce n'est pas la solution idéale, reconnaît-elle, mais c'est celle qui lui permet de ne pas perdre le fil.","gloss":{"lorsque":"when","entreprise":"company","généralisé":"rolled out for everyone","télétravail":"working from home","réjouie":"delighted (se réjouir)","embouteillages":"traffic jams","réunions":"meetings","interminables":"endless","déjeuners":"lunches","avalés":"gulped down","tasse":"cup","portée":"reach (à portée de main: within reach)","raison":"reason (donner raison: to prove right)","cependant":"however","déréglé":"gone wrong","allongeaient":"were getting longer","aperçoive":"noticing (s'apercevoir)","frontière":"boundary","privée":"private","floue":"blurred","arrivait":"il lui arrivait de: she sometimes","courriels":"emails","surtout":"above all","manquaient":"lui manquaient: she missed them","cru":"believed","négocier":"to negotiate","compromis":"compromise","responsable":"manager","reconnaît":"admits","permet":"allows","fil":"thread (perdre le fil: to lose the thread)"},"questions":[{"q":"À quoi Nadia était-elle contente d'échapper grâce au télétravail ?","a":["embouteillage","réunion","déjeuner"]},{"q":"Qu'est-ce qui manquait à Nadia plus qu'elle ne l'aurait cru ?","a":["conversation","café"]},{"q":"Qu'est-ce que Nadia a fini par négocier avec sa responsable ?","a":["compromis"]}],"notice":"En replaces de + something already mentioned, with verbs built with de such as se réjouir de and s'apercevoir de: \"Nadia s'en est d'abord réjouie\", \"sans qu'elle s'en aperçoive\"."},
- {"id":"fr-potager","title":"Le potager partagé","level":"B2","text":"Au pied de notre immeuble, il y avait autrefois un terrain vague où personne n'osait s'aventurer. Il y a deux ans, une voisine retraitée a proposé d'en faire un potager collectif. L'idée a d'abord suscité plus de méfiance que d'enthousiasme. Qui allait arroser pendant les vacances ? Qui profiterait des récoltes ? Malgré ces doutes, une dizaine d'habitants se sont retroussé les manches. Ils ont débarrassé le terrain de ses déchets, apporté de la terre et construit des bacs en bois. Aujourd'hui, on y cultive des tomates, des haricots et des herbes aromatiques. Mais le plus étonnant n'est pas ce qui pousse dans les bacs. Des voisins qui se croisaient sans un mot depuis dix ans discutent désormais pendant des heures. Les enfants apprennent d'où viennent les légumes, et les anciens transmettent leurs astuces. Finalement, ce jardin a fait pousser bien autre chose que des légumes.","gloss":{"pied":"foot","immeuble":"apartment building","autrefois":"in the past","terrain":"plot (terrain vague: wasteland)","osait":"dared","aventurer":"to venture","voisine":"neighbour","retraitée":"retired","potager":"vegetable garden","suscité":"aroused","méfiance":"mistrust","arroser":"to water","profiterait":"would benefit","récoltes":"harvests","malgré":"despite","doutes":"doubts","dizaine":"about ten","habitants":"residents","retroussé":"rolled up (se retrousser les manches: to roll up one's sleeves)","manches":"sleeves","débarrassé":"cleared","déchets":"rubbish","apporté":"brought","terre":"soil","construit":"built","bacs":"planters","bois":"wood","cultive":"grows","haricots":"beans","étonnant":"surprising","pousse":"grows","croisaient":"passed each other","désormais":"now, from now on","apprennent":"learn","légumes":"vegetables","anciens":"old people","transmettent":"pass on","astuces":"tricks, tips"},"questions":[{"q":"Qui a proposé de faire un potager collectif ?","a":["voisine","retraitée"]},{"q":"Que cultive-t-on aujourd'hui dans le potager ?","a":["tomate","haricot","herbe"]},{"q":"Qu'est-ce que les enfants apprennent grâce au jardin ?","a":["légume"]}],"notice":"To look ahead from a moment in the past, French uses aller in the imparfait or the conditional: \"Qui allait arroser pendant les vacances ?\", \"Qui profiterait des récoltes ?\""},
+ {
+  "id": "fr-famille",
+  "title": "Ma famille",
+  "level": "A1",
+  "text": "Je m'appelle Léa et j'ai dix ans. J'habite à Lyon avec ma famille. Mon père s'appelle Paul. Il est grand et il aime faire la cuisine. Ma mère s'appelle Anne. Elle travaille dans une école. J'ai un petit frère, Hugo. Il a six ans et il parle beaucoup. Nous avons aussi un chat noir. Il dort toute la journée sur le canapé. Le soir, nous mangeons ensemble dans la cuisine. Mon père prépare souvent des pâtes ou une soupe. Après le repas, je lis un livre et Hugo regarde un dessin animé. Le dimanche, nous allons chez ma grand-mère. Elle a un grand jardin avec des fleurs. J'aime beaucoup ma famille.",
+  "gloss": {
+   "habite": "live",
+   "grand": "tall, big",
+   "cuisine": "cooking; kitchen",
+   "travaille": "works",
+   "école": "school",
+   "frère": "brother",
+   "parle": "talks",
+   "chat": "cat",
+   "noir": "black",
+   "dort": "sleeps",
+   "journée": "day",
+   "canapé": "sofa",
+   "soir": "evening",
+   "mangeons": "(we) eat",
+   "ensemble": "together",
+   "prépare": "makes, prepares",
+   "souvent": "often",
+   "pâtes": "pasta",
+   "repas": "meal",
+   "lis": "(I) read",
+   "livre": "book",
+   "dessin": "drawing (dessin animé: cartoon)",
+   "dimanche": "Sunday",
+   "jardin": "garden",
+   "fleurs": "flowers"
+  },
+  "questions": [
+   {
+    "q": "Où travaille la mère de Léa ?",
+    "a": [
+     "école"
+    ]
+   },
+   {
+    "q": "Où dort le chat toute la journée ?",
+    "a": [
+     "canapé"
+    ]
+   },
+   {
+    "q": "Chez qui la famille va-t-elle le dimanche ?",
+    "a": [
+     "grand-mère"
+    ]
+   }
+  ],
+  "notice": "My changes with the gender of the noun: mon for a masculine noun, ma for a feminine one: \"Mon père s'appelle Paul\", \"Ma mère s'appelle Anne\"."
+ },
+ {
+  "id": "fr-cafe",
+  "title": "Au café",
+  "level": "A1",
+  "text": "Il est neuf heures. Sophie entre dans un petit café près de la gare. Elle a faim et elle a un peu froid. « Bonjour madame, dit le serveur. Vous désirez ? » Sophie regarde la carte. « Je voudrais un café au lait et un croissant, s'il vous plaît. » Le serveur revient avec un grand bol et un croissant chaud. Sophie boit son café lentement. Par la fenêtre, elle voit la pluie dans la rue. Les gens marchent vite avec leurs parapluies. Sophie n'est pas pressée. Elle ouvre son sac et prend un journal. Elle lit les nouvelles et finit son croissant. À dix heures, elle paie et dit au revoir. Dehors, il ne pleut plus.",
+  "gloss": {
+   "entre": "goes in",
+   "près": "near",
+   "gare": "station",
+   "faim": "hunger (avoir faim: to be hungry)",
+   "froid": "cold",
+   "serveur": "waiter",
+   "désirez": "would like",
+   "carte": "menu",
+   "voudrais": "would like",
+   "lait": "milk",
+   "revient": "comes back",
+   "bol": "bowl",
+   "chaud": "warm",
+   "boit": "drinks",
+   "lentement": "slowly",
+   "fenêtre": "window",
+   "pluie": "rain",
+   "rue": "street",
+   "marchent": "walk",
+   "vite": "fast",
+   "parapluies": "umbrellas",
+   "pressée": "in a hurry",
+   "ouvre": "opens",
+   "sac": "bag",
+   "journal": "newspaper",
+   "nouvelles": "news",
+   "paie": "pays",
+   "dehors": "outside",
+   "pleut": "rains"
+  },
+  "questions": [
+   {
+    "q": "Où est le petit café ?",
+    "a": [
+     "gare"
+    ]
+   },
+   {
+    "q": "Que voit Sophie par la fenêtre ?",
+    "a": [
+     "pluie",
+     "parapluies",
+     "gens"
+    ]
+   },
+   {
+    "q": "Que lit Sophie avant de payer ?",
+    "a": [
+     "journal",
+     "nouvelles"
+    ]
+   }
+  ],
+  "notice": "Negation goes around the verb: ne … pas means not, and ne … plus means no longer: \"Sophie n'est pas pressée\", \"il ne pleut plus\"."
+ },
+ {
+  "id": "fr-journee",
+  "title": "Ma journée",
+  "level": "A1",
+  "text": "Je me lève à sept heures tous les jours. Je prends une douche et je m'habille. Ensuite, je mange du pain avec du beurre et je bois un thé. À huit heures, je prends le bus pour aller au travail. Je travaille dans un bureau au centre de la ville. Mes collègues sont gentils. À midi, nous mangeons ensemble dans un petit restaurant. L'après-midi, j'écris des messages et je parle au téléphone. Je finis à cinq heures. Après le travail, je fais des courses au supermarché. Le soir, je prépare le dîner et j'écoute de la musique. Parfois, j'appelle mon amie Julie. Je me couche vers onze heures. Je suis fatigué, mais content de ma journée.",
+  "gloss": {
+   "lève": "get up (se lever)",
+   "douche": "shower",
+   "habille": "get dressed",
+   "pain": "bread",
+   "beurre": "butter",
+   "bois": "(I) drink",
+   "thé": "tea",
+   "travail": "work",
+   "bureau": "office",
+   "ville": "city",
+   "collègues": "colleagues",
+   "gentils": "kind",
+   "midi": "noon",
+   "écris": "(I) write",
+   "courses": "shopping",
+   "dîner": "dinner",
+   "écoute": "listen to",
+   "parfois": "sometimes",
+   "appelle": "call",
+   "couche": "go to bed (se coucher)",
+   "vers": "around",
+   "fatigué": "tired",
+   "content": "happy"
+  },
+  "questions": [
+   {
+    "q": "Qu'est-ce qu'il prend pour aller au travail ?",
+    "a": [
+     "bus"
+    ]
+   },
+   {
+    "q": "Où mange-t-il à midi avec ses collègues ?",
+    "a": [
+     "restaurant"
+    ]
+   },
+   {
+    "q": "Qui appelle-t-il parfois le soir ?",
+    "a": [
+     "Julie",
+     "amie"
+    ]
+   }
+  ],
+  "notice": "Some everyday verbs take me (m' before a vowel) because you do the action to yourself: \"Je me lève à sept heures\", \"je m'habille\"."
+ },
+ {
+  "id": "fr-mer",
+  "title": "Un week-end à la mer",
+  "level": "A2",
+  "text": "Le week-end dernier, nous sommes allés à la mer en voiture. Le voyage a duré trois heures, et les enfants ont dormi presque tout le temps. Quand nous sommes arrivés, le soleil brillait et il y avait peu de monde sur la plage. Nous avons posé nos serviettes près des rochers. L'eau était froide, mais mon fils a couru dans les vagues sans hésiter. Ma fille a préféré chercher des coquillages. À midi, nous avons mangé des sandwichs et des fruits. L'après-midi, le vent s'est levé et le ciel est devenu gris. Nous avons ramassé nos affaires juste avant la pluie. Sur la route du retour, tout le monde chantait dans la voiture. C'était une journée simple, mais nous étions heureux.",
+  "gloss": {
+   "dernier": "last",
+   "mer": "sea",
+   "voiture": "car",
+   "voyage": "trip",
+   "duré": "lasted",
+   "dormi": "slept",
+   "presque": "almost",
+   "soleil": "sun",
+   "brillait": "was shining",
+   "monde": "people (peu de monde: few people)",
+   "plage": "beach",
+   "posé": "put down",
+   "serviettes": "towels",
+   "rochers": "rocks",
+   "couru": "ran",
+   "vagues": "waves",
+   "hésiter": "to hesitate",
+   "coquillages": "seashells",
+   "vent": "wind",
+   "levé": "risen (se lever: to rise)",
+   "ciel": "sky",
+   "devenu": "became",
+   "gris": "grey",
+   "ramassé": "picked up",
+   "affaires": "things, belongings",
+   "route": "road",
+   "retour": "way back",
+   "chantait": "was singing",
+   "heureux": "happy"
+  },
+  "questions": [
+   {
+    "q": "Comment la famille est-elle allée à la mer ?",
+    "a": [
+     "voiture"
+    ]
+   },
+   {
+    "q": "Qu'est-ce que la famille a mangé à midi ?",
+    "a": [
+     "sandwich",
+     "fruit"
+    ]
+   },
+   {
+    "q": "Comment le temps a-t-il changé l'après-midi ?",
+    "a": [
+     "vent",
+     "gris",
+     "pluie"
+    ]
+   }
+  ],
+  "notice": "A few verbs of movement, such as aller and arriver, form the past with être, and the participle then agrees with the subject; most verbs use avoir: \"nous sommes allés à la mer\", \"nous avons mangé des sandwichs\"."
+ },
+ {
+  "id": "fr-appartement",
+  "title": "Le nouvel appartement",
+  "level": "A2",
+  "text": "Julie vient de déménager dans un nouvel appartement. Il est au troisième étage, sans ascenseur, et les cartons sont lourds. Heureusement, son frère et deux amis sont venus l'aider. Ils ont monté le lit, la table et une vieille armoire qui ne passait pas par la porte. Il a fallu enlever les portes de l'armoire pour la faire entrer. Vers deux heures, tout le monde avait faim. Julie a commandé des pizzas et ils ont mangé par terre, au milieu des cartons. L'appartement est petit, mais il est clair et il donne sur un parc. Le soir, Julie a accroché ses photos au mur. Elle s'est assise sur le lit et elle a regardé autour d'elle. Pour la première fois, elle se sentait chez elle.",
+  "gloss": {
+   "vient": "comes (vient de: has just)",
+   "déménager": "to move house",
+   "étage": "floor",
+   "ascenseur": "lift, elevator",
+   "cartons": "boxes",
+   "lourds": "heavy",
+   "heureusement": "luckily",
+   "aider": "to help",
+   "monté": "carried up",
+   "lit": "bed",
+   "armoire": "wardrobe",
+   "passait": "fit through",
+   "fallu": "been necessary (il a fallu: they had to)",
+   "enlever": "to take off",
+   "commandé": "ordered",
+   "terre": "ground (par terre: on the floor)",
+   "milieu": "middle",
+   "clair": "bright",
+   "donne": "gives (donne sur: looks out on)",
+   "accroché": "hung",
+   "mur": "wall",
+   "assise": "sat down",
+   "autour": "around",
+   "sentait": "felt"
+  },
+  "questions": [
+   {
+    "q": "Qui est venu aider Julie ?",
+    "a": [
+     "frère",
+     "amis"
+    ]
+   },
+   {
+    "q": "Qu'est-ce qui ne passait pas par la porte ?",
+    "a": [
+     "armoire"
+    ]
+   },
+   {
+    "q": "Qu'est-ce que Julie a accroché au mur le soir ?",
+    "a": [
+     "photo"
+    ]
+   }
+  ],
+  "notice": "Venir de + infinitive means to have just done something; without de, venir + infinitive means to come and do it: \"Julie vient de déménager\", \"sont venus l'aider\"."
+ },
+ {
+  "id": "fr-medecin",
+  "title": "Chez le médecin",
+  "level": "A2",
+  "text": "Depuis trois jours, Thomas a mal à la gorge et il tousse beaucoup. Ce matin, il a décidé d'aller chez le médecin. Dans la salle d'attente, il y a une dame âgée et un enfant qui pleure. Thomas attend une demi-heure en lisant un vieux magazine. Enfin, le médecin l'appelle. « Qu'est-ce qui ne va pas ? » Thomas explique qu'il est fatigué et qu'il dort mal. Le médecin regarde sa gorge et écoute sa respiration. « Ce n'est pas grave, dit-il. C'est un gros rhume. » Il lui conseille de boire beaucoup d'eau, de se reposer et de rester au chaud. Thomas passe à la pharmacie, puis il rentre chez lui. Il se prépare une tisane au miel et se met au lit. Demain, il ira sûrement mieux.",
+  "gloss": {
+   "depuis": "for, since",
+   "mal": "pain; badly (avoir mal: to hurt)",
+   "gorge": "throat",
+   "tousse": "coughs",
+   "salle": "room",
+   "attente": "waiting",
+   "âgée": "elderly",
+   "pleure": "is crying",
+   "attend": "waits",
+   "lisant": "reading",
+   "enfin": "at last",
+   "explique": "explains",
+   "respiration": "breathing",
+   "grave": "serious",
+   "rhume": "cold",
+   "conseille": "advises",
+   "reposer": "to rest",
+   "rester": "to stay",
+   "tisane": "herbal tea",
+   "miel": "honey",
+   "met": "puts (se met au lit: gets into bed)",
+   "demain": "tomorrow",
+   "ira": "will go (ira mieux: will feel better)",
+   "sûrement": "surely",
+   "mieux": "better"
+  },
+  "questions": [
+   {
+    "q": "Où Thomas a-t-il mal depuis trois jours ?",
+    "a": [
+     "gorge"
+    ]
+   },
+   {
+    "q": "Quelle maladie Thomas a-t-il, selon le médecin ?",
+    "a": [
+     "rhume"
+    ]
+   },
+   {
+    "q": "Où Thomas passe-t-il avant de rentrer chez lui ?",
+    "a": [
+     "pharmacie"
+    ]
+   }
+  ],
+  "notice": "Some verbs need de before a following infinitive (d' before a vowel): \"il a décidé d'aller chez le médecin\", \"Il lui conseille de boire beaucoup d'eau\"."
+ },
+ {
+  "id": "fr-concert",
+  "title": "Le concert sous la pluie",
+  "level": "B1",
+  "text": "Nous attendions ce concert depuis des mois. Les billets étaient chers, mais c'était le groupe préféré de ma sœur, et je voulais lui faire plaisir pour son anniversaire. Le concert avait lieu en plein air, dans un ancien théâtre romain. Dès notre arrivée, de gros nuages noirs ont couvert le ciel. La première chanson commençait à peine quand l'orage a éclaté. En quelques minutes, nous étions trempés jusqu'aux os. Certains spectateurs sont partis en courant, mais la plupart sont restés. Le chanteur a ri, il a enlevé sa veste et il a continué à chanter sous la pluie. Alors tout le public s'est mis à danser dans les flaques. Ma sœur avait perdu sa voix à force de crier. Je crois que nous n'oublierons jamais cette soirée, justement parce que rien ne s'est passé comme prévu.",
+  "gloss": {
+   "attendions": "had been waiting for",
+   "billets": "tickets",
+   "chers": "expensive",
+   "plaisir": "pleasure (faire plaisir: to please)",
+   "anniversaire": "birthday",
+   "lieu": "place (avoir lieu: to take place)",
+   "plein": "full (en plein air: in the open air)",
+   "ancien": "ancient",
+   "dès": "as soon as, from",
+   "nuages": "clouds",
+   "couvert": "covered",
+   "chanson": "song",
+   "peine": "à peine: barely",
+   "orage": "storm",
+   "éclaté": "broke out",
+   "trempés": "soaked",
+   "os": "bones",
+   "spectateurs": "audience members",
+   "courant": "running",
+   "plupart": "la plupart: most",
+   "ri": "laughed",
+   "veste": "jacket",
+   "public": "audience",
+   "mis": "put (s'est mis à: started to)",
+   "flaques": "puddles",
+   "perdu": "lost",
+   "voix": "voice",
+   "force": "à force de: from so much",
+   "crier": "to shout",
+   "oublierons": "will forget",
+   "justement": "precisely",
+   "prévu": "planned"
+  },
+  "questions": [
+   {
+    "q": "Où le concert avait-il lieu ?",
+    "a": [
+     "théâtre",
+     "plein air"
+    ]
+   },
+   {
+    "q": "Qu'est-ce qui a éclaté pendant la première chanson ?",
+    "a": [
+     "orage"
+    ]
+   },
+   {
+    "q": "Qu'est-ce que la sœur avait perdu à force de crier ?",
+    "a": [
+     "voix"
+    ]
+   }
+  ],
+  "notice": "Some verbs link to a following infinitive with à: \"il a continué à chanter\", \"tout le public s'est mis à danser\" (se mettre à: to start doing)."
+ },
+ {
+  "id": "fr-lettre",
+  "title": "La lettre retrouvée",
+  "level": "B1",
+  "text": "En vidant le grenier de ses parents, Camille a trouvé une boîte en métal cachée derrière de vieux livres. À l'intérieur, il y avait des photos jaunies et une lettre qui n'avait jamais été ouverte. L'enveloppe portait le nom de sa grand-mère et un timbre d'Argentine. Camille a hésité longtemps. Avait-elle le droit de lire une lettre qui ne lui était pas adressée ? Finalement, la curiosité a été la plus forte. La lettre venait d'un certain Emilio, qui racontait sa nouvelle vie à Buenos Aires et demandait à sa grand-mère de le rejoindre. Camille n'avait jamais entendu ce prénom. Le soir même, elle a téléphoné à sa mère pour lui poser des questions. Il y a eu un long silence au bout du fil. « Viens dimanche, a répondu sa mère. Je crois qu'il est temps que je te raconte cette histoire. »",
+  "gloss": {
+   "vidant": "emptying",
+   "grenier": "attic",
+   "boîte": "box",
+   "cachée": "hidden",
+   "derrière": "behind",
+   "intérieur": "inside",
+   "jaunies": "yellowed",
+   "ouverte": "opened",
+   "enveloppe": "envelope",
+   "portait": "bore",
+   "timbre": "stamp",
+   "hésité": "hesitated",
+   "longtemps": "for a long time",
+   "droit": "right",
+   "adressée": "addressed",
+   "curiosité": "curiosity",
+   "forte": "strong",
+   "racontait": "told about",
+   "rejoindre": "to join",
+   "entendu": "heard",
+   "prénom": "first name",
+   "poser": "to put (poser des questions: to ask questions)",
+   "bout": "end",
+   "fil": "wire (au bout du fil: on the other end of the line)",
+   "répondu": "answered",
+   "raconte": "tell",
+   "histoire": "story"
+  },
+  "questions": [
+   {
+    "q": "Où Camille a-t-elle trouvé la boîte en métal ?",
+    "a": [
+     "grenier",
+     "livres"
+    ]
+   },
+   {
+    "q": "À qui la lettre était-elle adressée ?",
+    "a": [
+     "grand-mère"
+    ]
+   },
+   {
+    "q": "Quel jour la mère demande-t-elle à Camille de venir ?",
+    "a": [
+     "dimanche"
+    ]
+   }
+  ],
+  "notice": "The plus-que-parfait (avait or était + past participle) tells what had, or had not, happened before the main events: \"une lettre qui n'avait jamais été ouverte\", \"Camille n'avait jamais entendu ce prénom\"."
+ },
+ {
+  "id": "fr-nager",
+  "title": "Apprendre à nager",
+  "level": "B1",
+  "text": "À quarante ans, Bruno ne savait toujours pas nager. Enfant, il avait eu très peur dans une rivière, et depuis, il évitait l'eau autant que possible. Mais l'été dernier, sa fille de sept ans lui a demandé de venir jouer avec elle dans la piscine. Il a eu honte de rester assis au bord. En septembre, il s'est donc inscrit à un cours pour adultes débutants. La première séance a été difficile. Il tenait le bord si fort que ses mains lui faisaient mal. Le professeur, une femme calme et patiente, lui a simplement appris à respirer et à flotter. Semaine après semaine, la peur a diminué. Au bout de trois mois, Bruno a traversé le bassin tout seul, lentement, sans s'arrêter. Sa fille l'attendait de l'autre côté et elle a applaudi. Il n'avait pas été aussi fier depuis longtemps.",
+  "gloss": {
+   "savait": "knew how",
+   "nager": "to swim",
+   "peur": "fear",
+   "rivière": "river",
+   "évitait": "avoided",
+   "autant": "as much",
+   "été": "summer; also: been",
+   "piscine": "swimming pool",
+   "honte": "shame",
+   "assis": "sitting",
+   "bord": "edge",
+   "inscrit": "signed up",
+   "cours": "class",
+   "débutants": "beginners",
+   "séance": "session",
+   "tenait": "held",
+   "mains": "hands",
+   "appris": "taught",
+   "respirer": "to breathe",
+   "flotter": "to float",
+   "diminué": "lessened",
+   "traversé": "crossed",
+   "bassin": "pool",
+   "seul": "alone",
+   "arrêter": "to stop",
+   "côté": "side",
+   "applaudi": "clapped",
+   "fier": "proud"
+  },
+  "questions": [
+   {
+    "q": "Où Bruno avait-il eu très peur quand il était enfant ?",
+    "a": [
+     "rivière"
+    ]
+   },
+   {
+    "q": "À quoi Bruno s'est-il inscrit en septembre ?",
+    "a": [
+     "cours"
+    ]
+   },
+   {
+    "q": "Qu'est-ce que Bruno a traversé tout seul au bout de trois mois ?",
+    "a": [
+     "bassin",
+     "piscine"
+    ]
+   }
+  ],
+  "notice": "For feelings French often uses avoir + a noun where English uses to be: avoir peur (to be afraid), avoir honte (to be ashamed): \"il avait eu très peur\", \"Il a eu honte de rester assis au bord\"."
+ },
+ {
+  "id": "fr-libraire",
+  "title": "Le dernier libraire",
+  "level": "B2",
+  "text": "Depuis que la grande surface s'est installée à la sortie de la ville, la librairie de monsieur Vasseur perd des clients chaque année. Pourtant, il refuse de baisser les bras. Selon lui, un libraire ne vend pas seulement des livres : il conseille, il écoute, il devine parfois ce dont un lecteur a besoin avant que celui-ci le sache. L'hiver dernier, alors que la fermeture semblait inévitable, une habituée a lancé une pétition, puis une collecte en ligne. À la surprise générale, des centaines de personnes ont répondu, dont certaines n'avaient jamais mis les pieds dans la boutique. Grâce à cet argent, monsieur Vasseur a pu rénover la vitrine et organiser des rencontres avec des auteurs. Il reste lucide : rien ne garantit que cet élan durera. Mais il a compris que sa librairie comptait bien davantage qu'il ne l'imaginait pour le quartier.",
+  "gloss": {
+   "surface": "grande surface: big-box store",
+   "installée": "set up",
+   "sortie": "edge, exit",
+   "librairie": "bookshop",
+   "perd": "loses",
+   "pourtant": "yet",
+   "baisser": "to lower (baisser les bras: to give up)",
+   "bras": "arms",
+   "selon": "according to",
+   "libraire": "bookseller",
+   "vend": "sells",
+   "devine": "guesses",
+   "dont": "of which; including",
+   "lecteur": "reader",
+   "besoin": "need",
+   "celui": "celui-ci: the latter",
+   "sache": "knows (subjunctive)",
+   "hiver": "winter",
+   "fermeture": "closure",
+   "semblait": "seemed",
+   "inévitable": "unavoidable",
+   "habituée": "regular customer",
+   "lancé": "started",
+   "collecte": "fundraiser",
+   "ligne": "line (en ligne: online)",
+   "centaines": "hundreds",
+   "pieds": "feet (mettre les pieds: to set foot)",
+   "boutique": "shop",
+   "grâce": "grâce à: thanks to",
+   "rénover": "to renovate",
+   "vitrine": "shop window",
+   "rencontres": "meetings, events",
+   "auteurs": "authors",
+   "lucide": "clear-eyed",
+   "garantit": "guarantees",
+   "élan": "momentum",
+   "durera": "will last",
+   "compris": "understood",
+   "comptait": "mattered",
+   "davantage": "more",
+   "quartier": "neighbourhood"
+  },
+  "questions": [
+   {
+    "q": "Que perd la librairie de monsieur Vasseur chaque année ?",
+    "a": [
+     "client"
+    ]
+   },
+   {
+    "q": "Qu'est-ce qu'une habituée a lancé pour sauver la librairie ?",
+    "a": [
+     "pétition",
+     "collecte"
+    ]
+   },
+   {
+    "q": "Qu'est-ce que monsieur Vasseur a pu rénover grâce à l'argent reçu ?",
+    "a": [
+     "vitrine"
+    ]
+   }
+  ],
+  "notice": "Dont stands for de + a noun. With avoir besoin de it gives ce dont (what … needs); after a group it means of whom, including: \"ce dont un lecteur a besoin\", \"dont certaines n'avaient jamais mis les pieds dans la boutique\"."
+ },
+ {
+  "id": "fr-teletravail",
+  "title": "Le télétravail",
+  "level": "B2",
+  "text": "Lorsque son entreprise a généralisé le télétravail, Nadia s'en est d'abord réjouie. Finis les embouteillages, les réunions interminables et les déjeuners avalés en dix minutes. Elle s'imaginait déjà travailler au calme, une tasse de thé à portée de main. Les premiers mois lui ont donné raison. Peu à peu, cependant, quelque chose s'est déréglé. Les journées s'allongeaient sans qu'elle s'en aperçoive, et la frontière entre vie professionnelle et vie privée devenait floue. Il lui arrivait de répondre à des courriels à onze heures du soir, encore en pyjama. Surtout, les conversations sans importance autour de la machine à café lui manquaient plus qu'elle ne l'aurait cru. Elle a fini par négocier un compromis avec sa responsable : trois jours chez elle, deux au bureau. Ce n'est pas la solution idéale, reconnaît-elle, mais c'est celle qui lui permet de ne pas perdre le fil.",
+  "gloss": {
+   "lorsque": "when",
+   "entreprise": "company",
+   "généralisé": "rolled out for everyone",
+   "télétravail": "working from home",
+   "réjouie": "delighted (se réjouir)",
+   "embouteillages": "traffic jams",
+   "réunions": "meetings",
+   "interminables": "endless",
+   "déjeuners": "lunches",
+   "avalés": "gulped down",
+   "tasse": "cup",
+   "portée": "reach (à portée de main: within reach)",
+   "raison": "reason (donner raison: to prove right)",
+   "cependant": "however",
+   "déréglé": "gone wrong",
+   "allongeaient": "were getting longer",
+   "aperçoive": "noticing (s'apercevoir)",
+   "frontière": "boundary",
+   "privée": "private",
+   "floue": "blurred",
+   "arrivait": "il lui arrivait de: she sometimes",
+   "courriels": "emails",
+   "surtout": "above all",
+   "manquaient": "lui manquaient: she missed them",
+   "cru": "believed",
+   "négocier": "to negotiate",
+   "compromis": "compromise",
+   "responsable": "manager",
+   "reconnaît": "admits",
+   "permet": "allows",
+   "fil": "thread (perdre le fil: to lose the thread)"
+  },
+  "questions": [
+   {
+    "q": "À quoi Nadia était-elle contente d'échapper grâce au télétravail ?",
+    "a": [
+     "embouteillage",
+     "réunion",
+     "déjeuner"
+    ]
+   },
+   {
+    "q": "Qu'est-ce qui manquait à Nadia plus qu'elle ne l'aurait cru ?",
+    "a": [
+     "conversation",
+     "café"
+    ]
+   },
+   {
+    "q": "Qu'est-ce que Nadia a fini par négocier avec sa responsable ?",
+    "a": [
+     "compromis"
+    ]
+   }
+  ],
+  "notice": "En replaces de + something already mentioned, with verbs built with de such as se réjouir de and s'apercevoir de: \"Nadia s'en est d'abord réjouie\", \"sans qu'elle s'en aperçoive\"."
+ },
+ {
+  "id": "fr-potager",
+  "title": "Le potager partagé",
+  "level": "B2",
+  "text": "Au pied de notre immeuble, il y avait autrefois un terrain vague où personne n'osait s'aventurer. Il y a deux ans, une voisine retraitée a proposé d'en faire un potager collectif. L'idée a d'abord suscité plus de méfiance que d'enthousiasme. Qui allait arroser pendant les vacances ? Qui profiterait des récoltes ? Malgré ces doutes, une dizaine d'habitants se sont retroussé les manches. Ils ont débarrassé le terrain de ses déchets, apporté de la terre et construit des bacs en bois. Aujourd'hui, on y cultive des tomates, des haricots et des herbes aromatiques. Mais le plus étonnant n'est pas ce qui pousse dans les bacs. Des voisins qui se croisaient sans un mot depuis dix ans discutent désormais pendant des heures. Les enfants apprennent d'où viennent les légumes, et les anciens transmettent leurs astuces. Finalement, ce jardin a fait pousser bien autre chose que des légumes.",
+  "gloss": {
+   "pied": "foot",
+   "immeuble": "apartment building",
+   "autrefois": "in the past",
+   "terrain": "plot (terrain vague: wasteland)",
+   "osait": "dared",
+   "aventurer": "to venture",
+   "voisine": "neighbour",
+   "retraitée": "retired",
+   "potager": "vegetable garden",
+   "suscité": "aroused",
+   "méfiance": "mistrust",
+   "arroser": "to water",
+   "profiterait": "would benefit",
+   "récoltes": "harvests",
+   "malgré": "despite",
+   "doutes": "doubts",
+   "dizaine": "about ten",
+   "habitants": "residents",
+   "retroussé": "rolled up (se retrousser les manches: to roll up one's sleeves)",
+   "manches": "sleeves",
+   "débarrassé": "cleared",
+   "déchets": "rubbish",
+   "apporté": "brought",
+   "terre": "soil",
+   "construit": "built",
+   "bacs": "planters",
+   "bois": "wood",
+   "cultive": "grows",
+   "haricots": "beans",
+   "étonnant": "surprising",
+   "pousse": "grows",
+   "croisaient": "passed each other",
+   "désormais": "now, from now on",
+   "apprennent": "learn",
+   "légumes": "vegetables",
+   "anciens": "old people",
+   "transmettent": "pass on",
+   "astuces": "tricks, tips"
+  },
+  "questions": [
+   {
+    "q": "Qui a proposé de faire un potager collectif ?",
+    "a": [
+     "voisine",
+     "retraitée"
+    ]
+   },
+   {
+    "q": "Que cultive-t-on aujourd'hui dans le potager ?",
+    "a": [
+     "tomate",
+     "haricot",
+     "herbe"
+    ]
+   },
+   {
+    "q": "Qu'est-ce que les enfants apprennent grâce au jardin ?",
+    "a": [
+     "légume"
+    ]
+   }
+  ],
+  "notice": "To look ahead from a moment in the past, French uses aller in the imparfait or the conditional: \"Qui allait arroser pendant les vacances ?\", \"Qui profiterait des récoltes ?\""
+ },
+ {
+  "id": "fr-chat",
+  "title": "Où est Caramel ?",
+  "level": "A1",
+  "text": "Emma habite à Strasbourg, dans une petite maison avec un jardin. Elle a un chat roux. Il s'appelle Caramel. Ce matin, Emma prépare le petit déjeuner et elle appelle son chat. Mais Caramel ne vient pas. Elle cherche dans la cuisine, puis dans la chambre. Elle regarde sous le lit et derrière le canapé. Rien ! Emma est inquiète. Elle sort dans le jardin. Il pleut et il fait froid. Ensuite, elle va dans la rue et elle parle aux voisins. Personne ne sait où est Caramel. Emma rentre à la maison. Elle est triste et elle a froid. Elle ouvre l'armoire pour prendre un pull. Et là, sur les pulls, Caramel dort tranquillement. Emma rit et elle prend son chat dans ses bras. Pour fêter ça, elle donne du poisson à Caramel.",
+  "gloss": {
+   "habite": "lives",
+   "jardin": "garden",
+   "roux": "ginger, red-haired",
+   "appelle": "calls (il s'appelle: his name is)",
+   "déjeuner": "lunch (le petit déjeuner: breakfast)",
+   "vient": "comes",
+   "cherche": "looks, searches",
+   "chambre": "bedroom",
+   "sous": "under",
+   "lit": "bed",
+   "derrière": "behind",
+   "canapé": "sofa",
+   "rien": "nothing",
+   "inquiète": "worried",
+   "sort": "goes out",
+   "pleut": "rains (il pleut: it is raining)",
+   "froid": "cold (il fait froid: it is cold; elle a froid: she is cold)",
+   "ensuite": "next, then",
+   "voisins": "neighbours",
+   "personne": "nobody (with ne)",
+   "sait": "knows",
+   "rentre": "goes back in",
+   "triste": "sad",
+   "ouvre": "opens",
+   "armoire": "wardrobe",
+   "pull": "sweater",
+   "dort": "sleeps",
+   "tranquillement": "peacefully",
+   "rit": "laughs",
+   "bras": "arms",
+   "fêter": "to celebrate",
+   "poisson": "fish"
+  },
+  "questions": [
+   {
+    "q": "Qu'est-ce qu'Emma prépare ce matin ?",
+    "a": [
+     "déjeuner"
+    ]
+   },
+   {
+    "q": "À qui Emma parle-t-elle dans la rue ?",
+    "a": [
+     "voisin"
+    ]
+   },
+   {
+    "q": "Où dort Caramel ?",
+    "a": [
+     "armoire",
+     "pull"
+    ]
+   }
+  ],
+  "notice": "Ne and pas go around the verb to say not: \"Caramel ne vient pas\". With personne (nobody) there is no pas: \"Personne ne sait où est Caramel\"."
+ },
+ {
+  "id": "fr-surprise",
+  "title": "Une surprise pour Fatou",
+  "level": "A1",
+  "text": "Aujourd'hui, c'est l'anniversaire de Fatou. Elle a trente ans. Elle habite à Dakar et elle travaille dans une banque. Le matin, elle regarde son téléphone. Il n'y a pas de message. Au bureau, ses collègues disent bonjour, mais personne ne parle de son anniversaire. À midi, Fatou mange seule. Ses amis ne téléphonent pas. Elle est un peu triste. Le soir, elle rentre chez elle à pied. Elle ouvre la porte de son appartement. Tout est noir. Soudain, la lumière s'allume. « Joyeux anniversaire ! » crient ses amis. Sa sœur et ses collègues sont là aussi. Sur la table, il y a un grand gâteau au chocolat et des jus de fruits. Fatou rit et elle pleure en même temps. C'est le plus beau jour de l'année.",
+  "gloss": {
+   "aujourd'hui": "today",
+   "anniversaire": "birthday",
+   "trente": "thirty",
+   "travaille": "works",
+   "banque": "bank",
+   "bureau": "office",
+   "collègues": "colleagues",
+   "disent": "say",
+   "personne": "nobody (with ne)",
+   "midi": "noon",
+   "seule": "alone",
+   "téléphonent": "phone, call",
+   "peu": "little (un peu: a little)",
+   "triste": "sad",
+   "soir": "evening",
+   "rentre": "goes home",
+   "pied": "foot (à pied: on foot)",
+   "ouvre": "opens",
+   "noir": "dark, black",
+   "soudain": "suddenly",
+   "lumière": "light",
+   "allume": "comes on (s'allumer)",
+   "joyeux": "happy",
+   "crient": "shout",
+   "sœur": "sister",
+   "gâteau": "cake",
+   "jus": "juice",
+   "rit": "laughs",
+   "pleure": "cries",
+   "même": "same (en même temps: at the same time)",
+   "beau": "beautiful (le plus beau jour: the best day)",
+   "année": "year"
+  },
+  "questions": [
+   {
+    "q": "Où travaille Fatou ?",
+    "a": [
+     "banque"
+    ]
+   },
+   {
+    "q": "Comment Fatou rentre-t-elle chez elle le soir ?",
+    "a": [
+     "pied"
+    ]
+   },
+   {
+    "q": "Qu'est-ce qu'il y a sur la table ?",
+    "a": [
+     "gâteau",
+     "jus"
+    ]
+   }
+  ],
+  "notice": "Il y a means there is or there are: \"il y a un grand gâteau\". In the negative, un, une and des become de: \"Il n'y a pas de message\"."
+ },
+ {
+  "id": "fr-taxi",
+  "title": "Le téléphone oublié",
+  "level": "A2",
+  "text": "Samedi soir, Karim est arrivé à Montréal pour passer une semaine chez son cousin Samuel. À l'aéroport, il a pris un taxi. Il était fatigué après son long voyage, mais le chauffeur était sympathique et ils ont parlé de hockey pendant tout le trajet. Devant l'immeuble de Samuel, Karim a payé, il a pris sa valise et il est descendu. Le taxi est reparti tout de suite. Dans l'ascenseur, Karim a cherché son téléphone dans ses poches. Rien. Alors il a compris : son téléphone était encore dans le taxi. Chez Samuel, il a appelé son propre numéro avec le téléphone de son cousin. Après quelques secondes, quelqu'un a répondu. C'était le chauffeur. « Ne vous inquiétez pas, j'arrive dans vingt minutes », a-t-il dit. Il est revenu et il a refusé l'argent que Karim voulait lui donner. Alors Samuel est descendu avec trois cafés bien chauds. Ils les ont bus ensemble sur le trottoir, sous la neige.",
+  "gloss": {
+   "passer": "to spend (time)",
+   "aéroport": "airport",
+   "fatigué": "tired",
+   "voyage": "journey",
+   "chauffeur": "driver",
+   "sympathique": "friendly",
+   "trajet": "ride, journey",
+   "immeuble": "apartment building",
+   "payé": "paid",
+   "valise": "suitcase",
+   "descendu": "got out; come down",
+   "reparti": "driven off again",
+   "suite": "tout de suite: right away",
+   "ascenseur": "lift, elevator",
+   "cherché": "looked for",
+   "poches": "pockets",
+   "rien": "nothing",
+   "compris": "understood",
+   "encore": "still",
+   "propre": "own",
+   "numéro": "number",
+   "quelques": "a few",
+   "répondu": "answered",
+   "inquiétez": "worry (ne vous inquiétez pas: don't worry)",
+   "revenu": "come back",
+   "refusé": "refused",
+   "argent": "money",
+   "chauds": "hot",
+   "bus": "drunk (past participle of boire)",
+   "ensemble": "together",
+   "trottoir": "pavement, sidewalk",
+   "neige": "snow"
+  },
+  "questions": [
+   {
+    "q": "De quel sport Karim et le chauffeur ont-ils parlé ?",
+    "a": [
+     "hockey"
+    ]
+   },
+   {
+    "q": "Où était resté le téléphone de Karim ?",
+    "a": [
+     "taxi"
+    ]
+   },
+   {
+    "q": "Qu'est-ce que le chauffeur a refusé ?",
+    "a": [
+     "argent"
+    ]
+   }
+  ],
+  "notice": "Verbs of movement such as arriver, descendre and revenir form the passé composé with être, not avoir: \"Karim est arrivé à Montréal\", \"Il est revenu\"."
+ },
+ {
+  "id": "fr-premier-jour",
+  "title": "Le premier jour d'Inès",
+  "level": "A2",
+  "text": "Lundi matin, Inès a commencé son nouveau travail dans une agence de voyages à Lausanne. Elle avait peur d'être en retard, alors elle est partie très tôt. Résultat : elle est arrivée une heure avant tout le monde, et la porte était fermée à clé. Il pleuvait. Elle a attendu dehors, sous son parapluie. Enfin, une femme est arrivée à vélo avec un sac de croissants. Elle a souri et elle a ouvert la porte. Les deux femmes ont bu un café ensemble. Inès a expliqué qu'elle était très nerveuse et qu'elle dormait mal depuis une semaine. La femme l'a écoutée gentiment. À neuf heures, les autres employés sont arrivés. Ils ont tous salué la femme au vélo : c'était la directrice de l'agence. Inès est devenue toute rouge. La directrice a ri. « Tout va bien, a-t-elle dit. Moi aussi, j'ai très mal dormi avant mon premier jour ici. »",
+  "gloss": {
+   "commencé": "started",
+   "agence": "agency (agence de voyages: travel agency)",
+   "voyages": "trips, travel",
+   "peur": "fear (avoir peur: to be afraid)",
+   "retard": "delay (en retard: late)",
+   "alors": "so",
+   "partie": "left (partir: to leave)",
+   "tôt": "early",
+   "résultat": "result",
+   "fermée": "closed (fermée à clé: locked)",
+   "clé": "key",
+   "pleuvait": "it was raining",
+   "attendu": "waited",
+   "dehors": "outside",
+   "parapluie": "umbrella",
+   "enfin": "at last",
+   "vélo": "bicycle",
+   "sac": "bag",
+   "souri": "smiled",
+   "ouvert": "opened",
+   "ensemble": "together",
+   "expliqué": "explained",
+   "nerveuse": "nervous",
+   "dormait": "was sleeping",
+   "écoutée": "listened to",
+   "gentiment": "kindly",
+   "employés": "employees",
+   "salué": "greeted",
+   "directrice": "director, manager (a woman)",
+   "devenue": "become, turned",
+   "rouge": "red",
+   "ri": "laughed",
+   "dormi": "slept"
+  },
+  "questions": [
+   {
+    "q": "Dans quel genre d'agence Inès travaille-t-elle ?",
+    "a": [
+     "voyage"
+    ]
+   },
+   {
+    "q": "Qu'est-ce que la femme à vélo avait dans son sac ?",
+    "a": [
+     "croissants"
+    ]
+   },
+   {
+    "q": "Qui était vraiment la femme au vélo ?",
+    "a": [
+     "directrice"
+    ]
+   }
+  ],
+  "notice": "The imparfait sets the scene and the passé composé says what happened: \"Il pleuvait\" is the background, \"une femme est arrivée à vélo\" is the event."
+ },
+ {
+  "id": "fr-gateau",
+  "title": "Le gâteau raté",
+  "level": "A2",
+  "text": "Dimanche dernier, à Toulouse, Hugo a invité les parents de sa copine Manon pour la première fois. Il voulait faire bonne impression, alors il a préparé un gâteau au chocolat. Il a suivi la recette : de la farine, des œufs, du beurre, du chocolat et du sucre. Après le repas, Hugo a servi le dessert, très fier de lui. Le père de Manon a goûté le premier. Il a fait une drôle de tête, mais il n'a rien dit. Manon a goûté à son tour et elle a éclaté de rire. Dans le gâteau, il y avait du sel à la place du sucre ! Hugo voulait disparaître sous la table. Heureusement, la mère de Manon a eu une idée. « Il y a un bon glacier au coin de la rue et je vous invite », a-t-elle dit. Ils ont mangé des glaces au soleil, et tout le monde a oublié le gâteau raté. Enfin, presque : Manon en parle encore à chaque anniversaire.",
+  "gloss": {
+   "dernier": "last",
+   "invité": "invited",
+   "copine": "girlfriend",
+   "impression": "faire bonne impression: to make a good impression",
+   "alors": "so",
+   "gâteau": "cake",
+   "suivi": "followed",
+   "recette": "recipe",
+   "farine": "flour",
+   "œufs": "eggs",
+   "beurre": "butter",
+   "sucre": "sugar",
+   "repas": "meal",
+   "servi": "served",
+   "fier": "proud",
+   "goûté": "tasted",
+   "drôle": "funny, odd (une drôle de tête: a strange face)",
+   "tête": "head; face, expression",
+   "tour": "turn (à son tour: in her turn)",
+   "éclaté": "burst (éclater de rire: to burst out laughing)",
+   "rire": "laughter",
+   "sel": "salt",
+   "place": "place (à la place de: instead of)",
+   "disparaître": "to disappear",
+   "heureusement": "luckily",
+   "glacier": "ice-cream shop",
+   "coin": "corner",
+   "invite": "invite (je vous invite: it's my treat)",
+   "glaces": "ice creams",
+   "soleil": "sun",
+   "oublié": "forgotten",
+   "raté": "failed, ruined",
+   "presque": "almost",
+   "encore": "still",
+   "chaque": "every"
+  },
+  "questions": [
+   {
+    "q": "Qui Hugo a-t-il invité dimanche dernier ?",
+    "a": [
+     "parents"
+    ]
+   },
+   {
+    "q": "Qu'est-ce qu'il y avait dans le gâteau à la place du sucre ?",
+    "a": [
+     "sel"
+    ]
+   },
+   {
+    "q": "Qu'est-ce que tout le monde a mangé à la fin ?",
+    "a": [
+     "glace"
+    ]
+   }
+  ],
+  "notice": "Du, de la and des mean some, for things you do not count: \"de la farine\", \"du beurre\". But in \"à la place du sucre\", du is simply de + le: instead of the sugar."
+ },
+ {
+  "id": "fr-voisin",
+  "title": "Le voisin du dessus",
+  "level": "B1",
+  "text": "J'habitais alors à Nantes, au deuxième étage d'un vieil immeuble très calme. Mais depuis que le nouveau voisin s'était installé au-dessus de chez moi, je ne dormais plus. Tous les soirs, vers dix heures, j'entendais des coups au plafond, comme si quelqu'un tapait du pied. J'ai d'abord essayé les bouchons d'oreilles, sans succès. Au bout de deux semaines, j'étais tellement en colère que j'ai écrit un mot très sec pour le glisser sous sa porte. Puis j'ai changé d'avis : il valait mieux lui parler en face. Je suis monté et j'ai sonné. Un homme d'une soixantaine d'années m'a ouvert, essoufflé, des chaussures de claquettes aux pieds. Il m'a expliqué en rougissant qu'il apprenait à danser pour faire une surprise à sa fille le jour de son mariage. Ma colère est tombée d'un coup. Nous avons trouvé un arrangement : il s'entraînerait avant huit heures du soir, sur un vieux tapis. Trois mois plus tard, il est venu me montrer la vidéo du mariage. Il dansait comme s'il avait fait ça toute sa vie, et sa fille pleurait de joie.",
+  "gloss": {
+   "alors": "at that time",
+   "étage": "floor, storey",
+   "immeuble": "apartment building",
+   "voisin": "neighbour",
+   "installé": "moved in (s'installer)",
+   "dessus": "au-dessus de: above",
+   "coups": "knocks, thumps",
+   "plafond": "ceiling",
+   "tapait": "was tapping (taper du pied: to tap one's foot)",
+   "essayé": "tried",
+   "bouchons": "plugs (bouchons d'oreilles: earplugs)",
+   "oreilles": "ears",
+   "bout": "end (au bout de: after)",
+   "tellement": "so",
+   "colère": "anger (en colère: angry)",
+   "mot": "note; word",
+   "sec": "curt (literally: dry)",
+   "glisser": "to slip, to slide",
+   "avis": "opinion (changer d'avis: to change one's mind)",
+   "valait": "il valait mieux: it was better to",
+   "face": "en face: face to face",
+   "sonné": "rung the bell",
+   "soixantaine": "about sixty",
+   "essoufflé": "out of breath",
+   "claquettes": "tap dancing",
+   "rougissant": "blushing",
+   "mariage": "wedding",
+   "tombée": "fallen (here: vanished)",
+   "coup": "d'un coup: all at once",
+   "arrangement": "agreement",
+   "entraînerait": "would practise (s'entraîner)",
+   "tapis": "rug, carpet",
+   "montrer": "to show",
+   "pleurait": "was crying",
+   "joie": "joy"
+  },
+  "questions": [
+   {
+    "q": "Vers quelle heure le narrateur entendait-il des coups au plafond ?",
+    "a": [
+     "dix",
+     "10"
+    ]
+   },
+   {
+    "q": "Qu'est-ce que le voisin apprenait à faire ?",
+    "a": [
+     "danse",
+     "claquettes"
+    ]
+   },
+   {
+    "q": "Qu'est-ce que le voisin est venu montrer trois mois plus tard ?",
+    "a": [
+     "vidéo"
+    ]
+   }
+  ],
+  "notice": "Comme si (as if) takes the imparfait or the plus-que-parfait, never the conditional: \"comme si quelqu'un tapait du pied\", \"comme s'il avait fait ça toute sa vie\"."
+ },
+ {
+  "id": "fr-randonnee",
+  "title": "Brouillard sur la montagne",
+  "level": "B1",
+  "text": "L'été dernier, mon ami Julien et moi avons voulu monter jusqu'à un lac des Pyrénées dont tout le monde nous avait parlé. La météo annonçait des nuages pour l'après-midi, mais nous étions sûrs de redescendre avant. Nous sommes partis trop tard, et nous avons encore perdu une heure à prendre des photos. Vers trois heures, un brouillard épais est tombé sur la montagne. En quelques minutes, on ne voyait plus le sentier, et nos téléphones n'avaient pas de réseau. Julien voulait continuer, moi je préférais attendre. Nous commencions à nous disputer quand nous avons entendu des cloches. Un berger est apparu avec son chien et une centaine de moutons. Il n'avait pas l'air surpris de nous trouver là. Il nous a conduits à sa cabane, où il nous a servi une soupe brûlante. Nous avons dormi par terre, serrés dans des couvertures. Le lendemain, le ciel était parfaitement bleu. En sortant, nous avons découvert que le lac était juste derrière la cabane, à cinq minutes de marche. Depuis, je regarde toujours la météo deux fois avant de partir.",
+  "gloss": {
+   "été": "summer",
+   "lac": "lake",
+   "dont": "about which, of which",
+   "météo": "weather forecast",
+   "annonçait": "was forecasting",
+   "nuages": "clouds",
+   "redescendre": "to come back down",
+   "perdu": "lost, wasted",
+   "brouillard": "fog",
+   "épais": "thick",
+   "tombé": "come down, fallen",
+   "sentier": "path, trail",
+   "réseau": "network, signal",
+   "disputer": "se disputer: to argue",
+   "cloches": "bells",
+   "berger": "shepherd",
+   "apparu": "appeared",
+   "centaine": "about a hundred",
+   "moutons": "sheep",
+   "air": "avoir l'air: to look, to seem",
+   "conduits": "led, taken",
+   "cabane": "hut",
+   "brûlante": "piping hot",
+   "terre": "ground (par terre: on the floor)",
+   "serrés": "huddled together",
+   "couvertures": "blankets",
+   "lendemain": "the next day",
+   "ciel": "sky",
+   "sortant": "going out (en sortant: on going out)",
+   "découvert": "discovered",
+   "derrière": "behind",
+   "marche": "walk, walking"
+  },
+  "questions": [
+   {
+    "q": "Dans quelles montagnes les deux amis sont-ils partis ?",
+    "a": [
+     "Pyrénées"
+    ]
+   },
+   {
+    "q": "Quel bruit ont-ils entendu dans le brouillard ?",
+    "a": [
+     "cloches"
+    ]
+   },
+   {
+    "q": "Qu'est-ce qui se trouvait juste derrière la cabane ?",
+    "a": [
+     "lac"
+    ]
+   }
+  ],
+  "notice": "A past participle with avoir agrees with a direct object placed before it: \"Il nous a conduits\" (he led us). In \"il nous a servi une soupe\", nous means to us, so servi does not change."
+ },
+ {
+  "id": "fr-avion",
+  "title": "L'avion manqué",
+  "level": "B1",
+  "text": "Margaux vit à Montréal, et son frère travaille à Dakar depuis deux ans. Au printemps, elle a enfin décidé d'aller le voir. Son voyage comprenait une nuit d'escale à Bruxelles, dans un hôtel près de l'aéroport. Mais le matin, son réveil n'a pas sonné : la batterie de son téléphone était vide. Quand elle a ouvert les yeux, l'avion décollait dans quarante minutes. Elle a couru jusqu'à la porte d'embarquement, mais il était trop tard. Le prochain vol ne partait que le lendemain. Margaux était furieuse contre elle-même. Elle a appelé son frère pour lui annoncer la mauvaise nouvelle. « Profite de ta journée, tu ne connais même pas Bruxelles », lui a-t-il répondu. C'était vrai. Elle a donc pris le train jusqu'au centre et elle a marché au hasard. Elle a mangé des frites sur un banc et visité un musée de la bande dessinée. Dans une petite rue, elle s'est arrêtée pour écouter des musiciens. Le soir, elle n'était plus du tout en colère. Dans l'avion, le lendemain, elle s'est dit qu'elle reviendrait à Bruxelles, et cette fois pour plus d'une journée.",
+  "gloss": {
+   "vit": "lives",
+   "printemps": "spring",
+   "enfin": "finally",
+   "comprenait": "included",
+   "escale": "stopover",
+   "réveil": "alarm clock",
+   "sonné": "gone off, rung",
+   "batterie": "battery",
+   "vide": "empty, flat",
+   "décollait": "was taking off",
+   "couru": "ran",
+   "embarquement": "boarding (porte d'embarquement: gate)",
+   "prochain": "next",
+   "vol": "flight",
+   "lendemain": "the next day",
+   "furieuse": "furious",
+   "contre": "against, with",
+   "même": "elle-même: herself; même pas: not even",
+   "annoncer": "to tell, to announce",
+   "nouvelle": "piece of news",
+   "profite": "make the most of (profiter de)",
+   "connais": "know",
+   "vrai": "true",
+   "hasard": "chance (au hasard: at random)",
+   "frites": "chips, fries",
+   "banc": "bench",
+   "bande": "strip (bande dessinée: comic strip)",
+   "dessinée": "drawn",
+   "arrêtée": "stopped (s'arrêter)",
+   "musiciens": "musicians",
+   "colère": "anger (en colère: angry)",
+   "reviendrait": "would come back"
+  },
+  "questions": [
+   {
+    "q": "Dans quelle ville travaille le frère de Margaux ?",
+    "a": [
+     "Dakar"
+    ]
+   },
+   {
+    "q": "Pourquoi le réveil de Margaux n'a-t-il pas sonné ?",
+    "a": [
+     "batterie",
+     "vide"
+    ]
+   },
+   {
+    "q": "Qu'est-ce que Margaux a mangé sur un banc ?",
+    "a": [
+     "frites"
+    ]
+   }
+  ],
+  "notice": "Ne ... que means only: \"Le prochain vol ne partait que le lendemain\". Ne ... plus means no longer: \"elle n'était plus du tout en colère\"."
+ },
+ {
+  "id": "fr-sucres",
+  "title": "Le temps des sucres",
+  "level": "B1",
+  "text": "Quand j'étais petite, je passais une semaine chaque printemps chez mes grands-parents, qui possédaient une érablière au sud de Québec. À cette époque de l'année, la neige fond le jour et il gèle encore la nuit : c'est le temps des sucres. Mon grand-père accrochait des seaux aux érables pour recueillir leur eau, claire et à peine sucrée. Je le suivais partout avec mes bottes trop grandes. Dans la cabane à sucre, ma grand-mère surveillait le feu pendant des heures, jusqu'à ce que l'eau devienne du sirop. Mais ce que j'attendais surtout, c'était la tire. On versait le sirop bouillant sur la neige propre et on l'enroulait autour d'un bâton avant qu'il durcisse. L'année de mes huit ans, j'ai voulu porter un seau toute seule. J'ai glissé, et l'eau de toute une matinée s'est répandue dans la neige. J'ai fondu en larmes. Mon grand-père s'est mis à rire et m'a dit que les érables en donneraient d'autres. Aujourd'hui encore, l'odeur du sirop d'érable suffit à me ramener dans cette cabane.",
+  "gloss": {
+   "printemps": "spring",
+   "possédaient": "owned",
+   "érablière": "maple grove (where maple syrup is made)",
+   "époque": "time, period",
+   "fond": "melts",
+   "gèle": "freezes",
+   "sucres": "le temps des sucres: maple sugar season (Quebec)",
+   "accrochait": "used to hang",
+   "seaux": "buckets",
+   "érables": "maple trees",
+   "recueillir": "to collect",
+   "peine": "à peine: barely",
+   "sucrée": "sweet",
+   "suivais": "followed",
+   "partout": "everywhere",
+   "bottes": "boots",
+   "cabane": "hut (cabane à sucre: sugar shack)",
+   "surveillait": "watched over",
+   "feu": "fire",
+   "devienne": "becomes (subjunctive of devenir)",
+   "sirop": "syrup",
+   "surtout": "above all",
+   "tire": "maple taffy (Quebec)",
+   "versait": "poured",
+   "bouillant": "boiling",
+   "propre": "clean",
+   "enroulait": "rolled up",
+   "autour": "around",
+   "bâton": "stick",
+   "durcisse": "hardens (subjunctive of durcir)",
+   "seau": "bucket",
+   "glissé": "slipped",
+   "répandue": "spilled",
+   "fondu": "melted (fondre en larmes: to burst into tears)",
+   "larmes": "tears",
+   "mis": "put (se mettre à: to start)",
+   "donneraient": "would give",
+   "odeur": "smell",
+   "érable": "maple",
+   "suffit": "is enough",
+   "ramener": "to bring back"
+  },
+  "questions": [
+   {
+    "q": "En quelle saison la narratrice allait-elle chez ses grands-parents ?",
+    "a": [
+     "printemps"
+    ]
+   },
+   {
+    "q": "Sur quoi versait-on le sirop pour faire la tire ?",
+    "a": [
+     "neige"
+    ]
+   },
+   {
+    "q": "Qu'est-ce que la narratrice a voulu porter toute seule ?",
+    "a": [
+     "seau"
+    ]
+   }
+  ],
+  "notice": "Jusqu'à ce que (until) and avant que (before) are followed by the subjunctive: \"jusqu'à ce que l'eau devienne du sirop\", \"avant qu'il durcisse\"."
+ },
+ {
+  "id": "fr-greve",
+  "title": "Un matin de grève",
+  "level": "B2",
+  "text": "Ce mardi-là, quand Sébastien est arrivé devant la station, les grilles étaient baissées. Une affiche annonçait une grève du métro pour toute la journée. Autour de lui, les gens soupiraient, téléphonaient à leur bureau ou se disputaient les rares taxis. Lui qui traversait Paris sous terre depuis douze ans, sans jamais lever les yeux de son écran, a failli rentrer chez lui. Puis il a calculé qu'il lui faudrait à peine plus d'une heure à pied, et il s'est mis en route, de mauvaise humeur. Il a d'abord marché vite, comme s'il était encore pressé. Mais à mesure qu'il avançait, son pas ralentissait. À dix minutes de chez lui, il a découvert un marché dont il ignorait l'existence, et il s'est arrêté pour acheter des clémentines. Plus loin, il a longé le canal, qu'il ne connaissait que par son nom sur le plan. Dans une cour pavée, un luthier travaillait, la fenêtre grande ouverte. Quand il est enfin arrivé au bureau, en retard mais de bonne humeur, ses collègues se plaignaient encore de leur trajet. Sébastien, lui, n'a rien dit. Bien que le trafic ait repris normalement dès le lendemain, il a gardé l'habitude de descendre trois stations plus tôt. Il prétend que c'est pour sa santé, mais il sait bien que ce n'est pas la seule raison.",
+  "gloss": {
+   "grilles": "gates, shutters",
+   "baissées": "lowered, pulled down",
+   "affiche": "notice, poster",
+   "annonçait": "announced",
+   "grève": "strike",
+   "autour": "around",
+   "soupiraient": "were sighing",
+   "disputaient": "se disputer: to fight over",
+   "rares": "few, scarce",
+   "traversait": "had been crossing",
+   "terre": "ground (sous terre: underground)",
+   "lever": "to raise",
+   "écran": "screen",
+   "failli": "nearly did (faillir)",
+   "calculé": "worked out",
+   "faudrait": "il lui faudrait: he would need",
+   "peine": "à peine: barely",
+   "route": "road (se mettre en route: to set off)",
+   "humeur": "mood",
+   "pressé": "in a hurry",
+   "mesure": "à mesure que: as",
+   "avançait": "went along",
+   "pas": "step, pace (son pas); elsewhere: not",
+   "ralentissait": "was slowing down",
+   "ignorait": "did not know of",
+   "clémentines": "clementines (small oranges)",
+   "longé": "walked along",
+   "plan": "map",
+   "cour": "courtyard",
+   "pavée": "cobbled",
+   "luthier": "maker of violins and guitars",
+   "retard": "en retard: late",
+   "plaignaient": "were complaining (se plaindre)",
+   "trajet": "journey, commute",
+   "bien": "bien que: although; il sait bien: he knows very well",
+   "trafic": "traffic, service",
+   "repris": "resumed",
+   "dès": "from, as early as",
+   "lendemain": "the next day",
+   "gardé": "kept",
+   "habitude": "habit",
+   "prétend": "claims",
+   "santé": "health",
+   "raison": "reason"
+  },
+  "questions": [
+   {
+    "q": "Pourquoi les grilles de la station étaient-elles baissées ce mardi-là ?",
+    "a": [
+     "grève"
+    ]
+   },
+   {
+    "q": "Qu'est-ce que Sébastien a acheté au marché ?",
+    "a": [
+     "clémentines"
+    ]
+   },
+   {
+    "q": "Combien de stations plus tôt descend-il désormais ?",
+    "a": [
+     "trois",
+     "3"
+    ]
+   }
+  ],
+  "notice": "A stressed pronoun (moi, lui, elle) adds contrast or emphasis: \"Lui qui traversait Paris sous terre\", \"Sébastien, lui, n'a rien dit\" (he, unlike the others, said nothing)."
+ },
+ {
+  "id": "fr-photo",
+  "title": "La photo au fond du carton",
+  "level": "B2",
+  "text": "Un dimanche de septembre, en flânant sur une brocante à Liège, Antoine a acheté pour presque rien un carton de vieilles cartes postales. Au fond se trouvait une photographie en noir et blanc : un boulanger en tablier, debout devant sa boutique, entouré de trois enfants. Antoine allait la reposer lorsqu'un détail l'a frappé. La façade, avec sa porte étroite et son balcon en fer, était celle de l'immeuble où il vivait depuis cinq ans. Au dos, quelqu'un avait écrit à l'encre un nom de famille et une date. Intrigué, il a interrogé les plus anciens habitants de la rue, puis consulté les archives de la ville. Il a fini par retrouver la petite-fille du boulanger, une institutrice à la retraite qui habitait à deux rues de là. Quand il lui a tendu la photographie, elle est restée longtemps silencieuse. Elle n'avait jamais vu son grand-père aussi jeune, car la famille avait tout perdu dans un incendie. Elle lui a raconté l'odeur du pain à cinq heures du matin et les files d'attente du dimanche. Antoine a tenu à ce qu'elle garde la photographie. Depuis, chaque fois qu'il pousse la porte de son immeuble, il pense à tous ceux qui l'ont poussée avant lui.",
+  "gloss": {
+   "flânant": "strolling (flâner)",
+   "brocante": "flea market",
+   "presque": "almost (pour presque rien: for next to nothing)",
+   "carton": "cardboard box",
+   "cartes": "cards (cartes postales: postcards)",
+   "fond": "bottom",
+   "trouvait": "se trouvait: lay, was",
+   "boulanger": "baker",
+   "tablier": "apron",
+   "debout": "standing",
+   "boutique": "shop",
+   "entouré": "surrounded",
+   "reposer": "to put back",
+   "frappé": "struck",
+   "façade": "front (of a building)",
+   "étroite": "narrow",
+   "fer": "iron",
+   "celle": "the one",
+   "immeuble": "apartment building",
+   "dos": "back",
+   "encre": "ink",
+   "intrigué": "intrigued, curious",
+   "interrogé": "questioned",
+   "anciens": "oldest, longest-standing",
+   "habitants": "residents",
+   "consulté": "looked through",
+   "archives": "records",
+   "fini": "ended (finir par: to end up doing)",
+   "retrouver": "to track down",
+   "petite": "petite-fille: granddaughter",
+   "institutrice": "primary school teacher",
+   "retraite": "retirement (à la retraite: retired)",
+   "tendu": "held out",
+   "restée": "remained",
+   "silencieuse": "silent",
+   "incendie": "fire",
+   "raconté": "told about",
+   "odeur": "smell",
+   "files": "lines (files d'attente: queues)",
+   "attente": "waiting",
+   "tenu": "tenir à ce que: to insist that",
+   "garde": "keep (subjunctive)",
+   "pousse": "pushes",
+   "ceux": "those",
+   "poussée": "pushed"
+  },
+  "questions": [
+   {
+    "q": "Dans quelle ville se trouvait la brocante ?",
+    "a": [
+     "Liège"
+    ]
+   },
+   {
+    "q": "Quel était le métier de l'homme sur la photographie ?",
+    "a": [
+     "boulanger"
+    ]
+   },
+   {
+    "q": "Dans quel événement la famille avait-elle tout perdu ?",
+    "a": [
+     "incendie"
+    ]
+   }
+  ],
+  "notice": "The plus-que-parfait (avait or était + past participle) marks what had already happened before the main past events: \"quelqu'un avait écrit\", \"la famille avait tout perdu\"."
+ },
+ {
+  "id": "fr-campagne",
+  "title": "Quitter la ville",
+  "level": "B2",
+  "text": "Après quinze ans à Paris, Clémence et Mathieu rêvaient de silence et d'espace. Ils ont donc vendu leur deux-pièces pour acheter une ancienne ferme dans un hameau de la Creuse. Les premières semaines ont ressemblé à des vacances. Puis l'hiver est arrivé, et avec lui les difficultés auxquelles ils n'avaient pas songé. Il fallait prendre la voiture pour la moindre course, et la connexion internet tombait en panne dès qu'il pleuvait. Leurs amis parisiens, qui avaient promis de venir, ne donnaient plus de nouvelles. Certains soirs, Clémence se demandait s'ils n'avaient pas commis une erreur. Tout a changé le jour où une voisine leur a demandé de l'aide pour préparer la fête du village. Mathieu a monté des tables et Clémence a tenu le stand de crêpes. Ils ont dansé jusqu'à minuit avec des gens dont ils ne connaissaient même pas le nom la veille. Dès lors, on les a salués à la boulangerie, on leur a apporté des œufs, on leur a prêté une tronçonneuse. Ils ne prétendent pas pour autant que la campagne vaille mieux que la ville. Le théâtre leur manque, et ils montent à Paris une fois par mois. Mais ils ont compris qu'on ne s'installe pas quelque part en achetant une maison : il faut encore y trouver sa place.",
+  "gloss": {
+   "rêvaient": "dreamed",
+   "espace": "space",
+   "vendu": "sold",
+   "pièces": "rooms (un deux-pièces: a two-room flat)",
+   "ancienne": "former, old",
+   "ferme": "farm",
+   "hameau": "hamlet",
+   "ressemblé": "been like",
+   "hiver": "winter",
+   "auxquelles": "of which, to which",
+   "songé": "thought (songer à: to think of)",
+   "fallait": "il fallait: one had to",
+   "moindre": "slightest",
+   "course": "errand",
+   "panne": "breakdown (tomber en panne: to stop working)",
+   "dès": "dès que: as soon as; dès lors: from then on",
+   "pleuvait": "rained",
+   "parisiens": "from Paris",
+   "promis": "promised",
+   "nouvelles": "news (donner des nouvelles: to be in touch)",
+   "certains": "some",
+   "demandait": "se demander: to wonder",
+   "commis": "made, committed",
+   "erreur": "mistake",
+   "voisine": "neighbour",
+   "aide": "help",
+   "monté": "set up",
+   "tenu": "run, looked after",
+   "stand": "stall",
+   "crêpes": "pancakes",
+   "minuit": "midnight",
+   "dont": "whose, of whom",
+   "veille": "the day before",
+   "salués": "greeted",
+   "apporté": "brought",
+   "œufs": "eggs",
+   "prêté": "lent",
+   "tronçonneuse": "chainsaw",
+   "prétendent": "claim",
+   "autant": "pour autant: for all that",
+   "campagne": "countryside",
+   "vaille": "subjunctive of valoir (valoir mieux: to be better)",
+   "manque": "leur manque: they miss it",
+   "montent": "go up (monter à Paris: to travel up to Paris)",
+   "installe": "s'installer: to settle",
+   "part": "quelque part: somewhere",
+   "achetant": "buying",
+   "place": "place (trouver sa place: to find where one belongs)"
+  },
+  "questions": [
+   {
+    "q": "Qu'est-ce que Clémence et Mathieu ont acheté dans la Creuse ?",
+    "a": [
+     "ferme"
+    ]
+   },
+   {
+    "q": "Quel stand Clémence a-t-elle tenu à la fête du village ?",
+    "a": [
+     "crêpes"
+    ]
+   },
+   {
+    "q": "Qu'est-ce qui leur manque à la campagne ?",
+    "a": [
+     "théâtre"
+    ]
+   }
+  ],
+  "notice": "A relative pronoun carries the preposition its verb needs. Songer à gives \"auxquelles ils n'avaient pas songé\"; le nom de gives \"dont ils ne connaissaient même pas le nom\"."
+ },
+ {
+  "id": "fr-lenteur",
+  "title": "Éloge de la lenteur",
+  "level": "C1",
+  "text": "Longtemps, j'ai voyagé comme on coche les cases d'une liste. Trois jours ici, une nuit là, et toujours l'avion du retour qui dictait sa loi. Je revenais avec des centaines de photos et le sentiment confus de n'avoir rien vu. Il a fallu qu'une amie me propose de descendre la Loire à vélo, d'Orléans jusqu'à l'océan, pour que je comprenne ce qui me manquait. J'ai d'abord protesté. Mettre deux semaines pour parcourir ce qu'un train avale en trois heures me paraissait absurde. Les premiers jours, je consultais sans cesse le compteur, agacé par notre lenteur. Puis, sans que je m'en aperçoive, quelque chose a cédé. À force de longer le fleuve, j'ai appris à reconnaître ses bancs de sable, ses hérons immobiles, sa lumière qui change d'heure en heure. Nous nous arrêtions pour un rien. Un maraîcher tenait à nous faire goûter ses fraises, une averse nous retenait sous un porche. Un soir, nous avons longuement parlé avec un pêcheur qui n'avait jamais quitté son village et n'en éprouvait nul regret. Quoique nous n'ayons parcouru que quelques centaines de kilomètres, j'ai eu l'impression d'aller plus loin que lors de n'importe quel vol. C'est que la lenteur n'est pas du temps perdu. Elle rend au paysage son épaisseur, et au voyageur le droit de s'ennuyer, de se tromper de route, de changer d'avis. Non qu'il faille renoncer aux destinations lointaines, mais encore faudrait-il s'y rendre autrement qu'en consommateur pressé. Depuis ce voyage, je ne demande plus aux gens combien de pays ils ont visités, mais combien de temps ils ont pris pour regarder.",
+  "gloss": {
+   "coche": "ticks (cocher une case: to tick a box)",
+   "cases": "boxes",
+   "dictait": "dictated (dicter sa loi: to lay down the law)",
+   "confus": "vague",
+   "fallu": "il a fallu que: it took",
+   "comprenne": "understand (subjunctive of comprendre)",
+   "parcourir": "to cover, to travel",
+   "avale": "swallows",
+   "cesse": "sans cesse: constantly",
+   "compteur": "speedometer, odometer",
+   "agacé": "irritated",
+   "lenteur": "slowness",
+   "aperçoive": "notice (subjunctive of s'apercevoir)",
+   "cédé": "given way",
+   "force": "à force de: by dint of",
+   "longer": "to follow, to go along",
+   "fleuve": "river (one that reaches the sea)",
+   "bancs": "banks (bancs de sable: sandbanks)",
+   "hérons": "herons",
+   "rien": "nothing; pour un rien: for the slightest thing",
+   "maraîcher": "market gardener",
+   "tenait": "tenir à: to insist on",
+   "fraises": "strawberries",
+   "averse": "shower (of rain)",
+   "retenait": "kept, held back",
+   "porche": "porch",
+   "pêcheur": "fisherman",
+   "éprouvait": "felt",
+   "nul": "no (literary, with ne)",
+   "quoique": "although",
+   "ayons": "have (subjunctive of avoir)",
+   "parcouru": "covered",
+   "lors": "lors de: during",
+   "importe": "n'importe quel: any",
+   "rend": "gives back",
+   "épaisseur": "thickness, depth",
+   "ennuyer": "s'ennuyer: to be bored",
+   "tromper": "se tromper de route: to take the wrong road",
+   "avis": "changer d'avis: to change one's mind",
+   "faille": "subjunctive of falloir (non qu'il faille: not that one must)",
+   "renoncer": "to give up",
+   "lointaines": "distant",
+   "encore": "encore faudrait-il: but one would still have to",
+   "rendre": "se rendre: to go",
+   "consommateur": "consumer",
+   "pressé": "hurried"
+  },
+  "questions": [
+   {
+    "q": "De quelle ville le narrateur et son amie sont-ils partis à vélo ?",
+    "a": [
+     "Orléans"
+    ]
+   },
+   {
+    "q": "Qu'est-ce que le maraîcher tenait à leur faire goûter ?",
+    "a": [
+     "fraises"
+    ]
+   },
+   {
+    "q": "Selon le narrateur, qu'est-ce que la lenteur rend au paysage ?",
+    "a": [
+     "épaisseur"
+    ]
+   }
+  ],
+  "notice": "Sans que and quoique are always followed by the subjunctive: \"sans que je m'en aperçoive\", \"Quoique nous n'ayons parcouru\". So are pour que and non que in the same text."
+ },
+ {
+  "id": "fr-carnets",
+  "title": "Les carnets d'Odile",
+  "level": "C1",
+  "text": "À la mort de ma grand-tante Odile, nous avons trouvé dans son appartement de Namur une armoire remplie de carnets. Il y en avait un par année, soigneusement daté, depuis ses dix-sept ans. Je m'attendais à des confidences, voire à quelque secret de famille. Or ces pages ne contenaient presque rien de remarquable : le temps qu'il faisait, le prix du beurre, une visite, une phrase entendue au marché. Et pourtant, à mesure que je lisais, cette vie minuscule prenait un relief que nulle photographie n'aurait su lui donner. On y voyait une écriture ferme se mettre peu à peu à trembler. Des mots étaient rayés, puis repris, comme si la pensée hésitait encore sous mes yeux. J'ai compris alors pourquoi tant de gens s'obstinent à écrire à la main, bien que leurs téléphones leur offrent des outils autrement plus commodes. Le papier impose une lenteur qui oblige à choisir. Il ne réclame ni mot de passe ni approbation, et nul ne viendra compter ses lecteurs. Surtout, il conserve les ratures, alors que l'écran efface nos repentirs sans laisser la moindre trace. Je ne suis pas sûr qu'Odile ait jamais songé à être lue. Peut-être écrivait-elle simplement pour que ses journées ne s'évanouissent pas tout à fait. Quoi qu'il en soit, j'ai acheté le lendemain un carnet à couverture noire. Je n'y note rien d'extraordinaire, et il m'arrive de sauter une semaine. Mais pour peu que je le rouvre au hasard, j'y retrouve un homme que j'avais déjà oublié, et qui pourtant était moi.",
+  "gloss": {
+   "tante": "aunt (grand-tante: great-aunt)",
+   "remplie": "filled",
+   "carnets": "notebooks",
+   "soigneusement": "carefully",
+   "attendais": "je m'attendais à: I was expecting",
+   "confidences": "secrets, confessions",
+   "voire": "or even",
+   "quelque": "some",
+   "or": "yet, but in fact",
+   "pourtant": "yet",
+   "mesure": "à mesure que: as",
+   "minuscule": "tiny",
+   "relief": "depth, sharpness",
+   "nulle": "no (literary, with ne)",
+   "su": "n'aurait su: could not have",
+   "écriture": "handwriting",
+   "ferme": "firm",
+   "rayés": "crossed out",
+   "repris": "taken up again, rewritten",
+   "tant": "so many",
+   "obstinent": "s'obstiner à: to persist in",
+   "bien": "bien que: although",
+   "autrement": "autrement plus: far more",
+   "commodes": "convenient",
+   "lenteur": "slowness",
+   "réclame": "demands",
+   "passe": "mot de passe: password",
+   "approbation": "approval",
+   "nul": "nobody (literary, with ne)",
+   "ratures": "crossings-out",
+   "efface": "erases",
+   "repentirs": "second thoughts, corrections (a painter's word)",
+   "moindre": "slightest",
+   "songé": "thought of, dreamed of",
+   "lue": "read (past participle of lire)",
+   "évanouissent": "s'évanouir: to vanish",
+   "fait": "tout à fait: completely",
+   "soit": "quoi qu'il en soit: be that as it may",
+   "couverture": "cover",
+   "arrive": "il m'arrive de: I sometimes",
+   "sauter": "to skip",
+   "peu": "peu à peu: little by little; pour peu que: if ever",
+   "rouvre": "reopen",
+   "hasard": "au hasard: at random"
+  },
+  "questions": [
+   {
+    "q": "Dans quelle ville se trouvait l'appartement d'Odile ?",
+    "a": [
+     "Namur"
+    ]
+   },
+   {
+    "q": "Quel prix Odile notait-elle dans ses carnets ?",
+    "a": [
+     "beurre"
+    ]
+   },
+   {
+    "q": "De quelle couleur est la couverture du carnet acheté par le narrateur ?",
+    "a": [
+     "noire"
+    ]
+   }
+  ],
+  "notice": "Nul (nulle) is a literary way to say no or nobody. It goes with ne and never with pas: \"nulle photographie n'aurait su lui donner\", \"nul ne viendra compter ses lecteurs\"."
+ },
  {
   "id": "fr-d-boulangerie",
   "title": "À la boulangerie",
   "level": "A1",
-  "roles": ["La boulangère", "Le client"],
+  "roles": [
+   "La boulangère",
+   "Le client"
+  ],
   "lines": [
-   [0, "Bonjour monsieur ! Vous désirez ?"],
-   [1, "Bonjour madame. Je voudrais une baguette, s'il vous plaît."],
-   [0, "Voilà. Et avec ceci ?"],
-   [1, "Je voudrais aussi deux croissants."],
-   [0, "Je suis désolée, il n'y a plus de croissants ce matin. Mais j'ai des pains au chocolat tout chauds."],
-   [1, "D'accord. Alors deux pains au chocolat, s'il vous plaît."],
-   [0, "Très bien. Ce sera tout ?"],
-   [1, "Oui, c'est tout, merci. Ça fait combien ?"],
-   [0, "Ça fait trois euros cinquante."],
-   [1, "Je peux payer par carte ?"],
-   [0, "Bien sûr. Voilà, merci. Bonne journée, monsieur !"],
-   [1, "Merci, madame. Au revoir et bonne journée !"]
+   [
+    0,
+    "Bonjour monsieur ! Vous désirez ?"
+   ],
+   [
+    1,
+    "Bonjour madame. Je voudrais une baguette, s'il vous plaît."
+   ],
+   [
+    0,
+    "Voilà. Et avec ceci ?"
+   ],
+   [
+    1,
+    "Je voudrais aussi un croissant."
+   ],
+   [
+    0,
+    "Je suis désolée, il n'y a plus de croissants ce matin. Mais j'ai des pains au chocolat tout chauds."
+   ],
+   [
+    1,
+    "D'accord. Alors un pain au chocolat, s'il vous plaît."
+   ],
+   [
+    0,
+    "Très bien. Ce sera tout ?"
+   ],
+   [
+    1,
+    "Oui, c'est tout, merci. Ça fait combien ?"
+   ],
+   [
+    0,
+    "Ça fait deux euros cinquante."
+   ],
+   [
+    1,
+    "Je peux payer par carte ?"
+   ],
+   [
+    0,
+    "Bien sûr. Voilà, merci. Bonne journée, monsieur !"
+   ],
+   [
+    1,
+    "Merci, madame. Au revoir et bonne journée !"
+   ]
   ],
   "gloss": {
-   "désirez": "would like (vous désirez ? what would you like?)", "voudrais": "would like (je voudrais: I would like)",
-   "ceci": "this (et avec ceci ? anything else?)", "désolée": "sorry", "plus": "il n'y a plus de: there are no more",
-   "pains": "pains au chocolat: chocolate pastries", "chauds": "warm", "sera": "will be (ce sera tout ? will that be all?)",
-   "combien": "how much", "payer": "to pay", "carte": "card", "sûr": "sure (bien sûr: of course)", "journée": "day"
+   "désirez": "would like (vous désirez ? what would you like?)",
+   "voudrais": "would like (je voudrais: I would like)",
+   "voilà": "here you are",
+   "ceci": "this (et avec ceci ? anything else?)",
+   "aussi": "also",
+   "désolée": "sorry",
+   "plus": "il n'y a plus de: there are no more",
+   "pains": "pains au chocolat: chocolate pastries",
+   "tout": "all (c'est tout: that's all); tout chauds: nice and warm",
+   "chauds": "warm",
+   "accord": "d'accord: all right",
+   "alors": "then, so",
+   "pain": "pain au chocolat: chocolate pastry",
+   "sera": "will be (ce sera tout ? will that be all?)",
+   "fait": "ça fait: that comes to",
+   "combien": "how much",
+   "peux": "can (je peux: I can)",
+   "payer": "to pay",
+   "carte": "card",
+   "sûr": "sure (bien sûr: of course)",
+   "journée": "day (bonne journée: have a nice day)"
   },
   "questions": [
-   { "q": "Qu'est-ce que le client demande en premier ?", "a": ["baguette"] },
-   { "q": "Qu'est-ce qu'il n'y a plus ce matin à la boulangerie ?", "a": ["croissant"] }
+   {
+    "q": "Qu'est-ce que le client demande en premier ?",
+    "a": [
+     "baguette"
+    ]
+   },
+   {
+    "q": "Qu'est-ce qu'il n'y a plus ce matin à la boulangerie ?",
+    "a": [
+     "croissant"
+    ]
+   }
   ],
-  "notice": "Je voudrais (I would like) is the polite way to ask for something in a shop; je veux (I want) sounds abrupt: \"Je voudrais une baguette\", \"Je voudrais aussi deux croissants\"."
+  "notice": "Je voudrais (I would like) is the polite way to ask for something in a shop; je veux (I want) sounds abrupt: \"Je voudrais une baguette\", \"Je voudrais aussi un croissant\"."
  },
  {
   "id": "fr-d-chemin",
   "title": "Demander son chemin",
   "level": "A1",
-  "roles": ["La passante", "Le touriste"],
+  "roles": [
+   "La passante",
+   "Le touriste"
+  ],
   "lines": [
-   [1, "Excusez-moi, madame. Je cherche la gare, s'il vous plaît."],
-   [0, "La gare ? Oui, bien sûr. Vous êtes à pied ?"],
-   [1, "Oui, je suis à pied."],
-   [0, "Alors, allez tout droit jusqu'à la place. Ensuite, tournez à gauche après la pharmacie."],
-   [1, "Pardon, vous pouvez répéter plus lentement ? Je ne parle pas bien français."],
-   [0, "Bien sûr. Allez tout droit, jusqu'à la place. Puis tournez à gauche, après la pharmacie."],
-   [1, "D'accord. Tout droit, puis à droite après la pharmacie ?"],
-   [0, "Non, non, à gauche ! La gare est en face du grand hôtel."],
-   [1, "Ah, à gauche. C'est loin d'ici ?"],
-   [0, "Non, c'est à cinq minutes à pied."],
-   [1, "Merci beaucoup, madame. Bonne journée !"],
-   [0, "De rien. Bon voyage !"]
+   [
+    1,
+    "Excusez-moi, madame. Je cherche la gare, s'il vous plaît."
+   ],
+   [
+    0,
+    "La gare ? Oui, bien sûr. Vous êtes à pied ?"
+   ],
+   [
+    1,
+    "Oui, je suis à pied."
+   ],
+   [
+    0,
+    "Alors, allez tout droit jusqu'à la place. Ensuite, tournez à gauche après la pharmacie."
+   ],
+   [
+    1,
+    "Pardon, vous pouvez répéter plus lentement ? Je ne parle pas bien français."
+   ],
+   [
+    0,
+    "Bien sûr. Allez tout droit, jusqu'à la place. Puis tournez à gauche, après la pharmacie."
+   ],
+   [
+    1,
+    "D'accord. Tout droit, puis à droite après la pharmacie ?"
+   ],
+   [
+    0,
+    "Non, non, à gauche ! La gare est en face du grand hôtel."
+   ],
+   [
+    1,
+    "Ah, à gauche. C'est loin d'ici ?"
+   ],
+   [
+    0,
+    "Non, c'est à cinq minutes à pied."
+   ],
+   [
+    1,
+    "Merci beaucoup, madame. Bonne journée !"
+   ],
+   [
+    0,
+    "De rien. Bon voyage !"
+   ]
   ],
   "gloss": {
-   "cherche": "am looking for", "gare": "train station", "pied": "foot (à pied: on foot)",
-   "droit": "straight (tout droit: straight ahead)", "place": "square", "tournez": "turn", "gauche": "left",
-   "répéter": "to repeat", "lentement": "slowly", "droite": "right", "face": "en face de: opposite", "loin": "far",
-   "rien": "nothing (de rien: you're welcome)", "voyage": "trip (bon voyage: have a good trip)"
+   "cherche": "am looking for",
+   "gare": "train station",
+   "sûr": "sure (bien sûr: of course)",
+   "pied": "foot (à pied: on foot)",
+   "allez": "go",
+   "droit": "straight (tout droit: straight ahead)",
+   "place": "square (jusqu'à la place: as far as the square)",
+   "ensuite": "then, next",
+   "tournez": "turn",
+   "gauche": "left",
+   "après": "after",
+   "pouvez": "can (vous pouvez: you can)",
+   "répéter": "to repeat",
+   "plus": "more (plus lentement: more slowly)",
+   "lentement": "slowly",
+   "puis": "then",
+   "accord": "d'accord: all right",
+   "droite": "right",
+   "face": "en face de: opposite",
+   "loin": "far",
+   "ici": "here (d'ici: from here)",
+   "rien": "nothing (de rien: you're welcome)",
+   "voyage": "trip (bon voyage: have a good trip)"
   },
   "questions": [
-   { "q": "Qu'est-ce que le touriste cherche ?", "a": ["gare"] },
-   { "q": "Où faut-il tourner après la pharmacie ?", "a": ["gauche"] }
+   {
+    "q": "Qu'est-ce que le touriste cherche ?",
+    "a": [
+     "gare"
+    ]
+   },
+   {
+    "q": "Où faut-il tourner après la pharmacie ?",
+    "a": [
+     "gauche"
+    ]
+   }
   ],
   "notice": "To give directions politely, use the vous form of the verb without the word vous: \"allez tout droit jusqu'à la place\", \"tournez à gauche après la pharmacie\"."
  },
@@ -154,33 +2063,113 @@
   "id": "fr-d-voisin",
   "title": "Un nouveau voisin",
   "level": "A1",
-  "roles": ["La voisine", "Le nouveau voisin"],
+  "roles": [
+   "La voisine",
+   "Le nouveau voisin"
+  ],
   "lines": [
-   [0, "Bonjour ! Vous êtes le nouveau voisin ?"],
-   [1, "Bonjour madame. Oui, j'habite au deuxième étage depuis samedi."],
-   [0, "Bienvenue ! Moi, c'est Hélène. J'habite juste en face."],
-   [1, "Enchanté. Je m'appelle Tom."],
-   [0, "Vous avez un petit accent. Vous êtes anglais ?"],
-   [1, "Non, je suis canadien. Je viens de Toronto."],
-   [0, "Ah, le Canada ! Vous parlez très bien français."],
-   [1, "Merci, mais j'apprends encore. Je comprends mieux quand on parle lentement."],
-   [0, "Pas de problème. Et vous travaillez à Nantes ?"],
-   [1, "Oui, je travaille dans un hôpital. Je suis infirmier."],
-   [0, "Très bien. Venez prendre un café chez moi samedi, si vous voulez."],
-   [1, "Avec plaisir ! À quelle heure ?"],
-   [0, "Vers dix heures ?"],
-   [1, "Parfait. Merci beaucoup, à samedi !"]
+   [
+    0,
+    "Bonjour ! Vous êtes le nouveau voisin ?"
+   ],
+   [
+    1,
+    "Bonjour madame. Oui, j'habite ici depuis samedi."
+   ],
+   [
+    0,
+    "Bienvenue ! Moi, c'est Hélène. J'habite juste en face."
+   ],
+   [
+    1,
+    "Enchanté. Je m'appelle Tom."
+   ],
+   [
+    0,
+    "Vous avez un petit accent. Vous êtes anglais ?"
+   ],
+   [
+    1,
+    "Non, je suis canadien. Je viens de Toronto."
+   ],
+   [
+    0,
+    "Ah, le Canada ! Vous parlez très bien français."
+   ],
+   [
+    1,
+    "Merci, mais j'apprends encore. Je comprends mieux quand on parle lentement."
+   ],
+   [
+    0,
+    "Pas de problème. Et vous travaillez à Nantes ?"
+   ],
+   [
+    1,
+    "Oui, je travaille dans un hôpital. Je suis infirmier."
+   ],
+   [
+    0,
+    "Très bien. Venez prendre un café chez moi samedi, si vous voulez."
+   ],
+   [
+    1,
+    "Avec plaisir ! À quelle heure ?"
+   ],
+   [
+    0,
+    "Vers dix heures ?"
+   ],
+   [
+    1,
+    "Parfait. Merci beaucoup, à samedi !"
+   ]
   ],
   "gloss": {
-   "voisin": "neighbour", "habite": "live", "deuxième": "second", "étage": "floor", "depuis": "since",
-   "bienvenue": "welcome", "face": "en face: opposite, across the landing", "enchanté": "pleased to meet you",
-   "viens": "come (je viens de: I come from)", "apprends": "am learning", "encore": "still", "comprends": "understand",
-   "mieux": "better", "lentement": "slowly", "hôpital": "hospital", "infirmier": "nurse", "venez": "come",
-   "plaisir": "pleasure (avec plaisir: gladly)", "vers": "around", "parfait": "perfect"
+   "nouveau": "new",
+   "voisin": "neighbour",
+   "habite": "live",
+   "ici": "here",
+   "depuis": "since",
+   "bienvenue": "welcome",
+   "juste": "just, right",
+   "face": "en face: opposite, across the landing",
+   "enchanté": "pleased to meet you",
+   "appelle": "je m'appelle: my name is",
+   "anglais": "English",
+   "viens": "come (je viens de: I come from)",
+   "apprends": "am learning",
+   "encore": "still",
+   "comprends": "understand",
+   "mieux": "better",
+   "quand": "when",
+   "lentement": "slowly",
+   "travaillez": "work",
+   "travaille": "work",
+   "hôpital": "hospital",
+   "infirmier": "nurse",
+   "venez": "come",
+   "prendre": "to have (prendre un café: to have a coffee)",
+   "chez": "chez moi: at my place",
+   "voulez": "want (si vous voulez: if you like)",
+   "plaisir": "pleasure (avec plaisir: gladly)",
+   "vers": "around",
+   "parfait": "perfect"
   },
   "questions": [
-   { "q": "De quel pays vient le nouveau voisin ?", "a": ["Canada", "canadien"] },
-   { "q": "Où travaille le nouveau voisin ?", "a": ["hôpital"] }
+   {
+    "q": "De quel pays vient le nouveau voisin ?",
+    "a": [
+     "Canada",
+     "canadien"
+    ]
+   },
+   {
+    "q": "Où travaille le nouveau voisin ?",
+    "a": [
+     "hôpital"
+    ]
+   }
   ],
   "notice": "After être, a nationality or a job comes with no article: \"je suis canadien\", \"Je suis infirmier\" (not je suis un infirmier)."
  },
@@ -188,35 +2177,124 @@
   "id": "fr-d-pharmacie",
   "title": "À la pharmacie",
   "level": "A2",
-  "roles": ["La pharmacienne", "Le client"],
+  "roles": [
+   "La pharmacienne",
+   "Le client"
+  ],
   "lines": [
-   [1, "Bonjour madame. J'ai mal à la tête depuis hier et j'ai un peu de fièvre."],
-   [0, "Bonjour monsieur. Est-ce que vous toussez aussi ?"],
-   [1, "Oui, surtout la nuit. Je dors très mal."],
-   [0, "Vous avez déjà pris quelque chose ?"],
-   [1, "Non, rien pour le moment. Est-ce que vous avez quelque chose contre la toux ?"],
-   [0, "Oui. Je peux vous donner un sirop ou des pastilles. Qu'est-ce que vous préférez ?"],
-   [1, "Je préfère le sirop. Il faut une ordonnance ?"],
-   [0, "Non, pas pour celui-ci. Prenez une cuillère le matin et le soir, après le repas."],
-   [1, "D'accord. Et pour la fièvre, qu'est-ce que vous me conseillez ?"],
-   [0, "Prenez du paracétamol, un comprimé toutes les six heures. Vous êtes allergique à quelque chose ?"],
-   [1, "Non, je ne suis allergique à rien."],
-   [0, "Très bien. Si vous avez encore de la fièvre dans trois jours, allez voir un médecin."],
-   [1, "Entendu. Je vous dois combien ?"],
-   [0, "Onze euros vingt, s'il vous plaît."],
-   [1, "Voilà. Merci pour vos conseils, au revoir !"]
+   [
+    0,
+    "Bonjour monsieur. Je vous écoute."
+   ],
+   [
+    1,
+    "Bonjour madame. J'ai mal à la tête depuis hier et j'ai un peu de fièvre."
+   ],
+   [
+    0,
+    "Je vois. Est-ce que vous toussez aussi ?"
+   ],
+   [
+    1,
+    "Oui, surtout la nuit. Je dors très mal."
+   ],
+   [
+    0,
+    "Vous avez déjà pris quelque chose ?"
+   ],
+   [
+    1,
+    "Non, rien pour le moment. Est-ce que vous avez quelque chose contre la toux ?"
+   ],
+   [
+    0,
+    "Oui. Je peux vous donner un sirop ou des pastilles. Qu'est-ce que vous préférez ?"
+   ],
+   [
+    1,
+    "Je préfère le sirop. Il faut une ordonnance ?"
+   ],
+   [
+    0,
+    "Non, pas pour celui-ci. Prenez une cuillère le matin et le soir, après le repas."
+   ],
+   [
+    1,
+    "D'accord. Et pour la fièvre, qu'est-ce que vous me conseillez ?"
+   ],
+   [
+    0,
+    "Prenez du paracétamol, un comprimé toutes les six heures. Vous êtes allergique à quelque chose ?"
+   ],
+   [
+    1,
+    "Non, je ne suis allergique à rien."
+   ],
+   [
+    0,
+    "Très bien. Si vous avez encore de la fièvre dans trois jours, allez voir un médecin."
+   ],
+   [
+    1,
+    "Entendu. Je vous dois combien ?"
+   ],
+   [
+    0,
+    "Onze euros vingt, s'il vous plaît."
+   ],
+   [
+    1,
+    "Voilà. Merci pour vos conseils, au revoir !"
+   ]
   ],
   "gloss": {
-   "mal": "pain (avoir mal à: to have a pain in); badly", "tête": "head", "fièvre": "fever",
-   "toussez": "cough (tousser: to cough)", "surtout": "especially", "dors": "sleep", "contre": "against, for",
-   "toux": "cough", "sirop": "syrup", "pastilles": "lozenges", "ordonnance": "prescription", "celui": "celui-ci: this one",
-   "cuillère": "spoonful", "repas": "meal", "conseillez": "recommend, advise", "comprimé": "tablet",
-   "allergique": "allergic", "rien": "nothing", "entendu": "understood, all right",
-   "dois": "owe (je vous dois combien ? how much do I owe you?)", "conseils": "advice"
+   "écoute": "am listening (je vous écoute: how can I help you?)",
+   "mal": "pain (avoir mal à: to have a pain in); badly",
+   "tête": "head",
+   "depuis": "since",
+   "hier": "yesterday",
+   "fièvre": "fever",
+   "vois": "see (je vois: I see)",
+   "toussez": "cough (tousser: to cough)",
+   "surtout": "especially",
+   "dors": "sleep",
+   "déjà": "already",
+   "pris": "taken (prendre: to take)",
+   "contre": "against, for",
+   "toux": "cough",
+   "sirop": "syrup",
+   "pastilles": "lozenges",
+   "faut": "il faut: is … needed",
+   "ordonnance": "prescription",
+   "celui": "celui-ci: this one",
+   "prenez": "take",
+   "cuillère": "spoonful",
+   "repas": "meal",
+   "conseillez": "recommend, advise",
+   "comprimé": "tablet",
+   "toutes": "toutes les six heures: every six hours",
+   "allergique": "allergic",
+   "rien": "nothing",
+   "encore": "still",
+   "médecin": "doctor",
+   "entendu": "understood, all right",
+   "dois": "owe (je vous dois combien ? how much do I owe you?)",
+   "combien": "how much",
+   "conseils": "advice"
   },
   "questions": [
-   { "q": "Que choisit le client contre la toux ?", "a": ["sirop"] },
-   { "q": "Qui le client doit-il aller voir s'il a encore de la fièvre dans trois jours ?", "a": ["médecin"] }
+   {
+    "q": "Que choisit le client contre la toux ?",
+    "a": [
+     "sirop"
+    ]
+   },
+   {
+    "q": "Qui le client doit-il aller voir s'il a encore de la fièvre dans trois jours ?",
+    "a": [
+     "médecin"
+    ]
+   }
   ],
   "notice": "Quelque chose (something) becomes rien (nothing) in a negative answer, with ne before the verb: \"Vous êtes allergique à quelque chose ?\", \"je ne suis allergique à rien\"."
  },
@@ -224,34 +2302,122 @@
   "id": "fr-d-hotel",
   "title": "À la réception de l'hôtel",
   "level": "A2",
-  "roles": ["Le réceptionniste", "La cliente"],
+  "roles": [
+   "Le réceptionniste",
+   "La cliente"
+  ],
   "lines": [
-   [1, "Bonsoir monsieur. J'ai réservé une chambre pour deux nuits, au nom de Martin."],
-   [0, "Bonsoir madame. Un instant, je regarde. Voilà, une chambre simple avec douche."],
-   [1, "Non, il y a une erreur. J'ai réservé une chambre double, parce que mon mari arrive demain."],
-   [0, "Ah, je suis désolé. Je vais voir ce que je peux faire."],
-   [1, "Merci. Est-ce qu'il vous reste une chambre double ?"],
-   [0, "Oui, il en reste une au troisième étage, mais elle donne sur la rue."],
-   [1, "Elle n'est pas trop bruyante ?"],
-   [0, "Un peu le matin, à cause du marché. Sinon, j'ai une chambre calme sur la cour, mais elle coûte dix euros de plus par nuit."],
-   [1, "Je préfère la chambre calme. Le petit déjeuner est compris ?"],
-   [0, "Oui, il est servi de sept heures à dix heures, au rez-de-chaussée."],
-   [1, "Très bien. À quelle heure faut-il libérer la chambre dimanche ?"],
-   [0, "Avant midi. Voici votre clé, c'est la chambre vingt-quatre, au deuxième étage."],
-   [1, "Merci beaucoup. Bonne soirée !"]
+   [
+    0,
+    "Bonsoir madame, bienvenue. Vous avez une réservation ?"
+   ],
+   [
+    1,
+    "Bonsoir monsieur. Oui, j'ai réservé une chambre au nom de Martin."
+   ],
+   [
+    0,
+    "Un instant, je regarde. Voilà, une chambre simple pour deux nuits."
+   ],
+   [
+    1,
+    "Non, il y a une erreur. J'ai réservé une chambre double, parce que mon mari arrive demain."
+   ],
+   [
+    0,
+    "Ah, je suis désolé. Je vais voir ce que je peux faire."
+   ],
+   [
+    1,
+    "Merci. Est-ce qu'il vous reste une chambre double ?"
+   ],
+   [
+    0,
+    "Oui, il en reste une au troisième étage, mais elle donne sur la rue."
+   ],
+   [
+    1,
+    "Elle n'est pas trop bruyante ?"
+   ],
+   [
+    0,
+    "Un peu le matin, à cause du marché. Sinon, j'ai une chambre calme sur la cour, mais elle coûte dix euros de plus par nuit."
+   ],
+   [
+    1,
+    "Je préfère la chambre calme. Le petit déjeuner est compris ?"
+   ],
+   [
+    0,
+    "Oui, il est servi de sept heures à dix heures, au rez-de-chaussée."
+   ],
+   [
+    1,
+    "Très bien. À quelle heure faut-il libérer la chambre dimanche ?"
+   ],
+   [
+    0,
+    "Avant midi. Voici votre clé, c'est la chambre vingt-quatre, au deuxième étage."
+   ],
+   [
+    1,
+    "Merci beaucoup. Bonne soirée !"
+   ]
   ],
   "gloss": {
-   "réservé": "booked", "chambre": "room", "nuits": "nights", "nom": "name (au nom de: in the name of)",
-   "instant": "moment", "douche": "shower", "erreur": "mistake", "mari": "husband", "désolé": "sorry",
-   "reste": "is left (il en reste une: there is one left)", "étage": "floor", "donne": "donne sur: looks out on",
-   "bruyante": "noisy", "cause": "à cause de: because of", "marché": "market", "sinon": "otherwise", "calme": "quiet",
-   "cour": "courtyard", "coûte": "costs", "déjeuner": "petit déjeuner: breakfast", "compris": "included",
-   "servi": "served", "chaussée": "rez-de-chaussée: ground floor",
-   "libérer": "to vacate (libérer la chambre: to check out)", "clé": "key"
+   "bienvenue": "welcome",
+   "réservation": "booking",
+   "réservé": "booked",
+   "chambre": "room",
+   "nom": "name (au nom de: in the name of)",
+   "instant": "moment",
+   "simple": "single",
+   "nuits": "nights",
+   "erreur": "mistake",
+   "mari": "husband",
+   "demain": "tomorrow",
+   "désolé": "sorry",
+   "reste": "is left (il en reste une: there is one left)",
+   "troisième": "third",
+   "étage": "floor",
+   "donne": "donne sur: looks out on",
+   "rue": "street",
+   "trop": "too",
+   "bruyante": "noisy",
+   "cause": "à cause de: because of",
+   "marché": "market",
+   "sinon": "otherwise",
+   "calme": "quiet",
+   "cour": "courtyard",
+   "coûte": "costs",
+   "plus": "more (dix euros de plus: ten euros more)",
+   "déjeuner": "petit déjeuner: breakfast",
+   "compris": "included",
+   "servi": "served",
+   "chaussée": "rez-de-chaussée: ground floor",
+   "faut": "faut-il: do I have to",
+   "libérer": "to vacate (libérer la chambre: to check out)",
+   "avant": "before",
+   "midi": "noon",
+   "voici": "here is",
+   "clé": "key",
+   "deuxième": "second",
+   "soirée": "evening (bonne soirée: have a good evening)"
   },
   "questions": [
-   { "q": "Quel type de chambre la cliente a-t-elle réservé ?", "a": ["double"] },
-   { "q": "Quelle chambre la cliente choisit-elle finalement ?", "a": ["calme", "cour"] }
+   {
+    "q": "Quel type de chambre la cliente a-t-elle réservé ?",
+    "a": [
+     "double"
+    ]
+   },
+   {
+    "q": "Quelle chambre la cliente choisit-elle finalement ?",
+    "a": [
+     "calme",
+     "cour"
+    ]
+   }
   ],
   "notice": "A yes or no question can be a plain statement said with a rising voice, or begin with est-ce que: \"Le petit déjeuner est compris ?\", \"Est-ce qu'il vous reste une chambre double ?\""
  },
@@ -259,70 +2425,225 @@
   "id": "fr-d-reservation",
   "title": "Réserver une table",
   "level": "A2",
-  "roles": ["Le serveur", "La cliente"],
+  "roles": [
+   "Le serveur",
+   "La cliente"
+  ],
   "lines": [
-   [0, "Restaurant Le Petit Jardin, bonjour !"],
-   [1, "Bonjour monsieur. Je voudrais réserver une table pour samedi soir, s'il vous plaît."],
-   [0, "Bien sûr. Pour combien de personnes ?"],
-   [1, "Nous serons quatre, vers vingt heures."],
-   [0, "Je regrette, nous sommes complets à vingt heures. Il me reste une table à dix-neuf heures ou à vingt et une heures trente."],
-   [1, "Vingt et une heures trente, c'est un peu tard. Je prends la table de dix-neuf heures."],
-   [0, "Très bien. Vous préférez en salle ou en terrasse ?"],
-   [1, "En terrasse, s'il fait beau. Est-ce que vous avez des plats végétariens ?"],
-   [0, "Oui, madame, nous en avons toujours deux à la carte."],
-   [1, "Parfait. Une de mes amies ne mange pas de viande."],
-   [0, "C'est noté. C'est à quel nom ?"],
-   [1, "Au nom de Dubois."],
-   [0, "Merci, madame Dubois. Une table pour quatre, samedi à dix-neuf heures. À samedi !"],
-   [1, "Merci beaucoup. Au revoir, à samedi !"]
+   [
+    0,
+    "Restaurant Le Petit Jardin, bonjour !"
+   ],
+   [
+    1,
+    "Bonjour monsieur. Je voudrais réserver une table pour samedi soir, s'il vous plaît."
+   ],
+   [
+    0,
+    "Bien sûr. Pour combien de personnes ?"
+   ],
+   [
+    1,
+    "Nous serons quatre."
+   ],
+   [
+    0,
+    "Je regrette, samedi soir, il ne me reste que deux tables : une à dix-neuf heures et une à vingt et une heures trente."
+   ],
+   [
+    1,
+    "Nous venons avec des enfants, alors je préfère venir tôt."
+   ],
+   [
+    0,
+    "Très bien, je note la table de dix-neuf heures. Vous préférez en salle ou en terrasse ?"
+   ],
+   [
+    1,
+    "En terrasse, s'il fait beau. Est-ce que vous avez des plats végétariens ?"
+   ],
+   [
+    0,
+    "Oui, madame, nous en avons toujours deux à la carte."
+   ],
+   [
+    1,
+    "Parfait. Une de mes amies ne mange pas de viande."
+   ],
+   [
+    0,
+    "C'est noté. C'est à quel nom ?"
+   ],
+   [
+    1,
+    "Au nom de Dubois."
+   ],
+   [
+    0,
+    "Merci, madame Dubois. Une table pour quatre, samedi à dix-neuf heures. À samedi !"
+   ],
+   [
+    1,
+    "Merci beaucoup. Au revoir, à samedi !"
+   ]
   ],
   "gloss": {
-   "réserver": "to book", "combien": "how many", "serons": "will be (nous serons quatre: there will be four of us)",
-   "vers": "around", "regrette": "am sorry", "complets": "full, fully booked", "reste": "is left (il me reste: I still have)",
-   "tard": "late", "salle": "dining room (en salle: inside)", "terrasse": "outdoor seating",
-   "beau": "fine (il fait beau: the weather is nice)", "plats": "dishes", "végétariens": "vegetarian", "carte": "menu",
-   "viande": "meat", "noté": "noted", "nom": "name (c'est à quel nom ? in what name?)"
+   "voudrais": "would like",
+   "réserver": "to book",
+   "sûr": "sure (bien sûr: of course)",
+   "combien": "how many",
+   "serons": "will be (nous serons quatre: there will be four of us)",
+   "regrette": "am sorry",
+   "reste": "is left (il ne me reste que: I only have … left)",
+   "venons": "are coming",
+   "alors": "so",
+   "tôt": "early",
+   "note": "am noting down",
+   "salle": "dining room (en salle: inside)",
+   "terrasse": "outdoor seating",
+   "beau": "fine (il fait beau: the weather is nice)",
+   "plats": "dishes",
+   "végétariens": "vegetarian",
+   "toujours": "always",
+   "carte": "menu",
+   "amies": "friends",
+   "viande": "meat",
+   "noté": "noted",
+   "nom": "name (c'est à quel nom ? in what name?)"
   },
   "questions": [
-   { "q": "Pour quel jour la cliente veut-elle une table ?", "a": ["samedi"] },
-   { "q": "Qu'est-ce qu'une amie de la cliente ne mange pas ?", "a": ["viande"] }
+   {
+    "q": "Pour quel jour la cliente veut-elle une table ?",
+    "a": [
+     "samedi"
+    ]
+   },
+   {
+    "q": "Qu'est-ce qu'une amie de la cliente ne mange pas ?",
+    "a": [
+     "viande"
+    ]
+   }
   ],
-  "notice": "For bookings, timetables and opening hours, French counts the hours up to twenty-four, so seven in the evening is dix-neuf heures: \"vers vingt heures\", \"la table de dix-neuf heures\"."
+  "notice": "For bookings, timetables and opening hours, French counts the hours up to twenty-four instead of saying morning or evening: \"à dix-neuf heures\" is seven in the evening, \"à vingt et une heures trente\" is half past nine."
  },
  {
   "id": "fr-d-retour",
-  "title": "Un retour au magasin",
+  "title": "Un retour en magasin",
   "level": "B1",
-  "roles": ["Le vendeur", "La cliente"],
+  "roles": [
+   "Le vendeur",
+   "La cliente"
+  ],
   "lines": [
-   [1, "Bonjour. J'ai acheté cette bouilloire ici la semaine dernière et elle ne marche déjà plus."],
-   [0, "Bonjour madame. Qu'est-ce qui se passe exactement ?"],
-   [1, "Elle s'allume, mais l'eau ne chauffe pas. Je l'ai essayée sur plusieurs prises."],
-   [0, "Je vois. Vous avez gardé le ticket de caisse ?"],
-   [1, "Oui, le voici. Je l'ai payée par carte."],
-   [0, "Merci. Elle est encore sous garantie, donc nous pouvons l'envoyer en réparation. Il faut compter trois semaines."],
-   [1, "Trois semaines, c'est trop long pour moi. Est-ce qu'il serait possible de l'échanger ?"],
-   [0, "Malheureusement, nous n'avons plus ce modèle en stock. Je peux vous proposer un avoir, valable un an dans tous nos magasins."],
-   [1, "Je préférerais être remboursée, si c'est possible. Je ne suis pas sûre de trouver ce qu'il me faut chez vous."],
-   [0, "Je comprends. Dans ce cas, je vous rembourse sur votre carte. L'argent sera sur votre compte d'ici quelques jours."],
-   [1, "C'est parfait. Est-ce que je dois signer quelque chose ?"],
-   [0, "Oui, ici, en bas du formulaire. Et encore toutes nos excuses pour ce désagrément."],
-   [1, "Ce n'est pas grave. Merci pour votre aide, bonne journée !"]
+   [
+    0,
+    "Bonjour madame. Je peux vous aider ?"
+   ],
+   [
+    1,
+    "Bonjour. Oui, j'ai acheté cette bouilloire ici la semaine dernière et elle ne marche déjà plus."
+   ],
+   [
+    0,
+    "Ah, je suis désolé. Qu'est-ce qui se passe exactement ?"
+   ],
+   [
+    1,
+    "Elle s'allume, mais l'eau ne chauffe pas. Je l'ai essayée sur plusieurs prises."
+   ],
+   [
+    0,
+    "Je vois. Vous avez gardé le ticket de caisse ?"
+   ],
+   [
+    1,
+    "Oui, le voici. Je l'ai payée par carte."
+   ],
+   [
+    0,
+    "Merci. Elle est encore sous garantie, donc nous pouvons l'envoyer en réparation. Il faut compter trois semaines."
+   ],
+   [
+    1,
+    "C'est beaucoup trop long pour moi. Est-ce qu'il serait possible de l'échanger ?"
+   ],
+   [
+    0,
+    "Malheureusement, nous n'avons plus ce modèle en stock. Je peux vous proposer un avoir, valable un an dans tous nos magasins."
+   ],
+   [
+    1,
+    "Je préférerais être remboursée, si c'est possible. Je ne suis pas sûre de trouver ce qu'il me faut chez vous."
+   ],
+   [
+    0,
+    "Je comprends. Dans ce cas, je vous rembourse sur votre carte. L'argent sera sur votre compte d'ici quelques jours."
+   ],
+   [
+    1,
+    "C'est parfait. Est-ce que je dois signer quelque chose ?"
+   ],
+   [
+    0,
+    "Oui, ici, en bas du formulaire. Et encore toutes nos excuses pour ce désagrément."
+   ],
+   [
+    1,
+    "Ce n'est pas grave. Merci pour votre aide, bonne journée !"
+   ]
   ],
   "gloss": {
-   "bouilloire": "kettle", "marche": "works", "allume": "switches on (s'allumer)", "chauffe": "heats up",
-   "essayée": "tried", "prises": "sockets", "gardé": "kept", "caisse": "till (ticket de caisse: receipt)",
-   "garantie": "guarantee (sous garantie: under guarantee)", "réparation": "repair",
-   "compter": "to allow (il faut compter: it takes about)", "échanger": "to exchange",
-   "malheureusement": "unfortunately", "stock": "stock (en stock: in stock)", "avoir": "credit note",
-   "valable": "valid", "remboursée": "refunded", "rembourse": "refund", "compte": "account",
-   "ici": "here (d'ici quelques jours: within a few days)", "bas": "bottom (en bas de: at the bottom of)",
-   "formulaire": "form", "excuses": "apologies", "désagrément": "inconvenience",
-   "grave": "serious (ce n'est pas grave: it doesn't matter)"
+   "aider": "to help",
+   "bouilloire": "kettle",
+   "marche": "works",
+   "désolé": "sorry",
+   "passe": "se passe: is happening",
+   "allume": "switches on (s'allumer)",
+   "chauffe": "heats up",
+   "essayée": "tried",
+   "plusieurs": "several",
+   "prises": "sockets",
+   "gardé": "kept",
+   "caisse": "till (ticket de caisse: receipt)",
+   "garantie": "guarantee (sous garantie: under guarantee)",
+   "envoyer": "to send",
+   "réparation": "repair",
+   "faut": "is needed (il faut compter: allow; ce qu'il me faut: what I need)",
+   "compter": "to count, to allow",
+   "échanger": "to exchange",
+   "malheureusement": "unfortunately",
+   "stock": "stock (en stock: in stock)",
+   "avoir": "credit note",
+   "valable": "valid",
+   "magasins": "shops",
+   "remboursée": "refunded",
+   "cas": "case (dans ce cas: in that case)",
+   "rembourse": "refund",
+   "compte": "account",
+   "ici": "here (d'ici quelques jours: within a few days)",
+   "signer": "to sign",
+   "bas": "bottom (en bas de: at the bottom of)",
+   "formulaire": "form",
+   "excuses": "apologies",
+   "désagrément": "inconvenience",
+   "grave": "serious (ce n'est pas grave: it doesn't matter)",
+   "aide": "help"
   },
   "questions": [
-   { "q": "Quel appareil la cliente rapporte-t-elle au magasin ?", "a": ["bouilloire"] },
-   { "q": "Que fait finalement le vendeur pour régler le problème ?", "a": ["rembourse", "argent"] }
+   {
+    "q": "Quel appareil la cliente rapporte-t-elle au magasin ?",
+    "a": [
+     "bouilloire"
+    ]
+   },
+   {
+    "q": "Que fait finalement le vendeur pour régler le problème ?",
+    "a": [
+     "rembourse",
+     "argent"
+    ]
+   }
   ],
   "notice": "The conditional softens a request or a preference, which keeps a complaint polite but firm: \"Est-ce qu'il serait possible de l'échanger ?\", \"Je préférerais être remboursée\"."
  },
@@ -330,40 +2651,129 @@
   "id": "fr-d-visite",
   "title": "La visite de l'appartement",
   "level": "B1",
-  "roles": ["La propriétaire", "Le visiteur"],
+  "roles": [
+   "La propriétaire",
+   "Le visiteur"
+  ],
   "lines": [
-   [0, "Bonjour, entrez ! Voici le séjour. Comme vous voyez, il est très lumineux."],
-   [1, "En effet, c'est agréable. Quelle est la surface de l'appartement ?"],
-   [0, "Quarante-cinq mètres carrés, avec une chambre séparée et une petite cuisine équipée."],
-   [1, "Et pour le loyer, est-ce que les charges sont comprises ?"],
-   [0, "Oui, c'est sept cent cinquante euros par mois, charges comprises. Le chauffage est collectif, mais l'électricité reste à votre charge."],
-   [1, "D'accord. J'ai remarqué une tache d'humidité au plafond de la salle de bains."],
-   [0, "Ah oui, il y a eu une fuite chez le voisin du dessus. C'est réparé, et je ferai repeindre le plafond avant votre arrivée."],
-   [1, "Tant mieux. Est-ce que le quartier est calme le soir ?"],
-   [0, "Très calme. Il y a juste un peu de bruit le jeudi, le jour du marché."],
-   [1, "Ça ne me dérange pas. À partir de quand l'appartement est-il libre ?"],
-   [0, "Dès le premier du mois prochain. Il me faudrait vos trois derniers bulletins de salaire et une pièce d'identité."],
-   [1, "Je peux vous les envoyer dès ce soir. Si mon dossier est accepté, quand est-ce qu'on signera le bail ?"],
-   [0, "La semaine prochaine, si tout est en ordre. D'autres personnes sont intéressées, donc ne tardez pas trop."],
-   [1, "Entendu. L'appartement me plaît beaucoup. Vous aurez mon dossier ce soir."]
+   [
+    0,
+    "Bonjour, entrez ! Voici le séjour. Comme vous voyez, il est très lumineux."
+   ],
+   [
+    1,
+    "En effet, c'est agréable. Quelle est la surface de l'appartement ?"
+   ],
+   [
+    0,
+    "Quarante-cinq mètres carrés, avec une chambre séparée et une petite cuisine équipée."
+   ],
+   [
+    1,
+    "Et pour le loyer, est-ce que les charges sont comprises ?"
+   ],
+   [
+    0,
+    "Oui, c'est sept cent cinquante euros par mois, charges comprises. Le chauffage est collectif, mais l'électricité reste à votre charge."
+   ],
+   [
+    1,
+    "D'accord. J'ai remarqué une tache d'humidité au plafond de la salle de bains."
+   ],
+   [
+    0,
+    "Ah oui, il y a eu une fuite chez le voisin du dessus. C'est réparé, et je ferai repeindre le plafond avant votre arrivée."
+   ],
+   [
+    1,
+    "Tant mieux. Est-ce que le quartier est calme le soir ?"
+   ],
+   [
+    0,
+    "Très calme. Il y a juste un peu de bruit le jeudi, le jour du marché."
+   ],
+   [
+    1,
+    "Ça ne me dérange pas. À partir de quand l'appartement est-il libre ?"
+   ],
+   [
+    0,
+    "Dès le premier du mois prochain. Il me faudrait vos trois derniers bulletins de salaire et une pièce d'identité."
+   ],
+   [
+    1,
+    "Je peux vous les envoyer dès ce soir. Si mon dossier est accepté, quand est-ce qu'on signera le bail ?"
+   ],
+   [
+    0,
+    "La semaine prochaine, si tout est en ordre. D'autres personnes sont intéressées, donc ne tardez pas trop."
+   ],
+   [
+    1,
+    "Entendu. L'appartement me plaît beaucoup. Vous aurez mon dossier ce soir."
+   ]
   ],
   "gloss": {
-   "séjour": "living room", "lumineux": "bright", "effet": "en effet: indeed", "surface": "floor area",
-   "carrés": "square (mètres carrés: square metres)", "équipée": "fitted", "loyer": "rent",
-   "charges": "service charges (charges comprises: bills included)", "comprises": "included", "chauffage": "heating",
-   "collectif": "shared by the whole building", "charge": "à votre charge: for you to pay", "remarqué": "noticed",
-   "tache": "stain", "humidité": "damp", "plafond": "ceiling", "fuite": "leak",
+   "voici": "here is",
+   "séjour": "living room",
+   "voyez": "see",
+   "lumineux": "bright",
+   "effet": "en effet: indeed",
+   "agréable": "pleasant",
+   "surface": "floor area",
+   "carrés": "square (mètres carrés: square metres)",
+   "équipée": "fitted",
+   "loyer": "rent",
+   "charges": "service charges (charges comprises: bills included)",
+   "comprises": "included",
+   "chauffage": "heating",
+   "collectif": "shared by the whole building",
+   "reste": "remains",
+   "charge": "à votre charge: for you to pay",
+   "remarqué": "noticed",
+   "tache": "stain",
+   "humidité": "damp",
+   "plafond": "ceiling",
+   "bains": "salle de bains: bathroom",
+   "fuite": "leak",
    "dessus": "above (le voisin du dessus: the upstairs neighbour)",
-   "ferai": "will have (je ferai repeindre: I will have … repainted)", "repeindre": "to repaint",
-   "tant": "tant mieux: good, so much the better", "quartier": "neighbourhood", "bruit": "noise", "dérange": "bothers",
-   "libre": "available", "dès": "from, as early as", "faudrait": "would be needed (il me faudrait: I would need)",
-   "bulletins": "bulletins de salaire: payslips", "pièce": "pièce d'identité: proof of identity",
-   "dossier": "application file", "bail": "lease", "tardez": "delay (ne tardez pas trop: don't wait too long)",
-   "entendu": "understood, agreed", "plaît": "pleases (me plaît: I like it)"
+   "ferai": "will have (je ferai repeindre: I will have … repainted)",
+   "repeindre": "to repaint",
+   "tant": "tant mieux: good, so much the better",
+   "quartier": "neighbourhood",
+   "bruit": "noise",
+   "dérange": "bothers",
+   "partir": "à partir de quand: from when",
+   "libre": "available",
+   "dès": "from, as early as",
+   "faudrait": "would be needed (il me faudrait: I would need)",
+   "bulletins": "bulletins de salaire: payslips",
+   "salaire": "pay, salary",
+   "pièce": "pièce d'identité: proof of identity",
+   "envoyer": "to send",
+   "dossier": "application file",
+   "bail": "lease",
+   "ordre": "order (en ordre: in order)",
+   "tardez": "delay (ne tardez pas trop: don't wait too long)",
+   "entendu": "understood, agreed",
+   "plaît": "pleases (me plaît: I like it)",
+   "aurez": "will have"
   },
   "questions": [
-   { "q": "Qu'est-ce que le visiteur a remarqué au plafond de la salle de bains ?", "a": ["tache", "humidité"] },
-   { "q": "Quel jour y a-t-il un peu de bruit dans le quartier ?", "a": ["jeudi", "marché"] }
+   {
+    "q": "Qu'est-ce que le visiteur a remarqué au plafond de la salle de bains ?",
+    "a": [
+     "tache",
+     "humidité"
+    ]
+   },
+   {
+    "q": "Quel jour y a-t-il un peu de bruit dans le quartier ?",
+    "a": [
+     "jeudi",
+     "marché"
+    ]
+   }
   ],
   "notice": "The future tense is used for promises and firm plans; faire and avoir have the irregular stems fer- and aur-: \"je ferai repeindre le plafond\", \"Vous aurez mon dossier ce soir\"."
  }
