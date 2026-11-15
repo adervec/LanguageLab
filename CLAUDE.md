@@ -53,7 +53,10 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   reading engine is not used.
 - Tests: `core.test.mjs` checks the logic and every bundled content file; `.github/flow.mjs` drives
   the whole app in headless Chrome. Speech recognition, real voices and the on-device translator
-  cannot run there: check those by hand (`.tmp/tr-app.mjs` is the translator check).
+  cannot run there (the flow test stubs `self.Translator`): check those by hand. To try the real
+  translator from Playwright, launch a visible Chrome with
+  `ignoreDefaultArgs: ['--disable-component-update', '--disable-background-networking']`, or it can
+  never fetch its language pack.
 
 ## Why this app exists
 

@@ -199,7 +199,7 @@ function vToday() {
   </div>
   <div class="card"><h2>${t('Pen pal')}</h2>
     <p class="sub">${t('Write a letter in {language}. An AI pen pal writes back at your level and corrects your mistakes.', { language: langName() })}</p>
-    ${pal.length ? H`<p>${t.n('{n} letter is waiting for a reply.', '{n} letters are waiting for a reply.', pal.filter(m => !m.reply).length)}</p>` : ''}
+    ${pal.some(m => !m.reply) ? H`<p>${t.n('{n} letter is waiting for a reply.', '{n} letters are waiting for a reply.', pal.filter(m => !m.reply).length)}</p>` : ''}
     <button data-act="go" data-v="pal">${t('Open your letters')}</button>
   </div>
   <div class="card"><h2>${t('More input')}</h2>
