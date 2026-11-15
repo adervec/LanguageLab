@@ -1,0 +1,812 @@
+[
+ {
+  "id": "en-family",
+  "title": "Grandma's birthday",
+  "level": "A1",
+  "text": "My name is Ben and I am twelve years old. I live in Cork, in Ireland, with my family. My mum is a nurse. She works at night and sleeps in the morning. My dad drives a bus. He is tall and he laughs a lot. I have two sisters. Kate is sixteen and she plays the guitar in her room. Lucy is only four and she asks questions all day. We have an old dog too. His name is Max. Every Sunday we have lunch at my grandmother's house. Grandma always cooks chicken and potatoes for everyone. But today is different. It is Grandma's birthday, so we cook for her. Dad makes soup and Kate makes a big chocolate cake. Grandma sits in her chair and smiles. She says it is her best birthday.",
+  "gloss": {
+   "mum": "mother", "nurse": "a person who helps sick people", "works": "does a job (work)",
+   "night": "the dark time, when people sleep", "sleeps": "rests with closed eyes (sleep)", "dad": "father",
+   "drives": "makes a bus or car go (drive)", "tall": "not short", "laughs": "makes a happy sound (laugh)",
+   "sisters": "girls with the same parents as you (sister)", "plays": "makes music with (play)",
+   "guitar": "a thing with strings for making music", "only": "no more than", "asks": "says a question (ask)",
+   "questions": "things you say when you want to know something", "every": "each one",
+   "lunch": "the meal in the middle of the day", "grandmother": "the mother of your mother or father",
+   "grandma": "grandmother (a warm family word)", "always": "every time", "cooks": "makes food (cook)",
+   "cook": "make food", "chicken": "a farm bird, or its meat",
+   "potatoes": "white vegetables from under the ground (potato)", "everyone": "all the people",
+   "different": "not the same", "birthday": "the day you were born, each year",
+   "soup": "hot food that you eat with a spoon", "chocolate": "a sweet brown food",
+   "cake": "a soft, sweet food, often for a birthday", "chair": "a seat for one person",
+   "smiles": "looks happy (smile)", "best": "better than all the others"
+  },
+  "questions": [
+   { "q": "What job does Ben's mother do?", "a": ["nurse"] },
+   { "q": "What does Kate play in her room?", "a": ["guitar"] },
+   { "q": "What does Kate make for Grandma?", "a": ["cake"] }
+  ],
+  "notice": "In the present, add -s to the verb after he, she, it or a name: \"She works at night\", \"he laughs a lot\". After I, we and they there is no -s."
+ },
+ {
+  "id": "en-morning",
+  "title": "Late for the ferry",
+  "level": "A1",
+  "text": "My name is Mia. I live in Sydney and I work in an office in the city. Every morning I get up at six o'clock. I have a shower and get dressed. Then I make breakfast. I eat toast with butter and I drink a cup of tea. At seven I walk to the ferry. The boat trip takes twenty minutes and I love it. I sit outside and look at the water. But this morning is different. I open my eyes and it is eight o'clock. I am very late! I do not eat. I take my bag and run to the ferry. Then I stop. There are no people in suits, only families with children. I look at my phone. It is Saturday! I laugh, buy a coffee and sit in the sun.",
+  "gloss": {
+   "office": "a place where people work at desks", "city": "a big town", "every": "each one",
+   "o'clock": "a word used with the hour: six o'clock", "shower": "a wash under falling water",
+   "dressed": "get dressed: put clothes on", "breakfast": "the first meal of the day",
+   "toast": "bread made hot and brown", "butter": "soft yellow food made from milk",
+   "cup": "a small thing you drink from", "tea": "a hot drink made from leaves", "walk": "go on foot",
+   "ferry": "a boat that takes people across water", "boat": "a thing that carries people on water",
+   "trip": "going from one place to another", "takes": "needs this much time (take)",
+   "minutes": "an hour has sixty minutes", "outside": "not in a room", "different": "not the same",
+   "eyes": "you see with your eyes", "late": "after the right time", "bag": "a thing you carry your things in",
+   "run": "go very fast on foot", "suits": "jackets and trousers for office work (suit)", "only": "just",
+   "families": "parents with their children (family)", "laugh": "make a happy sound",
+   "sun": "the big light in the sky in the day"
+  },
+  "questions": [
+   { "q": "What does Mia drink at breakfast?", "a": ["tea"] },
+   { "q": "How does Mia go to work?", "a": ["ferry", "boat"] },
+   { "q": "What day of the week is it in the story?", "a": ["saturday"] }
+  ],
+  "notice": "For things you do again and again, use the present simple, often with every: \"Every morning I get up at six o'clock\". The negative uses do not: \"I do not eat\"."
+ },
+ {
+  "id": "en-cafe",
+  "title": "At the café",
+  "level": "A1",
+  "text": "It is a cold Monday in London. At one o'clock, Emma goes into a small café near her office. She is hungry and a little tired. \"Hello,\" says the waiter. \"What would you like?\" \"A cup of tea and a cheese sandwich, please,\" says Emma. She sits at a table by the window. Outside, it is raining and people are walking fast. The waiter brings her tea and her sandwich. They are very good. Then Emma opens her bag. Oh no! Her wallet is not there. It is at home, on the kitchen table. Her face goes red. She tells the waiter. He smiles. \"No problem,\" he says. \"You can pay tomorrow.\" The next day, Emma comes back. She pays for her lunch and gives the waiter a small box of chocolates.",
+  "gloss": {
+   "cold": "not warm", "o'clock": "a word used with the hour: one o'clock",
+   "goes": "goes into: walks in; goes red: turns red", "café": "a place that sells drinks and small meals",
+   "near": "not far from", "office": "a place where people work at desks", "hungry": "wanting to eat",
+   "tired": "needing rest or sleep", "waiter": "a man who brings food to your table",
+   "would": "would like: want (a polite way to say it)", "cup": "a small thing you drink from",
+   "cheese": "a yellow or white food made from milk", "sandwich": "two pieces of bread with food between them",
+   "window": "the glass part of a wall", "outside": "not in the building",
+   "raining": "water is falling from the sky (rain)", "walking": "going on foot (walk)",
+   "fast": "quickly, not slowly", "brings": "comes with something for you (bring)",
+   "bag": "a thing you carry your things in", "wallet": "a small flat case for money and cards",
+   "kitchen": "the room where you cook", "face": "the front of your head", "smiles": "looks happy (smile)",
+   "problem": "no problem: it is all right", "pay": "give money for something", "pays": "gives money (pay)",
+   "tomorrow": "the day after today", "next": "the next day: the day after",
+   "back": "comes back: comes here again", "lunch": "the meal in the middle of the day",
+   "box": "a thing with flat sides for keeping things in", "chocolates": "small sweet brown things to eat"
+  },
+  "questions": [
+   { "q": "What does Emma order to drink?", "a": ["tea"] },
+   { "q": "Where is Emma's wallet?", "a": ["home", "kitchen"] },
+   { "q": "What does Emma give the waiter the next day?", "a": ["chocolate"] }
+  ],
+  "notice": "To order, name the thing and add please: \"A cup of tea and a cheese sandwich, please\". Staff often ask with would like, a polite form of want: \"What would you like?\""
+ },
+ {
+  "id": "en-market",
+  "title": "The Saturday market",
+  "level": "A2",
+  "text": "Last Saturday, Maria went to the farmers' market near her apartment in Seattle. Sunday was her son's birthday, and she wanted to make him a strawberry cake. The market was busy and noisy, and the air smelled of fresh bread. A man was playing the guitar near the entrance. First she bought eggs, tomatoes and a jar of honey. Then she looked for strawberries, but every stand was sold out. Maria was worried. At the last stand, an old farmer saw her sad face. \"No strawberries today,\" he said, \"but my peaches are the sweetest in the city. Try one.\" Maria tasted a piece. It was delicious. She bought a big bag of peaches and carried it home. That evening she made a peach cake instead. The next day, her son ate three pieces. \"Mom,\" he said, \"can we have this cake every year?\"",
+  "gloss": {
+   "farmers": "people who grow food to sell (farmer)",
+   "market": "a place outside where people sell food and other things",
+   "apartment": "a home on one floor of a building", "strawberry": "a small, soft, red fruit",
+   "strawberries": "small, soft, red fruits (strawberry)", "busy": "full of people",
+   "noisy": "full of loud sounds", "air": "what you breathe; it is all around you",
+   "smelled": "had a smell (smell); you smell with your nose", "fresh": "just made, not old",
+   "guitar": "a thing with strings for making music", "entrance": "the way in",
+   "bought": "got with money (buy)", "jar": "a glass container for food",
+   "honey": "sweet, thick food made by bees", "stand": "a table where someone sells things at a market",
+   "sold": "sold out: with nothing left to buy (sell)", "worried": "afraid that something would go wrong",
+   "farmer": "a person who grows food on a farm",
+   "peaches": "soft, round, sweet fruits with yellow and red skin (peach)",
+   "peach": "a soft, round, sweet fruit with yellow and red skin",
+   "sweetest": "the most sweet, with the most taste of sugar",
+   "tasted": "ate a little to see if it was good (taste)", "piece": "a part of something",
+   "pieces": "parts cut from something (piece)", "delicious": "very good to eat",
+   "carried": "took in her hands (carry)", "instead": "in place of the other thing", "ate": "past of eat",
+   "mom": "mother (American English)"
+  },
+  "questions": [
+   { "q": "What kind of cake did Maria want to make at first?", "a": ["strawberry", "strawberries"] },
+   { "q": "Who gave Maria a piece of fruit to taste?", "a": ["farmer"] },
+   { "q": "Which fruit did Maria use for the cake in the end?", "a": ["peach"] }
+  ],
+  "notice": "Many common verbs have an irregular past form, which you learn one by one: \"she bought eggs\" (buy), \"her son ate three pieces\" (eat)."
+ },
+ {
+  "id": "en-beach",
+  "title": "A weekend at the beach",
+  "level": "A2",
+  "text": "Last weekend, my sister and I drove from Auckland to a small beach town in the north. We left early on Saturday, but the roads were busy and the trip took five hours. When we arrived, it was raining hard. The sea was grey and the beach was empty. We sat in a little café, ate fish and chips and watched the rain through the window. My sister wanted to drive home. \"Let's wait until tomorrow,\" I said. On Sunday morning, the sky was blue and the sun was shining. We ran down to the beach before breakfast. The water was cold, but we swam anyway. Suddenly my sister shouted and pointed at the sea. Three dolphins were jumping in the waves, not far from us. We watched them until they disappeared. On the way home, we were tired and hungry, but we couldn't stop smiling. Next time, we will stay for a whole week.",
+  "gloss": {
+   "drove": "went by car (drive)", "beach": "the sand beside the sea",
+   "north": "the top part of a country on a map", "left": "went away from home (leave)",
+   "early": "near the start of the day", "busy": "full of cars", "trip": "the drive from one place to another",
+   "took": "needed this much time (take)", "arrived": "got to the place (arrive)", "hard": "a lot, strongly",
+   "grey": "the colour between black and white", "empty": "with nobody there",
+   "café": "a place that sells drinks and simple meals", "ate": "past of eat",
+   "chips": "long pieces of fried potato",
+   "watched": "looked at for some time (watch)", "through": "from one side to the other",
+   "until": "up to that time", "shining": "giving bright light (shine)", "ran": "past of run",
+   "swam": "moved through the water (swim)", "anyway": "even so", "suddenly": "very quickly, as a surprise",
+   "shouted": "said something very loudly (shout)", "pointed": "showed with her finger (point)",
+   "dolphins": "clever sea animals that jump out of the water (dolphin)",
+   "jumping": "going up into the air (jump)", "waves": "water that rises and falls on the sea (wave)",
+   "disappeared": "went where we could not see them (disappear)", "couldn't": "were not able to (could not)",
+   "smiling": "looking happy (smile)", "whole": "all of"
+  },
+  "questions": [
+   { "q": "What was the weather like when they arrived?", "a": ["rain"] },
+   { "q": "What did they eat in the café?", "a": ["fish", "chips"] },
+   { "q": "Which animals did they see in the waves?", "a": ["dolphin"] }
+  ],
+  "notice": "Was or were + -ing shows something in progress at a moment in the past: \"it was raining hard\", \"Three dolphins were jumping in the waves\"."
+ },
+ {
+  "id": "en-flat",
+  "title": "The new flat",
+  "level": "A2",
+  "text": "Last month, Priya moved to a new flat in Manchester. Her old flat was cheap, but it was dark and far from her office. The new one is on the top floor of an old building, and there is no lift. On moving day, two friends came to help her with a van. The van was too small for all her things, so they had to make three trips. They carried heavy boxes up the stairs all afternoon. By the evening, everybody was exhausted and the flat was full of boxes. Priya wanted to make tea, but she couldn't find the box with the kettle. Then somebody knocked on the door. It was an old woman from the flat downstairs. Priya was afraid that she was angry about the noise. But her new neighbour was carrying a tray with a pot of tea and a plate of biscuits. \"Welcome to the building,\" she said. Priya smiled. She already felt at home.",
+  "gloss": {
+   "moved": "went to live in a new place (move)", "flat": "a home on one floor of a building",
+   "cheap": "not costing much money", "dark": "with little light", "top": "highest",
+   "floor": "one level of a building", "lift": "a machine that carries people up and down",
+   "moving": "moving day: the day you change homes", "van": "a big car for carrying things",
+   "trips": "drives there and back (trip)", "carried": "took in their arms (carry)", "heavy": "hard to lift",
+   "boxes": "containers with flat sides (box)", "box": "a container with flat sides",
+   "stairs": "steps inside a building", "exhausted": "very, very tired", "full": "with no space left",
+   "couldn't": "was not able to (could not)", "kettle": "a pot for making water hot for tea",
+   "knocked": "hit the door to say I am here (knock)", "downstairs": "on the floor below",
+   "afraid": "worried", "angry": "feeling cross about something", "noise": "loud sounds",
+   "neighbour": "a person who lives near you", "carrying": "holding in her hands (carry)",
+   "tray": "a flat thing for carrying food and drinks", "pot": "a round container; this one is for tea",
+   "plate": "a flat dish for food", "biscuits": "small, dry, sweet things to eat with tea (biscuit)",
+   "welcome": "we are happy that you are here", "already": "so soon",
+   "felt": "felt at home: was happy and relaxed there (feel)"
+  },
+  "questions": [
+   { "q": "What was wrong with Priya's old flat?", "a": ["dark", "far"] },
+   { "q": "What could Priya not find in the evening?", "a": ["kettle"] },
+   { "q": "What did the neighbour bring on a tray?", "a": ["tea", "biscuits"] }
+  ],
+  "notice": "Had to and couldn't are the past forms of must and can't: \"they had to make three trips\", \"she couldn't find the box\"."
+ },
+ {
+  "id": "en-doctor",
+  "title": "A visit to the doctor",
+  "level": "A2",
+  "text": "For two weeks, Daniel had a headache every evening. He slept badly and he felt tired at work. On Monday he finally went to see a doctor near his apartment in Toronto. He waited for almost an hour in the waiting room. Then the doctor called his name. She asked him a lot of questions. Did he drink enough water? Did he sleep well? How many hours did he spend at his computer? \"About ten hours a day,\" said Daniel. The doctor checked his eyes and asked him to read some small letters on the wall. He couldn't read the last three lines. \"You don't need medicine,\" she said. \"You need glasses.\" A week later, Daniel got his first pair of glasses, and his headaches stopped. Now he can see everything clearly. Unfortunately, he can also see how dirty his windows are.",
+  "gloss": {
+   "headache": "a pain in your head", "headaches": "pains in the head (headache)", "slept": "past of sleep",
+   "badly": "not well", "felt": "past of feel", "finally": "after a long time",
+   "apartment": "a home on one floor of a building", "waited": "stayed there until his turn came (wait)",
+   "almost": "nearly, a little less than", "waiting": "waiting room: where you sit before you see the doctor",
+   "called": "said in a loud voice (call)", "enough": "as much as you need", "spend": "use (time)",
+   "checked": "looked at carefully (check)", "letters": "the signs we write words with, like A and B",
+   "wall": "one of the sides of a room", "couldn't": "was not able to (could not)",
+   "lines": "rows of letters or words (line)", "medicine": "something you take to get better when you are ill",
+   "glasses": "two pieces of glass that you wear to see better", "later": "after that time",
+   "pair": "two things that go together", "stopped": "came to an end (stop)", "everything": "all things",
+   "clearly": "in a way that is easy to see", "unfortunately": "sadly", "dirty": "not clean",
+   "windows": "the glass parts of walls (window)"
+  },
+  "questions": [
+   { "q": "What problem did Daniel have every evening?", "a": ["headache"] },
+   { "q": "What did the doctor say Daniel needed?", "a": ["glasses"] },
+   { "q": "What is dirty in Daniel's home?", "a": ["window"] }
+  ],
+  "notice": "Questions in the past use did + the base form of the verb: \"Did he sleep well?\", \"How many hours did he spend at his computer?\""
+ },
+ {
+  "id": "en-phone",
+  "title": "The lost phone",
+  "level": "A2",
+  "text": "Yesterday evening, Kate took the bus home from work in Edinburgh. She was tired, so she listened to music on her phone and closed her eyes. When she got home, she put her hand in her coat pocket. The phone wasn't there. She looked in her bag and then in every pocket again. Nothing. All her photos, her tickets and her friends' numbers were on that phone. She ran next door and asked her neighbour for help. He called her number. It rang for a long time, and then a man answered. It was the bus driver. \"I found it under a seat,\" he said. \"I finish work at nine. You can collect it from the bus station.\" Kate thanked him at least five times. When she got the phone back, there was a new photo on it. In the picture, the driver was smiling and holding a note. The note said, \"Please don't lose me again.\"",
+  "gloss": {
+   "yesterday": "the day before today", "tired": "needing rest", "listened": "heard with attention (listen)",
+   "got": "got home: arrived home; got it back: had it again (get)",
+   "coat": "a warm thing you wear over your clothes outside", "pocket": "a small bag in your clothes for keys or money",
+   "wasn't": "was not", "again": "one more time", "nothing": "not one thing",
+   "tickets": "things that show you have paid (ticket)", "numbers": "phone numbers",
+   "ran": "past of run", "door": "next door: in the home beside hers", "neighbour": "a person who lives near you",
+   "called": "phoned (call)", "rang": "made the sound of a phone (ring)",
+   "answered": "picked up the phone and spoke (answer)", "driver": "the person who drives the bus",
+   "found": "saw a thing that was lost (find)", "under": "below", "seat": "a place to sit", "finish": "end",
+   "collect": "go and get", "station": "the place where buses start and stop",
+   "thanked": "said thank you to (thank)", "least": "at least: not less than",
+   "picture": "a photo", "smiling": "looking happy (smile)", "holding": "having in his hand (hold)",
+   "note": "a few words on a piece of paper", "lose": "not know where a thing is any more"
+  },
+  "questions": [
+   { "q": "How did Kate travel home from work?", "a": ["bus"] },
+   { "q": "Who found Kate's phone?", "a": ["driver"] },
+   { "q": "What was new on the phone when Kate got it back?", "a": ["photo", "picture"] }
+  ],
+  "notice": "When joins two past actions. If the when part comes first, put a comma after it: \"When she got home, she put her hand in her coat pocket\", \"When she got the phone back, there was a new photo on it\"."
+ },
+ {
+  "id": "en-train",
+  "title": "The delayed train",
+  "level": "B1",
+  "text": "I had prepared for the interview for weeks, so I caught an early train from Bristol to London, just to be safe. For the first hour everything went well. Then, somewhere in the countryside, the train slowed down and stopped. After ten minutes, the driver announced that a tree had fallen on the line. We would be delayed for at least an hour. I looked at my watch and felt sick. My interview was at eleven, and now I was never going to make it. I decided to phone the company and explain. While I was waiting for someone to answer, a phone started ringing a few seats behind me. \"Hello, Sandra speaking,\" said a voice in the carriage and in my ear at the same time. I stood up slowly and turned around. The woman who was supposed to interview me was sitting three rows away. We both burst out laughing. She invited me to sit down, and we did the interview right there. A week later, I got the job.",
+  "gloss": {
+   "prepared": "got ready (prepare)", "interview": "a meeting to choose a person for a job",
+   "caught": "got on a train or bus (catch)", "safe": "just to be safe: so that nothing could go wrong",
+   "countryside": "land with fields and farms, outside towns",
+   "slowed": "slowed down: went less and less fast (slow down)", "announced": "told everyone (announce)",
+   "fallen": "come down to the ground (fall)", "line": "the metal track that trains run on",
+   "delayed": "made late", "least": "at least: not less than", "watch": "a small clock worn on the arm",
+   "sick": "felt sick: felt ill in my stomach", "make": "make it: arrive in time",
+   "decided": "chose what to do (decide)", "company": "a business that people work for",
+   "explain": "say why something has happened", "ringing": "making the sound of a phone (ring)",
+   "seats": "places to sit (seat)", "behind": "at the back of",
+   "voice": "the sound a person makes when speaking", "carriage": "one of the long parts of a train, with seats",
+   "stood": "stood up: got up on my feet (stand)", "turned": "turned around: moved to look behind me (turn)",
+   "supposed": "was supposed to: had the job or plan to", "rows": "lines of seats (row)",
+   "burst": "burst out laughing: suddenly started to laugh", "invited": "asked in a friendly way (invite)",
+   "right": "right there: in that same place"
+  },
+  "questions": [
+   { "q": "Which city was the writer travelling to?", "a": ["london"] },
+   { "q": "What had fallen on the line?", "a": ["tree"] },
+   { "q": "Where did the interview take place in the end?", "a": ["train", "carriage"] }
+  ],
+  "notice": "Was going to and was supposed to describe a plan or an expectation in the past: \"now I was never going to make it\", \"The woman who was supposed to interview me\"."
+ },
+ {
+  "id": "en-birthday",
+  "title": "A birthday surprise",
+  "level": "B1",
+  "text": "My father always says he doesn't want anything for his birthday. This year he was turning seventy, so my sister and I decided to ignore him. We told him that we were taking him out for a quiet dinner at his favorite restaurant in Boston. What he didn't know was that we had been planning something bigger for months. Dad grew up in Ireland, and he hadn't seen his best friend from school, Tom, for almost forty years. They had lost touch when Dad moved to America. My sister found Tom online, and he agreed to fly over. At the restaurant, Dad complained that we were making too much fuss. Then the door opened and an old man with white hair walked in. Dad stared at him for a few seconds without saying a word. \"You're late,\" he said at last, \"by about forty years.\" Then they hugged each other, and everyone at the table cried. Dad still says he doesn't want presents. But he calls Tom every Sunday.",
+  "gloss": {
+   "turning": "turning seventy: becoming seventy years old", "decided": "chose what to do (decide)",
+   "ignore": "take no notice of", "quiet": "calm, without many people",
+   "favorite": "liked more than all the others", "planning": "getting something ready for later (plan)",
+   "dad": "father (a warm family word)", "grew": "grew up: was a child and became an adult (grow up)",
+   "hadn't": "had not", "almost": "nearly",
+   "lost": "lost touch: stopped writing and talking to each other (lose)",
+   "touch": "lost touch: stopped writing and talking to each other", "online": "on the internet",
+   "agreed": "said yes (agree)", "fly": "fly over: come by plane",
+   "complained": "said he was not happy about something (complain)", "fuss": "more attention than is needed",
+   "stared": "looked for a long time without moving his eyes (stare)",
+   "seconds": "very short moments; sixty make a minute (second)", "without": "not doing",
+   "last": "at last: in the end, after a wait", "hugged": "put their arms around each other (hug)",
+   "cried": "had tears in their eyes (cry)", "still": "even now",
+   "presents": "things you give someone on a birthday (present)", "calls": "phones (call)"
+  },
+  "questions": [
+   { "q": "Where did they tell their father they were taking him?", "a": ["restaurant", "dinner"] },
+   { "q": "In which country did the father grow up?", "a": ["ireland"] },
+   { "q": "What does the father do every Sunday now?", "a": ["call", "tom", "friend"] }
+  ],
+  "notice": "The past perfect (had + past participle) is for something that happened before another moment in the past: \"he hadn't seen his best friend from school\", \"They had lost touch when Dad moved to America\"."
+ },
+ {
+  "id": "en-cooking",
+  "title": "A cooking disaster",
+  "level": "B1",
+  "text": "When I moved to Dublin, my new neighbours invited me to dinner. I was so grateful that I promised to cook for them the following week. This was a mistake, because I can barely boil an egg. I chose a recipe for roast chicken with lemon that looked simple enough in the video. On Saturday afternoon, everything went wrong. I forgot to turn the oven on for the first forty minutes. Then, to save time, I turned it up as high as it would go. While I was setting the table, the smoke alarm went off. The chicken was black on the outside and still raw in the middle. Worse, I had used salt instead of sugar in the chocolate cake. My guests arrived to find every window open and me almost in tears. Fortunately, they thought it was hilarious. We ordered pizza and ate it on the balcony, and they stayed until midnight. Since then, we have had dinner together every month. They do the cooking, and I bring the dessert from the bakery.",
+  "gloss": {
+   "neighbours": "people who live near you (neighbour)", "invited": "asked to come (invite)",
+   "grateful": "wanting to thank someone", "promised": "said I would surely do it (promise)",
+   "following": "next", "mistake": "something done wrong", "barely": "almost not",
+   "boil": "cook in very hot water", "chose": "picked (choose)", "recipe": "instructions for cooking a dish",
+   "roast": "cooked in the oven", "lemon": "a sour yellow fruit", "enough": "simple enough: as simple as I needed",
+   "went": "went wrong: was a failure; went off: started to ring (go)",
+   "forgot": "did not remember (forget)", "oven": "the hot box in a kitchen for baking",
+   "save": "save time: use less time", "turned": "turned it up: made it hotter (turn up)",
+   "setting": "setting the table: putting out plates, knives and forks",
+   "smoke": "the grey cloud that rises from a fire",
+   "alarm": "a machine that rings loudly when there is danger", "raw": "not cooked",
+   "worse": "even more bad", "salt": "white powder from the sea that gives food more taste",
+   "instead": "in place of", "guests": "people you invite to your home (guest)", "tears": "in tears: crying",
+   "fortunately": "luckily", "hilarious": "very, very funny",
+   "ordered": "asked a restaurant to send food (order)",
+   "balcony": "a small outside floor on the side of a building", "midnight": "twelve o'clock at night",
+   "dessert": "the sweet dish at the end of a meal", "bakery": "a shop that sells bread and cakes"
+  },
+  "questions": [
+   { "q": "Who did the writer promise to cook for?", "a": ["neighbour"] },
+   { "q": "What did the writer put in the cake instead of sugar?", "a": ["salt"] },
+   { "q": "What did they eat in the end?", "a": ["pizza"] }
+  ],
+  "notice": "Phrasal verbs join a verb and a short word to make a new meaning: \"the smoke alarm went off\" (began to ring), \"I turned it up\" (made it hotter)."
+ },
+ {
+  "id": "en-job",
+  "title": "My first day",
+  "level": "B1",
+  "text": "On my first day at a new company in Vancouver, I arrived twenty minutes early, wearing my best jacket. The receptionist gave me a visitor's badge and told me that my manager was stuck in traffic. \"There's a team meeting in room four,\" she said. \"Why don't you join them?\" I found the room, sat down at the back and tried to look confident. For an hour, people discussed an advertising campaign for a new kind of dog food. I was surprised, because I had been hired as an accountant, but I took careful notes anyway. Near the end, someone asked if the new person had any ideas. Everybody turned to look at me. I said the first thing that came into my head, something about happy dogs, and to my relief, they liked it. Then my real manager appeared at the door, out of breath. I had been sitting in the wrong meeting. The right one was in room four on the floor above. My colleagues still tease me about it. But last month, I saw my idea on a poster at a bus stop.",
+  "gloss": {
+   "company": "a business where people work", "arrived": "got there (arrive)",
+   "wearing": "having on my body (wear)", "jacket": "a short coat",
+   "receptionist": "the person at the front desk who welcomes visitors",
+   "visitor": "a person who comes for a short time", "badge": "a small card with a name, worn on your clothes",
+   "manager": "the person who leads a team at work", "stuck": "not able to move",
+   "traffic": "all the cars on the road", "team": "a group of people who work together",
+   "meeting": "a time when people sit together to talk about work", "join": "go and be with",
+   "confident": "sure of yourself", "discussed": "talked about (discuss)",
+   "advertising": "telling people about a product so that they buy it",
+   "campaign": "a plan of many advertisements for one product",
+   "surprised": "feeling that this was not what I expected", "hired": "given a job (hire)",
+   "accountant": "a person who looks after a company's money",
+   "careful": "done with a lot of attention", "notes": "short things you write down to remember (note)",
+   "anyway": "even so", "relief": "to my relief: I was glad, because I had been worried", "real": "true",
+   "appeared": "came where I could see them (appear)", "breath": "out of breath: breathing fast after running",
+   "wrong": "not the right one", "above": "higher up", "colleagues": "people you work with (colleague)",
+   "tease": "laugh at in a friendly way", "poster": "a big printed picture or notice on a wall"
+  },
+  "questions": [
+   { "q": "Why was the manager late?", "a": ["traffic"] },
+   { "q": "What kind of food was the advertising campaign for?", "a": ["dog", "dogs"] },
+   { "q": "Where did the writer later see the idea?", "a": ["poster", "bus"] }
+  ],
+  "notice": "In reported speech the verb moves back into the past, and a yes or no question is reported with if: \"told me that my manager was stuck in traffic\", \"someone asked if the new person had any ideas\"."
+ },
+ {
+  "id": "en-swim",
+  "title": "Learning to swim",
+  "level": "B1",
+  "text": "Grace grew up in a small town in the middle of Australia, hundreds of kilometres from the sea. Nobody had ever taught her to swim, and for years it didn't matter. Then she moved to Perth, where people seem to spend half their lives in the water. At the beach, she was always the one who stayed on the sand and looked after everybody's towels. When she turned forty-five, her friends started planning a trip to a famous reef. Grace decided that she had done enough watching. She signed up for an adult beginners' class at the local pool. The first lessons were embarrassing. Children in the next lane were swimming like fish while she held on to the wall. \"Stop fighting the water,\" her teacher kept saying. \"Let it carry you.\" Slowly, she learned to float, then to breathe, then to swim a whole length without stopping. Six months later, she was floating above the reef with her friends when a turtle swam past. These days, somebody else has to look after the towels.",
+  "gloss": {
+   "grew": "grew up: was a child and became an adult (grow up)", "middle": "the centre, far from the edges",
+   "hundreds": "hundreds of: a very large number of", "kilometres": "a kilometre is a thousand metres",
+   "taught": "shown how to do something (teach)", "matter": "be important", "seem": "look as if they do",
+   "spend": "use (time)", "lives": "the time people are alive (life)",
+   "sand": "the soft yellow ground on a beach", "looked": "looked after: kept safe (look after)",
+   "towels": "cloths for drying your body (towel)", "turned": "turned forty-five: became forty-five years old",
+   "planning": "getting ready for later (plan)", "famous": "known by many people",
+   "reef": "a line of rock or coral just under the sea", "enough": "as much as she wanted, no more",
+   "signed": "signed up: put her name down to join (sign up)", "adult": "a grown person, not a child",
+   "beginners": "people who are starting to learn something (beginner)", "local": "near her home",
+   "pool": "a place built for swimming", "embarrassing": "making you feel shy and a little silly",
+   "lane": "one of the long narrow parts of a swimming pool", "held": "held on to: kept her hands on (hold)",
+   "fighting": "pushing against, as if it were an enemy (fight)", "kept": "kept saying: said again and again (keep)",
+   "carry": "hold you up", "float": "stay on top of the water", "breathe": "take air in and let it out",
+   "length": "the way from one end of the pool to the other",
+   "floating": "lying on top of the water (float)", "turtle": "a sea animal with a hard round shell",
+   "swam": "swam past: went by her in the water (swim)", "else": "somebody else: another person"
+  },
+  "questions": [
+   { "q": "At the beach, what did Grace always look after?", "a": ["towel"] },
+   { "q": "What did the teacher tell Grace to stop fighting?", "a": ["water"] },
+   { "q": "Which animal swam past Grace at the reef?", "a": ["turtle"] }
+  ],
+  "notice": "Who and where can begin a clause that says more about a person or a place: \"the one who stayed on the sand\", \"Perth, where people seem to spend half their lives in the water\"."
+ },
+ {
+  "id": "en-letter",
+  "title": "The letter in the attic",
+  "level": "B2",
+  "text": "When Hannah bought an old wooden house in Nova Scotia, the attic was the last room she got around to clearing. It was crammed with broken chairs, rusty tools and boxes that had not been opened for decades. One rainy afternoon, while she was sweeping the floor, she noticed that one of the boards was loose. Underneath it lay a small tin box, and inside the box was an envelope marked \"To whoever lives here next.\" The letter had been written more than sixty years earlier by a boy called Peter, who was eleven at the time. His family was about to move away, he explained. He was worried about the apple tree he had planted behind the house. Would the new owner please water it in dry summers? Hannah looked out of the window. The tree was still there, taller than the roof and covered in blossom. Curious, she asked around the town until somebody remembered the family's name. It took her several weeks to track Peter down. He turned out to be a retired teacher in his seventies, living in Halifax. That September, he drove out to visit, and they picked the apples together. He admitted that he had never expected anyone to read his letter, let alone to answer it.",
+  "gloss": {
+   "wooden": "made of wood", "attic": "the room under the roof of a house",
+   "got": "got around to: finally found time for", "clearing": "emptying, taking everything out of (clear)",
+   "crammed": "very full, with things pushed in",
+   "rusty": "covered with the red-brown stuff that forms on old metal",
+   "tools": "things you hold to do a job, like a hammer (tool)", "decades": "periods of ten years (decade)",
+   "rainy": "with a lot of rain", "sweeping": "cleaning the floor with a brush (sweep)",
+   "noticed": "saw for the first time (notice)", "boards": "long flat pieces of wood in a floor (board)",
+   "loose": "not fixed, able to move", "underneath": "under, below", "lay": "was resting there (lie)",
+   "tin": "a light, cheap metal", "envelope": "the paper cover of a letter",
+   "marked": "with these words written on it", "whoever": "the person who, any person who",
+   "earlier": "before that time", "about": "was about to: was going to, very soon",
+   "explained": "gave the reason (explain)", "worried": "afraid that something bad would happen",
+   "planted": "put into the ground to grow (plant)", "owner": "the person something belongs to",
+   "water": "give water to (a plant)", "roof": "the top cover of a house",
+   "covered": "with something all over it", "blossom": "the flowers of a fruit tree in spring",
+   "curious": "wanting to know more", "several": "more than two, but not many",
+   "track": "track down: find after a long search", "turned": "turned out to be: was, as she found in the end",
+   "retired": "no longer working because of age",
+   "seventies": "in his seventies: between seventy and seventy-nine years old",
+   "picked": "took fruit from a tree (pick)", "admitted": "said something he was a little shy about (admit)",
+   "expected": "thought that it would happen (expect)", "alone": "let alone: and even less"
+  },
+  "questions": [
+   { "q": "Where was the tin box hidden?", "a": ["board", "floor", "attic"] },
+   { "q": "What had Peter planted behind the house?", "a": ["apple", "tree"] },
+   { "q": "What job had Peter done before he retired?", "a": ["teacher"] }
+  ],
+  "notice": "The past perfect passive (had been + past participle) tells what was done to something earlier, without saying who did it: \"boxes that had not been opened for decades\", \"The letter had been written more than sixty years earlier\"."
+ },
+ {
+  "id": "en-bookshop",
+  "title": "The bookshop on the high street",
+  "level": "B2",
+  "text": "For as long as I can remember, there has been a bookshop on the high street of our Yorkshire town. Its owner, Margaret, has run it for thirty years and seems to have read every book on her shelves. Last month, a notice appeared in the window. The rent was going up again, it said, and unless something changed, the shop would close in the spring. The news spread quickly. People who had not set foot in the place for years declared that the town would not be the same without it. I was as upset as anyone. Then I realised, with some embarrassment, that I had not bought a book there for over a year. Like most of my neighbours, I had got into the habit of shopping online. On the internet, books were cheaper, and I did not have to leave the sofa. If the shop was in trouble, it was partly my fault. So a few of us decided to do more than complain. We started a monthly book club and persuaded the local school to order its books from Margaret. We also promised to buy all our presents from her. Whether that will be enough, nobody knows. But the shop was crowded last Saturday, and Margaret was far too busy to look worried.",
+  "gloss": {
+   "bookshop": "a shop that sells books", "high": "high street: the main shopping street of a British town",
+   "owner": "the person a shop belongs to", "run": "been in charge of",
+   "seems": "seems to have: looks as if she has", "shelves": "long flat boards where books stand (shelf)",
+   "notice": "a sheet of paper with news for people to read", "appeared": "was suddenly there (appear)",
+   "rent": "money paid every month to use a building", "unless": "if not",
+   "spread": "went from person to person", "foot": "set foot in: gone into",
+   "declared": "said firmly, for all to hear (declare)", "upset": "sad and worried",
+   "realised": "suddenly understood (realise)",
+   "embarrassment": "the feeling of being ashamed in front of others",
+   "neighbours": "people who live near you (neighbour)", "habit": "something you do often, without thinking",
+   "online": "on the internet", "cheaper": "costing less (cheap)",
+   "sofa": "a long soft seat", "trouble": "in trouble: having serious problems",
+   "partly": "in some way, but not completely", "fault": "my fault: something I am to blame for",
+   "complain": "say that you are not happy about something", "monthly": "happening once a month",
+   "club": "a group that meets to do something together",
+   "persuaded": "made someone agree by giving good reasons (persuade)", "local": "of our own town",
+   "promised": "said we would surely do it (promise)",
+   "presents": "gifts, for a birthday for example (present)",
+   "whether": "if (it will or will not)", "crowded": "full of people",
+   "worried": "afraid that something bad will happen"
+  },
+  "questions": [
+   { "q": "What appeared in the shop window last month?", "a": ["notice"] },
+   { "q": "Where had the writer been buying things for the past year?", "a": ["online", "internet"] },
+   { "q": "What did the group of neighbours start?", "a": ["club"] }
+  ],
+  "notice": "In reported speech, will becomes would: \"the shop would close in the spring\", \"the town would not be the same without it\"."
+ },
+ {
+  "id": "en-garden",
+  "title": "The community garden",
+  "level": "B2",
+  "text": "Three years ago, the lot behind our apartment building in Philadelphia was nothing but weeds and broken glass. Today it is a community garden with twenty raised beds, a row of fruit trees and a waiting list. I joined mainly to get out of the house, having never grown anything more demanding than a houseplant. Last summer, however, the garden nearly fell apart. Vegetables began disappearing overnight, first a few tomatoes, then entire rows of beans. Tempers rose at our monthly meeting. Some members demanded a tall fence with a lock. Others argued that a locked garden would no longer belong to the neighborhood. In the end, we agreed to find out who was responsible before deciding anything. Two of us kept watch one evening, expecting teenagers. Instead, we saw an elderly man from across the street, filling a small bag with great care. He had lost his job the year before, it turned out, and had been too proud to ask for help. Nobody mentioned a fence again. We built a table by the gate, where gardeners now leave whatever they can spare, under a sign that says \"Help yourself.\" The man comes every Tuesday. These days he brings his own gloves and does most of the weeding.",
+  "gloss": {
+   "lot": "a piece of land in a city", "weeds": "wild plants that grow where nobody wants them (weed)",
+   "community": "the people who live in one area",
+   "raised": "raised beds: boxes of earth for growing plants",
+   "beds": "raised beds: boxes of earth for growing plants",
+   "row": "a line of things side by side", "waiting": "waiting list: the names of people who want a place",
+   "grown": "made a plant live and get bigger (grow)", "demanding": "needing a lot of work or care",
+   "houseplant": "a plant kept in a pot indoors", "nearly": "almost",
+   "fell": "fell apart: broke up, stopped working as a group (fall)",
+   "apart": "fell apart: broke up, stopped working as a group", "disappearing": "going missing (disappear)",
+   "overnight": "during the night", "entire": "whole",
+   "beans": "long thin green vegetables, or their seeds (bean)", "tempers": "tempers rose: people became angry",
+   "rose": "tempers rose: people became angry (rise)", "monthly": "held once a month",
+   "demanded": "asked for very firmly (demand)", "fence": "a wall of wood or wire around a piece of land",
+   "lock": "a metal thing that keeps a gate shut",
+   "argued": "gave reasons for their opinion (argue)", "belong": "be a part of",
+   "neighborhood": "the streets around your home and the people in them", "responsible": "the one who did it",
+   "kept": "kept watch: stayed and looked carefully (keep)", "expecting": "thinking they would see (expect)",
+   "teenagers": "young people from thirteen to nineteen (teenager)", "elderly": "old (a polite word)",
+   "turned": "it turned out: we learned later", "proud": "not wanting to show that you need help",
+   "mentioned": "spoke about (mention)", "gate": "the door in a fence", "whatever": "anything that",
+   "spare": "give away because they have more than they need", "gloves": "clothes for your hands (glove)",
+   "weeding": "pulling out the weeds"
+  },
+  "questions": [
+   { "q": "What was the lot full of three years ago?", "a": ["weeds", "glass"] },
+   { "q": "What did some members want to put around the garden?", "a": ["fence"] },
+   { "q": "What did the gardeners build by the gate?", "a": ["table"] }
+  ],
+  "notice": "An -ing clause after a comma adds what someone was doing or thinking, with no new sentence: \"Two of us kept watch one evening, expecting teenagers\", \"filling a small bag with great care\"."
+ },
+ {
+  "id": "en-d-bakery",
+  "title": "At the bakery",
+  "level": "A1",
+  "roles": ["Baker", "Customer"],
+  "lines": [
+   [0, "Good morning! What can I get you?"],
+   [1, "Good morning. Can I have a loaf of brown bread, please?"],
+   [0, "I'm sorry, the brown bread is all gone. We have white bread and fresh rolls."],
+   [1, "That's okay. I'll take four rolls, please."],
+   [0, "Here you are. Would you like anything else?"],
+   [1, "Yes, please. How much are the apple cakes?"],
+   [0, "They're two pounds each."],
+   [1, "Good. I'd like two apple cakes, please."],
+   [0, "Of course. That's six pounds, please."],
+   [1, "Can I pay by card?"],
+   [0, "Yes, no problem. Put your card here, please."],
+   [1, "Thank you very much. Have a nice day!"],
+   [0, "Thanks, you too. Goodbye!"]
+  ],
+  "gloss": {
+   "get": "what can I get you: what do you want", "loaf": "one whole bread",
+   "brown": "dark, like the colour of chocolate", "sorry": "a word you say when something is not good",
+   "gone": "all gone: there is no more", "fresh": "made today",
+   "rolls": "small round breads for one person (roll)", "okay": "all right, good",
+   "else": "anything else: one more thing", "much": "how much: what is the price",
+   "cakes": "soft sweet foods (cake)", "pounds": "the money of Britain (pound)", "each": "for one",
+   "course": "of course: yes, sure", "pay": "give money for something",
+   "card": "a small bank card that you pay with", "problem": "no problem: that is fine"
+  },
+  "questions": [
+   { "q": "Which bread is all gone?", "a": ["brown"] },
+   { "q": "How does the customer pay?", "a": ["card"] }
+  ],
+  "notice": "Can I ...? is an easy, polite way to ask for something: \"Can I have a loaf of brown bread, please?\", \"Can I pay by card?\""
+ },
+ {
+  "id": "en-d-way",
+  "title": "Asking the way",
+  "level": "A1",
+  "roles": ["Local", "Visitor"],
+  "lines": [
+   [1, "Excuse me. Can you help me, please?"],
+   [0, "Sure. What are you looking for?"],
+   [1, "I'm looking for the art museum. Is it near here?"],
+   [0, "Yes, it's not far. It's about ten minutes on foot."],
+   [1, "Good. How do I get there?"],
+   [0, "Go straight for two blocks. Then turn left at the bank."],
+   [1, "Sorry, can you say that again more slowly?"],
+   [0, "Of course. Go straight. At the bank, turn left. The museum is next to the park."],
+   [1, "Straight, then left at the bank. Is the museum open today?"],
+   [0, "Oh, wait. Today is Monday. The art museum is closed on Mondays."],
+   [1, "Oh no! Is there another museum near here?"],
+   [0, "Yes, the history museum is open every day. It's across the street from the art museum."],
+   [1, "Great. Thank you very much for your help."],
+   [0, "You're welcome. Have a good day!"]
+  ],
+  "gloss": {
+   "excuse": "excuse me: polite words for starting to talk to someone",
+   "looking": "looking for: trying to find", "art": "paintings and other beautiful things that people make",
+   "museum": "a building where you can see art or old things", "near": "not far from", "far": "a long way",
+   "foot": "on foot: walking", "straight": "in one line, without turning",
+   "blocks": "the parts of a street between two corners (block)",
+   "turn": "change the way you are going", "left": "the other side from right",
+   "bank": "a place that keeps people's money", "again": "one more time", "slowly": "not fast",
+   "next": "next to: at the side of", "park": "a green place in a city, with trees and grass",
+   "open": "ready for visitors", "closed": "not open", "another": "one more, a different one",
+   "history": "the story of the past",
+   "across": "across the street from: on the other side of the street",
+   "welcome": "you're welcome: a polite answer to thank you"
+  },
+  "questions": [
+   { "q": "Where does the visitor turn left?", "a": ["bank"] },
+   { "q": "On which day is the art museum closed?", "a": ["monday"] }
+  ],
+  "notice": "To tell someone the way, use the verb with no subject: \"Go straight for two blocks\", \"turn left at the bank\"."
+ },
+ {
+  "id": "en-d-neighbour",
+  "title": "A new neighbour",
+  "level": "A1",
+  "roles": ["Helen", "Leo"],
+  "lines": [
+   [0, "Hello! Are you my new neighbour?"],
+   [1, "Yes, I am. My name is Leo. I'm new here."],
+   [0, "Nice to meet you, Leo. I'm Helen. I live next door."],
+   [1, "Nice to meet you too. Is this a quiet street?"],
+   [0, "Yes, very quiet. Where are you from?"],
+   [1, "I'm from Spain, but I work here in Leeds now."],
+   [0, "Welcome to Leeds! Do you live alone?"],
+   [1, "No, I live with my wife and our little dog."],
+   [0, "A little dog? Is it small and white?"],
+   [1, "Yes, she is. Her name is Coco. Why?"],
+   [0, "Because there is a small white dog in my garden right now!"],
+   [1, "Oh no! I'm so sorry. She loves gardens."],
+   [0, "Don't worry. I love dogs. Come in and have a cup of tea."],
+   [1, "Thank you, Helen. That's very kind of you."]
+  ],
+  "gloss": {
+   "neighbour": "a person who lives near you", "meet": "see and talk to someone for the first time",
+   "next": "next door: in the house beside this one", "quiet": "with little noise",
+   "street": "a road in a town, with houses", "welcome": "we are happy that you are here",
+   "alone": "with no other people", "wife": "the woman a man is married to", "little": "small",
+   "garden": "the land by a house, with grass and flowers", "gardens": "more than one garden",
+   "right": "right now: at this moment", "sorry": "a word you say when you feel bad about something",
+   "worry": "don't worry: it is all right", "cup": "a small thing you drink from",
+   "kind": "good and friendly to other people"
+  },
+  "questions": [
+   { "q": "Which country is Leo from?", "a": ["spain"] },
+   { "q": "Where is the little dog right now?", "a": ["garden"] }
+  ],
+  "notice": "A short answer repeats only the first verb, not the whole sentence: \"Yes, I am\", \"Yes, she is\"."
+ },
+ {
+  "id": "en-d-pharmacy",
+  "title": "At the pharmacy",
+  "level": "A2",
+  "roles": ["Pharmacist", "Customer"],
+  "lines": [
+   [0, "Hello. How can I help you?"],
+   [1, "Hi. I've had a sore throat and a bad cough for three days."],
+   [0, "I see. Do you have a temperature?"],
+   [1, "No, I don't think so. But I can't sleep because of the cough."],
+   [0, "Are you taking any other medicine at the moment?"],
+   [1, "No, nothing. Could I have some antibiotics, please?"],
+   [0, "I'm sorry, I can't sell antibiotics without a prescription from a doctor."],
+   [1, "Oh, I didn't know that. What can I take instead?"],
+   [0, "This cough syrup is very good. Take two spoonfuls before bed. And these tablets will help your throat."],
+   [1, "How often should I take the tablets?"],
+   [0, "One every four hours, but not more than six a day."],
+   [1, "All right, I'll take both. How much is that?"],
+   [0, "That's eighteen dollars. If you don't feel better in three days, you should see a doctor."],
+   [1, "I will. Thank you for your help."]
+  ],
+  "gloss": {
+   "sore": "hurting", "throat": "the inside of your neck, where food goes down",
+   "cough": "a sudden loud noise in your throat when you are ill",
+   "temperature": "have a temperature: your body is hotter than normal",
+   "medicine": "something you take to get better", "moment": "at the moment: now",
+   "antibiotics": "a strong medicine that only a doctor can give you", "sell": "give for money",
+   "without": "not having", "prescription": "a doctor's paper that says which medicine you can buy",
+   "instead": "in its place", "syrup": "a thick sweet liquid",
+   "spoonfuls": "what a spoon can hold (spoonful)", "tablets": "small hard pieces of medicine (tablet)",
+   "often": "how often: how many times", "should": "it is a good idea to", "both": "the two of them",
+   "better": "less ill"
+  },
+  "questions": [
+   { "q": "Why can the customer not sleep?", "a": ["cough"] },
+   { "q": "What does the customer need to buy antibiotics?", "a": ["prescription", "doctor"] }
+  ],
+  "notice": "Should asks for advice and gives it: \"How often should I take the tablets?\", \"you should see a doctor\"."
+ },
+ {
+  "id": "en-d-hotel",
+  "title": "Checking in at a hotel",
+  "level": "A2",
+  "roles": ["Receptionist", "Guest"],
+  "lines": [
+   [0, "Good evening, and welcome. Do you have a reservation?"],
+   [1, "Good evening. Yes, I booked a room for three nights. The name is Elena Rossi."],
+   [0, "Let me check. Yes, here it is. A double room on the second floor."],
+   [1, "A double room? But I booked a room with two single beds. I'm travelling with my brother."],
+   [0, "Oh, I'm very sorry. There is a mistake in our system."],
+   [1, "Can you change it, please? We really need two beds."],
+   [0, "I'm afraid we have no twin rooms tonight. But I can give you a bigger room with a sofa bed."],
+   [1, "Is it more expensive?"],
+   [0, "No, it's the same price."],
+   [1, "And is the sofa bed comfortable?"],
+   [0, "Yes, very comfortable. And tomorrow I can move you to a twin room."],
+   [1, "All right, that sounds fine. What time is breakfast?"],
+   [0, "Breakfast is from seven to ten in the dining room. Here is your key. The lift is on your left."],
+   [1, "Thank you very much for your help."],
+   [0, "You're welcome. Enjoy your stay!"]
+  ],
+  "gloss": {
+   "reservation": "a room that the hotel keeps for you",
+   "booked": "asked the hotel to keep (book)", "check": "look to see if it is right",
+   "double": "double room: a room with one big bed", "floor": "one level of a building",
+   "single": "for one person", "travelling": "going from place to place (travel)",
+   "mistake": "something that is wrong", "system": "the computer program that the hotel uses",
+   "change": "make different", "really": "very much", "afraid": "I'm afraid: I am sorry to say",
+   "twin": "twin room: a room with two single beds", "tonight": "this evening and night",
+   "bigger": "more big", "sofa": "sofa bed: a seat that opens to make a bed",
+   "expensive": "costing a lot of money", "price": "how much money something costs",
+   "comfortable": "nice to sit or sleep on",
+   "move": "put in a different place", "sounds": "that sounds fine: I think that is good",
+   "dining": "dining room: the room where people eat", "key": "the thing that opens a door",
+   "lift": "a machine that carries people up and down", "enjoy": "have a good time during",
+   "stay": "the time you spend in the hotel"
+  },
+  "questions": [
+   { "q": "Who is the guest travelling with?", "a": ["brother"] },
+   { "q": "What kind of bed is in the bigger room?", "a": ["sofa"] }
+  ],
+  "notice": "Can is used both to ask for help and to offer it: \"Can you change it, please?\", \"I can give you a bigger room\"."
+ },
+ {
+  "id": "en-d-table",
+  "title": "Booking a table",
+  "level": "A2",
+  "roles": ["Waiter", "Customer"],
+  "lines": [
+   [0, "Good afternoon, the Old Mill restaurant. How can I help you?"],
+   [1, "Hello. I'd like to book a table for Saturday evening, please."],
+   [0, "Certainly. For how many people?"],
+   [1, "For six people, at eight o'clock if possible."],
+   [0, "I'm sorry, we're full at eight. I have a table at half past six or at nine."],
+   [1, "Nine is too late for the children. Half past six is better."],
+   [0, "No problem. Would you like to sit inside, or outside in the garden?"],
+   [1, "In the garden, please, if the weather is good."],
+   [0, "Of course. Can I have your name, please?"],
+   [1, "It's Marco Costa. And I have one more question."],
+   [0, "Yes, of course. Go ahead."],
+   [1, "It's my mother's birthday. Can we bring our own cake?"],
+   [0, "Certainly. We can keep it in the kitchen and bring it out with candles."],
+   [1, "That would be perfect. Thank you very much."],
+   [0, "You're welcome. See you on Saturday at half past six."],
+   [1, "See you then. Goodbye!"]
+  ],
+  "gloss": {
+   "book": "ask a restaurant to keep a table for you", "certainly": "yes, of course",
+   "possible": "if possible: if you can do it", "full": "with no free tables",
+   "half": "half past six: thirty minutes after six", "late": "after a good time",
+   "inside": "in the building", "outside": "not in the building, in the open air",
+   "garden": "a place with grass and plants beside a building", "weather": "sun, rain, wind, hot or cold",
+   "question": "something you ask", "ahead": "go ahead: please ask",
+   "birthday": "the day of the year when a person was born", "bring": "come with",
+   "own": "our own: one that is ours", "keep": "have and look after",
+   "candles": "small sticks that burn with a light, for a birthday cake (candle)",
+   "perfect": "as good as it can be", "then": "see you then: see you at that time"
+  },
+  "questions": [
+   { "q": "Where does the customer want to sit?", "a": ["garden", "outside"] },
+   { "q": "Whose birthday is it on Saturday?", "a": ["mother"] }
+  ],
+  "notice": "Would like is a polite way to say want. Use it to ask and to answer: \"I'd like to book a table\", \"Would you like to sit inside\"."
+ },
+ {
+  "id": "en-d-return",
+  "title": "Returning faulty headphones",
+  "level": "B1",
+  "roles": ["Shop assistant", "Customer"],
+  "lines": [
+   [0, "Hi there. How can I help you today?"],
+   [1, "Hello. I bought these headphones here two weeks ago, and the left side has stopped working."],
+   [0, "Oh dear. Have you tried charging them fully?"],
+   [1, "Yes, I've tried everything in the instructions, but nothing makes any difference."],
+   [0, "I see. Do you have your receipt with you?"],
+   [1, "Yes, here it is. I paid by card, if that helps."],
+   [0, "Thank you. Well, we could send them away to be repaired, but that usually takes about three weeks."],
+   [1, "I'd rather not wait that long. Could I exchange them for a new pair instead?"],
+   [0, "Let me check. I'm afraid we've sold out of the black ones. We only have them in white at the moment."],
+   [1, "In that case, I'd prefer to have my money back, if that's possible."],
+   [0, "Of course. Since they're faulty, you're entitled to a full refund. It'll go back onto your card within five days."],
+   [1, "That's fine. Do I need to sign anything?"],
+   [0, "Just here, please. And I'm sorry about the trouble."],
+   [1, "No problem at all. Thanks for sorting it out so quickly."]
+  ],
+  "gloss": {
+   "headphones": "things you wear on your ears to listen to music",
+   "tried": "done to see if it works (try)", "charging": "filling the battery with power (charge)",
+   "fully": "completely", "instructions": "the paper that tells you how to use something",
+   "difference": "makes any difference: changes anything", "receipt": "the paper that shows what you paid",
+   "repaired": "made to work again (repair)", "usually": "most times",
+   "rather": "I'd rather not: I would prefer not to", "exchange": "give back and take another one",
+   "pair": "two things that go together", "instead": "in place of that",
+   "afraid": "I'm afraid: I am sorry to say", "sold": "sold out of: have none left to sell (sell)",
+   "case": "in that case: if that is so", "prefer": "like better", "faulty": "not working as it should",
+   "entitled": "entitled to: having the right to get", "refund": "money given back to a customer",
+   "within": "in no more than", "sign": "write your name on a paper",
+   "trouble": "the problems this gave you", "sorting": "sorting it out: solving the problem (sort out)"
+  },
+  "questions": [
+   { "q": "Which side of the headphones has stopped working?", "a": ["left"] },
+   { "q": "What does the customer ask for in the end?", "a": ["money", "refund"] }
+  ],
+  "notice": "I'd rather (not) + verb and I'd prefer to + verb say politely what you want: \"I'd rather not wait that long\", \"I'd prefer to have my money back\"."
+ },
+ {
+  "id": "en-d-flat",
+  "title": "Viewing a flat",
+  "level": "B1",
+  "roles": ["Letting agent", "Visitor"],
+  "lines": [
+   [0, "Come in. This is the living room. It gets the sun all afternoon."],
+   [1, "It's brighter than I expected. Is the furniture included?"],
+   [0, "Yes, everything you can see stays, including the washing machine in the kitchen."],
+   [1, "That's good to know. And how much is the rent exactly?"],
+   [0, "Nine hundred pounds a month, plus a deposit of one month's rent."],
+   [1, "Does that include any bills, or are they extra?"],
+   [0, "Water is included. Gas, electricity and internet are separate."],
+   [1, "I see. How is the flat heated? It feels a bit cold in here."],
+   [0, "There are radiators in every room. To be honest, the boiler is rather old, but the landlord has promised to replace it before winter."],
+   [1, "Could that promise be written into the contract?"],
+   [0, "I can certainly ask him. Is there anything else you'd like to know?"],
+   [1, "Yes. When would the flat be available, and how long is the contract?"],
+   [0, "From the first of next month, for at least twelve months."],
+   [1, "It's the nicest flat I've seen so far, but I need a day to think it over."],
+   [0, "Of course. Just let me know by Friday, because two other people are viewing it tomorrow."],
+   [1, "I'll call you tomorrow afternoon. Thanks for showing me around."]
+  ],
+  "gloss": {
+   "brighter": "with more light (bright)", "expected": "thought it would be (expect)",
+   "furniture": "tables, chairs, beds and other large things in a home",
+   "included": "part of what you get for the price (include)", "including": "and also",
+   "include": "have as a part", "rent": "the money you pay every month for a home",
+   "exactly": "with no mistake, the true number",
+   "deposit": "money paid at the start and given back at the end",
+   "bills": "what you pay for water, gas and electricity (bill)",
+   "extra": "added on top of the price", "electricity": "the power for lights and machines",
+   "separate": "not together, paid for on their own", "heated": "made warm (heat)",
+   "radiators": "metal heaters on the wall, with hot water inside (radiator)",
+   "honest": "to be honest: to tell the truth", "boiler": "the machine that heats the water for a home",
+   "rather": "quite, more than a little",
+   "landlord": "the person who owns the home you pay to live in",
+   "promised": "said that he would surely do it (promise)", "replace": "put a new one in its place",
+   "promise": "something you say you will surely do",
+   "contract": "the paper with the rules that both people sign", "certainly": "of course, surely",
+   "available": "free to move into", "least": "at least: not less than", "far": "so far: until now",
+   "over": "think it over: think carefully before deciding", "viewing": "coming to look at (view)",
+   "showing": "showing me around: taking me through the rooms (show around)"
+  },
+  "questions": [
+   { "q": "Which bill is included in the rent?", "a": ["water"] },
+   { "q": "What has the landlord promised to replace?", "a": ["boiler"] }
+  ],
+  "notice": "The passive (be + past participle) puts the thing first when it matters more than who acts: \"Is the furniture included?\", \"How is the flat heated?\""
+ }
+]

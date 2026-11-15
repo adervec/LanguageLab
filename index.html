@@ -2,14 +2,14 @@
 <html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://accounts.google.com https://adervec.github.io; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.googleusercontent.com; connect-src 'self' https://adervec.github.io https://www.googleapis.com https://accounts.google.com https://oauth2.googleapis.com; frame-src https://accounts.google.com; font-src https://adervec.github.io; manifest-src 'self'; worker-src 'self'; form-action 'none'; base-uri 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://accounts.google.com https://adervec.github.io; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.googleusercontent.com; media-src blob:; connect-src 'self' https://adervec.github.io https://www.googleapis.com https://accounts.google.com https://oauth2.googleapis.com; frame-src https://accounts.google.com; font-src https://adervec.github.io; manifest-src 'self'; worker-src 'self'; form-action 'none'; base-uri 'none'; object-src 'none'">
 <title>LanguageLab</title>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-192.png">
 <meta name="theme-color" content="#1f5f8b">
 <meta name="app-name" content="LanguageLab">
-<meta name="app-version" content="0.2.0">
+<meta name="app-version" content="0.3.0">
 <meta name="app-license" content="MIT">
 <meta name="app-data-note" content="Your stories, words and sittings stay on this device. With Google Drive sync on, one backup file is kept in a private app folder in your own Drive that only this app can read. There is no server.">
 <meta name="app-whatsnew" content="whatsnew.json">
@@ -24,11 +24,14 @@
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 var(--app-font,system-ui,sans-serif)}
 .top{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;padding:8px 16px;background:var(--card);border-bottom:1px solid var(--line)}
 .brand{font-size:1.1rem;margin-inline-end:auto}
-nav{display:flex;gap:4px;flex-wrap:wrap}
+nav{display:flex;gap:4px;flex-wrap:wrap;order:5;flex-basis:100%}
+@media (min-width:700px){nav{order:0;flex-basis:auto}}
+.gear{border-color:transparent;background:none;padding:4px 10px;font-size:1.25rem}
 button,select,input,textarea{font:inherit;color:inherit}
+input[type=text],input[type=search]{min-height:42px}
 button{cursor:pointer;border:1px solid var(--line);background:var(--card);border-radius:8px;padding:8px 14px;min-height:42px}
 button.primary{background:var(--accent);color:var(--on);border-color:var(--accent);font-weight:700}
-button[aria-current=page]{border-color:var(--accent);color:var(--accent)}
+button[aria-current=page],button[aria-pressed=true]{border-color:var(--accent);color:var(--accent)}
 button:disabled{opacity:.5;cursor:default}
 nav button{border-color:transparent;background:none;padding:8px 10px}
 main,#fixed{max-width:720px;margin:0 auto;padding:16px}
@@ -41,16 +44,36 @@ h1{font-size:1.5rem;margin:.2em 0 .5em}h2{font-size:1.15rem;margin:1.4em 0 .4em}
 .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
 .tiles .card{margin:0}
 .tile b{display:block;font-size:1.7rem;line-height:1.2}
-.story{font-size:1.2rem;line-height:1.9}
+.story{font-size:1.2rem;line-height:1.9;white-space:pre-line}
+.story p{margin:.2em 0}
+.who{color:var(--mut);font-size:.85rem;font-weight:400;margin-inline-end:6px}
+.chat p{margin:6px 0;padding:8px 12px;border-radius:12px;background:var(--card);border:1px solid var(--line);max-width:88%;width:fit-content}
+.chat .me{margin-inline-start:auto;border-color:var(--accent)}
+.chat .now{font-size:1.15rem}
+.letter{white-space:pre-wrap}
+.notice{margin:10px 0;padding:8px 12px;border:1px solid var(--line);border-radius:8px}
+.notice summary{cursor:pointer;color:var(--accent)}
+.grow{flex:1 1 200px}
+.acts button,.mini{min-height:36px;padding:4px 10px;font-size:.92rem}
+.acts{margin-top:8px}
+.q{margin:14px 0}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%}
+th,td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:start;white-space:nowrap}
+th{color:var(--mut);font-weight:400;font-size:.85rem}
+a{color:var(--accent)}
+h1 .sub{font-size:1rem;font-weight:400;margin-inline-start:6px}
 .w{all:unset;cursor:pointer;border-radius:4px;padding:1px 0}
 .w.new{text-decoration:underline dotted var(--mut);text-underline-offset:5px}
 .w.learn{background:var(--learn)}
 .w:focus-visible{outline:2px solid var(--accent)}
 .bar{position:sticky;bottom:0;background:var(--bg);padding:10px 0;border-top:1px solid var(--line);margin-top:12px}
-#gloss{min-height:1.6em;font-weight:700}
-input[type=text],textarea,select{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--card)}
+#gloss{min-height:1.6em}
+#gloss p{margin:.2em 0}
+input[type=text],input[type=search],textarea,select{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--card)}
 select{width:auto}
 textarea{min-height:9em;resize:vertical}
+.keys{margin:8px 0}
 .keys button{min-height:36px;padding:2px 10px}
 .hit{color:var(--good)}.miss{color:var(--bad);text-decoration:underline wavy}
 .big{font-size:1.25rem}
@@ -67,9 +90,10 @@ input[type=file]{max-width:100%}
   <nav>
     <button data-act="go" data-v="today" data-t>Today</button>
     <button data-act="go" data-v="library" data-t>Library</button>
+    <button data-act="go" data-v="words" data-t>Words</button>
     <button data-act="go" data-v="progress" data-t>Progress</button>
-    <button data-act="go" data-v="settings" data-t>Settings</button>
   </nav>
+  <button class="gear" data-act="go" data-v="settings" data-t-attr="aria-label,title" aria-label="Settings" title="Settings">⚙</button>
   <app-account data-t-attr="title" title="Google Drive sync"></app-account>
 </header>
 <main id="main"><p data-t>Loading…</p></main>

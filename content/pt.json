@@ -1,0 +1,1922 @@
+[
+ {
+  "id": "pt-familia",
+  "title": "Minha família",
+  "level": "A1",
+  "text": "Eu me chamo Júlia e tenho onze anos. Moro em Belo Horizonte com a minha família. Meu pai se chama Marcos e é professor. Minha mãe se chama Helena e trabalha em um hospital. Tenho um irmão mais novo, o Pedro. Ele tem seis anos e fala muito. Todo domingo, almoçamos na casa da minha avó. Ela faz arroz, feijão e frango. A comida dela é muito gostosa. Hoje, depois do almoço, minha avó diz: “Tenho uma surpresa para vocês.” Ela abre a porta do quintal. Embaixo de uma árvore, há uma caixa. Dentro da caixa dorme um cachorrinho branco. Pedro grita de alegria. O cachorro acorda e lambe a mão dele. “Como ele se chama?”, pergunto. “Ainda não tem nome”, responde minha avó. Pedro pensa um pouco e diz: “Pipoca!” Todo mundo ri. Agora nossa família tem mais um amigo.",
+  "gloss": {
+   "chamo": "me chamo: my name is (chamar-se)",
+   "moro": "(I) live (morar)",
+   "irmão": "brother",
+   "novo": "young, new (mais novo: younger)",
+   "domingo": "Sunday",
+   "almoçamos": "(we) have lunch (almoçar)",
+   "avó": "grandmother",
+   "faz": "makes (fazer)",
+   "arroz": "rice",
+   "feijão": "beans",
+   "frango": "chicken",
+   "comida": "food",
+   "gostosa": "tasty",
+   "almoço": "lunch",
+   "abre": "opens (abrir)",
+   "quintal": "backyard",
+   "embaixo": "embaixo de: under",
+   "árvore": "tree",
+   "há": "there is (haver)",
+   "caixa": "box",
+   "dentro": "dentro de: inside",
+   "dorme": "sleeps (dormir)",
+   "cachorrinho": "puppy, little dog (cachorro: dog)",
+   "grita": "shouts (gritar)",
+   "alegria": "joy",
+   "acorda": "wakes up (acordar)",
+   "lambe": "licks (lamber)",
+   "mão": "hand",
+   "pergunto": "(I) ask (perguntar)",
+   "ainda": "ainda não: not yet",
+   "pipoca": "popcorn",
+   "mundo": "todo mundo: everybody",
+   "ri": "laughs (rir)"
+  },
+  "questions": [
+   {
+    "q": "Quantos anos tem a Júlia?",
+    "a": [
+     "onze",
+     "11"
+    ]
+   },
+   {
+    "q": "Em que dia a família almoça na casa da avó?",
+    "a": [
+     "domingo"
+    ]
+   },
+   {
+    "q": "Que animal dorme dentro da caixa?",
+    "a": [
+     "cachorro",
+     "cachorrinho"
+    ]
+   }
+  ],
+  "notice": "To say his or her, Portuguese often puts dele (of him) or dela (of her) after the noun: \"A comida dela\" (her food), \"a mão dele\" (his hand)."
+ },
+ {
+  "id": "pt-manha",
+  "title": "A manhã de Lucas",
+  "level": "A1",
+  "text": "Lucas acorda às seis e meia. Ele toma banho, veste uma calça azul e uma camisa branca. Na cozinha, toma um café com leite e come pão com manteiga. Ele olha o relógio: já são sete e quinze! Lucas pega a mochila e corre para o ponto de ônibus. A rua está muito quieta hoje. O ônibus chega logo e está quase vazio. “Que estranho”, pensa Lucas. Ele desce em frente ao escritório, mas a porta está fechada. Não há ninguém na recepção. Lucas olha o celular e começa a rir. Hoje não é sexta-feira, é sábado! Ele não precisa trabalhar. Então Lucas vai até a praça, compra um suco de laranja e se senta em um banco. O dia está bonito e ele tem o sábado inteiro livre.",
+  "gloss": {
+   "acorda": "wakes up (acordar)",
+   "banho": "toma banho: has a shower",
+   "veste": "puts on (vestir)",
+   "calça": "trousers",
+   "camisa": "shirt",
+   "cozinha": "kitchen",
+   "manteiga": "butter",
+   "relógio": "clock, watch",
+   "pega": "grabs, takes (pegar)",
+   "mochila": "backpack",
+   "corre": "runs (correr)",
+   "ponto": "ponto de ônibus: bus stop",
+   "quieta": "quiet",
+   "chega": "arrives (chegar)",
+   "quase": "almost",
+   "vazio": "empty",
+   "estranho": "strange",
+   "desce": "gets off (descer)",
+   "frente": "em frente a: in front of",
+   "escritório": "office",
+   "fechada": "closed",
+   "há": "não há: there is not (haver)",
+   "ninguém": "nobody",
+   "celular": "mobile phone",
+   "rir": "to laugh",
+   "sexta": "sexta-feira: Friday",
+   "precisa": "needs to (precisar)",
+   "praça": "square",
+   "suco": "juice",
+   "senta": "se senta: sits down (sentar-se)",
+   "banco": "bench",
+   "inteiro": "whole",
+   "livre": "free"
+  },
+  "questions": [
+   {
+    "q": "A que horas Lucas acorda?",
+    "a": [
+     "seis",
+     "6"
+    ]
+   },
+   {
+    "q": "Como Lucas vai para o trabalho?",
+    "a": [
+     "ônibus"
+    ]
+   },
+   {
+    "q": "Por que o escritório está fechado?",
+    "a": [
+     "sábado"
+    ]
+   }
+  ],
+  "notice": "Clock times use às for \"at\" and são for \"it is\" (for one o'clock: à uma, é uma): \"Lucas acorda às seis e meia\", \"já são sete e quinze\"."
+ },
+ {
+  "id": "pt-padaria",
+  "title": "Na padaria",
+  "level": "A1",
+  "text": "Todo dia, antes do trabalho, Marina passa na padaria do seu Antônio. A padaria fica na esquina da rua dela. Às sete da manhã, o pão está quente e o cheiro é maravilhoso. Marina pede quatro pães franceses e um pão de queijo. Seu Antônio coloca tudo em um saco de papel. “São oito reais”, diz ele. Marina abre a bolsa e procura a carteira. Ela procura de novo. A carteira não está lá! Está em casa, em cima da mesa. Marina fica vermelha. “Desculpe, seu Antônio, estou sem dinheiro hoje.” Ele sorri. “Não tem problema, Marina, você paga amanhã.” Marina agradece e sai com o pão quente. No dia seguinte, ela volta cedo, paga os oito reais e leva um pedaço de bolo para o seu Antônio.",
+  "gloss": {
+   "passa": "passa na: stops by the (passar)",
+   "padaria": "bakery",
+   "seu": "Mr (friendly, before a man's first name)",
+   "fica": "is (in a place); turns, becomes (ficar)",
+   "esquina": "corner",
+   "quente": "hot, warm",
+   "cheiro": "smell",
+   "maravilhoso": "wonderful",
+   "pede": "asks for (pedir)",
+   "pães": "bread rolls (plural of pão)",
+   "franceses": "pão francês: crusty bread roll",
+   "queijo": "cheese (pão de queijo: small cheese bread)",
+   "coloca": "puts (colocar)",
+   "saco": "bag",
+   "reais": "Brazilian money (one real, two reais)",
+   "bolsa": "handbag",
+   "procura": "looks for (procurar)",
+   "carteira": "wallet",
+   "novo": "de novo: again",
+   "cima": "em cima de: on top of",
+   "vermelha": "red",
+   "desculpe": "sorry",
+   "sem": "without",
+   "dinheiro": "money",
+   "sorri": "smiles (sorrir)",
+   "paga": "pay, pays (pagar)",
+   "agradece": "says thank you (agradecer)",
+   "sai": "leaves (sair)",
+   "seguinte": "next, following",
+   "volta": "comes back (voltar)",
+   "cedo": "early",
+   "pedaço": "piece",
+   "bolo": "cake"
+  },
+  "questions": [
+   {
+    "q": "Onde fica a padaria do seu Antônio?",
+    "a": [
+     "esquina"
+    ]
+   },
+   {
+    "q": "O que Marina não encontra na bolsa?",
+    "a": [
+     "carteira",
+     "dinheiro"
+    ]
+   },
+   {
+    "q": "O que Marina leva para o seu Antônio no dia seguinte?",
+    "a": [
+     "bolo"
+    ]
+   }
+  ],
+  "notice": "The plural of pão is pães: \"um pão de queijo\" but \"quatro pães franceses\". Words ending in -ão have three possible plurals (-ões, -ães or -ãos), so learn each plural with its word."
+ },
+ {
+  "id": "pt-feira",
+  "title": "A feira de domingo",
+  "level": "A2",
+  "text": "No domingo de manhã, Carla foi à feira com o avô. A rua estava cheia de barracas coloridas, e os feirantes gritavam os preços. Primeiro, eles compraram tomates, bananas e um abacaxi bem maduro. Depois, o avô escolheu uma dúzia de laranjas para fazer suco. Uma feirante ofereceu um pedaço de manga para Carla experimentar. “Que doce!”, disse ela, e levou três. As sacolas já estavam pesadas quando, de repente, uma delas rasgou. As laranjas rolaram pela rua, entre os pés das pessoas. Carla ficou com vergonha, mas todo mundo começou a ajudar. Um menino trouxe duas laranjas, uma senhora trouxe mais quatro, e o vendedor de pastel deu uma sacola nova para eles. Para agradecer, o avô comprou dois pastéis de queijo e dois copos de caldo de cana. Eles comeram ali mesmo, em pé, rindo da aventura. Carla acha que a feira é o melhor programa de domingo.",
+  "gloss": {
+   "feira": "street market",
+   "avô": "grandfather",
+   "cheia": "full",
+   "barracas": "stalls",
+   "feirantes": "market sellers",
+   "gritavam": "were shouting (gritar)",
+   "preços": "prices",
+   "abacaxi": "pineapple",
+   "maduro": "ripe",
+   "escolheu": "chose (escolher)",
+   "dúzia": "dozen",
+   "ofereceu": "offered (oferecer)",
+   "pedaço": "piece",
+   "manga": "mango",
+   "experimentar": "to try, to taste",
+   "doce": "sweet",
+   "levou": "took (levar)",
+   "sacolas": "shopping bags",
+   "pesadas": "heavy",
+   "repente": "de repente: suddenly",
+   "rasgou": "tore (rasgar)",
+   "rolaram": "rolled (rolar)",
+   "vergonha": "ficou com vergonha: felt embarrassed",
+   "trouxe": "brought (trazer)",
+   "pastel": "fried pastry with a filling (plural: pastéis)",
+   "agradecer": "to say thank you",
+   "caldo": "caldo de cana: sugar cane juice",
+   "pé": "em pé: standing",
+   "rindo": "laughing (rir)",
+   "programa": "outing, thing to do"
+  },
+  "questions": [
+   {
+    "q": "Com quem Carla foi à feira?",
+    "a": [
+     "avô"
+    ]
+   },
+   {
+    "q": "O que rolou pela rua quando a sacola rasgou?",
+    "a": [
+     "laranja"
+    ]
+   },
+   {
+    "q": "O que o avô comprou para agradecer?",
+    "a": [
+     "pastéis",
+     "pastel",
+     "caldo"
+    ]
+   }
+  ],
+  "notice": "Two past tenses work together. The imperfect paints the scene: \"A rua estava cheia de barracas\". The simple past says what happened: \"uma delas rasgou\"."
+ },
+ {
+  "id": "pt-praia",
+  "title": "Um fim de semana na praia",
+  "level": "A2",
+  "text": "No último fim de semana, eu e minha irmã viajamos para Ubatuba, no litoral de São Paulo. Saímos cedo no sábado, com protetor solar, chapéu e muita vontade de nadar. Quando chegamos à pousada, o céu estava cinza. Meia hora depois, começou a chover forte, e a chuva não parou o dia inteiro. Ficamos tristes no começo. Depois, a dona da pousada nos emprestou um baralho e fez um bolo de fubá. Passamos a tarde jogando cartas com outros hóspedes e rindo muito. No domingo, acordei com uma luz forte na janela. Era o sol! Corremos para a praia antes do café da manhã. O mar estava calmo e a areia ainda estava molhada. Nadamos, tomamos água de coco e comemos peixe frito em um quiosque. Na volta, no ônibus, minha irmã disse que o sábado de chuva foi tão divertido quanto o domingo de sol. Eu concordei.",
+  "gloss": {
+   "último": "last",
+   "litoral": "coast",
+   "saímos": "(we) left (sair)",
+   "protetor": "protetor solar: sunscreen",
+   "chapéu": "hat",
+   "vontade": "vontade de: wish to, feeling like",
+   "pousada": "guesthouse, small inn",
+   "céu": "sky",
+   "cinza": "grey",
+   "chover": "to rain",
+   "forte": "hard, strong",
+   "chuva": "rain",
+   "parou": "stopped (parar)",
+   "começo": "beginning",
+   "dona": "owner (woman)",
+   "emprestou": "lent (emprestar)",
+   "baralho": "pack of cards",
+   "fubá": "cornmeal (bolo de fubá: cornmeal cake)",
+   "jogando": "playing (jogar)",
+   "hóspedes": "guests",
+   "rindo": "laughing (rir)",
+   "acordei": "(I) woke up (acordar)",
+   "areia": "sand",
+   "molhada": "wet",
+   "coco": "coconut (água de coco: coconut water)",
+   "frito": "fried",
+   "quiosque": "beach kiosk",
+   "volta": "na volta: on the way back",
+   "divertido": "fun",
+   "concordei": "(I) agreed (concordar)"
+  },
+  "questions": [
+   {
+    "q": "Em que dia choveu sem parar?",
+    "a": [
+     "sábado"
+    ]
+   },
+   {
+    "q": "O que a dona da pousada emprestou?",
+    "a": [
+     "baralho",
+     "cartas"
+    ]
+   },
+   {
+    "q": "Como estava o mar no domingo?",
+    "a": [
+     "calmo"
+    ]
+   }
+  ],
+  "notice": "In Brazilian Portuguese the \"we\" form of a regular verb is the same in the present and in the simple past, so the context tells you the time: \"Ficamos tristes no começo\", \"Passamos a tarde jogando cartas\"."
+ },
+ {
+  "id": "pt-mudanca",
+  "title": "A mudança",
+  "level": "A2",
+  "text": "Ontem foi o dia da mudança de Rodrigo e Bianca. Eles alugaram um apartamento no quarto andar de um prédio antigo, perto do centro de Curitiba. De manhã, o caminhão chegou com todas as caixas, a geladeira, a cama e o sofá. As caixas subiram de elevador sem problema. Mas o sofá era grande demais e não entrou no elevador. Rodrigo olhou para a escada e suspirou. Então o porteiro, seu Geraldo, chamou o filho dele para ajudar. Os quatro carregaram o sofá pela escada, devagar, parando em cada andar para descansar. Uma vizinha abriu a porta e ofereceu água gelada para todos. Quando o sofá finalmente entrou na sala, eles bateram palmas. À noite, Rodrigo e Bianca estavam cansados demais para cozinhar. Pediram uma pizza e jantaram sentados no sofá, no meio das caixas. O apartamento ainda estava uma bagunça, mas já parecia a casa deles.",
+  "gloss": {
+   "mudança": "move (to a new home)",
+   "alugaram": "rented (alugar)",
+   "andar": "floor, storey",
+   "prédio": "building",
+   "antigo": "old",
+   "caminhão": "truck",
+   "caixas": "boxes",
+   "geladeira": "fridge",
+   "subiram": "went up (subir)",
+   "demais": "too (after an adjective)",
+   "escada": "stairs",
+   "suspirou": "sighed (suspirar)",
+   "porteiro": "doorman",
+   "seu": "Mr (friendly, before a man's first name)",
+   "carregaram": "carried (carregar)",
+   "devagar": "slowly",
+   "parando": "stopping (parar)",
+   "descansar": "to rest",
+   "vizinha": "neighbour (woman)",
+   "ofereceu": "offered (oferecer)",
+   "gelada": "ice-cold",
+   "bateram": "bateram palmas: clapped (bater palmas)",
+   "cansados": "tired",
+   "cozinhar": "to cook",
+   "pediram": "ordered (pedir)",
+   "jantaram": "had dinner (jantar)",
+   "sentados": "sitting",
+   "meio": "no meio de: in the middle of",
+   "bagunça": "mess",
+   "parecia": "looked like, seemed (parecer)"
+  },
+  "questions": [
+   {
+    "q": "Em que andar fica o apartamento novo?",
+    "a": [
+     "quarto"
+    ]
+   },
+   {
+    "q": "O que não entrou no elevador?",
+    "a": [
+     "sofá"
+    ]
+   },
+   {
+    "q": "O que Rodrigo e Bianca pediram para jantar?",
+    "a": [
+     "pizza"
+    ]
+   }
+  ],
+  "notice": "Demais after an adjective means \"too\": \"grande demais\" (too big), \"cansados demais para cozinhar\" (too tired to cook)."
+ },
+ {
+  "id": "pt-garganta",
+  "title": "Dor de garganta",
+  "level": "A2",
+  "text": "Na segunda-feira, acordei com dor de garganta e um pouco de febre. Pensei que era só um resfriado e fui trabalhar. Na quarta, eu quase não conseguia falar, então marquei uma consulta. Esperei meia hora em uma sala cheia de gente tossindo. Finalmente, a doutora Renata me chamou. Ela olhou minha garganta, escutou meu peito e mediu minha temperatura. “É uma infecção de garganta”, explicou. “Você vai tomar um antibiótico por sete dias.” Eu fiquei nervoso, porque tenho medo de injeção. A doutora riu e disse que eram só comprimidos. Que alívio! Ela também me mandou descansar, beber muita água e ficar dois dias em casa. Na volta, passei na farmácia e comprei o remédio. No sábado, eu já estava bem melhor. Mas aprendi a lição: da próxima vez, não vou esperar três dias para ir ao médico.",
+  "gloss": {
+   "acordei": "(I) woke up (acordar)",
+   "dor": "pain, ache",
+   "garganta": "throat",
+   "febre": "fever",
+   "resfriado": "a cold",
+   "quarta": "Wednesday (quarta-feira)",
+   "quase": "almost, hardly",
+   "conseguia": "could, managed to (conseguir)",
+   "marquei": "(I) booked (marcar)",
+   "consulta": "appointment (with a doctor)",
+   "cheia": "full",
+   "tossindo": "coughing (tossir)",
+   "doutora": "doctor (woman)",
+   "escutou": "listened to (escutar)",
+   "peito": "chest",
+   "mediu": "measured (medir)",
+   "medo": "tenho medo de: I am afraid of",
+   "injeção": "injection",
+   "riu": "laughed (rir)",
+   "comprimidos": "pills, tablets",
+   "alívio": "relief",
+   "mandou": "told (me) to (mandar)",
+   "descansar": "to rest",
+   "volta": "na volta: on the way back",
+   "passei": "passei na: (I) stopped by the (passar)",
+   "remédio": "medicine",
+   "aprendi": "(I) learnt (aprender)",
+   "lição": "lesson",
+   "próxima": "next (da próxima vez: next time)"
+  },
+  "questions": [
+   {
+    "q": "Onde o narrador sentiu dor na segunda-feira?",
+    "a": [
+     "garganta"
+    ]
+   },
+   {
+    "q": "De que o narrador tem medo?",
+    "a": [
+     "injeção"
+    ]
+   },
+   {
+    "q": "Quantos dias ele teve de ficar em casa?",
+    "a": [
+     "dois",
+     "2"
+    ]
+   }
+  ],
+  "notice": "The everyday future is ir (vou, vai, vamos) plus an infinitive: \"Você vai tomar um antibiótico\", \"não vou esperar três dias\"."
+ },
+ {
+  "id": "pt-onibus",
+  "title": "O ônibus atrasado",
+  "level": "A2",
+  "text": "Camila tinha uma prova de inglês às oito horas. Ela saiu de casa cedo e chegou ao ponto de ônibus às sete. Estava chovendo e o trânsito estava parado. Passaram dez minutos, depois vinte, depois quarenta. O ônibus não vinha. Camila olhava o relógio e ficava cada vez mais nervosa. Ao lado dela, um homem de guarda-chuva preto também esperava, muito calmo. “Não adianta se preocupar”, disse ele. “A chuva atrasa tudo.” Quando o ônibus finalmente chegou, estava lotado, e os dois viajaram em pé. Camila desceu correndo e entrou na escola às oito e meia. A sala estava cheia, mas a mesa do professor estava vazia. Um minuto depois, a porta se abriu. Era o homem do guarda-chuva preto! “Bom dia, turma, desculpem o atraso”, disse ele, sorrindo para Camila. “Hoje a prova começa um pouco mais tarde.”",
+  "gloss": {
+   "prova": "test, exam",
+   "saiu": "left (sair)",
+   "cedo": "early",
+   "ponto": "ponto de ônibus: bus stop",
+   "chovendo": "raining (chover)",
+   "trânsito": "traffic",
+   "parado": "at a standstill",
+   "vinha": "was coming (vir)",
+   "relógio": "watch, clock",
+   "ficava": "was getting (ficar: to become)",
+   "vez": "cada vez mais: more and more",
+   "lado": "ao lado de: next to",
+   "guarda": "guarda-chuva: umbrella",
+   "preto": "black",
+   "esperava": "was waiting (esperar)",
+   "adianta": "não adianta: it is no use (adiantar)",
+   "preocupar": "se preocupar: to worry",
+   "chuva": "rain",
+   "atrasa": "delays, makes late (atrasar)",
+   "lotado": "packed, full of people",
+   "pé": "em pé: standing",
+   "desceu": "got off (descer)",
+   "correndo": "running (correr)",
+   "sala": "classroom",
+   "cheia": "full",
+   "vazia": "empty",
+   "turma": "class (the group of students)",
+   "desculpem": "excuse, sorry for (desculpar)",
+   "atraso": "delay, lateness",
+   "sorrindo": "smiling (sorrir)"
+  },
+  "questions": [
+   {
+    "q": "Que prova Camila tinha naquele dia?",
+    "a": [
+     "inglês"
+    ]
+   },
+   {
+    "q": "Por que o ônibus demorou tanto?",
+    "a": [
+     "chuva",
+     "trânsito",
+     "chovendo"
+    ]
+   },
+   {
+    "q": "Quem era o homem do guarda-chuva preto?",
+    "a": [
+     "professor"
+    ]
+   }
+  ],
+  "notice": "Estar, not ser, describes the state something is in at that moment: \"o trânsito estava parado\", \"a mesa do professor estava vazia\"."
+ },
+ {
+  "id": "pt-celular",
+  "title": "O celular perdido",
+  "level": "B1",
+  "text": "Na sexta-feira passada, quando cheguei ao trabalho, percebi que meu celular não estava no bolso. Procurei na mochila, embaixo da mesa e até na geladeira da copa. Nada. Lembrei que eu tinha lido as notícias no metrô e comecei a ficar preocupado. Todas as minhas fotos e os meus contatos estavam naquele aparelho. Uma colega me emprestou o telefone dela e eu liguei para o meu próprio número. Depois de alguns toques, uma senhora atendeu. Ela se chamava dona Neusa e tinha encontrado o celular em um banco do vagão. Disse que trabalhava em uma banca de jornal perto da estação e que eu podia passar lá na hora do almoço. Quando cheguei lá, ofereci algum dinheiro para agradecer, mas ela não aceitou. “Só peço uma coisa”, disse ela. “Se um dia você achar alguma coisa perdida, devolva.” Duas semanas depois, encontrei uma carteira na calçada, com documentos e cartões. Pensei na dona Neusa na mesma hora. Procurei o dono nas redes sociais e, no dia seguinte, devolvi a carteira a um rapaz muito aliviado. Ele também quis me pagar. Eu só repeti a frase da dona Neusa.",
+  "gloss": {
+   "percebi": "(I) noticed, realised (perceber)",
+   "bolso": "pocket",
+   "procurei": "(I) looked, searched (procurar)",
+   "embaixo": "embaixo de: under",
+   "copa": "small kitchen at work",
+   "lembrei": "(I) remembered (lembrar)",
+   "lido": "read (ler)",
+   "notícias": "news",
+   "preocupado": "worried",
+   "aparelho": "device",
+   "emprestou": "lent (emprestar)",
+   "liguei": "(I) called (ligar)",
+   "próprio": "own",
+   "toques": "rings",
+   "atendeu": "answered (atender)",
+   "banco": "seat, bench",
+   "vagão": "carriage (of a train)",
+   "banca": "banca de jornal: newsstand",
+   "peço": "(I) ask (pedir)",
+   "achar": "to find",
+   "perdida": "lost",
+   "devolva": "give it back (devolver)",
+   "carteira": "wallet",
+   "calçada": "pavement, sidewalk",
+   "cartões": "cards",
+   "dono": "owner",
+   "redes": "redes sociais: social networks",
+   "rapaz": "young man",
+   "aliviado": "relieved",
+   "frase": "sentence"
+  },
+  "questions": [
+   {
+    "q": "Onde o narrador tinha usado o celular pela última vez?",
+    "a": [
+     "metrô",
+     "vagão"
+    ]
+   },
+   {
+    "q": "Onde dona Neusa trabalhava?",
+    "a": [
+     "banca",
+     "jornal"
+    ]
+   },
+   {
+    "q": "O que o narrador encontrou na calçada duas semanas depois?",
+    "a": [
+     "carteira"
+    ]
+   }
+  ],
+  "notice": "Tinha + past participle is the past before the past, like English \"had done\": \"eu tinha lido as notícias\", \"tinha encontrado o celular\"."
+ },
+ {
+  "id": "pt-surpresa",
+  "title": "A festa surpresa",
+  "level": "B1",
+  "text": "No dia em que fiz trinta anos, ninguém me deu parabéns. Minha mãe não ligou, minhas amigas não mandaram mensagem e, no escritório, meus colegas só falavam de trabalho. Tentei fingir que não me importava, mas passei o dia inteiro olhando o celular. No fim da tarde, minha melhor amiga, Débora, finalmente escreveu. Ela pedia ajuda para carregar umas caixas até o salão de festas do prédio dela. Fiquei irritada: além de esquecer meu aniversário, ela ainda queria que eu trabalhasse! Fui mesmo assim, reclamando sozinha no ônibus. Quando abri a porta do salão, estava tudo escuro. De repente, as luzes se acenderam e umas quarenta pessoas gritaram: “Surpresa!” Lá estavam minha mãe, meus primos de Salvador, os colegas do escritório e até minha professora do colégio. Na mesa, havia um bolo enorme de chocolate com morango, o meu preferido. Comecei a rir e a chorar ao mesmo tempo. Débora me abraçou e confessou que tinha sido muito difícil guardar o segredo por três semanas. Eu confessei que aquele tinha sido o pior e o melhor aniversário da minha vida.",
+  "gloss": {
+   "fiz": "fiz trinta anos: I turned thirty (fazer anos)",
+   "ninguém": "nobody",
+   "parabéns": "happy birthday, congratulations (dar parabéns)",
+   "mandaram": "sent (mandar)",
+   "tentei": "(I) tried (tentar)",
+   "fingir": "to pretend",
+   "importava": "não me importava: I did not care (importar-se)",
+   "carregar": "to carry",
+   "salão": "salão de festas: party room (of a building)",
+   "irritada": "annoyed",
+   "além": "além de: besides, on top of",
+   "esquecer": "to forget",
+   "trabalhasse": "work (trabalhar, imperfect subjunctive)",
+   "assim": "mesmo assim: anyway, even so",
+   "reclamando": "complaining (reclamar)",
+   "sozinha": "alone, to myself",
+   "escuro": "dark",
+   "luzes": "lights",
+   "acenderam": "se acenderam: came on (acender)",
+   "gritaram": "shouted (gritar)",
+   "primos": "cousins",
+   "colégio": "secondary school",
+   "morango": "strawberry",
+   "preferido": "favourite",
+   "chorar": "to cry",
+   "abraçou": "hugged (abraçar)",
+   "confessou": "admitted (confessar)",
+   "guardar": "to keep",
+   "segredo": "secret",
+   "pior": "worst"
+  },
+  "questions": [
+   {
+    "q": "Quantos anos a narradora fez?",
+    "a": [
+     "trinta",
+     "30"
+    ]
+   },
+   {
+    "q": "Quem pediu ajuda para carregar umas caixas?",
+    "a": [
+     "Débora",
+     "amiga"
+    ]
+   },
+   {
+    "q": "Por quantas semanas Débora guardou o segredo?",
+    "a": [
+     "três",
+     "3"
+    ]
+   }
+  ],
+  "notice": "Até has two meanings here. It is \"as far as\" or \"until\" in \"carregar umas caixas até o salão\", and \"even\" in \"e até minha professora do colégio\"."
+ },
+ {
+  "id": "pt-cozinha",
+  "title": "Desastre na cozinha",
+  "level": "B1",
+  "text": "No sábado, convidei os pais da minha namorada para jantar pela primeira vez. Eu queria causar uma boa impressão, então decidi fazer uma moqueca, mesmo sem nunca ter cozinhado peixe. Assisti a três vídeos, comprei os ingredientes e comecei cedo. No início, tudo parecia fácil. Cortei a cebola, os tomates e o pimentão, e juntei o leite de coco. O problema foi a pimenta: a receita pedia uma, e eu coloquei quatro, porque achei que eram pequenas. Depois, deixei o arroz no fogo e fui tomar banho. Quando saí do banheiro, a cozinha estava cheia de fumaça e a panela estava preta. Nesse exato momento, a campainha tocou. Abri a porta morrendo de vergonha. A mãe dela sentiu o cheiro, olhou para mim e caiu na gargalhada. Em vinte minutos, ela fez outro arroz e salvou a moqueca com mais leite de coco. O pai dela repetiu o prato duas vezes. O jantar acabou sendo ótimo. Hoje, quando me convidam para almoçar, eles sempre perguntam se eu quero levar a pimenta.",
+  "gloss": {
+   "convidei": "(I) invited (convidar)",
+   "namorada": "girlfriend",
+   "causar": "causar uma boa impressão: to make a good impression",
+   "moqueca": "Brazilian fish stew with coconut milk",
+   "mesmo": "mesmo sem: even without",
+   "cozinhado": "cooked (cozinhar)",
+   "assisti": "(I) watched (assistir a)",
+   "parecia": "seemed (parecer)",
+   "cortei": "(I) chopped, cut (cortar)",
+   "cebola": "onion",
+   "pimentão": "bell pepper",
+   "juntei": "(I) added (juntar)",
+   "coco": "coconut (leite de coco: coconut milk)",
+   "pimenta": "chilli pepper",
+   "receita": "recipe",
+   "coloquei": "(I) put in (colocar)",
+   "deixei": "(I) left (deixar)",
+   "fogo": "no fogo: on the stove (fogo: fire)",
+   "banheiro": "bathroom",
+   "fumaça": "smoke",
+   "panela": "pot, pan",
+   "campainha": "doorbell",
+   "tocou": "rang (tocar)",
+   "morrendo": "morrendo de vergonha: dying of embarrassment (morrer)",
+   "cheiro": "smell",
+   "gargalhada": "caiu na gargalhada: burst out laughing",
+   "salvou": "saved (salvar)",
+   "repetiu": "repetiu o prato: had a second helping (repetir)",
+   "acabou": "acabou sendo: turned out to be (acabar)",
+   "ótimo": "great"
+  },
+  "questions": [
+   {
+    "q": "Quem o narrador convidou para jantar?",
+    "a": [
+     "pais"
+    ]
+   },
+   {
+    "q": "O que queimou enquanto ele tomava banho?",
+    "a": [
+     "arroz",
+     "panela"
+    ]
+   },
+   {
+    "q": "Quem salvou o jantar?",
+    "a": [
+     "mãe"
+    ]
+   }
+  ],
+  "notice": "Verbs ending in -car and -çar change their spelling in the \"eu\" form of the simple past to keep the sound: colocar gives \"eu coloquei quatro\", começar gives \"comecei cedo\"."
+ },
+ {
+  "id": "pt-show",
+  "title": "Show na chuva",
+  "level": "B1",
+  "text": "Eu e minha prima Letícia esperamos seis meses pelo show da nossa banda preferida. Compramos os ingressos assim que as vendas começaram e marcamos a data no calendário da cozinha. O show seria ao ar livre, em um parque de Porto Alegre. A previsão do tempo prometia uma noite de céu limpo. Quando chegamos, porém, nuvens escuras já cobriam a cidade. A banda tocou só duas músicas, e então a chuva caiu com força. Tínhamos esquecido o guarda-chuva, é claro. Em poucos minutos, estávamos encharcadas, e muita gente correu para a saída. Pensei em ir embora também, mas Letícia segurou meu braço. Então a cantora voltou ao palco sozinha, com um violão. Ela disse que, se o público ficasse, a banda também ficaria. Todo mundo gritou. As pessoas que tinham saído começaram a voltar. Durante uma hora, cantamos todos juntos debaixo de chuva, sem luzes e quase sem microfones. Voltei para casa com os tênis cheios de água e sem voz. Peguei um resfriado, é verdade, mas nunca vou me esquecer daquela noite.",
+  "gloss": {
+   "prima": "cousin (woman)",
+   "show": "concert",
+   "ingressos": "tickets",
+   "assim": "assim que: as soon as",
+   "vendas": "sales",
+   "seria": "would be, was going to be (ser)",
+   "livre": "ao ar livre: in the open air",
+   "previsão": "previsão do tempo: weather forecast",
+   "prometia": "promised (prometer)",
+   "limpo": "clear, clean",
+   "porém": "however",
+   "nuvens": "clouds",
+   "cobriam": "covered (cobrir)",
+   "tocou": "played (tocar)",
+   "força": "com força: hard",
+   "guarda": "guarda-chuva: umbrella",
+   "encharcadas": "soaked",
+   "saída": "exit",
+   "embora": "ir embora: to leave",
+   "segurou": "held (segurar)",
+   "braço": "arm",
+   "cantora": "singer (woman)",
+   "palco": "stage",
+   "violão": "acoustic guitar",
+   "público": "audience",
+   "ficasse": "stayed (ficar, imperfect subjunctive)",
+   "ficaria": "would stay (ficar)",
+   "debaixo": "debaixo de chuva: in the rain",
+   "tênis": "trainers, sneakers",
+   "resfriado": "a cold"
+  },
+  "questions": [
+   {
+    "q": "Quanto tempo as duas primas esperaram pelo show?",
+    "a": [
+     "seis",
+     "6"
+    ]
+   },
+   {
+    "q": "Que instrumento a cantora levou para o palco?",
+    "a": [
+     "violão"
+    ]
+   },
+   {
+    "q": "O que a narradora pegou por causa da chuva?",
+    "a": [
+     "resfriado"
+    ]
+   }
+  ],
+  "notice": "The conditional (-ria) can be a future seen from the past: \"O show seria ao ar livre\". After se, an unreal condition takes the imperfect subjunctive and its result the conditional: \"se o público ficasse, a banda também ficaria\"."
+ },
+ {
+  "id": "pt-nadar",
+  "title": "Aprender a nadar",
+  "level": "B1",
+  "text": "Aos quarenta e dois anos, Sérgio não sabia nadar. Quando era criança, ele tinha caído em um rio e, desde então, evitava qualquer lugar onde a água passasse da cintura. Na praia, ficava sempre na areia, cuidando das bolsas da família. Tudo mudou quando a filha dele, de oito anos, perguntou por que o pai nunca entrava no mar com ela. Sérgio não soube o que responder. Na semana seguinte, ele se matriculou em um curso de natação para adultos. Na primeira aula, teve vergonha de usar boia na frente dos outros alunos. A professora, uma senhora paciente chamada Vera, explicou que ali todos tinham começado do mesmo jeito. Durante dois meses, ele treinou a respiração, bateu as pernas segurando na borda e engoliu bastante água. Numa quinta-feira à noite, sem perceber, atravessou a piscina inteira sozinho. Os colegas aplaudiram, e Vera deu um abraço molhado nele. Nas férias de janeiro, Sérgio e a filha entraram no mar de mãos dadas. Ela nadava melhor do que ele, mas isso não tinha a menor importância.",
+  "gloss": {
+   "caído": "fallen (cair)",
+   "rio": "river",
+   "desde": "desde então: since then",
+   "evitava": "avoided (evitar)",
+   "qualquer": "any",
+   "passasse": "went above (passar de, imperfect subjunctive)",
+   "cintura": "waist",
+   "cuidando": "looking after (cuidar de)",
+   "mudou": "changed (mudar)",
+   "soube": "knew (saber)",
+   "matriculou": "se matriculou: enrolled (matricular-se)",
+   "natação": "swimming",
+   "vergonha": "teve vergonha de: was embarrassed to",
+   "boia": "float",
+   "jeito": "do mesmo jeito: in the same way",
+   "treinou": "practised (treinar)",
+   "respiração": "breathing",
+   "bateu": "bateu as pernas: kicked his legs (bater)",
+   "segurando": "holding on (segurar)",
+   "borda": "edge (of the pool)",
+   "engoliu": "swallowed (engolir)",
+   "bastante": "quite a lot of",
+   "perceber": "to notice",
+   "atravessou": "crossed (atravessar)",
+   "piscina": "swimming pool",
+   "abraço": "hug",
+   "molhado": "wet",
+   "férias": "holidays",
+   "dadas": "de mãos dadas: hand in hand",
+   "menor": "a menor importância: the slightest importance"
+  },
+  "questions": [
+   {
+    "q": "Onde Sérgio caiu quando era criança?",
+    "a": [
+     "rio"
+    ]
+   },
+   {
+    "q": "Quem perguntou por que Sérgio nunca entrava no mar?",
+    "a": [
+     "filha"
+    ]
+   },
+   {
+    "q": "O que Sérgio atravessou sozinho numa quinta-feira à noite?",
+    "a": [
+     "piscina"
+    ]
+   }
+  ],
+  "notice": "Saber changes meaning with the tense. The imperfect is a lasting state: \"Sérgio não sabia nadar\" (he could not swim). The simple past is one moment: \"não soube o que responder\" (he found no answer)."
+ },
+ {
+  "id": "pt-livraria",
+  "title": "A livraria do bairro",
+  "level": "B2",
+  "text": "Há quase quarenta anos, a livraria do seu Anselmo ocupa a mesma esquina do bairro. Foi lá que muita gente comprou o primeiro livro, encontrou um presente de última hora ou simplesmente se abrigou da chuva. No ano passado, ele pendurou na vitrine um aviso triste: a livraria fecharia as portas em dezembro. A notícia se espalhou depressa pelo bairro. O motivo era simples: o aluguel tinha dobrado e as vendas caíam desde que as pessoas passaram a comprar pela internet. Seu Anselmo dizia, sem amargura, que não dava mais para competir. Os moradores, porém, não se conformaram. Uma professora aposentada propôs que se organizasse uma vaquinha para pagar os aluguéis atrasados. Um grupo de estudantes criou uma página para divulgar a campanha. Uma vizinha emprestou sua máquina de café para que os clientes ficassem mais tempo. Em poucas semanas, a loja ganhou um clube de leitura, noites de poesia e até uma estante de trocas. Quem entra para tomar um café acaba saindo com um livro debaixo do braço. As vendas ainda não são as de antigamente, mas o aviso foi retirado da vitrine. Seu Anselmo costuma dizer que, se dependesse só dos números, a livraria teria fechado. Ela continua aberta porque o bairro decidiu que não queria perdê-la.",
+  "gloss": {
+   "seu": "Mr (friendly, before a man's first name)",
+   "bairro": "neighbourhood",
+   "abrigou": "se abrigou: took shelter (abrigar-se)",
+   "pendurou": "hung up (pendurar)",
+   "vitrine": "shop window",
+   "aviso": "notice",
+   "fecharia": "would close (fechar)",
+   "espalhou": "se espalhou: spread (espalhar-se)",
+   "aluguel": "rent (plural: aluguéis)",
+   "dobrado": "doubled (dobrar)",
+   "vendas": "sales",
+   "caíam": "were falling (cair)",
+   "passaram": "passaram a: started to (passar a)",
+   "amargura": "bitterness",
+   "dava": "não dava mais para: it was no longer possible to (dar)",
+   "moradores": "residents",
+   "porém": "however",
+   "conformaram": "não se conformaram: refused to accept it (conformar-se)",
+   "aposentada": "retired",
+   "propôs": "proposed (propor)",
+   "organizasse": "se organizasse: be organised (organizar, imperfect subjunctive)",
+   "vaquinha": "collection of money among friends, whip-round",
+   "atrasados": "overdue, late",
+   "divulgar": "to publicise",
+   "emprestou": "lent (emprestar)",
+   "ficassem": "would stay (ficar, imperfect subjunctive)",
+   "estante": "bookshelf",
+   "trocas": "swaps, exchanges",
+   "acaba": "acaba saindo: ends up leaving (acabar)",
+   "debaixo": "debaixo do braço: under the arm",
+   "antigamente": "in the old days",
+   "retirado": "taken down, removed (retirar)",
+   "costuma": "costuma dizer: often says (costumar)",
+   "dependesse": "depended (depender, imperfect subjunctive)",
+   "teria": "teria fechado: would have closed (ter)",
+   "perdê": "perdê-la: to lose it (perder)"
+  },
+  "questions": [
+   {
+    "q": "Há quantos anos a livraria existe?",
+    "a": [
+     "quarenta",
+     "40"
+    ]
+   },
+   {
+    "q": "Por que seu Anselmo decidiu fechar a livraria?",
+    "a": [
+     "aluguel",
+     "vendas",
+     "internet"
+    ]
+   },
+   {
+    "q": "O que uma vizinha emprestou para a livraria?",
+    "a": [
+     "máquina",
+     "café"
+    ]
+   }
+  ],
+  "notice": "When the main verb is in the past, a proposal or a purpose takes the imperfect subjunctive: \"propôs que se organizasse uma vaquinha\", \"para que os clientes ficassem mais tempo\"."
+ },
+ {
+  "id": "pt-remoto",
+  "title": "Trabalhar de casa",
+  "level": "B2",
+  "text": "Quando a empresa anunciou que todos poderiam trabalhar de casa, comemorei como se tivesse ganhado um prêmio. Eu gastava quase três horas por dia em ônibus lotados para atravessar São Paulo, e de repente esse tempo era meu. Nas primeiras semanas, tudo parecia perfeito: eu acordava mais tarde, almoçava comida caseira e participava das reuniões de chinelo. Aos poucos, porém, os dias começaram a se misturar. Eu respondia a mensagens às dez da noite e comia em frente ao computador. Mal me lembrava da última vez em que tinha conversado com alguém pessoalmente. Certa sexta-feira, percebi que não saía do apartamento desde a segunda. Foi um susto. Meu único contato com o mundo tinha sido o entregador de pizza. Decidi, então, criar regras, por mais estranho que fosse obedecer a mim mesma. Agora caminho meia hora antes de ligar o computador, almoço longe da tela e desligo tudo às seis, haja o que houver. Duas vezes por semana, levo o notebook para um café onde outras pessoas também trabalham. Não voltaria para o escritório por nada, mas aprendi uma coisa. A liberdade de trabalhar em casa só funciona para quem sabe fechar a porta, mesmo que ela seja imaginária.",
+  "gloss": {
+   "empresa": "company",
+   "poderiam": "would be able to (poder)",
+   "comemorei": "(I) celebrated (comemorar)",
+   "tivesse": "como se tivesse ganhado: as if I had won (ter)",
+   "prêmio": "prize",
+   "gastava": "spent (gastar)",
+   "lotados": "packed, full of people",
+   "atravessar": "to cross",
+   "caseira": "home-made",
+   "reuniões": "meetings",
+   "chinelo": "de chinelo: in flip-flops",
+   "poucos": "aos poucos: little by little",
+   "porém": "however",
+   "misturar": "se misturar: to blur together, to mix",
+   "mal": "hardly",
+   "pessoalmente": "in person",
+   "certa": "certa sexta-feira: one Friday",
+   "percebi": "(I) realised (perceber)",
+   "susto": "shock, fright",
+   "único": "only",
+   "entregador": "delivery man",
+   "regras": "rules",
+   "fosse": "por mais estranho que fosse: however strange it was (ser)",
+   "obedecer": "to obey",
+   "caminho": "(I) walk (caminhar)",
+   "ligar": "to switch on",
+   "tela": "screen",
+   "desligo": "(I) switch off (desligar)",
+   "haja": "haja o que houver: come what may (haver)",
+   "notebook": "laptop",
+   "voltaria": "would go back (voltar)",
+   "liberdade": "freedom",
+   "funciona": "works (funcionar)",
+   "seja": "mesmo que ela seja: even if it is (ser)"
+  },
+  "questions": [
+   {
+    "q": "Quantas horas por dia a narradora gastava em ônibus?",
+    "a": [
+     "três",
+     "3"
+    ]
+   },
+   {
+    "q": "Desde que dia ela não saía do apartamento?",
+    "a": [
+     "segunda"
+    ]
+   },
+   {
+    "q": "Para onde ela leva o notebook duas vezes por semana?",
+    "a": [
+     "café"
+    ]
+   }
+  ],
+  "notice": "Concessions take the subjunctive: \"mesmo que ela seja imaginária\" (even if it is imaginary), \"por mais estranho que fosse\" (however strange it was). The fixed phrase \"haja o que houver\" means come what may."
+ },
+ {
+  "id": "pt-horta",
+  "title": "A horta comunitária",
+  "level": "B2",
+  "text": "Durante anos, o terreno ao lado do nosso prédio não passou de um depósito de entulho. Ninguém sabia ao certo quem era o dono, e todos reclamavam do mato e dos mosquitos. Foi dona Zuleide, uma cozinheira aposentada do terceiro andar, quem teve a ideia de plantar ali. No começo, ela trabalhava sozinha, com uma enxada emprestada e algumas mudas de couve. Os vizinhos achavam graça e apostavam que ela desistiria antes das primeiras chuvas. Mas as couves cresceram, depois vieram os tomates, a alface e o manjericão, e a curiosidade venceu a desconfiança. Hoje, cerca de vinte famílias cuidam dos canteiros. Aos sábados, fazemos um mutirão: uns regam, outros arrancam o mato. As crianças aprendem que cenoura não nasce em bandeja de supermercado. Quando o dono do terreno finalmente apareceu, tivemos medo de que ele mandasse destruir tudo. Para nossa surpresa, ele provou uma salada, conversou com dona Zuleide e aceitou emprestar o espaço, desde que o mantivéssemos limpo. O que colhemos é dividido entre quem trabalha, e o que sobra vai para a cozinha da escola do bairro. A horta não acabou com os problemas da rua, mas mudou a maneira como nos cumprimentamos no elevador.",
+  "gloss": {
+   "terreno": "plot of land",
+   "passou": "não passou de: was nothing more than (passar)",
+   "depósito": "dump, store",
+   "entulho": "rubble",
+   "certo": "ao certo: for sure",
+   "reclamavam": "complained (reclamar)",
+   "mato": "weeds, scrub",
+   "cozinheira": "cook (woman)",
+   "aposentada": "retired",
+   "enxada": "hoe",
+   "emprestada": "borrowed",
+   "mudas": "seedlings",
+   "couve": "collard greens, kale",
+   "graça": "achavam graça: found it funny (achar graça)",
+   "apostavam": "bet (apostar)",
+   "desistiria": "would give up (desistir)",
+   "alface": "lettuce",
+   "manjericão": "basil",
+   "venceu": "overcame, beat (vencer)",
+   "desconfiança": "distrust",
+   "cerca": "cerca de: about",
+   "cuidam": "look after (cuidar de)",
+   "canteiros": "garden beds",
+   "mutirão": "day of shared volunteer work",
+   "regam": "water (regar)",
+   "arrancam": "pull out (arrancar)",
+   "nasce": "grows, is born (nascer)",
+   "bandeja": "tray",
+   "mandasse": "mandasse destruir: would have it destroyed (mandar)",
+   "provou": "tasted (provar)",
+   "desde": "desde que: provided that",
+   "mantivéssemos": "kept (manter, imperfect subjunctive)",
+   "colhemos": "(we) harvest (colher)",
+   "sobra": "is left over (sobrar)",
+   "horta": "vegetable garden",
+   "cumprimentamos": "nos cumprimentamos: (we) greet each other (cumprimentar)"
+  },
+  "questions": [
+   {
+    "q": "Qual era a profissão de dona Zuleide?",
+    "a": [
+     "cozinheira"
+    ]
+   },
+   {
+    "q": "O que ela plantou primeiro?",
+    "a": [
+     "couve"
+    ]
+   },
+   {
+    "q": "Para onde vai o que sobra da colheita?",
+    "a": [
+     "escola"
+    ]
+   }
+  ],
+  "notice": "O que means \"what\" in the sense of \"the thing that\", and it can open a sentence: \"O que colhemos é dividido\", \"o que sobra vai para a cozinha\"."
+ },
+ {
+  "id": "pt-d-lanchonete",
+  "title": "Na lanchonete",
+  "level": "A1",
+  "roles": [
+   "O atendente",
+   "A cliente"
+  ],
+  "lines": [
+   [
+    0,
+    "Bom dia! O que você vai querer?"
+   ],
+   [
+    1,
+    "Bom dia! Eu queria um suco de laranja e um pão de queijo, por favor."
+   ],
+   [
+    0,
+    "Desculpe, o pão de queijo acabou. Mas temos coxinha e pastel."
+   ],
+   [
+    1,
+    "Que pena! A coxinha é de frango?"
+   ],
+   [
+    0,
+    "É, sim. E está bem quentinha."
+   ],
+   [
+    1,
+    "Então vou querer uma coxinha."
+   ],
+   [
+    0,
+    "O suco é com açúcar ou sem açúcar?"
+   ],
+   [
+    1,
+    "Sem açúcar e com gelo, por favor."
+   ],
+   [
+    0,
+    "É para comer aqui ou para viagem?"
+   ],
+   [
+    1,
+    "Para comer aqui. Quanto é?"
+   ],
+   [
+    0,
+    "São quinze reais."
+   ],
+   [
+    1,
+    "Posso pagar com cartão?"
+   ],
+   [
+    0,
+    "Pode, sim. Débito ou crédito?"
+   ],
+   [
+    1,
+    "Débito. Muito obrigada!"
+   ],
+   [
+    0,
+    "De nada. Pode se sentar, eu levo tudo até a sua mesa."
+   ]
+  ],
+  "gloss": {
+   "querer": "to want (vou querer: I'll have)",
+   "desculpe": "sorry",
+   "queria": "(I) would like (querer)",
+   "suco": "juice",
+   "laranja": "orange",
+   "queijo": "cheese (pão de queijo: small cheese bread)",
+   "acabou": "has run out (acabar)",
+   "coxinha": "fried chicken croquette",
+   "pastel": "fried pastry with a filling",
+   "pena": "que pena: what a pity",
+   "frango": "chicken",
+   "quentinha": "nice and warm (quente: hot)",
+   "então": "then, so",
+   "açúcar": "sugar",
+   "sem": "without",
+   "gelo": "ice",
+   "viagem": "para viagem: to take away",
+   "quanto": "quanto é?: how much is it?",
+   "pagar": "to pay",
+   "reais": "Brazilian money (one real, two reais)",
+   "cartão": "card",
+   "débito": "debit",
+   "obrigada": "thank you (said by a woman)",
+   "sentar": "se sentar: to sit down",
+   "levo": "(I) take, bring (levar)"
+  },
+  "questions": [
+   {
+    "q": "O que acabou na lanchonete?",
+    "a": [
+     "queijo"
+    ]
+   },
+   {
+    "q": "Como a cliente paga?",
+    "a": [
+     "cartão",
+     "débito"
+    ]
+   }
+  ],
+  "notice": "Two polite ways to order are Eu queria (I would like) and vou querer (I'll have): \"Eu queria um suco de laranja\", \"Então vou querer uma coxinha\"."
+ },
+ {
+  "id": "pt-d-caminho",
+  "title": "Onde fica a estação?",
+  "level": "A1",
+  "roles": [
+   "A moradora",
+   "O turista"
+  ],
+  "lines": [
+   [
+    1,
+    "Com licença, a senhora pode me ajudar?"
+   ],
+   [
+    0,
+    "Claro! O que você está procurando?"
+   ],
+   [
+    1,
+    "Onde fica a estação de metrô?"
+   ],
+   [
+    0,
+    "Fica perto. Você segue em frente por dois quarteirões e vira à esquerda na farmácia."
+   ],
+   [
+    1,
+    "Desculpe, pode falar mais devagar? Eu não falo português muito bem."
+   ],
+   [
+    0,
+    "Sem problema. Siga em frente por dois quarteirões. Depois, vire à esquerda."
+   ],
+   [
+    1,
+    "Entendi. Em frente e depois à esquerda. Dá para ir a pé?"
+   ],
+   [
+    0,
+    "Dá, sim. São só cinco minutos."
+   ],
+   [
+    1,
+    "E a estação fica ao lado da farmácia?"
+   ],
+   [
+    0,
+    "Não, fica em frente a um banco, do outro lado da rua."
+   ],
+   [
+    1,
+    "Ah, em frente ao banco. Muito obrigado pela ajuda!"
+   ],
+   [
+    0,
+    "De nada. Bom passeio!"
+   ]
+  ],
+  "gloss": {
+   "licença": "com licença: excuse me",
+   "senhora": "a senhora: you (polite, to a woman)",
+   "ajudar": "to help",
+   "claro": "of course",
+   "procurando": "looking for (procurar)",
+   "fica": "is (in a place) (ficar)",
+   "estação": "station",
+   "perto": "near",
+   "segue": "go on, continue (seguir)",
+   "frente": "em frente: straight ahead; em frente a: opposite",
+   "quarteirões": "blocks (of a street)",
+   "vira": "turn (virar)",
+   "esquerda": "left",
+   "devagar": "slowly",
+   "siga": "go on (seguir, command form)",
+   "vire": "turn (virar, command form)",
+   "entendi": "I see, I understood (entender)",
+   "dá": "dá para...: is it possible to... (dar)",
+   "pé": "a pé: on foot",
+   "lado": "ao lado de: next to; do outro lado: on the other side",
+   "banco": "bank",
+   "rua": "street",
+   "obrigado": "thank you (said by a man)",
+   "ajuda": "help",
+   "passeio": "walk, outing"
+  },
+  "questions": [
+   {
+    "q": "Para que lado o turista precisa virar?",
+    "a": [
+     "esquerda"
+    ]
+   },
+   {
+    "q": "O que fica em frente à estação?",
+    "a": [
+     "banco"
+    ]
+   }
+  ],
+  "notice": "To say where a place is, Brazilians use the verb ficar: \"Onde fica a estação de metrô?\", \"fica em frente a um banco\"."
+ },
+ {
+  "id": "pt-d-vizinha",
+  "title": "A nova vizinha",
+  "level": "A1",
+  "roles": [
+   "O vizinho",
+   "A nova moradora"
+  ],
+  "lines": [
+   [
+    0,
+    "Oi, bom dia! Você é a nova moradora do apartamento doze?"
+   ],
+   [
+    1,
+    "Sou, sim. Eu me chamo Laura e cheguei na semana passada."
+   ],
+   [
+    0,
+    "Muito prazer, Laura. Eu sou o Roberto, do apartamento onze."
+   ],
+   [
+    1,
+    "Prazer, Roberto. Você mora aqui há muito tempo?"
+   ],
+   [
+    0,
+    "Moro aqui há dez anos. E você, de onde é?"
+   ],
+   [
+    1,
+    "Eu sou do Canadá, mas agora trabalho aqui em Fortaleza."
+   ],
+   [
+    0,
+    "Que legal! Está gostando do prédio?"
+   ],
+   [
+    1,
+    "Estou, mas tenho uma dúvida. Onde eu coloco o lixo?"
+   ],
+   [
+    0,
+    "A lixeira fica no térreo, ao lado da garagem."
+   ],
+   [
+    1,
+    "Obrigada. E tem um mercado aqui perto?"
+   ],
+   [
+    0,
+    "Tem, sim. Fica na esquina, mas hoje é domingo e ele está fechado."
+   ],
+   [
+    1,
+    "Que pena! Eu preciso de café para amanhã."
+   ],
+   [
+    0,
+    "Não tem problema. Eu tenho café em casa e posso emprestar um pouco."
+   ],
+   [
+    1,
+    "Que gentil! Muito obrigada, Roberto."
+   ],
+   [
+    0,
+    "De nada. Se precisar de alguma coisa, é só bater na porta."
+   ]
+  ],
+  "gloss": {
+   "moradora": "resident (woman)",
+   "chamo": "me chamo: my name is (chamar-se)",
+   "cheguei": "(I) arrived (chegar)",
+   "passada": "last (na semana passada: last week)",
+   "prazer": "pleasure (muito prazer: nice to meet you)",
+   "mora": "live (morar)",
+   "há": "for (há dez anos: for ten years)",
+   "agora": "now",
+   "legal": "cool, nice",
+   "gostando": "liking, enjoying (gostar de)",
+   "prédio": "building",
+   "dúvida": "question, doubt",
+   "coloco": "(I) put (colocar)",
+   "lixo": "rubbish",
+   "lixeira": "rubbish bins",
+   "térreo": "ground floor",
+   "garagem": "garage",
+   "mercado": "grocery shop",
+   "perto": "near",
+   "esquina": "corner",
+   "fechado": "closed",
+   "pena": "que pena: what a pity",
+   "preciso": "(I) need (precisar de)",
+   "amanhã": "tomorrow",
+   "emprestar": "to lend",
+   "gentil": "kind",
+   "precisar": "se precisar: if you need",
+   "bater": "bater na porta: to knock on the door"
+  },
+  "questions": [
+   {
+    "q": "De que país é a nova moradora?",
+    "a": [
+     "Canadá"
+    ]
+   },
+   {
+    "q": "O que o vizinho vai emprestar?",
+    "a": [
+     "café"
+    ]
+   }
+  ],
+  "notice": "Brazilians usually say yes by repeating the verb of the question, often with sim after it: \"Sou, sim\" (yes, I am), \"Tem, sim\" (yes, there is)."
+ },
+ {
+  "id": "pt-d-farmacia",
+  "title": "Na farmácia",
+  "level": "A2",
+  "roles": [
+   "A farmacêutica",
+   "O cliente"
+  ],
+  "lines": [
+   [
+    0,
+    "Boa tarde. Posso ajudar?"
+   ],
+   [
+    1,
+    "Boa tarde. Estou com dor de cabeça e com o nariz entupido desde ontem."
+   ],
+   [
+    0,
+    "Você está com febre?"
+   ],
+   [
+    1,
+    "Acho que não, mas estou tossindo bastante à noite."
+   ],
+   [
+    0,
+    "Parece um resfriado. Você tem alergia a algum remédio?"
+   ],
+   [
+    1,
+    "Tenho, sim. Sou alérgico a dipirona."
+   ],
+   [
+    0,
+    "Então eu recomendo este comprimido. Tome um a cada oito horas, depois das refeições."
+   ],
+   [
+    1,
+    "E para a tosse, a senhora recomenda alguma coisa?"
+   ],
+   [
+    0,
+    "Este xarope é bom. Tome uma colher antes de dormir."
+   ],
+   [
+    1,
+    "Preciso de receita para comprar?"
+   ],
+   [
+    0,
+    "Não, os dois são vendidos sem receita."
+   ],
+   [
+    1,
+    "Ótimo, vou levar os dois. Quanto fica?"
+   ],
+   [
+    0,
+    "Trinta e dois reais. Se não melhorar em três dias, procure um médico."
+   ],
+   [
+    1,
+    "Pode deixar. Muito obrigado!"
+   ],
+   [
+    0,
+    "De nada. Melhoras!"
+   ]
+  ],
+  "gloss": {
+   "dor": "pain, ache",
+   "cabeça": "head",
+   "nariz": "nose",
+   "entupido": "blocked",
+   "desde": "since",
+   "febre": "fever",
+   "acho": "(I) think (achar)",
+   "tossindo": "coughing (tossir)",
+   "bastante": "quite a lot",
+   "parece": "it looks like (parecer)",
+   "resfriado": "a cold",
+   "remédio": "medicine",
+   "alérgico": "allergic",
+   "dipirona": "a common painkiller in Brazil",
+   "recomendo": "(I) recommend (recomendar)",
+   "comprimido": "pill, tablet",
+   "tome": "take (tomar, command form)",
+   "cada": "a cada oito horas: every eight hours",
+   "refeições": "meals",
+   "tosse": "cough",
+   "xarope": "syrup",
+   "colher": "spoon, spoonful",
+   "receita": "prescription",
+   "vendidos": "sold (vender)",
+   "levar": "to take",
+   "fica": "quanto fica?: how much does it come to?",
+   "melhorar": "to get better",
+   "procure": "go and see, look for (procurar, command form)",
+   "deixar": "pode deixar: I will, leave it to me",
+   "melhoras": "get well soon"
+  },
+  "questions": [
+   {
+    "q": "A que remédio o cliente é alérgico?",
+    "a": [
+     "dipirona"
+    ]
+   },
+   {
+    "q": "O que a farmacêutica recomenda para a tosse?",
+    "a": [
+     "xarope"
+    ]
+   }
+  ],
+  "notice": "Estar com + a noun says what you have or feel right now: \"Estou com dor de cabeça\" (I have a headache), \"Você está com febre?\" (do you have a fever?)."
+ },
+ {
+  "id": "pt-d-hotel",
+  "title": "Na recepção do hotel",
+  "level": "A2",
+  "roles": [
+   "O recepcionista",
+   "A hóspede"
+  ],
+  "lines": [
+   [
+    0,
+    "Boa noite, seja bem-vinda. Em que posso ajudar?"
+   ],
+   [
+    1,
+    "Boa noite. Tenho uma reserva em nome de Clara Antunes, para três noites."
+   ],
+   [
+    0,
+    "Um momento, por favor. Não estou encontrando seu nome no sistema."
+   ],
+   [
+    1,
+    "Que estranho. Eu fiz a reserva pela internet há duas semanas. Tenho a mensagem de confirmação aqui."
+   ],
+   [
+    0,
+    "Posso ver? Ah, entendi. A reserva foi feita para o mês que vem, não para hoje."
+   ],
+   [
+    1,
+    "Puxa, eu errei a data! Vocês têm algum quarto livre para hoje?"
+   ],
+   [
+    0,
+    "Temos só um quarto de casal, com vista para o mar. Custa trinta reais a mais por noite."
+   ],
+   [
+    1,
+    "Tudo bem, eu fico com ele. O café da manhã está incluído?"
+   ],
+   [
+    0,
+    "Está, sim. É servido das seis e meia às dez, no primeiro andar."
+   ],
+   [
+    1,
+    "Perfeito. E até que horas posso ficar no quarto no último dia?"
+   ],
+   [
+    0,
+    "Até o meio-dia. Aqui está a chave. O quarto fica no quinto andar."
+   ],
+   [
+    1,
+    "Obrigada. O elevador é por ali?"
+   ],
+   [
+    0,
+    "É, sim, à direita. Tenha uma boa estadia!"
+   ]
+  ],
+  "gloss": {
+   "seja": "seja bem-vinda: welcome (said to a woman)",
+   "reserva": "booking",
+   "nome": "em nome de: in the name of",
+   "encontrando": "finding (encontrar)",
+   "estranho": "strange",
+   "fiz": "(I) made (fazer)",
+   "há": "ago (há duas semanas: two weeks ago)",
+   "confirmação": "confirmation",
+   "entendi": "I see (entender)",
+   "feita": "made (fazer)",
+   "vem": "o mês que vem: next month (vir)",
+   "puxa": "oh no, gosh",
+   "errei": "(I) got wrong (errar)",
+   "data": "date",
+   "quarto": "room",
+   "livre": "free",
+   "casal": "quarto de casal: double room (casal: couple)",
+   "vista": "view",
+   "mais": "a mais: extra",
+   "fico": "eu fico com ele: I'll take it (ficar com)",
+   "café": "café da manhã: breakfast",
+   "incluído": "included",
+   "servido": "served (servir)",
+   "andar": "floor, storey",
+   "último": "last",
+   "meio": "meio-dia: noon",
+   "chave": "key",
+   "quinto": "fifth",
+   "direita": "à direita: on the right",
+   "tenha": "have (ter, command form)",
+   "estadia": "stay"
+  },
+  "questions": [
+   {
+    "q": "Para quando foi feita a reserva?",
+    "a": [
+     "mês"
+    ]
+   },
+   {
+    "q": "Em que andar fica o quarto da hóspede?",
+    "a": [
+     "quinto"
+    ]
+   }
+  ],
+  "notice": "The passive is ser + a past participle, which agrees with its subject: \"A reserva foi feita para o mês que vem\" (was made), \"É servido das seis e meia às dez\" (is served)."
+ },
+ {
+  "id": "pt-d-reserva",
+  "title": "Uma mesa para sábado",
+  "level": "A2",
+  "roles": [
+   "A atendente",
+   "O cliente"
+  ],
+  "lines": [
+   [
+    0,
+    "Cantina da Praça, boa tarde!"
+   ],
+   [
+    1,
+    "Boa tarde. Eu gostaria de reservar uma mesa para sábado à noite."
+   ],
+   [
+    0,
+    "Para quantas pessoas?"
+   ],
+   [
+    1,
+    "Para seis pessoas, às oito horas."
+   ],
+   [
+    0,
+    "Às oito não temos mais mesa para seis. Pode ser às sete ou às nove e meia?"
+   ],
+   [
+    1,
+    "Às nove e meia fica muito tarde para as crianças. Pode ser às sete."
+   ],
+   [
+    0,
+    "Combinado. O senhor prefere uma mesa no salão ou na varanda?"
+   ],
+   [
+    1,
+    "Na varanda, por favor. Vocês têm cadeirão para bebê?"
+   ],
+   [
+    0,
+    "Temos, sim. A reserva fica em nome de quem?"
+   ],
+   [
+    1,
+    "Em nome de Daniel Nogueira."
+   ],
+   [
+    0,
+    "Anotado, seu Daniel. Só um aviso: guardamos a mesa por quinze minutos, no máximo."
+   ],
+   [
+    1,
+    "Sem problema. Vocês têm pratos vegetarianos? Minha esposa não come carne."
+   ],
+   [
+    0,
+    "Temos, sim: massas, risotos e saladas."
+   ],
+   [
+    1,
+    "Ótimo. Então até sábado, às sete. Obrigado!"
+   ],
+   [
+    0,
+    "Nós é que agradecemos. Até sábado!"
+   ]
+  ],
+  "gloss": {
+   "cantina": "simple Italian-style restaurant",
+   "gostaria": "(I) would like (gostar)",
+   "reservar": "to book",
+   "quantas": "how many",
+   "tarde": "late (boa tarde: good afternoon)",
+   "crianças": "children",
+   "combinado": "agreed, that's settled",
+   "senhor": "o senhor: you (polite, to a man)",
+   "prefere": "prefer (preferir)",
+   "salão": "dining room",
+   "varanda": "veranda, terrace",
+   "cadeirão": "high chair",
+   "bebê": "baby",
+   "reserva": "booking",
+   "nome": "em nome de: in the name of",
+   "anotado": "noted (anotar)",
+   "seu": "Mr (friendly, before a man's first name)",
+   "aviso": "warning, notice",
+   "guardamos": "(we) hold, keep (guardar)",
+   "máximo": "no máximo: at most",
+   "pratos": "dishes",
+   "esposa": "wife",
+   "carne": "meat",
+   "massas": "pasta dishes",
+   "ótimo": "great",
+   "agradecemos": "nós é que agradecemos: it is we who thank you (agradecer)"
+  },
+  "questions": [
+   {
+    "q": "Para quantas pessoas é a reserva?",
+    "a": [
+     "seis",
+     "6"
+    ]
+   },
+   {
+    "q": "A que horas vai ser o jantar de sábado?",
+    "a": [
+     "sete",
+     "7"
+    ]
+   }
+  ],
+  "notice": "Pode ser asks whether something would suit, \"Pode ser às sete ou às nove e meia?\", and it also accepts an offer: \"Pode ser às sete.\""
+ },
+ {
+  "id": "pt-d-troca",
+  "title": "Uma troca na loja",
+  "level": "B1",
+  "roles": [
+   "O vendedor",
+   "A cliente"
+  ],
+  "lines": [
+   [
+    0,
+    "Bom dia! Em que posso ajudar?"
+   ],
+   [
+    1,
+    "Bom dia. Comprei este liquidificador aqui na semana passada, mas ele parou de funcionar ontem."
+   ],
+   [
+    0,
+    "Puxa, que chato. O que aconteceu exatamente?"
+   ],
+   [
+    1,
+    "Eu estava fazendo uma vitamina quando ele fez um barulho estranho e desligou sozinho. Agora não liga mais."
+   ],
+   [
+    0,
+    "A senhora trouxe a nota fiscal?"
+   ],
+   [
+    1,
+    "Trouxe, sim. Está aqui, junto com a caixa e o manual."
+   ],
+   [
+    0,
+    "Obrigado. Como faz menos de trinta dias, a senhora pode trocar o produto. Mas esse modelo está em falta no estoque."
+   ],
+   [
+    1,
+    "E quando chega outro igual?"
+   ],
+   [
+    0,
+    "Só daqui a duas semanas. Se preferir, a senhora pode levar um modelo mais potente e pagar a diferença."
+   ],
+   [
+    1,
+    "Não, obrigada. Não quero gastar mais nem esperar tanto. Nesse caso, prefiro receber o dinheiro de volta."
+   ],
+   [
+    0,
+    "Sem problema. A senhora pagou com cartão de crédito?"
+   ],
+   [
+    1,
+    "Paguei no débito. Em quanto tempo o dinheiro volta para a minha conta?"
+   ],
+   [
+    0,
+    "Em até cinco dias úteis. Só preciso que a senhora assine aqui, por favor."
+   ],
+   [
+    1,
+    "Pronto. Vocês me avisam quando o reembolso for feito?"
+   ],
+   [
+    0,
+    "Avisamos por mensagem. Desculpe o transtorno e obrigado pela compreensão."
+   ],
+   [
+    1,
+    "Tudo bem, essas coisas acontecem. Obrigada pela atenção."
+   ]
+  ],
+  "gloss": {
+   "liquidificador": "blender",
+   "parou": "parou de: stopped (parar)",
+   "funcionar": "to work",
+   "puxa": "oh dear, gosh",
+   "chato": "annoying",
+   "aconteceu": "happened (acontecer)",
+   "vitamina": "fruit smoothie made with milk",
+   "barulho": "noise",
+   "desligou": "switched off (desligar)",
+   "sozinho": "by itself",
+   "liga": "switches on (ligar)",
+   "trouxe": "brought (trazer)",
+   "nota": "nota fiscal: receipt, invoice",
+   "junto": "junto com: together with",
+   "trocar": "to exchange",
+   "falta": "em falta: out of stock",
+   "estoque": "stock",
+   "igual": "the same",
+   "daqui": "daqui a duas semanas: two weeks from now",
+   "potente": "powerful",
+   "gastar": "to spend",
+   "nem": "nor",
+   "tanto": "so much, so long",
+   "caso": "nesse caso: in that case",
+   "volta": "de volta: back; volta: goes back (voltar)",
+   "conta": "account",
+   "úteis": "dias úteis: working days",
+   "assine": "sign (assinar, present subjunctive)",
+   "pronto": "there, done",
+   "avisam": "let (me) know (avisar)",
+   "reembolso": "refund",
+   "for": "is (ser, future subjunctive)",
+   "transtorno": "inconvenience",
+   "compreensão": "understanding"
+  },
+  "questions": [
+   {
+    "q": "Que aparelho a cliente quer devolver?",
+    "a": [
+     "liquidificador"
+    ]
+   },
+   {
+    "q": "O que a cliente prefere receber?",
+    "a": [
+     "dinheiro",
+     "reembolso"
+    ]
+   }
+  ],
+  "notice": "After se (if) and quando (when) about the future, Portuguese uses the future subjunctive, not the present: \"Se preferir\" (if you prefer), \"quando o reembolso for feito\" (when the refund is made)."
+ },
+ {
+  "id": "pt-d-entrevista",
+  "title": "A entrevista de emprego",
+  "level": "B1",
+  "roles": [
+   "A entrevistadora",
+   "O candidato"
+  ],
+  "lines": [
+   [
+    0,
+    "Bom dia, Rafael. Obrigada por ter vindo. Pode se sentar."
+   ],
+   [
+    1,
+    "Bom dia. Eu é que agradeço a oportunidade."
+   ],
+   [
+    0,
+    "Para começar, fale um pouco sobre a sua experiência."
+   ],
+   [
+    1,
+    "Trabalhei cinco anos em um hotel e, nos últimos dois, fui responsável pela recepção."
+   ],
+   [
+    0,
+    "E por que você quer mudar de emprego?"
+   ],
+   [
+    1,
+    "Gosto do que faço, mas o hotel é pequeno e não tenho mais como crescer. Procuro um lugar onde eu possa aprender coisas novas."
+   ],
+   [
+    0,
+    "Entendo. Nossa equipe atende muitos clientes estrangeiros. Como está o seu inglês?"
+   ],
+   [
+    1,
+    "Falo inglês bem e estudo espanhol há um ano. Ainda cometo erros, mas consigo me comunicar."
+   ],
+   [
+    0,
+    "Ótimo. Agora uma pergunta difícil: qual é o seu maior defeito?"
+   ],
+   [
+    1,
+    "Às vezes tenho dificuldade em dizer não e acabo aceitando tarefas demais. Estou aprendendo a organizar melhor o meu tempo."
+   ],
+   [
+    0,
+    "Boa resposta. A vaga exige trabalhar em dois sábados por mês. Isso seria um problema?"
+   ],
+   [
+    1,
+    "De jeito nenhum, desde que eu saiba as datas com antecedência."
+   ],
+   [
+    0,
+    "Claro, a escala sai sempre no começo do mês. Você tem alguma pergunta?"
+   ],
+   [
+    1,
+    "Tenho, sim. Como é o treinamento nas primeiras semanas?"
+   ],
+   [
+    0,
+    "Você acompanha um colega mais experiente durante um mês. Daremos uma resposta até sexta-feira."
+   ],
+   [
+    1,
+    "Perfeito. Fico aguardando. Muito obrigado pelo seu tempo."
+   ]
+  ],
+  "gloss": {
+   "vindo": "come (vir)",
+   "agradeço": "eu é que agradeço: it is I who thank you (agradecer)",
+   "fale": "tell, speak (falar, command form)",
+   "responsável": "in charge, responsible",
+   "mudar": "mudar de: to change",
+   "emprego": "job",
+   "faço": "(I) do (fazer)",
+   "como": "how; não tenho mais como: I have no way left to",
+   "crescer": "to grow",
+   "procuro": "(I) am looking for (procurar)",
+   "possa": "can (poder, present subjunctive)",
+   "equipe": "team",
+   "atende": "serves, deals with (atender)",
+   "estrangeiros": "foreign",
+   "cometo": "(I) make (cometer erros: to make mistakes)",
+   "erros": "mistakes",
+   "consigo": "(I) manage to (conseguir)",
+   "maior": "biggest",
+   "defeito": "fault, weakness",
+   "vezes": "às vezes: sometimes",
+   "acabo": "acabo aceitando: I end up accepting (acabar)",
+   "tarefas": "tasks",
+   "demais": "too many, too much",
+   "vaga": "vacancy, position",
+   "exige": "requires (exigir)",
+   "seria": "would be (ser)",
+   "jeito": "de jeito nenhum: not at all",
+   "desde": "desde que: as long as",
+   "saiba": "know (saber, present subjunctive)",
+   "antecedência": "com antecedência: in advance",
+   "escala": "work schedule, rota",
+   "treinamento": "training",
+   "acompanha": "work alongside, follow (acompanhar)",
+   "daremos": "(we) will give (dar)",
+   "aguardando": "fico aguardando: I will be waiting (aguardar)"
+  },
+  "questions": [
+   {
+    "q": "Onde o candidato trabalhou antes?",
+    "a": [
+     "hotel"
+    ]
+   },
+   {
+    "q": "Em que dia da semana ele vai precisar trabalhar duas vezes por mês?",
+    "a": [
+     "sábado"
+    ]
+   }
+  ],
+  "notice": "The present subjunctive follows onde or desde que when the thing is wanted or required rather than already real: \"um lugar onde eu possa aprender\", \"desde que eu saiba as datas\"."
+ }
+]

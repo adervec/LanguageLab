@@ -1,8 +1,63 @@
-// node core.test.mjs — the one check for core.js. Pins the time zone so day tests mean something.
+// node core.test.mjs                    the one check for core.js and the bundled content
+// node core.test.mjs content/es.json    only that content file, listing every problem (for authors)
+// Pins the time zone so day tests mean something.
 process.env.TZ = 'America/Toronto';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 const c = await import('./core.js');
+
+// ---- what every bundled story and dialogue must satisfy (content/AUTHORING.md) ----
+const WORDS = { A1: [70, 170], A2: [90, 210], B1: [110, 250], B2: [130, 290], C1: [170, 360] };
+function contentProblems(file) {
+  const lang = file.match(/([a-z]{2,3})(-\w+)?\.json$/)[1], out = [];
+  let list;
+  try { list = JSON.parse(readFileSync(file, 'utf8')); } catch (e) { return ['not valid JSON: ' + e.message]; }
+  if (!Array.isArray(list)) return ['the file must be a JSON array'];
+  const ids = new Set(), titles = new Set();
+  for (const [i, raw] of list.entries()) {
+    const id = raw?.id || '#' + i, bad = m => out.push(`${id}: ${m}`), s = c.cleanStory(raw, lang);
+    if (!s) { bad('needs a title and a text (or roles and lines)'); continue; }
+    if (!String(raw.id || '').startsWith(lang + '-')) bad(`id must start with "${lang}-"`);
+    if (ids.has(raw.id)) bad('duplicate id');
+    if (titles.has(s.title)) bad('duplicate title');
+    ids.add(raw.id); titles.add(s.title);
+    if (!WORDS[s.level]) bad('level must be one of ' + Object.keys(WORDS).join(', '));
+    if (/\d/.test(s.text)) bad('no digits: write numbers as words');
+    const words = c.plainWords(s.text, lang), keys = new Set(c.wordKeys(s.text, lang));
+    const inText = k => { const w = c.plainWords(k, lang); return w.length > 0 && w.every(x => words.some(h => h === x || (x.length >= 4 && h.startsWith(x)))); };
+    if (s.lines) {
+      if (raw.text) bad('a dialogue has lines, not text');
+      if (s.lines.length < 8 || s.lines.length > 18) bad(`a dialogue has 8 to 18 lines (has ${s.lines.length})`);
+      for (const r of [0, 1]) if (s.lines.filter(l => l[0] === r).length < 3) bad(`speaker ${r} needs at least 3 lines`);
+      for (const l of s.lines) if (c.plainWords(l[1], lang).length > 28) bad('line too long (28 words at most): ' + l[1].slice(0, 40));
+      if (s.lines.filter(l => l[0] === 1 && c.plainWords(l[1], lang).length >= 4).length < 3) bad('speaker 1 (the learner) needs at least 3 lines of 4 words or more');
+    } else {
+      const [lo, hi] = WORDS[s.level] || [0, 1e9];
+      if (words.length < lo || words.length > hi) bad(`${s.level} texts have ${lo} to ${hi} words (has ${words.length})`);
+    }
+    if (c.pickDictation(c.storySentences(s), 4, lang).length < 3) bad('needs at least 3 sentences of 4 to 22 words (for dictation)');
+    const g = Object.keys(s.gloss).length, min = s.lines ? 5 : 10, want = s.lines ? 2 : 3;
+    if (g < min || g > 60) bad(`gloss needs ${min} to 60 entries (has ${g})`);
+    for (const k of Object.keys(raw.gloss || {})) if (!keys.has(c.key(k))) bad(`gloss "${k}" is not a word of the text (lower case, one word, as written)`);
+    if ((s.questions || []).length !== want) bad(`needs exactly ${want} questions (has ${(s.questions || []).length})`);
+    for (const q of s.questions || []) {
+      if (!/[?？؟]/.test(q.q)) bad('a question needs a question mark: ' + q.q);
+      if (/\d/.test(q.q)) bad('no digits in questions');
+      for (const k of q.a) {
+        if (/^\d+$/.test(k)) continue; // a number may also be answered in digits, which the text never has
+        if (!inText(k)) bad(`answer key "${k}" is not in the text (question: ${q.q})`);
+        if (c.answerOk(q.q, [k], lang)) bad(`answer key "${k}" is already in its own question: ${q.q}`);
+      }
+    }
+    if (!s.notice || s.notice.length < 40) bad('needs a notice (a grammar or usage point, 40 characters or more)');
+  }
+  return out;
+}
+if (process.argv[2]) {
+  const p = contentProblems(process.argv[2]);
+  console.log(p.length ? p.join('\n') + `\n${p.length} problem(s) in ${process.argv[2]}` : 'ok: ' + process.argv[2]);
+  process.exit(p.length ? 1 : 0);
+}
 
 // local day, not UTC: 03:30 UTC on the 2nd is still the 1st in Toronto
 assert.equal(c.dayStr(Date.UTC(2026, 0, 2, 3, 30)), '2026-01-01');
@@ -13,52 +68,94 @@ const tk = c.tokens(txt);
 assert.equal(tk.map(x => x.s).join(''), txt);
 assert.deepEqual(c.wordKeys(txt), ["aujourd'hui", 'école', 'est', 'pas', 'loin', 'y', 'vais']);
 
+// other languages: English keeps "don't" whole and drops a possessive 's; Italian elides but keeps "po'";
+// scripts with combining marks keep their words whole; Chinese has no spaces at all
+assert.deepEqual(c.wordKeys("I don't know Claire's dog.", 'en'), ['i', "don't", 'know', 'claire', 'dog']);
+assert.deepEqual(c.wordKeys("Un po' d'acqua, per favore.", 'it'), ['un', 'po', 'acqua', 'per', 'favore']);
+assert.deepEqual(c.wordKeys('Das Mädchen heißt Zoë.', 'de'), ['das', 'mädchen', 'heißt', 'zoë']);
+assert.deepEqual(c.wordKeys('मेरा नाम लिया है।', 'hi'), ['मेरा', 'नाम', 'लिया', 'है']);
+assert.equal(c.tokens('我喜欢学习中文。', 'zh').map(x => x.s).join(''), '我喜欢学习中文。');
+assert.ok(c.wordKeys('我喜欢学习中文。', 'zh').length >= 3);
+assert.deepEqual([c.langInfo('fr').bcp, c.langInfo('nl').english, c.isLangCode('nl'), c.isLangCode('<x>')], ['fr-FR', 'Dutch', true, false]);
+
 assert.deepEqual(c.sentences('Il pleut. « Viens ! » dit-elle. Elle rit.'), ['Il pleut.', '« Viens ! » dit-elle.', 'Elle rit.']);
+assert.deepEqual(c.sentences('¿Dónde está? No lo sé. ¡Mira!'), ['¿Dónde está?', 'No lo sé.', '¡Mira!']);
+assert.deepEqual(c.sentences('今天很冷。我不想出门！'), ['今天很冷。', '我不想出门！']);
+assert.deepEqual(c.sentences('„Komm mit.“ Dann ging er. He said. “Hello.” She left.'), ['„Komm mit.“', 'Dann ging er.', 'He said.', '“Hello.”', 'She left.']);
 assert.equal(c.coverage('le chat dort', { le: 1, chat: 1 }), 2 / 3);
 
 // dictation: accents and case forgiven, order matters, extra words cost nothing, missing words do
 assert.equal(c.dictationScore('Elle a mangé une pomme.', 'elle a mange une pomme').score, 1);
+assert.equal(c.dictationScore('Die Straße ist schön.', 'die strasse ist schon', 'de').score, 1);
 const d = c.dictationScore("Il n'a pas vu le chien.", 'il a vu un chien');
 assert.equal(d.score, 4 / 7);
 assert.deepEqual(d.hits, [true, false, true, false, true, false, true]);
+assert.deepEqual(c.dictationScore("L'eau est froide.", 'eau froide').parts.map(p => p.hit), [false, undefined, true, undefined, false, undefined, true, undefined]);
 assert.equal(c.dictationScore('Bonjour.', '').score, 0);
 assert.equal(c.pickDictation('Un. Deux mots ici non. Voici une phrase assez longue. Encore une autre phrase ici. Et une dernière phrase pour finir. Oui.', 2).length, 2);
+assert.deepEqual(c.pickDictation(['Oui.', 'Je voudrais un café.'], 4), ['Je voudrais un café.']);
+
+// questions after the first listen: a key word, accents forgiven, a longer ending accepted
+assert.ok(c.answerOk('Elle va au marché.', ['marché'], 'fr'));
+assert.ok(c.answerOk('aux marches', ['marché'], 'fr'));
+assert.ok(c.answerOk('sur la grande place', ['marché', 'la place'], 'fr'));
+assert.ok(!c.answerOk('Elle va à la gare.', ['marché', 'la place'], 'fr'));
+assert.ok(!c.answerOk('', ['marché'], 'fr'));
 
 assert.equal(c.cloze("L'école est loin de l'école.", 'école'), "L'____ est loin de l'école.");
 assert.equal(c.judgeWord(' École ', 'école'), 'exact');
 assert.equal(c.judgeWord('ecole', 'école'), 'accent');
 assert.equal(c.judgeWord('écoles', 'école'), 'wrong');
 
-// scheduler: 1 day, 3 days, then growing; a miss comes back in ten minutes
+// scheduler: 1 day, 3 days, then growing; a miss comes back in ten minutes; "I know this" is never due
 let s = c.schedule(null, true, 0); assert.equal(s.interval, 1);
 s = c.schedule(s, true, 0); assert.equal(s.interval, 3);
 s = c.schedule(s, true, 0); assert.equal(s.interval, 8);
 s = c.schedule(s, false, 0); assert.deepEqual([s.interval, s.due, s.lapses], [0, 600000, 1]);
-assert.ok(c.isDue({ srs: null }) && !c.isDue({ srs: { due: 10 } }, 5));
+assert.ok(c.isDue({ srs: null }) && !c.isDue({ srs: { due: 10 } }, 5) && !c.isDue({ srs: null, retired: 5 }));
 
-const sc = c.scoreSitting({ dictation: [{ score: 1, replays: 1 }, { score: 0.5 }, { score: null }], tapped: ['a', 'b'], uniqueWords: 20, wordsRead: 50, writing: { text: 'Je suis là.' }, speaking: [{ score: 0.5 }, { score: null }] });
+const sc = c.scoreSitting({ lang: 'fr', dictation: [{ score: 1, replays: 1 }, { score: 0.5 }, { score: null }], tapped: ['a', 'b'], uniqueWords: 20, wordsRead: 50,
+  writing: { text: 'Je suis là.' }, speaking: [{ score: 0.5 }, { score: null }], rebuild: [{ score: 0.8 }], questions: [{ ok: true }, { ok: false }] });
 assert.equal(sc.score, 75);
-assert.deepEqual(sc.breakdown, { listening: 0.75, understood: 0.9, speaking: 0.5, replays: 1, wordsRead: 50, wordsWritten: 3 });
+assert.deepEqual(sc.breakdown, { listening: 0.75, speaking: 0.5, rebuilt: 0.8, comprehension: 0.5, understood: 0.9, replays: 1, wordsRead: 50, wordsWritten: 3 });
 assert.equal(c.scoreSitting({}).score, null);
+assert.equal(c.scoreSitting({ mode: 'talk', speaking: [{ score: 0.6 }] }).score, 60);
 
 // outside data: unknown fields dropped, bad shapes refused
 assert.equal(c.cleanStory({ title: 'x' }, 'fr'), null);
 const st = c.cleanStory({ title: 'T', text: 'Bonjour.', level: 'Z9', gloss: { Chat: 'cat', bad: 3 }, evil: '<script>' }, 'fr');
 assert.deepEqual([st.level, st.gloss, st.evil, st.lang], ['', { chat: 'cat' }, undefined, 'fr']);
+const dlg = c.cleanStory({ id: 'd', title: 'Au café', level: 'A1', roles: ['Serveur', 'Client'], lines: [[0, 'Bonjour !'], [1, "Un café, s'il vous plaît."], ['x', 'Voilà.']],
+  questions: [{ q: 'Que veut le client ?', a: ['café', 7] }, { q: '', a: ['x'] }] }, 'fr');
+assert.deepEqual([dlg.text, dlg.lines[2][0], dlg.questions.length, dlg.questions[0].a], ["Bonjour !\nUn café, s'il vous plaît.\nVoilà.", 1, 1, ['café']]);
+assert.deepEqual(c.storySentences(dlg), ['Bonjour !', "Un café, s'il vous plaît.", 'Voilà.']);
+const subs = c.parseSubs('WEBVTT\n\n1\n00:00:01.000 --> 00:00:03,500\n<i>Bonjour</i> à tous.\n\n2\n00:01:02.000 --> 00:01:04.000 align:start\nÇa va ?\nOui.\n');
+assert.deepEqual(subs, [[1, 3.5, 'Bonjour à tous.'], [62, 64, 'Ça va ? Oui.']]);
+assert.equal(c.cleanStory({ title: 'Podcast', cues: subs }, 'fr').text, 'Bonjour à tous. Ça va ? Oui.');
 assert.equal(c.cleanReview({ sessionId: 'a', grade: 'excellent' }), null);
-assert.equal(c.cleanReview({ sessionId: 'a', grade: 'b+', fixes: ['x', 4] }).fixes.length, 1);
+const rv = c.cleanReview({ sessionId: 'a', grade: 'b+', fixes: ['x', 4], corrections: [{ wrong: 'je suis allé', right: 'je suis allée', why: 'agreement', evil: 1 }, { wrong: 'x' }] });
+assert.deepEqual([rv.fixes.length, rv.corrections], [1, [{ wrong: 'je suis allé', right: 'je suis allée', why: 'agreement' }]]);
+assert.equal(c.cleanPalReply({ id: 'm', text: ' ' }), null);
+assert.deepEqual(c.cleanPalReply({ id: 'm', text: 'Salut', gloss: { Salut: 'hi' }, corrections: [{ wrong: 'a', right: 'b' }], x: 1 }),
+  { id: 'm', text: 'Salut', gloss: { salut: 'hi' }, corrections: [{ wrong: 'a', right: 'b', why: '' }] });
 assert.throws(() => c.cleanState({ v: 1 }));
-const state = c.cleanState(JSON.parse(JSON.stringify({ app: 'languagelab', v: 1, langs: { fr: { known: { Chat: 1 }, cards: { chien: { gloss: 'dog', srs: { due: 5 } } } } },
-  sittings: [{ id: 's1', day: '2026-01-01', score: 250, ai: { grade: 'A', summary: 'ok' } }, { nope: 1 }], stories: [{ id: 'a', lang: 'fr', title: 'T', text: 'x' }] })));
+const state = c.cleanState(JSON.parse(JSON.stringify({ app: 'languagelab', v: 1, level: 'B1', gone: { z: 5 }, langs: { fr: { known: { Chat: 1 }, cards: { chien: { gloss: 'dog', srs: { due: 5 } } } }, '<b>': {} },
+  sittings: [{ id: 's1', day: '2026-01-01', score: 250, ai: { grade: 'A', summary: 'ok' } }, { nope: 1 }],
+  stories: [{ id: 'a', lang: 'fr', title: 'T', text: 'x' }, { id: 'z', lang: 'fr', title: 'Z', text: 'x' }] })));
+assert.deepEqual(Object.keys(state.langs), ['fr']);
 assert.deepEqual(Object.keys(state.langs.fr.known), ['chat']);
 assert.equal(state.langs.fr.cards.chien.srs.due, 5);
-assert.deepEqual([state.sittings.length, state.sittings[0].score, state.sittings[0].ai.grade, state.stories.length], [1, 100, 'A', 1]);
+assert.deepEqual([state.langs.fr.level, state.langs.fr.pal.msgs.length, state.sittings[0].mode], ['B1', 0, 'sitting']); // a save from before levels were per language
+assert.deepEqual([state.sittings.length, state.sittings[0].score, state.sittings[0].ai.grade, state.stories.map(x => x.id)], [1, 100, 'A', ['a']]);
 
-// the bundled stories are well formed and every one can be dictated
-for (const s of JSON.parse(readFileSync(new URL('./content/fr.json', import.meta.url), 'utf8'))) {
-  assert.ok(s.id && c.cleanStory(s, 'fr'), 'story ' + s.id);
-  assert.ok(c.pickDictation(s.text).length >= 3, 'dictation in ' + s.id);
-  for (const k of Object.keys(s.gloss)) assert.ok(c.wordKeys(s.text).includes(k), `${s.id}: gloss "${k}" is not a word of the text`);
+// ability, level by level, and the level the numbers support
+{
+  const S = c.cleanState({ app: 'languagelab', v: 1, langs: { fr: { known: { le: 1, chat: 1, dort: 1 } } },
+    stories: [{ id: 'a', lang: 'fr', level: 'A1', title: 'A', text: 'Le chat dort.' }, { id: 'b', lang: 'fr', level: 'A2', title: 'B', text: 'Le chien court vite.' }],
+    sittings: [1, 2].map(i => ({ id: 's' + i, lang: 'fr', level: 'A1', breakdown: { listening: 0.9, comprehension: 1 } })) });
+  const rows = c.abilities(S, 'fr');
+  assert.deepEqual(rows.map(r => [r.level, r.reading, r.listening, r.sittings]), [['A1', 1, 0.9, 2], ['A2', 0.25, null, 0]]);
+  assert.deepEqual(c.estimate(rows), { reading: 'A1', listening: 'A1' });
 }
 console.log('core.test: ok');
 
@@ -76,5 +173,31 @@ console.log('core.test: ok');
     assert.equal(m.langs.fr.cards.pont.srs.t, 9);
     assert.deepEqual([m.stories.length, m.stories[0].readAt, m.updatedAt], [1, 7, 2]);
   }
+  // a removed story stays removed, "I know this" stays known, corrections and letters are joined
+  const a = mk(5, { langs: { fr: { cards: { pont: { srs: { t: 3, due: 3 } } }, fixes: { 'x:0': { wrong: 'je suis allé', right: 'je suis allée', srs: { t: 1 } } },
+    pal: { msgs: [{ id: 'm1', at: 1, text: 'Bonjour' }, { id: 'm2', at: 2, text: 'Salut' }] } } },
+    stories: [{ id: 's', lang: 'fr', title: 'T', text: 'x' }, { id: 'k', lang: 'fr', title: 'K', text: 'y' }] });
+  const b = mk(4, { gone: { s: 9 }, langs: { fr: { cards: { pont: { retired: 7, srs: { t: 3, due: 3 } } }, fixes: { 'x:0': { wrong: 'je suis allé', right: 'je suis allée', srs: { t: 6, due: 6 } } },
+    pal: { persona: 'Camille', msgs: [{ id: 'm1', at: 1, text: 'Bonjour', reply: { text: 'Salut !', at: 3 } }] } } } });
+  for (const m of [c.mergeState(a, b), c.mergeState(b, a)]) {
+    assert.deepEqual(m.stories.map(s => s.id), ['k']);
+    assert.ok(m.langs.fr.cards.pont.retired && m.langs.fr.known.pont);
+    assert.equal(m.langs.fr.fixes['x:0'].srs.t, 6);
+    assert.deepEqual([m.langs.fr.pal.persona, m.langs.fr.pal.msgs.length, m.langs.fr.pal.msgs[0].reply.text], ['Camille', 2, 'Salut !']);
+  }
   console.log('merge: ok');
+}
+
+// the bundled content: every language with starter stories has a full, well-formed set
+{
+  const files = readdirSync(new URL('./content/', import.meta.url)).filter(f => f.endsWith('.json')), bad = [];
+  for (const f of files) bad.push(...contentProblems('content/' + f).map(p => f + ' ' + p));
+  for (const code of Object.keys(c.LANGS)) {
+    let list = [];
+    try { list = JSON.parse(readFileSync(new URL(`./content/${code}.json`, import.meta.url), 'utf8')); } catch { /* reported below */ }
+    const dialogues = list.filter(x => x.lines).length;
+    if (list.length - dialogues < 16 || dialogues < 8) bad.push(`content/${code}.json needs 16 stories and 8 dialogues (has ${list.length - dialogues} and ${dialogues})`);
+  }
+  if (bad.length) { console.log(bad.slice(0, 40).join('\n')); assert.fail(`${bad.length} content problem(s)`); }
+  console.log(`content: ok (${files.length} files)`);
 }

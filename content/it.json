@@ -1,0 +1,695 @@
+[
+ {
+  "id": "it-famiglia",
+  "title": "La mia famiglia",
+  "level": "A1",
+  "text": "Mi chiamo Giulia e ho dieci anni. Abito a Bologna con la mia famiglia. Mio padre si chiama Marco e fa il cuoco in un ristorante. Mia madre si chiama Elena e lavora in una scuola. Ho anche un fratello più piccolo, Luca. Ha cinque anni e fa sempre molte domande. Il nostro cane è bianco e si chiama Pepe. La domenica pranziamo dalla nonna, che abita vicino a noi. La nonna prepara le tagliatelle e una torta di mele. Oggi è domenica, ma la torta non è sul tavolo. Dov'è? Luca guarda sotto il tavolo e ride. Pepe è lì e ha la bocca piena di torta! La nonna non è arrabbiata. Apre il frigorifero e prende il gelato per tutti. Mi piacciono molto le domeniche con la mia famiglia.",
+  "gloss": {
+   "abito": "(I) live", "cuoco": "cook, chef", "lavora": "works", "scuola": "school", "fratello": "brother",
+   "domande": "questions", "cane": "dog", "bianco": "white", "domenica": "Sunday (la domenica: on Sundays)",
+   "pranziamo": "(we) have lunch", "dalla": "at the home of (da + la)", "nonna": "grandmother", "vicino": "near",
+   "prepara": "makes, prepares", "tagliatelle": "long flat ribbons of pasta", "torta": "cake", "mele": "apples",
+   "oggi": "today", "tavolo": "table", "sotto": "under", "ride": "laughs", "lì": "there", "bocca": "mouth",
+   "piena": "full", "arrabbiata": "angry", "apre": "opens", "frigorifero": "fridge", "gelato": "ice cream",
+   "tutti": "everyone", "piacciono": "mi piacciono: I like (them)", "domeniche": "Sundays"
+  },
+  "questions": [
+   { "q": "In quale città abita Giulia?", "a": ["Bologna"] },
+   { "q": "Chi mangia la torta di mele?", "a": ["Pepe", "cane"] },
+   { "q": "Che cosa prende la nonna dal frigorifero?", "a": ["gelato"] }
+  ],
+  "notice": "With one family member, the possessive has no article: \"Mio padre\", \"Mia madre\". With other nouns the article stays: \"la mia famiglia\"."
+ },
+ {
+  "id": "it-mattina",
+  "title": "Una mattina strana",
+  "level": "A1",
+  "text": "Mi chiamo Paolo e abito a Torino. Ogni mattina mi sveglio alle sette. Mi alzo, faccio la doccia e mi vesto. Poi vado in cucina e preparo la colazione. Bevo un caffè e mangio pane e marmellata. Alle otto esco di casa e prendo il tram. Lavoro in un ufficio in centro. Stamattina però il tram è quasi vuoto. Anche le strade sono tranquille. Che strano! Arrivo in ufficio, ma la porta è chiusa. Guardo il telefono e capisco tutto: oggi è sabato! Non devo lavorare. All'inizio sono un po' arrabbiato, poi rido. Entro in un bar e ordino un cappuccino e una brioche. Leggo il giornale con calma. Dopo torno a casa a piedi, perché c'è il sole. Che bella mattina!",
+  "gloss": {
+   "sveglio": "wake up (svegliarsi)", "alzo": "get up (alzarsi)", "doccia": "shower", "vesto": "get dressed (vestirsi)",
+   "cucina": "kitchen", "colazione": "breakfast", "bevo": "(I) drink", "pane": "bread", "marmellata": "jam",
+   "esco": "(I) go out (uscire)", "ufficio": "office", "centro": "centre (in centro: in the town centre)",
+   "stamattina": "this morning", "quasi": "almost", "vuoto": "empty", "strade": "streets", "tranquille": "quiet",
+   "strano": "strange", "chiusa": "closed", "capisco": "(I) understand", "sabato": "Saturday",
+   "devo": "(I) must (non devo: I don't have to)", "inizio": "beginning (all'inizio: at first)", "arrabbiato": "angry",
+   "rido": "(I) laugh", "ordino": "(I) order", "brioche": "croissant (the word used in northern Italy)",
+   "giornale": "newspaper", "calma": "calm (con calma: without hurrying)", "piedi": "feet (a piedi: on foot)",
+   "sole": "sun (c'è il sole: it is sunny)"
+  },
+  "questions": [
+   { "q": "In quale città abita Paolo?", "a": ["Torino"] },
+   { "q": "Che cosa prende Paolo alle otto?", "a": ["tram"] },
+   { "q": "Perché la porta dell'ufficio è chiusa?", "a": ["sabato"] }
+  ],
+  "notice": "Many daily actions are reflexive verbs in Italian. The pronoun mi goes before the verb: \"mi sveglio\" (I wake up), \"mi vesto\" (I get dressed)."
+ },
+ {
+  "id": "it-bar",
+  "title": "Al bar",
+  "level": "A1",
+  "text": "Sono le otto di mattina. Sara è a Roma per la prima volta. Ha sonno e vuole fare colazione. Entra in un bar vicino alla stazione. Il bar è pieno di gente. Tutti bevono il caffè in piedi, al banco. Sara invece si siede a un tavolino e aspetta. Aspetta cinque minuti, ma il cameriere non arriva. Una signora anziana la guarda e sorride. «Prima deve pagare alla cassa», dice la signora. «Poi porta lo scontrino al banco». Sara ringrazia e va alla cassa. Paga un caffè e un cornetto alla crema. Poi dà lo scontrino al barista. Il caffè è piccolo, forte e molto buono. Adesso anche Sara beve in piedi, come i romani.",
+  "gloss": {
+   "volta": "time (per la prima volta: for the first time)", "sonno": "sleep (avere sonno: to be sleepy)",
+   "colazione": "breakfast (fare colazione: to have breakfast)", "vicino": "near", "stazione": "station",
+   "pieno": "full", "gente": "people", "bevono": "(they) drink", "piedi": "feet (in piedi: standing)",
+   "banco": "counter", "invece": "instead, but", "siede": "sits down (sedersi)", "tavolino": "small table",
+   "aspetta": "waits", "cameriere": "waiter", "anziana": "elderly", "sorride": "smiles", "prima": "first",
+   "pagare": "to pay", "cassa": "till, cash desk", "porta": "takes, brings", "scontrino": "receipt",
+   "ringrazia": "says thank you", "cornetto": "croissant", "crema": "custard", "dà": "gives (dare)",
+   "barista": "barman, barista", "forte": "strong", "adesso": "now", "romani": "Romans"
+  },
+  "questions": [
+   { "q": "In quale città è Sara?", "a": ["Roma"] },
+   { "q": "Dove deve pagare Sara?", "a": ["cassa"] },
+   { "q": "Che cosa dà Sara al barista?", "a": ["scontrino"] }
+  ],
+  "notice": "The preposition a joins the article that follows it: a + il = al, a + la = alla. \"al banco\" (at the counter), \"alla cassa\" (at the till)."
+ },
+ {
+  "id": "it-d-panetteria",
+  "title": "In panetteria",
+  "level": "A1",
+  "roles": ["La panettiera", "Il cliente"],
+  "lines": [
+   [0, "Buongiorno! Mi dica."],
+   [1, "Buongiorno. Vorrei mezzo chilo di pane, per favore."],
+   [0, "Certo. Va bene questo?"],
+   [1, "Sì, va bene. Avete anche la focaccia?"],
+   [0, "Mi dispiace, la focaccia è finita. Però c'è la pizza al pomodoro, ancora calda."],
+   [1, "Allora prendo due pezzi di pizza."],
+   [0, "Ecco qui. Desidera altro?"],
+   [1, "Sì, quattro biscotti al cioccolato. Quanto costano?"],
+   [0, "Un euro l'uno. Sono molto buoni!"],
+   [1, "Va bene, li prendo. Quant'è in tutto?"],
+   [0, "Sono nove euro e cinquanta."],
+   [1, "Ecco dieci euro."],
+   [0, "Ecco il resto: cinquanta centesimi. Grazie e buona giornata!"],
+   [1, "Grazie a Lei, arrivederci!"]
+  ],
+  "gloss": {
+   "dica": "mi dica: what can I get you? (dire)", "vorrei": "I would like", "mezzo": "half", "chilo": "kilo",
+   "pane": "bread", "avete": "do you have", "focaccia": "flat oven-baked bread with olive oil",
+   "dispiace": "mi dispiace: I'm sorry", "finita": "finished, sold out", "però": "but", "pomodoro": "tomato",
+   "calda": "warm", "allora": "then, so", "prendo": "I'll take", "pezzi": "pieces", "ecco": "here you are",
+   "desidera": "would you like", "altro": "anything else", "biscotti": "biscuits", "costano": "(they) cost",
+   "li": "them", "uno": "one (l'uno: each)", "tutto": "all (in tutto: altogether)", "centesimi": "cents",
+   "resto": "change", "giornata": "day"
+  },
+  "questions": [
+   { "q": "Che cosa non c'è più in panetteria?", "a": ["focaccia"] },
+   { "q": "Che cosa compra il cliente alla fine?", "a": ["biscotti"] }
+  ],
+  "notice": "Vorrei (I would like) is the polite way to ask for something in a shop: \"Vorrei mezzo chilo di pane\". Prendo (I'll take) settles a choice: \"Allora prendo due pezzi di pizza\"."
+ },
+ {
+  "id": "it-d-strada",
+  "title": "Dov'è la stazione?",
+  "level": "A1",
+  "roles": ["La signora", "Il turista"],
+  "lines": [
+   [1, "Scusi, signora. Dov'è la stazione, per favore?"],
+   [0, "La stazione? È un po' lontana da qui. Lei è a piedi?"],
+   [1, "Sì, sono a piedi. Quanto tempo ci vuole?"],
+   [0, "A piedi ci vogliono trenta minuti. È meglio prendere l'autobus."],
+   [1, "Va bene. Dov'è la fermata dell'autobus?"],
+   [0, "Vada sempre dritto e poi giri a destra. La fermata è davanti alla farmacia."],
+   [1, "Sempre dritto e poi a sinistra, giusto?"],
+   [0, "No, a destra! A sinistra c'è il fiume."],
+   [1, "Ah, a destra. Grazie. Che autobus devo prendere?"],
+   [0, "Il numero sette. Ma attenzione: deve comprare il biglietto prima di salire."],
+   [1, "E dove posso comprare il biglietto?"],
+   [0, "All'edicola, vicino alla fermata."],
+   [1, "Perfetto. Grazie mille, signora!"],
+   [0, "Prego. Buona giornata!"]
+  ],
+  "gloss": {
+   "scusi": "excuse me (formal)", "stazione": "station", "lontana": "far", "piedi": "feet (a piedi: on foot)",
+   "tempo": "time", "vuole": "ci vuole: it takes", "vogliono": "ci vogliono: it takes (with a plural)",
+   "meglio": "better", "fermata": "stop", "vada": "go (formal, from andare)", "dritto": "straight on",
+   "giri": "turn (formal, from girare)", "destra": "right", "davanti": "in front", "farmacia": "pharmacy",
+   "sinistra": "left", "giusto": "right?, correct", "fiume": "river", "devo": "I must, must I",
+   "attenzione": "careful", "comprare": "to buy", "biglietto": "ticket", "salire": "to get on", "posso": "can I",
+   "edicola": "newsstand", "vicino": "near", "mille": "a thousand (grazie mille: thanks a lot)",
+   "prego": "you're welcome"
+  },
+  "questions": [
+   { "q": "Che cosa cerca il turista?", "a": ["stazione"] },
+   { "q": "Dove può comprare il biglietto?", "a": ["edicola"] }
+  ],
+  "notice": "To say how long something takes, use ci vuole with a singular and ci vogliono with a plural: \"Quanto tempo ci vuole?\", \"ci vogliono trenta minuti\"."
+ },
+ {
+  "id": "it-d-vicino",
+  "title": "Il nuovo vicino",
+  "level": "A1",
+  "roles": ["La vicina", "Il nuovo inquilino"],
+  "lines": [
+   [0, "Buongiorno! Lei è il nuovo inquilino del terzo piano?"],
+   [1, "Sì, buongiorno. Mi chiamo Alex, piacere."],
+   [0, "Piacere, io sono Carla. Abito qui di fronte. Di dov'è?"],
+   [1, "Sono canadese, di Toronto. Sono a Verona per lavoro."],
+   [0, "Ma parla bene l'italiano! Possiamo darci del tu?"],
+   [1, "Certo, volentieri. Tu abiti qui da molto tempo?"],
+   [0, "Da vent'anni! Senti, vuoi venire a prendere un caffè da me?"],
+   [1, "Grazie, ma adesso non posso. Tra poco arrivano i miei mobili."],
+   [0, "Allora domani? Verso le cinque?"],
+   [1, "Domani alle cinque va benissimo. Porto io i biscotti."],
+   [0, "Perfetto! E se hai bisogno di qualcosa, suona pure."],
+   [1, "Grazie, sei molto gentile. A domani, Carla!"],
+   [0, "A domani, Alex. E benvenuto nel palazzo!"]
+  ],
+  "gloss": {
+   "inquilino": "tenant", "terzo": "third", "piano": "floor", "piacere": "nice to meet you", "abito": "I live",
+   "fronte": "front (di fronte: opposite)", "lavoro": "work", "parla": "you speak (formal)", "possiamo": "can we",
+   "darci": "darsi del tu: to say tu to each other", "volentieri": "gladly", "tempo": "time", "senti": "listen",
+   "venire": "to come", "adesso": "now", "posso": "I can", "poco": "little (tra poco: soon)",
+   "mobili": "furniture", "allora": "then, so", "domani": "tomorrow", "verso": "around",
+   "benissimo": "very well, perfectly", "porto": "I'll bring", "biscotti": "biscuits",
+   "bisogno": "need (avere bisogno di: to need)", "qualcosa": "something", "suona": "ring (the bell)",
+   "pure": "suona pure: feel free to ring", "gentile": "kind", "benvenuto": "welcome", "palazzo": "building"
+  },
+  "questions": [
+   { "q": "Di dov'è Alex?", "a": ["Toronto", "canadese"] },
+   { "q": "Che cosa arriva tra poco a casa di Alex?", "a": ["mobili"] }
+  ],
+  "notice": "Italian has a formal you (Lei) and an informal one (tu). The neighbours begin with Lei: \"Lei è il nuovo inquilino\". Then they agree to change: \"Possiamo darci del tu?\""
+ },
+ {
+  "id": "it-mercato",
+  "title": "Il mercato del sabato",
+  "level": "A2",
+  "text": "Sabato sera Chiara aspettava i suoi amici a cena. La mattina è uscita di casa in fretta e ha dimenticato la lista della spesa sul tavolo. Al mercato, in piazza, ha provato a ricordare tutto. Al banco della frutta ha comprato un chilo di pesche e due limoni. Poi ha preso dei pomodori, delle zucchine e un pezzo di formaggio. Il mercato era pieno di colori e di voci. I venditori gridavano i prezzi e scherzavano con i clienti. Una signora le ha fatto assaggiare delle olive buonissime, e Chiara ne ha comprate un po'. Quando è tornata a casa, ha letto la lista. Mancava una cosa sola: il basilico per la pasta. Chiara ha aperto la borsa per mettere via la verdura e ha sorriso. Dentro c'era un mazzetto di basilico, un regalo del signore dei pomodori. La cena era salva!",
+  "gloss": {
+   "aspettava": "was expecting", "fretta": "hurry (in fretta: in a hurry)", "dimenticato": "forgotten",
+   "spesa": "shopping", "mercato": "market", "piazza": "square", "provato": "tried", "ricordare": "to remember",
+   "banco": "stall", "pesche": "peaches", "preso": "taken, bought (prendere)", "pezzo": "piece",
+   "formaggio": "cheese", "pieno": "full", "voci": "voices", "venditori": "sellers", "gridavano": "were shouting",
+   "prezzi": "prices", "scherzavano": "were joking", "assaggiare": "to taste", "buonissime": "very good",
+   "ne": "of them, some", "mancava": "was missing", "basilico": "basil", "borsa": "bag",
+   "via": "away (mettere via: to put away)", "verdura": "vegetables", "sorriso": "smiled (sorridere)",
+   "dentro": "inside", "mazzetto": "small bunch", "regalo": "gift", "salva": "saved, safe"
+  },
+  "questions": [
+   { "q": "Che cosa ha dimenticato Chiara sul tavolo?", "a": ["lista"] },
+   { "q": "Che cosa le ha fatto assaggiare una signora?", "a": ["olive"] },
+   { "q": "Che cosa mancava per la pasta?", "a": ["basilico"] }
+  ],
+  "notice": "In the passato prossimo, verbs of movement take essere and the participle agrees with the subject: \"è uscita\", \"è tornata\". Most other verbs take avere: \"ha comprato\"."
+ },
+ {
+  "id": "it-mare",
+  "title": "Un fine settimana al mare",
+  "level": "A2",
+  "text": "Il fine settimana scorso sono andata al mare con mio fratello Matteo. Abbiamo preso il treno per la Liguria sabato mattina presto. Il viaggio è durato due ore, e dal finestrino si vedeva già il mare. Quando siamo arrivati in spiaggia, Matteo ha aperto lo zaino e ha fatto una faccia strana. Il suo costume da bagno non c'era: era ancora a casa, sul letto! Nel paese c'era un solo negozio aperto. Aveva soltanto un costume da uomo: arancione, con dei grandi pesci verdi. Matteo non voleva comprarlo, ma l'acqua era troppo bella. Alla fine l'ha comprato e abbiamo fatto il bagno per tutto il pomeriggio. La sera abbiamo mangiato la focaccia calda sul molo e abbiamo guardato il tramonto. Domenica faceva più fresco, così abbiamo camminato lungo la costa. Adesso Matteo dice che quel costume gli porta fortuna. Lo vuole mettere anche l'estate prossima.",
+  "gloss": {
+   "fine": "end (il fine settimana: the weekend)", "scorso": "last", "preso": "taken (prendere)", "presto": "early",
+   "viaggio": "journey", "durato": "lasted", "finestrino": "window (of a train or car)", "spiaggia": "beach",
+   "zaino": "backpack", "faccia": "face", "strana": "strange", "costume": "swimsuit (costume da bagno)",
+   "bagno": "bath (fare il bagno: to go for a swim)", "letto": "bed", "paese": "village", "negozio": "shop",
+   "soltanto": "only", "arancione": "orange", "pesci": "fish", "verdi": "green",
+   "comprarlo": "to buy it (comprare + lo)", "pomeriggio": "afternoon", "focaccia": "flat oven-baked bread with olive oil",
+   "calda": "warm", "molo": "pier", "tramonto": "sunset", "fresco": "cool", "camminato": "walked",
+   "lungo": "along", "costa": "coast", "fortuna": "luck (porta fortuna: brings luck)", "mettere": "to put on",
+   "estate": "summer", "prossima": "next"
+  },
+  "questions": [
+   { "q": "Come sono andati al mare i due fratelli?", "a": ["treno"] },
+   { "q": "Di che colore era il costume nel negozio?", "a": ["arancione"] },
+   { "q": "Che cosa hanno mangiato la sera sul molo?", "a": ["focaccia"] }
+  ],
+  "notice": "Lo and la (it, him, her) go before the verb, or join the end of an infinitive: \"non voleva comprarlo\". Before ha they shorten to l': \"l'ha comprato\"."
+ },
+ {
+  "id": "it-trasloco",
+  "title": "Il trasloco",
+  "level": "A2",
+  "text": "La settimana scorsa Federica ha cambiato casa. Il nuovo appartamento è a Milano, al quarto piano di un vecchio palazzo. Il giorno del trasloco suo padre l'ha aiutata con il furgone, e in due ore hanno portato su trenta scatole. Erano stanchi, ma contenti. Poi sono scesi a prendere un caffè al bar sotto casa. Quando sono tornati, Federica ha cercato le chiavi nella borsa. Non c'erano. Non erano nemmeno nel furgone. «Forse sono in una scatola», ha detto suo padre. Ma le scatole erano tutte dentro, e la porta era chiusa! Per fortuna la signora del piano di sotto aveva ancora una copia delle chiavi. Federica è entrata e ha aperto le scatole una per una. Ha trovato le chiavi nell'ultima, dentro una pentola. Quella sera ha messo un gancio vicino alla porta. Adesso le chiavi stanno sempre lì.",
+  "gloss": {
+   "scorsa": "last", "cambiato": "changed (cambiare casa: to move house)", "piano": "floor", "palazzo": "building",
+   "trasloco": "move (to a new home)", "aiutata": "helped", "furgone": "van",
+   "portato": "carried (portare su: to carry up)", "scatole": "boxes", "scatola": "box", "stanchi": "tired",
+   "scesi": "gone down (scendere)", "sotto": "below (sotto casa: just below the flat)", "cercato": "looked for",
+   "chiavi": "keys", "borsa": "bag", "nemmeno": "not even", "forse": "maybe", "detto": "said (dire)",
+   "dentro": "inside", "chiusa": "closed, locked", "fortuna": "luck (per fortuna: luckily)", "copia": "copy",
+   "entrata": "gone in", "aperto": "opened (aprire)", "trovato": "found", "ultima": "last", "pentola": "pot",
+   "messo": "put (mettere)", "gancio": "hook", "vicino": "near", "stanno": "stay, are kept (stare)"
+  },
+  "questions": [
+   { "q": "In quale città è il nuovo appartamento?", "a": ["Milano"] },
+   { "q": "Chi ha aiutato Federica con il furgone?", "a": ["padre"] },
+   { "q": "Dentro che cosa erano le chiavi?", "a": ["pentola", "scatola"] }
+  ],
+  "notice": "The imperfetto describes how things were, and the passato prossimo tells what happened: \"Erano stanchi\" (a state), \"ha cercato le chiavi\" (an event)."
+ },
+ {
+  "id": "it-medico",
+  "title": "Dal medico",
+  "level": "A2",
+  "text": "Da una settimana Stefano aveva mal di testa ogni sera. All'inizio ha pensato di essere solo stanco. Poi però si è preoccupato e ha telefonato alla dottoressa Ferri. Lei gli ha dato un appuntamento per il giorno dopo. Nella sala d'attesa c'erano molte persone, e Stefano ha aspettato quasi un'ora. La dottoressa gli ha misurato la pressione e gli ha fatto molte domande. Dorme bene? Beve abbastanza acqua? Quante ore passa davanti al computer? «Dieci ore al giorno», ha risposto Stefano. Allora la dottoressa gli ha chiesto di leggere alcune lettere sul muro. Stefano ne ha sbagliate molte. «Lei non è malato», ha detto la dottoressa sorridendo. «Ha solo bisogno di un paio di occhiali». Così Stefano è andato subito dall'ottico. Con gli occhiali nuovi, il mal di testa è sparito in pochi giorni.",
+  "gloss": {
+   "mal": "pain (mal di testa: headache)", "testa": "head", "inizio": "beginning (all'inizio: at first)",
+   "pensato": "thought", "stanco": "tired", "preoccupato": "got worried (preoccuparsi)",
+   "dottoressa": "doctor (a woman)", "dato": "given (dare)", "appuntamento": "appointment", "sala": "room",
+   "attesa": "waiting (sala d'attesa: waiting room)", "aspettato": "waited", "quasi": "almost",
+   "misurato": "measured", "pressione": "blood pressure", "domande": "questions", "abbastanza": "enough",
+   "passa": "spends", "davanti": "in front", "risposto": "answered (rispondere)", "chiesto": "asked (chiedere)",
+   "muro": "wall", "ne": "of them", "sbagliate": "got wrong (sbagliare)", "malato": "ill",
+   "sorridendo": "smiling", "bisogno": "need (avere bisogno di: to need)", "paio": "pair", "occhiali": "glasses",
+   "subito": "straight away", "ottico": "optician", "sparito": "disappeared", "pochi": "few"
+  },
+  "questions": [
+   { "q": "Che cosa faceva male a Stefano ogni sera?", "a": ["testa"] },
+   { "q": "Che cosa ha misurato la dottoressa?", "a": ["pressione"] },
+   { "q": "Di che cosa ha bisogno Stefano?", "a": ["occhiali"] }
+  ],
+  "notice": "Gli before the verb means to him: \"gli ha dato un appuntamento\" (she gave him an appointment), \"gli ha fatto molte domande\" (she asked him many questions)."
+ },
+ {
+  "id": "it-treno",
+  "title": "Il treno in ritardo",
+  "level": "A2",
+  "text": "Lunedì era il primo giorno di lavoro di Paola in un ufficio di Milano. Paola abita a Lugano, così alle sette era già in stazione. Ma sul tabellone c'era una brutta notizia: il suo treno aveva quaranta minuti di ritardo. Paola era molto nervosa. Non voleva arrivare tardi proprio il primo giorno! Accanto a lei, una signora con una valigia rossa leggeva tranquilla il giornale. «Non si preoccupi», ha detto la signora. «Su questa linea succede spesso». Le due donne hanno preso un caffè insieme e hanno parlato per tutto il viaggio. A Milano si sono salutate davanti alla stazione: la signora ha preso un taxi, Paola il tram. Paola è arrivata in ufficio di corsa, con mezz'ora di ritardo. La direttrice l'aspettava alla porta e sorrideva. Era la signora con la valigia rossa! «Benvenuta, Paola», ha detto. «Oggi siamo in ritardo tutte e due».",
+  "gloss": {
+   "lavoro": "work", "ufficio": "office", "tabellone": "departure board", "brutta": "bad",
+   "notizia": "piece of news", "ritardo": "delay (in ritardo: late)", "nervosa": "nervous", "tardi": "late",
+   "proprio": "exactly, of all days", "accanto": "next to", "valigia": "suitcase", "rossa": "red",
+   "tranquilla": "calm", "giornale": "newspaper", "preoccupi": "worry (non si preoccupi: don't worry)",
+   "linea": "line", "succede": "it happens", "spesso": "often", "insieme": "together", "viaggio": "journey",
+   "salutate": "said goodbye (salutarsi)", "davanti": "in front", "corsa": "run (di corsa: in a rush)",
+   "ora": "hour (mezz'ora: half an hour)", "direttrice": "manager (a woman)", "aspettava": "was waiting for",
+   "sorrideva": "was smiling", "benvenuta": "welcome", "tutte": "all (tutte e due: both)"
+  },
+  "questions": [
+   { "q": "In quale città abita Paola?", "a": ["Lugano"] },
+   { "q": "Che cosa leggeva la signora in stazione?", "a": ["giornale"] },
+   { "q": "Chi era la signora con la valigia rossa?", "a": ["direttrice"] }
+  ],
+  "notice": "Ritardo is a noun: a train has minutes of it, and people are in it: \"quaranta minuti di ritardo\", \"siamo in ritardo\". The adverb is tardi: \"arrivare tardi\"."
+ },
+ {
+  "id": "it-d-farmacia",
+  "title": "In farmacia",
+  "level": "A2",
+  "roles": ["La farmacista", "Il cliente"],
+  "lines": [
+   [0, "Buonasera, mi dica."],
+   [1, "Buonasera. Da due giorni ho mal di gola e la tosse."],
+   [0, "Ha anche la febbre?"],
+   [1, "No, la febbre non ce l'ho, ma di notte non riesco a dormire."],
+   [0, "Capisco. È allergico a qualche medicina?"],
+   [1, "No, a niente. Potrei avere un antibiotico?"],
+   [0, "Mi dispiace, per l'antibiotico ci vuole la ricetta del medico. Posso darle uno sciroppo e delle pastiglie per la gola."],
+   [1, "Va bene. Quante volte al giorno devo prendere lo sciroppo?"],
+   [0, "Un cucchiaio tre volte al giorno, dopo i pasti. Le pastiglie quando ne ha bisogno."],
+   [1, "D'accordo. E se tra qualche giorno non sto meglio?"],
+   [0, "Se dopo tre giorni ha ancora la tosse, vada dal medico."],
+   [1, "Grazie del consiglio. Quanto le devo?"],
+   [0, "Sono quattordici euro. Vuole un sacchetto?"],
+   [1, "No, grazie, metto tutto nello zaino. Buona serata!"]
+  ],
+  "gloss": {
+   "dica": "mi dica: how can I help? (dire)", "mal": "pain (mal di gola: sore throat)", "gola": "throat",
+   "tosse": "cough", "febbre": "fever", "notte": "night", "riesco": "I manage (non riesco a: I can't)",
+   "allergico": "allergic", "qualche": "some, any", "medicina": "medicine", "niente": "nothing",
+   "potrei": "could I", "dispiace": "mi dispiace: I'm sorry", "ricetta": "prescription",
+   "darle": "give you (dare + le)", "sciroppo": "syrup", "pastiglie": "lozenges", "volte": "times",
+   "cucchiaio": "spoonful", "pasti": "meals", "bisogno": "need (ne ha bisogno: you need them)",
+   "accordo": "agreement (d'accordo: all right)", "meglio": "better", "vada": "go (formal, from andare)",
+   "consiglio": "advice", "devo": "I must; I owe", "sacchetto": "small bag", "metto": "I'll put",
+   "zaino": "backpack", "serata": "evening"
+  },
+  "questions": [
+   { "q": "Che cosa ha il cliente da due giorni?", "a": ["gola", "tosse"] },
+   { "q": "Che cosa ci vuole per avere l'antibiotico?", "a": ["ricetta"] }
+  ],
+  "notice": "Dovere with an infinitive says what you have to do: \"devo prendere lo sciroppo\". With an amount it means to owe: \"Quanto le devo?\""
+ },
+ {
+  "id": "it-d-albergo",
+  "title": "In albergo",
+  "level": "A2",
+  "roles": ["Il receptionist", "La cliente"],
+  "lines": [
+   [0, "Buonasera e benvenuta. Ha una prenotazione?"],
+   [1, "Buonasera. Sì, ho prenotato una camera singola per tre notti, a nome Martin."],
+   [0, "Un momento, controllo. Ecco: camera dodici, al secondo piano. Mi dà un documento, per favore?"],
+   [1, "Ecco il passaporto. Scusi, la camera ha la vista sul lago?"],
+   [0, "No, questa camera dà sul parcheggio."],
+   [1, "Ma io ho prenotato una camera con vista sul lago. L'ho anche pagata di più."],
+   [0, "Ha ragione, mi scusi. Purtroppo stasera le camere sul lago sono tutte occupate."],
+   [1, "Capisco. E allora che cosa possiamo fare?"],
+   [0, "Posso darle la camera sul lago da domani. Per stanotte le offro la colazione e uno sconto."],
+   [1, "Va bene, accetto. A che ora posso cambiare camera domani?"],
+   [0, "Dopo mezzogiorno. Portiamo noi le valigie."],
+   [1, "Perfetto. E a che ora è la colazione?"],
+   [0, "Dalle sette alle dieci, nella sala al piano terra. Ecco la chiave."],
+   [1, "Grazie mille. Buona serata!"]
+  ],
+  "gloss": {
+   "benvenuta": "welcome", "prenotazione": "booking", "prenotato": "booked", "camera": "room", "singola": "single",
+   "notti": "nights", "nome": "name (a nome: in the name of)", "controllo": "I'll check", "piano": "floor",
+   "documento": "identity document", "passaporto": "passport", "vista": "view", "lago": "lake",
+   "dà": "gives (dà sul parcheggio: looks onto the car park)", "parcheggio": "car park", "pagata": "paid for",
+   "ragione": "reason (ha ragione: you are right)", "purtroppo": "unfortunately", "stasera": "this evening",
+   "occupate": "taken", "possiamo": "can we", "darle": "give you (dare + le)", "stanotte": "tonight",
+   "offro": "I offer", "colazione": "breakfast", "sconto": "discount", "accetto": "I accept",
+   "cambiare": "to change", "mezzogiorno": "noon", "valigie": "suitcases", "sala": "room, hall",
+   "terra": "ground (piano terra: ground floor)", "chiave": "key", "serata": "evening"
+  },
+  "questions": [
+   { "q": "Che vista voleva la cliente dalla camera?", "a": ["lago"] },
+   { "q": "Che cosa offre l'albergo per stanotte?", "a": ["colazione", "sconto"] }
+  ],
+  "notice": "In the passato prossimo with avere the participle usually does not change: \"ho prenotato una camera\". After lo, la, li or le it agrees: \"L'ho anche pagata di più\" (la camera)."
+ },
+ {
+  "id": "it-d-ristorante",
+  "title": "Prenotare un tavolo",
+  "level": "A2",
+  "roles": ["Il cameriere", "La cliente"],
+  "lines": [
+   [0, "Trattoria del Ponte, buonasera."],
+   [1, "Buonasera. Vorrei prenotare un tavolo per sabato sera."],
+   [0, "Certo. Per quante persone?"],
+   [1, "Siamo in sei. È possibile verso le otto?"],
+   [0, "Mi dispiace, alle otto siamo al completo. Ho un tavolo alle sette oppure alle nove e mezza."],
+   [1, "Alle sette è troppo presto per noi. Facciamo alle nove e mezza."],
+   [0, "Benissimo. Preferite dentro o in giardino?"],
+   [1, "In giardino, se non fa troppo freddo."],
+   [0, "Non si preoccupi, il giardino è coperto e riscaldato. A che nome?"],
+   [1, "A nome Bianchi. Un'altra cosa: una mia amica è vegetariana."],
+   [0, "Nessun problema, abbiamo diversi piatti senza carne."],
+   [1, "Perfetto. Devo lasciare un numero di telefono?"],
+   [0, "No, non serve. Allora sabato alle nove e mezza, sei persone, in giardino."],
+   [1, "Esatto. Grazie e a sabato!"]
+  ],
+  "gloss": {
+   "trattoria": "small family restaurant", "ponte": "bridge", "vorrei": "I would like", "prenotare": "to book",
+   "tavolo": "table", "quante": "how many", "siamo": "we are (siamo in sei: there are six of us)",
+   "possibile": "possible", "verso": "around", "dispiace": "mi dispiace: I'm sorry",
+   "completo": "full (al completo: fully booked)", "oppure": "or", "mezza": "half (le nove e mezza: half past nine)",
+   "troppo": "too", "presto": "early", "facciamo": "let's make it", "benissimo": "very good",
+   "preferite": "do you prefer", "dentro": "inside", "giardino": "garden", "freddo": "cold",
+   "preoccupi": "worry (non si preoccupi: don't worry)", "coperto": "covered", "riscaldato": "heated",
+   "nome": "name (a che nome?: in what name?)", "altra": "other (un'altra cosa: one more thing)",
+   "vegetariana": "vegetarian", "nessun": "no", "diversi": "several", "piatti": "dishes", "carne": "meat",
+   "lasciare": "to leave", "serve": "is needed (non serve: there's no need)", "esatto": "exactly"
+  },
+  "questions": [
+   { "q": "Per quale giorno prenota la cliente?", "a": ["sabato"] },
+   { "q": "In quale parte della trattoria vuole il tavolo?", "a": ["giardino"] }
+  ],
+  "notice": "To say at what time, use alle (a + le) before the hour: \"alle otto siamo al completo\", \"Facciamo alle nove e mezza\". E mezza adds half an hour."
+ },
+ {
+  "id": "it-telefono",
+  "title": "Senza telefono",
+  "level": "B1",
+  "text": "Sabato scorso, scendendo dal vaporetto a Venezia, Andrea si è accorto di non avere più il telefono. Ha controllato tutte le tasche e lo zaino, ma niente. Forse gli era caduto dalla tasca durante il viaggio. All'inizio si è sentito perso. Doveva incontrare la sua amica Irene, ma non ricordava il suo numero a memoria. Non sapeva nemmeno come arrivare al ristorante senza la mappa. Così ha fatto una cosa che non faceva da anni: ha chiesto la strada ai passanti. Un anziano signore l'ha accompagnato per un tratto e gli ha raccontato la storia del quartiere. Andrea è arrivato al ristorante in ritardo, ma di ottimo umore. Irene lo aspettava con una bella notizia. Aveva provato a chiamarlo, e al telefono aveva risposto una turista. L'aveva trovato su un sedile del vaporetto. Un'ora dopo, davanti alla stazione, Andrea aveva di nuovo il telefono in mano. Però, tornando a casa, l'ha lasciato in tasca e ha guardato la città.",
+  "gloss": {
+   "scendendo": "getting off (scendere)", "vaporetto": "water bus", "accorto": "noticed (accorgersi)",
+   "controllato": "checked", "tasche": "pockets", "zaino": "backpack", "forse": "perhaps",
+   "caduto": "fallen (cadere)", "inizio": "beginning (all'inizio: at first)", "sentito": "felt (sentirsi)",
+   "perso": "lost", "incontrare": "to meet", "ricordava": "remembered", "memoria": "memory (a memoria: by heart)",
+   "nemmeno": "not even", "chiesto": "asked (chiedere)", "passanti": "passers-by", "anziano": "elderly",
+   "accompagnato": "walked with", "tratto": "stretch (of the way)", "raccontato": "told",
+   "quartiere": "neighbourhood", "ritardo": "delay (in ritardo: late)", "ottimo": "excellent", "umore": "mood",
+   "notizia": "piece of news", "provato": "tried", "chiamarlo": "to call him (chiamare + lo)",
+   "risposto": "answered (rispondere)", "sedile": "seat", "lasciato": "left", "tasca": "pocket"
+  },
+  "questions": [
+   { "q": "In quale città ha perso il telefono Andrea?", "a": ["Venezia"] },
+   { "q": "A chi ha chiesto la strada Andrea?", "a": ["passanti", "signore"] },
+   { "q": "Chi ha trovato il telefono?", "a": ["turista"] }
+  ],
+  "notice": "The trapassato prossimo (the imperfect of avere or essere + a participle) tells what had already happened before another past moment: \"gli era caduto dalla tasca\", \"aveva risposto una turista\"."
+ },
+ {
+  "id": "it-compleanno",
+  "title": "Una festa a sorpresa",
+  "level": "B1",
+  "text": "Per i sessant'anni di nostro padre, io e mia sorella volevamo organizzare una festa a sorpresa. Abbiamo invitato in segreto una trentina di parenti e amici in una trattoria sul lungomare di Napoli. Il piano era semplice: dovevo invitarlo a cena fuori, solo noi due. Quel sabato, però, papà ha annunciato che era stanco e che preferiva restare a casa. Ho insistito, ho inventato delle scuse, gli ho persino detto che avevo già pagato. Alla fine ha accettato, sbuffando un po'. In macchina non ha detto una parola, e io avevo paura di aver rovinato tutto. Quando siamo entrati nella trattoria, tutti hanno gridato «Auguri!» e lui ha fatto una faccia stupita. Ha abbracciato gli ospiti uno per uno, commosso. C'erano perfino i suoi vecchi compagni di scuola, che non vedeva da anni. Solo più tardi, davanti alla torta, mi ha confessato la verità. Mia nipote, che ha cinque anni, gli aveva raccontato tutto una settimana prima. Lui aveva fatto finta di niente per non rovinarci il divertimento. La sorpresa, in fondo, l'ha fatta lui a noi.",
+  "gloss": {
+   "sorpresa": "surprise (una festa a sorpresa: a surprise party)", "segreto": "secret (in segreto: secretly)",
+   "trentina": "about thirty", "parenti": "relatives", "trattoria": "small family restaurant",
+   "lungomare": "seafront", "piano": "plan", "invitarlo": "to invite him (invitare + lo)",
+   "annunciato": "announced", "restare": "to stay", "insistito": "insisted", "inventato": "made up",
+   "scuse": "excuses", "persino": "even", "accettato": "agreed", "sbuffando": "huffing, grumbling",
+   "paura": "fear (avere paura: to be afraid)", "rovinato": "spoiled", "gridato": "shouted",
+   "auguri": "best wishes, happy birthday", "stupita": "astonished", "abbracciato": "hugged", "ospiti": "guests",
+   "commosso": "moved, touched", "perfino": "even", "compagni": "companions (compagni di scuola: schoolmates)",
+   "confessato": "admitted", "verità": "truth", "nipote": "niece; also nephew or grandchild",
+   "raccontato": "told", "finta": "fare finta di niente: to act as if nothing is going on",
+   "rovinarci": "to spoil for us (rovinare + ci)", "divertimento": "fun", "fondo": "bottom (in fondo: after all)"
+  },
+  "questions": [
+   { "q": "In quale città era la trattoria?", "a": ["Napoli"] },
+   { "q": "Dove preferiva restare il padre quel sabato?", "a": ["casa"] },
+   { "q": "Chi aveva raccontato tutto al padre?", "a": ["nipote"] }
+  ],
+  "notice": "Pronouns join the end of an infinitive, which loses its final e: \"dovevo invitarlo a cena\" (invite him), \"per non rovinarci il divertimento\" (spoil it for us)."
+ },
+ {
+  "id": "it-cucina",
+  "title": "Disastro in cucina",
+  "level": "B1",
+  "text": "Tommaso non aveva mai cucinato per più di due persone. Quando però i genitori di Valentina, la sua ragazza, hanno annunciato una visita, ha deciso di preparare un risotto ai funghi. Aveva guardato tre video e si sentiva pronto. All'inizio è andato tutto bene: il brodo era caldo e la cipolla profumava. Poi è squillato il telefono. Era sua madre, e Tommaso ha parlato con lei per un quarto d'ora, dimenticando la pentola sul fuoco. Quando è tornato in cucina, il riso era nero e la stanza era piena di fumo. Ha provato ad assaggiarlo, ma era immangiabile. Mancava mezz'ora all'arrivo degli ospiti. Ha aperto tutte le finestre, è corso alla rosticceria sotto casa e ha comprato una teglia di lasagne. A tavola, la madre di Valentina gli ha fatto i complimenti e gli ha chiesto la ricetta. Tommaso è diventato rosso e ha raccontato tutta la verità. Per fortuna hanno riso tutti. Il padre di Valentina gli ha perfino promesso una lezione di risotto. Sabato prossimo cucineranno insieme, e questa volta il telefono resterà spento.",
+  "gloss": {
+   "cucinato": "cooked", "genitori": "parents", "ragazza": "girlfriend", "deciso": "decided (decidere)",
+   "funghi": "mushrooms", "sentiva": "felt (sentirsi)", "pronto": "ready",
+   "inizio": "beginning (all'inizio: at first)", "brodo": "stock, broth", "cipolla": "onion",
+   "profumava": "smelled good", "squillato": "rung", "quarto": "quarter (un quarto d'ora: a quarter of an hour)",
+   "dimenticando": "forgetting", "pentola": "pot", "fuoco": "fire; here: the hob",
+   "riso": "rice; also: laughed (ridere)", "stanza": "room", "fumo": "smoke",
+   "assaggiarlo": "to taste it (assaggiare + lo)", "immangiabile": "impossible to eat",
+   "mancava": "was left (mancava mezz'ora: there was half an hour to go)", "ospiti": "guests",
+   "corso": "run (correre)", "rosticceria": "shop selling ready-cooked dishes", "teglia": "baking dish",
+   "tavola": "table (a tavola: at the table)", "ricetta": "recipe", "diventato": "become (diventare)",
+   "raccontato": "told", "verità": "truth", "fortuna": "luck (per fortuna: luckily)", "perfino": "even",
+   "promesso": "promised (promettere)", "cucineranno": "(they) will cook", "resterà": "will stay",
+   "spento": "switched off (spegnere)"
+  },
+  "questions": [
+   { "q": "Che piatto voleva preparare Tommaso?", "a": ["risotto"] },
+   { "q": "Chi ha telefonato a Tommaso mentre cucinava?", "a": ["madre"] },
+   { "q": "Che cosa ha comprato alla rosticceria?", "a": ["lasagne"] }
+  ],
+  "notice": "Riso is two words: the noun rice, and the past participle of ridere (to laugh). The text has both: \"il riso era nero\" and \"hanno riso tutti\"."
+ },
+ {
+  "id": "it-concerto",
+  "title": "Il concerto sotto la pioggia",
+  "level": "B1",
+  "text": "L'estate scorsa io e Silvia siamo andate a un concerto all'aperto in una piazza di Bologna. Aspettavamo quella sera da mesi, perché suonava il nostro gruppo preferito. Verso le nove, però, il cielo è diventato nero e ha cominciato a piovere forte. Dopo due canzoni si sono spente le luci del palco. Un tecnico ha annunciato che il concerto era sospeso per motivi di sicurezza. Tutti sono corsi a ripararsi sotto i portici, bagnati e delusi. Molti protestavano, altri chiedevano già il rimborso del biglietto. Stavamo per andare via quando abbiamo sentito una chitarra. I musicisti erano scesi dal palco con gli strumenti acustici e si erano seduti sui gradini, in mezzo alla gente. Hanno suonato per più di un'ora, senza microfoni, mentre il pubblico cantava piano insieme a loro. Qualcuno ha acceso la luce del telefono, e presto i portici sembravano pieni di stelle. Fuori continuava a diluviare, ma nessuno ci faceva più caso. Con il sole sarebbe stato un concerto come tanti. Invece ne abbiamo vissuto uno che non dimenticheremo mai.",
+  "gloss": {
+   "aperto": "open (all'aperto: in the open air)", "suonava": "was playing", "gruppo": "band", "cielo": "sky",
+   "diventato": "become (diventare)", "piovere": "to rain", "forte": "hard", "canzoni": "songs",
+   "spente": "gone out (spegnersi)", "luci": "lights", "palco": "stage", "sospeso": "suspended",
+   "motivi": "reasons", "sicurezza": "safety", "corsi": "run (correre)", "ripararsi": "to take shelter",
+   "portici": "arcades, covered walkways", "bagnati": "wet", "delusi": "disappointed",
+   "protestavano": "were complaining", "rimborso": "refund", "chitarra": "guitar",
+   "scesi": "come down (scendere)", "seduti": "sat down (sedersi)", "gradini": "steps",
+   "mezzo": "middle (in mezzo a: among)", "pubblico": "audience", "piano": "softly",
+   "acceso": "switched on (accendere)", "stelle": "stars", "diluviare": "to pour with rain",
+   "caso": "fare caso a: to pay attention to", "vissuto": "lived through (vivere)",
+   "dimenticheremo": "(we) will forget"
+  },
+  "questions": [
+   { "q": "In quale città era il concerto?", "a": ["Bologna"] },
+   { "q": "Dove sono corsi tutti a ripararsi?", "a": ["portici"] },
+   { "q": "Senza che cosa hanno suonato i musicisti per più di un'ora?", "a": ["microfoni"] }
+  ],
+  "notice": "Reflexive verbs always take essere in compound tenses, and the participle agrees with the subject: \"si sono spente le luci\", \"si erano seduti sui gradini\"."
+ },
+ {
+  "id": "it-nuotare",
+  "title": "Imparare a nuotare",
+  "level": "B1",
+  "text": "Rosa è cresciuta in un paese di montagna, lontano dal mare, e da bambina nessuno le aveva insegnato a nuotare. Per anni, in vacanza, è rimasta sulla riva a guardare gli altri. Diceva che l'acqua non le interessava, ma in realtà si vergognava. A cinquantotto anni, appena andata in pensione, si è iscritta a un corso di nuoto nella piscina comunale. Il primo giorno voleva scappare. Gli altri allievi avevano la metà dei suoi anni e l'istruttore sembrava un ragazzino. Lui però le ha parlato con calma e le ha chiesto soltanto di mettere il viso sott'acqua. La settimana dopo le ha insegnato a galleggiare, poi a muovere le gambe. Ogni lezione era una piccola vittoria. A giugno Rosa ha fatto la sua prima vasca senza fermarsi, e tutto il gruppo ha applaudito. Quell'estate, in Sardegna, è entrata in mare con i nipoti. Ha nuotato fino alla boa e ritorno, piano, respirando bene. «Nonna, ma tu sai nuotare!» ha gridato il più piccolo. Rosa ha risposto che non è mai troppo tardi per imparare.",
+  "gloss": {
+   "cresciuta": "grown up (crescere)", "paese": "village", "insegnato": "taught", "nuotare": "to swim",
+   "rimasta": "stayed (rimanere)", "riva": "shore", "realtà": "reality (in realtà: actually)",
+   "vergognava": "was ashamed (vergognarsi)", "appena": "just", "pensione": "pension (andare in pensione: to retire)",
+   "iscritta": "signed up (iscriversi)", "nuoto": "swimming", "piscina": "swimming pool", "comunale": "municipal",
+   "scappare": "to run away", "allievi": "pupils", "metà": "half", "sembrava": "looked like",
+   "ragazzino": "young boy", "soltanto": "only", "viso": "face", "galleggiare": "to float",
+   "muovere": "to move", "gambe": "legs", "vasca": "pool; here: one length of the pool",
+   "fermarsi": "to stop", "applaudito": "clapped", "nipoti": "grandchildren", "boa": "buoy",
+   "ritorno": "way back", "piano": "slowly", "respirando": "breathing", "gridato": "shouted", "tardi": "late"
+  },
+  "questions": [
+   { "q": "Dove è cresciuta Rosa?", "a": ["montagna", "paese"] },
+   { "q": "Che cosa doveva mettere sott'acqua Rosa il primo giorno?", "a": ["viso"] },
+   { "q": "Con chi è entrata in mare in Sardegna?", "a": ["nipoti"] }
+  ],
+  "notice": "Verbs of teaching and learning take a before an infinitive: \"nessuno le aveva insegnato a nuotare\", \"le ha insegnato a galleggiare\". Imparare works the same way."
+ },
+ {
+  "id": "it-d-reso",
+  "title": "Un acquisto difettoso",
+  "level": "B1",
+  "roles": ["Il commesso", "La cliente"],
+  "lines": [
+   [0, "Buongiorno, posso aiutarla?"],
+   [1, "Buongiorno. La settimana scorsa ho comprato qui queste cuffie, ma non funzionano bene."],
+   [0, "Mi dispiace. Qual è il problema, esattamente?"],
+   [1, "Si sente solo da un lato, e dopo dieci minuti si spengono da sole."],
+   [0, "Capisco. Ha con sé lo scontrino?"],
+   [1, "Sì, eccolo. Le ho pagate con la carta."],
+   [0, "Perfetto, sono ancora in garanzia. Possiamo mandarle in riparazione: ci vorranno circa tre settimane."],
+   [1, "Tre settimane sono troppe. Non potrebbe cambiarmele con un paio nuovo?"],
+   [0, "Purtroppo questo modello è esaurito. Ne arriveranno altre il mese prossimo."],
+   [1, "Allora preferirei essere rimborsata, se è possibile."],
+   [0, "Di solito offriamo un buono da spendere in negozio."],
+   [1, "Un buono non mi serve. Le cuffie erano difettose fin dall'inizio, quindi vorrei riavere i miei soldi."],
+   [0, "Ha ragione. Chiedo alla responsabile e torno subito."],
+   [1, "Grazie, aspetto qui."],
+   [0, "Tutto a posto: le facciamo il rimborso sulla carta. Vedrà i soldi sul conto entro cinque giorni."],
+   [1, "Benissimo. La ringrazio per la disponibilità."]
+  ],
+  "gloss": {
+   "aiutarla": "help you (aiutare + la)", "cuffie": "headphones", "funzionano": "work",
+   "sente": "si sente: you can hear", "lato": "side", "spengono": "si spengono: they switch off (spegnersi)",
+   "sole": "alone (da sole: by themselves)", "sé": "con sé: with you", "scontrino": "receipt",
+   "eccolo": "here it is", "pagate": "paid for", "garanzia": "guarantee (in garanzia: under guarantee)",
+   "mandarle": "to send them (mandare + le)", "riparazione": "repair", "vorranno": "ci vorranno: it will take",
+   "troppe": "too many", "potrebbe": "could you", "cambiarmele": "to exchange them for me (cambiare + me + le)",
+   "paio": "pair", "esaurito": "sold out", "preferirei": "I would prefer", "rimborsata": "refunded",
+   "solito": "usual (di solito: usually)", "buono": "voucher", "serve": "non mi serve: it is no use to me",
+   "difettose": "faulty", "inizio": "beginning (fin dall'inizio: from the start)", "quindi": "so, therefore",
+   "riavere": "to get back", "ragione": "reason (ha ragione: you are right)", "responsabile": "manager",
+   "posto": "place (tutto a posto: all sorted)", "rimborso": "refund", "conto": "account", "entro": "within",
+   "ringrazio": "I thank", "disponibilità": "helpfulness"
+  },
+  "questions": [
+   { "q": "Che cosa ha comprato la cliente la settimana scorsa?", "a": ["cuffie"] },
+   { "q": "Che cosa offre di solito il negozio al posto dei soldi?", "a": ["buono"] }
+  ],
+  "notice": "The conditional makes a request or a wish polite: \"Non potrebbe cambiarmele\" (couldn't you exchange them for me), \"preferirei essere rimborsata\" (I would rather be refunded)."
+ },
+ {
+  "id": "it-d-colloquio",
+  "title": "Un colloquio di lavoro",
+  "level": "B1",
+  "roles": ["La direttrice", "Il candidato"],
+  "lines": [
+   [0, "Buongiorno, si accomodi. Ha trovato facilmente l'ufficio?"],
+   [1, "Buongiorno. Sì, grazie, sono venuto in bicicletta."],
+   [0, "Bene. Mi parli un po' di Lei: che cosa ha fatto finora?"],
+   [1, "Ho lavorato per quattro anni in un albergo a Dublino, prima come cameriere e poi alla reception."],
+   [0, "E perché ha deciso di trasferirsi in Italia?"],
+   [1, "Ho sempre amato questo paese e volevo migliorare il mio italiano. Vivo a Torino da un anno."],
+   [0, "Si sente. Perché le interessa lavorare nel nostro ufficio turistico?"],
+   [1, "Mi piace il contatto con il pubblico, e credo che la mia esperienza con i turisti stranieri possa essere utile."],
+   [0, "Senz'altro. Devo però dirle che in estate si lavora anche il fine settimana."],
+   [1, "Il sabato non è un problema. La domenica, invece, preferirei essere libero, se fosse possibile."],
+   [0, "Possiamo organizzare dei turni: una domenica al mese, per esempio."],
+   [1, "Una domenica al mese mi sembra ragionevole. Posso chiederle che tipo di contratto offrite?"],
+   [0, "Un contratto di un anno, con tre mesi di prova. Quando sarebbe disponibile?"],
+   [1, "Potrei cominciare dal primo del mese prossimo."],
+   [0, "Perfetto. Le faremo sapere entro venerdì."],
+   [1, "La ringrazio per il suo tempo. Arrivederci!"]
+  ],
+  "gloss": {
+   "accomodi": "si accomodi: have a seat", "facilmente": "easily", "finora": "so far", "albergo": "hotel",
+   "cameriere": "waiter", "deciso": "decided (decidere)", "trasferirsi": "to move", "paese": "country",
+   "migliorare": "to improve", "sente": "si sente: one can hear it",
+   "turistico": "ufficio turistico: tourist office", "pubblico": "public", "credo": "I think, I believe",
+   "stranieri": "foreign", "possa": "can (subjunctive of potere)", "utile": "useful",
+   "altro": "senz'altro: certainly", "dirle": "to tell you (dire + le)",
+   "fine": "end (il fine settimana: the weekend)", "invece": "on the other hand", "preferirei": "I would prefer",
+   "libero": "free", "fosse": "were (subjunctive of essere)", "turni": "shifts",
+   "sembra": "mi sembra: it seems to me", "ragionevole": "reasonable",
+   "chiederle": "to ask you (chiedere + le)", "offrite": "you offer", "prova": "trial",
+   "disponibile": "available", "potrei": "I could", "faremo": "le faremo sapere: we will let you know",
+   "entro": "by", "ringrazio": "I thank"
+  },
+  "questions": [
+   { "q": "Dove ha lavorato il candidato per quattro anni?", "a": ["albergo", "Dublino"] },
+   { "q": "In quale giorno preferirebbe essere libero?", "a": ["domenica"] }
+  ],
+  "notice": "In a formal conversation you is Lei, with the verb in the third person. As an object it becomes le (to you) or la (you): \"Le faremo sapere entro venerdì\", \"La ringrazio per il suo tempo\"."
+ },
+ {
+  "id": "it-libreria",
+  "title": "La libreria di Lidia",
+  "level": "B2",
+  "text": "Da quasi quarant'anni la libreria della signora Lidia occupa l'angolo di una via tranquilla nel centro di Trieste. Chi ci entra per la prima volta resta colpito dal disordine. Ci sono pile di volumi fino al soffitto, una scala di legno e un gatto addormentato sulla cassa. Eppure Lidia sa sempre dove si trova il libro che cercate. Spesso ve ne consiglia anche un altro, che finirete per amare di più. L'anno scorso, quando il proprietario del locale ha raddoppiato l'affitto, sembrava che la chiusura fosse inevitabile. Lidia aveva già cominciato a svendere i libri, benché le si stringesse il cuore. A cambiare le cose è stato un ex cliente, Dario, che da ragazzo passava lì interi pomeriggi a leggere senza comprare nulla. Venuto a sapere della situazione, ha proposto ai lettori più affezionati di diventare soci. In pochi mesi una sessantina di persone ha versato una piccola quota, e la libreria è stata trasformata in cooperativa. Oggi ospita letture per bambini e un gruppo di lettura serale. Il disordine è rimasto lo stesso, perché i soci hanno votato all'unanimità di non toccarlo. Lidia continua a venire ogni mattina, anche se ufficialmente è in pensione. Sostiene che qualcuno debba pur dare da mangiare al gatto.",
+  "gloss": {
+   "libreria": "bookshop", "occupa": "occupies", "angolo": "corner", "via": "street",
+   "resta": "is left (restare colpito: to be struck)", "colpito": "struck", "disordine": "mess", "pile": "piles",
+   "volumi": "volumes, books", "soffitto": "ceiling", "scala": "ladder", "legno": "wood",
+   "addormentato": "asleep", "cassa": "till", "eppure": "and yet", "consiglia": "recommends",
+   "finirete": "you will end up (finire per)", "proprietario": "owner", "locale": "premises",
+   "raddoppiato": "doubled", "affitto": "rent", "chiusura": "closure", "svendere": "to sell off cheaply",
+   "benché": "although", "stringesse": "le si stringesse il cuore: it broke her heart (stringersi)",
+   "interi": "whole", "nulla": "nothing", "lettori": "readers", "affezionati": "loyal, fond",
+   "soci": "members, partners", "sessantina": "about sixty", "versato": "paid in", "quota": "share, fee",
+   "ospita": "hosts", "letture": "readings", "serale": "evening (as an adjective)",
+   "unanimità": "all'unanimità: unanimously", "toccarlo": "to touch it (toccare + lo)",
+   "pensione": "pension (in pensione: retired)", "sostiene": "claims (sostenere)",
+   "debba": "must (subjunctive of dovere)", "pur": "after all, still (short for pure)"
+  },
+  "questions": [
+   { "q": "In quale città si trova la libreria?", "a": ["Trieste"] },
+   { "q": "Che cosa ha raddoppiato il proprietario del locale?", "a": ["affitto"] },
+   { "q": "A chi deve dare da mangiare Lidia ogni mattina?", "a": ["gatto"] }
+  ],
+  "notice": "Verbs of seeming and conjunctions like benché (although) are followed by the subjunctive: \"sembrava che la chiusura fosse inevitabile\", \"benché le si stringesse il cuore\"."
+ },
+ {
+  "id": "it-lettera",
+  "title": "La lettera in soffitta",
+  "level": "B2",
+  "text": "Dopo la morte del nonno, Elisa e suo fratello avevano deciso di vendere la vecchia casa di famiglia. Si trovava in un paesino delle colline piemontesi, lontano dalle città in cui vivevano. Nessuno dei due aveva il tempo di occuparsene, e i lavori sarebbero costati una fortuna. Un fine settimana di novembre sono saliti in soffitta per svuotarla. Tra bauli polverosi e sedie rotte, Elisa ha notato una busta ingiallita, infilata in una fessura tra due travi. Sopra c'era scritto soltanto: «A chi troverà questa lettera». Dentro, con la sua calligrafia ordinata, il nonno raccontava di aver costruito quella casa con le proprie mani. L'aveva tirata su mattone dopo mattone, nell'anno in cui si era sposato. Spiegava dove aveva piantato il ciliegio e perché la cucina guardava a est. Chiedeva una cosa sola: che chiunque abitasse lì dopo di lui lasciasse sempre la porta aperta agli amici. I due fratelli hanno letto in silenzio, seduti sul pavimento. Per un po' nessuno ha osato dire ad alta voce quello che entrambi pensavano. Se non avessero trovato quella lettera, il lunedì seguente avrebbero firmato il contratto con l'agenzia. Invece hanno telefonato per annullare tutto. Sistemare la casa richiederà anni, ma a primavera il ciliegio fiorirà ancora per la famiglia.",
+  "gloss": {
+   "morte": "death", "paesino": "small village", "colline": "hills", "piemontesi": "of Piedmont",
+   "occuparsene": "to take care of it (occuparsi + ne)", "lavori": "building work", "costati": "cost (costare)",
+   "saliti": "gone up (salire)", "soffitta": "attic", "svuotarla": "to empty it (svuotare + la)",
+   "bauli": "trunks", "polverosi": "dusty", "rotte": "broken", "busta": "envelope", "ingiallita": "yellowed",
+   "infilata": "tucked, slipped in", "fessura": "crack, gap", "travi": "beams", "troverà": "will find",
+   "calligrafia": "handwriting", "ordinata": "neat", "costruito": "built (costruire)", "proprie": "own",
+   "tirata": "pulled (tirare su: to put up, to build)", "mattone": "brick", "sposato": "got married (sposarsi)",
+   "piantato": "planted", "ciliegio": "cherry tree", "chiunque": "whoever",
+   "abitasse": "lived (subjunctive of abitare)", "lasciasse": "left (subjunctive of lasciare)",
+   "pavimento": "floor", "osato": "dared", "voce": "voice (ad alta voce: out loud)", "entrambi": "both",
+   "seguente": "following", "firmato": "signed", "annullare": "to cancel", "sistemare": "to fix up",
+   "richiederà": "will take, will require", "fiorirà": "will blossom"
+  },
+  "questions": [
+   { "q": "Che cosa volevano vendere i due fratelli?", "a": ["casa"] },
+   { "q": "Chi aveva scritto la lettera?", "a": ["nonno"] },
+   { "q": "Quale albero fiorirà a primavera?", "a": ["ciliegio"] }
+  ],
+  "notice": "An unreal condition in the past takes se + the pluperfect subjunctive, and its result takes the past conditional: \"Se non avessero trovato quella lettera\", \"avrebbero firmato il contratto\"."
+ },
+ {
+  "id": "it-orto",
+  "title": "L'orto in città",
+  "level": "B2",
+  "text": "Quando il comune di Bellinzona ha offerto agli abitanti alcuni orti ai margini della città, Marta si è iscritta quasi per scherzo. Non aveva mai coltivato nulla, a parte una pianta di basilico morta in due settimane. Il suo pezzetto di terra confinava con quello di Remo, un ferroviere in pensione dall'aria burbera. Per tutto il mese di aprile lui l'ha osservata sbagliare senza dire una parola. Marta piantava troppo presto, annaffiava a mezzogiorno e lasciava che le lumache divorassero l'insalata. Un giorno, esasperata, gli ha chiesto se non avesse qualche consiglio da darle. Remo ha borbottato che aspettava quella domanda da un mese. Se gliel'avesse chiesto prima, ha aggiunto, si sarebbe risparmiata parecchie delusioni. Da allora le ha insegnato a legare i pomodori, a riconoscere le erbacce e ad avere pazienza. In cambio, Marta lo aiuta con i moduli da compilare in rete, che lui detesta. A luglio, quando una grandinata ha rovinato metà delle piante, hanno ripiantato tutto insieme in un pomeriggio. A fine estate hanno organizzato una cena con tutti i vicini di orto, ciascuno con il proprio raccolto. Marta ha portato una ciotola di pomodori di cui andava fierissima. Non avrebbe mai immaginato che un fazzoletto di terra potesse regalarle anche un amico.",
+  "gloss": {
+   "comune": "town council", "orti": "vegetable plots", "margini": "edges",
+   "iscritta": "signed up (iscriversi)", "scherzo": "joke (per scherzo: as a joke)", "coltivato": "grown",
+   "nulla": "nothing", "pezzetto": "small piece", "terra": "land, soil", "confinava": "bordered",
+   "ferroviere": "railway worker", "pensione": "pension (in pensione: retired)",
+   "aria": "air; here: look, manner", "burbera": "gruff", "sbagliare": "to make mistakes",
+   "annaffiava": "watered", "mezzogiorno": "midday", "lumache": "slugs, snails",
+   "divorassero": "devoured (subjunctive of divorare)", "insalata": "lettuce, salad", "consiglio": "advice",
+   "borbottato": "muttered", "aggiunto": "added (aggiungere)", "risparmiata": "spared herself (risparmiarsi)",
+   "parecchie": "quite a few", "delusioni": "disappointments", "legare": "to tie", "erbacce": "weeds",
+   "cambio": "exchange (in cambio: in return)", "moduli": "forms", "compilare": "to fill in",
+   "rete": "net (in rete: online)", "grandinata": "hailstorm", "ripiantato": "replanted",
+   "ciascuno": "each one", "raccolto": "harvest", "ciotola": "bowl",
+   "fierissima": "very proud (andare fiero di: to be proud of)",
+   "fazzoletto": "handkerchief (un fazzoletto di terra: a tiny plot)",
+   "potesse": "could (subjunctive of potere)", "regalarle": "to give her as a gift (regalare + le)"
+  },
+  "questions": [
+   { "q": "Quale pianta di Marta era morta in due settimane?", "a": ["basilico"] },
+   { "q": "Quali animali divoravano l'insalata?", "a": ["lumache"] },
+   { "q": "Che cosa ha portato Marta alla cena di fine estate?", "a": ["pomodori"] }
+  ],
+  "notice": "Lasciare che and immaginare che are followed by the subjunctive, here in the imperfect because the story is in the past: \"lasciava che le lumache divorassero l'insalata\", \"che un fazzoletto di terra potesse regalarle anche un amico\"."
+ }
+]
