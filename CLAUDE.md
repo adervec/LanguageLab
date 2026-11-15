@@ -7,20 +7,21 @@ Notes for the coding agent that works on this repo.
 @../CoworkSyncHub/HOUSE-STANDARDS.md
 
 For this app:
-- Check the standards: `node ../CoworkSyncHub/standards.mjs languagelab -v` (once it is added to the
-  portal in `../CoworkSyncHub/portal.py` APPS). Keep it all `ok` before pushing.
+- Check the standards: `node ../CoworkSyncHub/standards.mjs languagelab -v`. Keep it all `ok` before pushing.
 - Test: `node core.test.mjs`, then `npm i --no-save playwright-core && node .github/smoke.mjs && node .github/flow.mjs`
   (the flow test walks one whole sitting, a review and the cowork reply handling in headless Chrome).
 - Work on `main`; push your own work when it passes. Add user-visible changes to `whatsnew.json`.
 
-## What is built (v0.1)
+## What is built (v0.2)
 
 No build step: `index.html` (shell, CSS), `app.js` (screens, speech, sync, cowork), `core.js` (all the
-logic, no DOM, tested), `sync.js` (Drive), `content/<lang>.json` (starter stories).
+logic, no DOM, tested), `content/<lang>.json` (starter stories), `app-data.json` (data inventory; bump
+`schema` when the saved shape changes). Drive sync uses font.js's shared sign-in (`appFont.google`).
 
 - **A sitting** is the graded session: one story through listen (speech synthesis, text hidden),
-  read (tap unknown words), dictation at natural speed (the only thing the app scores itself), and
-  a retelling from memory, typed or spoken. The retelling is graded only by the `sitting-review`
+  read (tap unknown words), dictation at natural speed (the app's score), "Say it" (three sentences
+  read aloud, scored by how much speech recognition understood; only where the browser has it), and
+  a retelling from memory, typed or spoken. A sitting is saved only when finished. The retelling is graded only by the `sitting-review`
   cowork channel, stored beside the app's score.
 - **Review**: tapped words come back as a blank in the sentence they were met in, typed, on
   learning-pit's scheduler (cut down, in `core.js`).

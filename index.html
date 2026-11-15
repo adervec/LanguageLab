@@ -6,9 +6,10 @@
 <title>LanguageLab</title>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
 <meta name="theme-color" content="#1f5f8b">
 <meta name="app-name" content="LanguageLab">
-<meta name="app-version" content="0.1.0">
+<meta name="app-version" content="0.2.0">
 <meta name="app-license" content="MIT">
 <meta name="app-data-note" content="Your stories, words and sittings stay on this device. With Google Drive sync on, one backup file is kept in a private app folder in your own Drive that only this app can read. There is no server.">
 <meta name="app-whatsnew" content="whatsnew.json">
@@ -17,8 +18,8 @@
 <script src="https://adervec.github.io/font.js"></script>
 <script src="https://adervec.github.io/cowork.js" defer></script>
 <style>
-:root{color-scheme:light dark;--bg:#f6f4ef;--card:#fff;--ink:#1c2430;--mut:#5d6878;--line:#d9d5cb;--accent:#1f5f8b;--on:#fff;--learn:#ffe08a;--good:#1d7a46;--bad:#b3261e}
-@media (prefers-color-scheme:dark){:root{--bg:#12161c;--card:#1b212b;--ink:#e8ebf0;--mut:#9aa6b8;--line:#2f3846;--accent:#6fb6e6;--on:#0c1218;--learn:#6b5310;--good:#6fd39b;--bad:#ff8a80}}
+/* house standard 24: the colours are font.js's theme in force (System follows the device) */
+:root{color-scheme:var(--t-scheme,light dark);--bg:var(--t-bg,#f6f4ef);--card:var(--t-surface,#fff);--ink:var(--t-text,#1c2430);--mut:var(--t-dim,#5d6878);--line:var(--t-line,#d9d5cb);--accent:var(--t-accent,#1f5f8b);--on:var(--t-on-accent,#fff);--good:var(--t-good,#1d7a46);--bad:var(--t-bad,#b3261e);--learn:color-mix(in srgb,var(--t-warn,#e0a800) 40%,var(--card))}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 var(--app-font,system-ui,sans-serif)}
 .top{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;padding:8px 16px;background:var(--card);border-bottom:1px solid var(--line)}
@@ -55,6 +56,11 @@ textarea{min-height:9em;resize:vertical}
 .big{font-size:1.25rem}
 .grade{display:inline-block;min-width:2.2em;text-align:center;font-weight:800;border:2px solid var(--accent);color:var(--accent);border-radius:8px;padding:0 6px;margin-inline-end:8px}
 ul{padding-inline-start:1.2em;margin:.3em 0}
+app-theme-picker,app-font-picker{display:block;margin:8px 0}
+.row>*{min-width:0;max-width:100%}
+input[type=file]{max-width:100%}
+.spark{display:block;width:100%;height:60px;margin-top:14px}
+.spark polyline{fill:none;stroke:var(--accent);stroke-width:2;vector-effect:non-scaling-stroke}
 </style>
 <header class="top">
   <b class="brand">LanguageLab</b>
@@ -72,6 +78,7 @@ ul{padding-inline-start:1.2em;margin:.3em 0}
   <p class="sub" data-t>Pick a folder that an AI agent can read. LanguageLab asks it for new stories at your level and for an honest review of each sitting. Nothing is applied until you approve it.</p>
   <div id="coworkHost"></div>
   <h2 data-t>Appearance and about</h2>
+  <app-theme-picker></app-theme-picker>
   <app-font-picker></app-font-picker>
 </section>
 <script type="module" src="app.js"></script>

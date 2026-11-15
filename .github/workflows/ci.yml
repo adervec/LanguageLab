@@ -35,6 +35,7 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     permissions:
+      contents: read # job permissions replace the top-level ones; without this a private repo cannot be checked out
       pages: write
       id-token: write
     environment:

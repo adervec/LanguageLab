@@ -1,5 +1,16 @@
 [
  {
+  "date": "2026-11-15",
+  "items": [
+   "Say it: after the dictation you read three sentences aloud, and the score is the share of your words that speech recognition understood (in browsers that have it).",
+   "Twelve more French stories, from A1 to B2. Today now offers the unread story closest to your level.",
+   "Progress draws your dictation scores sitting by sitting, and shows how well you were understood when reading aloud.",
+   "Leaving a sitting half way now warns you first, and keeps what you typed.",
+   "Colour themes: the shared list is in Settings, under Appearance.",
+   "Google sign-in is shared with the other apps, so you are not asked to pick your account again."
+  ]
+ },
+ {
   "date": "2026-11-14",
   "items": [
    "First version. A sitting takes one French story through four steps: listen without the text, read it and tap the words you don't know, take dictation at natural speed, then retell it in your own words.",

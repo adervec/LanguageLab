@@ -37,8 +37,17 @@ await page.fill('#ans', 'elle aime ce moment de la semaine');
 await page.keyboard.press('Enter');
 assert.match(await main(), /100% of the words/);
 for (let i = 1; i < total; i++) { await click('Next sentence'); await click('é'); await click('Check'); }
-await click('Next: writing');                           // 4 write
+const has = name => page.getByRole('button', { name, exact: true }).count();
+if (await has('Next: speaking')) {                      // 4 say it, where the browser has speech recognition; it may be skipped
+  await click('Next: speaking');
+  assert.match(await main(), /Read it aloud/);
+  while (await has('Next sentence')) await click('Next sentence');
+}
+await click('Next: writing');                           // 5 write
 await page.fill('#ans', 'Claire va au marché. Elle achète du fromage.');
+await click('Library');                                 // leaving mid-sitting warns once and keeps what was typed
+assert.match(await main(), /Leave this sitting/);
+assert.equal(await page.inputValue('#ans'), 'Claire va au marché. Elle achète du fromage.');
 await click('Finish the sitting');
 const done = await main();
 assert.match(done, new RegExp(`${Math.round(100 / total)}%\\s+of the words caught`));

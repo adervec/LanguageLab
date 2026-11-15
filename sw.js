@@ -1,7 +1,7 @@
 // ponytail: network-first, cache fallback. Always fresh online, still works offline.
-const C = 'll-v1';
+const C = 'll-v2';
 self.addEventListener('install', e => {
-  e.waitUntil(caches.open(C).then(c => c.addAll(['.', 'index.html', 'app.js', 'core.js', 'sync.js', 'content/fr.json', 'manifest.webmanifest', 'icon.svg'])));
+  e.waitUntil(caches.open(C).then(c => c.addAll(['.', 'index.html', 'app.js', 'core.js', 'content/fr.json', 'manifest.webmanifest', 'icon.svg', 'app-data.json'])));
   self.skipWaiting();
 });
 self.addEventListener('activate', e =>

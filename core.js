@@ -94,15 +94,17 @@ export function schedule(prev, pass, now = Date.now()) {
 export const isDue = (card, now = Date.now()) => !card.srs || card.srs.due <= now;
 
 // ---- a sitting's own score ----
-// Only what an algorithm can grade honestly: the dictation. Writing is graded by the AI review.
+// Only what an algorithm can grade honestly: the dictation (the score) and, beside it, how much of
+// your reading aloud a speech recogniser understood. Writing is graded by the AI review.
 export function scoreSitting(sit) {
+  const mean = list => { const v = (list || []).filter(x => x.score != null); return v.length ? v.reduce((n, x) => n + x.score, 0) / v.length : null; };
   const d = (sit.dictation || []).filter(x => x.score != null);
-  const listening = d.length ? d.reduce((n, x) => n + x.score, 0) / d.length : null;
+  const listening = mean(sit.dictation);
   const understood = sit.uniqueWords ? 1 - (sit.tapped || []).length / sit.uniqueWords : null;
   return {
     score: listening == null ? null : Math.round(listening * 100),
     breakdown: {
-      listening, understood,
+      listening, understood, speaking: mean(sit.speaking),
       replays: d.reduce((n, x) => n + (x.replays || 0), 0),
       wordsRead: sit.wordsRead || 0,
       wordsWritten: plainWords(sit.writing?.text || '').length,
@@ -147,9 +149,11 @@ function cleanSitting(s) {
     tapped: arr(s.tapped).filter(x => typeof x === 'string').slice(0, 500).map(x => x.slice(0, 60)),
     dictation: arr(s.dictation).slice(0, 20).map(d => ({ target: str(obj(d).target, 600), typed: str(obj(d).typed, 600),
       score: unit(obj(d).score), replays: num(obj(d).replays) })),
-    writing: { text: str(obj(s.writing).text, 8000), spoken: !!obj(s.writing).spoken },
+    speaking: arr(s.speaking).slice(0, 20).map(d => ({ target: str(obj(d).target, 600), heard: str(obj(d).heard, 600),
+      score: unit(obj(d).score), tries: num(obj(d).tries) })),
+    writing: { text: str(obj(s.writing).text, 8000), spoken: !!obj(s.writing).spoken }, minutes: num(s.minutes),
     score: s.score == null ? null : Math.round(100 * unit(num(s.score) / 100)),
-    breakdown: { listening: unit(b.listening), understood: unit(b.understood), replays: num(b.replays), wordsRead: num(b.wordsRead), wordsWritten: num(b.wordsWritten) },
+    breakdown: { listening: unit(b.listening), understood: unit(b.understood), speaking: unit(b.speaking), replays: num(b.replays), wordsRead: num(b.wordsRead), wordsWritten: num(b.wordsWritten) },
     ...(ai ? { ai } : {}),
   };
 }

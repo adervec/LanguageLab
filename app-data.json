@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "localStorage": [
+    "ll-*"
+  ],
+  "indexedDB": [
+    "languagelab"
+  ],
+  "drive": [
+    "languagelab-backup.json"
+  ],
+  "caches": [],
+  "export": "Settings > Your data > Export a backup"
+}

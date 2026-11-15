@@ -36,9 +36,9 @@ s = c.schedule(s, true, 0); assert.equal(s.interval, 8);
 s = c.schedule(s, false, 0); assert.deepEqual([s.interval, s.due, s.lapses], [0, 600000, 1]);
 assert.ok(c.isDue({ srs: null }) && !c.isDue({ srs: { due: 10 } }, 5));
 
-const sc = c.scoreSitting({ dictation: [{ score: 1, replays: 1 }, { score: 0.5 }, { score: null }], tapped: ['a', 'b'], uniqueWords: 20, wordsRead: 50, writing: { text: 'Je suis là.' } });
+const sc = c.scoreSitting({ dictation: [{ score: 1, replays: 1 }, { score: 0.5 }, { score: null }], tapped: ['a', 'b'], uniqueWords: 20, wordsRead: 50, writing: { text: 'Je suis là.' }, speaking: [{ score: 0.5 }, { score: null }] });
 assert.equal(sc.score, 75);
-assert.deepEqual(sc.breakdown, { listening: 0.75, understood: 0.9, replays: 1, wordsRead: 50, wordsWritten: 3 });
+assert.deepEqual(sc.breakdown, { listening: 0.75, understood: 0.9, speaking: 0.5, replays: 1, wordsRead: 50, wordsWritten: 3 });
 assert.equal(c.scoreSitting({}).score, null);
 
 // outside data: unknown fields dropped, bad shapes refused
