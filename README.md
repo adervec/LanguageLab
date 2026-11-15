@@ -42,7 +42,9 @@ French, Spanish, German, Italian, Portuguese, Croatian and English come with 16 
 each (French has more), from A1 to B2. Every other language works with your own texts and with stories
 written to your level by an AI agent through the cowork folder.
 
-The interface is in English and 16 other languages (machine translated, as the app says).
+The starter stories and dialogues were written by an AI and have not been checked by native speakers;
+the app says so in Settings. The interface is in English and 16 other languages (machine translated,
+as the app also says).
 
 ## The AI parts
 

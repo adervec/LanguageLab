@@ -324,6 +324,7 @@ function vSettings() {
     <p class="sub">${t('The languages at the top of the list come with starter stories. Any other language works with your own texts and with stories from AI cowork. Each language keeps its own words and progress.')}</p>
     <div class="row">${langSelect()}${levelSelect()}</div>
     <p class="sub">${t('The level is used to choose the next story and when asking for new ones. Pick the level where you understand most of a text.')}</p>
+    <p class="sub">${t('The starter stories and dialogues were written by an AI and have not been checked by native speakers.')}</p>
   </div>
   <div class="card"><h2>${t('Voice')}</h2>
     ${vs.length ? H`<p class="sub">${t('The voice that reads {language} on this device.', { language: langName() })}</p>

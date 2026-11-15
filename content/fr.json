@@ -2776,5 +2776,675 @@
    }
   ],
   "notice": "The future tense is used for promises and firm plans; faire and avoir have the irregular stems fer- and aur-: \"je ferai repeindre le plafond\", \"Vous aurez mon dossier ce soir\"."
+ },
+ {
+  "id": "fr-d-garage",
+  "title": "Chez le garagiste",
+  "level": "B1",
+  "roles": [
+   "Le garagiste",
+   "La cliente"
+  ],
+  "lines": [
+   [
+    0,
+    "Bonjour madame. Qu'est-ce qui vous amène ?"
+   ],
+   [
+    1,
+    "Bonjour. Ma voiture fait un bruit étrange quand je freine."
+   ],
+   [
+    0,
+    "Depuis quand l'entendez-vous ?"
+   ],
+   [
+    1,
+    "Depuis la semaine dernière, et il devient de plus en plus fort."
+   ],
+   [
+    0,
+    "Je vais regarder. Pouvez-vous me laisser la voiture jusqu'à demain ?"
+   ],
+   [
+    1,
+    "C'est possible, mais j'en ai besoin vendredi pour partir en week-end."
+   ],
+   [
+    0,
+    "Pas de souci. Ce sont sûrement les plaquettes de frein, il faut les changer."
+   ],
+   [
+    1,
+    "Pouvez-vous me faire un devis avant de commencer les travaux ?"
+   ],
+   [
+    0,
+    "Bien sûr. Je vous appelle cet après-midi avec le prix exact."
+   ],
+   [
+    1,
+    "Parfait. Est-ce que la garantie couvre cette réparation ?"
+   ],
+   [
+    0,
+    "Malheureusement non, les plaquettes sont des pièces d'usure."
+   ],
+   [
+    1,
+    "Je comprends. Si le prix est raisonnable, vous pouvez faire la réparation."
+   ],
+   [
+    0,
+    "Entendu. Votre voiture sera prête jeudi soir."
+   ],
+   [
+    1,
+    "Merci beaucoup. À jeudi, alors !"
+   ]
+  ],
+  "gloss": {
+   "amène": "brings (qu'est-ce qui vous amène : what brings you here)",
+   "bruit": "noise",
+   "étrange": "strange",
+   "freine": "brake (freiner)",
+   "laisser": "to leave",
+   "besoin": "need (avoir besoin de)",
+   "souci": "worry (pas de souci: no problem)",
+   "plaquettes": "brake pads",
+   "frein": "brake",
+   "devis": "estimate, quote",
+   "travaux": "work",
+   "garantie": "warranty",
+   "couvre": "covers",
+   "réparation": "repair",
+   "malheureusement": "unfortunately",
+   "pièces": "parts (pièces d'usure: wearing parts)",
+   "usure": "wear",
+   "raisonnable": "reasonable",
+   "entendu": "agreed",
+   "prête": "ready"
+  },
+  "questions": [
+   {
+    "q": "Quand la voiture fait-elle un bruit étrange ?",
+    "a": [
+     "freine",
+     "frein"
+    ]
+   },
+   {
+    "q": "Que demande la cliente avant le début des travaux ?",
+    "a": [
+     "devis"
+    ]
+   }
+  ],
+  "notice": "Pouvez-vous with an infinitive makes a polite request: \"Pouvez-vous me laisser la voiture\", \"Pouvez-vous me faire un devis\". De plus en plus means more and more: \"de plus en plus fort\"."
+ },
+ {
+  "id": "fr-d-service",
+  "title": "Un appel au service client",
+  "level": "B1",
+  "roles": [
+   "La conseillère",
+   "Le client"
+  ],
+  "lines": [
+   [
+    0,
+    "Service client, bonjour. Que puis-je faire pour vous ?"
+   ],
+   [
+    1,
+    "Bonjour. Ma connexion internet ne fonctionne plus depuis hier soir."
+   ],
+   [
+    0,
+    "Je suis désolée. Avez-vous essayé de redémarrer votre box ?"
+   ],
+   [
+    1,
+    "Oui, je l'ai débranchée et rebranchée, mais le voyant reste rouge."
+   ],
+   [
+    0,
+    "D'accord. Je vérifie votre ligne, un instant s'il vous plaît."
+   ],
+   [
+    1,
+    "Je vous en prie. Je travaille à la maison, c'est donc assez urgent."
+   ],
+   [
+    0,
+    "Je vois une panne dans votre quartier. Elle devrait être réparée ce soir."
+   ],
+   [
+    1,
+    "Et si la connexion ne revient pas ce soir ?"
+   ],
+   [
+    0,
+    "Dans ce cas, un technicien passera chez vous demain matin."
+   ],
+   [
+    1,
+    "Très bien. Est-ce que je serai remboursé pour ces jours sans connexion ?"
+   ],
+   [
+    0,
+    "Oui, nous déduirons ces jours de votre prochaine facture."
+   ],
+   [
+    1,
+    "Merci. Pouvez-vous m'envoyer une confirmation par courriel ?"
+   ],
+   [
+    0,
+    "C'est fait. Autre chose ?"
+   ],
+   [
+    1,
+    "Non, c'est tout. Merci pour votre aide et bonne journée."
+   ]
+  ],
+  "gloss": {
+   "connexion": "connection",
+   "fonctionne": "works",
+   "redémarrer": "to restart",
+   "box": "internet router",
+   "débranchée": "unplugged",
+   "rebranchée": "plugged back in",
+   "voyant": "indicator light",
+   "vérifie": "am checking",
+   "ligne": "line",
+   "urgent": "urgent",
+   "panne": "outage, breakdown",
+   "quartier": "neighbourhood",
+   "réparée": "repaired",
+   "technicien": "technician",
+   "passera": "will come by",
+   "remboursé": "refunded",
+   "déduirons": "will deduct",
+   "facture": "bill",
+   "courriel": "email",
+   "aide": "help"
+  },
+  "questions": [
+   {
+    "q": "De quelle couleur reste le voyant de la box ?",
+    "a": [
+     "rouge"
+    ]
+   },
+   {
+    "q": "Qui passera chez le client si la connexion ne revient pas ?",
+    "a": [
+     "technicien"
+    ]
+   }
+  ],
+  "notice": "The future says what will happen: \"un technicien passera\", \"nous déduirons ces jours\". The conditional softens a forecast: \"Elle devrait être réparée ce soir\" (it should be repaired)."
+ },
+ {
+  "id": "fr-d-invitation",
+  "title": "Une invitation à dîner",
+  "level": "B1",
+  "roles": [
+   "Élise",
+   "L'ami"
+  ],
+  "lines": [
+   [
+    0,
+    "Salut ! Tu es libre samedi soir ? J'organise un dîner à la maison."
+   ],
+   [
+    1,
+    "Avec plaisir ! C'est à quelle occasion ?"
+   ],
+   [
+    0,
+    "Rien de spécial, j'ai juste envie de réunir quelques amis."
+   ],
+   [
+    1,
+    "Bonne idée. Est-ce que je peux apporter quelque chose ?"
+   ],
+   [
+    0,
+    "Si tu veux, un dessert. Je m'occupe du plat principal."
+   ],
+   [
+    1,
+    "D'accord, je ferai une tarte aux pommes. Qui d'autre vient ?"
+   ],
+   [
+    0,
+    "Thomas, Inès et ma cousine, que tu ne connais pas encore."
+   ],
+   [
+    1,
+    "Super. Au fait, je ne mange plus de viande depuis cet hiver."
+   ],
+   [
+    0,
+    "Aucun problème, j'avais prévu un gratin de légumes."
+   ],
+   [
+    1,
+    "Parfait. À quelle heure veux-tu que j'arrive ?"
+   ],
+   [
+    0,
+    "Vers vingt heures. Tu te souviens du code de la porte ?"
+   ],
+   [
+    1,
+    "Non, je l'ai oublié. Tu peux me l'envoyer par message ?"
+   ],
+   [
+    0,
+    "Je te l'envoie tout de suite. À samedi !"
+   ],
+   [
+    1,
+    "Merci pour l'invitation. J'ai hâte d'y être !"
+   ]
+  ],
+  "gloss": {
+   "libre": "free",
+   "organise": "am organising",
+   "occasion": "occasion",
+   "envie": "wish (avoir envie de: to feel like)",
+   "réunir": "to bring together",
+   "apporter": "to bring",
+   "occupe": "take care (je m'occupe de: I take care of)",
+   "plat": "dish (plat principal: main course)",
+   "tarte": "tart, pie",
+   "cousine": "cousin",
+   "connais": "know",
+   "viande": "meat",
+   "hiver": "winter",
+   "prévu": "planned",
+   "gratin": "baked dish",
+   "légumes": "vegetables",
+   "souviens": "remember (se souvenir de)",
+   "oublié": "forgotten",
+   "hâte": "haste (avoir hâte: to look forward)"
+  },
+  "questions": [
+   {
+    "q": "Qu'est-ce que l'ami va apporter ?",
+    "a": [
+     "tarte",
+     "dessert"
+    ]
+   },
+   {
+    "q": "Que ne mange plus l'ami depuis cet hiver ?",
+    "a": [
+     "viande"
+    ]
+   }
+  ],
+  "notice": "Ne … plus means no longer: \"je ne mange plus de viande\". After vouloir que, the verb is in the subjunctive: \"À quelle heure veux-tu que j'arrive ?\""
+ },
+ {
+  "id": "fr-d-desaccord",
+  "title": "Un désaccord au travail",
+  "level": "B2",
+  "roles": [
+   "La responsable",
+   "Le salarié"
+  ],
+  "lines": [
+   [
+    0,
+    "Vous vouliez me parler du nouveau planning ?"
+   ],
+   [
+    1,
+    "Oui. Je voudrais comprendre pourquoi mon équipe travaille désormais tous les samedis."
+   ],
+   [
+    0,
+    "Nous avons beaucoup de commandes en retard, il fallait trouver une solution rapide."
+   ],
+   [
+    1,
+    "Je le comprends, mais cette décision a été prise sans nous consulter."
+   ],
+   [
+    0,
+    "Le temps pressait. J'aurais dû vous prévenir, je le reconnais."
+   ],
+   [
+    1,
+    "Ce qui me gêne surtout, c'est que la charge n'est pas répartie équitablement."
+   ],
+   [
+    0,
+    "Que proposez-vous concrètement ?"
+   ],
+   [
+    1,
+    "Une rotation entre les trois équipes, pour que chacun garde deux samedis libres par mois."
+   ],
+   [
+    0,
+    "Cela compliquerait l'organisation, mais ce n'est pas impossible."
+   ],
+   [
+    1,
+    "Je peux préparer un planning détaillé d'ici mercredi, si vous êtes d'accord."
+   ],
+   [
+    0,
+    "Très bien. Et si certains refusent de travailler le samedi ?"
+   ],
+   [
+    1,
+    "Dans ce cas, nous pourrions proposer une prime ou des jours de repos en échange."
+   ],
+   [
+    0,
+    "Voilà une proposition raisonnable. Présentez-la jeudi en réunion."
+   ],
+   [
+    1,
+    "Merci de m'avoir écouté. Je vous envoie le document mercredi soir."
+   ]
+  ],
+  "gloss": {
+   "planning": "schedule",
+   "équipe": "team",
+   "désormais": "from now on",
+   "commandes": "orders",
+   "retard": "delay (en retard: late)",
+   "fallait": "was necessary (il fallait: we had to)",
+   "décision": "decision",
+   "consulter": "to consult",
+   "pressait": "was pressing (le temps pressait: time was short)",
+   "prévenir": "to tell beforehand",
+   "reconnais": "admit",
+   "gêne": "bothers",
+   "charge": "workload",
+   "répartie": "shared out",
+   "équitablement": "fairly",
+   "concrètement": "in practical terms",
+   "rotation": "rotation",
+   "chacun": "each one",
+   "compliquerait": "would complicate",
+   "détaillé": "detailed",
+   "refusent": "refuse",
+   "prime": "bonus",
+   "repos": "rest",
+   "échange": "exchange (en échange: in return)",
+   "raisonnable": "reasonable",
+   "réunion": "meeting"
+  },
+  "questions": [
+   {
+    "q": "Quel jour l'équipe du salarié travaille-t-elle désormais ?",
+    "a": [
+     "samedi"
+    ]
+   },
+   {
+    "q": "Que propose le salarié entre les trois équipes ?",
+    "a": [
+     "rotation"
+    ]
+   }
+  ],
+  "notice": "The past conditional expresses regret: \"J'aurais dû vous prévenir\" (I should have told you). Pour que takes the subjunctive: \"pour que chacun garde deux samedis libres\"."
+ },
+ {
+  "id": "fr-d-banque",
+  "title": "À la banque",
+  "level": "B2",
+  "roles": [
+   "Le conseiller",
+   "La cliente"
+  ],
+  "lines": [
+   [
+    0,
+    "Bonjour madame, asseyez-vous. En quoi puis-je vous être utile ?"
+   ],
+   [
+    1,
+    "Bonjour. J'aimerais emprunter de l'argent pour acheter mon premier appartement."
+   ],
+   [
+    0,
+    "Très bien. Avez-vous déjà trouvé le bien que vous souhaitez acheter ?"
+   ],
+   [
+    1,
+    "Oui, un deux-pièces en centre-ville. Le vendeur attend ma réponse avant la fin du mois."
+   ],
+   [
+    0,
+    "Quel est votre apport personnel ?"
+   ],
+   [
+    1,
+    "J'ai mis de côté environ un cinquième du prix, grâce à mes économies."
+   ],
+   [
+    0,
+    "C'est une bonne base. Êtes-vous en contrat à durée indéterminée ?"
+   ],
+   [
+    1,
+    "Oui, depuis quatre ans dans la même entreprise."
+   ],
+   [
+    0,
+    "Parfait. Sur quelle durée aimeriez-vous rembourser ?"
+   ],
+   [
+    1,
+    "Le moins longtemps possible, à condition que les mensualités restent supportables."
+   ],
+   [
+    0,
+    "Sur vingt ans, elles représenteraient environ un tiers de votre salaire."
+   ],
+   [
+    1,
+    "Cela me semble raisonnable. Le taux est-il fixe ou variable ?"
+   ],
+   [
+    0,
+    "Fixe pendant toute la durée du prêt. Je vous prépare une simulation détaillée."
+   ],
+   [
+    1,
+    "Merci. Quels documents dois-je vous fournir pour constituer le dossier ?"
+   ],
+   [
+    0,
+    "Vos trois derniers bulletins de salaire et votre dernier avis d'imposition."
+   ],
+   [
+    1,
+    "Je vous les apporte dès demain. Merci pour vos explications."
+   ]
+  ],
+  "gloss": {
+   "asseyez": "sit (asseyez-vous: sit down)",
+   "utile": "useful",
+   "emprunter": "to borrow",
+   "bien": "property",
+   "souhaitez": "wish",
+   "pièces": "rooms (un deux-pièces: a two-room flat)",
+   "vendeur": "seller",
+   "apport": "contribution (apport personnel: deposit)",
+   "côté": "side (mettre de côté: to put aside)",
+   "cinquième": "fifth",
+   "économies": "savings",
+   "contrat": "contract",
+   "indéterminée": "open-ended",
+   "entreprise": "company",
+   "durée": "length of time",
+   "rembourser": "to repay",
+   "condition": "condition (à condition que: provided that)",
+   "mensualités": "monthly payments",
+   "supportables": "bearable",
+   "tiers": "third",
+   "salaire": "salary",
+   "taux": "rate",
+   "prêt": "loan",
+   "simulation": "projection",
+   "fournir": "to supply",
+   "constituer": "to put together",
+   "dossier": "file",
+   "bulletins": "slips (bulletin de salaire: payslip)",
+   "avis": "notice (avis d'imposition: tax assessment)",
+   "imposition": "taxation",
+   "dès": "as early as"
+  },
+  "questions": [
+   {
+    "q": "Que veut acheter la cliente ?",
+    "a": [
+     "appartement"
+    ]
+   },
+   {
+    "q": "Depuis combien d'années travaille-t-elle dans la même entreprise ?",
+    "a": [
+     "quatre",
+     "4"
+    ]
+   }
+  ],
+  "notice": "À condition que takes the subjunctive: \"à condition que les mensualités restent supportables\". The conditional makes a wish polite: \"J'aimerais emprunter de l'argent\", \"aimeriez-vous rembourser\"."
+ },
+ {
+  "id": "fr-d-vol",
+  "title": "Déclarer un vol",
+  "level": "B2",
+  "roles": [
+   "L'agente",
+   "Le plaignant"
+  ],
+  "lines": [
+   [
+    0,
+    "Bonjour monsieur. Vous souhaitez déposer une plainte ?"
+   ],
+   [
+    1,
+    "Bonjour. Oui, on m'a volé mon sac à dos dans le train ce matin."
+   ],
+   [
+    0,
+    "Où étiez-vous assis, et à quel moment vous en êtes-vous aperçu ?"
+   ],
+   [
+    1,
+    "J'étais près de la porte. Je m'en suis rendu compte en arrivant à la gare."
+   ],
+   [
+    0,
+    "Que contenait le sac ?"
+   ],
+   [
+    1,
+    "Mon ordinateur portable, mon passeport et un carnet auquel je tiens beaucoup."
+   ],
+   [
+    0,
+    "Avez-vous remarqué quelqu'un de suspect près de vous ?"
+   ],
+   [
+    1,
+    "Un homme s'est levé brusquement à l'arrêt précédent, mais je ne l'ai pas bien vu."
+   ],
+   [
+    0,
+    "Pourriez-vous le décrire, même approximativement ?"
+   ],
+   [
+    1,
+    "Il était grand, il portait une veste sombre et une casquette grise."
+   ],
+   [
+    0,
+    "Merci. Avez-vous fait opposition sur vos cartes bancaires ?"
+   ],
+   [
+    1,
+    "Heureusement, mon portefeuille était resté dans ma poche."
+   ],
+   [
+    0,
+    "Tant mieux. Voici le récépissé de votre plainte, il vous servira pour l'assurance."
+   ],
+   [
+    1,
+    "Merci. Serai-je prévenu si l'on retrouve mes affaires ?"
+   ],
+   [
+    0,
+    "Oui, nous vous appellerons. Pensez aussi à contacter les objets trouvés de la gare."
+   ],
+   [
+    1,
+    "Je vais le faire tout de suite. Merci pour votre aide."
+   ]
+  ],
+  "gloss": {
+   "déposer": "to lodge (déposer une plainte: to file a complaint)",
+   "plainte": "complaint",
+   "volé": "stolen",
+   "sac": "bag (sac à dos: backpack)",
+   "assis": "seated",
+   "aperçu": "noticed (s'apercevoir)",
+   "compte": "account (se rendre compte: to realise)",
+   "contenait": "contained",
+   "ordinateur": "computer (ordinateur portable: laptop)",
+   "carnet": "notebook",
+   "tiens": "hold (tenir à: to be attached to)",
+   "remarqué": "noticed",
+   "suspect": "suspicious",
+   "brusquement": "suddenly",
+   "arrêt": "stop",
+   "précédent": "previous",
+   "décrire": "to describe",
+   "approximativement": "roughly",
+   "veste": "jacket",
+   "sombre": "dark",
+   "casquette": "cap",
+   "opposition": "faire opposition: to block a card",
+   "bancaires": "bank",
+   "portefeuille": "wallet",
+   "poche": "pocket",
+   "récépissé": "receipt",
+   "servira": "will be of use",
+   "assurance": "insurance",
+   "prévenu": "told",
+   "affaires": "belongings",
+   "trouvés": "found (objets trouvés: lost property)"
+  },
+  "questions": [
+   {
+    "q": "Qu'est-ce qu'on a volé au plaignant ?",
+    "a": [
+     "sac"
+    ]
+   },
+   {
+    "q": "Où le portefeuille était-il resté ?",
+    "a": [
+     "poche"
+    ]
+   }
+  ],
+  "notice": "On is used when the doer is unknown: \"on m'a volé mon sac à dos\" (my backpack was stolen). Auquel joins à and lequel: \"un carnet auquel je tiens beaucoup\" (a notebook I am very attached to)."
  }
 ]
