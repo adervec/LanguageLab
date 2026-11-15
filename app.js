@@ -321,7 +321,7 @@ function vSettings() {
   const on = !!ls.get('ll-drive'), vs = voices();
   return H`<h1>${t('Settings')}</h1>
   <div class="card"><h2>${t('Language and level')}</h2>
-    <p class="sub">${t('Six languages come with starter stories. Any other language works with your own texts and with stories from AI cowork. Each language keeps its own words and progress.')}</p>
+    <p class="sub">${t('The languages at the top of the list come with starter stories. Any other language works with your own texts and with stories from AI cowork. Each language keeps its own words and progress.')}</p>
     <div class="row">${langSelect()}${levelSelect()}</div>
     <p class="sub">${t('The level is used to choose the next story and when asking for new ones. Pick the level where you understand most of a text.')}</p>
   </div>

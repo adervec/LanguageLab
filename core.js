@@ -19,6 +19,7 @@ export const LANGS = {
   de: { name: 'Deutsch', english: 'German', bcp: 'de-DE', keys: 'äöüß' },
   it: { name: 'Italiano', english: 'Italian', bcp: 'it-IT', keys: 'àèéìòù', elide: true },
   pt: { name: 'Português', english: 'Portuguese', bcp: 'pt-BR', keys: 'áâãàçéêíóôõú' },
+  hr: { name: 'Hrvatski', english: 'Croatian', bcp: 'hr-HR', keys: 'čćšžđ' },
   en: { name: 'English', english: 'English', bcp: 'en', keys: '' }, // no region: the chosen voice decides the accent
 };
 const SEG = /^(zh|ja|th|lo|km|my|yue)$/; // written without spaces: words come from Intl.Segmenter

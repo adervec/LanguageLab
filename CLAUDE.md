@@ -19,8 +19,8 @@ logic, no DOM, tested), `content/<lang>.json` (starter stories and dialogues; ru
 `content/AUTHORING.md`), `app-data.json` (data inventory; bump `schema` when the saved shape changes).
 Drive sync uses font.js's shared sign-in (`appFont.google`).
 
-- **Languages.** Six have starter content (`LANGS` in `core.js`: French, Spanish, German, Italian,
-  Portuguese, English). Any other language code works with pasted texts and AI cowork stories:
+- **Languages.** Seven have starter content (`LANGS` in `core.js`: French, Spanish, German, Italian,
+  Portuguese, Croatian, English). Any other language code works with pasted texts and AI cowork stories:
   `langInfo()` fills in names from Intl, and languages written without spaces are split with
   `Intl.Segmenter`. Words, corrections, letters and the level are kept per language. Adding a bundled
   language is one `LANGS` entry plus `content/<code>.json` (the test requires 16 stories and 8 dialogues).
