@@ -26,6 +26,7 @@ export const LANGS = {
   zh: { name: '中文', english: 'Mandarin Chinese (simplified characters)', bcp: 'zh-CN', keys: '', seg: true, small: true },
   ja: { name: '日本語', english: 'Japanese', bcp: 'ja-JP', keys: '', seg: true, small: true },
   ko: { name: '한국어', english: 'Korean', bcp: 'ko-KR', keys: '', small: true },
+  sv: { name: 'Svenska', english: 'Swedish', bcp: 'sv-SE', keys: 'åäö', small: true },
 };
 const SEG = /^(zh|ja|th|lo|km|my|yue)$/; // written without spaces: words come from Intl.Segmenter
 export const isLangCode = c => typeof c === 'string' && /^[a-z]{2,3}$/.test(c);

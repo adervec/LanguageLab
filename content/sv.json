@@ -1,0 +1,851 @@
+[
+ {
+  "id": "sv-parken",
+  "title": "En dag i parken",
+  "level": "A1",
+  "text": "Anna bor i en liten stad. I dag är det söndag och solen skiner. Anna går till parken med sin hund. Hunden heter Max och han är tre år. I parken finns det många träd och en liten sjö. Anna sitter på en bänk och läser en bok. Max springer efter en boll. En pojke kommer och klappar hunden. Han säger att Max är snäll. Anna ler och pratar lite med pojken. Sedan går hon hem och lagar middag.",
+  "gloss": {
+   "bor": "lives",
+   "stad": "town",
+   "solen": "the sun",
+   "skiner": "shines",
+   "hund": "dog",
+   "träd": "trees",
+   "sjö": "lake",
+   "bänk": "bench",
+   "läser": "reads",
+   "springer": "runs",
+   "boll": "ball",
+   "pojke": "boy",
+   "klappar": "pats",
+   "snäll": "kind",
+   "ler": "smiles",
+   "lagar": "cooks",
+   "middag": "dinner"
+  },
+  "questions": [
+   {
+    "q": "Vart går Anna med sin hund?",
+    "a": [
+     "parken"
+    ]
+   },
+   {
+    "q": "Vad heter hunden?",
+    "a": [
+     "Max"
+    ]
+   },
+   {
+    "q": "Vad läser Anna på bänken?",
+    "a": [
+     "bok"
+    ]
+   }
+  ],
+  "notice": "The definite form is an ending on the noun: \"hunden\" is the dog (from \"hund\") and \"pojken\" is the boy (from \"pojke\").",
+  "back": [
+   [
+    "Anna går till parken med sin hund.",
+    "Anna goes to the park with her dog."
+   ],
+   [
+    "Anna sitter på en bänk och läser en bok.",
+    "Anna sits on a bench and reads a book."
+   ]
+  ]
+ },
+ {
+  "id": "sv-frukost",
+  "title": "Frukost hemma",
+  "level": "A1",
+  "text": "Erik vaknar klockan sju på morgonen. Han är trött men han måste gå till jobbet. Först duschar han och sedan går han till köket. Han dricker en kopp kaffe och äter två smörgåsar med ost. Hans fru Sara äter yoghurt med frukt. De pratar om dagen och lyssnar på radio. Sara arbetar på ett sjukhus och börjar tidigt. Erik arbetar i en affär i centrum. Klockan åtta tar han bussen till jobbet. Sara cyklar, för hon tycker om att cykla.",
+  "gloss": {
+   "vaknar": "wakes up",
+   "trött": "tired",
+   "måste": "must",
+   "jobbet": "work, the job",
+   "duschar": "showers",
+   "köket": "the kitchen",
+   "dricker": "drinks",
+   "kopp": "cup",
+   "smörgåsar": "sandwiches",
+   "ost": "cheese",
+   "fru": "wife",
+   "frukt": "fruit",
+   "lyssnar": "listens",
+   "sjukhus": "hospital",
+   "tidigt": "early",
+   "affär": "shop",
+   "cyklar": "cycles"
+  },
+  "questions": [
+   {
+    "q": "När vaknar Erik?",
+    "a": [
+     "sju"
+    ]
+   },
+   {
+    "q": "Vad dricker Erik till frukost?",
+    "a": [
+     "kaffe"
+    ]
+   },
+   {
+    "q": "Var arbetar Sara?",
+    "a": [
+     "sjukhus"
+    ]
+   }
+  ],
+  "notice": "In a main clause the verb comes second. When the sentence starts with a time word, the subject moves after the verb: \"Först duschar han\" and \"Klockan åtta tar han bussen\".",
+  "back": [
+   [
+    "Han dricker en kopp kaffe och äter två smörgåsar med ost.",
+    "He drinks a cup of coffee and eats two sandwiches with cheese."
+   ],
+   [
+    "Erik arbetar i en affär i centrum.",
+    "Erik works in a shop in the town centre."
+   ]
+  ]
+ },
+ {
+  "id": "sv-lagenhet",
+  "title": "En ny lägenhet",
+  "level": "A1",
+  "text": "Maria har en ny lägenhet i Göteborg. Lägenheten är liten men ljus. Den har ett kök, ett badrum och två rum. I vardagsrummet står en soffa och ett bord. Maria har inte många möbler än. I dag köper hon en lampa och en stol. Hennes bror Johan hjälper henne. Han bär stolen och hon bär lampan. Efteråt dricker de te på balkongen. Från balkongen ser de havet. Maria är mycket glad över sitt nya hem.",
+  "gloss": {
+   "lägenhet": "flat, apartment",
+   "ljus": "bright",
+   "kök": "kitchen",
+   "badrum": "bathroom",
+   "rum": "rooms",
+   "vardagsrummet": "the living room",
+   "soffa": "sofa",
+   "bord": "table",
+   "möbler": "furniture",
+   "köper": "buys",
+   "stol": "chair",
+   "bror": "brother",
+   "hjälper": "helps",
+   "bär": "carries",
+   "efteråt": "afterwards",
+   "balkongen": "the balcony",
+   "havet": "the sea",
+   "glad": "happy"
+  },
+  "questions": [
+   {
+    "q": "Var ligger Marias lägenhet?",
+    "a": [
+     "Göteborg"
+    ]
+   },
+   {
+    "q": "Vem hjälper Maria i dag?",
+    "a": [
+     "Johan",
+     "bror"
+    ]
+   },
+   {
+    "q": "Vad ser de från balkongen?",
+    "a": [
+     "havet"
+    ]
+   }
+  ],
+  "notice": "Swedish nouns are either \"en\" words or \"ett\" words, and you learn the word with its article: \"en lampa\" and \"en stol\", but \"ett kök\" and \"ett bord\".",
+  "back": [
+   [
+    "Den har ett kök, ett badrum och två rum.",
+    "It has a kitchen, a bathroom and two rooms."
+   ],
+   [
+    "I dag köper hon en lampa och en stol.",
+    "Today she buys a lamp and a chair."
+   ]
+  ]
+ },
+ {
+  "id": "sv-lordag",
+  "title": "Lördag i stan",
+  "level": "A1",
+  "text": "På lördag åker Lisa och Karin in till stan. De tar tåget, för det är snabbt och billigt. Först går de till en bokhandel. Lisa köper en bok om Italien. Sedan blir de hungriga och går till en liten restaurang. Karin äter fisk med potatis och Lisa äter soppa. Maten är god och inte dyr. Efter lunchen går de på bio och ser en rolig film. På kvällen åker de hem igen. Det är en bra dag, tycker de.",
+  "gloss": {
+   "åker": "goes, travels",
+   "stan": "town",
+   "tåget": "the train",
+   "snabbt": "fast",
+   "billigt": "cheap",
+   "bokhandel": "bookshop",
+   "köper": "buys",
+   "hungriga": "hungry",
+   "fisk": "fish",
+   "potatis": "potatoes",
+   "soppa": "soup",
+   "maten": "the food",
+   "god": "tasty, good",
+   "dyr": "expensive",
+   "bio": "cinema",
+   "rolig": "funny",
+   "kvällen": "the evening",
+   "igen": "again",
+   "tycker": "think"
+  },
+  "questions": [
+   {
+    "q": "Hur åker Lisa och Karin till stan?",
+    "a": [
+     "tåget"
+    ]
+   },
+   {
+    "q": "Vad handlar Lisas bok om?",
+    "a": [
+     "Italien"
+    ]
+   },
+   {
+    "q": "Vad äter Karin på restaurangen?",
+    "a": [
+     "fisk"
+    ]
+   }
+  ],
+  "notice": "Adjectives change with what they describe: with an \"ett\" word or \"det\" they take -t (\"det är snabbt och billigt\"), and in the plural they take -a (\"de blir hungriga\").",
+  "back": [
+   [
+    "De tar tåget, för det är snabbt och billigt.",
+    "They take the train, because it is fast and cheap."
+   ],
+   [
+    "Efter lunchen går de på bio och ser en rolig film.",
+    "After lunch they go to the cinema and see a funny film."
+   ]
+  ]
+ },
+ {
+  "id": "sv-familj",
+  "title": "Min familj",
+  "level": "A1",
+  "text": "Jag heter Oskar och jag är tio år. Jag bor i ett hus med min familj. Min mamma heter Eva och hon är lärare. Min pappa heter Nils och han kör buss. Jag har en syster som heter Maja. Hon är sex år och går i skolan. Vi har också en katt som sover hela dagen. På helgen besöker vi mormor och morfar. De bor på landet och har många djur. Jag tycker om att mata hönsen. Min familj är inte stor, men vi har roligt.",
+  "gloss": {
+   "hus": "house",
+   "familj": "family",
+   "lärare": "teacher",
+   "kör": "drives",
+   "syster": "sister",
+   "skolan": "school",
+   "katt": "cat",
+   "sover": "sleeps",
+   "hela": "the whole",
+   "helgen": "the weekend",
+   "besöker": "visit",
+   "mormor": "grandmother (mother's mother)",
+   "morfar": "grandfather (mother's father)",
+   "landet": "the countryside",
+   "djur": "animals",
+   "mata": "to feed",
+   "hönsen": "the hens",
+   "roligt": "fun"
+  },
+  "questions": [
+   {
+    "q": "Vad arbetar Oskars mamma som?",
+    "a": [
+     "lärare"
+    ]
+   },
+   {
+    "q": "Vad heter Oskars syster?",
+    "a": [
+     "Maja"
+    ]
+   },
+   {
+    "q": "Var bor mormor och morfar?",
+    "a": [
+     "landet"
+    ]
+   }
+  ],
+  "notice": "\"My\" is \"min\" before an \"en\" word, and the noun then takes no ending: \"min mamma\", \"min familj\".",
+  "back": [
+   [
+    "Min mamma heter Eva och hon är lärare.",
+    "My mum is called Eva and she is a teacher."
+   ],
+   [
+    "På helgen besöker vi mormor och morfar.",
+    "At the weekend we visit Grandma and Grandpa."
+   ]
+  ]
+ },
+ {
+  "id": "sv-kiruna",
+  "title": "Ett brev från Kiruna",
+  "level": "A2",
+  "text": "Hej Emma! Nu har jag bott i Kiruna i två veckor. Staden ligger långt norrut och det är mycket kallt här. På morgonen är det mörkt när jag går till jobbet, men snön gör allt ljust. Mina kollegor är vänliga och hjälper mig med svenskan. I går åkte vi skidor efter jobbet och sedan drack vi varm choklad. På lördag ska jag åka hundspann för första gången. Jag är lite nervös, men det ska bli roligt. Jag saknar dig och hoppas att du kan komma hit i vinter. Då kan vi titta på norrskenet tillsammans. Kram, Sofia",
+  "gloss": {
+   "bott": "lived",
+   "veckor": "weeks",
+   "norrut": "to the north",
+   "mörkt": "dark",
+   "snön": "the snow",
+   "ljust": "light, bright",
+   "kollegor": "colleagues",
+   "vänliga": "friendly",
+   "åkte": "went (by vehicle or on skis)",
+   "skidor": "skis",
+   "drack": "drank",
+   "hundspann": "dog sled",
+   "gången": "the time",
+   "nervös": "nervous",
+   "saknar": "miss",
+   "hoppas": "hope",
+   "vinter": "winter",
+   "norrskenet": "the northern lights",
+   "tillsammans": "together",
+   "kram": "hug"
+  },
+  "questions": [
+   {
+    "q": "Var bor Sofia nu?",
+    "a": [
+     "Kiruna"
+    ]
+   },
+   {
+    "q": "Vad gjorde de efter jobbet i går?",
+    "a": [
+     "skidor"
+    ]
+   },
+   {
+    "q": "Vad ska Sofia göra på lördag?",
+    "a": [
+     "hundspann"
+    ]
+   }
+  ],
+  "notice": "The past stands beside the present here: \"åkte\" (went) and \"drack\" (drank) are past forms, and \"har bott\" (have lived) is the perfect, made with \"har\" and a form ending in -t.",
+  "back": [
+   [
+    "Mina kollegor är vänliga och hjälper mig med svenskan.",
+    "My colleagues are friendly and help me with Swedish."
+   ],
+   [
+    "Jag är lite nervös, men det ska bli roligt.",
+    "I am a little nervous, but it will be fun."
+   ]
+  ]
+ },
+ {
+  "id": "sv-midsommar",
+  "title": "Midsommar",
+  "level": "A2",
+  "text": "I juni firar svenskarna midsommar. Det är årets längsta dag och solen går nästan inte ner. Familjen Lind åker till sin stuga vid sjön. På förmiddagen plockar barnen blommor och binder kransar. Sedan reser alla en hög stång och dansar runt den. Man sjunger en rolig sång om små grodor. Till lunch äter de sill, färsk potatis och jordgubbar med grädde. Farfar berättar samma historier som varje år, men alla skrattar ändå. På kvällen badar de i sjön fast vattnet är kallt. Ingen vill gå och lägga sig, för natten är ljus och varm.",
+  "gloss": {
+   "firar": "celebrate",
+   "midsommar": "Midsummer",
+   "årets": "the year's",
+   "längsta": "longest",
+   "nästan": "almost",
+   "stuga": "cottage",
+   "plockar": "pick",
+   "blommor": "flowers",
+   "binder": "tie, make",
+   "kransar": "wreaths",
+   "reser": "raise",
+   "stång": "pole",
+   "sjunger": "sing",
+   "grodor": "frogs",
+   "sill": "herring",
+   "färsk": "new, fresh",
+   "jordgubbar": "strawberries",
+   "grädde": "cream",
+   "farfar": "grandfather (father's father)",
+   "berättar": "tells",
+   "skrattar": "laugh",
+   "ändå": "anyway",
+   "badar": "bathe, swim",
+   "fast": "although"
+  },
+  "questions": [
+   {
+    "q": "När firar svenskarna midsommar?",
+    "a": [
+     "juni"
+    ]
+   },
+   {
+    "q": "Vad plockar barnen på förmiddagen?",
+    "a": [
+     "blommor"
+    ]
+   },
+   {
+    "q": "Var badar de på kvällen?",
+    "a": [
+     "sjön"
+    ]
+   }
+  ],
+  "notice": "The subject comes after the verb when something else begins the sentence: \"På förmiddagen plockar barnen blommor\" and \"Till lunch äter de sill\".",
+  "back": [
+   [
+    "Det är årets längsta dag och solen går nästan inte ner.",
+    "It is the longest day of the year and the sun hardly goes down."
+   ],
+   [
+    "På kvällen badar de i sjön fast vattnet är kallt.",
+    "In the evening they swim in the lake although the water is cold."
+   ]
+  ]
+ },
+ {
+  "id": "sv-planboken",
+  "title": "Den borttappade plånboken",
+  "level": "B1",
+  "text": "I fredags upptäckte Jonas att hans plånbok var borta. Han hade betalat för en kaffe på stationen och sedan sprungit till tåget. När han kom hem letade han överallt, men plånboken fanns ingenstans. I den låg hans körkort, två bankkort och ett foto av hans mormor. Jonas ringde banken och spärrade korten, och sedan gick han och lade sig på dåligt humör. Nästa morgon ringde det på dörren. Utanför stod en äldre kvinna med plånboken i handen. Hon hade hittat den under en bänk och sett adressen på körkortet. Jonas blev så glad att han bjöd in henne på frukost. Det visade sig att hon hade arbetat som lärare på hans gamla skola. Nu dricker de kaffe tillsammans varje fredag.",
+  "gloss": {
+   "upptäckte": "discovered",
+   "plånbok": "wallet",
+   "borta": "gone",
+   "betalat": "paid",
+   "sprungit": "run",
+   "letade": "searched",
+   "överallt": "everywhere",
+   "ingenstans": "nowhere",
+   "körkort": "driving licence",
+   "bankkort": "bank cards",
+   "ringde": "rang, called",
+   "spärrade": "blocked",
+   "humör": "mood",
+   "dörren": "the door",
+   "utanför": "outside",
+   "äldre": "elderly",
+   "hittat": "found",
+   "bänk": "bench",
+   "adressen": "the address",
+   "bjöd": "invited",
+   "visade": "turned out (det visade sig)",
+   "gamla": "old"
+  },
+  "questions": [
+   {
+    "q": "Vad hade Jonas tappat bort?",
+    "a": [
+     "plånbok"
+    ]
+   },
+   {
+    "q": "Var hade kvinnan hittat den?",
+    "a": [
+     "bänk"
+    ]
+   },
+   {
+    "q": "Vad hade kvinnan arbetat som?",
+    "a": [
+     "lärare"
+    ]
+   }
+  ],
+  "notice": "The pluperfect tells what had happened before: \"hade\" with the supine, as in \"Han hade betalat för en kaffe\" and \"Hon hade hittat den under en bänk\".",
+  "back": [
+   [
+    "Nästa morgon ringde det på dörren.",
+    "The next morning the doorbell rang."
+   ],
+   [
+    "Utanför stod en äldre kvinna med plånboken i handen.",
+    "Outside stood an elderly woman with the wallet in her hand."
+   ]
+  ]
+ },
+ {
+  "id": "sv-kafe",
+  "title": "På kaféet",
+  "level": "A1",
+  "roles": [
+   "Servitören",
+   "Gästen"
+  ],
+  "lines": [
+   [
+    0,
+    "Hej och välkommen! Vad vill du ha?"
+   ],
+   [
+    1,
+    "Hej! Jag vill ha en kopp kaffe, tack."
+   ],
+   [
+    0,
+    "Vill du ha mjölk i kaffet?"
+   ],
+   [
+    1,
+    "Ja tack, lite mjölk men inget socker."
+   ],
+   [
+    0,
+    "Vill du ha något att äta också?"
+   ],
+   [
+    1,
+    "Vad har ni för kakor i dag?"
+   ],
+   [
+    0,
+    "Vi har kanelbullar och en god äppelkaka."
+   ],
+   [
+    1,
+    "Då tar jag en kanelbulle, tack."
+   ],
+   [
+    0,
+    "Varsågod. Det blir femtio kronor."
+   ],
+   [
+    1,
+    "Kan jag betala med kort?"
+   ],
+   [
+    0,
+    "Ja, det går bra. Tack så mycket!"
+   ],
+   [
+    1,
+    "Tack själv, ha en bra dag!"
+   ]
+  ],
+  "gloss": {
+   "välkommen": "welcome",
+   "kopp": "cup",
+   "mjölk": "milk",
+   "socker": "sugar",
+   "något": "something",
+   "kakor": "cakes, biscuits",
+   "kanelbullar": "cinnamon buns",
+   "äppelkaka": "apple cake",
+   "varsågod": "here you are",
+   "kronor": "crowns (Swedish money)",
+   "betala": "to pay",
+   "kort": "card",
+   "själv": "yourself (tack själv: thank you too)"
+  },
+  "questions": [
+   {
+    "q": "Vad vill gästen dricka?",
+    "a": [
+     "kaffe"
+    ]
+   },
+   {
+    "q": "Hur betalar gästen?",
+    "a": [
+     "kort"
+    ]
+   }
+  ],
+  "notice": "\"Jag vill ha\" is the usual way to ask for something, and \"tack\" at the end makes it polite: \"Jag vill ha en kopp kaffe, tack\" and \"Då tar jag en kanelbulle, tack\"."
+ },
+ {
+  "id": "sv-stationen",
+  "title": "Var ligger stationen?",
+  "level": "A1",
+  "roles": [
+   "En kvinna",
+   "Turisten"
+  ],
+  "lines": [
+   [
+    0,
+    "Ursäkta, kan jag hjälpa dig?"
+   ],
+   [
+    1,
+    "Ja tack. Var ligger stationen?"
+   ],
+   [
+    0,
+    "Den ligger inte långt härifrån."
+   ],
+   [
+    1,
+    "Hur kommer jag dit?"
+   ],
+   [
+    0,
+    "Gå rakt fram och ta andra gatan till vänster."
+   ],
+   [
+    1,
+    "Rakt fram och sedan till vänster. Är det långt?"
+   ],
+   [
+    0,
+    "Nej, det tar bara tio minuter att gå."
+   ],
+   [
+    1,
+    "Finns det en buss också?"
+   ],
+   [
+    0,
+    "Ja, bussen går från torget där borta."
+   ],
+   [
+    1,
+    "Vad bra. Tack så mycket för hjälpen!"
+   ],
+   [
+    0,
+    "Ingen orsak. Ha en trevlig resa!"
+   ],
+   [
+    1,
+    "Tack, det ska jag ha. Hej då!"
+   ]
+  ],
+  "gloss": {
+   "ursäkta": "excuse me",
+   "hjälpa": "to help",
+   "ligger": "is (located)",
+   "stationen": "the station",
+   "långt": "far",
+   "härifrån": "from here",
+   "dit": "there (to that place)",
+   "rakt": "straight",
+   "fram": "ahead",
+   "gatan": "the street",
+   "vänster": "left",
+   "bara": "only",
+   "torget": "the square",
+   "borta": "away (där borta: over there)",
+   "hjälpen": "the help",
+   "orsak": "cause (ingen orsak: you are welcome)",
+   "trevlig": "pleasant",
+   "resa": "journey"
+  },
+  "questions": [
+   {
+    "q": "Vart vill turisten gå?",
+    "a": [
+     "stationen"
+    ]
+   },
+   {
+    "q": "Hur lång tid tar det att gå dit?",
+    "a": [
+     "tio minuter",
+     "tio"
+    ]
+   }
+  ],
+  "notice": "Swedish asks \"var\" about where something is (\"Var ligger stationen?\") and uses \"dit\" for movement towards a place (\"Hur kommer jag dit?\")."
+ },
+ {
+  "id": "sv-vardcentralen",
+  "title": "På vårdcentralen",
+  "level": "A2",
+  "roles": [
+   "Läkaren",
+   "Patienten"
+  ],
+  "lines": [
+   [
+    0,
+    "God morgon. Hur mår du i dag?"
+   ],
+   [
+    1,
+    "Inte så bra. Jag har ont i halsen."
+   ],
+   [
+    0,
+    "Hur länge har du haft ont?"
+   ],
+   [
+    1,
+    "Sedan i måndags, och jag har lite feber också."
+   ],
+   [
+    0,
+    "Hostar du mycket på natten?"
+   ],
+   [
+    1,
+    "Ja, jag kan nästan inte sova."
+   ],
+   [
+    0,
+    "Då ska jag titta i halsen. Öppna munnen, tack."
+   ],
+   [
+    1,
+    "Är det något allvarligt?"
+   ],
+   [
+    0,
+    "Nej, det är en vanlig förkylning. Du behöver vila och dricka mycket."
+   ],
+   [
+    1,
+    "Ska jag stanna hemma från jobbet?"
+   ],
+   [
+    0,
+    "Ja, stanna hemma i tre dagar."
+   ],
+   [
+    1,
+    "Tack för hjälpen. Jag ska vila ordentligt."
+   ]
+  ],
+  "gloss": {
+   "mår": "feel",
+   "ont": "pain (ha ont: to hurt)",
+   "halsen": "the throat",
+   "länge": "long",
+   "feber": "fever",
+   "hostar": "cough",
+   "nästan": "almost",
+   "sova": "sleep",
+   "munnen": "the mouth",
+   "allvarligt": "serious",
+   "vanlig": "ordinary",
+   "förkylning": "cold",
+   "behöver": "need",
+   "vila": "rest",
+   "stanna": "stay",
+   "ordentligt": "properly"
+  },
+  "questions": [
+   {
+    "q": "Var har patienten ont?",
+    "a": [
+     "halsen"
+    ]
+   },
+   {
+    "q": "Hur länge ska patienten stanna hemma?",
+    "a": [
+     "tre dagar",
+     "tre"
+    ]
+   }
+  ],
+  "notice": "\"Ha ont i\" names where it hurts: \"Jag har ont i halsen\". \"Ska\" with a verb says what is going to happen or what you should do: \"Jag ska vila ordentligt\"."
+ },
+ {
+  "id": "sv-intervju",
+  "title": "En anställningsintervju",
+  "level": "B1",
+  "roles": [
+   "Chefen",
+   "Den sökande"
+  ],
+  "lines": [
+   [
+    0,
+    "Välkommen! Berätta lite om dig själv."
+   ],
+   [
+    1,
+    "Tack. Jag har arbetat som kock i fem år."
+   ],
+   [
+    0,
+    "Varför vill du byta arbetsplats?"
+   ],
+   [
+    1,
+    "Jag vill lära mig mer och få större ansvar."
+   ],
+   [
+    0,
+    "Vad tycker du är svårast med yrket?"
+   ],
+   [
+    1,
+    "Att hålla tempot när restaurangen är full."
+   ],
+   [
+    0,
+    "Hur hanterar du stress i köket?"
+   ],
+   [
+    1,
+    "Jag planerar noga och pratar lugnt med kollegorna."
+   ],
+   [
+    0,
+    "Kan du arbeta på kvällar och helger?"
+   ],
+   [
+    1,
+    "Ja, det går bra, om jag får veta schemat i god tid."
+   ],
+   [
+    0,
+    "Bra. När skulle du kunna börja?"
+   ],
+   [
+    1,
+    "Jag kan börja om en månad."
+   ],
+   [
+    0,
+    "Då hör vi av oss nästa vecka."
+   ],
+   [
+    1,
+    "Tack så mycket, jag ser fram emot det."
+   ]
+  ],
+  "gloss": {
+   "berätta": "tell",
+   "själv": "yourself",
+   "kock": "cook, chef",
+   "byta": "change",
+   "arbetsplats": "workplace",
+   "ansvar": "responsibility",
+   "svårast": "hardest",
+   "yrket": "the profession",
+   "hålla": "keep",
+   "tempot": "the pace",
+   "hanterar": "handle",
+   "planerar": "plan",
+   "noga": "carefully",
+   "lugnt": "calmly",
+   "kollegorna": "the colleagues",
+   "helger": "weekends",
+   "schemat": "the schedule",
+   "skulle": "would",
+   "månad": "month",
+   "emot": "towards (se fram emot: look forward to)"
+  },
+  "questions": [
+   {
+    "q": "Vad har den sökande arbetat som?",
+    "a": [
+     "kock"
+    ]
+   },
+   {
+    "q": "När kan den sökande börja?",
+    "a": [
+     "månad"
+    ]
+   }
+  ],
+  "notice": "After \"om\" and \"när\" a subordinate clause follows, and \"skulle kunna\" is a polite conditional: \"om jag får veta schemat i god tid\" and \"När skulle du kunna börja?\"."
+ }
+]
