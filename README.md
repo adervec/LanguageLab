@@ -17,24 +17,39 @@ LanguageLab is built to be the opposite on each count.
 |---|---|
 | **A sitting** (about twenty minutes) | Hear a story with the text hidden. Answer three questions from what you heard. Read it and tap every word you do not know. Take dictation at natural speed. Write a sentence back from its meaning. Say sentences aloud. Retell it in your own words. |
 | **Speak** | Dialogues you play a part in: your lines read aloud, then said from memory, scored by how much a speech recogniser understood. |
+| **Conversation** | Talk with an AI partner, by voice or typing. It answers at your level, speaks its reply, and corrects your last message as you go. |
 | **Pen pal** | Write a letter. An AI pen pal answers at your level and corrects your mistakes. |
 | **Review** | The words you tapped come back as a blank in the sentence you met them in, and you type them. Your corrected mistakes come back until you type them right. Spaced so they return just before you forget. |
 | **More input** | Just listen (stories one after another) and free reading, with a tap for the meaning of any word. |
 | **Progress** | Which level your numbers support for reading and for listening, a table level by level, and your totals of reading and listening. |
 
-## What is different from the streak apps
+## How it compares
 
-| | Typical streak app | LanguageLab |
-|---|---|---|
-| Exercises | Tap tiles, pick from choices | Type and say whole sentences; retell from memory |
-| Listening | Short clips, slowed down | Whole stories at natural speed, questions before you see the text, dictation |
-| Your own material | No | Paste any text; add a podcast or video sound file with its subtitles and take dictation from the real voices |
-| Meanings | Fixed word bank | Tap any word in any text; translated on your device where the browser can |
-| Feedback on your writing | Right or wrong against one answer | An AI review with a grade, the corrected forms and the rule; your mistakes return as review cards |
-| Conversation | Scripted, tap a reply | Role-play aloud and from memory; an AI pen pal that writes back |
-| Languages | A fixed list | Eleven with starter stories, Croatian among them; any other language with your own texts or AI-written stories |
-| Progress | Points, leagues, a streak | The level your numbers support, measured |
-| Cost and data | Subscription or ads; an account | Free; your data stays on your device (optionally your own Google Drive) |
+Checked in November 2026 against what Duolingo, Rosetta Stone and Mondly say about themselves and
+what recent reviews report (sources below; prices and tiers change, so treat their columns as a
+snapshot). LanguageLab is ahead in some rows and behind in others.
+
+| | Duolingo | Rosetta Stone | Mondly | LanguageLab |
+|---|---|---|---|---|
+| Cost | Free with ads and an energy allowance that limits free practice; paid Super and Max tiers | Subscription | Free tier with ads; speech recognition, the chatbot and offline use are premium | Free. No ads, no allowance, no account |
+| Talking with an AI | Video Call and Roleplay, in paid tiers, for a handful of languages | No AI partner; live human coaching in the premium plan | A chatbot with speech recognition (premium) | A live conversation that corrects you as you go, on your device where the browser has its own AI model or through your own AI agent; and an AI pen pal |
+| What you produce | Varies by exercise: word banks, matching, short typed and spoken answers | Speaking and choosing, without translation | Short phrases and chatbot replies | Typed dictation, sentences written back from their meaning, role-play from memory, and a free retelling in every sitting |
+| Your own material | No | No | No | Any text; any recording with its subtitles |
+| Feedback on free writing | Explanations of an answer | No | No | An AI review with a grade, corrected forms and the rule; your mistakes come back as review cards |
+| Measure of progress | XP, streak, leagues, a course score | Units completed | Points and a leaderboard | The level your own numbers support, for reading and for listening |
+| Languages with ready lessons | 40 or more | 25 | 41 | 11, three of them small sets; any other language with your own texts or AI-written stories |
+| Course for complete beginners | Yes, from the alphabet | Yes | Yes | No: the stories start at A1 and assume you can read the script |
+| Speech scoring | Its own engine | TruAccent | Speech recognition | The browser's speech recognition: how much was understood, not how good the accent is |
+| Human teachers | No | Live coaching (premium) | No | None |
+| Content checked by people | Yes | Yes | Yes | No: written by an AI and unchecked by native speakers (the app says so) |
+| Apps | iOS, Android, web | iOS, Android, web | iOS, Android, web, AR and VR | A web app that installs to the home screen |
+
+Sources: Duolingo on [Duolingo Max](https://blog.duolingo.com/duolingo-max), a 2026 review of
+[what Max adds](https://storylearning.com/duolingo-max-review) and reporting on
+[its course expansion](https://www.thestar.com.my/tech/tech-news/2025/04/30/duolingo-more-than-doubles-courses-as-ai-firstpush-draws-heat);
+Rosetta Stone reviews of [features and plans](https://learnenglish.life/reviews/rosetta-stone) and
+[pricing](https://toolradar.com/tools/rosetta-stone/pricing); Mondly reviews of
+[features](https://www.fluentu.com/blog/reviews/mondly/) and [pricing](https://www.learnenglish.life/guides/mondly-pricing/).
 
 ## Languages
 
