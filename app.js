@@ -139,16 +139,25 @@ async function playSentence(s, target) {
   if (!(cue && await playClip(s, cue[0], cue[1] + 0.2))) say(target);
 }
 // Speech recognition into onText; pressing the button again stops it.
-function hear(b, continuous, onText, onDone) {
+// rest: for one utterance (a line, a message). Left to itself the browser stops at the first pause, which cuts a learner off at
+// a comma (seen with Chrome's recogniser: half a sentence heard, 31% scored). So it listens on, and stops by itself only after
+// rest() milliseconds without any sound of speech; with nothing heard at all, after ten seconds.
+function hear(b, continuous, onText, onDone, rest) {
   if (recog) return recog.stop();
   const label = b.textContent, msg = why => { const m = $('#micmsg'); if (m) m.textContent = why; };
+  let quiet = 0, heard = false;
+  const wait = ms => { clearTimeout(quiet); quiet = setTimeout(() => { if (!heard) msg(t('Nothing was heard. Try again, a little louder.')); me.stop(); }, ms); };
   hush(); msg('');
-  recog = new SR(); recog.lang = voice()?.lang || lang().bcp; recog.continuous = continuous;
-  recog.onresult = e => { for (let i = e.resultIndex; i < e.results.length; i++) if (e.results[i].isFinal) onText(e.results[i][0].transcript); };
+  const me = recog = new SR(); recog.lang = voice()?.lang || lang().bcp; recog.continuous = continuous || !!rest; recog.interimResults = !!rest;
+  recog.onresult = e => {
+    for (let i = e.resultIndex; i < e.results.length; i++) if (e.results[i].isFinal) onText(e.results[i][0].transcript);
+    heard = true; if (rest) wait(rest());
+  };
   recog.onerror = e => { if (e.error === 'no-speech') msg(t('Nothing was heard. Try again, a little louder.'));
     else if (e.error !== 'aborted') msg(t('The microphone did not work here ({why}). You can carry on without it.', { why: e.error })); };
-  recog.onend = () => { recog = null; b.textContent = label; b.setAttribute('aria-pressed', 'false'); onDone?.(); };
+  recog.onend = () => { clearTimeout(quiet); recog = null; b.textContent = label; b.setAttribute('aria-pressed', 'false'); onDone?.(); };
   recog.start(); b.textContent = t('Stop listening'); b.setAttribute('aria-pressed', 'true');
+  if (rest) wait(10000);
 }
 
 // ---------- meanings on this device: the browser's own translator (Chrome and Edge on desktop), nothing sent anywhere ----------
@@ -450,7 +459,7 @@ const playRow = () => H`<div class="row"><button class="primary" data-act="play"
   <button data-act="stop">${t('Stop')}</button></div>
   ${story(sit.storyId).cues || (window.speechSynthesis && (!speechSynthesis.getVoices().length || voice())) ? '' : H`<p class="sub">${t('This device has no {language} voice installed, so listening may not work here.', { language: langName() })}</p>`}`;
 // the target sentence with caught / missed words marked
-const marked = (target, got) => C.dictationScore(target, got, S.lang).parts.map(p => p.hit == null ? p.s : H`<span class="${p.hit ? 'hit' : 'miss'}">${p.s}</span>`);
+const marked = (target, got, spoken) => C.dictationScore(target, got, S.lang, spoken).parts.map(p => p.hit == null ? p.s : H`<span class="${p.hit ? 'hit' : 'miss'}">${p.s}</span>`);
 const words = text => { const { cards, known } = L(); return C.tokens(text, S.lang).map(x => { const k = C.key(x.s);
   return x.word ? H`<button class="w ${(cards[k] && !cards[k].retired) || sit.tapped.has(k) ? 'learn' : known[k] ? '' : 'new'}" data-act="tap" data-k="${k}">${x.s}</button>` : x.s; }); };
 const field = (id, enter, label, hint, focus = 'data-focus') => H`<input type="text" id="${id}" lang="${S.lang}" dir="auto" autocomplete="off" autocapitalize="off" spellcheck="false" data-enter="${enter}" aria-label="${label}" placeholder="${hint || ''}" ${focus}>`;
@@ -512,9 +521,9 @@ function vSitting() {
     return H`${head(s.lines ? t('Role-play') : t('Say it'))}
     ${s.lines ? H`<p>${d.memory ? t('Now from memory: say your lines without reading them.') : t('You are {role}. Read your lines aloud.', { role: s.roles[1] })} <span class="sub">${t('Line {i} of {n}', { i: sit.si + 1, n: sit.speak.length })}</span></p>
       <div class="chat" lang="${S.lang}">${s.lines.slice(Math.max(0, d.li - 3), d.li).map(l => H`<p class="${l[0] ? 'me' : 'them'}"><b class="who">${s.roles[l[0]]}</b> ${l[1]}</p>`)}
-        <p class="me now"><b class="who">${s.roles[1]}</b> ${hidden ? '…' : d.score == null ? d.target : marked(d.target, d.heard)}</p></div>`
+        <p class="me now"><b class="who">${s.roles[1]}</b> ${hidden ? '…' : d.score == null ? d.target : marked(d.target, d.heard, !d.typed)}</p></div>`
       : H`<p>${t('Sentence {i} of {n}. Read it aloud. The score is the share of your words that speech recognition understood.', { i: sit.si + 1, n: sit.speak.length })}</p>
-      <p class="big" lang="${S.lang}">${d.score == null ? d.target : marked(d.target, d.heard)}</p>${d.meaning ? H`<p class="sub">${d.meaning}</p>` : ''}`}
+      <p class="big" lang="${S.lang}">${d.score == null ? d.target : marked(d.target, d.heard, !d.typed)}</p>${d.meaning ? H`<p class="sub">${d.meaning}</p>` : ''}`}
     ${d.score == null ? '' : H`<p class="sub">${d.typed ? t('You wrote:') : t('It heard:')} <span lang="${S.lang}">${d.heard}</span></p><p><b>${t('{pct} of the words', { pct: pct(d.score) })}</b></p>`}
     <div class="row">${SR ? H`<button class="primary" data-act="sayit" aria-pressed="false">${d.score == null ? t('Speak') : t('Try again')}</button>` : ''}
       ${hidden ? H`<button data-act="peek">${t('Show my line')}</button>` : H`<button data-act="play">▶ ${t('Hear it')}</button>`}
@@ -709,23 +718,56 @@ function checkModel() {
 }
 const chatEngine = () => lmOk[S.lang] ? 'device' : panel?._root ? 'cowork' : '';
 const chat = () => L().chat;
-const CHAT_SCHEMA = { type: 'object', required: ['reply'], properties: { reply: { type: 'string' },
-  corrections: { type: 'array', items: { type: 'object', required: ['wrong', 'right'], properties: { wrong: { type: 'string' }, right: { type: 'string' }, why: { type: 'string' } } } } } };
+const english = code => { try { return new Intl.DisplayNames(['en'], { type: 'language' }).of(code) || 'English'; } catch { return 'English'; } }; // a small model follows a name better than a code
+const CHAT_SCHEMA = { type: 'object', required: ['reply'], properties: { reply: { type: 'string' } } };
+const FIX_SCHEMA = { type: 'object', required: ['corrections'], properties: { corrections: { type: 'array', maxItems: 3,
+  items: { type: 'object', required: ['wrong', 'right', 'why'], properties: { wrong: { type: 'string' }, right: { type: 'string' }, why: { type: 'string' } } } } } };
 const chatPrompt = c => `You are a conversation partner for someone learning ${lang().english} at CEFR level ${L().level}. `
   + (c.scene ? `The situation: "${c.scene.title}". You play ${c.scene.roles[0]}; the learner plays ${c.scene.roles[1]}. ` : 'Talk about everyday things: their day, their plans, what they like. ')
-  + `Speak only ${lang().english}. Keep each reply to one or two short sentences that a learner at that level can follow, and end with a question or something to react to. Stay in character and never explain grammar inside the reply. `
-  + `Also check the learner's last message: list at most two real mistakes in it as corrections, each with "wrong" (their exact words), "right" (the corrected form) and "why" (the rule in a few words, in the language with the code ${A.lang()}). `
-  + 'Give an empty list when the message was correct or when there is no message yet. Never invent mistakes. Answer with JSON only: {"reply": "...", "corrections": [{"wrong": "...", "right": "...", "why": "..."}]}';
-let lm = null, lmFor = '';
-// ponytail: the on-device model is small; its corrections are a first pass, not a teacher. The cowork agent is the stronger partner.
+  + `Speak only ${lang().english}. Keep each reply to one or two short sentences that a learner at that level can follow, and end with a question or something to react to. Stay in character and never explain or correct grammar. `
+  + 'Answer with JSON only: {"reply": "..."}';
+const fixPrompt = () => `You proofread short messages written by a learner of ${lang().english}. List the mistakes of grammar, spelling, agreement and elision in the message you are given: at most three, the ones that matter most. `
+  + `For each give "wrong" (the learner's exact words, a few words only), "right" (the same words corrected) and "why" (the rule in eight words at most, written in ${english(A.lang())}). `
+  + 'If the message has no mistake, give an empty list. Never invent a mistake, and never comment on style, politeness or content. Answer with JSON only: {"corrections": [{"wrong": "...", "right": "...", "why": "..."}]}';
+let lm = null, lmFor = '', lmFix = null, lmFixFor = '';
+// The browser's model can stall (seen in Chrome when it is busy or restarting): no answer in time counts as no answer, and its
+// sessions are given back, so "Try again" starts clean instead of the page waiting for ever.
+const within = (p, ms) => Promise.race([p, new Promise((_, no) => setTimeout(no, ms, new Error('timeout')))]);
+const dropLm = () => { for (const s of [lm, lmFix]) s?.then(x => x.destroy(), () => {}); lm = lmFix = null; lmFor = lmFixFor = ''; };
+// Checked against Chrome's own model: asked to play a part AND correct in one answer it corrects almost nothing, so the corrections
+// come from a second session that does nothing else (a copy of it per message, so one message never colours the next).
+// ponytail: the on-device model is small; it catches about one mistake a message. A first pass, not a teacher: the cowork agent is the stronger partner.
+async function proofread(text) {
+  try {
+    if (!lmFix || lmFixFor !== S.lang) { // the rule is asked for in the interface language where the model can write it, else in English
+      const out = code => ({ expectedInputs: lmOpts().expectedInputs, expectedOutputs: [{ type: 'text', languages: [code] }] });
+      const ok = await Promise.resolve().then(() => self.LanguageModel.availability(out(here()))).catch(() => 'unavailable');
+      lmFix = self.LanguageModel.create({ ...out(ok === 'available' ? here() : 'en'), initialPrompts: [{ role: 'system', content: fixPrompt() }] });
+      lmFixFor = S.lang;
+    }
+    const s = await (await lmFix).clone();
+    try { return A.parseJSON(String(await within(s.prompt(text, { responseConstraint: FIX_SCHEMA }), 30000)), 20000)?.corrections; } finally { s.destroy(); }
+  } catch { lmFix?.then(x => x.destroy(), () => {}); lmFix = null; return []; } // no corrections is better than no conversation
+}
 async function deviceReply(c, text) {
   if (!lm || lmFor !== c.id) { // a new conversation, or the page was reloaded during one: the model is told what was said so far
     const said = c.turns.slice(0, text ? -1 : undefined).map(x => ({ role: x.who ? 'user' : 'assistant', content: x.text }));
     lm = self.LanguageModel.create({ ...lmOpts(), initialPrompts: [{ role: 'system', content: chatPrompt(c) }, ...said] }); // inside the tap: the first use may download the model
     lmFor = c.id;
   }
-  const raw = await (await lm).prompt(text || 'Begin the conversation with your first line.', { responseConstraint: CHAT_SCHEMA });
-  return A.parseJSON(String(raw), 20000);
+  if (text) { const turn = c.wait; proofread(text).then(list => chatFixes(c.id, turn, list)); } // in its own time: the partner's line is not held up by it
+  return A.parseJSON(String(await (await lm).prompt(text || 'Begin the conversation with your first line.', { responseConstraint: CHAT_SCHEMA })), 20000);
+}
+// The proofreader's corrections arrive a moment after (or before) the partner's line and go under the message they are about.
+// Checked against Chrome's own model: it also "corrects" things that were right. So, unlike an agent's, these are offered and not
+// drilled: one becomes a review card only when the learner keeps it.
+function chatFixes(chatId, turnId, list) {
+  const c = L().chat, me = c?.id === chatId && c.turns.find(x => x.id === turnId);
+  const fixes = C.cleanChatReply({ reply: '-', corrections: list })?.corrections || [];
+  if (!me || !fixes.length) return; // the conversation was finished meanwhile, or there was nothing to correct
+  me.fixes = fixes;
+  save();
+  if (view === 'chat') render(true);
 }
 // A reply, from either engine: the partner's line joins the conversation and is spoken; corrections sit under your line and become review cards.
 function chatReply(x) {
@@ -742,13 +784,18 @@ function pollChat() { // the cowork agent answers in its own time: look in the f
   clearInterval(chatPoll);
   chatPoll = setInterval(() => { if (view !== 'chat' || !chat()?.wait || !panel?._root) clearInterval(chatPoll); else panel.refresh(); }, 4000);
 }
+let chatTok = 0;
 async function chatAsk(text) {
-  const c = chat();
-  if (chatEngine() !== 'device') { render(); await panel?.push?.('chat', true); return pollChat(); }
+  const c = chat(), turn = c.wait, tok = ++chatTok;
+  if (chatEngine() !== 'device') { chatBusy = false; render(); await panel?.push?.('chat', true); return pollChat(); }
   chatBusy = true; render();
-  try { chatReply(C.cleanChatReply({ ...(await deviceReply(c, text)), turnId: c.wait })); }
-  catch { lm = null; flash = t('The model could not answer. Try again.'); }
+  let x = null;
+  try { x = C.cleanChatReply({ ...(await within(deviceReply(c, text), 75000)), turnId: turn }); } // (a first reply can take half a minute while the model loads)
+  catch { dropLm(); }
+  if (x) chatReply(x); // (which checks that the conversation still waits for this turn)
+  if (tok !== chatTok) return; // a later request owns the screen by now
   chatBusy = false;
+  if (!x && view === 'chat' && chat() === c && c.wait === turn) flash = t('The model could not answer. Try again.');
   if (view === 'chat') render(true);
 }
 function chatTurn(text) { // text: what the learner just said; '' lets the partner open
@@ -769,7 +816,9 @@ function vChat() {
     <button class="primary" data-act="chatstart" ${eng ? '' : 'disabled'}>${t('Start the conversation')}</button>`;
   return H`<p class="sub">${c.scene ? c.scene.title + ' · ' + t('You play {role}.', { role: c.scene.roles[1] }) : t('Free conversation')}</p><h1>${t('Conversation')}</h1>
     <div class="chat" lang="${S.lang}">${c.turns.slice(-12).map(x => H`<p class="${x.who ? 'me' : 'them'}">${x.text}${x.who ? '' : H` <button class="mini" data-act="chatsay" data-id="${x.id}" aria-label="${t('Hear it')}">▶</button>`}</p>
-      ${x.fixes ? H`<ul>${x.fixes.map(f => H`<li><span class="miss">${f.wrong}</span> → <span class="hit">${f.right}</span> <span class="sub">${f.why}</span></li>`)}</ul>` : ''}`)}</div>
+      ${x.fixes ? H`<ul>${x.fixes.map((f, n) => H`<li><span class="miss">${f.wrong}</span> → <span class="hit">${f.right}</span> <span class="sub">${f.why}</span>
+        ${L().fixes[x.id + ':' + n] ? '' : H` <button class="mini" data-act="chatkeep" data-id="${x.id}:${n}">${t('Keep for review')}</button>`}</li>`)}</ul>` : ''}`)}</div>
+    ${eng === 'device' ? H`<p class="sub">${t('The corrections come from the small model in your browser. It misses mistakes and is sometimes wrong: keep for review only the ones you trust.')}</p>` : ''}
     ${c.wait ? H`${chatBusy || eng === 'cowork' ? H`<p class="sub" role="status">${t('Waiting for the reply.')}</p>` : ''}
         ${chatBusy ? '' : H`<p><button class="${eng === 'cowork' ? 'mini' : ''}" data-act="chatretry">${t('Try again')}</button></p>`}` // through the folder too: the request is written again if the agent missed it
       : H`<p>${field('ans', 'chatsend', t('Your message'))}</p>${keysBar()}
@@ -931,14 +980,15 @@ const ACT = {
   mic(b) { const box = $('#ans'); hear(b, true, text => { box.value = (box.value + ' ' + text).trim(); if (sit) sit.spoken = true; }); },
   // ponytail: the recogniser guesses towards real words, so this flatters a little; it is "was I
   // understood", not a pronunciation score. SpeechImprover's per-take analysis is the upgrade.
-  // It also writes numbers as digits, so a number word in a line is marked as missed: the bundled dialogues avoid them.
+  // It also writes numbers as digits ("five" comes back as "5"): the scoring lets a number stand for one word of the line.
   sayit(b) {
     const d = sit.speak[sit.si];
     if (!recog) d.said = '';
+    const all = C.plainWords(d.target, S.lang).length; // once every word of the line has been heard a short silence ends it; before that, a longer one
     hear(b, false, text => { d.said = (d.said + ' ' + text).trim(); }, () => {
       if (!d.said || sit?.step !== 'speak' || sit.speak[sit.si] !== d) return;
-      d.heard = d.said.slice(0, 600); d.typed = false; d.score = C.dictationScore(d.target, d.heard, S.lang).score; d.tries++; render();
-    });
+      d.heard = d.said.slice(0, 600); d.typed = false; d.score = C.dictationScore(d.target, d.heard, S.lang, true).score; d.tries++; render();
+    }, () => C.plainWords(d.said, S.lang).length >= all ? 800 : 3000);
   },
   saycheck() { // a line said from memory may be typed instead, where there is no microphone
     const d = sit.speak[sit.si], v = $('#ans').value.trim().slice(0, 600);
@@ -1005,8 +1055,12 @@ const ACT = {
   },
   chatsend() { const text = $('#ans').value.trim().slice(0, 1000); if (text && !chat().wait) return chatTurn(text); },
   chatretry() { const c = chat(), me = c.turns.find(x => x.id === c.wait); return chatAsk(me ? me.text : ''); },
-  chatmic(b) { const box = $('#ans'); hear(b, false, text => { box.value = (box.value + ' ' + text).trim(); }, () => { if (view === 'chat' && box.isConnected && box.value.trim()) run('chatsend'); }); },
+  chatmic(b) { const box = $('#ans'); hear(b, false, text => { box.value = (box.value + ' ' + text).trim(); }, () => { if (view === 'chat' && box.isConnected && box.value.trim()) run('chatsend'); }, () => 2500); },
   chatsay(b) { const x = chat()?.turns.find(y => y.id === b.dataset.id); if (x) say([[0, x.text]]); },
+  chatkeep(b) { // a correction from the on-device model, kept by the learner: now it is a review card
+    const id = b.dataset.id, at = id.lastIndexOf(':'), f = chat()?.turns.find(x => x.id === id.slice(0, at))?.fixes?.[id.slice(at + 1)];
+    if (f) { L().fixes[id] = { ...f, added: Date.now(), srs: null }; save(); render(true); }
+  },
   chatend() { // a conversation that was really had becomes a session: time spoken, words produced
     const c = chat(), mine = c.turns.filter(x => x.who);
     hush(); clearInterval(chatPoll);
@@ -1017,7 +1071,7 @@ const ACT = {
       A.logSession({ kind: 'speak', minutes: rec.minutes, id: rec.id });
       flash = t.n('Conversation done: you said {n} thing.', 'Conversation done: you said {n} things.', mine.length);
     }
-    L().chat = null; lm = null; lmFor = '';
+    L().chat = null; dropLm();
     save(); render();
   },
   palsend() {
@@ -1029,7 +1083,7 @@ const ACT = {
     flash = t('Sent. The reply arrives when the AI agent next runs.'); palT0 = Date.now(); render();
   },
   level(el) { if (LEVELS.includes(el.value)) { L().level = el.value; save(); render(); } },
-  lang(el) { if (!C.isLangCode(el.value)) return; S.lang = el.value; L(); lib = { kind: 'all', level: '' }; save(); checkPair(); checkModel(); return addStarters(); },
+  lang(el) { if (!C.isLangCode(el.value)) return; S.lang = el.value; L(); lib = { kind: 'all', level: '' }; save(); dropLm(); checkPair(); checkModel(); return addStarters(); },
   voice(el) { ls.set('ll-voice-' + S.lang, el.value); },
   voicetest() { const s = stories()[0] || lessons()[0]; say(s ? C.storySentences(s)[0] : lang().name); },
   async syncnow() { syncMsg = t('Syncing…'); render(); await sync(false).catch(() => {}); addStarters(); },

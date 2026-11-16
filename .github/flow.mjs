@@ -30,9 +30,14 @@ await page.addInitScript(() => { self.SpeechRecognition = self.webkitSpeechRecog
   stop() { this.onend(); } }; });
 // likewise the browser's own language model: it opens, answers once with a correction, and never answers a message that says "attends".
 // It does not speak Spanish, so a Spanish conversation has to go through the cowork folder.
-await page.addInitScript(() => { self.LanguageModel = { availability: async o => o?.expectedOutputs?.[0]?.languages?.[0] === 'es' ? 'unavailable' : 'available', create: async o => { let n = 0; self.lmSystem = o.initialPrompts[0].content;
-  return { prompt: text => text.includes('attends') ? new Promise(() => {}) : Promise.resolve(JSON.stringify(n++ ? { reply: 'Très bien. Et que faites-vous demain ?', evil: '<b>',
-    corrections: [{ wrong: 'je suis allé bien', right: 'je vais bien', why: 'present tense', x: 1 }, { wrong: 'no right form' }] } : { reply: 'Bonjour ! Comment allez-vous ?', corrections: [] })) }; } }; });
+// There are two sessions, as in the app: the partner, and a proofreader (copied for each message) that only lists mistakes.
+await page.addInitScript(() => { self.LanguageModel = { availability: async o => o?.expectedOutputs?.[0]?.languages?.[0] === 'es' ? 'unavailable' : 'available', create: async o => {
+  const sys = o.initialPrompts[0].content, proof = sys.startsWith('You proofread'); let n = 0;
+  if (!proof) self.lmSystem = sys;
+  const s = { clone: async () => s, destroy() {}, prompt: text => proof
+    ? Promise.resolve(JSON.stringify({ corrections: text.includes('allé bien') ? [{ wrong: 'je suis allé bien', right: 'je vais bien', why: 'present tense', x: 1 }, { wrong: 'no right form' }, { wrong: 'Je suis', right: 'je suis', why: 'changes nothing' }] : [] }))
+    : text.includes('attends') ? new Promise(() => {}) : Promise.resolve(JSON.stringify(n++ ? { reply: 'Très bien. Et que faites-vous demain ?', evil: '<b>' } : { reply: 'Bonjour ! Comment allez-vous ?' })) };
+  return s; } }; });
 // and the folder picker, which only a person can answer: the browser's own private file system is handed over instead. From
 // there on cowork.js writes and reads real files through the same calls as with a folder on disk.
 await page.addInitScript(() => { self.showDirectoryPicker = () => navigator.storage.getDirectory(); });
@@ -222,7 +227,11 @@ await page.fill('#ans', 'je suis allé bien');
 await click('Send');
 await page.waitForFunction(() => document.querySelector('#main').innerText.includes('que faites-vous demain'));
 assert.match(await main(), /je suis allé bien\s*→\s*je vais bien\s*present tense/);
-await page.fill('#ans', 'attends un moment');                    // the on-device model stays silent: the answer arrives the cowork way
+assert.doesNotMatch(await main(), /changes nothing|no right form/, 'a correction that corrects nothing is not shown');
+assert.match(await main(), /It misses mistakes and is sometimes wrong/);   // the small model's corrections are offered, not drilled
+await click('Keep for review');
+assert.equal(await has('Keep for review'), 0, 'kept: it is a review card now');
+await page.fill('#ans', 'attends un moment');                   // the on-device model stays silent: the answer arrives the cowork way
 await page.keyboard.press('Enter');
 await page.waitForFunction(() => document.querySelector('#main').innerText.includes('Waiting for the reply'));
 const talk = await page.evaluate(() => {

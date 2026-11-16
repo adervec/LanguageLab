@@ -67,7 +67,13 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   reading engine is not used.
 - Tests: `core.test.mjs` checks the logic and every bundled content file; `.github/flow.mjs` drives
   the whole app in headless Chrome, with the browser's private file system standing in for the cowork folder picker. Speech recognition, real voices and the on-device translator
-  cannot run there (the flow test stubs `self.Translator`): check those by hand. To try the real
+  cannot run there (the flow test stubs `self.Translator`): check those by hand.
+  Two ways that worked in the maker's own Chrome (157): the built-in model (`LanguageModel`) was already there, so the
+  conversation can be driven for real from the console; and Chrome's recogniser takes an audio track
+  (`recognition.start(track)`), so a recording played into a `MediaStreamAudioDestinationNode` (with a silent
+  `ConstantSourceNode` kept connected, or it never hears the speaker stop) tests the speaking step with no microphone.
+  Speech synthesis needs a real click first. The model stalls when it is given many requests at once: the app times out
+  and gives its sessions back (`dropLm`). To try the real
   translator from Playwright, launch a visible Chrome with
   `ignoreDefaultArgs: ['--disable-component-update', '--disable-background-networking']`, or it can
   never fetch its language pack.

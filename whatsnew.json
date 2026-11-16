@@ -8,6 +8,8 @@
    "With a teacher: copy a sitting to send to a teacher or tutor (Progress), and type their corrections in so they come back in your review (Words).",
    "LanguageLab installs like an app (Settings), and after one visit it opens without a connection.",
    "Stories written by your AI agent now bring two sentences to write back from their meaning, like the ones that come with the app.",
+   "Speaking now listens until you have finished: a pause at a comma no longer cuts you off, and a number you say counts even when the browser writes it in digits.",
+   "Conversation on your device: corrections now come from a second pass that looks only for mistakes. They are offered with \"Keep for review\", because the browser's small model is sometimes wrong.",
    "Eleven languages now come with stories: French, Spanish, German, Italian, Portuguese, Dutch, Croatian and English, and smaller sets for Chinese, Japanese and Korean. Any other language works with your own texts and with stories from AI cowork. Pick yours in Settings.",
    "A sitting now asks you three questions after you have only heard the story, so you can see how much you follow by ear.",
    "Speak: dialogues you play a part in. You read your lines aloud, then say them from memory.",

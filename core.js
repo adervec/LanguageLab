@@ -100,14 +100,17 @@ function spans(text, lang) {
 }
 export const plainWords = (s, lang) => spans(String(s ?? ''), lang).filter(x => x.word).map(x => strip(x.s));
 // -> { score 0..1, hits per target word, parts: the target cut into [{ s, hit? }] for marking }
-export function dictationScore(target, typed, lang) {
+// spoken: the text came from a speech recogniser, which writes a number as digits ("five hours" comes back as "5 hours"), so a
+// number in it stands for one word of the target, whichever. ponytail: it cannot tell "5" from "3": a wrong number said aloud passes.
+export function dictationScore(target, typed, lang, spoken) {
   const parts = spans(String(target), lang), a = parts.filter(x => x.word).map(x => strip(x.s)), b = plainWords(typed, lang);
+  const same = (x, y) => x === y || (!!spoken && /^\p{N}+$/u.test(y) && !/^\p{N}+$/u.test(x));
   const L = Array.from({ length: a.length + 1 }, () => new Array(b.length + 1).fill(0));
   for (let i = a.length - 1; i >= 0; i--) for (let j = b.length - 1; j >= 0; j--)
-    L[i][j] = a[i] === b[j] ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
+    L[i][j] = same(a[i], b[j]) ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
   const hits = new Array(a.length).fill(false);
   for (let i = 0, j = 0; i < a.length && j < b.length;) {
-    if (a[i] === b[j]) { hits[i] = true; i++; j++; } else if (L[i + 1][j] >= L[i][j + 1]) i++; else j++;
+    if (same(a[i], b[j])) { hits[i] = true; i++; j++; } else if (L[i + 1][j] >= L[i][j + 1]) i++; else j++;
   }
   let n = 0;
   return { score: a.length ? L[0][0] / a.length : 0, hits, parts: parts.map(x => x.word ? { s: x.s, hit: hits[n++] } : { s: x.s }) };
@@ -230,6 +233,8 @@ export const cleanGloss = g => Object.fromEntries(Object.entries(obj(g)).slice(0
 // corrections: what the learner wrote, the right form, the rule in a few words
 export const cleanFixes = list => arr(list).slice(0, 8).map(c => ({ wrong: str(obj(c).wrong, 300).trim(), right: str(obj(c).right, 300).trim(), why: str(obj(c).why, 300).trim() }))
   .filter(c => c.wrong && c.right);
+// What an AI sent as corrections: one that changes nothing is not a correction (small models send those).
+const aiFixes = list => cleanFixes(list).filter(c => key(c.wrong) !== key(c.right));
 
 // A story, a dialogue ({ roles: [a, b], lines: [[0|1, text]] }) or a subtitled recording ({ cues }).
 export function cleanStory(s, lang) {
@@ -274,7 +279,7 @@ export const readingOk = (typed, readings) => arr(readings).some(r => strip(r) =
 export function cleanReview(r) {
   r = obj(r);
   const list = v => arr(v).filter(x => typeof x === 'string').slice(0, 6).map(x => x.slice(0, 400));
-  const grade = str(r.grade, 2).toUpperCase(), corrections = cleanFixes(r.corrections);
+  const grade = str(r.grade, 2).toUpperCase(), corrections = aiFixes(r.corrections);
   if (!str(r.sessionId, 80) || !/^[A-F][+-]?$/.test(grade)) return null;
   return { sessionId: r.sessionId, grade, summary: str(r.summary, 1200), strengths: list(r.strengths), fixes: list(r.fixes), next: str(r.next, 600),
     ...(corrections.length ? { corrections } : {}) };
@@ -283,7 +288,7 @@ export function cleanReview(r) {
 export function cleanPalReply(r) {
   r = obj(r);
   const text = str(r.text, 4000).trim();
-  return str(r.id, 80) && text ? { id: r.id, text, gloss: cleanGloss(r.gloss), corrections: cleanFixes(r.corrections) } : null;
+  return str(r.id, 80) && text ? { id: r.id, text, gloss: cleanGloss(r.gloss), corrections: aiFixes(r.corrections) } : null;
 }
 const cleanSrs = s => s && typeof s === 'object'
   ? { reps: num(s.reps), lapses: num(s.lapses), ease: num(s.ease, 2.5), interval: num(s.interval), due: num(s.due), t: num(s.t) } : null;
@@ -331,7 +336,7 @@ function cleanChat(c) {
 export function cleanChatReply(r) {
   r = obj(r);
   const reply = str(r.reply, 1500).trim();
-  return reply ? { turnId: str(r.turnId, 80), reply, corrections: cleanFixes(r.corrections).slice(0, 3) } : null;
+  return reply ? { turnId: str(r.turnId, 80), reply, corrections: aiFixes(r.corrections).slice(0, 3) } : null;
 }
 export const emptyLang = () => ({ known: {}, cards: {}, fixes: {}, level: 'A2', pal: { persona: '', msgs: [] }, chat: null });
 // A whole saved state (an import file, the Drive copy). Throws when it is not one.

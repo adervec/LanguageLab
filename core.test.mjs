@@ -107,6 +107,10 @@ assert.equal(d.score, 4 / 7);
 assert.deepEqual(d.hits, [true, false, true, false, true, false, true]);
 assert.deepEqual(c.dictationScore("L'eau est froide.", 'eau froide').parts.map(p => p.hit), [false, undefined, true, undefined, false, undefined, true, undefined]);
 assert.equal(c.dictationScore('Bonjour.', '').score, 0);
+// what a recogniser heard: it writes numbers as digits, so one stands for a word of the line (typed text gets no such favour)
+assert.deepEqual([c.dictationScore('The trip took five hours.', 'the trip took 5 hours', 'en', true).score, c.dictationScore('The trip took five hours.', 'the trip took 5 hours', 'en').score], [1, 4 / 5]);
+assert.deepEqual(c.dictationScore('Elle a deux chats.', 'elle a 2 chiens', 'fr', true).hits, [true, true, true, false]);
+assert.equal(c.dictationScore('我有三本书。', '我有3本书', 'zh', true).score, 1);
 assert.equal(c.pickDictation('Un. Deux mots ici non. Voici une phrase assez longue. Encore une autre phrase ici. Et une dernière phrase pour finir. Oui.', 2).length, 2);
 assert.deepEqual(c.pickDictation(['Oui.', 'Je voudrais un café.'], 4), ['Je voudrais un café.']);
 
@@ -157,6 +161,8 @@ assert.deepEqual(c.cleanPalReply({ id: 'm', text: 'Salut', gloss: { Salut: 'hi' 
 assert.equal(c.cleanChatReply({ reply: ' ' }), null);
 assert.deepEqual(c.cleanChatReply({ turnId: 't1', reply: 'Bonjour !', corrections: [{ wrong: 'a', right: 'b', why: 'c', x: 1 }, 5], evil: '<b>' }),
   { turnId: 't1', reply: 'Bonjour !', corrections: [{ wrong: 'a', right: 'b', why: 'c' }] });
+// a "correction" that changes nothing is dropped (the browser's small model sends those)
+assert.deepEqual(c.cleanChatReply({ reply: 'x', corrections: [{ wrong: "J'ai acheté", right: "j'ai acheté", why: 'no mistake' }, { wrong: 'des pomme', right: 'des pommes' }] }).corrections, [{ wrong: 'des pomme', right: 'des pommes', why: '' }]);
 assert.throws(() => c.cleanState({ v: 1 }));
 const state = c.cleanState(JSON.parse(JSON.stringify({ app: 'languagelab', v: 1, level: 'B1', gone: { z: 5 }, langs: { fr: { known: { Chat: 1 }, cards: { chien: { gloss: 'dog', srs: { due: 5 } } } }, '<b>': {} },
   sittings: [{ id: 's1', day: '2026-01-01', score: 250, ai: { grade: 'A', summary: 'ok' } }, { nope: 1 }],
