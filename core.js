@@ -271,9 +271,13 @@ export function cleanStory(s, lang) {
 export function lessonStories(first, code, ui = 'en') {
   first = obj(first);
   const all = arr(obj(first.langs)[code]), mine = ui === code ? [] : arr(obj(first.langs)[ui]), read = arr(obj(first.readings)[code]), en = arr(first.meanings);
-  return arr(first.lessons).map((title, i) => ({ id: `${code}-first-${i + 1}`, lang: code, title, source: 'first', phrases: true,
-    back: all.slice(i * 8, i * 8 + 8).map((p, j) => { const n = i * 8 + j;
-      return Array.isArray(p) ? [p[0], p[1], read[n]] : [p, typeof mine[n] === 'string' ? mine[n] : en[n], read[n]]; }) })).filter(s => s.back.length);
+  // A meaning that names the language being learned ("I am learning {language}.") is given in English with that language's name:
+  // the reader's own phrase there would name their own language.
+  let name = code;
+  try { name = new Intl.DisplayNames(['en'], { type: 'language' }).of(code) || code; } catch { /* an unknown code stands for itself */ }
+  return arr(first.lessons).map((title, i) => ({ id: `${code}-first-${String(i + 1).padStart(2, '0')}`, lang: code, title, source: 'first', phrases: true,
+    back: all.slice(i * 8, i * 8 + 8).map((p, j) => { const n = i * 8 + j, named = String(en[n]).includes('{language}');
+      return Array.isArray(p) ? [p[0], p[1], read[n]] : [p, !named && typeof mine[n] === 'string' ? mine[n] : String(en[n]).replace('{language}', name), read[n]]; }) })).filter(s => s.back.length);
 }
 // The letters a lesson needs that a Latin keyboard lacks; with a space and a delete key when the script is not Latin at all.
 export function lessonKeys(text, lang) {

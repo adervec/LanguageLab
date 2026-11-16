@@ -26,7 +26,7 @@ const stories = () => S.stories.filter(s => s.lang === S.lang && !s.phrases);
 const lessons = () => S.stories.filter(s => s.lang === S.lang && s.phrases).sort((a, b) => a.id.localeCompare(b.id));
 let FIRST = null; // content/first.json: the phrases of the first lessons, sounds to notice, script charts
 // A lesson's title and a chart's name are interface strings.
-// i18n-keys: Hello and goodbye | Getting to know you | Numbers and prices | Eating and drinking | Getting around | Hiragana | Katakana | Consonants | Vowels | Alphabet
+// i18n-keys: Hello and goodbye | Getting to know you | Numbers and prices | Eating and drinking | Getting around | People and family | Every day | Likes and wishes | Things and places | Time and weather | Hiragana | Katakana | Consonants | Vowels | Alphabet
 const ttl = s => s.phrases || s.mode === 'first' ? t(s.title) : s.title;
 const story = id => S.stories.find(s => s.id === id);
 const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
@@ -1407,7 +1407,10 @@ async function addStarters() {
   const code = S.lang;
   FIRST ||= await fetch('content/first.json').then(r => r.json()).catch(() => null);
   const starter = C.LANGS[code] ? await fetch(`content/${code}.json`).then(r => r.json()).catch(() => []) : [];
-  for (const raw of [...list(starter).map(x => ({ ...x, source: 'starter' })), ...C.lessonStories(FIRST, code, here())]) {
+  const first = C.lessonStories(FIRST, code, here());
+  // a saved lesson that the file no longer has (renumbered, withdrawn) goes; its phrases stay in review
+  if (first.length) S.stories = S.stories.filter(s => !(s.lang === code && s.phrases && !first.some(x => x.id === s.id)));
+  for (const raw of [...list(starter).map(x => ({ ...x, source: 'starter' })), ...first]) {
     const c = C.cleanStory(raw, code), old = c && story(c.id);
     if (!c || !c.id || S.gone[c.id]) continue;
     if (old) Object.assign(old, c, { gloss: { ...old.gloss, ...c.gloss }, readAt: old.readAt, added: old.added });

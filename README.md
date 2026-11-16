@@ -15,7 +15,7 @@ LanguageLab is built to be the opposite on each count.
 
 | | |
 |---|---|
-| **First steps** | From nothing, in 43 languages: short lessons of everyday phrases. You hear each phrase with its meaning (and a reading in Latin letters where the script is new), type it from the ear with the lesson's letters there to tap, write it back from its meaning, and say it. The phrases then join your review. For 14 scripts there is a chart of the letters to hear and practise; for eight languages a list of the sounds that surprise. |
+| **First steps** | From nothing, in 44 languages: ten short lessons, from everyday phrases to first sentences about family, the day, likes, places and the weather. You hear each phrase with its meaning (and a reading in Latin letters where the script is new), type it from the ear with the lesson's letters there to tap, write it back from its meaning, and say it. The phrases then join your review. For 14 scripts there is a chart of the letters to hear and practise; for nineteen languages a list of the sounds that surprise. |
 | **A sitting** (about twenty minutes) | Hear a story with the text hidden. Answer three questions from what you heard. Read it and tap every word you do not know. Take dictation at natural speed. Write a sentence back from its meaning. Say sentences aloud. Retell it in your own words. |
 | **Speak** | Dialogues you play a part in: your lines read aloud, then said from memory, scored by how much a speech recogniser understood. You can also record yourself and hear your take after the model's. |
 | **Conversation** | Talk with an AI partner, by voice or typing. It answers at your level, speaks its reply, and corrects your last message as you go. With the browser's own small model the corrections are offered for you to keep or not, because it is sometimes wrong; an AI agent of your own corrects properly. |
@@ -39,8 +39,8 @@ snapshot). LanguageLab is ahead in some rows and behind in others.
 | Your own material | No | No | No | Any text; any recording with its subtitles |
 | Feedback on free writing | Explanations of an answer | No | No | An AI review with a grade, corrected forms and the rule; your mistakes come back as review cards |
 | Measure of progress | XP, streak, leagues, a course score | Units completed | Points and a leaderboard | The level your own numbers support, for reading and for listening |
-| Languages with ready lessons | 40 or more | 25 | 41 | 43 with first lessons; 11 of those also with graded stories and dialogues (three of them small sets); any other language with your own texts or AI-written stories |
-| Course for complete beginners | Yes, from the alphabet | Yes | Yes | A short one: five lessons of eight everyday phrases in each of 43 languages, charts of the letters for 14 scripts, then graded stories from A1 in 11 languages. Much shorter than their courses |
+| Languages with ready lessons | 40 or more | 25 | 41 | 44 with first lessons (ten lessons, eighty phrases each); 11 of those also with graded stories and dialogues (three of them small sets); any other language with your own texts or AI-written stories |
+| Course for complete beginners | Yes, from the alphabet | Yes | Yes | A short one: ten lessons of eight phrases in each of 44 languages, charts of the letters for 14 scripts, then graded stories from A1 in 11 languages. Much shorter than their courses |
 | Speech scoring | Its own engine | TruAccent | Speech recognition | The browser's speech recognition (how much was understood, not how good the accent is; it listens through your pauses), and a recording of yourself to compare by ear |
 | Human teachers | No | Live coaching (premium) | No | None of its own. A sitting can be copied as text for a teacher, and a teacher's corrections typed in to come back in review |
 | Content checked by people | Yes | Yes | Yes | No: written by an AI and unchecked by native speakers (the app says so) |
@@ -60,8 +60,8 @@ French, Spanish, German, Italian, Portuguese, Dutch, Croatian and English come w
 smaller set (8 stories and 4 dialogues, A1 to B1); there a tapped word shows its reading first, and
 dictation is marked character by character.
 
-Those eleven and 32 more have first lessons for complete beginners (five lessons, forty everyday
-phrases): Russian, Ukrainian, Polish, Czech, Slovak, Slovenian, Serbian, Bulgarian, Macedonian,
+Those eleven and 33 more have first lessons for complete beginners (ten lessons, eighty phrases and
+first sentences): Russian, Ukrainian, Polish, Czech, Slovak, Slovenian, Serbian, Bulgarian, Macedonian,
 Belarusian, Romanian, Hungarian, Greek, Turkish, Swedish, Norwegian, Danish, Finnish, Catalan,
 Galician, Arabic, Persian, Hindi, Urdu, Bengali, Indonesian, Malay, Vietnamese, Thai, Filipino,
 Swahili, Esperanto and Afrikaans. Where the script is not Latin each phrase has a reading in Latin
@@ -120,6 +120,8 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   sitting graded and corrected, a pen-pal letter answered, a two-turn conversation, and five stories and two dialogues in
   Swedish (a language with no bundled stories), which then passed the same checker as the bundled texts. The replies waited
   for approval across a browser restart and were applied once.
+- **The first lessons** (3,520 phrases) were read a second time by their author, which changed six of them, and the
+  sixteen languages most likely to hide mistakes were read by a second AI model, which changed two more.
 - **Not checked**: a physical microphone, how the voices sound to a native ear, Google sign-in, and phones. The texts and phrases were written by an AI and no native speaker
   has read them.
 

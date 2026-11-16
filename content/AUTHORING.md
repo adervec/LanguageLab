@@ -60,10 +60,13 @@ problem; keep fixing until it prints `ok`.
 
 ## First steps (`first.json`)
 
-One file for every language: `meanings` (forty English meanings), `lessons` (five titles, eight phrases each), and per
-language code in `langs` the forty phrases in the same order. Keep each phrase short (80 characters at most), natural and
+One file for every language: `meanings` (the English meanings), `lessons` (the titles, eight phrases each), and per
+language code in `langs` the phrases in the same order. Lessons one to five are set phrases; six to ten are first
+sentences, written so that they do not depend on who is speaking (no "I am tired", no past tense in the first person).
+Where a language cannot avoid that, give the feminine with a note, as in Hindi. A meaning with `{language}` in it names
+the language being learned. Keep each phrase short (80 characters at most), natural and
 polite, with no digits. Where a language does not say it that way, give the pair `["phrase", "what it really means"]`.
-A language in a script that is not Latin also needs forty `readings` in Latin letters. `scripts` holds charts as
+A language in a script that is not Latin also needs a reading in Latin letters for every phrase (`readings`). `scripts` holds charts as
 `[name, "letter=reading letter=reading/other"]`; `sounds` holds `[letters, example word, what to listen for]`.
 `node core.test.mjs` checks all of it.
 
