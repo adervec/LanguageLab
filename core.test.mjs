@@ -138,6 +138,9 @@ const sc = c.scoreSitting({ lang: 'fr', dictation: [{ score: 1, replays: 1 }, { 
 assert.equal(sc.score, 75);
 assert.deepEqual(sc.breakdown, { listening: 0.75, speaking: 0.5, rebuilt: 0.8, comprehension: 0.5, understood: 0.9, replays: 1, wordsRead: 50, wordsWritten: 3 });
 assert.equal(c.scoreSitting({}).score, null);
+// a conversation's minutes: the learner's own time over their lines (a minute, then ten capped at three); the hour spent waiting for the agent is not counted
+assert.equal(c.activeMinutes([{ who: 0, at: 0 }, { who: 1, at: 60e3 }, { who: 0, at: 3660e3 }, { who: 1, at: 4260e3 }], 0), 4);
+assert.equal(c.activeMinutes([{ who: 0, at: 5 }], 0), 1);
 assert.equal(c.scoreSitting({ mode: 'talk', speaking: [{ score: 0.6 }] }).score, 60);
 
 // outside data: unknown fields dropped, bad shapes refused

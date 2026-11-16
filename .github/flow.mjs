@@ -452,8 +452,24 @@ await page.fill('#ans', 'Yo estoy bien gracias');
 await click('Send');
 cq = await request('chat', p => p.turns.length === 2);
 assert.deepEqual(cq.payload.turns.map(x => x.who), ['you', 'learner']);
+// the answer comes while another language is open: it still reaches its own conversation, and stories asked for in one
+// language never land in another's library
+await click('Settings');
+await page.selectOption('#main select[data-change="lang"]', 'fr');
 await inFolder('chat/reply.json', { requestHash: cq.requestHash, turnId: cq.payload.turnId, reply: 'Me alegro. ¿Qué haces hoy?', evil: '<b>',
   corrections: [{ wrong: 'Yo estoy bien gracias', right: 'Estoy bien, gracias', why: 'no pronoun needed' }] });
+await click('Check for replies');
+await until(() => page.evaluate(() => new Promise(done => { const r = indexedDB.open('languagelab'); r.onsuccess = () => { const q = r.result.transaction('kv').objectStore('kv').get('state');
+  q.onsuccess = () => done(q.result.langs.es.chat.turns.length === 3 && !q.result.langs.es.chat.wait); }; })), 'the reply reached the Spanish conversation');
+await page.evaluate(() => document.querySelector('cowork-panel')._cfg.channels.stories.apply({ languageCode: 'es', stories: [{ title: 'Un cuento corto', level: 'A1', text: 'Hola. Esto es un cuento corto.' }] }, null));
+await click('Library');
+assert.doesNotMatch(await main(), /Un cuento corto/, 'a Spanish story is not put in the French library');
+await click('Settings');
+await page.selectOption('#main select[data-change="lang"]', 'es');
+await click('Library');
+assert.match(await main(), /Un cuento corto/);
+await click('Today');
+await click('Talk with an AI partner');
 await page.waitForFunction(() => document.querySelector('#main').innerText.includes('¿Qué haces hoy?'));
 assert.match(await main(), /Yo estoy bien gracias\s*→\s*Estoy bien, gracias\s*no pronoun needed/);
 await click('Finish');

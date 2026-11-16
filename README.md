@@ -116,8 +116,11 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   why they are only offered); the French voice reading a story sentence; the speaking step scored by Chrome's real
   recogniser from a recording fed in place of the microphone (the exact sentence: 100%; two words changed: 88%, those two
   marked); the on-device translator for French.
-- **Not checked**: a physical microphone, how the voices sound to a native ear, Google sign-in, an AI agent other than a
-  scripted one answering the cowork folder, and phones. The texts and phrases were written by an AI and no native speaker
+- **With a real AI agent** (Claude, November 2026), answering from the instruction files in the folder and nothing else: a
+  sitting graded and corrected, a pen-pal letter answered, a two-turn conversation, and five stories and two dialogues in
+  Swedish (a language with no bundled stories), which then passed the same checker as the bundled texts. The replies waited
+  for approval across a browser restart and were applied once.
+- **Not checked**: a physical microphone, how the voices sound to a native ear, Google sign-in, and phones. The texts and phrases were written by an AI and no native speaker
   has read them.
 
 ## Licence

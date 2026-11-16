@@ -596,7 +596,7 @@ function cueLines() {
 function finishSitting() {
   const s = story(sit.storyId);
   const rec = { id: sit.id, lang: S.lang, mode: sit.mode, level: s.level, day: C.dayStr(), at: Date.now(), storyId: s.id, title: s.title, listenSec: Math.round(sit.listenSec),
-    minutes: Math.max(1, Math.round((Date.now() - sit.t0) / 60000)), wordsRead: sit.wordsRead || (s.phrases ? C.wordKeys(s.text, S.lang).length : 0), uniqueWords: sit.uniqueWords || 0, tapped: [...sit.tapped],
+    minutes: Math.min(90, Math.max(1, Math.round((Date.now() - sit.t0) / 60000))), wordsRead: sit.wordsRead || (s.phrases ? C.wordKeys(s.text, S.lang).length : 0), uniqueWords: sit.uniqueWords || 0, tapped: [...sit.tapped],
     questions: sit.askDone ? sit.asked.map(({ q, answer, ok }) => ({ q, answer, ok })) : [],
     dictation: sit.dict.map(d => ({ target: d.target, typed: d.typed, score: d.score, replays: Math.max(0, d.plays - 1) })),
     rebuild: sit.rebuild.filter(d => d.score != null).map(({ target, shown, typed, score }) => ({ target, shown, typed, score })),
@@ -770,15 +770,17 @@ function chatFixes(chatId, turnId, list) {
   if (view === 'chat') render(true);
 }
 // A reply, from either engine: the partner's line joins the conversation and is spoken; corrections sit under your line and become review cards.
+// (An agent's reply names its turn, so it reaches its conversation even when another language is open by then.)
+const chatOf = x => x?.turnId ? Object.keys(S.langs).find(k => S.langs[k].chat?.wait === x.turnId) : L().chat?.wait ? S.lang : '';
 function chatReply(x) {
-  const mine = L(), c = mine.chat;
-  if (!x || !c || !c.wait || (x.turnId && x.turnId !== c.wait)) return null;
+  const code = chatOf(x), mine = S.langs[code], c = mine?.chat;
+  if (!x || !c) return null;
   const me = c.turns.find(y => y.id === c.wait), id = A.randomId(), fixIds = x.corrections.map((f, i) => `${c.wait}:${i}`), was = c.wait;
   if (me) { if (x.corrections.length) me.fixes = x.corrections; x.corrections.forEach((f, i) => { mine.fixes[fixIds[i]] = { ...f, added: Date.now(), srs: null }; }); }
   c.turns.push({ id, who: 0, text: x.reply, at: Date.now() }); c.wait = '';
   save();
-  if (view === 'chat') { render(); say([[0, x.reply]]); }
-  return { code: S.lang, id, me: me ? me.id : '', fixIds: me ? fixIds : [], wait: was };
+  if (view === 'chat' && code === S.lang) { render(); say([[0, x.reply]]); }
+  return { code, id, me: me ? me.id : '', fixIds: me ? fixIds : [], wait: was };
 }
 function pollChat() { // the cowork agent answers in its own time: look in the folder every few seconds while the conversation is open
   clearInterval(chatPoll);
@@ -1061,12 +1063,14 @@ const ACT = {
     const id = b.dataset.id, at = id.lastIndexOf(':'), f = chat()?.turns.find(x => x.id === id.slice(0, at))?.fixes?.[id.slice(at + 1)];
     if (f) { L().fixes[id] = { ...f, added: Date.now(), srs: null }; save(); render(true); }
   },
-  chatend() { // a conversation that was really had becomes a session: time spoken, words produced
+  // A conversation that was really had becomes a session: words produced, and the time you took over your own lines (three minutes
+  // a line at most). Not the clock since it began: waiting for an agent to answer is not practice.
+  chatend() {
     const c = chat(), mine = c.turns.filter(x => x.who);
     hush(); clearInterval(chatPoll);
     if (mine.length) {
       const rec = { id: c.id, lang: S.lang, mode: 'chat', level: L().level, day: C.dayStr(), at: Date.now(), title: c.scene ? c.scene.title : t('Free conversation'),
-        minutes: Math.min(120, Math.max(1, Math.round((Date.now() - c.t0) / 60000))), writing: { text: mine.map(x => x.text).join('\n') } };
+        minutes: C.activeMinutes(c.turns, c.t0), writing: { text: mine.map(x => x.text).join('\n') } };
       S.sittings.push(C.cleanState({ app: 'languagelab', v: 1, sittings: [{ ...rec, ...C.scoreSitting(rec) }] }).sittings[0]);
       A.logSession({ kind: 'speak', minutes: rec.minutes, id: rec.id });
       flash = t.n('Conversation done: you said {n} thing.', 'Conversation done: you said {n} things.', mine.length);
@@ -1155,6 +1159,7 @@ The same, except: no \`text\` and no \`back\`. Give \`roles\` (the two speakers'
 
 \`\`\`json
 { "requestHash": "<copy the request's requestHash verbatim>",
+  "languageCode": "<copy payload.languageCode>",
   "stories": [
     { "title": "", "level": "A2", "text": "", "gloss": { "word": "meaning" }, "questions": [{ "q": "", "a": [""] }], "notice": "", "back": [["a sentence of the text", "its meaning"], ["another", "its meaning"]] },
     { "title": "", "level": "A2", "roles": ["", ""], "lines": [[0, ""], [1, ""]], "gloss": { "word": "meaning" }, "questions": [{ "q": "", "a": [""] }], "notice": "" }
@@ -1247,9 +1252,12 @@ const envelope = (kind, payload) => ({ protocol: 'languagelab-' + kind, protocol
 // (a sentence to write back must be one of the story's own, or it is dropped)
 const ownBack = s => { const own = s?.back && C.storySentences(s).map(x => x.normalize('NFC')), back = own ? s.back.filter(b => own.includes(b[0].normalize('NFC'))) : [];
   if (s) { delete s.back; if (back.length) s.back = back; } return s; };
-const replyStories = r => list(r?.stories).slice(0, 20).map((s, i) => ({ row: 's' + i, s: ownBack(C.cleanStory(s, S.lang)) }))
-  .filter(x => x.s && !stories().some(o => o.title === x.s.title));
-const replyGloss = r => Object.entries(C.cleanGloss(r?.glosses)).filter(([k]) => L().cards[k] && !L().cards[k].gloss);
+// The reply echoes the language it was asked for, so stories asked for in one language never land in another's library.
+const replyLang = r => C.isLangCode(r?.languageCode) ? r.languageCode : S.lang;
+const replyStories = r => list(r?.stories).slice(0, 20).map((s, i) => ({ row: 's' + i, s: ownBack(C.cleanStory({ ...s, lang: replyLang(r) }, replyLang(r))) }))
+  .filter(x => x.s && !S.stories.some(o => o.lang === x.s.lang && o.title === x.s.title));
+const cardsOf = code => (Object.hasOwn(S.langs, code) ? S.langs[code] : L()).cards;
+const replyGloss = r => Object.entries(C.cleanGloss(r?.glosses)).filter(([k]) => cardsOf(replyLang(r))[k] && !cardsOf(replyLang(r))[k].gloss);
 const replyReviews = r => list(r?.reviews).map(C.cleanReview).filter(x => x && S.sittings.some(s => s.id === x.sessionId));
 const findMsg = id => { for (const [code, v] of Object.entries(S.langs)) { const msg = v.pal.msgs.find(m => m.id === id); if (msg) return { code, msg }; } return null; };
 const replyPal = r => list(r?.replies).map(C.cleanPalReply).filter(x => x && findMsg(x.id) && !findMsg(x.id).msg.reply);
@@ -1302,18 +1310,18 @@ function mountCowork() {
         preview: r => [...replyStories(r).map(x => ({ id: x.row, label: [x.s.level, x.s.title].filter(Boolean).join(' · '), detail: snip(x.s.text) })),
           ...(replyGloss(r).length ? [{ id: 'gloss', label: t.n('Meaning for {n} word', 'Meanings for {n} words', replyGloss(r).length), detail: snip(replyGloss(r).map(([k, v]) => k + ': ' + v).join(' · ')) }] : [])],
         apply(r, accepted) {
-          const yes = id => !accepted || accepted.includes(id), undo = { stories: [], gloss: [] };
+          const yes = id => !accepted || accepted.includes(id), undo = { stories: [], gloss: [], code: replyLang(r) };
           for (const x of replyStories(r)) if (yes(x.row)) {
             const id = 'cw-' + A.randomId();
             S.stories.push({ ...x.s, id, source: 'cowork', added: Date.now(), readAt: 0 }); undo.stories.push(id);
           }
-          if (yes('gloss')) for (const [k, v] of replyGloss(r)) { L().cards[k].gloss = v; undo.gloss.push(k); }
+          if (yes('gloss')) for (const [k, v] of replyGloss(r)) { cardsOf(undo.code)[k].gloss = v; undo.gloss.push(k); }
           save(); render();
           return { summary: t.n('{n} story added', '{n} stories added', undo.stories.length), undo };
         },
         undo(d) {
           S.stories = S.stories.filter(s => !list(d?.stories).includes(s.id));
-          for (const k of list(d?.gloss)) if (L().cards[k]) L().cards[k].gloss = '';
+          for (const k of list(d?.gloss)) if (cardsOf(d.code)[k]) cardsOf(d.code)[k].gloss = '';
           save(); render();
         },
       },
@@ -1345,7 +1353,7 @@ function mountCowork() {
         // Not reviewed first, unlike the other channels: a conversation is shown as it comes, and a reply can add nothing
         // but the partner's line and corrections of your own last message. The reader can still switch review on.
         label: t('Conversation'), schedule: 'off', review: false,
-        preview: r => { const x = C.cleanChatReply(r), c = L().chat; return x && c?.wait && (!x.turnId || x.turnId === c.wait) ? [{ id: 'reply', label: snip(x.reply).slice(0, 60), detail: snip(x.reply) }] : []; },
+        preview: r => { const x = C.cleanChatReply(r); return x && chatOf(x) ? [{ id: 'reply', label: snip(x.reply).slice(0, 60), detail: snip(x.reply) }] : []; },
         apply(r, accepted) {
           const undo = accepted && !accepted.includes('reply') ? null : chatReply(C.cleanChatReply(r));
           return { summary: undo ? t('The conversation went on.') : '', undo };

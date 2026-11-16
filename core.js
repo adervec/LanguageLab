@@ -163,6 +163,13 @@ export function schedule(prev, pass, now = Date.now()) {
 // retired: the learner said "I know this"; it stays as a record so the choice survives a sync.
 export const isDue = (card, now = Date.now()) => !card.retired && (!card.srs || card.srs.due <= now);
 
+// How long a conversation really took the learner: for each of their lines, the time since the line before it (three minutes at
+// most). Waiting for the partner to answer is not practice and is not counted.
+export function activeMinutes(turns, t0) {
+  const sec = turns.reduce((n, x, i) => x.who ? n + Math.min(180, Math.max(5, (x.at - (turns[i - 1]?.at || t0)) / 1000)) : n, 0);
+  return Math.max(1, Math.round(sec / 60));
+}
+
 // ---- a session's own score ----
 // Only what an algorithm can grade honestly: the dictation (the score of a sitting), the questions
 // answered after the first listen, sentences written back from their meaning, and how much of your
