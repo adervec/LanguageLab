@@ -166,6 +166,19 @@ assert.deepEqual(c.cleanChatReply({ turnId: 't1', reply: 'Bonjour !', correction
   { turnId: 't1', reply: 'Bonjour !', corrections: [{ wrong: 'a', right: 'b', why: 'c' }] });
 // a "correction" that changes nothing is dropped (the browser's small model sends those)
 assert.deepEqual(c.cleanChatReply({ reply: 'x', corrections: [{ wrong: "J'ai acheté", right: "j'ai acheté", why: 'no mistake' }, { wrong: 'des pomme', right: 'des pommes' }] }).corrections, [{ wrong: 'des pomme', right: 'des pommes', why: '' }]);
+// a teacher with no server: the writing goes out inside a link, the corrections come back inside another; both are outside text
+{
+  const link = c.packLink({ id: 's1', lang: 'fr', level: 'A2', title: 'Le marché', text: 'Elle est très content. 日本', evil: '<b>' });
+  assert.match(link, /^[A-Za-z0-9_-]+$/);
+  assert.deepEqual(c.cleanTeach(JSON.parse(c.linkText(link))), { id: 's1', lang: 'fr', level: 'A2', title: 'Le marché', story: '', text: 'Elle est très content. 日本' });
+  assert.deepEqual([c.linkText('%%%'), c.linkText('x'.repeat(70000)), c.cleanTeach({ id: 's1' }), c.cleanTeacher({ id: 's1' })], ['', '', null, null]);
+  assert.deepEqual(c.cleanTeacher({ id: 's1', note: ' Bien ! ', corrections: [{ wrong: 'content', right: 'contente', why: 'feminine', x: 1 }, { wrong: 'x' }], evil: 1 }),
+    { id: 's1', note: 'Bien !', corrections: [{ wrong: 'content', right: 'contente', why: 'feminine' }] });
+  const mk = (updatedAt, teacher) => c.cleanState({ app: 'languagelab', v: 1, updatedAt, sittings: [{ id: 's1', at: 1, ...(teacher ? { teacher } : {}) }] });
+  const taught = mk(1, { note: 'Bien', corrections: [{ wrong: 'a', right: 'b' }], at: 5, evil: 1 });
+  assert.deepEqual(taught.sittings[0].teacher, { note: 'Bien', corrections: [{ wrong: 'a', right: 'b', why: '' }], at: 5 });
+  assert.equal(c.mergeState(mk(2), taught).sittings[0].teacher.note, 'Bien'); // a newer copy without it does not lose it
+}
 assert.throws(() => c.cleanState({ v: 1 }));
 const state = c.cleanState(JSON.parse(JSON.stringify({ app: 'languagelab', v: 1, level: 'B1', gone: { z: 5 }, langs: { fr: { known: { Chat: 1 }, cards: { chien: { gloss: 'dog', srs: { due: 5 } } } }, '<b>': {} },
   sittings: [{ id: 's1', day: '2026-01-01', score: 250, ai: { grade: 'A', summary: 'ok' } }, { nope: 1 }],
@@ -233,7 +246,7 @@ console.log('core.test: ok');
     let list = [];
     try { list = JSON.parse(readFileSync(new URL(`./content/${code}.json`, import.meta.url), 'utf8')); } catch { /* reported below */ }
     const dialogues = list.filter(x => x.lines).length;
-    const [stories, talks] = c.LANGS[code].small ? [8, 4] : [16, 8];
+    const [stories, talks] = c.LANGS[code].mini ? [4, 2] : c.LANGS[code].small ? [8, 4] : [16, 8]; // a full set, a small one, a first handful
     if (list.length - dialogues < stories || dialogues < talks) bad.push(`content/${code}.json needs ${stories} stories and ${talks} dialogues (has ${list.length - dialogues} and ${dialogues})`);
   }
   if (bad.length) { console.log(bad.slice(0, 40).join('\n')); assert.fail(`${bad.length} content problem(s)`); }

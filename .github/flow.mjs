@@ -377,7 +377,7 @@ await click('Stop');
 await click('Progress');
 assert.match(await main(), /Hello and goodbye\s+[^\n]*dictation 25%[^\n]*read aloud 100%/);
 await click('Settings');
-assert.match(await page.innerText('#main optgroup[label="With first lessons"]'), /Русский[\s\S]*Українська/);
+assert.match(await page.locator('#main select[data-change="lang"]').innerText(), /Русский[\s\S]*Українська/);
 await page.selectOption('#main select[data-change="lang"]', 'fr');
 await click('Library');                                          // French keeps its first lessons out of the library, one tap away
 assert.doesNotMatch(await main(), /Hello and goodbye/);
@@ -392,7 +392,38 @@ assert.match(await main(), /Le marché du samedi[\s\S]*Au guichet|Au guichet[\s\
 await page.locator('.card', { hasText: 'Le marché du samedi' }).getByRole('button', { name: 'Copy for a teacher', exact: true }).click();
 await page.waitForFunction(() => document.querySelector('#main').innerText.includes('Copied.'));   // the clipboard answers in its own time
 assert.match(await page.evaluate(() => navigator.clipboard.readText()), /^French · A2 · [^\n]+ · Le marché du samedi\s+Claire va au marché\. Elle achète du fromage\.\s+Dictation: [\s\S]*Could you correct this/); // (Windows pastes \r\n)
+// and with no server between them: the sitting goes to the teacher as a link; the teacher's page opens from it, and their reply
+// comes back as another link that puts the corrections beside the sitting and into review
+const linked = async () => { for (let i = 0; i < 50; i++) { const s = await page.evaluate(() => navigator.clipboard.readText()); if (/#(teach|fix)=/.test(s)) return s; await page.waitForTimeout(100); } assert.fail('no link was copied'); };
+await page.locator('.card', { hasText: 'Le marché du samedi' }).getByRole('button', { name: 'Link for a teacher', exact: true }).click();
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('Send this link to your teacher'));
+const ask = await linked();
+assert.match(ask, /#teach=[A-Za-z0-9_-]+$/);
+await page.evaluate(() => navigator.clipboard.writeText(''));
+await page.goto(ask);                                              // (the teacher's browser would start here)
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('For the teacher'));
+assert.match(await main(), /French · A2 · Le marché du samedi[\s\S]*What they wrote\s+Claire va au marché\. Elle achète du fromage\./);
+assert.equal(new URL(page.url()).hash, '', 'the text is taken out of the address once read');
+await fits('the teacher\'s page');
+await click('Copy the reply link');
+assert.match(await page.innerText('#teachout'), /Write a correction or a word/);
+await page.fill('#tw0', 'Elle achète du fromage'); await page.fill('#tr0', 'Elle achète des fromages'); await page.fill('#ty0', 'she bought two <b>');
+await page.fill('#tNote', 'Bon travail, continue !');
+await click('Copy the reply link');
+await page.waitForFunction(() => document.querySelector('#teachout').textContent.includes('Send this link back'));
+const answer = await linked();
+assert.match(answer, /#fix=[A-Za-z0-9_-]+$/);
+await page.goto(answer);                                           // back on the learner's device
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('From your teacher'));
+assert.match(await main(), /Le marché du samedi[\s\S]*Bon travail, continue ![\s\S]*Elle achète du fromage\s*→\s*Elle achète des fromages\s*she bought two <b>/);
+await click('Keep it with the sitting and review the corrections');
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('Kept. The corrections will come back'));
+assert.match(await main(), /From your teacher\s+Bon travail, continue ![\s\S]*Elle achète des fromages/);
+assert.equal(await page.locator('#main b').filter({ hasText: /^$/ }).count(), 0, 'a teacher\'s text is never markup');
+await page.goto(answer.replace(/#fix=.*/, '#fix=not-a-reply'));    // a link that is not one says so and changes nothing
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('This link could not be read'));
 await click('Words');
+assert.match(await main(), /Elle achète du fromage\s*→\s*Elle achète des fromages/);
 await page.locator('summary', { hasText: 'Add a correction from a teacher' }).click();
 await click('Add the correction');
 assert.match(await main(), /Fill in what you wrote/);

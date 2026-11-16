@@ -23,7 +23,7 @@ LanguageLab is built to be the opposite on each count.
 | **Review** | The words you tapped come back as a blank in the sentence you met them in, and you type them. Your corrected mistakes come back until you type them right. Spaced so they return just before you forget. |
 | **More input** | Just listen (stories one after another) and free reading, with a tap for the meaning of any word. |
 | **Progress** | Which level your numbers support for reading and for listening, a table level by level, and your totals of reading and listening. |
-| **With a teacher** | Copy a sitting as plain text to send to a teacher or a tutor, and type their corrections in: they come back in your review like the AI's. |
+| **With a teacher** | Send a sitting to a teacher or a tutor as a link. They open it in any browser, write their corrections and send a link back, which puts the corrections beside your sitting and into your review. No account and no server: the text travels inside the links. You can also copy a sitting as plain text and type corrections in by hand. |
 
 ## How it compares
 
@@ -42,7 +42,7 @@ snapshot). LanguageLab is ahead in some rows and behind in others.
 | Languages with ready lessons | 40 or more | 25 | 41 | 44 with first lessons (ten lessons, eighty phrases each); 12 of those also with graded stories and dialogues (four of them small sets); any other language with your own texts or AI-written stories |
 | Course for complete beginners | Yes, from the alphabet | Yes | Yes | A short one: ten lessons of eight phrases in each of 44 languages, charts of the letters for 14 scripts, then graded stories from A1 in 12 languages. Much shorter than their courses |
 | Speech scoring | Its own engine | TruAccent | Speech recognition | The browser's speech recognition (how much was understood, not how good the accent is; it listens through your pauses), and a recording of yourself to compare by ear |
-| Human teachers | No | Live coaching (premium) | No | None of its own. A sitting can be copied as text for a teacher, and a teacher's corrections typed in to come back in review |
+| Human teachers | No | Live coaching (premium) | No | None of its own, but it works with any teacher you have: a link carries your writing to them and another brings their corrections back into your review. They need nothing but a browser |
 | Content checked by people | Yes | Yes | Yes | No: written by an AI and unchecked by native speakers (the app says so) |
 | Apps | iOS, Android, web | iOS, Android, web | iOS, Android, web, AR and VR | A web app that installs to the home screen and opens without a connection after one visit; no app-store apps |
 

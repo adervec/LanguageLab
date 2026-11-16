@@ -60,7 +60,12 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
 - **Your own material**: pasted or opened text, and a recording with its subtitle file (`.srt`/`.vtt`,
   parsed by `parseSubs`): the audio is kept in IndexedDB under `audio:<story id>`, on this device only.
 - Removing a story records its id in `S.gone` so neither a sync nor the starter set brings it back.
-- **With a teacher**: Progress copies a sitting as plain text; Words takes a correction typed in by hand (ids `own:…`).
+- **With a teacher**, no server: Progress makes a link (`#teach=`, the sitting's writing packed after the #) that opens the
+  teacher's page (`vTeach`); their reply is another link (`#fix=`) that `vTaught` keeps beside the sitting (`teacher`) and
+  turns into review cards (ids `t:…`). Both are outside text (`cleanTeach`, `cleanTeacher`). Progress also copies a sitting as
+  plain text, and Words takes a correction typed in by hand (ids `own:…`).
+- **Letters to tap**: a lesson shows its own letters; any text in an alphabet that is not Latin shows the letters it uses
+  (`tapKeys`), for dictation and review without a keyboard for that script.
 - **Record yourself** (speaking steps): MediaRecorder, kept in the page only, played after the model.
 - **Offline**: `sw.js` claims the first page and `app.js` fetches again what that page had loaded, so one visit is enough.
 - Speech uses the browser's own synthesis and recognition, as SpeechImprover does. Tachyread's

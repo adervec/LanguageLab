@@ -302,6 +302,24 @@ export function cleanPalReply(r) {
   const text = str(r.text, 4000).trim();
   return str(r.id, 80) && text ? { id: r.id, text, gloss: cleanGloss(r.gloss), corrections: aiFixes(r.corrections) } : null;
 }
+// ---- a human teacher, with no server ----
+// The learner's writing goes to the teacher inside a link (after the #: JSON, UTF-8, base64url), and the teacher's
+// corrections come back inside another. Both are outside text: decoded here, parsed by the caller, rebuilt from known fields.
+export const packLink = o => btoa(Array.from(new TextEncoder().encode(JSON.stringify(o)), b => String.fromCharCode(b)).join(''))
+  .replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+export function linkText(s) {
+  try { return String(s).length > 60000 ? '' : new TextDecoder().decode(Uint8Array.from(atob(String(s).replace(/-/g, '+').replace(/_/g, '/')), ch => ch.charCodeAt(0))); } catch { return ''; }
+}
+export function cleanTeach(o) { // what the learner sends: one sitting's writing, and the text it was about
+  o = obj(o);
+  const text = str(o.text, 4000).trim();
+  return str(o.id, 80) && text ? { id: o.id, lang: isLangCode(o.lang) ? o.lang : '', level: LEVELS.includes(o.level) ? o.level : '', title: str(o.title, 120).trim(), story: str(o.story, 4000).trim(), text } : null;
+}
+export function cleanTeacher(o) { // what the teacher sends back: corrections and a word for the learner
+  o = obj(o);
+  const corrections = cleanFixes(o.corrections), note = str(o.note, 1200).trim();
+  return str(o.id, 80) && (corrections.length || note) ? { id: o.id, note, corrections } : null;
+}
 const cleanSrs = s => s && typeof s === 'object'
   ? { reps: num(s.reps), lapses: num(s.lapses), ease: num(s.ease, 2.5), interval: num(s.interval), due: num(s.due), t: num(s.t) } : null;
 const MODES = ['sitting', 'read', 'listen', 'talk', 'chat', 'first'];
@@ -309,6 +327,7 @@ function cleanSitting(s) {
   s = obj(s);
   if (!str(s.id, 80)) return null;
   const b = obj(s.breakdown), ai = s.ai ? cleanReview({ ...obj(s.ai), sessionId: s.id }) : null;
+  const teacher = s.teacher ? cleanTeacher({ ...obj(s.teacher), id: s.id }) : null;
   const unit = v => v == null ? null : Math.min(1, Math.max(0, num(v)));
   return {
     id: s.id, lang: str(s.lang, 8), mode: MODES.includes(s.mode) ? s.mode : 'sitting', level: LEVELS.includes(s.level) ? s.level : '',
@@ -327,6 +346,7 @@ function cleanSitting(s) {
     breakdown: { listening: unit(b.listening), comprehension: unit(b.comprehension), understood: unit(b.understood), speaking: unit(b.speaking), rebuilt: unit(b.rebuilt),
       replays: num(b.replays), wordsRead: num(b.wordsRead), wordsWritten: num(b.wordsWritten) },
     ...(ai ? { ai } : {}),
+    ...(teacher ? { teacher: { note: teacher.note, corrections: teacher.corrections, at: num(obj(s.teacher).at) } } : {}),
   };
 }
 function cleanMsg(m) {
@@ -391,7 +411,8 @@ export function mergeState(a, b) {
   const stamp = c => Math.max(c.srs?.t || 0, c.retired || 0, c.edited || 0);
   const newest = (H, L) => { const out = { ...L, ...H }; for (const k in L) if (H[k] && stamp(L[k]) > stamp(H[k])) out[k] = L[k]; return out; };
   const langs = {}, gone = { ...lo.gone, ...hi.gone };
-  const sittings = join(hi.sittings, lo.sittings, (v, o) => (v.ai || !o.ai ? v : { ...v, ai: o.ai })).sort((x, y) => x.at - y.at);
+  const sittings = join(hi.sittings, lo.sittings, (v, o) => ({ ...v, ...(!v.ai && o.ai ? { ai: o.ai } : {}), ...(!v.teacher && o.teacher ? { teacher: o.teacher } : {}) }))
+    .sort((x, y) => x.at - y.at);
   // the longer copy of a conversation in progress; none once it has been finished (it is then a session) on either device
   const talk = (x, y) => { const c = !y || (x && x.turns.length >= y.turns.length) ? x : y; return c && !sittings.some(s => s.id === c.id) ? c : null; };
   for (const code of new Set([...Object.keys(hi.langs), ...Object.keys(lo.langs)])) {

@@ -193,6 +193,9 @@ function pick(talk) {
 }
 const meta = s => [s.level, isTalk(s) ? t.n('{n} line', '{n} lines', s.lines.length) : t.n('{n} word', '{n} words', C.wordKeys(s.text, S.lang).length),
   t('{pct} known', { pct: pct(C.coverage(s.text, L().known, S.lang)) })].filter(Boolean).join(' · ');
+// For a text in an alphabet that is not Latin (Cyrillic, Greek, Arabic, Devanagari, Thai…) the letters it uses, to tap: the
+// device may have no keyboard for it. Not for Chinese, Japanese or Korean, whose texts use far too many signs for that.
+const tapKeys = text => { const k = C.lessonKeys(text, S.lang); return k.includes('⌫') && k.length <= 70 ? k : undefined; };
 // Letters to tap: the accented ones a keyboard may lack, or in a first lesson every letter of a script the keyboard does not have.
 const keysBar = (ks = sit?.keys ?? lang().keys) => ks.length ? H`<div class="row keys" aria-label="${t('Accented letters')}">${[...ks].map(ch =>
   H`<button data-act="ins" data-ch="${ch}" aria-label="${ch === ' ' ? t('Space') : ch === '⌫' ? t('Delete the last letter') : ch}">${ch === ' ' ? '␣' : ch}</button>`)}</div>` : '';
@@ -214,8 +217,8 @@ function vToday() {
   const s = pick(false), d = pick(true), n = dueWords().length + dueFixes().length, since = Date.now() - 7 * C.DAY, pal = L().pal.msgs;
   const week = S.sittings.filter(x => x.lang === S.lang && x.at >= since), sum = f => week.reduce((a, x) => a + f(x), 0);
   const up = S.welcomed && C.abilities(S, S.lang).find(r => LEVELS.indexOf(r.level) === LEVELS.indexOf(L().level) + 1 && r.reading >= 0.95);
-  // from nothing: the first lessons lead the day for a beginner, and for a language that has nothing else yet
-  const ls = lessons(), todo = ls.find(x => !x.readAt), zero = ls.length && (L().level === 'A1' || !C.LANGS[S.lang]);
+  // from nothing: the first lessons lead the day for a beginner, and in any language until a first sitting has been done in it
+  const ls = lessons(), todo = ls.find(x => !x.readAt), zero = ls.length && (L().level === 'A1' || !S.sittings.some(x => x.lang === S.lang && x.mode === 'sitting'));
   return H`${S.welcomed ? '' : H`<div class="card"><h2>${t('Welcome')}</h2>
     <p>${t('LanguageLab works the way languages are really picked up: a lot of listening and reading you can follow, real speaking and writing, and an honest measure of what you can do. No points, no streak.')}</p>
     <p><label>${t('I want to learn')} ${langSelect()}</label></p>
@@ -370,7 +373,9 @@ function vProgress() {
   ${mine.some(s => ['sitting', 'talk', 'chat', 'first'].includes(s.mode)) ? '' : H`<p class="sub">${t('None yet.')}</p>`}
   ${mine.filter(s => ['sitting', 'talk', 'chat', 'first'].includes(s.mode)).slice(-30).reverse().map(s => H`<div class="card">${s.mode === 'first' ? H`<b>${ttl(s)}</b>` : H`<b lang="${S.lang}">${s.title}</b>`}
     <div class="sub">${bits(s)}</div>
-    ${s.writing.text ? H`<p><button class="mini" data-act="copysit" data-id="${s.id}">${t('Copy for a teacher')}</button></p>` : ''}
+    ${s.writing.text ? H`<p class="row"><button class="mini" data-act="linksit" data-id="${s.id}">${t('Link for a teacher')}</button><button class="mini" data-act="copysit" data-id="${s.id}">${t('Copy for a teacher')}</button></p>` : ''}
+    ${s.teacher ? H`<div data-clamp="6"><p><b>${t('From your teacher')}</b> ${s.teacher.note}</p>
+      ${s.teacher.corrections.length ? H`<ul>${s.teacher.corrections.map(f => H`<li lang="${S.lang}"><span class="miss">${f.wrong}</span> → <span class="hit">${f.right}</span> <span class="sub">${f.why}</span></li>`)}</ul>` : ''}</div>` : ''}
     ${s.ai ? H`<div data-clamp="6"><p><span class="grade">${s.ai.grade}</span>${s.ai.summary}</p>
       ${s.ai.strengths.length ? H`<b>${t('Strengths')}</b><ul>${s.ai.strengths.map(x => H`<li>${x}</li>`)}</ul>` : ''}
       ${s.ai.fixes.length ? H`<b>${t('To fix')}</b><ul>${s.ai.fixes.map(x => H`<li>${x}</li>`)}</ul>` : ''}
@@ -386,7 +391,7 @@ function vSettings() {
     <p class="sub">${t('The languages at the top of the list come with starter stories. Any other language works with your own texts and with stories from AI cowork. Each language keeps its own words and progress.')}</p>
     <div class="row">${langSelect()}${levelSelect()}</div>
     <p class="sub">${t('The level is used to choose the next story and when asking for new ones. Pick the level where you understand most of a text.')}</p>
-    <p class="sub">${t('The second group has first lessons for complete beginners: everyday phrases to hear, write and say, and a chart of the letters where the script is new.')}</p>
+    <p class="sub">${t('Every language at the top of the list also has first lessons for complete beginners: phrases to hear, write and say, and a chart of the letters where the script is new.')}</p>
     <p class="sub">${t('The starter stories and dialogues were written by an AI and have not been checked by native speakers.')} ${t('The same goes for the first lessons.')}</p>
   </div>
   <div class="card"><h2>${t('Install')}</h2>
@@ -436,7 +441,7 @@ function startSitting(id, mode = 'sitting') {
     asked: full ? (s.questions || []).map(q => ({ q: q.q, a: q.a, answer: '', ok: false })) : [],
     dict: s.phrases ? half(0).map(d => ({ ...d, typed: '', score: null, plays: 0 }))
       : full ? C.pickDictation(C.storySentences(s), 4, S.lang).map(target => ({ target: target.normalize('NFC'), typed: '', score: null, plays: 0 })) : [] };
-  if (s.phrases) sit.keys = C.lessonKeys(s.text, S.lang);
+  sit.keys = s.phrases ? C.lessonKeys(s.text, S.lang) : tapKeys(s.text); // (undefined leaves the accented letters of the language)
   // write it back: two sentences given by their meaning (translated on this device), to be written in the language.
   // ponytail: marked against the text's own sentence, so a different correct wording loses words. The AI review is the judge of free writing.
   // Sentences the dictation did not use, where there are some, so it is not a matter of remembering what was just typed.
@@ -677,7 +682,7 @@ function vReview() {
       <p class="big ${rev.verdict === 'wrong' ? 'miss' : 'hit'}">${rev.verdict === 'wrong' ? t('Not yet') : t('Right')}</p>
       <button class="primary" data-act="rnext" data-focus>${t('Next')}</button>`
       : H`<p>${field('ans', 'rcheck', ph ? t('The phrase in {language}', { language: langName() }) : t('The corrected sentence'))}</p>
-      ${keysBar(from ? C.lessonKeys(from.text, S.lang) : undefined)}<p><button class="primary" data-act="rcheck">${t('Check')}</button></p>`}`; }
+      ${keysBar(from ? C.lessonKeys(from.text, S.lang) : tapKeys(f.right))}<p><button class="primary" data-act="rcheck">${t('Check')}</button></p>`}`; }
   const k = it.k, c = L().cards[k];
   return H`${count}<h1>${t('Review')}</h1>
     <p class="big" lang="${S.lang}">${rev.verdict ? c.ctx : C.cloze(c.ctx, k, S.lang)}</p>
@@ -685,7 +690,7 @@ function vReview() {
     ${rev.verdict ? H`<p class="big ${rev.verdict === 'wrong' ? 'miss' : 'hit'}">${rev.verdict === 'exact' ? t('Right') : rev.verdict === 'accent' ? t('Right, but mind the accents') : t('Not yet')}: <b lang="${S.lang}">${k}</b></p>
       <button class="primary" data-act="rnext" data-focus>${t('Next')}</button>`
       : H`<p>${field('ans', 'rcheck', t('The missing word'))}</p>
-      ${keysBar()}<p><button class="primary" data-act="rcheck">${t('Check')}</button></p>`}`;
+      ${keysBar(tapKeys(c.ctx))}<p><button class="primary" data-act="rcheck">${t('Check')}</button></p>`}`;
 }
 
 // ---------- pen pal: you write, an AI agent answers through the cowork folder and corrects ----------
@@ -857,9 +862,50 @@ function vFirst() {
       <div><b lang="${S.lang}">${letters}</b> · <span lang="${S.lang}">${word}</span><span class="sub">${hint}</span></div></div>`)}</div>` : ''}`;
 }
 
+// ---------- a human teacher, with no server: the learner's writing travels to them inside a link, their corrections come back inside another ----------
+let teach = null, taught = null; // the request a teacher opened; the reply a learner opened
+const nameOf = code => { try { return code ? new Intl.DisplayNames([A.lang()], { type: 'language' }).of(code) : ''; } catch { return code; } };
+function vTeach() { // the teacher's page: it needs nothing of theirs and keeps nothing
+  if (!teach) return H`<h1>${t('For the teacher')}</h1><p>${t('This link could not be read. Ask for it to be sent again.')}</p>`;
+  return H`<h1>${t('For the teacher')}</h1>
+  <p>${t('A learner asks you to correct what they wrote. Write your corrections below and send the reply link back to them. This page stores nothing and sends nothing: your reply travels inside the link.')}</p>
+  <p class="sub">${[nameOf(teach.lang), teach.level, teach.title].filter(Boolean).join(' · ')}</p>
+  ${teach.story ? H`<details class="notice"><summary>${t('The text they had read')}</summary><div class="letter" lang="${teach.lang}" data-clamp>${teach.story}</div></details>` : ''}
+  <h2>${t('What they wrote')}</h2>
+  <div class="card letter" lang="${teach.lang}">${teach.text}</div>
+  <h2>${t('Your corrections')}</h2>
+  ${[0, 1, 2, 3, 4, 5].map(n => H`<div class="row keys"><input type="text" class="grow" id="tw${n}" lang="${teach.lang}" dir="auto" maxlength="300" placeholder="${t('What they wrote')}" aria-label="${t('What they wrote')}">
+    <input type="text" class="grow" id="tr${n}" lang="${teach.lang}" dir="auto" maxlength="300" placeholder="${t('The right form')}" aria-label="${t('The right form')}">
+    <input type="text" class="grow" id="ty${n}" maxlength="300" placeholder="${t('Why (optional)')}" aria-label="${t('Why (optional)')}"></div>`)}
+  <h2>${t('A word for the learner')}</h2>
+  <p><textarea id="tNote" maxlength="1200" aria-label="${t('A word for the learner')}"></textarea></p>
+  <div class="bar"><button class="primary" data-act="teachcopy">${t('Copy the reply link')}</button><p class="sub" id="teachout" role="status"></p></div>`;
+}
+function vTaught() { // the learner's page: what the teacher sent back, to keep beside the sitting it is about
+  if (!taught) return H`<h1>${t('From your teacher')}</h1><p>${t('This link could not be read. Ask for it to be sent again.')}</p>`;
+  const s = S.sittings.find(x => x.id === taught.id);
+  return H`<h1>${t('From your teacher')}</h1>
+  ${s ? H`<p class="sub">${A.fmt.date(s.day + 'T00:00:00')} · <span lang="${s.lang}">${s.title}</span></p>`
+    : H`<p class="flash">${t('This reply is for a sitting that is not on this device. Open the link on the device where you did the sitting.')}</p>`}
+  ${taught.note ? H`<div class="card letter">${taught.note}</div>` : ''}
+  ${taught.corrections.length ? H`<ul>${taught.corrections.map(f => H`<li><span class="miss">${f.wrong}</span> → <span class="hit">${f.right}</span> <span class="sub">${f.why}</span></li>`)}</ul>` : ''}
+  ${s ? H`<button class="primary" data-act="taughtkeep">${t('Keep it with the sitting and review the corrections')}</button>` : ''}`;
+}
+// A link can open a screen. A teacher's link (#teach=) and a teacher's reply (#fix=) carry their text after the #: it never
+// reaches a server, and it is outside text, so it is parsed with a size limit and rebuilt from known fields.
+function route() {
+  const h = location.hash.slice(1), data = s => { try { return A.parseJSON(C.linkText(s), 60000); } catch { return null; } };
+  if (h.startsWith('teach=')) { teach = C.cleanTeach(data(h.slice(6))); view = 'teach'; }
+  else if (h.startsWith('fix=')) { taught = C.cleanTeacher(data(h.slice(4))); view = 'taught'; }
+  else if (['library', 'words', 'progress', 'settings', 'pal', 'chat', 'first'].includes(h)) view = h;
+  else return false;
+  if (h.includes('=')) history.replaceState(null, '', location.pathname + location.search); // taken in: a reload does not replay it
+  return true;
+}
+
 function render(keep) { // keep: carry a half-typed answer across the redraw
   const was = keep && $('#ans')?.value;
-  const markup = { today: vToday, library: vLibrary, words: vWords, progress: vProgress, settings: vSettings, sitting: vSitting, review: vReview, pal: vPal, chat: vChat, radio: vRadio, first: vFirst }[view]();
+  const markup = { today: vToday, library: vLibrary, words: vWords, progress: vProgress, settings: vSettings, sitting: vSitting, review: vReview, pal: vPal, chat: vChat, radio: vRadio, first: vFirst, teach: vTeach, taught: vTaught }[view]();
   const main = $('#main');
   const body = flash ? H`<p class="flash" role="status">${flash}</p>${markup}` : markup; // H escapes every ${}
   main.innerHTML = body;
@@ -979,6 +1025,27 @@ const ACT = {
     flash = t('Copied. Paste it into a message to your teacher.'); render();
   },
   async install() { const e = installEvt; installEvt = null; await e?.prompt(); render(); },
+  async linksit(b) { // a sitting as a link a teacher can answer in their browser: the writing travels inside the link itself
+    const s = S.sittings.find(x => x.id === b.dataset.id);
+    await navigator.clipboard.writeText(location.origin + location.pathname + '#teach=' + C.packLink({ id: s.id, lang: s.lang, level: s.level, title: s.title,
+      text: s.writing.text.slice(0, 3000), story: (story(s.storyId)?.text || '').slice(0, 1500) }));
+    flash = t('Copied. Send this link to your teacher: they open it, write their corrections, and send you a link back.'); render();
+  },
+  async teachcopy() { // the teacher's reply, as a link for the learner
+    const reply = C.cleanTeacher({ id: teach.id, note: $('#tNote').value, corrections: [0, 1, 2, 3, 4, 5].map(n => ({ wrong: $('#tw' + n).value, right: $('#tr' + n).value, why: $('#ty' + n).value })) });
+    if (!reply) { $('#teachout').textContent = t('Write a correction or a word for the learner first.'); return; }
+    await navigator.clipboard.writeText(location.origin + location.pathname + '#fix=' + C.packLink(reply));
+    $('#teachout').textContent = t('Copied. Send this link back to the learner.');
+  },
+  taughtkeep() { // beside the sitting, like the AI review; the corrections become review cards (opening the link twice changes nothing more)
+    const s = S.sittings.find(x => x.id === taught.id);
+    if (!s) return;
+    if (C.isLangCode(s.lang)) S.lang = s.lang; // shown where it belongs
+    s.teacher = { note: taught.note, corrections: taught.corrections, at: Date.now() };
+    taught.corrections.forEach((c, n) => { L().fixes[`t:${s.id}:${n}`] ??= { ...c, added: Date.now(), srs: null }; });
+    taught = null; save(); flash = t('Kept. The corrections will come back in your review.'); view = 'progress';
+    return addStarters();
+  },
   mic(b) { const box = $('#ans'); hear(b, true, text => { box.value = (box.value + ' ' + text).trim(); if (sit) sit.spoken = true; }); },
   // ponytail: the recogniser guesses towards real words, so this flatters a little; it is "was I
   // understood", not a pronunciation score. SpeechImprover's per-take analysis is the upgrade.
@@ -1420,7 +1487,8 @@ async function addStarters() {
 }
 await A.ready;
 try { const saved = await kv('readonly', s => s.get('state')); if (saved) { S = C.cleanState(saved); S.welcomed ||= S.sittings.length > 0; } } catch { /* first run */ }
-if (['library', 'words', 'progress', 'settings', 'pal', 'chat', 'first'].includes(location.hash.slice(1))) view = location.hash.slice(1); // a link can open a screen
+route(); // a link can open a screen
+addEventListener('hashchange', () => { if (route()) { hush(); sit = rev = quiz = null; render(); scrollTo(0, 0); } }); // (a link opened while the app is already open)
 checkPair(); checkModel();
 await addStarters();
 mountCowork();
