@@ -24,21 +24,23 @@ function contentProblems(file) {
     if (!WORDS[s.level]) bad('level must be one of ' + Object.keys(WORDS).join(', '));
     if (/\d/.test(s.text)) bad('no digits: write numbers as words');
     const words = c.plainWords(s.text, lang), keys = new Set(c.wordKeys(s.text, lang));
-    const inText = k => { const w = c.plainWords(k, lang); return w.length > 0 && w.every(x => words.some(h => h === x || (x.length >= 4 && h.startsWith(x)))); };
+    const inText = k => c.answerOk(s.text, [k], lang); // the same test a learner's answer gets
+    const L = c.langInfo(lang), scale = { ko: 0.6, ja: 1.5 }[lang] || 1; // a Korean word carries what takes two words elsewhere; Japanese needs more characters than Chinese
     if (s.lines) {
       if (raw.text) bad('a dialogue has lines, not text');
       if (s.lines.length < 8 || s.lines.length > 18) bad(`a dialogue has 8 to 18 lines (has ${s.lines.length})`);
       for (const r of [0, 1]) if (s.lines.filter(l => l[0] === r).length < 3) bad(`speaker ${r} needs at least 3 lines`);
-      for (const l of s.lines) if (c.plainWords(l[1], lang).length > 28) bad('line too long (28 words at most): ' + l[1].slice(0, 40));
-      if (s.lines.filter(l => l[0] === 1 && c.plainWords(l[1], lang).length >= 4).length < 3) bad('speaker 1 (the learner) needs at least 3 lines of 4 words or more');
+      for (const l of s.lines) if (c.plainWords(l[1], lang).length > (L.seg ? 60 : 28)) bad('line too long (28 words at most; 60 characters where there are no spaces): ' + l[1].slice(0, 40));
+      if (s.lines.filter(l => l[0] === 1 && c.plainWords(l[1], lang).length >= Math.ceil(4 * scale)).length < 3) bad('speaker 1 (the learner) needs at least 3 lines of 4 words or more (3 in Korean)');
     } else {
-      const [lo, hi] = WORDS[s.level] || [0, 1e9];
+      const [lo, hi] = (WORDS[s.level] || [0, 1e9]).map(x => Math.round(x * scale));
       if (words.length < lo || words.length > hi) bad(`${s.level} texts have ${lo} to ${hi} words (has ${words.length})`);
     }
-    if (c.pickDictation(c.storySentences(s), 4, lang).length < 3) bad('needs at least 3 sentences of 4 to 22 words (for dictation)');
+    if (c.pickDictation(c.storySentences(s), 4, lang).length < 3) bad('needs at least 3 sentences of 4 to 22 words (for dictation; 3 words will do in Korean, 4 to 40 characters where there are no spaces)');
     const g = Object.keys(s.gloss).length, min = s.lines ? 5 : 10, want = s.lines ? 2 : 3;
     if (g < min || g > 60) bad(`gloss needs ${min} to 60 entries (has ${g})`);
-    for (const k of Object.keys(raw.gloss || {})) if (!keys.has(c.key(k))) bad(`gloss "${k}" is not a word of the text (lower case, one word, as written)`);
+    // (in an unspaced script the key need only be part of the text: versions of the segmenter cut a little differently)
+    for (const k of Object.keys(raw.gloss || {})) if (!(L.seg ? s.text.includes(k) : keys.has(c.key(k)))) bad(`gloss "${k}" is not a word of the text (lower case, one word, as written)`);
     if ((s.questions || []).length !== want) bad(`needs exactly ${want} questions (has ${(s.questions || []).length})`);
     for (const q of s.questions || []) {
       if (!/[?？؟]/.test(q.q)) bad('a question needs a question mark: ' + q.q);
@@ -50,6 +52,13 @@ function contentProblems(file) {
       }
     }
     if (!s.notice || s.notice.length < 40) bad('needs a notice (a grammar or usage point, 40 characters or more)');
+    // a story (not in the English set, whose meanings would be English too) carries two sentences to write back from their meaning
+    const sents = c.storySentences(s).map(x => x.normalize('NFC'));
+    if (!s.lines && lang !== 'en' && (s.back || []).length !== 2) bad(`needs exactly 2 "back" entries (has ${(s.back || []).length})`);
+    for (const [x, m] of s.back || []) {
+      if (!sents.includes(x.normalize('NFC'))) bad('a "back" sentence must be one whole sentence of the text: ' + x);
+      if (m.length < 8) bad('a "back" meaning is too short: ' + m);
+    }
   }
   return out;
 }
@@ -81,6 +90,12 @@ assert.deepEqual([c.langInfo('fr').bcp, c.langInfo('nl').english, c.isLangCode('
 assert.deepEqual(c.sentences('Il pleut. « Viens ! » dit-elle. Elle rit.'), ['Il pleut.', '« Viens ! » dit-elle.', 'Elle rit.']);
 assert.deepEqual(c.sentences('¿Dónde está? No lo sé. ¡Mira!'), ['¿Dónde está?', 'No lo sé.', '¡Mira!']);
 assert.deepEqual(c.sentences('今天很冷。我不想出门！'), ['今天很冷。', '我不想出门！']);
+assert.deepEqual(c.sentences('「行きましょう。」と言いました。そして出かけました。'), ['「行きましょう。」', 'と言いました。', 'そして出かけました。']);
+// Chinese and Japanese are marked character by character, and an answer is looked for inside what was typed; Korean matches a word's stem
+assert.deepEqual([c.dictationScore('我喜欢喝茶。', '我喜欢茶', 'zh').score, c.plainWords('我喜欢喝茶。', 'zh').length], [4 / 5, 5]);
+assert.ok(c.answerOk('她去了市场。', ['市场'], 'zh') && !c.answerOk('她去了学校。', ['市场'], 'zh'));
+assert.ok(c.answerOk('학교에 갑니다', ['학교'], 'ko') && c.answerOk('책을 읽어요', ['책'], 'ko') && !c.answerOk('집에 갑니다', ['학교'], 'ko'));
+assert.equal(c.pickDictation('昨日は友だちと一緒に駅の近くの新しいレストランで晩ごはんを食べました。短い。', 4, 'ja').length, 1);
 assert.deepEqual(c.sentences('„Komm mit.“ Dann ging er. He said. “Hello.” She left.'), ['„Komm mit.“', 'Dann ging er.', 'He said.', '“Hello.”', 'She left.']);
 assert.equal(c.coverage('le chat dort', { le: 1, chat: 1 }), 2 / 3);
 
@@ -129,6 +144,7 @@ const dlg = c.cleanStory({ id: 'd', title: 'Au café', level: 'A1', roles: ['Ser
   questions: [{ q: 'Que veut le client ?', a: ['café', 7] }, { q: '', a: ['x'] }] }, 'fr');
 assert.deepEqual([dlg.text, dlg.lines[2][0], dlg.questions.length, dlg.questions[0].a], ["Bonjour !\nUn café, s'il vous plaît.\nVoilà.", 1, 1, ['café']]);
 assert.deepEqual(c.storySentences(dlg), ['Bonjour !', "Un café, s'il vous plaît.", 'Voilà.']);
+assert.deepEqual(c.cleanStory({ title: 'T', text: 'Il pleut. Elle rit.', back: [['Il pleut.', 'It is raining.', 'x'], ['Elle rit.'], 7] }, 'fr').back, [['Il pleut.', 'It is raining.']]);
 const subs = c.parseSubs('WEBVTT\n\n1\n00:00:01.000 --> 00:00:03,500\n<i>Bonjour</i> à tous.\n\n2\n00:01:02.000 --> 00:01:04.000 align:start\nÇa va ?\nOui.\n');
 assert.deepEqual(subs, [[1, 3.5, 'Bonjour à tous.'], [62, 64, 'Ça va ? Oui.']]);
 assert.equal(c.cleanStory({ title: 'Podcast', cues: subs }, 'fr').text, 'Bonjour à tous. Ça va ? Oui.');
@@ -208,7 +224,8 @@ console.log('core.test: ok');
     let list = [];
     try { list = JSON.parse(readFileSync(new URL(`./content/${code}.json`, import.meta.url), 'utf8')); } catch { /* reported below */ }
     const dialogues = list.filter(x => x.lines).length;
-    if (list.length - dialogues < 16 || dialogues < 8) bad.push(`content/${code}.json needs 16 stories and 8 dialogues (has ${list.length - dialogues} and ${dialogues})`);
+    const [stories, talks] = c.LANGS[code].small ? [8, 4] : [16, 8];
+    if (list.length - dialogues < stories || dialogues < talks) bad.push(`content/${code}.json needs ${stories} stories and ${talks} dialogues (has ${list.length - dialogues} and ${dialogues})`);
   }
   if (bad.length) { console.log(bad.slice(0, 40).join('\n')); assert.fail(`${bad.length} content problem(s)`); }
   console.log(`content: ok (${files.length} files)`);

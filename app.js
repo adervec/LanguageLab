@@ -64,7 +64,9 @@ async function sync(silent) {
 
 // ---------- speech: the browser's synthesiser, or the story's own recording where this device has one ----------
 let speakTok = 0, recog = null;
-const voices = () => (window.speechSynthesis?.getVoices() || []).filter(v => v.lang.replace('_', '-').toLowerCase().split('-')[0] === S.lang);
+// the voices for this language, those of its usual region first (Mandarin before Cantonese, for one)
+const voices = () => (window.speechSynthesis?.getVoices() || []).filter(v => v.lang.replace('_', '-').toLowerCase().split('-')[0] === S.lang)
+  .sort((a, b) => (a.lang.replace('_', '-') === lang().bcp ? 0 : 1) - (b.lang.replace('_', '-') === lang().bcp ? 0 : 1));
 // The voice chosen for this language on this device. A second one, where there is one, plays the other speaker of a dialogue.
 function voice(other) {
   const all = voices(), mine = all.find(v => v.voiceURI === ls.get('ll-voice-' + S.lang)) || all[0];
@@ -117,7 +119,8 @@ function hear(b, continuous, onText, onDone) {
   hush(); msg('');
   recog = new SR(); recog.lang = voice()?.lang || lang().bcp; recog.continuous = continuous;
   recog.onresult = e => { for (let i = e.resultIndex; i < e.results.length; i++) if (e.results[i].isFinal) onText(e.results[i][0].transcript); };
-  recog.onerror = e => { if (!['no-speech', 'aborted'].includes(e.error)) msg(t('The microphone did not work here ({why}). You can carry on without it.', { why: e.error })); };
+  recog.onerror = e => { if (e.error === 'no-speech') msg(t('Nothing was heard. Try again, a little louder.'));
+    else if (e.error !== 'aborted') msg(t('The microphone did not work here ({why}). You can carry on without it.', { why: e.error })); };
   recog.onend = () => { recog = null; b.textContent = label; b.setAttribute('aria-pressed', 'false'); onDone?.(); };
   recog.start(); b.textContent = t('Stop listening'); b.setAttribute('aria-pressed', 'true');
 }
@@ -365,7 +368,9 @@ function startSitting(id, mode = 'sitting') {
   // ponytail: marked against the text's own sentence, so a different correct wording loses words. The AI review is the judge of free writing.
   // Sentences the dictation did not use, where there are some, so it is not a matter of remembering what was just typed.
   const used = new Set(sit.dict.map(d => d.target)), spare = C.pickDictation(C.storySentences(s).map(x => x.normalize('NFC')).filter(x => !used.has(x)), 2, S.lang);
-  sit.rebuild = full && canMean() ? (spare.length ? spare : sit.dict.slice(-2).map(d => d.target)).map(target => ({ target, typed: '', score: null })) : [];
+  // A bundled story brings its own two sentences with their English meaning, so the step needs no translator.
+  sit.rebuild = !full ? [] : s.back ? s.back.map(([target, meaning]) => ({ target: target.normalize('NFC'), meaning, typed: '', score: null }))
+    : canMean() ? (spare.length ? spare : sit.dict.slice(-2).map(d => d.target)).map(target => ({ target, typed: '', score: null })) : [];
   sit.ri = 0;
   sit.speak = mode === 'read' ? [] : isTalk(s) ? rolePlay(s) : SR ? sit.dict.slice(0, 3).map(d => ({ target: d.target, heard: '', score: null, tries: 0 })) : [];
   sit.steps = mode === 'read' ? ['read'] : mode === 'talk' ? ['speak'] : ['listen', sit.asked.length && 'ask', 'read', sit.dict.length && 'dictate', sit.rebuild.length && 'rebuild', sit.speak.length && 'speak', 'write'].filter(Boolean);
@@ -489,7 +494,10 @@ function finishRead() {
 // the meaning of the sentence to write back; asked for inside the tap that opened the step, so the browser may fetch its language pack
 function prepRebuild() {
   const d = sit.rebuild[sit.ri];
-  if (d.shown === undefined) translate(d.target).then(x => { d.shown = x; if (sit?.step === 'rebuild' && sit.rebuild[sit.ri] === d) render(true); });
+  if (d.shown !== undefined) return;
+  // the bundled meaning is English: used as it is for an English reader or where the browser cannot translate, else as the fallback
+  if (d.meaning && (here() === 'en' || !canMean())) { d.shown = d.meaning; return render(true); }
+  translate(d.target).then(x => { d.shown = x || d.meaning || ''; if (sit?.step === 'rebuild' && sit.rebuild[sit.ri] === d) render(true); });
 }
 function playDictation() { const d = sit.dict[sit.di]; d.plays++; playSentence(story(sit.storyId), d.target); }
 // the other speaker's lines since your last one, spoken before your turn

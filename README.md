@@ -32,14 +32,16 @@ LanguageLab is built to be the opposite on each count.
 | Meanings | Fixed word bank | Tap any word in any text; translated on your device where the browser can |
 | Feedback on your writing | Right or wrong against one answer | An AI review with a grade, the corrected forms and the rule; your mistakes return as review cards |
 | Conversation | Scripted, tap a reply | Role-play aloud and from memory; an AI pen pal that writes back |
-| Languages | A fixed list | Eight with starter stories, Croatian among them; any other language with your own texts or AI-written stories |
+| Languages | A fixed list | Eleven with starter stories, Croatian among them; any other language with your own texts or AI-written stories |
 | Progress | Points, leagues, a streak | The level your numbers support, measured |
 | Cost and data | Subscription or ads; an account | Free; your data stays on your device (optionally your own Google Drive) |
 
 ## Languages
 
 French, Spanish, German, Italian, Portuguese, Dutch, Croatian and English come with 16 stories and
-8 dialogues each (French has more), from A1 to B2. Every other language works with your own texts and with stories
+8 dialogues each (French has more), from A1 to B2. Mandarin Chinese, Japanese and Korean come with a
+smaller set (8 stories and 4 dialogues, A1 to B1); there a tapped word shows its reading first, and
+dictation is marked character by character. Every other language works with your own texts and with stories
 written to your level by an AI agent through the cowork folder.
 
 The starter stories and dialogues were written by an AI and have not been checked by native speakers;

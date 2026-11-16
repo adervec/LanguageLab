@@ -47,7 +47,17 @@
     ]
    }
   ],
-  "notice": "Chez + a person means at that person's shop or home: \"chez un vieux monsieur\". Lui before the verb means to her or to him: \"qui lui donne\", \"il lui fait goûter\"."
+  "notice": "Chez + a person means at that person's shop or home: \"chez un vieux monsieur\". Lui before the verb means to her or to him: \"qui lui donne\", \"il lui fait goûter\".",
+  "back": [
+   [
+    "Les marchands crient leurs prix et l'air sent le pain chaud.",
+    "The stallholders shout their prices and the air smells of warm bread."
+   ],
+   [
+    "Ensuite, elle s'arrête devant le fromager.",
+    "Then she stops in front of the cheese seller."
+   ]
+  ]
  },
  {
   "id": "fr-train",
@@ -98,7 +108,17 @@
     ]
    }
   ],
-  "notice": "To report a question or an answer, French uses si (if, whether) after demander and que (that) after répondre: \"il lui demande si elle aime l'histoire\", \"répond qu'elle ne peut plus s'arrêter de lire\"."
+  "notice": "To report a question or an answer, French uses si (if, whether) after demander and que (that) after répondre: \"il lui demande si elle aime l'histoire\", \"répond qu'elle ne peut plus s'arrêter de lire\".",
+  "back": [
+   [
+    "Les portes se ferment juste derrière lui.",
+    "The doors close just behind him."
+   ],
+   [
+    "Il hésite, puis il lui demande si elle aime l'histoire.",
+    "He hesitates, then asks her whether she likes the story."
+   ]
+  ]
  },
  {
   "id": "fr-panne",
@@ -151,7 +171,17 @@
     ]
    }
   ],
-  "notice": "The imparfait describes what was going on, and the passé composé says what suddenly happened: \"pendant que nous préparions le dîner\", \"toutes les lumières de l'immeuble se sont éteintes\"."
+  "notice": "The imparfait describes what was going on, and the passé composé says what suddenly happened: \"pendant que nous préparions le dîner\", \"toutes les lumières de l'immeuble se sont éteintes\".",
+  "back": [
+   [
+    "Nous avons cherché des bougies dans les tiroirs, mais nous n'en avions qu'une seule, toute petite.",
+    "We looked for candles in the drawers, but we had only one, a very small one."
+   ],
+   [
+    "Alors nous sommes sortis sur le palier, où les voisins se rassemblaient déjà avec leurs lampes de poche.",
+    "So we went out onto the landing, where the neighbours were already gathering with their torches."
+   ]
+  ]
  },
  {
   "id": "fr-velo",
@@ -200,7 +230,17 @@
     ]
    }
   ],
-  "notice": "Jusqu'à means as far as or until. Before a noun, à joins le to make au: \"jusqu'au pont\". Before a verb it becomes jusqu'à ce que, followed by the subjunctive: \"jusqu'à ce qu'elle y arrive\"."
+  "notice": "Jusqu'à means as far as or until. Before a noun, à joins le to make au: \"jusqu'au pont\". Before a verb it becomes jusqu'à ce que, followed by the subjunctive: \"jusqu'à ce qu'elle y arrive\".",
+  "back": [
+   [
+    "Le premier jour, tout s'est bien passé jusqu'au pont.",
+    "On the first day, everything went well as far as the bridge."
+   ],
+   [
+    "Elle n'avait ni pompe ni outils.",
+    "She had neither a pump nor tools."
+   ]
+  ]
  },
  {
   "id": "fr-famille",
@@ -254,7 +294,17 @@
     ]
    }
   ],
-  "notice": "My changes with the gender of the noun: mon for a masculine noun, ma for a feminine one: \"Mon père s'appelle Paul\", \"Ma mère s'appelle Anne\"."
+  "notice": "My changes with the gender of the noun: mon for a masculine noun, ma for a feminine one: \"Mon père s'appelle Paul\", \"Ma mère s'appelle Anne\".",
+  "back": [
+   [
+    "Elle travaille dans une école.",
+    "She works in a school."
+   ],
+   [
+    "Mon père prépare souvent des pâtes ou une soupe.",
+    "My father often makes pasta or a soup."
+   ]
+  ]
  },
  {
   "id": "fr-cafe",
@@ -315,7 +365,17 @@
     ]
    }
   ],
-  "notice": "Negation goes around the verb: ne … pas means not, and ne … plus means no longer: \"Sophie n'est pas pressée\", \"il ne pleut plus\"."
+  "notice": "Negation goes around the verb: ne … pas means not, and ne … plus means no longer: \"Sophie n'est pas pressée\", \"il ne pleut plus\".",
+  "back": [
+   [
+    "Par la fenêtre, elle voit la pluie dans la rue.",
+    "Through the window, she sees the rain in the street."
+   ],
+   [
+    "Elle ouvre son sac et prend un journal.",
+    "She opens her bag and takes out a newspaper."
+   ]
+  ]
  },
  {
   "id": "fr-journee",
@@ -368,7 +428,17 @@
     ]
    }
   ],
-  "notice": "Some everyday verbs take me (m' before a vowel) because you do the action to yourself: \"Je me lève à sept heures\", \"je m'habille\"."
+  "notice": "Some everyday verbs take me (m' before a vowel) because you do the action to yourself: \"Je me lève à sept heures\", \"je m'habille\".",
+  "back": [
+   [
+    "Je travaille dans un bureau au centre de la ville.",
+    "I work in an office in the centre of the city."
+   ],
+   [
+    "Après le travail, je fais des courses au supermarché.",
+    "After work, I do some shopping at the supermarket."
+   ]
+  ]
  },
  {
   "id": "fr-mer",
@@ -429,7 +499,17 @@
     ]
    }
   ],
-  "notice": "A few verbs of movement, such as aller and arriver, form the past with être, and the participle then agrees with the subject; most verbs use avoir: \"nous sommes allés à la mer\", \"nous avons mangé des sandwichs\"."
+  "notice": "A few verbs of movement, such as aller and arriver, form the past with être, and the participle then agrees with the subject; most verbs use avoir: \"nous sommes allés à la mer\", \"nous avons mangé des sandwichs\".",
+  "back": [
+   [
+    "Nous avons posé nos serviettes près des rochers.",
+    "We put our towels down near the rocks."
+   ],
+   [
+    "Nous avons ramassé nos affaires juste avant la pluie.",
+    "We picked up our things just before the rain."
+   ]
+  ]
  },
  {
   "id": "fr-appartement",
@@ -483,7 +563,17 @@
     ]
    }
   ],
-  "notice": "Venir de + infinitive means to have just done something; without de, venir + infinitive means to come and do it: \"Julie vient de déménager\", \"sont venus l'aider\"."
+  "notice": "Venir de + infinitive means to have just done something; without de, venir + infinitive means to come and do it: \"Julie vient de déménager\", \"sont venus l'aider\".",
+  "back": [
+   [
+    "Heureusement, son frère et deux amis sont venus l'aider.",
+    "Luckily, her brother and two friends came to help her."
+   ],
+   [
+    "Le soir, Julie a accroché ses photos au mur.",
+    "In the evening, Julie hung her photos on the wall."
+   ]
+  ]
  },
  {
   "id": "fr-medecin",
@@ -537,7 +627,17 @@
     ]
    }
   ],
-  "notice": "Some verbs need de before a following infinitive (d' before a vowel): \"il a décidé d'aller chez le médecin\", \"Il lui conseille de boire beaucoup d'eau\"."
+  "notice": "Some verbs need de before a following infinitive (d' before a vowel): \"il a décidé d'aller chez le médecin\", \"Il lui conseille de boire beaucoup d'eau\".",
+  "back": [
+   [
+    "Thomas attend une demi-heure en lisant un vieux magazine.",
+    "Thomas waits half an hour, reading an old magazine."
+   ],
+   [
+    "Thomas passe à la pharmacie, puis il rentre chez lui.",
+    "Thomas stops at the pharmacy, then goes home."
+   ]
+  ]
  },
  {
   "id": "fr-concert",
@@ -599,7 +699,17 @@
     ]
    }
   ],
-  "notice": "Some verbs link to a following infinitive with à: \"il a continué à chanter\", \"tout le public s'est mis à danser\" (se mettre à: to start doing)."
+  "notice": "Some verbs link to a following infinitive with à: \"il a continué à chanter\", \"tout le public s'est mis à danser\" (se mettre à: to start doing).",
+  "back": [
+   [
+    "Le concert avait lieu en plein air, dans un ancien théâtre romain.",
+    "The concert took place in the open air, in an ancient Roman theatre."
+   ],
+   [
+    "En quelques minutes, nous étions trempés jusqu'aux os.",
+    "Within a few minutes, we were soaked to the skin."
+   ]
+  ]
  },
  {
   "id": "fr-lettre",
@@ -656,7 +766,17 @@
     ]
    }
   ],
-  "notice": "The plus-que-parfait (avait or était + past participle) tells what had, or had not, happened before the main events: \"une lettre qui n'avait jamais été ouverte\", \"Camille n'avait jamais entendu ce prénom\"."
+  "notice": "The plus-que-parfait (avait or était + past participle) tells what had, or had not, happened before the main events: \"une lettre qui n'avait jamais été ouverte\", \"Camille n'avait jamais entendu ce prénom\".",
+  "back": [
+   [
+    "Finalement, la curiosité a été la plus forte.",
+    "In the end, curiosity was the stronger."
+   ],
+   [
+    "Il y a eu un long silence au bout du fil.",
+    "There was a long silence on the other end of the line."
+   ]
+  ]
  },
  {
   "id": "fr-nager",
@@ -714,7 +834,17 @@
     ]
    }
   ],
-  "notice": "For feelings French often uses avoir + a noun where English uses to be: avoir peur (to be afraid), avoir honte (to be ashamed): \"il avait eu très peur\", \"Il a eu honte de rester assis au bord\"."
+  "notice": "For feelings French often uses avoir + a noun where English uses to be: avoir peur (to be afraid), avoir honte (to be ashamed): \"il avait eu très peur\", \"Il a eu honte de rester assis au bord\".",
+  "back": [
+   [
+    "La première séance a été difficile.",
+    "The first session was difficult."
+   ],
+   [
+    "Semaine après semaine, la peur a diminué.",
+    "Week after week, the fear lessened."
+   ]
+  ]
  },
  {
   "id": "fr-libraire",
@@ -785,7 +915,17 @@
     ]
    }
   ],
-  "notice": "Dont stands for de + a noun. With avoir besoin de it gives ce dont (what … needs); after a group it means of whom, including: \"ce dont un lecteur a besoin\", \"dont certaines n'avaient jamais mis les pieds dans la boutique\"."
+  "notice": "Dont stands for de + a noun. With avoir besoin de it gives ce dont (what … needs); after a group it means of whom, including: \"ce dont un lecteur a besoin\", \"dont certaines n'avaient jamais mis les pieds dans la boutique\".",
+  "back": [
+   [
+    "Pourtant, il refuse de baisser les bras.",
+    "Yet he refuses to give up."
+   ],
+   [
+    "Il reste lucide : rien ne garantit que cet élan durera.",
+    "He stays clear-eyed: nothing guarantees that this surge will last."
+   ]
+  ]
  },
  {
   "id": "fr-teletravail",
@@ -848,7 +988,17 @@
     ]
    }
   ],
-  "notice": "En replaces de + something already mentioned, with verbs built with de such as se réjouir de and s'apercevoir de: \"Nadia s'en est d'abord réjouie\", \"sans qu'elle s'en aperçoive\"."
+  "notice": "En replaces de + something already mentioned, with verbs built with de such as se réjouir de and s'apercevoir de: \"Nadia s'en est d'abord réjouie\", \"sans qu'elle s'en aperçoive\".",
+  "back": [
+   [
+    "Les premiers mois lui ont donné raison.",
+    "The first months proved her right."
+   ],
+   [
+    "Peu à peu, cependant, quelque chose s'est déréglé.",
+    "Little by little, however, something went wrong."
+   ]
+  ]
  },
  {
   "id": "fr-potager",
@@ -918,7 +1068,17 @@
     ]
    }
   ],
-  "notice": "To look ahead from a moment in the past, French uses aller in the imparfait or the conditional: \"Qui allait arroser pendant les vacances ?\", \"Qui profiterait des récoltes ?\""
+  "notice": "To look ahead from a moment in the past, French uses aller in the imparfait or the conditional: \"Qui allait arroser pendant les vacances ?\", \"Qui profiterait des récoltes ?\"",
+  "back": [
+   [
+    "Qui allait arroser pendant les vacances ?",
+    "Who was going to do the watering during the holidays?"
+   ],
+   [
+    "Mais le plus étonnant n'est pas ce qui pousse dans les bacs.",
+    "But the most surprising thing is not what grows in the planters."
+   ]
+  ]
  },
  {
   "id": "fr-chat",
@@ -980,7 +1140,17 @@
     ]
    }
   ],
-  "notice": "Ne and pas go around the verb to say not: \"Caramel ne vient pas\". With personne (nobody) there is no pas: \"Personne ne sait où est Caramel\"."
+  "notice": "Ne and pas go around the verb to say not: \"Caramel ne vient pas\". With personne (nobody) there is no pas: \"Personne ne sait où est Caramel\".",
+  "back": [
+   [
+    "Elle cherche dans la cuisine, puis dans la chambre.",
+    "She looks in the kitchen, then in the bedroom."
+   ],
+   [
+    "Emma rentre à la maison.",
+    "Emma comes home."
+   ]
+  ]
  },
  {
   "id": "fr-surprise",
@@ -1042,7 +1212,17 @@
     ]
    }
   ],
-  "notice": "Il y a means there is or there are: \"il y a un grand gâteau\". In the negative, un, une and des become de: \"Il n'y a pas de message\"."
+  "notice": "Il y a means there is or there are: \"il y a un grand gâteau\". In the negative, un, une and des become de: \"Il n'y a pas de message\".",
+  "back": [
+   [
+    "Au bureau, ses collègues disent bonjour, mais personne ne parle de son anniversaire.",
+    "At the office, her colleagues say hello, but nobody mentions her birthday."
+   ],
+   [
+    "Soudain, la lumière s'allume.",
+    "Suddenly, the light comes on."
+   ]
+  ]
  },
  {
   "id": "fr-taxi",
@@ -1103,7 +1283,17 @@
     ]
    }
   ],
-  "notice": "Verbs of movement such as arriver, descendre and revenir form the passé composé with être, not avoir: \"Karim est arrivé à Montréal\", \"Il est revenu\"."
+  "notice": "Verbs of movement such as arriver, descendre and revenir form the passé composé with être, not avoir: \"Karim est arrivé à Montréal\", \"Il est revenu\".",
+  "back": [
+   [
+    "Alors il a compris : son téléphone était encore dans le taxi.",
+    "Then he understood: his phone was still in the taxi."
+   ],
+   [
+    "Ils les ont bus ensemble sur le trottoir, sous la neige.",
+    "They drank them together on the pavement, in the snow."
+   ]
+  ]
  },
  {
   "id": "fr-premier-jour",
@@ -1165,7 +1355,17 @@
     ]
    }
   ],
-  "notice": "The imparfait sets the scene and the passé composé says what happened: \"Il pleuvait\" is the background, \"une femme est arrivée à vélo\" is the event."
+  "notice": "The imparfait sets the scene and the passé composé says what happened: \"Il pleuvait\" is the background, \"une femme est arrivée à vélo\" is the event.",
+  "back": [
+   [
+    "Enfin, une femme est arrivée à vélo avec un sac de croissants.",
+    "At last, a woman arrived by bike with a bag of croissants."
+   ],
+   [
+    "La femme l'a écoutée gentiment.",
+    "The woman listened to her kindly."
+   ]
+  ]
  },
  {
   "id": "fr-gateau",
@@ -1229,7 +1429,17 @@
     ]
    }
   ],
-  "notice": "Du, de la and des mean some, for things you do not count: \"de la farine\", \"du beurre\". But in \"à la place du sucre\", du is simply de + le: instead of the sugar."
+  "notice": "Du, de la and des mean some, for things you do not count: \"de la farine\", \"du beurre\". But in \"à la place du sucre\", du is simply de + le: instead of the sugar.",
+  "back": [
+   [
+    "Manon a goûté à son tour et elle a éclaté de rire.",
+    "Manon tasted it in her turn and burst out laughing."
+   ],
+   [
+    "Heureusement, la mère de Manon a eu une idée.",
+    "Luckily, Manon's mother had an idea."
+   ]
+  ]
  },
  {
   "id": "fr-voisin",
@@ -1295,7 +1505,17 @@
     ]
    }
   ],
-  "notice": "Comme si (as if) takes the imparfait or the plus-que-parfait, never the conditional: \"comme si quelqu'un tapait du pied\", \"comme s'il avait fait ça toute sa vie\"."
+  "notice": "Comme si (as if) takes the imparfait or the plus-que-parfait, never the conditional: \"comme si quelqu'un tapait du pied\", \"comme s'il avait fait ça toute sa vie\".",
+  "back": [
+   [
+    "Je suis monté et j'ai sonné.",
+    "I went upstairs and rang the bell."
+   ],
+   [
+    "Ma colère est tombée d'un coup.",
+    "My anger vanished all at once."
+   ]
+  ]
  },
  {
   "id": "fr-randonnee",
@@ -1356,7 +1576,17 @@
     ]
    }
   ],
-  "notice": "A past participle with avoir agrees with a direct object placed before it: \"Il nous a conduits\" (he led us). In \"il nous a servi une soupe\", nous means to us, so servi does not change."
+  "notice": "A past participle with avoir agrees with a direct object placed before it: \"Il nous a conduits\" (he led us). In \"il nous a servi une soupe\", nous means to us, so servi does not change.",
+  "back": [
+   [
+    "Un berger est apparu avec son chien et une centaine de moutons.",
+    "A shepherd appeared with his dog and about a hundred sheep."
+   ],
+   [
+    "Nous avons dormi par terre, serrés dans des couvertures.",
+    "We slept on the floor, huddled in blankets."
+   ]
+  ]
  },
  {
   "id": "fr-avion",
@@ -1418,7 +1648,17 @@
     ]
    }
   ],
-  "notice": "Ne ... que means only: \"Le prochain vol ne partait que le lendemain\". Ne ... plus means no longer: \"elle n'était plus du tout en colère\"."
+  "notice": "Ne ... que means only: \"Le prochain vol ne partait que le lendemain\". Ne ... plus means no longer: \"elle n'était plus du tout en colère\".",
+  "back": [
+   [
+    "Le prochain vol ne partait que le lendemain.",
+    "The next flight was not leaving until the following day."
+   ],
+   [
+    "Elle a appelé son frère pour lui annoncer la mauvaise nouvelle.",
+    "She called her brother to tell him the bad news."
+   ]
+  ]
  },
  {
   "id": "fr-sucres",
@@ -1488,7 +1728,17 @@
     ]
    }
   ],
-  "notice": "Jusqu'à ce que (until) and avant que (before) are followed by the subjunctive: \"jusqu'à ce que l'eau devienne du sirop\", \"avant qu'il durcisse\"."
+  "notice": "Jusqu'à ce que (until) and avant que (before) are followed by the subjunctive: \"jusqu'à ce que l'eau devienne du sirop\", \"avant qu'il durcisse\".",
+  "back": [
+   [
+    "Je le suivais partout avec mes bottes trop grandes.",
+    "I followed him everywhere in my boots that were too big."
+   ],
+   [
+    "J'ai fondu en larmes.",
+    "I burst into tears."
+   ]
+  ]
  },
  {
   "id": "fr-greve",
@@ -1562,7 +1812,17 @@
     ]
    }
   ],
-  "notice": "A stressed pronoun (moi, lui, elle) adds contrast or emphasis: \"Lui qui traversait Paris sous terre\", \"Sébastien, lui, n'a rien dit\" (he, unlike the others, said nothing)."
+  "notice": "A stressed pronoun (moi, lui, elle) adds contrast or emphasis: \"Lui qui traversait Paris sous terre\", \"Sébastien, lui, n'a rien dit\" (he, unlike the others, said nothing).",
+  "back": [
+   [
+    "Mais à mesure qu'il avançait, son pas ralentissait.",
+    "But as he went on, his step slowed."
+   ],
+   [
+    "Sébastien, lui, n'a rien dit.",
+    "Sébastien, for his part, said nothing."
+   ]
+  ]
  },
  {
   "id": "fr-photo",
@@ -1636,7 +1896,17 @@
     ]
    }
   ],
-  "notice": "The plus-que-parfait (avait or était + past participle) marks what had already happened before the main past events: \"quelqu'un avait écrit\", \"la famille avait tout perdu\"."
+  "notice": "The plus-que-parfait (avait or était + past participle) marks what had already happened before the main past events: \"quelqu'un avait écrit\", \"la famille avait tout perdu\".",
+  "back": [
+   [
+    "Quand il lui a tendu la photographie, elle est restée longtemps silencieuse.",
+    "When he handed her the photograph, she stayed silent for a long time."
+   ],
+   [
+    "Antoine a tenu à ce qu'elle garde la photographie.",
+    "Antoine insisted that she keep the photograph."
+   ]
+  ]
  },
  {
   "id": "fr-campagne",
@@ -1713,7 +1983,17 @@
     ]
    }
   ],
-  "notice": "A relative pronoun carries the preposition its verb needs. Songer à gives \"auxquelles ils n'avaient pas songé\"; le nom de gives \"dont ils ne connaissaient même pas le nom\"."
+  "notice": "A relative pronoun carries the preposition its verb needs. Songer à gives \"auxquelles ils n'avaient pas songé\"; le nom de gives \"dont ils ne connaissaient même pas le nom\".",
+  "back": [
+   [
+    "Leurs amis parisiens, qui avaient promis de venir, ne donnaient plus de nouvelles.",
+    "Their Parisian friends, who had promised to come, no longer sent any news."
+   ],
+   [
+    "Certains soirs, Clémence se demandait s'ils n'avaient pas commis une erreur.",
+    "Some evenings, Clémence wondered whether they had made a mistake."
+   ]
+  ]
  },
  {
   "id": "fr-lenteur",
@@ -1788,7 +2068,17 @@
     ]
    }
   ],
-  "notice": "Sans que and quoique are always followed by the subjunctive: \"sans que je m'en aperçoive\", \"Quoique nous n'ayons parcouru\". So are pour que and non que in the same text."
+  "notice": "Sans que and quoique are always followed by the subjunctive: \"sans que je m'en aperçoive\", \"Quoique nous n'ayons parcouru\". So are pour que and non que in the same text.",
+  "back": [
+   [
+    "J'ai d'abord protesté.",
+    "At first I protested."
+   ],
+   [
+    "Les premiers jours, je consultais sans cesse le compteur, agacé par notre lenteur.",
+    "In the first days, I kept checking the speedometer, annoyed by how slow we were."
+   ]
+  ]
  },
  {
   "id": "fr-carnets",
@@ -1861,7 +2151,17 @@
     ]
    }
   ],
-  "notice": "Nul (nulle) is a literary way to say no or nobody. It goes with ne and never with pas: \"nulle photographie n'aurait su lui donner\", \"nul ne viendra compter ses lecteurs\"."
+  "notice": "Nul (nulle) is a literary way to say no or nobody. It goes with ne and never with pas: \"nulle photographie n'aurait su lui donner\", \"nul ne viendra compter ses lecteurs\".",
+  "back": [
+   [
+    "Le papier impose une lenteur qui oblige à choisir.",
+    "Paper imposes a slowness that forces you to choose."
+   ],
+   [
+    "Je ne suis pas sûr qu'Odile ait jamais songé à être lue.",
+    "I am not sure Odile ever thought of being read."
+   ]
+  ]
  },
  {
   "id": "fr-d-boulangerie",

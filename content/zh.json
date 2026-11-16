@@ -1,0 +1,982 @@
+[
+ {
+  "id": "zh-jia",
+  "title": "我的家",
+  "level": "A1",
+  "text": "我叫小明，今年十岁。我家在北京。我爸爸很高，他喜欢做饭。我妈妈在学校工作。我有一个弟弟，他叫小龙。他今年六岁，很爱说话。我们家还有一只黑猫。它每天在沙发上睡觉。晚上我们一起在厨房吃饭。爸爸常常做面条或者汤。吃完饭，我看书，弟弟看动画片。星期天我们去奶奶家。奶奶家有一个花园，里面有很多花。我很爱我的家。",
+  "gloss": {
+   "今年": "jīnnián: this year",
+   "喜欢": "xǐhuan: to like",
+   "做饭": "zuòfàn: to cook",
+   "学校": "xuéxiào: school",
+   "工作": "gōngzuò: to work",
+   "弟弟": "dìdi: younger brother",
+   "说话": "shuōhuà: to talk",
+   "还有": "hái yǒu: also have",
+   "猫": "māo: cat",
+   "每天": "měitiān: every day",
+   "沙发": "shāfā: sofa",
+   "睡觉": "shuìjiào: to sleep",
+   "晚上": "wǎnshang: evening",
+   "一起": "yìqǐ: together",
+   "厨房": "chúfáng: kitchen",
+   "常常": "chángcháng: often",
+   "面条": "miàntiáo: noodles",
+   "或者": "huòzhě: or",
+   "汤": "tāng: soup",
+   "看书": "kànshū: to read",
+   "动画": "dònghuà: cartoon (动画片: cartoon film)",
+   "星期天": "xīngqītiān: Sunday",
+   "奶奶": "nǎinai: grandmother",
+   "花园": "huāyuán: garden",
+   "里面": "lǐmiàn: inside",
+   "很多": "hěn duō: many"
+  },
+  "questions": [
+   {
+    "q": "小明的家在哪里？",
+    "a": [
+     "北京"
+    ]
+   },
+   {
+    "q": "谁每天在沙发上睡觉？",
+    "a": [
+     "猫"
+    ]
+   },
+   {
+    "q": "星期天他们去谁的家？",
+    "a": [
+     "奶奶"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "我妈妈在学校工作。",
+    "My mother works at a school."
+   ],
+   [
+    "它每天在沙发上睡觉。",
+    "It sleeps on the sofa every day."
+   ]
+  ],
+  "notice": "Chinese verbs never change: time words carry the tense. 在 before a place says where something happens: \"我妈妈在学校工作\" (my mother works at a school), \"它每天在沙发上睡觉\" (it sleeps on the sofa every day)."
+ },
+ {
+  "id": "zh-kafei",
+  "title": "在咖啡店",
+  "level": "A1",
+  "text": "现在是早上九点。小红走进车站旁边的一家小咖啡店。她有点饿，也有点冷。服务员笑着说你好。小红看了看菜单。她要一杯热牛奶咖啡和一个面包。服务员拿来一个大杯子和一个热面包。小红慢慢地喝咖啡。窗外在下雨。人们打着伞，走得很快。小红不忙。她打开包，拿出一份报纸。她一边看新闻，一边吃面包。十点钟，她付了钱，走出咖啡店。外面已经不下雨了。",
+  "gloss": {
+   "现在": "xiànzài: now",
+   "早上": "zǎoshang: morning",
+   "走进": "zǒujìn: to walk into",
+   "车站": "chēzhàn: station",
+   "旁边": "pángbiān: beside",
+   "咖啡店": "kāfēidiàn: café",
+   "有点": "yǒudiǎn: a little",
+   "饿": "è: hungry",
+   "冷": "lěng: cold",
+   "服务": "fúwù: service (服务员: waiter)",
+   "菜单": "càidān: menu",
+   "一杯": "yì bēi: a cup of",
+   "热": "rè: hot",
+   "牛奶": "niúnǎi: milk",
+   "面包": "miànbāo: bread",
+   "拿来": "nálái: to bring",
+   "杯子": "bēizi: cup",
+   "慢慢地": "mànmàn de: slowly",
+   "窗外": "chuāngwài: outside the window",
+   "下雨": "xiàyǔ: to rain",
+   "伞": "sǎn: umbrella",
+   "打开": "dǎkāi: to open",
+   "拿出": "náchū: to take out",
+   "报纸": "bàozhǐ: newspaper",
+   "一边": "yìbiān: at the same time (一边…一边…)",
+   "新闻": "xīnwén: news",
+   "付": "fù: to pay",
+   "钱": "qián: money",
+   "外面": "wàimiàn: outside",
+   "已经": "yǐjīng: already"
+  },
+  "questions": [
+   {
+    "q": "小红喝什么？",
+    "a": [
+     "咖啡"
+    ]
+   },
+   {
+    "q": "人们打着什么？",
+    "a": [
+     "伞"
+    ]
+   },
+   {
+    "q": "小红从包里拿出什么？",
+    "a": [
+     "报纸"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "小红慢慢地喝咖啡。",
+    "Xiaohong drinks her coffee slowly."
+   ],
+   [
+    "她打开包，拿出一份报纸。",
+    "She opens her bag and takes out a newspaper."
+   ]
+  ],
+  "notice": "Measure words stand between a number and a noun: \"一杯热牛奶咖啡\" (a cup of hot milk coffee), \"一份报纸\" (a newspaper). 一边…一边… means doing two things at once: \"她一边看新闻，一边吃面包\"."
+ },
+ {
+  "id": "zh-yitian",
+  "title": "我的一天",
+  "level": "A1",
+  "text": "我每天早上七点起床。我先洗澡，然后穿衣服。早饭我吃面包，喝茶。八点我坐公共汽车去上班。我在市中心的一个办公室工作。我的同事都很友好。十二点我们一起在一家小饭馆吃午饭。下午我写邮件，打电话。五点我下班。下班以后，我去超市买东西。晚上我做饭，听音乐。有时候我给朋友打电话。我十一点左右睡觉。我很累，但是很高兴。",
+  "gloss": {
+   "起床": "qǐchuáng: to get up",
+   "洗澡": "xǐzǎo: to wash, shower",
+   "然后": "ránhòu: then",
+   "穿衣服": "chuān yīfu: to get dressed",
+   "早饭": "zǎofàn: breakfast",
+   "喝茶": "hē chá: to drink tea",
+   "公共": "gōnggòng: public (公共汽车: bus)",
+   "汽车": "qìchē: car, vehicle",
+   "上班": "shàngbān: to go to work",
+   "中心": "zhōngxīn: centre (市中心: city centre)",
+   "办公": "bàngōng: office work (办公室: office)",
+   "同事": "tóngshì: colleague",
+   "友好": "yǒuhǎo: friendly",
+   "饭馆": "fànguǎn: restaurant",
+   "午饭": "wǔfàn: lunch",
+   "下午": "xiàwǔ: afternoon",
+   "邮件": "yóujiàn: email",
+   "打电话": "dǎ diànhuà: to phone",
+   "下班": "xiàbān: to finish work",
+   "以后": "yǐhòu: after",
+   "超市": "chāoshì: supermarket",
+   "买东西": "mǎi dōngxi: to shop",
+   "音乐": "yīnyuè: music",
+   "时候": "shíhou: time (有时候: sometimes)",
+   "朋友": "péngyou: friend",
+   "左右": "zuǒyòu: about",
+   "累": "lèi: tired",
+   "但是": "dànshì: but",
+   "高兴": "gāoxìng: happy"
+  },
+  "questions": [
+   {
+    "q": "他怎么去上班？",
+    "a": [
+     "公共汽车",
+     "汽车"
+    ]
+   },
+   {
+    "q": "他在哪里工作？",
+    "a": [
+     "办公室"
+    ]
+   },
+   {
+    "q": "晚上他听什么？",
+    "a": [
+     "音乐"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "我在市中心的一个办公室工作。",
+    "I work in an office in the city centre."
+   ],
+   [
+    "下班以后，我去超市买东西。",
+    "After work, I go to the supermarket to shop."
+   ]
+  ],
+  "notice": "The time comes before the verb, next to the subject: \"我每天早上七点起床\" (I get up at seven every morning), \"八点我坐公共汽车去上班\" (at eight I take the bus to work)."
+ },
+ {
+  "id": "zh-shichang",
+  "title": "星期六的市场",
+  "level": "A2",
+  "text": "每个星期六早上，小美都提着篮子去市场。她很喜欢这段时间。卖东西的人大声喊着价钱，空气里有新鲜面包的香味。她先在一位老爷爷那里买了西红柿和黄瓜，老爷爷总是多送她一个苹果。然后她在卖豆腐的摊子前面停了下来。阿姨请她尝了一块热豆腐。豆腐非常好吃，小美买了两块。回家以前，她坐在茶馆外面喝茶，看着来来往往的人。一个小女孩跟着一只小狗跑，一位先生抱着一大束花。小美笑了。她没花多少钱，可是篮子满了，这个早上很完美。",
+  "gloss": {
+   "星期六": "xīngqīliù: Saturday",
+   "提": "tí: to carry (in the hand)",
+   "篮子": "lánzi: basket",
+   "市场": "shìchǎng: market",
+   "时间": "shíjiān: time",
+   "卖东西": "mài dōngxi: to sell things",
+   "大声": "dàshēng: loudly",
+   "喊": "hǎn: to shout",
+   "价钱": "jiàqián: price",
+   "空气": "kōngqì: air",
+   "新鲜": "xīnxiān: fresh",
+   "香味": "xiāngwèi: a good smell",
+   "爷爷": "yéye: grandfather, old man",
+   "西红柿": "xīhóngshì: tomato",
+   "黄瓜": "huángguā: cucumber",
+   "总是": "zǒngshì: always",
+   "送": "sòng: to give as a present",
+   "苹果": "píngguǒ: apple",
+   "豆腐": "dòufu: tofu",
+   "摊子": "tānzi: stall",
+   "前面": "qiánmiàn: in front",
+   "阿姨": "āyí: auntie (a polite word for an older woman)",
+   "请": "qǐng: to invite",
+   "非常": "fēicháng: very",
+   "好吃": "hǎochī: delicious",
+   "回家": "huíjiā: to go home",
+   "以前": "yǐqián: before",
+   "茶馆": "cháguǎn: teahouse",
+   "女孩": "nǚhái: girl",
+   "跟着": "gēnzhe: following",
+   "小狗": "xiǎogǒu: puppy",
+   "先生": "xiānsheng: gentleman",
+   "抱": "bào: to hold in the arms",
+   "束": "shù: bunch",
+   "可是": "kěshì: but",
+   "完美": "wánměi: perfect"
+  },
+  "questions": [
+   {
+    "q": "小美每个星期六早上去哪里？",
+    "a": [
+     "市场"
+    ]
+   },
+   {
+    "q": "老爷爷总是多送她什么？",
+    "a": [
+     "苹果"
+    ]
+   },
+   {
+    "q": "小女孩跟着什么跑？",
+    "a": [
+     "小狗",
+     "狗"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "然后她在卖豆腐的摊子前面停了下来。",
+    "Then she stopped in front of the tofu stall."
+   ],
+   [
+    "她没花多少钱，可是篮子满了，这个早上很完美。",
+    "She did not spend much, but the basket was full and the morning was perfect."
+   ]
+  ],
+  "notice": "了 after a verb marks a completed action: \"买了西红柿和黄瓜\" (bought tomatoes and cucumbers), \"小美买了两块\" (Xiaomei bought two pieces). 着 marks a continuing state: \"提着篮子\" (carrying a basket), \"抱着一大束花\" (holding a big bunch of flowers)."
+ },
+ {
+  "id": "zh-ditie",
+  "title": "早上的地铁",
+  "level": "A2",
+  "text": "大伟每天早上都坐同一班地铁。今天他起晚了，一路跑到站台。可是他刚到，车门就关上了。下一班地铁十分钟以后才来。大伟在椅子上坐下。旁边有一位老太太，正在看一本很厚的书。大伟问她这本书有没有意思。老太太抬起头，笑着说她还不知道谁是坏人。他们聊起了书，后来又聊起了旅行。十分钟很快就过去了。地铁来了，他们坐在一起，继续聊天。大伟上班迟到了一会儿，可是心情很好。明天他也许还会晚一点。",
+  "gloss": {
+   "同一": "tóngyī: the same",
+   "班": "bān: (measure word for a scheduled train or bus)",
+   "地铁": "dìtiě: underground train",
+   "今天": "jīntiān: today",
+   "一路": "yílù: all the way",
+   "跑到": "pǎodào: to run to",
+   "站台": "zhàntái: platform",
+   "可是": "kěshì: but",
+   "刚到": "gāng dào: to have just arrived",
+   "关": "guān: to close",
+   "十分钟": "shí fēnzhōng: ten minutes",
+   "以后": "yǐhòu: later, after",
+   "才": "cái: only then",
+   "椅子": "yǐzi: chair, seat",
+   "坐下": "zuòxià: to sit down",
+   "旁边": "pángbiān: beside",
+   "老太太": "lǎotàitai: old lady",
+   "正在": "zhèngzài: in the middle of",
+   "厚": "hòu: thick",
+   "意思": "yìsi: meaning (有意思: interesting)",
+   "抬起": "táiqǐ: to raise",
+   "不知道": "bù zhīdào: not to know",
+   "坏人": "huàirén: villain, bad person",
+   "聊起": "liáoqǐ: to start chatting about",
+   "后来": "hòulái: later on",
+   "旅行": "lǚxíng: travel",
+   "过去": "guòqù: to pass",
+   "继续": "jìxù: to continue",
+   "聊天": "liáotiān: to chat",
+   "迟到": "chídào: to be late",
+   "心情": "xīnqíng: mood",
+   "明天": "míngtiān: tomorrow",
+   "也许": "yěxǔ: perhaps"
+  },
+  "questions": [
+   {
+    "q": "下一班地铁几分钟以后来？",
+    "a": [
+     "十",
+     "10"
+    ]
+   },
+   {
+    "q": "老太太在看什么？",
+    "a": [
+     "书"
+    ]
+   },
+   {
+    "q": "他们聊了书以后又聊了什么？",
+    "a": [
+     "旅行"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "下一班地铁十分钟以后才来。",
+    "The next train does not come for ten minutes."
+   ],
+   [
+    "十分钟很快就过去了。",
+    "The ten minutes went by very quickly."
+   ]
+  ],
+  "notice": "刚…就… means no sooner … than: \"他刚到，车门就关上了\" (he had only just arrived when the doors closed). 才 shows that something comes later than hoped: \"十分钟以后才来\" (does not come until ten minutes later)."
+ },
+ {
+  "id": "zh-yisheng",
+  "title": "看医生",
+  "level": "A2",
+  "text": "小刚嗓子疼了三天，还一直咳嗽。今天早上他决定去医院。候诊室里坐着一位老奶奶和一个正在哭的孩子。小刚等了半个小时，翻了翻一本旧杂志。护士终于叫了他的名字。医生问他哪里不舒服。小刚说他很累，晚上也睡不好。医生看了看他的嗓子，又听了听他的呼吸。医生说不严重，只是感冒。她让小刚多喝水，好好休息。小刚去药店买了药，然后回家了。他喝了一杯蜂蜜水，很早就睡了。明天应该会好一些。",
+  "gloss": {
+   "嗓子": "sǎngzi: throat",
+   "疼": "téng: to hurt",
+   "一直": "yìzhí: all the time",
+   "咳嗽": "késou: to cough",
+   "决定": "juédìng: to decide",
+   "医院": "yīyuàn: hospital",
+   "候诊室": "hòuzhěnshì: waiting room",
+   "老奶奶": "lǎonǎinai: old lady",
+   "哭": "kū: to cry",
+   "孩子": "háizi: child",
+   "等": "děng: to wait",
+   "小时": "xiǎoshí: hour",
+   "旧": "jiù: old",
+   "杂志": "zázhì: magazine",
+   "护士": "hùshi: nurse",
+   "终于": "zhōngyú: at last",
+   "名字": "míngzi: name",
+   "医生": "yīshēng: doctor",
+   "哪里": "nǎlǐ: where",
+   "舒服": "shūfu: comfortable (不舒服: unwell)",
+   "累": "lèi: tired",
+   "呼吸": "hūxī: breathing",
+   "严重": "yánzhòng: serious",
+   "只是": "zhǐshì: only",
+   "感冒": "gǎnmào: a cold",
+   "让": "ràng: to tell (someone to do something)",
+   "喝水": "hē shuǐ: to drink water",
+   "休息": "xiūxi: to rest",
+   "药店": "yàodiàn: pharmacy",
+   "药": "yào: medicine",
+   "蜂蜜": "fēngmì: honey",
+   "应该": "yīnggāi: should"
+  },
+  "questions": [
+   {
+    "q": "小刚哪里疼？",
+    "a": [
+     "嗓子"
+    ]
+   },
+   {
+    "q": "小刚等了多长时间？",
+    "a": [
+     "半个小时",
+     "半"
+    ]
+   },
+   {
+    "q": "医生说小刚得了什么病？",
+    "a": [
+     "感冒"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "今天早上他决定去医院。",
+    "This morning he decided to go to the hospital."
+   ],
+   [
+    "他喝了一杯蜂蜜水，很早就睡了。",
+    "He drank a glass of honey water and went to bed very early."
+   ]
+  ],
+  "notice": "Doubling a verb makes the action brief or casual: \"翻了翻一本旧杂志\" (leafed through an old magazine), \"看了看他的嗓子\" (had a look at his throat). 让 means to tell someone to do something: \"她让小刚多喝水\"."
+ },
+ {
+  "id": "zh-yinyuehui",
+  "title": "雨中的音乐会",
+  "level": "B1",
+  "text": "我们等这场音乐会已经等了好几个月。票很贵，但那是我妹妹最喜欢的乐队，我想给她过一个难忘的生日。音乐会在一个古老的露天剧场举行。我们刚到，天上就飘来了厚厚的乌云。第一首歌才开始，大雨就下了起来。几分钟以后，我们全身都湿透了。有些观众向出口跑去，可是大多数人都留了下来。歌手笑了笑，脱下外套，在雨里继续唱歌。于是所有的观众都开始在水坑里跳舞。妹妹喊得太厉害，嗓子都哑了。我想我们永远不会忘记那个晚上，正是因为没有一件事是按计划进行的。",
+  "gloss": {
+   "音乐": "yīnyuè: music (音乐会: concert)",
+   "已经": "yǐjīng: already",
+   "票": "piào: ticket",
+   "贵": "guì: expensive",
+   "妹妹": "mèimei: younger sister",
+   "乐队": "yuèduì: band",
+   "难忘": "nánwàng: unforgettable",
+   "生日": "shēngrì: birthday",
+   "古老": "gǔlǎo: ancient",
+   "露天": "lùtiān: open-air",
+   "剧场": "jùchǎng: theatre",
+   "举行": "jǔxíng: to be held",
+   "天上": "tiānshàng: in the sky",
+   "飘来": "piāolái: to drift in",
+   "乌云": "wūyún: dark clouds",
+   "开始": "kāishǐ: to begin",
+   "大雨": "dàyǔ: heavy rain",
+   "分钟": "fēnzhōng: minute",
+   "全身": "quánshēn: the whole body",
+   "湿": "shī: wet",
+   "观众": "guānzhòng: audience",
+   "出口": "chūkǒu: exit",
+   "多数": "duōshù: the majority",
+   "歌手": "gēshǒu: singer",
+   "脱下": "tuōxià: to take off",
+   "外套": "wàitào: coat, jacket",
+   "继续": "jìxù: to go on",
+   "唱歌": "chànggē: to sing",
+   "于是": "yúshì: so, at that",
+   "所有": "suǒyǒu: all",
+   "跳舞": "tiàowǔ: to dance",
+   "厉害": "lìhai: hard, fierce",
+   "嗓子": "sǎngzi: voice, throat",
+   "哑": "yǎ: hoarse",
+   "永远": "yǒngyuǎn: forever",
+   "忘记": "wàngjì: to forget",
+   "因为": "yīnwèi: because",
+   "计划": "jìhuà: plan",
+   "进行": "jìnxíng: to go on, proceed"
+  },
+  "questions": [
+   {
+    "q": "音乐会是为了给谁过生日？",
+    "a": [
+     "妹妹"
+    ]
+   },
+   {
+    "q": "歌手脱下了什么？",
+    "a": [
+     "外套"
+    ]
+   },
+   {
+    "q": "观众在哪里跳舞？",
+    "a": [
+     "水坑"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "音乐会在一个古老的露天剧场举行。",
+    "The concert was held in an old open-air theatre."
+   ],
+   [
+    "几分钟以后，我们全身都湿透了。",
+    "A few minutes later we were soaked through."
+   ]
+  ],
+  "notice": "A verb can carry its result after it: \"湿透了\" (soaked through), \"留了下来\" (stayed on), \"下了起来\" (started to fall). 得 links a verb to how it was done: \"妹妹喊得太厉害\" (my sister shouted so hard)."
+ },
+ {
+  "id": "zh-shouji",
+  "title": "丢了的手机",
+  "level": "B1",
+  "text": "星期五晚上，志强和朋友吃完饭，坐出租车回家。到了家门口，他才发现手机不见了。他找遍了所有的口袋和背包，都没有找到。手机里有他旅行时拍的照片，还有很多他记不住的电话号码。他借了邻居的电话打自己的号码，可是没有人接。他躺在床上，觉得再也找不到那部手机了。第二天早上，有人按了门铃。是那位出租车司机，手里拿着他的手机。司机说他在座位中间发现了手机，又想起了这个地址。志强想给他钱，司机不肯收，只喝了一杯茶，吃了一块蛋糕。从那以后，志强每次都叫这位司机的车。",
+  "gloss": {
+   "星期五": "xīngqīwǔ: Friday",
+   "出租": "chūzū: for hire (出租车: taxi)",
+   "回家": "huíjiā: to go home",
+   "门口": "ménkǒu: doorway",
+   "发现": "fāxiàn: to notice, find",
+   "手机": "shǒujī: mobile phone",
+   "不见了": "bújiàn le: gone, missing",
+   "找遍": "zhǎobiàn: to search everywhere",
+   "所有": "suǒyǒu: all",
+   "口袋": "kǒudài: pocket",
+   "背包": "bēibāo: backpack",
+   "找到": "zhǎodào: to find",
+   "旅行": "lǚxíng: travel",
+   "照片": "zhàopiàn: photo",
+   "记不住": "jì bu zhù: cannot remember",
+   "电话": "diànhuà: telephone",
+   "号码": "hàomǎ: number",
+   "借了": "jiè le: borrowed",
+   "邻居": "línjū: neighbour",
+   "自己": "zìjǐ: oneself, own",
+   "接": "jiē: to answer (a call)",
+   "躺在": "tǎng zài: to lie on",
+   "觉得": "juéde: to feel, think",
+   "再也": "zài yě: ever again",
+   "找不到": "zhǎo bu dào: cannot find",
+   "门铃": "ménlíng: doorbell",
+   "司机": "sījī: driver",
+   "座位": "zuòwèi: seat",
+   "中间": "zhōngjiān: between, middle",
+   "想起": "xiǎngqǐ: to remember",
+   "地址": "dìzhǐ: address",
+   "不肯": "bùkěn: to refuse to",
+   "收": "shōu: to accept",
+   "蛋糕": "dàngāo: cake",
+   "每次": "měi cì: every time"
+  },
+  "questions": [
+   {
+    "q": "志强坐什么回家？",
+    "a": [
+     "出租车"
+    ]
+   },
+   {
+    "q": "第二天早上谁按了门铃？",
+    "a": [
+     "司机"
+    ]
+   },
+   {
+    "q": "司机在哪里发现了手机？",
+    "a": [
+     "座位"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "到了家门口，他才发现手机不见了。",
+    "Only at his front door did he notice that his phone was gone."
+   ],
+   [
+    "第二天早上，有人按了门铃。",
+    "The next morning, someone rang the doorbell."
+   ]
+  ],
+  "notice": "A verb with 不 before its result means the result cannot be reached: \"记不住\" (cannot remember), \"找不到\" (cannot find). 遍 after a verb means all over: \"他找遍了所有的口袋和背包\" (he searched every pocket and his backpack)."
+ },
+ {
+  "id": "zh-d-mianbao",
+  "title": "在面包店",
+  "level": "A1",
+  "roles": [
+   "店员",
+   "顾客"
+  ],
+  "lines": [
+   [
+    0,
+    "欢迎光临！您要什么？"
+   ],
+   [
+    1,
+    "你好。我要一个面包。"
+   ],
+   [
+    0,
+    "好的。还要别的吗？"
+   ],
+   [
+    1,
+    "你们有牛角面包吗？"
+   ],
+   [
+    0,
+    "对不起，牛角面包卖完了。我们有刚出炉的蛋糕。"
+   ],
+   [
+    1,
+    "那我要两块蛋糕。"
+   ],
+   [
+    0,
+    "好的。一共三十块钱。"
+   ],
+   [
+    1,
+    "可以用手机付钱吗？"
+   ],
+   [
+    0,
+    "当然可以。您要袋子吗？"
+   ],
+   [
+    1,
+    "不用了，谢谢。"
+   ],
+   [
+    0,
+    "谢谢，欢迎再来！"
+   ],
+   [
+    1,
+    "好的，再见！"
+   ]
+  ],
+  "gloss": {
+   "欢迎": "huānyíng: welcome",
+   "光临": "guānglín: to come (欢迎光临: welcome to our shop)",
+   "面包": "miànbāo: bread",
+   "别的": "biéde: anything else",
+   "牛角": "niújiǎo: horn (牛角面包: croissant)",
+   "对不起": "duìbuqǐ: sorry",
+   "卖": "mài: to sell (卖完了: sold out)",
+   "出炉": "chūlú: out of the oven",
+   "蛋糕": "dàngāo: cake",
+   "一共": "yígòng: altogether",
+   "可以": "kěyǐ: may, can",
+   "手机": "shǒujī: mobile phone",
+   "付钱": "fùqián: to pay",
+   "当然": "dāngrán: of course",
+   "袋子": "dàizi: bag",
+   "不用": "búyòng: no need",
+   "再见": "zàijiàn: goodbye"
+  },
+  "questions": [
+   {
+    "q": "顾客先要了什么？",
+    "a": [
+     "面包"
+    ]
+   },
+   {
+    "q": "什么卖完了？",
+    "a": [
+     "牛角面包",
+     "牛角"
+    ]
+   }
+  ],
+  "notice": "要 means to want and is the simplest way to order: \"我要一个面包\" (I would like a loaf of bread), \"那我要两块蛋糕\" (then I will have two pieces of cake). 吗 turns a statement into a question: \"你们有牛角面包吗？\""
+ },
+ {
+  "id": "zh-d-wenlu",
+  "title": "问路",
+  "level": "A1",
+  "roles": [
+   "路人",
+   "游客"
+  ],
+  "lines": [
+   [
+    1,
+    "请问，地铁站在哪里？"
+   ],
+   [
+    0,
+    "不远。你一直往前走。"
+   ],
+   [
+    1,
+    "一直往前走，然后呢？"
+   ],
+   [
+    0,
+    "到了红绿灯往左拐。"
+   ],
+   [
+    1,
+    "对不起，请你慢一点再说一遍。"
+   ],
+   [
+    0,
+    "好的。一直往前走，到了红绿灯往左拐。"
+   ],
+   [
+    1,
+    "谢谢。地铁站在路的右边吗？"
+   ],
+   [
+    0,
+    "对，在右边，银行的对面。"
+   ],
+   [
+    1,
+    "走路要多长时间？"
+   ],
+   [
+    0,
+    "大概十分钟。"
+   ],
+   [
+    1,
+    "太感谢你了！"
+   ],
+   [
+    0,
+    "不客气。祝你旅途愉快！"
+   ]
+  ],
+  "gloss": {
+   "请问": "qǐngwèn: excuse me, may I ask",
+   "地铁": "dìtiě: underground (地铁站: underground station)",
+   "哪里": "nǎlǐ: where",
+   "远": "yuǎn: far",
+   "一直": "yìzhí: straight on",
+   "往前走": "wǎng qián zǒu: to go forward",
+   "然后": "ránhòu: then",
+   "红绿灯": "hónglǜdēng: traffic lights",
+   "往左": "wǎng zuǒ: to the left",
+   "拐": "guǎi: to turn",
+   "慢": "màn: slow",
+   "一遍": "yí biàn: once (再说一遍: say it once more)",
+   "右边": "yòubian: the right side",
+   "银行": "yínháng: bank",
+   "对面": "duìmiàn: opposite",
+   "走路": "zǒulù: to walk",
+   "时间": "shíjiān: time",
+   "大概": "dàgài: about",
+   "感谢": "gǎnxiè: to thank",
+   "不客气": "bú kèqi: you are welcome",
+   "旅途愉快": "lǚtú yúkuài: have a pleasant trip"
+  },
+  "questions": [
+   {
+    "q": "游客在找什么？",
+    "a": [
+     "地铁站",
+     "地铁"
+    ]
+   },
+   {
+    "q": "到了红绿灯要往哪边拐？",
+    "a": [
+     "左"
+    ]
+   }
+  ],
+  "notice": "往 gives a direction before the verb: \"一直往前走\" (keep going straight ahead), \"往左拐\" (turn left). 请问 opens a polite question to a stranger: \"请问，地铁站在哪里？\""
+ },
+ {
+  "id": "zh-d-yaodian",
+  "title": "在药店",
+  "level": "A2",
+  "roles": [
+   "药剂师",
+   "顾客"
+  ],
+  "lines": [
+   [
+    0,
+    "您好。您哪里不舒服？"
+   ],
+   [
+    1,
+    "我嗓子疼了三天，还咳嗽。"
+   ],
+   [
+    0,
+    "发烧吗？"
+   ],
+   [
+    1,
+    "昨天晚上有一点发烧，今天不烧了。"
+   ],
+   [
+    0,
+    "咳嗽的时候有痰吗？"
+   ],
+   [
+    1,
+    "没有，是干咳。晚上我睡不好。"
+   ],
+   [
+    0,
+    "那我给您这种止咳糖浆和润喉糖。"
+   ],
+   [
+    1,
+    "我可以买抗生素吗？"
+   ],
+   [
+    0,
+    "抗生素需要医生的处方。而且感冒吃抗生素没有用。"
+   ],
+   [
+    1,
+    "明白了。糖浆一天要喝几次？"
+   ],
+   [
+    0,
+    "一天三次，饭后喝一勺。"
+   ],
+   [
+    1,
+    "好的，我要糖浆和润喉糖。"
+   ],
+   [
+    0,
+    "给您。如果三天以后还不好，请去医院看看。"
+   ],
+   [
+    1,
+    "好的，我会去的。谢谢您。"
+   ]
+  ],
+  "gloss": {
+   "舒服": "shūfu: comfortable (不舒服: unwell)",
+   "嗓子": "sǎngzi: throat",
+   "疼": "téng: to hurt",
+   "咳嗽": "késou: to cough",
+   "发烧": "fāshāo: to have a fever",
+   "昨天晚上": "zuótiān wǎnshang: last night",
+   "时候": "shíhou: time (…的时候: when …)",
+   "痰": "tán: phlegm",
+   "干": "gān: dry (干咳: a dry cough)",
+   "止咳": "zhǐké: cough-relieving",
+   "糖浆": "tángjiāng: syrup",
+   "润喉": "rùnhóu: throat-soothing (润喉糖: lozenge)",
+   "抗生素": "kàngshēngsù: antibiotic",
+   "需要": "xūyào: to need",
+   "处方": "chǔfāng: prescription",
+   "而且": "érqiě: besides",
+   "感冒": "gǎnmào: a cold",
+   "明白": "míngbai: to understand",
+   "几次": "jǐ cì: how many times",
+   "勺": "sháo: spoonful",
+   "如果": "rúguǒ: if",
+   "医院": "yīyuàn: hospital"
+  },
+  "questions": [
+   {
+    "q": "顾客哪里疼？",
+    "a": [
+     "嗓子"
+    ]
+   },
+   {
+    "q": "买抗生素需要什么？",
+    "a": [
+     "处方"
+    ]
+   }
+  ],
+  "notice": "如果 states a condition: \"如果三天以后还不好，请去医院看看\" (if you are still not better in three days, please go to the hospital). 一天三次 puts the period first and the number of times after it."
+ },
+ {
+  "id": "zh-d-dingwei",
+  "title": "订位",
+  "level": "A2",
+  "roles": [
+   "服务员",
+   "客人"
+  ],
+  "lines": [
+   [
+    0,
+    "您好，这里是长江饭店。"
+   ],
+   [
+    1,
+    "你好。我想订星期六晚上的位子。"
+   ],
+   [
+    0,
+    "请问几位？"
+   ],
+   [
+    1,
+    "两个大人和两个孩子。"
+   ],
+   [
+    0,
+    "您几点到？"
+   ],
+   [
+    1,
+    "晚上七点左右可以吗？"
+   ],
+   [
+    0,
+    "对不起，七点没有位子了。六点或者八点都可以。"
+   ],
+   [
+    1,
+    "那就六点吧。有靠窗的位子吗？"
+   ],
+   [
+    0,
+    "有，我给您留一张靠窗的桌子。请问您贵姓？"
+   ],
+   [
+    1,
+    "我姓王。你们有没有不放肉的菜？"
+   ],
+   [
+    0,
+    "有，我们有几种蔬菜和鱼做的菜。"
+   ],
+   [
+    1,
+    "太好了。要留我的电话号码吗？"
+   ],
+   [
+    0,
+    "好的，请您说一下，以防万一。"
+   ],
+   [
+    1,
+    "我发短信给你们。星期六见！"
+   ]
+  ],
+  "gloss": {
+   "饭店": "fàndiàn: restaurant",
+   "订": "dìng: to book",
+   "星期六": "xīngqīliù: Saturday",
+   "位子": "wèizi: seat, table",
+   "大人": "dàren: adult",
+   "孩子": "háizi: child",
+   "几点": "jǐ diǎn: what time",
+   "左右": "zuǒyòu: about",
+   "或者": "huòzhě: or",
+   "靠窗": "kào chuāng: by the window",
+   "留": "liú: to keep, reserve",
+   "桌子": "zhuōzi: table",
+   "贵姓": "guìxìng: your surname (polite)",
+   "肉": "ròu: meat",
+   "菜": "cài: dish",
+   "蔬菜": "shūcài: vegetables",
+   "鱼": "yú: fish",
+   "电话": "diànhuà: telephone",
+   "号码": "hàomǎ: number",
+   "以防万一": "yǐ fáng wànyī: just in case",
+   "短信": "duǎnxìn: text message"
+  },
+  "questions": [
+   {
+    "q": "客人想订星期几的位子？",
+    "a": [
+     "星期六",
+     "六"
+    ]
+   },
+   {
+    "q": "客人想要什么样的位子？",
+    "a": [
+     "靠窗"
+    ]
+   }
+  ],
+  "notice": "想 before a verb means would like to: \"我想订星期六晚上的位子\" (I would like to book a table for Saturday evening). 吧 softens a decision: \"那就六点吧\" (let us make it six, then)."
+ }
+]

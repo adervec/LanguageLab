@@ -5,22 +5,78 @@
   "level": "A1",
   "text": "Ich heiße Mia und ich bin elf Jahre alt. Ich wohne mit meiner Familie in Bonn. Mein Vater heißt Jonas. Er ist Koch und arbeitet in einem Restaurant. Meine Mutter heißt Sabine. Sie ist Lehrerin und fährt jeden Tag mit dem Fahrrad zur Schule. Ich habe einen kleinen Bruder. Er heißt Paul und ist erst vier Jahre alt. Paul ist manchmal laut, aber er ist sehr lustig. Unsere Wohnung ist klein, und Paul und ich haben zusammen ein Zimmer. Am Sonntag besuchen wir immer meine Oma. Sie wohnt in einem Dorf und hat einen großen Garten. Heute hat Oma eine Überraschung für uns. In der Küche sitzt eine kleine graue Katze. „Sie heißt Minka und sie bleibt jetzt bei mir“, sagt Oma. Paul lacht, und ich bin sehr glücklich. Jetzt möchte ich jeden Tag zu Oma fahren.",
   "gloss": {
-   "heiße": "am called (heißen)", "heißt": "is called (heißen)", "wohne": "live", "wohnt": "lives", "koch": "cook, chef",
-   "arbeitet": "works", "lehrerin": "teacher (a woman)", "fährt": "goes, rides (fahren)", "jeden": "every",
-   "tag": "day", "fahrrad": "bicycle", "schule": "school", "kleinen": "little", "bruder": "brother",
-   "erst": "only", "manchmal": "sometimes", "laut": "loud", "lustig": "funny", "wohnung": "flat, apartment",
-   "zusammen": "together", "zimmer": "room", "sonntag": "Sunday", "besuchen": "visit", "immer": "always",
-   "oma": "grandma", "dorf": "village", "großen": "big", "garten": "garden", "heute": "today",
-   "überraschung": "surprise", "küche": "kitchen", "sitzt": "is sitting", "graue": "grey", "katze": "cat",
-   "bleibt": "is staying", "jetzt": "now", "lacht": "laughs", "glücklich": "happy", "möchte": "would like",
+   "heiße": "am called (heißen)",
+   "heißt": "is called (heißen)",
+   "wohne": "live",
+   "wohnt": "lives",
+   "koch": "cook, chef",
+   "arbeitet": "works",
+   "lehrerin": "teacher (a woman)",
+   "fährt": "goes, rides (fahren)",
+   "jeden": "every",
+   "tag": "day",
+   "fahrrad": "bicycle",
+   "schule": "school",
+   "kleinen": "little",
+   "bruder": "brother",
+   "erst": "only",
+   "manchmal": "sometimes",
+   "laut": "loud",
+   "lustig": "funny",
+   "wohnung": "flat, apartment",
+   "zusammen": "together",
+   "zimmer": "room",
+   "sonntag": "Sunday",
+   "besuchen": "visit",
+   "immer": "always",
+   "oma": "grandma",
+   "dorf": "village",
+   "großen": "big",
+   "garten": "garden",
+   "heute": "today",
+   "überraschung": "surprise",
+   "küche": "kitchen",
+   "sitzt": "is sitting",
+   "graue": "grey",
+   "katze": "cat",
+   "bleibt": "is staying",
+   "jetzt": "now",
+   "lacht": "laughs",
+   "glücklich": "happy",
+   "möchte": "would like",
    "fahren": "to go, to travel"
   },
   "questions": [
-   { "q": "Was ist Mias Vater von Beruf?", "a": ["Koch"] },
-   { "q": "Wo wohnt die Oma?", "a": ["Dorf"] },
-   { "q": "Welches Tier sitzt in der Küche?", "a": ["Katze"] }
+   {
+    "q": "Was ist Mias Vater von Beruf?",
+    "a": [
+     "Koch"
+    ]
+   },
+   {
+    "q": "Wo wohnt die Oma?",
+    "a": [
+     "Dorf"
+    ]
+   },
+   {
+    "q": "Welches Tier sitzt in der Küche?",
+    "a": [
+     "Katze"
+    ]
+   }
   ],
-  "notice": "When a sentence starts with something other than the subject, such as a time, the verb still comes second and the subject follows it: \"Am Sonntag besuchen wir immer meine Oma\", \"Heute hat Oma eine Überraschung für uns\"."
+  "notice": "When a sentence starts with something other than the subject, such as a time, the verb still comes second and the subject follows it: \"Am Sonntag besuchen wir immer meine Oma\", \"Heute hat Oma eine Überraschung für uns\".",
+  "back": [
+   [
+    "Er heißt Paul und ist erst vier Jahre alt.",
+    "He is called Paul and is only four years old."
+   ],
+   [
+    "Heute hat Oma eine Überraschung für uns.",
+    "Today Grandma has a surprise for us."
+   ]
+  ]
  },
  {
   "id": "de-morgen",
@@ -28,25 +84,85 @@
   "level": "A1",
   "text": "Ben wohnt in Hannover. Sein Wecker klingelt um halb sieben. Ben ist noch müde, aber er steht sofort auf. Er duscht schnell und zieht ein weißes Hemd an. In der Küche trinkt er einen Kaffee und isst ein Brot mit Käse. Dann sieht er auf die Uhr. Es ist schon spät! Ben nimmt seine Tasche und läuft zur Haltestelle. Der Bus kommt pünktlich, und Ben steigt ein. Heute ist der Bus fast leer. Das findet Ben komisch. Um acht Uhr kommt er im Büro an. Aber die Tür ist zu, und alles ist dunkel. Ben versteht das nicht. Er ruft seine Kollegin Anna an. Anna lacht laut. „Ben, heute ist doch Samstag“, sagt sie. Jetzt lacht Ben auch. Er fährt nach Hause, zieht das Hemd aus und geht wieder ins Bett.",
   "gloss": {
-   "wohnt": "lives", "wecker": "alarm clock", "klingelt": "rings", "halb": "half (halb sieben: half past six)",
-   "müde": "tired", "steht": "gets up (aufstehen)", "sofort": "at once", "duscht": "takes a shower",
-   "schnell": "quickly", "zieht": "puts on (anziehen); takes off (ausziehen)", "weißes": "white",
-   "hemd": "shirt", "küche": "kitchen", "trinkt": "drinks", "isst": "eats (essen)", "brot": "bread",
-   "käse": "cheese", "sieht": "looks (sehen)", "uhr": "clock; o'clock", "spät": "late",
-   "nimmt": "takes (nehmen)", "tasche": "bag", "läuft": "runs (laufen)", "haltestelle": "bus stop",
-   "kommt": "comes; arrives (ankommen)", "pünktlich": "on time", "steigt": "gets on (einsteigen)",
-   "heute": "today", "fast": "almost", "leer": "empty", "findet": "finds, thinks", "komisch": "strange",
-   "büro": "office", "tür": "door", "zu": "closed, shut", "alles": "everything", "dunkel": "dark",
-   "versteht": "understands", "ruft": "phones (anrufen)", "kollegin": "colleague (a woman)", "lacht": "laughs",
-   "laut": "loudly", "samstag": "Saturday", "fährt": "goes, travels (fahren)", "hause": "nach Hause: home",
-   "wieder": "again", "bett": "bed"
+   "wohnt": "lives",
+   "wecker": "alarm clock",
+   "klingelt": "rings",
+   "halb": "half (halb sieben: half past six)",
+   "müde": "tired",
+   "steht": "gets up (aufstehen)",
+   "sofort": "at once",
+   "duscht": "takes a shower",
+   "schnell": "quickly",
+   "zieht": "puts on (anziehen); takes off (ausziehen)",
+   "weißes": "white",
+   "hemd": "shirt",
+   "küche": "kitchen",
+   "trinkt": "drinks",
+   "isst": "eats (essen)",
+   "brot": "bread",
+   "käse": "cheese",
+   "sieht": "looks (sehen)",
+   "uhr": "clock; o'clock",
+   "spät": "late",
+   "nimmt": "takes (nehmen)",
+   "tasche": "bag",
+   "läuft": "runs (laufen)",
+   "haltestelle": "bus stop",
+   "kommt": "comes; arrives (ankommen)",
+   "pünktlich": "on time",
+   "steigt": "gets on (einsteigen)",
+   "heute": "today",
+   "fast": "almost",
+   "leer": "empty",
+   "findet": "finds, thinks",
+   "komisch": "strange",
+   "büro": "office",
+   "tür": "door",
+   "zu": "closed, shut",
+   "alles": "everything",
+   "dunkel": "dark",
+   "versteht": "understands",
+   "ruft": "phones (anrufen)",
+   "kollegin": "colleague (a woman)",
+   "lacht": "laughs",
+   "laut": "loudly",
+   "samstag": "Saturday",
+   "fährt": "goes, travels (fahren)",
+   "hause": "nach Hause: home",
+   "wieder": "again",
+   "bett": "bed"
   },
   "questions": [
-   { "q": "Was trinkt Ben in der Küche?", "a": ["Kaffee"] },
-   { "q": "Womit fährt Ben ins Büro?", "a": ["Bus"] },
-   { "q": "Welcher Wochentag ist es in der Geschichte?", "a": ["Samstag"] }
+   {
+    "q": "Was trinkt Ben in der Küche?",
+    "a": [
+     "Kaffee"
+    ]
+   },
+   {
+    "q": "Womit fährt Ben ins Büro?",
+    "a": [
+     "Bus"
+    ]
+   },
+   {
+    "q": "Welcher Wochentag ist es in der Geschichte?",
+    "a": [
+     "Samstag"
+    ]
+   }
   ],
-  "notice": "Many German verbs split in two, and the prefix goes to the end of the sentence. Aufstehen (to get up) gives \"er steht sofort auf\", and anrufen (to phone) gives \"Er ruft seine Kollegin Anna an\"."
+  "notice": "Many German verbs split in two, and the prefix goes to the end of the sentence. Aufstehen (to get up) gives \"er steht sofort auf\", and anrufen (to phone) gives \"Er ruft seine Kollegin Anna an\".",
+  "back": [
+   [
+    "Dann sieht er auf die Uhr.",
+    "Then he looks at the clock."
+   ],
+   [
+    "Heute ist der Bus fast leer.",
+    "Today the bus is almost empty."
+   ]
+  ]
  },
  {
   "id": "de-cafe",
@@ -54,25 +170,81 @@
   "level": "A1",
   "text": "Es ist Nachmittag und es regnet in Wien. Lisa hat keinen Regenschirm. Sie geht schnell in ein kleines Café. Dort ist es warm und es riecht nach Kaffee. Lisa setzt sich an einen Tisch am Fenster. „Was möchten Sie?“, fragt der Kellner. Lisa bestellt einen Kaffee mit Milch und ein Stück Apfelstrudel. Aber der Kellner bringt einen Tee und ein Stück Schokoladentorte. „Entschuldigung, das habe ich nicht bestellt“, sagt Lisa. Der Kellner wird rot. „Oh, das tut mir leid“, antwortet er. Zwei Minuten später kommt er mit dem Kaffee und dem Apfelstrudel zurück. Die Torte darf Lisa auch behalten. Sie kostet nichts. Lisa probiert beide Kuchen und findet sie sehr gut. Draußen regnet es immer noch, aber das ist ihr jetzt egal.",
   "gloss": {
-   "nachmittag": "afternoon", "regnet": "is raining", "keinen": "no, not a", "regenschirm": "umbrella",
-   "geht": "goes", "schnell": "quickly", "kleines": "small",
-   "riecht": "smells (riechen nach: to smell of)", "setzt": "sits down (sich setzen)",
-   "tisch": "table", "fenster": "window", "möchten": "would like", "fragt": "asks", "kellner": "waiter",
-   "bestellt": "orders; ordered (bestellen)", "milch": "milk", "stück": "piece",
-   "apfelstrudel": "apple strudel (a pastry)", "bringt": "brings", "schokoladentorte": "chocolate cake",
-   "entschuldigung": "excuse me", "wird": "turns, becomes (werden)", "rot": "red",
-   "leid": "das tut mir leid: I am sorry", "antwortet": "answers", "später": "later",
-   "kommt": "comes back (zurückkommen)", "zurück": "back", "torte": "cake (a rich one, in layers)",
-   "darf": "may, is allowed to (dürfen)", "behalten": "to keep", "kostet": "costs", "nichts": "nothing",
-   "probiert": "tries, tastes", "beide": "both", "kuchen": "cakes", "findet": "finds, thinks",
-   "draußen": "outside", "immer": "always (immer noch: still)", "egal": "das ist ihr egal: she does not mind"
+   "nachmittag": "afternoon",
+   "regnet": "is raining",
+   "keinen": "no, not a",
+   "regenschirm": "umbrella",
+   "geht": "goes",
+   "schnell": "quickly",
+   "kleines": "small",
+   "riecht": "smells (riechen nach: to smell of)",
+   "setzt": "sits down (sich setzen)",
+   "tisch": "table",
+   "fenster": "window",
+   "möchten": "would like",
+   "fragt": "asks",
+   "kellner": "waiter",
+   "bestellt": "orders; ordered (bestellen)",
+   "milch": "milk",
+   "stück": "piece",
+   "apfelstrudel": "apple strudel (a pastry)",
+   "bringt": "brings",
+   "schokoladentorte": "chocolate cake",
+   "entschuldigung": "excuse me",
+   "wird": "turns, becomes (werden)",
+   "rot": "red",
+   "leid": "das tut mir leid: I am sorry",
+   "antwortet": "answers",
+   "später": "later",
+   "kommt": "comes back (zurückkommen)",
+   "zurück": "back",
+   "torte": "cake (a rich one, in layers)",
+   "darf": "may, is allowed to (dürfen)",
+   "behalten": "to keep",
+   "kostet": "costs",
+   "nichts": "nothing",
+   "probiert": "tries, tastes",
+   "beide": "both",
+   "kuchen": "cakes",
+   "findet": "finds, thinks",
+   "draußen": "outside",
+   "immer": "always (immer noch: still)",
+   "egal": "das ist ihr egal: she does not mind"
   },
   "questions": [
-   { "q": "Wie ist das Wetter in Wien?", "a": ["regnet", "Regen"] },
-   { "q": "Welches Getränk bringt der Kellner zuerst?", "a": ["Tee"] },
-   { "q": "Was darf Lisa am Ende behalten?", "a": ["Schokoladentorte", "Torte", "Kuchen"] }
+   {
+    "q": "Wie ist das Wetter in Wien?",
+    "a": [
+     "regnet",
+     "Regen"
+    ]
+   },
+   {
+    "q": "Welches Getränk bringt der Kellner zuerst?",
+    "a": [
+     "Tee"
+    ]
+   },
+   {
+    "q": "Was darf Lisa am Ende behalten?",
+    "a": [
+     "Schokoladentorte",
+     "Torte",
+     "Kuchen"
+    ]
+   }
   ],
-  "notice": "A masculine noun changes its article when it is the object of the verb: ein becomes einen and kein becomes keinen. \"Lisa hat keinen Regenschirm\", \"Lisa bestellt einen Kaffee mit Milch\"."
+  "notice": "A masculine noun changes its article when it is the object of the verb: ein becomes einen and kein becomes keinen. \"Lisa hat keinen Regenschirm\", \"Lisa bestellt einen Kaffee mit Milch\".",
+  "back": [
+   [
+    "Lisa setzt sich an einen Tisch am Fenster.",
+    "Lisa sits down at a table by the window."
+   ],
+   [
+    "Zwei Minuten später kommt er mit dem Kaffee und dem Apfelstrudel zurück.",
+    "Two minutes later he comes back with the coffee and the apple strudel."
+   ]
+  ]
  },
  {
   "id": "de-markt",
@@ -80,22 +252,76 @@
   "level": "A2",
   "text": "Jeden Samstag geht Clara in Freiburg auf den Wochenmarkt. Sie kennt dort fast alle Verkäufer. Heute Abend kommen Freunde zum Essen, und sie möchte eine Gemüsesuppe kochen. Zuerst kauft sie Kartoffeln, Karotten und Zwiebeln bei einem Bauern aus der Region. Das Gemüse ist frisch und nicht teuer. Dann geht sie zum Brotstand, aber heute ist er nicht da. Clara ist enttäuscht, denn dort gibt es das beste Brot der Stadt. Die Verkäuferin am Käsestand nebenan sieht ihr trauriges Gesicht. „Der Bäcker ist krank, aber probieren Sie doch unseren Bergkäse“, sagt sie. Clara probiert ihn und ist begeistert. Sie kauft gleich ein großes Stück. Auf dem Weg nach Hause hat sie eine neue Idee. Am Abend gibt es keine Suppe. Clara macht Kartoffeln und Gemüse mit geschmolzenem Käse aus dem Ofen. Ihre Freunde essen alles auf und fragen sofort nach dem Rezept.",
   "gloss": {
-   "wochenmarkt": "weekly market", "kennt": "knows", "fast": "almost", "verkäufer": "sellers, stallholders",
-   "gemüsesuppe": "vegetable soup", "kochen": "to cook", "zuerst": "first", "kartoffeln": "potatoes",
-   "karotten": "carrots", "zwiebeln": "onions", "bauern": "farmer (der Bauer)", "gemüse": "vegetables",
-   "frisch": "fresh", "teuer": "expensive", "brotstand": "bread stall", "enttäuscht": "disappointed",
-   "denn": "because", "verkäuferin": "seller (a woman)", "käsestand": "cheese stall", "nebenan": "next door",
-   "trauriges": "sad", "gesicht": "face", "bäcker": "baker", "krank": "ill", "probieren": "try, taste",
-   "probiert": "tries, tastes", "bergkäse": "mountain cheese", "begeistert": "delighted", "gleich": "straight away",
-   "stück": "piece", "weg": "way", "suppe": "soup", "geschmolzenem": "melted (schmelzen: to melt)", "ofen": "oven",
-   "essen": "meal; eat (aufessen: to eat up)", "sofort": "at once", "rezept": "recipe"
+   "wochenmarkt": "weekly market",
+   "kennt": "knows",
+   "fast": "almost",
+   "verkäufer": "sellers, stallholders",
+   "gemüsesuppe": "vegetable soup",
+   "kochen": "to cook",
+   "zuerst": "first",
+   "kartoffeln": "potatoes",
+   "karotten": "carrots",
+   "zwiebeln": "onions",
+   "bauern": "farmer (der Bauer)",
+   "gemüse": "vegetables",
+   "frisch": "fresh",
+   "teuer": "expensive",
+   "brotstand": "bread stall",
+   "enttäuscht": "disappointed",
+   "denn": "because",
+   "verkäuferin": "seller (a woman)",
+   "käsestand": "cheese stall",
+   "nebenan": "next door",
+   "trauriges": "sad",
+   "gesicht": "face",
+   "bäcker": "baker",
+   "krank": "ill",
+   "probieren": "try, taste",
+   "probiert": "tries, tastes",
+   "bergkäse": "mountain cheese",
+   "begeistert": "delighted",
+   "gleich": "straight away",
+   "stück": "piece",
+   "weg": "way",
+   "suppe": "soup",
+   "geschmolzenem": "melted (schmelzen: to melt)",
+   "ofen": "oven",
+   "essen": "meal; eat (aufessen: to eat up)",
+   "sofort": "at once",
+   "rezept": "recipe"
   },
   "questions": [
-   { "q": "Was möchte Clara für ihre Freunde kochen?", "a": ["Gemüsesuppe", "Suppe"] },
-   { "q": "Warum ist der Bäcker heute nicht da?", "a": ["krank"] },
-   { "q": "Wonach fragen die Freunde am Ende?", "a": ["Rezept"] }
+   {
+    "q": "Was möchte Clara für ihre Freunde kochen?",
+    "a": [
+     "Gemüsesuppe",
+     "Suppe"
+    ]
+   },
+   {
+    "q": "Warum ist der Bäcker heute nicht da?",
+    "a": [
+     "krank"
+    ]
+   },
+   {
+    "q": "Wonach fragen die Freunde am Ende?",
+    "a": [
+     "Rezept"
+    ]
+   }
   ],
-  "notice": "After aus, bei, mit, nach and zu the noun is always in the dative, so der and das become dem, and die becomes der: \"bei einem Bauern aus der Region\", \"mit geschmolzenem Käse aus dem Ofen\"."
+  "notice": "After aus, bei, mit, nach and zu the noun is always in the dative, so der and das become dem, and die becomes der: \"bei einem Bauern aus der Region\", \"mit geschmolzenem Käse aus dem Ofen\".",
+  "back": [
+   [
+    "Das Gemüse ist frisch und nicht teuer.",
+    "The vegetables are fresh and not expensive."
+   ],
+   [
+    "Sie kauft gleich ein großes Stück.",
+    "She buys a big piece straight away."
+   ]
+  ]
  },
  {
   "id": "de-see",
@@ -103,24 +329,77 @@
   "level": "A2",
   "text": "Letztes Wochenende sind wir an den Bodensee gefahren. Wir wohnen in Stuttgart, und die Fahrt hat nur zwei Stunden gedauert. Meine Tochter Emma wollte zuerst nicht mitkommen. Sie ist fünfzehn und fand die Idee langweilig. „Dort gibt es bestimmt kein Internet“, hat sie gesagt. Wir haben auf einem Campingplatz direkt am Wasser gezeltet. Am Samstag hat es den ganzen Vormittag geregnet, und Emma hat kaum ein Wort gesprochen. Am Nachmittag ist endlich die Sonne herausgekommen. Wir haben ein kleines Boot gemietet und sind auf den See hinausgefahren. Emma durfte rudern, und plötzlich hat sie gelacht. Später sind wir alle ins kalte Wasser gesprungen. Am Abend haben wir Würstchen gegrillt und die Sterne angeschaut. Am Sonntag mussten wir wieder nach Hause fahren. Im Auto war Emma lange still. Dann hat sie gefragt: „Können wir nächstes Jahr wieder hinfahren?“",
   "gloss": {
-   "letztes": "last", "wochenende": "weekend", "gefahren": "gone, driven (fahren)", "fahrt": "drive, journey",
-   "gedauert": "taken, lasted (dauern)", "tochter": "daughter", "wollte": "wanted (wollen)", "zuerst": "at first",
-   "mitkommen": "to come along", "fand": "found, thought (finden)", "langweilig": "boring", "bestimmt": "surely",
-   "campingplatz": "campsite", "direkt": "right, directly", "gezeltet": "camped in a tent (zelten)",
-   "vormittag": "morning", "geregnet": "rained (regnen)", "kaum": "hardly", "gesprochen": "spoken (sprechen)",
-   "endlich": "at last", "herausgekommen": "come out (herauskommen)", "boot": "boat", "gemietet": "rented (mieten)",
-   "see": "lake", "hinausgefahren": "gone out (hinausfahren)", "durfte": "was allowed to (dürfen)",
-   "rudern": "to row", "plötzlich": "suddenly", "gelacht": "laughed (lachen)", "gesprungen": "jumped (springen)",
-   "würstchen": "sausages", "gegrillt": "barbecued (grillen)", "sterne": "stars",
-   "angeschaut": "looked at (anschauen)", "mussten": "had to (müssen)", "still": "quiet", "nächstes": "next",
+   "letztes": "last",
+   "wochenende": "weekend",
+   "gefahren": "gone, driven (fahren)",
+   "fahrt": "drive, journey",
+   "gedauert": "taken, lasted (dauern)",
+   "tochter": "daughter",
+   "wollte": "wanted (wollen)",
+   "zuerst": "at first",
+   "mitkommen": "to come along",
+   "fand": "found, thought (finden)",
+   "langweilig": "boring",
+   "bestimmt": "surely",
+   "campingplatz": "campsite",
+   "direkt": "right, directly",
+   "gezeltet": "camped in a tent (zelten)",
+   "vormittag": "morning",
+   "geregnet": "rained (regnen)",
+   "kaum": "hardly",
+   "gesprochen": "spoken (sprechen)",
+   "endlich": "at last",
+   "herausgekommen": "come out (herauskommen)",
+   "boot": "boat",
+   "gemietet": "rented (mieten)",
+   "see": "lake",
+   "hinausgefahren": "gone out (hinausfahren)",
+   "durfte": "was allowed to (dürfen)",
+   "rudern": "to row",
+   "plötzlich": "suddenly",
+   "gelacht": "laughed (lachen)",
+   "gesprungen": "jumped (springen)",
+   "würstchen": "sausages",
+   "gegrillt": "barbecued (grillen)",
+   "sterne": "stars",
+   "angeschaut": "looked at (anschauen)",
+   "mussten": "had to (müssen)",
+   "still": "quiet",
+   "nächstes": "next",
    "hinfahren": "to go there"
   },
   "questions": [
-   { "q": "Wer wollte zuerst nicht mitkommen?", "a": ["Emma", "Tochter"] },
-   { "q": "Was hat die Familie am Nachmittag gemietet?", "a": ["Boot"] },
-   { "q": "Was hat die Familie am Abend angeschaut?", "a": ["Sterne"] }
+   {
+    "q": "Wer wollte zuerst nicht mitkommen?",
+    "a": [
+     "Emma",
+     "Tochter"
+    ]
+   },
+   {
+    "q": "Was hat die Familie am Nachmittag gemietet?",
+    "a": [
+     "Boot"
+    ]
+   },
+   {
+    "q": "Was hat die Familie am Abend angeschaut?",
+    "a": [
+     "Sterne"
+    ]
+   }
   ],
-  "notice": "The spoken past (Perfekt) is built with haben for most verbs, but with sein for verbs of movement: \"Wir haben ein kleines Boot gemietet\", \"Später sind wir alle ins kalte Wasser gesprungen\"."
+  "notice": "The spoken past (Perfekt) is built with haben for most verbs, but with sein for verbs of movement: \"Wir haben ein kleines Boot gemietet\", \"Später sind wir alle ins kalte Wasser gesprungen\".",
+  "back": [
+   [
+    "Sie ist fünfzehn und fand die Idee langweilig.",
+    "She is fifteen and found the idea boring."
+   ],
+   [
+    "Später sind wir alle ins kalte Wasser gesprungen.",
+    "Later we all jumped into the cold water."
+   ]
+  ]
  },
  {
   "id": "de-umzug",
@@ -128,22 +407,70 @@
   "level": "A2",
   "text": "Am Samstag ist Tim in seine neue Wohnung in Hamburg gezogen. Die Wohnung liegt im vierten Stock, und es gibt keinen Aufzug. Zum Glück haben ihm drei Freunde beim Umzug geholfen. Sie haben den ganzen Vormittag Kartons die Treppe hinaufgetragen. Mit dem Bett und dem Tisch gab es keine Probleme. Aber das große rote Sofa war zu breit für das enge Treppenhaus. Die Freunde haben es gedreht und geschoben, aber es hat nicht gepasst. Tim war müde und hatte keine Idee mehr. Da ist eine Nachbarin aus dem Erdgeschoss gekommen. Sie hat gesagt, dass sie so ein Sofa schon lange sucht. Ihr eigenes Sofa war klein, aber noch sehr schön. „Wollen wir tauschen?“, hat sie gefragt. Tim hat sofort Ja gesagt. Am Abend haben alle zusammen auf dem kleinen Sofa und auf Kartons gesessen und Nudeln gegessen. Die Nachbarin hat einen Kuchen mitgebracht.",
   "gloss": {
-   "wohnung": "flat, apartment", "gezogen": "moved (ziehen)", "liegt": "is, lies (liegen)", "stock": "floor, storey",
-   "aufzug": "lift, elevator", "glück": "luck (zum Glück: luckily)", "umzug": "move (to a new home)",
-   "geholfen": "helped (helfen)", "vormittag": "morning", "kartons": "cardboard boxes", "treppe": "stairs",
-   "hinaufgetragen": "carried up (hinauftragen)", "gab": "es gab: there was, there were (geben)", "breit": "wide",
-   "enge": "narrow", "treppenhaus": "stairwell", "gedreht": "turned (drehen)", "geschoben": "pushed (schieben)",
-   "gepasst": "fitted (passen)", "müde": "tired", "nachbarin": "neighbour (a woman)", "erdgeschoss": "ground floor",
-   "sucht": "is looking for", "eigenes": "own", "tauschen": "to swap", "sofort": "at once", "zusammen": "together",
-   "gesessen": "sat (sitzen)", "nudeln": "pasta, noodles", "gegessen": "eaten (essen)", "kuchen": "cake",
+   "wohnung": "flat, apartment",
+   "gezogen": "moved (ziehen)",
+   "liegt": "is, lies (liegen)",
+   "stock": "floor, storey",
+   "aufzug": "lift, elevator",
+   "glück": "luck (zum Glück: luckily)",
+   "umzug": "move (to a new home)",
+   "geholfen": "helped (helfen)",
+   "vormittag": "morning",
+   "kartons": "cardboard boxes",
+   "treppe": "stairs",
+   "hinaufgetragen": "carried up (hinauftragen)",
+   "gab": "es gab: there was, there were (geben)",
+   "breit": "wide",
+   "enge": "narrow",
+   "treppenhaus": "stairwell",
+   "gedreht": "turned (drehen)",
+   "geschoben": "pushed (schieben)",
+   "gepasst": "fitted (passen)",
+   "müde": "tired",
+   "nachbarin": "neighbour (a woman)",
+   "erdgeschoss": "ground floor",
+   "sucht": "is looking for",
+   "eigenes": "own",
+   "tauschen": "to swap",
+   "sofort": "at once",
+   "zusammen": "together",
+   "gesessen": "sat (sitzen)",
+   "nudeln": "pasta, noodles",
+   "gegessen": "eaten (essen)",
+   "kuchen": "cake",
    "mitgebracht": "brought along (mitbringen)"
   },
   "questions": [
-   { "q": "Wer hat Tim beim Umzug geholfen?", "a": ["Freunde"] },
-   { "q": "Welches Möbelstück war zu breit für das Treppenhaus?", "a": ["Sofa"] },
-   { "q": "Was hat die Nachbarin am Abend mitgebracht?", "a": ["Kuchen"] }
+   {
+    "q": "Wer hat Tim beim Umzug geholfen?",
+    "a": [
+     "Freunde"
+    ]
+   },
+   {
+    "q": "Welches Möbelstück war zu breit für das Treppenhaus?",
+    "a": [
+     "Sofa"
+    ]
+   },
+   {
+    "q": "Was hat die Nachbarin am Abend mitgebracht?",
+    "a": [
+     "Kuchen"
+    ]
+   }
   ],
-  "notice": "For sein, haben and es gibt, German usually prefers the simple past, even when the rest of the story is told in the Perfekt: \"Tim war müde und hatte keine Idee mehr\", \"gab es keine Probleme\"."
+  "notice": "For sein, haben and es gibt, German usually prefers the simple past, even when the rest of the story is told in the Perfekt: \"Tim war müde und hatte keine Idee mehr\", \"gab es keine Probleme\".",
+  "back": [
+   [
+    "Mit dem Bett und dem Tisch gab es keine Probleme.",
+    "There were no problems with the bed and the table."
+   ],
+   [
+    "Da ist eine Nachbarin aus dem Erdgeschoss gekommen.",
+    "Then a neighbour from the ground floor came."
+   ]
+  ]
  },
  {
   "id": "de-arzt",
@@ -151,25 +478,79 @@
   "level": "A2",
   "text": "Am Montag hat Lukas Fußball gespielt und ist dabei gestürzt. Am nächsten Morgen war sein rechter Fuß dick und hat sehr wehgetan. Lukas hat sofort bei seiner Hausärztin angerufen und einen Termin bekommen. Im Wartezimmer musste er fast eine Stunde warten. Endlich hat die Ärztin ihn ins Sprechzimmer gerufen. Sie hat den Fuß vorsichtig untersucht und viele Fragen gestellt. „Können Sie den Fuß bewegen?“, hat sie gefragt. Das konnte Lukas, aber nur mit Schmerzen. „Zum Glück ist nichts gebrochen, aber Sie brauchen zwei Wochen Ruhe“, hat die Ärztin gesagt. Lukas war traurig, denn am Samstag hatte seine Mannschaft ein wichtiges Spiel. Die Ärztin hat ihm eine Salbe verschrieben und gute Besserung gewünscht. Am Samstag ist Lukas trotzdem zum Sportplatz gegangen. Er hat auf einer Bank gesessen und seine Mannschaft laut angefeuert. Sie hat zwei zu eins gewonnen.",
   "gloss": {
-   "fußball": "football, soccer", "dabei": "while doing so", "gestürzt": "fallen (stürzen)", "rechter": "right",
-   "fuß": "foot", "dick": "swollen, thick", "wehgetan": "hurt (wehtun)", "sofort": "at once",
-   "hausärztin": "family doctor (a woman)", "angerufen": "phoned (anrufen)", "termin": "appointment",
-   "bekommen": "got (bekommen)", "wartezimmer": "waiting room", "endlich": "at last", "ärztin": "doctor (a woman)",
-   "sprechzimmer": "consulting room", "gerufen": "called (rufen)", "vorsichtig": "carefully",
-   "untersucht": "examined (untersuchen)", "gestellt": "Fragen stellen: to ask questions", "bewegen": "to move",
-   "schmerzen": "pain", "glück": "luck (zum Glück: luckily)", "gebrochen": "broken (brechen)", "brauchen": "need",
-   "ruhe": "rest", "traurig": "sad", "denn": "because", "mannschaft": "team", "wichtiges": "important",
-   "spiel": "match, game", "salbe": "ointment", "verschrieben": "prescribed (verschreiben)",
-   "besserung": "gute Besserung: get well soon", "gewünscht": "wished (wünschen)", "trotzdem": "all the same",
-   "sportplatz": "sports ground", "bank": "bench", "gesessen": "sat (sitzen)",
-   "angefeuert": "cheered on (anfeuern)", "gewonnen": "won (gewinnen)"
+   "fußball": "football, soccer",
+   "dabei": "while doing so",
+   "gestürzt": "fallen (stürzen)",
+   "rechter": "right",
+   "fuß": "foot",
+   "dick": "swollen, thick",
+   "wehgetan": "hurt (wehtun)",
+   "sofort": "at once",
+   "hausärztin": "family doctor (a woman)",
+   "angerufen": "phoned (anrufen)",
+   "termin": "appointment",
+   "bekommen": "got (bekommen)",
+   "wartezimmer": "waiting room",
+   "endlich": "at last",
+   "ärztin": "doctor (a woman)",
+   "sprechzimmer": "consulting room",
+   "gerufen": "called (rufen)",
+   "vorsichtig": "carefully",
+   "untersucht": "examined (untersuchen)",
+   "gestellt": "Fragen stellen: to ask questions",
+   "bewegen": "to move",
+   "schmerzen": "pain",
+   "glück": "luck (zum Glück: luckily)",
+   "gebrochen": "broken (brechen)",
+   "brauchen": "need",
+   "ruhe": "rest",
+   "traurig": "sad",
+   "denn": "because",
+   "mannschaft": "team",
+   "wichtiges": "important",
+   "spiel": "match, game",
+   "salbe": "ointment",
+   "verschrieben": "prescribed (verschreiben)",
+   "besserung": "gute Besserung: get well soon",
+   "gewünscht": "wished (wünschen)",
+   "trotzdem": "all the same",
+   "sportplatz": "sports ground",
+   "bank": "bench",
+   "gesessen": "sat (sitzen)",
+   "angefeuert": "cheered on (anfeuern)",
+   "gewonnen": "won (gewinnen)"
   },
   "questions": [
-   { "q": "Bei welchem Sport ist Lukas gestürzt?", "a": ["Fußball"] },
-   { "q": "Was braucht Lukas zwei Wochen lang?", "a": ["Ruhe"] },
-   { "q": "Wohin ist Lukas am Samstag gegangen?", "a": ["Sportplatz"] }
+   {
+    "q": "Bei welchem Sport ist Lukas gestürzt?",
+    "a": [
+     "Fußball"
+    ]
+   },
+   {
+    "q": "Was braucht Lukas zwei Wochen lang?",
+    "a": [
+     "Ruhe"
+    ]
+   },
+   {
+    "q": "Wohin ist Lukas am Samstag gegangen?",
+    "a": [
+     "Sportplatz"
+    ]
+   }
   ],
-  "notice": "In the past participle of a separable verb, ge goes between the prefix and the verb: \"angerufen\" (anrufen), \"wehgetan\" (wehtun). Verbs that begin with be- or ver- take no ge at all: \"bekommen\", \"verschrieben\"."
+  "notice": "In the past participle of a separable verb, ge goes between the prefix and the verb: \"angerufen\" (anrufen), \"wehgetan\" (wehtun). Verbs that begin with be- or ver- take no ge at all: \"bekommen\", \"verschrieben\".",
+  "back": [
+   [
+    "Endlich hat die Ärztin ihn ins Sprechzimmer gerufen.",
+    "At last the doctor called him into the consulting room."
+   ],
+   [
+    "Die Ärztin hat ihm eine Salbe verschrieben und gute Besserung gewünscht.",
+    "The doctor prescribed him an ointment and wished him a speedy recovery."
+   ]
+  ]
  },
  {
   "id": "de-handy",
@@ -177,23 +558,72 @@
   "level": "A2",
   "text": "Am Freitagabend ist Nina in Zürich mit der Straßenbahn nach Hause gefahren. Vor ihrer Haustür wollte sie eine Freundin anrufen, aber ihr Handy war nicht mehr in der Jacke. Nina hat ihre Tasche zweimal durchsucht und wurde sehr nervös. Auf dem Handy waren alle ihre Fotos und Adressen. Sie ist zu ihrem Nachbarn gegangen und hat mit seinem Telefon ihre eigene Nummer gewählt. Nach kurzer Zeit hat sich eine freundliche Stimme gemeldet. Es war ein älterer Herr. Er hat das Handy auf einem Sitz in der Straßenbahn gefunden. Sie haben sich für den nächsten Morgen am Hauptbahnhof verabredet. Nina wollte ihm zwanzig Franken geben, aber er wollte kein Geld. „Zeigen Sie mir lieber, wie man Fotos verschickt“, hat er gesagt. Also haben sie zusammen einen Kaffee getrunken, und Nina hat ihm alles erklärt. Noch am selben Tag hat seine Enkelin das erste Foto von ihm bekommen.",
   "gloss": {
-   "freitagabend": "Friday evening", "straßenbahn": "tram", "haustür": "front door", "anrufen": "to phone",
-   "handy": "mobile phone", "jacke": "jacket", "tasche": "bag", "zweimal": "twice",
-   "durchsucht": "searched (durchsuchen)", "wurde": "became, got (werden)", "adressen": "addresses",
-   "nachbarn": "neighbour (der Nachbar)", "eigene": "own", "gewählt": "dialled (wählen)", "kurzer": "short",
-   "stimme": "voice", "gemeldet": "answered (sich melden)", "älterer": "elderly", "herr": "gentleman",
-   "sitz": "seat", "gefunden": "found (finden)", "hauptbahnhof": "main station",
-   "verabredet": "arranged to meet (sich verabreden)", "franken": "francs (Swiss money)", "geld": "money",
-   "zeigen": "show", "lieber": "rather, instead", "verschickt": "sends (verschicken)",
-   "getrunken": "drunk (trinken)", "erklärt": "explained (erklären)", "selben": "same",
-   "enkelin": "granddaughter", "bekommen": "got, received"
+   "freitagabend": "Friday evening",
+   "straßenbahn": "tram",
+   "haustür": "front door",
+   "anrufen": "to phone",
+   "handy": "mobile phone",
+   "jacke": "jacket",
+   "tasche": "bag",
+   "zweimal": "twice",
+   "durchsucht": "searched (durchsuchen)",
+   "wurde": "became, got (werden)",
+   "adressen": "addresses",
+   "nachbarn": "neighbour (der Nachbar)",
+   "eigene": "own",
+   "gewählt": "dialled (wählen)",
+   "kurzer": "short",
+   "stimme": "voice",
+   "gemeldet": "answered (sich melden)",
+   "älterer": "elderly",
+   "herr": "gentleman",
+   "sitz": "seat",
+   "gefunden": "found (finden)",
+   "hauptbahnhof": "main station",
+   "verabredet": "arranged to meet (sich verabreden)",
+   "franken": "francs (Swiss money)",
+   "geld": "money",
+   "zeigen": "show",
+   "lieber": "rather, instead",
+   "verschickt": "sends (verschicken)",
+   "getrunken": "drunk (trinken)",
+   "erklärt": "explained (erklären)",
+   "selben": "same",
+   "enkelin": "granddaughter",
+   "bekommen": "got, received"
   },
   "questions": [
-   { "q": "An welchem Abend hat Nina ihr Handy verloren?", "a": ["Freitag"] },
-   { "q": "Wo hat der Mann das Handy gefunden?", "a": ["Straßenbahn", "Sitz"] },
-   { "q": "Wer hat am Ende ein Foto bekommen?", "a": ["Enkelin"] }
+   {
+    "q": "An welchem Abend hat Nina ihr Handy verloren?",
+    "a": [
+     "Freitag"
+    ]
+   },
+   {
+    "q": "Wo hat der Mann das Handy gefunden?",
+    "a": [
+     "Straßenbahn",
+     "Sitz"
+    ]
+   },
+   {
+    "q": "Wer hat am Ende ein Foto bekommen?",
+    "a": [
+     "Enkelin"
+    ]
+   }
   ],
-  "notice": "Wollte is the past of wollen (to want). The verb that goes with it stands at the end: \"wollte sie eine Freundin anrufen\". It can also be used on its own: \"er wollte kein Geld\"."
+  "notice": "Wollte is the past of wollen (to want). The verb that goes with it stands at the end: \"wollte sie eine Freundin anrufen\". It can also be used on its own: \"er wollte kein Geld\".",
+  "back": [
+   [
+    "Auf dem Handy waren alle ihre Fotos und Adressen.",
+    "All her photos and addresses were on the phone."
+   ],
+   [
+    "Er hat das Handy auf einem Sitz in der Straßenbahn gefunden.",
+    "He found the phone on a seat in the tram."
+   ]
+  ]
  },
  {
   "id": "de-zug",
@@ -201,27 +631,80 @@
   "level": "B1",
   "text": "Jana saß im Zug von Köln nach Berlin und sah immer wieder auf die Uhr. Um zwei Uhr hatte sie ein Vorstellungsgespräch bei einer kleinen Firma, und sie wollte auf keinen Fall zu spät kommen. Draußen tobte seit dem Morgen ein Sturm. Kurz hinter Hannover blieb der Zug plötzlich auf freier Strecke stehen. Nach einigen Minuten erklärte eine Stimme aus dem Lautsprecher, dass ein Baum auf die Gleise gestürzt war. Die Weiterfahrt sollte sich um mindestens eine Stunde verzögern. Einige Fahrgäste schimpften, andere packten in Ruhe ihre Brote aus. Jana wurde immer nervöser. Wenn sie den Termin verpasste, würde die Firma bestimmt jemand anderen einstellen. Schließlich suchte sie die Nummer der Firma heraus und rief an, um sich zu entschuldigen. Im selben Moment klingelte das Handy der Frau, die ihr gegenübersaß. Die beiden sahen sich überrascht an und mussten lachen. Die Frau war die Chefin der Firma und kam gerade von einer Messe zurück. „Dann fangen wir mit dem Gespräch doch einfach hier an“, schlug sie vor. Als der Zug endlich in Berlin ankam, hatte Jana die Stelle schon bekommen.",
   "gloss": {
-   "saß": "sat (sitzen)", "vorstellungsgespräch": "job interview", "firma": "company",
-   "fall": "case (auf keinen Fall: on no account)", "tobte": "raged (toben)", "sturm": "storm",
-   "blieb": "blieb stehen: stopped (stehen bleiben)", "strecke": "line (auf freier Strecke: between stations)",
-   "stimme": "voice", "lautsprecher": "loudspeaker", "gleise": "tracks", "gestürzt": "fallen (stürzen)",
-   "weiterfahrt": "onward journey", "mindestens": "at least", "verzögern": "sich verzögern: to be delayed",
-   "fahrgäste": "passengers", "schimpften": "grumbled (schimpfen)", "packten": "unpacked (auspacken)",
-   "ruhe": "calm (in Ruhe: calmly)", "nervöser": "more nervous", "termin": "appointment",
-   "verpasste": "missed (verpassen)", "bestimmt": "surely", "einstellen": "to hire", "schließlich": "finally",
-   "suchte": "looked up (heraussuchen)", "rief": "phoned (anrufen)",
-   "entschuldigen": "sich entschuldigen: to apologise", "selben": "same", "klingelte": "rang",
-   "gegenübersaß": "sat opposite (gegenübersitzen)", "sahen": "looked at each other (sich ansehen)",
-   "überrascht": "surprised", "chefin": "boss (a woman)", "kam": "was coming back (zurückkommen)",
-   "messe": "trade fair", "gespräch": "conversation, interview", "fangen": "start (anfangen)",
-   "schlug": "suggested (vorschlagen)", "ankam": "arrived (ankommen)", "stelle": "job, position"
+   "saß": "sat (sitzen)",
+   "vorstellungsgespräch": "job interview",
+   "firma": "company",
+   "fall": "case (auf keinen Fall: on no account)",
+   "tobte": "raged (toben)",
+   "sturm": "storm",
+   "blieb": "blieb stehen: stopped (stehen bleiben)",
+   "strecke": "line (auf freier Strecke: between stations)",
+   "stimme": "voice",
+   "lautsprecher": "loudspeaker",
+   "gleise": "tracks",
+   "gestürzt": "fallen (stürzen)",
+   "weiterfahrt": "onward journey",
+   "mindestens": "at least",
+   "verzögern": "sich verzögern: to be delayed",
+   "fahrgäste": "passengers",
+   "schimpften": "grumbled (schimpfen)",
+   "packten": "unpacked (auspacken)",
+   "ruhe": "calm (in Ruhe: calmly)",
+   "nervöser": "more nervous",
+   "termin": "appointment",
+   "verpasste": "missed (verpassen)",
+   "bestimmt": "surely",
+   "einstellen": "to hire",
+   "schließlich": "finally",
+   "suchte": "looked up (heraussuchen)",
+   "rief": "phoned (anrufen)",
+   "entschuldigen": "sich entschuldigen: to apologise",
+   "selben": "same",
+   "klingelte": "rang",
+   "gegenübersaß": "sat opposite (gegenübersitzen)",
+   "sahen": "looked at each other (sich ansehen)",
+   "überrascht": "surprised",
+   "chefin": "boss (a woman)",
+   "kam": "was coming back (zurückkommen)",
+   "messe": "trade fair",
+   "gespräch": "conversation, interview",
+   "fangen": "start (anfangen)",
+   "schlug": "suggested (vorschlagen)",
+   "ankam": "arrived (ankommen)",
+   "stelle": "job, position"
   },
   "questions": [
-   { "q": "Welchen Termin hatte Jana um zwei Uhr?", "a": ["Vorstellungsgespräch", "Gespräch"] },
-   { "q": "Was war auf die Gleise gestürzt?", "a": ["Baum"] },
-   { "q": "Wer saß Jana im Zug gegenüber?", "a": ["Chefin"] }
+   {
+    "q": "Welchen Termin hatte Jana um zwei Uhr?",
+    "a": [
+     "Vorstellungsgespräch",
+     "Gespräch"
+    ]
+   },
+   {
+    "q": "Was war auf die Gleise gestürzt?",
+    "a": [
+     "Baum"
+    ]
+   },
+   {
+    "q": "Wer saß Jana im Zug gegenüber?",
+    "a": [
+     "Chefin"
+    ]
+   }
   ],
-  "notice": "Written stories use the simple past (Präteritum). Regular verbs add -te: \"erklärte\", \"klingelte\". Strong verbs change their vowel instead: \"saß\" (sitzen), \"blieb\" (bleiben)."
+  "notice": "Written stories use the simple past (Präteritum). Regular verbs add -te: \"erklärte\", \"klingelte\". Strong verbs change their vowel instead: \"saß\" (sitzen), \"blieb\" (bleiben).",
+  "back": [
+   [
+    "Einige Fahrgäste schimpften, andere packten in Ruhe ihre Brote aus.",
+    "Some passengers grumbled, others calmly unpacked their sandwiches."
+   ],
+   [
+    "Im selben Moment klingelte das Handy der Frau, die ihr gegenübersaß.",
+    "At that very moment, the phone of the woman sitting opposite her rang."
+   ]
+  ]
  },
  {
   "id": "de-geburtstag",
@@ -229,26 +712,79 @@
   "level": "B1",
   "text": "Letzten Monat wurde meine Schwester Paula dreißig. Weil sie eigentlich gar nicht feiern wollte, organisierten ihr Freund Stefan und ich heimlich eine Überraschungsparty. Der Plan war einfach. Stefan sollte mit Paula ins Kino gehen, während wir ihre Wohnung in Graz schmückten. Den Schlüssel hatte er mir schon am Vortag gegeben. Zwanzig Gäste bliesen Luftballons auf, und im Ofen stand noch der Kuchen. Da bekam ich eine Nachricht von Stefan. Der Film war ausverkauft, und die beiden waren schon auf dem Heimweg. Wir hatten nur noch zehn Minuten! Alle rannten durcheinander, jemand machte das Licht aus, und wir versteckten uns hinter dem Sofa. Dann hörten wir den Schlüssel in der Tür. „Überraschung!“, riefen wir, als das Licht anging. Paula lachte, aber sie sah überhaupt nicht überrascht aus. Sie umarmte einen Gast nach dem anderen und bedankte sich bei allen. Später erzählte sie mir, dass unsere Mutter sich am Telefon verplappert hatte. Paula hatte also alles gewusst und Stefan zuliebe mitgespielt. Der Kuchen war leider ein bisschen schwarz geworden, aber die Party wurde trotzdem sehr schön.",
   "gloss": {
-   "wurde": "turned, became (werden)", "eigentlich": "actually", "feiern": "to celebrate", "heimlich": "secretly",
-   "überraschungsparty": "surprise party", "sollte": "was supposed to (sollen)", "während": "while",
-   "schmückten": "decorated (schmücken)", "schlüssel": "key", "vortag": "day before",
-   "gegeben": "given (geben)", "gäste": "guests", "bliesen": "blew up (aufblasen)",
-   "luftballons": "balloons", "ofen": "oven", "bekam": "got (bekommen)", "nachricht": "message",
-   "ausverkauft": "sold out", "heimweg": "way home", "rannten": "ran (rennen)",
-   "durcheinander": "in all directions, in confusion", "machte": "switched off (ausmachen)", "licht": "light",
-   "versteckten": "hid (sich verstecken)", "überraschung": "surprise", "riefen": "shouted (rufen)",
-   "anging": "came on (angehen)", "sah": "looked (aussehen)", "überhaupt": "at all", "überrascht": "surprised",
-   "umarmte": "hugged (umarmen)", "gast": "guest", "bedankte": "thanked (sich bedanken)",
-   "erzählte": "told (erzählen)", "verplappert": "let it slip (sich verplappern)", "gewusst": "known (wissen)",
-   "zuliebe": "for the sake of (Stefan zuliebe: for Stefan's sake)", "mitgespielt": "played along (mitspielen)",
-   "leider": "unfortunately", "geworden": "become, turned (werden)", "trotzdem": "all the same"
+   "wurde": "turned, became (werden)",
+   "eigentlich": "actually",
+   "feiern": "to celebrate",
+   "heimlich": "secretly",
+   "überraschungsparty": "surprise party",
+   "sollte": "was supposed to (sollen)",
+   "während": "while",
+   "schmückten": "decorated (schmücken)",
+   "schlüssel": "key",
+   "vortag": "day before",
+   "gegeben": "given (geben)",
+   "gäste": "guests",
+   "bliesen": "blew up (aufblasen)",
+   "luftballons": "balloons",
+   "ofen": "oven",
+   "bekam": "got (bekommen)",
+   "nachricht": "message",
+   "ausverkauft": "sold out",
+   "heimweg": "way home",
+   "rannten": "ran (rennen)",
+   "durcheinander": "in all directions, in confusion",
+   "machte": "switched off (ausmachen)",
+   "licht": "light",
+   "versteckten": "hid (sich verstecken)",
+   "überraschung": "surprise",
+   "riefen": "shouted (rufen)",
+   "anging": "came on (angehen)",
+   "sah": "looked (aussehen)",
+   "überhaupt": "at all",
+   "überrascht": "surprised",
+   "umarmte": "hugged (umarmen)",
+   "gast": "guest",
+   "bedankte": "thanked (sich bedanken)",
+   "erzählte": "told (erzählen)",
+   "verplappert": "let it slip (sich verplappern)",
+   "gewusst": "known (wissen)",
+   "zuliebe": "for the sake of (Stefan zuliebe: for Stefan's sake)",
+   "mitgespielt": "played along (mitspielen)",
+   "leider": "unfortunately",
+   "geworden": "become, turned (werden)",
+   "trotzdem": "all the same"
   },
   "questions": [
-   { "q": "Wohin sollte Stefan mit Paula gehen?", "a": ["Kino"] },
-   { "q": "Wo haben sich die Gäste versteckt?", "a": ["Sofa"] },
-   { "q": "Wer hatte Paula von der Party erzählt?", "a": ["Mutter"] }
+   {
+    "q": "Wohin sollte Stefan mit Paula gehen?",
+    "a": [
+     "Kino"
+    ]
+   },
+   {
+    "q": "Wo haben sich die Gäste versteckt?",
+    "a": [
+     "Sofa"
+    ]
+   },
+   {
+    "q": "Wer hatte Paula von der Party erzählt?",
+    "a": [
+     "Mutter"
+    ]
+   }
   ],
-  "notice": "In a clause that starts with weil, während, als or dass, the verb goes to the very end: \"Weil sie eigentlich gar nicht feiern wollte\", \"als das Licht anging\"."
+  "notice": "In a clause that starts with weil, während, als or dass, the verb goes to the very end: \"Weil sie eigentlich gar nicht feiern wollte\", \"als das Licht anging\".",
+  "back": [
+   [
+    "Zwanzig Gäste bliesen Luftballons auf, und im Ofen stand noch der Kuchen.",
+    "Twenty guests were blowing up balloons, and the cake was still in the oven."
+   ],
+   [
+    "Paula lachte, aber sie sah überhaupt nicht überrascht aus.",
+    "Paula laughed, but she did not look surprised at all."
+   ]
+  ]
  },
  {
   "id": "de-kochen",
@@ -256,28 +792,84 @@
   "level": "B1",
   "text": "Felix hatte die Eltern seiner Freundin zum ersten Mal in seine Wohnung in Dresden eingeladen und sich viel vorgenommen. Er kochte zwar selten, wollte an diesem Abend aber unbedingt einen guten Eindruck machen. Es sollte Schnitzel mit Kartoffelsalat geben, dazu einen Apfelkuchen nach dem Rezept seiner Großmutter. Doch schon am Nachmittag ging alles schief. Zuerst verwechselte er Salz und Zucker, sodass der Kartoffelsalat süß schmeckte. Dann vergaß er den Kuchen im Ofen, bis schwarzer Rauch aus der Küche kam und der Rauchmelder losging. Als es an der Tür klingelte, stand Felix verzweifelt zwischen schmutzigen Töpfen. Er entschuldigte sich und erzählte alles. Am liebsten wäre er im Boden versunken. Der Vater seiner Freundin, ein ernster Mann, sagte zuerst kein Wort. Dann zog er seine Jacke aus und krempelte die Ärmel hoch. „Ich war dreißig Jahre lang Koch. Zeigen Sie mir mal Ihren Kühlschrank“, sagte er. Felix durfte ihm helfen und lernte dabei mehr als aus jedem Kochbuch. Eine Stunde später saßen alle bei Bratkartoffeln mit Spiegelei am Tisch und lachten über den verbrannten Kuchen. Seitdem kochen die beiden Männer regelmäßig zusammen.",
   "gloss": {
-   "eingeladen": "invited (einladen)", "vorgenommen": "planned (sich etwas vornehmen)",
-   "zwar": "zwar ... aber: it is true that ... but", "selten": "rarely", "unbedingt": "at all costs, really",
-   "eindruck": "impression", "kartoffelsalat": "potato salad", "dazu": "with it", "rezept": "recipe",
-   "großmutter": "grandmother", "schief": "ging schief: went wrong (schiefgehen)",
-   "verwechselte": "mixed up (verwechseln)", "salz": "salt", "zucker": "sugar", "sodass": "so that",
-   "süß": "sweet", "schmeckte": "tasted", "vergaß": "forgot (vergessen)", "ofen": "oven", "rauch": "smoke",
-   "rauchmelder": "smoke alarm", "losging": "went off (losgehen)", "klingelte": "rang",
-   "verzweifelt": "in despair", "schmutzigen": "dirty", "töpfen": "pots (der Topf)",
-   "entschuldigte": "apologised (sich entschuldigen)", "liebsten": "am liebsten: most of all",
-   "boden": "ground (im Boden versinken: to wish the ground would swallow you)", "versunken": "sunk (versinken)",
-   "ernster": "serious", "zog": "took off (ausziehen)", "krempelte": "rolled up (hochkrempeln)",
-   "ärmel": "sleeves", "koch": "cook, chef", "kühlschrank": "fridge", "durfte": "was allowed to (dürfen)",
-   "dabei": "in the process", "kochbuch": "cookery book", "saßen": "sat (sitzen)",
-   "bratkartoffeln": "fried potatoes", "spiegelei": "fried egg", "verbrannten": "burnt",
-   "seitdem": "since then", "regelmäßig": "regularly"
+   "eingeladen": "invited (einladen)",
+   "vorgenommen": "planned (sich etwas vornehmen)",
+   "zwar": "zwar ... aber: it is true that ... but",
+   "selten": "rarely",
+   "unbedingt": "at all costs, really",
+   "eindruck": "impression",
+   "kartoffelsalat": "potato salad",
+   "dazu": "with it",
+   "rezept": "recipe",
+   "großmutter": "grandmother",
+   "schief": "ging schief: went wrong (schiefgehen)",
+   "verwechselte": "mixed up (verwechseln)",
+   "salz": "salt",
+   "zucker": "sugar",
+   "sodass": "so that",
+   "süß": "sweet",
+   "schmeckte": "tasted",
+   "vergaß": "forgot (vergessen)",
+   "ofen": "oven",
+   "rauch": "smoke",
+   "rauchmelder": "smoke alarm",
+   "losging": "went off (losgehen)",
+   "klingelte": "rang",
+   "verzweifelt": "in despair",
+   "schmutzigen": "dirty",
+   "töpfen": "pots (der Topf)",
+   "entschuldigte": "apologised (sich entschuldigen)",
+   "liebsten": "am liebsten: most of all",
+   "boden": "ground (im Boden versinken: to wish the ground would swallow you)",
+   "versunken": "sunk (versinken)",
+   "ernster": "serious",
+   "zog": "took off (ausziehen)",
+   "krempelte": "rolled up (hochkrempeln)",
+   "ärmel": "sleeves",
+   "koch": "cook, chef",
+   "kühlschrank": "fridge",
+   "durfte": "was allowed to (dürfen)",
+   "dabei": "in the process",
+   "kochbuch": "cookery book",
+   "saßen": "sat (sitzen)",
+   "bratkartoffeln": "fried potatoes",
+   "spiegelei": "fried egg",
+   "verbrannten": "burnt",
+   "seitdem": "since then",
+   "regelmäßig": "regularly"
   },
   "questions": [
-   { "q": "Wen hatte Felix zum Essen eingeladen?", "a": ["Eltern"] },
-   { "q": "Was hat Felix im Ofen vergessen?", "a": ["Kuchen", "Apfelkuchen"] },
-   { "q": "Was war der Vater der Freundin früher von Beruf?", "a": ["Koch"] }
+   {
+    "q": "Wen hatte Felix zum Essen eingeladen?",
+    "a": [
+     "Eltern"
+    ]
+   },
+   {
+    "q": "Was hat Felix im Ofen vergessen?",
+    "a": [
+     "Kuchen",
+     "Apfelkuchen"
+    ]
+   },
+   {
+    "q": "Was war der Vater der Freundin früher von Beruf?",
+    "a": [
+     "Koch"
+    ]
+   }
   ],
-  "notice": "The genitive shows who something belongs to, without von: \"die Eltern seiner Freundin\" (his girlfriend's parents), \"nach dem Rezept seiner Großmutter\" (following his grandmother's recipe)."
+  "notice": "The genitive shows who something belongs to, without von: \"die Eltern seiner Freundin\" (his girlfriend's parents), \"nach dem Rezept seiner Großmutter\" (following his grandmother's recipe).",
+  "back": [
+   [
+    "Er entschuldigte sich und erzählte alles.",
+    "He apologised and told them everything."
+   ],
+   [
+    "Der Vater seiner Freundin, ein ernster Mann, sagte zuerst kein Wort.",
+    "His girlfriend's father, a serious man, said nothing at first."
+   ]
+  ]
  },
  {
   "id": "de-brief",
@@ -285,27 +877,87 @@
   "level": "B1",
   "text": "Weil ihr Großvater in eine kleinere Wohnung zog, half Marie ihm, das alte Haus im Schwarzwald auszuräumen. Auf dem Dachboden entdeckte sie hinter einem Schrank einen staubigen Koffer. Er war schwer und mit einem Lederriemen verschlossen. Darin lagen eine Geige und ein vergilbter Brief aus Wien. Marie zögerte kurz, dann zog sie das Blatt aus dem Umschlag. Der Brief war über sechzig Jahre alt. Eine Musikhochschule teilte ihrem Großvater mit, dass er die Aufnahmeprüfung bestanden hatte und im Herbst mit dem Studium beginnen durfte. Marie war sprachlos. Sie kannte ihren Großvater nur als stillen Bäcker, der nie ein Instrument angefasst hatte. Sie trug den Koffer hinunter in die Küche und stellte ihn auf den Tisch. Der alte Mann schwieg lange. Er strich mit der Hand über das dunkle Holz der Geige. Dann erzählte er, dass sein Vater kurz vor der Abreise krank geworden war und jemand die Bäckerei übernehmen musste. Über seinen Traum hatte er danach mit niemandem mehr gesprochen. Schließlich nahm er die Geige, stimmte sie langsam und begann leise zu spielen. Seine Finger hatten nichts vergessen.",
   "gloss": {
-   "großvater": "grandfather", "zog": "moved; pulled (ziehen)", "half": "helped (helfen)",
-   "auszuräumen": "to clear out (ausräumen)", "dachboden": "attic", "entdeckte": "discovered",
-   "schrank": "cupboard, wardrobe", "staubigen": "dusty", "koffer": "suitcase", "schwer": "heavy",
-   "lederriemen": "leather strap", "verschlossen": "fastened shut (verschließen)", "darin": "in it",
-   "lagen": "lay (liegen)", "geige": "violin", "vergilbter": "yellowed", "zögerte": "hesitated",
-   "blatt": "sheet (of paper)", "umschlag": "envelope", "musikhochschule": "music academy",
-   "teilte": "informed (mitteilen)", "aufnahmeprüfung": "entrance exam", "bestanden": "passed (bestehen)",
-   "herbst": "autumn", "studium": "studies", "durfte": "was allowed to (dürfen)", "sprachlos": "speechless",
-   "kannte": "knew (kennen)", "stillen": "quiet", "bäcker": "baker", "angefasst": "touched (anfassen)",
-   "trug": "carried (tragen)", "hinunter": "down", "stellte": "put (stellen)",
-   "schwieg": "was silent (schweigen)", "strich": "stroked (streichen)", "holz": "wood", "abreise": "departure",
-   "geworden": "become (werden)", "bäckerei": "bakery", "übernehmen": "to take over", "traum": "dream",
-   "niemandem": "nobody", "schließlich": "finally", "nahm": "took (nehmen)", "stimmte": "tuned (stimmen)",
+   "großvater": "grandfather",
+   "zog": "moved; pulled (ziehen)",
+   "half": "helped (helfen)",
+   "auszuräumen": "to clear out (ausräumen)",
+   "dachboden": "attic",
+   "entdeckte": "discovered",
+   "schrank": "cupboard, wardrobe",
+   "staubigen": "dusty",
+   "koffer": "suitcase",
+   "schwer": "heavy",
+   "lederriemen": "leather strap",
+   "verschlossen": "fastened shut (verschließen)",
+   "darin": "in it",
+   "lagen": "lay (liegen)",
+   "geige": "violin",
+   "vergilbter": "yellowed",
+   "zögerte": "hesitated",
+   "blatt": "sheet (of paper)",
+   "umschlag": "envelope",
+   "musikhochschule": "music academy",
+   "teilte": "informed (mitteilen)",
+   "aufnahmeprüfung": "entrance exam",
+   "bestanden": "passed (bestehen)",
+   "herbst": "autumn",
+   "studium": "studies",
+   "durfte": "was allowed to (dürfen)",
+   "sprachlos": "speechless",
+   "kannte": "knew (kennen)",
+   "stillen": "quiet",
+   "bäcker": "baker",
+   "angefasst": "touched (anfassen)",
+   "trug": "carried (tragen)",
+   "hinunter": "down",
+   "stellte": "put (stellen)",
+   "schwieg": "was silent (schweigen)",
+   "strich": "stroked (streichen)",
+   "holz": "wood",
+   "abreise": "departure",
+   "geworden": "become (werden)",
+   "bäckerei": "bakery",
+   "übernehmen": "to take over",
+   "traum": "dream",
+   "niemandem": "nobody",
+   "schließlich": "finally",
+   "nahm": "took (nehmen)",
+   "stimmte": "tuned (stimmen)",
    "leise": "softly"
   },
   "questions": [
-   { "q": "Wo hat Marie den Koffer entdeckt?", "a": ["Dachboden"] },
-   { "q": "Welches Instrument lag im Koffer?", "a": ["Geige"] },
-   { "q": "Warum hat der Großvater nicht in Wien studiert?", "a": ["krank", "Bäckerei", "Bäcker"] }
+   {
+    "q": "Wo hat Marie den Koffer entdeckt?",
+    "a": [
+     "Dachboden"
+    ]
+   },
+   {
+    "q": "Welches Instrument lag im Koffer?",
+    "a": [
+     "Geige"
+    ]
+   },
+   {
+    "q": "Warum hat der Großvater nicht in Wien studiert?",
+    "a": [
+     "krank",
+     "Bäckerei",
+     "Bäcker"
+    ]
+   }
   ],
-  "notice": "For something that had already happened before another moment in the past, German uses hatte or war with the past participle: \"der nie ein Instrument angefasst hatte\", \"Seine Finger hatten nichts vergessen\"."
+  "notice": "For something that had already happened before another moment in the past, German uses hatte or war with the past participle: \"der nie ein Instrument angefasst hatte\", \"Seine Finger hatten nichts vergessen\".",
+  "back": [
+   [
+    "Marie zögerte kurz, dann zog sie das Blatt aus dem Umschlag.",
+    "Marie hesitated briefly, then pulled the sheet out of the envelope."
+   ],
+   [
+    "Über seinen Traum hatte er danach mit niemandem mehr gesprochen.",
+    "After that he never spoke to anyone about his dream again."
+   ]
+  ]
  },
  {
   "id": "de-arbeit",
@@ -313,27 +965,81 @@
   "level": "B1",
   "text": "An meinem ersten Arbeitstag bei einem Verlag in Frankfurt war ich viel zu früh da. Ich hatte kaum geschlafen und mir dreimal überlegt, was ich anziehen sollte. Der Empfang war noch nicht besetzt, also suchte ich die Küche, um mir einen Kaffee zu holen. Dort kniete ein Mann in Jeans und Turnschuhen vor der Kaffeemaschine und versuchte, sie zu reparieren. Ich hielt ihn für den Hausmeister und half ihm, den Wassertank wieder einzusetzen. Dabei kamen wir ins Gespräch. Ich gab zu, dass ich ziemlich aufgeregt war. Ich erzählte ihm auch, dass der Chef sehr streng sein sollte. Der Mann lächelte nur und wünschte mir viel Glück. Um neun Uhr versammelte sich die ganze Abteilung, um mich zu begrüßen. Als Letzter kam der Mann aus der Küche herein, und alle wurden still. „Wir kennen uns ja schon, Lea. Ich bin Martin, der strenge Geschäftsführer“, sagte er freundlich. Ich wurde knallrot, aber er lachte herzlich. Seit diesem Morgen duzen wir uns, wie alle im Verlag. Heute, zwei Jahre später, repariere ich die Kaffeemaschine meistens selbst.",
   "gloss": {
-   "arbeitstag": "day at work", "verlag": "publishing house", "kaum": "hardly",
-   "überlegt": "thought about (sich überlegen)", "anziehen": "to wear, to put on", "empfang": "reception",
-   "besetzt": "staffed, occupied", "holen": "to fetch, to get", "kniete": "was kneeling (knien)",
-   "turnschuhen": "trainers, sneakers", "kaffeemaschine": "coffee machine", "versuchte": "tried (versuchen)",
-   "reparieren": "to repair", "hielt": "took (him) for (halten für)", "hausmeister": "caretaker, janitor",
-   "half": "helped (helfen)", "wassertank": "water tank", "einzusetzen": "to put back in (einsetzen)",
-   "dabei": "while doing so", "gespräch": "conversation (ins Gespräch kommen: to get talking)",
-   "gab": "admitted (zugeben)", "ziemlich": "rather, quite", "aufgeregt": "nervous, excited", "chef": "boss",
-   "streng": "strict", "sollte": "should; was said to (sollen)", "lächelte": "smiled", "wünschte": "wished",
-   "versammelte": "gathered (sich versammeln)", "abteilung": "department", "begrüßen": "to welcome",
-   "letzter": "last (als Letzter: last of all)", "kam": "came in (hereinkommen)", "herein": "in",
-   "strenge": "strict", "geschäftsführer": "managing director", "knallrot": "bright red",
-   "herzlich": "warmly, heartily", "duzen": "say du to each other (sich duzen)", "meistens": "mostly",
+   "arbeitstag": "day at work",
+   "verlag": "publishing house",
+   "kaum": "hardly",
+   "überlegt": "thought about (sich überlegen)",
+   "anziehen": "to wear, to put on",
+   "empfang": "reception",
+   "besetzt": "staffed, occupied",
+   "holen": "to fetch, to get",
+   "kniete": "was kneeling (knien)",
+   "turnschuhen": "trainers, sneakers",
+   "kaffeemaschine": "coffee machine",
+   "versuchte": "tried (versuchen)",
+   "reparieren": "to repair",
+   "hielt": "took (him) for (halten für)",
+   "hausmeister": "caretaker, janitor",
+   "half": "helped (helfen)",
+   "wassertank": "water tank",
+   "einzusetzen": "to put back in (einsetzen)",
+   "dabei": "while doing so",
+   "gespräch": "conversation (ins Gespräch kommen: to get talking)",
+   "gab": "admitted (zugeben)",
+   "ziemlich": "rather, quite",
+   "aufgeregt": "nervous, excited",
+   "chef": "boss",
+   "streng": "strict",
+   "sollte": "should; was said to (sollen)",
+   "lächelte": "smiled",
+   "wünschte": "wished",
+   "versammelte": "gathered (sich versammeln)",
+   "abteilung": "department",
+   "begrüßen": "to welcome",
+   "letzter": "last (als Letzter: last of all)",
+   "kam": "came in (hereinkommen)",
+   "herein": "in",
+   "strenge": "strict",
+   "geschäftsführer": "managing director",
+   "knallrot": "bright red",
+   "herzlich": "warmly, heartily",
+   "duzen": "say du to each other (sich duzen)",
+   "meistens": "mostly",
    "selbst": "myself"
   },
   "questions": [
-   { "q": "Wo beginnt Lea ihre neue Arbeit?", "a": ["Verlag", "Frankfurt"] },
-   { "q": "Für wen hielt Lea den Mann in der Küche?", "a": ["Hausmeister"] },
-   { "q": "Wer war der Mann in Wirklichkeit?", "a": ["Geschäftsführer", "Chef"] }
+   {
+    "q": "Wo beginnt Lea ihre neue Arbeit?",
+    "a": [
+     "Verlag",
+     "Frankfurt"
+    ]
+   },
+   {
+    "q": "Für wen hielt Lea den Mann in der Küche?",
+    "a": [
+     "Hausmeister"
+    ]
+   },
+   {
+    "q": "Wer war der Mann in Wirklichkeit?",
+    "a": [
+     "Geschäftsführer",
+     "Chef"
+    ]
+   }
   ],
-  "notice": "Um ... zu with the infinitive at the end says what something is done for (in order to): \"um mir einen Kaffee zu holen\", \"um mich zu begrüßen\"."
+  "notice": "Um ... zu with the infinitive at the end says what something is done for (in order to): \"um mir einen Kaffee zu holen\", \"um mich zu begrüßen\".",
+  "back": [
+   [
+    "Dabei kamen wir ins Gespräch.",
+    "That got us talking."
+   ],
+   [
+    "Um neun Uhr versammelte sich die ganze Abteilung, um mich zu begrüßen.",
+    "At nine o'clock the whole department gathered to welcome me."
+   ]
+  ]
  },
  {
   "id": "de-buchhandlung",
@@ -341,32 +1047,89 @@
   "level": "B2",
   "text": "Fast vierzig Jahre lang führte Herr Albrecht eine kleine Buchhandlung in einem Wohnviertel von Bremen, und jeder dort kannte ihn. Als er im vergangenen Winter ankündigte, er wolle zum Jahresende aufhören, reagierten viele Kunden bestürzt. Ein Nachfolger war nicht in Sicht, denn mit Büchern lässt sich heute kaum noch Geld verdienen. Die Miete war gestiegen, und immer mehr Leute bestellten ihre Lektüre lieber im Internet. Es schien nur eine Frage der Zeit zu sein, bis in den Räumen ein weiteres Handygeschäft eröffnen würde. Doch eine Stammkundin wollte sich damit nicht abfinden. Sie lud die Nachbarschaft zu einem Treffen ein und schlug vor, gemeinsam eine Genossenschaft zu gründen. Jedes Mitglied würde einen Anteil kaufen, und mit diesem Geld sollte der Laden weitergeführt werden. Anfangs hielten manche die Idee für naiv. Selbst Herr Albrecht bezweifelte, dass sich genug Leute finden würden. Innerhalb von drei Monaten hatten sich jedoch über zweihundert Menschen beteiligt, darunter auch solche, die seit Jahren kein Buch mehr gekauft hatten. Inzwischen gehört die Buchhandlung dem Viertel selbst. Über wichtige Fragen entscheiden die Mitglieder gemeinsam, vom Sortiment bis zu den Öffnungszeiten. Eine junge Buchhändlerin wurde eingestellt, abends finden Lesungen statt, und samstags steht Herr Albrecht wieder hinter der Kasse. Er behauptet, er sei nur zu Besuch, aber das glaubt ihm niemand.",
   "gloss": {
-   "führte": "ran (führen)", "buchhandlung": "bookshop", "wohnviertel": "residential neighbourhood",
-   "vergangenen": "last, past", "ankündigte": "announced (ankündigen)",
-   "wolle": "wanted (reported speech, wollen)", "jahresende": "end of the year", "bestürzt": "dismayed",
-   "nachfolger": "successor", "sicht": "sight (in Sicht: in sight)",
-   "lässt": "lässt sich verdienen: can be earned", "miete": "rent", "gestiegen": "risen (steigen)",
-   "lektüre": "reading matter", "schien": "seemed (scheinen)", "räumen": "rooms, premises",
-   "handygeschäft": "mobile phone shop", "eröffnen": "to open (a business)",
-   "stammkundin": "regular customer (a woman)", "abfinden": "sich abfinden mit: to resign oneself to",
-   "lud": "invited (einladen)", "nachbarschaft": "neighbourhood", "schlug": "suggested (vorschlagen)",
-   "genossenschaft": "cooperative", "gründen": "to found", "mitglied": "member", "anteil": "share",
-   "weitergeführt": "kept going (weiterführen)", "anfangs": "at first", "hielten": "considered (halten für)",
-   "selbst": "even; itself", "bezweifelte": "doubted (bezweifeln)",
+   "führte": "ran (führen)",
+   "buchhandlung": "bookshop",
+   "wohnviertel": "residential neighbourhood",
+   "vergangenen": "last, past",
+   "ankündigte": "announced (ankündigen)",
+   "wolle": "wanted (reported speech, wollen)",
+   "jahresende": "end of the year",
+   "bestürzt": "dismayed",
+   "nachfolger": "successor",
+   "sicht": "sight (in Sicht: in sight)",
+   "lässt": "lässt sich verdienen: can be earned",
+   "miete": "rent",
+   "gestiegen": "risen (steigen)",
+   "lektüre": "reading matter",
+   "schien": "seemed (scheinen)",
+   "räumen": "rooms, premises",
+   "handygeschäft": "mobile phone shop",
+   "eröffnen": "to open (a business)",
+   "stammkundin": "regular customer (a woman)",
+   "abfinden": "sich abfinden mit: to resign oneself to",
+   "lud": "invited (einladen)",
+   "nachbarschaft": "neighbourhood",
+   "schlug": "suggested (vorschlagen)",
+   "genossenschaft": "cooperative",
+   "gründen": "to found",
+   "mitglied": "member",
+   "anteil": "share",
+   "weitergeführt": "kept going (weiterführen)",
+   "anfangs": "at first",
+   "hielten": "considered (halten für)",
+   "selbst": "even; itself",
+   "bezweifelte": "doubted (bezweifeln)",
    "finden": "sich finden: to be found; finden statt: take place (stattfinden)",
-   "innerhalb": "within", "beteiligt": "taken part (sich beteiligen)", "darunter": "among them",
-   "inzwischen": "by now", "viertel": "neighbourhood", "entscheiden": "decide", "mitglieder": "members",
-   "sortiment": "range of books", "öffnungszeiten": "opening hours", "buchhändlerin": "bookseller (a woman)",
-   "eingestellt": "hired (einstellen)", "lesungen": "readings",
-   "statt": "finden statt: take place (stattfinden)", "kasse": "till, cash desk", "behauptet": "claims",
-   "sei": "is (reported speech, sein)", "besuch": "visit (zu Besuch: visiting)"
+   "innerhalb": "within",
+   "beteiligt": "taken part (sich beteiligen)",
+   "darunter": "among them",
+   "inzwischen": "by now",
+   "viertel": "neighbourhood",
+   "entscheiden": "decide",
+   "mitglieder": "members",
+   "sortiment": "range of books",
+   "öffnungszeiten": "opening hours",
+   "buchhändlerin": "bookseller (a woman)",
+   "eingestellt": "hired (einstellen)",
+   "lesungen": "readings",
+   "statt": "finden statt: take place (stattfinden)",
+   "kasse": "till, cash desk",
+   "behauptet": "claims",
+   "sei": "is (reported speech, sein)",
+   "besuch": "visit (zu Besuch: visiting)"
   },
   "questions": [
-   { "q": "Welche Kosten waren für die Buchhandlung gestiegen?", "a": ["Miete"] },
-   { "q": "Was sollte jedes Mitglied der Genossenschaft kaufen?", "a": ["Anteil"] },
-   { "q": "Was findet abends in der Buchhandlung statt?", "a": ["Lesungen", "Lesung"] }
+   {
+    "q": "Welche Kosten waren für die Buchhandlung gestiegen?",
+    "a": [
+     "Miete"
+    ]
+   },
+   {
+    "q": "Was sollte jedes Mitglied der Genossenschaft kaufen?",
+    "a": [
+     "Anteil"
+    ]
+   },
+   {
+    "q": "Was findet abends in der Buchhandlung statt?",
+    "a": [
+     "Lesungen",
+     "Lesung"
+    ]
+   }
   ],
-  "notice": "To report what someone says without quoting it, written German uses a special verb form, the Konjunktiv I: \"er wolle zum Jahresende aufhören\" (he said he wanted to stop), \"er sei nur zu Besuch\" (he says he is only visiting)."
+  "notice": "To report what someone says without quoting it, written German uses a special verb form, the Konjunktiv I: \"er wolle zum Jahresende aufhören\" (he said he wanted to stop), \"er sei nur zu Besuch\" (he says he is only visiting).",
+  "back": [
+   [
+    "Inzwischen gehört die Buchhandlung dem Viertel selbst.",
+    "By now the bookshop belongs to the neighbourhood itself."
+   ],
+   [
+    "Über wichtige Fragen entscheiden die Mitglieder gemeinsam, vom Sortiment bis zu den Öffnungszeiten.",
+    "The members decide important questions together, from the range of books to the opening hours."
+   ]
+  ]
  },
  {
   "id": "de-homeoffice",
@@ -374,31 +1137,90 @@
   "level": "B2",
   "text": "Als seine Firma vor drei Jahren das Büro in München aufgab, hielt Daniel das für die beste Nachricht seines Berufslebens. Nie wieder überfüllte Züge, nie wieder Besprechungen, die sich endlos hinzogen. Stattdessen stellte er seinen Rechner auf den Küchentisch und genoss die Ruhe. In den ersten Monaten erledigte er mehr als je zuvor und fühlte sich dabei so frei wie noch nie. Je länger dieser Zustand jedoch dauerte, desto deutlicher spürte er die Nachteile. Die Arbeit hörte nie richtig auf, weil der Bildschirm immer in Sichtweite stand. An manchen Tagen sprach er mit niemandem außer dem Paketboten. Vor allem fehlten ihm die beiläufigen Gespräche auf dem Flur, bei denen früher oft die besten Ideen entstanden waren. Zunächst versuchte er, sich mit festen Arbeitszeiten und langen Spaziergängen zu helfen, doch das Gefühl der Einsamkeit blieb. Die Lösung fand er schließlich nur wenige Straßen entfernt. In einer ehemaligen Schreinerei hatten Nachbarn ein Gemeinschaftsbüro eingerichtet, in dem man tageweise einen Schreibtisch mieten kann. Dort sitzt Daniel nun dreimal pro Woche zwischen einer Übersetzerin, einem Architekten und zwei Studentinnen. Mittags essen sie oft zusammen, und manchmal bittet ihn jemand um Rat. Mit seiner eigenen Firma haben sie nichts zu tun, und gerade das gefällt ihm. Er hätte nie gedacht, dass ihm ausgerechnet Fremde einmal die Kollegen ersetzen würden.",
   "gloss": {
-   "aufgab": "gave up (aufgeben)", "hielt": "considered (halten für)", "nachricht": "news",
-   "berufslebens": "working life (das Berufsleben)", "überfüllte": "overcrowded", "besprechungen": "meetings",
-   "endlos": "endlessly", "hinzogen": "dragged on (sich hinziehen)", "stattdessen": "instead",
-   "rechner": "computer", "küchentisch": "kitchen table", "genoss": "enjoyed (genießen)",
-   "erledigte": "got done (erledigen)", "zuvor": "before (mehr als je zuvor: more than ever before)",
-   "zustand": "state, situation", "jedoch": "however", "desto": "je ... desto: the ... the",
-   "deutlicher": "more clearly", "spürte": "felt (spüren)", "nachteile": "disadvantages",
-   "hörte": "stopped (aufhören)", "bildschirm": "screen", "sichtweite": "in Sichtweite: within sight",
-   "außer": "except", "paketboten": "parcel courier (der Paketbote)",
+   "aufgab": "gave up (aufgeben)",
+   "hielt": "considered (halten für)",
+   "nachricht": "news",
+   "berufslebens": "working life (das Berufsleben)",
+   "überfüllte": "overcrowded",
+   "besprechungen": "meetings",
+   "endlos": "endlessly",
+   "hinzogen": "dragged on (sich hinziehen)",
+   "stattdessen": "instead",
+   "rechner": "computer",
+   "küchentisch": "kitchen table",
+   "genoss": "enjoyed (genießen)",
+   "erledigte": "got done (erledigen)",
+   "zuvor": "before (mehr als je zuvor: more than ever before)",
+   "zustand": "state, situation",
+   "jedoch": "however",
+   "desto": "je ... desto: the ... the",
+   "deutlicher": "more clearly",
+   "spürte": "felt (spüren)",
+   "nachteile": "disadvantages",
+   "hörte": "stopped (aufhören)",
+   "bildschirm": "screen",
+   "sichtweite": "in Sichtweite: within sight",
+   "außer": "except",
+   "paketboten": "parcel courier (der Paketbote)",
    "fehlten": "fehlten ihm: he missed them (fehlen)",
-   "beiläufigen": "casual, passing", "flur": "corridor", "entstanden": "arisen, come about (entstehen)",
-   "zunächst": "at first", "festen": "fixed", "arbeitszeiten": "working hours", "spaziergängen": "walks",
-   "einsamkeit": "loneliness", "lösung": "solution", "entfernt": "away", "ehemaligen": "former",
-   "schreinerei": "joiner's workshop", "gemeinschaftsbüro": "shared office",
-   "eingerichtet": "set up (einrichten)", "tageweise": "by the day", "schreibtisch": "desk",
-   "mieten": "to rent", "übersetzerin": "translator (a woman)", "mittags": "at lunchtime",
-   "bittet": "asks (um Rat bitten: to ask for advice)", "rat": "advice", "ausgerechnet": "of all people",
-   "fremde": "strangers", "ersetzen": "to replace"
+   "beiläufigen": "casual, passing",
+   "flur": "corridor",
+   "entstanden": "arisen, come about (entstehen)",
+   "zunächst": "at first",
+   "festen": "fixed",
+   "arbeitszeiten": "working hours",
+   "spaziergängen": "walks",
+   "einsamkeit": "loneliness",
+   "lösung": "solution",
+   "entfernt": "away",
+   "ehemaligen": "former",
+   "schreinerei": "joiner's workshop",
+   "gemeinschaftsbüro": "shared office",
+   "eingerichtet": "set up (einrichten)",
+   "tageweise": "by the day",
+   "schreibtisch": "desk",
+   "mieten": "to rent",
+   "übersetzerin": "translator (a woman)",
+   "mittags": "at lunchtime",
+   "bittet": "asks (um Rat bitten: to ask for advice)",
+   "rat": "advice",
+   "ausgerechnet": "of all people",
+   "fremde": "strangers",
+   "ersetzen": "to replace"
   },
   "questions": [
-   { "q": "Wohin stellte Daniel seinen Rechner?", "a": ["Küchentisch", "Küche"] },
-   { "q": "Wo entstanden früher oft die besten Ideen?", "a": ["Flur", "Gespräche"] },
-   { "q": "Was kann man im Gemeinschaftsbüro mieten?", "a": ["Schreibtisch"] }
+   {
+    "q": "Wohin stellte Daniel seinen Rechner?",
+    "a": [
+     "Küchentisch",
+     "Küche"
+    ]
+   },
+   {
+    "q": "Wo entstanden früher oft die besten Ideen?",
+    "a": [
+     "Flur",
+     "Gespräche"
+    ]
+   },
+   {
+    "q": "Was kann man im Gemeinschaftsbüro mieten?",
+    "a": [
+     "Schreibtisch"
+    ]
+   }
   ],
-  "notice": "A clause that describes a noun can start with a preposition, like English in which or during which. The pronoun takes the case that preposition needs: \"bei denen früher oft die besten Ideen entstanden waren\", \"in dem man tageweise einen Schreibtisch mieten kann\"."
+  "notice": "A clause that describes a noun can start with a preposition, like English in which or during which. The pronoun takes the case that preposition needs: \"bei denen früher oft die besten Ideen entstanden waren\", \"in dem man tageweise einen Schreibtisch mieten kann\".",
+  "back": [
+   [
+    "Je länger dieser Zustand jedoch dauerte, desto deutlicher spürte er die Nachteile.",
+    "But the longer this state of affairs lasted, the more clearly he felt the drawbacks."
+   ],
+   [
+    "Mittags essen sie oft zusammen, und manchmal bittet ihn jemand um Rat.",
+    "They often have lunch together, and sometimes someone asks him for advice."
+   ]
+  ]
  },
  {
   "id": "de-garten",
@@ -406,73 +1228,213 @@
   "level": "B2",
   "text": "In einer Kleingartenanlage am Stadtrand von Leipzig lag die letzte Parzelle am Hauptweg jahrelang brach. Das Unkraut wuchs meterhoch, und niemand wollte das verwilderte Grundstück übernehmen. Schließlich schlug eine junge Lehrerin vor, es in einen Gemeinschaftsgarten für die Anwohner zu verwandeln, die selbst keinen Garten besaßen. Im Vorstand des Vereins stieß sie damit zunächst auf Ablehnung. Die älteren Mitglieder befürchteten Lärm, Unordnung und Leute, die sich an keine Regel halten würden. Erst nach langen Diskussionen wurde ein Probejahr vereinbart. Sollte es Beschwerden geben, würde die Parzelle wieder geschlossen. Im Frühling rückten zwei Dutzend Nachbarn mit Spaten und Gießkannen an. Sie hatten viel guten Willen, aber wenig Ahnung, und ihr erster Salat wurde über Nacht von Schnecken gefressen. Ausgerechnet der strengste Kritiker, ein pensionierter Handwerker namens Krause, konnte das nicht lange mit ansehen. Zuerst gab er über den Zaun kurze Ratschläge, dann brachte er eigene Tomatenpflanzen mit. Bald stand er fast täglich zwischen den Beeten. Die Kinder nannten ihn nur noch den Tomatenkönig, und er ließ es sich gern gefallen. Im Herbst wurde gemeinsam geerntet und gefeiert. Als der Vorstand über die Zukunft der Parzelle abstimmte, hob Krause als Erster die Hand. Ohne die Neuen, sagte er, wäre es in der Anlage inzwischen ziemlich langweilig.",
   "gloss": {
-   "kleingartenanlage": "allotment gardens", "stadtrand": "edge of town", "lag": "lay unused (brachliegen)",
-   "parzelle": "plot", "hauptweg": "main path", "brach": "lag brach: lay unused (brachliegen)", "unkraut": "weeds",
-   "wuchs": "grew (wachsen)", "verwilderte": "overgrown", "grundstück": "plot of land",
-   "schlug": "suggested (vorschlagen)", "gemeinschaftsgarten": "community garden",
-   "anwohner": "local residents", "verwandeln": "to turn into", "besaßen": "owned (besitzen)",
-   "vorstand": "committee, board", "vereins": "club, association (der Verein)",
-   "stieß": "stieß auf: met with (stoßen)", "zunächst": "at first", "ablehnung": "rejection",
-   "befürchteten": "feared (befürchten)", "unordnung": "mess",
-   "regel": "rule (sich an eine Regel halten: to keep to a rule)", "probejahr": "trial year",
-   "vereinbart": "agreed (vereinbaren)", "beschwerden": "complaints", "geschlossen": "closed (schließen)",
-   "rückten": "turned up (anrücken)", "dutzend": "dozen", "spaten": "spades",
-   "gießkannen": "watering cans", "willen": "will (guter Wille: goodwill)",
-   "ahnung": "idea, knowledge", "schnecken": "slugs, snails", "gefressen": "eaten (fressen, of animals)",
-   "ausgerechnet": "of all people", "strengste": "strictest", "pensionierter": "retired",
-   "handwerker": "tradesman", "namens": "by the name of", "ansehen": "mit ansehen: to stand by and watch",
-   "zaun": "fence", "ratschläge": "pieces of advice", "brachte": "brought along (mitbringen)",
-   "beeten": "beds (das Beet)", "nannten": "called (nennen)", "tomatenkönig": "tomato king",
+   "kleingartenanlage": "allotment gardens",
+   "stadtrand": "edge of town",
+   "lag": "lay unused (brachliegen)",
+   "parzelle": "plot",
+   "hauptweg": "main path",
+   "brach": "lag brach: lay unused (brachliegen)",
+   "unkraut": "weeds",
+   "wuchs": "grew (wachsen)",
+   "verwilderte": "overgrown",
+   "grundstück": "plot of land",
+   "schlug": "suggested (vorschlagen)",
+   "gemeinschaftsgarten": "community garden",
+   "anwohner": "local residents",
+   "verwandeln": "to turn into",
+   "besaßen": "owned (besitzen)",
+   "vorstand": "committee, board",
+   "vereins": "club, association (der Verein)",
+   "stieß": "stieß auf: met with (stoßen)",
+   "zunächst": "at first",
+   "ablehnung": "rejection",
+   "befürchteten": "feared (befürchten)",
+   "unordnung": "mess",
+   "regel": "rule (sich an eine Regel halten: to keep to a rule)",
+   "probejahr": "trial year",
+   "vereinbart": "agreed (vereinbaren)",
+   "beschwerden": "complaints",
+   "geschlossen": "closed (schließen)",
+   "rückten": "turned up (anrücken)",
+   "dutzend": "dozen",
+   "spaten": "spades",
+   "gießkannen": "watering cans",
+   "willen": "will (guter Wille: goodwill)",
+   "ahnung": "idea, knowledge",
+   "schnecken": "slugs, snails",
+   "gefressen": "eaten (fressen, of animals)",
+   "ausgerechnet": "of all people",
+   "strengste": "strictest",
+   "pensionierter": "retired",
+   "handwerker": "tradesman",
+   "namens": "by the name of",
+   "ansehen": "mit ansehen: to stand by and watch",
+   "zaun": "fence",
+   "ratschläge": "pieces of advice",
+   "brachte": "brought along (mitbringen)",
+   "beeten": "beds (das Beet)",
+   "nannten": "called (nennen)",
+   "tomatenkönig": "tomato king",
    "ließ": "ließ es sich gefallen: did not mind (sich etwas gefallen lassen)",
-   "geerntet": "harvested (ernten)", "abstimmte": "voted (abstimmen)", "hob": "raised (heben)",
+   "geerntet": "harvested (ernten)",
+   "abstimmte": "voted (abstimmen)",
+   "hob": "raised (heben)",
    "anlage": "site, grounds"
   },
   "questions": [
-   { "q": "Was wuchs auf der Parzelle meterhoch?", "a": ["Unkraut"] },
-   { "q": "Welche Tiere haben den ersten Salat gefressen?", "a": ["Schnecken", "Schnecke"] },
-   { "q": "Wer hob bei der Abstimmung als Erster die Hand?", "a": ["Krause", "Kritiker", "Handwerker"] }
+   {
+    "q": "Was wuchs auf der Parzelle meterhoch?",
+    "a": [
+     "Unkraut"
+    ]
+   },
+   {
+    "q": "Welche Tiere haben den ersten Salat gefressen?",
+    "a": [
+     "Schnecken",
+     "Schnecke"
+    ]
+   },
+   {
+    "q": "Wer hob bei der Abstimmung als Erster die Hand?",
+    "a": [
+     "Krause",
+     "Kritiker",
+     "Handwerker"
+    ]
+   }
   ],
-  "notice": "The passive is werden plus a past participle, and the doer can be added with von: \"wurde über Nacht von Schnecken gefressen\". German can even form a passive with no subject at all: \"Im Herbst wurde gemeinsam geerntet und gefeiert\" (there was harvesting and celebrating)."
+  "notice": "The passive is werden plus a past participle, and the doer can be added with von: \"wurde über Nacht von Schnecken gefressen\". German can even form a passive with no subject at all: \"Im Herbst wurde gemeinsam geerntet und gefeiert\" (there was harvesting and celebrating).",
+  "back": [
+   [
+    "Erst nach langen Diskussionen wurde ein Probejahr vereinbart.",
+    "Only after long discussions was a trial year agreed."
+   ],
+   [
+    "Bald stand er fast täglich zwischen den Beeten.",
+    "Soon he was standing among the beds almost every day."
+   ]
+  ]
  },
  {
   "id": "de-d-baeckerei",
   "title": "In der Bäckerei",
   "level": "A1",
-  "roles": ["Die Verkäuferin", "Der Kunde"],
+  "roles": [
+   "Die Verkäuferin",
+   "Der Kunde"
+  ],
   "lines": [
-   [0, "Guten Morgen! Was darf es sein?"],
-   [1, "Guten Morgen! Ich hätte gern vier Brötchen, bitte."],
-   [0, "Gern. Helle Brötchen oder Körnerbrötchen?"],
-   [1, "Zwei helle und zwei mit Körnern, bitte."],
-   [0, "Bitte schön. Sonst noch etwas?"],
-   [1, "Ja. Haben Sie heute auch Brezeln?"],
-   [0, "Leider nicht mehr. Die Brezeln sind schon ausverkauft."],
-   [1, "Schade. Dann nehme ich ein Stück Apfelkuchen."],
-   [0, "Sehr gern. Ist das alles?"],
-   [1, "Ja, das ist alles. Was kostet das?"],
-   [0, "Das macht fünf Euro zwanzig."],
-   [1, "Hier sind zehn Euro."],
-   [0, "Danke. Und vier Euro achtzig zurück. Möchten Sie eine Tüte?"],
-   [1, "Nein danke, ich habe eine Tasche dabei."],
-   [0, "Dann einen schönen Tag noch!"],
-   [1, "Danke, gleichfalls. Auf Wiedersehen!"]
+   [
+    0,
+    "Guten Morgen! Was darf es sein?"
+   ],
+   [
+    1,
+    "Guten Morgen! Ich hätte gern vier Brötchen, bitte."
+   ],
+   [
+    0,
+    "Gern. Helle Brötchen oder Körnerbrötchen?"
+   ],
+   [
+    1,
+    "Zwei helle und zwei mit Körnern, bitte."
+   ],
+   [
+    0,
+    "Bitte schön. Sonst noch etwas?"
+   ],
+   [
+    1,
+    "Ja. Haben Sie heute auch Brezeln?"
+   ],
+   [
+    0,
+    "Leider nicht mehr. Die Brezeln sind schon ausverkauft."
+   ],
+   [
+    1,
+    "Schade. Dann nehme ich ein Stück Apfelkuchen."
+   ],
+   [
+    0,
+    "Sehr gern. Ist das alles?"
+   ],
+   [
+    1,
+    "Ja, das ist alles. Was kostet das?"
+   ],
+   [
+    0,
+    "Das macht fünf Euro zwanzig."
+   ],
+   [
+    1,
+    "Hier sind zehn Euro."
+   ],
+   [
+    0,
+    "Danke. Und vier Euro achtzig zurück. Möchten Sie eine Tüte?"
+   ],
+   [
+    1,
+    "Nein danke, ich habe eine Tasche dabei."
+   ],
+   [
+    0,
+    "Dann einen schönen Tag noch!"
+   ],
+   [
+    1,
+    "Danke, gleichfalls. Auf Wiedersehen!"
+   ]
   ],
   "gloss": {
-   "darf": "may (Was darf es sein?: What can I get you?)", "hätte": "would have (ich hätte gern: I would like)",
-   "gern": "gladly, with pleasure", "brötchen": "bread rolls", "helle": "light, white",
-   "körnerbrötchen": "seeded rolls", "körnern": "seeds, grains",
-   "sonst": "else (Sonst noch etwas?: Anything else?)", "etwas": "something, anything", "heute": "today",
-   "brezeln": "pretzels", "leider": "unfortunately",
-   "ausverkauft": "sold out", "schade": "what a pity", "nehme": "take (nehmen)", "stück": "piece",
-   "apfelkuchen": "apple cake", "alles": "everything, all", "kostet": "costs",
-   "macht": "makes (das macht: that comes to)", "zurück": "back (your change)", "möchten": "would like",
+   "darf": "may (Was darf es sein?: What can I get you?)",
+   "hätte": "would have (ich hätte gern: I would like)",
+   "gern": "gladly, with pleasure",
+   "brötchen": "bread rolls",
+   "helle": "light, white",
+   "körnerbrötchen": "seeded rolls",
+   "körnern": "seeds, grains",
+   "sonst": "else (Sonst noch etwas?: Anything else?)",
+   "etwas": "something, anything",
+   "heute": "today",
+   "brezeln": "pretzels",
+   "leider": "unfortunately",
+   "ausverkauft": "sold out",
+   "schade": "what a pity",
+   "nehme": "take (nehmen)",
+   "stück": "piece",
+   "apfelkuchen": "apple cake",
+   "alles": "everything, all",
+   "kostet": "costs",
+   "macht": "makes (das macht: that comes to)",
+   "zurück": "back (your change)",
+   "möchten": "would like",
    "tüte": "paper bag",
-   "tasche": "bag", "dabei": "with me", "schönen": "nice (einen schönen Tag noch: have a nice day)",
-   "gleichfalls": "the same to you", "wiedersehen": "auf Wiedersehen: goodbye"
+   "tasche": "bag",
+   "dabei": "with me",
+   "schönen": "nice (einen schönen Tag noch: have a nice day)",
+   "gleichfalls": "the same to you",
+   "wiedersehen": "auf Wiedersehen: goodbye"
   },
   "questions": [
-   { "q": "Was ist heute schon ausverkauft?", "a": ["Brezeln", "Brezel"] },
-   { "q": "Welchen Kuchen nimmt der Kunde?", "a": ["Apfelkuchen", "Apfel"] }
+   {
+    "q": "Was ist heute schon ausverkauft?",
+    "a": [
+     "Brezeln",
+     "Brezel"
+    ]
+   },
+   {
+    "q": "Welchen Kuchen nimmt der Kunde?",
+    "a": [
+     "Apfelkuchen",
+     "Apfel"
+    ]
+   }
   ],
   "notice": "Small words do a lot of work in a shop. Noch means still or else: \"Sonst noch etwas?\". Schon means already: \"Die Brezeln sind schon ausverkauft\"."
  },
@@ -480,40 +1442,117 @@
   "id": "de-d-weg",
   "title": "Nach dem Weg fragen",
   "level": "A1",
-  "roles": ["Die Passantin", "Der Tourist"],
+  "roles": [
+   "Die Passantin",
+   "Der Tourist"
+  ],
   "lines": [
-   [0, "Guten Tag! Kann ich Ihnen helfen?"],
-   [1, "Ja, bitte. Wie komme ich zum Bahnhof?"],
-   [0, "Gehen Sie hier geradeaus bis zur Ampel."],
-   [1, "Geradeaus bis zur Ampel. Und dann?"],
-   [0, "Dann gehen Sie nach links, über die Brücke."],
-   [1, "Entschuldigung, nach links oder nach rechts?"],
-   [0, "Nach links. Der Bahnhof ist dann auf der rechten Seite."],
-   [1, "Ist es weit von hier?"],
-   [0, "Zu Fuß sind es ungefähr zwanzig Minuten."],
-   [1, "Das ist zu weit. Mein Zug fährt in einer Viertelstunde."],
-   [0, "Dann nehmen Sie den Bus. Die Haltestelle ist dort drüben."],
-   [1, "Welcher Bus fährt zum Bahnhof?"],
-   [0, "Die Linie sieben. Sie fährt alle fünf Minuten."],
-   [1, "Vielen Dank für Ihre Hilfe!"],
-   [0, "Gern geschehen. Gute Reise!"]
+   [
+    0,
+    "Guten Tag! Kann ich Ihnen helfen?"
+   ],
+   [
+    1,
+    "Ja, bitte. Wie komme ich zum Bahnhof?"
+   ],
+   [
+    0,
+    "Gehen Sie hier geradeaus bis zur Ampel."
+   ],
+   [
+    1,
+    "Geradeaus bis zur Ampel. Und dann?"
+   ],
+   [
+    0,
+    "Dann gehen Sie nach links, über die Brücke."
+   ],
+   [
+    1,
+    "Entschuldigung, nach links oder nach rechts?"
+   ],
+   [
+    0,
+    "Nach links. Der Bahnhof ist dann auf der rechten Seite."
+   ],
+   [
+    1,
+    "Ist es weit von hier?"
+   ],
+   [
+    0,
+    "Zu Fuß sind es ungefähr zwanzig Minuten."
+   ],
+   [
+    1,
+    "Das ist zu weit. Mein Zug fährt in einer Viertelstunde."
+   ],
+   [
+    0,
+    "Dann nehmen Sie den Bus. Die Haltestelle ist dort drüben."
+   ],
+   [
+    1,
+    "Welcher Bus fährt zum Bahnhof?"
+   ],
+   [
+    0,
+    "Die Linie sieben. Sie fährt alle fünf Minuten."
+   ],
+   [
+    1,
+    "Vielen Dank für Ihre Hilfe!"
+   ],
+   [
+    0,
+    "Gern geschehen. Gute Reise!"
+   ]
   ],
   "gloss": {
-   "helfen": "to help", "komme": "get (Wie komme ich zu ...?: How do I get to ...?)",
-   "bahnhof": "railway station", "gehen": "go, walk", "geradeaus": "straight on", "ampel": "traffic lights",
+   "helfen": "to help",
+   "komme": "get (Wie komme ich zu ...?: How do I get to ...?)",
+   "bahnhof": "railway station",
+   "gehen": "go, walk",
+   "geradeaus": "straight on",
+   "ampel": "traffic lights",
    "links": "left",
-   "über": "over, across", "brücke": "bridge", "entschuldigung": "sorry, excuse me", "rechts": "right",
-   "rechten": "right-hand", "seite": "side", "weit": "far", "fuß": "foot (zu Fuß: on foot)",
-   "ungefähr": "about, roughly", "zug": "train", "fährt": "leaves, goes (fahren)",
-   "viertelstunde": "quarter of an hour", "nehmen": "take", "haltestelle": "bus stop",
-   "dort": "there", "drüben": "over there", "welcher": "which", "linie": "line, route",
-   "alle": "every (alle fünf Minuten: every five minutes)", "dank": "thanks (vielen Dank: many thanks)",
+   "über": "over, across",
+   "brücke": "bridge",
+   "entschuldigung": "sorry, excuse me",
+   "rechts": "right",
+   "rechten": "right-hand",
+   "seite": "side",
+   "weit": "far",
+   "fuß": "foot (zu Fuß: on foot)",
+   "ungefähr": "about, roughly",
+   "zug": "train",
+   "fährt": "leaves, goes (fahren)",
+   "viertelstunde": "quarter of an hour",
+   "nehmen": "take",
+   "haltestelle": "bus stop",
+   "dort": "there",
+   "drüben": "over there",
+   "welcher": "which",
+   "linie": "line, route",
+   "alle": "every (alle fünf Minuten: every five minutes)",
+   "dank": "thanks (vielen Dank: many thanks)",
    "hilfe": "help",
-   "geschehen": "gern geschehen: you are welcome", "reise": "journey (Gute Reise!: Have a good trip!)"
+   "geschehen": "gern geschehen: you are welcome",
+   "reise": "journey (Gute Reise!: Have a good trip!)"
   },
   "questions": [
-   { "q": "Wohin möchte der Tourist?", "a": ["Bahnhof"] },
-   { "q": "Was soll der Tourist nehmen, weil der Weg zu weit ist?", "a": ["Bus"] }
+   {
+    "q": "Wohin möchte der Tourist?",
+    "a": [
+     "Bahnhof"
+    ]
+   },
+   {
+    "q": "Was soll der Tourist nehmen, weil der Weg zu weit ist?",
+    "a": [
+     "Bus"
+    ]
+   }
   ],
   "notice": "Zu (to) takes the dative and merges with the article: zu + dem becomes zum, zu + der becomes zur. \"Wie komme ich zum Bahnhof?\", \"bis zur Ampel\"."
  },
@@ -521,42 +1560,131 @@
   "id": "de-d-nachbarin",
   "title": "Neu im Haus",
   "level": "A1",
-  "roles": ["Die Nachbarin", "Der neue Mieter"],
+  "roles": [
+   "Die Nachbarin",
+   "Der neue Mieter"
+  ],
   "lines": [
-   [0, "Guten Tag! Wohnen Sie jetzt auch hier im Haus?"],
-   [1, "Guten Tag! Ja, ich wohne seit gestern im zweiten Stock."],
-   [0, "Wie schön! Ich bin Frau Schmidt aus dem ersten Stock."],
-   [1, "Freut mich. Ich heiße Alex Meier."],
-   [0, "Woher kommen Sie denn?"],
-   [1, "Ich komme aus Kanada, aber ich arbeite jetzt hier in Köln."],
-   [0, "Ihr Deutsch ist aber schon sehr gut!"],
-   [1, "Danke. Ich lerne noch. Bitte sprechen Sie langsam."],
-   [0, "Natürlich. Übrigens, ich habe ein Paket für Sie."],
-   [1, "Ein Paket für mich? Das ist sicher meine neue Lampe."],
-   [0, "Der Paketbote war heute Morgen da, aber Sie waren nicht zu Hause."],
-   [1, "Vielen Dank! Kann ich es jetzt gleich abholen?"],
-   [0, "Ja, gern. Möchten Sie auch einen Kaffee trinken?"],
-   [1, "Sehr gern, aber heute habe ich leider keine Zeit."],
-   [0, "Dann kommen Sie doch am Samstag zum Kaffee!"],
-   [1, "Am Samstag passt es gut. Bis dann!"],
-   [0, "Bis Samstag! Und herzlich willkommen im Haus."]
+   [
+    0,
+    "Guten Tag! Wohnen Sie jetzt auch hier im Haus?"
+   ],
+   [
+    1,
+    "Guten Tag! Ja, ich wohne seit gestern im zweiten Stock."
+   ],
+   [
+    0,
+    "Wie schön! Ich bin Frau Schmidt aus dem ersten Stock."
+   ],
+   [
+    1,
+    "Freut mich. Ich heiße Alex Meier."
+   ],
+   [
+    0,
+    "Woher kommen Sie denn?"
+   ],
+   [
+    1,
+    "Ich komme aus Kanada, aber ich arbeite jetzt hier in Köln."
+   ],
+   [
+    0,
+    "Ihr Deutsch ist aber schon sehr gut!"
+   ],
+   [
+    1,
+    "Danke. Ich lerne noch. Bitte sprechen Sie langsam."
+   ],
+   [
+    0,
+    "Natürlich. Übrigens, ich habe ein Paket für Sie."
+   ],
+   [
+    1,
+    "Ein Paket für mich? Das ist sicher meine neue Lampe."
+   ],
+   [
+    0,
+    "Der Paketbote war heute Morgen da, aber Sie waren nicht zu Hause."
+   ],
+   [
+    1,
+    "Vielen Dank! Kann ich es jetzt gleich abholen?"
+   ],
+   [
+    0,
+    "Ja, gern. Möchten Sie auch einen Kaffee trinken?"
+   ],
+   [
+    1,
+    "Sehr gern, aber heute habe ich leider keine Zeit."
+   ],
+   [
+    0,
+    "Dann kommen Sie doch am Samstag zum Kaffee!"
+   ],
+   [
+    1,
+    "Am Samstag passt es gut. Bis dann!"
+   ],
+   [
+    0,
+    "Bis Samstag! Und herzlich willkommen im Haus."
+   ]
   ],
   "gloss": {
-   "wohnen": "live", "jetzt": "now", "wohne": "live", "seit": "since (seit gestern: since yesterday)",
-   "gestern": "yesterday", "zweiten": "second", "stock": "floor, storey", "ersten": "first",
-   "freut": "freut mich: pleased to meet you", "heiße": "am called (heißen)", "woher": "where from",
-   "komme": "come", "arbeite": "work", "lerne": "am learning", "sprechen": "speak", "langsam": "slowly",
-   "natürlich": "of course", "übrigens": "by the way", "paket": "parcel", "sicher": "surely, probably",
-   "lampe": "lamp", "paketbote": "parcel courier", "war": "was (sein)", "heute": "today",
-   "morgen": "morning", "waren": "were (sein)", "hause": "zu Hause: at home",
-   "dank": "thanks (vielen Dank: many thanks)", "gleich": "right away", "abholen": "to collect, to pick up",
-   "möchten": "would like", "leider": "unfortunately", "zeit": "time",
-   "passt": "suits (es passt gut: that suits me well)", "herzlich": "herzlich willkommen: a warm welcome",
+   "wohnen": "live",
+   "jetzt": "now",
+   "wohne": "live",
+   "seit": "since (seit gestern: since yesterday)",
+   "gestern": "yesterday",
+   "zweiten": "second",
+   "stock": "floor, storey",
+   "ersten": "first",
+   "freut": "freut mich: pleased to meet you",
+   "heiße": "am called (heißen)",
+   "woher": "where from",
+   "komme": "come",
+   "arbeite": "work",
+   "lerne": "am learning",
+   "sprechen": "speak",
+   "langsam": "slowly",
+   "natürlich": "of course",
+   "übrigens": "by the way",
+   "paket": "parcel",
+   "sicher": "surely, probably",
+   "lampe": "lamp",
+   "paketbote": "parcel courier",
+   "war": "was (sein)",
+   "heute": "today",
+   "morgen": "morning",
+   "waren": "were (sein)",
+   "hause": "zu Hause: at home",
+   "dank": "thanks (vielen Dank: many thanks)",
+   "gleich": "right away",
+   "abholen": "to collect, to pick up",
+   "möchten": "would like",
+   "leider": "unfortunately",
+   "zeit": "time",
+   "passt": "suits (es passt gut: that suits me well)",
+   "herzlich": "herzlich willkommen: a warm welcome",
    "willkommen": "welcome"
   },
   "questions": [
-   { "q": "Was hat die Nachbarin für den neuen Mieter?", "a": ["Paket"] },
-   { "q": "An welchem Tag trinken die beiden zusammen Kaffee?", "a": ["Samstag"] }
+   {
+    "q": "Was hat die Nachbarin für den neuen Mieter?",
+    "a": [
+     "Paket"
+    ]
+   },
+   {
+    "q": "An welchem Tag trinken die beiden zusammen Kaffee?",
+    "a": [
+     "Samstag"
+    ]
+   }
   ],
   "notice": "War and waren are the past of sein (to be). German uses them all the time, even in everyday talk: \"Der Paketbote war heute Morgen da\", \"Sie waren nicht zu Hause\"."
  },
@@ -564,41 +1692,127 @@
   "id": "de-d-apotheke",
   "title": "In der Apotheke",
   "level": "A2",
-  "roles": ["Der Apotheker", "Die Kundin"],
+  "roles": [
+   "Der Apotheker",
+   "Die Kundin"
+  ],
   "lines": [
-   [0, "Guten Tag! Was kann ich für Sie tun?"],
-   [1, "Guten Tag. Ich habe seit drei Tagen Halsschmerzen und Husten."],
-   [0, "Haben Sie auch Fieber?"],
-   [1, "Nein, Fieber habe ich nicht, aber ich schlafe schlecht."],
-   [0, "Dann empfehle ich Ihnen diese Lutschtabletten und einen Hustensaft."],
-   [1, "Meine Ärztin hat mir letztes Jahr ein Antibiotikum gegeben. Kann ich das auch bekommen?"],
-   [0, "Das tut mir leid. Dafür brauchen Sie ein Rezept vom Arzt."],
-   [1, "Ach so. Dann nehme ich die Tabletten und den Hustensaft."],
-   [0, "Gern. Nehmen Sie den Saft dreimal täglich nach dem Essen."],
-   [1, "Und wie oft darf ich die Tabletten nehmen?"],
-   [0, "Höchstens sechs Stück am Tag. Und trinken Sie viel warmen Tee."],
-   [1, "Das mache ich. Und wenn es nicht besser wird?"],
-   [0, "Dann gehen Sie bitte nach drei Tagen zum Arzt."],
-   [1, "In Ordnung. Was kostet das zusammen?"],
-   [0, "Das macht zwölf Euro fünfzig."],
-   [1, "Kann ich mit Karte zahlen?"],
-   [0, "Natürlich. Gute Besserung!"]
+   [
+    0,
+    "Guten Tag! Was kann ich für Sie tun?"
+   ],
+   [
+    1,
+    "Guten Tag. Ich habe seit drei Tagen Halsschmerzen und Husten."
+   ],
+   [
+    0,
+    "Haben Sie auch Fieber?"
+   ],
+   [
+    1,
+    "Nein, Fieber habe ich nicht, aber ich schlafe schlecht."
+   ],
+   [
+    0,
+    "Dann empfehle ich Ihnen diese Lutschtabletten und einen Hustensaft."
+   ],
+   [
+    1,
+    "Meine Ärztin hat mir letztes Jahr ein Antibiotikum gegeben. Kann ich das auch bekommen?"
+   ],
+   [
+    0,
+    "Das tut mir leid. Dafür brauchen Sie ein Rezept vom Arzt."
+   ],
+   [
+    1,
+    "Ach so. Dann nehme ich die Tabletten und den Hustensaft."
+   ],
+   [
+    0,
+    "Gern. Nehmen Sie den Saft dreimal täglich nach dem Essen."
+   ],
+   [
+    1,
+    "Und wie oft darf ich die Tabletten nehmen?"
+   ],
+   [
+    0,
+    "Höchstens sechs Stück am Tag. Und trinken Sie viel warmen Tee."
+   ],
+   [
+    1,
+    "Das mache ich. Und wenn es nicht besser wird?"
+   ],
+   [
+    0,
+    "Dann gehen Sie bitte nach drei Tagen zum Arzt."
+   ],
+   [
+    1,
+    "In Ordnung. Was kostet das zusammen?"
+   ],
+   [
+    0,
+    "Das macht zwölf Euro fünfzig."
+   ],
+   [
+    1,
+    "Kann ich mit Karte zahlen?"
+   ],
+   [
+    0,
+    "Natürlich. Gute Besserung!"
+   ]
   ],
   "gloss": {
-   "seit": "for, since (seit drei Tagen: for three days)", "halsschmerzen": "sore throat", "husten": "cough",
-   "fieber": "fever, temperature", "schlafe": "sleep", "schlecht": "badly",
-   "empfehle": "recommend (empfehlen)", "lutschtabletten": "lozenges", "hustensaft": "cough syrup",
-   "ärztin": "doctor (a woman)", "antibiotikum": "antibiotic", "gegeben": "given (geben)",
-   "bekommen": "to get", "leid": "das tut mir leid: I am sorry", "dafür": "for that", "brauchen": "need",
-   "rezept": "prescription", "arzt": "doctor", "tabletten": "tablets", "saft": "syrup, juice",
-   "dreimal": "three times", "täglich": "a day, daily", "darf": "may, am allowed to (dürfen)",
-   "höchstens": "at most", "stück": "pieces", "besser": "better", "wird": "gets, becomes (werden)",
-   "ordnung": "in Ordnung: all right", "zusammen": "altogether", "karte": "card", "zahlen": "to pay",
+   "seit": "for, since (seit drei Tagen: for three days)",
+   "halsschmerzen": "sore throat",
+   "husten": "cough",
+   "fieber": "fever, temperature",
+   "schlafe": "sleep",
+   "schlecht": "badly",
+   "empfehle": "recommend (empfehlen)",
+   "lutschtabletten": "lozenges",
+   "hustensaft": "cough syrup",
+   "ärztin": "doctor (a woman)",
+   "antibiotikum": "antibiotic",
+   "gegeben": "given (geben)",
+   "bekommen": "to get",
+   "leid": "das tut mir leid: I am sorry",
+   "dafür": "for that",
+   "brauchen": "need",
+   "rezept": "prescription",
+   "arzt": "doctor",
+   "tabletten": "tablets",
+   "saft": "syrup, juice",
+   "dreimal": "three times",
+   "täglich": "a day, daily",
+   "darf": "may, am allowed to (dürfen)",
+   "höchstens": "at most",
+   "stück": "pieces",
+   "besser": "better",
+   "wird": "gets, becomes (werden)",
+   "ordnung": "in Ordnung: all right",
+   "zusammen": "altogether",
+   "karte": "card",
+   "zahlen": "to pay",
    "besserung": "Gute Besserung!: Get well soon!"
   },
   "questions": [
-   { "q": "Was braucht die Kundin für ein Antibiotikum?", "a": ["Rezept"] },
-   { "q": "Was soll die Kundin viel trinken?", "a": ["Tee"] }
+   {
+    "q": "Was braucht die Kundin für ein Antibiotikum?",
+    "a": [
+     "Rezept"
+    ]
+   },
+   {
+    "q": "Was soll die Kundin viel trinken?",
+    "a": [
+     "Tee"
+    ]
+   }
   ],
   "notice": "The person who gets something is in the dative: mir (to me), Ihnen (to you, polite). \"Dann empfehle ich Ihnen diese Lutschtabletten\", \"Meine Ärztin hat mir letztes Jahr ein Antibiotikum gegeben\"."
  },
@@ -606,41 +1820,127 @@
   "id": "de-d-hotel",
   "title": "An der Hotelrezeption",
   "level": "A2",
-  "roles": ["Der Rezeptionist", "Der Gast"],
+  "roles": [
+   "Der Rezeptionist",
+   "Der Gast"
+  ],
   "lines": [
-   [0, "Guten Abend! Willkommen im Hotel am See."],
-   [1, "Guten Abend. Ich habe ein Doppelzimmer für drei Nächte reserviert."],
-   [0, "Auf welchen Namen, bitte?"],
-   [1, "Auf den Namen Keller. Ich habe letzte Woche online gebucht."],
-   [0, "Einen Moment. Hier steht leider nur ein Einzelzimmer für zwei Nächte."],
-   [1, "Das kann nicht sein. Ich habe die Bestätigung hier auf dem Handy."],
-   [0, "Sie haben recht, das ist unser Fehler. Es tut mir sehr leid."],
-   [1, "Haben Sie denn noch ein Doppelzimmer frei?"],
-   [0, "Ja, aber nur zur Straße. Die Zimmer mit Seeblick sind alle belegt."],
-   [1, "Ist es dort nicht sehr laut in der Nacht?"],
-   [0, "Nein, nachts ist es ruhig. Und das Frühstück ist für Sie kostenlos."],
-   [1, "Gut, dann nehme ich das Zimmer. Wann gibt es Frühstück?"],
-   [0, "Von sieben bis zehn Uhr im Erdgeschoss."],
-   [1, "Und bis wann muss ich am Freitag auschecken?"],
-   [0, "Bis elf Uhr. Hier ist Ihr Schlüssel, Zimmer zwölf im ersten Stock."],
-   [1, "Vielen Dank. Gibt es einen Aufzug? Mein Koffer ist sehr schwer."],
-   [0, "Ja, gleich hier links. Einen schönen Aufenthalt!"]
+   [
+    0,
+    "Guten Abend! Willkommen im Hotel am See."
+   ],
+   [
+    1,
+    "Guten Abend. Ich habe ein Doppelzimmer für drei Nächte reserviert."
+   ],
+   [
+    0,
+    "Auf welchen Namen, bitte?"
+   ],
+   [
+    1,
+    "Auf den Namen Keller. Ich habe letzte Woche online gebucht."
+   ],
+   [
+    0,
+    "Einen Moment. Hier steht leider nur ein Einzelzimmer für zwei Nächte."
+   ],
+   [
+    1,
+    "Das kann nicht sein. Ich habe die Bestätigung hier auf dem Handy."
+   ],
+   [
+    0,
+    "Sie haben recht, das ist unser Fehler. Es tut mir sehr leid."
+   ],
+   [
+    1,
+    "Haben Sie denn noch ein Doppelzimmer frei?"
+   ],
+   [
+    0,
+    "Ja, aber nur zur Straße. Die Zimmer mit Seeblick sind alle belegt."
+   ],
+   [
+    1,
+    "Ist es dort nicht sehr laut in der Nacht?"
+   ],
+   [
+    0,
+    "Nein, nachts ist es ruhig. Und das Frühstück ist für Sie kostenlos."
+   ],
+   [
+    1,
+    "Gut, dann nehme ich das Zimmer. Wann gibt es Frühstück?"
+   ],
+   [
+    0,
+    "Von sieben bis zehn Uhr im Erdgeschoss."
+   ],
+   [
+    1,
+    "Und bis wann muss ich am Freitag auschecken?"
+   ],
+   [
+    0,
+    "Bis elf Uhr. Hier ist Ihr Schlüssel, Zimmer zwölf im ersten Stock."
+   ],
+   [
+    1,
+    "Vielen Dank. Gibt es einen Aufzug? Mein Koffer ist sehr schwer."
+   ],
+   [
+    0,
+    "Ja, gleich hier links. Einen schönen Aufenthalt!"
+   ]
   ],
   "gloss": {
-   "willkommen": "welcome", "doppelzimmer": "double room", "nächte": "nights",
-   "reserviert": "reserved (reservieren)", "namen": "name (auf den Namen: in the name of)",
-   "gebucht": "booked (buchen)", "steht": "it says (hier steht: it says here)", "leider": "unfortunately",
-   "einzelzimmer": "single room", "bestätigung": "confirmation", "handy": "mobile phone",
-   "recht": "Sie haben recht: you are right", "fehler": "mistake", "leid": "es tut mir leid: I am sorry",
-   "frei": "free, available", "straße": "street (zur Straße: facing the street)", "seeblick": "lake view",
-   "belegt": "taken, occupied", "laut": "noisy", "nachts": "at night", "ruhig": "quiet",
-   "frühstück": "breakfast", "kostenlos": "free of charge", "erdgeschoss": "ground floor",
-   "auschecken": "to check out", "schlüssel": "key", "stock": "floor, storey", "aufzug": "lift, elevator",
-   "koffer": "suitcase", "schwer": "heavy", "gleich": "just, right", "aufenthalt": "stay"
+   "willkommen": "welcome",
+   "doppelzimmer": "double room",
+   "nächte": "nights",
+   "reserviert": "reserved (reservieren)",
+   "namen": "name (auf den Namen: in the name of)",
+   "gebucht": "booked (buchen)",
+   "steht": "it says (hier steht: it says here)",
+   "leider": "unfortunately",
+   "einzelzimmer": "single room",
+   "bestätigung": "confirmation",
+   "handy": "mobile phone",
+   "recht": "Sie haben recht: you are right",
+   "fehler": "mistake",
+   "leid": "es tut mir leid: I am sorry",
+   "frei": "free, available",
+   "straße": "street (zur Straße: facing the street)",
+   "seeblick": "lake view",
+   "belegt": "taken, occupied",
+   "laut": "noisy",
+   "nachts": "at night",
+   "ruhig": "quiet",
+   "frühstück": "breakfast",
+   "kostenlos": "free of charge",
+   "erdgeschoss": "ground floor",
+   "auschecken": "to check out",
+   "schlüssel": "key",
+   "stock": "floor, storey",
+   "aufzug": "lift, elevator",
+   "koffer": "suitcase",
+   "schwer": "heavy",
+   "gleich": "just, right",
+   "aufenthalt": "stay"
   },
   "questions": [
-   { "q": "Was für ein Zimmer hat der Gast reserviert?", "a": ["Doppelzimmer"] },
-   { "q": "Was bekommt der Gast kostenlos?", "a": ["Frühstück"] }
+   {
+    "q": "Was für ein Zimmer hat der Gast reserviert?",
+    "a": [
+     "Doppelzimmer"
+    ]
+   },
+   {
+    "q": "Was bekommt der Gast kostenlos?",
+    "a": [
+     "Frühstück"
+    ]
+   }
   ],
   "notice": "Verbs that end in -ieren form the past participle without ge: \"Ich habe ein Doppelzimmer für drei Nächte reserviert\". Most other verbs take ge: \"Ich habe letzte Woche online gebucht\"."
  },
@@ -648,39 +1948,119 @@
   "id": "de-d-tisch",
   "title": "Einen Tisch reservieren",
   "level": "A2",
-  "roles": ["Die Kellnerin", "Der Anrufer"],
+  "roles": [
+   "Die Kellnerin",
+   "Der Anrufer"
+  ],
   "lines": [
-   [0, "Restaurant Zur Linde, guten Tag!"],
-   [1, "Guten Tag. Ich möchte gern einen Tisch für Samstagabend reservieren."],
-   [0, "Gern. Für wie viele Personen?"],
-   [1, "Für vier Personen, um acht Uhr, wenn es geht."],
-   [0, "Um acht ist leider schon alles voll. Ich habe noch einen Tisch um halb sieben oder um neun."],
-   [1, "Neun Uhr ist zu spät für die Kinder. Dann nehmen wir halb sieben."],
-   [0, "Sehr gut. Möchten Sie drinnen oder draußen auf der Terrasse sitzen?"],
-   [1, "Auf der Terrasse, wenn das Wetter schön ist."],
-   [0, "Kein Problem. Bei Regen bekommen Sie einen Tisch am Fenster."],
-   [1, "Wunderbar. Haben Sie auch vegetarische Gerichte? Meine Tochter isst kein Fleisch."],
-   [0, "Ja, wir haben immer drei oder vier Gerichte ohne Fleisch."],
-   [1, "Das ist gut. Brauchen Sie noch meinen Namen?"],
-   [0, "Ja, bitte. Und auch Ihre Telefonnummer."],
-   [1, "Mein Name ist Hoffmann. Meine Nummer sehen Sie sicher auf Ihrem Telefon."],
-   [0, "Ja, die habe ich. Dann bis Samstag um halb sieben!"],
-   [1, "Vielen Dank und bis Samstag. Auf Wiederhören!"]
+   [
+    0,
+    "Restaurant Zur Linde, guten Tag!"
+   ],
+   [
+    1,
+    "Guten Tag. Ich möchte gern einen Tisch für Samstagabend reservieren."
+   ],
+   [
+    0,
+    "Gern. Für wie viele Personen?"
+   ],
+   [
+    1,
+    "Für vier Personen, um acht Uhr, wenn es geht."
+   ],
+   [
+    0,
+    "Um acht ist leider schon alles voll. Ich habe noch einen Tisch um halb sieben oder um neun."
+   ],
+   [
+    1,
+    "Neun Uhr ist zu spät für die Kinder. Dann nehmen wir halb sieben."
+   ],
+   [
+    0,
+    "Sehr gut. Möchten Sie drinnen oder draußen auf der Terrasse sitzen?"
+   ],
+   [
+    1,
+    "Auf der Terrasse, wenn das Wetter schön ist."
+   ],
+   [
+    0,
+    "Kein Problem. Bei Regen bekommen Sie einen Tisch am Fenster."
+   ],
+   [
+    1,
+    "Wunderbar. Haben Sie auch vegetarische Gerichte? Meine Tochter isst kein Fleisch."
+   ],
+   [
+    0,
+    "Ja, wir haben immer drei oder vier Gerichte ohne Fleisch."
+   ],
+   [
+    1,
+    "Das ist gut. Brauchen Sie noch meinen Namen?"
+   ],
+   [
+    0,
+    "Ja, bitte. Und auch Ihre Telefonnummer."
+   ],
+   [
+    1,
+    "Mein Name ist Hoffmann. Meine Nummer sehen Sie sicher auf Ihrem Telefon."
+   ],
+   [
+    0,
+    "Ja, die habe ich. Dann bis Samstag um halb sieben!"
+   ],
+   [
+    1,
+    "Vielen Dank und bis Samstag. Auf Wiederhören!"
+   ]
   ],
   "gloss": {
-   "tisch": "table", "samstagabend": "Saturday evening", "reservieren": "to reserve, to book",
-   "personen": "people", "geht": "wenn es geht: if possible", "leider": "unfortunately", "voll": "full",
-   "halb": "half (halb sieben: half past six)", "spät": "late", "drinnen": "inside", "draußen": "outside",
+   "tisch": "table",
+   "samstagabend": "Saturday evening",
+   "reservieren": "to reserve, to book",
+   "personen": "people",
+   "geht": "wenn es geht: if possible",
+   "leider": "unfortunately",
+   "voll": "full",
+   "halb": "half (halb sieben: half past six)",
+   "spät": "late",
+   "drinnen": "inside",
+   "draußen": "outside",
    "terrasse": "terrace",
-   "wetter": "weather", "regen": "rain (bei Regen: if it rains)", "bekommen": "get", "fenster": "window",
-   "wunderbar": "wonderful", "vegetarische": "vegetarian", "gerichte": "dishes", "tochter": "daughter",
-   "fleisch": "meat", "ohne": "without", "brauchen": "need", "namen": "name",
-   "telefonnummer": "phone number", "sicher": "surely",
+   "wetter": "weather",
+   "regen": "rain (bei Regen: if it rains)",
+   "bekommen": "get",
+   "fenster": "window",
+   "wunderbar": "wonderful",
+   "vegetarische": "vegetarian",
+   "gerichte": "dishes",
+   "tochter": "daughter",
+   "fleisch": "meat",
+   "ohne": "without",
+   "brauchen": "need",
+   "namen": "name",
+   "telefonnummer": "phone number",
+   "sicher": "surely",
    "wiederhören": "auf Wiederhören: goodbye (on the phone)"
   },
   "questions": [
-   { "q": "Wo möchte der Anrufer bei schönem Wetter sitzen?", "a": ["Terrasse", "draußen"] },
-   { "q": "Was isst die Tochter nicht?", "a": ["Fleisch"] }
+   {
+    "q": "Wo möchte der Anrufer bei schönem Wetter sitzen?",
+    "a": [
+     "Terrasse",
+     "draußen"
+    ]
+   },
+   {
+    "q": "Was isst die Tochter nicht?",
+    "a": [
+     "Fleisch"
+    ]
+   }
   ],
   "notice": "Wenn means if or when, and it sends the verb to the end of its clause: \"wenn es geht\" (if possible), \"wenn das Wetter schön ist\"."
  },
@@ -688,44 +2068,135 @@
   "id": "de-d-umtausch",
   "title": "Eine Reklamation",
   "level": "B1",
-  "roles": ["Der Verkäufer", "Die Kundin"],
+  "roles": [
+   "Der Verkäufer",
+   "Die Kundin"
+  ],
   "lines": [
-   [0, "Guten Tag! Wie kann ich Ihnen helfen?"],
-   [1, "Guten Tag. Ich habe vor zwei Wochen diesen Wasserkocher bei Ihnen gekauft, und er ist schon kaputt."],
-   [0, "Oh, das tut mir leid. Was genau funktioniert denn nicht?"],
-   [1, "Er schaltet sich nicht mehr ab, wenn das Wasser kocht. Außerdem tropft er unten."],
-   [0, "Verstehe. Haben Sie den Kassenbon noch?"],
-   [1, "Ja, hier ist er. Ich würde das Gerät gern umtauschen."],
-   [0, "Leider haben wir dieses Modell im Moment nicht mehr auf Lager. Wir könnten es zur Reparatur einschicken."],
-   [1, "Wie lange würde die Reparatur denn dauern?"],
-   [0, "Ungefähr drei Wochen. Oder ich gebe Ihnen einen Gutschein über den Kaufpreis."],
-   [1, "Drei Wochen sind mir zu lang, und einen Gutschein möchte ich eigentlich nicht."],
-   [0, "Sie könnten sich auch ein anderes Modell aussuchen."],
-   [1, "Die anderen sind mir zu teuer. Ich hätte lieber mein Geld zurück."],
-   [0, "Einen Moment, da muss ich kurz meine Chefin fragen."],
-   [1, "Natürlich, ich warte gern."],
-   [0, "So, das geht in Ordnung. Haben Sie bar oder mit Karte bezahlt?"],
-   [1, "Mit Karte. Können Sie den Betrag einfach zurückbuchen?"],
-   [0, "Ja, das Geld ist in zwei bis drei Tagen wieder auf Ihrem Konto."],
-   [1, "Vielen Dank für Ihre Hilfe. Das ist sehr freundlich von Ihnen."]
+   [
+    0,
+    "Guten Tag! Wie kann ich Ihnen helfen?"
+   ],
+   [
+    1,
+    "Guten Tag. Ich habe vor zwei Wochen diesen Wasserkocher bei Ihnen gekauft, und er ist schon kaputt."
+   ],
+   [
+    0,
+    "Oh, das tut mir leid. Was genau funktioniert denn nicht?"
+   ],
+   [
+    1,
+    "Er schaltet sich nicht mehr ab, wenn das Wasser kocht. Außerdem tropft er unten."
+   ],
+   [
+    0,
+    "Verstehe. Haben Sie den Kassenbon noch?"
+   ],
+   [
+    1,
+    "Ja, hier ist er. Ich würde das Gerät gern umtauschen."
+   ],
+   [
+    0,
+    "Leider haben wir dieses Modell im Moment nicht mehr auf Lager. Wir könnten es zur Reparatur einschicken."
+   ],
+   [
+    1,
+    "Wie lange würde die Reparatur denn dauern?"
+   ],
+   [
+    0,
+    "Ungefähr drei Wochen. Oder ich gebe Ihnen einen Gutschein über den Kaufpreis."
+   ],
+   [
+    1,
+    "Drei Wochen sind mir zu lang, und einen Gutschein möchte ich eigentlich nicht."
+   ],
+   [
+    0,
+    "Sie könnten sich auch ein anderes Modell aussuchen."
+   ],
+   [
+    1,
+    "Die anderen sind mir zu teuer. Ich hätte lieber mein Geld zurück."
+   ],
+   [
+    0,
+    "Einen Moment, da muss ich kurz meine Chefin fragen."
+   ],
+   [
+    1,
+    "Natürlich, ich warte gern."
+   ],
+   [
+    0,
+    "So, das geht in Ordnung. Haben Sie bar oder mit Karte bezahlt?"
+   ],
+   [
+    1,
+    "Mit Karte. Können Sie den Betrag einfach zurückbuchen?"
+   ],
+   [
+    0,
+    "Ja, das Geld ist in zwei bis drei Tagen wieder auf Ihrem Konto."
+   ],
+   [
+    1,
+    "Vielen Dank für Ihre Hilfe. Das ist sehr freundlich von Ihnen."
+   ]
   ],
   "gloss": {
-   "wasserkocher": "kettle", "kaputt": "broken", "genau": "exactly", "funktioniert": "works",
-   "schaltet": "switches off (sich abschalten)", "kocht": "boils", "außerdem": "besides, also",
-   "tropft": "drips, leaks", "unten": "at the bottom", "verstehe": "I see (verstehen)",
-   "kassenbon": "receipt", "würde": "would (ich würde gern: I would like to)", "gerät": "appliance",
-   "umtauschen": "to exchange", "modell": "model", "lager": "stock (auf Lager: in stock)",
-   "könnten": "could (können)", "reparatur": "repair", "einschicken": "to send in",
-   "dauern": "to take, to last", "ungefähr": "about, roughly", "gutschein": "voucher",
-   "kaufpreis": "purchase price", "eigentlich": "really, actually", "aussuchen": "to choose, to pick out",
-   "teuer": "expensive", "hätte": "would have (ich hätte lieber: I would rather have)", "lieber": "rather",
-   "chefin": "boss (a woman)", "ordnung": "das geht in Ordnung: that is fine", "bar": "in cash",
-   "bezahlt": "paid (bezahlen)", "betrag": "amount", "zurückbuchen": "to refund (to the card)",
-   "konto": "bank account", "freundlich": "kind"
+   "wasserkocher": "kettle",
+   "kaputt": "broken",
+   "genau": "exactly",
+   "funktioniert": "works",
+   "schaltet": "switches off (sich abschalten)",
+   "kocht": "boils",
+   "außerdem": "besides, also",
+   "tropft": "drips, leaks",
+   "unten": "at the bottom",
+   "verstehe": "I see (verstehen)",
+   "kassenbon": "receipt",
+   "würde": "would (ich würde gern: I would like to)",
+   "gerät": "appliance",
+   "umtauschen": "to exchange",
+   "modell": "model",
+   "lager": "stock (auf Lager: in stock)",
+   "könnten": "could (können)",
+   "reparatur": "repair",
+   "einschicken": "to send in",
+   "dauern": "to take, to last",
+   "ungefähr": "about, roughly",
+   "gutschein": "voucher",
+   "kaufpreis": "purchase price",
+   "eigentlich": "really, actually",
+   "aussuchen": "to choose, to pick out",
+   "teuer": "expensive",
+   "hätte": "would have (ich hätte lieber: I would rather have)",
+   "lieber": "rather",
+   "chefin": "boss (a woman)",
+   "ordnung": "das geht in Ordnung: that is fine",
+   "bar": "in cash",
+   "bezahlt": "paid (bezahlen)",
+   "betrag": "amount",
+   "zurückbuchen": "to refund (to the card)",
+   "konto": "bank account",
+   "freundlich": "kind"
   },
   "questions": [
-   { "q": "Welches Gerät ist kaputt?", "a": ["Wasserkocher"] },
-   { "q": "Was möchte die Kundin am liebsten zurückbekommen?", "a": ["Geld"] }
+   {
+    "q": "Welches Gerät ist kaputt?",
+    "a": [
+     "Wasserkocher"
+    ]
+   },
+   {
+    "q": "Was möchte die Kundin am liebsten zurückbekommen?",
+    "a": [
+     "Geld"
+    ]
+   }
   ],
   "notice": "Würde, könnte and hätte turn a demand into a polite wish or suggestion: \"Ich würde das Gerät gern umtauschen\", \"Wir könnten es zur Reparatur einschicken\", \"Ich hätte lieber mein Geld zurück\"."
  },
@@ -733,47 +2204,144 @@
   "id": "de-d-wohnung",
   "title": "Die Wohnungsbesichtigung",
   "level": "B1",
-  "roles": ["Die Vermieterin", "Der Interessent"],
+  "roles": [
+   "Die Vermieterin",
+   "Der Interessent"
+  ],
   "lines": [
-   [0, "Guten Tag, Sie kommen wegen der Wohnung? Kommen Sie doch herein."],
-   [1, "Guten Tag. Danke, dass ich so kurzfristig vorbeikommen durfte."],
-   [0, "Gern. Das hier ist das Wohnzimmer, und nebenan liegt das Schlafzimmer."],
-   [1, "Die Zimmer sind schön hell. Wie groß ist die Wohnung insgesamt?"],
-   [0, "Achtundfünfzig Quadratmeter, mit einem kleinen Balkon zum Hof."],
-   [1, "In der Anzeige stand eine Miete von siebenhundert Euro. Sind die Nebenkosten darin schon enthalten?"],
-   [0, "Nein, das ist die Kaltmiete. Dazu kommen ungefähr hundertfünfzig Euro für Heizung und Wasser."],
-   [1, "Aha, das ist mehr, als ich gedacht hatte. Bleibt die Küche denn in der Wohnung?"],
-   [0, "Leider nicht. Die Küche gehört dem Mieter, der jetzt auszieht."],
-   [1, "Wäre es möglich, sie von ihm zu übernehmen?"],
-   [0, "Ich glaube schon. Er würde sie für achthundert Euro verkaufen."],
-   [1, "Das wäre in Ordnung. Ab wann wäre die Wohnung denn frei?"],
-   [0, "Ab dem ersten März. Die Kaution beträgt zwei Monatsmieten."],
-   [1, "Gut. Welche Unterlagen brauchen Sie von mir, wenn ich mich bewerben möchte?"],
-   [0, "Eine Kopie Ihres Ausweises und die letzten drei Gehaltsabrechnungen."],
-   [1, "Die schicke ich Ihnen noch heute Abend. Wann würden Sie sich entscheiden?"],
-   [0, "Bis Ende der Woche. Ich melde mich dann bei Ihnen."],
-   [1, "Vielen Dank für die Besichtigung. Die Wohnung gefällt mir wirklich gut."]
+   [
+    0,
+    "Guten Tag, Sie kommen wegen der Wohnung? Kommen Sie doch herein."
+   ],
+   [
+    1,
+    "Guten Tag. Danke, dass ich so kurzfristig vorbeikommen durfte."
+   ],
+   [
+    0,
+    "Gern. Das hier ist das Wohnzimmer, und nebenan liegt das Schlafzimmer."
+   ],
+   [
+    1,
+    "Die Zimmer sind schön hell. Wie groß ist die Wohnung insgesamt?"
+   ],
+   [
+    0,
+    "Achtundfünfzig Quadratmeter, mit einem kleinen Balkon zum Hof."
+   ],
+   [
+    1,
+    "In der Anzeige stand eine Miete von siebenhundert Euro. Sind die Nebenkosten darin schon enthalten?"
+   ],
+   [
+    0,
+    "Nein, das ist die Kaltmiete. Dazu kommen ungefähr hundertfünfzig Euro für Heizung und Wasser."
+   ],
+   [
+    1,
+    "Aha, das ist mehr, als ich gedacht hatte. Bleibt die Küche denn in der Wohnung?"
+   ],
+   [
+    0,
+    "Leider nicht. Die Küche gehört dem Mieter, der jetzt auszieht."
+   ],
+   [
+    1,
+    "Wäre es möglich, sie von ihm zu übernehmen?"
+   ],
+   [
+    0,
+    "Ich glaube schon. Er würde sie für achthundert Euro verkaufen."
+   ],
+   [
+    1,
+    "Das wäre in Ordnung. Ab wann wäre die Wohnung denn frei?"
+   ],
+   [
+    0,
+    "Ab dem ersten März. Die Kaution beträgt zwei Monatsmieten."
+   ],
+   [
+    1,
+    "Gut. Welche Unterlagen brauchen Sie von mir, wenn ich mich bewerben möchte?"
+   ],
+   [
+    0,
+    "Eine Kopie Ihres Ausweises und die letzten drei Gehaltsabrechnungen."
+   ],
+   [
+    1,
+    "Die schicke ich Ihnen noch heute Abend. Wann würden Sie sich entscheiden?"
+   ],
+   [
+    0,
+    "Bis Ende der Woche. Ich melde mich dann bei Ihnen."
+   ],
+   [
+    1,
+    "Vielen Dank für die Besichtigung. Die Wohnung gefällt mir wirklich gut."
+   ]
   ],
   "gloss": {
-   "wegen": "because of, about", "herein": "in (hereinkommen: to come in)",
-   "kurzfristig": "at short notice", "vorbeikommen": "to come by", "durfte": "was allowed to (dürfen)",
-   "wohnzimmer": "living room", "nebenan": "next door", "schlafzimmer": "bedroom", "hell": "bright",
-   "insgesamt": "in total", "quadratmeter": "square metres", "balkon": "balcony", "hof": "courtyard",
-   "anzeige": "advertisement", "stand": "it said (stehen)", "miete": "rent",
-   "nebenkosten": "running costs (heating, water)", "darin": "in it", "enthalten": "included",
-   "kaltmiete": "rent without running costs", "dazu": "on top of that", "ungefähr": "about, roughly",
-   "heizung": "heating", "gehört": "belongs to (gehören)", "mieter": "tenant",
-   "auszieht": "is moving out (ausziehen)", "wäre": "would be (sein)", "möglich": "possible",
-   "übernehmen": "to take over", "verkaufen": "to sell", "kaution": "deposit",
-   "beträgt": "amounts to (betragen)", "monatsmieten": "months' rent", "unterlagen": "documents",
-   "bewerben": "sich bewerben: to apply", "kopie": "copy", "ausweises": "identity card (der Ausweis)",
-   "gehaltsabrechnungen": "payslips", "schicke": "will send (schicken)",
-   "entscheiden": "sich entscheiden: to decide", "melde": "ich melde mich: I will get in touch (sich melden)",
-   "besichtigung": "viewing", "gefällt": "gefällt mir: I like it (gefallen)"
+   "wegen": "because of, about",
+   "herein": "in (hereinkommen: to come in)",
+   "kurzfristig": "at short notice",
+   "vorbeikommen": "to come by",
+   "durfte": "was allowed to (dürfen)",
+   "wohnzimmer": "living room",
+   "nebenan": "next door",
+   "schlafzimmer": "bedroom",
+   "hell": "bright",
+   "insgesamt": "in total",
+   "quadratmeter": "square metres",
+   "balkon": "balcony",
+   "hof": "courtyard",
+   "anzeige": "advertisement",
+   "stand": "it said (stehen)",
+   "miete": "rent",
+   "nebenkosten": "running costs (heating, water)",
+   "darin": "in it",
+   "enthalten": "included",
+   "kaltmiete": "rent without running costs",
+   "dazu": "on top of that",
+   "ungefähr": "about, roughly",
+   "heizung": "heating",
+   "gehört": "belongs to (gehören)",
+   "mieter": "tenant",
+   "auszieht": "is moving out (ausziehen)",
+   "wäre": "would be (sein)",
+   "möglich": "possible",
+   "übernehmen": "to take over",
+   "verkaufen": "to sell",
+   "kaution": "deposit",
+   "beträgt": "amounts to (betragen)",
+   "monatsmieten": "months' rent",
+   "unterlagen": "documents",
+   "bewerben": "sich bewerben: to apply",
+   "kopie": "copy",
+   "ausweises": "identity card (der Ausweis)",
+   "gehaltsabrechnungen": "payslips",
+   "schicke": "will send (schicken)",
+   "entscheiden": "sich entscheiden: to decide",
+   "melde": "ich melde mich: I will get in touch (sich melden)",
+   "besichtigung": "viewing",
+   "gefällt": "gefällt mir: I like it (gefallen)"
   },
   "questions": [
-   { "q": "Was ist in der Miete von siebenhundert Euro nicht enthalten?", "a": ["Nebenkosten", "Heizung", "Wasser"] },
-   { "q": "Wem gehört die Küche?", "a": ["Mieter"] }
+   {
+    "q": "Was ist in der Miete von siebenhundert Euro nicht enthalten?",
+    "a": [
+     "Nebenkosten",
+     "Heizung",
+     "Wasser"
+    ]
+   },
+   {
+    "q": "Wem gehört die Küche?",
+    "a": [
+     "Mieter"
+    ]
+   }
   ],
   "notice": "Da plus a preposition points back to something just mentioned. \"Sind die Nebenkosten darin schon enthalten?\" (in it, in the rent); \"Dazu kommen ungefähr hundertfünfzig Euro\" (on top of that)."
  }

@@ -22,6 +22,10 @@ export const LANGS = {
   nl: { name: 'Nederlands', english: 'Dutch', bcp: 'nl-NL', keys: 'éëïöü' },
   hr: { name: 'Hrvatski', english: 'Croatian', bcp: 'hr-HR', keys: 'čćšžđ' },
   en: { name: 'English', english: 'English', bcp: 'en', keys: '' }, // no region: the chosen voice decides the accent
+  // small: a starter set half the usual size. seg: written without spaces, so words come from Intl.Segmenter.
+  zh: { name: '中文', english: 'Mandarin Chinese (simplified characters)', bcp: 'zh-CN', keys: '', seg: true, small: true },
+  ja: { name: '日本語', english: 'Japanese', bcp: 'ja-JP', keys: '', seg: true, small: true },
+  ko: { name: '한국어', english: 'Korean', bcp: 'ko-KR', keys: '', small: true },
 };
 const SEG = /^(zh|ja|th|lo|km|my|yue)$/; // written without spaces: words come from Intl.Segmenter
 export const isLangCode = c => typeof c === 'string' && /^[a-z]{2,3}$/.test(c);
@@ -37,7 +41,7 @@ export const key = w => w.normalize('NFC').toLowerCase().replace(/’/g, "'");
 
 export function sentences(text) {
   return String(text).replace(/\s+/g, ' ')
-    .split(/(?<=[。！？])\s*|(?<=[.!?…।؟]["»”“’)]?)\s+(?=[\p{Lu}\p{Lo}\p{N}«"“„¿¡—-])/u).map(s => s.trim()).filter(Boolean);
+    .split(/(?<=[。！？][」』”]?)(?![」』”])\s*|(?<=[.!?…।؟]["»”“’)]?)\s+(?=[\p{Lu}\p{Lo}\p{N}«"“„¿¡—-])/u).map(s => s.trim()).filter(Boolean);
 }
 // The sentences of a story: a dialogue's are its lines', a subtitled recording's are its cues.
 export const storySentences = s => s.cues ? s.cues.map(c => c[2]) : s.lines ? s.lines.flatMap(l => sentences(l[1])) : sentences(s.text);
@@ -80,9 +84,10 @@ export function coverage(text, known, lang) {
 
 // ---- dictation: how many of the target's words, in order, did you catch? ----
 // For scoring, a word is a run of letters and digits (so "l'école" is two). Accents and case are
-// forgiven (the test is the ear, not the keyboard); the correction shows them.
+// forgiven (the test is the ear, not the keyboard); the correction shows them. Where the script has
+// no spaces, every character counts on its own: a dictation there is marked character by character.
 function spans(text, lang) {
-  if (langInfo(lang).seg) return tokens(text, lang);
+  if (langInfo(lang).seg) return [...text].map(ch => ({ s: ch, word: /[\p{L}\p{N}]/u.test(ch) }));
   const out = [];
   let at = 0;
   for (const m of text.matchAll(/[\p{L}\p{N}][\p{L}\p{M}\p{N}]*/gu)) {
@@ -108,9 +113,11 @@ export function dictationScore(target, typed, lang) {
   return { score: a.length ? L[0][0] / a.length : 0, hits, parts: parts.map(x => x.word ? { s: x.s, hit: hits[n++] } : { s: x.s }) };
 }
 
-// Up to n sentences worth dictating (4 to 22 words), spread evenly. src: a text or a list of sentences.
+// Up to n sentences worth dictating (4 to 22 words, or up to 40 characters where there are no spaces), spread evenly.
+// src: a text or a list of sentences.
 export function pickDictation(src, n = 4, lang) {
-  const ok = (Array.isArray(src) ? src : sentences(src)).filter(s => { const c = plainWords(s, lang).length; return c >= 4 && c <= 22; });
+  const max = langInfo(lang).seg ? 40 : 22, min = lang === 'ko' ? 3 : 4; // a Korean word carries a whole phrase
+  const ok = (Array.isArray(src) ? src : sentences(src)).filter(s => { const c = plainWords(s, lang).length; return c >= min && c <= max; });
   if (ok.length <= n) return ok;
   return Array.from({ length: n }, (_, i) => ok[Math.floor((i + 0.5) * ok.length / n)]);
 }
@@ -119,7 +126,9 @@ export function pickDictation(src, n = 4, lang) {
 // A key word of four letters or more also matches a longer word that starts with it (plurals, endings).
 // ponytail: a keyword match, so a wrong sentence around the right word passes. The AI review reads the answers properly.
 export function answerOk(answer, keys, lang) {
-  const have = plainWords(answer, lang), has = w => have.some(h => h === w || (w.length >= 4 && h.startsWith(w)));
+  if (langInfo(lang).seg) { const said = plainWords(answer, lang).join(''); return (keys || []).some(k => { const w = plainWords(k, lang).join(''); return w.length > 0 && said.includes(w); }); }
+  // (Hangul is compared letter by letter, so even a one-syllable noun is found under its particle: 책 in 책을)
+  const have = plainWords(answer, lang), has = w => have.some(h => h === w || (w.length >= (/[\u1100-\u11ff]/.test(w) ? 2 : 4) && h.startsWith(w)));
   return (keys || []).some(k => { const w = plainWords(k, lang); return w.length > 0 && w.every(has); });
 }
 
@@ -231,12 +240,14 @@ export function cleanStory(s, lang) {
   const cues = arr(s.cues).slice(0, 4000).map(c => [num(arr(c)[0]), num(arr(c)[1]), str(arr(c)[2], 600).trim()]).filter(c => c[2] && c[1] > c[0]);
   const text = dialogue ? lines.map(l => l[1]).join('\n') : cues.length ? cues.map(c => c[2]).join(' ') : str(s.text, 20000).trim();
   const title = str(s.title, 120).trim(), notice = str(s.notice, 600).trim();
+  // back: sentences of the text with what they mean, for writing back from the meaning: [[sentence, meaning]]
+  const back = arr(s.back).slice(0, 4).map(b => [str(arr(b)[0], 600).trim(), str(arr(b)[1], 400).trim()]).filter(b => b[0] && b[1]);
   if (!text || !title) return null;
   const questions = arr(s.questions).slice(0, 5).map(q => ({ q: str(obj(q).q, 300).trim(),
     a: arr(obj(q).a).filter(x => typeof x === 'string' && x.trim()).slice(0, 6).map(x => x.trim().slice(0, 80)) })).filter(q => q.q && q.a.length);
   return { id: str(s.id, 80), lang: isLangCode(s.lang) ? s.lang : lang, title, level: LEVELS.includes(s.level) ? s.level : '', text,
     gloss: cleanGloss(s.gloss), source: str(s.source, 20), added: num(s.added), readAt: num(s.readAt),
-    ...(dialogue ? { roles, lines } : {}), ...(!dialogue && cues.length ? { cues } : {}), ...(questions.length ? { questions } : {}), ...(notice ? { notice } : {}) };
+    ...(dialogue ? { roles, lines } : {}), ...(!dialogue && cues.length ? { cues } : {}), ...(questions.length ? { questions } : {}), ...(notice ? { notice } : {}), ...(back.length ? { back } : {}) };
 }
 export function cleanReview(r) {
   r = obj(r);

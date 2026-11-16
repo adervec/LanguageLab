@@ -65,7 +65,17 @@
     ]
    }
   ],
-  "notice": "To say how old someone is, Spanish uses tener (to have), not ser (to be): \"tengo doce años\", \"Dani tiene dieciséis años\"."
+  "notice": "To say how old someone is, Spanish uses tener (to have), not ser (to be): \"tengo doce años\", \"Dani tiene dieciséis años\".",
+  "back": [
+   [
+    "Los domingos comemos en casa de mis abuelos.",
+    "On Sundays we eat at my grandparents' house."
+   ],
+   [
+    "Pero el perro la mira y se sienta a su lado.",
+    "But the dog looks at her and sits down beside her."
+   ]
+  ]
  },
  {
   "id": "es-manana",
@@ -133,7 +143,17 @@
     ]
    }
   ],
-  "notice": "Many verbs for the daily routine take me, because you do the action to yourself: \"me levanto a las seis\" (I get up), \"Me baño con agua fría\" (I shower with cold water)."
+  "notice": "Many verbs for the daily routine take me, because you do the action to yourself: \"me levanto a las seis\" (I get up), \"Me baño con agua fría\" (I shower with cold water).",
+  "back": [
+   [
+    "A las siete salgo de la casa y camino hasta la estación.",
+    "At seven I leave the house and walk to the station."
+   ],
+   [
+    "¡Está en la mesa de la cocina!",
+    "It is on the kitchen table!"
+   ]
+  ]
  },
  {
   "id": "es-cafe",
@@ -203,7 +223,17 @@
     ]
    }
   ],
-  "notice": "Hay means both there is and there are, and it never changes: \"hay poca gente\" (there are few people), \"hoy no hay medialunas\" (there are no croissants today)."
+  "notice": "Hay means both there is and there are, and it never changes: \"hay poca gente\" (there are few people), \"hoy no hay medialunas\" (there are no croissants today).",
+  "back": [
+   [
+    "En el café hay poca gente.",
+    "There are few people in the café."
+   ],
+   [
+    "El mozo llega con la carta.",
+    "The waiter comes with the menu."
+   ]
+  ]
  },
  {
   "id": "es-mercado",
@@ -267,7 +297,17 @@
     ]
    }
   ],
-  "notice": "One past tense tells what happened once, another describes how things were: \"compré una bolsa grande\" (I bought), but \"una señora vendía chapulines\" (a woman was selling)."
+  "notice": "One past tense tells what happened once, another describes how things were: \"compré una bolsa grande\" (I bought), but \"una señora vendía chapulines\" (a woman was selling).",
+  "back": [
+   [
+    "Primero compramos jitomates, cebollas y chiles para la salsa.",
+    "First we buy tomatoes, onions and chillies for the salsa."
+   ],
+   [
+    "Cerré los ojos y lo probé.",
+    "I closed my eyes and tasted it."
+   ]
+  ]
  },
  {
   "id": "es-playa",
@@ -331,7 +371,17 @@
     ]
    }
   ],
-  "notice": "Two verbs share the same past forms: ir (to go) and ser (to be). In \"fuimos a la playa\" it is ir (we went to the beach); in \"fue la mejor noche\" it is ser (it was the best night)."
+  "notice": "Two verbs share the same past forms: ir (to go) and ser (to be). In \"fuimos a la playa\" it is ir (we went to the beach); in \"fue la mejor noche\" it is ser (it was the best night).",
+  "back": [
+   [
+    "Después nos reímos y decidimos dormir en la arena.",
+    "Afterwards we laughed and decided to sleep on the sand."
+   ],
+   [
+    "Tomamos mate mirando el mar y nadamos un rato.",
+    "We drank mate looking at the sea and swam for a while."
+   ]
+  ]
  },
  {
   "id": "es-mudanza",
@@ -398,7 +448,17 @@
     ]
    }
   ],
-  "notice": "Some of the most common verbs have an irregular past form with no accent: \"Hicieron cinco viajes\" (from hacer, to make), \"puso la planta\" (from poner, to put)."
+  "notice": "Some of the most common verbs have an irregular past form with no accent: \"Hicieron cinco viajes\" (from hacer, to make), \"puso la planta\" (from poner, to put).",
+  "back": [
+   [
+    "Pero entonces el coche no arrancó.",
+    "But then the car would not start."
+   ],
+   [
+    "Marta y Raúl no podían parar de reír.",
+    "Marta and Raúl could not stop laughing."
+   ]
+  ]
  },
  {
   "id": "es-tren",
@@ -460,7 +520,17 @@
     ]
    }
   ],
-  "notice": "Le before a verb means to him or to her: \"le preguntó qué le pasaba\" (she asked him what was wrong), \"le ofreció unas galletas\" (she offered him some biscuits)."
+  "notice": "Le before a verb means to him or to her: \"le preguntó qué le pasaba\" (she asked him what was wrong), \"le ofreció unas galletas\" (she offered him some biscuits).",
+  "back": [
+   [
+    "Diego miró el reloj y se puso muy nervioso.",
+    "Diego looked at the clock and became very nervous."
+   ],
+   [
+    "Hablaron del trabajo, de Sevilla y de sus familias.",
+    "They talked about work, about Seville and about their families."
+   ]
+  ]
  },
  {
   "id": "es-celular",
@@ -527,7 +597,17 @@
     ]
    }
   ],
-  "notice": "Lo stands for a masculine thing already mentioned and goes before the verb: \"no lo encontró\" (she did not find it), \"lo guardé en mi cartera\" (I put it in my handbag)."
+  "notice": "Lo stands for a masculine thing already mentioned and goes before the verb: \"no lo encontró\" (she did not find it), \"lo guardé en mi cartera\" (I put it in my handbag).",
+  "back": [
+   [
+    "Llamó otra vez, y otra.",
+    "She called again, and again."
+   ],
+   [
+    "Las dos quedaron en verse al día siguiente en un parque.",
+    "The two of them agreed to meet the next day in a park."
+   ]
+  ]
  },
  {
   "id": "es-cumpleanos",
@@ -595,7 +675,17 @@
     ]
    }
   ],
-  "notice": "When someone's words are reported after a past verb, the tense moves back: \"me preguntó al oído si prefería la torta de chocolate\" (do you prefer), \"Le prometí que sería nuestro secreto\" (it will be)."
+  "notice": "When someone's words are reported after a past verb, the tense moves back: \"me preguntó al oído si prefería la torta de chocolate\" (do you prefer), \"Le prometí que sería nuestro secreto\" (it will be).",
+  "back": [
+   [
+    "Durante toda la semana fingí que no sospechaba nada.",
+    "All week I pretended that I suspected nothing."
+   ],
+   [
+    "Creo que exageré un poco, porque mi hermano me miró con desconfianza.",
+    "I think I overdid it a little, because my brother looked at me with suspicion."
+   ]
+  ]
  },
  {
   "id": "es-tortilla",
@@ -660,7 +750,17 @@
     ]
    }
   ],
-  "notice": "Pronouns like le and les are joined to the end of an infinitive: \"darle la vuelta\" (to turn it over), \"contarles la verdad\" (to tell them the truth)."
+  "notice": "Pronouns like le and les are joined to the end of an infinitive: \"darle la vuelta\" (to turn it over), \"contarles la verdad\" (to tell them the truth).",
+  "back": [
+   [
+    "Todo iba bien hasta el momento más difícil: darle la vuelta.",
+    "Everything was going well until the hardest moment: turning it over."
+   ],
+   [
+    "El padre de su novia repitió dos veces.",
+    "His girlfriend's father had two more helpings."
+   ]
+  ]
  },
  {
   "id": "es-nadar",
@@ -723,7 +823,17 @@
     ]
    }
   ],
-  "notice": "The imperfect tells what used to happen again and again: \"se quedaba siempre en la orilla\" (she always stayed at the water's edge), \"Decía que iba a un curso de pintura\" (she used to say she was going)."
+  "notice": "The imperfect tells what used to happen again and again: \"se quedaba siempre en la orilla\" (she always stayed at the water's edge), \"Decía que iba a un curso de pintura\" (she used to say she was going).",
+  "back": [
+   [
+    "Decía que iba a un curso de pintura.",
+    "She said she was going to a painting class."
+   ],
+   [
+    "Mi hermano gritó y yo salí corriendo.",
+    "My brother shouted and I ran out."
+   ]
+  ]
  },
  {
   "id": "es-carta",
@@ -789,7 +899,17 @@
     ]
    }
   ],
-  "notice": "After espero que (I hope that) the verb goes into the subjunctive: \"espero que seas piloto\" (seas, not eres), \"que todavía tengas a Trueno\" (tengas, not tienes)."
+  "notice": "After espero que (I hope that) the verb goes into the subjunctive: \"espero que seas piloto\" (seas, not eres), \"que todavía tengas a Trueno\" (tengas, not tienes).",
+  "back": [
+   [
+    "Aquella misma tarde llamaron a su puerta.",
+    "That same afternoon, someone knocked at their door."
+   ],
+   [
+    "Nunca había sido piloto: había conducido el autobús del pueblo durante cuarenta años.",
+    "He had never been a pilot: he had driven the village bus for forty years."
+   ]
+  ]
  },
  {
   "id": "es-trabajo",
@@ -858,7 +978,17 @@
     ]
    }
   ],
-  "notice": "Commands to someone you call tú: the positive one is short, \"Pásale\" (come in, as Mexicans say); the negative one takes no and a different verb form, \"No te preocupes\" (don't worry)."
+  "notice": "Commands to someone you call tú: the positive one is short, \"Pásale\" (come in, as Mexicans say); the negative one takes no and a different verb form, \"No te preocupes\" (don't worry).",
+  "back": [
+   [
+    "Una recepcionista muy amable le dijo que ella debía de ser la nueva.",
+    "A very friendly receptionist told her that she must be the new one."
+   ],
+   [
+    "Hubo un silencio, y luego todos se echaron a reír.",
+    "There was a silence, and then everyone burst out laughing."
+   ]
+  ]
  },
  {
   "id": "es-libreria",
@@ -925,7 +1055,17 @@
     ]
    }
   ],
-  "notice": "Desde hace with a present verb says how long something has been going on: \"Desde hace treinta y cinco años, don Hernando abre su librería\". In a story told in the past it becomes desde hacía: \"no entraba desde hacía una década\"."
+  "notice": "Desde hace with a present verb says how long something has been going on: \"Desde hace treinta y cinco años, don Hernando abre su librería\". In a story told in the past it becomes desde hacía: \"no entraba desde hacía una década\".",
+  "back": [
+   [
+    "Unos compraban por nostalgia y otros solo querían despedirse.",
+    "Some bought out of nostalgia and others only wanted to say goodbye."
+   ],
+   [
+    "La frase llegó a oídos de un grupo de antiguos clientes.",
+    "The remark reached the ears of a group of former customers."
+   ]
+  ]
  },
  {
   "id": "es-teletrabajo",
@@ -991,7 +1131,17 @@
     ]
    }
   ],
-  "notice": "When the main verb is in the past, a subjunctive after que becomes the imperfect subjunctive: \"le pidió que volviera a la oficina\" (she asked him to come back), \"no acababan de entender que alguien pudiera ganarse la vida\" (that anyone could earn a living)."
+  "notice": "When the main verb is in the past, a subjunctive after que becomes the imperfect subjunctive: \"le pidió que volviera a la oficina\" (she asked him to come back), \"no acababan de entender que alguien pudiera ganarse la vida\" (that anyone could earn a living).",
+  "back": [
+   [
+    "Los primeros meses fueron más duros de lo que había imaginado.",
+    "The first months were tougher than expected."
+   ],
+   [
+    "Poco a poco, sin embargo, las cosas cambiaron.",
+    "Little by little, however, things changed."
+   ]
+  ]
  },
  {
   "id": "es-huerto",
@@ -1060,7 +1210,17 @@
     ]
    }
   ],
-  "notice": "Se before a verb tells what is done without saying who does it: \"la cosecha se reparte\" (the harvest is shared out), \"Se habló incluso de poner una valla\" (there was even talk of putting up a fence)."
+  "notice": "Se before a verb tells what is done without saying who does it: \"la cosecha se reparte\" (the harvest is shared out), \"Se habló incluso de poner una valla\" (there was even talk of putting up a fence).",
+  "back": [
+   [
+    "Se habló incluso de poner una valla más alta y un candado.",
+    "There was even talk of putting up a higher fence and a padlock."
+   ],
+   [
+    "Nos dio tanta vergüenza haberla espiado que la invitamos a desayunar.",
+    "We were so ashamed of having spied on her that we invited her to breakfast."
+   ]
+  ]
  },
  {
   "id": "es-d-panaderia",

@@ -1,0 +1,953 @@
+[
+ {
+  "id": "ja-kazoku",
+  "title": "わたしの家族",
+  "level": "A1",
+  "text": "わたしの名前はゆきです。十さいです。家族は東京にすんでいます。父はせが高くて、料理が好きです。母は学校ではたらいています。弟が一人います。名前はけんたです。けんたは六さいで、よく話します。うちには黒いねこもいます。ねこは一日中ソファーでねています。夜は家族みんなで晩ごはんを食べます。父はよくスープを作ります。ごはんのあとで、わたしは本を読みます。弟はアニメを見ます。日曜日はおばあさんの家に行きます。おばあさんの家には花がたくさんある庭があります。わたしは家族が大好きです。",
+  "gloss": {
+   "名前": "なまえ: name",
+   "家族": "かぞく: family",
+   "東京": "とうきょう: Tokyo",
+   "すんで": "住んで: living (すむ: to live)",
+   "父": "ちち: (my) father",
+   "料理": "りょうり: cooking",
+   "好き": "すき: liked (が好きです: to like)",
+   "母": "はは: (my) mother",
+   "学校": "がっこう: school",
+   "弟": "おとうと: younger brother",
+   "一人": "ひとり: one person",
+   "よく": "often, well",
+   "黒い": "くろい: black",
+   "ねこ": "cat",
+   "一日中": "いちにちじゅう: all day",
+   "夜": "よる: evening, night",
+   "みんな": "everyone",
+   "晩": "ばん: evening (晩ごはん: dinner)",
+   "ごはん": "meal, rice",
+   "本": "ほん: book",
+   "日曜日": "にちようび: Sunday",
+   "おばあさん": "grandmother, old lady",
+   "家": "いえ: house",
+   "花": "はな: flower",
+   "たくさん": "many, a lot",
+   "庭": "にわ: garden",
+   "大好き": "だいすき: loved (が大好きです: to love)"
+  },
+  "questions": [
+   {
+    "q": "ゆきさんの家族はどこにすんでいますか？",
+    "a": [
+     "東京"
+    ]
+   },
+   {
+    "q": "一日中ソファーでねているのは何ですか？",
+    "a": [
+     "ねこ"
+    ]
+   },
+   {
+    "q": "日曜日はだれの家に行きますか？",
+    "a": [
+     "おばあさん"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "母は学校ではたらいています。",
+    "My mother works at a school."
+   ],
+   [
+    "ねこは一日中ソファーでねています。",
+    "The cat sleeps on the sofa all day."
+   ]
+  ],
+  "notice": "Particles mark each word's job: は the topic, が the subject, を the object, で the place of an action, に a destination: \"母は学校ではたらいています\" (my mother works at a school), \"おばあさんの家に行きます\" (we go to Grandmother's house)."
+ },
+ {
+  "id": "ja-cafe",
+  "title": "カフェで",
+  "level": "A1",
+  "text": "朝の九時です。さくらさんは駅の近くの小さいカフェに入ります。おなかがすいています。少し寒いです。店の人がにこにこしてあいさつします。さくらさんはメニューを見ます。あたたかいミルクコーヒーとパンを一つたのみます。店の人が大きいカップとあたたかいパンを持ってきます。さくらさんはゆっくりコーヒーを飲みます。外は雨がふっています。人々はかさをさして、はやく歩いています。さくらさんはいそいでいません。かばんをあけて、新聞を出します。ニュースを読みながらパンを食べます。十時にお金をはらって、カフェを出ます。外はもう雨がふっていません。",
+  "gloss": {
+   "朝": "あさ: morning",
+   "九時": "くじ: nine o'clock",
+   "駅": "えき: station",
+   "近く": "ちかく: near",
+   "小さい": "ちいさい: small",
+   "おなか": "stomach (おなかがすく: to be hungry)",
+   "少し": "すこし: a little",
+   "寒い": "さむい: cold",
+   "店": "みせ: shop",
+   "にこにこ": "smiling",
+   "あいさつ": "greeting",
+   "あたたかい": "warm",
+   "一つ": "ひとつ: one",
+   "大きい": "おおきい: big",
+   "ゆっくり": "slowly",
+   "外": "そと: outside",
+   "雨": "あめ: rain",
+   "人々": "ひとびと: people",
+   "かさ": "umbrella",
+   "かばん": "bag",
+   "新聞": "しんぶん: newspaper",
+   "ながら": "while",
+   "十時": "じゅうじ: ten o'clock",
+   "お金": "おかね: money",
+   "もう": "already; (not) any more"
+  },
+  "questions": [
+   {
+    "q": "さくらさんは何を飲みますか？",
+    "a": [
+     "コーヒー"
+    ]
+   },
+   {
+    "q": "人々は何をさして歩いていますか？",
+    "a": [
+     "かさ"
+    ]
+   },
+   {
+    "q": "さくらさんはかばんから何を出しますか？",
+    "a": [
+     "新聞"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "さくらさんはゆっくりコーヒーを飲みます。",
+    "Sakura drinks her coffee slowly."
+   ],
+   [
+    "かばんをあけて、新聞を出します。",
+    "She opens her bag and takes out a newspaper."
+   ]
+  ],
+  "notice": "The て-form links actions in order: \"かばんをあけて、新聞を出します\" (she opens her bag and takes out a newspaper). ながら means while: \"ニュースを読みながらパンを食べます\" (she eats bread while reading the news)."
+ },
+ {
+  "id": "ja-ichinichi",
+  "title": "わたしの一日",
+  "level": "A1",
+  "text": "わたしは毎朝七時に起きます。シャワーをあびて、ふくを着ます。それからパンを食べて、お茶を飲みます。八時にバスで会社に行きます。わたしは町の中心にある事務所ではたらいています。会社の人はみんな親切です。十二時に同僚といっしょに昼ごはんを食べます。午後はメールを書いたり、電話をかけたりします。五時に仕事が終わります。仕事のあとで、スーパーで買い物をします。夜は料理をして、音楽を聞きます。ときどき友だちに電話します。十一時ごろねます。つかれていますが、いい気分です。",
+  "gloss": {
+   "毎朝": "まいあさ: every morning",
+   "ふく": "clothes",
+   "それから": "after that",
+   "お茶": "おちゃ: tea",
+   "会社": "かいしゃ: company, work",
+   "町": "まち: town",
+   "中心": "ちゅうしん: centre",
+   "事務所": "じむしょ: office",
+   "みんな": "everyone",
+   "親切": "しんせつ: kind",
+   "同僚": "どうりょう: colleague",
+   "いっしょ": "together",
+   "昼": "ひる: midday (昼ごはん: lunch)",
+   "午後": "ごご: afternoon",
+   "電話": "でんわ: telephone",
+   "仕事": "しごと: work",
+   "あと": "after",
+   "買い物": "かいもの: shopping",
+   "料理": "りょうり: cooking",
+   "音楽": "おんがく: music",
+   "ときどき": "sometimes",
+   "友だち": "ともだち: friend",
+   "ごろ": "about (a time)",
+   "気分": "きぶん: mood (いい気分: feeling good)"
+  },
+  "questions": [
+   {
+    "q": "何で会社に行きますか？",
+    "a": [
+     "バス"
+    ]
+   },
+   {
+    "q": "どこではたらいていますか？",
+    "a": [
+     "事務所"
+    ]
+   },
+   {
+    "q": "夜は何を聞きますか？",
+    "a": [
+     "音楽"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "八時にバスで会社に行きます。",
+    "At eight I go to work by bus."
+   ],
+   [
+    "仕事のあとで、スーパーで買い物をします。",
+    "After work, I do the shopping at the supermarket."
+   ]
+  ],
+  "notice": "で marks the means or the place of an action: \"バスで会社に行きます\" (I go to work by bus), \"スーパーで買い物をします\" (I shop at the supermarket). たり…たりします lists example actions: \"メールを書いたり、電話をかけたりします\"."
+ },
+ {
+  "id": "ja-ichiba",
+  "title": "土曜日の市場",
+  "level": "A2",
+  "text": "毎週土曜日の朝、ゆみさんはかごを持って市場へ行きます。ゆみさんはこの時間が大好きです。店の人たちは大きな声でねだんを言っています。市場には焼きたてのパンのにおいがします。まず、おじいさんの店でトマトときゅうりを買います。おじいさんはいつもりんごを一つおまけしてくれます。それから、とうふ屋の前で止まります。おばさんがあたたかいとうふを味見させてくれます。とてもおいしいので、ゆみさんは二つ買います。帰る前に、きっさ店の外でお茶を飲みながら、通る人たちを見ます。小さい女の子が子犬のあとを走っていきます。ゆみさんはわらいます。お金はあまり使いませんでしたが、かごはいっぱいで、すばらしい朝でした。",
+  "gloss": {
+   "毎週": "まいしゅう: every week",
+   "土曜日": "どようび: Saturday",
+   "かご": "basket",
+   "市場": "いちば: market",
+   "時間": "じかん: time",
+   "大好き": "だいすき: loved",
+   "大きな": "おおきな: big, loud",
+   "声": "こえ: voice",
+   "焼き": "やき: baked (焼きたて: freshly baked)",
+   "におい": "smell",
+   "まず": "first",
+   "おじいさん": "old man, grandfather",
+   "きゅうり": "cucumber",
+   "いつも": "always",
+   "りんご": "apple",
+   "おまけ": "something thrown in free",
+   "それから": "after that",
+   "前": "まえ: in front; before",
+   "止まり": "とまり: stopping (止まる: to stop)",
+   "おばさん": "lady, aunt",
+   "味見": "あじみ: a taste",
+   "とても": "very",
+   "おいしい": "delicious",
+   "ので": "because",
+   "帰る": "かえる: to go home",
+   "通る": "とおる: to pass by",
+   "女の子": "おんなのこ: girl",
+   "子犬": "こいぬ: puppy",
+   "あまり": "(not) much",
+   "いっぱい": "full",
+   "すばらしい": "wonderful"
+  },
+  "questions": [
+   {
+    "q": "ゆみさんは毎週土曜日の朝、どこへ行きますか？",
+    "a": [
+     "市場"
+    ]
+   },
+   {
+    "q": "おじいさんはいつも何をおまけしてくれますか？",
+    "a": [
+     "りんご"
+    ]
+   },
+   {
+    "q": "女の子は何のあとを走っていきますか？",
+    "a": [
+     "子犬",
+     "犬"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "それから、とうふ屋の前で止まります。",
+    "Then she stops in front of the tofu shop."
+   ],
+   [
+    "小さい女の子が子犬のあとを走っていきます。",
+    "A little girl runs off after a puppy."
+   ]
+  ],
+  "notice": "くれます shows that someone does something for you (here, for Yumi): \"りんごを一つおまけしてくれます\" (he throws in an extra apple for her). ので gives a reason: \"とてもおいしいので、ゆみさんは二つ買います\" (it is so good that she buys two)."
+ },
+ {
+  "id": "ja-densha",
+  "title": "朝の電車",
+  "level": "A2",
+  "text": "たけしさんは毎朝同じ電車に乗ります。今日はおそく起きたので、ホームまで走りました。でも、着いたとき、ドアがしまりました。次の電車は十分後に来ます。たけしさんはベンチにすわりました。となりに、あつい本を読んでいるおばあさんがいました。たけしさんは、その本はおもしろいですかと聞きました。おばあさんはわらって、まだ犯人がわからないと答えました。二人は本の話をして、それから旅行の話もしました。十分はすぐにすぎました。電車が来ると、二人はならんですわって、話をつづけました。たけしさんは会社に少しおくれましたが、気分はとてもよかったです。あしたも少しおくれるかもしれません。",
+  "gloss": {
+   "毎朝": "まいあさ: every morning",
+   "同じ": "おなじ: the same",
+   "電車": "でんしゃ: train",
+   "乗り": "のり: riding (乗る: to get on)",
+   "今日": "きょう: today",
+   "ので": "because",
+   "ホーム": "platform",
+   "走り": "はしり: running (走る: to run)",
+   "でも": "but",
+   "とき": "when",
+   "次": "つぎ: next",
+   "十分": "じっぷん: ten minutes",
+   "となり": "next to",
+   "あつい": "thick",
+   "本": "ほん: book",
+   "おもしろい": "interesting",
+   "まだ": "still, not yet",
+   "犯人": "はんにん: culprit",
+   "答え": "こたえ: answer (答える: to answer)",
+   "二人": "ふたり: two people",
+   "話": "はなし: talk, story",
+   "旅行": "りょこう: travel",
+   "すぐ": "soon, quickly",
+   "会社": "かいしゃ: company, work",
+   "少し": "すこし: a little",
+   "気分": "きぶん: mood",
+   "あした": "tomorrow"
+  },
+  "questions": [
+   {
+    "q": "次の電車は何分後に来ますか？",
+    "a": [
+     "十分",
+     "10"
+    ]
+   },
+   {
+    "q": "おばあさんは何を読んでいましたか？",
+    "a": [
+     "本"
+    ]
+   },
+   {
+    "q": "二人は本の話のあとで、何の話をしましたか？",
+    "a": [
+     "旅行"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "次の電車は十分後に来ます。",
+    "The next train comes in ten minutes."
+   ],
+   [
+    "十分はすぐにすぎました。",
+    "The ten minutes passed quickly."
+   ]
+  ],
+  "notice": "と after a plain sentence reports what someone said: \"まだ犯人がわからないと答えました\" (she answered that she did not yet know who the culprit was). かもしれません means may: \"あしたも少しおくれるかもしれません\" (he may be a little late tomorrow too)."
+ },
+ {
+  "id": "ja-byoin",
+  "title": "病院で",
+  "level": "A2",
+  "text": "ひろしさんは三日前からのどがいたくて、せきがたくさん出ます。それで、今朝病院へ行きました。待合室には、おばあさんと泣いている子どもがいました。ひろしさんは三十分待って、古いざっしを読みました。やっと、かんごしさんが名前をよびました。医者は、どこがいたいですかと聞きました。ひろしさんは、つかれていて、夜よくねむれないと言いました。医者はのどを見て、むねの音を聞きました。そして、ひどくないかぜですと言いました。水をたくさん飲んで、よく休むように言いました。ひろしさんは薬局によってから、家に帰りました。はちみつ入りのお茶を飲んで、早くねました。あしたはたぶんよくなるでしょう。",
+  "gloss": {
+   "日前": "にちまえ: days ago (三日前: three days ago)",
+   "いたく": "hurting (いたい: to hurt)",
+   "せき": "cough",
+   "たくさん": "a lot",
+   "それで": "so",
+   "今朝": "けさ: this morning",
+   "病院": "びょういん: hospital",
+   "待合室": "まちあいしつ: waiting room",
+   "子ども": "こども: child",
+   "やっと": "at last",
+   "名前": "なまえ: name",
+   "医者": "いしゃ: doctor",
+   "どこ": "where",
+   "いたい": "to hurt",
+   "むね": "chest",
+   "音": "おと: sound",
+   "そして": "and then",
+   "ひどく": "badly (ひどい: severe)",
+   "かぜ": "a cold",
+   "水": "みず: water",
+   "休む": "やすむ: to rest",
+   "薬局": "やっきょく: pharmacy",
+   "家": "いえ: home",
+   "帰り": "かえり: going home (帰る: to go home)",
+   "はちみつ": "honey",
+   "早く": "はやく: early",
+   "あした": "tomorrow",
+   "たぶん": "probably"
+  },
+  "questions": [
+   {
+    "q": "ひろしさんはどこがいたいですか？",
+    "a": [
+     "のど"
+    ]
+   },
+   {
+    "q": "ひろしさんは何分待ちましたか？",
+    "a": [
+     "三十分",
+     "30"
+    ]
+   },
+   {
+    "q": "医者は何の病気だと言いましたか？",
+    "a": [
+     "かぜ"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "それで、今朝病院へ行きました。",
+    "So this morning he went to the hospital."
+   ],
+   [
+    "はちみつ入りのお茶を飲んで、早くねました。",
+    "He drank tea with honey and went to bed early."
+   ]
+  ],
+  "notice": "ように言いました reports an instruction: \"よく休むように言いました\" (told him to rest well). てから means after doing: \"薬局によってから、家に帰りました\" (after stopping at the pharmacy, he went home)."
+ },
+ {
+  "id": "ja-concert",
+  "title": "雨の日のコンサート",
+  "level": "B1",
+  "text": "私たちは何か月も前からそのコンサートを楽しみにしていた。チケットは高かったが、妹が一番好きなバンドだったので、誕生日のお祝いにしたかった。コンサートは古い野外劇場で行われた。私たちが着くとすぐ、空に黒い雲が広がった。最初の曲が始まったとたん、はげしい雨が降り出した。数分で、私たちはすっかりぬれてしまった。出口のほうへ走っていく人もいたが、ほとんどの人はその場に残った。歌手はわらって上着をぬぎ、雨の中で歌いつづけた。すると、観客もみんな水たまりの上でおどり始めた。妹は大声を出しすぎて、声がかれてしまった。何一つ予定どおりにいかなかったからこそ、私たちはあの夜をずっとわすれないだろう。",
+  "gloss": {
+   "私": "わたし: I (私たち: we)",
+   "楽しみ": "たのしみ: something to look forward to",
+   "妹": "いもうと: younger sister",
+   "一番": "いちばん: most",
+   "好き": "すき: liked",
+   "誕生": "たんじょう: birth (誕生日: birthday)",
+   "お祝い": "おいわい: celebration",
+   "古い": "ふるい: old",
+   "野外": "やがい: open-air",
+   "劇場": "げきじょう: theatre",
+   "着く": "つく: to arrive",
+   "すぐ": "at once",
+   "空": "そら: sky",
+   "黒い": "くろい: black",
+   "雲": "くも: cloud",
+   "最初": "さいしょ: first",
+   "曲": "きょく: song, piece",
+   "はげしい": "heavy, fierce",
+   "雨": "あめ: rain",
+   "数分": "すうふん: a few minutes",
+   "すっかり": "completely",
+   "出口": "でぐち: exit",
+   "ほとんど": "almost all",
+   "歌手": "かしゅ: singer",
+   "上着": "うわぎ: jacket",
+   "すると": "at that",
+   "観客": "かんきゃく: audience",
+   "水たまり": "みずたまり: puddle",
+   "大声": "おおごえ: a loud voice",
+   "声": "こえ: voice",
+   "何一つ": "なにひとつ: not a single thing",
+   "予定": "よてい: plan (予定どおり: as planned)",
+   "夜": "よる: night",
+   "ずっと": "for ever, all the time"
+  },
+  "questions": [
+   {
+    "q": "だれの誕生日のお祝いでしたか？",
+    "a": [
+     "妹"
+    ]
+   },
+   {
+    "q": "歌手は何をぬぎましたか？",
+    "a": [
+     "上着"
+    ]
+   },
+   {
+    "q": "観客はどこの上でおどり始めましたか？",
+    "a": [
+     "水たまり"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "コンサートは古い野外劇場で行われた。",
+    "The concert was held in an old open-air theatre."
+   ],
+   [
+    "数分で、私たちはすっかりぬれてしまった。",
+    "Within a few minutes we were completely soaked."
+   ]
+  ],
+  "notice": "Stories are written in the plain past, not the polite ます form: \"空に黒い雲が広がった\" (dark clouds spread across the sky). てしまった adds that something happened completely or regrettably: \"すっかりぬれてしまった\", \"声がかれてしまった\"."
+ },
+ {
+  "id": "ja-sumaho",
+  "title": "なくしたスマホ",
+  "level": "B1",
+  "text": "金曜日の夜、だいすけさんは友だちと食事をして、タクシーで家に帰った。げんかんの前に着いて、はじめてスマホがないことに気がついた。ポケットもかばんも全部さがしたが、見つからなかった。スマホには旅行の写真や、おぼえていない電話番号がたくさん入っていた。となりの人に電話をかりて自分の番号にかけたが、だれも出なかった。もう二度と見つからないだろうと思いながら、だいすけさんはねむった。次の朝、だれかがチャイムを鳴らした。タクシーの運転手だった。座席の間でスマホを見つけて、住所を思い出したと言った。だいすけさんはお礼にお金をわたそうとしたが、運転手は受け取らなかった。コーヒーを一ぱいとケーキを一つだけもらった。それから、だいすけさんはいつもその運転手をよんでいる。",
+  "gloss": {
+   "金曜日": "きんようび: Friday",
+   "友だち": "ともだち: friend",
+   "食事": "しょくじ: meal",
+   "家": "いえ: home",
+   "前": "まえ: in front of",
+   "はじめて": "only then; for the first time",
+   "ポケット": "pocket",
+   "かばん": "bag",
+   "全部": "ぜんぶ: all",
+   "旅行": "りょこう: travel",
+   "写真": "しゃしん: photo",
+   "電話": "でんわ: telephone",
+   "番号": "ばんごう: number",
+   "となり": "next door",
+   "自分": "じぶん: oneself, own",
+   "だれ": "who (だれも: nobody)",
+   "二度と": "にどと: never again",
+   "次": "つぎ: next",
+   "朝": "あさ: morning",
+   "チャイム": "doorbell",
+   "運転手": "うんてんしゅ: driver",
+   "座席": "ざせき: seat",
+   "間": "あいだ: between",
+   "住所": "じゅうしょ: address",
+   "お礼": "おれい: thanks",
+   "お金": "おかね: money",
+   "一ぱい": "いっぱい: one cup",
+   "だけ": "only",
+   "いつも": "always"
+  },
+  "questions": [
+   {
+    "q": "だいすけさんは何で家に帰りましたか？",
+    "a": [
+     "タクシー"
+    ]
+   },
+   {
+    "q": "次の朝、だれがチャイムを鳴らしましたか？",
+    "a": [
+     "運転手"
+    ]
+   },
+   {
+    "q": "運転手はどこでスマホを見つけましたか？",
+    "a": [
+     "座席"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "次の朝、だれかがチャイムを鳴らした。",
+    "The next morning, someone rang the doorbell."
+   ],
+   [
+    "コーヒーを一ぱいとケーキを一つだけもらった。",
+    "He accepted only a cup of coffee and a piece of cake."
+   ]
+  ],
+  "notice": "が joins two clauses that contrast: \"全部さがしたが、見つからなかった\" (he searched everything, but could not find it). ようとした means tried to: \"お金をわたそうとしたが、運転手は受け取らなかった\" (he tried to hand him money, but the driver would not take it)."
+ },
+ {
+  "id": "ja-d-panya",
+  "title": "パン屋で",
+  "level": "A1",
+  "roles": [
+   "店員",
+   "客"
+  ],
+  "lines": [
+   [
+    0,
+    "いらっしゃいませ。何にしますか。"
+   ],
+   [
+    1,
+    "こんにちは。食パンを一つください。"
+   ],
+   [
+    0,
+    "はい、どうぞ。ほかに何かいりますか。"
+   ],
+   [
+    1,
+    "クロワッサンはありますか。"
+   ],
+   [
+    0,
+    "すみません、クロワッサンは売り切れです。焼きたてのあんパンがあります。"
+   ],
+   [
+    1,
+    "じゃあ、あんパンを二つおねがいします。"
+   ],
+   [
+    0,
+    "はい。全部で六百円です。"
+   ],
+   [
+    1,
+    "カードではらってもいいですか。"
+   ],
+   [
+    0,
+    "はい、だいじょうぶです。ふくろはいりますか。"
+   ],
+   [
+    1,
+    "いいえ、けっこうです。ありがとうございます。"
+   ],
+   [
+    0,
+    "ありがとうございました。またどうぞ。"
+   ],
+   [
+    1,
+    "はい、さようなら。"
+   ]
+  ],
+  "gloss": {
+   "いらっしゃい": "いらっしゃいませ: welcome",
+   "食パン": "しょくパン: sandwich loaf",
+   "一つ": "ひとつ: one",
+   "どうぞ": "here you are",
+   "ほかに": "besides, else",
+   "すみません": "sorry, excuse me",
+   "売り切れ": "うりきれ: sold out",
+   "焼き": "やき: baked (焼きたて: freshly baked)",
+   "じゃあ": "well then",
+   "二つ": "ふたつ: two",
+   "おねがい": "おねがいします: please",
+   "全部": "ぜんぶ: altogether",
+   "六百": "ろっぴゃく: six hundred",
+   "円": "えん: yen",
+   "だいじょうぶ": "all right",
+   "けっこう": "fine (no, thank you)",
+   "また": "again",
+   "さようなら": "goodbye"
+  },
+  "questions": [
+   {
+    "q": "客は最初に何をたのみましたか？",
+    "a": [
+     "食パン"
+    ]
+   },
+   {
+    "q": "売り切れのパンは何ですか？",
+    "a": [
+     "クロワッサン"
+    ]
+   }
+  ],
+  "notice": "をください and をおねがいします ask politely for a thing: \"食パンを一つください\" (one loaf of bread, please), \"あんパンを二つおねがいします\". てもいいですか asks permission: \"カードではらってもいいですか\"."
+ },
+ {
+  "id": "ja-d-michi",
+  "title": "道を聞く",
+  "level": "A1",
+  "roles": [
+   "通行人",
+   "旅行者"
+  ],
+  "lines": [
+   [
+    1,
+    "すみません。地下鉄の駅はどこですか。"
+   ],
+   [
+    0,
+    "遠くないですよ。この道をまっすぐ行ってください。"
+   ],
+   [
+    1,
+    "まっすぐですね。それから？"
+   ],
+   [
+    0,
+    "信号を左にまがってください。"
+   ],
+   [
+    1,
+    "すみません、もう一度ゆっくり言ってください。"
+   ],
+   [
+    0,
+    "はい。まっすぐ行って、信号を左にまがります。"
+   ],
+   [
+    1,
+    "ありがとうございます。駅は道の右がわですか。"
+   ],
+   [
+    0,
+    "はい、右がわです。銀行の前にあります。"
+   ],
+   [
+    1,
+    "歩いてどのくらいかかりますか。"
+   ],
+   [
+    0,
+    "十分ぐらいです。"
+   ],
+   [
+    1,
+    "どうもありがとうございました。"
+   ],
+   [
+    0,
+    "どういたしまして。お気をつけて。"
+   ]
+  ],
+  "gloss": {
+   "すみません": "excuse me",
+   "地下鉄": "ちかてつ: underground",
+   "駅": "えき: station",
+   "どこ": "where",
+   "遠く": "とおく: far",
+   "道": "みち: road",
+   "まっすぐ": "straight on",
+   "それから": "and then",
+   "信号": "しんごう: traffic lights",
+   "左": "ひだり: left",
+   "もう一度": "もういちど: once more",
+   "ゆっくり": "slowly",
+   "右": "みぎ: right",
+   "銀行": "ぎんこう: bank",
+   "前": "まえ: in front",
+   "かかり": "かかる: to take (time)",
+   "十分": "じっぷん: ten minutes",
+   "ぐらい": "about",
+   "どういたしまして": "you are welcome"
+  },
+  "questions": [
+   {
+    "q": "旅行者は何をさがしていますか？",
+    "a": [
+     "地下鉄の駅",
+     "駅",
+     "地下鉄"
+    ]
+   },
+   {
+    "q": "信号をどちらにまがりますか？",
+    "a": [
+     "左"
+    ]
+   }
+  ],
+  "notice": "てください makes a polite request or instruction: \"まっすぐ行ってください\" (please go straight on), \"もう一度ゆっくり言ってください\" (please say it once more, slowly). ね checks that you have understood: \"まっすぐですね\"."
+ },
+ {
+  "id": "ja-d-kusuri",
+  "title": "薬局で",
+  "level": "A2",
+  "roles": [
+   "薬剤師",
+   "客"
+  ],
+  "lines": [
+   [
+    0,
+    "こんにちは。どうしましたか。"
+   ],
+   [
+    1,
+    "三日前からのどがいたくて、せきが出ます。"
+   ],
+   [
+    0,
+    "ねつはありますか。"
+   ],
+   [
+    1,
+    "きのうの夜は少しありましたが、今日はありません。"
+   ],
+   [
+    0,
+    "せきをするとき、たんは出ますか。"
+   ],
+   [
+    1,
+    "いいえ、出ません。夜、よくねむれません。"
+   ],
+   [
+    0,
+    "では、このせき止めシロップとのどあめをおすすめします。"
+   ],
+   [
+    1,
+    "こうせいぶっしつは買えますか。"
+   ],
+   [
+    0,
+    "こうせいぶっしつは医者のしょほうせんがひつようです。それに、かぜにはききません。"
+   ],
+   [
+    1,
+    "わかりました。シロップは一日に何回飲みますか。"
+   ],
+   [
+    0,
+    "一日三回、食事のあとでスプーン一ぱい飲んでください。"
+   ],
+   [
+    1,
+    "では、シロップとのどあめをください。"
+   ],
+   [
+    0,
+    "はい、どうぞ。三日たってもよくならなかったら、病院へ行ってください。"
+   ],
+   [
+    1,
+    "そうします。ありがとうございました。"
+   ]
+  ],
+  "gloss": {
+   "日前": "にちまえ: days ago (三日前: three days ago)",
+   "いたく": "hurting (いたい: to hurt)",
+   "せき": "cough",
+   "きのう": "yesterday",
+   "夜": "よる: night",
+   "少し": "すこし: a little",
+   "今日": "きょう: today",
+   "とき": "when",
+   "たん": "phlegm",
+   "止め": "どめ: stopping (せき止め: cough medicine)",
+   "シロップ": "syrup",
+   "あめ": "sweet (のどあめ: throat lozenge)",
+   "おすすめ": "recommendation",
+   "医者": "いしゃ: doctor",
+   "それに": "besides",
+   "かぜ": "a cold",
+   "一日": "いちにち: a day",
+   "食事": "しょくじ: meal",
+   "あと": "after",
+   "スプーン": "spoon",
+   "一ぱい": "いっぱい: one spoonful",
+   "三日": "みっか: three days",
+   "病院": "びょういん: hospital"
+  },
+  "questions": [
+   {
+    "q": "客はどこがいたいですか？",
+    "a": [
+     "のど"
+    ]
+   },
+   {
+    "q": "こうせいぶっしつを買うには何がひつようですか？",
+    "a": [
+     "しょほうせん"
+    ]
+   }
+  ],
+  "notice": "たら states a condition: \"三日たってもよくならなかったら、病院へ行ってください\" (if you are no better even after three days, please go to the hospital). The potential form says what can be done: \"買えますか\" (can I buy), \"ねむれません\" (cannot sleep)."
+ },
+ {
+  "id": "ja-d-yoyaku",
+  "title": "予約",
+  "level": "A2",
+  "roles": [
+   "店員",
+   "客"
+  ],
+  "lines": [
+   [
+    0,
+    "お電話ありがとうございます。レストランさくらです。"
+   ],
+   [
+    1,
+    "こんにちは。土曜日の夜に予約をしたいんですが。"
+   ],
+   [
+    0,
+    "何名さまですか。"
+   ],
+   [
+    1,
+    "大人二人と子ども二人です。"
+   ],
+   [
+    0,
+    "何時ごろいらっしゃいますか。"
+   ],
+   [
+    1,
+    "七時ごろはあいていますか。"
+   ],
+   [
+    0,
+    "もうしわけありません。七時はいっぱいです。六時か八時ならあいています。"
+   ],
+   [
+    1,
+    "じゃあ、六時にします。まどのそばの席はありますか。"
+   ],
+   [
+    0,
+    "はい、まどのそばの席をご用意します。お名前をおねがいします。"
+   ],
+   [
+    1,
+    "田中です。肉を使わない料理はありますか。"
+   ],
+   [
+    0,
+    "はい、野菜と魚の料理がいくつかあります。"
+   ],
+   [
+    1,
+    "よかったです。電話番号も言いましょうか。"
+   ],
+   [
+    0,
+    "はい、ねんのためおねがいします。"
+   ],
+   [
+    1,
+    "あとでメールでおくります。では、土曜日に。"
+   ]
+  ],
+  "gloss": {
+   "電話": "でんわ: telephone",
+   "土曜日": "どようび: Saturday",
+   "夜": "よる: evening",
+   "予約": "よやく: booking",
+   "大人": "おとな: adult",
+   "二人": "ふたり: two people",
+   "子ども": "こども: child",
+   "何時": "なんじ: what time",
+   "ごろ": "about (a time)",
+   "七時": "しちじ: seven o'clock",
+   "もうしわけ": "もうしわけありません: I am very sorry",
+   "いっぱい": "full",
+   "六時": "ろくじ: six o'clock",
+   "八時": "はちじ: eight o'clock",
+   "じゃあ": "well then",
+   "そば": "beside",
+   "席": "せき: seat, table",
+   "用意": "ようい: preparation (ご用意します: I will arrange it)",
+   "名前": "なまえ: name",
+   "おねがい": "おねがいします: please",
+   "肉": "にく: meat",
+   "料理": "りょうり: dish, cooking",
+   "野菜": "やさい: vegetables",
+   "いくつか": "a few",
+   "番号": "ばんごう: number",
+   "ため": "ねんのため: just in case",
+   "あと": "later"
+  },
+  "questions": [
+   {
+    "q": "客は何曜日に予約したいですか？",
+    "a": [
+     "土曜日",
+     "土曜"
+    ]
+   },
+   {
+    "q": "客はどんな席がいいですか？",
+    "a": [
+     "まどのそば",
+     "まど"
+    ]
+   }
+  ],
+  "notice": "たいんですが softly introduces a wish: \"予約をしたいんですが\" (I would like to make a booking). にします states a choice: \"六時にします\" (I will take six o'clock). ましょうか offers to do something: \"電話番号も言いましょうか\"."
+ }
+]

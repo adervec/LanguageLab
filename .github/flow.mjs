@@ -23,6 +23,10 @@ const errors = [];
 page.on('pageerror', e => errors.push(e.message));
 // the browser's on-device translator cannot fetch its language packs here: a stand-in that wraps the text it is given
 await page.addInitScript(() => { self.Translator = { create: async () => ({ translate: async s => 'EN[' + s + ']' }) }; });
+// and speech recognition, which needs a microphone: a stand-in that "hears" whatever the test says was said
+await page.addInitScript(() => { self.SpeechRecognition = self.webkitSpeechRecognition = class {
+  start() { setTimeout(() => { if (self.heard) this.onresult({ resultIndex: 0, results: [Object.assign([{ transcript: self.heard }], { isFinal: true })] }); else this.onerror({ error: 'no-speech' }); this.onend(); }, 20); }
+  stop() { this.onend(); } }; });
 // likewise the browser's own language model: it opens, answers once with a correction, and never answers a message that says "attends"
 await page.addInitScript(() => { self.LanguageModel = { availability: async () => 'available', create: async o => { let n = 0; self.lmSystem = o.initialPrompts[0].content;
   return { prompt: text => text.includes('attends') ? new Promise(() => {}) : Promise.resolve(JSON.stringify(n++ ? { reply: 'Très bien. Et que faites-vous demain ?', evil: '<b>',
@@ -71,11 +75,20 @@ await page.keyboard.press('Enter');
 assert.match(await main(), /100% of the words/);
 for (let i = 1; i < total; i++) { await click('Next sentence'); await click('é'); await click('Check'); }
 await click('Next: write it back');                     // write it back: a sentence given only by its meaning
-await page.waitForFunction(() => /EN\[/.test(document.querySelector('#main').innerText));
-await page.fill('#ans', (await main()).match(/EN\[(.+?)\]/)[1]);
+assert.ok((await main()).includes(marche.back[0][1]), 'the story brings the meaning of its own sentence: no translator needed');
+await page.fill('#ans', marche.back[0][0]);
 await click('Check');
 assert.match(await main(), /100% of the words/);
-await toWriting();                                      // the second sentence and the speaking are skipped; then write
+await click('Next sentence');                           // the second sentence is skipped
+await click('Next: speaking');                          // say it: nothing heard, then six of the seven words
+await click('Speak');
+await page.waitForFunction(() => document.querySelector('#micmsg').textContent.includes('Nothing was heard'));
+await page.evaluate(() => { self.heard = 'elle aime ce moment de la'; });
+await click('Speak');
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('It heard:'));
+assert.match(await main(), /It heard: elle aime ce moment de la\s+86% of the words/);
+assert.equal(await page.locator('#main .big .miss').innerText(), 'semaine');
+await toWriting();                                      // the other sentences are skipped; then write
 await page.fill('#ans', 'Claire va au marché. Elle achète du fromage.');
 await click('Library');                                 // leaving half way warns once and keeps what was typed
 assert.match(await main(), /Leave this sitting/);
@@ -86,6 +99,7 @@ assert.match(done, /67%\s+of the questions right/);
 assert.match(done, new RegExp(`${Math.round(100 / total)}%\\s+of the words caught`));
 assert.match(done, /8\s+words written/);
 assert.match(done, /100%\s+of the words right when you wrote a sentence back/);
+assert.match(done, /86%\s+of your words understood when you spoke/);
 await click('Done');
 
 assert.match(await main(), /1 item is due/);            // review: accents forgiven, word scheduled
@@ -173,7 +187,11 @@ assert.doesNotMatch(await main(), /Nouvelle/);
 await fits('library');
 await page.locator('.card', { hasText: 'Au guichet' }).getByRole('button', { name: 'Role-play', exact: true }).click();
 assert.match(await main(), /Bonjour\./);                // the other speaker's line comes first
-while (!(await main()).includes('Now from memory')) await click('Next line'); // reading aloud needs a microphone: skipped here
+await page.evaluate(() => { self.heard = 'un billet pour Lyon'; });       // reading the line aloud: four of its eight words heard
+await click('Speak');
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('It heard:'));
+assert.match(await main(), /It heard: un billet pour Lyon\s+50% of the words/);
+while (!(await main()).includes('Now from memory')) await click('Next line');
 assert.doesNotMatch(await main(), /Un billet pour Lyon/);
 await page.fill('#ans', "un billet pour Lyon s'il vous plait");
 await click('Check');
@@ -182,7 +200,7 @@ await click('Next line');
 await page.fill('#ans', 'Merci beaucoup, au revoir');
 await click('Check');
 await click('Finish');
-assert.match(await main(), /Role-play done[\s\S]*100%\s+of your words understood/);
+assert.match(await main(), /Role-play done[\s\S]*83%\s+of your words understood/);   // the mean of 50%, 100% and 100%
 await click('Done');
 
 // a live conversation: the partner opens, answers, corrects; a reply can also come through the cowork folder; the corrections become review cards
@@ -260,7 +278,26 @@ await click('Today');
 assert.match(await main(), /Español/);
 assert.equal(await has('Start'), 1, 'Spanish has starter stories');
 assert.match(await main(), /0 items are due/);
+// Chinese has no spaces: words come from the browser's segmenter, a meaning starts with its pinyin, an answer is found inside what was typed
 await click('Settings');
+await page.selectOption('#main select[data-change="lang"]', 'zh');
+await click('Today');
+assert.match(await main(), /中文[\s\S]*星期六的市场/);
+await click('Start');
+await click('Next: questions');
+await page.fill('#q0', '她去市场买东西');
+await click('Check');
+assert.match(await main(), /Right: 她去市场买东西/);
+await click('Show the text');
+await page.locator('.w[data-k="市场"]').first().click();
+assert.match(await page.innerText('#gloss'), /市场\s+shìchǎng: market/);
+await click('Next: dictation');
+const hanzi = (await main()).match(/Sentence 1 of (\d)/)[1];
+await page.fill('#ans', '她');                                   // marked character by character
+await click('Check');
+assert.match(await main(), /\d+% of the words/);
+assert.ok(+hanzi >= 3, 'a Chinese story yields dictation sentences');
+await click('Settings'); await click('Settings');               // leave the sitting (it warns once)
 await page.selectOption('#main select[data-change="lang"]', 'fr');
 
 await page.reload();                                    // it was saved

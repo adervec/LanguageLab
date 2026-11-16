@@ -53,8 +53,21 @@ problem; keep fixing until it prints `ok`.
     give the word and the digits (`["treinta", "30"]`): a learner may type either.
   - Prefer keys of one word. Spread the questions over the beginning, middle and end.
   - Not yes/no questions, and nothing answerable without having understood the text.
+- `back`: exactly two entries `["a whole sentence of the text, copied exactly", "what it means in English"]`, of 5 to 13 words and
+  without quoted speech. The learner is shown the meaning and writes the sentence. (Not for the English set.)
 - `notice`: one grammar or usage point the text shows, in plain English, quoting two short examples
   from the text. 40 to 400 characters. It is shown after reading, as something to notice.
+
+## Chinese, Japanese and Korean
+
+- Chinese and Japanese have no spaces, so the app splits words with `Intl.Segmenter`. A gloss key must be a word exactly as that splits it:
+  print the words of a text with `node -e "import('./core.js').then(c => console.log(c.wordKeys(process.argv[1], 'zh').join(' ')))" "<text>"`.
+  Give the reading first in the gloss value: `"市场": "shìchǎng: market"`, `"学校": "がっこう: school"`.
+- Lengths there are counted in characters (the same numbers as words elsewhere); a dialogue line may be 60 characters.
+  An answer key passes when it appears anywhere in what was typed. Avoid quoted speech.
+- Korean is split at its spaces, so a gloss key is the whole word with its particles (`"학교에": "to school (학교)"`). Its texts are
+  0.6 times as long in words.
+- A language marked `small` in `LANGS` needs 8 stories and 4 dialogues, not 16 and 8.
 
 ## A dialogue
 
