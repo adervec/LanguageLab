@@ -1,0 +1,410 @@
+[
+ {
+  "id": "sk-market",
+  "title": "Na trhu",
+  "level": "A1",
+  "text": "Každú sobotu chodí Mária na trh. Trh je v centre mesta. Svieti slnko a je tam veľa ľudí. Mária má trh rada, lebo ovocie je tam čerstvé a lacné. Najprv kupuje jablká a pomaranče. Potom kupuje chlieb, syr a trochu ryby. Pán pri stánku s rybami je veľmi milý. Vždy sa pýta na jej rodinu. Na trhu Mária často stretáva svoju kamarátku Elenu. Dnes spolu pijú kávu a dlho sa rozprávajú. Na poludnie ide Mária domov s dvoma ťažkými taškami. Je unavená, ale šťastná.",
+  "gloss": {
+   "trh": "market",
+   "centre": "centre",
+   "mesta": "town",
+   "slnko": "sun",
+   "ľudí": "people",
+   "ovocie": "fruit",
+   "čerstvé": "fresh",
+   "lacné": "cheap",
+   "jablká": "apples",
+   "pomaranče": "oranges",
+   "chlieb": "bread",
+   "syr": "cheese",
+   "ryby": "fish",
+   "milý": "friendly",
+   "rodinu": "family",
+   "kamarátku": "friend",
+   "spolu": "together",
+   "ťažkými": "heavy",
+   "taškami": "bags",
+   "unavená": "tired",
+   "šťastná": "happy"
+  },
+  "questions": [
+   {
+    "q": "Kde je trh?",
+    "a": [
+     "centr"
+    ]
+   },
+   {
+    "q": "Čo Mária kupuje najprv?",
+    "a": [
+     "jablk"
+    ]
+   },
+   {
+    "q": "Koho Mária často stretáva na trhu?",
+    "a": [
+     "Elen"
+    ]
+   }
+  ],
+  "notice": "Slovak has no word for \"the\" or \"a\". \"Mať rád\" (to like) agrees with the person who likes: a woman says \"rada\", as in \"Mária má trh rada\"; a man says \"rád\".",
+  "back": [
+   [
+    "Najprv kupuje jablká a pomaranče.",
+    "First she buys apples and oranges."
+   ],
+   [
+    "Vždy sa pýta na jej rodinu.",
+    "He always asks about her family."
+   ]
+  ]
+ },
+ {
+  "id": "sk-day",
+  "title": "Môj deň",
+  "level": "A1",
+  "text": "Volám sa Daniel a bývam v malom byte. Každé ráno vstávam o siedmej. Najprv pijem čaj a jem chlieb s maslom. Potom idem do práce autobusom. Pracujem v kníhkupectve v centre mesta. Svoju prácu mám rád, lebo milujem knihy. Na poludnie jem polievku v malej reštaurácii. Popoludní prichádza do obchodu veľa zákazníkov. Večer sa vraciam domov a varím večeru. Po večeri volám mame alebo čítam knihu. Do postele chodím o jedenástej. V nedeľu nepracujem a spím dlhšie.",
+  "gloss": {
+   "byte": "flat",
+   "vstávam": "get up",
+   "ráno": "morning",
+   "čaj": "tea",
+   "maslom": "butter",
+   "práce": "work",
+   "autobusom": "bus",
+   "kníhkupectve": "bookshop",
+   "mesta": "city",
+   "knihy": "books",
+   "polievku": "soup",
+   "reštaurácii": "restaurant",
+   "popoludní": "afternoon",
+   "zákazníkov": "customers",
+   "večer": "evening",
+   "varím": "cook",
+   "večeru": "dinner",
+   "volám": "call",
+   "mame": "mother",
+   "postele": "bed",
+   "spím": "sleep",
+   "dlhšie": "longer"
+  },
+  "questions": [
+   {
+    "q": "Kde pracuje Daniel?",
+    "a": [
+     "kníhkupectv"
+    ]
+   },
+   {
+    "q": "Čím chodí Daniel do práce?",
+    "a": [
+     "autobus"
+    ]
+   },
+   {
+    "q": "Čo je Daniel na poludnie?",
+    "a": [
+     "polievk"
+    ]
+   }
+  ],
+  "notice": "The verb ending -m shows that \"I\" am acting, so \"ja\" is usually left out: \"Pracujem v kníhkupectve\", \"Večer sa vraciam domov\".",
+  "back": [
+   [
+    "Potom idem do práce autobusom.",
+    "Then I go to work by bus."
+   ],
+   [
+    "Večer sa vraciam domov a varím večeru.",
+    "In the evening I go home and cook dinner."
+   ]
+  ]
+ },
+ {
+  "id": "sk-sea",
+  "title": "Víkend pri mori",
+  "level": "A2",
+  "text": "Minulý víkend sme s bratom išli k moru. Skoro ráno sme nastúpili do vlaku a cesta trvala tri hodiny. Počasie bolo krásne: nebo bolo modré a voda teplá. Dlho sme plávali a potom sme ležali na pláži. Na poludnie sme jedli čerstvú rybu v malej reštaurácii blízko prístavu. Čašník bol milý a priniesol nám studenú vodu. Popoludní sme sa prechádzali starým mestom a kúpili sme pohľadnice. Môj brat urobil veľa fotografií lodí. Večer sme boli veľmi unavení, ale nechceli sme ísť domov. Zmeškali sme posledný vlak a museli sme hodinu čakať. Bol to najlepší deň leta. Nabudúce chceme zostať celý týždeň.",
+  "gloss": {
+   "víkend": "weekend",
+   "bratom": "brother",
+   "moru": "sea",
+   "vlaku": "train",
+   "cesta": "journey",
+   "hodiny": "hours",
+   "počasie": "weather",
+   "nebo": "sky",
+   "modré": "blue",
+   "voda": "water",
+   "teplá": "warm",
+   "plávali": "swam",
+   "pláži": "beach",
+   "čašník": "waiter",
+   "prístavu": "harbour",
+   "prechádzali": "walked",
+   "pohľadnice": "postcards",
+   "fotografií": "photos",
+   "lodí": "boats",
+   "unavení": "tired",
+   "zmeškali": "missed",
+   "čakať": "wait",
+   "týždeň": "week",
+   "leta": "summer"
+  },
+  "questions": [
+   {
+    "q": "Čím išli k moru?",
+    "a": [
+     "vlak"
+    ]
+   },
+   {
+    "q": "Koľko hodín trvala cesta?",
+    "a": [
+     "tri"
+    ]
+   },
+   {
+    "q": "Čo kúpili v starom meste?",
+    "a": [
+     "pohľadnic"
+    ]
+   }
+  ],
+  "notice": "The past tense is made with a form ending in -l and, for \"we\", the little word \"sme\", which takes the second place in the sentence: \"Dlho sme plávali\", \"Zmeškali sme posledný vlak\".",
+  "back": [
+   [
+    "Popoludní sme sa prechádzali starým mestom a kúpili sme pohľadnice.",
+    "In the afternoon we walked through the old town and bought postcards."
+   ],
+   [
+    "Zmeškali sme posledný vlak a museli sme hodinu čakať.",
+    "We missed the last train and had to wait an hour."
+   ]
+  ]
+ },
+ {
+  "id": "sk-neighbour",
+  "title": "Nová suseda",
+  "level": "A2",
+  "text": "Minulý mesiac sa do nášho domu nasťahovala nová suseda. Volá sa Sofia a pochádza z iného mesta. Spočiatku tu nikoho nepoznala. Raz večer zaklopala na naše dvere, lebo lampa v jej kuchyni bola pokazená. Môj otec išiel hore a za desať minút ju opravil. Sofia bola veľmi vďačná a na druhý deň nám priniesla koláč. Koláč bol výborný a môj mladší brat zjedol tri kúsky. Teraz Sofia často pije čaj s mojou mamou. Pracuje v nemocnici a rozpráva zaujímavé príbehy. Včera mi pomohla s domácou úlohou. V nedeľu sme jej ukázali park a starý trh. Hovorí, že sa tu už cíti ako doma. Myslím, že sme našli novú kamarátku.",
+  "gloss": {
+   "suseda": "neighbour",
+   "nasťahovala": "moved",
+   "mesiac": "month",
+   "mesta": "city",
+   "nikoho": "anybody",
+   "zaklopala": "knocked",
+   "dvere": "door",
+   "kuchyni": "kitchen",
+   "lampa": "lamp",
+   "pokazená": "broken",
+   "opravil": "repaired",
+   "minút": "minutes",
+   "vďačná": "grateful",
+   "koláč": "cake",
+   "výborný": "delicious",
+   "kúsky": "pieces",
+   "nemocnici": "hospital",
+   "príbehy": "stories",
+   "úlohou": "task (domáca úloha: homework)",
+   "park": "park",
+   "už": "already",
+   "našli": "found"
+  },
+  "questions": [
+   {
+    "q": "Čo bolo pokazené v Sofiinej kuchyni?",
+    "a": [
+     "lamp"
+    ]
+   },
+   {
+    "q": "Čo Sofia priniesla na druhý deň?",
+    "a": [
+     "koláč"
+    ]
+   },
+   {
+    "q": "Kde pracuje Sofia?",
+    "a": [
+     "nemocnic"
+    ]
+   }
+  ],
+  "notice": "In the past a woman's actions end in -la (\"zaklopala\", \"priniesla\", \"pomohla\") and a man's in -l (\"opravil\", \"zjedol\").",
+  "back": [
+   [
+    "Môj otec išiel hore a za desať minút ju opravil.",
+    "My father went upstairs and repaired it in ten minutes."
+   ],
+   [
+    "Pracuje v nemocnici a rozpráva zaujímavé príbehy.",
+    "She works in a hospital and tells interesting stories."
+   ]
+  ]
+ },
+ {
+  "id": "sk-cafe",
+  "title": "V kaviarni",
+  "level": "A1",
+  "roles": [
+   "Čašník",
+   "Hosť"
+  ],
+  "lines": [
+   [
+    0,
+    "Dobrý deň! Čo si dáte?"
+   ],
+   [
+    1,
+    "Dobrý deň. Dám si kávu s mliekom, prosím."
+   ],
+   [
+    0,
+    "Dáte si niečo na jedenie?"
+   ],
+   [
+    1,
+    "Áno, aké koláče dnes máte?"
+   ],
+   [
+    0,
+    "Máme jablkový koláč a čokoládovú tortu."
+   ],
+   [
+    1,
+    "Tak si dám kúsok jablkového koláča."
+   ],
+   [
+    0,
+    "Nech sa páči. Ešte niečo?"
+   ],
+   [
+    1,
+    "Nie, ďakujem. Koľko platím?"
+   ],
+   [
+    0,
+    "Šesť eur, prosím."
+   ],
+   [
+    1,
+    "Nech sa páči. Ďakujem a dovidenia!"
+   ]
+  ],
+  "gloss": {
+   "kávu": "coffee",
+   "mliekom": "milk",
+   "niečo": "something",
+   "jedenie": "eat",
+   "koláče": "cakes",
+   "dnes": "today",
+   "jablkový": "apple (as in jablkový koláč: apple cake)",
+   "čokoládovú": "chocolate",
+   "kúsok": "piece",
+   "ešte": "else",
+   "koľko": "much",
+   "eur": "euros"
+  },
+  "questions": [
+   {
+    "q": "S čím pije hosť kávu?",
+    "a": [
+     "mliek"
+    ]
+   },
+   {
+    "q": "Čo si hosť dáva ku káve?",
+    "a": [
+     "koláč"
+    ]
+   }
+  ],
+  "notice": "\"Dám si …\" (I will have …) is the usual way to order, and the thing ordered is in the accusative: \"Dám si kávu s mliekom\", \"dám si kúsok jablkového koláča\"."
+ },
+ {
+  "id": "sk-hotel",
+  "title": "V hoteli",
+  "level": "A2",
+  "roles": [
+   "Recepčná",
+   "Hosť"
+  ],
+  "lines": [
+   [
+    0,
+    "Dobrý večer. Ako vám môžem pomôcť?"
+   ],
+   [
+    1,
+    "Dobrý večer. Mám rezerváciu na dve noci."
+   ],
+   [
+    0,
+    "Ako sa voláte, prosím?"
+   ],
+   [
+    1,
+    "Volám sa Anna Berg. Tu je môj pas."
+   ],
+   [
+    0,
+    "Ďakujem. Vaša izba je na treťom poschodí."
+   ],
+   [
+    1,
+    "Sú raňajky v cene?"
+   ],
+   [
+    0,
+    "Áno, raňajky sú od siedmej do desiatej."
+   ],
+   [
+    1,
+    "Výborne. Je tu výťah? Mám ťažký kufor."
+   ],
+   [
+    0,
+    "Áno, výťah je vedľa schodov. Tu je váš kľúč."
+   ],
+   [
+    1,
+    "Ďakujem veľmi pekne. Pekný večer!"
+   ]
+  ],
+  "gloss": {
+   "pomôcť": "help",
+   "rezerváciu": "reservation",
+   "noci": "nights",
+   "volám": "(volám sa: my name is)",
+   "pas": "passport",
+   "izba": "room",
+   "poschodí": "floor",
+   "raňajky": "breakfast",
+   "cene": "price",
+   "výťah": "lift",
+   "kufor": "suitcase",
+   "ťažký": "heavy",
+   "schodov": "stairs",
+   "kľúč": "key",
+   "večer": "evening"
+  },
+  "questions": [
+   {
+    "q": "Na koľko nocí má hosť rezerváciu?",
+    "a": [
+     "dve"
+    ]
+   },
+   {
+    "q": "Na ktorom poschodí je izba?",
+    "a": [
+     "tret"
+    ]
+   }
+  ],
+  "notice": "A stranger is addressed with the plural \"vy\" forms: \"Ako sa voláte?\", \"vaša izba\", \"váš kľúč\". Friends use \"ty\"."
+ }
+]

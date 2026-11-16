@@ -1,0 +1,411 @@
+[
+ {
+  "id": "pl-market",
+  "title": "Na targu",
+  "level": "A1",
+  "text": "W każdą sobotę Maria idzie na targ. Targ jest w centrum miasta. Świeci słońce i jest tam dużo ludzi. Maria lubi targ, bo owoce są świeże i tanie. Najpierw kupuje jabłka i pomarańcze. Potem kupuje chleb, ser i trochę ryby. Pan przy stoisku z rybami jest bardzo miły. Zawsze pyta o jej rodzinę. Na targu Maria często spotyka swoją koleżankę Elenę. Dzisiaj piją razem kawę i długo rozmawiają. W południe Maria wraca do domu z dwiema ciężkimi torbami. Jest zmęczona, ale szczęśliwa.",
+  "gloss": {
+   "targ": "market",
+   "centrum": "centre",
+   "miasta": "town",
+   "słońce": "sun",
+   "ludzi": "people",
+   "owoce": "fruit",
+   "świeże": "fresh",
+   "tanie": "cheap",
+   "jabłka": "apples",
+   "pomarańcze": "oranges",
+   "chleb": "bread",
+   "ser": "cheese",
+   "ryby": "fish",
+   "miły": "friendly",
+   "rodzinę": "family",
+   "koleżankę": "friend",
+   "razem": "together",
+   "ciężkimi": "heavy",
+   "torbami": "bags",
+   "zmęczona": "tired",
+   "szczęśliwa": "happy"
+  },
+  "questions": [
+   {
+    "q": "Gdzie jest targ?",
+    "a": [
+     "centrum"
+    ]
+   },
+   {
+    "q": "Co Maria kupuje najpierw?",
+    "a": [
+     "jabłk"
+    ]
+   },
+   {
+    "q": "Kogo Maria spotyka na targu?",
+    "a": [
+     "Elen"
+    ]
+   }
+  ],
+  "notice": "After \"kupuje\" (she buys) the thing bought is in the accusative, which for many nouns looks like the basic form or the plural: \"kupuje jabłka i pomarańcze\", \"kupuje chleb, ser\".",
+  "back": [
+   [
+    "Najpierw kupuje jabłka i pomarańcze.",
+    "First she buys apples and oranges."
+   ],
+   [
+    "Zawsze pyta o jej rodzinę.",
+    "He always asks about her family."
+   ]
+  ]
+ },
+ {
+  "id": "pl-day",
+  "title": "Mój dzień",
+  "level": "A1",
+  "text": "Mam na imię Daniel i mieszkam w małym mieszkaniu. Codziennie rano wstaję o siódmej. Najpierw piję herbatę i jem chleb z masłem. Potem jadę do pracy autobusem. Pracuję w księgarni w centrum miasta. Lubię swoją pracę, bo kocham książki. W południe jem zupę w małej restauracji. Po południu do sklepu przychodzi dużo klientów. Wieczorem wracam do domu i gotuję kolację. Po kolacji dzwonię do mamy albo czytam książkę. Kładę się do łóżka o jedenastej. W niedzielę nie pracuję i śpię dłużej.",
+  "gloss": {
+   "mieszkaniu": "flat",
+   "wstaję": "get up",
+   "rano": "morning",
+   "herbatę": "tea",
+   "masłem": "butter",
+   "pracy": "work",
+   "autobusem": "bus",
+   "księgarni": "bookshop",
+   "miasta": "city",
+   "książki": "books",
+   "zupę": "soup",
+   "restauracji": "restaurant",
+   "południu": "afternoon",
+   "klientów": "customers",
+   "wieczorem": "evening",
+   "gotuję": "cook",
+   "kolację": "dinner",
+   "dzwonię": "call",
+   "mamy": "mother",
+   "łóżka": "bed",
+   "śpię": "sleep",
+   "dłużej": "longer"
+  },
+  "questions": [
+   {
+    "q": "Gdzie pracuje Daniel?",
+    "a": [
+     "księgarni"
+    ]
+   },
+   {
+    "q": "Czym Daniel jeździ do pracy?",
+    "a": [
+     "autobus"
+    ]
+   },
+   {
+    "q": "O której Daniel wstaje rano?",
+    "a": [
+     "siódmej"
+    ]
+   }
+  ],
+  "notice": "Polish has no word for \"the\" or \"a\", and the verb ending shows who acts, so \"I\" is usually left out: \"Pracuję w księgarni\", \"Lubię swoją pracę\".",
+  "back": [
+   [
+    "Potem jadę do pracy autobusem.",
+    "Then I go to work by bus."
+   ],
+   [
+    "Wieczorem wracam do domu i gotuję kolację.",
+    "In the evening I go home and cook dinner."
+   ]
+  ]
+ },
+ {
+  "id": "pl-sea",
+  "title": "Weekend nad morzem",
+  "level": "A2",
+  "text": "W zeszły weekend pojechaliśmy z bratem nad morze. Wsiedliśmy do pociągu wcześnie rano, a podróż trwała trzy godziny. Pogoda była piękna: niebo było niebieskie, a woda ciepła. Długo pływaliśmy, a potem leżeliśmy na plaży. W południe jedliśmy świeżą rybę w małej restauracji blisko portu. Kelner był miły i przyniósł nam zimną wodę. Po południu spacerowaliśmy po starym mieście i kupiliśmy pocztówki. Mój brat zrobił dużo zdjęć łodzi. Wieczorem byliśmy bardzo zmęczeni, ale nie chcieliśmy wracać do domu. Spóźniliśmy się na ostatni pociąg i musieliśmy czekać godzinę. To był najlepszy dzień lata. Następnym razem chcemy zostać na cały tydzień.",
+  "gloss": {
+   "weekend": "weekend",
+   "bratem": "brother",
+   "morze": "sea",
+   "pociągu": "train",
+   "podróż": "journey",
+   "godziny": "hours",
+   "pogoda": "weather",
+   "niebo": "sky",
+   "niebieskie": "blue",
+   "woda": "water",
+   "ciepła": "warm",
+   "pływaliśmy": "swam",
+   "plaży": "beach",
+   "kelner": "waiter",
+   "portu": "harbour",
+   "spacerowaliśmy": "walked",
+   "pocztówki": "postcards",
+   "zdjęć": "photos",
+   "łodzi": "boats",
+   "zmęczeni": "tired",
+   "spóźniliśmy": "missed",
+   "czekać": "wait",
+   "tydzień": "week",
+   "lata": "summer"
+  },
+  "questions": [
+   {
+    "q": "Czym pojechali nad morze?",
+    "a": [
+     "pociąg"
+    ]
+   },
+   {
+    "q": "Ile godzin trwała podróż?",
+    "a": [
+     "trzy"
+    ]
+   },
+   {
+    "q": "Co kupili na starym mieście?",
+    "a": [
+     "pocztówk"
+    ]
+   }
+  ],
+  "notice": "The past tense for \"we\" ends in -liśmy when at least one man is in the group: \"pojechaliśmy\", \"kupiliśmy\". A group of women says -łyśmy.",
+  "back": [
+   [
+    "Po południu spacerowaliśmy po starym mieście i kupiliśmy pocztówki.",
+    "In the afternoon we walked through the old town and bought postcards."
+   ],
+   [
+    "Spóźniliśmy się na ostatni pociąg i musieliśmy czekać godzinę.",
+    "We missed the last train and had to wait an hour."
+   ]
+  ]
+ },
+ {
+  "id": "pl-neighbour",
+  "title": "Nowa sąsiadka",
+  "level": "A2",
+  "text": "W zeszłym miesiącu do naszego domu wprowadziła się nowa sąsiadka. Ma na imię Sofia i pochodzi z innego miasta. Na początku nikogo tutaj nie znała. Pewnego wieczoru zapukała do naszych drzwi, bo lampa w jej kuchni była zepsuta. Mój tata poszedł na górę i naprawił ją w dziesięć minut. Sofia była bardzo wdzięczna i następnego dnia przyniosła nam ciasto. Ciasto było pyszne, a mój młodszy brat zjadł trzy kawałki. Teraz Sofia często pije herbatę z moją mamą. Pracuje w szpitalu i opowiada ciekawe historie. Wczoraj pomogła mi w zadaniu domowym. W niedzielę pokazaliśmy jej park i stary targ. Mówi, że już czuje się tu jak w domu. Myślę, że znaleźliśmy nową przyjaciółkę.",
+  "gloss": {
+   "sąsiadka": "neighbour",
+   "wprowadziła": "moved",
+   "miesiącu": "month",
+   "miasta": "city",
+   "nikogo": "anybody",
+   "zapukała": "knocked",
+   "drzwi": "door",
+   "kuchni": "kitchen",
+   "lampa": "lamp",
+   "zepsuta": "broken",
+   "naprawił": "repaired",
+   "minut": "minutes",
+   "wdzięczna": "grateful",
+   "ciasto": "cake",
+   "pyszne": "delicious",
+   "kawałki": "pieces",
+   "szpitalu": "hospital",
+   "historie": "stories",
+   "zadaniu": "task (zadanie domowe: homework)",
+   "park": "park",
+   "już": "already",
+   "znaleźliśmy": "found"
+  },
+  "questions": [
+   {
+    "q": "Co było zepsute w kuchni Sofii?",
+    "a": [
+     "lamp"
+    ]
+   },
+   {
+    "q": "Co Sofia przyniosła następnego dnia?",
+    "a": [
+     "ciast"
+    ]
+   },
+   {
+    "q": "Gdzie pracuje Sofia?",
+    "a": [
+     "szpital"
+    ]
+   }
+  ],
+  "notice": "Verbs in the past show who did it: a woman's actions end in -ła (\"zapukała\", \"przyniosła\") and a man's in -ł (\"naprawił\", \"zjadł\").",
+  "back": [
+   [
+    "Mój tata poszedł na górę i naprawił ją w dziesięć minut.",
+    "My father went upstairs and repaired it in ten minutes."
+   ],
+   [
+    "Pracuje w szpitalu i opowiada ciekawe historie.",
+    "She works in a hospital and tells interesting stories."
+   ]
+  ]
+ },
+ {
+  "id": "pl-cafe",
+  "title": "W kawiarni",
+  "level": "A1",
+  "roles": [
+   "Kelner",
+   "Gość"
+  ],
+  "lines": [
+   [
+    0,
+    "Dzień dobry! Co podać?"
+   ],
+   [
+    1,
+    "Dzień dobry. Poproszę kawę z mlekiem."
+   ],
+   [
+    0,
+    "Czy podać coś do jedzenia?"
+   ],
+   [
+    1,
+    "Tak, jakie ciasta są dzisiaj?"
+   ],
+   [
+    0,
+    "Mamy szarlotkę i ciasto czekoladowe."
+   ],
+   [
+    1,
+    "To poproszę kawałek szarlotki."
+   ],
+   [
+    0,
+    "Proszę bardzo. Czy coś jeszcze?"
+   ],
+   [
+    1,
+    "Nie, dziękuję. Ile płacę?"
+   ],
+   [
+    0,
+    "Dwadzieścia złotych."
+   ],
+   [
+    1,
+    "Proszę. Dziękuję i do widzenia!"
+   ]
+  ],
+  "gloss": {
+   "kawę": "coffee",
+   "mlekiem": "milk",
+   "coś": "something",
+   "jedzenia": "eat",
+   "ciasta": "cakes",
+   "dzisiaj": "today",
+   "szarlotkę": "apple cake",
+   "czekoladowe": "chocolate",
+   "kawałek": "piece",
+   "jeszcze": "else",
+   "ile": "much",
+   "złotych": "zlotys (Polish money)"
+  },
+  "questions": [
+   {
+    "q": "Z czym gość pije kawę?",
+    "a": [
+     "mlek"
+    ]
+   },
+   {
+    "q": "Które ciasto wybiera gość?",
+    "a": [
+     "szarlotk"
+    ]
+   }
+  ],
+  "notice": "\"Poproszę\" (I would like, please) is the polite way to order, and what you order goes in the accusative: \"Poproszę kawę z mlekiem\", \"poproszę kawałek szarlotki\"."
+ },
+ {
+  "id": "pl-hotel",
+  "title": "W hotelu",
+  "level": "A2",
+  "roles": [
+   "Recepcjonistka",
+   "Gość"
+  ],
+  "lines": [
+   [
+    0,
+    "Dobry wieczór. W czym mogę pomóc?"
+   ],
+   [
+    1,
+    "Dobry wieczór. Mam rezerwację na dwie noce."
+   ],
+   [
+    0,
+    "Jak się pani nazywa?"
+   ],
+   [
+    1,
+    "Nazywam się Anna Berg. Oto mój paszport."
+   ],
+   [
+    0,
+    "Dziękuję. Pani pokój jest na trzecim piętrze."
+   ],
+   [
+    1,
+    "Czy śniadanie jest wliczone w cenę?"
+   ],
+   [
+    0,
+    "Tak, śniadanie jest od siódmej do dziesiątej."
+   ],
+   [
+    1,
+    "Bardzo dobrze. Czy jest winda? Moja walizka jest ciężka."
+   ],
+   [
+    0,
+    "Tak, winda jest obok schodów. Oto pani klucz."
+   ],
+   [
+    1,
+    "Dziękuję bardzo. Miłego wieczoru!"
+   ]
+  ],
+  "gloss": {
+   "pomóc": "help",
+   "rezerwację": "reservation",
+   "noce": "nights",
+   "nazywam": "(nazywam się: my name is)",
+   "paszport": "passport",
+   "pokój": "room",
+   "piętrze": "floor",
+   "śniadanie": "breakfast",
+   "wliczone": "included",
+   "cenę": "price",
+   "winda": "lift",
+   "walizka": "suitcase",
+   "ciężka": "heavy",
+   "schodów": "stairs",
+   "klucz": "key",
+   "wieczór": "evening"
+  },
+  "questions": [
+   {
+    "q": "Na ile nocy gość ma rezerwację?",
+    "a": [
+     "dwie"
+    ]
+   },
+   {
+    "q": "Na którym piętrze jest pokój?",
+    "a": [
+     "trzeci"
+    ]
+   }
+  ],
+  "notice": "A stranger is addressed as \"pan\" (to a man) or \"pani\" (to a woman) with the verb in the third person: \"Jak się pani nazywa?\", \"Oto pani klucz\"."
+ }
+]

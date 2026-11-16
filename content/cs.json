@@ -1,0 +1,410 @@
+[
+ {
+  "id": "cs-market",
+  "title": "Na trhu",
+  "level": "A1",
+  "text": "Každou sobotu chodí Marie na trh. Trh je v centru města. Svítí slunce a je tam hodně lidí. Marie má trh ráda, protože ovoce je tam čerstvé a levné. Nejdřív kupuje jablka a pomeranče. Potom kupuje chléb, sýr a trochu ryby. Pán u stánku s rybami je velmi milý. Vždycky se ptá na její rodinu. Na trhu Marie často potkává svou kamarádku Elenu. Dnes spolu pijí kávu a dlouho si povídají. V poledne jde Marie domů se dvěma těžkými taškami. Je unavená, ale šťastná.",
+  "gloss": {
+   "trh": "market",
+   "centru": "centre",
+   "města": "town",
+   "slunce": "sun",
+   "lidí": "people",
+   "ovoce": "fruit",
+   "čerstvé": "fresh",
+   "levné": "cheap",
+   "jablka": "apples",
+   "pomeranče": "oranges",
+   "chléb": "bread",
+   "sýr": "cheese",
+   "ryby": "fish",
+   "milý": "friendly",
+   "rodinu": "family",
+   "kamarádku": "friend",
+   "spolu": "together",
+   "těžkými": "heavy",
+   "taškami": "bags",
+   "unavená": "tired",
+   "šťastná": "happy"
+  },
+  "questions": [
+   {
+    "q": "Kde je trh?",
+    "a": [
+     "centr"
+    ]
+   },
+   {
+    "q": "Co Marie kupuje nejdřív?",
+    "a": [
+     "jablk"
+    ]
+   },
+   {
+    "q": "Koho Marie často potkává na trhu?",
+    "a": [
+     "Elen"
+    ]
+   }
+  ],
+  "notice": "Czech has no word for \"the\" or \"a\". \"Mít rád\" (to like) agrees with the person who likes: a woman says \"ráda\", as in \"Marie má trh ráda\"; a man says \"rád\".",
+  "back": [
+   [
+    "Nejdřív kupuje jablka a pomeranče.",
+    "First she buys apples and oranges."
+   ],
+   [
+    "Vždycky se ptá na její rodinu.",
+    "He always asks about her family."
+   ]
+  ]
+ },
+ {
+  "id": "cs-day",
+  "title": "Můj den",
+  "level": "A1",
+  "text": "Jmenuji se Daniel a bydlím v malém bytě. Každé ráno vstávám v sedm hodin. Nejdřív piji čaj a jím chléb s máslem. Potom jedu do práce autobusem. Pracuji v knihkupectví v centru města. Svou práci mám rád, protože miluji knihy. V poledne jím polévku v malé restauraci. Odpoledne přichází do obchodu hodně zákazníků. Večer se vracím domů a vařím večeři. Po večeři volám mamince nebo čtu knihu. Do postele chodím v jedenáct hodin. V neděli nepracuji a spím déle.",
+  "gloss": {
+   "bytě": "flat",
+   "vstávám": "get up",
+   "ráno": "morning",
+   "čaj": "tea",
+   "máslem": "butter",
+   "práce": "work",
+   "autobusem": "bus",
+   "knihkupectví": "bookshop",
+   "města": "city",
+   "knihy": "books",
+   "polévku": "soup",
+   "restauraci": "restaurant",
+   "odpoledne": "afternoon",
+   "zákazníků": "customers",
+   "večer": "evening",
+   "vařím": "cook",
+   "večeři": "dinner",
+   "volám": "call",
+   "mamince": "mother",
+   "postele": "bed",
+   "spím": "sleep",
+   "déle": "longer"
+  },
+  "questions": [
+   {
+    "q": "Kde pracuje Daniel?",
+    "a": [
+     "knihkupectví"
+    ]
+   },
+   {
+    "q": "Čím jezdí Daniel do práce?",
+    "a": [
+     "autobus"
+    ]
+   },
+   {
+    "q": "Co jí Daniel v poledne?",
+    "a": [
+     "polévk"
+    ]
+   }
+  ],
+  "notice": "The verb ending shows who acts, so \"já\" (I) is usually left out: \"Pracuji v knihkupectví\", \"Večer se vracím domů\". Daniel, a man, says \"mám rád\"; a woman would say \"mám ráda\".",
+  "back": [
+   [
+    "Potom jedu do práce autobusem.",
+    "Then I go to work by bus."
+   ],
+   [
+    "Večer se vracím domů a vařím večeři.",
+    "In the evening I go home and cook dinner."
+   ]
+  ]
+ },
+ {
+  "id": "cs-sea",
+  "title": "Víkend u moře",
+  "level": "A2",
+  "text": "Minulý víkend jsme s bratrem jeli k moři. Brzy ráno jsme nastoupili do vlaku a cesta trvala tři hodiny. Počasí bylo krásné: nebe bylo modré a voda teplá. Dlouho jsme plavali a potom jsme leželi na pláži. V poledne jsme jedli čerstvou rybu v malé restauraci blízko přístavu. Číšník byl milý a přinesl nám studenou vodu. Odpoledne jsme se procházeli starým městem a koupili jsme pohlednice. Můj bratr udělal hodně fotek lodí. Večer jsme byli velmi unavení, ale nechtěli jsme jet domů. Zmeškali jsme poslední vlak a museli jsme hodinu čekat. Byl to nejlepší den léta. Příště chceme zůstat celý týden.",
+  "gloss": {
+   "víkend": "weekend",
+   "bratrem": "brother",
+   "moři": "sea",
+   "vlaku": "train",
+   "cesta": "journey",
+   "hodiny": "hours",
+   "počasí": "weather",
+   "nebe": "sky",
+   "modré": "blue",
+   "voda": "water",
+   "teplá": "warm",
+   "plavali": "swam",
+   "pláži": "beach",
+   "číšník": "waiter",
+   "přístavu": "harbour",
+   "procházeli": "walked",
+   "pohlednice": "postcards",
+   "fotek": "photos",
+   "lodí": "boats",
+   "unavení": "tired",
+   "zmeškali": "missed",
+   "čekat": "wait",
+   "týden": "week",
+   "léta": "summer"
+  },
+  "questions": [
+   {
+    "q": "Čím jeli k moři?",
+    "a": [
+     "vlak"
+    ]
+   },
+   {
+    "q": "Kolik hodin trvala cesta?",
+    "a": [
+     "tři"
+    ]
+   },
+   {
+    "q": "Co koupili ve starém městě?",
+    "a": [
+     "pohlednic"
+    ]
+   }
+  ],
+  "notice": "The past tense is made with a form ending in -l and, for \"we\", the little word \"jsme\", which takes the second place in the sentence: \"Dlouho jsme plavali\", \"Zmeškali jsme poslední vlak\".",
+  "back": [
+   [
+    "Odpoledne jsme se procházeli starým městem a koupili jsme pohlednice.",
+    "In the afternoon we walked through the old town and bought postcards."
+   ],
+   [
+    "Zmeškali jsme poslední vlak a museli jsme hodinu čekat.",
+    "We missed the last train and had to wait an hour."
+   ]
+  ]
+ },
+ {
+  "id": "cs-neighbour",
+  "title": "Nová sousedka",
+  "level": "A2",
+  "text": "Minulý měsíc se do našeho domu nastěhovala nová sousedka. Jmenuje se Sofie a pochází z jiného města. Zpočátku tady nikoho neznala. Jednou večer zaklepala na naše dveře, protože lampa v její kuchyni byla rozbitá. Můj táta šel nahoru a za deset minut ji opravil. Sofie byla velmi vděčná a druhý den nám přinesla koláč. Koláč byl výborný a můj mladší bratr snědl tři kousky. Teď Sofie často pije čaj s mou maminkou. Pracuje v nemocnici a vypráví zajímavé příběhy. Včera mi pomohla s domácím úkolem. V neděli jsme jí ukázali park a starý trh. Říká, že se tu už cítí jako doma. Myslím, že jsme našli novou kamarádku.",
+  "gloss": {
+   "sousedka": "neighbour",
+   "nastěhovala": "moved",
+   "měsíc": "month",
+   "města": "city",
+   "nikoho": "anybody",
+   "zaklepala": "knocked",
+   "dveře": "door",
+   "kuchyni": "kitchen",
+   "lampa": "lamp",
+   "rozbitá": "broken",
+   "opravil": "repaired",
+   "minut": "minutes",
+   "vděčná": "grateful",
+   "koláč": "cake",
+   "výborný": "delicious",
+   "kousky": "pieces",
+   "nemocnici": "hospital",
+   "příběhy": "stories",
+   "úkolem": "task (domácí úkol: homework)",
+   "park": "park",
+   "už": "already",
+   "našli": "found"
+  },
+  "questions": [
+   {
+    "q": "Co bylo rozbité v Sofiině kuchyni?",
+    "a": [
+     "lamp"
+    ]
+   },
+   {
+    "q": "Co Sofie přinesla druhý den?",
+    "a": [
+     "koláč"
+    ]
+   },
+   {
+    "q": "Kde pracuje Sofie?",
+    "a": [
+     "nemocnic"
+    ]
+   }
+  ],
+  "notice": "In the past a woman's actions end in -la (\"zaklepala\", \"přinesla\", \"pomohla\") and a man's in -l (\"opravil\", \"snědl\").",
+  "back": [
+   [
+    "Můj táta šel nahoru a za deset minut ji opravil.",
+    "My father went upstairs and repaired it in ten minutes."
+   ],
+   [
+    "Pracuje v nemocnici a vypráví zajímavé příběhy.",
+    "She works in a hospital and tells interesting stories."
+   ]
+  ]
+ },
+ {
+  "id": "cs-cafe",
+  "title": "V kavárně",
+  "level": "A1",
+  "roles": [
+   "Číšník",
+   "Host"
+  ],
+  "lines": [
+   [
+    0,
+    "Dobrý den! Co si dáte?"
+   ],
+   [
+    1,
+    "Dobrý den. Dám si kávu s mlékem, prosím."
+   ],
+   [
+    0,
+    "Dáte si něco k jídlu?"
+   ],
+   [
+    1,
+    "Ano, jaké dorty dnes máte?"
+   ],
+   [
+    0,
+    "Máme jablečný koláč a čokoládový dort."
+   ],
+   [
+    1,
+    "Tak si dám kousek jablečného koláče."
+   ],
+   [
+    0,
+    "Prosím. Ještě něco?"
+   ],
+   [
+    1,
+    "Ne, děkuji. Kolik platím?"
+   ],
+   [
+    0,
+    "Sto dvacet korun, prosím."
+   ],
+   [
+    1,
+    "Tady prosím. Děkuji a na shledanou!"
+   ]
+  ],
+  "gloss": {
+   "kávu": "coffee",
+   "mlékem": "milk",
+   "něco": "something",
+   "jídlu": "eat",
+   "dorty": "cakes",
+   "dnes": "today",
+   "jablečný": "apple (as in jablečný koláč: apple cake)",
+   "čokoládový": "chocolate",
+   "kousek": "piece",
+   "ještě": "else",
+   "kolik": "much",
+   "korun": "crowns (Czech money)"
+  },
+  "questions": [
+   {
+    "q": "S čím pije host kávu?",
+    "a": [
+     "mlék"
+    ]
+   },
+   {
+    "q": "Co si host dává ke kávě?",
+    "a": [
+     "koláč"
+    ]
+   }
+  ],
+  "notice": "\"Dám si …\" (I will have …) is the usual way to order, and the thing ordered is in the accusative: \"Dám si kávu s mlékem\", \"dám si kousek jablečného koláče\"."
+ },
+ {
+  "id": "cs-hotel",
+  "title": "V hotelu",
+  "level": "A2",
+  "roles": [
+   "Recepční",
+   "Host"
+  ],
+  "lines": [
+   [
+    0,
+    "Dobrý večer. Jak vám mohu pomoci?"
+   ],
+   [
+    1,
+    "Dobrý večer. Mám rezervaci na dvě noci."
+   ],
+   [
+    0,
+    "Jak se jmenujete, prosím?"
+   ],
+   [
+    1,
+    "Jmenuji se Anna Berg. Tady je můj pas."
+   ],
+   [
+    0,
+    "Děkuji. Váš pokoj je ve třetím patře."
+   ],
+   [
+    1,
+    "Je snídaně v ceně?"
+   ],
+   [
+    0,
+    "Ano, snídaně je od sedmi do deseti hodin."
+   ],
+   [
+    1,
+    "Výborně. Je tu výtah? Mám těžký kufr."
+   ],
+   [
+    0,
+    "Ano, výtah je vedle schodů. Tady je váš klíč."
+   ],
+   [
+    1,
+    "Děkuji mnohokrát. Hezký večer!"
+   ]
+  ],
+  "gloss": {
+   "pomoci": "help",
+   "rezervaci": "reservation",
+   "noci": "nights",
+   "jmenuji": "(jmenuji se: my name is)",
+   "pas": "passport",
+   "pokoj": "room",
+   "patře": "floor",
+   "snídaně": "breakfast",
+   "ceně": "price",
+   "výtah": "lift",
+   "kufr": "suitcase",
+   "těžký": "heavy",
+   "schodů": "stairs",
+   "klíč": "key",
+   "večer": "evening"
+  },
+  "questions": [
+   {
+    "q": "Na kolik nocí má host rezervaci?",
+    "a": [
+     "dvě"
+    ]
+   },
+   {
+    "q": "Ve kterém patře je pokoj?",
+    "a": [
+     "třetí"
+    ]
+   }
+  ],
+  "notice": "A stranger is addressed with the plural \"vy\" forms: \"Jak se jmenujete?\", \"váš pokoj\", \"váš klíč\". Friends use \"ty\"."
+ }
+]

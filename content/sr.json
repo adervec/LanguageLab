@@ -1,0 +1,411 @@
+[
+ {
+  "id": "sr-market",
+  "title": "Na pijaci",
+  "level": "A1",
+  "text": "Svake subote Marija ide na pijacu. Pijaca je u centru grada. Sija sunce i tamo ima mnogo ljudi. Marija voli pijacu, jer je voće sveže i jeftino. Prvo kupuje jabuke i pomorandže. Zatim kupuje hleb, sir i malo ribe. Čovek na tezgi sa ribom je veoma ljubazan. Uvek je pita za njenu porodicu. Na pijaci Marija često sreće svoju drugaricu Elenu. Danas zajedno piju kafu i dugo razgovaraju. U podne Marija ide kući sa dve teške torbe. Umorna je, ali srećna.",
+  "gloss": {
+   "pijacu": "market",
+   "centru": "centre",
+   "grada": "town",
+   "sunce": "sun",
+   "ljudi": "people",
+   "voće": "fruit",
+   "sveže": "fresh",
+   "jeftino": "cheap",
+   "jabuke": "apples",
+   "pomorandže": "oranges",
+   "hleb": "bread",
+   "sir": "cheese",
+   "ribe": "fish",
+   "ljubazan": "friendly",
+   "porodicu": "family",
+   "drugaricu": "friend",
+   "zajedno": "together",
+   "teške": "heavy",
+   "torbe": "bags",
+   "umorna": "tired",
+   "srećna": "happy"
+  },
+  "questions": [
+   {
+    "q": "Gde je pijaca?",
+    "a": [
+     "centr"
+    ]
+   },
+   {
+    "q": "Šta Marija prvo kupuje?",
+    "a": [
+     "jabuk"
+    ]
+   },
+   {
+    "q": "Koga Marija često sreće na pijaci?",
+    "a": [
+     "Elen"
+    ]
+   }
+  ],
+  "notice": "Serbian has no word for \"the\" or \"a\", and the endings of nouns change with their role: \"pijaca\" is the subject, \"na pijacu\" is where she goes, \"na pijaci\" is where she is.",
+  "back": [
+   [
+    "Prvo kupuje jabuke i pomorandže.",
+    "First she buys apples and oranges."
+   ],
+   [
+    "Uvek je pita za njenu porodicu.",
+    "He always asks about her family."
+   ]
+  ]
+ },
+ {
+  "id": "sr-day",
+  "title": "Moj dan",
+  "level": "A1",
+  "text": "Zovem se Danijel i živim u malom stanu. Svakog jutra ustajem u sedam sati. Prvo pijem čaj i jedem hleb sa puterom. Zatim idem na posao autobusom. Radim u knjižari u centru grada. Volim svoj posao, jer volim knjige. U podne jedem supu u malom restoranu. Posle podne u knjižaru dolazi mnogo kupaca. Uveče se vraćam kući i kuvam večeru. Posle večere zovem majku ili čitam knjigu. U krevet idem u jedanaest sati. Nedeljom ne radim i spavam duže.",
+  "gloss": {
+   "stanu": "flat",
+   "ustajem": "get up",
+   "jutra": "morning",
+   "čaj": "tea",
+   "puterom": "butter",
+   "posao": "work",
+   "autobusom": "bus",
+   "knjižari": "bookshop",
+   "grada": "city",
+   "knjige": "books",
+   "supu": "soup",
+   "restoranu": "restaurant",
+   "podne": "noon (posle podne: in the afternoon)",
+   "kupaca": "customers",
+   "uveče": "evening",
+   "kuvam": "cook",
+   "večeru": "dinner",
+   "zovem": "call",
+   "majku": "mother",
+   "krevet": "bed",
+   "spavam": "sleep",
+   "duže": "longer"
+  },
+  "questions": [
+   {
+    "q": "Gde radi Danijel?",
+    "a": [
+     "knjižar"
+    ]
+   },
+   {
+    "q": "Čime Danijel ide na posao?",
+    "a": [
+     "autobus"
+    ]
+   },
+   {
+    "q": "U koliko sati Danijel ustaje?",
+    "a": [
+     "sedam"
+    ]
+   }
+  ],
+  "notice": "The verb ending -m shows that \"I\" am acting, so \"ja\" is usually left out: \"Radim u knjižari\", \"Uveče se vraćam kući\".",
+  "back": [
+   [
+    "Zatim idem na posao autobusom.",
+    "Then I go to work by bus."
+   ],
+   [
+    "Uveče se vraćam kući i kuvam večeru.",
+    "In the evening I go home and cook dinner."
+   ]
+  ]
+ },
+ {
+  "id": "sr-sea",
+  "title": "Vikend na moru",
+  "level": "A2",
+  "text": "Prošlog vikenda smo brat i ja otišli na more. Rano ujutru smo seli u voz i put je trajao tri sata. Vreme je bilo divno: nebo je bilo plavo, a voda topla. Dugo smo plivali, a zatim smo ležali na plaži. U podne smo jeli svežu ribu u malom restoranu blizu luke. Konobar je bio ljubazan i doneo nam je hladnu vodu. Posle podne smo šetali starim gradom i kupili razglednice. Moj brat je napravio mnogo fotografija brodova. Uveče smo bili veoma umorni, ali nismo hteli da idemo kući. Zakasnili smo na poslednji voz i morali smo da čekamo sat vremena. To je bio najlepši dan leta. Sledeći put želimo da ostanemo celu nedelju.",
+  "gloss": {
+   "vikenda": "weekend",
+   "brat": "brother",
+   "more": "sea",
+   "voz": "train",
+   "put": "journey",
+   "sata": "hours",
+   "vreme": "weather",
+   "nebo": "sky",
+   "plavo": "blue",
+   "voda": "water",
+   "topla": "warm",
+   "plivali": "swam",
+   "plaži": "beach",
+   "konobar": "waiter",
+   "luke": "harbour",
+   "šetali": "walked",
+   "razglednice": "postcards",
+   "fotografija": "photos",
+   "brodova": "boats",
+   "umorni": "tired",
+   "zakasnili": "missed",
+   "čekamo": "wait",
+   "nedelju": "week",
+   "leta": "summer"
+  },
+  "questions": [
+   {
+    "q": "U šta su seli rano ujutru?",
+    "a": [
+     "voz"
+    ]
+   },
+   {
+    "q": "Koliko sati je trajao put?",
+    "a": [
+     "tri"
+    ]
+   },
+   {
+    "q": "Šta su kupili u starom gradu?",
+    "a": [
+     "razglednic"
+    ]
+   }
+  ],
+  "notice": "The past is made with a short form of \"to be\" (\"smo\" for we, \"je\" for he or she) and a form ending in -li, -o or -la: \"smo plivali\", \"konobar je bio\", \"voda je bila\".",
+  "back": [
+   [
+    "Posle podne smo šetali starim gradom i kupili razglednice.",
+    "In the afternoon we walked through the old town and bought postcards."
+   ],
+   [
+    "Zakasnili smo na poslednji voz i morali smo da čekamo sat vremena.",
+    "We missed the last train and had to wait an hour."
+   ]
+  ]
+ },
+ {
+  "id": "sr-neighbour",
+  "title": "Nova komšinica",
+  "level": "A2",
+  "text": "Prošlog meseca se u našu zgradu doselila nova komšinica. Zove se Sofija i dolazi iz drugog grada. U početku ovde nije poznavala nikoga. Jedne večeri je pokucala na naša vrata, jer je lampa u njenoj kuhinji bila pokvarena. Moj otac se popeo gore i popravio je za deset minuta. Sofija je bila veoma zahvalna i sutradan nam je donela kolač. Kolač je bio ukusan, a moj mlađi brat je pojeo tri parčeta. Sada Sofija često pije čaj sa mojom majkom. Radi u bolnici i priča zanimljive priče. Juče mi je pomogla oko domaćeg zadatka. U nedelju smo joj pokazali park i staru pijacu. Kaže da se ovde već oseća kao kod kuće. Mislim da smo našli novu prijateljicu.",
+  "gloss": {
+   "komšinica": "neighbour",
+   "doselila": "moved",
+   "meseca": "month",
+   "grada": "city",
+   "nikoga": "anybody",
+   "pokucala": "knocked",
+   "vrata": "door",
+   "kuhinji": "kitchen",
+   "lampa": "lamp",
+   "pokvarena": "broken",
+   "popravio": "repaired",
+   "minuta": "minutes",
+   "zahvalna": "grateful",
+   "kolač": "cake",
+   "ukusan": "delicious",
+   "parčeta": "pieces",
+   "bolnici": "hospital",
+   "priče": "stories",
+   "zadatka": "task (domaći zadatak: homework)",
+   "park": "park",
+   "već": "already",
+   "našli": "found"
+  },
+  "questions": [
+   {
+    "q": "Šta je bilo pokvareno u Sofijinoj kuhinji?",
+    "a": [
+     "lamp"
+    ]
+   },
+   {
+    "q": "Šta je Sofija donela sutradan?",
+    "a": [
+     "kolač"
+    ]
+   },
+   {
+    "q": "Gde radi Sofija?",
+    "a": [
+     "bolnic"
+    ]
+   }
+  ],
+  "notice": "In the past a woman's actions end in -la (\"pokucala\", \"donela\", \"pomogla\") and a man's in -o (\"popravio\", \"pojeo\").",
+  "back": [
+   [
+    "Moj otac se popeo gore i popravio je za deset minuta.",
+    "My father went upstairs and repaired it in ten minutes."
+   ],
+   [
+    "Radi u bolnici i priča zanimljive priče.",
+    "She works in a hospital and tells interesting stories."
+   ]
+  ]
+ },
+ {
+  "id": "sr-cafe",
+  "title": "U kafiću",
+  "level": "A1",
+  "roles": [
+   "Konobar",
+   "Gost"
+  ],
+  "lines": [
+   [
+    0,
+    "Dobar dan! Izvolite?"
+   ],
+   [
+    1,
+    "Dobar dan. Molim vas kafu sa mlekom."
+   ],
+   [
+    0,
+    "Želite li nešto da pojedete?"
+   ],
+   [
+    1,
+    "Da, koje kolače imate danas?"
+   ],
+   [
+    0,
+    "Imamo pitu od jabuka i čokoladnu tortu."
+   ],
+   [
+    1,
+    "Onda ću uzeti parče pite od jabuka."
+   ],
+   [
+    0,
+    "Izvolite. Još nešto?"
+   ],
+   [
+    1,
+    "Ne, hvala. Koliko košta?"
+   ],
+   [
+    0,
+    "Šest stotina dinara, molim."
+   ],
+   [
+    1,
+    "Izvolite. Hvala i doviđenja!"
+   ]
+  ],
+  "gloss": {
+   "kafu": "coffee",
+   "mlekom": "milk",
+   "nešto": "something",
+   "pojedete": "eat",
+   "kolače": "cakes",
+   "danas": "today",
+   "jabuka": "apples (pita od jabuka: apple pie)",
+   "čokoladnu": "chocolate",
+   "parče": "piece",
+   "još": "else",
+   "koliko": "much",
+   "dinara": "dinars (Serbian money)"
+  },
+  "questions": [
+   {
+    "q": "Sa čim gost pije kafu?",
+    "a": [
+     "mlek"
+    ]
+   },
+   {
+    "q": "Koji kolač gost uzima?",
+    "a": [
+     "jabuk"
+    ]
+   }
+  ],
+  "notice": "\"Molim vas\" (please) with the thing in the accusative is a polite order, and \"ću uzeti\" (I will take) is the future: \"Molim vas kafu sa mlekom\", \"Onda ću uzeti parče pite\"."
+ },
+ {
+  "id": "sr-hotel",
+  "title": "U hotelu",
+  "level": "A2",
+  "roles": [
+   "Recepcionerka",
+   "Gošća"
+  ],
+  "lines": [
+   [
+    0,
+    "Dobro veče. Kako mogu da vam pomognem?"
+   ],
+   [
+    1,
+    "Dobro veče. Imam rezervaciju za dve noći."
+   ],
+   [
+    0,
+    "Kako se zovete, molim vas?"
+   ],
+   [
+    1,
+    "Zovem se Anna Berg. Evo mog pasoša."
+   ],
+   [
+    0,
+    "Hvala. Vaša soba je na trećem spratu."
+   ],
+   [
+    1,
+    "Da li je doručak uključen u cenu?"
+   ],
+   [
+    0,
+    "Da, doručak je od sedam do deset sati."
+   ],
+   [
+    1,
+    "Odlično. Da li imate lift? Moj kofer je težak."
+   ],
+   [
+    0,
+    "Da, lift je pored stepenica. Evo vašeg ključa."
+   ],
+   [
+    1,
+    "Hvala lepo. Prijatno veče!"
+   ]
+  ],
+  "gloss": {
+   "pomognem": "help",
+   "rezervaciju": "reservation",
+   "noći": "nights",
+   "zovem": "(zovem se: my name is)",
+   "pasoša": "passport",
+   "soba": "room",
+   "spratu": "floor",
+   "doručak": "breakfast",
+   "uključen": "included",
+   "cenu": "price",
+   "lift": "lift",
+   "kofer": "suitcase",
+   "težak": "heavy",
+   "stepenica": "stairs",
+   "ključa": "key",
+   "veče": "evening"
+  },
+  "questions": [
+   {
+    "q": "Za koliko noći gošća ima rezervaciju?",
+    "a": [
+     "dve"
+    ]
+   },
+   {
+    "q": "Na kom spratu je soba?",
+    "a": [
+     "treć"
+    ]
+   }
+  ],
+  "notice": "A stranger is addressed with the plural \"vi\" forms: \"Kako se zovete?\", \"vaša soba\", \"Da li imate lift?\". Friends use \"ti\"."
+ }
+]

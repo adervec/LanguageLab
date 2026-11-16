@@ -83,7 +83,7 @@ function voice(other) {
 function say(what, { rate = 1, onend } = {}) {
   if (!window.speechSynthesis) return;
   const tok = ++speakTok, t0 = Date.now(), mine = voice(), alt = voice(true);
-  const parts = (Array.isArray(what) ? what : [[1, what]]).flatMap(([who, text]) => C.sentences(text).map(p => [who, p]));
+  const parts = (Array.isArray(what) ? what : [[1, what]]).flatMap(([who, text]) => C.sentences(text, S.lang).map(p => [who, p]));
   speechSynthesis.cancel(); player.pause();
   parts.forEach(([who, p], i) => {
     const u = new SpeechSynthesisUtterance(p), v = who ? mine : alt;

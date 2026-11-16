@@ -27,6 +27,15 @@ export const LANGS = {
   ja: { name: '日本語', english: 'Japanese', bcp: 'ja-JP', keys: '', seg: true, small: true },
   ko: { name: '한국어', english: 'Korean', bcp: 'ko-KR', keys: '', small: true },
   sv: { name: 'Svenska', english: 'Swedish', bcp: 'sv-SE', keys: 'åäö', small: true },
+  // mini: a first handful (four stories, two dialogues, A1 and A2), the same six texts in every one of these languages
+  ru: { name: 'Русский', english: 'Russian', bcp: 'ru-RU', keys: '', mini: true },
+  uk: { name: 'Українська', english: 'Ukrainian', bcp: 'uk-UA', keys: '', mini: true },
+  pl: { name: 'Polski', english: 'Polish', bcp: 'pl-PL', keys: 'ąćęłńóśźż', mini: true },
+  cs: { name: 'Čeština', english: 'Czech', bcp: 'cs-CZ', keys: 'áčďéěíňóřšťúůýž', mini: true },
+  sk: { name: 'Slovenčina', english: 'Slovak', bcp: 'sk-SK', keys: 'áäčďéíĺľňóôŕšťúýž', mini: true },
+  sl: { name: 'Slovenščina', english: 'Slovenian', bcp: 'sl-SI', keys: 'čšž', mini: true },
+  sr: { name: 'Srpski', english: 'Serbian', bcp: 'sr-RS', keys: 'čćšžđ', mini: true },
+  bg: { name: 'Български', english: 'Bulgarian', bcp: 'bg-BG', keys: '', mini: true },
 };
 const SEG = /^(zh|ja|th|lo|km|my|yue)$/; // written without spaces: words come from Intl.Segmenter
 export const isLangCode = c => typeof c === 'string' && /^[a-z]{2,3}$/.test(c);
@@ -40,12 +49,16 @@ export function langInfo(code) {
 const strip = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/œ/g, 'oe').replace(/æ/g, 'ae').replace(/ß/g, 'ss');
 export const key = w => w.normalize('NFC').toLowerCase().replace(/’/g, "'");
 
-export function sentences(text) {
+// Thai has no full stop: a space separates sentences and clauses, so there each run between spaces is one. Urdu ends a
+// sentence with its own stop (۔); Greek asks with a semicolon.
+export function sentences(text, lang) {
+  if (lang === 'th') return String(text).split(/\s+/).filter(Boolean);
+  const stops = lang === 'el' ? '.!?…;' : '.!?…।؟۔';
   return String(text).replace(/\s+/g, ' ')
-    .split(/(?<=[。！？][」』”]?)(?![」』”])\s*|(?<=[.!?…।؟]["»”“’)]?)\s+(?=[\p{Lu}\p{Lo}\p{N}«"“„¿¡—-])/u).map(s => s.trim()).filter(Boolean);
+    .split(new RegExp('(?<=[。！？][」』”]?)(?![」』”])\\s*|(?<=[' + stops + ']["»”“’)]?)\\s+(?=[\\p{Lu}\\p{Lo}\\p{N}«"“„¿¡—-])', 'u')).map(s => s.trim()).filter(Boolean);
 }
 // The sentences of a story: a first lesson's are its phrases, a dialogue's are its lines', a subtitled recording's are its cues.
-export const storySentences = s => s.phrases ? s.back.map(b => b[0]) : s.cues ? s.cues.map(c => c[2]) : s.lines ? s.lines.flatMap(l => sentences(l[1])) : sentences(s.text);
+export const storySentences = s => s.phrases ? s.back.map(b => b[0]) : s.cues ? s.cues.map(c => c[2]) : s.lines ? s.lines.flatMap(l => sentences(l[1], s.lang)) : sentences(s.text, s.lang);
 
 // Split text into [{ s, word }] pieces that join back to the original.
 // ponytail: surface forms, not lemmas ("mange" and "mangé" count separately). Add a per-language
@@ -121,7 +134,7 @@ export function dictationScore(target, typed, lang, spoken) {
 // src: a text or a list of sentences.
 export function pickDictation(src, n = 4, lang) {
   const max = langInfo(lang).seg ? 40 : 22, min = lang === 'ko' ? 3 : 4; // a Korean word carries a whole phrase
-  const ok = (Array.isArray(src) ? src : sentences(src)).filter(s => { const c = plainWords(s, lang).length; return c >= min && c <= max; });
+  const ok = (Array.isArray(src) ? src : sentences(src, lang)).filter(s => { const c = plainWords(s, lang).length; return c >= min && c <= max; });
   if (ok.length <= n) return ok;
   return Array.from({ length: n }, (_, i) => ok[Math.floor((i + 0.5) * ok.length / n)]);
 }

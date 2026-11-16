@@ -25,7 +25,7 @@ function contentProblems(file) {
     if (/\d/.test(s.text)) bad('no digits: write numbers as words');
     const words = c.plainWords(s.text, lang), keys = new Set(c.wordKeys(s.text, lang));
     const inText = k => c.answerOk(s.text, [k], lang); // the same test a learner's answer gets
-    const L = c.langInfo(lang), scale = { ko: 0.6, ja: 1.5 }[lang] || 1; // a Korean word carries what takes two words elsewhere; Japanese needs more characters than Chinese
+    const L = c.langInfo(lang), scale = { ko: 0.6, ja: 1.5, th: 3 }[lang] || 1; // a Korean word carries what takes two words elsewhere; Japanese and Thai need more characters than Chinese
     if (s.lines) {
       if (raw.text) bad('a dialogue has lines, not text');
       if (s.lines.length < 8 || s.lines.length > 18) bad(`a dialogue has 8 to 18 lines (has ${s.lines.length})`);
@@ -43,7 +43,7 @@ function contentProblems(file) {
     for (const k of Object.keys(raw.gloss || {})) if (!(L.seg ? s.text.includes(k) : keys.has(c.key(k)))) bad(`gloss "${k}" is not a word of the text (lower case, one word, as written)`);
     if ((s.questions || []).length !== want) bad(`needs exactly ${want} questions (has ${(s.questions || []).length})`);
     for (const q of s.questions || []) {
-      if (!/[?？؟]/.test(q.q)) bad('a question needs a question mark: ' + q.q);
+      if (lang !== 'th' && !/[?？؟;]/.test(q.q)) bad('a question needs a question mark: ' + q.q); // (Thai writes none; Greek writes ;)
       if (/\d/.test(q.q)) bad('no digits in questions');
       for (const k of q.a) {
         if (/^\d+$/.test(k)) continue; // a number may also be answered in digits, which the text never has
@@ -90,6 +90,10 @@ assert.deepEqual([c.langInfo('fr').bcp, c.langInfo('nl').english, c.isLangCode('
 assert.deepEqual(c.sentences('Il pleut. « Viens ! » dit-elle. Elle rit.'), ['Il pleut.', '« Viens ! » dit-elle.', 'Elle rit.']);
 assert.deepEqual(c.sentences('¿Dónde está? No lo sé. ¡Mira!'), ['¿Dónde está?', 'No lo sé.', '¡Mira!']);
 assert.deepEqual(c.sentences('今天很冷。我不想出门！'), ['今天很冷。', '我不想出门！']);
+// Thai separates with a space and no stop, Urdu has its own stop, Greek asks with a semicolon
+assert.deepEqual(c.sentences('วันนี้อากาศดี ไปตลาด', 'th'), ['วันนี้อากาศดี', 'ไปตลาด']);
+assert.equal(c.sentences('یہ میرا گھر ہے۔ میں یہاں رہتا ہوں۔').length, 2);
+assert.deepEqual([c.sentences('Πού είναι; Είναι εδώ.', 'el').length, c.sentences('Il vient; Elle part.').length], [2, 1]);
 assert.deepEqual(c.sentences('「行きましょう。」と言いました。そして出かけました。'), ['「行きましょう。」', 'と言いました。', 'そして出かけました。']);
 // Chinese and Japanese are marked character by character, and an answer is looked for inside what was typed; Korean matches a word's stem
 assert.deepEqual([c.dictationScore('我喜欢喝茶。', '我喜欢茶', 'zh').score, c.plainWords('我喜欢喝茶。', 'zh').length], [4 / 5, 5]);
