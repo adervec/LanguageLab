@@ -1,0 +1,411 @@
+[
+ {
+  "id": "tr-market",
+  "title": "Pazarda",
+  "level": "A1",
+  "text": "Maria her cumartesi pazara gider. Pazar şehrin merkezindedir. Güneş parlıyor ve orada çok insan var. Hava da çok güzel. Maria pazarı sever, çünkü meyveler taze ve ucuzdur. Önce elma ve portakal alır. Sonra ekmek, peynir ve biraz balık alır. Balık satan adam çok güler yüzlüdür. Her zaman Maria'nın ailesini sorar. Maria pazarda sık sık arkadaşı Elena ile karşılaşır. Bugün birlikte bir kahve içiyorlar ve uzun uzun konuşuyorlar. Öğlen Maria iki ağır çantayla eve döner. Yorgun ama mutludur.",
+  "gloss": {
+   "pazar": "market",
+   "merkezindedir": "is in the centre",
+   "şehrin": "town",
+   "güneş": "sun",
+   "insan": "people",
+   "meyveler": "fruit",
+   "taze": "fresh",
+   "ucuzdur": "cheap",
+   "elma": "apples",
+   "portakal": "oranges",
+   "ekmek": "bread",
+   "peynir": "cheese",
+   "balık": "fish",
+   "yüzlüdür": "(güler yüzlü: friendly, smiling)",
+   "ailesini": "family",
+   "arkadaşı": "friend",
+   "birlikte": "together",
+   "ağır": "heavy",
+   "çantayla": "bags",
+   "yorgun": "tired",
+   "mutludur": "happy"
+  },
+  "questions": [
+   {
+    "q": "Pazar nerededir?",
+    "a": [
+     "merkez"
+    ]
+   },
+   {
+    "q": "Maria önce ne alır?",
+    "a": [
+     "elma"
+    ]
+   },
+   {
+    "q": "Maria pazarda kiminle karşılaşır?",
+    "a": [
+     "Elena"
+    ]
+   }
+  ],
+  "notice": "Turkish adds endings where English uses separate words: \"pazara\" (to the market), \"pazarda\" (at the market), \"pazarı\" (the market, as an object), \"çantayla\" (with a bag). The verb comes last.",
+  "back": [
+   [
+    "Önce elma ve portakal alır.",
+    "First she buys apples and oranges."
+   ],
+   [
+    "Her zaman Maria'nın ailesini sorar.",
+    "He always asks about her family."
+   ]
+  ]
+ },
+ {
+  "id": "tr-day",
+  "title": "Benim günüm",
+  "level": "A1",
+  "text": "Benim adım Daniel ve küçük bir dairede oturuyorum. Her sabah saat yedide kalkarım. Önce çay içerim ve tereyağlı ekmek yerim. Sonra otobüsle işe giderim. Şehrin merkezinde bir kitapçıda çalışıyorum. İşimi seviyorum, çünkü kitapları çok severim. Öğlen küçük bir lokantada çorba içerim. Öğleden sonra dükkâna çok müşteri gelir. Müşterilerle kitaplar hakkında konuşmayı severim. Akşam eve dönerim ve yemek pişiririm. Yemekten sonra annemi ararım ya da kitap okurum. Saat on birde yatarım. Pazar günü çalışmam ve daha uzun uyurum.",
+  "gloss": {
+   "dairede": "flat",
+   "kalkarım": "get up",
+   "sabah": "morning",
+   "çay": "tea",
+   "tereyağlı": "buttered",
+   "işe": "work",
+   "otobüsle": "bus",
+   "kitapçıda": "bookshop",
+   "şehrin": "city",
+   "kitapları": "books",
+   "çorba": "soup",
+   "lokantada": "restaurant",
+   "öğleden": "(öğleden sonra: in the afternoon)",
+   "müşteri": "customers",
+   "akşam": "evening",
+   "pişiririm": "cook",
+   "yemek": "food, meal",
+   "ararım": "call",
+   "annemi": "mother",
+   "yatarım": "I go to bed",
+   "uyurum": "sleep",
+   "uzun": "long (daha uzun: longer)"
+  },
+  "questions": [
+   {
+    "q": "Daniel nerede çalışıyor?",
+    "a": [
+     "kitapçı"
+    ]
+   },
+   {
+    "q": "Daniel işe neyle gider?",
+    "a": [
+     "otobüs"
+    ]
+   },
+   {
+    "q": "Daniel öğlen ne içer?",
+    "a": [
+     "çorba"
+    ]
+   }
+  ],
+  "notice": "The ending on the verb shows who acts, so \"ben\" (I) is left out: \"kalkarım\" (I get up), \"giderim\" (I go), \"çalışıyorum\" (I am working). -de or -da on a noun means \"in\" or \"at\": \"dairede\", \"lokantada\".",
+  "back": [
+   [
+    "Sonra otobüsle işe giderim.",
+    "Then I go to work by bus."
+   ],
+   [
+    "Akşam eve dönerim ve yemek pişiririm.",
+    "In the evening I go home and cook dinner."
+   ]
+  ]
+ },
+ {
+  "id": "tr-sea",
+  "title": "Deniz kenarında bir hafta sonu",
+  "level": "A2",
+  "text": "Geçen hafta sonu erkek kardeşimle denize gittik. Sabah erkenden trene bindik ve yolculuk üç saat sürdü. Hava çok güzeldi: gökyüzü maviydi ve su ılıktı. Deniz çok sakindi. Uzun süre yüzdük, sonra kumsalda uzandık. Öğlen limanın yakınındaki küçük bir lokantada taze balık yedik. Yemek çok lezzetliydi. Garson güler yüzlüydü ve bize soğuk su getirdi. Öğleden sonra eski şehirde yürüdük ve kartpostal aldık. Kardeşim teknelerin bir sürü fotoğrafını çekti. Akşam çok yorgunduk ama eve dönmek istemiyorduk. Son treni kaçırdık ve bir saat beklemek zorunda kaldık. Yazın en güzel günüydü. Gelecek sefer bütün bir hafta kalmak istiyoruz.",
+  "gloss": {
+   "hafta": "week (hafta sonu: weekend)",
+   "kardeşimle": "with my brother",
+   "denize": "sea",
+   "trene": "train",
+   "yolculuk": "journey",
+   "saat": "hours",
+   "hava": "weather",
+   "gökyüzü": "sky",
+   "maviydi": "blue",
+   "su": "water",
+   "ılıktı": "warm",
+   "yüzdük": "swam",
+   "kumsalda": "beach",
+   "garson": "waiter",
+   "limanın": "harbour",
+   "yürüdük": "walked",
+   "kartpostal": "postcards",
+   "fotoğrafını": "photos",
+   "teknelerin": "boats",
+   "yorgunduk": "tired",
+   "kaçırdık": "missed",
+   "beklemek": "wait",
+   "bütün": "whole",
+   "yazın": "summer"
+  },
+  "questions": [
+   {
+    "q": "Denize neyle gittiler?",
+    "a": [
+     "tren"
+    ]
+   },
+   {
+    "q": "Yolculuk kaç saat sürdü?",
+    "a": [
+     "üç"
+    ]
+   },
+   {
+    "q": "Eski şehirde ne aldılar?",
+    "a": [
+     "kartpostal"
+    ]
+   }
+  ],
+  "notice": "The past tense is -di (also -dı, -du, -dü, -ti …) and \"we\" adds -k: \"gittik\" (we went), \"yüzdük\" (we swam), \"aldık\" (we bought).",
+  "back": [
+   [
+    "Öğleden sonra eski şehirde yürüdük ve kartpostal aldık.",
+    "In the afternoon we walked through the old town and bought postcards."
+   ],
+   [
+    "Son treni kaçırdık ve bir saat beklemek zorunda kaldık.",
+    "We missed the last train and had to wait an hour."
+   ]
+  ]
+ },
+ {
+  "id": "tr-neighbour",
+  "title": "Yeni komşu",
+  "level": "A2",
+  "text": "Geçen ay apartmanımıza yeni bir komşu taşındı. Adı Sofia ve başka bir şehirden geliyor. Başlangıçta burada kimseyi tanımıyordu. Bir akşam kapımızı çaldı, çünkü mutfağındaki lamba bozulmuştu. Babam yukarı çıktı ve lambayı on dakikada tamir etti. Sofia çok memnun oldu ve ertesi gün bize bir pasta getirdi. Pasta çok lezzetliydi ve küçük kardeşim üç dilim yedi. Şimdi Sofia sık sık annemle çay içiyor. Bir hastanede çalışıyor ve ilginç hikâyeler anlatıyor. Dün bana ödevimde yardım etti. Pazar günü ona parkı ve eski pazarı gösterdik. Kendini artık evinde gibi hissettiğini söylüyor. Bence yeni bir arkadaş bulduk.",
+  "gloss": {
+   "komşu": "neighbour",
+   "taşındı": "moved",
+   "ay": "month",
+   "şehirden": "city",
+   "kimseyi": "anybody",
+   "çaldı": "knocked, rang",
+   "kapımızı": "door",
+   "mutfağındaki": "in her kitchen",
+   "lamba": "lamp",
+   "bozulmuştu": "broken",
+   "tamir": "repair (tamir etti: repaired)",
+   "dakikada": "minutes",
+   "memnun": "pleased",
+   "pasta": "cake",
+   "lezzetliydi": "delicious",
+   "dilim": "pieces",
+   "hastanede": "hospital",
+   "hikâyeler": "stories",
+   "ödevimde": "homework",
+   "parkı": "park",
+   "artık": "now, already",
+   "bulduk": "found"
+  },
+  "questions": [
+   {
+    "q": "Sofia'nın mutfağında ne bozulmuştu?",
+    "a": [
+     "lamba"
+    ]
+   },
+   {
+    "q": "Sofia ertesi gün ne getirdi?",
+    "a": [
+     "pasta"
+    ]
+   },
+   {
+    "q": "Sofia nerede çalışıyor?",
+    "a": [
+     "hastane"
+    ]
+   }
+  ],
+  "notice": "Possession is an ending on the noun: \"babam\" (my father), \"kardeşim\" (my brother), \"annemle\" (with my mother), \"kapımızı\" (our door, as an object).",
+  "back": [
+   [
+    "Babam yukarı çıktı ve lambayı on dakikada tamir etti.",
+    "My father went upstairs and repaired it in ten minutes."
+   ],
+   [
+    "Bir hastanede çalışıyor ve ilginç hikâyeler anlatıyor.",
+    "She works in a hospital and tells interesting stories."
+   ]
+  ]
+ },
+ {
+  "id": "tr-cafe",
+  "title": "Kafede",
+  "level": "A1",
+  "roles": [
+   "Garson",
+   "Müşteri"
+  ],
+  "lines": [
+   [
+    0,
+    "Günaydın! Ne alırsınız?"
+   ],
+   [
+    1,
+    "Günaydın. Sütlü bir kahve lütfen."
+   ],
+   [
+    0,
+    "Yiyecek bir şey ister misiniz?"
+   ],
+   [
+    1,
+    "Evet, bugün hangi pastalar var?"
+   ],
+   [
+    0,
+    "Elmalı turta ve çikolatalı pasta var."
+   ],
+   [
+    1,
+    "O zaman bir dilim elmalı turta alayım."
+   ],
+   [
+    0,
+    "Buyurun. Başka bir şey?"
+   ],
+   [
+    1,
+    "Hayır, teşekkürler. Borcum ne kadar?"
+   ],
+   [
+    0,
+    "Yüz elli lira."
+   ],
+   [
+    1,
+    "Buyurun. Teşekkürler, iyi günler!"
+   ]
+  ],
+  "gloss": {
+   "kahve": "coffee",
+   "sütlü": "with milk",
+   "şey": "thing (bir şey: something)",
+   "yiyecek": "food, to eat",
+   "pastalar": "cakes",
+   "bugün": "today",
+   "elmalı": "with apple",
+   "çikolatalı": "with chocolate",
+   "dilim": "piece",
+   "başka": "else",
+   "kadar": "(ne kadar: how much)",
+   "lira": "money"
+  },
+  "questions": [
+   {
+    "q": "Müşteri nasıl bir kahve istiyor?",
+    "a": [
+     "sütlü"
+    ]
+   },
+   {
+    "q": "Müşteri hangi tatlıyı seçiyor?",
+    "a": [
+     "elmalı"
+    ]
+   }
+  ],
+  "notice": "The ending -lı, -li, -lu or -lü means \"with\": \"sütlü kahve\" (coffee with milk), \"elmalı turta\" (apple tart), \"çikolatalı pasta\" (chocolate cake)."
+ },
+ {
+  "id": "tr-hotel",
+  "title": "Otelde",
+  "level": "A2",
+  "roles": [
+   "Resepsiyon görevlisi",
+   "Misafir"
+  ],
+  "lines": [
+   [
+    0,
+    "İyi akşamlar. Nasıl yardımcı olabilirim?"
+   ],
+   [
+    1,
+    "İyi akşamlar. İki gece için rezervasyonum var."
+   ],
+   [
+    0,
+    "Adınız nedir, lütfen?"
+   ],
+   [
+    1,
+    "Adım Anna Berg. Buyurun, pasaportum."
+   ],
+   [
+    0,
+    "Teşekkürler. Odanız üçüncü katta."
+   ],
+   [
+    1,
+    "Kahvaltı fiyata dahil mi?"
+   ],
+   [
+    0,
+    "Evet, kahvaltı yediden ona kadar."
+   ],
+   [
+    1,
+    "Çok güzel. Asansör var mı? Bavulum ağır."
+   ],
+   [
+    0,
+    "Evet, asansör merdivenin yanında. Buyurun, anahtarınız."
+   ],
+   [
+    1,
+    "Çok teşekkür ederim. İyi akşamlar!"
+   ]
+  ],
+  "gloss": {
+   "yardımcı": "helpful (yardımcı olmak: to help)",
+   "rezervasyonum": "reservation",
+   "gece": "nights",
+   "adım": "name",
+   "pasaportum": "passport",
+   "odanız": "room",
+   "katta": "floor",
+   "kahvaltı": "breakfast",
+   "dahil": "included",
+   "fiyata": "price",
+   "asansör": "lift",
+   "bavulum": "suitcase",
+   "ağır": "heavy",
+   "merdivenin": "stairs",
+   "anahtarınız": "key",
+   "akşamlar": "evening"
+  },
+  "questions": [
+   {
+    "q": "Misafirin kaç gece için rezervasyonu var?",
+    "a": [
+     "iki"
+    ]
+   },
+   {
+    "q": "Oda kaçıncı katta?",
+    "a": [
+     "üçüncü"
+    ]
+   }
+  ],
+  "notice": "A yes-or-no question is made with the little word \"mi\" (also \"mı\", \"mu\", \"mü\") after the word asked about: \"dahil mi?\", \"Asansör var mı?\"."
+ }
+]

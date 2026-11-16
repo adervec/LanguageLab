@@ -1,0 +1,411 @@
+[
+ {
+  "id": "hu-market",
+  "title": "A piacon",
+  "level": "A1",
+  "text": "Mária minden szombaton a piacra megy. A piac a város központjában van. Süt a nap, és sok ember van ott. Mária szereti a piacot, mert a gyümölcs friss és olcsó. Először almát és narancsot vesz. Aztán kenyeret, sajtot és egy kevés halat vásárol. A halárus nagyon kedves ember. Mindig megkérdezi, hogy van a családja. A piacon Mária gyakran találkozik a barátnőjével, Elenával. Ma együtt isznak egy kávét, és sokáig beszélgetnek. Délben Mária két nehéz szatyorral megy haza. Fáradt, de boldog.",
+  "gloss": {
+   "piac": "market",
+   "központjában": "centre",
+   "város": "town",
+   "nap": "sun",
+   "ember": "people",
+   "gyümölcs": "fruit",
+   "friss": "fresh",
+   "olcsó": "cheap",
+   "almát": "apples",
+   "narancsot": "oranges",
+   "kenyeret": "bread",
+   "sajtot": "cheese",
+   "halat": "fish",
+   "kedves": "friendly",
+   "családja": "family",
+   "barátnőjével": "friend",
+   "együtt": "together",
+   "nehéz": "heavy",
+   "szatyorral": "bags",
+   "fáradt": "tired",
+   "boldog": "happy"
+  },
+  "questions": [
+   {
+    "q": "Hol van a piac?",
+    "a": [
+     "központ"
+    ]
+   },
+   {
+    "q": "Mit vesz Mária először?",
+    "a": [
+     "alma"
+    ]
+   },
+   {
+    "q": "Kivel találkozik Mária a piacon?",
+    "a": [
+     "Elen"
+    ]
+   }
+  ],
+  "notice": "Hungarian puts endings on the noun where English uses little words: \"a piacra\" (to the market), \"a piacon\" (at the market), \"szatyorral\" (with a bag). The thing bought takes -t: \"almát\", \"kenyeret\".",
+  "back": [
+   [
+    "Először almát és narancsot vesz.",
+    "First she buys apples and oranges."
+   ],
+   [
+    "Mindig megkérdezi, hogy van a családja.",
+    "He always asks about her family."
+   ]
+  ]
+ },
+ {
+  "id": "hu-day",
+  "title": "A napom",
+  "level": "A1",
+  "text": "Dániel vagyok, és egy kis lakásban lakom. Minden reggel hét órakor kelek fel. Először teát iszom, és vajas kenyeret eszem. Aztán busszal megyek dolgozni. Egy könyvesboltban dolgozom a város központjában. Szeretem a munkámat, mert imádom a könyveket. Délben levest eszem egy kis étteremben. Délután sok vásárló jön a boltba. Sokat beszélgetek velük a könyvekről. Este hazamegyek, és vacsorát főzök. Vacsora után felhívom az anyámat, vagy könyvet olvasok. Tizenegy órakor fekszem le. Vasárnap nem dolgozom, és tovább alszom.",
+  "gloss": {
+   "lakásban": "flat",
+   "kelek": "get up",
+   "reggel": "morning",
+   "teát": "tea",
+   "vajas": "buttered",
+   "munkámat": "work",
+   "busszal": "bus",
+   "könyvesboltban": "bookshop",
+   "város": "city",
+   "könyveket": "books",
+   "levest": "soup",
+   "étteremben": "restaurant",
+   "délután": "afternoon",
+   "vásárló": "customers",
+   "este": "evening",
+   "főzök": "cook",
+   "vacsorát": "dinner",
+   "felhívom": "call",
+   "anyámat": "mother",
+   "fekszem": "I lie down (fekszem le: I go to bed)",
+   "alszom": "sleep",
+   "tovább": "longer"
+  },
+  "questions": [
+   {
+    "q": "Hol dolgozik Dániel?",
+    "a": [
+     "könyvesbolt"
+    ]
+   },
+   {
+    "q": "Hány órakor kel fel Dániel?",
+    "a": [
+     "hét"
+    ]
+   },
+   {
+    "q": "Mit eszik Dániel délben?",
+    "a": [
+     "leves"
+    ]
+   }
+  ],
+  "notice": "The verb ending shows who acts, so \"én\" (I) is left out: \"dolgozom\" (I work), \"megyek\" (I go), \"olvasok\" (I read). \"In\" something is the ending -ban or -ben: \"lakásban\", \"étteremben\".",
+  "back": [
+   [
+    "Aztán busszal megyek dolgozni.",
+    "Then I go to work by bus."
+   ],
+   [
+    "Este hazamegyek, és vacsorát főzök.",
+    "In the evening I go home and cook dinner."
+   ]
+  ]
+ },
+ {
+  "id": "hu-sea",
+  "title": "Hétvége a tengernél",
+  "level": "A2",
+  "text": "Múlt hétvégén a bátyámmal a tengerhez utaztunk. Kora reggel szálltunk fel a vonatra, és az út három óráig tartott. Az idő gyönyörű volt: az ég kék volt, a víz pedig meleg. Sokáig úsztunk, aztán a strandon feküdtünk. Délben friss halat ettünk egy kis étteremben a kikötő közelében. A pincér kedves volt, és hideg vizet hozott nekünk. Délután az óvárosban sétáltunk, és képeslapokat vettünk. A bátyám sok fényképet készített a csónakokról. Este nagyon fáradtak voltunk, de nem akartunk hazamenni. Lekéstük az utolsó vonatot, és egy órát kellett várnunk. Ez volt a nyár legszebb napja. Legközelebb egy egész hétig szeretnénk maradni.",
+  "gloss": {
+   "hétvégén": "weekend",
+   "bátyámmal": "with my older brother",
+   "tengerhez": "sea",
+   "vonatra": "train",
+   "út": "journey",
+   "óráig": "hours",
+   "idő": "weather",
+   "ég": "sky",
+   "kék": "blue",
+   "víz": "water",
+   "meleg": "warm",
+   "úsztunk": "swam",
+   "strandon": "beach",
+   "pincér": "waiter",
+   "kikötő": "harbour",
+   "sétáltunk": "walked",
+   "képeslapokat": "postcards",
+   "fényképet": "photos",
+   "csónakokról": "boats",
+   "fáradtak": "tired",
+   "lekéstük": "missed",
+   "várnunk": "wait",
+   "hétig": "week",
+   "nyár": "summer"
+  },
+  "questions": [
+   {
+    "q": "Mivel utaztak a tengerhez?",
+    "a": [
+     "vonat"
+    ]
+   },
+   {
+    "q": "Hány óráig tartott az út?",
+    "a": [
+     "három"
+    ]
+   },
+   {
+    "q": "Mit vettek az óvárosban?",
+    "a": [
+     "képeslap"
+    ]
+   }
+  ],
+  "notice": "The past tense has -t- before the personal ending; \"we\" ends in -tunk or -tünk: \"utaztunk\" (we travelled), \"úsztunk\" (we swam), \"ettünk\" (we ate).",
+  "back": [
+   [
+    "Délután az óvárosban sétáltunk, és képeslapokat vettünk.",
+    "In the afternoon we walked through the old town and bought postcards."
+   ],
+   [
+    "Lekéstük az utolsó vonatot, és egy órát kellett várnunk.",
+    "We missed the last train and had to wait an hour."
+   ]
+  ]
+ },
+ {
+  "id": "hu-neighbour",
+  "title": "Az új szomszéd",
+  "level": "A2",
+  "text": "Múlt hónapban új szomszéd költözött a házunkba. Szofiának hívják, és egy másik városból jött. Eleinte senkit sem ismert itt. Egy este bekopogott az ajtónkon, mert a konyhájában elromlott a lámpa. Az apám felment, és tíz perc alatt megjavította. Szofia nagyon hálás volt, és másnap süteményt hozott nekünk. A sütemény finom volt, és az öcsém három szeletet evett meg. Most Szofia gyakran teázik az anyámmal. Egy kórházban dolgozik, és érdekes történeteket mesél. Tegnap segített nekem a házi feladatban. Vasárnap megmutattuk neki a parkot és a régi piacot. Azt mondja, hogy már otthon érzi magát. Azt hiszem, új barátot találtunk.",
+  "gloss": {
+   "szomszéd": "neighbour",
+   "költözött": "moved",
+   "hónapban": "month",
+   "városból": "city",
+   "senkit": "nobody",
+   "bekopogott": "knocked",
+   "ajtónkon": "door",
+   "konyhájában": "kitchen",
+   "lámpa": "lamp",
+   "elromlott": "broke down",
+   "megjavította": "repaired",
+   "perc": "minutes",
+   "hálás": "grateful",
+   "süteményt": "cake",
+   "finom": "delicious",
+   "szeletet": "pieces",
+   "kórházban": "hospital",
+   "történeteket": "stories",
+   "feladatban": "task (házi feladat: homework)",
+   "parkot": "park",
+   "már": "already",
+   "találtunk": "found"
+  },
+  "questions": [
+   {
+    "q": "Mi romlott el Szofia konyhájában?",
+    "a": [
+     "lámp"
+    ]
+   },
+   {
+    "q": "Mit hozott Szofia másnap?",
+    "a": [
+     "sütemény"
+    ]
+   },
+   {
+    "q": "Hol dolgozik Szofia?",
+    "a": [
+     "kórház"
+    ]
+   }
+  ],
+  "notice": "Small words such as \"be-\", \"fel-\" and \"meg-\" at the front of a verb show direction or completion: \"bekopogott\" (knocked on), \"felment\" (went up), \"megjavította\" (repaired it).",
+  "back": [
+   [
+    "Az apám felment, és tíz perc alatt megjavította.",
+    "My father went upstairs and repaired it in ten minutes."
+   ],
+   [
+    "Egy kórházban dolgozik, és érdekes történeteket mesél.",
+    "She works in a hospital and tells interesting stories."
+   ]
+  ]
+ },
+ {
+  "id": "hu-cafe",
+  "title": "A kávézóban",
+  "level": "A1",
+  "roles": [
+   "Pincér",
+   "Vendég"
+  ],
+  "lines": [
+   [
+    0,
+    "Jó reggelt! Mit hozhatok?"
+   ],
+   [
+    1,
+    "Jó reggelt. Egy tejes kávét kérek."
+   ],
+   [
+    0,
+    "Enni is kér valamit?"
+   ],
+   [
+    1,
+    "Igen, milyen sütemények vannak ma?"
+   ],
+   [
+    0,
+    "Van almás pite és csokoládétorta."
+   ],
+   [
+    1,
+    "Akkor egy szelet almás pitét kérek."
+   ],
+   [
+    0,
+    "Tessék. Még valamit?"
+   ],
+   [
+    1,
+    "Nem, köszönöm. Mennyit fizetek?"
+   ],
+   [
+    0,
+    "Ezerötszáz forint lesz."
+   ],
+   [
+    1,
+    "Tessék. Köszönöm, viszontlátásra!"
+   ]
+  ],
+  "gloss": {
+   "kávét": "coffee",
+   "tejes": "with milk",
+   "valamit": "something",
+   "enni": "eat",
+   "sütemények": "cakes",
+   "ma": "today",
+   "almás": "apple (as in almás pite: apple pie)",
+   "csokoládétorta": "chocolate cake",
+   "szelet": "piece",
+   "még": "else",
+   "mennyit": "much",
+   "forint": "forints (Hungarian money)"
+  },
+  "questions": [
+   {
+    "q": "Milyen kávét kér a vendég?",
+    "a": [
+     "tejes"
+    ]
+   },
+   {
+    "q": "Milyen süteményt választ a vendég?",
+    "a": [
+     "almás"
+    ]
+   }
+  ],
+  "notice": "\"Kérek\" (I ask for) is how you order, and the thing you want takes -t: \"Egy tejes kávét kérek\", \"egy szelet almás pitét kérek\"."
+ },
+ {
+  "id": "hu-hotel",
+  "title": "A szállodában",
+  "level": "A2",
+  "roles": [
+   "Recepciós",
+   "Vendég"
+  ],
+  "lines": [
+   [
+    0,
+    "Jó estét. Miben segíthetek?"
+   ],
+   [
+    1,
+    "Jó estét. Két éjszakára foglaltam szobát."
+   ],
+   [
+    0,
+    "Mi a neve, kérem?"
+   ],
+   [
+    1,
+    "Anna Berg vagyok. Itt az útlevelem."
+   ],
+   [
+    0,
+    "Köszönöm. A szobája a harmadik emeleten van."
+   ],
+   [
+    1,
+    "A reggeli benne van az árban?"
+   ],
+   [
+    0,
+    "Igen, a reggeli héttől tízig van."
+   ],
+   [
+    1,
+    "Nagyon jó. Van lift? Nehéz a bőröndöm."
+   ],
+   [
+    0,
+    "Igen, a lift a lépcső mellett van. Itt a kulcsa."
+   ],
+   [
+    1,
+    "Köszönöm szépen. Szép estét!"
+   ]
+  ],
+  "gloss": {
+   "segíthetek": "help",
+   "foglaltam": "I booked",
+   "éjszakára": "nights",
+   "neve": "name",
+   "útlevelem": "passport",
+   "szobát": "room",
+   "emeleten": "floor",
+   "reggeli": "breakfast",
+   "benne": "in it (benne van: is included)",
+   "árban": "price",
+   "lift": "lift",
+   "bőröndöm": "suitcase",
+   "nehéz": "heavy",
+   "lépcső": "stairs",
+   "kulcsa": "key",
+   "estét": "evening"
+  },
+  "questions": [
+   {
+    "q": "Hány éjszakára foglalt szobát a vendég?",
+    "a": [
+     "két"
+    ]
+   },
+   {
+    "q": "Hányadik emeleten van a szoba?",
+    "a": [
+     "harmadik"
+    ]
+   }
+  ],
+  "notice": "Hungarian shows \"my\" and \"your\" with an ending on the noun: \"útlevelem\" (my passport), \"bőröndöm\" (my suitcase), \"szobája\" (your room, said politely), \"kulcsa\" (your key)."
+ }
+]

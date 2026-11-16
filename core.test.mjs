@@ -246,7 +246,9 @@ console.log('core.test: ok');
 {
   const files = readdirSync(new URL('./content/', import.meta.url)).filter(f => f.endsWith('.json') && f !== 'first.json'), bad = [];
   for (const f of files) bad.push(...contentProblems('content/' + f).map(p => f + ' ' + p));
+  const sw = readFileSync(new URL('./sw.js', import.meta.url), 'utf8');
   for (const code of Object.keys(c.LANGS)) {
+    if (!sw.includes(`'content/${code}.json'`)) bad.push(`sw.js does not keep content/${code}.json for offline use`);
     let list = [];
     try { list = JSON.parse(readFileSync(new URL(`./content/${code}.json`, import.meta.url), 'utf8')); } catch { /* reported below */ }
     const dialogues = list.filter(x => x.lines).length;

@@ -1,0 +1,411 @@
+[
+ {
+  "id": "ro-market",
+  "title": "La piață",
+  "level": "A1",
+  "text": "În fiecare sâmbătă, Maria merge la piață. Piața este în centrul orașului. Soarele strălucește și acolo sunt mulți oameni. Mariei îi place piața, pentru că fructele sunt proaspete și ieftine. Mai întâi cumpără mere și portocale. Apoi cumpără pâine, brânză și puțin pește. Omul de la taraba cu pește este foarte amabil. El întreabă mereu de familia ei. La piață, Maria se întâlnește des cu prietena ei Elena. Astăzi beau împreună o cafea și vorbesc mult. La prânz, Maria merge acasă cu două pungi grele. Este obosită, dar fericită.",
+  "gloss": {
+   "piață": "market",
+   "centrul": "centre",
+   "orașului": "town",
+   "soarele": "sun",
+   "oameni": "people",
+   "fructele": "fruit",
+   "proaspete": "fresh",
+   "ieftine": "cheap",
+   "mere": "apples",
+   "portocale": "oranges",
+   "pâine": "bread",
+   "brânză": "cheese",
+   "pește": "fish",
+   "amabil": "friendly",
+   "familia": "family",
+   "prietena": "friend",
+   "împreună": "together",
+   "grele": "heavy",
+   "pungi": "bags",
+   "obosită": "tired",
+   "fericită": "happy"
+  },
+  "questions": [
+   {
+    "q": "Unde este piața?",
+    "a": [
+     "centru"
+    ]
+   },
+   {
+    "q": "Ce cumpără Maria mai întâi?",
+    "a": [
+     "mere"
+    ]
+   },
+   {
+    "q": "Cu cine se întâlnește Maria la piață?",
+    "a": [
+     "Elena"
+    ]
+   }
+  ],
+  "notice": "Romanian puts \"the\" on the end of the noun: \"piață\" is a market and \"piața\" the market; \"soare\" becomes \"soarele\" and \"fructe\" becomes \"fructele\".",
+  "back": [
+   [
+    "Mai întâi cumpără mere și portocale.",
+    "First she buys apples and oranges."
+   ],
+   [
+    "El întreabă mereu de familia ei.",
+    "He always asks about her family."
+   ]
+  ]
+ },
+ {
+  "id": "ro-day",
+  "title": "Ziua mea",
+  "level": "A1",
+  "text": "Mă numesc Daniel și locuiesc într-un apartament mic. În fiecare dimineață mă trezesc la ora șapte. Mai întâi beau ceai și mănânc pâine cu unt. Apoi merg la serviciu cu autobuzul. Lucrez într-o librărie din centrul orașului. Îmi place munca mea, pentru că iubesc cărțile. La prânz mănânc o supă într-un restaurant mic. După-amiaza vin mulți clienți în librărie. Seara mă întorc acasă și gătesc cina. După cină o sun pe mama sau citesc o carte. Mă culc la ora unsprezece. Duminica nu lucrez și dorm mai mult.",
+  "gloss": {
+   "apartament": "flat",
+   "trezesc": "(mă trezesc: I wake up)",
+   "dimineață": "morning",
+   "ceai": "tea",
+   "unt": "butter",
+   "serviciu": "work",
+   "autobuzul": "bus",
+   "librărie": "bookshop",
+   "orașului": "city",
+   "cărțile": "books",
+   "supă": "soup",
+   "restaurant": "restaurant",
+   "amiaza": "(după-amiaza: in the afternoon)",
+   "clienți": "customers",
+   "seara": "evening",
+   "gătesc": "cook",
+   "cina": "dinner",
+   "sun": "call",
+   "mama": "mother",
+   "culc": "(mă culc: I go to bed)",
+   "dorm": "sleep",
+   "mult": "much (mai mult: more, longer)"
+  },
+  "questions": [
+   {
+    "q": "Unde lucrează Daniel?",
+    "a": [
+     "librări"
+    ]
+   },
+   {
+    "q": "Cu ce merge Daniel la serviciu?",
+    "a": [
+     "autobuz"
+    ]
+   },
+   {
+    "q": "Ce mănâncă Daniel la prânz?",
+    "a": [
+     "supă"
+    ]
+   }
+  ],
+  "notice": "The verb ending shows who acts, so \"eu\" (I) is usually left out: \"Lucrez într-o librărie\", \"Seara mă întorc acasă\".",
+  "back": [
+   [
+    "Apoi merg la serviciu cu autobuzul.",
+    "Then I go to work by bus."
+   ],
+   [
+    "Seara mă întorc acasă și gătesc cina.",
+    "In the evening I go home and cook dinner."
+   ]
+  ]
+ },
+ {
+  "id": "ro-sea",
+  "title": "Un weekend la mare",
+  "level": "A2",
+  "text": "Weekendul trecut am mers cu fratele meu la mare. Am luat trenul dimineața devreme, iar călătoria a durat trei ore. Vremea a fost frumoasă: cerul era albastru și apa era caldă. Am înotat mult și apoi am stat întinși pe plajă. La prânz am mâncat pește proaspăt într-un restaurant mic lângă port. Chelnerul a fost amabil și ne-a adus apă rece. După-amiaza ne-am plimbat prin orașul vechi și am cumpărat cărți poștale. Fratele meu a făcut multe fotografii cu bărcile. Seara eram foarte obosiți, dar nu voiam să mergem acasă. Am pierdut ultimul tren și a trebuit să așteptăm o oră. A fost cea mai frumoasă zi a verii. Data viitoare vrem să rămânem o săptămână întreagă.",
+  "gloss": {
+   "weekendul": "weekend",
+   "fratele": "brother",
+   "mare": "sea",
+   "trenul": "train",
+   "călătoria": "journey",
+   "ore": "hours",
+   "vremea": "weather",
+   "cerul": "sky",
+   "albastru": "blue",
+   "apa": "water",
+   "caldă": "warm",
+   "înotat": "swam",
+   "plajă": "beach",
+   "chelnerul": "waiter",
+   "port": "harbour",
+   "plimbat": "walked",
+   "poștale": "(cărți poștale: postcards)",
+   "fotografii": "photos",
+   "bărcile": "boats",
+   "obosiți": "tired",
+   "pierdut": "missed",
+   "așteptăm": "wait",
+   "săptămână": "week",
+   "verii": "summer"
+  },
+  "questions": [
+   {
+    "q": "Cu ce au mers la mare?",
+    "a": [
+     "tren"
+    ]
+   },
+   {
+    "q": "Câte ore a durat călătoria?",
+    "a": [
+     "trei"
+    ]
+   },
+   {
+    "q": "Ce au cumpărat în orașul vechi?",
+    "a": [
+     "poștale"
+    ]
+   }
+  ],
+  "notice": "The usual past is made with \"am\" or \"a\" and a participle: \"am mers\" (we went), \"am înotat\" (we swam), \"a durat\" (it lasted). \"Era\" and \"eram\" describe how things were.",
+  "back": [
+   [
+    "După-amiaza ne-am plimbat prin orașul vechi și am cumpărat cărți poștale.",
+    "In the afternoon we walked through the old town and bought postcards."
+   ],
+   [
+    "Am pierdut ultimul tren și a trebuit să așteptăm o oră.",
+    "We missed the last train and had to wait an hour."
+   ]
+  ]
+ },
+ {
+  "id": "ro-neighbour",
+  "title": "Vecina cea nouă",
+  "level": "A2",
+  "text": "Luna trecută s-a mutat în blocul nostru o vecină nouă. O cheamă Sofia și vine din alt oraș. La început nu cunoștea pe nimeni aici. Într-o seară a bătut la ușa noastră, pentru că lampa din bucătăria ei era stricată. Tatăl meu a urcat și a reparat-o în zece minute. Sofia a fost foarte recunoscătoare și a doua zi ne-a adus o prăjitură. Prăjitura a fost delicioasă, iar fratele meu mai mic a mâncat trei bucăți. Acum Sofia bea des ceai cu mama mea. Lucrează la un spital și povestește lucruri interesante. Ieri m-a ajutat la teme. Duminică i-am arătat parcul și piața veche. Ea spune că se simte deja ca acasă. Cred că am găsit o prietenă nouă.",
+  "gloss": {
+   "vecină": "neighbour",
+   "mutat": "moved",
+   "luna": "month",
+   "oraș": "city",
+   "nimeni": "anybody",
+   "bătut": "knocked",
+   "ușa": "door",
+   "bucătăria": "kitchen",
+   "lampa": "lamp",
+   "stricată": "broken",
+   "reparat": "repaired",
+   "minute": "minutes",
+   "recunoscătoare": "grateful",
+   "prăjitură": "cake",
+   "delicioasă": "delicious",
+   "bucăți": "pieces",
+   "spital": "hospital",
+   "lucruri": "things",
+   "teme": "homework",
+   "parcul": "park",
+   "deja": "already",
+   "găsit": "found"
+  },
+  "questions": [
+   {
+    "q": "Ce era stricat în bucătăria Sofiei?",
+    "a": [
+     "lamp"
+    ]
+   },
+   {
+    "q": "Ce a adus Sofia a doua zi?",
+    "a": [
+     "prăjitur"
+    ]
+   },
+   {
+    "q": "Unde lucrează Sofia?",
+    "a": [
+     "spital"
+    ]
+   }
+  ],
+  "notice": "Short pronouns join the verb with a hyphen: \"ne-a adus\" (she brought us), \"m-a ajutat\" (she helped me), \"i-am arătat\" (we showed her).",
+  "back": [
+   [
+    "Tatăl meu a urcat și a reparat-o în zece minute.",
+    "My father went upstairs and repaired it in ten minutes."
+   ],
+   [
+    "Lucrează la un spital și povestește lucruri interesante.",
+    "She works in a hospital and tells interesting stories."
+   ]
+  ]
+ },
+ {
+  "id": "ro-cafe",
+  "title": "La cafenea",
+  "level": "A1",
+  "roles": [
+   "Chelnerul",
+   "Clientul"
+  ],
+  "lines": [
+   [
+    0,
+    "Bună dimineața! Ce doriți?"
+   ],
+   [
+    1,
+    "Bună dimineața. O cafea cu lapte, vă rog."
+   ],
+   [
+    0,
+    "Doriți și ceva de mâncare?"
+   ],
+   [
+    1,
+    "Da, ce prăjituri aveți astăzi?"
+   ],
+   [
+    0,
+    "Avem plăcintă cu mere și tort de ciocolată."
+   ],
+   [
+    1,
+    "Atunci iau o felie de plăcintă cu mere."
+   ],
+   [
+    0,
+    "Poftiți. Mai doriți ceva?"
+   ],
+   [
+    1,
+    "Nu, mulțumesc. Cât costă?"
+   ],
+   [
+    0,
+    "Douăzeci de lei, vă rog."
+   ],
+   [
+    1,
+    "Poftiți. Mulțumesc și la revedere!"
+   ]
+  ],
+  "gloss": {
+   "cafea": "coffee",
+   "lapte": "milk",
+   "ceva": "something",
+   "mâncare": "eat",
+   "prăjituri": "cakes",
+   "astăzi": "today",
+   "mere": "apples (plăcintă cu mere: apple pie)",
+   "ciocolată": "chocolate",
+   "felie": "piece",
+   "mai": "more (mai doriți ceva: anything else)",
+   "cât": "much",
+   "lei": "lei (Romanian money)"
+  },
+  "questions": [
+   {
+    "q": "Cu ce bea clientul cafeaua?",
+    "a": [
+     "lapte"
+    ]
+   },
+   {
+    "q": "Ce prăjitură alege clientul?",
+    "a": [
+     "plăcint"
+    ]
+   }
+  ],
+  "notice": "The polite \"you\" is the plural: \"Ce doriți?\", \"aveți\", and \"vă rog\" (please, word for word \"I ask you\")."
+ },
+ {
+  "id": "ro-hotel",
+  "title": "La hotel",
+  "level": "A2",
+  "roles": [
+   "Recepționera",
+   "Clienta"
+  ],
+  "lines": [
+   [
+    0,
+    "Bună seara. Cu ce vă pot ajuta?"
+   ],
+   [
+    1,
+    "Bună seara. Am o rezervare pentru două nopți."
+   ],
+   [
+    0,
+    "Cum vă numiți, vă rog?"
+   ],
+   [
+    1,
+    "Mă numesc Anna Berg. Poftiți pașaportul meu."
+   ],
+   [
+    0,
+    "Mulțumesc. Camera dumneavoastră este la etajul trei."
+   ],
+   [
+    1,
+    "Micul dejun este inclus în preț?"
+   ],
+   [
+    0,
+    "Da, micul dejun este de la șapte la zece."
+   ],
+   [
+    1,
+    "Foarte bine. Aveți lift? Valiza mea este grea."
+   ],
+   [
+    0,
+    "Da, liftul este lângă scări. Poftiți cheia."
+   ],
+   [
+    1,
+    "Mulțumesc mult. O seară bună!"
+   ]
+  ],
+  "gloss": {
+   "ajuta": "help",
+   "rezervare": "reservation",
+   "nopți": "nights",
+   "numesc": "(mă numesc: my name is)",
+   "pașaportul": "passport",
+   "camera": "room",
+   "etajul": "floor",
+   "dejun": "(micul dejun: breakfast)",
+   "inclus": "included",
+   "preț": "price",
+   "lift": "lift",
+   "valiza": "suitcase",
+   "grea": "heavy",
+   "scări": "stairs",
+   "cheia": "key",
+   "seara": "evening"
+  },
+  "questions": [
+   {
+    "q": "Pentru câte nopți are clienta rezervare?",
+    "a": [
+     "două"
+    ]
+   },
+   {
+    "q": "La ce etaj este camera?",
+    "a": [
+     "trei"
+    ]
+   }
+  ],
+  "notice": "\"Dumneavoastră\" is the polite word for \"you\" and \"your\": \"Camera dumneavoastră este la etajul trei\". With a friend it would be \"camera ta\"."
+ }
+]
