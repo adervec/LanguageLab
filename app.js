@@ -26,7 +26,7 @@ const stories = () => S.stories.filter(s => s.lang === S.lang && !s.phrases);
 const lessons = () => S.stories.filter(s => s.lang === S.lang && s.phrases).sort((a, b) => a.id.localeCompare(b.id));
 let FIRST = null; // content/first.json: the phrases of the first lessons, sounds to notice, script charts
 // A lesson's title and a chart's name are interface strings.
-// i18n-keys: Hello and goodbye | Getting to know you | Numbers and prices | Eating and drinking | Getting around | People and family | Every day | Likes and wishes | Things and places | Time and weather | Hiragana | Katakana | Consonants | Vowels | Alphabet
+// i18n-keys: Hello and goodbye | Getting to know you | Numbers and prices | Eating and drinking | Getting around | People and family | Every day | Likes and wishes | Things and places | Time and weather | At the market | At home | Travelling | Yesterday | Plans | Feeling well and unwell | Describing things | Work and study | On the phone | Help and good wishes | Hiragana | Katakana | Consonants | Vowels | Alphabet
 const ttl = s => s.phrases || s.mode === 'first' ? t(s.title) : s.title;
 const story = id => S.stories.find(s => s.id === id);
 const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };

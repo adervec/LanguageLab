@@ -61,7 +61,9 @@ problem; keep fixing until it prints `ok`.
 ## First steps (`first.json`)
 
 One file for every language: `meanings` (the English meanings), `lessons` (the titles, eight phrases each), and per
-language code in `langs` the phrases in the same order. Lessons one to five are set phrases; six to ten are first
+language code in `langs` the phrases in the same order. Lessons eleven to twenty are everyday situations (a market, home, travel, yesterday, plans, health, describing, work, the
+phone, help): the past is told with "we", and a feeling without an adjective for "I" ("I do not feel well"), so they too work
+for any speaker. Lessons one to five are set phrases; six to ten are first
 sentences, written so that they do not depend on who is speaking (no "I am tired", no past tense in the first person).
 Where a language cannot avoid that, give the feminine with a note, as in Hindi. A meaning with `{language}` in it names
 the language being learned. Keep each phrase short (80 characters at most), natural and

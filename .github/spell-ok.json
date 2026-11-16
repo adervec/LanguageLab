@@ -60,6 +60,7 @@
  "hr": [
   "Airesu",
   "Anna",
+  "Annu",
   "Bruno",
   "Buenos",
   "Emilio",
@@ -86,6 +87,7 @@
  "ko": [
   "그다음에는요",
   "그럼요",
+  "기꺼이요",
   "김민수입니다",
   "꿀차를",
   "단팥빵",
@@ -115,7 +117,8 @@
   "Берг"
  ],
  "cs": [
-  "Sofiině"
+  "Sofiině",
+  "zač"
  ],
  "sk": [
   "Berg",
@@ -123,6 +126,7 @@
  ],
  "sl": [
   "Anna",
+  "Anno",
   "Berg",
   "Eleno",
   "Nasvidenje",
@@ -130,6 +134,7 @@
  ],
  "sr": [
   "Anna",
+  "Annu",
   "Berg",
   "Sofijinoj",
   "pokucala",
@@ -144,21 +149,28 @@
   "ѝ"
  ],
  "mk": [
+  "Лампата",
   "лампата",
-  "резервацијата"
+  "резервацијата",
+  "сè"
  ],
  "be": [
   "Алену",
+  "Алё",
   "Берг",
-  "павольней"
+  "павольней",
+  "ператэлефаную"
  ],
  "hu": [
   "Elenával",
   "Szofia",
   "Szofiának",
+  "húgom",
   "könyvet",
   "nekem",
-  "nekünk"
+  "nekünk",
+  "rendőrséget",
+  "szabadságon"
  ],
  "el": [
   "Μπεργκ"
@@ -179,6 +191,7 @@
  ],
  "nb": [
   "Elena",
+  "Naboene",
   "naboen",
   "noe"
  ],
@@ -191,6 +204,7 @@
   "Maria",
   "Sofia",
   "hóa",
+  "hỏa",
   "khóa",
   "khỏe",
   "tòa"
@@ -203,7 +217,8 @@
   "Maria",
   "fiŝbudo",
   "pomkuko",
-  "pomkukon"
+  "pomkukon",
+  "retelefonos"
  ],
  "fa": [
   "النا",

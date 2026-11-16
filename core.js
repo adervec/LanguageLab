@@ -325,7 +325,7 @@ export function cleanStory(s, lang) {
     ...(phrases ? { phrases } : dialogue ? { roles, lines } : cues.length ? { cues } : {}), ...(questions.length ? { questions } : {}), ...(notice ? { notice } : {}), ...(back.length ? { back } : {}) };
 }
 
-// ---- first steps: five lessons of eight everyday phrases, from content/first.json ----
+// ---- first steps: twenty lessons of eight everyday phrases, from content/first.json ----
 // A phrase there is a string, or [phrase, its own meaning] where the shared English meaning does not fit that
 // language. The meaning shown is the same phrase in the reader's own language where the file has it, else the English.
 export function lessonStories(first, code, ui = 'en') {

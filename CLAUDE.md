@@ -31,7 +31,7 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   language is one `LANGS` entry plus `content/<code>.json` (the test requires 16 stories and 8 dialogues, 8 and 4 for `small`,
   4 and 2 for `mini`) and its file in the `sw.js` offline list (the test checks that too). After changing content run
   `node .github/spell.mjs` (see its first lines): a word no dictionary knows fails until it is read and accepted.
-- **First steps** (from nothing): `content/first.json` holds eighty phrases in ten lessons for 44 languages
+- **First steps** (from nothing): `content/first.json` holds 160 phrases in twenty lessons for 44 languages
   (`langs`: a phrase is a string, or `[phrase, its own meaning]` where the shared English `meanings` do not fit), a meaning with `{language}` in it names the language being learned and is always shown in English), a reading in
   Latin letters for each phrase in a script that is not Latin (`readings`), script charts (`scripts`: `"letter=reading"` pairs)
   and sounds to notice (`sounds`). `lessonStories()` turns a language's phrases into ten stories with `phrases: true`, no

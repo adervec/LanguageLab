@@ -280,11 +280,11 @@ console.log('core.test: ok');
   console.log(`content: ok (${files.length} files)`);
 }
 
-// first steps (content/first.json): forty phrases a language, each one scoreable; a reading where the script is not Latin; charts and sounds well formed
+// first steps (content/first.json): 160 phrases a language, each one scoreable; a reading where the script is not Latin; charts and sounds well formed
 {
   const first = JSON.parse(readFileSync(new URL('./content/first.json', import.meta.url), 'utf8')), bad = [];
   const latin = s => /^[\p{Script=Latin}\p{Script=Common}\p{Script=Inherited}]+$/u.test(s);
-  assert.deepEqual([first.meanings.length, first.lessons.length], [80, 10]);
+  assert.deepEqual([first.meanings.length, first.lessons.length], [160, 20]);
   for (const [code, list] of Object.entries(first.langs)) {
     if (!c.isLangCode(code) || list.length !== first.meanings.length) bad.push(`${code}: needs ${first.meanings.length} phrases (has ${list.length})`);
     const seen = new Set(), read = first.readings[code];
@@ -313,7 +313,7 @@ console.log('core.test: ok');
 
   // the lessons built from it: the meaning in the reader's own language where the file has it, a reading, no level
   const ru = c.lessonStories(first, 'ru', 'fr').map(s => c.cleanStory(s, 'ru'));
-  assert.deepEqual([ru.length, ru[0].id, ru[9].id, ru[0].title, ru[0].level, ru[0].phrases, ru[0].back.length, ru[0].source], [10, 'ru-first-01', 'ru-first-10', 'Hello and goodbye', '', true, 8, 'first']);
+  assert.deepEqual([ru.length, ru[0].id, ru[19].id, ru[0].title, ru[0].level, ru[0].phrases, ru[0].back.length, ru[0].source], [20, 'ru-first-01', 'ru-first-20', 'Hello and goodbye', '', true, 8, 'first']);
   // a phrase that names the language keeps its English meaning, with the name of the language being learned; English can be learned too
   assert.deepEqual([ru[6].back[7][0], ru[6].back[7][1], c.lessonStories(first, 'en', 'es')[0].back[0][1], c.lessonStories(first, 'en', 'es')[6].back[7][1]], ['Я учу русский язык.', 'I am learning Russian.', 'Hola.', 'I am learning English.']);
   assert.deepEqual(ru[0].back[0], ['Здравствуйте.', 'Bonjour.', 'Zdravstvuyte.']);
@@ -323,7 +323,7 @@ console.log('core.test: ok');
   assert.deepEqual([c.storySentences(ru[0]).length, c.lessonStories(first, 'xx').length, c.lessonStories(null, 'ru').length], [8, 0, 0]);
   // lessons have no level, so they never count towards what the numbers say you can read
   const S = c.cleanState({ app: 'languagelab', v: 1, stories: ru, sittings: [{ id: 'f1', lang: 'ru', mode: 'first', level: '' }] });
-  assert.deepEqual([S.stories.length, S.stories[0].phrases, S.stories[0].back[0][2], S.sittings[0].mode, c.abilities(S, 'ru')], [10, true, 'Zdravstvuyte.', 'first', []]);
+  assert.deepEqual([S.stories.length, S.stories[0].phrases, S.stories[0].back[0][2], S.sittings[0].mode, c.abilities(S, 'ru')], [20, true, 'Zdravstvuyte.', 'first', []]);
   // letters to tap where the keyboard lacks the script; only the accented ones for a Latin script
   assert.deepEqual(c.lessonKeys('Да. Нет.', 'ru'), ['а', 'д', 'е', 'н', 'т', ' ', '⌫']);
   assert.deepEqual(c.lessonKeys('Où est la gare ? Ça va.', 'fr'), ['ç', 'ù']);

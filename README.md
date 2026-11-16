@@ -15,7 +15,7 @@ LanguageLab is built to be the opposite on each count.
 
 | | |
 |---|---|
-| **First steps** | From nothing, in 44 languages: ten short lessons, from everyday phrases to first sentences about family, the day, likes, places and the weather. You hear each phrase with its meaning (and a reading in Latin letters where the script is new), type it from the ear with the lesson's letters there to tap, write it back from its meaning, and say it. The phrases then join your review. For 14 scripts there is a chart of the letters to hear and practise; for nineteen languages a list of the sounds that surprise. |
+| **First steps** | From nothing, in 44 languages: twenty short lessons, from everyday phrases to first sentences about family, the day, likes, places and the weather. You hear each phrase with its meaning (and a reading in Latin letters where the script is new), type it from the ear with the lesson's letters there to tap, write it back from its meaning, and say it. The phrases then join your review. For 14 scripts there is a chart of the letters to hear and practise; for nineteen languages a list of the sounds that surprise. |
 | **A sitting** (about twenty minutes) | Hear a story with the text hidden. Answer three questions from what you heard. Read it and tap every word you do not know. Take dictation at natural speed. Write a sentence back from its meaning. Say sentences aloud. Retell it in your own words. |
 | **Speak** | Dialogues you play a part in: your lines read aloud, then said from memory, scored by how much a speech recogniser understood. You can also record yourself and hear your take after the model's. |
 | **Conversation** | Talk with an AI partner, by voice or typing. It answers at your level, speaks its reply, and corrects your last message as you go. With the browser's own small model the corrections are offered for you to keep or not, because it is sometimes wrong; an AI agent of your own corrects properly. |
@@ -39,8 +39,8 @@ snapshot). LanguageLab is ahead in some rows and behind in others.
 | Your own material | No | No | No | Any text; any recording with its subtitles |
 | Feedback on free writing | Explanations of an answer | No | No | An AI review with a grade, corrected forms and the rule; your mistakes come back as review cards |
 | Measure of progress | XP, streak, leagues, a course score | Units completed | Points and a leaderboard | The level your own numbers support, for reading, for listening and for speaking |
-| Languages with ready lessons | 40 or more | 25 | 41 | 44, each with first lessons (ten lessons, eighty phrases) and graded stories and dialogues: 8 with a full set (A1 to B2), 4 with half a set, 32 with a first handful of six texts (A1 and A2); any other language with your own texts or AI-written stories |
-| Course for complete beginners | Yes, from the alphabet | Yes | Yes | A short one: ten lessons of eight phrases in each of 44 languages, charts of the letters for 14 scripts, then graded stories from A1 in all 44. Much shorter than their courses; after it the material is your own texts and the stories an AI agent writes to your level |
+| Languages with ready lessons | 40 or more | 25 | 41 | 44, each with first lessons (twenty lessons, 160 phrases) and graded stories and dialogues: 8 with a full set (A1 to B2), 4 with half a set, 32 with a first handful of six texts (A1 and A2); any other language with your own texts or AI-written stories |
+| Course for complete beginners | Yes, from the alphabet | Yes | Yes | A short one: twenty lessons of eight phrases in each of 44 languages, charts of the letters for 14 scripts, then graded stories from A1 in all 44. Much shorter than their courses; after it the material is your own texts and the stories an AI agent writes to your level |
 | Speech scoring | Its own engine | TruAccent | Speech recognition | The browser's speech recognition, word by word: understood at its first guess, only its second guess (nearly right) or missed, with how sure it was; it listens through your pauses. A speaking level from those numbers, and a recording of yourself to compare by ear. It judges whole words, not each sound |
 | Human teachers | No | Live coaching (premium) | No | None of its own, but it works with any teacher you have: a teacher hands out a text as a link that each learner adds to their library, a link carries the learner's writing back to them, and another brings their corrections into the learner's review. Nobody needs more than a browser |
 | Content checked by people | Yes | Yes | Yes | No native speaker has read it, and the app says so. It was written by an AI; every word of the texts in 31 languages is checked against an open spelling dictionary, and the newer texts were read by a second AI model (see "What has been checked") |
@@ -69,7 +69,7 @@ Danish, Finnish, Catalan, Galician, Afrikaans, Indonesian, Malay, Vietnamese, Fi
 Esperanto, Arabic, Persian, Hindi, Urdu, Bengali and Thai. Six texts are a start, not a course: after
 them the material is your own texts and the stories an AI agent writes to your level.
 
-All 44 have first lessons for complete beginners (ten lessons, eighty phrases and first sentences).
+All 44 have first lessons for complete beginners (twenty lessons, 160 phrases and first sentences).
 Where the script is not Latin each phrase has a reading in Latin letters, the letters a text uses are
 on screen to tap, and there is a chart of the letters to hear and practise. The meaning of a phrase is
 shown in the language of the interface where that is one of the seventeen, else in English. Marking
@@ -132,6 +132,9 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   for approval across a browser restart and were applied once.
 - **The first lessons** (3,520 phrases) were read a second time by their author, which changed six of them, and the
   sixteen languages most likely to hide mistakes were read by a second AI model, which changed two more.
+- **Lessons 11 to 20** (another 3,520 phrases, added later) passed the same checker and the spelling check (15 more
+  words no dictionary knew, all names or correct forms). A second AI reader was asked to read them in 32 languages; its
+  findings had not been applied when this was written.
 - **Spelling** (`.github/spell.mjs`, November 2026): every word of every story, dialogue, question and first lesson in the
   31 languages that have an open spelling dictionary, 21,648 different word forms. 169 were not in a dictionary. Each was
   read: one colloquial word was replaced with the standard one, and the other 168 were names, loanwords, regional words
