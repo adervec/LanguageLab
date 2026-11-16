@@ -149,8 +149,9 @@ function hear(b, continuous, onText, onDone, rest) {
   const wait = ms => { clearTimeout(quiet); quiet = setTimeout(() => { if (!heard) msg(t('Nothing was heard. Try again, a little louder.')); me.stop(); }, ms); };
   hush(); msg('');
   const me = recog = new SR(); recog.lang = voice()?.lang || lang().bcp; recog.continuous = continuous || !!rest; recog.interimResults = !!rest;
+  if (rest) recog.maxAlternatives = 3; // for one line: its second and third guesses too (a word only they hold was nearly said right)
   recog.onresult = e => {
-    for (let i = e.resultIndex; i < e.results.length; i++) if (e.results[i].isFinal) onText(e.results[i][0].transcript);
+    for (let i = e.resultIndex; i < e.results.length; i++) if (e.results[i].isFinal) onText(e.results[i][0].transcript, e.results[i]);
     heard = true; if (rest) wait(rest());
   };
   recog.onerror = e => { if (e.error === 'no-speech') msg(t('Nothing was heard. Try again, a little louder.'));
@@ -352,6 +353,7 @@ function vProgress() {
   <div class="card"><h2>${t('Where you are')}</h2>
     <p>${est.reading ? t('Reading: you already know 95% or more of the words in {level} texts.', { level: est.reading }) : t('Reading: no level is confirmed yet. It takes knowing 95% of the words in the texts of a level.')}</p>
     <p>${est.listening ? t('Listening: at {level} you catch 80% or more of the words at natural speed.', { level: est.listening }) : t('Listening: no level is confirmed yet. It takes two sittings at a level with 80% of the dictation caught.')}</p>
+    <p>${est.speaking ? t('Speaking: at {level} speech recognition understands 85% or more of what you say.', { level: est.speaking }) : t('Speaking: no level is confirmed yet. It takes two sessions at a level with 85% of your words understood.')}</p>
     <div class="scroll"><table><thead><tr><th>${t('Level')}</th><th>${t('Words known')}</th><th>${t('Understood')}</th><th>${t('Dictation')}</th><th>${t('Speaking')}</th><th>${t('AI grade')}</th></tr></thead>
       <tbody>${rows.map(r => H`<tr><td><b>${r.level}</b></td><td>${pct(r.reading)}</td><td>${pct(r.comprehension)}</td><td>${pct(r.listening)}</td><td>${pct(r.speaking)}</td><td>${r.grade || '–'}</td></tr>`)}</tbody></table></div>
     <p class="sub">${t('Words known: the share of the words in the texts of that level that you already know. Understood: questions answered after only hearing the text. Dictation: words caught at natural speed. Speaking: your words that speech recognition understood. The last three are means of your last five sittings at that level.')}</p>
@@ -466,6 +468,8 @@ const playRow = () => H`<div class="row"><button class="primary" data-act="play"
   ${story(sit.storyId).cues || (window.speechSynthesis && (!speechSynthesis.getVoices().length || voice())) ? '' : H`<p class="sub">${t('This device has no {language} voice installed, so listening may not work here.', { language: langName() })}</p>`}`;
 // the target sentence with caught / missed words marked
 const marked = (target, got, spoken) => C.dictationScore(target, got, S.lang, spoken).parts.map(p => p.hit == null ? p.s : H`<span class="${p.hit ? 'hit' : 'miss'}">${p.s}</span>`);
+// a spoken line: understood, missed, or "near" (the recogniser had the word only as a second guess)
+const spokenMarks = d => C.speechMarks(d.target, [d.heard, ...(d.typed ? [] : d.alts || [])], S.lang, !d.typed).parts.map(p => p.hit == null ? p.s : H`<span class="${p.hit ? 'hit' : p.near ? 'near' : 'miss'}">${p.s}</span>`);
 const words = text => { const { cards, known } = L(); return C.tokens(text, S.lang).map(x => { const k = C.key(x.s);
   return x.word ? H`<button class="w ${(cards[k] && !cards[k].retired) || sit.tapped.has(k) ? 'learn' : known[k] ? '' : 'new'}" data-act="tap" data-k="${k}">${x.s}</button>` : x.s; }); };
 const field = (id, enter, label, hint, focus = 'data-focus') => H`<input type="text" id="${id}" lang="${S.lang}" dir="auto" autocomplete="off" autocapitalize="off" spellcheck="false" data-enter="${enter}" aria-label="${label}" placeholder="${hint || ''}" ${focus}>`;
@@ -527,10 +531,11 @@ function vSitting() {
     return H`${head(s.lines ? t('Role-play') : t('Say it'))}
     ${s.lines ? H`<p>${d.memory ? t('Now from memory: say your lines without reading them.') : t('You are {role}. Read your lines aloud.', { role: s.roles[1] })} <span class="sub">${t('Line {i} of {n}', { i: sit.si + 1, n: sit.speak.length })}</span></p>
       <div class="chat" lang="${S.lang}">${s.lines.slice(Math.max(0, d.li - 3), d.li).map(l => H`<p class="${l[0] ? 'me' : 'them'}"><b class="who">${s.roles[l[0]]}</b> ${l[1]}</p>`)}
-        <p class="me now"><b class="who">${s.roles[1]}</b> ${hidden ? '…' : d.score == null ? d.target : marked(d.target, d.heard, !d.typed)}</p></div>`
+        <p class="me now"><b class="who">${s.roles[1]}</b> ${hidden ? '…' : d.score == null ? d.target : spokenMarks(d)}</p></div>`
       : H`<p>${t('Sentence {i} of {n}. Read it aloud. The score is the share of your words that speech recognition understood.', { i: sit.si + 1, n: sit.speak.length })}</p>
-      <p class="big" lang="${S.lang}">${d.score == null ? d.target : marked(d.target, d.heard, !d.typed)}</p>${d.meaning ? H`<p class="sub">${d.meaning}</p>` : ''}`}
-    ${d.score == null ? '' : H`<p class="sub">${d.typed ? t('You wrote:') : t('It heard:')} <span lang="${S.lang}">${d.heard}</span></p><p><b>${t('{pct} of the words', { pct: pct(d.score) })}</b></p>`}
+      <p class="big" lang="${S.lang}">${d.score == null ? d.target : spokenMarks(d)}</p>${d.meaning ? H`<p class="sub">${d.meaning}</p>` : ''}`}
+    ${d.score == null ? '' : H`<p class="sub">${d.typed ? t('You wrote:') : t('It heard:')} <span lang="${S.lang}">${d.heard}</span></p><p><b>${t('{pct} of the words', { pct: pct(d.score) })}</b></p>
+      ${d.typed || !(d.near || d.sure) ? '' : H`<p class="sub">${d.near ? t.n('{n} word was only its second guess (dotted): nearly right.', '{n} words were only its second guess (dotted): nearly right.', d.near) : ''} ${d.sure ? t('It was {pct} sure of what it heard.', { pct: pct(d.sure) }) : ''}</p>`}`}
     <div class="row">${SR ? H`<button class="primary" data-act="sayit" aria-pressed="false">${d.score == null ? t('Speak') : t('Try again')}</button>` : ''}
       ${hidden ? H`<button data-act="peek">${t('Show my line')}</button>` : H`<button data-act="play">▶ ${t('Hear it')}</button>`}
       ${canRecord ? H`<button data-act="record" aria-pressed="false">${t('Record yourself')}</button>` : ''}${take ? H`<button data-act="mine">▶ ${t('Hear yourself')}</button>` : ''}</div>
@@ -606,7 +611,7 @@ function finishSitting() {
     questions: sit.askDone ? sit.asked.map(({ q, answer, ok }) => ({ q, answer, ok })) : [],
     dictation: sit.dict.map(d => ({ target: d.target, typed: d.typed, score: d.score, replays: Math.max(0, d.plays - 1) })),
     rebuild: sit.rebuild.filter(d => d.score != null).map(({ target, shown, typed, score }) => ({ target, shown, typed, score })),
-    speaking: sit.speak.filter(d => d.tries).map(({ target, heard, score, tries, memory, typed }) => ({ target, heard, score, tries, memory, typed })),
+    speaking: sit.speak.filter(d => d.tries).map(({ target, heard, score, tries, memory, typed, near, sure }) => ({ target, heard, score, tries, memory, typed, near, sure })),
     writing: { text: sit.mode === 'sitting' ? ($('#ans')?.value || '').trim().slice(0, 8000) : '', spoken: !!sit.spoken } };
   Object.assign(rec, C.scoreSitting(rec));
   if (sit.mode === 'talk' || sit.mode === 'first') s.readAt = Date.now();
@@ -1049,21 +1054,28 @@ const ACT = {
   },
   mic(b) { const box = $('#ans'); hear(b, true, text => { box.value = (box.value + ' ' + text).trim(); if (sit) sit.spoken = true; }); },
   // ponytail: the recogniser guesses towards real words, so this flatters a little; it is "was I
-  // understood", not a pronunciation score. SpeechImprover's per-take analysis is the upgrade.
+  // understood, and how nearly" (its second guesses and its confidence), not a study of each sound.
+  // SpeechImprover's per-take analysis is the upgrade.
   // It also writes numbers as digits ("five" comes back as "5"): the scoring lets a number stand for one word of the line.
   sayit(b) {
     const d = sit.speak[sit.si];
-    if (!recog) d.said = '';
+    if (!recog) { d.said = ''; d.segs = []; }
     const all = C.plainWords(d.target, S.lang).length; // once every word of the line has been heard a short silence ends it; before that, a longer one
-    hear(b, false, text => { d.said = (d.said + ' ' + text).trim(); }, () => {
+    // each stretch of speech comes with up to three guesses [text, how sure]; the first guesses joined are what it heard
+    hear(b, false, (text, res) => { d.said = (d.said + ' ' + text).trim(); d.segs.push([...(res || [])].slice(0, 3).map(a => [String(a?.transcript || ''), Number(a?.confidence) || 0])); }, () => {
       if (!d.said || sit?.step !== 'speak' || sit.speak[sit.si] !== d) return;
-      d.heard = d.said.slice(0, 600); d.typed = false; d.score = C.dictationScore(d.target, d.heard, S.lang, true).score; d.tries++; render();
+      const guess = k => d.segs.map(g => (g[k] || g[0] || [''])[0]).join(' ').trim().slice(0, 600);
+      d.heard = d.said.slice(0, 600); d.alts = [1, 2].map(guess).filter(a => a && a !== d.heard); d.typed = false;
+      const m = C.speechMarks(d.target, [d.heard, ...d.alts], S.lang), w = d.segs.map(g => [g[0]?.[1] || 0, C.plainWords(g[0]?.[0], S.lang).length]).filter(([c, n]) => c > 0 && n);
+      d.score = m.score; d.near = m.near; d.tries++;
+      d.sure = w.length ? w.reduce((a, [c, n]) => a + c * n, 0) / w.reduce((a, [, n]) => a + n, 0) : 0; // (some browsers report no confidence)
+      render();
     }, () => C.plainWords(d.said, S.lang).length >= all ? 800 : 3000);
   },
   saycheck() { // a line said from memory may be typed instead, where there is no microphone
     const d = sit.speak[sit.si], v = $('#ans').value.trim().slice(0, 600);
     if (!v) return;
-    d.heard = v; d.typed = true; d.score = C.dictationScore(d.target, v, S.lang).score; d.tries++; render();
+    d.heard = v; d.typed = true; d.alts = []; d.near = 0; d.sure = 0; d.score = C.dictationScore(d.target, v, S.lang).score; d.tries++; render();
   },
   peek() { sit.speak[sit.si].memory = false; render(); }, // looked: it no longer counts as said from memory
   review() {
@@ -1246,7 +1258,7 @@ Each entry of \`payload.sittings\` is one sitting on one story or dialogue. The 
 2. read the text (\`tapped\` = the words they did not know);
 3. took dictation at natural speed (\`dictation\`: the target, what they typed, the app's word score from 0 to 1, replays);
 4. where the device could translate, wrote sentences of the text back from their meaning (\`rebuild\`: the target, the meaning they were shown, what they typed, the word score; may be empty);
-5. spoke (\`speaking\`: the target, what a speech recogniser heard or what they typed, the share of words right; \`memory: true\` means said from memory in a role-play; may be empty);
+5. spoke (\`speaking\`: the target, what a speech recogniser heard or what they typed, the share of words right; \`memory: true\` means said from memory in a role-play; \`near\` counts words the recogniser had only as a second guess, and \`sure\` is how sure it was of its first guess, from 0 to 1, where the browser says: a low \`sure\` or a high \`near\` points at pronunciation; may be empty);
 6. retold the story from memory in \`payload.language\` (\`writing.text\`; \`spoken: true\` means it came through speech recognition, so an odd word may be a mis-hearing of their pronunciation).
 
 \`appScore\` and \`breakdown\` are the app's own numbers. \`payload.history\` is the recent trend.

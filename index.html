@@ -19,7 +19,7 @@
 <script src="https://adervec.github.io/cowork.js" defer></script>
 <style>
 /* house standard 24: the colours are font.js's theme in force (System follows the device) */
-:root{color-scheme:var(--t-scheme,light dark);--bg:var(--t-bg,#f6f4ef);--card:var(--t-surface,#fff);--ink:var(--t-text,#1c2430);--mut:var(--t-dim,#5d6878);--line:var(--t-line,#d9d5cb);--accent:var(--t-accent,#1f5f8b);--on:var(--t-on-accent,#fff);--good:var(--t-good,#1d7a46);--bad:var(--t-bad,#b3261e);--learn:color-mix(in srgb,var(--t-warn,#e0a800) 40%,var(--card))}
+:root{color-scheme:var(--t-scheme,light dark);--bg:var(--t-bg,#f6f4ef);--card:var(--t-surface,#fff);--ink:var(--t-text,#1c2430);--mut:var(--t-dim,#5d6878);--line:var(--t-line,#d9d5cb);--accent:var(--t-accent,#1f5f8b);--on:var(--t-on-accent,#fff);--good:var(--t-good,#1d7a46);--bad:var(--t-bad,#b3261e);--warn:var(--t-warn,#8a5a00);--learn:color-mix(in srgb,var(--t-warn,#e0a800) 40%,var(--card))}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 var(--app-font,system-ui,sans-serif)}
 .top{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;padding:8px 16px;background:var(--card);border-bottom:1px solid var(--line)}
@@ -76,7 +76,7 @@ select{width:auto}
 textarea{min-height:9em;resize:vertical}
 .keys{margin:8px 0}
 .keys button{min-height:36px;padding:2px 10px}
-.hit{color:var(--good)}.miss{color:var(--bad);text-decoration:underline wavy}
+.hit{color:var(--good)}.miss{color:var(--bad);text-decoration:underline wavy}.near{color:var(--warn);text-decoration:underline dotted}
 .big{font-size:1.25rem}
 .grade{display:inline-block;min-width:2.2em;text-align:center;font-weight:800;border:2px solid var(--accent);color:var(--accent);border-radius:8px;padding:0 6px;margin-inline-end:8px}
 ul{padding-inline-start:1.2em;margin:.3em 0}

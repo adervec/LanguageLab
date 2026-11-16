@@ -115,6 +115,17 @@ assert.equal(c.dictationScore('Bonjour.', '').score, 0);
 assert.deepEqual([c.dictationScore('The trip took five hours.', 'the trip took 5 hours', 'en', true).score, c.dictationScore('The trip took five hours.', 'the trip took 5 hours', 'en').score], [1, 4 / 5]);
 assert.deepEqual(c.dictationScore('Elle a deux chats.', 'elle a 2 chiens', 'fr', true).hits, [true, true, true, false]);
 assert.equal(c.dictationScore('我有三本书。', '我有3本书', 'zh', true).score, 1);
+// speaking: the first guess is the score; a word only a second guess holds is "near", and a typed line has no second guesses
+{
+  const m = c.speechMarks('Elle aime le poisson frais.', ['elle aime le poison', 'elle aime le poisson', 'elle aime le poisson frais'], 'fr');
+  assert.deepEqual([m.score, m.near, m.parts.filter(p => p.hit != null).map(p => p.hit ? 1 : p.near ? 2 : 0)], [3 / 5, 2, [1, 1, 1, 2, 2]]);
+  assert.deepEqual([c.speechMarks('Bonjour à tous.', ['bonjour'], 'fr').near, c.speechMarks('Bonjour.', [], 'fr').score, c.speechMarks('Il a cinq chats.', ['il a 5 chats'], 'fr').score, c.speechMarks('Il a cinq chats.', ['il a 5 chats'], 'fr', false).score], [0, 0, 1, 3 / 4]);
+  const row = c.cleanState({ app: 'languagelab', v: 1, sittings: [{ id: 'x', lang: 'fr', speaking: [{ target: 'a', heard: 'a', score: 1, tries: 1, near: 2, sure: 0.83, evil: 1 }, { target: 'b', heard: 'b', score: 1, tries: 1, near: 0, sure: 0 }] }] }).sittings[0].speaking;
+  assert.deepEqual(row, [{ target: 'a', heard: 'a', score: 1, tries: 1, near: 2, sure: 0.83 }, { target: 'b', heard: 'b', score: 1, tries: 1 }]);
+  // a speaking level: two sessions with speaking at the level, 85% understood
+  const rows = [{ level: 'A1', sittings: 2, spoken: 2, speaking: 0.9, listening: 0.9, reading: 0.99 }, { level: 'A2', sittings: 2, spoken: 2, speaking: 0.8, listening: 0.5, reading: 0.5 }];
+  assert.deepEqual([c.estimate(rows).speaking, c.estimate([{ ...rows[0], spoken: 1 }]).speaking], ['A1', '']);
+}
 // Arabic script: vowel marks and a hamza on its carrier are forgiven like accents; Arabic and Persian yeh and kaf are one letter
 assert.equal(c.dictationScore('شكراً جزيلاً، أنا أحب السفر إلى هناك.', 'شكرا جزيلا انا احب السفر الى هناك', 'ar').score, 1);
 assert.equal(c.dictationScore('ماهی و کتاب', 'ماهي و كتاب', 'fa').score, 1);
@@ -210,7 +221,7 @@ assert.deepEqual([state.sittings.length, state.sittings[0].score, state.sittings
     sittings: [1, 2].map(i => ({ id: 's' + i, lang: 'fr', level: 'A1', breakdown: { listening: 0.9, comprehension: 1 } })) });
   const rows = c.abilities(S, 'fr');
   assert.deepEqual(rows.map(r => [r.level, r.reading, r.listening, r.sittings]), [['A1', 1, 0.9, 2], ['A2', 0.25, null, 0]]);
-  assert.deepEqual(c.estimate(rows), { reading: 'A1', listening: 'A1' });
+  assert.deepEqual(c.estimate(rows), { reading: 'A1', listening: 'A1', speaking: '' }); // (nothing was spoken in those sittings)
 }
 console.log('core.test: ok');
 

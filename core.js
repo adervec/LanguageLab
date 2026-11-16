@@ -161,6 +161,16 @@ export function dictationScore(target, typed, lang, spoken) {
   return { score: a.length ? L[0][0] / a.length : 0, hits, parts: parts.map(x => x.word ? { s: x.s, hit: hits[n++] } : { s: x.s }) };
 }
 
+// What a speech recogniser made of a line. Its first guess is the score: how much was understood. A word it had only in a second
+// or third guess is "near": said closely enough to be considered, not clearly enough to be chosen. heard: [first guess, others…].
+// ponytail: the recogniser guesses towards real words, so this is "was I understood, and how nearly", not a study of each sound.
+export function speechMarks(target, heard, lang, spoken = true) {
+  const [top, ...rest] = (heard?.length ? heard : ['']).map(h => dictationScore(target, h, lang, spoken));
+  const near = top.hits.map((hit, i) => !hit && rest.some(r => r.hits[i]));
+  let n = 0;
+  return { score: top.score, hits: top.hits, near: near.filter(Boolean).length, parts: top.parts.map(p => p.hit == null ? p : { ...p, near: near[n++] }) };
+}
+
 // Up to n sentences worth dictating (4 to 22 words, or up to 40 characters where there are no spaces), spread evenly.
 // src: a text or a list of sentences.
 export function pickDictation(src, n = 4, lang) {
@@ -251,17 +261,20 @@ export function abilities(S, lang) {
       level, texts: st.length, sittings: at.filter(s => s.mode === 'sitting').length,
       reading: st.length ? mean((fresh.length ? fresh : st).map(s => coverage(s.text, known, lang))) : null,
       comprehension: last(s => s.breakdown.comprehension), listening: last(s => s.breakdown.listening), speaking: last(s => s.breakdown.speaking),
+      spoken: at.filter(s => s.breakdown.speaking != null).length,
       grade: at.filter(s => s.ai).slice(-1)[0]?.ai.grade || '',
     };
   }).filter(r => r.texts || r.sittings);
 }
 // The highest level the numbers support, climbing until one fails. Reading: 95% of the words known.
 // Listening: two sittings at the level, 80% of the dictation caught and (where asked) two questions in three right.
+// Speaking: two sessions with speaking at the level, 85% of your words understood by the recogniser at its first guess.
 export function estimate(rows) {
   const climb = (has, pass) => { let at = ''; for (const r of rows) { if (!has(r)) continue; if (!pass(r)) break; at = r.level; } return at; };
   return {
     reading: climb(r => r.reading != null, r => r.reading >= 0.95),
     listening: climb(r => r.sittings >= 2 && r.listening != null, r => r.listening >= 0.8 && (r.comprehension == null || r.comprehension >= 0.66)),
+    speaking: climb(r => r.spoken >= 2 && r.speaking != null, r => r.speaking >= 0.85),
   };
 }
 
@@ -386,7 +399,9 @@ function cleanSitting(s) {
       score: unit(obj(d).score), replays: num(obj(d).replays) })),
     rebuild: arr(s.rebuild).slice(0, 10).map(d => ({ target: str(obj(d).target, 600), shown: str(obj(d).shown, 600), typed: str(obj(d).typed, 600), score: unit(obj(d).score) })),
     speaking: arr(s.speaking).slice(0, 60).map(d => ({ target: str(obj(d).target, 600), heard: str(obj(d).heard, 600),
-      score: unit(obj(d).score), tries: num(obj(d).tries), ...(obj(d).memory ? { memory: true } : {}), ...(obj(d).typed ? { typed: true } : {}) })),
+      score: unit(obj(d).score), tries: num(obj(d).tries), ...(obj(d).memory ? { memory: true } : {}), ...(obj(d).typed ? { typed: true } : {}),
+      // near: words the recogniser had only as a second guess. sure: how sure it was of its first guess, 0 to 1 (where the browser says)
+      ...(obj(d).near > 0 ? { near: num(obj(d).near) } : {}), ...(obj(d).sure > 0 ? { sure: unit(obj(d).sure) } : {}) })),
     writing: { text: str(obj(s.writing).text, 8000), spoken: !!obj(s.writing).spoken },
     score: s.score == null ? null : Math.round(100 * unit(num(s.score) / 100)),
     breakdown: { listening: unit(b.listening), comprehension: unit(b.comprehension), understood: unit(b.understood), speaking: unit(b.speaking), rebuilt: unit(b.rebuilt),

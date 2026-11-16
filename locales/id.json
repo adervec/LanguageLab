@@ -88,6 +88,7 @@
  "It is marked against the sentence in the text, so another correct wording scores lower.": "Penilaiannya dibandingkan dengan kalimat dalam teks, jadi susunan kata lain yang benar mendapat nilai lebih rendah.",
  "It runs on this device: nothing you say leaves it. The first time, the browser may download its language model, which is large.": "Ini berjalan di perangkat ini: tidak ada ucapan Anda yang keluar darinya. Pertama kali, peramban mungkin mengunduh model bahasanya, yang berukuran besar.",
  "It runs through your AI cowork folder: each reply comes when your agent answers, so keep the agent watching the folder.": "Ini berjalan lewat folder AI cowork Anda: setiap balasan datang saat agen Anda menjawab, jadi biarkan agen terus memantau folder itu.",
+ "It was {pct} sure of what it heard.": "Keyakinan atas apa yang didengar: {pct}.",
  "Item {i} of {n}": "Butir {i} dari {n}",
  "Just listen": "Dengarkan saja",
  "Katakana": "Katakana",
@@ -207,6 +208,8 @@
  "Speak": "Bicara",
  "Speaking uses the speech recognition built into your browser, which may send the audio to the browser maker.": "Fitur bicara memakai pengenalan suara bawaan browser Anda, yang mungkin mengirim audio ke pembuat browser.",
  "Speaking": "Berbicara",
+ "Speaking: at {level} speech recognition understands 85% or more of what you say.": "Berbicara: di {level} pengenalan suara memahami 85% atau lebih dari yang Anda ucapkan.",
+ "Speaking: no level is confirmed yet. It takes two sessions at a level with 85% of your words understood.": "Berbicara: belum ada tingkat yang dipastikan. Diperlukan dua sesi pada satu tingkat dengan 85% kata Anda dipahami.",
  "Start the conversation": "Mulai percakapan",
  "Start the lesson": "Mulai pelajaran",
  "Start the role-play": "Mulai bermain peran",
@@ -371,6 +374,9 @@
  },
  "{n} story added|{n} stories added": {
   "other": "{n} cerita ditambahkan"
+ },
+ "{n} word was only its second guess (dotted): nearly right.|{n} words were only its second guess (dotted): nearly right.": {
+  "other": "{n} kata hanya menjadi tebakan keduanya (bertitik): hampir benar."
  },
  "{n} word written|{n} words written": {
   "other": "{n} kata ditulis"

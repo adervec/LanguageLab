@@ -89,6 +89,7 @@
  "It is marked against the sentence in the text, so another correct wording scores lower.": "Inasahihishwa kwa kulinganisha na sentensi ya matini, kwa hiyo maneno mengine sahihi hupata alama chache.",
  "It runs on this device: nothing you say leaves it. The first time, the browser may download its language model, which is large.": "Inafanya kazi kwenye kifaa hiki: hakuna unachosema kinachotoka nje yake. Mara ya kwanza, kivinjari kinaweza kupakua modeli yake ya lugha, ambayo ni kubwa.",
  "It runs through your AI cowork folder: each reply comes when your agent answers, so keep the agent watching the folder.": "Inafanya kazi kupitia folda yako ya AI cowork: kila jibu hufika wakala wako anapojibu, kwa hiyo mwache aifuatilie folda.",
+ "It was {pct} sure of what it heard.": "Uhakika wa kilichosikika: {pct}.",
  "Item {i} of {n}": "Kipengee {i} kati ya {n}",
  "Just listen": "Sikiliza tu",
  "Katakana": "Katakana",
@@ -209,6 +210,8 @@
  "Speak": "Zungumza",
  "Speaking uses the speech recognition built into your browser, which may send the audio to the browser maker.": "Kuongea hutumia utambuzi wa sauti uliomo kwenye kivinjari chako, ambao unaweza kutuma sauti kwa mtengenezaji wa kivinjari.",
  "Speaking": "Kuongea",
+ "Speaking: at {level} speech recognition understands 85% or more of what you say.": "Kuzungumza: katika {level} utambuzi wa sauti unaelewa 85% au zaidi ya unachosema.",
+ "Speaking: no level is confirmed yet. It takes two sessions at a level with 85% of your words understood.": "Kuzungumza: bado hakuna kiwango kilichothibitishwa. Inahitaji vipindi viwili katika kiwango kimoja ambapo 85% ya maneno yako yameeleweka.",
  "Start the conversation": "Anza mazungumzo",
  "Start the lesson": "Anza somo",
  "Start the role-play": "Anza igizo dhima",
@@ -381,6 +384,10 @@
  "{n} story added|{n} stories added": {
   "one": "Hadithi {n} imeongezwa",
   "other": "Hadithi {n} zimeongezwa"
+ },
+ "{n} word was only its second guess (dotted): nearly right.|{n} words were only its second guess (dotted): nearly right.": {
+  "one": "Neno {n} lilikuwa kisio lake la pili tu (nukta nukta): karibu sahihi.",
+  "other": "Maneno {n} yalikuwa kisio lake la pili tu (nukta nukta): karibu sahihi."
  },
  "{n} word written|{n} words written": {
   "one": "Neno {n} limeandikwa",

@@ -90,6 +90,7 @@
  "It is marked against the sentence in the text, so another correct wording scores lower.": "Ocjenjuje se prema rečenici iz teksta, pa drugačija točna formulacija dobiva manje.",
  "It runs on this device: nothing you say leaves it. The first time, the browser may download its language model, which is large.": "Radi na ovom uređaju: ništa što kažeš ne napušta ga. Prvi put preglednik može preuzeti svoj jezični model, koji je velik.",
  "It runs through your AI cowork folder: each reply comes when your agent answers, so keep the agent watching the folder.": "Radi preko tvoje mape AI cowork: svaki odgovor stiže kad tvoj agent odgovori, pa neka agent prati mapu.",
+ "It was {pct} sure of what it heard.": "Sigurnost u ono što je čulo: {pct}.",
  "Item {i} of {n}": "Stavka {i} od {n}",
  "Just listen": "Samo slušaj",
  "Katakana": "Katakana",
@@ -211,6 +212,8 @@
  "Speak": "Govori",
  "Speaking uses the speech recognition built into your browser, which may send the audio to the browser maker.": "Govor koristi prepoznavanje govora ugrađeno u vaš preglednik, koje može slati zvuk proizvođaču preglednika.",
  "Speaking": "Govor",
+ "Speaking: at {level} speech recognition understands 85% or more of what you say.": "Govor: na razini {level} prepoznavanje govora razumije 85 % ili više onoga što kažeš.",
+ "Speaking: no level is confirmed yet. It takes two sessions at a level with 85% of your words understood.": "Govor: još nijedna razina nije potvrđena. Potrebne su dvije sesije na jednoj razini s 85 % razumljivih riječi.",
  "Start the conversation": "Započni razgovor",
  "Start the lesson": "Počni lekciju",
  "Start the role-play": "Pokreni igru uloga",
@@ -391,6 +394,11 @@
   "one": "{n} priča dodana",
   "few": "{n} priče dodane",
   "other": "{n} priča dodano"
+ },
+ "{n} word was only its second guess (dotted): nearly right.|{n} words were only its second guess (dotted): nearly right.": {
+  "one": "{n} riječ bila je tek druga pretpostavka (točkasto): gotovo točno.",
+  "few": "{n} riječi bile su tek druga pretpostavka (točkasto): gotovo točno.",
+  "other": "{n} riječi bilo je tek druga pretpostavka (točkasto): gotovo točno."
  },
  "{n} word written|{n} words written": {
   "one": "{n} riječ napisana",

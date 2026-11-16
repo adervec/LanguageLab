@@ -24,9 +24,10 @@ const errors = [];
 page.on('pageerror', e => errors.push(e.message));
 // the browser's on-device translator cannot fetch its language packs here: a stand-in that wraps the text it is given
 await page.addInitScript(() => { self.Translator = { create: async () => ({ translate: async s => 'EN[' + s + ']' }) }; });
-// and speech recognition, which needs a microphone: a stand-in that "hears" whatever the test says was said
+// and speech recognition, which needs a microphone: a stand-in that "hears" whatever the test says was said (and, when the test
+// gives them, its second guesses and how sure it was of the first)
 await page.addInitScript(() => { self.SpeechRecognition = self.webkitSpeechRecognition = class {
-  start() { setTimeout(() => { if (self.heard) this.onresult({ resultIndex: 0, results: [Object.assign([{ transcript: self.heard }], { isFinal: true })] }); else this.onerror({ error: 'no-speech' }); this.onend(); }, 20); }
+  start() { setTimeout(() => { if (self.heard) this.onresult({ resultIndex: 0, results: [Object.assign([{ transcript: self.heard, confidence: self.heardSure }, ...(self.heardAlt || []).map(t => ({ transcript: t, confidence: 0.3 }))], { isFinal: true })] }); else this.onerror({ error: 'no-speech' }); this.onend(); }, 20); }
   stop() { this.onend(); } }; });
 // likewise the browser's own language model: it opens, answers once with a correction, and never answers a message that says "attends".
 // It does not speak Spanish, so a Spanish conversation has to go through the cowork folder.
@@ -100,6 +101,13 @@ await click('Speak');
 await page.waitForFunction(() => document.querySelector('#main').innerText.includes('It heard:'));
 assert.match(await main(), /It heard: elle aime ce moment de la\s+86% of the words/);
 assert.equal(await page.locator('#main .big .miss').innerText(), 'semaine');
+// again, and this time the recogniser's second guess has the last word: nearly right, not understood; and it says how sure it was
+await page.evaluate(() => { self.heardAlt = ['elle aime ce moment de la semaine']; self.heardSure = 0.9; });
+await click('Try again');
+await page.waitForSelector('#main .big .near');
+assert.deepEqual([await page.locator('#main .big .near').innerText(), await page.locator('#main .big .miss').count()], ['semaine', 0]);
+assert.match(await main(), /86% of the words\s+1 word was only its second guess \(dotted\): nearly right\. It was 90% sure of what it heard\./);
+await page.evaluate(() => { self.heardAlt = self.heardSure = undefined; });
 await toWriting();                                      // the other sentences are skipped; then write
 await page.fill('#ans', 'Claire va au marché. Elle achète du fromage.');
 await click('Library');                                 // leaving half way warns once and keeps what was typed

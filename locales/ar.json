@@ -93,6 +93,7 @@
  "It is marked against the sentence in the text, so another correct wording scores lower.": "تُصحَّح بالمقارنة مع جملة النص، لذا تحصل صياغة صحيحة أخرى على درجة أقل.",
  "It runs on this device: nothing you say leaves it. The first time, the browser may download its language model, which is large.": "تعمل على هذا الجهاز: لا شيء مما تقوله يغادره. في المرة الأولى قد ينزّل المتصفح نموذجه اللغوي، وهو كبير.",
  "It runs through your AI cowork folder: each reply comes when your agent answers, so keep the agent watching the folder.": "تعمل عبر مجلد AI cowork الخاص بك: يصل كل رد عندما يجيب وكيلك، فدَع الوكيل يراقب المجلد.",
+ "It was {pct} sure of what it heard.": "مدى التأكد مما سُمع: {pct}.",
  "Item {i} of {n}": "العنصر {i} من {n}",
  "Just listen": "استمع فقط",
  "Katakana": "كاتاكانا",
@@ -217,6 +218,8 @@
  "Speak": "تحدّث",
  "Speaking uses the speech recognition built into your browser, which may send the audio to the browser maker.": "التحدّث يستخدم خاصية التعرّف على الكلام المدمجة في متصفحك، وقد ترسل الصوت إلى الشركة المصنّعة للمتصفح.",
  "Speaking": "التحدّث",
+ "Speaking: at {level} speech recognition understands 85% or more of what you say.": "التحدث: في مستوى {level} يفهم التعرّف على الكلام 85% أو أكثر مما تقوله.",
+ "Speaking: no level is confirmed yet. It takes two sessions at a level with 85% of your words understood.": "التحدث: لم يتأكد أي مستوى بعد. يلزم جلستان في مستوى واحد مع فهم 85% من كلماتك.",
  "Start the conversation": "ابدأ المحادثة",
  "Start the lesson": "ابدأ الدرس",
  "Start the role-play": "ابدأ تمثيل الأدوار",
@@ -421,6 +424,14 @@
   "few": "أُضيفت {n} قصص",
   "many": "أُضيفت {n} قصة",
   "other": "أُضيفت {n} قصة"
+ },
+ "{n} word was only its second guess (dotted): nearly right.|{n} words were only its second guess (dotted): nearly right.": {
+  "zero": "{n} كلمة كانت تخمينه الثاني فقط (منقّطة): قريبة من الصواب.",
+  "one": "{n} كلمة كانت تخمينه الثاني فقط (منقّطة): قريبة من الصواب.",
+  "two": "{n} كلمتان كانتا تخمينه الثاني فقط (منقّطتان): قريبتان من الصواب.",
+  "few": "{n} كلمات كانت تخمينه الثاني فقط (منقّطة): قريبة من الصواب.",
+  "many": "{n} كلمة كانت تخمينه الثاني فقط (منقّطة): قريبة من الصواب.",
+  "other": "{n} كلمة كانت تخمينه الثاني فقط (منقّطة): قريبة من الصواب."
  },
  "{n} word written|{n} words written": {
   "zero": "{n} كلمة مكتوبة",

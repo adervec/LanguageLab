@@ -89,6 +89,7 @@
  "It is marked against the sentence in the text, so another correct wording scores lower.": "इसे पाठ के वाक्य से मिलाकर जाँचा जाता है, इसलिए दूसरे सही शब्दों में लिखने पर अंक कम मिलते हैं।",
  "It runs on this device: nothing you say leaves it. The first time, the browser may download its language model, which is large.": "यह इसी डिवाइस पर चलता है: आप जो कहते हैं वह इससे बाहर नहीं जाता। पहली बार ब्राउज़र अपना भाषा मॉडल डाउनलोड कर सकता है, जो बड़ा है।",
  "It runs through your AI cowork folder: each reply comes when your agent answers, so keep the agent watching the folder.": "यह आपके AI cowork फ़ोल्डर के ज़रिए चलता है: हर उत्तर तब आता है जब आपका एजेंट जवाब देता है, इसलिए एजेंट को फ़ोल्डर पर नज़र रखने दें।",
+ "It was {pct} sure of what it heard.": "जो सुना गया उस पर भरोसा: {pct}।",
  "Item {i} of {n}": "{n} में से {i}वाँ आइटम",
  "Just listen": "बस सुनें",
  "Katakana": "काताकाना",
@@ -209,6 +210,8 @@
  "Speak": "बोलें",
  "Speaking uses the speech recognition built into your browser, which may send the audio to the browser maker.": "बोलने के लिए आपके ब्राउज़र में बनी वाक् पहचान इस्तेमाल होती है, जो ऑडियो ब्राउज़र निर्माता को भेज सकती है।",
  "Speaking": "बोलना",
+ "Speaking: at {level} speech recognition understands 85% or more of what you say.": "बोलना: {level} पर वाक् पहचान आपकी कही बातों का 85% या उससे ज़्यादा समझती है।",
+ "Speaking: no level is confirmed yet. It takes two sessions at a level with 85% of your words understood.": "बोलना: अभी कोई स्तर पक्का नहीं हुआ है। इसके लिए एक ही स्तर पर दो सत्र चाहिए जिनमें आपके 85% शब्द समझे गए हों।",
  "Start the conversation": "बातचीत शुरू करें",
  "Start the lesson": "सबक शुरू करें",
  "Start the role-play": "भूमिका-अभ्यास शुरू करें",
@@ -381,6 +384,10 @@
  "{n} story added|{n} stories added": {
   "one": "{n} कहानी जोड़ी गई",
   "other": "{n} कहानियाँ जोड़ी गईं"
+ },
+ "{n} word was only its second guess (dotted): nearly right.|{n} words were only its second guess (dotted): nearly right.": {
+  "one": "{n} शब्द केवल उसका दूसरा अनुमान था (बिंदीदार): लगभग सही।",
+  "other": "{n} शब्द केवल उसके दूसरे अनुमान थे (बिंदीदार): लगभग सही।"
  },
  "{n} word written|{n} words written": {
   "one": "{n} शब्द लिखा",

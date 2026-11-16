@@ -38,10 +38,10 @@ snapshot). LanguageLab is ahead in some rows and behind in others.
 | What you produce | Varies by exercise: word banks, matching, short typed and spoken answers | Speaking and choosing, without translation | Short phrases and chatbot replies | Typed dictation, sentences written back from their meaning, role-play from memory, and a free retelling in every sitting |
 | Your own material | No | No | No | Any text; any recording with its subtitles |
 | Feedback on free writing | Explanations of an answer | No | No | An AI review with a grade, corrected forms and the rule; your mistakes come back as review cards |
-| Measure of progress | XP, streak, leagues, a course score | Units completed | Points and a leaderboard | The level your own numbers support, for reading and for listening |
+| Measure of progress | XP, streak, leagues, a course score | Units completed | Points and a leaderboard | The level your own numbers support, for reading, for listening and for speaking |
 | Languages with ready lessons | 40 or more | 25 | 41 | 44, each with first lessons (ten lessons, eighty phrases) and graded stories and dialogues: 8 with a full set (A1 to B2), 4 with half a set, 32 with a first handful of six texts (A1 and A2); any other language with your own texts or AI-written stories |
 | Course for complete beginners | Yes, from the alphabet | Yes | Yes | A short one: ten lessons of eight phrases in each of 44 languages, charts of the letters for 14 scripts, then graded stories from A1 in all 44. Much shorter than their courses; after it the material is your own texts and the stories an AI agent writes to your level |
-| Speech scoring | Its own engine | TruAccent | Speech recognition | The browser's speech recognition (how much was understood, not how good the accent is; it listens through your pauses), and a recording of yourself to compare by ear |
+| Speech scoring | Its own engine | TruAccent | Speech recognition | The browser's speech recognition, word by word: understood at its first guess, only its second guess (nearly right) or missed, with how sure it was; it listens through your pauses. A speaking level from those numbers, and a recording of yourself to compare by ear. It judges whole words, not each sound |
 | Human teachers | No | Live coaching (premium) | No | None of its own, but it works with any teacher you have: a link carries your writing to them and another brings their corrections back into your review. They need nothing but a browser |
 | Content checked by people | Yes | Yes | Yes | No native speaker has read it, and the app says so. It was written by an AI; every word of the texts in 31 languages is checked against an open spelling dictionary, and the newer texts were read by a second AI model (see "What has been checked") |
 | Apps | iOS, Android, web | iOS, Android, web | iOS, Android, web, AR and VR | A web app that installs to the home screen and opens without a connection after one visit; no app-store apps |
@@ -123,7 +123,8 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   (replies in one to three seconds; its corrections caught about one mistake a message and were sometimes wrong, which is
   why they are only offered); the French voice reading a story sentence; the speaking step scored by Chrome's real
   recogniser from a recording fed in place of the microphone (the exact sentence: 100%; two words changed: 88%, those two
-  marked); the on-device translator for French.
+  marked); the on-device translator for French; and that the recogniser gives three guesses for a line, each with how sure
+  it is (0.96, 0.94 and 0.93 for a clear recording), which is what the "nearly right" marks are made from.
 - **With a real AI agent** (Claude, November 2026), answering from the instruction files in the folder and nothing else: a
   sitting graded and corrected, a pen-pal letter answered, a two-turn conversation, and five stories and two dialogues in
   Swedish (a language that had no bundled stories then), which passed the same checker as the bundled texts

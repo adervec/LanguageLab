@@ -91,6 +91,7 @@
  "It is marked against the sentence in the text, so another correct wording scores lower.": "Оцінюється порівняно з реченням із тексту, тож інше правильне формулювання отримує менше.",
  "It runs on this device: nothing you say leaves it. The first time, the browser may download its language model, which is large.": "Це працює на цьому пристрої: ніщо зі сказаного вами його не залишає. Першого разу браузер може завантажити свою мовну модель, а вона велика.",
  "It runs through your AI cowork folder: each reply comes when your agent answers, so keep the agent watching the folder.": "Це працює через вашу теку AI cowork: кожна відповідь надходить, коли відповідає ваш агент, тож нехай він стежить за текою.",
+ "It was {pct} sure of what it heard.": "Упевненість у почутому: {pct}.",
  "Item {i} of {n}": "Елемент {i} з {n}",
  "Just listen": "Просто слухати",
  "Katakana": "Катакана",
@@ -213,6 +214,8 @@
  "Speak": "Говорити",
  "Speaking uses the speech recognition built into your browser, which may send the audio to the browser maker.": "Для мовлення використовується розпізнавання мови, вбудоване у ваш браузер; воно може надсилати аудіо розробнику браузера.",
  "Speaking": "Мовлення",
+ "Speaking: at {level} speech recognition understands 85% or more of what you say.": "Мовлення: на рівні {level} розпізнавання мовлення розуміє 85 % або більше того, що ви кажете.",
+ "Speaking: no level is confirmed yet. It takes two sessions at a level with 85% of your words understood.": "Мовлення: жоден рівень ще не підтверджено. Потрібно два заняття на рівні, де зрозуміло 85 % ваших слів.",
  "Start the conversation": "Почати розмову",
  "Start the lesson": "Почати урок",
  "Start the role-play": "Почати рольову гру",
@@ -401,6 +404,12 @@
   "few": "Додано {n} історії",
   "many": "Додано {n} історій",
   "other": "Додано {n} історії"
+ },
+ "{n} word was only its second guess (dotted): nearly right.|{n} words were only its second guess (dotted): nearly right.": {
+  "one": "{n} слово було лише другим варіантом (пунктир): майже правильно.",
+  "few": "{n} слова були лише другим варіантом (пунктир): майже правильно.",
+  "many": "{n} слів були лише другим варіантом (пунктир): майже правильно.",
+  "other": "{n} слова були лише другим варіантом (пунктир): майже правильно."
  },
  "{n} word written|{n} words written": {
   "one": "Написано {n} слово",

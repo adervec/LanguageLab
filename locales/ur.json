@@ -89,6 +89,7 @@
  "It is marked against the sentence in the text, so another correct wording scores lower.": "اسے متن کے جملے سے ملا کر جانچا جاتا ہے، اس لیے کسی اور درست انداز میں لکھنے پر نمبر کم ملتے ہیں۔",
  "It runs on this device: nothing you say leaves it. The first time, the browser may download its language model, which is large.": "یہ اسی ڈیوائس پر چلتا ہے: آپ جو کہتے ہیں وہ اس سے باہر نہیں جاتا۔ پہلی بار براؤزر اپنا زبان کا ماڈل ڈاؤن لوڈ کر سکتا ہے، جو بڑا ہے۔",
  "It runs through your AI cowork folder: each reply comes when your agent answers, so keep the agent watching the folder.": "یہ آپ کے AI cowork فولڈر کے ذریعے چلتا ہے: ہر جواب تب آتا ہے جب آپ کا ایجنٹ جواب دیتا ہے، اس لیے ایجنٹ کو فولڈر پر نظر رکھنے دیں۔",
+ "It was {pct} sure of what it heard.": "جو سنا گیا اس پر یقین: {pct}۔",
  "Item {i} of {n}": "آئٹم {i} از {n}",
  "Just listen": "بس سنیں",
  "Katakana": "کاتاکانا",
@@ -209,6 +210,8 @@
  "Speak": "بولیں",
  "Speaking uses the speech recognition built into your browser, which may send the audio to the browser maker.": "بولنے میں آپ کے براؤزر کی اندرونی اسپیچ ریکگنیشن استعمال ہوتی ہے، جو آڈیو براؤزر بنانے والے کو بھیج سکتی ہے۔",
  "Speaking": "بولنا",
+ "Speaking: at {level} speech recognition understands 85% or more of what you say.": "بولنا: {level} پر آواز کی شناخت آپ کی کہی ہوئی باتوں کا 85٪ یا اس سے زیادہ سمجھتی ہے۔",
+ "Speaking: no level is confirmed yet. It takes two sessions at a level with 85% of your words understood.": "بولنا: ابھی کوئی سطح پکی نہیں ہوئی۔ اس کے لیے ایک ہی سطح پر دو نشستیں چاہییں جن میں آپ کے 85٪ الفاظ سمجھے گئے ہوں۔",
  "Start the conversation": "گفتگو شروع کریں",
  "Start the lesson": "سبق شروع کریں",
  "Start the role-play": "کردار ادا کرنا شروع کریں",
@@ -381,6 +384,10 @@
  "{n} story added|{n} stories added": {
   "one": "{n} کہانی شامل ہوئی",
   "other": "{n} کہانیاں شامل ہوئیں"
+ },
+ "{n} word was only its second guess (dotted): nearly right.|{n} words were only its second guess (dotted): nearly right.": {
+  "one": "{n} لفظ صرف اس کا دوسرا اندازہ تھا (نقطہ دار): تقریباً درست۔",
+  "other": "{n} الفاظ صرف اس کے دوسرے اندازے تھے (نقطہ دار): تقریباً درست۔"
  },
  "{n} word written|{n} words written": {
   "one": "{n} لفظ لکھا گیا",

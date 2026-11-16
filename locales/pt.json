@@ -90,6 +90,7 @@
  "It is marked against the sentence in the text, so another correct wording scores lower.": "É corrigida em comparação com a frase do texto, por isso outra formulação correta pontua menos.",
  "It runs on this device: nothing you say leaves it. The first time, the browser may download its language model, which is large.": "Funciona neste dispositivo: nada do que você diz sai dele. Na primeira vez, o navegador pode baixar o seu modelo de linguagem, que é grande.",
  "It runs through your AI cowork folder: each reply comes when your agent answers, so keep the agent watching the folder.": "Funciona através da sua pasta do AI cowork: cada resposta chega quando o seu agente responde, por isso mantenha-o atento à pasta.",
+ "It was {pct} sure of what it heard.": "Certeza sobre o que ouviu: {pct}.",
  "Item {i} of {n}": "Item {i} de {n}",
  "Just listen": "Só ouvir",
  "Katakana": "Katakana",
@@ -211,6 +212,8 @@
  "Speak": "Falar",
  "Speaking uses the speech recognition built into your browser, which may send the audio to the browser maker.": "Falar usa o reconhecimento de voz do seu navegador, que pode enviar o áudio ao fabricante do navegador.",
  "Speaking": "Fala",
+ "Speaking: at {level} speech recognition understands 85% or more of what you say.": "Fala: em {level} o reconhecimento de voz entende 85% ou mais do que você diz.",
+ "Speaking: no level is confirmed yet. It takes two sessions at a level with 85% of your words understood.": "Fala: nenhum nível confirmado ainda. São necessárias duas sessões em um nível com 85% das suas palavras entendidas.",
  "Start the conversation": "Começar a conversa",
  "Start the lesson": "Começar a lição",
  "Start the role-play": "Iniciar a encenação",
@@ -391,6 +394,11 @@
   "one": "{n} história adicionada",
   "many": "{n} histórias adicionadas",
   "other": "{n} histórias adicionadas"
+ },
+ "{n} word was only its second guess (dotted): nearly right.|{n} words were only its second guess (dotted): nearly right.": {
+  "one": "{n} palavra foi apenas o segundo palpite (pontilhada): quase certa.",
+  "many": "{n} palavras foram apenas o segundo palpite (pontilhadas): quase certas.",
+  "other": "{n} palavras foram apenas o segundo palpite (pontilhadas): quase certas."
  },
  "{n} word written|{n} words written": {
   "one": "{n} palavra escrita",

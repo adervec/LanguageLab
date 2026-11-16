@@ -90,6 +90,7 @@
  "It is marked against the sentence in the text, so another correct wording scores lower.": "La correction se fait par rapport à la phrase du texte : une autre formulation correcte obtient donc moins de points.",
  "It runs on this device: nothing you say leaves it. The first time, the browser may download its language model, which is large.": "Tout se passe sur cet appareil : rien de ce que vous dites ne le quitte. La première fois, le navigateur peut télécharger son modèle de langue, qui est volumineux.",
  "It runs through your AI cowork folder: each reply comes when your agent answers, so keep the agent watching the folder.": "Tout passe par votre dossier AI cowork : chaque réponse arrive quand votre agent répond, gardez-le donc à l’écoute du dossier.",
+ "It was {pct} sure of what it heard.": "Certitude sur ce qui a été entendu : {pct}.",
  "Item {i} of {n}": "Élément {i} sur {n}",
  "Just listen": "Juste écouter",
  "Katakana": "Katakana",
@@ -211,6 +212,8 @@
  "Speak": "Parler",
  "Speaking uses the speech recognition built into your browser, which may send the audio to the browser maker.": "La parole utilise la reconnaissance vocale intégrée à votre navigateur, qui peut envoyer l'audio à l'éditeur du navigateur.",
  "Speaking": "Oral",
+ "Speaking: at {level} speech recognition understands 85% or more of what you say.": "Expression orale : au niveau {level}, la reconnaissance vocale comprend 85 % ou plus de ce que vous dites.",
+ "Speaking: no level is confirmed yet. It takes two sessions at a level with 85% of your words understood.": "Expression orale : aucun niveau n'est encore confirmé. Il faut deux séances à un niveau avec 85 % de vos mots compris.",
  "Start the conversation": "Commencer la conversation",
  "Start the lesson": "Commencer la leçon",
  "Start the role-play": "Commencer le jeu de rôle",
@@ -391,6 +394,11 @@
   "one": "{n} histoire ajoutée",
   "many": "{n} histoires ajoutées",
   "other": "{n} histoires ajoutées"
+ },
+ "{n} word was only its second guess (dotted): nearly right.|{n} words were only its second guess (dotted): nearly right.": {
+  "one": "{n} mot n'était que sa deuxième hypothèse (en pointillé) : presque juste.",
+  "many": "{n} mots n'étaient que sa deuxième hypothèse (en pointillé) : presque juste.",
+  "other": "{n} mots n'étaient que sa deuxième hypothèse (en pointillé) : presque juste."
  },
  "{n} word written|{n} words written": {
   "one": "{n} mot écrit",

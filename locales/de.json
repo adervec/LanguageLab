@@ -89,6 +89,7 @@
  "It is marked against the sentence in the text, so another correct wording scores lower.": "Bewertet wird im Vergleich mit dem Satz aus dem Text, eine andere richtige Formulierung zählt also weniger.",
  "It runs on this device: nothing you say leaves it. The first time, the browser may download its language model, which is large.": "Es läuft auf diesem Gerät: Nichts, was du sagst, verlässt es. Beim ersten Mal lädt der Browser vielleicht sein Sprachmodell herunter, das groß ist.",
  "It runs through your AI cowork folder: each reply comes when your agent answers, so keep the agent watching the folder.": "Es läuft über deinen AI-cowork-Ordner: Jede Antwort kommt, wenn dein Agent antwortet, lass ihn also den Ordner beobachten.",
+ "It was {pct} sure of what it heard.": "Sicherheit über das Gehörte: {pct}.",
  "Item {i} of {n}": "Element {i} von {n}",
  "Just listen": "Nur zuhören",
  "Katakana": "Katakana",
@@ -209,6 +210,8 @@
  "Speak": "Sprechen",
  "Speaking uses the speech recognition built into your browser, which may send the audio to the browser maker.": "Beim Sprechen wird die Spracherkennung deines Browsers verwendet, die die Aufnahme an den Browserhersteller senden kann.",
  "Speaking": "Sprechen",
+ "Speaking: at {level} speech recognition understands 85% or more of what you say.": "Sprechen: Auf {level} versteht die Spracherkennung 85 % oder mehr von dem, was du sagst.",
+ "Speaking: no level is confirmed yet. It takes two sessions at a level with 85% of your words understood.": "Sprechen: Noch ist keine Stufe bestätigt. Dafür braucht es zwei Sitzungen auf einer Stufe, in denen 85 % deiner Wörter verstanden wurden.",
  "Start the conversation": "Gespräch beginnen",
  "Start the lesson": "Lektion starten",
  "Start the role-play": "Rollenspiel starten",
@@ -381,6 +384,10 @@
  "{n} story added|{n} stories added": {
   "one": "{n} Geschichte hinzugefügt",
   "other": "{n} Geschichten hinzugefügt"
+ },
+ "{n} word was only its second guess (dotted): nearly right.|{n} words were only its second guess (dotted): nearly right.": {
+  "one": "{n} Wort war nur ihre zweite Vermutung (gepunktet): fast richtig.",
+  "other": "{n} Wörter waren nur ihre zweite Vermutung (gepunktet): fast richtig."
  },
  "{n} word written|{n} words written": {
   "one": "{n} Wort geschrieben",

@@ -89,6 +89,7 @@
  "It is marked against the sentence in the text, so another correct wording scores lower.": "এটি পাঠের বাক্যের সঙ্গে মিলিয়ে দেখা হয়, তাই অন্য সঠিক বাক্যরূপে কম নম্বর মেলে।",
  "It runs on this device: nothing you say leaves it. The first time, the browser may download its language model, which is large.": "এটি এই ডিভাইসেই চলে: আপনি যা বলেন তা এর বাইরে যায় না। প্রথমবার ব্রাউজার তার ভাষা মডেল ডাউনলোড করতে পারে, যা বড়।",
  "It runs through your AI cowork folder: each reply comes when your agent answers, so keep the agent watching the folder.": "এটি আপনার AI cowork ফোল্ডারের মাধ্যমে চলে: আপনার এজেন্ট উত্তর দিলে তবেই প্রতিটি উত্তর আসে, তাই এজেন্টকে ফোল্ডারে নজর রাখতে দিন।",
+ "It was {pct} sure of what it heard.": "যা শোনা গেছে সে বিষয়ে নিশ্চয়তা: {pct}।",
  "Item {i} of {n}": "{n}-এর মধ্যে আইটেম {i}",
  "Just listen": "শুধু শুনুন",
  "Katakana": "কাতাকানা",
@@ -209,6 +210,8 @@
  "Speak": "বলুন",
  "Speaking uses the speech recognition built into your browser, which may send the audio to the browser maker.": "বলার জন্য আপনার ব্রাউজারের নিজস্ব স্পিচ রিকগনিশন ব্যবহৃত হয়, যা অডিওটি ব্রাউজার নির্মাতার কাছে পাঠাতে পারে।",
  "Speaking": "বলা",
+ "Speaking: at {level} speech recognition understands 85% or more of what you say.": "বলা: {level}-এ কণ্ঠ শনাক্তকরণ আপনার বলা কথার ৮৫% বা তার বেশি বোঝে।",
+ "Speaking: no level is confirmed yet. It takes two sessions at a level with 85% of your words understood.": "বলা: এখনও কোনো স্তর নিশ্চিত হয়নি। একই স্তরে দুটি সেশন লাগবে, যেখানে আপনার ৮৫% শব্দ বোঝা গেছে।",
  "Start the conversation": "কথোপকথন শুরু করুন",
  "Start the lesson": "পাঠ শুরু করুন",
  "Start the role-play": "ভূমিকাভিনয় শুরু করুন",
@@ -381,6 +384,10 @@
  "{n} story added|{n} stories added": {
   "one": "{n}টি গল্প যোগ হয়েছে",
   "other": "{n}টি গল্প যোগ হয়েছে"
+ },
+ "{n} word was only its second guess (dotted): nearly right.|{n} words were only its second guess (dotted): nearly right.": {
+  "one": "{n}টি শব্দ ছিল কেবল তার দ্বিতীয় অনুমান (বিন্দু-রেখা): প্রায় ঠিক।",
+  "other": "{n}টি শব্দ ছিল কেবল তার দ্বিতীয় অনুমান (বিন্দু-রেখা): প্রায় ঠিক।"
  },
  "{n} word written|{n} words written": {
   "one": "{n}টি শব্দ লেখা হয়েছে",

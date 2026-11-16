@@ -85,6 +85,7 @@
  "It is marked against the sentence in the text, so another correct wording scores lower.": "It is marked against the sentence in the text, so another correct wording scores lower.",
  "It runs on this device: nothing you say leaves it. The first time, the browser may download its language model, which is large.": "It runs on this device: nothing you say leaves it. The first time, the browser may download its language model, which is large.",
  "It runs through your AI cowork folder: each reply comes when your agent answers, so keep the agent watching the folder.": "It runs through your AI cowork folder: each reply comes when your agent answers, so keep the agent watching the folder.",
+ "It was {pct} sure of what it heard.": "It was {pct} sure of what it heard.",
  "Item {i} of {n}": "Item {i} of {n}",
  "Just listen": "Just listen",
  "Katakana": "Katakana",
@@ -201,6 +202,8 @@
  "Speak instead": "Speak instead",
  "Speaking": "Speaking",
  "Speaking uses the speech recognition built into your browser, which may send the audio to the browser maker.": "Speaking uses the speech recognition built into your browser, which may send the audio to the browser maker.",
+ "Speaking: at {level} speech recognition understands 85% or more of what you say.": "Speaking: at {level} speech recognition understands 85% or more of what you say.",
+ "Speaking: no level is confirmed yet. It takes two sessions at a level with 85% of your words understood.": "Speaking: no level is confirmed yet. It takes two sessions at a level with 85% of your words understood.",
  "Start": "Start",
  "Start the conversation": "Start the conversation",
  "Start the lesson": "Start the lesson",
@@ -384,6 +387,10 @@
  "{n} story added|{n} stories added": {
   "one": "{n} story added",
   "other": "{n} stories added"
+ },
+ "{n} word was only its second guess (dotted): nearly right.|{n} words were only its second guess (dotted): nearly right.": {
+  "one": "{n} word was only its second guess (dotted): nearly right.",
+  "other": "{n} words were only its second guess (dotted): nearly right."
  },
  "{n} word written|{n} words written": {
   "one": "{n} word written",

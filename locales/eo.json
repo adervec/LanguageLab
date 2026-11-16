@@ -89,6 +89,7 @@
  "It is marked against the sentence in the text, so another correct wording scores lower.": "Ĝi estas taksata kompare kun la frazo de la teksto, do alia ĝusta vortumo ricevas malpli.",
  "It runs on this device: nothing you say leaves it. The first time, the browser may download its language model, which is large.": "Ĝi funkcias sur ĉi tiu aparato: nenio, kion vi diras, forlasas ĝin. La unuan fojon la retumilo eble elŝutos sian lingvomodelon, kiu estas granda.",
  "It runs through your AI cowork folder: each reply comes when your agent answers, so keep the agent watching the folder.": "Ĝi funkcias per via dosierujo de AI cowork: ĉiu respondo venas kiam via agento respondas, do lasu ĝin atenti la dosierujon.",
+ "It was {pct} sure of what it heard.": "Certeco pri tio, kion ĝi aŭdis: {pct}.",
  "Item {i} of {n}": "Ero {i} el {n}",
  "Just listen": "Nur aŭskulti",
  "Katakana": "Katakano",
@@ -209,6 +210,8 @@
  "Speak": "Paroli",
  "Speaking uses the speech recognition built into your browser, which may send the audio to the browser maker.": "Parolado uzas la parolrekonon de via retumilo, kiu eble sendas la sonon al la kreinto de la retumilo.",
  "Speaking": "Parolado",
+ "Speaking: at {level} speech recognition understands 85% or more of what you say.": "Parolado: je {level} la parolrekono komprenas 85% aŭ pli de tio, kion vi diras.",
+ "Speaking: no level is confirmed yet. It takes two sessions at a level with 85% of your words understood.": "Parolado: ankoraŭ neniu nivelo estas konfirmita. Necesas du sesioj je unu nivelo kun 85% de viaj vortoj komprenitaj.",
  "Start the conversation": "Komenci la konversacion",
  "Start the lesson": "Komenci la lecionon",
  "Start the role-play": "Komenci la rolludon",
@@ -381,6 +384,10 @@
  "{n} story added|{n} stories added": {
   "one": "{n} rakonto aldonita",
   "other": "{n} rakontoj aldonitaj"
+ },
+ "{n} word was only its second guess (dotted): nearly right.|{n} words were only its second guess (dotted): nearly right.": {
+  "one": "{n} vorto estis nur ĝia dua diveno (punktita): preskaŭ ĝusta.",
+  "other": "{n} vortoj estis nur ĝia dua diveno (punktitaj): preskaŭ ĝustaj."
  },
  "{n} word written|{n} words written": {
   "one": "{n} vorto skribita",

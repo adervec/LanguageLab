@@ -88,6 +88,7 @@
  "It is marked against the sentence in the text, so another correct wording scores lower.": "评分以课文中的原句为准，其他正确的说法得分会低一些。",
  "It runs on this device: nothing you say leaves it. The first time, the browser may download its language model, which is large.": "它在这台设备上运行：你说的话不会离开设备。第一次使用时，浏览器可能要下载较大的语言模型。",
  "It runs through your AI cowork folder: each reply comes when your agent answers, so keep the agent watching the folder.": "它通过你的 AI cowork 文件夹运行：你的代理回答后回复才会到，所以请让代理一直留意这个文件夹。",
+ "It was {pct} sure of what it heard.": "对听到内容的把握：{pct}。",
  "Item {i} of {n}": "第 {i} 项，共 {n} 项",
  "Just listen": "只听",
  "Katakana": "片假名",
@@ -207,6 +208,8 @@
  "Speak": "开始说",
  "Speaking uses the speech recognition built into your browser, which may send the audio to the browser maker.": "口述会使用浏览器内置的语音识别，音频可能会发送给浏览器厂商。",
  "Speaking": "口语",
+ "Speaking: at {level} speech recognition understands 85% or more of what you say.": "口语：在 {level} 级别，语音识别能听懂你所说内容的 85% 以上。",
+ "Speaking: no level is confirmed yet. It takes two sessions at a level with 85% of your words understood.": "口语：尚未确认任何级别。需要在同一级别完成两次练习，并且 85% 的词被听懂。",
  "Start the conversation": "开始对话",
  "Start the lesson": "开始上课",
  "Start the role-play": "开始角色扮演",
@@ -371,6 +374,9 @@
  },
  "{n} story added|{n} stories added": {
   "other": "已添加 {n} 个故事"
+ },
+ "{n} word was only its second guess (dotted): nearly right.|{n} words were only its second guess (dotted): nearly right.": {
+  "other": "{n} 个词只是它的第二猜测（虚线）：差一点就对了。"
  },
  "{n} word written|{n} words written": {
   "other": "已写 {n} 个单词"

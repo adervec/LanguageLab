@@ -89,6 +89,7 @@
  "It is marked against the sentence in the text, so another correct wording scores lower.": "با جملهٔ متن سنجیده می‌شود، پس بیان درستِ دیگر امتیاز کمتری می‌گیرد.",
  "It runs on this device: nothing you say leaves it. The first time, the browser may download its language model, which is large.": "روی همین دستگاه اجرا می‌شود: هیچ‌چیز از آنچه می‌گویید از آن بیرون نمی‌رود. بار نخست، مرورگر شاید مدل زبانی‌اش را که حجیم است بارگیری کند.",
  "It runs through your AI cowork folder: each reply comes when your agent answers, so keep the agent watching the folder.": "از راه پوشهٔ AI cowork شما اجرا می‌شود: هر پاسخ وقتی می‌رسد که عامل شما جواب بدهد، پس بگذارید عامل پوشه را زیر نظر داشته باشد.",
+ "It was {pct} sure of what it heard.": "اطمینان از آنچه شنیده شد: {pct}.",
  "Item {i} of {n}": "مورد {i} از {n}",
  "Just listen": "فقط گوش دادن",
  "Katakana": "کاتاکانا",
@@ -209,6 +210,8 @@
  "Speak": "صحبت کنید",
  "Speaking uses the speech recognition built into your browser, which may send the audio to the browser maker.": "صحبت کردن از تشخیص گفتارِ داخلی مرورگر شما استفاده می‌کند که ممکن است صدا را برای سازندهٔ مرورگر بفرستد.",
  "Speaking": "صحبت کردن",
+ "Speaking: at {level} speech recognition understands 85% or more of what you say.": "گفتار: در سطح {level} تشخیص گفتار ۸۵٪ یا بیشترِ آنچه می‌گویید را می‌فهمد.",
+ "Speaking: no level is confirmed yet. It takes two sessions at a level with 85% of your words understood.": "گفتار: هنوز هیچ سطحی تأیید نشده است. دو جلسه در یک سطح لازم است که در آن‌ها ۸۵٪ واژه‌هایتان فهمیده شده باشد.",
  "Start the conversation": "شروع گفت‌وگو",
  "Start the lesson": "شروع درس",
  "Start the role-play": "شروع نقش‌آفرینی",
@@ -381,6 +384,10 @@
  "{n} story added|{n} stories added": {
   "one": "{n} داستان اضافه شد",
   "other": "{n} داستان اضافه شد"
+ },
+ "{n} word was only its second guess (dotted): nearly right.|{n} words were only its second guess (dotted): nearly right.": {
+  "one": "{n} واژه فقط حدس دوم آن بود (نقطه‌چین): تقریباً درست.",
+  "other": "{n} واژه فقط حدس دوم آن بود (نقطه‌چین): تقریباً درست."
  },
  "{n} word written|{n} words written": {
   "one": "{n} واژه نوشته شد",
