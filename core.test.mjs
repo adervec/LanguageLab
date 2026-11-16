@@ -115,6 +115,16 @@ assert.equal(c.dictationScore('Bonjour.', '').score, 0);
 assert.deepEqual([c.dictationScore('The trip took five hours.', 'the trip took 5 hours', 'en', true).score, c.dictationScore('The trip took five hours.', 'the trip took 5 hours', 'en').score], [1, 4 / 5]);
 assert.deepEqual(c.dictationScore('Elle a deux chats.', 'elle a 2 chiens', 'fr', true).hits, [true, true, true, false]);
 assert.equal(c.dictationScore('我有三本书。', '我有3本书', 'zh', true).score, 1);
+// Arabic script: vowel marks and a hamza on its carrier are forgiven like accents; Arabic and Persian yeh and kaf are one letter
+assert.equal(c.dictationScore('شكراً جزيلاً، أنا أحب السفر إلى هناك.', 'شكرا جزيلا انا احب السفر الى هناك', 'ar').score, 1);
+assert.equal(c.dictationScore('ماهی و کتاب', 'ماهي و كتاب', 'fa').score, 1);
+assert.equal(c.dictationScore('شكراً', 'شكر', 'ar').score, 0); // (a missing letter is still a miss)
+// a Persian word in two halves around a zero-width non-joiner: one word to tap, and right typed with the joiner, with a space or joined up
+assert.deepEqual(c.wordKeys('من می‌روم.', 'fa'), ['من', 'می‌روم']);
+for (const typed of ['من به بازار می‌روم', 'من به بازار می روم', 'من به بازار میروم']) assert.equal(c.dictationScore('من به بازار می‌روم.', typed, 'fa').score, 1);
+assert.equal(c.dictationScore('من به بازار می‌روم.', 'من به بازار', 'fa').score, 3 / 5);
+// Arabic joins "the" (and a little word before it) to its noun: an answer passes with or without it; a short word is left whole
+assert.deepEqual([c.answerOk('يشرب القهوة بالحليب', ['حليب'], 'ar'), c.answerOk('حليب', ['الحليب'], 'ar'), c.answerOk('القطار', ['قطار'], 'ar'), c.answerOk('ألف', ['ف'], 'ar'), c.answerOk('الحليب', ['قطار'], 'ar')], [true, true, true, false, false]);
 assert.equal(c.pickDictation('Un. Deux mots ici non. Voici une phrase assez longue. Encore une autre phrase ici. Et une dernière phrase pour finir. Oui.', 2).length, 2);
 assert.deepEqual(c.pickDictation(['Oui.', 'Je voudrais un café.'], 4), ['Je voudrais un café.']);
 

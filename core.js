@@ -54,6 +54,12 @@ export const LANGS = {
   fil: { name: 'Filipino', english: 'Filipino (Tagalog)', bcp: 'fil-PH', keys: 'ñ', mini: true },
   sw: { name: 'Kiswahili', english: 'Swahili', bcp: 'sw-KE', keys: '', mini: true },
   eo: { name: 'Esperanto', english: 'Esperanto', bcp: 'eo', keys: 'ĉĝĥĵŝŭ', mini: true },
+  ar: { name: 'العربية', english: 'Arabic', bcp: 'ar-SA', keys: '', mini: true },
+  fa: { name: 'فارسی', english: 'Persian', bcp: 'fa-IR', keys: '', mini: true },
+  hi: { name: 'हिन्दी', english: 'Hindi', bcp: 'hi-IN', keys: '', mini: true },
+  ur: { name: 'اردو', english: 'Urdu', bcp: 'ur-PK', keys: '', mini: true },
+  bn: { name: 'বাংলা', english: 'Bengali', bcp: 'bn-IN', keys: '', mini: true },
+  th: { name: 'ไทย', english: 'Thai', bcp: 'th-TH', keys: '', seg: true, mini: true },
 };
 const SEG = /^(zh|ja|th|lo|km|my|yue)$/; // written without spaces: words come from Intl.Segmenter
 export const isLangCode = c => typeof c === 'string' && /^[a-z]{2,3}$/.test(c);
@@ -64,7 +70,10 @@ export function langInfo(code) {
 }
 
 // ---- text ----
-const strip = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/œ/g, 'oe').replace(/æ/g, 'ae').replace(/ß/g, 'ss');
+// Arabic script: the short-vowel marks, the lengthening stroke and a hamza sitting on a carrier are forgiven like accents, and the
+// Arabic and Persian shapes of yeh and kaf count as one letter (ي ى ی, ك ک).
+const strip = s => s.normalize('NFD').replace(/[\u0300-\u036f\u064b-\u065f\u0670\u0640]/g, '').toLowerCase().replace(/œ/g, 'oe').replace(/æ/g, 'ae').replace(/ß/g, 'ss')
+  .replace(/[\u064a\u0649]/g, '\u06cc').replace(/\u0643/g, '\u06a9');
 export const key = w => w.normalize('NFC').toLowerCase().replace(/’/g, "'");
 
 // Thai has no full stop: a space separates sentences and clauses, so there each run between spaces is one. Urdu ends a
@@ -95,7 +104,7 @@ export function tokens(text, lang = 'fr') {
   // elide: "l'école" is a clitic and a word, "aujourd'hui" is one word. Otherwise an apostrophe inside
   // a word stays in it ("don't", "п'ять"), except a final 's ("Claire's" is "Claire").
   const re = L.elide ? /aujourd['’]hui|\p{L}[\p{L}\p{M}]*/giu
-    : /(?<=[\p{L}\p{M}])['’]s(?![\p{L}\p{M}])|\p{L}[\p{L}\p{M}]*(?:['’](?!s(?![\p{L}\p{M}]))\p{L}[\p{L}\p{M}]*)*/gu;
+    : /(?<=[\p{L}\p{M}])['’]s(?![\p{L}\p{M}])|\p{L}[\p{L}\p{M}\u200c\u200d]*(?:['’](?!s(?![\p{L}\p{M}]))\p{L}[\p{L}\p{M}\u200c\u200d]*)*/gu;
   let at = 0, m;
   while ((m = re.exec(text))) {
     push(text.slice(at, m.index), false);
@@ -135,7 +144,11 @@ export const plainWords = (s, lang) => spans(String(s ?? ''), lang).filter(x => 
 // spoken: the text came from a speech recogniser, which writes a number as digits ("five hours" comes back as "5 hours"), so a
 // number in it stands for one word of the target, whichever. ponytail: it cannot tell "5" from "3": a wrong number said aloud passes.
 export function dictationScore(target, typed, lang, spoken) {
-  const parts = spans(String(target), lang), a = parts.filter(x => x.word).map(x => strip(x.s)), b = plainWords(typed, lang);
+  const parts = spans(String(target), lang), a = parts.filter(x => x.word).map(x => strip(x.s));
+  // Persian writes one word in two halves around a zero-width non-joiner (می‌روم). Typed with it, or with a space, the halves match as they
+  // are; typed joined up (میروم) the word is cut back in two here. ponytail: two halves only; a word in three still needs its joiners.
+  const halves = new Map(parts.flatMap((p, k) => p.s === '\u200c' && parts[k - 1]?.word && parts[k + 1]?.word ? [[strip(parts[k - 1].s) + strip(parts[k + 1].s), [strip(parts[k - 1].s), strip(parts[k + 1].s)]]] : []));
+  const b = plainWords(typed, lang).flatMap(w => halves.get(w) || [w]);
   const same = (x, y) => x === y || (!!spoken && /^\p{N}+$/u.test(y) && !/^\p{N}+$/u.test(x));
   const L = Array.from({ length: a.length + 1 }, () => new Array(b.length + 1).fill(0));
   for (let i = a.length - 1; i >= 0; i--) for (let j = b.length - 1; j >= 0; j--)
@@ -163,8 +176,10 @@ export function pickDictation(src, n = 4, lang) {
 export function answerOk(answer, keys, lang) {
   if (langInfo(lang).seg) { const said = plainWords(answer, lang).join(''); return (keys || []).some(k => { const w = plainWords(k, lang).join(''); return w.length > 0 && said.includes(w); }); }
   // (Hangul is compared letter by letter, so even a one-syllable noun is found under its particle: 책 in 책을)
-  const have = plainWords(answer, lang), has = w => have.some(h => h === w || (w.length >= (/[\u1100-\u11ff]/.test(w) ? 2 : 4) && h.startsWith(w)));
-  return (keys || []).some(k => { const w = plainWords(k, lang); return w.length > 0 && w.every(has); });
+  // Arabic joins "the" (and a one-letter word before it) to its noun: الحليب، بالحليب and للحليب all hold حليب, so they come off both sides.
+  const bare = w => lang === 'ar' ? w.replace(/^(?:[\u0648\u0641\u0628\u06a9]?\u0627\u0644|\u0648?\u0644\u0644)(?=\p{L}{3})/u, '') : w;
+  const have = plainWords(answer, lang).map(bare), has = w => have.some(h => h === w || (w.length >= (/[\u1100-\u11ff]/.test(w) ? 2 : 4) && h.startsWith(w)));
+  return (keys || []).some(k => { const w = plainWords(k, lang).map(bare); return w.length > 0 && w.every(has); });
 }
 
 // ---- review cards ----
