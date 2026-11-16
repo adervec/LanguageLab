@@ -1,0 +1,412 @@
+[
+ {
+  "id": "gl-market",
+  "title": "No mercado",
+  "level": "A1",
+  "text": "Todos os sábados María vai ao mercado. O mercado está no centro da cidade. Vai sol e hai moita xente. A María gústalle o mercado, porque a froita é fresca e barata. Primeiro merca mazás e laranxas. Despois merca pan, queixo e un pouco de peixe. O home do posto do peixe é moi amable. Sempre lle pregunta pola súa familia. No mercado María atopa a miúdo a súa amiga Elena. Hoxe toman un café xuntas e falan moito tempo. Ao mediodía María volve á casa con dúas bolsas pesadas. Está cansa, pero contenta.",
+  "gloss": {
+   "mercado": "market",
+   "centro": "centre",
+   "cidade": "town",
+   "sol": "sun",
+   "xente": "people",
+   "froita": "fruit",
+   "fresca": "fresh",
+   "barata": "cheap",
+   "mazás": "apples",
+   "laranxas": "oranges",
+   "pan": "bread",
+   "queixo": "cheese",
+   "peixe": "fish",
+   "amable": "friendly",
+   "familia": "family",
+   "amiga": "friend",
+   "xuntas": "together",
+   "pesadas": "heavy",
+   "bolsas": "bags",
+   "cansa": "tired",
+   "contenta": "happy"
+  },
+  "questions": [
+   {
+    "q": "Onde está o mercado?",
+    "a": [
+     "centro"
+    ]
+   },
+   {
+    "q": "Que merca María primeiro?",
+    "a": [
+     "mazás"
+    ]
+   },
+   {
+    "q": "A quen atopa María a miúdo no mercado?",
+    "a": [
+     "Elena"
+    ]
+   }
+  ],
+  "notice": "Galician joins little words together: \"en\" and \"o\" make \"no\" (no mercado), \"a\" and \"o\" make \"ao\", \"por\" and \"a\" make \"pola\". The pronoun goes after the verb and sticks to it: \"gústalle\" (she likes it).",
+  "back": [
+   [
+    "Primeiro merca mazás e laranxas.",
+    "First she buys apples and oranges."
+   ],
+   [
+    "Sempre lle pregunta pola súa familia.",
+    "He always asks about her family."
+   ]
+  ]
+ },
+ {
+  "id": "gl-day",
+  "title": "O meu día",
+  "level": "A1",
+  "text": "Chámome Daniel e vivo nun piso pequeno. Todas as mañás érgome ás sete. Primeiro bebo té e como pan con manteiga. Despois vou ao traballo en autobús. Traballo nunha libraría no centro da cidade. Gústame o meu traballo, porque me encantan os libros. Ao mediodía como sopa nun restaurante pequeno. Pola tarde veñen moitos clientes á tenda. Á noite volvo á casa e preparo a cea. Despois de cear chamo a miña nai ou leo un libro. Déitome ás once. Os domingos non traballo e durmo máis.",
+  "gloss": {
+   "piso": "flat",
+   "érgome": "I get up",
+   "mañás": "morning",
+   "té": "tea",
+   "manteiga": "butter",
+   "traballo": "work",
+   "autobús": "bus",
+   "libraría": "bookshop",
+   "cidade": "city",
+   "libros": "books",
+   "sopa": "soup",
+   "restaurante": "restaurant",
+   "tarde": "afternoon",
+   "clientes": "customers",
+   "noite": "night, evening",
+   "preparo": "I prepare, I cook",
+   "cea": "dinner",
+   "chamo": "call",
+   "nai": "mother",
+   "déitome": "I go to bed",
+   "durmo": "sleep",
+   "máis": "more, longer"
+  },
+  "questions": [
+   {
+    "q": "Onde traballa Daniel?",
+    "a": [
+     "libraría"
+    ]
+   },
+   {
+    "q": "Como vai Daniel ao traballo?",
+    "a": [
+     "autobús"
+    ]
+   },
+   {
+    "q": "Que come Daniel ao mediodía?",
+    "a": [
+     "sopa"
+    ]
+   }
+  ],
+  "notice": "The pronoun usually follows the verb and is written as one word with it: \"chámome\" (I am called), \"érgome\" (I get up), \"déitome\" (I go to bed). After \"porque\" or \"non\" it goes in front: \"porque me encantan\".",
+  "back": [
+   [
+    "Despois vou ao traballo en autobús.",
+    "Then I go to work by bus."
+   ],
+   [
+    "Á noite volvo á casa e preparo a cea.",
+    "In the evening I go home and cook dinner."
+   ]
+  ]
+ },
+ {
+  "id": "gl-sea",
+  "title": "Unha fin de semana no mar",
+  "level": "A2",
+  "text": "A fin de semana pasada o meu irmán e mais eu fomos ao mar. Collemos o tren pola mañá cedo e a viaxe durou tres horas. O tempo era marabilloso: o ceo estaba azul e a auga quente. Nadamos moito tempo e despois deitámonos na praia. Ao mediodía comemos peixe fresco nun restaurante pequeno preto do porto. O camareiro foi amable e tróuxonos auga fría. Pola tarde paseamos pola cidade vella e mercamos postais. O meu irmán sacou moitas fotos dos barcos. Á noite estabamos moi cansos, pero non queriamos volver á casa. Perdemos o último tren e tivemos que agardar unha hora. Foi o mellor día do verán. A próxima vez queremos quedar unha semana enteira.",
+  "gloss": {
+   "semana": "week (fin de semana: weekend)",
+   "irmán": "brother",
+   "mar": "sea",
+   "tren": "train",
+   "viaxe": "journey",
+   "horas": "hours",
+   "tempo": "weather",
+   "ceo": "sky",
+   "azul": "blue",
+   "auga": "water",
+   "quente": "warm",
+   "nadamos": "swam",
+   "praia": "beach",
+   "camareiro": "waiter",
+   "porto": "harbour",
+   "paseamos": "walked",
+   "postais": "postcards",
+   "fotos": "photos",
+   "barcos": "boats",
+   "cansos": "tired",
+   "perdemos": "missed",
+   "agardar": "wait",
+   "verán": "summer"
+  },
+  "questions": [
+   {
+    "q": "En que foron ao mar?",
+    "a": [
+     "tren"
+    ]
+   },
+   {
+    "q": "Cantas horas durou a viaxe?",
+    "a": [
+     "tres",
+     "3"
+    ]
+   },
+   {
+    "q": "Que mercaron na cidade vella?",
+    "a": [
+     "postais"
+    ]
+   }
+  ],
+  "notice": "The simple past needs no helping verb: \"fomos\" (we went), \"nadamos\" (we swam), \"mercamos\" (we bought), \"durou\" (it lasted). \"Estaba\" and \"era\" describe how things were.",
+  "back": [
+   [
+    "Pola tarde paseamos pola cidade vella e mercamos postais.",
+    "In the afternoon we walked through the old town and bought postcards."
+   ],
+   [
+    "Perdemos o último tren e tivemos que agardar unha hora.",
+    "We missed the last train and had to wait an hour."
+   ]
+  ]
+ },
+ {
+  "id": "gl-neighbour",
+  "title": "A nova veciña",
+  "level": "A2",
+  "text": "O mes pasado mudouse unha nova veciña ao noso edificio. Chámase Sofía e vén doutra cidade. Ao principio non coñecía a ninguén aquí. Unha noite petou na nosa porta, porque a lámpada da súa cociña estaba estragada. O meu pai subiu e arranxouna en dez minutos. Sofía estaba moi agradecida e ao día seguinte tróuxonos unha torta. A torta estaba deliciosa e o meu irmán pequeno comeu tres anacos. Agora Sofía toma té a miúdo coa miña nai. Traballa nun hospital e conta historias interesantes. Onte axudoume cos deberes. O domingo ensinámoslle o parque e o mercado vello. Di que xa se sente coma na casa. Creo que atopamos unha nova amiga.",
+  "gloss": {
+   "veciña": "neighbour",
+   "mudouse": "moved",
+   "mes": "month",
+   "cidade": "city",
+   "ninguén": "anybody",
+   "petou": "knocked",
+   "porta": "door",
+   "cociña": "kitchen",
+   "lámpada": "lamp",
+   "estragada": "broken",
+   "arranxouna": "repaired it",
+   "minutos": "minutes",
+   "agradecida": "grateful",
+   "torta": "cake",
+   "deliciosa": "delicious",
+   "anacos": "pieces",
+   "hospital": "hospital",
+   "historias": "stories",
+   "deberes": "homework",
+   "parque": "park",
+   "xa": "already",
+   "atopamos": "found"
+  },
+  "questions": [
+   {
+    "q": "Que estaba estragado na cociña de Sofía?",
+    "a": [
+     "lámpada"
+    ]
+   },
+   {
+    "q": "Que trouxo Sofía ao día seguinte?",
+    "a": [
+     "torta"
+    ]
+   },
+   {
+    "q": "Onde traballa Sofía?",
+    "a": [
+     "hospital"
+    ]
+   }
+  ],
+  "notice": "Object pronouns stick to the end of the verb: \"arranxouna\" (he repaired it), \"tróuxonos\" (she brought us), \"axudoume\" (she helped me), \"ensinámoslle\" (we showed her).",
+  "back": [
+   [
+    "O meu pai subiu e arranxouna en dez minutos.",
+    "My father went upstairs and repaired it in ten minutes."
+   ],
+   [
+    "Traballa nun hospital e conta historias interesantes.",
+    "She works in a hospital and tells interesting stories."
+   ]
+  ]
+ },
+ {
+  "id": "gl-cafe",
+  "title": "Na cafetaría",
+  "level": "A1",
+  "roles": [
+   "Camareiro",
+   "Cliente"
+  ],
+  "lines": [
+   [
+    0,
+    "Bos días! Que desexa?"
+   ],
+   [
+    1,
+    "Bos días. Un café con leite, por favor."
+   ],
+   [
+    0,
+    "Quere algo de comer?"
+   ],
+   [
+    1,
+    "Si, que tortas teñen hoxe?"
+   ],
+   [
+    0,
+    "Temos torta de mazá e torta de chocolate."
+   ],
+   [
+    1,
+    "Entón levo un anaco de torta de mazá."
+   ],
+   [
+    0,
+    "Aquí ten. Algo máis?"
+   ],
+   [
+    1,
+    "Non, grazas. Canto é todo?"
+   ],
+   [
+    0,
+    "Seis euros, por favor."
+   ],
+   [
+    1,
+    "Aquí ten. Grazas e ata logo!"
+   ]
+  ],
+  "gloss": {
+   "café": "coffee",
+   "leite": "milk",
+   "algo": "something",
+   "comer": "eat",
+   "tortas": "cakes",
+   "hoxe": "today",
+   "mazá": "apple",
+   "chocolate": "chocolate",
+   "anaco": "piece",
+   "máis": "more (algo máis: anything else)",
+   "canto": "how much",
+   "euros": "money"
+  },
+  "questions": [
+   {
+    "q": "Con que quere o café o cliente?",
+    "a": [
+     "leite"
+    ]
+   },
+   {
+    "q": "De que é a torta que leva o cliente?",
+    "a": [
+     "mazá"
+    ]
+   }
+  ],
+  "notice": "The polite \"you\" (vostede) takes the same verb form as \"he\" or \"she\": \"Que desexa?\" (What would you like?), \"Quere algo?\", \"Aquí ten\" (Here you are)."
+ },
+ {
+  "id": "gl-hotel",
+  "title": "No hotel",
+  "level": "A2",
+  "roles": [
+   "Recepcionista",
+   "Clienta"
+  ],
+  "lines": [
+   [
+    0,
+    "Boas noites. En que podo axudala?"
+   ],
+   [
+    1,
+    "Boas noites. Teño unha reserva para dúas noites."
+   ],
+   [
+    0,
+    "Como se chama, por favor?"
+   ],
+   [
+    1,
+    "Chámome Anna Berg. Aquí ten o meu pasaporte."
+   ],
+   [
+    0,
+    "Grazas. O seu cuarto está no terceiro andar."
+   ],
+   [
+    1,
+    "O almorzo está incluído no prezo?"
+   ],
+   [
+    0,
+    "Si, o almorzo é das sete ás dez."
+   ],
+   [
+    1,
+    "Moi ben. Hai ascensor? A miña maleta pesa moito."
+   ],
+   [
+    0,
+    "Si, o ascensor está ao lado da escaleira. Aquí ten a chave."
+   ],
+   [
+    1,
+    "Moitas grazas. Boa noite!"
+   ]
+  ],
+  "gloss": {
+   "axudala": "help you",
+   "reserva": "reservation",
+   "noites": "nights",
+   "chámome": "my name is",
+   "pasaporte": "passport",
+   "cuarto": "room",
+   "andar": "floor",
+   "almorzo": "breakfast",
+   "incluído": "included",
+   "prezo": "price",
+   "ascensor": "lift",
+   "maleta": "suitcase",
+   "pesa": "weighs (pesa moito: is heavy)",
+   "escaleira": "stairs",
+   "chave": "key"
+  },
+  "questions": [
+   {
+    "q": "Para cantas noites ten reserva a clienta?",
+    "a": [
+     "dúas",
+     "2"
+    ]
+   },
+   {
+    "q": "En que andar está o cuarto?",
+    "a": [
+     "terceiro",
+     "3"
+    ]
+   }
+  ],
+  "notice": "\"Hai\" means \"there is\" or \"there are\", and a question keeps the word order of a statement: \"Hai ascensor?\". \"Boas noites\" is said from the evening on, as a greeting and as a goodbye."
+ }
+]

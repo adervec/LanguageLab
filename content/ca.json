@@ -1,0 +1,413 @@
+[
+ {
+  "id": "ca-market",
+  "title": "Al mercat",
+  "level": "A1",
+  "text": "Cada dissabte la Maria va al mercat. El mercat és al centre de la ciutat. Fa sol i hi ha molta gent. A la Maria li agrada el mercat, perquè la fruita és fresca i barata. Primer compra pomes i taronges. Després compra pa, formatge i una mica de peix. L'home de la parada del peix és molt amable. Sempre li pregunta per la seva família. Al mercat, la Maria sovint es troba amb la seva amiga Elena. Avui prenen un cafè juntes i parlen molta estona. Al migdia la Maria torna a casa amb dues bosses pesades. Està cansada, però contenta.",
+  "gloss": {
+   "mercat": "market",
+   "centre": "centre",
+   "ciutat": "town",
+   "sol": "sun",
+   "gent": "people",
+   "fruita": "fruit",
+   "fresca": "fresh",
+   "barata": "cheap",
+   "pomes": "apples",
+   "taronges": "oranges",
+   "pa": "bread",
+   "formatge": "cheese",
+   "peix": "fish",
+   "amable": "friendly",
+   "família": "family",
+   "amiga": "friend",
+   "juntes": "together",
+   "pesades": "heavy",
+   "bosses": "bags",
+   "cansada": "tired",
+   "contenta": "happy"
+  },
+  "questions": [
+   {
+    "q": "On és el mercat?",
+    "a": [
+     "centre"
+    ]
+   },
+   {
+    "q": "Què compra primer la Maria?",
+    "a": [
+     "pomes"
+    ]
+   },
+   {
+    "q": "Amb qui es troba sovint la Maria al mercat?",
+    "a": [
+     "Elena"
+    ]
+   }
+  ],
+  "notice": "Catalan puts an article before a person's name: \"la Maria\". \"Li agrada\" (it pleases her) is how to say that she likes something: \"A la Maria li agrada el mercat\".",
+  "back": [
+   [
+    "Primer compra pomes i taronges.",
+    "First she buys apples and oranges."
+   ],
+   [
+    "Sempre li pregunta per la seva família.",
+    "He always asks about her family."
+   ]
+  ]
+ },
+ {
+  "id": "ca-day",
+  "title": "El meu dia",
+  "level": "A1",
+  "text": "Em dic Daniel i visc en un pis petit. Cada matí em llevo a les set. Primer bec te i menjo pa amb mantega. Després vaig a la feina amb autobús. Treballo en una llibreria al centre de la ciutat. M'agrada la meva feina, perquè m'encanten els llibres. Al migdia menjo sopa en un restaurant petit. A la tarda venen molts clients a la botiga. Al vespre torno a casa i preparo el sopar. Després de sopar truco a la meva mare o llegeixo un llibre. Me'n vaig al llit a les onze. El diumenge no treballo i dormo més.",
+  "gloss": {
+   "pis": "flat",
+   "llevo": "(em llevo: I get up)",
+   "matí": "morning",
+   "te": "tea",
+   "mantega": "butter",
+   "feina": "work",
+   "autobús": "bus",
+   "llibreria": "bookshop",
+   "ciutat": "city",
+   "llibres": "books",
+   "sopa": "soup",
+   "restaurant": "restaurant",
+   "tarda": "afternoon",
+   "clients": "customers",
+   "vespre": "evening",
+   "preparo": "I prepare, I cook",
+   "sopar": "dinner",
+   "truco": "call",
+   "mare": "mother",
+   "llit": "bed",
+   "dormo": "sleep",
+   "més": "more, longer"
+  },
+  "questions": [
+   {
+    "q": "On treballa en Daniel?",
+    "a": [
+     "llibreria"
+    ]
+   },
+   {
+    "q": "Com va en Daniel a la feina?",
+    "a": [
+     "autobús"
+    ]
+   },
+   {
+    "q": "Què menja en Daniel al migdia?",
+    "a": [
+     "sopa"
+    ]
+   }
+  ],
+  "notice": "The verb ending shows who acts, so \"jo\" (I) is left out: \"visc\" (I live), \"menjo\" (I eat), \"treballo\" (I work). Before a vowel \"em\" shortens to \"m'\": \"m'agrada\" (I like it).",
+  "back": [
+   [
+    "Després vaig a la feina amb autobús.",
+    "Then I go to work by bus."
+   ],
+   [
+    "Al vespre torno a casa i preparo el sopar.",
+    "In the evening I go home and cook dinner."
+   ]
+  ]
+ },
+ {
+  "id": "ca-sea",
+  "title": "Un cap de setmana al mar",
+  "level": "A2",
+  "text": "El cap de setmana passat el meu germà i jo vam anar al mar. Vam agafar el tren de bon matí i el viatge va durar tres hores. Feia un temps magnífic: el cel era blau i l'aigua era calenta. Vam nedar molta estona i després ens vam estirar a la platja. Al migdia vam menjar peix fresc en un restaurant petit a prop del port. El cambrer va ser amable i ens va portar aigua freda. A la tarda vam passejar per la ciutat vella i vam comprar postals. El meu germà va fer moltes fotos de les barques. Al vespre estàvem molt cansats, però no volíem tornar a casa. Vam perdre l'últim tren i vam haver d'esperar una hora. Va ser el millor dia de l'estiu. La pròxima vegada volem quedar-nos una setmana sencera.",
+  "gloss": {
+   "setmana": "week (cap de setmana: weekend)",
+   "germà": "brother",
+   "mar": "sea",
+   "tren": "train",
+   "viatge": "journey",
+   "hores": "hours",
+   "temps": "weather",
+   "cel": "sky",
+   "blau": "blue",
+   "aigua": "water",
+   "calenta": "warm",
+   "nedar": "to swim (vam nedar: we swam)",
+   "platja": "beach",
+   "cambrer": "waiter",
+   "port": "harbour",
+   "passejar": "to walk (vam passejar: we walked)",
+   "postals": "postcards",
+   "fotos": "photos",
+   "barques": "boats",
+   "cansats": "tired",
+   "perdre": "to miss, to lose (vam perdre: we missed)",
+   "esperar": "wait",
+   "estiu": "summer"
+  },
+  "questions": [
+   {
+    "q": "Amb què van anar al mar?",
+    "a": [
+     "tren"
+    ]
+   },
+   {
+    "q": "Quantes hores va durar el viatge?",
+    "a": [
+     "tres",
+     "3"
+    ]
+   },
+   {
+    "q": "Què van comprar a la ciutat vella?",
+    "a": [
+     "postals"
+    ]
+   }
+  ],
+  "notice": "The everyday past is made with \"anar\" and the infinitive: \"vam anar\" (we went), \"vam nedar\" (we swam), \"va durar\" (it lasted). \"Era\" and \"estàvem\" describe how things were.",
+  "back": [
+   [
+    "A la tarda vam passejar per la ciutat vella i vam comprar postals.",
+    "In the afternoon we walked through the old town and bought postcards."
+   ],
+   [
+    "Vam perdre l'últim tren i vam haver d'esperar una hora.",
+    "We missed the last train and had to wait an hour."
+   ]
+  ]
+ },
+ {
+  "id": "ca-neighbour",
+  "title": "La veïna nova",
+  "level": "A2",
+  "text": "El mes passat una veïna nova es va mudar al nostre edifici. Es diu Sofia i ve d'una altra ciutat. Al principi no coneixia ningú aquí. Un vespre va trucar a la nostra porta, perquè el llum de la seva cuina estava espatllat. El meu pare va pujar i el va arreglar en deu minuts. La Sofia estava molt agraïda i l'endemà ens va portar un pastís. El pastís era deliciós i el meu germà petit en va menjar tres trossos. Ara la Sofia sovint pren te amb la meva mare. Treballa en un hospital i explica històries interessants. Ahir em va ajudar amb els deures. Diumenge li vam ensenyar el parc i el mercat vell. Diu que ja se sent com a casa. Crec que hem trobat una amiga nova.",
+  "gloss": {
+   "veïna": "neighbour",
+   "mudar": "to move (es va mudar: she moved)",
+   "mes": "month",
+   "ciutat": "city",
+   "ningú": "anybody",
+   "trucar": "to knock (va trucar: she knocked)",
+   "porta": "door",
+   "cuina": "kitchen",
+   "llum": "lamp, light",
+   "espatllat": "broken",
+   "arreglar": "to repair (el va arreglar: he repaired it)",
+   "minuts": "minutes",
+   "agraïda": "grateful",
+   "pastís": "cake",
+   "deliciós": "delicious",
+   "trossos": "pieces",
+   "hospital": "hospital",
+   "històries": "stories",
+   "deures": "homework",
+   "parc": "park",
+   "ja": "already",
+   "trobat": "found"
+  },
+  "questions": [
+   {
+    "q": "Què estava espatllat a la cuina de la Sofia?",
+    "a": [
+     "llum"
+    ]
+   },
+   {
+    "q": "Què va portar la Sofia l'endemà?",
+    "a": [
+     "pastís"
+    ]
+   },
+   {
+    "q": "On treballa la Sofia?",
+    "a": [
+     "hospital"
+    ]
+   }
+  ],
+  "notice": "An adjective usually follows its noun and agrees with it: \"una veïna nova\" (a new neighbour), \"el mercat vell\" (the old market), \"històries interessants\". \"En\" stands for \"of it\": \"en va menjar tres trossos\".",
+  "back": [
+   [
+    "El meu pare va pujar i el va arreglar en deu minuts.",
+    "My father went upstairs and repaired it in ten minutes."
+   ],
+   [
+    "Treballa en un hospital i explica històries interessants.",
+    "She works in a hospital and tells interesting stories."
+   ]
+  ]
+ },
+ {
+  "id": "ca-cafe",
+  "title": "A la cafeteria",
+  "level": "A1",
+  "roles": [
+   "Cambrer",
+   "Client"
+  ],
+  "lines": [
+   [
+    0,
+    "Bon dia! Què voldrà?"
+   ],
+   [
+    1,
+    "Bon dia. Un cafè amb llet, si us plau."
+   ],
+   [
+    0,
+    "Vol alguna cosa per menjar?"
+   ],
+   [
+    1,
+    "Sí, quins pastissos tenen avui?"
+   ],
+   [
+    0,
+    "Tenim pastís de poma i pastís de xocolata."
+   ],
+   [
+    1,
+    "Doncs prendré un tros de pastís de poma."
+   ],
+   [
+    0,
+    "Aquí ho té. Alguna cosa més?"
+   ],
+   [
+    1,
+    "No, gràcies. Quant és tot plegat?"
+   ],
+   [
+    0,
+    "Sis euros, si us plau."
+   ],
+   [
+    1,
+    "Aquí té. Gràcies i adeu!"
+   ]
+  ],
+  "gloss": {
+   "cafè": "coffee",
+   "llet": "milk",
+   "cosa": "thing (alguna cosa: something)",
+   "menjar": "eat",
+   "pastissos": "cakes",
+   "avui": "today",
+   "poma": "apple",
+   "xocolata": "chocolate",
+   "tros": "piece",
+   "més": "more (alguna cosa més: anything else)",
+   "quant": "how much",
+   "euros": "money"
+  },
+  "questions": [
+   {
+    "q": "Amb què vol el cafè el client?",
+    "a": [
+     "llet"
+    ]
+   },
+   {
+    "q": "De què és el pastís que tria el client?",
+    "a": [
+     "poma"
+    ]
+   }
+  ],
+  "notice": "The polite \"you\" (vostè) uses the same verb form as \"he\" or \"she\": \"Què voldrà?\" (What will you have?), \"Vol alguna cosa?\", \"Aquí té\" (Here you are). \"Si us plau\" means please."
+ },
+ {
+  "id": "ca-hotel",
+  "title": "A l'hotel",
+  "level": "A2",
+  "roles": [
+   "Recepcionista",
+   "Clienta"
+  ],
+  "lines": [
+   [
+    0,
+    "Bon vespre. En què la puc ajudar?"
+   ],
+   [
+    1,
+    "Bon vespre. Tinc una reserva per a dues nits."
+   ],
+   [
+    0,
+    "Com es diu, si us plau?"
+   ],
+   [
+    1,
+    "Em dic Anna Berg. Aquí té el meu passaport."
+   ],
+   [
+    0,
+    "Gràcies. La seva habitació és a la tercera planta."
+   ],
+   [
+    1,
+    "L'esmorzar està inclòs en el preu?"
+   ],
+   [
+    0,
+    "Sí, l'esmorzar és de set a deu."
+   ],
+   [
+    1,
+    "Molt bé. Hi ha ascensor? La meva maleta pesa molt."
+   ],
+   [
+    0,
+    "Sí, l'ascensor és al costat de l'escala. Aquí té la clau."
+   ],
+   [
+    1,
+    "Moltes gràcies. Bona nit!"
+   ]
+  ],
+  "gloss": {
+   "ajudar": "help",
+   "reserva": "reservation",
+   "nits": "nights",
+   "dic": "(em dic: my name is)",
+   "passaport": "passport",
+   "habitació": "room",
+   "planta": "floor",
+   "esmorzar": "breakfast",
+   "inclòs": "included",
+   "preu": "price",
+   "ascensor": "lift",
+   "maleta": "suitcase",
+   "pesa": "weighs (pesa molt: is heavy)",
+   "escala": "stairs",
+   "clau": "key",
+   "vespre": "evening"
+  },
+  "questions": [
+   {
+    "q": "Per a quantes nits té reserva la clienta?",
+    "a": [
+     "dues",
+     "2"
+    ]
+   },
+   {
+    "q": "A quina planta és l'habitació?",
+    "a": [
+     "tercera",
+     "3"
+    ]
+   }
+  ],
+  "notice": "Before a vowel, \"el\" and \"la\" shorten to \"l'\": \"l'esmorzar\", \"l'ascensor\", \"l'escala\". \"Hi ha\" means \"there is\" or \"there are\"."
+ }
+]

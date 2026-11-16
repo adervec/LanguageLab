@@ -1,0 +1,415 @@
+[
+ {
+  "id": "nb-market",
+  "title": "På markedet",
+  "level": "A1",
+  "text": "Hver lørdag går Maria på markedet. Markedet ligger i sentrum av byen. Solen skinner, og det er mange mennesker der. Maria liker markedet, fordi frukten er fersk og billig. Først kjøper hun epler og appelsiner. Så kjøper hun brød, ost og litt fisk. Mannen i fiskeboden er veldig vennlig. Han spør alltid om familien hennes. På markedet treffer Maria ofte venninnen sin, Elena. I dag drikker de kaffe sammen og snakker lenge. Klokken tolv går Maria hjem med to tunge poser. Hun er trøtt, men glad.",
+  "gloss": {
+   "markedet": "market",
+   "sentrum": "centre",
+   "byen": "town",
+   "solen": "sun",
+   "mennesker": "people",
+   "frukten": "fruit",
+   "fersk": "fresh",
+   "billig": "cheap",
+   "epler": "apples",
+   "appelsiner": "oranges",
+   "brød": "bread",
+   "ost": "cheese",
+   "fisk": "fish",
+   "vennlig": "friendly",
+   "familien": "family",
+   "venninnen": "friend",
+   "sammen": "together",
+   "tunge": "heavy",
+   "poser": "bags",
+   "trøtt": "tired",
+   "glad": "happy"
+  },
+  "questions": [
+   {
+    "q": "Hvor ligger markedet?",
+    "a": [
+     "sentrum"
+    ]
+   },
+   {
+    "q": "Hva kjøper Maria først?",
+    "a": [
+     "epler"
+    ]
+   },
+   {
+    "q": "Hvem treffer Maria ofte på markedet?",
+    "a": [
+     "Elena"
+    ]
+   }
+  ],
+  "notice": "Norwegian puts \"the\" on the end of the noun: \"marked\" is a market and \"markedet\" the market; \"sol\" becomes \"solen\" and \"frukt\" becomes \"frukten\". After a word such as \"først\" or \"så\" the verb comes before the subject: \"Først kjøper hun\".",
+  "back": [
+   [
+    "Først kjøper hun epler og appelsiner.",
+    "First she buys apples and oranges."
+   ],
+   [
+    "Han spør alltid om familien hennes.",
+    "He always asks about her family."
+   ]
+  ]
+ },
+ {
+  "id": "nb-day",
+  "title": "Dagen min",
+  "level": "A1",
+  "text": "Jeg heter Daniel og bor i en liten leilighet. Hver morgen står jeg opp klokken sju. Først drikker jeg te og spiser brød med smør. Så drar jeg til jobben med buss. Jeg jobber i en bokhandel i sentrum av byen. Jeg liker jobben min, fordi jeg elsker bøker. Klokken tolv spiser jeg suppe på en liten restaurant. Om ettermiddagen kommer det mange kunder til butikken. Om kvelden drar jeg hjem og lager middag. Etter middagen ringer jeg til moren min eller leser en bok. Jeg legger meg klokken elleve. På søndager jobber jeg ikke, og da sover jeg lenger.",
+  "gloss": {
+   "leilighet": "flat",
+   "står": "(står opp: get up)",
+   "morgen": "morning",
+   "te": "tea",
+   "smør": "butter",
+   "jobben": "work",
+   "buss": "bus",
+   "bokhandel": "bookshop",
+   "byen": "city",
+   "bøker": "books",
+   "suppe": "soup",
+   "restaurant": "restaurant",
+   "ettermiddagen": "afternoon",
+   "kunder": "customers",
+   "kvelden": "evening",
+   "lager": "make (lager middag: cook dinner)",
+   "middag": "dinner",
+   "ringer": "call",
+   "moren": "mother",
+   "legger": "(legger meg: I go to bed)",
+   "sover": "sleep",
+   "lenger": "longer"
+  },
+  "questions": [
+   {
+    "q": "Hvor jobber Daniel?",
+    "a": [
+     "bokhandel"
+    ]
+   },
+   {
+    "q": "Hvordan kommer Daniel seg til jobben?",
+    "a": [
+     "buss"
+    ]
+   },
+   {
+    "q": "Hva spiser Daniel klokken tolv?",
+    "a": [
+     "suppe"
+    ]
+   }
+  ],
+  "notice": "The verb always takes the second place in a Norwegian sentence. When the sentence starts with a time, the subject moves behind the verb: \"Hver morgen står jeg opp\", \"Så drar jeg til jobben\".",
+  "back": [
+   [
+    "Så drar jeg til jobben med buss.",
+    "Then I go to work by bus."
+   ],
+   [
+    "Om kvelden drar jeg hjem og lager middag.",
+    "In the evening I go home and cook dinner."
+   ]
+  ]
+ },
+ {
+  "id": "nb-sea",
+  "title": "En helg ved sjøen",
+  "level": "A2",
+  "text": "Forrige helg dro broren min og jeg til sjøen. Vi tok et tog tidlig om morgenen, og reisen varte i tre timer. Været var nydelig: himmelen var blå og vannet varmt. Vi svømte lenge, og etterpå lå vi på stranden. Klokken tolv spiste vi fersk fisk på en liten restaurant ved havnen. Servitøren var vennlig og kom med kaldt vann til oss. Om ettermiddagen gikk vi gjennom gamlebyen og kjøpte postkort. Broren min tok mange bilder av båtene. Om kvelden var vi veldig trøtte, men vi ville ikke dra hjem. Vi mistet det siste toget og måtte vente en time. Det var den beste dagen i sommer. Neste gang vil vi bli en hel uke.",
+  "gloss": {
+   "helg": "weekend",
+   "broren": "brother",
+   "sjøen": "sea",
+   "toget": "train",
+   "reisen": "journey",
+   "timer": "hours",
+   "været": "weather",
+   "himmelen": "sky",
+   "blå": "blue",
+   "vannet": "water",
+   "varmt": "warm",
+   "svømte": "swam",
+   "stranden": "beach",
+   "servitøren": "waiter",
+   "havnen": "harbour",
+   "gikk": "walked",
+   "postkort": "postcards",
+   "bilder": "photos",
+   "båtene": "boats",
+   "trøtte": "tired",
+   "mistet": "missed",
+   "vente": "wait",
+   "uke": "week",
+   "sommer": "summer"
+  },
+  "questions": [
+   {
+    "q": "Hva reiste de med til sjøen?",
+    "a": [
+     "tog",
+     "toget"
+    ]
+   },
+   {
+    "q": "Hvor mange timer varte reisen?",
+    "a": [
+     "tre",
+     "3"
+    ]
+   },
+   {
+    "q": "Hva kjøpte de i gamlebyen?",
+    "a": [
+     "postkort"
+    ]
+   }
+  ],
+  "notice": "The past tense has the same form for every person: \"vi tok\" (we took), \"broren min tok\" (my brother took), \"vi kjøpte\" (we bought). \"My\" comes after the noun: \"broren min\".",
+  "back": [
+   [
+    "Om ettermiddagen gikk vi gjennom gamlebyen og kjøpte postkort.",
+    "In the afternoon we walked through the old town and bought postcards."
+   ],
+   [
+    "Vi mistet det siste toget og måtte vente en time.",
+    "We missed the last train and had to wait an hour."
+   ]
+  ]
+ },
+ {
+  "id": "nb-neighbour",
+  "title": "Den nye naboen",
+  "level": "A2",
+  "text": "Forrige måned flyttet en ny nabo inn i huset vårt. Hun heter Sofia og kommer fra en annen by. I begynnelsen kjente hun ingen her. En kveld banket hun på døren vår, fordi lampen på kjøkkenet hennes var ødelagt. Faren min gikk opp og reparerte den på ti minutter. Sofia var veldig takknemlig, og neste dag kom hun med en kake til oss. Kaken var deilig, og lillebroren min spiste tre stykker. Nå drikker Sofia ofte te sammen med moren min. Hun jobber på et sykehus og forteller interessante historier. I går hjalp hun meg med leksene. På søndag viste vi henne parken og det gamle markedet. Hun sier at hun allerede føler seg hjemme. Jeg tror vi har funnet en ny venn.",
+  "gloss": {
+   "nabo": "neighbour",
+   "flyttet": "moved",
+   "måned": "month",
+   "by": "city",
+   "ingen": "nobody",
+   "banket": "knocked",
+   "døren": "door",
+   "kjøkkenet": "kitchen",
+   "lampen": "lamp",
+   "ødelagt": "broken",
+   "reparerte": "repaired",
+   "minutter": "minutes",
+   "takknemlig": "grateful",
+   "kake": "cake",
+   "deilig": "delicious",
+   "stykker": "pieces",
+   "sykehus": "hospital",
+   "historier": "stories",
+   "leksene": "homework",
+   "parken": "park",
+   "allerede": "already",
+   "funnet": "found"
+  },
+  "questions": [
+   {
+    "q": "Hva var ødelagt på kjøkkenet til Sofia?",
+    "a": [
+     "lampe"
+    ]
+   },
+   {
+    "q": "Hva kom Sofia med neste dag?",
+    "a": [
+     "kake"
+    ]
+   },
+   {
+    "q": "Hvor jobber Sofia?",
+    "a": [
+     "sykehus"
+    ]
+   }
+  ],
+  "notice": "Possessives usually follow the noun, which then takes its \"the\" ending: \"huset vårt\" (our house), \"døren vår\" (our door), \"faren min\" (my father), \"kjøkkenet hennes\" (her kitchen).",
+  "back": [
+   [
+    "Faren min gikk opp og reparerte den på ti minutter.",
+    "My father went upstairs and repaired it in ten minutes."
+   ],
+   [
+    "Hun jobber på et sykehus og forteller interessante historier.",
+    "She works in a hospital and tells interesting stories."
+   ]
+  ]
+ },
+ {
+  "id": "nb-cafe",
+  "title": "På kafé",
+  "level": "A1",
+  "roles": [
+   "Servitør",
+   "Gjest"
+  ],
+  "lines": [
+   [
+    0,
+    "God morgen! Hva vil du ha?"
+   ],
+   [
+    1,
+    "God morgen. En kaffe med melk, takk."
+   ],
+   [
+    0,
+    "Vil du ha noe å spise?"
+   ],
+   [
+    1,
+    "Ja, hvilke kaker har dere i dag?"
+   ],
+   [
+    0,
+    "Vi har eplekake og sjokoladekake."
+   ],
+   [
+    1,
+    "Da tar jeg et stykke eplekake."
+   ],
+   [
+    0,
+    "Vær så god. Var det noe annet?"
+   ],
+   [
+    1,
+    "Nei takk. Hvor mye blir det?"
+   ],
+   [
+    0,
+    "Åtti kroner, takk."
+   ],
+   [
+    1,
+    "Vær så god. Takk og ha det bra!"
+   ]
+  ],
+  "gloss": {
+   "kaffe": "coffee",
+   "melk": "milk",
+   "noe": "something",
+   "spise": "eat",
+   "kaker": "cakes",
+   "dag": "day (i dag: today)",
+   "eplekake": "apple cake",
+   "sjokoladekake": "chocolate cake",
+   "stykke": "piece",
+   "annet": "else",
+   "mye": "much",
+   "kroner": "kroner (Norwegian money)"
+  },
+  "questions": [
+   {
+    "q": "Hva vil gjesten ha i kaffen?",
+    "a": [
+     "melk"
+    ]
+   },
+   {
+    "q": "Hvilken kake velger gjesten?",
+    "a": [
+     "eplekake"
+    ]
+   }
+  ],
+  "notice": "Norwegian builds long words by joining short ones: \"eple\" and \"kake\" make \"eplekake\" (apple cake), \"sjokolade\" and \"kake\" make \"sjokoladekake\". \"Takk\" covers both please and thank you."
+ },
+ {
+  "id": "nb-hotel",
+  "title": "På hotellet",
+  "level": "A2",
+  "roles": [
+   "Resepsjonist",
+   "Gjest"
+  ],
+  "lines": [
+   [
+    0,
+    "God kveld. Hva kan jeg hjelpe deg med?"
+   ],
+   [
+    1,
+    "God kveld. Jeg har en reservasjon for to netter."
+   ],
+   [
+    0,
+    "Hva er navnet ditt?"
+   ],
+   [
+    1,
+    "Jeg heter Anna Berg. Her er passet mitt."
+   ],
+   [
+    0,
+    "Takk. Rommet ditt er i tredje etasje."
+   ],
+   [
+    1,
+    "Er frokosten inkludert i prisen?"
+   ],
+   [
+    0,
+    "Ja, frokosten er fra sju til ti."
+   ],
+   [
+    1,
+    "Veldig bra. Finnes det heis her? Kofferten min er tung."
+   ],
+   [
+    0,
+    "Ja, heisen er ved siden av trappen. Her er nøkkelen din."
+   ],
+   [
+    1,
+    "Tusen takk. Ha en fin kveld!"
+   ]
+  ],
+  "gloss": {
+   "hjelpe": "help",
+   "reservasjon": "reservation",
+   "netter": "nights",
+   "navnet": "name",
+   "passet": "passport",
+   "rommet": "room",
+   "etasje": "floor",
+   "frokosten": "breakfast",
+   "inkludert": "included",
+   "prisen": "price",
+   "heis": "lift",
+   "kofferten": "suitcase",
+   "tung": "heavy",
+   "trappen": "stairs",
+   "nøkkelen": "key",
+   "kveld": "evening"
+  },
+  "questions": [
+   {
+    "q": "Hvor mange netter skal gjesten bo på hotellet?",
+    "a": [
+     "to",
+     "2"
+    ]
+   },
+   {
+    "q": "I hvilken etasje er rommet?",
+    "a": [
+     "tredje",
+     "3"
+    ]
+   }
+  ],
+  "notice": "Norwegian has two words for \"a\", \"en\" and \"et\", and the same letters go on the end for \"the\": \"en heis\" becomes \"heisen\" (the lift) and \"et rom\" becomes \"rommet\" (the room). \"Jeg heter\" means \"my name is\"."
+ }
+]

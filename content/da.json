@@ -1,0 +1,414 @@
+[
+ {
+  "id": "da-market",
+  "title": "På markedet",
+  "level": "A1",
+  "text": "Hver lørdag går Maria på markedet. Markedet ligger i centrum af byen. Solen skinner, og der er mange mennesker. Maria kan godt lide markedet, fordi frugten er frisk og billig. Først køber hun æbler og appelsiner. Så køber hun brød, ost og lidt fisk. Manden i fiskeboden er meget venlig. Han spørger altid til hendes familie. På markedet møder Maria tit sin veninde Elena. I dag drikker de kaffe sammen og snakker længe. Klokken tolv går Maria hjem med to tunge poser. Hun er træt, men glad.",
+  "gloss": {
+   "markedet": "market",
+   "centrum": "centre",
+   "byen": "town",
+   "solen": "sun",
+   "mennesker": "people",
+   "frugten": "fruit",
+   "frisk": "fresh",
+   "billig": "cheap",
+   "æbler": "apples",
+   "appelsiner": "oranges",
+   "brød": "bread",
+   "ost": "cheese",
+   "fisk": "fish",
+   "venlig": "friendly",
+   "familie": "family",
+   "veninde": "friend",
+   "sammen": "together",
+   "tunge": "heavy",
+   "poser": "bags",
+   "træt": "tired",
+   "glad": "happy"
+  },
+  "questions": [
+   {
+    "q": "Hvor ligger markedet?",
+    "a": [
+     "centrum"
+    ]
+   },
+   {
+    "q": "Hvad køber Maria først?",
+    "a": [
+     "æbler"
+    ]
+   },
+   {
+    "q": "Hvem møder Maria tit på markedet?",
+    "a": [
+     "Elena"
+    ]
+   }
+  ],
+  "notice": "Danish puts \"the\" on the end of the noun: \"marked\" is a market and \"markedet\" the market; \"sol\" becomes \"solen\" and \"frugt\" becomes \"frugten\". \"Kan godt lide\" means \"likes\".",
+  "back": [
+   [
+    "Først køber hun æbler og appelsiner.",
+    "First she buys apples and oranges."
+   ],
+   [
+    "Han spørger altid til hendes familie.",
+    "He always asks about her family."
+   ]
+  ]
+ },
+ {
+  "id": "da-day",
+  "title": "Min dag",
+  "level": "A1",
+  "text": "Jeg hedder Daniel og bor i en lille lejlighed. Hver morgen står jeg op klokken syv. Først drikker jeg te og spiser brød med smør. Så tager jeg på arbejde med bus. Jeg arbejder i en boghandel i centrum af byen. Jeg er glad for mit arbejde, fordi jeg elsker bøger. Klokken tolv spiser jeg suppe på en lille restaurant. Om eftermiddagen kommer der mange kunder i butikken. Om aftenen tager jeg hjem og laver aftensmad. Efter aftensmaden ringer jeg til min mor eller læser en bog. Jeg går i seng klokken elleve. Om søndagen arbejder jeg ikke, og så sover jeg længere.",
+  "gloss": {
+   "lejlighed": "flat",
+   "står": "(står op: get up)",
+   "morgen": "morning",
+   "te": "tea",
+   "smør": "butter",
+   "arbejde": "work",
+   "bus": "bus",
+   "boghandel": "bookshop",
+   "byen": "city",
+   "bøger": "books",
+   "suppe": "soup",
+   "restaurant": "restaurant",
+   "eftermiddagen": "afternoon",
+   "kunder": "customers",
+   "aftenen": "evening",
+   "laver": "make (laver aftensmad: cook dinner)",
+   "aftensmad": "dinner",
+   "ringer": "call",
+   "mor": "mother",
+   "seng": "bed",
+   "sover": "sleep",
+   "længere": "longer"
+  },
+  "questions": [
+   {
+    "q": "Hvor arbejder Daniel?",
+    "a": [
+     "boghandel"
+    ]
+   },
+   {
+    "q": "Hvordan kommer Daniel på arbejde?",
+    "a": [
+     "bus"
+    ]
+   },
+   {
+    "q": "Hvad spiser Daniel klokken tolv?",
+    "a": [
+     "suppe"
+    ]
+   }
+  ],
+  "notice": "The verb always takes the second place in a Danish sentence. When the sentence starts with a time, the subject moves behind the verb: \"Hver morgen står jeg op\", \"Så tager jeg på arbejde\".",
+  "back": [
+   [
+    "Så tager jeg på arbejde med bus.",
+    "Then I go to work by bus."
+   ],
+   [
+    "Om aftenen tager jeg hjem og laver aftensmad.",
+    "In the evening I go home and cook dinner."
+   ]
+  ]
+ },
+ {
+  "id": "da-sea",
+  "title": "En weekend ved havet",
+  "level": "A2",
+  "text": "Sidste weekend tog min bror og jeg til havet. Vi tog et tog tidligt om morgenen, og rejsen varede tre timer. Vejret var dejligt: himlen var blå, og vandet var varmt. Vi svømmede længe, og bagefter lå vi på stranden. Klokken tolv spiste vi frisk fisk på en lille restaurant ved havnen. Tjeneren var venlig og kom med koldt vand til os. Om eftermiddagen gik vi gennem den gamle by og købte postkort. Min bror tog mange billeder af bådene. Om aftenen var vi meget trætte, men vi ville ikke hjem. Vi nåede ikke det sidste tog og måtte vente en time. Det var sommerens bedste dag. Næste gang vil vi blive en hel uge.",
+  "gloss": {
+   "weekend": "weekend",
+   "bror": "brother",
+   "havet": "sea",
+   "tog": "train (also: took)",
+   "rejsen": "journey",
+   "timer": "hours",
+   "vejret": "weather",
+   "himlen": "sky",
+   "blå": "blue",
+   "vandet": "water",
+   "varmt": "warm",
+   "svømmede": "swam",
+   "stranden": "beach",
+   "tjeneren": "waiter",
+   "havnen": "harbour",
+   "gik": "walked",
+   "postkort": "postcards",
+   "billeder": "photos",
+   "bådene": "boats",
+   "trætte": "tired",
+   "nåede": "reached (nåede ikke: missed)",
+   "vente": "wait",
+   "uge": "week",
+   "sommerens": "summer"
+  },
+  "questions": [
+   {
+    "q": "Hvad rejste de med til havet?",
+    "a": [
+     "tog"
+    ]
+   },
+   {
+    "q": "Hvor mange timer varede rejsen?",
+    "a": [
+     "tre",
+     "3"
+    ]
+   },
+   {
+    "q": "Hvad købte de i den gamle by?",
+    "a": [
+     "postkort"
+    ]
+   }
+  ],
+  "notice": "The past tense has the same form for every person: \"vi tog\" (we took), \"min bror tog\" (my brother took), \"vi købte\" (we bought). The word \"tog\" is also the noun \"train\".",
+  "back": [
+   [
+    "Om eftermiddagen gik vi gennem den gamle by og købte postkort.",
+    "In the afternoon we walked through the old town and bought postcards."
+   ],
+   [
+    "Vi nåede ikke det sidste tog og måtte vente en time.",
+    "We missed the last train and had to wait an hour."
+   ]
+  ]
+ },
+ {
+  "id": "da-neighbour",
+  "title": "Den nye nabo",
+  "level": "A2",
+  "text": "Sidste måned flyttede en ny nabo ind i vores hus. Hun hedder Sofia og kommer fra en anden by. I begyndelsen kendte hun ingen her. En aften bankede hun på vores dør, fordi lampen i hendes køkken var gået i stykker. Min far gik op og reparerede den på ti minutter. Sofia var meget taknemmelig, og næste dag kom hun med en kage til os. Kagen var lækker, og min lillebror spiste tre stykker. Nu drikker Sofia tit te med min mor. Hun arbejder på et hospital og fortæller interessante historier. I går hjalp hun mig med mine lektier. I søndags viste vi hende parken og det gamle marked. Hun siger, at hun allerede føler sig hjemme. Jeg tror, vi har fundet en ny ven.",
+  "gloss": {
+   "nabo": "neighbour",
+   "flyttede": "moved",
+   "måned": "month",
+   "by": "city",
+   "ingen": "nobody",
+   "bankede": "knocked",
+   "dør": "door",
+   "køkken": "kitchen",
+   "lampen": "lamp",
+   "gået": "gone (gået i stykker: broken)",
+   "reparerede": "repaired",
+   "minutter": "minutes",
+   "taknemmelig": "grateful",
+   "kage": "cake",
+   "lækker": "delicious",
+   "stykker": "pieces",
+   "hospital": "hospital",
+   "historier": "stories",
+   "lektier": "homework",
+   "parken": "park",
+   "allerede": "already",
+   "fundet": "found"
+  },
+  "questions": [
+   {
+    "q": "Hvad var gået i stykker i Sofias køkken?",
+    "a": [
+     "lampe"
+    ]
+   },
+   {
+    "q": "Hvad kom Sofia med næste dag?",
+    "a": [
+     "kage"
+    ]
+   },
+   {
+    "q": "Hvor arbejder Sofia?",
+    "a": [
+     "hospital"
+    ]
+   }
+  ],
+  "notice": "The past tense of most verbs ends in -ede or -te, the same for everyone: \"flyttede\" (moved), \"bankede\" (knocked), \"spiste\" (ate). A comma comes before a clause that starts with \"at\" or \"fordi\".",
+  "back": [
+   [
+    "Min far gik op og reparerede den på ti minutter.",
+    "My father went upstairs and repaired it in ten minutes."
+   ],
+   [
+    "Hun arbejder på et hospital og fortæller interessante historier.",
+    "She works in a hospital and tells interesting stories."
+   ]
+  ]
+ },
+ {
+  "id": "da-cafe",
+  "title": "På café",
+  "level": "A1",
+  "roles": [
+   "Tjener",
+   "Gæst"
+  ],
+  "lines": [
+   [
+    0,
+    "Godmorgen! Hvad skulle det være?"
+   ],
+   [
+    1,
+    "Godmorgen. En kaffe med mælk, tak."
+   ],
+   [
+    0,
+    "Vil du have noget at spise?"
+   ],
+   [
+    1,
+    "Ja, hvilke kager har I i dag?"
+   ],
+   [
+    0,
+    "Vi har æblekage og chokoladekage."
+   ],
+   [
+    1,
+    "Så tager jeg et stykke æblekage."
+   ],
+   [
+    0,
+    "Værsgo. Var der andet?"
+   ],
+   [
+    1,
+    "Nej tak. Hvor meget bliver det?"
+   ],
+   [
+    0,
+    "Halvtreds kroner, tak."
+   ],
+   [
+    1,
+    "Værsgo. Tak og farvel!"
+   ]
+  ],
+  "gloss": {
+   "kaffe": "coffee",
+   "mælk": "milk",
+   "noget": "something",
+   "spise": "eat",
+   "kager": "cakes",
+   "dag": "day (i dag: today)",
+   "æblekage": "apple cake",
+   "chokoladekage": "chocolate cake",
+   "stykke": "piece",
+   "andet": "else",
+   "meget": "much (hvor meget: how much)",
+   "kroner": "kroner (Danish money)"
+  },
+  "questions": [
+   {
+    "q": "Hvad vil gæsten have i kaffen?",
+    "a": [
+     "mælk"
+    ]
+   },
+   {
+    "q": "Hvilken kage vælger gæsten?",
+    "a": [
+     "æblekage"
+    ]
+   }
+  ],
+  "notice": "Danish builds long words by joining short ones: \"æble\" and \"kage\" make \"æblekage\" (apple cake). \"Tak\" covers both please and thank you, and \"værsgo\" is said when you hand something over."
+ },
+ {
+  "id": "da-hotel",
+  "title": "På hotellet",
+  "level": "A2",
+  "roles": [
+   "Receptionist",
+   "Gæst"
+  ],
+  "lines": [
+   [
+    0,
+    "Godaften. Hvad kan jeg hjælpe med?"
+   ],
+   [
+    1,
+    "Godaften. Jeg har en reservation til to nætter."
+   ],
+   [
+    0,
+    "Hvad er dit navn?"
+   ],
+   [
+    1,
+    "Jeg hedder Anna Berg. Her er mit pas."
+   ],
+   [
+    0,
+    "Tak. Dit værelse ligger på tredje sal."
+   ],
+   [
+    1,
+    "Er morgenmaden med i prisen?"
+   ],
+   [
+    0,
+    "Ja, der er morgenmad fra syv til ti."
+   ],
+   [
+    1,
+    "Fint. Er der en elevator? Min kuffert er tung."
+   ],
+   [
+    0,
+    "Ja, elevatoren er ved siden af trappen. Her er din nøgle."
+   ],
+   [
+    1,
+    "Mange tak. Hav en god aften!"
+   ]
+  ],
+  "gloss": {
+   "hjælpe": "help",
+   "reservation": "reservation",
+   "nætter": "nights",
+   "navn": "name",
+   "pas": "passport",
+   "værelse": "room",
+   "sal": "floor (tredje sal: third floor)",
+   "morgenmad": "breakfast",
+   "med": "with (med i prisen: included in the price)",
+   "prisen": "price",
+   "elevator": "lift",
+   "kuffert": "suitcase",
+   "tung": "heavy",
+   "trappen": "stairs",
+   "nøgle": "key",
+   "aften": "evening"
+  },
+  "questions": [
+   {
+    "q": "Hvor mange nætter skal gæsten bo på hotellet?",
+    "a": [
+     "to",
+     "2"
+    ]
+   },
+   {
+    "q": "På hvilken sal ligger værelset?",
+    "a": [
+     "tredje",
+     "3"
+    ]
+   }
+  ],
+  "notice": "Danish has two words for \"a\", \"en\" and \"et\", and the same letters go on the end for \"the\": \"en elevator\", \"elevatoren\"; \"et værelse\", \"værelset\". \"Jeg hedder\" means \"my name is\"."
+ }
+]

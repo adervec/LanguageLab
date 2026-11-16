@@ -1,0 +1,414 @@
+[
+ {
+  "id": "af-market",
+  "title": "By die mark",
+  "level": "A1",
+  "text": "Elke Saterdag gaan Maria na die mark. Die mark is in die middel van die dorp. Die son skyn en daar is baie mense. Maria hou van die mark, want die vrugte is vars en goedkoop. Eers koop sy appels en lemoene. Dan koop sy brood, kaas en 'n bietjie vis. Die man by die visstalletjie is baie vriendelik. Hy vra altyd na haar familie. By die mark kry Maria dikwels haar vriendin Elena. Vandag drink hulle saam koffie en gesels lank. Teen twaalfuur gaan Maria huis toe met twee swaar sakke. Sy is moeg, maar gelukkig.",
+  "gloss": {
+   "mark": "market",
+   "middel": "centre",
+   "dorp": "town",
+   "son": "sun",
+   "mense": "people",
+   "vrugte": "fruit",
+   "vars": "fresh",
+   "goedkoop": "cheap",
+   "appels": "apples",
+   "lemoene": "oranges",
+   "brood": "bread",
+   "kaas": "cheese",
+   "vis": "fish",
+   "vriendelik": "friendly",
+   "familie": "family",
+   "vriendin": "friend",
+   "saam": "together",
+   "swaar": "heavy",
+   "sakke": "bags",
+   "moeg": "tired",
+   "gelukkig": "happy"
+  },
+  "questions": [
+   {
+    "q": "Waar is die mark?",
+    "a": [
+     "middel"
+    ]
+   },
+   {
+    "q": "Wat koop Maria eerste?",
+    "a": [
+     "appels"
+    ]
+   },
+   {
+    "q": "Wie kry Maria dikwels by die mark?",
+    "a": [
+     "Elena"
+    ]
+   }
+  ],
+  "notice": "Afrikaans verbs never change: \"ek gaan\", \"sy gaan\", \"hulle gaan\". \"Die\" is the only word for \"the\", and \"'n\" is \"a\". After \"eers\" or \"dan\" the verb comes before the subject: \"Eers koop sy\".",
+  "back": [
+   [
+    "Eers koop sy appels en lemoene.",
+    "First she buys apples and oranges."
+   ],
+   [
+    "Hy vra altyd na haar familie.",
+    "He always asks about her family."
+   ]
+  ]
+ },
+ {
+  "id": "af-day",
+  "title": "My dag",
+  "level": "A1",
+  "text": "My naam is Daniel en ek woon in 'n klein woonstel. Elke oggend staan ek sewe-uur op. Eers drink ek tee en eet brood met botter. Dan ry ek met die bus werk toe. Ek werk in 'n boekwinkel in die middel van die stad. Ek hou van my werk, want ek is lief vir boeke. Teen twaalfuur eet ek sop in 'n klein restaurant. In die middag kom daar baie klante na die winkel. Saans gaan ek huis toe en maak aandete. Na aandete bel ek my ma of lees 'n boek. Ek gaan elfuur bed toe. Sondae werk ek nie, en dan slaap ek langer.",
+  "gloss": {
+   "woonstel": "flat",
+   "staan": "(staan op: get up)",
+   "oggend": "morning",
+   "tee": "tea",
+   "botter": "butter",
+   "werk": "work",
+   "bus": "bus",
+   "boekwinkel": "bookshop",
+   "stad": "city",
+   "boeke": "books",
+   "sop": "soup",
+   "restaurant": "restaurant",
+   "middag": "afternoon",
+   "klante": "customers",
+   "saans": "in the evenings",
+   "maak": "make (maak aandete: cook dinner)",
+   "aandete": "dinner",
+   "bel": "call",
+   "ma": "mother",
+   "bed": "bed",
+   "slaap": "sleep",
+   "langer": "longer"
+  },
+  "questions": [
+   {
+    "q": "Waar werk Daniel?",
+    "a": [
+     "boekwinkel"
+    ]
+   },
+   {
+    "q": "Waarmee ry Daniel werk toe?",
+    "a": [
+     "bus"
+    ]
+   },
+   {
+    "q": "Wat eet Daniel teen twaalfuur?",
+    "a": [
+     "sop"
+    ]
+   }
+  ],
+  "notice": "To say where someone is going, Afrikaans puts \"toe\" after the place: \"werk toe\" (to work), \"huis toe\" (home), \"bed toe\" (to bed). \"Nie\" makes a sentence negative: \"Sondae werk ek nie\".",
+  "back": [
+   [
+    "Dan ry ek met die bus werk toe.",
+    "Then I go to work by bus."
+   ],
+   [
+    "Saans gaan ek huis toe en maak aandete.",
+    "In the evening I go home and cook dinner."
+   ]
+  ]
+ },
+ {
+  "id": "af-sea",
+  "title": "'n Naweek by die see",
+  "level": "A2",
+  "text": "Verlede naweek het ek en my broer see toe gegaan. Ons het vroeg in die oggend die trein gehaal, en die reis het drie ure geduur. Die weer was wonderlik: die lug was blou en die water warm. Ons het lank geswem en daarna op die strand gelê. Teen twaalfuur het ons vars vis geëet in 'n klein restaurant naby die hawe. Die kelner was vriendelik en het vir ons koue water gebring. In die middag het ons deur die ou dorp gestap en poskaarte gekoop. My broer het baie foto's van die bote geneem. Daardie aand was ons baie moeg, maar ons wou nie huis toe gaan nie. Ons het die laaste trein verpas en moes 'n uur wag. Dit was die beste dag van die somer. Volgende keer wil ons 'n hele week bly.",
+  "gloss": {
+   "naweek": "weekend",
+   "broer": "brother",
+   "see": "sea",
+   "trein": "train",
+   "reis": "journey",
+   "ure": "hours",
+   "weer": "weather",
+   "lug": "sky",
+   "blou": "blue",
+   "water": "water",
+   "warm": "warm",
+   "geswem": "swam",
+   "strand": "beach",
+   "kelner": "waiter",
+   "hawe": "harbour",
+   "gestap": "walked",
+   "poskaarte": "postcards",
+   "foto": "photo (foto's: photos)",
+   "bote": "boats",
+   "moeg": "tired",
+   "verpas": "missed",
+   "wag": "wait",
+   "week": "week",
+   "somer": "summer"
+  },
+  "questions": [
+   {
+    "q": "Waarmee het hulle see toe gegaan?",
+    "a": [
+     "trein"
+    ]
+   },
+   {
+    "q": "Hoeveel ure het die reis geduur?",
+    "a": [
+     "drie",
+     "3"
+    ]
+   },
+   {
+    "q": "Wat het hulle in die ou dorp gekoop?",
+    "a": [
+     "poskaarte"
+    ]
+   }
+  ],
+  "notice": "The past is made with \"het\" and a verb that starts with ge-: \"het geswem\" (swam), \"het gekoop\" (bought), \"het geneem\" (took). A negative sentence ends with a second \"nie\": \"ons wou nie huis toe gaan nie\".",
+  "back": [
+   [
+    "In die middag het ons deur die ou dorp gestap en poskaarte gekoop.",
+    "In the afternoon we walked through the old town and bought postcards."
+   ],
+   [
+    "Ons het die laaste trein verpas en moes 'n uur wag.",
+    "We missed the last train and had to wait an hour."
+   ]
+  ]
+ },
+ {
+  "id": "af-neighbour",
+  "title": "Die nuwe buurvrou",
+  "level": "A2",
+  "text": "Verlede maand het 'n nuwe buurvrou in ons gebou ingetrek. Haar naam is Sofia en sy kom van 'n ander stad af. Aan die begin het sy niemand hier geken nie. Een aand het sy aan ons deur geklop, want die lamp in haar kombuis was stukkend. My pa het boontoe gegaan en dit binne tien minute reggemaak. Sofia was baie dankbaar en het die volgende dag vir ons 'n koek gebring. Die koek was heerlik en my boetie het drie stukke geëet. Nou drink Sofia dikwels tee saam met my ma. Sy werk in 'n hospitaal en vertel interessante stories. Gister het sy my met my huiswerk gehelp. Sondag het ons vir haar die park en die ou mark gewys. Sy sê sy voel al klaar tuis. Ek dink ons het 'n nuwe vriendin gekry.",
+  "gloss": {
+   "buurvrou": "neighbour",
+   "ingetrek": "moved in",
+   "maand": "month",
+   "stad": "city",
+   "niemand": "nobody",
+   "geklop": "knocked",
+   "deur": "door",
+   "kombuis": "kitchen",
+   "lamp": "lamp",
+   "stukkend": "broken",
+   "reggemaak": "repaired",
+   "minute": "minutes",
+   "dankbaar": "grateful",
+   "koek": "cake",
+   "heerlik": "delicious",
+   "stukke": "pieces",
+   "hospitaal": "hospital",
+   "stories": "stories",
+   "huiswerk": "homework",
+   "park": "park",
+   "klaar": "already (al klaar)",
+   "gekry": "got, found"
+  },
+  "questions": [
+   {
+    "q": "Wat was stukkend in Sofia se kombuis?",
+    "a": [
+     "lamp"
+    ]
+   },
+   {
+    "q": "Wat het Sofia die volgende dag gebring?",
+    "a": [
+     "koek"
+    ]
+   },
+   {
+    "q": "Waar werk Sofia?",
+    "a": [
+     "hospitaal"
+    ]
+   }
+  ],
+  "notice": "In the past the ge- verb goes to the end of the clause: \"het aan ons deur geklop\" (knocked on our door), \"het drie stukke geëet\" (ate three pieces). \"Vir\" marks the person something is done for: \"vir ons 'n koek gebring\".",
+  "back": [
+   [
+    "My pa het boontoe gegaan en dit binne tien minute reggemaak.",
+    "My father went upstairs and repaired it in ten minutes."
+   ],
+   [
+    "Sy werk in 'n hospitaal en vertel interessante stories.",
+    "She works in a hospital and tells interesting stories."
+   ]
+  ]
+ },
+ {
+  "id": "af-cafe",
+  "title": "In die kafee",
+  "level": "A1",
+  "roles": [
+   "Kelner",
+   "Klant"
+  ],
+  "lines": [
+   [
+    0,
+    "Goeiemôre! Wat kan ek vir jou bring?"
+   ],
+   [
+    1,
+    "Goeiemôre. 'n Koffie met melk, asseblief."
+   ],
+   [
+    0,
+    "Wil jy iets eet?"
+   ],
+   [
+    1,
+    "Ja, watter koeke het julle vandag?"
+   ],
+   [
+    0,
+    "Ons het appeltert en sjokoladekoek."
+   ],
+   [
+    1,
+    "Dan vat ek 'n stuk appeltert."
+   ],
+   [
+    0,
+    "Hier is dit. Nog iets?"
+   ],
+   [
+    1,
+    "Nee dankie. Hoeveel kos dit?"
+   ],
+   [
+    0,
+    "Tagtig rand, asseblief."
+   ],
+   [
+    1,
+    "Hier is dit. Dankie en totsiens!"
+   ]
+  ],
+  "gloss": {
+   "koffie": "coffee",
+   "melk": "milk",
+   "iets": "something",
+   "eet": "eat",
+   "koeke": "cakes",
+   "vandag": "today",
+   "appeltert": "apple tart",
+   "sjokoladekoek": "chocolate cake",
+   "stuk": "piece",
+   "nog": "more, else (nog iets: anything else)",
+   "hoeveel": "how much",
+   "rand": "rand (South African money)"
+  },
+  "questions": [
+   {
+    "q": "Waarmee wil die klant die koffie hê?",
+    "a": [
+     "melk"
+    ]
+   },
+   {
+    "q": "Watter koek kies die klant?",
+    "a": [
+     "appeltert"
+    ]
+   }
+  ],
+  "notice": "\"Asseblief\" is please and \"dankie\" is thank you. \"Jy\" is \"you\" for one person and \"julle\" for more than one: \"Wil jy iets eet?\", \"watter koeke het julle?\"."
+ },
+ {
+  "id": "af-hotel",
+  "title": "By die hotel",
+  "level": "A2",
+  "roles": [
+   "Ontvangsdame",
+   "Gas"
+  ],
+  "lines": [
+   [
+    0,
+    "Goeienaand. Waarmee kan ek help?"
+   ],
+   [
+    1,
+    "Goeienaand. Ek het 'n bespreking vir twee nagte."
+   ],
+   [
+    0,
+    "Wat is u naam, asseblief?"
+   ],
+   [
+    1,
+    "My naam is Anna Berg. Hier is my paspoort."
+   ],
+   [
+    0,
+    "Dankie. U kamer is op die derde verdieping."
+   ],
+   [
+    1,
+    "Is ontbyt by die prys ingesluit?"
+   ],
+   [
+    0,
+    "Ja, ontbyt is van sewe tot tien."
+   ],
+   [
+    1,
+    "Baie goed. Is hier 'n hysbak? My tas is swaar."
+   ],
+   [
+    0,
+    "Ja, die hysbak is langs die trappe. Hier is u sleutel."
+   ],
+   [
+    1,
+    "Baie dankie. Geniet die aand!"
+   ]
+  ],
+  "gloss": {
+   "help": "help",
+   "bespreking": "reservation",
+   "nagte": "nights",
+   "naam": "name",
+   "paspoort": "passport",
+   "kamer": "room",
+   "verdieping": "floor",
+   "ontbyt": "breakfast",
+   "ingesluit": "included",
+   "prys": "price",
+   "hysbak": "lift",
+   "tas": "bag, suitcase",
+   "swaar": "heavy",
+   "trappe": "stairs",
+   "sleutel": "key",
+   "aand": "evening"
+  },
+  "questions": [
+   {
+    "q": "Vir hoeveel nagte het die gas bespreek?",
+    "a": [
+     "twee",
+     "2"
+    ]
+   },
+   {
+    "q": "Op watter verdieping is die kamer?",
+    "a": [
+     "derde",
+     "3"
+    ]
+   }
+  ],
+  "notice": "\"U\" is the polite word for \"you\" and \"your\", used with strangers: \"Wat is u naam?\", \"u kamer\", \"u sleutel\". Friends say \"jy\" and \"jou\"."
+ }
+]

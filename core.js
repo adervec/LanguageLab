@@ -42,6 +42,12 @@ export const LANGS = {
   hu: { name: 'Magyar', english: 'Hungarian', bcp: 'hu-HU', keys: 'áéíóöőúüű', mini: true },
   el: { name: 'Ελληνικά', english: 'Greek', bcp: 'el-GR', keys: '', mini: true },
   tr: { name: 'Türkçe', english: 'Turkish', bcp: 'tr-TR', keys: 'çğıöşü', mini: true },
+  nb: { name: 'Norsk bokmål', english: 'Norwegian', bcp: 'nb-NO', keys: 'æøå', mini: true },
+  da: { name: 'Dansk', english: 'Danish', bcp: 'da-DK', keys: 'æøå', mini: true },
+  fi: { name: 'Suomi', english: 'Finnish', bcp: 'fi-FI', keys: 'äöå', mini: true },
+  ca: { name: 'Català', english: 'Catalan', bcp: 'ca-ES', keys: 'àçèéíïòóúü', elide: true, mini: true },
+  gl: { name: 'Galego', english: 'Galician', bcp: 'gl-ES', keys: 'áéíóúñ', mini: true },
+  af: { name: 'Afrikaans', english: 'Afrikaans', bcp: 'af-ZA', keys: 'êëéèôûïî', mini: true },
 };
 const SEG = /^(zh|ja|th|lo|km|my|yue)$/; // written without spaces: words come from Intl.Segmenter
 export const isLangCode = c => typeof c === 'string' && /^[a-z]{2,3}$/.test(c);

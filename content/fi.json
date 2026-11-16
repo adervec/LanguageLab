@@ -1,0 +1,415 @@
+[
+ {
+  "id": "fi-market",
+  "title": "Torilla",
+  "level": "A1",
+  "text": "Maria käy torilla joka lauantai. Tori on kaupungin keskustassa. Aurinko paistaa, ja torilla on paljon ihmisiä. Maria pitää torista, koska hedelmät ovat siellä tuoreita ja halpoja. Ensin hän ostaa omenoita ja appelsiineja. Sitten hän ostaa leipää, juustoa ja vähän kalaa. Kalakauppias on hyvin ystävällinen mies. Hän kysyy aina Marian perheen kuulumisia. Torilla Maria tapaa usein ystävänsä Elenan. Tänään he juovat yhdessä kahvia ja juttelevat pitkään. He puhuvat työstä, lapsista ja kesästä. Kello kaksitoista Maria lähtee kotiin kaksi painavaa kassia kädessään. Hän on väsynyt mutta onnellinen.",
+  "gloss": {
+   "tori": "market",
+   "keskustassa": "centre",
+   "kaupungin": "town",
+   "aurinko": "sun",
+   "ihmisiä": "people",
+   "hedelmät": "fruit",
+   "tuoreita": "fresh",
+   "halpoja": "cheap",
+   "omenoita": "apples",
+   "appelsiineja": "oranges",
+   "leipää": "bread",
+   "juustoa": "cheese",
+   "kalaa": "fish",
+   "ystävällinen": "friendly",
+   "perheen": "family",
+   "ystävänsä": "friend",
+   "yhdessä": "together",
+   "painavaa": "heavy",
+   "kassia": "bags",
+   "väsynyt": "tired",
+   "onnellinen": "happy"
+  },
+  "questions": [
+   {
+    "q": "Missä tori on?",
+    "a": [
+     "keskusta"
+    ]
+   },
+   {
+    "q": "Mitä Maria ostaa ensin?",
+    "a": [
+     "omen"
+    ]
+   },
+   {
+    "q": "Kenet Maria tapaa usein torilla?",
+    "a": [
+     "Elena"
+    ]
+   }
+  ],
+  "notice": "Finnish has no word for \"the\" or \"a\" and puts endings on words instead of little words in front: \"tori\" is a market, \"torilla\" at the market, \"torista\" about (from) the market; \"keskustassa\" is in the centre.",
+  "back": [
+   [
+    "Ensin hän ostaa omenoita ja appelsiineja.",
+    "First she buys apples and oranges."
+   ],
+   [
+    "Hän kysyy aina Marian perheen kuulumisia.",
+    "He always asks about her family."
+   ]
+  ]
+ },
+ {
+  "id": "fi-day",
+  "title": "Minun päiväni",
+  "level": "A1",
+  "text": "Nimeni on Daniel, ja asun pienessä asunnossa. Herään joka aamu kello seitsemän. Aamulla minulla ei ole koskaan kiire. Ensin juon teetä ja syön leipää ja voita. Sitten menen töihin bussilla. Olen töissä kirjakaupassa kaupungin keskustassa. Pidän työstäni, koska rakastan kirjoja. Kello kaksitoista syön keittoa pienessä ravintolassa. Iltapäivällä kauppaan tulee paljon asiakkaita. Juttelen heidän kanssaan mielelläni kirjoista. Illalla menen kotiin ja laitan päivällistä. Päivällisen jälkeen soitan äidilleni tai luen kirjaa. Menen nukkumaan kello yksitoista. Sunnuntaina en ole töissä, ja silloin nukun pidempään.",
+  "gloss": {
+   "asunnossa": "flat",
+   "herään": "I wake up",
+   "aamu": "morning",
+   "teetä": "tea",
+   "voita": "butter",
+   "töihin": "to work",
+   "bussilla": "bus",
+   "kirjakaupassa": "bookshop",
+   "kaupungin": "city",
+   "kirjoja": "books",
+   "keittoa": "soup",
+   "ravintolassa": "restaurant",
+   "iltapäivällä": "afternoon",
+   "asiakkaita": "customers",
+   "illalla": "evening",
+   "laitan": "I make (laitan päivällistä: I cook dinner)",
+   "päivällistä": "dinner",
+   "soitan": "call",
+   "äidilleni": "mother",
+   "nukkumaan": "to sleep (menen nukkumaan: I go to bed)",
+   "nukun": "sleep",
+   "pidempään": "longer"
+  },
+  "questions": [
+   {
+    "q": "Missä Daniel on töissä?",
+    "a": [
+     "kirjakaup"
+    ]
+   },
+   {
+    "q": "Millä Daniel menee töihin?",
+    "a": [
+     "bussi"
+    ]
+   },
+   {
+    "q": "Mitä Daniel syö kello kaksitoista?",
+    "a": [
+     "keitto"
+    ]
+   }
+  ],
+  "notice": "The verb ending -n means \"I\", so \"minä\" is usually left out: \"asun\" (I live), \"juon\" (I drink), \"menen\" (I go). \"In\" something is the ending -ssa or -ssä: \"asunnossa\", \"ravintolassa\".",
+  "back": [
+   [
+    "Sitten menen töihin bussilla.",
+    "Then I go to work by bus."
+   ],
+   [
+    "Illalla menen kotiin ja laitan päivällistä.",
+    "In the evening I go home and cook dinner."
+   ]
+  ]
+ },
+ {
+  "id": "fi-sea",
+  "title": "Viikonloppu meren rannalla",
+  "level": "A2",
+  "text": "Viime viikonloppuna lähdimme veljeni kanssa merelle. Nousimme junaan aikaisin aamulla, ja matka kesti kolme tuntia. Sää oli ihana: taivas oli sininen ja vesi lämmintä. Meri oli tyyni, ja rannalla oli vain vähän ihmisiä. Uimme pitkään ja makasimme sitten rannalla. Kello kaksitoista söimme tuoretta kalaa pienessä ravintolassa sataman lähellä. Tarjoilija oli ystävällinen ja toi meille kylmää vettä. Iltapäivällä kävelimme vanhassa kaupungissa ja ostimme postikortteja. Veljeni otti paljon valokuvia veneistä. Illalla olimme hyvin väsyneitä, mutta emme halunneet lähteä kotiin. Myöhästyimme viimeisestä junasta, ja meidän piti odottaa tunti. Asemalla joimme vielä kupin kahvia. Se oli kesän paras päivä. Ensi kerralla haluamme jäädä kokonaiseksi viikoksi.",
+  "gloss": {
+   "viikonloppuna": "weekend",
+   "veljeni": "brother",
+   "merelle": "sea",
+   "junaan": "train",
+   "matka": "journey",
+   "tuntia": "hours",
+   "sää": "weather",
+   "taivas": "sky",
+   "sininen": "blue",
+   "vesi": "water",
+   "lämmintä": "warm",
+   "uimme": "swam",
+   "rannalla": "beach",
+   "tarjoilija": "waiter",
+   "sataman": "harbour",
+   "kävelimme": "walked",
+   "postikortteja": "postcards",
+   "valokuvia": "photos",
+   "veneistä": "boats",
+   "väsyneitä": "tired",
+   "myöhästyimme": "missed",
+   "odottaa": "wait",
+   "viikoksi": "week",
+   "kesän": "summer"
+  },
+  "questions": [
+   {
+    "q": "Millä he matkustivat merelle?",
+    "a": [
+     "juna"
+    ]
+   },
+   {
+    "q": "Kuinka monta tuntia matka kesti?",
+    "a": [
+     "kolme",
+     "3"
+    ]
+   },
+   {
+    "q": "Mitä he ostivat vanhassa kaupungissa?",
+    "a": [
+     "postikort"
+    ]
+   }
+  ],
+  "notice": "The past tense has -i- before the personal ending, and \"we\" ends in -mme: \"lähdimme\" (we left), \"uimme\" (we swam), \"ostimme\" (we bought). \"Not\" is a verb of its own: \"emme halunneet\" (we did not want).",
+  "back": [
+   [
+    "Iltapäivällä kävelimme vanhassa kaupungissa ja ostimme postikortteja.",
+    "In the afternoon we walked through the old town and bought postcards."
+   ],
+   [
+    "Myöhästyimme viimeisestä junasta, ja meidän piti odottaa tunti.",
+    "We missed the last train and had to wait an hour."
+   ]
+  ]
+ },
+ {
+  "id": "fi-neighbour",
+  "title": "Uusi naapuri",
+  "level": "A2",
+  "text": "Viime kuussa taloomme muutti uusi naapuri. Hänen nimensä on Sofia, ja hän on kotoisin toisesta kaupungista. Aluksi hän ei tuntenut täällä ketään. Eräänä iltana hän koputti oveemme, koska hänen keittiönsä lamppu oli rikki. Isäni meni yläkertaan ja korjasi sen kymmenessä minuutissa. Sofia oli hyvin kiitollinen ja toi meille seuraavana päivänä kakun. Kakku oli herkullinen, ja pikkuveljeni söi kolme palaa. Nykyään Sofia juo usein teetä äitini kanssa. Hän on töissä sairaalassa ja kertoo kiinnostavia tarinoita. Eilen hän auttoi minua läksyissä. Sunnuntaina näytimme hänelle puiston ja vanhan torin. Hän sanoo, että tuntee jo olevansa kotonaan. Luulen, että olemme saaneet uuden ystävän.",
+  "gloss": {
+   "naapuri": "neighbour",
+   "muutti": "moved",
+   "kuussa": "month",
+   "kaupungista": "city",
+   "ketään": "anybody",
+   "koputti": "knocked",
+   "oveemme": "door",
+   "keittiönsä": "kitchen",
+   "lamppu": "lamp",
+   "rikki": "broken",
+   "korjasi": "repaired",
+   "minuutissa": "minutes",
+   "kiitollinen": "grateful",
+   "kakun": "cake",
+   "herkullinen": "delicious",
+   "palaa": "pieces",
+   "sairaalassa": "hospital",
+   "tarinoita": "stories",
+   "läksyissä": "homework",
+   "puiston": "park",
+   "jo": "already",
+   "saaneet": "got (olemme saaneet: we have got)"
+  },
+  "questions": [
+   {
+    "q": "Mikä Sofian keittiössä oli rikki?",
+    "a": [
+     "lamppu"
+    ]
+   },
+   {
+    "q": "Mitä Sofia toi seuraavana päivänä?",
+    "a": [
+     "kakun",
+     "kakku"
+    ]
+   },
+   {
+    "q": "Missä Sofia on töissä?",
+    "a": [
+     "sairaala"
+    ]
+   }
+  ],
+  "notice": "Finnish shows \"my\", \"our\" and \"her\" with an ending on the noun: \"isäni\" (my father), \"äitini\" (my mother), \"taloomme\" (into our house), \"keittiönsä\" (her kitchen). \"Hän\" means both he and she.",
+  "back": [
+   [
+    "Isäni meni yläkertaan ja korjasi sen kymmenessä minuutissa.",
+    "My father went upstairs and repaired it in ten minutes."
+   ],
+   [
+    "Hän on töissä sairaalassa ja kertoo kiinnostavia tarinoita.",
+    "She works in a hospital and tells interesting stories."
+   ]
+  ]
+ },
+ {
+  "id": "fi-cafe",
+  "title": "Kahvilassa",
+  "level": "A1",
+  "roles": [
+   "Tarjoilija",
+   "Asiakas"
+  ],
+  "lines": [
+   [
+    0,
+    "Hyvää huomenta! Mitä saisi olla?"
+   ],
+   [
+    1,
+    "Huomenta. Yksi kahvi maidolla, kiitos."
+   ],
+   [
+    0,
+    "Haluaisitko jotain syötävää?"
+   ],
+   [
+    1,
+    "Kyllä, mitä kakkuja teillä on tänään?"
+   ],
+   [
+    0,
+    "Meillä on omenapiirakkaa ja suklaakakkua."
+   ],
+   [
+    1,
+    "Otan sitten palan omenapiirakkaa, kiitos."
+   ],
+   [
+    0,
+    "Ole hyvä. Tuleeko muuta?"
+   ],
+   [
+    1,
+    "Ei kiitos. Paljonko tämä maksaa yhteensä?"
+   ],
+   [
+    0,
+    "Kahdeksan euroa, kiitos."
+   ],
+   [
+    1,
+    "Ole hyvä. Kiitos ja hei hei!"
+   ]
+  ],
+  "gloss": {
+   "kahvi": "coffee",
+   "maidolla": "with milk",
+   "jotain": "something",
+   "syötävää": "to eat",
+   "kakkuja": "cakes",
+   "tänään": "today",
+   "omenapiirakkaa": "apple pie",
+   "suklaakakkua": "chocolate cake",
+   "palan": "piece",
+   "muuta": "else",
+   "paljonko": "how much",
+   "euroa": "euros"
+  },
+  "questions": [
+   {
+    "q": "Mitä asiakas tilaa juotavaksi?",
+    "a": [
+     "kahvi"
+    ]
+   },
+   {
+    "q": "Mitä asiakas ottaa kahvin kanssa?",
+    "a": [
+     "omenapiirak"
+    ]
+   }
+  ],
+  "notice": "Finnish has no word for \"please\": \"kiitos\" (thank you) does the job at the end of an order. \"With milk\" is one word, \"maidolla\", and \"paljonko\" is \"how much\"."
+ },
+ {
+  "id": "fi-hotel",
+  "title": "Hotellissa",
+  "level": "A2",
+  "roles": [
+   "Vastaanottovirkailija",
+   "Vieras"
+  ],
+  "lines": [
+   [
+    0,
+    "Hyvää iltaa. Kuinka voin auttaa?"
+   ],
+   [
+    1,
+    "Hyvää iltaa. Minulla on varaus kahdeksi yöksi."
+   ],
+   [
+    0,
+    "Millä nimellä varaus on?"
+   ],
+   [
+    1,
+    "Nimeni on Anna Berg. Tässä on passini."
+   ],
+   [
+    0,
+    "Kiitos. Huoneenne on kolmannessa kerroksessa."
+   ],
+   [
+    1,
+    "Kuuluuko aamiainen hintaan?"
+   ],
+   [
+    0,
+    "Kyllä, aamiainen on seitsemästä kymmeneen."
+   ],
+   [
+    1,
+    "Oikein hyvä. Onko täällä hissi? Matkalaukkuni on painava."
+   ],
+   [
+    0,
+    "Kyllä, hissi on portaiden vieressä. Tässä on avaimenne."
+   ],
+   [
+    1,
+    "Kiitos paljon. Hyvää illanjatkoa!"
+   ]
+  ],
+  "gloss": {
+   "auttaa": "help",
+   "varaus": "reservation",
+   "yöksi": "nights",
+   "nimeni": "name",
+   "passini": "passport",
+   "huoneenne": "room",
+   "kerroksessa": "floor",
+   "aamiainen": "breakfast",
+   "kuuluuko": "is it included",
+   "hintaan": "price",
+   "hissi": "lift",
+   "matkalaukkuni": "suitcase",
+   "painava": "heavy",
+   "portaiden": "stairs",
+   "avaimenne": "key",
+   "iltaa": "evening"
+  },
+  "questions": [
+   {
+    "q": "Kuinka moneksi yöksi vieras on varannut huoneen?",
+    "a": [
+     "kahdeksi",
+     "2"
+    ]
+   },
+   {
+    "q": "Missä kerroksessa huone on?",
+    "a": [
+     "kolmanne",
+     "3"
+    ]
+   }
+  ],
+  "notice": "Polite \"your\" is the ending -nne: \"huoneenne\" (your room), \"avaimenne\" (your key). \"My\" is -ni: \"nimeni\" (my name), \"passini\" (my passport). \"Minulla on\" (at me is) means \"I have\"."
+ }
+]
