@@ -20,12 +20,17 @@ logic, no DOM, tested), `content/<lang>.json` (starter stories and dialogues; ru
 `content/AUTHORING.md`), `app-data.json` (data inventory; bump `schema` when the saved shape changes).
 Drive sync uses font.js's shared sign-in (`appFont.google`).
 
-- **Languages.** Twelve have starter content (`LANGS` in `core.js`: French, Spanish, German, Italian,
-  Portuguese, Dutch, Croatian, English, and smaller sets for Chinese, Japanese, Korean and Swedish, marked `small`).
+- **Languages.** Forty-four have starter content (`LANGS` in `core.js`): full sets for French, Spanish, German, Italian,
+  Portuguese, Dutch, Croatian and English; half sets for Chinese, Japanese, Korean and Swedish (`small`); and a first handful
+  (`mini`: four stories and two dialogues, the same six texts in each, built from one shared gloss list) for the other 32.
+  Thai is `seg` too, glossed on the pieces `Intl.Segmenter` cuts, with a zero-width space where it would cut across a name.
+  Arabic-script marking forgives vowel marks and letter shapes; a Persian word around a zero-width non-joiner is one token.
   Chinese and Japanese are `seg`: words for reading come from `Intl.Segmenter`, scoring is by character. Any other language code works with pasted texts and AI cowork stories:
   `langInfo()` fills in names from Intl, and languages written without spaces are split with
   `Intl.Segmenter`. Words, corrections, letters and the level are kept per language. Adding a bundled
-  language is one `LANGS` entry plus `content/<code>.json` (the test requires 16 stories and 8 dialogues).
+  language is one `LANGS` entry plus `content/<code>.json` (the test requires 16 stories and 8 dialogues, 8 and 4 for `small`,
+  4 and 2 for `mini`) and its file in the `sw.js` offline list (the test checks that too). After changing content run
+  `node .github/spell.mjs` (see its first lines): a word no dictionary knows fails until it is read and accepted.
 - **First steps** (from nothing): `content/first.json` holds eighty phrases in ten lessons for 44 languages
   (`langs`: a phrase is a string, or `[phrase, its own meaning]` where the shared English `meanings` do not fit), a meaning with `{language}` in it names the language being learned and is always shown in English), a reading in
   Latin letters for each phrase in a script that is not Latin (`readings`), script charts (`scripts`: `"letter=reading"` pairs)

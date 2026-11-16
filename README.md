@@ -39,11 +39,11 @@ snapshot). LanguageLab is ahead in some rows and behind in others.
 | Your own material | No | No | No | Any text; any recording with its subtitles |
 | Feedback on free writing | Explanations of an answer | No | No | An AI review with a grade, corrected forms and the rule; your mistakes come back as review cards |
 | Measure of progress | XP, streak, leagues, a course score | Units completed | Points and a leaderboard | The level your own numbers support, for reading and for listening |
-| Languages with ready lessons | 40 or more | 25 | 41 | 44 with first lessons (ten lessons, eighty phrases each); 12 of those also with graded stories and dialogues (four of them small sets); any other language with your own texts or AI-written stories |
-| Course for complete beginners | Yes, from the alphabet | Yes | Yes | A short one: ten lessons of eight phrases in each of 44 languages, charts of the letters for 14 scripts, then graded stories from A1 in 12 languages. Much shorter than their courses |
+| Languages with ready lessons | 40 or more | 25 | 41 | 44, each with first lessons (ten lessons, eighty phrases) and graded stories and dialogues: 8 with a full set (A1 to B2), 4 with half a set, 32 with a first handful of six texts (A1 and A2); any other language with your own texts or AI-written stories |
+| Course for complete beginners | Yes, from the alphabet | Yes | Yes | A short one: ten lessons of eight phrases in each of 44 languages, charts of the letters for 14 scripts, then graded stories from A1 in all 44. Much shorter than their courses; after it the material is your own texts and the stories an AI agent writes to your level |
 | Speech scoring | Its own engine | TruAccent | Speech recognition | The browser's speech recognition (how much was understood, not how good the accent is; it listens through your pauses), and a recording of yourself to compare by ear |
 | Human teachers | No | Live coaching (premium) | No | None of its own, but it works with any teacher you have: a link carries your writing to them and another brings their corrections back into your review. They need nothing but a browser |
-| Content checked by people | Yes | Yes | Yes | No: written by an AI and unchecked by native speakers (the app says so) |
+| Content checked by people | Yes | Yes | Yes | No native speaker has read it, and the app says so. It was written by an AI; every word of the texts in 31 languages is checked against an open spelling dictionary, and the newer texts were read by a second AI model (see "What has been checked") |
 | Apps | iOS, Android, web | iOS, Android, web | iOS, Android, web, AR and VR | A web app that installs to the home screen and opens without a connection after one visit; no app-store apps |
 
 Sources: Duolingo on [Duolingo Max](https://blog.duolingo.com/duolingo-max), a 2026 review of
@@ -55,19 +55,26 @@ Rosetta Stone reviews of [features and plans](https://learnenglish.life/reviews/
 
 ## Languages
 
-French, Spanish, German, Italian, Portuguese, Dutch, Croatian and English come with 16 stories and
-8 dialogues each (French has more), from A1 to B2. Mandarin Chinese, Japanese, Korean and Swedish come
-with a smaller set (8 stories and 4 dialogues, A1 to B1); in Chinese and Japanese a tapped word shows its
+Forty-four languages come with first lessons and with graded stories and dialogues.
+
+French, Spanish, German, Italian, Portuguese, Dutch, Croatian and English have 16 stories and
+8 dialogues each (French has more), from A1 to B2. Mandarin Chinese, Japanese, Korean and Swedish have
+half that (8 stories and 4 dialogues, A1 to B1); in Chinese and Japanese a tapped word shows its
 reading first, and dictation is marked character by character.
 
-Those twelve and 32 more have first lessons for complete beginners (ten lessons, eighty phrases and
-first sentences): Russian, Ukrainian, Polish, Czech, Slovak, Slovenian, Serbian, Bulgarian, Macedonian,
-Belarusian, Romanian, Hungarian, Greek, Turkish, Norwegian, Danish, Finnish, Catalan,
-Galician, Arabic, Persian, Hindi, Urdu, Bengali, Indonesian, Malay, Vietnamese, Thai, Filipino,
-Swahili, Esperanto and Afrikaans. Where the script is not Latin each phrase has a reading in Latin
-letters, the lesson's own letters are on screen to tap, and there is a chart of the letters to hear
-and practise. The meaning of a phrase is shown in the language of the interface where that is one of
-the seventeen, else in English.
+Thirty-two more have a first handful, four stories and two dialogues at A1 and A2 (a market, a day, a
+weekend by the sea, a new neighbour; a café and a hotel): Russian, Ukrainian, Polish, Czech, Slovak,
+Slovenian, Serbian, Bulgarian, Macedonian, Belarusian, Romanian, Hungarian, Greek, Turkish, Norwegian,
+Danish, Finnish, Catalan, Galician, Afrikaans, Indonesian, Malay, Vietnamese, Filipino, Swahili,
+Esperanto, Arabic, Persian, Hindi, Urdu, Bengali and Thai. Six texts are a start, not a course: after
+them the material is your own texts and the stories an AI agent writes to your level.
+
+All 44 have first lessons for complete beginners (ten lessons, eighty phrases and first sentences).
+Where the script is not Latin each phrase has a reading in Latin letters, the letters a text uses are
+on screen to tap, and there is a chart of the letters to hear and practise. The meaning of a phrase is
+shown in the language of the interface where that is one of the seventeen, else in English. Marking
+forgives what a keyboard makes hard: accents everywhere, the vowel marks and letter shapes of Arabic,
+Persian and Urdu, and the half-space inside a Persian word.
 
 Every other language works with your own texts and with stories written to your level by an AI agent
 through the cowork folder.
@@ -103,7 +110,8 @@ npm i --no-save playwright-core && node .github/smoke.mjs && node .github/flow.m
 ```
 
 `core.test.mjs` also checks every bundled story, dialogue and first lesson; `content/AUTHORING.md`
-says how to write more. `flow.mjs` drives the whole app in headless Chrome, including a cowork folder
+says how to write more. `.github/spell.mjs` checks every word of the texts against open spelling
+dictionaries (31 languages; its first lines say how to install them). `flow.mjs` drives the whole app in headless Chrome, including a cowork folder
 with replies written as files; `offline.mjs` stops the server after one visit and opens the app again.
 
 ## What has been checked, and what has not
@@ -123,6 +131,16 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   for approval across a browser restart and were applied once.
 - **The first lessons** (3,520 phrases) were read a second time by their author, which changed six of them, and the
   sixteen languages most likely to hide mistakes were read by a second AI model, which changed two more.
+- **Spelling** (`.github/spell.mjs`, November 2026): every word of every story, dialogue, question and first lesson in the
+  31 languages that have an open spelling dictionary, 21,648 different word forms. 169 were not in a dictionary. Each was
+  read: one colloquial word was replaced with the standard one, and the other 168 were names, loanwords, regional words
+  or correct forms the dictionary lacks (they are listed in `.github/spell-ok.json`). A spelling dictionary knows no
+  grammar, and there is none for Chinese, Japanese, Finnish, Afrikaans, Indonesian, Malay, Filipino, Swahili, Arabic,
+  Hindi, Urdu, Bengali or Thai.
+- **A second reader** for the 192 texts in the 32 newer languages: another AI model (Claude Sonnet) read each one with
+  its glosses, questions and notes and marked eight things. Six were changed (a Macedonian greeting, also in the first
+  lessons, and a word order; an Afrikaans question; a Vietnamese and a Swahili phrase); two were judged right as
+  written. It reported nothing in 27 of the languages, which is weaker evidence than a native reader finding nothing.
 - **Not checked**: a physical microphone, how the voices sound to a native ear, Google sign-in, and phones. The texts and phrases were written by an AI and no native speaker
   has read them.
 

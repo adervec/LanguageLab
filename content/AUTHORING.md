@@ -79,7 +79,9 @@ A language in a script that is not Latin also needs a reading in Latin letters f
   An answer key passes when it appears anywhere in what was typed. Avoid quoted speech.
 - Korean is split at its spaces, so a gloss key is the whole word with its particles (`"학교에": "to school (학교)"`). Its texts are
   0.6 times as long in words.
-- A language marked `small` in `LANGS` needs 8 stories and 4 dialogues, not 16 and 8.
+- A language marked `small` in `LANGS` needs 8 stories and 4 dialogues, not 16 and 8; one marked `mini` needs 4 and 2.
+- After writing or changing texts, run `node .github/spell.mjs <code>` (its first lines say how to install the
+  dictionaries). Read every word it does not know before accepting it with `--write`.
 
 ## A dialogue
 
