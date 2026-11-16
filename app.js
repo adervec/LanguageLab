@@ -286,6 +286,7 @@ function vLibrary() {
     ${confirmRemove === s.id ? H`<div class="row acts"><b>${t('Remove it from your library?')}</b><button data-act="remove2" data-id="${s.id}">${t('Yes, remove')}</button><button data-act="noremove">${t('Cancel')}</button></div>`
       : H`<div class="row acts"><button data-act="start" data-id="${s.id}">${t('Sitting')}</button><button data-act="start" data-id="${s.id}" data-mode="read">${t('Read')}</button>
         <button data-act="radio" data-id="${s.id}">${t('Listen')}</button>${isTalk(s) ? H`<button data-act="start" data-id="${s.id}" data-mode="talk">${t('Role-play')}</button>` : ''}
+        ${own(s) && !s.cues ? H`<button data-act="sharetext" data-id="${s.id}">${t('Share as a link')}</button>` : ''}
         <button data-act="remove" data-id="${s.id}" aria-label="${t('Remove “{title}”', { title: s.title })}">✕</button></div>`}
   </div>`)}
   <div class="card"><h2>${t('Add a text of your own')}</h2>
@@ -869,7 +870,7 @@ function vFirst() {
 }
 
 // ---------- a human teacher, with no server: the learner's writing travels to them inside a link, their corrections come back inside another ----------
-let teach = null, taught = null; // the request a teacher opened; the reply a learner opened
+let teach = null, taught = null, gift = null; // the request a teacher opened; the reply a learner opened; a text someone sent
 const nameOf = code => { try { return code ? new Intl.DisplayNames([A.lang()], { type: 'language' }).of(code) : ''; } catch { return code; } };
 function vTeach() { // the teacher's page: it needs nothing of theirs and keeps nothing
   if (!teach) return H`<h1>${t('For the teacher')}</h1><p>${t('This link could not be read. Ask for it to be sent again.')}</p>`;
@@ -897,12 +898,22 @@ function vTaught() { // the learner's page: what the teacher sent back, to keep 
   ${taught.corrections.length ? H`<ul>${taught.corrections.map(f => H`<li><span class="miss">${f.wrong}</span> → <span class="hit">${f.right}</span> <span class="sub">${f.why}</span></li>`)}</ul>` : ''}
   ${s ? H`<button class="primary" data-act="taughtkeep">${t('Keep it with the sitting and review the corrections')}</button>` : ''}`;
 }
-// A link can open a screen. A teacher's link (#teach=) and a teacher's reply (#fix=) carry their text after the #: it never
-// reaches a server, and it is outside text, so it is parsed with a size limit and rebuilt from known fields.
+function vGift() { // a text someone sent as a link (a teacher setting work, a friend sharing): shown first, added only on a tap
+  if (!gift) return H`<h1>${t('A text for you')}</h1><p>${t('This link could not be read. Ask for it to be sent again.')}</p>`;
+  return H`<h1>${t('A text for you')}</h1>
+  <p>${t('Someone sent you this text to study. Add it to your library to read it, hear it and take dictation from it.')}</p>
+  <p class="sub">${[nameOf(gift.lang), gift.level].filter(Boolean).join(' · ')}</p>
+  <div class="card"><b lang="${gift.lang}">${gift.title}</b><div class="letter" lang="${gift.lang}" data-clamp>${gift.text}</div></div>
+  <div class="bar"><button class="primary" data-act="giftkeep">${t('Add it to my library')}</button></div>`;
+}
+// A link can open a screen. A teacher's link (#teach=), a teacher's reply (#fix=) and a shared text (#text=) carry their text after
+// the #: it never reaches a server, and it is outside text, so it is parsed with a size limit and rebuilt from known fields.
 function route() {
   const h = location.hash.slice(1), data = s => { try { return A.parseJSON(C.linkText(s), 60000); } catch { return null; } };
   if (h.startsWith('teach=')) { teach = C.cleanTeach(data(h.slice(6))); view = 'teach'; }
   else if (h.startsWith('fix=')) { taught = C.cleanTeacher(data(h.slice(4))); view = 'taught'; }
+  else if (h.startsWith('text=')) { const d = data(h.slice(5)) || {}; // (never its id, its dates, a recording's cues or a lesson's flag)
+    gift = C.isLangCode(d.lang) ? C.cleanStory({ title: d.title, level: d.level, text: d.text, roles: d.roles, lines: d.lines, gloss: d.gloss, questions: d.questions, notice: d.notice, back: d.back, source: 'pasted' }, d.lang) : null; view = 'gift'; }
   else if (['library', 'words', 'progress', 'settings', 'pal', 'chat', 'first'].includes(h)) view = h;
   else return false;
   if (h.includes('=')) history.replaceState(null, '', location.pathname + location.search); // taken in: a reload does not replay it
@@ -911,7 +922,7 @@ function route() {
 
 function render(keep) { // keep: carry a half-typed answer across the redraw
   const was = keep && $('#ans')?.value;
-  const markup = { today: vToday, library: vLibrary, words: vWords, progress: vProgress, settings: vSettings, sitting: vSitting, review: vReview, pal: vPal, chat: vChat, radio: vRadio, first: vFirst, teach: vTeach, taught: vTaught }[view]();
+  const markup = { today: vToday, library: vLibrary, words: vWords, progress: vProgress, settings: vSettings, sitting: vSitting, review: vReview, pal: vPal, chat: vChat, radio: vRadio, first: vFirst, teach: vTeach, taught: vTaught, gift: vGift }[view]();
   const main = $('#main');
   const body = flash ? H`<p class="flash" role="status">${flash}</p>${markup}` : markup; // H escapes every ${}
   main.innerHTML = body;
@@ -1036,6 +1047,23 @@ const ACT = {
     await navigator.clipboard.writeText(location.origin + location.pathname + '#teach=' + C.packLink({ id: s.id, lang: s.lang, level: s.level, title: s.title,
       text: s.writing.text.slice(0, 3000), story: (story(s.storyId)?.text || '').slice(0, 1500) }));
     flash = t('Copied. Send this link to your teacher: they open it, write their corrections, and send you a link back.'); render();
+  },
+  async sharetext(b) { // a text of your own as a link; the text travels inside the link itself
+    const s = story(b.dataset.id), pack = gloss => C.packLink({ lang: s.lang, title: s.title, level: s.level, ...(s.lines ? { roles: s.roles, lines: s.lines } : { text: s.text }), gloss, questions: s.questions, notice: s.notice, back: s.back });
+    let p = pack(s.gloss);
+    if (p.length > 60000) p = pack({}); // too long for a link: the meanings are the first thing left behind
+    if (p.length > 60000) { flash = t('This text is too long to send as a link.'); return render(); }
+    await navigator.clipboard.writeText(location.origin + location.pathname + '#text=' + p);
+    flash = t('Copied. Whoever opens the link can add this text to their library.'); render();
+  },
+  giftkeep() { // into the library of the language it is in, which becomes the language on screen
+    if (!gift) return;
+    const id = 'my-' + [...(gift.title + gift.text)].reduce((h, ch) => (h * 31 + ch.codePointAt(0)) >>> 0, 7).toString(36); // the same text twice is one text
+    S.lang = gift.lang; L();
+    if (!story(id)) S.stories.push({ ...gift, id, added: Date.now(), readAt: 0 });
+    delete S.gone[id];
+    flash = t('Added “{title}”.', { title: gift.title }); gift = null; view = 'library'; lib = { kind: 'mine', level: '' };
+    save(); dropLm(); checkPair(); checkModel(); render(); return addStarters();
   },
   async teachcopy() { // the teacher's reply, as a link for the learner
     const reply = C.cleanTeacher({ id: teach.id, note: $('#tNote').value, corrections: [0, 1, 2, 3, 4, 5].map(n => ({ wrong: $('#tw' + n).value, right: $('#tr' + n).value, why: $('#ty' + n).value })) });

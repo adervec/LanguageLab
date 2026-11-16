@@ -430,6 +430,27 @@ assert.match(await main(), /From your teacher\s+Bon travail, continue ![\s\S]*El
 assert.equal(await page.locator('#main b').filter({ hasText: /^$/ }).count(), 0, 'a teacher\'s text is never markup');
 await page.goto(answer.replace(/#fix=.*/, '#fix=not-a-reply'));    // a link that is not one says so and changes nothing
 await page.waitForFunction(() => document.querySelector('#main').innerText.includes('This link could not be read'));
+// a text of your own as a link (a teacher handing out a text): it shows first, is added on a tap, and twice is still one text
+await click('Library');
+await page.fill('#newTitle', 'Texte <b>partagé</b>');
+await page.fill('#newText', 'Ce texte voyage dans un lien. Il arrive dans une autre bibliothèque.');
+await click('Add to the library');
+await page.locator('.card', { hasText: 'Texte <b>partagé</b>' }).getByRole('button', { name: 'Share as a link', exact: true }).click();
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('Whoever opens the link'));
+const shared = await page.evaluate(() => navigator.clipboard.readText());
+assert.match(shared, /#text=[A-Za-z0-9_-]+$/);
+await page.locator('.card', { hasText: 'Texte <b>partagé</b>' }).getByRole('button', { name: /^Remove/ }).click();
+await click('Yes, remove');
+for (const turn of [1, 2]) {
+  await page.goto(shared);                                         // (another learner's browser would start here)
+  await page.waitForFunction(() => document.querySelector('#main').innerText.includes('A text for you'));
+  assert.match(await main(), /Texte <b>partagé<\/b>\s+Ce texte voyage dans un lien\./);
+  await click('Add it to my library');
+  await page.waitForFunction(() => document.querySelector('#main').innerText.includes('Added “Texte <b>partagé</b>”.'));
+  assert.equal(await page.locator('.card', { hasText: 'Ce texte voyage' }).count() + await page.locator('.card b', { hasText: 'Texte <b>partagé</b>' }).count(), 1, 'one copy after link ' + turn);
+}
+await page.goto(shared.replace(/#text=.*/, '#text=bm90LWEtdGV4dA'));  // a link that holds no text says so
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('This link could not be read'));
 await click('Words');
 assert.match(await main(), /Elle achète du fromage\s*→\s*Elle achète des fromages/);
 await page.locator('summary', { hasText: 'Add a correction from a teacher' }).click();

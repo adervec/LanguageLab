@@ -4,6 +4,7 @@
   "items": [
    "Stories and dialogues in 32 more languages. Every one of the 44 languages now has texts to listen to, read, take dictation from and retell, from Polish, Russian and Turkish to Arabic, Hindi, Vietnamese and Thai. The new sets are a first handful: four stories and two dialogues, at A1 and A2.",
    "Speaking: a word the speech recognition only had as its second guess is now marked as nearly right, not as missed, and it tells you how sure it was of what it heard. Progress now also names the level your speaking supports, beside reading and listening.",
+   "Share a text as a link (Library): a teacher can hand out a text to a class, or you can send one to a friend. Whoever opens the link sees the text and adds it to their own library with one tap.",
    "Fairer marking in Arabic, Persian and Urdu: vowel marks and the different shapes of the same letter no longer count against you, and a Persian word is right whether you type it joined up, with a space or with its half-space.",
    "Every word of the texts in 31 languages has been checked against a spelling dictionary, and the new texts were read by a second AI model. A handful of phrases were corrected. No native speaker has read them yet."
   ]

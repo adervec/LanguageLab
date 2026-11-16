@@ -66,6 +66,9 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
 - **Your own material**: pasted or opened text, and a recording with its subtitle file (`.srt`/`.vtt`,
   parsed by `parseSubs`): the audio is kept in IndexedDB under `audio:<story id>`, on this device only.
 - Removing a story records its id in `S.gone` so neither a sync nor the starter set brings it back.
+- **A text as a link** (`#text=`): Library copies a link that holds one of your own texts (`sharetext`); whoever opens it sees
+  it first (`vGift`) and adds it on a tap. It is outside text: rebuilt by `cleanStory` from known fields, and the same text
+  twice is one text (its id is a hash of title and text).
 - **With a teacher**, no server: Progress makes a link (`#teach=`, the sitting's writing packed after the #) that opens the
   teacher's page (`vTeach`); their reply is another link (`#fix=`) that `vTaught` keeps beside the sitting (`teacher`) and
   turns into review cards (ids `t:…`). Both are outside text (`cleanTeach`, `cleanTeacher`). Progress also copies a sitting as
