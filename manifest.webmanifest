@@ -2,9 +2,28 @@
   "name": "LanguageLab",
   "short_name": "LanguageLab",
   "description": "Learn a language by reading, listening, dictation and writing, measured honestly",
+  "id": "./",
   "start_url": ".",
+  "scope": ".",
   "display": "standalone",
   "background_color": "#f6f4ef",
   "theme_color": "#1f5f8b",
-  "icons": [{ "src": "icon-192.png", "sizes": "192x192", "type": "image/png" }, { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }, { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+  "categories": ["education"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  "screenshots": [
+    { "src": "shots/phone-today.png", "sizes": "780x1688", "type": "image/png", "form_factor": "narrow", "label": "Today: a sitting, review, speaking and a pen pal" },
+    { "src": "shots/phone-read.png", "sizes": "780x1688", "type": "image/png", "form_factor": "narrow", "label": "Reading: tap a word for its meaning" },
+    { "src": "shots/desktop-progress.png", "sizes": "1280x800", "type": "image/png", "form_factor": "wide", "label": "Progress: the level your own numbers support" }
+  ],
+  "shortcuts": [
+    { "name": "First steps", "url": "./#first" },
+    { "name": "Library", "url": "./#library" },
+    { "name": "Talk with an AI partner", "url": "./#chat" },
+    { "name": "Progress", "url": "./#progress" }
+  ]
 }

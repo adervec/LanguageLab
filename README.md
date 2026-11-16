@@ -44,7 +44,7 @@ snapshot). LanguageLab is ahead in some rows and behind in others.
 | Speech scoring | Its own engine | TruAccent | Speech recognition | The browser's speech recognition, word by word: understood at its first guess, only its second guess (nearly right) or missed, with how sure it was; it listens through your pauses. A speaking level from those numbers, and a recording of yourself to compare by ear. It judges whole words, not each sound |
 | Human teachers | No | Live coaching (premium) | No | None of its own, but it works with any teacher you have: a teacher hands out a text as a link that each learner adds to their library, a link carries the learner's writing back to them, and another brings their corrections into the learner's review. Nobody needs more than a browser |
 | Content checked by people | Yes | Yes | Yes | No native speaker has read it, and the app says so. It was written by an AI; every word of the texts in 31 languages is checked against an open spelling dictionary, and the newer texts were read by a second AI model (see "What has been checked") |
-| Apps | iOS, Android, web | iOS, Android, web | iOS, Android, web, AR and VR | A web app that installs to the home screen and opens without a connection after one visit; no app-store apps |
+| Apps | iOS, Android, web | iOS, Android, web | iOS, Android, web, AR and VR | A web app that installs to the home screen of a phone or a computer and opens without a connection after one visit. Its manifest carries what a store wrapper would need (icons, screenshots, shortcuts), but it is in no app store |
 
 Sources: Duolingo on [Duolingo Max](https://blog.duolingo.com/duolingo-max), a 2026 review of
 [what Max adds](https://storylearning.com/duolingo-max-review) and reporting on

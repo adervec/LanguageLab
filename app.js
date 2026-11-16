@@ -471,8 +471,22 @@ const playRow = () => H`<div class="row"><button class="primary" data-act="play"
 const marked = (target, got, spoken) => C.dictationScore(target, got, S.lang, spoken).parts.map(p => p.hit == null ? p.s : H`<span class="${p.hit ? 'hit' : 'miss'}">${p.s}</span>`);
 // a spoken line: understood, missed, or "near" (the recogniser had the word only as a second guess)
 const spokenMarks = d => C.speechMarks(d.target, [d.heard, ...(d.typed ? [] : d.alts || [])], S.lang, !d.typed).parts.map(p => p.hit == null ? p.s : H`<span class="${p.hit ? 'hit' : p.near ? 'near' : 'miss'}">${p.s}</span>`);
-const words = text => { const { cards, known } = L(); return C.tokens(text, S.lang).map(x => { const k = C.key(x.s);
-  return x.word ? H`<button class="w ${(cards[k] && !cards[k].retired) || sit.tapped.has(k) ? 'learn' : known[k] ? '' : 'new'}" data-act="tap" data-k="${k}">${x.s}</button>` : x.s; }); };
+// A tappable word is a box of its own, so left alone the browser may break the line between it and what is written against it: a
+// full stop would start the next line, and "J'" would part from "ai". What touches a word (and the spaced ? ! : ; » of French)
+// is kept on its line with it.
+const words = text => {
+  const { cards, known } = L(), tk = C.tokens(text, S.lang).map(x => ({ ...x })), out = [];
+  tk.forEach((x, i) => {
+    if (!x.word) return void out.push(x.s);
+    const k = C.key(x.s), before = out.length && tk[i - 1] && !tk[i - 1].word ? String(out[out.length - 1]).match(/[^\s]+$/)?.[0] || '' : '';
+    const next = tk[i + 1], after = next && !next.word ? next.s.match(/^(?:[^\s]+|[ \u00a0\u202f][?!:;»]+)+/)?.[0] || '' : '';
+    if (before) out[out.length - 1] = out[out.length - 1].slice(0, -before.length);
+    if (after) next.s = next.s.slice(after.length);
+    const b = H`<button class="w ${(cards[k] && !cards[k].retired) || sit.tapped.has(k) ? 'learn' : known[k] ? '' : 'new'}" data-act="tap" data-k="${k}">${x.s}</button>`;
+    out.push(before || after ? H`<span class="nb">${before}${b}${after}</span>` : b);
+  });
+  return out;
+};
 const field = (id, enter, label, hint, focus = 'data-focus') => H`<input type="text" id="${id}" lang="${S.lang}" dir="auto" autocomplete="off" autocapitalize="off" spellcheck="false" data-enter="${enter}" aria-label="${label}" placeholder="${hint || ''}" ${focus}>`;
 
 function vSitting() {
