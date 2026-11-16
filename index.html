@@ -9,7 +9,7 @@
 <link rel="apple-touch-icon" href="icon-192.png">
 <meta name="theme-color" content="#1f5f8b">
 <meta name="app-name" content="LanguageLab">
-<meta name="app-version" content="0.3.0">
+<meta name="app-version" content="0.4.0">
 <meta name="app-license" content="MIT">
 <meta name="app-data-note" content="Your stories, words and sittings stay on this device. With Google Drive sync on, one backup file is kept in a private app folder in your own Drive that only this app can read. There is no server.">
 <meta name="app-whatsnew" content="whatsnew.json">
@@ -83,6 +83,16 @@ ul{padding-inline-start:1.2em;margin:.3em 0}
 app-theme-picker,app-font-picker{display:block;margin:8px 0}
 .row>*{min-width:0;max-width:100%}
 input[type=file]{max-width:100%}
+/* text in the language being learned takes its own direction, whatever the interface's (Arabic in an English page, French in an Arabic one) */
+main [lang]{unicode-bidi:plaintext}
+.ph{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--line)}
+.ph:last-child{border-bottom:0}
+.ph .sub{display:block}
+.abc{display:grid;grid-template-columns:repeat(auto-fill,minmax(58px,1fr));gap:6px;margin-top:8px}
+.abc button{display:flex;flex-direction:column;align-items:center;padding:4px 2px;min-height:0}
+.abc b{font-size:1.5rem;line-height:1.3}
+.abc .sub{margin:0}
+.letter{font-size:4rem;line-height:1.2;margin:.1em 0;text-align:center}
 .spark{display:block;width:100%;height:60px;margin-top:14px}
 .spark polyline{fill:none;stroke:var(--accent);stroke-width:2;vector-effect:non-scaling-stroke}
 </style>

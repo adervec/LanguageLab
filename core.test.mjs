@@ -218,7 +218,7 @@ console.log('core.test: ok');
 
 // the bundled content: every language with starter stories has a full, well-formed set
 {
-  const files = readdirSync(new URL('./content/', import.meta.url)).filter(f => f.endsWith('.json')), bad = [];
+  const files = readdirSync(new URL('./content/', import.meta.url)).filter(f => f.endsWith('.json') && f !== 'first.json'), bad = [];
   for (const f of files) bad.push(...contentProblems('content/' + f).map(p => f + ' ' + p));
   for (const code of Object.keys(c.LANGS)) {
     let list = [];
@@ -229,4 +229,55 @@ console.log('core.test: ok');
   }
   if (bad.length) { console.log(bad.slice(0, 40).join('\n')); assert.fail(`${bad.length} content problem(s)`); }
   console.log(`content: ok (${files.length} files)`);
+}
+
+// first steps (content/first.json): forty phrases a language, each one scoreable; a reading where the script is not Latin; charts and sounds well formed
+{
+  const first = JSON.parse(readFileSync(new URL('./content/first.json', import.meta.url), 'utf8')), bad = [];
+  const latin = s => /^[\p{Script=Latin}\p{Script=Common}\p{Script=Inherited}]+$/u.test(s);
+  assert.deepEqual([first.meanings.length, first.lessons.length], [40, 5]);
+  for (const [code, list] of Object.entries(first.langs)) {
+    if (!c.isLangCode(code) || list.length !== 40) bad.push(`${code}: needs 40 phrases (has ${list.length})`);
+    const seen = new Set(), read = first.readings[code];
+    list.forEach((p, i) => {
+      const [text, own] = Array.isArray(p) ? p : [p, 'x'];
+      if (typeof text !== 'string' || !text.trim() || text.length > 80 || typeof own !== 'string' || !own) bad.push(`${code} #${i}: a phrase is a short string, or [phrase, its own meaning]`);
+      else if (/\d/.test(text)) bad.push(`${code} #${i}: no digits`);
+      else if (!c.plainWords(text, code).length || c.dictationScore(text, text, code).score !== 1) bad.push(`${code} #${i}: cannot be scored: ${text}`);
+      else if (seen.has(text)) bad.push(`${code} #${i}: the same phrase twice: ${text}`);
+      seen.add(text);
+    });
+    if (list.every(p => latin(Array.isArray(p) ? p[0] : p)) === !!read) bad.push(`${code}: a script that is not Latin needs readings, a Latin one has none`);
+    if (read && (read.length !== 40 || !read.every(r => typeof r === 'string' && r && latin(r)))) bad.push(`${code}: needs 40 readings in Latin letters`);
+  }
+  for (const [code, rows] of Object.entries(first.sounds)) for (const [letters, word, hint] of rows) {
+    if (!first.langs[code] || !letters || !word || !hint) bad.push(`${code}: a sound is [letters, example word, what to listen for]`);
+    else if (!c.langInfo(code).seg && !letters.split(' ').some(x => word.toLowerCase().includes(x.replace(/-/g, '')))) bad.push(`${code}: "${word}" does not show "${letters}"`);
+  }
+  for (const [code, charts] of Object.entries(first.scripts)) for (const [name, src] of charts) {
+    const pairs = c.chartPairs(src);
+    if (!first.langs[code] || !name || pairs.length < 5 || pairs.length !== src.split(' ').length) bad.push(`${code} ${name}: a chart is "letter=reading" pairs`);
+    if (new Set(pairs.map(p => p[0])).size !== pairs.length) bad.push(`${code} ${name}: a letter appears twice`);
+    for (const [ch, r] of pairs) if (!c.readingOk(r[0].toUpperCase(), r)) bad.push(`${code} ${name}: ${ch} has no usable reading`);
+  }
+  if (bad.length) { console.log(bad.slice(0, 40).join('\n')); assert.fail(`${bad.length} problem(s) in content/first.json`); }
+
+  // the lessons built from it: the meaning in the reader's own language where the file has it, a reading, no level
+  const ru = c.lessonStories(first, 'ru', 'fr').map(s => c.cleanStory(s, 'ru'));
+  assert.deepEqual([ru.length, ru[0].id, ru[0].title, ru[0].level, ru[0].phrases, ru[0].back.length, ru[0].source], [5, 'ru-first-1', 'Hello and goodbye', '', true, 8, 'first']);
+  assert.deepEqual(ru[0].back[0], ['Здравствуйте.', 'Bonjour.', 'Zdravstvuyte.']);
+  assert.deepEqual(c.cleanStory(c.lessonStories(first, 'es')[0], 'es').back[1], ['Buenas tardes.', 'Good afternoon.']); // a phrase with its own meaning
+  assert.equal(c.lessonStories(first, 'ru', 'es')[0].back[1][1], 'Good evening.');   // the reader's own phrase there means something else: English instead
+  assert.equal(c.lessonStories(first, 'ru', 'ru')[0].back[0][1], 'Hello.');
+  assert.deepEqual([c.storySentences(ru[0]).length, c.lessonStories(first, 'xx').length, c.lessonStories(null, 'ru').length], [8, 0, 0]);
+  // lessons have no level, so they never count towards what the numbers say you can read
+  const S = c.cleanState({ app: 'languagelab', v: 1, stories: ru, sittings: [{ id: 'f1', lang: 'ru', mode: 'first', level: '' }] });
+  assert.deepEqual([S.stories.length, S.stories[0].phrases, S.stories[0].back[0][2], S.sittings[0].mode, c.abilities(S, 'ru')], [5, true, 'Zdravstvuyte.', 'first', []]);
+  // letters to tap where the keyboard lacks the script; only the accented ones for a Latin script
+  assert.deepEqual(c.lessonKeys('Да. Нет.', 'ru'), ['а', 'д', 'е', 'н', 'т', ' ', '⌫']);
+  assert.deepEqual(c.lessonKeys('Où est la gare ? Ça va.', 'fr'), ['ç', 'ù']);
+  assert.deepEqual(c.lessonKeys('İstasyon nerede?', 'tr'), []);
+  assert.deepEqual(c.chartPairs('あ=a し=shi/si junk'), [['あ', ['a']], ['し', ['shi', 'si']]]);
+  assert.ok(c.readingOk(' SHI ', ['shi', 'si']) && c.readingOk('si', ['shi', 'si']) && !c.readingOk('su', ['shi', 'si']) && !c.readingOk('', ['a']));
+  console.log(`first steps: ok (${Object.keys(first.langs).length} languages)`);
 }

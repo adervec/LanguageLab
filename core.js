@@ -43,8 +43,8 @@ export function sentences(text) {
   return String(text).replace(/\s+/g, ' ')
     .split(/(?<=[。！？][」』”]?)(?![」』”])\s*|(?<=[.!?…।؟]["»”“’)]?)\s+(?=[\p{Lu}\p{Lo}\p{N}«"“„¿¡—-])/u).map(s => s.trim()).filter(Boolean);
 }
-// The sentences of a story: a dialogue's are its lines', a subtitled recording's are its cues.
-export const storySentences = s => s.cues ? s.cues.map(c => c[2]) : s.lines ? s.lines.flatMap(l => sentences(l[1])) : sentences(s.text);
+// The sentences of a story: a first lesson's are its phrases, a dialogue's are its lines', a subtitled recording's are its cues.
+export const storySentences = s => s.phrases ? s.back.map(b => b[0]) : s.cues ? s.cues.map(c => c[2]) : s.lines ? s.lines.flatMap(l => sentences(l[1])) : sentences(s.text);
 
 // Split text into [{ s, word }] pieces that join back to the original.
 // ponytail: surface forms, not lemmas ("mange" and "mangé" count separately). Add a per-language
@@ -238,17 +238,39 @@ export function cleanStory(s, lang) {
   const roles = arr(s.roles).slice(0, 2).map(r => str(r, 40).trim()).filter(Boolean);
   const dialogue = lines.length >= 2 && roles.length === 2;
   const cues = arr(s.cues).slice(0, 4000).map(c => [num(arr(c)[0]), num(arr(c)[1]), str(arr(c)[2], 600).trim()]).filter(c => c[2] && c[1] > c[0]);
-  const text = dialogue ? lines.map(l => l[1]).join('\n') : cues.length ? cues.map(c => c[2]).join(' ') : str(s.text, 20000).trim();
   const title = str(s.title, 120).trim(), notice = str(s.notice, 600).trim();
-  // back: sentences of the text with what they mean, for writing back from the meaning: [[sentence, meaning]]
-  const back = arr(s.back).slice(0, 4).map(b => [str(arr(b)[0], 600).trim(), str(arr(b)[1], 400).trim()]).filter(b => b[0] && b[1]);
+  // back: sentences of the text with what they mean, for writing back from the meaning: [[sentence, meaning]].
+  // A first lesson (phrases) is nothing but such pairs, up to twelve, each with an optional reading in Latin letters.
+  const back = arr(s.back).slice(0, s.phrases ? 12 : 4).map(b => { const read = s.phrases ? str(arr(b)[2], 200).trim() : '';
+    return [str(arr(b)[0], 600).trim(), str(arr(b)[1], 400).trim(), ...(read ? [read] : [])]; }).filter(b => b[0] && b[1]);
+  const phrases = !!s.phrases && back.length > 0;
+  const text = phrases ? back.map(b => b[0]).join('\n') : dialogue ? lines.map(l => l[1]).join('\n') : cues.length ? cues.map(c => c[2]).join(' ') : str(s.text, 20000).trim();
   if (!text || !title) return null;
   const questions = arr(s.questions).slice(0, 5).map(q => ({ q: str(obj(q).q, 300).trim(),
     a: arr(obj(q).a).filter(x => typeof x === 'string' && x.trim()).slice(0, 6).map(x => x.trim().slice(0, 80)) })).filter(q => q.q && q.a.length);
   return { id: str(s.id, 80), lang: isLangCode(s.lang) ? s.lang : lang, title, level: LEVELS.includes(s.level) ? s.level : '', text,
     gloss: cleanGloss(s.gloss), source: str(s.source, 20), added: num(s.added), readAt: num(s.readAt),
-    ...(dialogue ? { roles, lines } : {}), ...(!dialogue && cues.length ? { cues } : {}), ...(questions.length ? { questions } : {}), ...(notice ? { notice } : {}), ...(back.length ? { back } : {}) };
+    ...(phrases ? { phrases } : dialogue ? { roles, lines } : cues.length ? { cues } : {}), ...(questions.length ? { questions } : {}), ...(notice ? { notice } : {}), ...(back.length ? { back } : {}) };
 }
+
+// ---- first steps: five lessons of eight everyday phrases, from content/first.json ----
+// A phrase there is a string, or [phrase, its own meaning] where the shared English meaning does not fit that
+// language. The meaning shown is the same phrase in the reader's own language where the file has it, else the English.
+export function lessonStories(first, code, ui = 'en') {
+  first = obj(first);
+  const all = arr(obj(first.langs)[code]), mine = ui === code ? [] : arr(obj(first.langs)[ui]), read = arr(obj(first.readings)[code]), en = arr(first.meanings);
+  return arr(first.lessons).map((title, i) => ({ id: `${code}-first-${i + 1}`, lang: code, title, source: 'first', phrases: true,
+    back: all.slice(i * 8, i * 8 + 8).map((p, j) => { const n = i * 8 + j;
+      return Array.isArray(p) ? [p[0], p[1], read[n]] : [p, typeof mine[n] === 'string' ? mine[n] : en[n], read[n]]; }) })).filter(s => s.back.length);
+}
+// The letters a lesson needs that a Latin keyboard lacks; with a space and a delete key when the script is not Latin at all.
+export function lessonKeys(text, lang) {
+  const ch = [...new Set([...String(text).normalize('NFC').toLocaleLowerCase(lang)].filter(c => /[\p{L}\p{M}]/u.test(c) && !/[a-z]/.test(c)))].sort();
+  return ch.some(c => /\p{L}/u.test(c) && !/\p{Script=Latin}/u.test(c)) ? [...ch, ' ', '⌫'] : ch;
+}
+// A script chart "あ=a し=shi/si" -> [[letter, [accepted readings]]]. A typed reading passes when it is one of them (case and accents forgiven).
+export const chartPairs = src => String(src ?? '').split(/\s+/).map(x => x.split('=')).filter(x => x.length === 2 && x[0] && x[1]).map(([ch, r]) => [ch, r.split('/')]);
+export const readingOk = (typed, readings) => arr(readings).some(r => strip(r) === strip(String(typed).trim()));
 export function cleanReview(r) {
   r = obj(r);
   const list = v => arr(v).filter(x => typeof x === 'string').slice(0, 6).map(x => x.slice(0, 400));
@@ -265,7 +287,7 @@ export function cleanPalReply(r) {
 }
 const cleanSrs = s => s && typeof s === 'object'
   ? { reps: num(s.reps), lapses: num(s.lapses), ease: num(s.ease, 2.5), interval: num(s.interval), due: num(s.due), t: num(s.t) } : null;
-const MODES = ['sitting', 'read', 'listen', 'talk', 'chat'];
+const MODES = ['sitting', 'read', 'listen', 'talk', 'chat', 'first'];
 function cleanSitting(s) {
   s = obj(s);
   if (!str(s.id, 80)) return null;

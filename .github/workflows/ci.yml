@@ -29,6 +29,7 @@ jobs:
       - run: node core.test.mjs
       - run: node .github/smoke.mjs
       - run: node .github/flow.mjs
+      - run: node .github/offline.mjs
 
   deploy:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'

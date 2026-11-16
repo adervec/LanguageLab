@@ -58,6 +58,15 @@ problem; keep fixing until it prints `ok`.
 - `notice`: one grammar or usage point the text shows, in plain English, quoting two short examples
   from the text. 40 to 400 characters. It is shown after reading, as something to notice.
 
+## First steps (`first.json`)
+
+One file for every language: `meanings` (forty English meanings), `lessons` (five titles, eight phrases each), and per
+language code in `langs` the forty phrases in the same order. Keep each phrase short (80 characters at most), natural and
+polite, with no digits. Where a language does not say it that way, give the pair `["phrase", "what it really means"]`.
+A language in a script that is not Latin also needs forty `readings` in Latin letters. `scripts` holds charts as
+`[name, "letter=reading letter=reading/other"]`; `sounds` holds `[letters, example word, what to listen for]`.
+`node core.test.mjs` checks all of it.
+
 ## Chinese, Japanese and Korean
 
 - Chinese and Japanese have no spaces, so the app splits words with `Intl.Segmenter`. A gloss key must be a word exactly as that splits it:

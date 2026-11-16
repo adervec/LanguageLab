@@ -21,8 +21,15 @@ let S = { app: 'languagelab', v: 1, updatedAt: 0, lang: 'fr', langs: {}, gone: {
 const L = () => (S.langs[S.lang] ??= C.emptyLang());
 const lang = () => C.langInfo(S.lang);
 const langName = () => { try { return new Intl.DisplayNames([A.lang()], { type: 'language' }).of(S.lang) || lang().name; } catch { return lang().name; } };
-const stories = () => S.stories.filter(s => s.lang === S.lang);
+// The first lessons (phrases) are kept apart from the stories: they have no level and a screen of their own.
+const stories = () => S.stories.filter(s => s.lang === S.lang && !s.phrases);
+const lessons = () => S.stories.filter(s => s.lang === S.lang && s.phrases).sort((a, b) => a.id.localeCompare(b.id));
+let FIRST = null; // content/first.json: the phrases of the first lessons, sounds to notice, script charts
+// A lesson's title and a chart's name are interface strings.
+// i18n-keys: Hello and goodbye | Getting to know you | Numbers and prices | Eating and drinking | Getting around | Hiragana | Katakana | Consonants | Vowels | Alphabet
+const ttl = s => s.phrases || s.mode === 'first' ? t(s.title) : s.title;
 const story = id => S.stories.find(s => s.id === id);
+const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 const isTalk = s => !!s.lines;
 
 const idb = new Promise((res, rej) => {
@@ -97,7 +104,7 @@ async function playClip(s, from, to, { rate = 1, onend } = {}) {
     if (playerFor !== s.id) {
       const blob = await kv('readonly', st => st.get('audio:' + s.id));
       if (!blob) return false;
-      if (player.src) URL.revokeObjectURL(player.src);
+      if (player.src && player.src !== take) URL.revokeObjectURL(player.src);
       player.src = URL.createObjectURL(blob); playerFor = s.id;
     }
     hush();
@@ -106,8 +113,27 @@ async function playClip(s, from, to, { rate = 1, onend } = {}) {
     return true;
   } catch { return false; }
 }
-const hush = () => { speakTok++; window.speechSynthesis?.cancel(); recog?.stop(); player.pause(); playerDone = null; };
-async function playStory(s, opts) { if (!(s.cues && await playClip(s, 0, Infinity, opts))) say(s.lines || s.text, opts); }
+const hush = () => { speakTok++; window.speechSynthesis?.cancel(); recog?.stop(); taker?.stop(); player.pause(); playerDone = null; };
+// Record yourself, then hear the voice and yourself one after the other: the ear judges what a score cannot, and it works
+// where the browser cannot recognise speech. The take lives in this page only: it is never saved or sent.
+let taker = null, take = '';
+const canRecord = !!(navigator.mediaDevices?.getUserMedia && window.MediaRecorder);
+const dropTake = () => { if (take) URL.revokeObjectURL(take); take = ''; };
+async function record(b) {
+  if (taker) { taker.keep = true; return taker.stop(); } // stopped by its own button: kept. Stopped by moving on (hush): dropped
+  hush();
+  let stream;
+  try { stream = await navigator.mediaDevices.getUserMedia({ audio: true }); }
+  catch (e) { const m = $('#micmsg'); if (m) m.textContent = t('The microphone did not work here ({why}). You can carry on without it.', { why: e.name }); return; }
+  const bits = [], me = taker = new MediaRecorder(stream);
+  me.ondataavailable = e => bits.push(e.data);
+  me.onstop = () => {
+    stream.getTracks().forEach(x => x.stop()); taker = null; dropTake();
+    if (me.keep) { take = URL.createObjectURL(new Blob(bits, { type: bits[0]?.type })); render(true); }
+  };
+  me.start(); b.textContent = t('Stop recording'); b.setAttribute('aria-pressed', 'true');
+}
+async function playStory(s, opts) { if (!(s.cues && await playClip(s, 0, Infinity, opts))) say(s.phrases ? s.back.map(b => [1, b[0]]) : s.lines || s.text, opts); }
 async function playSentence(s, target) {
   const cue = s.cues?.find(c => c[2].normalize('NFC') === target);
   if (!(cue && await playClip(s, cue[0], cue[1] + 0.2))) say(target);
@@ -146,7 +172,7 @@ async function translate(text) {
 }
 
 // ---------- views ----------
-let view = 'today', sit = null, rev = null, radio = null, flash = '', confirmErase = false, confirmRemove = '', lib = { kind: 'all', level: '' }, wordQuery = '', palT0 = 0, chatBusy = false, chatPoll = 0;
+let view = 'today', sit = null, rev = null, radio = null, quiz = null, flash = '', confirmErase = false, confirmRemove = '', lib = { kind: 'all', level: '' }, wordQuery = '', palT0 = 0, chatBusy = false, chatPoll = 0;
 const dueWords = () => Object.keys(L().cards).filter(k => C.isDue(L().cards[k]));
 const dueFixes = () => Object.keys(L().fixes).filter(k => C.isDue(L().fixes[k]));
 const lv = s => LEVELS.indexOf(s.level || L().level), far = s => Math.abs(lv(s) - LEVELS.indexOf(L().level));
@@ -158,16 +184,20 @@ function pick(talk) {
 }
 const meta = s => [s.level, isTalk(s) ? t.n('{n} line', '{n} lines', s.lines.length) : t.n('{n} word', '{n} words', C.wordKeys(s.text, S.lang).length),
   t('{pct} known', { pct: pct(C.coverage(s.text, L().known, S.lang)) })].filter(Boolean).join(' · ');
-const keysBar = () => lang().keys ? H`<div class="row keys" aria-label="${t('Accented letters')}">${[...lang().keys].map(ch => H`<button data-act="ins" data-ch="${ch}">${ch}</button>`)}</div>` : '';
+// Letters to tap: the accented ones a keyboard may lack, or in a first lesson every letter of a script the keyboard does not have.
+const keysBar = (ks = sit?.keys ?? lang().keys) => ks.length ? H`<div class="row keys" aria-label="${t('Accented letters')}">${[...ks].map(ch =>
+  H`<button data-act="ins" data-ch="${ch}" aria-label="${ch === ' ' ? t('Space') : ch === '⌫' ? t('Delete the last letter') : ch}">${ch === ' ' ? '␣' : ch}</button>`)}</div>` : '';
 const tile = (big, label) => H`<div class="card tile"><b>${big}</b><span class="sub">${label}</span></div>`;
 const levelSelect = () => H`<select data-change="level" aria-label="${t('Level')}">${LEVELS.map(l => H`<option ${l === L().level ? 'selected' : ''}>${l}</option>`)}</select>`;
-// Languages with starter stories first; then any language this device has a voice for, or that you already study.
+// Languages with starter stories first; then those with first lessons only; then any language this device has a voice for, or that you already study.
 function langSelect() {
   const dev = (window.speechSynthesis?.getVoices() || []).map(v => v.lang.replace('_', '-').toLowerCase().split('-')[0]);
-  const extra = [...new Set([...Object.keys(S.langs), S.lang, ...dev])].filter(c => C.isLangCode(c) && !C.LANGS[c])
-    .sort((a, b) => C.langInfo(a).name.localeCompare(C.langInfo(b).name));
+  const byName = (a, b) => C.langInfo(a).name.localeCompare(C.langInfo(b).name);
+  const first = Object.keys(FIRST?.langs || {}).filter(c => C.isLangCode(c) && !C.LANGS[c]).sort(byName);
+  const extra = [...new Set([...Object.keys(S.langs), S.lang, ...dev])].filter(c => C.isLangCode(c) && !C.LANGS[c] && !first.includes(c)).sort(byName);
   const opt = c => H`<option value="${c}" ${c === S.lang ? 'selected' : ''}>${C.langInfo(c).name}</option>`;
   return H`<select data-change="lang" aria-label="${t('Language to learn')}"><optgroup label="${t('With starter stories')}">${Object.keys(C.LANGS).map(opt)}</optgroup>
+    ${first.length ? H`<optgroup label="${t('With first lessons')}">${first.map(opt)}</optgroup>` : ''}
     ${extra.length ? H`<optgroup label="${t('With your own texts or AI cowork')}">${extra.map(opt)}</optgroup>` : ''}</select>`;
 }
 
@@ -175,14 +205,22 @@ function vToday() {
   const s = pick(false), d = pick(true), n = dueWords().length + dueFixes().length, since = Date.now() - 7 * C.DAY, pal = L().pal.msgs;
   const week = S.sittings.filter(x => x.lang === S.lang && x.at >= since), sum = f => week.reduce((a, x) => a + f(x), 0);
   const up = S.welcomed && C.abilities(S, S.lang).find(r => LEVELS.indexOf(r.level) === LEVELS.indexOf(L().level) + 1 && r.reading >= 0.95);
+  // from nothing: the first lessons lead the day for a beginner, and for a language that has nothing else yet
+  const ls = lessons(), todo = ls.find(x => !x.readAt), zero = ls.length && (L().level === 'A1' || !C.LANGS[S.lang]);
   return H`${S.welcomed ? '' : H`<div class="card"><h2>${t('Welcome')}</h2>
     <p>${t('LanguageLab works the way languages are really picked up: a lot of listening and reading you can follow, real speaking and writing, and an honest measure of what you can do. No points, no streak.')}</p>
     <p><label>${t('I want to learn')} ${langSelect()}</label></p>
     <p><label>${t('My level')} ${levelSelect()}</label></p>
     <p class="sub">${t('A1: a few words. A2: simple everyday sentences. B1: you get by on familiar subjects. B2: you follow most things. C1: you want polish.')}</p>
+    ${ls.length ? H`<p class="sub">${t('Starting from nothing? Choose A1: the first lessons, with the letters and sounds, come before anything else.')}</p>` : ''}
     <button class="primary" data-act="welcome">${t('Begin')}</button></div>`}
   <h1>${t('Today')} <span class="sub">${lang().name}</span></h1>
   ${up ? H`<p class="flash">${t('You already know {pct} of the words in {level} texts. Time to move up: change your level in Settings.', { pct: pct(up.reading), level: up.level })}</p>` : ''}
+  ${zero ? H`<div class="card"><h2>${t('First steps')}</h2>
+    <p class="sub">${t('New to {language}? Start here: everyday phrases to hear, write and say, and the letters and sounds.', { language: langName() })}</p>
+    ${todo ? H`<p class="big">${t('Lesson {i} of {n}: {title}', { i: ls.indexOf(todo) + 1, n: ls.length, title: ttl(todo) })}</p>` : H`<p>${t('You have done every first lesson. Their phrases come back in your review.')}</p>`}
+    <div class="row">${todo ? H`<button class="primary" data-act="start" data-id="${todo.id}">${t('Start the lesson')}</button>` : ''}<button data-act="go" data-v="first">${t('First steps, letters and sounds')}</button></div>
+  </div>` : ''}
   <div class="card"><h2>${t('A sitting')}</h2>
     <p class="sub">${t('Listen without the text, answer from what you heard, read it, take dictation at natural speed, say it aloud, then retell it in your own words. About twenty minutes.')}</p>
     ${s ? H`<p class="big" lang="${S.lang}">${s.title}</p><p class="sub">${meta(s)}</p>
@@ -226,7 +264,8 @@ function vLibrary() {
   const chip = (k, label) => H`<button data-act="lib" data-k="${k}" aria-pressed="${lib.kind === k}">${label}</button>`;
   return H`<h1>${t('Library')} <span class="sub">${lang().name}</span></h1>
   <div class="row acts">${chip('all', t('All'))}${chip('story', t('Stories'))}${chip('talk', t('Dialogues'))}${chip('mine', t('Mine'))}
-    <select data-change="liblevel" aria-label="${t('Level')}"><option value="">${t('All levels')}</option>${LEVELS.map(l => H`<option ${l === lib.level ? 'selected' : ''}>${l}</option>`)}</select></div>
+    <select data-change="liblevel" aria-label="${t('Level')}"><option value="">${t('All levels')}</option>${LEVELS.map(l => H`<option ${l === lib.level ? 'selected' : ''}>${l}</option>`)}</select>
+    ${lessons().length ? H`<button data-act="go" data-v="first">${t('First steps, letters and sounds')}</button>` : ''}</div>
   ${rows.length ? '' : H`<p class="sub">${t('Nothing here yet.')}</p>`}
   ${rows.map(s => H`<div class="card"><b lang="${S.lang}">${s.title}</b>
     <div class="sub">${meta(s)}${s.cues ? ' · ' + t('your recording') : ''}${s.readAt ? ' · ' + t('read {date}', { date: A.fmt.date(s.readAt) }) : ''}</div>
@@ -238,7 +277,7 @@ function vLibrary() {
   <div class="card"><h2>${t('Add a text of your own')}</h2>
     <p class="sub">${t('Paste something in {language} that you want to read: an article, a letter, song lyrics.', { language: langName() })}</p>
     <p><input type="text" id="newTitle" maxlength="120" placeholder="${t('Title')}" aria-label="${t('Title')}"></p>
-    <p><textarea id="newText" lang="${S.lang}" maxlength="20000" aria-label="${t('Text')}"></textarea></p>
+    <p><textarea id="newText" lang="${S.lang}" dir="auto" maxlength="20000" aria-label="${t('Text')}"></textarea></p>
     <p><label><span class="sub">${t('Or open a text file')} </span><input type="file" accept=".txt,text/plain" data-change="textfile"></label></p>
     <button data-act="addtext">${t('Add to the library')}</button>
   </div>
@@ -257,8 +296,11 @@ function vWords() {
   const when = c => !c.srs ? t('new') : c.srs.due <= Date.now() ? t('due now') : t('due {date}', { date: A.fmt.date(c.srs.due) });
   const found = q ? Object.keys(known).filter(k => k.includes(q)).slice(0, 40) : [];
   const noticed = stories().filter(s => s.readAt && s.notice).sort((a, b) => b.readAt - a.readAt).slice(0, 40);
+  // the phrases of the first lessons share the corrections' deck (ids "first:…") but are not mistakes
+  const corr = Object.entries(fixes).filter(([id]) => !id.startsWith('first:')), phr = Object.keys(fixes).length - corr.length;
   return H`<h1>${t('Words')} <span class="sub">${lang().name}</span></h1>
-  <div class="tiles">${tile(nf(live.length), t('words in review'))}${tile(nf(Object.keys(known).length), t('words read without help'))}${tile(nf(Object.keys(fixes).length), t('corrections to relearn'))}</div>
+  <div class="tiles">${tile(nf(live.length), t('words in review'))}${tile(nf(Object.keys(known).length), t('words read without help'))}${tile(nf(corr.length), t('corrections to relearn'))}
+    ${phr ? tile(nf(phr), t('phrases in review')) : ''}</div>
   <p><input type="search" id="wq" value="${wordQuery}" data-input="wq" placeholder="${t('Search your words')}" aria-label="${t('Search your words')}"></p>
   <h2>${t('In review')}</h2>
   ${rows.length ? '' : H`<p class="sub">${t('Nothing here yet.')}</p>`}
@@ -267,9 +309,15 @@ function vWords() {
     <div class="row"><input type="text" class="grow" value="${c.gloss}" maxlength="120" data-change="gloss" data-k="${k}" placeholder="${t('Meaning')}" aria-label="${t('Meaning of {word}', { word: k })}">
       <button data-act="retire" data-k="${k}">${t('I know this')}</button></div></div>`)}
   ${rows.length > 80 ? H`<p class="sub">${t('Showing the first 80. Search to find the rest.')}</p>` : ''}
-  ${Object.keys(fixes).length ? H`<h2>${t('Your corrections')}</h2>
-    ${Object.entries(fixes).slice(-60).reverse().map(([id, f]) => H`<div class="card"><p lang="${S.lang}"><span class="miss">${f.wrong}</span> → <span class="hit">${f.right}</span></p>
-      ${f.why ? H`<p class="sub">${f.why}</p>` : ''}<button class="mini" data-act="unfix" data-id="${id}">${t('Remove')}</button></div>`)}` : ''}
+  <h2>${t('Your corrections')}</h2>
+  <details class="notice"><summary>${t('Add a correction from a teacher')}</summary>
+    <p class="sub">${t('Did a teacher, a tutor or a friend correct you? Put it here: what you said or wrote, and the right form. It comes back in your review like the others.')}</p>
+    <p><input type="text" id="fxWrong" lang="${S.lang}" dir="auto" maxlength="300" placeholder="${t('What you said or wrote')}" aria-label="${t('What you said or wrote')}"></p>
+    <p><input type="text" id="fxRight" lang="${S.lang}" dir="auto" maxlength="300" placeholder="${t('The right form')}" aria-label="${t('The right form')}"></p>
+    <p><input type="text" id="fxWhy" maxlength="300" placeholder="${t('Why (optional)')}" aria-label="${t('Why (optional)')}"></p>
+    <button data-act="addfix">${t('Add the correction')}</button></details>
+  ${corr.slice(-60).reverse().map(([id, f]) => H`<div class="card"><p lang="${S.lang}"><span class="miss">${f.wrong}</span> → <span class="hit">${f.right}</span></p>
+    ${f.why ? H`<p class="sub">${f.why}</p>` : ''}<button class="mini" data-act="unfix" data-id="${id}">${t('Remove')}</button></div>`)}
   ${noticed.length ? H`<h2>${t('Grammar you have met')}</h2><p class="sub">${t('One point from each text you have read.')}</p>
     ${noticed.map(s => H`<div class="card"><b lang="${S.lang}">${s.title}</b><p>${s.notice}</p></div>`)}` : ''}
   <h2>${t('Known words')}</h2>
@@ -310,9 +358,10 @@ function vProgress() {
     <polyline points="${trend.map((v, i) => Math.round(i * 300 / (trend.length - 1)) + ',' + Math.round(57 - v * 54)).join(' ')}"/></svg>
     <p class="sub">${t('Words caught in dictation, sitting by sitting')}</p>` : ''}
   <h2>${t('Sittings')}</h2>
-  ${mine.some(s => ['sitting', 'talk', 'chat'].includes(s.mode)) ? '' : H`<p class="sub">${t('None yet.')}</p>`}
-  ${mine.filter(s => ['sitting', 'talk', 'chat'].includes(s.mode)).slice(-30).reverse().map(s => H`<div class="card"><b lang="${S.lang}">${s.title}</b>
+  ${mine.some(s => ['sitting', 'talk', 'chat', 'first'].includes(s.mode)) ? '' : H`<p class="sub">${t('None yet.')}</p>`}
+  ${mine.filter(s => ['sitting', 'talk', 'chat', 'first'].includes(s.mode)).slice(-30).reverse().map(s => H`<div class="card">${s.mode === 'first' ? H`<b>${ttl(s)}</b>` : H`<b lang="${S.lang}">${s.title}</b>`}
     <div class="sub">${bits(s)}</div>
+    ${s.writing.text ? H`<p><button class="mini" data-act="copysit" data-id="${s.id}">${t('Copy for a teacher')}</button></p>` : ''}
     ${s.ai ? H`<div data-clamp="6"><p><span class="grade">${s.ai.grade}</span>${s.ai.summary}</p>
       ${s.ai.strengths.length ? H`<b>${t('Strengths')}</b><ul>${s.ai.strengths.map(x => H`<li>${x}</li>`)}</ul>` : ''}
       ${s.ai.fixes.length ? H`<b>${t('To fix')}</b><ul>${s.ai.fixes.map(x => H`<li>${x}</li>`)}</ul>` : ''}
@@ -328,7 +377,14 @@ function vSettings() {
     <p class="sub">${t('The languages at the top of the list come with starter stories. Any other language works with your own texts and with stories from AI cowork. Each language keeps its own words and progress.')}</p>
     <div class="row">${langSelect()}${levelSelect()}</div>
     <p class="sub">${t('The level is used to choose the next story and when asking for new ones. Pick the level where you understand most of a text.')}</p>
-    <p class="sub">${t('The starter stories and dialogues were written by an AI and have not been checked by native speakers.')}</p>
+    <p class="sub">${t('The second group has first lessons for complete beginners: everyday phrases to hear, write and say, and a chart of the letters where the script is new.')}</p>
+    <p class="sub">${t('The starter stories and dialogues were written by an AI and have not been checked by native speakers.')} ${t('The same goes for the first lessons.')}</p>
+  </div>
+  <div class="card"><h2>${t('Install')}</h2>
+    <p class="sub">${t('LanguageLab installs like an app, on a phone or a computer. Once it has been opened with a connection, it also opens without one.')}</p>
+    ${matchMedia('(display-mode: standalone)').matches || navigator.standalone ? H`<p>${t('It is installed on this device.')}</p>`
+      : installEvt ? H`<button data-act="install">${t('Install LanguageLab')}</button>`
+      : H`<p class="sub">${t('In your browser’s menu, choose “Install” or “Add to Home Screen”.')}</p>`}
   </div>
   <div class="card"><h2>${t('Voice')}</h2>
     ${vs.length ? H`<p class="sub">${t('The voice that reads {language} on this device.', { language: langName() })}</p>
@@ -357,23 +413,34 @@ function rolePlay(s) {
   const mine = s.lines.map((l, li) => ({ li, target: l[1].normalize('NFC') })).filter(x => s.lines[x.li][0] === 1);
   return [...(SR ? mine.map(x => ({ ...x, memory: false })) : []), ...mine.map(x => ({ ...x, memory: true }))].map(x => ({ ...x, heard: '', score: null, tries: 0 }));
 }
-// mode: 'sitting' (everything, reviewed by AI), 'read' (just reading), 'talk' (just the role-play)
+// mode: 'sitting' (everything, reviewed by AI), 'read' (just reading), 'talk' (just the role-play), 'first' (a first lesson)
 function startSitting(id, mode = 'sitting') {
-  const s = story(id), full = mode === 'sitting';
+  const s = story(id);
+  if (s.phrases) mode = 'first';
+  const full = mode === 'sitting';
+  // A first lesson: every phrase is studied; half are then typed from the ear, the other half written from their meaning and said aloud.
+  // The halves swap each time the lesson is done again.
+  const flip = S.sittings.filter(x => x.storyId === id).length % 2;
+  const half = k => s.back.filter((_, i) => i % 2 === (k ^ flip)).map(([p, meaning]) => ({ target: p.normalize('NFC'), meaning }));
   if (radio) endRadio();
   sit = { id: A.randomId(), mode, storyId: id, slow: false, tapped: new Set(), listenSec: 0, plays: 0, di: 0, si: 0, checked: false, askDone: false, t0: Date.now(),
     asked: full ? (s.questions || []).map(q => ({ q: q.q, a: q.a, answer: '', ok: false })) : [],
-    dict: full ? C.pickDictation(C.storySentences(s), 4, S.lang).map(target => ({ target: target.normalize('NFC'), typed: '', score: null, plays: 0 })) : [] };
+    dict: s.phrases ? half(0).map(d => ({ ...d, typed: '', score: null, plays: 0 }))
+      : full ? C.pickDictation(C.storySentences(s), 4, S.lang).map(target => ({ target: target.normalize('NFC'), typed: '', score: null, plays: 0 })) : [] };
+  if (s.phrases) sit.keys = C.lessonKeys(s.text, S.lang);
   // write it back: two sentences given by their meaning (translated on this device), to be written in the language.
   // ponytail: marked against the text's own sentence, so a different correct wording loses words. The AI review is the judge of free writing.
   // Sentences the dictation did not use, where there are some, so it is not a matter of remembering what was just typed.
   const used = new Set(sit.dict.map(d => d.target)), spare = C.pickDictation(C.storySentences(s).map(x => x.normalize('NFC')).filter(x => !used.has(x)), 2, S.lang);
   // A bundled story brings its own two sentences with their English meaning, so the step needs no translator.
-  sit.rebuild = !full ? [] : s.back ? s.back.map(([target, meaning]) => ({ target: target.normalize('NFC'), meaning, typed: '', score: null }))
+  sit.rebuild = s.phrases ? half(1).map(d => ({ ...d, shown: d.meaning, typed: '', score: null }))
+    : !full ? [] : s.back ? s.back.map(([target, meaning]) => ({ target: target.normalize('NFC'), meaning, typed: '', score: null }))
     : canMean() ? (spare.length ? spare : sit.dict.slice(-2).map(d => d.target)).map(target => ({ target, typed: '', score: null })) : [];
   sit.ri = 0;
-  sit.speak = mode === 'read' ? [] : isTalk(s) ? rolePlay(s) : SR ? sit.dict.slice(0, 3).map(d => ({ target: d.target, heard: '', score: null, tries: 0 })) : [];
-  sit.steps = mode === 'read' ? ['read'] : mode === 'talk' ? ['speak'] : ['listen', sit.asked.length && 'ask', 'read', sit.dict.length && 'dictate', sit.rebuild.length && 'rebuild', sit.speak.length && 'speak', 'write'].filter(Boolean);
+  sit.speak = mode === 'read' ? [] : isTalk(s) ? rolePlay(s)
+    : SR ? (s.phrases ? sit.rebuild : sit.dict.slice(0, 3)).map(d => ({ target: d.target, meaning: d.meaning, heard: '', score: null, tries: 0 })) : [];
+  sit.steps = (s.phrases ? ['learn', 'dictate', 'rebuild', sit.speak.length && 'speak'] : mode === 'read' ? ['read'] : mode === 'talk' ? ['speak']
+    : ['listen', sit.asked.length && 'ask', 'read', sit.dict.length && 'dictate', sit.rebuild.length && 'rebuild', sit.speak.length && 'speak', 'write']).filter(Boolean);
   sit.step = sit.steps[0];
   view = 'sitting'; render(); scrollTo(0, 0);
   if (sit.step === 'speak') cueLines();
@@ -386,13 +453,20 @@ const playRow = () => H`<div class="row"><button class="primary" data-act="play"
 const marked = (target, got) => C.dictationScore(target, got, S.lang).parts.map(p => p.hit == null ? p.s : H`<span class="${p.hit ? 'hit' : 'miss'}">${p.s}</span>`);
 const words = text => { const { cards, known } = L(); return C.tokens(text, S.lang).map(x => { const k = C.key(x.s);
   return x.word ? H`<button class="w ${(cards[k] && !cards[k].retired) || sit.tapped.has(k) ? 'learn' : known[k] ? '' : 'new'}" data-act="tap" data-k="${k}">${x.s}</button>` : x.s; }); };
-const field = (id, enter, label, hint, focus = 'data-focus') => H`<input type="text" id="${id}" lang="${S.lang}" autocomplete="off" autocapitalize="off" spellcheck="false" data-enter="${enter}" aria-label="${label}" placeholder="${hint || ''}" ${focus}>`;
+const field = (id, enter, label, hint, focus = 'data-focus') => H`<input type="text" id="${id}" lang="${S.lang}" dir="auto" autocomplete="off" autocapitalize="off" spellcheck="false" data-enter="${enter}" aria-label="${label}" placeholder="${hint || ''}" ${focus}>`;
 
 function vSitting() {
   const s = story(sit.storyId), i = sit.steps.indexOf(sit.step), nx = sit.steps[i + 1];
-  const head = title => H`<p class="sub">${sit.steps.length > 1 ? t('Step {n} of {total}', { n: i + 1, total: sit.steps.length }) + ' · ' : ''}<span lang="${S.lang}">${s.title}</span></p><h1>${title}</h1>`;
+  const head = title => H`<p class="sub">${sit.steps.length > 1 ? t('Step {n} of {total}', { n: i + 1, total: sit.steps.length }) + ' · ' : ''}${s.phrases ? ttl(s) : H`<span lang="${S.lang}">${s.title}</span>`}</p><h1>${title}</h1>`;
   const after = nx ? { ask: t('Next: questions'), read: t('Show the text'), dictate: t('Next: dictation'), rebuild: t('Next: write it back'), speak: t('Next: speaking'), write: t('Next: writing') }[nx]
     : sit.mode === 'read' ? t('Done reading') : t('Finish');
+  // a first lesson opens with its phrases: each to hear, with a reading in Latin letters where the script is new, and what it means
+  if (sit.step === 'learn') return H`${head(t('Listen and repeat'))}
+    <p>${t('Play each phrase and say it aloud after the voice. Take your time: next you write these phrases and say them.')}</p>
+    ${s.back.map(([p, meaning, reading], n) => H`<div class="ph"><button class="mini" data-act="sayp" data-i="${n}" aria-label="${t('Hear it')}">▶</button>
+      <div><b class="big" lang="${S.lang}">${p}</b>${reading ? H`<span class="sub" lang="${S.lang}-Latn">${reading}</span>` : ''}<div>${meaning}</div></div></div>`)}
+    ${playRow()}
+    <div class="bar"><button class="primary" data-act="next">${after}</button></div>`;
   if (sit.step === 'listen') return H`${head(t('Listen'))}
     <p>${t('Listen first, without the text. Notice how much you follow; play it again if you like.')}</p>
     ${playRow()}
@@ -416,6 +490,7 @@ function vSitting() {
     <p>${t('Sentence {i} of {n}. Type what you hear, at natural speed.', { i: sit.di + 1, n: sit.dict.length })}</p>
     <p><button class="primary" data-act="play">▶ ${t('Play')}</button></p>
     ${sit.checked ? H`<p class="big" lang="${S.lang}">${marked(d.target, d.typed)}</p>
+      ${d.meaning ? H`<p>${d.meaning}</p>` : ''}
       <p class="sub">${t('You wrote:')} <span lang="${S.lang}">${d.typed || '–'}</span></p>
       <p><b>${t('{pct} of the words', { pct: pct(d.score) })}</b></p>
       <button class="primary" data-act="next" data-focus>${sit.di + 1 < sit.dict.length ? t('Next sentence') : after}</button>`
@@ -439,31 +514,33 @@ function vSitting() {
       <div class="chat" lang="${S.lang}">${s.lines.slice(Math.max(0, d.li - 3), d.li).map(l => H`<p class="${l[0] ? 'me' : 'them'}"><b class="who">${s.roles[l[0]]}</b> ${l[1]}</p>`)}
         <p class="me now"><b class="who">${s.roles[1]}</b> ${hidden ? '…' : d.score == null ? d.target : marked(d.target, d.heard)}</p></div>`
       : H`<p>${t('Sentence {i} of {n}. Read it aloud. The score is the share of your words that speech recognition understood.', { i: sit.si + 1, n: sit.speak.length })}</p>
-      <p class="big" lang="${S.lang}">${d.score == null ? d.target : marked(d.target, d.heard)}</p>`}
+      <p class="big" lang="${S.lang}">${d.score == null ? d.target : marked(d.target, d.heard)}</p>${d.meaning ? H`<p class="sub">${d.meaning}</p>` : ''}`}
     ${d.score == null ? '' : H`<p class="sub">${d.typed ? t('You wrote:') : t('It heard:')} <span lang="${S.lang}">${d.heard}</span></p><p><b>${t('{pct} of the words', { pct: pct(d.score) })}</b></p>`}
     <div class="row">${SR ? H`<button class="primary" data-act="sayit" aria-pressed="false">${d.score == null ? t('Speak') : t('Try again')}</button>` : ''}
-      ${hidden ? H`<button data-act="peek">${t('Show my line')}</button>` : H`<button data-act="play">▶ ${t('Hear it')}</button>`}</div>
+      ${hidden ? H`<button data-act="peek">${t('Show my line')}</button>` : H`<button data-act="play">▶ ${t('Hear it')}</button>`}
+      ${canRecord ? H`<button data-act="record" aria-pressed="false">${t('Record yourself')}</button>` : ''}${take ? H`<button data-act="mine">▶ ${t('Hear yourself')}</button>` : ''}</div>
     ${hidden ? H`<p>${field('ans', 'saycheck', t('Your line'), SR ? t('Or type your line') : t('Type your line'), '')}</p>${keysBar()}<p><button data-act="saycheck">${t('Check')}</button></p>` : ''}
     <p class="sub" id="micmsg" role="status"></p>
     ${SR ? H`<p class="sub">${t('Speaking uses the speech recognition built into your browser, which may send the audio to the browser maker.')}</p>` : ''}
+    ${canRecord ? H`<p class="sub">${t('A recording of yourself stays in this page: it is not saved or sent anywhere.')}</p>` : ''}
     <div class="bar"><button data-act="next">${last ? after : s.lines ? t('Next line') : t('Next sentence')}</button></div>`; }
   if (sit.step === 'write') return H`${head(t('Write'))}
     <p>${t('Retell the story in {language}, in your own words: three sentences or more, without looking back.', { language: langName() })}</p>
-    <p><textarea id="ans" lang="${S.lang}" spellcheck="false" autocapitalize="off" data-focus aria-label="${t('Your retelling')}"></textarea></p>
+    <p><textarea id="ans" lang="${S.lang}" dir="auto" spellcheck="false" autocapitalize="off" data-focus aria-label="${t('Your retelling')}"></textarea></p>
     ${keysBar()}
     ${SR ? H`<p><button data-act="mic" aria-pressed="false">${t('Speak instead')}</button></p>
       <p class="sub" id="micmsg" role="status"></p><p class="sub">${t('Speaking uses the speech recognition built into your browser, which may send the audio to the browser maker.')}</p>` : ''}
     <p class="sub">${t('The app does not grade writing. The AI review does, honestly.')}</p>
     <div class="bar"><button class="primary" data-act="next">${t('Finish the sitting')}</button></div>`;
   const b = sit.rec.breakdown;
-  return H`<h1>${{ sitting: t('Sitting done'), read: t('Reading done'), talk: t('Role-play done') }[sit.mode]}</h1>
+  return H`<h1>${{ sitting: t('Sitting done'), read: t('Reading done'), talk: t('Role-play done'), first: t('Lesson done') }[sit.mode]}</h1>
     <div class="tiles">
       ${b.comprehension == null ? '' : tile(pct(b.comprehension), t('of the questions right after only hearing it'))}
       ${b.listening == null ? '' : tile(pct(b.listening), t('of the words caught in dictation'))}
       ${b.understood == null ? '' : tile(pct(b.understood), t('of the words understood without help'))}
       ${b.rebuilt == null ? '' : tile(pct(b.rebuilt), t('of the words right when you wrote a sentence back from its meaning'))}
       ${b.speaking == null ? '' : tile(pct(b.speaking), t('of your words understood when you spoke'))}
-      ${sit.mode === 'talk' ? '' : tile(nf(sit.rec.tapped.length), t('new words in your review'))}
+      ${sit.mode === 'first' ? tile(nf(s.back.length), t('phrases in your review')) : sit.mode === 'talk' ? '' : tile(nf(sit.rec.tapped.length), t('new words in your review'))}
       ${sit.mode === 'sitting' ? tile(nf(b.wordsWritten), t('words written, waiting for the AI review')) : ''}
     </div>
     <button class="primary" data-act="go" data-v="today" data-focus>${t('Done')}</button>`;
@@ -510,25 +587,28 @@ function cueLines() {
 function finishSitting() {
   const s = story(sit.storyId);
   const rec = { id: sit.id, lang: S.lang, mode: sit.mode, level: s.level, day: C.dayStr(), at: Date.now(), storyId: s.id, title: s.title, listenSec: Math.round(sit.listenSec),
-    minutes: Math.max(1, Math.round((Date.now() - sit.t0) / 60000)), wordsRead: sit.wordsRead || 0, uniqueWords: sit.uniqueWords || 0, tapped: [...sit.tapped],
+    minutes: Math.max(1, Math.round((Date.now() - sit.t0) / 60000)), wordsRead: sit.wordsRead || (s.phrases ? C.wordKeys(s.text, S.lang).length : 0), uniqueWords: sit.uniqueWords || 0, tapped: [...sit.tapped],
     questions: sit.askDone ? sit.asked.map(({ q, answer, ok }) => ({ q, answer, ok })) : [],
     dictation: sit.dict.map(d => ({ target: d.target, typed: d.typed, score: d.score, replays: Math.max(0, d.plays - 1) })),
     rebuild: sit.rebuild.filter(d => d.score != null).map(({ target, shown, typed, score }) => ({ target, shown, typed, score })),
     speaking: sit.speak.filter(d => d.tries).map(({ target, heard, score, tries, memory, typed }) => ({ target, heard, score, tries, memory, typed })),
     writing: { text: sit.mode === 'sitting' ? ($('#ans')?.value || '').trim().slice(0, 8000) : '', spoken: !!sit.spoken } };
   Object.assign(rec, C.scoreSitting(rec));
-  if (sit.mode === 'talk') s.readAt = Date.now();
+  if (sit.mode === 'talk' || sit.mode === 'first') s.readAt = Date.now();
+  if (s.phrases) { // every phrase of the lesson joins the review: shown by its meaning, to be written. One got wholly right just now waits a day.
+    const got = new Map([...sit.dict, ...sit.rebuild].map(d => [d.target, d.score]));
+    s.back.forEach(([p, meaning], n) => { L().fixes[`first:${s.id}:${n}`] ??= { wrong: meaning, right: p, why: '', added: Date.now(), srs: got.get(p.normalize('NFC')) === 1 ? C.schedule(null, true) : null }; });
+  }
   S.sittings.push(rec); sit.rec = rec; sit.step = 'done';
   save();
-  A.logSession({ kind: { sitting: 'study', read: 'read', talk: 'speak' }[sit.mode], minutes: rec.minutes, id: rec.id }); // house standard 25: one row per finished session
+  A.logSession({ kind: { sitting: 'study', read: 'read', talk: 'speak', first: 'study' }[sit.mode], minutes: rec.minutes, id: rec.id }); // house standard 25: one row per finished session
   if (sit.mode === 'sitting') panel?.push?.('sitting-review', true); // house standard 18: sent when a session ends (no-op without a folder)
 }
 
 // ---------- just listening: stories one after another, the time counted as input ----------
 // ponytail: the browser's synthesiser stops when a phone locks its screen; a recording you add yourself keeps playing.
 function startRadio(id) {
-  const all = stories(), read = all.filter(s => s.readAt), pool = (read.length ? read : all).filter(s => s.id !== id);
-  for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; }
+  const all = stories(), read = all.filter(s => s.readAt), pool = shuffle((read.length ? read : all).filter(s => s.id !== id));
   const queue = [...(id ? [id] : []), ...pool.map(s => s.id)];
   if (!queue.length) { flash = t('Nothing here yet.'); return render(); }
   if (radio) endRadio();
@@ -580,15 +660,15 @@ function vReview() {
     <p class="big">${t('{right} of {n} right', { right: nf(rev.right), n: nf(rev.queue.length) })}</p>
     <button class="primary" data-act="go" data-v="today" data-focus>${t('Done')}</button>`;
   const it = rev.queue[rev.i], count = H`<p class="sub">${t('Item {i} of {n}', { i: rev.i + 1, n: rev.queue.length })}</p>`;
-  if (it.id) { const f = L().fixes[it.id];
-    return H`${count}<h1>${t('Fix your sentence')}</h1>
-    <p class="sub">${t('You wrote this. Type it again, corrected.')}</p>
-    <p class="big miss" lang="${S.lang}">${f.wrong}</p>
+  if (it.id) { const f = L().fixes[it.id], ph = it.id.startsWith('first:'), from = ph && story(it.id.split(':')[1]); // a phrase of a first lesson: its meaning is shown
+    return H`${count}<h1>${ph ? t('A phrase') : t('Fix your sentence')}</h1>
+    <p class="sub">${ph ? t('Here is what it means. Write it in {language}.', { language: langName() }) : t('You wrote this. Type it again, corrected.')}</p>
+    ${ph ? H`<p class="big">${f.wrong}</p>` : H`<p class="big miss" lang="${S.lang}">${f.wrong}</p>`}
     ${rev.verdict ? H`<p class="big" lang="${S.lang}">${marked(f.right, rev.typed)}</p>${f.why ? H`<p class="sub">${f.why}</p>` : ''}
       <p class="big ${rev.verdict === 'wrong' ? 'miss' : 'hit'}">${rev.verdict === 'wrong' ? t('Not yet') : t('Right')}</p>
       <button class="primary" data-act="rnext" data-focus>${t('Next')}</button>`
-      : H`<p>${field('ans', 'rcheck', t('The corrected sentence'))}</p>
-      ${keysBar()}<p><button class="primary" data-act="rcheck">${t('Check')}</button></p>`}`; }
+      : H`<p>${field('ans', 'rcheck', ph ? t('The phrase in {language}', { language: langName() }) : t('The corrected sentence'))}</p>
+      ${keysBar(from ? C.lessonKeys(from.text, S.lang) : undefined)}<p><button class="primary" data-act="rcheck">${t('Check')}</button></p>`}`; }
   const k = it.k, c = L().cards[k];
   return H`${count}<h1>${t('Review')}</h1>
     <p class="big" lang="${S.lang}">${rev.verdict ? c.ctx : C.cloze(c.ctx, k, S.lang)}</p>
@@ -612,7 +692,7 @@ function vPal() {
   </div>`)}
   <div class="card"><h2>${t('Write a letter')}</h2>
     <p class="sub">${pal.msgs.length ? t('Answer the last letter, or start something new.') : t('Introduce yourself: who you are, where you live, why you are learning {language}.', { language: langName() })}</p>
-    <p><textarea id="ans" lang="${S.lang}" spellcheck="false" maxlength="4000" aria-label="${t('Your letter')}"></textarea></p>
+    <p><textarea id="ans" lang="${S.lang}" dir="auto" spellcheck="false" maxlength="4000" aria-label="${t('Your letter')}"></textarea></p>
     ${keysBar()}
     <div class="row"><button class="primary" data-act="palsend">${t('Send')}</button>${SR ? H`<button data-act="mic" aria-pressed="false">${t('Speak instead')}</button>` : ''}</div>
     <p class="sub" id="micmsg" role="status"></p>
@@ -690,16 +770,45 @@ function vChat() {
   return H`<p class="sub">${c.scene ? c.scene.title + ' · ' + t('You play {role}.', { role: c.scene.roles[1] }) : t('Free conversation')}</p><h1>${t('Conversation')}</h1>
     <div class="chat" lang="${S.lang}">${c.turns.slice(-12).map(x => H`<p class="${x.who ? 'me' : 'them'}">${x.text}${x.who ? '' : H` <button class="mini" data-act="chatsay" data-id="${x.id}" aria-label="${t('Hear it')}">▶</button>`}</p>
       ${x.fixes ? H`<ul>${x.fixes.map(f => H`<li><span class="miss">${f.wrong}</span> → <span class="hit">${f.right}</span> <span class="sub">${f.why}</span></li>`)}</ul>` : ''}`)}</div>
-    ${c.wait ? (chatBusy || eng === 'cowork' ? H`<p class="sub" role="status">${t('Waiting for the reply.')}</p>` : H`<p><button data-act="chatretry">${t('Try again')}</button></p>`)
+    ${c.wait ? H`${chatBusy || eng === 'cowork' ? H`<p class="sub" role="status">${t('Waiting for the reply.')}</p>` : ''}
+        ${chatBusy ? '' : H`<p><button class="${eng === 'cowork' ? 'mini' : ''}" data-act="chatretry">${t('Try again')}</button></p>`}` // through the folder too: the request is written again if the agent missed it
       : H`<p>${field('ans', 'chatsend', t('Your message'))}</p>${keysBar()}
       <div class="row"><button class="primary" data-act="chatsend">${t('Send')}</button>${SR ? H`<button data-act="chatmic" aria-pressed="false">${t('Speak')}</button>` : ''}</div>
       <p class="sub" id="micmsg" role="status"></p>`}
     <div class="bar"><button data-act="chatend">${t('Finish')}</button></div>`;
 }
 
+// ---------- first steps: lessons from nothing, the letters of a new script, the sounds that surprise ----------
+// ponytail: the letter practice keeps no record. Put the letters in the review deck if they turn out to need spacing.
+function vFirst() {
+  const ls = lessons(), abc = list(FIRST?.scripts?.[S.lang]), snd = list(FIRST?.sounds?.[S.lang]);
+  if (quiz) { const over = quiz.i >= quiz.cards.length, [ch, r] = over ? [] : quiz.cards[quiz.i];
+    return H`<h1>${t('Letters')} <span class="sub">${t(quiz.name)}</span></h1>
+    ${over ? H`<p class="big">${t('{right} of {n} right', { right: nf(quiz.right), n: nf(quiz.cards.length) })}</p><button class="primary" data-act="qzend" data-focus>${t('Done')}</button>`
+      : H`<p class="sub">${t('Letter {i} of {n}', { i: quiz.i + 1, n: quiz.cards.length })}</p>
+      <p class="letter" lang="${S.lang}">${ch}</p>
+      ${quiz.verdict ? H`<p class="big ${quiz.verdict === 'wrong' ? 'miss' : 'hit'}">${quiz.verdict === 'wrong' ? t('Not yet') : t('Right')}: <b>${r.join(' / ')}</b></p>
+        <button class="primary" data-act="qznext" data-focus>${t('Next')}</button>`
+        : H`<p><input type="text" id="ans" autocomplete="off" autocapitalize="off" spellcheck="false" data-enter="qzcheck" aria-label="${t('How it sounds, in Latin letters')}" placeholder="${t('How it sounds, in Latin letters')}" data-focus></p>
+        <p><button class="primary" data-act="qzcheck">${t('Check')}</button></p>`}
+      <div class="bar"><button data-act="qzend">${t('Stop')}</button></div>`}`; }
+  return H`<h1>${t('First steps')} <span class="sub">${lang().name}</span></h1>
+  ${ls.length ? H`<p class="sub">${t('Short lessons of everyday phrases, starting from nothing. You hear each phrase, write it and say it; then the phrases come back in your review.')}</p>
+    ${ls.map((s, i) => H`<div class="card"><b>${i + 1}. ${ttl(s)}</b>
+      <div class="sub">${t.n('{n} phrase', '{n} phrases', s.back.length)}${s.readAt ? ' · ' + t('last done {date}', { date: A.fmt.date(s.readAt) }) : ''}</div>
+      <div class="row acts"><button class="${s === ls.find(x => !x.readAt) ? 'primary' : ''}" data-act="start" data-id="${s.id}">${s.readAt ? t('Do it again') : t('Start')}</button></div></div>`)}`
+    : H`<p>${t('This language has no first lessons yet. It still works with your own texts and with stories from AI cowork.')}</p>`}
+  ${abc.length ? H`<h2>${t('Letters')}</h2><p class="sub">${t('Tap a letter to hear it. Then practise: you see a letter and type how it sounds.')}</p>
+    ${abc.map(([name, src], n) => H`<div class="card"><div class="row"><b class="grow">${t(String(name))}</b><button data-act="quiz" data-i="${n}">${t('Practise')}</button></div>
+      <div class="abc">${C.chartPairs(src).map(([ch, r]) => H`<button data-act="sayx" data-x="${ch}"><b lang="${S.lang}">${ch}</b><span class="sub">${r[0]}</span></button>`)}</div></div>`)}` : ''}
+  ${snd.length ? H`<h2>${t('Sounds to notice')}</h2><p class="sub">${t('Where the spelling does not sound the way you might expect. Tap to hear the word.')}</p>
+    <div class="card">${snd.map(([letters, word, hint]) => H`<div class="ph"><button class="mini" data-act="sayx" data-x="${word}" aria-label="${t('Hear it')}">▶</button>
+      <div><b lang="${S.lang}">${letters}</b> · <span lang="${S.lang}">${word}</span><span class="sub">${hint}</span></div></div>`)}</div>` : ''}`;
+}
+
 function render(keep) { // keep: carry a half-typed answer across the redraw
   const was = keep && $('#ans')?.value;
-  const markup = { today: vToday, library: vLibrary, words: vWords, progress: vProgress, settings: vSettings, sitting: vSitting, review: vReview, pal: vPal, chat: vChat, radio: vRadio }[view]();
+  const markup = { today: vToday, library: vLibrary, words: vWords, progress: vProgress, settings: vSettings, sitting: vSitting, review: vReview, pal: vPal, chat: vChat, radio: vRadio, first: vFirst }[view]();
   const main = $('#main');
   const body = flash ? H`<p class="flash" role="status">${flash}</p>${markup}` : markup; // H escapes every ${}
   main.innerHTML = body;
@@ -718,7 +827,7 @@ const ACT = {
       sit.leaving = true; flash = t('Leave this sitting? It is not saved until you finish it. Tap again to leave.'); return render(true);
     }
     if (radio) endRadio();
-    hush(); sit = rev = null; confirmErase = false; confirmRemove = ''; view = b.dataset.v; palT0 = Date.now();
+    hush(); sit = rev = quiz = null; confirmErase = false; confirmRemove = ''; view = b.dataset.v; palT0 = Date.now();
     if (view === 'chat') { checkModel(); if (chat()?.wait && chatEngine() === 'cowork') pollChat(); }
     render(); scrollTo(0, 0);
   },
@@ -765,8 +874,10 @@ const ACT = {
     const k = el.dataset.k, v = el.value.trim().slice(0, 120), s = story(sit.storyId);
     if (v) { s.gloss[k] = v; if (L().cards[k]) L().cards[k].gloss = v; save(); }
   },
+  record,
+  mine() { hush(); playerFor = ''; playerEnd = Infinity; player.src = take; player.playbackRate = 1; player.play().catch(() => {}); },
   next() {
-    hush();
+    hush(); dropTake();
     sit.leaving = false;
     if (sit.step === 'read') finishRead();
     if (sit.step === 'dictate' && sit.di + 1 < sit.dict.length) { sit.di++; sit.checked = false; }
@@ -789,7 +900,34 @@ const ACT = {
     d.typed = $('#ans').value.trim().slice(0, 600); d.score = C.dictationScore(d.target, d.typed, S.lang).score;
     sit.checked = true; render();
   },
-  ins(b) { const el = lastField?.isConnected ? lastField : $('#ans'); if (!el) return; const at = el.selectionStart ?? el.value.length; el.setRangeText(b.dataset.ch, at, el.selectionEnd ?? at, 'end'); el.focus(); },
+  ins(b) { // a letter goes in at the caret; ⌫ takes the one before it away
+    const el = lastField?.isConnected ? lastField : $('#ans'); if (!el) return;
+    const at = el.selectionStart ?? el.value.length, end = el.selectionEnd ?? at, del = b.dataset.ch === '⌫';
+    el.setRangeText(del ? '' : b.dataset.ch, del && at === end ? Math.max(0, at - 1) : at, end, 'end'); el.focus();
+  },
+  sayp(b) { say(story(sit.storyId).back[b.dataset.i][0], { rate: sit.slow ? 0.8 : 1 }); },
+  sayx(b) { say(b.dataset.x); },
+  quiz(b) { // twenty letters of a chart, shuffled: see the letter, type how it sounds
+    const [name, src] = list(FIRST?.scripts?.[S.lang])[b.dataset.i] || [];
+    quiz = { name: String(name), cards: shuffle(C.chartPairs(src)).slice(0, 20), i: 0, right: 0, verdict: '' };
+    render(); scrollTo(0, 0);
+  },
+  qzcheck() { const [ch, r] = quiz.cards[quiz.i], ok = C.readingOk($('#ans').value, r); quiz.verdict = ok ? 'exact' : 'wrong'; if (ok) quiz.right++; render(); say(ch); },
+  qznext() { hush(); quiz.i++; quiz.verdict = ''; render(); },
+  qzend() { hush(); quiz = null; render(); },
+  addfix() { // a correction from a human teacher joins the same deck as the AI's
+    const c = C.cleanFixes([{ wrong: $('#fxWrong').value, right: $('#fxRight').value, why: $('#fxWhy').value }])[0];
+    if (!c) { flash = t('Fill in what you wrote and the right form.'); return render(); }
+    L().fixes['own:' + A.randomId()] = { ...c, added: Date.now(), srs: null };
+    save(); flash = t('Added. It will come back in your review.'); render();
+  },
+  async copysit(b) { // a sitting as plain text, to paste into a message to a teacher
+    const s = S.sittings.find(x => x.id === b.dataset.id);
+    await navigator.clipboard.writeText([[C.langInfo(s.lang).english, s.level, A.fmt.date(s.day + 'T00:00:00'), s.title].filter(Boolean).join(' · '), '', s.writing.text, '',
+      ...s.dictation.filter(d => d.score != null && d.score < 1).map(d => `${t('Dictation')}: ${d.typed || '–'} → ${d.target}`), '', t('Could you correct this and tell me what to work on?')].join('\n'));
+    flash = t('Copied. Paste it into a message to your teacher.'); render();
+  },
+  async install() { const e = installEvt; installEvt = null; await e?.prompt(); render(); },
   mic(b) { const box = $('#ans'); hear(b, true, text => { box.value = (box.value + ' ' + text).trim(); if (sit) sit.spoken = true; }); },
   // ponytail: the recogniser guesses towards real words, so this flatters a little; it is "was I
   // understood", not a pronunciation score. SpeechImprover's per-take analysis is the upgrade.
@@ -893,7 +1031,7 @@ const ACT = {
   level(el) { if (LEVELS.includes(el.value)) { L().level = el.value; save(); render(); } },
   lang(el) { if (!C.isLangCode(el.value)) return; S.lang = el.value; L(); lib = { kind: 'all', level: '' }; save(); checkPair(); checkModel(); return addStarters(); },
   voice(el) { ls.set('ll-voice-' + S.lang, el.value); },
-  voicetest() { const s = stories()[0]; say(s ? C.storySentences(s)[0] : lang().name); },
+  voicetest() { const s = stories()[0] || lessons()[0]; say(s ? C.storySentences(s)[0] : lang().name); },
   async syncnow() { syncMsg = t('Syncing…'); render(); await sync(false).catch(() => {}); addStarters(); },
   signout() { G.signOut(); ls.set('ll-drive', null); syncMsg = ''; render(); },
   export() {
@@ -928,6 +1066,8 @@ document.addEventListener('input', e => { if (e.target.dataset?.input) run(e.tar
 document.addEventListener('keydown', e => { if (e.key === 'Enter' && e.target.dataset?.enter) { e.preventDefault(); run(e.target.dataset.enter, e.target); } });
 document.addEventListener('focusin', e => { if (e.target.matches?.('input[type=text],textarea')) lastField = e.target; });
 document.addEventListener('app-account-click', () => run('go', { dataset: { v: 'settings' } }));
+let installEvt = null; // the browser's offer to install the app, kept for the button in Settings
+addEventListener('beforeinstallprompt', e => { e.preventDefault(); installEvt = e; if (view === 'settings') render(); });
 if (window.speechSynthesis) speechSynthesis.onvoiceschanged = () => { if (view === 'settings' || (view === 'today' && !S.welcomed)) render(); };
 
 // ---------- AI cowork: new stories at your level, a review of each sitting, a pen pal (house standards 3, 18) ----------
@@ -951,9 +1091,10 @@ The learner is acquiring \`payload.language\` by reading and listening. Write \`
 - \`gloss\`: for each word a learner at that level may not know, the lower-case word exactly as it appears in the text (single words, split at apostrophes and hyphens) mapped to a short meaning written in the language \`payload.glossLanguage\` (a language code).
 - \`questions\`: exactly three, written in \`payload.language\`, asked after the learner has only HEARD the text. Each has a short factual answer stated in the text. \`a\` lists one to four accepted key words, each taken from the text and absent from its own question.
 - \`notice\`: one grammar or usage point the text shows, written in \`payload.glossLanguage\`, quoting two short examples from the text.
+- \`back\`: exactly two whole sentences copied from the text (6 to 16 words each), each with what it means in \`payload.glossLanguage\`. The learner is shown the meaning and writes the sentence.
 
 ## Dialogues
-The same, except: no \`text\`. Give \`roles\` (the two speakers' names) and \`lines\`, 8 to 18 turns of \`[0 or 1, "what is said"]\`. Speaker 1 is the learner's part, said aloud and then from memory: useful sentences they would really need, at least three of them four words or longer. Exactly two questions.
+The same, except: no \`text\` and no \`back\`. Give \`roles\` (the two speakers' names) and \`lines\`, 8 to 18 turns of \`[0 or 1, "what is said"]\`. Speaker 1 is the learner's part, said aloud and then from memory: useful sentences they would really need, at least three of them four words or longer. Exactly two questions.
 
 ## Meanings
 \`glosses\`: a short meaning, in \`payload.glossLanguage\`, for every entry of \`payload.needGloss\` (\`{ word, sentence }\`: words they tapped that had no meaning), keyed by the word.
@@ -961,7 +1102,7 @@ The same, except: no \`text\`. Give \`roles\` (the two speakers' names) and \`li
 \`\`\`json
 { "requestHash": "<copy the request's requestHash verbatim>",
   "stories": [
-    { "title": "", "level": "A2", "text": "", "gloss": { "word": "meaning" }, "questions": [{ "q": "", "a": [""] }], "notice": "" },
+    { "title": "", "level": "A2", "text": "", "gloss": { "word": "meaning" }, "questions": [{ "q": "", "a": [""] }], "notice": "", "back": [["a sentence of the text", "its meaning"], ["another", "its meaning"]] },
     { "title": "", "level": "A2", "roles": ["", ""], "lines": [[0, ""], [1, ""]], "gloss": { "word": "meaning" }, "questions": [{ "q": "", "a": [""] }], "notice": "" }
   ],
   "glosses": { "word": "meaning" } }
@@ -1049,7 +1190,10 @@ If you cannot do it, write \`chat/reply-error.json\` with \`{ "reason": "..." }\
 const envelope = (kind, payload) => ({ protocol: 'languagelab-' + kind, protocolVersion: 1, kind: kind + '-request',
   generatedAt: new Date().toISOString(), requestHash: window.cowork.hash(JSON.stringify(payload)), payload });
 // Replies are untrusted: every story, review and letter is rebuilt from known fields before it is shown or kept.
-const replyStories = r => list(r?.stories).slice(0, 20).map((s, i) => ({ row: 's' + i, s: C.cleanStory(s, S.lang) }))
+// (a sentence to write back must be one of the story's own, or it is dropped)
+const ownBack = s => { const own = s?.back && C.storySentences(s).map(x => x.normalize('NFC')), back = own ? s.back.filter(b => own.includes(b[0].normalize('NFC'))) : [];
+  if (s) { delete s.back; if (back.length) s.back = back; } return s; };
+const replyStories = r => list(r?.stories).slice(0, 20).map((s, i) => ({ row: 's' + i, s: ownBack(C.cleanStory(s, S.lang)) }))
   .filter(x => x.s && !stories().some(o => o.title === x.s.title));
 const replyGloss = r => Object.entries(C.cleanGloss(r?.glosses)).filter(([k]) => L().cards[k] && !L().cards[k].gloss);
 const replyReviews = r => list(r?.reviews).map(C.cleanReview).filter(x => x && S.sittings.some(s => s.id === x.sessionId));
@@ -1196,11 +1340,13 @@ function mountCowork() {
 }
 
 // ---------- start ----------
-// The bundled stories for the language being learned. A bundled copy that has grown (questions, a notice) replaces the saved one.
+// The bundled stories and first lessons for the language being learned. A bundled copy that has grown (questions, a notice) replaces the saved one.
 async function addStarters() {
-  const code = S.lang, starter = C.LANGS[code] ? await fetch(`content/${code}.json`).then(r => r.json()).catch(() => []) : [];
-  for (const raw of list(starter)) {
-    const c = C.cleanStory({ ...raw, source: 'starter' }, code), old = c && story(c.id);
+  const code = S.lang;
+  FIRST ||= await fetch('content/first.json').then(r => r.json()).catch(() => null);
+  const starter = C.LANGS[code] ? await fetch(`content/${code}.json`).then(r => r.json()).catch(() => []) : [];
+  for (const raw of [...list(starter).map(x => ({ ...x, source: 'starter' })), ...C.lessonStories(FIRST, code, here())]) {
+    const c = C.cleanStory(raw, code), old = c && story(c.id);
     if (!c || !c.id || S.gone[c.id]) continue;
     if (old) Object.assign(old, c, { gloss: { ...old.gloss, ...c.gloss }, readAt: old.readAt, added: old.added });
     else S.stories.push(c);
@@ -1209,9 +1355,13 @@ async function addStarters() {
 }
 await A.ready;
 try { const saved = await kv('readonly', s => s.get('state')); if (saved) { S = C.cleanState(saved); S.welcomed ||= S.sittings.length > 0; } } catch { /* first run */ }
-if (['library', 'words', 'progress', 'settings', 'pal', 'chat'].includes(location.hash.slice(1))) view = location.hash.slice(1); // a link can open a screen
+if (['library', 'words', 'progress', 'settings', 'pal', 'chat', 'first'].includes(location.hash.slice(1))) view = location.hash.slice(1); // a link can open a screen
 checkPair(); checkModel();
 await addStarters();
 mountCowork();
 if (ls.get('ll-drive')) sync(true).then(addStarters, () => {});
+// A first visit loads before the service worker is in charge, so nothing it fetched (the shared house files, the fonts, the
+// interface language) would be kept for offline use. Once the worker takes charge, fetch those files again so it keeps them.
+if (navigator.serviceWorker && !navigator.serviceWorker.controller) navigator.serviceWorker.addEventListener('controllerchange', () =>
+  performance.getEntriesByType('resource').forEach(e => { if (e.name.startsWith(location.origin)) fetch(e.name).catch(() => {}); }), { once: true });
 navigator.serviceWorker?.register('sw.js').catch(() => {});

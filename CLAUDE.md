@@ -8,11 +8,12 @@ Notes for the coding agent that works on this repo.
 
 For this app:
 - Check the standards: `node ../CoworkSyncHub/standards.mjs languagelab -v`. Keep it all `ok` before pushing.
-- Test: `node core.test.mjs`, then `npm i --no-save playwright-core && node .github/smoke.mjs && node .github/flow.mjs`
-  (the flow test walks a sitting, review, a pen-pal letter, cowork replies, a role-play and more in headless Chrome).
+- Test: `node core.test.mjs`, then `npm i --no-save playwright-core && node .github/smoke.mjs && node .github/flow.mjs && node .github/offline.mjs`
+  (the flow test walks a sitting, review, a pen-pal letter, cowork replies, a role-play, a first lesson, a cowork folder and more in
+  headless Chrome; the offline test stops the server after one visit and opens the app again).
 - Work on `main`; push your own work when it passes. Add user-visible changes to `whatsnew.json`.
 
-## What is built (v0.3)
+## What is built (v0.4)
 
 No build step: `index.html` (shell, CSS), `app.js` (screens, speech, sync, cowork), `core.js` (all the
 logic, no DOM, tested), `content/<lang>.json` (starter stories and dialogues; rules in
@@ -25,6 +26,15 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   `langInfo()` fills in names from Intl, and languages written without spaces are split with
   `Intl.Segmenter`. Words, corrections, letters and the level are kept per language. Adding a bundled
   language is one `LANGS` entry plus `content/<code>.json` (the test requires 16 stories and 8 dialogues).
+- **First steps** (from nothing): `content/first.json` holds forty everyday phrases in five lessons for 43 languages
+  (`langs`: a phrase is a string, or `[phrase, its own meaning]` where the shared English `meanings` do not fit), a reading in
+  Latin letters for each phrase in a script that is not Latin (`readings`), script charts (`scripts`: `"letter=reading"` pairs)
+  and sounds to notice (`sounds`). `lessonStories()` turns a language's phrases into five stories with `phrases: true`, no
+  level (so they never count in `abilities()`) and `back` = every phrase with its meaning, shown in the interface language
+  where the file has that language. A lesson is a session with `mode: 'first'`: study the phrases, type half from the ear,
+  write the other half from their meaning and say them (the halves swap next time). Its phrases become review cards in the
+  corrections deck under ids `first:<story id>:<n>`. `lessonKeys()` gives the letters to tap. The First steps screen
+  (`vFirst`, `#first`) lists the lessons, the charts with a "type how it sounds" practice, and the sounds.
 - **A sitting** is the graded session: one story through listen (text hidden), questions answered
   from the ear alone (typed, keyword-checked), read (tap unknown words), dictation at natural speed
   (the app's score), "write it back" (a sentence shown by its meaning, where the browser's Translator
@@ -50,10 +60,13 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
 - **Your own material**: pasted or opened text, and a recording with its subtitle file (`.srt`/`.vtt`,
   parsed by `parseSubs`): the audio is kept in IndexedDB under `audio:<story id>`, on this device only.
 - Removing a story records its id in `S.gone` so neither a sync nor the starter set brings it back.
+- **With a teacher**: Progress copies a sitting as plain text; Words takes a correction typed in by hand (ids `own:…`).
+- **Record yourself** (speaking steps): MediaRecorder, kept in the page only, played after the model.
+- **Offline**: `sw.js` claims the first page and `app.js` fetches again what that page had loaded, so one visit is enough.
 - Speech uses the browser's own synthesis and recognition, as SpeechImprover does. Tachyread's
   reading engine is not used.
 - Tests: `core.test.mjs` checks the logic and every bundled content file; `.github/flow.mjs` drives
-  the whole app in headless Chrome. Speech recognition, real voices and the on-device translator
+  the whole app in headless Chrome, with the browser's private file system standing in for the cowork folder picker. Speech recognition, real voices and the on-device translator
   cannot run there (the flow test stubs `self.Translator`): check those by hand. To try the real
   translator from Playwright, launch a visible Chrome with
   `ignoreDefaultArgs: ['--disable-component-update', '--disable-background-networking']`, or it can
