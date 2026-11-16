@@ -1,0 +1,412 @@
+[
+ {
+  "id": "id-market",
+  "title": "Di pasar",
+  "level": "A1",
+  "text": "Setiap hari Sabtu Maria pergi ke pasar. Pasar itu ada di pusat kota. Matahari bersinar dan ada banyak orang di sana. Maria suka pasar itu karena buahnya segar dan murah. Pertama dia membeli apel dan jeruk. Lalu dia membeli roti, keju, dan sedikit ikan. Penjual ikan di sana sangat ramah. Dia selalu bertanya tentang keluarganya. Di pasar Maria sering bertemu dengan temannya, Elena. Hari ini mereka minum kopi bersama dan mengobrol lama. Pada tengah hari Maria pulang dengan dua tas yang berat. Dia lelah, tetapi senang.",
+  "gloss": {
+   "pasar": "market",
+   "pusat": "centre",
+   "kota": "town",
+   "matahari": "sun",
+   "orang": "people",
+   "buahnya": "the fruit (buah: fruit)",
+   "segar": "fresh",
+   "murah": "cheap",
+   "apel": "apples",
+   "jeruk": "oranges",
+   "roti": "bread",
+   "keju": "cheese",
+   "ikan": "fish",
+   "ramah": "friendly",
+   "keluarganya": "her family (keluarga: family)",
+   "temannya": "her friend (teman: friend)",
+   "bersama": "together",
+   "berat": "heavy",
+   "tas": "bags",
+   "lelah": "tired",
+   "senang": "happy"
+  },
+  "questions": [
+   {
+    "q": "Di mana pasar itu?",
+    "a": [
+     "pusat"
+    ]
+   },
+   {
+    "q": "Apa yang dibeli Maria pertama?",
+    "a": [
+     "apel"
+    ]
+   },
+   {
+    "q": "Maria sering bertemu dengan siapa di pasar?",
+    "a": [
+     "Elena"
+    ]
+   }
+  ],
+  "notice": "Indonesian verbs do not change for person or time, and nouns have no plural ending: \"banyak orang\" is \"many people\". The ending -nya means \"the\" or \"his, her\": \"buahnya\" (the fruit), \"temannya\" (her friend).",
+  "back": [
+   [
+    "Pertama dia membeli apel dan jeruk.",
+    "First she buys apples and oranges."
+   ],
+   [
+    "Dia selalu bertanya tentang keluarganya.",
+    "He always asks about her family."
+   ]
+  ]
+ },
+ {
+  "id": "id-day",
+  "title": "Hari saya",
+  "level": "A1",
+  "text": "Nama saya Daniel dan saya tinggal di apartemen kecil. Setiap pagi saya bangun pukul tujuh. Pertama saya minum teh dan makan roti dengan mentega. Lalu saya pergi bekerja naik bus. Saya bekerja di toko buku di pusat kota. Saya suka pekerjaan saya karena saya suka buku. Pada tengah hari saya makan sup di restoran kecil. Pada sore hari banyak pelanggan datang ke toko. Pada malam hari saya pulang dan memasak makan malam. Sesudah makan malam saya menelepon ibu saya atau membaca buku. Saya tidur pukul sebelas. Pada hari Minggu saya tidak bekerja dan tidur lebih lama.",
+  "gloss": {
+   "apartemen": "flat",
+   "bangun": "get up",
+   "pagi": "morning",
+   "teh": "tea",
+   "mentega": "butter",
+   "bekerja": "to work",
+   "bus": "bus",
+   "toko": "shop (toko buku: bookshop)",
+   "kota": "city",
+   "buku": "books",
+   "sup": "soup",
+   "restoran": "restaurant",
+   "sore": "afternoon",
+   "pelanggan": "customers",
+   "malam": "night, evening",
+   "memasak": "cook",
+   "makan": "to eat (makan malam: dinner)",
+   "menelepon": "call",
+   "ibu": "mother",
+   "tidur": "sleep",
+   "lama": "long (lebih lama: longer)"
+  },
+  "questions": [
+   {
+    "q": "Di mana Daniel bekerja?",
+    "a": [
+     "toko buku"
+    ]
+   },
+   {
+    "q": "Daniel pergi bekerja naik apa?",
+    "a": [
+     "bus"
+    ]
+   },
+   {
+    "q": "Apa yang dimakan Daniel pada tengah hari?",
+    "a": [
+     "sup"
+    ]
+   }
+  ],
+  "notice": "Time is shown by words such as \"setiap pagi\" (every morning) or \"pada malam hari\" (in the evening), not by the verb: \"saya makan\" can mean I eat, I ate or I will eat. \"Tidak\" before a verb means \"not\".",
+  "back": [
+   [
+    "Lalu saya pergi bekerja naik bus.",
+    "Then I go to work by bus."
+   ],
+   [
+    "Pada malam hari saya pulang dan memasak makan malam.",
+    "In the evening I go home and cook dinner."
+   ]
+  ]
+ },
+ {
+  "id": "id-sea",
+  "title": "Akhir pekan di tepi laut",
+  "level": "A2",
+  "text": "Akhir pekan lalu saya dan kakak laki-laki saya pergi ke laut. Kami naik kereta pagi-pagi sekali dan perjalanannya memakan waktu tiga jam. Cuacanya bagus sekali: langit biru dan airnya hangat. Kami berenang lama, lalu berbaring di pantai. Pada tengah hari kami makan ikan segar di restoran kecil dekat pelabuhan. Pelayannya ramah dan membawakan kami air dingin. Pada sore hari kami berjalan-jalan di kota tua dan membeli kartu pos. Kakak saya mengambil banyak foto perahu. Pada malam hari kami sangat lelah, tetapi kami belum mau pulang. Kami ketinggalan kereta terakhir dan harus menunggu satu jam. Itu hari terbaik pada musim panas ini. Lain kali kami mau tinggal seminggu penuh.",
+  "gloss": {
+   "pekan": "week (akhir pekan: weekend)",
+   "kakak": "older brother or sister",
+   "laut": "sea",
+   "kereta": "train",
+   "perjalanannya": "the journey",
+   "jam": "hours",
+   "cuacanya": "the weather",
+   "langit": "sky",
+   "biru": "blue",
+   "airnya": "the water (air: water)",
+   "hangat": "warm",
+   "berenang": "swam",
+   "pantai": "beach",
+   "pelayannya": "the waiter",
+   "pelabuhan": "harbour",
+   "berjalan": "to walk (berjalan-jalan: to stroll)",
+   "kartu": "card (kartu pos: postcard)",
+   "foto": "photos",
+   "perahu": "boats",
+   "lelah": "tired",
+   "ketinggalan": "missed",
+   "menunggu": "wait",
+   "seminggu": "a week",
+   "musim": "season (musim panas: summer)"
+  },
+  "questions": [
+   {
+    "q": "Mereka pergi ke laut naik apa?",
+    "a": [
+     "kereta"
+    ]
+   },
+   {
+    "q": "Berapa jam perjalanannya?",
+    "a": [
+     "tiga",
+     "3"
+    ]
+   },
+   {
+    "q": "Apa yang mereka beli di kota tua?",
+    "a": [
+     "kartu pos"
+    ]
+   }
+  ],
+  "notice": "Saying a word twice changes its meaning a little: \"berjalan-jalan\" is to stroll, \"pagi-pagi\" is very early in the morning. \"Kami\" means \"we\" without the person spoken to.",
+  "back": [
+   [
+    "Pada sore hari kami berjalan-jalan di kota tua dan membeli kartu pos.",
+    "In the afternoon we walked through the old town and bought postcards."
+   ],
+   [
+    "Kami ketinggalan kereta terakhir dan harus menunggu satu jam.",
+    "We missed the last train and had to wait an hour."
+   ]
+  ]
+ },
+ {
+  "id": "id-neighbour",
+  "title": "Tetangga baru",
+  "level": "A2",
+  "text": "Bulan lalu seorang tetangga baru pindah ke gedung kami. Namanya Sofia dan dia berasal dari kota lain. Pada awalnya dia tidak mengenal siapa pun di sini. Suatu malam dia mengetuk pintu kami karena lampu di dapurnya rusak. Ayah saya naik ke atas dan memperbaikinya dalam sepuluh menit. Sofia sangat berterima kasih dan keesokan harinya dia membawakan kami kue. Kuenya enak sekali dan adik laki-laki saya makan tiga potong. Sekarang Sofia sering minum teh bersama ibu saya. Dia bekerja di rumah sakit dan menceritakan kisah-kisah yang menarik. Kemarin dia membantu saya mengerjakan pekerjaan rumah. Pada hari Minggu kami menunjukkan taman dan pasar lama kepadanya. Dia berkata bahwa dia sudah merasa seperti di rumah sendiri. Saya rasa kami sudah mendapat teman baru.",
+  "gloss": {
+   "tetangga": "neighbour",
+   "pindah": "moved",
+   "bulan": "month",
+   "kota": "city",
+   "siapa": "who (siapa pun: anybody)",
+   "mengetuk": "knocked",
+   "pintu": "door",
+   "dapurnya": "her kitchen (dapur: kitchen)",
+   "lampu": "lamp",
+   "rusak": "broken",
+   "memperbaikinya": "repaired it",
+   "menit": "minutes",
+   "berterima": "(berterima kasih: grateful, thankful)",
+   "kue": "cake",
+   "enak": "delicious",
+   "potong": "pieces",
+   "sakit": "ill (rumah sakit: hospital)",
+   "kisah": "stories",
+   "pekerjaan": "work (pekerjaan rumah: homework)",
+   "taman": "park",
+   "sudah": "already",
+   "mendapat": "got, found"
+  },
+  "questions": [
+   {
+    "q": "Apa yang rusak di dapur Sofia?",
+    "a": [
+     "lampu"
+    ]
+   },
+   {
+    "q": "Apa yang dibawa Sofia keesokan harinya?",
+    "a": [
+     "kue"
+    ]
+   },
+   {
+    "q": "Di mana Sofia bekerja?",
+    "a": [
+     "rumah sakit"
+    ]
+   }
+  ],
+  "notice": "Indonesian uses \"dia\" for both he and she. The ending -nya often means \"his, her\" or \"it\": \"namanya\" (her name), \"dapurnya\" (her kitchen), \"memperbaikinya\" (repaired it).",
+  "back": [
+   [
+    "Ayah saya naik ke atas dan memperbaikinya dalam sepuluh menit.",
+    "My father went upstairs and repaired it in ten minutes."
+   ],
+   [
+    "Dia bekerja di rumah sakit dan menceritakan kisah-kisah yang menarik.",
+    "She works in a hospital and tells interesting stories."
+   ]
+  ]
+ },
+ {
+  "id": "id-cafe",
+  "title": "Di kafe",
+  "level": "A1",
+  "roles": [
+   "Pelayan",
+   "Tamu"
+  ],
+  "lines": [
+   [
+    0,
+    "Selamat pagi! Mau pesan apa?"
+   ],
+   [
+    1,
+    "Selamat pagi. Saya mau kopi susu satu."
+   ],
+   [
+    0,
+    "Mau makan sesuatu juga?"
+   ],
+   [
+    1,
+    "Ya, hari ini ada kue apa saja?"
+   ],
+   [
+    0,
+    "Ada pai apel dan kue cokelat."
+   ],
+   [
+    1,
+    "Kalau begitu saya mau sepotong pai apel."
+   ],
+   [
+    0,
+    "Silakan. Ada lagi yang lain?"
+   ],
+   [
+    1,
+    "Tidak, terima kasih. Berapa semuanya?"
+   ],
+   [
+    0,
+    "Lima puluh ribu rupiah."
+   ],
+   [
+    1,
+    "Ini uangnya. Terima kasih dan sampai jumpa!"
+   ]
+  ],
+  "gloss": {
+   "kopi": "coffee",
+   "susu": "milk",
+   "sesuatu": "something",
+   "makan": "eat",
+   "kue": "cake, cakes",
+   "hari": "day (hari ini: today)",
+   "apel": "apple",
+   "cokelat": "chocolate",
+   "sepotong": "a piece",
+   "lain": "other (yang lain: else)",
+   "berapa": "how much",
+   "uangnya": "the money (uang: money)"
+  },
+  "questions": [
+   {
+    "q": "Tamu itu memesan kopi dengan apa?",
+    "a": [
+     "susu"
+    ]
+   },
+   {
+    "q": "Tamu itu memilih pai apa?",
+    "a": [
+     "apel"
+    ]
+   }
+  ],
+  "notice": "\"Mau\" (want) is the everyday way to order: \"Saya mau kopi susu\". \"Ada\" means \"there is\" or \"we have\": \"Ada pai apel\". \"Terima kasih\" is thank you."
+ },
+ {
+  "id": "id-hotel",
+  "title": "Di hotel",
+  "level": "A2",
+  "roles": [
+   "Resepsionis",
+   "Tamu"
+  ],
+  "lines": [
+   [
+    0,
+    "Selamat malam. Ada yang bisa saya bantu?"
+   ],
+   [
+    1,
+    "Selamat malam. Saya punya reservasi untuk dua malam."
+   ],
+   [
+    0,
+    "Atas nama siapa?"
+   ],
+   [
+    1,
+    "Nama saya Anna Berg. Ini paspor saya."
+   ],
+   [
+    0,
+    "Terima kasih. Kamar Anda ada di lantai tiga."
+   ],
+   [
+    1,
+    "Apakah sarapan sudah termasuk dalam harga?"
+   ],
+   [
+    0,
+    "Ya, sarapan dari pukul tujuh sampai pukul sepuluh."
+   ],
+   [
+    1,
+    "Bagus sekali. Apakah ada lift? Koper saya berat."
+   ],
+   [
+    0,
+    "Ya, lift ada di sebelah tangga. Ini kunci Anda."
+   ],
+   [
+    1,
+    "Terima kasih banyak. Selamat malam!"
+   ]
+  ],
+  "gloss": {
+   "bantu": "help",
+   "reservasi": "reservation",
+   "malam": "night, evening",
+   "nama": "name",
+   "paspor": "passport",
+   "kamar": "room",
+   "lantai": "floor",
+   "sarapan": "breakfast",
+   "termasuk": "included",
+   "harga": "price",
+   "lift": "lift",
+   "koper": "suitcase",
+   "berat": "heavy",
+   "tangga": "stairs",
+   "kunci": "key"
+  },
+  "questions": [
+   {
+    "q": "Tamu itu punya reservasi untuk berapa malam?",
+    "a": [
+     "dua",
+     "2"
+    ]
+   },
+   {
+    "q": "Kamar tamu itu ada di lantai berapa?",
+    "a": [
+     "tiga",
+     "3"
+    ]
+   }
+  ],
+  "notice": "\"Anda\" is the polite word for \"you\" and \"your\" with strangers: \"kamar Anda\" (your room), \"kunci Anda\" (your key). \"Apakah\" at the start turns a sentence into a yes-or-no question."
+ }
+]

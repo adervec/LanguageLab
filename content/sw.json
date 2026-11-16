@@ -1,0 +1,415 @@
+[
+ {
+  "id": "sw-market",
+  "title": "Sokoni",
+  "level": "A1",
+  "text": "Kila Jumamosi Maria huenda sokoni. Soko liko katikati ya mji. Jua linawaka na kuna watu wengi sana. Maria anapenda soko hili kwa sababu matunda ni freshi na bei ni nafuu. Kwanza ananunua matofaa na machungwa. Kisha ananunua mkate, jibini na samaki kidogo. Muuzaji wa samaki ni mchangamfu sana. Kila mara anamuuliza habari za familia yake. Sokoni Maria hukutana mara nyingi na rafiki yake Elena. Leo wanakunywa kahawa pamoja na kuzungumza kwa muda mrefu. Saa sita mchana Maria anarudi nyumbani na mifuko miwili mizito. Amechoka lakini ana furaha.",
+  "gloss": {
+   "soko": "market",
+   "katikati": "middle, centre",
+   "mji": "town",
+   "jua": "sun",
+   "watu": "people",
+   "matunda": "fruit",
+   "freshi": "fresh",
+   "nafuu": "cheap, affordable",
+   "matofaa": "apples",
+   "machungwa": "oranges",
+   "mkate": "bread",
+   "jibini": "cheese",
+   "samaki": "fish",
+   "mchangamfu": "cheerful, friendly",
+   "familia": "family",
+   "rafiki": "friend",
+   "pamoja": "together",
+   "mizito": "heavy",
+   "mifuko": "bags",
+   "amechoka": "she is tired",
+   "furaha": "happiness (ana furaha: she is happy)"
+  },
+  "questions": [
+   {
+    "q": "Soko liko wapi?",
+    "a": [
+     "katikati"
+    ]
+   },
+   {
+    "q": "Maria ananunua nini kwanza?",
+    "a": [
+     "matofaa"
+    ]
+   },
+   {
+    "q": "Maria hukutana na nani mara nyingi sokoni?",
+    "a": [
+     "Elena"
+    ]
+   }
+  ],
+  "notice": "A Swahili verb is built from pieces: \"a-na-nunua\" is \"she-now-buy\", so \"ananunua\" is \"she buys\". The start \"hu-\" means something happens regularly: \"huenda\" (usually goes). \"Sokoni\" is \"at the market\": -ni means \"at\" or \"in\".",
+  "back": [
+   [
+    "Kwanza ananunua matofaa na machungwa.",
+    "First she buys apples and oranges."
+   ],
+   [
+    "Kila mara anamuuliza habari za familia yake.",
+    "He always asks about her family."
+   ]
+  ]
+ },
+ {
+  "id": "sw-day",
+  "title": "Siku yangu",
+  "level": "A1",
+  "text": "Jina langu ni Daniel na ninaishi katika fleti ndogo. Kila asubuhi ninaamka saa moja. Kwanza ninakunywa chai na kula mkate kwa siagi. Kisha ninaenda kazini kwa basi. Ninafanya kazi katika duka la vitabu katikati ya jiji. Ninaipenda kazi yangu kwa sababu ninapenda vitabu. Saa sita mchana ninakula supu katika mkahawa mdogo. Alasiri wateja wengi huja dukani. Jioni ninarudi nyumbani na kupika chakula cha jioni. Baada ya chakula ninampigia mama yangu simu au ninasoma kitabu. Ninakwenda kulala saa tano usiku. Jumapili sifanyi kazi na ninalala kwa muda mrefu zaidi.",
+  "gloss": {
+   "fleti": "flat",
+   "ninaamka": "I wake up",
+   "asubuhi": "morning",
+   "chai": "tea",
+   "siagi": "butter",
+   "kazi": "work",
+   "basi": "bus",
+   "duka": "shop (duka la vitabu: bookshop)",
+   "jiji": "city",
+   "vitabu": "books",
+   "supu": "soup",
+   "mkahawa": "restaurant",
+   "alasiri": "afternoon",
+   "wateja": "customers",
+   "jioni": "evening",
+   "kupika": "to cook",
+   "chakula": "food (chakula cha jioni: dinner)",
+   "ninampigia": "(ninampigia simu: I phone her)",
+   "mama": "mother",
+   "kulala": "to sleep (ninakwenda kulala: I go to bed)",
+   "ninalala": "I sleep",
+   "zaidi": "more (mrefu zaidi: longer)"
+  },
+  "questions": [
+   {
+    "q": "Daniel anafanya kazi wapi?",
+    "a": [
+     "duka",
+     "vitabu"
+    ]
+   },
+   {
+    "q": "Daniel huenda kazini kwa usafiri gani?",
+    "a": [
+     "basi"
+    ]
+   },
+   {
+    "q": "Daniel hula nini saa sita mchana?",
+    "a": [
+     "supu"
+    ]
+   }
+  ],
+  "notice": "Swahili counts the hours from sunrise, so \"saa moja\" (hour one) is seven o'clock, \"saa sita mchana\" is noon and \"saa tano usiku\" is eleven at night. \"Ni-na-\" at the start of a verb means \"I\" and \"now\": \"ninaishi\" (I live).",
+  "back": [
+   [
+    "Kisha ninaenda kazini kwa basi.",
+    "Then I go to work by bus."
+   ],
+   [
+    "Jioni ninarudi nyumbani na kupika chakula cha jioni.",
+    "In the evening I go home and cook dinner."
+   ]
+  ]
+ },
+ {
+  "id": "sw-sea",
+  "title": "Wikendi baharini",
+  "level": "A2",
+  "text": "Wikendi iliyopita mimi na kaka yangu tulikwenda baharini. Tulipanda treni asubuhi na mapema, na safari ilichukua saa tatu. Hali ya hewa ilikuwa nzuri sana: anga lilikuwa la buluu na maji yalikuwa ya vuguvugu. Tuliogelea kwa muda mrefu, kisha tukalala ufukweni. Saa sita mchana tulikula samaki freshi katika mkahawa mdogo karibu na bandari. Mhudumu alikuwa mchangamfu na alituletea maji baridi. Alasiri tulitembea katika mji wa kale na kununua postikadi. Kaka yangu alipiga picha nyingi za mashua. Jioni tulikuwa tumechoka sana, lakini hatukutaka kurudi nyumbani. Tulikosa treni ya mwisho na ilitubidi kusubiri saa moja. Ilikuwa siku bora kabisa ya kiangazi. Wakati ujao tunataka kukaa wiki nzima.",
+  "gloss": {
+   "wikendi": "weekend",
+   "kaka": "brother",
+   "baharini": "to the sea, at the sea (bahari: sea)",
+   "treni": "train",
+   "safari": "journey",
+   "saa": "hour, o'clock",
+   "hewa": "air (hali ya hewa: weather)",
+   "anga": "sky",
+   "buluu": "blue",
+   "maji": "water",
+   "vuguvugu": "lukewarm, warm",
+   "tuliogelea": "we swam",
+   "ufukweni": "on the beach (ufukwe: beach)",
+   "mhudumu": "waiter",
+   "bandari": "harbour",
+   "tulitembea": "we walked",
+   "postikadi": "postcards",
+   "picha": "photos",
+   "mashua": "boats",
+   "tumechoka": "we are tired",
+   "tulikosa": "we missed",
+   "kusubiri": "to wait",
+   "wiki": "week",
+   "kiangazi": "the hot dry season, summer"
+  },
+  "questions": [
+   {
+    "q": "Walisafiri kwenda baharini kwa usafiri gani?",
+    "a": [
+     "treni"
+    ]
+   },
+   {
+    "q": "Safari ilichukua saa ngapi?",
+    "a": [
+     "tatu",
+     "3"
+    ]
+   },
+   {
+    "q": "Walinunua nini katika mji wa kale?",
+    "a": [
+     "postikadi"
+    ]
+   }
+  ],
+  "notice": "The piece -li- puts a verb in the past: \"tu-li-kwenda\" is \"we-did-go\", so \"tulikwenda\" is \"we went\" and \"alipiga\" is \"he took\". \"Hatu-ku-taka\" (we did not want) shows the negative past, with ha- at the front and -ku- in the middle.",
+  "back": [
+   [
+    "Alasiri tulitembea katika mji wa kale na kununua postikadi.",
+    "In the afternoon we walked through the old town and bought postcards."
+   ],
+   [
+    "Tulikosa treni ya mwisho na ilitubidi kusubiri saa moja.",
+    "We missed the last train and had to wait an hour."
+   ]
+  ]
+ },
+ {
+  "id": "sw-neighbour",
+  "title": "Jirani mpya",
+  "level": "A2",
+  "text": "Mwezi uliopita jirani mpya alihamia katika jengo letu. Jina lake ni Sofia na anatoka mji mwingine. Mwanzoni hakumjua mtu yeyote hapa. Jioni moja alibisha mlango wetu kwa sababu taa ya jikoni kwake ilikuwa imeharibika. Baba yangu alipanda juu na kuitengeneza kwa dakika kumi. Sofia alishukuru sana na siku iliyofuata alituletea keki. Keki ilikuwa tamu sana na mdogo wangu alikula vipande vitatu. Sasa Sofia hunywa chai mara nyingi pamoja na mama yangu. Anafanya kazi hospitalini na husimulia hadithi za kuvutia. Jana alinisaidia kufanya kazi yangu ya shule. Jumapili tulimwonyesha bustani na soko la zamani. Anasema kwamba tayari anajisikia kama yuko nyumbani. Nadhani tumepata rafiki mpya.",
+  "gloss": {
+   "jirani": "neighbour",
+   "alihamia": "she moved to",
+   "mwezi": "month",
+   "mji": "city",
+   "yeyote": "any (mtu yeyote: anybody)",
+   "alibisha": "she knocked",
+   "mlango": "door",
+   "jikoni": "in the kitchen (jiko: kitchen)",
+   "taa": "lamp",
+   "imeharibika": "is broken",
+   "kuitengeneza": "to repair it",
+   "dakika": "minutes",
+   "alishukuru": "she was thankful",
+   "keki": "cake",
+   "tamu": "sweet, delicious",
+   "vipande": "pieces",
+   "hospitalini": "in a hospital",
+   "hadithi": "stories",
+   "shule": "school (kazi ya shule: schoolwork, homework)",
+   "bustani": "garden, park",
+   "tayari": "already",
+   "tumepata": "we have got, we have found"
+  },
+  "questions": [
+   {
+    "q": "Nini kilikuwa kimeharibika jikoni kwa Sofia?",
+    "a": [
+     "taa"
+    ]
+   },
+   {
+    "q": "Sofia alileta nini siku iliyofuata?",
+    "a": [
+     "keki"
+    ]
+   },
+   {
+    "q": "Sofia anafanya kazi wapi?",
+    "a": [
+     "hospitali"
+    ]
+   }
+  ],
+  "notice": "Small pieces inside the verb say who receives the action: \"a-li-tu-letea\" is \"she brought us\", \"a-li-ni-saidia\" is \"she helped me\", \"tu-li-mw-onyesha\" is \"we showed her\". \"Yangu\" (my) and \"wetu\" (our) follow the noun: \"baba yangu\", \"mlango wetu\".",
+  "back": [
+   [
+    "Baba yangu alipanda juu na kuitengeneza kwa dakika kumi.",
+    "My father went upstairs and repaired it in ten minutes."
+   ],
+   [
+    "Anafanya kazi hospitalini na husimulia hadithi za kuvutia.",
+    "She works in a hospital and tells interesting stories."
+   ]
+  ]
+ },
+ {
+  "id": "sw-cafe",
+  "title": "Mkahawani",
+  "level": "A1",
+  "roles": [
+   "Mhudumu",
+   "Mteja"
+  ],
+  "lines": [
+   [
+    0,
+    "Habari za asubuhi! Nikuletee nini?"
+   ],
+   [
+    1,
+    "Nzuri, asante. Naomba kahawa ya maziwa, tafadhali."
+   ],
+   [
+    0,
+    "Ungependa kula kitu chochote?"
+   ],
+   [
+    1,
+    "Ndiyo, mna keki gani leo?"
+   ],
+   [
+    0,
+    "Tuna keki ya tofaa na keki ya chokoleti."
+   ],
+   [
+    1,
+    "Basi naomba kipande cha keki ya tofaa."
+   ],
+   [
+    0,
+    "Karibu. Unahitaji kitu kingine?"
+   ],
+   [
+    1,
+    "Hapana, asante. Ni shilingi ngapi kwa jumla?"
+   ],
+   [
+    0,
+    "Shilingi elfu sita, tafadhali."
+   ],
+   [
+    1,
+    "Hizi hapa pesa. Asante na kwaheri!"
+   ]
+  ],
+  "gloss": {
+   "kahawa": "coffee",
+   "maziwa": "milk",
+   "kitu": "thing (kitu chochote: anything)",
+   "kula": "eat",
+   "keki": "cake, cakes",
+   "leo": "today",
+   "tofaa": "apple",
+   "chokoleti": "chocolate",
+   "kipande": "piece",
+   "kingine": "other, else",
+   "ngapi": "how many, how much",
+   "pesa": "money"
+  },
+  "questions": [
+   {
+    "q": "Mteja anaomba kahawa ya nini?",
+    "a": [
+     "maziwa"
+    ]
+   },
+   {
+    "q": "Mteja anachagua keki ya nini?",
+    "a": [
+     "tofaa"
+    ]
+   }
+  ],
+  "notice": "\"Naomba …\" (I ask for …) is the polite way to order: \"Naomba kahawa ya maziwa\". \"Tafadhali\" is please and \"asante\" is thank you. The greeting \"Habari za asubuhi?\" (News of the morning?) is answered with \"Nzuri\" (Good)."
+ },
+ {
+  "id": "sw-hotel",
+  "title": "Hotelini",
+  "level": "A2",
+  "roles": [
+   "Mpokeaji wageni",
+   "Mgeni"
+  ],
+  "lines": [
+   [
+    0,
+    "Habari za jioni. Nikusaidie nini?"
+   ],
+   [
+    1,
+    "Nzuri. Nimeweka nafasi ya chumba kwa usiku mbili."
+   ],
+   [
+    0,
+    "Jina lako ni nani, tafadhali?"
+   ],
+   [
+    1,
+    "Jina langu ni Anna Berg. Hii hapa pasipoti yangu."
+   ],
+   [
+    0,
+    "Asante. Chumba chako kiko ghorofa ya tatu."
+   ],
+   [
+    1,
+    "Je, kifungua kinywa kimo ndani ya bei?"
+   ],
+   [
+    0,
+    "Ndiyo, kifungua kinywa ni kuanzia saa moja hadi saa nne asubuhi."
+   ],
+   [
+    1,
+    "Vizuri sana. Je, kuna lifti? Sanduku langu ni zito."
+   ],
+   [
+    0,
+    "Ndiyo, lifti iko karibu na ngazi. Huu hapa ufunguo wako."
+   ],
+   [
+    1,
+    "Asante sana. Jioni njema!"
+   ]
+  ],
+  "gloss": {
+   "nikusaidie": "may I help you",
+   "nafasi": "place (nimeweka nafasi: I have booked)",
+   "usiku": "night",
+   "jina": "name",
+   "pasipoti": "passport",
+   "chumba": "room",
+   "ghorofa": "floor",
+   "kifungua": "(kifungua kinywa: breakfast)",
+   "ndani": "inside (kimo ndani ya bei: it is included in the price)",
+   "bei": "price",
+   "lifti": "lift",
+   "sanduku": "suitcase",
+   "zito": "heavy",
+   "ngazi": "stairs",
+   "ufunguo": "key",
+   "jioni": "evening"
+  },
+  "questions": [
+   {
+    "q": "Mgeni ameweka nafasi kwa usiku ngapi?",
+    "a": [
+     "mbili",
+     "2"
+    ]
+   },
+   {
+    "q": "Chumba kiko ghorofa ya ngapi?",
+    "a": [
+     "tatu",
+     "3"
+    ]
+   }
+  ],
+  "notice": "A yes-or-no question can start with \"Je\": \"Je, kuna lifti?\" (Is there a lift?). \"Kuna\" means \"there is\". Breakfast from \"saa moja\" to \"saa nne\" is from seven to ten: Swahili hours are counted from sunrise."
+ }
+]

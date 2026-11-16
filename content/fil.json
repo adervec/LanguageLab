@@ -1,0 +1,411 @@
+[
+ {
+  "id": "fil-market",
+  "title": "Sa palengke",
+  "level": "A1",
+  "text": "Tuwing Sabado, pumupunta si Maria sa palengke. Ang palengke ay nasa gitna ng bayan. Maaraw at maraming tao roon. Gusto ni Maria ang palengke dahil sariwa at mura ang mga prutas. Una, bumibili siya ng mga mansanas at dalandan. Pagkatapos, bumibili siya ng tinapay, keso at kaunting isda. Napakabait ng lalaking nagtitinda ng isda. Lagi niyang kinukumusta ang pamilya ni Maria. Sa palengke, madalas makita ni Maria ang kaibigan niyang si Elena. Ngayon, magkasama silang umiinom ng kape at matagal na nag-uusap. Sa tanghali, umuuwi si Maria na may dalang dalawang mabigat na bag. Pagod siya pero masaya.",
+  "gloss": {
+   "palengke": "market",
+   "gitna": "centre",
+   "bayan": "town",
+   "maaraw": "sunny",
+   "tao": "people",
+   "prutas": "fruit",
+   "sariwa": "fresh",
+   "mura": "cheap",
+   "mansanas": "apples",
+   "dalandan": "oranges",
+   "tinapay": "bread",
+   "keso": "cheese",
+   "isda": "fish",
+   "napakabait": "very kind",
+   "pamilya": "family",
+   "kaibigan": "friend",
+   "magkasama": "together",
+   "mabigat": "heavy",
+   "bag": "bags",
+   "pagod": "tired",
+   "masaya": "happy"
+  },
+  "questions": [
+   {
+    "q": "Nasaan ang palengke?",
+    "a": [
+     "gitna"
+    ]
+   },
+   {
+    "q": "Ano ang unang binibili ni Maria?",
+    "a": [
+     "mansanas"
+    ]
+   },
+   {
+    "q": "Sino ang madalas makita ni Maria sa palengke?",
+    "a": [
+     "Elena"
+    ]
+   }
+  ],
+  "notice": "Filipino marks a person's name with \"si\" (the one in focus) or \"ni\" (of, by): \"pumupunta si Maria\" (Maria goes), \"gusto ni Maria\" (Maria likes). A verb repeats its first syllable for something that happens regularly: \"bumibili\" (buys).",
+  "back": [
+   [
+    "Una, bumibili siya ng mga mansanas at dalandan.",
+    "First she buys apples and oranges."
+   ],
+   [
+    "Lagi niyang kinukumusta ang pamilya ni Maria.",
+    "He always asks about her family."
+   ]
+  ]
+ },
+ {
+  "id": "fil-day",
+  "title": "Ang araw ko",
+  "level": "A1",
+  "text": "Ako si Daniel at nakatira ako sa isang maliit na apartment. Tuwing umaga, gumigising ako nang alas-siyete. Una, umiinom ako ng tsaa at kumakain ng tinapay na may mantikilya. Pagkatapos, pumapasok ako sa trabaho sakay ng bus. Nagtatrabaho ako sa isang tindahan ng libro sa gitna ng lungsod. Gusto ko ang trabaho ko dahil mahilig ako sa mga libro. Sa tanghali, kumakain ako ng sopas sa isang maliit na restawran. Sa hapon, maraming mamimili ang dumarating sa tindahan. Sa gabi, umuuwi ako at nagluluto ng hapunan. Pagkatapos ng hapunan, tinatawagan ko ang nanay ko o nagbabasa ako ng libro. Natutulog ako nang alas-onse. Tuwing Linggo, hindi ako nagtatrabaho at mas matagal akong natutulog.",
+  "gloss": {
+   "apartment": "flat",
+   "gumigising": "wake up",
+   "umaga": "morning",
+   "tsaa": "tea",
+   "mantikilya": "butter",
+   "trabaho": "work",
+   "bus": "bus",
+   "tindahan": "shop (tindahan ng libro: bookshop)",
+   "lungsod": "city",
+   "libro": "books",
+   "sopas": "soup",
+   "restawran": "restaurant",
+   "hapon": "afternoon",
+   "mamimili": "customers",
+   "gabi": "evening",
+   "nagluluto": "cook",
+   "hapunan": "dinner",
+   "tinatawagan": "call",
+   "nanay": "mother",
+   "natutulog": "sleep",
+   "matagal": "long (mas matagal: longer)"
+  },
+  "questions": [
+   {
+    "q": "Saan nagtatrabaho si Daniel?",
+    "a": [
+     "tindahan"
+    ]
+   },
+   {
+    "q": "Ano ang sinasakyan ni Daniel papunta sa trabaho?",
+    "a": [
+     "bus"
+    ]
+   },
+   {
+    "q": "Ano ang kinakain ni Daniel sa tanghali?",
+    "a": [
+     "sopas"
+    ]
+   }
+  ],
+  "notice": "The verb comes first and the doer follows: \"gumigising ako\" (I wake up), \"umuuwi ako\" (I go home). The time of day uses Spanish numbers after \"alas\": \"alas-siyete\" (seven o'clock), \"alas-onse\" (eleven o'clock).",
+  "back": [
+   [
+    "Pagkatapos, pumapasok ako sa trabaho sakay ng bus.",
+    "Then I go to work by bus."
+   ],
+   [
+    "Sa gabi, umuuwi ako at nagluluto ng hapunan.",
+    "In the evening I go home and cook dinner."
+   ]
+  ]
+ },
+ {
+  "id": "fil-sea",
+  "title": "Katapusan ng linggo sa dagat",
+  "level": "A2",
+  "text": "Noong nakaraang katapusan ng linggo, pumunta kami ng kuya ko sa dagat. Sumakay kami ng tren nang maagang-maaga at tumagal ang biyahe nang tatlong oras. Napakaganda ng panahon: bughaw ang langit at maligamgam ang tubig. Matagal kaming lumangoy at pagkatapos ay humiga kami sa dalampasigan. Sa tanghali, kumain kami ng sariwang isda sa isang maliit na restawran malapit sa daungan. Mabait ang weyter at dinalhan niya kami ng malamig na tubig. Sa hapon, naglakad kami sa lumang bayan at bumili ng mga postkard. Kumuha ang kuya ko ng maraming litrato ng mga bangka. Sa gabi, pagod na pagod na kami pero ayaw pa naming umuwi. Naiwan kami ng huling tren at kinailangan naming maghintay nang isang oras. Iyon ang pinakamasayang araw ng tag-init. Sa susunod, gusto naming manatili nang isang buong linggo.",
+  "gloss": {
+   "katapusan": "end (katapusan ng linggo: weekend)",
+   "kuya": "older brother",
+   "dagat": "sea",
+   "tren": "train",
+   "biyahe": "journey",
+   "oras": "hours",
+   "panahon": "weather",
+   "langit": "sky",
+   "bughaw": "blue",
+   "tubig": "water",
+   "maligamgam": "warm",
+   "lumangoy": "swam",
+   "dalampasigan": "beach",
+   "weyter": "waiter",
+   "daungan": "harbour",
+   "naglakad": "walked",
+   "postkard": "postcards",
+   "litrato": "photos",
+   "bangka": "boats",
+   "pagod": "tired",
+   "naiwan": "were left behind (missed)",
+   "maghintay": "wait",
+   "linggo": "week",
+   "init": "heat (tag-init: summer)"
+  },
+  "questions": [
+   {
+    "q": "Ano ang sinakyan nila papunta sa dagat?",
+    "a": [
+     "tren"
+    ]
+   },
+   {
+    "q": "Ilang oras tumagal ang biyahe?",
+    "a": [
+     "tatlo",
+     "3"
+    ]
+   },
+   {
+    "q": "Ano ang binili nila sa lumang bayan?",
+    "a": [
+     "postkard"
+    ]
+   }
+  ],
+  "notice": "A finished action often has -um- or nag- in the verb: \"pumunta\" (went), \"kumain\" (ate), \"naglakad\" (walked). \"Kami\" is \"we\" without the person spoken to, and \"kuya\" is an older brother.",
+  "back": [
+   [
+    "Sa hapon, naglakad kami sa lumang bayan at bumili ng mga postkard.",
+    "In the afternoon we walked through the old town and bought postcards."
+   ],
+   [
+    "Naiwan kami ng huling tren at kinailangan naming maghintay nang isang oras.",
+    "We missed the last train and had to wait an hour."
+   ]
+  ]
+ },
+ {
+  "id": "fil-neighbour",
+  "title": "Ang bagong kapitbahay",
+  "level": "A2",
+  "text": "Noong nakaraang buwan, may bagong kapitbahay na lumipat sa gusali namin. Sofia ang pangalan niya at galing siya sa ibang lungsod. Noong una, wala siyang kakilala rito. Isang gabi, kumatok siya sa pinto namin dahil sira ang ilaw sa kusina niya. Umakyat ang tatay ko at inayos niya ito sa loob ng sampung minuto. Lubos na nagpasalamat si Sofia at kinabukasan ay dinalhan niya kami ng keyk. Napakasarap ng keyk at kumain ang bunso kong kapatid ng tatlong hiwa. Ngayon, madalas uminom ng tsaa si Sofia kasama ang nanay ko. Nagtatrabaho siya sa isang ospital at nagkukuwento siya ng mga kawili-wiling kuwento. Kahapon, tinulungan niya ako sa takdang-aralin ko. Noong Linggo, ipinasyal namin siya sa parke at sa lumang palengke. Sabi niya, parang nasa sariling bahay na raw siya. Sa tingin ko, nakahanap kami ng bagong kaibigan.",
+  "gloss": {
+   "kapitbahay": "neighbour",
+   "lumipat": "moved",
+   "buwan": "month",
+   "lungsod": "city",
+   "kakilala": "someone you know (walang kakilala: knew nobody)",
+   "kumatok": "knocked",
+   "pinto": "door",
+   "kusina": "kitchen",
+   "ilaw": "light, lamp",
+   "sira": "broken",
+   "inayos": "fixed",
+   "minuto": "minutes",
+   "nagpasalamat": "thanked",
+   "keyk": "cake",
+   "napakasarap": "very delicious",
+   "hiwa": "slices",
+   "ospital": "hospital",
+   "kuwento": "stories",
+   "aralin": "lesson (takdang-aralin: homework)",
+   "parke": "park",
+   "na": "already; also a linking word",
+   "nakahanap": "found"
+  },
+  "questions": [
+   {
+    "q": "Ano ang sira sa kusina ni Sofia?",
+    "a": [
+     "ilaw"
+    ]
+   },
+   {
+    "q": "Ano ang dinala ni Sofia kinabukasan?",
+    "a": [
+     "keyk"
+    ]
+   },
+   {
+    "q": "Saan nagtatrabaho si Sofia?",
+    "a": [
+     "ospital"
+    ]
+   }
+  ],
+  "notice": "Filipino uses \"siya\" for both he and she. The little words \"ko\" (my), \"niya\" (his, her) and \"namin\" (our) follow the noun: \"tatay ko\" (my father), \"kusina niya\" (her kitchen), \"pinto namin\" (our door).",
+  "back": [
+   [
+    "Umakyat ang tatay ko at inayos niya ito sa loob ng sampung minuto.",
+    "My father went upstairs and repaired it in ten minutes."
+   ],
+   [
+    "Nagtatrabaho siya sa isang ospital at nagkukuwento siya ng mga kawili-wiling kuwento.",
+    "She works in a hospital and tells interesting stories."
+   ]
+  ]
+ },
+ {
+  "id": "fil-cafe",
+  "title": "Sa kapihan",
+  "level": "A1",
+  "roles": [
+   "Weyter",
+   "Kostumer"
+  ],
+  "lines": [
+   [
+    0,
+    "Magandang umaga po! Ano po ang order ninyo?"
+   ],
+   [
+    1,
+    "Magandang umaga. Isang kapeng may gatas nga po."
+   ],
+   [
+    0,
+    "Gusto po ba ninyo ng makakain?"
+   ],
+   [
+    1,
+    "Opo, anong mga keyk ang mayroon kayo ngayon?"
+   ],
+   [
+    0,
+    "Mayroon po kaming apple pie at keyk na tsokolate."
+   ],
+   [
+    1,
+    "Kung gayon, isang hiwa ng apple pie po."
+   ],
+   [
+    0,
+    "Heto po. Mayroon pa po ba?"
+   ],
+   [
+    1,
+    "Wala na po, salamat. Magkano po lahat?"
+   ],
+   [
+    0,
+    "Dalawandaang piso po."
+   ],
+   [
+    1,
+    "Heto po ang bayad. Salamat at paalam!"
+   ]
+  ],
+  "gloss": {
+   "kapeng": "coffee (kape)",
+   "gatas": "milk",
+   "makakain": "something to eat",
+   "keyk": "cake, cakes",
+   "ngayon": "today, now",
+   "apple": "apple (said in English in \"apple pie\"; the fruit is mansanas)",
+   "tsokolate": "chocolate",
+   "hiwa": "slice",
+   "pa": "more, still",
+   "magkano": "how much",
+   "bayad": "payment"
+  },
+  "questions": [
+   {
+    "q": "Ano ang gustong ihalo ng kostumer sa kape niya?",
+    "a": [
+     "gatas"
+    ]
+   },
+   {
+    "q": "Aling pagkain ang pinili ng kostumer?",
+    "a": [
+     "apple pie"
+    ]
+   }
+  ],
+  "notice": "\"Po\" and \"opo\" (a respectful yes) show politeness to a stranger or an older person, and \"ninyo\" and \"kayo\" are the polite words for \"you\". Many food words are borrowed: \"keyk\", \"tsokolate\", and \"apple pie\" straight from English."
+ },
+ {
+  "id": "fil-hotel",
+  "title": "Sa hotel",
+  "level": "A2",
+  "roles": [
+   "Resepsiyonista",
+   "Bisita"
+  ],
+  "lines": [
+   [
+    0,
+    "Magandang gabi po. Ano po ang maitutulong ko?"
+   ],
+   [
+    1,
+    "Magandang gabi. May reserbasyon ako para sa dalawang gabi."
+   ],
+   [
+    0,
+    "Ano po ang pangalan ninyo?"
+   ],
+   [
+    1,
+    "Anna Berg ang pangalan ko. Heto ang pasaporte ko."
+   ],
+   [
+    0,
+    "Salamat po. Nasa ikatlong palapag ang kuwarto ninyo."
+   ],
+   [
+    1,
+    "Kasama na ba ang almusal sa presyo?"
+   ],
+   [
+    0,
+    "Opo, ang almusal ay mula alas-siyete hanggang alas-diyes."
+   ],
+   [
+    1,
+    "Mabuti. May elevator ba rito? Mabigat ang maleta ko."
+   ],
+   [
+    0,
+    "Opo, nasa tabi ng hagdan ang elevator. Heto po ang susi ninyo."
+   ],
+   [
+    1,
+    "Maraming salamat. Magandang gabi po!"
+   ]
+  ],
+  "gloss": {
+   "maitutulong": "can help with",
+   "reserbasyon": "reservation",
+   "gabi": "night, evening",
+   "pangalan": "name",
+   "pasaporte": "passport",
+   "kuwarto": "room",
+   "palapag": "floor",
+   "almusal": "breakfast",
+   "kasama": "included, together with",
+   "presyo": "price",
+   "elevator": "lift",
+   "maleta": "suitcase",
+   "mabigat": "heavy",
+   "hagdan": "stairs",
+   "susi": "key"
+  },
+  "questions": [
+   {
+    "q": "Ilang gabi ang reserbasyon ng bisita?",
+    "a": [
+     "dalawa",
+     "2"
+    ]
+   },
+   {
+    "q": "Nasa anong palapag ang kuwarto?",
+    "a": [
+     "ikatlo",
+     "3"
+    ]
+   }
+  ],
+  "notice": "\"May\" means \"there is\" or \"I have\": \"May reserbasyon ako\" (I have a reservation), \"May elevator ba rito?\" (Is there a lift here?). The little word \"ba\" turns a sentence into a question."
+ }
+]

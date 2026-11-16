@@ -1,0 +1,414 @@
+[
+ {
+  "id": "eo-market",
+  "title": "En la bazaro",
+  "level": "A1",
+  "text": "Ĉiun sabaton Maria iras al la bazaro. La bazaro estas en la centro de la urbo. La suno brilas kaj tie estas multaj homoj. Maria ŝatas la bazaron, ĉar la fruktoj estas freŝaj kaj malmultekostaj. Unue ŝi aĉetas pomojn kaj oranĝojn. Poste ŝi aĉetas panon, fromaĝon kaj iom da fiŝo. La viro ĉe la fiŝbudo estas tre afabla. Li ĉiam demandas pri ŝia familio. En la bazaro Maria ofte renkontas sian amikinon Elena. Hodiaŭ ili kune trinkas kafon kaj longe parolas. Tagmeze Maria iras hejmen kun du pezaj sakoj. Ŝi estas laca, sed feliĉa.",
+  "gloss": {
+   "bazaro": "market",
+   "centro": "centre",
+   "urbo": "town",
+   "suno": "sun",
+   "homoj": "people",
+   "fruktoj": "fruit",
+   "freŝaj": "fresh",
+   "malmultekostaj": "cheap",
+   "pomojn": "apples",
+   "oranĝojn": "oranges",
+   "panon": "bread",
+   "fromaĝon": "cheese",
+   "fiŝo": "fish",
+   "afabla": "friendly",
+   "familio": "family",
+   "amikinon": "friend",
+   "kune": "together",
+   "pezaj": "heavy",
+   "sakoj": "bags",
+   "laca": "tired",
+   "feliĉa": "happy"
+  },
+  "questions": [
+   {
+    "q": "Kie estas la bazaro?",
+    "a": [
+     "centro"
+    ]
+   },
+   {
+    "q": "Kion Maria aĉetas unue?",
+    "a": [
+     "pomo"
+    ]
+   },
+   {
+    "q": "Kiun Maria ofte renkontas en la bazaro?",
+    "a": [
+     "Elena"
+    ]
+   }
+  ],
+  "notice": "Every Esperanto noun ends in -o, every adjective in -a, and the plural adds -j: \"pezaj sakoj\" (heavy bags). The thing an action is done to takes -n: \"ŝi aĉetas pomojn\" (she buys apples).",
+  "back": [
+   [
+    "Unue ŝi aĉetas pomojn kaj oranĝojn.",
+    "First she buys apples and oranges."
+   ],
+   [
+    "Li ĉiam demandas pri ŝia familio.",
+    "He always asks about her family."
+   ]
+  ]
+ },
+ {
+  "id": "eo-day",
+  "title": "Mia tago",
+  "level": "A1",
+  "text": "Mia nomo estas Daniel kaj mi loĝas en malgranda apartamento. Ĉiun matenon mi ellitiĝas je la sepa. Unue mi trinkas teon kaj manĝas panon kun butero. Poste mi veturas al la laboro per buso. Mi laboras en librovendejo en la centro de la urbo. Mi ŝatas mian laboron, ĉar mi amas librojn. Tagmeze mi manĝas supon en malgranda restoracio. Posttagmeze multaj klientoj venas al la vendejo. Vespere mi iras hejmen kaj kuiras la vespermanĝon. Post la vespermanĝo mi telefonas al mia patrino aŭ legas libron. Mi enlitiĝas je la dek-unua. Dimanĉe mi ne laboras kaj dormas pli longe.",
+  "gloss": {
+   "apartamento": "flat",
+   "ellitiĝas": "get out of bed, get up",
+   "matenon": "morning",
+   "teon": "tea",
+   "butero": "butter",
+   "laboro": "work",
+   "buso": "bus",
+   "librovendejo": "bookshop",
+   "urbo": "city",
+   "librojn": "books",
+   "supon": "soup",
+   "restoracio": "restaurant",
+   "posttagmeze": "in the afternoon",
+   "klientoj": "customers",
+   "vespere": "in the evening",
+   "kuiras": "cook",
+   "vespermanĝon": "dinner",
+   "telefonas": "call",
+   "patrino": "mother",
+   "enlitiĝas": "go to bed",
+   "dormas": "sleep",
+   "longe": "long (pli longe: longer)"
+  },
+  "questions": [
+   {
+    "q": "Kie Daniel laboras?",
+    "a": [
+     "librovendejo"
+    ]
+   },
+   {
+    "q": "Per kio Daniel veturas al la laboro?",
+    "a": [
+     "buso"
+    ]
+   },
+   {
+    "q": "Kion Daniel manĝas tagmeze?",
+    "a": [
+     "supo"
+    ]
+   }
+  ],
+  "notice": "Esperanto builds words from pieces: \"libro\" (book) and \"vendejo\" (shop) make \"librovendejo\"; \"el-lit-iĝas\" is \"out-bed-become\", to get up. Words that end in -e say when or how: \"vespere\" (in the evening), \"dimanĉe\" (on Sunday).",
+  "back": [
+   [
+    "Poste mi veturas al la laboro per buso.",
+    "Then I go to work by bus."
+   ],
+   [
+    "Vespere mi iras hejmen kaj kuiras la vespermanĝon.",
+    "In the evening I go home and cook dinner."
+   ]
+  ]
+ },
+ {
+  "id": "eo-sea",
+  "title": "Semajnfino ĉe la maro",
+  "level": "A2",
+  "text": "Lastan semajnfinon mia frato kaj mi veturis al la maro. Ni prenis la trajnon frue matene kaj la vojaĝo daŭris tri horojn. La vetero estis belega: la ĉielo estis blua kaj la akvo varma. Ni longe naĝis kaj poste kuŝis sur la strando. Tagmeze ni manĝis freŝan fiŝon en malgranda restoracio apud la haveno. La kelnero estis afabla kaj alportis al ni malvarman akvon. Posttagmeze ni promenis tra la malnova urbo kaj aĉetis poŝtkartojn. Mia frato faris multajn fotojn de la boatoj. Vespere ni estis tre lacaj, sed ni ne volis iri hejmen. Ni maltrafis la lastan trajnon kaj devis atendi unu horon. Ĝi estis la plej bona tago de la somero. Venontfoje ni volas resti tutan semajnon.",
+  "gloss": {
+   "semajnfinon": "weekend",
+   "frato": "brother",
+   "maro": "sea",
+   "trajnon": "train",
+   "vojaĝo": "journey",
+   "horojn": "hours",
+   "vetero": "weather",
+   "ĉielo": "sky",
+   "blua": "blue",
+   "akvo": "water",
+   "varma": "warm",
+   "naĝis": "swam",
+   "strando": "beach",
+   "kelnero": "waiter",
+   "haveno": "harbour",
+   "promenis": "walked",
+   "poŝtkartojn": "postcards",
+   "fotojn": "photos",
+   "boatoj": "boats",
+   "lacaj": "tired",
+   "maltrafis": "missed",
+   "atendi": "wait",
+   "semajnon": "week",
+   "somero": "summer"
+  },
+  "questions": [
+   {
+    "q": "Per kio ili veturis al la maro?",
+    "a": [
+     "trajno"
+    ]
+   },
+   {
+    "q": "Kiom da horoj daŭris la vojaĝo?",
+    "a": [
+     "tri",
+     "3"
+    ]
+   },
+   {
+    "q": "Kion ili aĉetis en la malnova urbo?",
+    "a": [
+     "poŝtkarto"
+    ]
+   }
+  ],
+  "notice": "The past tense ends in -is for every person: \"ni veturis\" (we travelled), \"mia frato faris\" (my brother made), \"ĝi estis\" (it was). The start \"mal-\" turns a word into its opposite: \"malnova\" (old), \"malvarma\" (cold).",
+  "back": [
+   [
+    "Posttagmeze ni promenis tra la malnova urbo kaj aĉetis poŝtkartojn.",
+    "In the afternoon we walked through the old town and bought postcards."
+   ],
+   [
+    "Ni maltrafis la lastan trajnon kaj devis atendi unu horon.",
+    "We missed the last train and had to wait an hour."
+   ]
+  ]
+ },
+ {
+  "id": "eo-neighbour",
+  "title": "La nova najbarino",
+  "level": "A2",
+  "text": "Lastan monaton nova najbarino transloĝiĝis en nian domon. Ŝia nomo estas Sofia kaj ŝi venas el alia urbo. Komence ŝi konis neniun ĉi tie. Iun vesperon ŝi frapis ĉe nia pordo, ĉar la lampo en ŝia kuirejo estis rompita. Mia patro iris supren kaj riparis ĝin en dek minutoj. Sofia estis tre dankema kaj la sekvan tagon ŝi alportis al ni kukon. La kuko estis bongusta kaj mia malgranda frato manĝis tri pecojn. Nun Sofia ofte trinkas teon kun mia patrino. Ŝi laboras en hospitalo kaj rakontas interesajn historiojn. Hieraŭ ŝi helpis min pri miaj hejmtaskoj. Dimanĉe ni montris al ŝi la parkon kaj la malnovan bazaron. Ŝi diras, ke ŝi jam sentas sin kiel hejme. Mi pensas, ke ni trovis novan amikinon.",
+  "gloss": {
+   "najbarino": "neighbour",
+   "transloĝiĝis": "moved",
+   "monaton": "month",
+   "urbo": "city",
+   "neniun": "nobody",
+   "frapis": "knocked",
+   "pordo": "door",
+   "kuirejo": "kitchen",
+   "lampo": "lamp",
+   "rompita": "broken",
+   "riparis": "repaired",
+   "minutoj": "minutes",
+   "dankema": "grateful",
+   "kukon": "cake",
+   "bongusta": "delicious",
+   "pecojn": "pieces",
+   "hospitalo": "hospital",
+   "historiojn": "stories",
+   "hejmtaskoj": "homework",
+   "parkon": "park",
+   "jam": "already",
+   "trovis": "found"
+  },
+  "questions": [
+   {
+    "q": "Kio estis rompita en la kuirejo de Sofia?",
+    "a": [
+     "lampo"
+    ]
+   },
+   {
+    "q": "Kion Sofia alportis la sekvan tagon?",
+    "a": [
+     "kuko"
+    ]
+   },
+   {
+    "q": "Kie Sofia laboras?",
+    "a": [
+     "hospitalo"
+    ]
+   }
+  ],
+  "notice": "The ending -in- makes a word female and -ej- makes a place: \"najbarino\" (a woman neighbour), \"patrino\" (mother), \"amikino\" (a woman friend); \"kuirejo\" (kitchen, a place for cooking), \"vendejo\" (shop).",
+  "back": [
+   [
+    "Mia patro iris supren kaj riparis ĝin en dek minutoj.",
+    "My father went upstairs and repaired it in ten minutes."
+   ],
+   [
+    "Ŝi laboras en hospitalo kaj rakontas interesajn historiojn.",
+    "She works in a hospital and tells interesting stories."
+   ]
+  ]
+ },
+ {
+  "id": "eo-cafe",
+  "title": "En la kafejo",
+  "level": "A1",
+  "roles": [
+   "Kelnero",
+   "Gasto"
+  ],
+  "lines": [
+   [
+    0,
+    "Bonan matenon! Kion vi deziras?"
+   ],
+   [
+    1,
+    "Bonan matenon. Kafon kun lakto, mi petas."
+   ],
+   [
+    0,
+    "Ĉu vi deziras ion por manĝi?"
+   ],
+   [
+    1,
+    "Jes, kiujn kukojn vi havas hodiaŭ?"
+   ],
+   [
+    0,
+    "Ni havas pomkukon kaj ĉokoladan kukon."
+   ],
+   [
+    1,
+    "Do mi prenos pecon da pomkuko."
+   ],
+   [
+    0,
+    "Jen. Ĉu ion alian?"
+   ],
+   [
+    1,
+    "Ne, dankon. Kiom ĝi kostas entute?"
+   ],
+   [
+    0,
+    "Ses eŭrojn, mi petas."
+   ],
+   [
+    1,
+    "Jen la mono. Dankon kaj ĝis revido!"
+   ]
+  ],
+  "gloss": {
+   "kafon": "coffee",
+   "lakto": "milk",
+   "ion": "something",
+   "manĝi": "eat",
+   "kukojn": "cakes",
+   "hodiaŭ": "today",
+   "pomkukon": "apple cake",
+   "ĉokoladan": "chocolate",
+   "pecon": "piece",
+   "alian": "other, else",
+   "kiom": "how much",
+   "mono": "money"
+  },
+  "questions": [
+   {
+    "q": "Kun kio la gasto volas la kafon?",
+    "a": [
+     "lakto"
+    ]
+   },
+   {
+    "q": "Kiun kukon la gasto elektas?",
+    "a": [
+     "pomkuko"
+    ]
+   }
+  ],
+  "notice": "A question that can be answered yes or no starts with \"ĉu\": \"Ĉu vi deziras ion por manĝi?\". \"Mi petas\" (I ask) means please, \"dankon\" is thank you and \"jen\" is \"here you are\"."
+ },
+ {
+  "id": "eo-hotel",
+  "title": "En la hotelo",
+  "level": "A2",
+  "roles": [
+   "Akceptisto",
+   "Gasto"
+  ],
+  "lines": [
+   [
+    0,
+    "Bonan vesperon. Kiel mi povas helpi vin?"
+   ],
+   [
+    1,
+    "Bonan vesperon. Mi havas rezervon por du noktoj."
+   ],
+   [
+    0,
+    "Kio estas via nomo, mi petas?"
+   ],
+   [
+    1,
+    "Mia nomo estas Anna Berg. Jen mia pasporto."
+   ],
+   [
+    0,
+    "Dankon. Via ĉambro estas en la tria etaĝo."
+   ],
+   [
+    1,
+    "Ĉu la matenmanĝo estas inkluzivita en la prezo?"
+   ],
+   [
+    0,
+    "Jes, la matenmanĝo estas de la sepa ĝis la deka."
+   ],
+   [
+    1,
+    "Tre bone. Ĉu estas lifto? Mia valizo estas peza."
+   ],
+   [
+    0,
+    "Jes, la lifto estas apud la ŝtuparo. Jen via ŝlosilo."
+   ],
+   [
+    1,
+    "Koran dankon. Agrablan vesperon!"
+   ]
+  ],
+  "gloss": {
+   "helpi": "help",
+   "rezervon": "reservation",
+   "noktoj": "nights",
+   "nomo": "name",
+   "pasporto": "passport",
+   "ĉambro": "room",
+   "etaĝo": "floor",
+   "matenmanĝo": "breakfast",
+   "inkluzivita": "included",
+   "prezo": "price",
+   "lifto": "lift",
+   "valizo": "suitcase",
+   "peza": "heavy",
+   "ŝtuparo": "stairs",
+   "ŝlosilo": "key",
+   "vesperon": "evening"
+  },
+  "questions": [
+   {
+    "q": "Por kiom da noktoj la gasto havas rezervon?",
+    "a": [
+     "du",
+     "2"
+    ]
+   },
+   {
+    "q": "En kiu etaĝo estas la ĉambro?",
+    "a": [
+     "tria",
+     "3"
+    ]
+   }
+  ],
+  "notice": "Numbers become \"first, second, third\" by taking the adjective ending -a: \"tri\" (three) gives \"tria\" (third), \"sep\" gives \"la sepa\" (seven o'clock, the seventh hour). \"Jen\" points at something: \"Jen mia pasporto\"."
+ }
+]

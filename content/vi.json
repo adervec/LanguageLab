@@ -1,0 +1,411 @@
+[
+ {
+  "id": "vi-market",
+  "title": "Ở chợ",
+  "level": "A1",
+  "text": "Thứ bảy nào chị Maria cũng đi chợ. Chợ nằm ở trung tâm thành phố. Trời nắng và ở đó có rất nhiều người. Chị Maria thích chợ này vì trái cây ở đây tươi và rẻ. Trước tiên chị mua táo và cam. Sau đó chị mua bánh mì, phô mai và một ít cá. Ông bán cá rất thân thiện. Ông ấy luôn hỏi thăm gia đình chị. Ở chợ, chị Maria thường gặp bạn của mình là chị Elena. Hôm nay hai người cùng uống cà phê và nói chuyện rất lâu. Buổi trưa chị Maria về nhà với hai cái túi nặng. Chị mệt nhưng vui.",
+  "gloss": {
+   "chợ": "market",
+   "trung": "(trung tâm: centre)",
+   "thành": "(thành phố: city, town)",
+   "nắng": "sunny, sunshine",
+   "người": "people",
+   "trái": "(trái cây: fruit)",
+   "tươi": "fresh",
+   "rẻ": "cheap",
+   "táo": "apples",
+   "cam": "oranges",
+   "bánh": "(bánh mì: bread)",
+   "phô": "(phô mai: cheese)",
+   "cá": "fish",
+   "thân": "(thân thiện: friendly)",
+   "gia": "(gia đình: family)",
+   "bạn": "friend",
+   "cùng": "together",
+   "nặng": "heavy",
+   "túi": "bags",
+   "mệt": "tired",
+   "vui": "happy"
+  },
+  "questions": [
+   {
+    "q": "Chợ nằm ở đâu?",
+    "a": [
+     "trung tâm"
+    ]
+   },
+   {
+    "q": "Trước tiên chị Maria mua gì?",
+    "a": [
+     "táo"
+    ]
+   },
+   {
+    "q": "Ở chợ chị Maria thường gặp ai?",
+    "a": [
+     "Elena"
+    ]
+   }
+  ],
+  "notice": "Vietnamese words never change their form. People are named by a family word instead of \"he\" or \"she\": \"chị\" (older sister) for a young woman, \"ông\" (grandfather) for an older man. Each syllable is written separately: \"trung tâm\" is one word, \"centre\".",
+  "back": [
+   [
+    "Trước tiên chị mua táo và cam.",
+    "First she buys apples and oranges."
+   ],
+   [
+    "Ông ấy luôn hỏi thăm gia đình chị.",
+    "He always asks about her family."
+   ]
+  ]
+ },
+ {
+  "id": "vi-day",
+  "title": "Một ngày của tôi",
+  "level": "A1",
+  "text": "Tôi tên là Daniel và tôi sống trong một căn hộ nhỏ. Mỗi buổi sáng tôi dậy lúc bảy giờ. Trước tiên tôi uống trà và ăn bánh mì với bơ. Sau đó tôi đi làm bằng xe buýt. Tôi làm việc ở một hiệu sách ở trung tâm thành phố. Tôi thích công việc của mình vì tôi yêu sách. Buổi trưa tôi ăn súp ở một nhà hàng nhỏ. Buổi chiều có nhiều khách đến cửa hàng. Buổi tối tôi về nhà và nấu bữa tối. Sau bữa tối tôi gọi điện cho mẹ hoặc đọc sách. Tôi đi ngủ lúc mười một giờ. Chủ nhật tôi không đi làm và ngủ lâu hơn.",
+  "gloss": {
+   "căn": "(căn hộ: flat)",
+   "dậy": "get up",
+   "sáng": "morning",
+   "trà": "tea",
+   "bơ": "butter",
+   "làm": "to do, to work (đi làm: go to work)",
+   "buýt": "(xe buýt: bus)",
+   "hiệu": "(hiệu sách: bookshop)",
+   "thành": "(thành phố: city)",
+   "sách": "books",
+   "súp": "soup",
+   "hàng": "(nhà hàng: restaurant; cửa hàng: shop)",
+   "chiều": "afternoon",
+   "khách": "customers",
+   "tối": "evening",
+   "nấu": "cook",
+   "bữa": "meal (bữa tối: dinner)",
+   "gọi": "to call (gọi điện: to phone)",
+   "mẹ": "mother",
+   "ngủ": "sleep",
+   "lâu": "long (lâu hơn: longer)"
+  },
+  "questions": [
+   {
+    "q": "Daniel làm việc ở đâu?",
+    "a": [
+     "hiệu sách"
+    ]
+   },
+   {
+    "q": "Daniel đi làm bằng gì?",
+    "a": [
+     "xe buýt"
+    ]
+   },
+   {
+    "q": "Buổi trưa Daniel ăn gì?",
+    "a": [
+     "súp"
+    ]
+   }
+  ],
+  "notice": "Time is shown by words such as \"mỗi buổi sáng\" (every morning) and \"buổi tối\" (in the evening): the verb itself never changes. \"Không\" before a verb means \"not\": \"tôi không đi làm\" (I do not go to work).",
+  "back": [
+   [
+    "Sau đó tôi đi làm bằng xe buýt.",
+    "Then I go to work by bus."
+   ],
+   [
+    "Buổi tối tôi về nhà và nấu bữa tối.",
+    "In the evening I go home and cook dinner."
+   ]
+  ]
+ },
+ {
+  "id": "vi-sea",
+  "title": "Cuối tuần ở biển",
+  "level": "A2",
+  "text": "Cuối tuần trước tôi và anh trai đi biển. Chúng tôi lên tàu từ sáng sớm và chuyến đi kéo dài ba tiếng. Thời tiết rất đẹp: bầu trời xanh và nước ấm. Chúng tôi bơi rất lâu, sau đó nằm trên bãi biển. Buổi trưa chúng tôi ăn cá tươi ở một nhà hàng nhỏ gần bến cảng. Người phục vụ rất thân thiện và mang nước lạnh cho chúng tôi. Buổi chiều chúng tôi đi dạo trong khu phố cổ và mua bưu thiếp. Anh trai tôi chụp rất nhiều ảnh những chiếc thuyền. Buổi tối chúng tôi rất mệt nhưng chưa muốn về nhà. Chúng tôi lỡ chuyến tàu cuối cùng và phải đợi một tiếng. Đó là ngày vui nhất của mùa hè. Lần sau chúng tôi muốn ở lại cả một tuần.",
+  "gloss": {
+   "tuần": "week (cuối tuần: weekend)",
+   "anh": "older brother (anh trai)",
+   "biển": "sea",
+   "tàu": "train",
+   "chuyến": "trip (chuyến đi: journey)",
+   "tiếng": "hour",
+   "thời": "(thời tiết: weather)",
+   "trời": "(bầu trời: sky)",
+   "xanh": "blue",
+   "nước": "water",
+   "ấm": "warm",
+   "bơi": "swam",
+   "bãi": "(bãi biển: beach)",
+   "phục": "(người phục vụ: waiter)",
+   "cảng": "(bến cảng: harbour)",
+   "dạo": "(đi dạo: to walk, to stroll)",
+   "bưu": "(bưu thiếp: postcard)",
+   "ảnh": "photos",
+   "thuyền": "boats",
+   "mệt": "tired",
+   "lỡ": "missed",
+   "đợi": "wait",
+   "hè": "(mùa hè: summer)"
+  },
+  "questions": [
+   {
+    "q": "Họ đi biển bằng gì?",
+    "a": [
+     "tàu"
+    ]
+   },
+   {
+    "q": "Chuyến đi kéo dài mấy tiếng?",
+    "a": [
+     "ba",
+     "3"
+    ]
+   },
+   {
+    "q": "Họ mua gì trong khu phố cổ?",
+    "a": [
+     "bưu thiếp"
+    ]
+   }
+  ],
+  "notice": "\"Chúng tôi\" means \"we\" without the person spoken to. Past time needs no special verb form: \"tuần trước\" (last week) is enough. \"Rất\" before a word means \"very\": \"rất đẹp\", \"rất mệt\".",
+  "back": [
+   [
+    "Buổi chiều chúng tôi đi dạo trong khu phố cổ và mua bưu thiếp.",
+    "In the afternoon we walked through the old town and bought postcards."
+   ],
+   [
+    "Chúng tôi lỡ chuyến tàu cuối cùng và phải đợi một tiếng.",
+    "We missed the last train and had to wait an hour."
+   ]
+  ]
+ },
+ {
+  "id": "vi-neighbour",
+  "title": "Người hàng xóm mới",
+  "level": "A2",
+  "text": "Tháng trước có một người hàng xóm mới chuyển đến tòa nhà của chúng tôi. Chị ấy tên là Sofia và đến từ một thành phố khác. Lúc đầu chị không quen ai ở đây. Một buổi tối chị gõ cửa nhà chúng tôi vì cái đèn trong bếp của chị bị hỏng. Bố tôi lên tầng trên và sửa nó trong mười phút. Chị Sofia rất biết ơn và hôm sau chị mang cho chúng tôi một cái bánh ngọt. Bánh rất ngon và em trai tôi đã ăn ba miếng. Bây giờ chị Sofia thường uống trà với mẹ tôi. Chị làm việc ở bệnh viện và kể những câu chuyện thú vị. Hôm qua chị giúp tôi làm bài tập về nhà. Chủ nhật chúng tôi dẫn chị đi xem công viên và khu chợ cũ. Chị nói rằng chị đã thấy như ở nhà. Tôi nghĩ chúng tôi đã có một người bạn mới.",
+  "gloss": {
+   "xóm": "(hàng xóm: neighbour)",
+   "chuyển": "to move (chuyển đến: moved in)",
+   "tháng": "month",
+   "thành": "(thành phố: city)",
+   "ai": "who, anybody",
+   "gõ": "knocked",
+   "cửa": "door",
+   "bếp": "kitchen",
+   "đèn": "lamp",
+   "hỏng": "broken",
+   "sửa": "repaired",
+   "phút": "minutes",
+   "ơn": "(biết ơn: grateful)",
+   "bánh": "cake (bánh ngọt: sweet cake)",
+   "ngon": "delicious",
+   "miếng": "pieces",
+   "bệnh": "(bệnh viện: hospital)",
+   "chuyện": "(câu chuyện: story)",
+   "bài": "(bài tập về nhà: homework)",
+   "công": "(công viên: park)",
+   "đã": "already (marks the past)"
+  },
+  "questions": [
+   {
+    "q": "Cái gì bị hỏng trong bếp của chị Sofia?",
+    "a": [
+     "đèn"
+    ]
+   },
+   {
+    "q": "Hôm sau chị Sofia mang gì đến?",
+    "a": [
+     "bánh"
+    ]
+   },
+   {
+    "q": "Chị Sofia làm việc ở đâu?",
+    "a": [
+     "bệnh viện"
+    ]
+   }
+  ],
+  "notice": "Vietnamese marks time with small words in front of the verb: \"đã\" for something already done (\"em trai tôi đã ăn ba miếng\"). \"Bị\" shows that something bad happened: \"bị hỏng\" (broke down).",
+  "back": [
+   [
+    "Bố tôi lên tầng trên và sửa nó trong mười phút.",
+    "My father went upstairs and repaired it in ten minutes."
+   ],
+   [
+    "Chị làm việc ở bệnh viện và kể những câu chuyện thú vị.",
+    "She works in a hospital and tells interesting stories."
+   ]
+  ]
+ },
+ {
+  "id": "vi-cafe",
+  "title": "Ở quán cà phê",
+  "level": "A1",
+  "roles": [
+   "Người phục vụ",
+   "Khách"
+  ],
+  "lines": [
+   [
+    0,
+    "Xin chào! Quý khách dùng gì ạ?"
+   ],
+   [
+    1,
+    "Xin chào. Cho tôi một ly cà phê sữa."
+   ],
+   [
+    0,
+    "Quý khách có muốn ăn gì không ạ?"
+   ],
+   [
+    1,
+    "Có, hôm nay quán có những loại bánh nào?"
+   ],
+   [
+    0,
+    "Chúng tôi có bánh táo và bánh sô cô la."
+   ],
+   [
+    1,
+    "Vậy cho tôi một miếng bánh táo."
+   ],
+   [
+    0,
+    "Của quý khách đây ạ. Quý khách cần gì nữa không?"
+   ],
+   [
+    1,
+    "Không, cảm ơn. Tất cả bao nhiêu tiền?"
+   ],
+   [
+    0,
+    "Sáu mươi nghìn đồng ạ."
+   ],
+   [
+    1,
+    "Tiền đây ạ. Cảm ơn và tạm biệt!"
+   ]
+  ],
+  "gloss": {
+   "cà": "(cà phê: coffee)",
+   "sữa": "milk",
+   "gì": "what, something",
+   "ăn": "eat",
+   "bánh": "cake, cakes",
+   "nay": "(hôm nay: today)",
+   "táo": "apple",
+   "sô": "(sô cô la: chocolate)",
+   "miếng": "piece",
+   "nữa": "more, else",
+   "nhiêu": "(bao nhiêu: how much)",
+   "tiền": "money"
+  },
+  "questions": [
+   {
+    "q": "Khách gọi cà phê với gì?",
+    "a": [
+     "sữa"
+    ]
+   },
+   {
+    "q": "Khách chọn bánh gì?",
+    "a": [
+     "táo"
+    ]
+   }
+  ],
+  "notice": "\"Cho tôi …\" (give me …) is the usual way to order: \"Cho tôi một ly cà phê sữa\". The little word \"ạ\" at the end of a sentence makes it polite. \"Một ly\" is \"a glass of\" and \"một miếng\" is \"a piece of\"."
+ },
+ {
+  "id": "vi-hotel",
+  "title": "Ở khách sạn",
+  "level": "A2",
+  "roles": [
+   "Lễ tân",
+   "Khách"
+  ],
+  "lines": [
+   [
+    0,
+    "Xin chào quý khách. Tôi có thể giúp gì ạ?"
+   ],
+   [
+    1,
+    "Xin chào. Tôi đã đặt phòng cho hai đêm."
+   ],
+   [
+    0,
+    "Xin quý khách cho biết tên ạ."
+   ],
+   [
+    1,
+    "Tôi tên là Anna Berg. Đây là hộ chiếu của tôi."
+   ],
+   [
+    0,
+    "Cảm ơn quý khách. Phòng của quý khách ở tầng ba."
+   ],
+   [
+    1,
+    "Giá phòng đã bao gồm bữa sáng chưa?"
+   ],
+   [
+    0,
+    "Rồi ạ, bữa sáng từ bảy giờ đến mười giờ."
+   ],
+   [
+    1,
+    "Tốt quá. Ở đây có thang máy không? Va li của tôi rất nặng."
+   ],
+   [
+    0,
+    "Có ạ, thang máy ở cạnh cầu thang. Chìa khóa của quý khách đây ạ."
+   ],
+   [
+    1,
+    "Cảm ơn rất nhiều. Chúc buổi tối vui vẻ!"
+   ]
+  ],
+  "gloss": {
+   "giúp": "help",
+   "đặt": "to book (đặt phòng: to book a room)",
+   "đêm": "nights",
+   "tên": "name",
+   "chiếu": "(hộ chiếu: passport)",
+   "phòng": "room",
+   "tầng": "floor",
+   "bữa": "meal (bữa sáng: breakfast)",
+   "gồm": "(bao gồm: to include)",
+   "giá": "price",
+   "máy": "(thang máy: lift)",
+   "va": "(va li: suitcase)",
+   "nặng": "heavy",
+   "cầu": "(cầu thang: stairs)",
+   "khóa": "(chìa khóa: key)",
+   "tối": "evening"
+  },
+  "questions": [
+   {
+    "q": "Khách đặt phòng cho mấy đêm?",
+    "a": [
+     "hai",
+     "2"
+    ]
+   },
+   {
+    "q": "Phòng của khách ở tầng mấy?",
+    "a": [
+     "ba",
+     "3"
+    ]
+   }
+  ],
+  "notice": "A yes-or-no question ends with \"không\" (not) or, when asking whether something is already done, with \"chưa\" (yet): \"có thang máy không?\", \"đã bao gồm bữa sáng chưa?\". The answers are \"có\" (yes) and \"rồi\" (already)."
+ }
+]
