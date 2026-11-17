@@ -465,7 +465,18 @@ assert.match(await main(), /Added “Le chat <b>perdu<\/b>”\./, 'a background 
 assert.match(await page.evaluate(() => self.lmStory), /^Write a text of \d+ to \d+ words for a learner at level [ABC][12]: .* Work in these words where they fit naturally: \p{L}/u); // the words in review are named
 assert.equal(await page.locator('.card', { hasText: 'written on this device' }).count(), 1);
 assert.equal(await page.locator('#main b', { hasText: /^perdu$/ }).count(), 0, 'a model\'s title is never markup');
+// a story read aloud: the speaking step on its own, for any text (here one of the learner's own), scored by the recogniser
+await page.locator('.card', { hasText: 'written on this device' }).locator('button', { hasText: 'Read aloud' }).click();
+await page.waitForFunction(() => /Sentence 1 of \d+\. Read it aloud\./.test(document.querySelector('#main').innerText));
+await page.evaluate(() => { self.heard = 'bonjour'; self.heardAlt = self.heardSure = undefined; });
+await click('Speak');
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('It heard: bonjour'));
+for (let i = 0; i < 8 && await has('Next sentence'); i++) await click('Next sentence');
+await click('Finish');
+assert.match(await main(), /Reading aloud done[\s\S]*of your words understood when you spoke/);
+await click('Done');
 await click('Progress');                                 // the suggestion is still beside its sitting; kept, it becomes a review card
+assert.match(await main(), /read aloud \d+%/);
 await click('Keep for review');
 assert.equal(await page.locator('button', { hasText: 'Keep for review' }).count(), 0);
 await click('Words');

@@ -285,7 +285,7 @@ function vLibrary() {
     <div class="sub">${meta(s)}${s.cues ? ' · ' + t('your recording') : ''}${s.source === 'device' ? ' · ' + t('written on this device') : ''}${s.readAt ? ' · ' + t('read {date}', { date: A.fmt.date(s.readAt) }) : ''}</div>
     ${confirmRemove === s.id ? H`<div class="row acts"><b>${t('Remove it from your library?')}</b><button data-act="remove2" data-id="${s.id}">${t('Yes, remove')}</button><button data-act="noremove">${t('Cancel')}</button></div>`
       : H`<div class="row acts"><button data-act="start" data-id="${s.id}">${t('Sitting')}</button><button data-act="start" data-id="${s.id}" data-mode="read">${t('Read')}</button>
-        <button data-act="radio" data-id="${s.id}">${t('Listen')}</button>${isTalk(s) ? H`<button data-act="start" data-id="${s.id}" data-mode="talk">${t('Role-play')}</button>` : ''}
+        <button data-act="radio" data-id="${s.id}">${t('Listen')}</button>${isTalk(s) ? H`<button data-act="start" data-id="${s.id}" data-mode="talk">${t('Role-play')}</button>` : SR ? H`<button data-act="start" data-id="${s.id}" data-mode="talk">${t('Read aloud')}</button>` : ''}
         ${own(s) && !s.cues ? H`<button data-act="sharetext" data-id="${s.id}">${t('Share as a link')}</button>` : ''}
         <button data-act="remove" data-id="${s.id}" aria-label="${t('Remove “{title}”', { title: s.title })}">✕</button></div>`}
   </div>`)}
@@ -348,7 +348,7 @@ function vProgress() {
   const avg = f => { const v = got(f).slice(-5); return v.length ? pct(v.reduce((n, x) => n + x, 0) / v.length) : '–'; };
   const trend = got(s => s.breakdown.listening).slice(-30), rows = C.abilities(S, S.lang), est = C.estimate(rows), cards = Object.values(L().cards);
   const bits = s => [A.fmt.date(s.day + 'T00:00:00'),
-    s.mode === 'chat' ? t('conversation') : s.mode === 'talk' ? t('role-play {pct}', { pct: pct(s.breakdown.speaking) }) : s.score == null ? t('no dictation') : t('dictation {pct}', { pct: pct(s.score / 100) }),
+    s.mode === 'chat' ? t('conversation') : s.mode === 'talk' ? (story(s.storyId) && !isTalk(story(s.storyId)) ? t('read aloud {pct}', { pct: pct(s.breakdown.speaking) }) : t('role-play {pct}', { pct: pct(s.breakdown.speaking) })) : s.score == null ? t('no dictation') : t('dictation {pct}', { pct: pct(s.score / 100) }),
     s.breakdown.comprehension == null ? '' : t('questions {pct}', { pct: pct(s.breakdown.comprehension) }),
     s.mode === 'talk' || s.breakdown.speaking == null ? '' : t('read aloud {pct}', { pct: pct(s.breakdown.speaking) }),
     s.mode === 'sitting' || s.mode === 'chat' ? t.n('{n} word written', '{n} words written', s.breakdown.wordsWritten) : ''].filter(Boolean).join(' · ');
@@ -435,10 +435,13 @@ function rolePlay(s) {
   const mine = s.lines.map((l, li) => ({ li, target: l[1].normalize('NFC') })).filter(x => s.lines[x.li][0] === 1);
   return [...(SR ? mine.map(x => ({ ...x, memory: false })) : []), ...mine.map(x => ({ ...x, memory: true }))].map(x => ({ ...x, heard: '', score: null, tries: 0 }));
 }
-// mode: 'sitting' (everything, reviewed by AI), 'read' (just reading), 'talk' (just the role-play), 'first' (a first lesson)
+// mode: 'sitting' (everything, reviewed by AI), 'read' (just reading), 'talk' (just the speaking: a dialogue's role-play, or up to
+// eight sentences of a story read aloud), 'first' (a first lesson)
 function startSitting(id, mode = 'sitting') {
   const s = story(id);
   if (s.phrases) mode = 'first';
+  const aloud = mode === 'talk' && !isTalk(s) && SR ? C.pickDictation(C.storySentences(s), 8, S.lang).map(x => ({ target: x.normalize('NFC') })) : [];
+  if (mode === 'talk' && !isTalk(s) && !aloud.length) mode = 'read'; // nothing to say (no recogniser, or no sentence of a sayable length): it is read
   const full = mode === 'sitting';
   // A first lesson: every phrase is studied; half are then typed from the ear, the other half written from their meaning and said aloud.
   // The halves swap each time the lesson is done again.
@@ -460,7 +463,7 @@ function startSitting(id, mode = 'sitting') {
     : canMean() ? (spare.length ? spare : sit.dict.slice(-2).map(d => d.target)).map(target => ({ target, typed: '', score: null })) : [];
   sit.ri = 0;
   sit.speak = mode === 'read' ? [] : isTalk(s) ? rolePlay(s)
-    : SR ? (s.phrases ? sit.rebuild : sit.dict.slice(0, 3)).map(d => ({ target: d.target, meaning: d.meaning, heard: '', score: null, tries: 0 })) : [];
+    : SR ? (s.phrases ? sit.rebuild : mode === 'talk' ? aloud : sit.dict.slice(0, 3)).map(d => ({ target: d.target, meaning: d.meaning, heard: '', score: null, tries: 0 })) : [];
   sit.steps = (s.phrases ? ['learn', 'dictate', 'rebuild', sit.speak.length && 'speak'] : mode === 'read' ? ['read'] : mode === 'talk' ? ['speak']
     : ['listen', sit.asked.length && 'ask', 'read', sit.dict.length && 'dictate', sit.rebuild.length && 'rebuild', sit.speak.length && 'speak', 'write']).filter(Boolean);
   sit.step = sit.steps[0];
@@ -572,7 +575,7 @@ function vSitting() {
     <p class="sub">${t('The app does not grade writing. The AI review does, honestly.')}</p>
     <div class="bar"><button class="primary" data-act="next">${t('Finish the sitting')}</button></div>`;
   const b = sit.rec.breakdown;
-  return H`<h1>${{ sitting: t('Sitting done'), read: t('Reading done'), talk: t('Role-play done'), first: t('Lesson done') }[sit.mode]}</h1>
+  return H`<h1>${{ sitting: t('Sitting done'), read: t('Reading done'), talk: isTalk(s) ? t('Role-play done') : t('Reading aloud done'), first: t('Lesson done') }[sit.mode]}</h1>
     <div class="tiles">
       ${b.comprehension == null ? '' : tile(pct(b.comprehension), t('of the questions right after only hearing it'))}
       ${b.listening == null ? '' : tile(pct(b.listening), t('of the words caught in dictation'))}
@@ -648,7 +651,7 @@ function finishSitting() {
     speaking: sit.speak.filter(d => d.tries).map(({ target, heard, score, tries, memory, typed, near, sure }) => ({ target, heard, score, tries, memory, typed, near, sure })),
     writing: { text: sit.mode === 'sitting' ? ($('#ans')?.value || '').trim().slice(0, 8000) : '', spoken: !!sit.spoken } };
   Object.assign(rec, C.scoreSitting(rec));
-  if (sit.mode === 'talk' || sit.mode === 'first') s.readAt = Date.now();
+  if ((sit.mode === 'talk' && isTalk(s)) || sit.mode === 'first') s.readAt = Date.now(); // (a story read aloud in part is not a story read)
   if (s.phrases) { // every phrase of the lesson joins the review: shown by its meaning, to be written. One got wholly right just now waits a day.
     const got = new Map([...sit.dict, ...sit.rebuild].map(d => [d.target, d.score]));
     s.back.forEach(([p, meaning], n) => { L().fixes[`first:${s.id}:${n}`] ??= { wrong: meaning, right: p, why: '', added: Date.now(), srs: got.get(p.normalize('NFC')) === 1 ? C.schedule(null, true) : null }; });

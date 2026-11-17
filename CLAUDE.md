@@ -52,8 +52,8 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   app's score; the channel's `corrections` become review cards. Where the browser's model is on the device already (`lmReady`: nothing nobody
   tapped for may start a download), `deviceHints` puts its suggestions beside the sitting (`hints`, three at most); one becomes a
   review card only when the learner keeps it (ids `h:…`).
-- **Other sessions** reuse the same steps: free reading (`mode: 'read'`), a role-play alone
-  (`'talk'`), and Just listen (`'listen'`, stories played one after another). All are rows in
+- **Other sessions** reuse the same steps: free reading (`mode: 'read'`), a role-play alone, or up to eight
+  sentences of a story read aloud (`'talk'`: the speaking step on its own; a text with nothing sayable is opened for reading), and Just listen (`'listen'`, stories played one after another). All are rows in
   `S.sittings` with a `mode`, and each is logged once with `appFont.logSession`.
 - **Review**: tapped words come back as a blank in the sentence they were met in; corrections come
   back as "type it again, corrected". Both use learning-pit's scheduler (cut down, in `core.js`).
