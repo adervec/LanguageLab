@@ -410,5 +410,463 @@
    }
   ],
   "notice": "\"U\" is the polite word for \"you\" and \"your\", used with strangers: \"Wat is u naam?\", \"u kamer\", \"u sleutel\". Friends say \"jy\" and \"jou\"."
+ },
+ {
+  "id": "af-family",
+  "title": "My gesin",
+  "level": "A1",
+  "text": "My naam is Anna. Ek woon saam met my gesin in 'n klein huis naby die rivier. My ma is 'n onderwyser en my pa werk in 'n winkel. Ek het 'n broer en 'n suster. My broer is tien jaar oud en hy hou van sokker. My suster is nog klein: sy is drie jaar oud. Ons het ook 'n hond, en sy naam is Max. Elke oggend gaan stap my pa met die hond. In die aand eet ons saam en praat oor die dag. Na aandete was ek en my broer die skottelgoed. Op Sondag kom my ouma en bring 'n koek. Ek is baie lief vir my gesin.",
+  "gloss": {
+   "gesin": "family",
+   "huis": "house",
+   "rivier": "river",
+   "ma": "mother",
+   "onderwyser": "teacher",
+   "pa": "father",
+   "winkel": "shop",
+   "broer": "brother",
+   "suster": "sister",
+   "jaar": "years",
+   "sokker": "football",
+   "klein": "small",
+   "hond": "dog",
+   "oggend": "morning",
+   "stap": "walk (gaan stap: goes for a walk)",
+   "aand": "evening",
+   "eet": "eat",
+   "saam": "together",
+   "aandete": "dinner",
+   "skottelgoed": "dishes",
+   "sondag": "Sunday",
+   "ouma": "grandmother",
+   "koek": "cake"
+  },
+  "questions": [
+   {
+    "q": "Waar werk Anna se pa?",
+    "a": [
+     "winkel"
+    ]
+   },
+   {
+    "q": "Hoe oud is die broer?",
+    "a": [
+     "tien",
+     "10"
+    ]
+   },
+   {
+    "q": "Wie kom op Sondag?",
+    "a": [
+     "ouma"
+    ]
+   }
+  ],
+  "notice": "The Afrikaans verb never changes for the person: \"ek woon\", \"hy hou\", \"ons eet\". After a time expression the verb comes before the subject: \"Elke oggend gaan stap my pa\", \"In die aand eet ons\". \"'n\" is \"a\".",
+  "back": [
+   [
+    "My ma is 'n onderwyser en my pa werk in 'n winkel.",
+    "My mother is a teacher and my father works in a shop."
+   ],
+   [
+    "Op Sondag kom my ouma en bring 'n koek.",
+    "On Sunday my grandmother comes and brings a cake."
+   ]
+  ]
+ },
+ {
+  "id": "af-town",
+  "title": "Ons dorp",
+  "level": "A1",
+  "text": "Ons dorp is klein, maar dit is mooi. In die middel is daar 'n ou plein met 'n fontein. Langs die plein is daar 'n skool, 'n apteek en twee kafees. Die stasie is agter die park. Elke oggend neem baie mense die trein na die stad. In die middag speel die kinders in die park, en ou mans speel skaak. In die somer kom toeriste en neem foto's van die brug. In die winter is die dorp stil. Op Saterdag is daar 'n mark op die plein. Daar kan jy groente, heuning en blomme koop. In die aand stap ek graag langs die rivier. Ek wil nie in 'n groot stad woon nie.",
+  "gloss": {
+   "dorp": "town",
+   "mooi": "beautiful",
+   "middel": "centre",
+   "plein": "square",
+   "fontein": "fountain",
+   "skool": "school",
+   "apteek": "pharmacy",
+   "stasie": "station",
+   "agter": "behind",
+   "park": "park",
+   "trein": "train",
+   "middag": "afternoon",
+   "kinders": "children",
+   "skaak": "chess",
+   "somer": "summer",
+   "toeriste": "tourists",
+   "brug": "bridge",
+   "winter": "winter",
+   "stil": "quiet",
+   "saterdag": "Saturday",
+   "groente": "vegetables",
+   "heuning": "honey",
+   "blomme": "flowers",
+   "rivier": "river"
+  },
+  "questions": [
+   {
+    "q": "Wat is in die middel van die dorp?",
+    "a": [
+     "plein"
+    ]
+   },
+   {
+    "q": "Waar is die stasie?",
+    "a": [
+     "park"
+    ]
+   },
+   {
+    "q": "Wanneer kom die toeriste?",
+    "a": [
+     "somer"
+    ]
+   }
+  ],
+  "notice": "\"Daar is\" means \"there is\": \"is daar 'n ou plein\". \"Not\" is said twice, once after the verb and once at the end: \"Ek wil nie in 'n groot stad woon nie\". After \"kan\" or \"wil\" the other verb goes to the end: \"kan jy ... koop\".",
+  "back": [
+   [
+    "Die stasie is agter die park.",
+    "The station is behind the park."
+   ],
+   [
+    "In die winter is die dorp stil.",
+    "In winter the town is quiet."
+   ]
+  ]
+ },
+ {
+  "id": "af-birthday",
+  "title": "Ouma se verjaarsdag",
+  "level": "A2",
+  "text": "Gister was dit my ouma se verjaarsdag. Sy is nou tagtig jaar oud. Die hele familie het na haar huis in die dorpie gekom. My tante het 'n groot koek gebak en my oom het blomme gebring. Ons het vir haar 'n warm serp en 'n boek oor tuine gegee. Voor middagete het ons 'n liedjie gesing, en Ouma het gelag. Op die tafel was daar sop, hoender met aartappels en baie slaai. Na middagete het sy vir ons ou foto's gewys. Op een foto was sy 'n jong vrou met 'n fiets. Sy het vertel dat sy elke dag daarmee werk toe gery het. Toe het my neef kitaar gespeel en almal het gedans. Selfs my klein boetie het met Ouma gedans. In die aand was sy moeg maar gelukkig. Sy het gesê dat dit die beste verjaarsdag van haar lewe was. Ons het laat huis toe gegaan, toe die sterre al aan die hemel was.",
+  "gloss": {
+   "gister": "yesterday",
+   "verjaarsdag": "birthday",
+   "tagtig": "eighty",
+   "hele": "whole",
+   "dorpie": "small town, village",
+   "tante": "aunt",
+   "gebak": "baked",
+   "oom": "uncle",
+   "blomme": "flowers",
+   "gegee": "gave",
+   "serp": "scarf",
+   "tuine": "gardens",
+   "gesing": "sang",
+   "liedjie": "song",
+   "gelag": "laughed",
+   "hoender": "chicken",
+   "aartappels": "potatoes",
+   "gewys": "showed",
+   "jong": "young",
+   "fiets": "bicycle",
+   "neef": "cousin; nephew",
+   "kitaar": "guitar",
+   "gedans": "danced",
+   "moeg": "tired",
+   "beste": "best",
+   "lewe": "life",
+   "sterre": "stars"
+  },
+  "questions": [
+   {
+    "q": "Hoe oud is Ouma?",
+    "a": [
+     "tagtig",
+     "80"
+    ]
+   },
+   {
+    "q": "Wie het blomme gebring?",
+    "a": [
+     "oom"
+    ]
+   },
+   {
+    "q": "Wat het die neef gespeel?",
+    "a": [
+     "kitaar"
+    ]
+   }
+  ],
+  "notice": "The past is \"het\" plus a form with ge-, which goes to the end: \"het ... gebak\" (baked), \"het ... gebring\" (brought), \"het ... gedans\" (danced). Possession is \"se\": \"my ouma se verjaarsdag\".",
+  "back": [
+   [
+    "My tante het 'n groot koek gebak en my oom het blomme gebring.",
+    "My aunt baked a big cake and my uncle brought flowers."
+   ],
+   [
+    "Na middagete het sy vir ons ou foto's gewys.",
+    "After lunch she showed us old photos."
+   ]
+  ]
+ },
+ {
+  "id": "af-wallet",
+  "title": "Die verlore beursie",
+  "level": "B1",
+  "text": "Verlede Vrydag wou Daniel by die supermark betaal, maar sy beursie was nie in sy sak nie. Hy was baie bekommerd, want sy bankkaart en sy rybewys was daarin. Hy het sy inkopies by die kasregister gelos en met dieselfde pad teruggegaan. Hy het oral gesoek, op die sypaadjie en by die bushalte, maar hy het niks gekry nie. By die huis het hy die bank gebel en die kaart laat blokkeer. Daardie nag kon hy nie slaap nie, want hy het aan al sy dokumente gedink. Twee dae later het 'n brief van die polisie gekom. Daar het 'n vrou die beursie op die bus gekry en dit na die polisiestasie geneem. Daniel het dadelik soontoe gegaan. Niks het weggeraak nie, selfs nie die geld nie. Die polisiebeampte het vir hom die vrou se adres gegee, want hy wou haar bedank. Die volgende dag het hy blomme gekoop en vir haar 'n kaartjie geskryf. Sy was verras en het hom vir koffie genooi. Hulle het 'n uur lank gesels, en nou is hulle goeie vriende. Van toe af kyk Daniel altyd in sy sak voordat hy van die bus afklim.",
+  "gloss": {
+   "vrydag": "Friday",
+   "betaal": "pay",
+   "supermark": "supermarket",
+   "beursie": "wallet",
+   "sak": "pocket",
+   "bekommerd": "worried",
+   "bankkaart": "bank card",
+   "rybewys": "driving licence",
+   "inkopies": "shopping",
+   "kasregister": "till",
+   "dieselfde": "same",
+   "oral": "everywhere",
+   "sypaadjie": "pavement",
+   "bushalte": "bus stop",
+   "gekry": "got, found",
+   "blokkeer": "blocked",
+   "dokumente": "documents",
+   "brief": "letter",
+   "polisie": "police",
+   "weggeraak": "gone missing",
+   "geld": "money",
+   "adres": "address",
+   "bedank": "thank",
+   "verras": "surprised",
+   "genooi": "invited",
+   "kyk": "looks",
+   "afklim": "gets off"
+  },
+  "questions": [
+   {
+    "q": "Wat was nie in Daniel se sak nie?",
+    "a": [
+     "beursie"
+    ]
+   },
+   {
+    "q": "Waar het die vrou die beursie gekry?",
+    "a": [
+     "bus"
+    ]
+   },
+   {
+    "q": "Wat het Daniel gekoop?",
+    "a": [
+     "blomme"
+    ]
+   }
+  ],
+  "notice": "\"Not\" is said twice: \"was nie in sy sak nie\", \"kon hy nie slaap nie\". \"Wou\" is \"wanted to\" and \"kon\" is \"could\". After \"want\" (because) the word order stays as in a main clause; after \"voordat\" (before) the verb goes to the end.",
+  "back": [
+   [
+    "Hy het oral gesoek, op die sypaadjie en by die bushalte, maar hy het niks gekry nie.",
+    "He looked everywhere, on the pavement and at the bus stop, but he found nothing."
+   ],
+   [
+    "Daar het 'n vrou die beursie op die bus gekry en dit na die polisiestasie geneem.",
+    "A woman had found the wallet on the bus and had taken it to the police station."
+   ]
+  ]
+ },
+ {
+  "id": "af-station",
+  "title": "By die stasie",
+  "level": "A2",
+  "roles": [
+   "Kaartjiebeampte",
+   "Reisiger"
+  ],
+  "lines": [
+   [
+    0,
+    "Goeiemôre. Hoe kan ek help?"
+   ],
+   [
+    1,
+    "Goeiemôre. Ek wil graag 'n kaartjie na Stellenbosch hê, asseblief."
+   ],
+   [
+    0,
+    "Enkel of retoer?"
+   ],
+   [
+    1,
+    "Retoer, asseblief. Wanneer vertrek die volgende trein?"
+   ],
+   [
+    0,
+    "Kwart oor tien, van perron drie."
+   ],
+   [
+    1,
+    "Hoe lank duur die rit?"
+   ],
+   [
+    0,
+    "Omtrent twee ure. Jy moet by Eersterivier oorklim."
+   ],
+   [
+    1,
+    "Hoeveel tyd het ek daar?"
+   ],
+   [
+    0,
+    "Twintig minute. Dit is genoeg."
+   ],
+   [
+    1,
+    "Goed. Hoeveel kos die kaartjie?"
+   ],
+   [
+    0,
+    "Vier-en-dertig rand. Wil jy met 'n kaart betaal?"
+   ],
+   [
+    1,
+    "Ja, met 'n kaart. Baie dankie!"
+   ]
+  ],
+  "gloss": {
+   "help": "help",
+   "kaartjie": "ticket",
+   "enkel": "single, one way",
+   "retoer": "return",
+   "volgende": "next",
+   "trein": "train",
+   "vertrek": "leave",
+   "perron": "platform",
+   "rit": "journey",
+   "ure": "hours",
+   "oorklim": "change",
+   "tyd": "time",
+   "minute": "minutes",
+   "genoeg": "enough",
+   "kos": "cost",
+   "betaal": "pay",
+   "kaart": "card"
+  },
+  "questions": [
+   {
+    "q": "Van watter perron vertrek die trein?",
+    "a": [
+     "drie",
+     "3"
+    ]
+   },
+   {
+    "q": "Hoe betaal die reisiger?",
+    "a": [
+     "kaart"
+    ]
+   }
+  ],
+  "notice": "After \"wil\" (want) and \"moet\" (must) the other verb goes to the end: \"Ek wil graag 'n kaartjie ... hê\", \"Jy moet by Eersterivier oorklim\". \"Graag\" makes a wish polite, and \"asseblief\" is \"please\"."
+ },
+ {
+  "id": "af-doctor",
+  "title": "By die dokter",
+  "level": "B1",
+  "roles": [
+   "Dokter",
+   "Pasiënt"
+  ],
+  "lines": [
+   [
+    0,
+    "Goeiemôre. Wat makeer?"
+   ],
+   [
+    1,
+    "Goeiemôre, Dokter. Ek het al drie dae lank 'n seer keel en ek hoes."
+   ],
+   [
+    0,
+    "Het jy ook koors?"
+   ],
+   [
+    1,
+    "Ja, gisteraand was dit agt-en-dertig en 'n half."
+   ],
+   [
+    0,
+    "Is jou kop ook seer?"
+   ],
+   [
+    1,
+    "'n Bietjie, veral in die aand. Ek slaap ook sleg."
+   ],
+   [
+    0,
+    "Maak asseblief jou mond oop. Ja, jou keel is baie rooi."
+   ],
+   [
+    1,
+    "Is dit ernstig? Ek moet hierdie week werk."
+   ],
+   [
+    0,
+    "Nee, maar jy het rus nodig. Bly drie dae lank by die huis en drink baie tee."
+   ],
+   [
+    1,
+    "Het ek medisyne nodig?"
+   ],
+   [
+    0,
+    "Ek gee vir jou 'n voorskrif vir pille. Neem een na elke maaltyd."
+   ],
+   [
+    1,
+    "Dankie. Moet ek terugkom as dit nie beter word nie?"
+   ],
+   [
+    0,
+    "Ja, kom volgende week terug as jy nog koors het."
+   ],
+   [
+    1,
+    "Goed. Totsiens, Dokter."
+   ]
+  ],
+  "gloss": {
+   "makeer": "(wat makeer: what is wrong)",
+   "keel": "throat ('n seer keel: a sore throat)",
+   "hoes": "cough",
+   "dae": "days",
+   "koors": "fever",
+   "kop": "head",
+   "seer": "sore",
+   "veral": "especially",
+   "slaap": "sleep",
+   "mond": "mouth",
+   "rooi": "red",
+   "ernstig": "serious",
+   "rus": "rest",
+   "bly": "stay",
+   "medisyne": "medicine",
+   "voorskrif": "prescription",
+   "pille": "tablets",
+   "maaltyd": "meal",
+   "terugkom": "come back",
+   "beter": "better"
+  },
+  "questions": [
+   {
+    "q": "Hoeveel dae lank het die pasiënt al 'n seer keel?",
+    "a": [
+     "drie",
+     "3"
+    ]
+   },
+   {
+    "q": "Waarvoor is die voorskrif?",
+    "a": [
+     "pille"
+    ]
+   }
+  ],
+  "notice": "\"Nodig hê\" is \"to need\": \"jy het rus nodig\" (you have rest needed). A verb in two parts splits: \"terugkom\" but \"kom ... terug\". \"Not\" is said twice: \"as dit nie beter word nie\"."
  }
 ]

@@ -408,5 +408,463 @@
    }
   ],
   "notice": "\"Hai\" means \"there is\" or \"there are\", and a question keeps the word order of a statement: \"Hai ascensor?\". \"Boas noites\" is said from the evening on, as a greeting and as a goodbye."
+ },
+ {
+  "id": "gl-family",
+  "title": "A miña familia",
+  "level": "A1",
+  "text": "Chámome Anna. Vivo coa miña familia nunha casa pequena preto do río. A miña nai é mestra e o meu pai traballa nunha tenda. Teño un irmán e unha irmá. O meu irmán ten dez anos e gústalle o fútbol. A miña irmá aínda é pequena: ten tres anos. Tamén temos un can, que se chama Max. Todas as mañás o meu pai sae pasear co can. Á noite ceamos xuntos e falamos do día. Despois de cear, o meu irmán e mais eu lavamos os pratos. O domingo vén a avoa e trae unha torta. Quero moito á miña familia.",
+  "gloss": {
+   "familia": "family",
+   "casa": "house",
+   "río": "river",
+   "nai": "mother",
+   "mestra": "teacher",
+   "pai": "father",
+   "tenda": "shop",
+   "irmán": "brother",
+   "irmá": "sister",
+   "anos": "years",
+   "fútbol": "football",
+   "pequena": "small",
+   "can": "dog",
+   "mañás": "mornings",
+   "pasear": "to go for a walk",
+   "noite": "evening, night",
+   "ceamos": "we have dinner",
+   "xuntos": "together",
+   "cear": "to have dinner",
+   "pratos": "dishes",
+   "domingo": "Sunday",
+   "avoa": "grandmother",
+   "torta": "cake"
+  },
+  "questions": [
+   {
+    "q": "Onde traballa o pai?",
+    "a": [
+     "tenda"
+    ]
+   },
+   {
+    "q": "Cantos anos ten o irmán?",
+    "a": [
+     "dez",
+     "10"
+    ]
+   },
+   {
+    "q": "Quen vén o domingo?",
+    "a": [
+     "avoa"
+    ]
+   }
+  ],
+  "notice": "Galician keeps the article before \"my\": \"a miña nai\" (the my mother), \"o meu pai\". Short pronouns join the end of the verb: \"chámome\" (I am called), \"gústalle\" (he likes it). \"En\" joins \"unha\": \"nunha casa\".",
+  "back": [
+   [
+    "A miña nai é mestra e o meu pai traballa nunha tenda.",
+    "My mother is a teacher and my father works in a shop."
+   ],
+   [
+    "O domingo vén a avoa e trae unha torta.",
+    "On Sunday my grandmother comes and brings a cake."
+   ]
+  ]
+ },
+ {
+  "id": "gl-town",
+  "title": "A nosa vila",
+  "level": "A1",
+  "text": "A nosa vila é pequena, pero é fermosa. No centro hai unha praza antiga cunha fonte. Ao lado da praza hai unha escola, unha farmacia e dous cafés. A estación está detrás do parque. Todas as mañás moita xente colle o tren para ir á cidade. Pola tarde os nenos xogan no parque e os vellos xogan ao xadrez. No verán veñen turistas e sacan fotos da ponte. No inverno a vila é tranquila. O sábado hai mercado na praza. Alí podedes mercar verduras, mel e flores. Á noite gústame pasear á beira do río. Non quero vivir nunha cidade grande.",
+  "gloss": {
+   "vila": "town",
+   "fermosa": "beautiful",
+   "centro": "centre",
+   "praza": "square",
+   "fonte": "fountain",
+   "escola": "school",
+   "farmacia": "pharmacy",
+   "estación": "station",
+   "detrás": "behind",
+   "parque": "park",
+   "tren": "train",
+   "tarde": "afternoon",
+   "nenos": "children",
+   "xadrez": "chess",
+   "verán": "summer",
+   "turistas": "tourists",
+   "ponte": "bridge",
+   "inverno": "winter",
+   "tranquila": "quiet",
+   "sábado": "Saturday",
+   "verduras": "vegetables",
+   "mel": "honey",
+   "flores": "flowers",
+   "río": "river"
+  },
+  "questions": [
+   {
+    "q": "Que hai no centro da vila?",
+    "a": [
+     "praza"
+    ]
+   },
+   {
+    "q": "Onde está a estación?",
+    "a": [
+     "parque"
+    ]
+   },
+   {
+    "q": "Cando veñen os turistas?",
+    "a": [
+     "verán"
+    ]
+   }
+  ],
+  "notice": "\"Hai\" means \"there is\" or \"there are\": \"hai unha praza\". Small words join the article: \"no\" (en + o), \"da\" (de + a), \"ao\" (a + o), \"cunha\" (con + unha), \"pola\" (por + a).",
+  "back": [
+   [
+    "A estación está detrás do parque.",
+    "The station is behind the park."
+   ],
+   [
+    "No inverno a vila é tranquila.",
+    "In winter the town is quiet."
+   ]
+  ]
+ },
+ {
+  "id": "gl-birthday",
+  "title": "O aniversario da avoa",
+  "level": "A2",
+  "text": "Onte foi o aniversario da miña avoa. Agora ten oitenta anos. Toda a familia veu á súa casa da aldea. A miña tía fixo unha torta grande e o meu tío trouxo flores. Regalámoslle unha bufanda quente e un libro sobre xardíns. Antes de xantar cantamos unha canción e a avoa riu. Na mesa había sopa, polo con patacas e moita ensalada. Despois de xantar ensinounos fotos antigas. Nunha foto era unha muller nova cunha bicicleta. Contounos que ía traballar nela todos os días. Despois o meu curmán tocou a guitarra e todos bailaron. Mesmo o meu irmán pequeno bailou coa avoa. Á noite estaba cansa pero contenta. Dixo que era o mellor aniversario da súa vida. Volvemos á casa tarde, cando as estrelas xa estaban no ceo.",
+  "gloss": {
+   "onte": "yesterday",
+   "aniversario": "birthday",
+   "oitenta": "eighty",
+   "toda": "whole",
+   "aldea": "village",
+   "tía": "aunt",
+   "fixo": "made",
+   "tío": "uncle",
+   "flores": "flowers",
+   "regalámoslle": "we gave her as a present",
+   "bufanda": "scarf",
+   "xardíns": "gardens",
+   "cantamos": "sang",
+   "canción": "song",
+   "riu": "laughed",
+   "polo": "chicken",
+   "patacas": "potatoes",
+   "ensinounos": "she showed us",
+   "nova": "young",
+   "bicicleta": "bicycle",
+   "curmán": "cousin",
+   "guitarra": "guitar",
+   "bailaron": "danced",
+   "cansa": "tired",
+   "mellor": "best",
+   "vida": "life",
+   "estrelas": "stars"
+  },
+  "questions": [
+   {
+    "q": "Cantos anos ten a avoa?",
+    "a": [
+     "oitenta",
+     "80"
+    ]
+   },
+   {
+    "q": "Quen trouxo flores?",
+    "a": [
+     "tío"
+    ]
+   },
+   {
+    "q": "Que tocou o curmán?",
+    "a": [
+     "guitarra"
+    ]
+   }
+  ],
+  "notice": "The past has its own endings: \"veu\" (came), \"fixo\" (made), \"trouxo\" (brought), \"cantamos\" (we sang). Pronouns join the end of the verb: \"regalámoslle\" (we gave her), \"ensinounos\" (she showed us).",
+  "back": [
+   [
+    "A miña tía fixo unha torta grande e o meu tío trouxo flores.",
+    "My aunt baked a big cake and my uncle brought flowers."
+   ],
+   [
+    "Despois de xantar ensinounos fotos antigas.",
+    "After lunch she showed us old photos."
+   ]
+  ]
+ },
+ {
+  "id": "gl-wallet",
+  "title": "A carteira perdida",
+  "level": "B1",
+  "text": "O venres pasado Daniel quería pagar no supermercado, pero a carteira non estaba no peto. Estaba moi preocupado, porque dentro tiña a tarxeta do banco e o carné de conducir. Deixou a compra na caixa e volveu polo mesmo camiño. Buscou por todas partes, na beirarrúa e na parada do autobús, pero non atopou nada. Na casa chamou ao banco e bloqueou a tarxeta. Aquela noite non puido durmir, porque pensaba en todos os seus documentos. Dous días despois chegou unha carta da policía. Unha muller atopara a carteira no autobús e leváraa á comisaría. Daniel foi alí de seguida. Non faltaba nada, nin sequera os cartos. O policía deulle o enderezo da muller, porque Daniel quería darlle as grazas. Ao día seguinte mercou flores e escribiulle unha tarxeta. Ela sorprendeuse e convidouno a un café. Falaron unha hora e agora son bos amigos. Desde entón Daniel sempre mira o peto antes de baixar do autobús.",
+  "gloss": {
+   "venres": "Friday",
+   "pagar": "pay",
+   "supermercado": "supermarket",
+   "carteira": "wallet",
+   "peto": "pocket",
+   "preocupado": "worried",
+   "tarxeta": "card (tarxeta do banco: bank card)",
+   "carné": "(carné de conducir: driving licence)",
+   "compra": "shopping",
+   "caixa": "till",
+   "mesmo": "same",
+   "partes": "(por todas partes: everywhere)",
+   "beirarrúa": "pavement",
+   "parada": "stop (parada do autobús: bus stop)",
+   "atopou": "found",
+   "bloqueou": "blocked",
+   "documentos": "documents",
+   "carta": "letter",
+   "policía": "police",
+   "faltaba": "was missing",
+   "cartos": "money",
+   "enderezo": "address",
+   "grazas": "thanks (darlle as grazas: to thank her)",
+   "sorprendeuse": "was surprised",
+   "convidouno": "invited him",
+   "mira": "looks at, checks",
+   "baixar": "to get off"
+  },
+  "questions": [
+   {
+    "q": "Que non estaba no peto de Daniel?",
+    "a": [
+     "carteira"
+    ]
+   },
+   {
+    "q": "Onde atopara a muller a carteira?",
+    "a": [
+     "autobús"
+    ]
+   },
+   {
+    "q": "Que mercou Daniel?",
+    "a": [
+     "flores"
+    ]
+   }
+  ],
+  "notice": "Galician has a one-word \"had done\": \"atopara\" (had found), \"leváraa\" (had taken it). Pronouns join the end of the verb: \"deulle\" (gave him), \"convidouno\" (invited him), \"sorprendeuse\".",
+  "back": [
+   [
+    "Buscou por todas partes, na beirarrúa e na parada do autobús, pero non atopou nada.",
+    "He looked everywhere, on the pavement and at the bus stop, but he found nothing."
+   ],
+   [
+    "Unha muller atopara a carteira no autobús e leváraa á comisaría.",
+    "A woman had found the wallet on the bus and had taken it to the police station."
+   ]
+  ]
+ },
+ {
+  "id": "gl-station",
+  "title": "Na estación",
+  "level": "A2",
+  "roles": [
+   "Empregada",
+   "Viaxeiro"
+  ],
+  "lines": [
+   [
+    0,
+    "Bos días. En que podo axudalo?"
+   ],
+   [
+    1,
+    "Bos días. Quería un billete para Lugo, por favor."
+   ],
+   [
+    0,
+    "Só ida ou ida e volta?"
+   ],
+   [
+    1,
+    "Ida e volta, por favor. Cando sae o próximo tren?"
+   ],
+   [
+    0,
+    "Ás dez e cuarto, da vía tres."
+   ],
+   [
+    1,
+    "Canto dura a viaxe?"
+   ],
+   [
+    0,
+    "Unhas tres horas e media. Ten que facer transbordo en Ourense."
+   ],
+   [
+    1,
+    "Canto tempo teño alí?"
+   ],
+   [
+    0,
+    "Vinte minutos. Abonda."
+   ],
+   [
+    1,
+    "Ben. Canto custa o billete?"
+   ],
+   [
+    0,
+    "Trinta e catro euros. Quere pagar con tarxeta?"
+   ],
+   [
+    1,
+    "Si, con tarxeta. Moitas grazas!"
+   ]
+  ],
+  "gloss": {
+   "axudalo": "help you",
+   "billete": "ticket",
+   "ida": "(só ida: one way)",
+   "volta": "(ida e volta: return)",
+   "próximo": "next",
+   "tren": "train",
+   "sae": "leave",
+   "vía": "track, platform",
+   "viaxe": "journey",
+   "horas": "hours",
+   "transbordo": "change",
+   "tempo": "time",
+   "minutos": "minutes",
+   "abonda": "it is enough",
+   "custa": "cost",
+   "pagar": "pay",
+   "tarxeta": "card"
+  },
+  "questions": [
+   {
+    "q": "De que vía sae o tren?",
+    "a": [
+     "tres",
+     "3"
+    ]
+   },
+   {
+    "q": "Como paga o viaxeiro?",
+    "a": [
+     "tarxeta"
+    ]
+   }
+  ],
+  "notice": "The polite \"you\" is \"vostede\", with the verb in the third person: \"ten que facer transbordo\", \"quere pagar\". \"Ter que\" plus the infinitive is \"to have to\". Clock times take \"ás\": \"ás dez e cuarto\"."
+ },
+ {
+  "id": "gl-doctor",
+  "title": "No médico",
+  "level": "B1",
+  "roles": [
+   "Médica",
+   "Paciente"
+  ],
+  "lines": [
+   [
+    0,
+    "Bos días. Que lle pasa?"
+   ],
+   [
+    1,
+    "Bos días, doutora. Hai tres días que me doe a gorxa e teño tose."
+   ],
+   [
+    0,
+    "Tamén ten febre?"
+   ],
+   [
+    1,
+    "Si, onte á noite tiña trinta e oito e medio."
+   ],
+   [
+    0,
+    "Tamén lle doe a cabeza?"
+   ],
+   [
+    1,
+    "Un pouco, sobre todo á noite. Ademais, durmo mal."
+   ],
+   [
+    0,
+    "Abra a boca, por favor. Si, ten a gorxa moi vermella."
+   ],
+   [
+    1,
+    "É grave? Esta semana teño que traballar."
+   ],
+   [
+    0,
+    "Non, pero precisa descansar. Quede na casa tres días e beba moito té."
+   ],
+   [
+    1,
+    "Preciso medicamentos?"
+   ],
+   [
+    0,
+    "Vou facerlle unha receita de pastillas. Tome unha despois de cada comida."
+   ],
+   [
+    1,
+    "Grazas. Teño que volver se non mellora?"
+   ],
+   [
+    0,
+    "Si, volva a semana que vén se aínda ten febre."
+   ],
+   [
+    1,
+    "De acordo. Adeus, doutora."
+   ]
+  ],
+  "gloss": {
+   "pasa": "(que lle pasa: what is the matter)",
+   "gorxa": "throat (doe a gorxa: a sore throat)",
+   "tose": "cough",
+   "días": "days",
+   "febre": "fever",
+   "cabeza": "head",
+   "doe": "hurts",
+   "todo": "(sobre todo: especially)",
+   "durmo": "I sleep",
+   "boca": "mouth",
+   "vermella": "red",
+   "grave": "serious",
+   "descansar": "to rest",
+   "quede": "stay",
+   "medicamentos": "medicine",
+   "receita": "prescription",
+   "pastillas": "tablets",
+   "comida": "meal",
+   "volver": "come back",
+   "mellora": "gets better"
+  },
+  "questions": [
+   {
+    "q": "Cantos días hai que lle doe a gorxa ao paciente?",
+    "a": [
+     "tres",
+     "3"
+    ]
+   },
+   {
+    "q": "De que é a receita?",
+    "a": [
+     "pastillas"
+    ]
+   }
+  ],
+  "notice": "\"Hai tres días que\" says how long something has lasted. What hurts is the subject: \"doe a gorxa\" (the throat hurts). Polite commands end in -a or -e: \"abra\", \"quede\", \"beba\", \"tome\"."
  }
 ]
