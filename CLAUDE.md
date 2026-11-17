@@ -63,7 +63,9 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   meanings and corrections. A reply is also a story (source `penpal`) so it can be read with taps.
 - **Progress** shows ability only: the level the numbers support for reading, listening and speaking (`abilities()` and
   `estimate()` in `core.js`), a table by level, totals of input. A spoken line is marked by `speechMarks()`: the recogniser's
-  first guess is the score, a word only its second or third guess holds is `near`, and `sure` is its confidence. No streak, no points: do not add them.
+  first guess is the score, a word only its second or third guess holds is `near`, and `sure` is its confidence; `subs` pairs a word
+  with what the first guess had in its place, shown letter against letter (`letterDiff()`, "rue → roue"). In First steps each
+  sound to notice can be said on its own (`sndsay`: understood, nearly, or what was heard instead; nothing of it is saved). No streak, no points: do not add them.
 - **Meanings**: bundled glosses are English. Where the browser has the Translator API (Chrome and Edge
   on desktop) a tapped word with no meaning is translated on the device into the interface language;
   otherwise the learner can type one, or AI cowork fills it in. Each bundled text carries a `notice`

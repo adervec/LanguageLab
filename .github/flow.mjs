@@ -103,6 +103,15 @@ await click('Speak');
 await page.waitForFunction(() => document.querySelector('#main').innerText.includes('It heard:'));
 assert.match(await main(), /It heard: elle aime ce moment de la\s+86% of the words/);
 assert.equal(await page.locator('#main .big .miss').innerText(), 'semaine');
+// a wrong word in the place of the right one is shown beside it, the letters they do not share marked
+await page.evaluate(() => { self.heard = 'elle aime ce moment de la semelle'; });
+await click('Try again');
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('What it heard instead'));
+assert.match(await main(), /What it heard instead: semaine → semelle/);
+assert.deepEqual(await page.locator('#main p.sub .miss').allInnerTexts(), ['ain', 'lle']);
+await page.evaluate(() => { self.heard = 'elle aime ce moment de la'; });
+await click('Try again');
+await page.waitForFunction(() => !document.querySelector('#main').innerText.includes('What it heard instead'));
 // again, and this time the recogniser's second guess has the last word: nearly right, not understood; and it says how sure it was
 await page.evaluate(() => { self.heardAlt = ['elle aime ce moment de la semaine']; self.heardSure = 0.9; });
 await click('Try again');
@@ -475,6 +484,15 @@ for (let i = 0; i < 8 && await has('Next sentence'); i++) await click('Next sent
 await click('Finish');
 assert.match(await main(), /Reading aloud done[\s\S]*of your words understood when you spoke/);
 await click('Done');
+// a sound to notice, said aloud: understood, or what was heard instead
+await click('Library');
+await click('First steps, letters and sounds');
+await page.evaluate(() => { self.heard = 'été'; });
+await page.locator('.ph', { hasText: 'été' }).locator('button', { hasText: 'Say it' }).click();
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('Understood.'));
+await page.evaluate(() => { self.heard = 'roue'; });
+await page.locator('.ph', { hasText: 'rue' }).locator('button', { hasText: 'Say it' }).click();
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('It heard instead: rue → roue'));
 await click('Progress');                                 // the suggestion is still beside its sitting; kept, it becomes a review card
 assert.match(await main(), /read aloud \d+%/);
 await click('Keep for review');

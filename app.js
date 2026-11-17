@@ -478,6 +478,13 @@ const playRow = () => H`<div class="row"><button class="primary" data-act="play"
 const marked = (target, got, spoken) => C.dictationScore(target, got, S.lang, spoken).parts.map(p => p.hit == null ? p.s : H`<span class="${p.hit ? 'hit' : 'miss'}">${p.s}</span>`);
 // a spoken line: understood, missed, or "near" (the recogniser had the word only as a second guess)
 const spokenMarks = d => C.speechMarks(d.target, [d.heard, ...(d.typed ? [] : d.alts || [])], S.lang, !d.typed).parts.map(p => p.hit == null ? p.s : H`<span class="${p.hit ? 'hit' : p.near ? 'near' : 'miss'}">${p.s}</span>`);
+// What the recogniser's first guess had in the place of a word, the letters the two do not share marked: "rue → roue" shows the
+// vowel that went wrong. It still hears words, not sounds; this is the nearest it comes to a remark on one.
+const pairHtml = (word, heard) => { const [a, b] = C.letterDiff(word, heard), row = runs => runs.map(([s, same]) => same ? s : H`<span class="miss">${s}</span>`);
+  return H`<span lang="${S.lang}">${row(a)}</span> → <span lang="${S.lang}">${row(b)}</span>`; };
+const heardInstead = d => { const subs = d.typed ? [] : C.speechMarks(d.target, [d.heard], S.lang).subs.slice(0, 4);
+  return subs.length ? H`<p class="sub">${t('What it heard instead')}: ${subs.map(([w, h], k) => H`${k ? ' · ' : ''}${pairHtml(w, h)}`)}</p>` : ''; };
+const sndTry = {}; // a "sound to notice" said aloud: word -> { state: 'hit' | 'near' | 'miss', heard } (kept for the visit only)
 // A tappable word is a box of its own, so left alone the browser may break the line between it and what is written against it: a
 // full stop would start the next line, and "J'" would part from "ai". What touches a word (and the spaced ? ! : ; » of French)
 // is kept on its line with it.
@@ -556,7 +563,7 @@ function vSitting() {
         <p class="me now"><b class="who">${s.roles[1]}</b> ${hidden ? '…' : d.score == null ? d.target : spokenMarks(d)}</p></div>`
       : H`<p>${t('Sentence {i} of {n}. Read it aloud. The score is the share of your words that speech recognition understood.', { i: sit.si + 1, n: sit.speak.length })}</p>
       <p class="big" lang="${S.lang}">${d.score == null ? d.target : spokenMarks(d)}</p>${d.meaning ? H`<p class="sub">${d.meaning}</p>` : ''}`}
-    ${d.score == null ? '' : H`<p class="sub">${d.typed ? t('You wrote:') : t('It heard:')} <span lang="${S.lang}">${d.heard}</span></p><p><b>${t('{pct} of the words', { pct: pct(d.score) })}</b></p>
+    ${d.score == null ? '' : H`<p class="sub">${d.typed ? t('You wrote:') : t('It heard:')} <span lang="${S.lang}">${d.heard}</span></p>${heardInstead(d)}<p><b>${t('{pct} of the words', { pct: pct(d.score) })}</b></p>
       ${d.typed || !(d.near || d.sure) ? '' : H`<p class="sub">${d.near ? t.n('{n} word was only its second guess (dotted): nearly right.', '{n} words were only its second guess (dotted): nearly right.', d.near) : ''} ${d.sure ? t('It was {pct} sure of what it heard.', { pct: pct(d.sure) }) : ''}</p>`}`}
     <div class="row">${SR ? H`<button class="primary" data-act="sayit" aria-pressed="false">${d.score == null ? t('Speak') : t('Try again')}</button>` : ''}
       ${hidden ? H`<button data-act="peek">${t('Show my line')}</button>` : H`<button data-act="play">▶ ${t('Hear it')}</button>`}
@@ -937,9 +944,11 @@ function vFirst() {
   ${abc.length ? H`<h2>${t('Letters')}</h2><p class="sub">${t('Tap a letter to hear it. Then practise: you see a letter and type how it sounds.')}</p>
     ${abc.map(([name, src], n) => H`<div class="card"><div class="row"><b class="grow">${t(String(name))}</b><button data-act="quiz" data-i="${n}">${t('Practise')}</button></div>
       <div class="abc">${C.chartPairs(src).map(([ch, r]) => H`<button data-act="sayx" data-x="${ch}"><b lang="${S.lang}">${ch}</b><span class="sub">${r[0]}</span></button>`)}</div></div>`)}` : ''}
-  ${snd.length ? H`<h2>${t('Sounds to notice')}</h2><p class="sub">${t('Where the spelling does not sound the way you might expect. Tap to hear the word.')}</p>
+  ${snd.length ? H`<h2>${t('Sounds to notice')}</h2><p class="sub">${SR ? t('Where the spelling does not sound the way you might expect. Tap ▶ to hear the word, then say it: speech recognition shows whether it understood you, or what it heard instead. One word alone is hard for it, so try more than once.') : t('Where the spelling does not sound the way you might expect. Tap to hear the word.')}</p>
+    <p class="sub" id="micmsg" role="status"></p>
     <div class="card">${snd.map(([letters, word, hint]) => H`<div class="ph"><button class="mini" data-act="sayx" data-x="${word}" aria-label="${t('Hear it')}">▶</button>
-      <div><b lang="${S.lang}">${letters}</b> · <span lang="${S.lang}">${word}</span><span class="sub">${hint}</span></div></div>`)}</div>` : ''}`;
+      <div class="grow"><b lang="${S.lang}">${letters}</b> · <span lang="${S.lang}">${word}</span><span class="sub">${hint}</span>${sndTry[word] ? H`<span class="sub" role="status">${sndTry[word].state === 'hit' ? H`<b class="hit">${t('Understood.')}</b>` : sndTry[word].state === 'near' ? H`<b class="near">${t('Nearly: it was only its second guess.')}</b>` : H`${t('It heard instead')}: ${pairHtml(word, sndTry[word].heard)}`}</span>` : ''}</div>
+      ${SR ? H`<button class="mini" data-act="sndsay" data-x="${word}" aria-pressed="false">${t('Say it')}</button>` : ''}</div>`)}</div>` : ''}`;
 }
 
 // ---------- a human teacher, with no server: the learner's writing travels to them inside a link, their corrections come back inside another ----------
@@ -1243,6 +1252,12 @@ const ACT = {
   chatretry() { const c = chat(), me = c.turns.find(x => x.id === c.wait); return chatAsk(me ? me.text : ''); },
   chatmic(b) { const box = $('#ans'); hear(b, false, text => { box.value = (box.value + ' ' + text).trim(); }, () => { if (view === 'chat' && box.isConnected && box.value.trim()) run('chatsend'); }, () => 2500); },
   chatsay(b) { const x = chat()?.turns.find(y => y.id === b.dataset.id); if (x) say([[0, x.text]]); },
+  sndsay(b) { // a word chosen for one sound: was it understood, and if not, what was heard in its place?
+    const word = b.dataset.x, got = [], k = w => C.wordKeys(w, S.lang).join(' ');
+    hear(b, false, (text, res) => got.push(...[...(res || [])].slice(0, 3).map(a => String(a?.transcript || '').trim()).filter(Boolean)), () => {
+      if (view !== 'first' || !got.length) return;
+      sndTry[word] = { state: k(got[0]) === k(word) ? 'hit' : got.some(g => k(g) === k(word)) ? 'near' : 'miss', heard: got[0].slice(0, 60) };
+      render(true); }, () => 1200); },
   hintkeep(b) { // the same for a suggestion on a retelling
     const id = b.dataset.id, at = id.lastIndexOf(':'), f = S.sittings.find(x => x.id === id.slice(0, at))?.hints?.[id.slice(at + 1)];
     if (f) { L().fixes['h:' + id] = { ...f, added: Date.now(), srs: null }; save(); render(true); } },

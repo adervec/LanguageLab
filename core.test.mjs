@@ -228,6 +228,14 @@ assert.deepEqual([state.sittings.length, state.sittings[0].score, state.sittings
     { wrong: 'Je suis', right: 'je suis' }, { wrong: 'a', right: 'b' }, { wrong: 'c', right: 'd' }, { wrong: 'e', right: 'f' }] }, { id: 's2', hints: 'none' }] }).sittings;
   assert.deepEqual(rows[0].hints, [{ wrong: 'je suis allé bien', right: 'je vais bien', why: 'present' }, { wrong: 'a', right: 'b', why: '' }, { wrong: 'c', right: 'd', why: '' }]);
   assert.ok(!('hints' in rows[1])); }
+// what stood in a word's place: only where a gap holds as many words heard as wanted; and which letters two words share
+{ assert.deepEqual(c.speechMarks('Elle aime le poisson frais.', ['elle aime le poison frais'], 'fr').subs, [['poisson', 'poison']]);
+  assert.deepEqual(c.speechMarks('Elle aime le poisson frais.', ['elle aime le'], 'fr').subs, []);          // nothing was said there
+  assert.deepEqual(c.speechMarks('Bonjour à tous.', ['bonjour à vous tous'], 'fr').subs, []);                // a word too many stands for none
+  assert.deepEqual(c.speechMarks('Je vois la rue.', ['je bois la roue'], 'fr').subs, [['vois', 'bois'], ['rue', 'roue']]);
+  assert.deepEqual(c.letterDiff('rue', 'roue'), [[['rue', true]], [['r', true], ['o', false], ['ue', true]]]);
+  assert.deepEqual(c.letterDiff('Été', 'étais'), [[['Ét', true], ['é', false]], [['ét', true], ['ais', false]]]);
+  assert.deepEqual(c.letterDiff('chat', ''), [[['chat', false]], []]); }
 console.log('core.test: ok');
 
 // merging this device with Drive loses nothing from either side

@@ -141,7 +141,7 @@ function spans(text, lang) {
   return out;
 }
 export const plainWords = (s, lang) => spans(String(s ?? ''), lang).filter(x => x.word).map(x => strip(x.s));
-// -> { score 0..1, hits per target word, parts: the target cut into [{ s, hit? }] for marking }
+// -> { score 0..1, hits per target word, parts: the target cut into [{ s, hit? }] for marking, subs: [[i, the word given in its place]] }
 // spoken: the text came from a speech recogniser, which writes a number as digits ("five hours" comes back as "5 hours"), so a
 // number in it stands for one word of the target, whichever. ponytail: it cannot tell "5" from "3": a wrong number said aloud passes.
 export function dictationScore(target, typed, lang, spoken) {
@@ -149,27 +149,35 @@ export function dictationScore(target, typed, lang, spoken) {
   // Persian writes one word in two halves around a zero-width non-joiner (می‌روم). Typed with it, or with a space, the halves match as they
   // are; typed joined up (میروم) the word is cut back in two here. ponytail: two halves only; a word in three still needs its joiners.
   const halves = new Map(parts.flatMap((p, k) => p.s === '\u200c' && parts[k - 1]?.word && parts[k + 1]?.word ? [[strip(parts[k - 1].s) + strip(parts[k + 1].s), [strip(parts[k - 1].s), strip(parts[k + 1].s)]]] : []));
-  const b = plainWords(typed, lang).flatMap(w => halves.get(w) || [w]);
+  const given = spans(String(typed ?? ''), lang).filter(x => x.word).flatMap(x => (halves.get(strip(x.s)) || [strip(x.s)]).map(k => [k, x.s])), b = given.map(g => g[0]);
   const same = (x, y) => x === y || (!!spoken && /^\p{N}+$/u.test(y) && !/^\p{N}+$/u.test(x));
   const L = Array.from({ length: a.length + 1 }, () => new Array(b.length + 1).fill(0));
   for (let i = a.length - 1; i >= 0; i--) for (let j = b.length - 1; j >= 0; j--)
     L[i][j] = same(a[i], b[j]) ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
-  const hits = new Array(a.length).fill(false);
-  for (let i = 0, j = 0; i < a.length && j < b.length;) {
-    if (same(a[i], b[j])) { hits[i] = true; i++; j++; } else if (L[i + 1][j] >= L[i][j + 1]) i++; else j++;
+  const hits = new Array(a.length).fill(false), subs = [];
+  // Between two matches, as many words given as were wanted: each stands in the place of one ("poison" for "poisson").
+  let ga = [], gb = [], i = 0, j = 0;
+  const flush = () => { if (ga.length && ga.length === gb.length) ga.forEach((at, k) => subs.push([at, given[gb[k]][1]])); ga = []; gb = []; };
+  while (i < a.length && j < b.length) {
+    if (same(a[i], b[j])) { flush(); hits[i] = true; i++; j++; } else if (L[i + 1][j] >= L[i][j + 1]) ga.push(i++); else gb.push(j++);
   }
+  while (i < a.length) ga.push(i++);
+  while (j < b.length) gb.push(j++);
+  flush();
   let n = 0;
-  return { score: a.length ? L[0][0] / a.length : 0, hits, parts: parts.map(x => x.word ? { s: x.s, hit: hits[n++] } : { s: x.s }) };
+  return { score: a.length ? L[0][0] / a.length : 0, hits, subs, parts: parts.map(x => x.word ? { s: x.s, hit: hits[n++] } : { s: x.s }) };
 }
 
 // What a speech recogniser made of a line. Its first guess is the score: how much was understood. A word it had only in a second
 // or third guess is "near": said closely enough to be considered, not clearly enough to be chosen. heard: [first guess, others…].
+// subs: [[the word wanted, what the first guess had in its place]]: the nearest a recogniser of whole words comes to a remark on a sound.
 // ponytail: the recogniser guesses towards real words, so this is "was I understood, and how nearly", not a study of each sound.
 export function speechMarks(target, heard, lang, spoken = true) {
   const [top, ...rest] = (heard?.length ? heard : ['']).map(h => dictationScore(target, h, lang, spoken));
   const near = top.hits.map((hit, i) => !hit && rest.some(r => r.hits[i]));
+  const words = top.parts.filter(p => p.hit != null).map(p => p.s);
   let n = 0;
-  return { score: top.score, hits: top.hits, near: near.filter(Boolean).length, parts: top.parts.map(p => p.hit == null ? p : { ...p, near: near[n++] }) };
+  return { score: top.score, hits: top.hits, near: near.filter(Boolean).length, subs: top.subs.map(([at, h]) => [words[at], h]), parts: top.parts.map(p => p.hit == null ? p : { ...p, near: near[n++] }) };
 }
 
 // Up to n sentences worth dictating (4 to 22 words, or up to 40 characters where there are no spaces), spread evenly.
@@ -191,6 +199,18 @@ export function answerOk(answer, keys, lang) {
   const bare = w => lang === 'ar' ? w.replace(/^(?:[\u0648\u0641\u0628\u06a9]?\u0627\u0644|\u0648?\u0644\u0644)(?=\p{L}{3})/u, '') : w;
   const have = plainWords(answer, lang).map(bare), has = w => have.some(h => h === w || (w.length >= (/[\u1100-\u11ff]/.test(w) ? 2 : 4) && h.startsWith(w)));
   return (keys || []).some(k => { const w = plainWords(k, lang).map(bare); return w.length > 0 && w.every(has); });
+}
+
+// Which letters two words share, in order: what was heard against what was meant ("roue" for "rue" has an o too many).
+// -> [runs of a, runs of b], a run being [letters, shared?]
+export function letterDiff(a, b) {
+  const A = [...String(a).normalize('NFC')], B = [...String(b).normalize('NFC')], x = A.map(ch => ch.toLowerCase()), y = B.map(ch => ch.toLowerCase());
+  const L = Array.from({ length: x.length + 1 }, () => new Array(y.length + 1).fill(0));
+  for (let i = x.length - 1; i >= 0; i--) for (let j = y.length - 1; j >= 0; j--) L[i][j] = x[i] === y[j] ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
+  const ma = x.map(() => false), mb = y.map(() => false);
+  for (let i = 0, j = 0; i < x.length && j < y.length;) { if (x[i] === y[j]) ma[i++] = mb[j++] = true; else if (L[i + 1][j] >= L[i][j + 1]) i++; else j++; }
+  const runs = (chars, m) => chars.reduce((out, ch, i) => { const last = out[out.length - 1]; if (last && last[1] === m[i]) last[0] += ch; else out.push([ch, m[i]]); return out; }, []);
+  return [runs(A, ma), runs(B, mb)];
 }
 
 // ---- review cards ----
