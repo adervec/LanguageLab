@@ -75,6 +75,12 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   plain text, and Words takes a correction typed in by hand (ids `own:…`).
 - **Letters to tap**: a lesson shows its own letters; any text in an alphabet that is not Latin shows the letters it uses
   (`tapKeys`), for dictation and review without a keyboard for that script.
+- **A text written on the device** (`deviceStory`, "Write me a story" in the Library and on Today when everything is read): where
+  the browser's model offers the language (`lmOk`; Chrome 157: fr, es, de, en, ja) it writes a short first-person text at the
+  learner's level, with the four most overdue review words "where they fit". It is outside text (`A.parseJSON`, `cleanStory`),
+  source `device`, no level (never counts in `abilities()`), no questions. The wording of the request was settled against the
+  real model: asked for "a story" it writes French in the passé simple whatever it is told, asked for a message to a friend it
+  does not. Read the comment above `STORY_HOW` before changing it.
 - **Record yourself** (speaking steps): MediaRecorder, kept in the page only, played after the model.
 - **Offline**: `sw.js` claims the first page and `app.js` fetches again what that page had loaded, so one visit is enough.
 - Speech uses the browser's own synthesis and recognition, as SpeechImprover does. Tachyread's

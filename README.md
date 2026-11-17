@@ -21,7 +21,7 @@ LanguageLab is built to be the opposite on each count.
 | **Conversation** | Talk with an AI partner, by voice or typing. It answers at your level, speaks its reply, and corrects your last message as you go. With the browser's own small model the corrections are offered for you to keep or not, because it is sometimes wrong; an AI agent of your own corrects properly. |
 | **Pen pal** | Write a letter. An AI pen pal answers at your level and corrects your mistakes. |
 | **Review** | The words you tapped come back as a blank in the sentence you met them in, and you type them. Your corrected mistakes come back until you type them right. Spaced so they return just before you forget. |
-| **More input** | Just listen (stories one after another) and free reading, with a tap for the meaning of any word. |
+| **More input** | Just listen (stories one after another) and free reading, with a tap for the meaning of any word. Where the browser has its own AI model, "Write me a story" adds a new short text at your level in a few seconds, written on your device around the words you are reviewing (in Chrome 157: French, Spanish, German, English and Japanese). It is a small model's writing, with about one slip a text, and the app says so. |
 | **Progress** | Which level your numbers support for reading and for listening, a table level by level, and your totals of reading and listening. |
 | **With a teacher** | Send a sitting to a teacher or a tutor as a link. They open it in any browser, write their corrections and send a link back, which puts the corrections beside your sitting and into your review. No account and no server: the text travels inside the links. You can also copy a sitting as plain text and type corrections in by hand. |
 
@@ -37,6 +37,7 @@ snapshot). LanguageLab is ahead in some rows and behind in others.
 | Talking with an AI | Video Call and Roleplay, in paid tiers, for a handful of languages | No AI partner; live human coaching in the premium plan | A chatbot with speech recognition (premium) | A live conversation, free: on your device where the browser has its own AI model (it answers in a second or two; its corrections are a small model's suggestions, to keep or not), or through your own AI agent, which corrects properly; and an AI pen pal |
 | What you produce | Varies by exercise: word banks, matching, short typed and spoken answers | Speaking and choosing, without translation | Short phrases and chatbot replies | Typed dictation, sentences written back from their meaning, role-play from memory, and a free retelling in every sitting |
 | Your own material | No | No | No | Any text; any recording with its subtitles |
+| Something new to read | New lessons as the course goes on | The course | The course and a daily lesson | A new text on request, written on your device in a few seconds (five languages, a small model: about one slip a text); stories with questions and meanings from your own AI agent, in any language |
 | Feedback on free writing | Explanations of an answer | No | No | An AI review with a grade, corrected forms and the rule; your mistakes come back as review cards |
 | Measure of progress | XP, streak, leagues, a course score | Units completed | Points and a leaderboard | The level your own numbers support, for reading, for listening and for speaking |
 | Languages with ready lessons | 40 or more | 25 | 41 | 44, each with first lessons (twenty lessons, 160 phrases) and graded stories and dialogues: 8 with a full set (A1 to B2), 4 with half a set, 32 with a first handful of six texts (A1 and A2); any other language with your own texts or AI-written stories |
@@ -91,6 +92,11 @@ folder you choose: the app writes a request there, any AI agent you run reads it
 and the app shows you the reply to approve (a conversation reply is shown as it comes). See "AI
 cowork" in Settings. Everything else works without it.
 
+Where the browser carries a small AI model of its own, two things also work with no folder and no agent: the
+conversation, and a new short text to read and hear ("Write me a story" in the Library). Nothing leaves the device.
+Chrome 157's model writes French, Spanish, German, English and Japanese; for the other 39 languages these two stay with
+your agent.
+
 ## Running it
 
 It is a static site with no build step.
@@ -125,6 +131,15 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   recogniser from a recording fed in place of the microphone (the exact sentence: 100%; two words changed: 88%, those two
   marked); the on-device translator for French; and that the recogniser gives three guesses for a line, each with how sure
   it is (0.96, 0.94 and 0.93 for a clear recording), which is what the "nearly right" marks are made from.
+- **A text written on the device** (Chrome 157's own model, November 2026): the model offers itself for five of the 44
+  languages (French, Spanish, German, English, Japanese). In the app, in French, a tap added a text of about 90 words in four
+  to five seconds (up to twenty the first time after the page opens); it opened for reading and listening like any other.
+  Eighteen texts were read, some only in part, while the request was being worded. Asked for "a story", the French ones came in the literary past
+  tense whatever the instruction said; asked for a message to a friend they come in the tenses people speak in, so that is
+  what the app asks for. What was left: about one slip a text in French and Spanish (a word forced in where it does not
+  fit, a missing preposition), two or three in German (a case ending, a verb wrongly made reflexive), an awkward sentence
+  in Japanese. That is why these texts carry no level, never count towards what Progress says you can do, and are
+  labelled as written on the device.
 - **With a real AI agent** (Claude, November 2026), answering from the instruction files in the folder and nothing else: a
   sitting graded and corrected, a pen-pal letter answered, a two-turn conversation, and five stories and two dialogues in
   Swedish (a language that had no bundled stories then), which passed the same checker as the bundled texts

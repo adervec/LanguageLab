@@ -239,7 +239,7 @@ function vToday() {
     <p class="sub">${t('Listen without the text, answer from what you heard, read it, take dictation at natural speed, say it aloud, then retell it in your own words. About twenty minutes.')}</p>
     ${s ? H`<p class="big" lang="${S.lang}">${s.title}</p><p class="sub">${meta(s)}</p>
       <button class="primary" data-act="start" data-id="${s.id}">${t('Start')}</button>`
-      : H`<p>${t('You have read every story. Ask for more through AI cowork in Settings, or add a text of your own in the Library.')}</p>`}
+      : H`<p>${t('You have read every story. Ask for more through AI cowork in Settings, or add a text of your own in the Library.')}</p>${lmOk[S.lang] ? H`<button data-act="devstory" ${writing ? 'disabled' : ''}>${writing ? t('Writing…') : t('Write me a story')}</button>` : ''}`}
   </div>
   <div class="card"><h2>${t('Review')}</h2>
     <p class="sub">${t('The words you tapped come back in the sentence you met them in, and your corrected mistakes come back to be fixed. You type them; nothing to tap.')}</p>
@@ -272,7 +272,7 @@ function vToday() {
 }
 
 function vLibrary() {
-  const own = s => ['pasted', 'cowork', 'penpal', 'audio'].includes(s.source);
+  const own = s => ['pasted', 'cowork', 'penpal', 'audio', 'device'].includes(s.source);
   const rows = stories().filter(s => (lib.kind === 'all' || (lib.kind === 'talk' ? isTalk(s) : lib.kind === 'mine' ? own(s) : !isTalk(s) && !own(s))) && (!lib.level || s.level === lib.level))
     .sort((a, b) => lv(a) - lv(b) || a.added - b.added);
   const chip = (k, label) => H`<button data-act="lib" data-k="${k}" aria-pressed="${lib.kind === k}">${label}</button>`;
@@ -282,13 +282,16 @@ function vLibrary() {
     ${lessons().length ? H`<button data-act="go" data-v="first">${t('First steps, letters and sounds')}</button>` : ''}</div>
   ${rows.length ? '' : H`<p class="sub">${t('Nothing here yet.')}</p>`}
   ${rows.map(s => H`<div class="card"><b lang="${S.lang}">${s.title}</b>
-    <div class="sub">${meta(s)}${s.cues ? ' · ' + t('your recording') : ''}${s.readAt ? ' · ' + t('read {date}', { date: A.fmt.date(s.readAt) }) : ''}</div>
+    <div class="sub">${meta(s)}${s.cues ? ' · ' + t('your recording') : ''}${s.source === 'device' ? ' · ' + t('written on this device') : ''}${s.readAt ? ' · ' + t('read {date}', { date: A.fmt.date(s.readAt) }) : ''}</div>
     ${confirmRemove === s.id ? H`<div class="row acts"><b>${t('Remove it from your library?')}</b><button data-act="remove2" data-id="${s.id}">${t('Yes, remove')}</button><button data-act="noremove">${t('Cancel')}</button></div>`
       : H`<div class="row acts"><button data-act="start" data-id="${s.id}">${t('Sitting')}</button><button data-act="start" data-id="${s.id}" data-mode="read">${t('Read')}</button>
         <button data-act="radio" data-id="${s.id}">${t('Listen')}</button>${isTalk(s) ? H`<button data-act="start" data-id="${s.id}" data-mode="talk">${t('Role-play')}</button>` : ''}
         ${own(s) && !s.cues ? H`<button data-act="sharetext" data-id="${s.id}">${t('Share as a link')}</button>` : ''}
         <button data-act="remove" data-id="${s.id}" aria-label="${t('Remove “{title}”', { title: s.title })}">✕</button></div>`}
   </div>`)}
+  ${lmOk[S.lang] ? H`<div class="card"><h2>${t('A new story from this device')}</h2>
+    <p class="sub">${t('The small AI model in your browser writes a short story at your level, around the words you are reviewing. It can make mistakes a book would not: take it as extra reading and listening.')}</p>
+    <button data-act="devstory" ${writing ? 'disabled' : ''}>${writing ? t('Writing…') : t('Write me a story')}</button></div>` : ''}
   <div class="card"><h2>${t('Add a text of your own')}</h2>
     <p class="sub">${t('Paste something in {language} that you want to read: an article, a letter, song lyrics.', { language: langName() })}</p>
     <p><input type="text" id="newTitle" maxlength="120" placeholder="${t('Title')}" aria-label="${t('Title')}"></p>
@@ -740,7 +743,7 @@ const lmOpts = () => ({ expectedInputs: [{ type: 'text', languages: ['en', S.lan
 function checkModel() {
   const code = S.lang;
   if ('LanguageModel' in self && lmOk[code] === undefined) Promise.resolve().then(() => self.LanguageModel.availability(lmOpts()))
-    .then(a => { lmOk[code] = a !== 'unavailable'; if (view === 'chat') render(true); }, () => { lmOk[code] = false; });
+    .then(a => { lmOk[code] = a !== 'unavailable'; if (['chat', 'library', 'today'].includes(view)) render(true); }, () => { lmOk[code] = false; });
 }
 const chatEngine = () => lmOk[S.lang] ? 'device' : panel?._root ? 'cowork' : '';
 const chat = () => L().chat;
@@ -759,6 +762,41 @@ let lm = null, lmFor = '', lmFix = null, lmFixFor = '';
 // The browser's model can stall (seen in Chrome when it is busy or restarting): no answer in time counts as no answer, and its
 // sessions are given back, so "Try again" starts clean instead of the page waiting for ever.
 const within = (p, ms) => Promise.race([p, new Promise((_, no) => setTimeout(no, ms, new Error('timeout')))]);
+// ---------- a new story from the browser's own model, where it has one for this language: more to read and hear, around the words in review ----------
+// Checked against Chrome 157's own model (it writes French, Spanish, German, English and Japanese; the other 39 are "unavailable"):
+// a text in four to five seconds, thirteen the first time in a language. Asked for a story it told the French ones in the passé
+// simple, whatever it was told about tenses; asked for a message to a friend it uses the tenses people speak in (j'ai cherché), in
+// every language, so that is what it is asked for, from a woman so that "I" agrees one way. About one slip a text in French and
+// Spanish (a word forced in where it does not fit, "llama teléfono"), two or three in German (a case ending, a verb made reflexive).
+// So: offered as extra input with that said on the card, no level (it never counts in what the numbers say you can do), the review
+// words only "where they fit", and a silence ends after 75 seconds.
+// ponytail: the small model's own text, unchecked, with no questions (a wrong answer key would mark a right answer wrong). The
+// cowork agent writes the better stories, with questions and glosses.
+const STORY_SCHEMA = { type: 'object', required: ['title', 'text'], properties: { title: { type: 'string' }, text: { type: 'string' } } };
+const STORY_HOW = { A1: ['very short sentences in the present tense, the most common words only.', 70, 110], A2: ['simple sentences and common words.', 90, 130],
+  B1: ['plain connected sentences and everyday words.', 110, 150], B2: ['plain connected sentences on an everyday subject.', 130, 170], C1: ['clear sentences on an everyday subject, with some less common words.', 150, 200] };
+let writing = false;
+async function deviceStory() {
+  if (writing || !lmOk[S.lang]) return;
+  const code = S.lang, level = L().level, [how, lo, hi] = STORY_HOW[level] || STORY_HOW.A2, name = english(code);
+  const words = Object.entries(L().cards).filter(([, c]) => !c.retired).sort((a, b) => (a[1].srs?.due || 0) - (b[1].srs?.due || 0)).slice(0, 4).map(([k]) => k);
+  writing = true; render(); // (a tap: the message of the story before goes)
+  let s = null, made = null;
+  try {
+    s = await self.LanguageModel.create({ ...lmOpts(), initialPrompts: [{ role: 'system', content: `You write short texts for people who are learning ${name}. Write only in ${name}, in correct and natural sentences, as a careful native writer would. Each text is a message to a friend: the writer, a woman, says "I" and tells, the way people talk, about something small that happens or happened to her and how it ended. No greeting and no signature, no quotation marks, no lists, no digits (write numbers as words), no words in any other language.` }] }); // inside the tap: the first use may download the model
+    const out = await within(s.prompt(`Write a text of ${lo} to ${hi} words for a learner at level ${level}: ${how} Give it a short title.` + (words.length ? ` Work in these words where they fit naturally: ${words.join(', ')}.` : ''), { responseConstraint: STORY_SCHEMA }), 75000);
+    const o = A.parseJSON(String(out), 20000); // outside text: rebuilt from its two known fields
+    made = C.cleanStory({ id: 'dev-' + A.randomId(), title: o?.title, text: String(o?.text ?? '').replace(/[ \t]+/g, ' '), source: 'device', added: Date.now() }, code);
+  } catch { /* it stalled, or wrote something that is not a story: said below */ }
+  try { s?.destroy(); } catch { /* already gone */ }
+  writing = false;
+  // kept only if it is a text someone could take dictation from, and the language on screen is still the one it was asked in
+  if (made && code === S.lang && C.pickDictation(C.storySentences(made), 4, code).length >= 3) {
+    S.stories.push(made); save(); flash = t('Added “{title}”.', { title: made.title });
+    if (view === 'today' || view === 'library') { lib = { kind: 'mine', level: '' }; view = 'library'; }
+  } else flash = t('The model did not write a usable story. Try again.');
+  render(true);
+}
 const dropLm = () => { for (const s of [lm, lmFix]) s?.then(x => x.destroy(), () => {}); lm = lmFix = null; lmFor = lmFixFor = ''; };
 // Checked against Chrome's own model: asked to play a part AND correct in one answer it corrects almost nothing, so the corrections
 // come from a second session that does nothing else (a copy of it per message, so one message never colours the next).
@@ -934,13 +972,15 @@ function route() {
   return true;
 }
 
-function render(keep) { // keep: carry a half-typed answer across the redraw
+let shown = ''; // the message now on screen
+function render(keep) { // keep: a redraw nobody asked for (something arrived): a half-typed answer and the message on screen stay
   const was = keep && $('#ans')?.value;
+  if (keep && !flash) flash = shown;
   const markup = { today: vToday, library: vLibrary, words: vWords, progress: vProgress, settings: vSettings, sitting: vSitting, review: vReview, pal: vPal, chat: vChat, radio: vRadio, first: vFirst, teach: vTeach, taught: vTaught, gift: vGift }[view]();
   const main = $('#main');
   const body = flash ? H`<p class="flash" role="status">${flash}</p>${markup}` : markup; // H escapes every ${}
   main.innerHTML = body;
-  flash = '';
+  shown = flash; flash = '';
   $('#fixed').hidden = view !== 'settings';
   document.querySelectorAll('.top [data-v]').forEach(b => b.dataset.v === view ? b.setAttribute('aria-current', 'page') : b.removeAttribute('aria-current'));
   if (was && $('#ans')) $('#ans').value = was;
@@ -1079,6 +1119,7 @@ const ACT = {
     flash = t('Added “{title}”.', { title: gift.title }); gift = null; view = 'library'; lib = { kind: 'mine', level: '' };
     save(); dropLm(); checkPair(); checkModel(); render(); return addStarters();
   },
+  devstory() { return deviceStory(); },
   async teachcopy() { // the teacher's reply, as a link for the learner
     const reply = C.cleanTeacher({ id: teach.id, note: $('#tNote').value, corrections: [0, 1, 2, 3, 4, 5].map(n => ({ wrong: $('#tw' + n).value, right: $('#tr' + n).value, why: $('#ty' + n).value })) });
     if (!reply) { $('#teachout').textContent = t('Write a correction or a word for the learner first.'); return; }
@@ -1538,7 +1579,7 @@ async function addStarters() {
     if (old) Object.assign(old, c, { gloss: { ...old.gloss, ...c.gloss }, readAt: old.readAt, added: old.added });
     else S.stories.push(c);
   }
-  render();
+  render(true);
 }
 await A.ready;
 try { const saved = await kv('readonly', s => s.get('state')); if (saved) { S = C.cleanState(saved); S.welcomed ||= S.sittings.length > 0; } } catch { /* first run */ }

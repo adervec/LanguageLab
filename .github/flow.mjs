@@ -33,9 +33,11 @@ await page.addInitScript(() => { self.SpeechRecognition = self.webkitSpeechRecog
 // It does not speak Spanish, so a Spanish conversation has to go through the cowork folder.
 // There are two sessions, as in the app: the partner, and a proofreader (copied for each message) that only lists mistakes.
 await page.addInitScript(() => { self.LanguageModel = { availability: async o => o?.expectedOutputs?.[0]?.languages?.[0] === 'es' ? 'unavailable' : 'available', create: async o => {
-  const sys = o.initialPrompts[0].content, proof = sys.startsWith('You proofread'); let n = 0;
-  if (!proof) self.lmSystem = sys;
-  const s = { clone: async () => s, destroy() {}, prompt: text => proof
+  const sys = o.initialPrompts[0].content, proof = sys.startsWith('You proofread'), tale = sys.startsWith('You write short texts'); let n = 0;
+  if (!proof && !tale) self.lmSystem = sys;
+  // (a third session writes a story when asked: markup in its title, a field nobody asked for)
+  const s = { clone: async () => s, destroy() {}, prompt: text => tale ? (self.lmStory = text, Promise.resolve(JSON.stringify({ title: 'Le chat <b>perdu</b>', evil: 1,
+      text: 'Claire cherche son chat depuis ce matin.   Elle regarde sous le lit et dans le jardin. Le voisin arrive avec le chat dans les bras. Claire est très contente et elle remercie le voisin. Le soir, le chat dort sur le canapé.' }))) : proof
     ? Promise.resolve(JSON.stringify({ corrections: text.includes('allé bien') ? [{ wrong: 'je suis allé bien', right: 'je vais bien', why: 'present tense', x: 1 }, { wrong: 'no right form' }, { wrong: 'Je suis', right: 'je suis', why: 'changes nothing' }] : [] }))
     : text.includes('attends') ? new Promise(() => {}) : Promise.resolve(JSON.stringify(n++ ? { reply: 'Très bien. Et que faites-vous demain ?', evil: '<b>' } : { reply: 'Bonjour ! Comment allez-vous ?' })) };
   return s; } }; });
@@ -451,6 +453,15 @@ for (const turn of [1, 2]) {
 }
 await page.goto(shared.replace(/#text=.*/, '#text=bm90LWEtdGV4dA'));  // a link that holds no text says so
 await page.waitForFunction(() => document.querySelector('#main').innerText.includes('This link could not be read'));
+// a new story from the browser's own model: asked for at the learner's level, added as their own text, its title never markup
+await click('Library');
+await click('Write me a story');
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('Added “Le chat <b>perdu</b>”.'));
+await page.waitForTimeout(300); // the message is still there after whatever arrives in the background has redrawn the screen
+assert.match(await main(), /Added “Le chat <b>perdu<\/b>”\./, 'a background redraw does not take a message away');
+assert.match(await page.evaluate(() => self.lmStory), /^Write a text of \d+ to \d+ words for a learner at level [ABC][12]: .* Work in these words where they fit naturally: \p{L}/u); // the words in review are named
+assert.equal(await page.locator('.card', { hasText: 'written on this device' }).count(), 1);
+assert.equal(await page.locator('#main b', { hasText: /^perdu$/ }).count(), 0, 'a model\'s title is never markup');
 await click('Words');
 assert.match(await main(), /Elle achète du fromage\s*→\s*Elle achète des fromages/);
 await page.locator('summary', { hasText: 'Add a correction from a teacher' }).click();
