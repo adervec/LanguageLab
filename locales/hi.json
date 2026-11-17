@@ -139,7 +139,9 @@
  "Learning a language": "भाषा सीखना",
  "Leave this sitting? It is not saved until you finish it. Tap again to leave.": "यह सत्र छोड़ें? यह पूरा करने पर ही सहेजा जाता है। छोड़ने के लिए फिर से टैप करें।",
  "Lesson done": "सबक पूरा",
+ "Lesson {a}": "पाठ {a}",
  "Lesson {i} of {n}: {title}": "सबक {i} / {n}: {title}",
+ "Lessons {a} to {b}": "पाठ {a} से {b}",
  "Letter {i} of {n}": "अक्षर {i} / {n}",
  "Letters": "अक्षर",
  "Level": "स्तर",
@@ -446,6 +448,7 @@
  "written by your AI agent": "आपके AI एजेंट ने लिखा",
  "written on this device": "इस डिवाइस पर लिखी गई",
  "your recording": "आपकी रिकॉर्डिंग",
+ "{done} of {n} done": "{n} में से {done} पूरे",
  "{n} item is due|{n} items are due": {
   "one": "{n} आइटम देय है",
   "other": "{n} आइटम देय हैं"

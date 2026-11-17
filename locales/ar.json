@@ -143,7 +143,9 @@
  "Learning a language": "تعلّم لغة",
  "Leave this sitting? It is not saved until you finish it. Tap again to leave.": "هل تريد مغادرة هذه الجلسة؟ لا تُحفظ إلا عند إنهائها. انقر مرة أخرى للمغادرة.",
  "Lesson done": "انتهى الدرس",
+ "Lesson {a}": "الدرس {a}",
  "Lesson {i} of {n}: {title}": "الدرس {i} من {n}: {title}",
+ "Lessons {a} to {b}": "الدروس من {a} إلى {b}",
  "Letter {i} of {n}": "الحرف {i} من {n}",
  "Letters": "الحروف",
  "Level": "المستوى",
@@ -454,6 +456,7 @@
  "written by your AI agent": "كتبه وكيل الذكاء الاصطناعي الخاص بك",
  "written on this device": "كُتبت على هذا الجهاز",
  "your recording": "تسجيلك",
+ "{done} of {n} done": "أُنجز {done} من {n}",
  "{n} item is due|{n} items are due": {
   "zero": "لا عناصر مستحقة",
   "one": "{n} عنصر مستحق",

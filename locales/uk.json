@@ -141,7 +141,9 @@
  "Learning a language": "Вивчення мови",
  "Leave this sitting? It is not saved until you finish it. Tap again to leave.": "Вийти з цього заняття? Воно зберігається лише після завершення. Торкніться ще раз, щоб вийти.",
  "Lesson done": "Урок завершено",
+ "Lesson {a}": "Урок {a}",
  "Lesson {i} of {n}: {title}": "Урок {i} з {n}: {title}",
+ "Lessons {a} to {b}": "Уроки {a}–{b}",
  "Letter {i} of {n}": "Літера {i} з {n}",
  "Letters": "Літери",
  "Level": "Рівень",
@@ -450,6 +452,7 @@
  "written by your AI agent": "написав ваш ШІ-агент",
  "written on this device": "написано на цьому пристрої",
  "your recording": "ваш запис",
+ "{done} of {n} done": "пройдено {done} з {n}",
  "{n} item is due|{n} items are due": {
   "one": "{n} елемент на повторення",
   "few": "{n} елементи на повторення",

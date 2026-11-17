@@ -53,7 +53,7 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   where the file has that language. A lesson is a session with `mode: 'first'`: study the phrases, type half from the ear,
   write the other half from their meaning and say them (the halves swap next time). Its phrases become review cards in the
   corrections deck under ids `first:<story id>:<n>`. `lessonKeys()` gives the letters to tap. The First steps screen
-  (`vFirst`, `#first`) lists the lessons, the charts with a "type how it sounds" practice, and the sounds.
+  (`vFirst`, `#first`) lists the lessons ten at a time (`tenOpen`: the ten with the next lesson is open), the charts with a "type how it sounds" practice, and the sounds.
 - **A sitting** is the graded session: one story through listen (text hidden), questions answered
   from the ear alone (typed, keyword-checked), read (tap unknown words), dictation at natural speed
   (the app's score), "write it back" (a sentence shown by its meaning, where the browser's Translator
@@ -64,7 +64,7 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   tapped for may start a download), `deviceHints` puts its suggestions beside the sitting (`hints`, three at most); one becomes a
   review card only when the learner keeps it (ids `h:…`).
 - **Other sessions** reuse the same steps: free reading (`mode: 'read'`), a role-play alone, or up to eight
-  sentences of a story read aloud (`'talk'`: the speaking step on its own; a text with nothing sayable is opened for reading), and Just listen (`'listen'`, stories played one after another). All are rows in
+  sentences of a story read aloud (`'talk'`: the speaking step on its own; a text with nothing sayable is opened for reading), and Just listen (`'listen'`, the stories read and the first lessons done, played one after another). All are rows in
   `S.sittings` with a `mode`, and each is logged once with `appFont.logSession`.
 - **Review**: tapped words come back as a blank in the sentence they were met in; corrections come
   back as "type it again, corrected". Both use learning-pit's scheduler (cut down, in `core.js`).

@@ -139,7 +139,9 @@
  "Learning a language": "Kujifunza lugha",
  "Leave this sitting? It is not saved until you finish it. Tap again to leave.": "Uondoke kwenye kikao hiki? Hakihifadhiwi hadi ukimalize. Gusa tena ili kuondoka.",
  "Lesson done": "Somo limekamilika",
+ "Lesson {a}": "Somo la {a}",
  "Lesson {i} of {n}: {title}": "Somo la {i} kati ya {n}: {title}",
+ "Lessons {a} to {b}": "Masomo {a} hadi {b}",
  "Letter {i} of {n}": "Herufi ya {i} kati ya {n}",
  "Letters": "Herufi",
  "Level": "Kiwango",
@@ -446,6 +448,7 @@
  "written by your AI agent": "limeandikwa na wakala wako wa AI",
  "written on this device": "imeandikwa kwenye kifaa hiki",
  "your recording": "rekodi yako",
+ "{done} of {n} done": "{done} kati ya {n} yamekamilika",
  "{n} item is due|{n} items are due": {
   "one": "Kipengee {n} kinasubiri",
   "other": "Vipengee {n} vinasubiri"

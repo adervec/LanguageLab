@@ -139,7 +139,9 @@
  "Learning a language": "Lerni lingvon",
  "Leave this sitting? It is not saved until you finish it. Tap again to leave.": "Ĉu forlasi ĉi tiun seancon? Ĝi konserviĝas nur kiam vi finas ĝin. Tuŝu denove por forlasi.",
  "Lesson done": "Leciono finita",
+ "Lesson {a}": "Leciono {a}",
  "Lesson {i} of {n}: {title}": "Leciono {i} el {n}: {title}",
+ "Lessons {a} to {b}": "Lecionoj {a} ĝis {b}",
  "Letter {i} of {n}": "Litero {i} el {n}",
  "Letters": "Literoj",
  "Level": "Nivelo",
@@ -446,6 +448,7 @@
  "written by your AI agent": "verkita de via AI-agento",
  "written on this device": "verkita en ĉi tiu aparato",
  "your recording": "via registraĵo",
+ "{done} of {n} done": "{done} el {n} faritaj",
  "{n} item is due|{n} items are due": {
   "one": "{n} ero ripetendas",
   "other": "{n} eroj ripetendas"

@@ -138,7 +138,9 @@
  "Learning a language": "Belajar bahasa",
  "Leave this sitting? It is not saved until you finish it. Tap again to leave.": "Tinggalkan sesi ini? Sesi baru disimpan setelah selesai. Ketuk lagi untuk keluar.",
  "Lesson done": "Pelajaran selesai",
+ "Lesson {a}": "Pelajaran {a}",
  "Lesson {i} of {n}: {title}": "Pelajaran {i} dari {n}: {title}",
+ "Lessons {a} to {b}": "Pelajaran {a} sampai {b}",
  "Letter {i} of {n}": "Huruf {i} dari {n}",
  "Letters": "Huruf",
  "Level": "Tingkat",
@@ -444,6 +446,7 @@
  "written by your AI agent": "ditulis oleh agen AI Anda",
  "written on this device": "ditulis di perangkat ini",
  "your recording": "rekaman Anda",
+ "{done} of {n} done": "{done} dari {n} selesai",
  "{n} item is due|{n} items are due": {
   "other": "{n} butir jatuh tempo"
  },

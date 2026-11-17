@@ -396,6 +396,10 @@ await page.fill('#ans', 'qq');
 await page.keyboard.press('Enter');
 assert.match(await main(), /Letter 2 of 20[\s\S]*Not yet:/);
 await click('Stop');
+await click('Today');
+await click('Just listen');                             // no story read yet: the lesson just done is what can be followed by ear
+assert.match(await main(), /Story 1 of 1\s+Hello and goodbye/);
+await click('Finish');
 await click('Progress');
 assert.match(await main(), /Hello and goodbye\s+[^\n]*dictation 25%[^\n]*read aloud 100%/);
 await click('Settings');
@@ -603,7 +607,9 @@ await click('Library');
 await until(async () => (await main()).includes('Le train de nuit'), 'the approved story is in the library');
 assert.match(await panel(), /1 story added · 1 lesson added/);
 await click('First steps, letters and sounds');
-assert.match(await main(), /60\. The old tree[\s\S]*61\. À la boulangerie\s+7 phrases · written by your AI agent\s+Start/, 'the lesson follows the bundled ones, less the phrase with a digit and the one already learnt');
+assert.match(await main(), /Lessons 51 to 60 · 0 of 10 done\s+Lesson 61 · 0 of 1 done/, 'the lesson follows the bundled ones, which are shown ten at a time');
+await page.locator('#main button', { hasText: /^Lesson 61/ }).click();
+assert.match(await main(), /61\. À la boulangerie\s+7 phrases · written by your AI agent\s+Start/, 'less the phrase with a digit and the one already learnt');
 await click('Library');
 assert.deepEqual(await page.evaluate(() => new Promise(done => { const r = indexedDB.open('languagelab'); r.onsuccess = () => { const q = r.result.transaction('kv').objectStore('kv').get('state');
   q.onsuccess = () => { const s = q.result.stories.find(x => x.title === 'Le train de nuit'); done([s.back, s.evil, s.source]); }; }; })),
@@ -652,6 +658,7 @@ await page.reload();
 await page.waitForFunction(() => /Today/.test(document.querySelector('#main')?.innerText || ''));
 await click('Library');
 await click('First steps, letters and sounds');
+await page.locator('#main button', { hasText: /^Lesson 61/ }).click();
 await page.waitForFunction(() => document.querySelector('#main').innerText.includes('61. À la boulangerie'));
 
 await browser.close();

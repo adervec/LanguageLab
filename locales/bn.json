@@ -139,7 +139,9 @@
  "Learning a language": "ভাষা শেখা",
  "Leave this sitting? It is not saved until you finish it. Tap again to leave.": "এই সেশন ছেড়ে যাবেন? শেষ না করা পর্যন্ত এটি সংরক্ষিত হয় না। ছেড়ে যেতে আবার ট্যাপ করুন।",
  "Lesson done": "পাঠ শেষ",
+ "Lesson {a}": "পাঠ {a}",
  "Lesson {i} of {n}: {title}": "পাঠ {i} / {n}: {title}",
+ "Lessons {a} to {b}": "পাঠ {a} থেকে {b}",
  "Letter {i} of {n}": "অক্ষর {i} / {n}",
  "Letters": "অক্ষর",
  "Level": "স্তর",
@@ -446,6 +448,7 @@
  "written by your AI agent": "আপনার AI এজেন্টের লেখা",
  "written on this device": "এই ডিভাইসে লেখা",
  "your recording": "আপনার রেকর্ডিং",
+ "{done} of {n} done": "{n}টির মধ্যে {done}টি শেষ",
  "{n} item is due|{n} items are due": {
   "one": "{n}টি আইটেম বাকি",
   "other": "{n}টি আইটেম বাকি"

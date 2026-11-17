@@ -518,6 +518,8 @@ const guess3 = (b, done) => { const got = []; if (!recog && TONAL.includes(S.lan
 const heardAs = (word, got, k = w => C.wordKeys(w, S.lang).join(' ')) => k(got[0]) === k(word) ? 'hit' : got.some(g => k(g) === k(word)) ? 'near' : 'miss';
 const tryHtml = (word, tr) => H`${tr.state === 'none' ? t('It recognised no word.') : tr.state === 'hit' ? H`<b class="hit">${t('Understood.')}</b>` : tr.state === 'near' ? H`<b class="near">${t('Nearly: it was only its second guess.')}</b>` : H`${t('It heard instead')}: ${pairHtml(word, tr.heard)}`}${
   tr.shape ? H` <span class="sub">${t('Your voice: {shape}.', { shape: t(SHAPES[tr.shape]) })} ${spark(tr.pitch)}</span>` : ''}`;
+let tenOpen = -1; // which ten of the first lessons is open on the First steps screen: -1 the ten with the next lesson to do, -2 none
+const openTen = ls => tenOpen === -1 ? Math.floor(Math.max(0, ls.findIndex(x => !x.readAt)) / 10) : tenOpen;
 const sndTry = {}; // a "sound to notice" said aloud: language:word -> { state: 'hit' | 'near' | 'miss', heard } (kept for the visit only)
 // A tappable word is a box of its own, so left alone the browser may break the line between it and what is written against it: a
 // full stop would start the next line, and "J'" would part from "ai". What touches a word (and the spaced ? ! : ; » of French)
@@ -709,7 +711,8 @@ function finishSitting() {
 // ---------- just listening: stories one after another, the time counted as input ----------
 // ponytail: the browser's synthesiser stops when a phone locks its screen; a recording you add yourself keeps playing.
 function startRadio(id) {
-  const all = stories(), read = all.filter(s => s.readAt), pool = shuffle((read.length ? read : all).filter(s => s.id !== id));
+  const all = stories(), read = all.filter(s => s.readAt), done = lessons().filter(s => s.readAt); // (what is known is what can be followed by ear)
+  const pool = shuffle((read.length || done.length ? [...read, ...done] : all).filter(s => s.id !== id));
   const queue = [...(id ? [id] : []), ...pool.map(s => s.id)];
   if (!queue.length) { flash = t('Nothing here yet.'); return render(); }
   if (radio) endRadio();
@@ -735,7 +738,7 @@ function endRadio() {
   radioStop();
   const s = story(radio.queue[0]), sec = Math.round(radio.sec);
   if (sec >= 30) { // less than half a minute is not a session
-    const rec = { id: radio.id, lang: S.lang, mode: 'listen', level: s.level, day: C.dayStr(), at: Date.now(), storyId: s.id, title: s.title, listenSec: sec, minutes: Math.max(1, Math.round(sec / 60)) };
+    const rec = { id: radio.id, lang: S.lang, mode: 'listen', level: s.level, day: C.dayStr(), at: Date.now(), storyId: s.id, title: s.phrases ? ttl(s) : s.title, listenSec: sec, minutes: Math.max(1, Math.round(sec / 60)) };
     S.sittings.push(C.cleanState({ app: 'languagelab', v: 1, sittings: [{ ...rec, ...C.scoreSitting(rec) }] }).sittings[0]);
     save();
     A.logSession({ kind: 'listen', minutes: rec.minutes, id: rec.id });
@@ -746,10 +749,10 @@ function vRadio() {
   const s = story(radio.queue[radio.i]);
   return H`<h1>${t('Just listen')}</h1>
     <p class="sub">${t('Stories play one after another. Let it run while you walk or cook: the time counts as listening.')}</p>
-    <div class="card"><p class="sub">${t('Story {i} of {n}', { i: radio.i + 1, n: radio.queue.length })}</p><p class="big" lang="${S.lang}">${s.title}</p>
+    <div class="card"><p class="sub">${t('Story {i} of {n}', { i: radio.i + 1, n: radio.queue.length })}</p><p class="big">${s.phrases ? ttl(s) : H`<span lang="${S.lang}">${s.title}</span>`}</p>
       <div class="row"><button class="primary" data-act="rplay">${radio.playing ? t('Stop') : t('Play')}</button><button data-act="rskip">${t('Next story')}</button>
         <button data-act="rtext" aria-pressed="${radio.text}">${t('Show the text')}</button></div>
-      ${radio.text ? H`<div class="story" lang="${S.lang}" data-clamp>${s.lines ? s.lines.map(l => H`<p><b class="who">${s.roles[l[0]]}</b> ${l[1]}</p>`) : s.text}</div>` : ''}
+      ${radio.text ? H`<div class="story" lang="${S.lang}" data-clamp>${s.lines ? s.lines.map(l => H`<p><b class="who">${s.roles[l[0]]}</b> ${l[1]}</p>`) : s.phrases ? s.back.map(b => H`<p>${b[0]} <span class="sub" lang="${A.lang()}">${b[1]}</span></p>`) : s.text}</div>` : ''}
     </div>
     <p>${t.n('{n} minute listened', '{n} minutes listened', Math.round(radioSec() / 60))}</p>
     <button data-act="go" data-v="today">${t('Finish')}</button>`;
@@ -989,11 +992,14 @@ function vFirst() {
         : H`<p><input type="text" id="ans" inputmode="${quiz.ear ? 'numeric' : 'text'}" autocomplete="off" autocapitalize="off" spellcheck="false" data-enter="qzcheck" aria-label="${ask}" placeholder="${ask}" data-focus></p>
         <p><button class="primary" data-act="qzcheck">${t('Check')}</button></p>`}
       <div class="bar"><button data-act="qzend">${t('Stop')}</button></div>`}`; }
+  const next = ls.find(x => !x.readAt), ten = openTen(ls);
   return H`<h1>${t('First steps')} <span class="sub">${lang().name}</span></h1>
   ${ls.length ? H`<p class="sub">${t('Short lessons of everyday phrases, starting from nothing. You hear each phrase, write it and say it; then the phrases come back in your review.')}</p>
-    ${ls.map((s, i) => H`<div class="card"><b>${i + 1}. ${ttl(s)}</b>
-      <div class="sub">${t.n('{n} phrase', '{n} phrases', s.back.length)}${s.source === 'first' ? '' : ' · ' + t('written by your AI agent')}${s.readAt ? ' · ' + t('last done {date}', { date: A.fmt.date(s.readAt) }) : ''}</div>
-      <div class="row acts"><button class="${s === ls.find(x => !x.readAt) ? 'primary' : ''}" data-act="start" data-id="${s.id}">${s.readAt ? t('Do it again') : t('Start')}</button></div></div>`)}
+    ${Array.from({ length: Math.ceil(ls.length / 10) }, (_, g) => { const part = ls.slice(g * 10, g * 10 + 10), a = g * 10 + 1, b = g * 10 + part.length, open = ls.length <= 10 || g === ten;
+      return H`${ls.length > 10 ? H`<p><button data-act="tens" data-g="${g}" aria-expanded="${open}">${a === b ? t('Lesson {a}', { a }) : t('Lessons {a} to {b}', { a, b })} <span class="sub">· ${t('{done} of {n} done', { done: part.filter(x => x.readAt).length, n: part.length })}</span></button></p>` : ''}
+      ${open ? part.map((s, k) => H`<div class="card"><b>${a + k}. ${ttl(s)}</b>
+        <div class="sub">${t.n('{n} phrase', '{n} phrases', s.back.length)}${s.source === 'first' ? '' : ' · ' + t('written by your AI agent')}${s.readAt ? ' · ' + t('last done {date}', { date: A.fmt.date(s.readAt) }) : ''}</div>
+        <div class="row acts"><button class="${s === next ? 'primary' : ''}" data-act="start" data-id="${s.id}">${s.readAt ? t('Do it again') : t('Start')}</button></div></div>`) : ''}`; })}
     <p class="sub">${t('More lessons: with AI cowork (Settings) your own AI agent writes the next ones, when your level is A1 and fewer than three are left to do.')}</p>`
     : H`<p>${t('This language has no first lessons of its own. With AI cowork (Settings) your own AI agent writes them while your level is A1. It also works with your own texts.')}</p>`}
   ${abc.length ? H`<h2>${t('Letters')}</h2><p class="sub">${t('Tap a letter to hear it. Then practise: you see a letter and type how it sounds.')}</p>
@@ -1085,7 +1091,7 @@ const ACT = {
       sit.leaving = true; flash = t('Leave this sitting? It is not saved until you finish it. Tap again to leave.'); return render(true);
     }
     if (radio) endRadio();
-    hush(); sit = rev = quiz = null; confirmErase = false; confirmRemove = ''; view = b.dataset.v; palT0 = Date.now();
+    hush(); sit = rev = quiz = null; confirmErase = false; confirmRemove = ''; view = b.dataset.v; palT0 = Date.now(); tenOpen = -1;
     if (view === 'chat') { checkModel(); if (chat()?.wait && chatEngine() === 'cowork') pollChat(); }
     render(); scrollTo(0, 0);
   },
@@ -1321,6 +1327,7 @@ const ACT = {
   chatretry() { const c = chat(), me = c.turns.find(x => x.id === c.wait); return chatAsk(me ? me.text : ''); },
   chatmic(b) { const box = $('#ans'); hear(b, false, text => { box.value = (box.value + ' ' + text).trim(); }, () => { if (view === 'chat' && box.isConnected && box.value.trim()) run('chatsend'); }, () => 2500); },
   chatsay(b) { const x = chat()?.turns.find(y => y.id === b.dataset.id); if (x) say([[0, x.text]]); },
+  tens(b) { const g = +b.dataset.g; tenOpen = openTen(lessons()) === g ? -2 : g; render(); },
   sndsay(b) { // a word chosen for one sound: was it understood, and if not, what was heard in its place?
     const word = b.dataset.x;
     guess3(b, (got, v) => { if (view !== 'first' || !(got.length || v)) return;

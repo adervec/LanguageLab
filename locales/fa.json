@@ -139,7 +139,9 @@
  "Learning a language": "یادگیری زبان",
  "Leave this sitting? It is not saved until you finish it. Tap again to leave.": "این جلسه را ترک می‌کنید؟ تا تمام نشود ذخیره نمی‌شود. برای خروج دوباره بزنید.",
  "Lesson done": "درس تمام شد",
+ "Lesson {a}": "درس {a}",
  "Lesson {i} of {n}: {title}": "درس {i} از {n}: {title}",
+ "Lessons {a} to {b}": "درس‌های {a} تا {b}",
  "Letter {i} of {n}": "حرف {i} از {n}",
  "Letters": "حرف‌ها",
  "Level": "سطح",
@@ -446,6 +448,7 @@
  "written by your AI agent": "نوشته‌ی عامل هوش مصنوعی شما",
  "written on this device": "نوشته‌شده روی این دستگاه",
  "your recording": "ضبط شما",
+ "{done} of {n} done": "{done} از {n} انجام شده",
  "{n} item is due|{n} items are due": {
   "one": "{n} مورد موعدش رسیده",
   "other": "{n} مورد موعدشان رسیده"

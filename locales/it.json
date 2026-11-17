@@ -140,7 +140,9 @@
  "Learning a language": "Imparare una lingua",
  "Leave this sitting? It is not saved until you finish it. Tap again to leave.": "Uscire da questa sessione? Viene salvata solo quando la finisci. Tocca di nuovo per uscire.",
  "Lesson done": "Lezione finita",
+ "Lesson {a}": "Lezione {a}",
  "Lesson {i} of {n}: {title}": "Lezione {i} di {n}: {title}",
+ "Lessons {a} to {b}": "Lezioni da {a} a {b}",
  "Letter {i} of {n}": "Lettera {i} di {n}",
  "Letters": "Lettere",
  "Level": "Livello",
@@ -448,6 +450,7 @@
  "written by your AI agent": "scritta dal tuo agente IA",
  "written on this device": "scritta su questo dispositivo",
  "your recording": "la tua registrazione",
+ "{done} of {n} done": "{done} di {n} fatte",
  "{n} item is due|{n} items are due": {
   "one": "{n} elemento da ripassare",
   "many": "{n} elementi da ripassare",

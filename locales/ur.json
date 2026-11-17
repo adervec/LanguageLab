@@ -139,7 +139,9 @@
  "Learning a language": "زبان سیکھنا",
  "Leave this sitting? It is not saved until you finish it. Tap again to leave.": "یہ نشست چھوڑیں؟ یہ مکمل ہونے پر ہی محفوظ ہوتی ہے۔ چھوڑنے کے لیے دوبارہ تھپتھپائیں۔",
  "Lesson done": "سبق مکمل",
+ "Lesson {a}": "سبق {a}",
  "Lesson {i} of {n}: {title}": "سبق {i} از {n}: {title}",
+ "Lessons {a} to {b}": "سبق {a} سے {b}",
  "Letter {i} of {n}": "حرف {i} از {n}",
  "Letters": "حروف",
  "Level": "سطح",
@@ -446,6 +448,7 @@
  "written by your AI agent": "آپ کے AI ایجنٹ کا لکھا ہوا",
  "written on this device": "اس آلے پر لکھی گئی",
  "your recording": "آپ کی ریکارڈنگ",
+ "{done} of {n} done": "{n} میں سے {done} مکمل",
  "{n} item is due|{n} items are due": {
   "one": "{n} آئٹم دہرانا باقی ہے",
   "other": "{n} آئٹمز دہرانے باقی ہیں"

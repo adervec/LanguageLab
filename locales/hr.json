@@ -140,7 +140,9 @@
  "Learning a language": "Učenje jezika",
  "Leave this sitting? It is not saved until you finish it. Tap again to leave.": "Napustiti ovu sesiju? Sprema se tek kad je završiš. Dodirni ponovno za izlaz.",
  "Lesson done": "Lekcija završena",
+ "Lesson {a}": "Lekcija {a}",
  "Lesson {i} of {n}: {title}": "Lekcija {i} od {n}: {title}",
+ "Lessons {a} to {b}": "Lekcije {a} do {b}",
  "Letter {i} of {n}": "Slovo {i} od {n}",
  "Letters": "Slova",
  "Level": "Razina",
@@ -448,6 +450,7 @@
  "written by your AI agent": "napisao vaš AI agent",
  "written on this device": "napisano na ovom uređaju",
  "your recording": "tvoja snimka",
+ "{done} of {n} done": "gotovo {done} od {n}",
  "{n} item is due|{n} items are due": {
   "one": "{n} stavka dospijeva",
   "few": "{n} stavke dospijevaju",

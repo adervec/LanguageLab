@@ -138,7 +138,9 @@
  "Learning a language": "学语言",
  "Leave this sitting? It is not saved until you finish it. Tap again to leave.": "要离开这次练习吗？完成之前不会保存。再点一次即可离开。",
  "Lesson done": "课程完成",
+ "Lesson {a}": "第 {a} 课",
  "Lesson {i} of {n}: {title}": "第 {i} 课（共 {n} 课）：{title}",
+ "Lessons {a} to {b}": "第 {a} 到 {b} 课",
  "Letter {i} of {n}": "第 {i} 个字母（共 {n} 个）",
  "Letters": "字母",
  "Level": "级别",
@@ -444,6 +446,7 @@
  "written by your AI agent": "由你的 AI 代理编写",
  "written on this device": "在这台设备上写的",
  "your recording": "你的录音",
+ "{done} of {n} done": "已完成 {done}/{n}",
  "{n} item is due|{n} items are due": {
   "other": "{n} 项到期"
  },
