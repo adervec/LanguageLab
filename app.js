@@ -23,7 +23,8 @@ const lang = () => C.langInfo(S.lang);
 const langName = () => { try { return new Intl.DisplayNames([A.lang()], { type: 'language' }).of(S.lang) || lang().name; } catch { return lang().name; } };
 // The first lessons (phrases) are kept apart from the stories: they have no level and a screen of their own.
 const stories = () => S.stories.filter(s => s.lang === S.lang && !s.phrases);
-const lessons = () => S.stories.filter(s => s.lang === S.lang && s.phrases).sort((a, b) => a.id.localeCompare(b.id));
+// the bundled lessons in their order, then the ones an AI agent wrote, oldest first
+const lessons = () => S.stories.filter(s => s.lang === S.lang && s.phrases).sort((a, b) => (a.source !== 'first') - (b.source !== 'first') || (a.source === 'first' ? 0 : a.added - b.added) || a.id.localeCompare(b.id));
 let FIRST = null; // content/first.json: the phrases of the first lessons, sounds to notice, script charts
 // A lesson's title and a chart's name are interface strings.
 // i18n-keys: Hello and goodbye | Getting to know you | Numbers and prices | Eating and drinking | Getting around | People and family | Every day | Likes and wishes | Things and places | Time and weather | At the market | At home | Travelling | Yesterday | Plans | Feeling well and unwell | Describing things | Work and study | On the phone | Help and good wishes | Clothes and shopping | At the restaurant | Free time | Why and because | People | Can, must, may | A bad morning | In town | Nature and seasons | Once upon a time | Hiragana | Katakana | Consonants | Vowels | Alphabet
@@ -960,9 +961,10 @@ function vFirst() {
   return H`<h1>${t('First steps')} <span class="sub">${lang().name}</span></h1>
   ${ls.length ? H`<p class="sub">${t('Short lessons of everyday phrases, starting from nothing. You hear each phrase, write it and say it; then the phrases come back in your review.')}</p>
     ${ls.map((s, i) => H`<div class="card"><b>${i + 1}. ${ttl(s)}</b>
-      <div class="sub">${t.n('{n} phrase', '{n} phrases', s.back.length)}${s.readAt ? ' · ' + t('last done {date}', { date: A.fmt.date(s.readAt) }) : ''}</div>
-      <div class="row acts"><button class="${s === ls.find(x => !x.readAt) ? 'primary' : ''}" data-act="start" data-id="${s.id}">${s.readAt ? t('Do it again') : t('Start')}</button></div></div>`)}`
-    : H`<p>${t('This language has no first lessons yet. It still works with your own texts and with stories from AI cowork.')}</p>`}
+      <div class="sub">${t.n('{n} phrase', '{n} phrases', s.back.length)}${s.source === 'first' ? '' : ' · ' + t('written by your AI agent')}${s.readAt ? ' · ' + t('last done {date}', { date: A.fmt.date(s.readAt) }) : ''}</div>
+      <div class="row acts"><button class="${s === ls.find(x => !x.readAt) ? 'primary' : ''}" data-act="start" data-id="${s.id}">${s.readAt ? t('Do it again') : t('Start')}</button></div></div>`)}
+    <p class="sub">${t('More lessons: with AI cowork (Settings) your own AI agent writes the next ones, when your level is A1 and fewer than three are left to do.')}</p>`
+    : H`<p>${t('This language has no first lessons of its own. With AI cowork (Settings) your own AI agent writes them while your level is A1. It also works with your own texts.')}</p>`}
   ${abc.length ? H`<h2>${t('Letters')}</h2><p class="sub">${t('Tap a letter to hear it. Then practise: you see a letter and type how it sounds.')}</p>
     ${abc.map(([name, src], n) => H`<div class="card"><div class="row"><b class="grow">${t(String(name))}</b><button data-act="quiz" data-i="${n}">${t('Practise')}</button></div>
       <div class="abc">${C.chartPairs(src).map(([ch, r]) => H`<button data-act="sayx" data-x="${ch}"><b lang="${S.lang}">${ch}</b><span class="sub">${r[0]}</span></button>`)}</div></div>`)}` : ''}
@@ -1395,6 +1397,13 @@ The learner is acquiring \`payload.language\` by reading and listening. Write \`
 ## Dialogues
 The same, except: no \`text\` and no \`back\`. Give \`roles\` (the two speakers' names) and \`lines\`, 8 to 18 turns of \`[0 or 1, "what is said"]\`. Speaker 1 is the learner's part, said aloud and then from memory: useful sentences they would really need, at least three of them four words or longer. Exactly two questions.
 
+## First lessons
+Only when \`payload.wantLessons\` is above 0: the learner is a beginner and has nearly finished the lessons they have. Write that many new lessons in \`lessons\`, to follow \`payload.lessonsDone\` (the titles of their lessons so far, in order) without repeating a phrase of \`payload.lastPhrases\`. With no lessons so far, start from nothing: greetings, please and thank you, yes and no.
+- A lesson is a \`title\` (two to four words, in \`payload.glossLanguage\`) and exactly eight \`phrases\`, each \`[phrase, meaning, reading]\`.
+- A phrase is one short sentence or set phrase (twelve words and 80 characters at most) that a traveller or a new neighbour really says or hears, in natural, correct \`payload.language\`. No digits, no abbreviations. A lesson keeps to one situation or one pattern, and each lesson adds a little to the one before: some new words, one new pattern.
+- \`meaning\`: what the phrase means, in \`payload.glossLanguage\`. Where the words depend on who is speaking (a man or a woman), give one form and name the other in brackets in the meaning.
+- \`reading\`: the phrase in Latin letters, only where \`payload.language\` is not written in Latin letters; otherwise "".
+
 ## Meanings
 \`glosses\`: a short meaning, in \`payload.glossLanguage\`, for every entry of \`payload.needGloss\` (\`{ word, sentence }\`: words they tapped that had no meaning), keyed by the word.
 
@@ -1405,6 +1414,7 @@ The same, except: no \`text\` and no \`back\`. Give \`roles\` (the two speakers'
     { "title": "", "level": "A2", "text": "", "gloss": { "word": "meaning" }, "questions": [{ "q": "", "a": [""] }], "notice": "", "back": [["a sentence of the text", "its meaning"], ["another", "its meaning"]] },
     { "title": "", "level": "A2", "roles": ["", ""], "lines": [[0, ""], [1, ""]], "gloss": { "word": "meaning" }, "questions": [{ "q": "", "a": [""] }], "notice": "" }
   ],
+  "lessons": [{ "title": "", "phrases": [["a phrase", "its meaning", "its reading in Latin letters, or empty"]] }],
   "glosses": { "word": "meaning" } }
 \`\`\`
 
@@ -1497,6 +1507,10 @@ const ownBack = s => { const own = s?.back && C.storySentences(s).map(x => x.nor
 const replyLang = r => C.isLangCode(r?.languageCode) ? r.languageCode : S.lang;
 const replyStories = r => list(r?.stories).slice(0, 20).map((s, i) => ({ row: 's' + i, s: ownBack(C.cleanStory({ ...s, lang: replyLang(r) }, replyLang(r))) }))
   .filter(x => x.s && !S.stories.some(o => o.lang === x.s.lang && o.title === x.s.title));
+// First lessons in a reply: checked like the bundled ones, less the phrases the learner already has
+const replyLessons = r => { const code = replyLang(r), mine = S.stories.filter(s => s.lang === code && s.phrases), have = new Set(mine.flatMap(s => s.back.map(b => b[0])));
+  return list(r?.lessons).slice(0, 6).map((l, i) => ({ row: 'l' + i, s: C.cleanLesson({ title: l?.title, phrases: list(l?.phrases).filter(p => !have.has(String(list(p)[0]).trim())) }, code) }))
+    .filter(x => x.s && !mine.some(o => o.title === x.s.title)); };
 const cardsOf = code => (Object.hasOwn(S.langs, code) ? S.langs[code] : L()).cards;
 const replyGloss = r => Object.entries(C.cleanGloss(r?.glosses)).filter(([k]) => cardsOf(replyLang(r))[k] && !cardsOf(replyLang(r))[k].gloss);
 const replyReviews = r => list(r?.reviews).map(C.cleanReview).filter(x => x && S.sittings.some(s => s.id === x.sessionId));
@@ -1518,6 +1532,9 @@ function mountCowork() {
           learning: Object.keys(cards).filter(k => !cards[k].retired).slice(-80), knownSample: Object.keys(known).slice(-400),
           needGloss: Object.entries(cards).filter(([, c]) => !c.gloss && !c.retired).slice(0, 100).map(([word, c]) => ({ word, sentence: c.ctx })),
           haveTitles: stories().map(s => s.title),
+          // first lessons: asked for while the level is A1 and fewer than three are left to do; also where the app brings none of its own
+          wantLessons: level === 'A1' ? Math.max(0, 3 - lessons().filter(s => !s.readAt).length) : 0,
+          lessonsDone: lessons().map(s => s.title), lastPhrases: lessons().slice(-3).flatMap(s => s.back.map(b => b[0])),
         }),
         'stories/INSTRUCTIONS.md': STORIES_MD,
       };
@@ -1549,16 +1566,19 @@ function mountCowork() {
       stories: {
         label: t('New stories'), schedule: 'daily', review: true,
         preview: r => [...replyStories(r).map(x => ({ id: x.row, label: [x.s.level, x.s.title].filter(Boolean).join(' · '), detail: snip(x.s.text) })),
+          ...replyLessons(r).map(x => ({ id: x.row, label: [t('First steps'), x.s.title].join(' · '), detail: snip(x.s.back.map(b => b[0]).join(' · ')) })),
           ...(replyGloss(r).length ? [{ id: 'gloss', label: t.n('Meaning for {n} word', 'Meanings for {n} words', replyGloss(r).length), detail: snip(replyGloss(r).map(([k, v]) => k + ': ' + v).join(' · ')) }] : [])],
         apply(r, accepted) {
-          const yes = id => !accepted || accepted.includes(id), undo = { stories: [], gloss: [], code: replyLang(r) };
+          const yes = id => !accepted || accepted.includes(id), undo = { stories: [], gloss: [], code: replyLang(r) }, newLessons = replyLessons(r).filter(x => yes(x.row));
           for (const x of replyStories(r)) if (yes(x.row)) {
             const id = 'cw-' + A.randomId();
             S.stories.push({ ...x.s, id, source: 'cowork', added: Date.now(), readAt: 0 }); undo.stories.push(id);
           }
+          const ns = undo.stories.length;
+          for (const x of newLessons) { const id = 'cw-' + A.randomId(); S.stories.push({ ...x.s, id, source: 'cowork', added: Date.now(), readAt: 0 }); undo.stories.push(id); }
           if (yes('gloss')) for (const [k, v] of replyGloss(r)) { cardsOf(undo.code)[k].gloss = v; undo.gloss.push(k); }
           save(); render();
-          return { summary: t.n('{n} story added', '{n} stories added', undo.stories.length), undo };
+          return { summary: [ns || !newLessons.length ? t.n('{n} story added', '{n} stories added', ns) : '', newLessons.length ? t.n('{n} lesson added', '{n} lessons added', newLessons.length) : ''].filter(Boolean).join(' · '), undo };
         },
         undo(d) {
           S.stories = S.stories.filter(s => !list(d?.stories).includes(s.id));
@@ -1649,8 +1669,8 @@ async function addStarters() {
   FIRST ||= await fetch('content/first.json').then(r => r.json()).catch(() => null);
   const starter = C.LANGS[code] ? await fetch(`content/${code}.json`).then(r => r.json()).catch(() => []) : [];
   const first = C.lessonStories(FIRST, code, here());
-  // a saved lesson that the file no longer has (renumbered, withdrawn) goes; its phrases stay in review
-  if (first.length) S.stories = S.stories.filter(s => !(s.lang === code && s.phrases && !first.some(x => x.id === s.id)));
+  // a saved lesson that the file no longer has (renumbered, withdrawn) goes; its phrases stay in review. One an AI agent wrote stays.
+  if (first.length) S.stories = S.stories.filter(s => !(s.lang === code && s.phrases && s.source === 'first' && !first.some(x => x.id === s.id)));
   for (const raw of [...list(starter).map(x => ({ ...x, source: 'starter' })), ...first]) {
     const c = C.cleanStory(raw, code), old = c && story(c.id);
     if (!c || !c.id || S.gone[c.id]) continue;

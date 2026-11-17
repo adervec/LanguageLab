@@ -150,6 +150,7 @@
  "Meaning": "Значення",
  "Mine": "Мої",
  "More input": "Більше матеріалу",
+ "More lessons: with AI cowork (Settings) your own AI agent writes the next ones, when your level is A1 and fewer than three are left to do.": "Ще уроки: із ШІ-cowork (Налаштування) ваш власний ШІ-агент пише наступні, коли ваш рівень A1 і залишилося менше трьох.",
  "My level": "Мій рівень",
  "Natural speed": "Природний темп",
  "Nature and seasons": "Природа і пори року",
@@ -301,7 +302,7 @@
  "The words you tapped come back in the sentence you met them in, and your corrected mistakes come back to be fixed. You type them; nothing to tap.": "Слова, яких ви торкнулися, повертаються в реченні, де ви їх зустріли, а ваші виправлені помилки повертаються, щоб їх закріпити. Ви вводите їх самі; торкатися нічого.",
  "Things and places": "Речі і місця",
  "This device has no {language} voice installed, so listening may not work here.": "На цьому пристрої не встановлено голос для цієї мови ({language}), тому слухання тут може не працювати.",
- "This language has no first lessons yet. It still works with your own texts and with stories from AI cowork.": "Для цієї мови ще немає перших уроків. Вона все одно працює з вашими текстами та з історіями від ШІ-cowork.",
+ "This language has no first lessons of its own. With AI cowork (Settings) your own AI agent writes them while your level is A1. It also works with your own texts.": "Ця мова не має власних перших уроків. Із ШІ-cowork (Налаштування) ваш власний ШІ-агент пише їх, доки ваш рівень A1. Вона працює і з вашими власними текстами.",
  "This link could not be read. Ask for it to be sent again.": "Не вдалося прочитати це посилання. Попросіть надіслати його ще раз.",
  "This needs a browser with a built-in AI model (Chrome on a recent computer) or an AI cowork folder (Settings).": "Потрібен браузер із вбудованою моделлю ШІ (Chrome на новішому комп’ютері) або тека AI cowork (Налаштування).",
  "This reply is for a sitting that is not on this device. Open the link on the device where you did the sitting.": "Ця відповідь стосується заняття, якого немає на цьому пристрої. Відкрийте посилання на пристрої, де ви проходили заняття.",
@@ -407,6 +408,7 @@
  "words written, waiting for the AI review": "слів написано, очікують на відгук ШІ",
  "words written": "написаних слів",
  "words you produced from memory a week or more apart": "слів, які ви відтворили з пам'яті з проміжком у тиждень або більше",
+ "written by your AI agent": "написав ваш ШІ-агент",
  "written on this device": "написано на цьому пристрої",
  "your recording": "ваш запис",
  "{n} item is due|{n} items are due": {
@@ -414,6 +416,12 @@
   "few": "{n} елементи на повторення",
   "many": "{n} елементів на повторення",
   "other": "{n} елемента на повторення"
+ },
+ "{n} lesson added|{n} lessons added": {
+  "one": "Додано {n} урок",
+  "few": "Додано {n} уроки",
+  "many": "Додано {n} уроків",
+  "other": "Додано {n} уроку"
  },
  "{n} letter answered|{n} letters answered": {
   "one": "{n} лист з відповіддю",

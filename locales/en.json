@@ -138,6 +138,7 @@
  "Meaning of {word}": "Meaning of {word}",
  "Mine": "Mine",
  "More input": "More input",
+ "More lessons: with AI cowork (Settings) your own AI agent writes the next ones, when your level is A1 and fewer than three are left to do.": "More lessons: with AI cowork (Settings) your own AI agent writes the next ones, when your level is A1 and fewer than three are left to do.",
  "My level": "My level",
  "Natural speed": "Natural speed",
  "Nature and seasons": "Nature and seasons",
@@ -289,7 +290,7 @@
  "The words you tapped come back in the sentence you met them in, and your corrected mistakes come back to be fixed. You type them; nothing to tap.": "The words you tapped come back in the sentence you met them in, and your corrected mistakes come back to be fixed. You type them; nothing to tap.",
  "Things and places": "Things and places",
  "This device has no {language} voice installed, so listening may not work here.": "This device has no {language} voice installed, so listening may not work here.",
- "This language has no first lessons yet. It still works with your own texts and with stories from AI cowork.": "This language has no first lessons yet. It still works with your own texts and with stories from AI cowork.",
+ "This language has no first lessons of its own. With AI cowork (Settings) your own AI agent writes them while your level is A1. It also works with your own texts.": "This language has no first lessons of its own. With AI cowork (Settings) your own AI agent writes them while your level is A1. It also works with your own texts.",
  "This link could not be read. Ask for it to be sent again.": "This link could not be read. Ask for it to be sent again.",
  "This needs a browser with a built-in AI model (Chrome on a recent computer) or an AI cowork folder (Settings).": "This needs a browser with a built-in AI model (Chrome on a recent computer) or an AI cowork folder (Settings).",
  "This reply is for a sitting that is not on this device. Open the link on the device where you did the sitting.": "This reply is for a sitting that is not on this device. Open the link on the device where you did the sitting.",
@@ -395,6 +396,7 @@
  "words written": "words written",
  "words written, waiting for the AI review": "words written, waiting for the AI review",
  "words you produced from memory a week or more apart": "words you produced from memory a week or more apart",
+ "written by your AI agent": "written by your AI agent",
  "written on this device": "written on this device",
  "your recording": "your recording",
  "{pct} known": "{pct} known",
@@ -411,6 +413,10 @@
  "{n} item is due|{n} items are due": {
   "one": "{n} item is due",
   "other": "{n} items are due"
+ },
+ "{n} lesson added|{n} lessons added": {
+  "one": "{n} lesson added",
+  "other": "{n} lessons added"
  },
  "{n} letter answered|{n} letters answered": {
   "one": "{n} letter answered",

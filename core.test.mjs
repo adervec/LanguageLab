@@ -239,6 +239,14 @@ assert.deepEqual([state.sittings.length, state.sittings[0].score, state.sittings
 // a number typed in any script's digits
 { assert.equal(c.digits(' ٤٧ '), '47'); assert.equal(c.digits('१२०'), '120'); assert.equal(c.digits('۱۹۸۴'), '1984'); assert.equal(c.digits('๕๐'), '50');
   assert.equal(c.digits('1 000'), '1000'); assert.equal(c.digits('４７'), '47'); assert.equal(c.digits('abc'), ''); assert.equal(c.digits(null), ''); }
+// a first lesson from an AI: its phrases are short, have no digits, are not said twice and can be marked; fewer than four is no lesson
+{ const l = c.cleanLesson({ title: 'First words', evil: '<script>', phrases: [['שלום', 'Hello', 'shalom'], ['תודה רבה', 'Thank you very much', 'toda raba'], ['כן', 'Yes', 'ken'], ['לא', 'No', 'lo'],
+    ['יש לי 3 ילדים', 'I have 3 children', 'x'], ['', 'empty'], ['שלום', 'again', 'x'], ['?!', 'nothing to mark'], [7, 'not a string']] }, 'he');
+  assert.deepEqual([l.title, l.phrases, l.back.length, l.back[0], l.evil, l.text.split('\n').length, l.lang], ['First words', true, 4, ['שלום', 'Hello', 'shalom'], undefined, 4, 'he']);
+  assert.deepEqual(c.cleanLesson({ title: 'Latin', phrases: [['a b', 'x', ''], ['c d', 'x'], ['e f', 'x'], ['g h', 'x']] }, 'fr').back[0], ['a b', 'x']);   // no reading where none is given
+  assert.equal(c.cleanLesson({ title: 'Too short', phrases: [['שלום', 'Hello'], ['כן', 'Yes']] }, 'he'), null);
+  assert.equal(c.cleanLesson({ phrases: [['a b', 'x'], ['c d', 'x'], ['e f', 'x'], ['g h', 'x']] }, 'fr'), null);
+  assert.equal(c.cleanLesson(null, 'fr'), null); }
 console.log('core.test: ok');
 
 // merging this device with Drive loses nothing from either side

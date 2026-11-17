@@ -154,6 +154,7 @@
  "Meaning": "المعنى",
  "Mine": "خاصتي",
  "More input": "مزيد من المُدخلات",
+ "More lessons: with AI cowork (Settings) your own AI agent writes the next ones, when your level is A1 and fewer than three are left to do.": "دروس أخرى: مع AI cowork (الإعدادات) يكتب وكيل الذكاء الاصطناعي الخاص بك الدروس التالية، عندما يكون مستواك A1 ويبقى أقل من ثلاثة دروس.",
  "My level": "مستواي",
  "Natural speed": "السرعة الطبيعية",
  "Nature and seasons": "الطبيعة والفصول",
@@ -305,7 +306,7 @@
  "The words you tapped come back in the sentence you met them in, and your corrected mistakes come back to be fixed. You type them; nothing to tap.": "تعود الكلمات التي نقرت عليها في الجملة التي صادفتها فيها، وتعود أخطاؤك المصحَّحة لتُصلحها. تكتبها بنفسك؛ لا شيء للنقر.",
  "Things and places": "أشياء وأماكن",
  "This device has no {language} voice installed, so listening may not work here.": "لا يوجد على هذا الجهاز صوت مثبّت للغة {language}، لذا قد لا يعمل الاستماع هنا.",
- "This language has no first lessons yet. It still works with your own texts and with stories from AI cowork.": "هذه اللغة ليس لها دروس أولى بعد. لكنها تعمل مع نصوصك ومع قصص من AI cowork.",
+ "This language has no first lessons of its own. With AI cowork (Settings) your own AI agent writes them while your level is A1. It also works with your own texts.": "ليس لهذه اللغة دروس أولى خاصة بها. مع AI cowork (الإعدادات) يكتبها وكيل الذكاء الاصطناعي الخاص بك ما دام مستواك A1. وتعمل أيضًا مع نصوصك الخاصة.",
  "This link could not be read. Ask for it to be sent again.": "تعذّرت قراءة هذا الرابط. اطلب إرساله من جديد.",
  "This needs a browser with a built-in AI model (Chrome on a recent computer) or an AI cowork folder (Settings).": "يتطلب هذا متصفحًا فيه نموذج ذكاء اصطناعي مدمج (Chrome على حاسوب حديث) أو مجلد AI cowork (الإعدادات).",
  "This reply is for a sitting that is not on this device. Open the link on the device where you did the sitting.": "هذا الرد يخص جلسة ليست على هذا الجهاز. افتح الرابط على الجهاز الذي أجريت عليه الجلسة.",
@@ -411,6 +412,7 @@
  "words written, waiting for the AI review": "كلمة مكتوبة، في انتظار تقييم الذكاء الاصطناعي",
  "words written": "كلمات مكتوبة",
  "words you produced from memory a week or more apart": "كلمة أنتجتها من الذاكرة بفاصل أسبوع أو أكثر",
+ "written by your AI agent": "كتبه وكيل الذكاء الاصطناعي الخاص بك",
  "written on this device": "كُتبت على هذا الجهاز",
  "your recording": "تسجيلك",
  "{n} item is due|{n} items are due": {
@@ -420,6 +422,14 @@
   "few": "{n} عناصر مستحقة",
   "many": "{n} عنصرًا مستحقًا",
   "other": "{n} عنصر مستحق"
+ },
+ "{n} lesson added|{n} lessons added": {
+  "zero": "أُضيف {n} درس",
+  "one": "أُضيف {n} درس",
+  "two": "أُضيف {n} درسان",
+  "few": "أُضيفت {n} دروس",
+  "many": "أُضيف {n} درسًا",
+  "other": "أُضيف {n} درس"
  },
  "{n} letter answered|{n} letters answered": {
   "zero": "لا رسائل أُجيب عنها",

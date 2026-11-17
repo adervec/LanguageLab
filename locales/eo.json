@@ -146,6 +146,7 @@
  "Meaning": "Signifo",
  "Mine": "Miaj",
  "More input": "Pli enigo",
+ "More lessons: with AI cowork (Settings) your own AI agent writes the next ones, when your level is A1 and fewer than three are left to do.": "Pliaj lecionoj: per AI cowork (Agordoj) via propra AI-agento verkas la sekvajn, kiam via nivelo estas A1 kaj restas malpli ol tri por fari.",
  "My level": "Mia nivelo",
  "Natural speed": "Natura rapido",
  "Nature and seasons": "Naturo kaj sezonoj",
@@ -297,7 +298,7 @@
  "The words you tapped come back in the sentence you met them in, and your corrected mistakes come back to be fixed. You type them; nothing to tap.": "La vortoj, kiujn vi tuŝis, revenas en la frazo, en kiu vi renkontis ilin, kaj viaj korektitaj eraroj revenas por esti korektataj. Vi tajpas ilin; nenio tuŝenda.",
  "Things and places": "Aĵoj kaj lokoj",
  "This device has no {language} voice installed, so listening may not work here.": "Ĉi tiu aparato ne havas instalitan voĉon por la lingvo ({language}), do aŭskultado eble ne funkcios ĉi tie.",
- "This language has no first lessons yet. It still works with your own texts and with stories from AI cowork.": "Ĉi tiu lingvo ankoraŭ ne havas unuajn lecionojn. Ĝi tamen funkcias kun viaj propraj tekstoj kaj kun rakontoj de AI cowork.",
+ "This language has no first lessons of its own. With AI cowork (Settings) your own AI agent writes them while your level is A1. It also works with your own texts.": "Ĉi tiu lingvo ne havas proprajn unuajn lecionojn. Per AI cowork (Agordoj) via propra AI-agento verkas ilin, dum via nivelo estas A1. Ĝi funkcias ankaŭ kun viaj propraj tekstoj.",
  "This link could not be read. Ask for it to be sent again.": "Ĉi tiu ligilo ne estis legebla. Petu, ke oni resendu ĝin.",
  "This needs a browser with a built-in AI model (Chrome on a recent computer) or an AI cowork folder (Settings).": "Necesas retumilo kun enkonstruita AI-modelo (Chrome en lastatempa komputilo) aŭ dosierujo de AI cowork (Agordoj).",
  "This reply is for a sitting that is not on this device. Open the link on the device where you did the sitting.": "Ĉi tiu respondo estas por sesio, kiu ne estas en ĉi tiu aparato. Malfermu la ligilon en la aparato, kie vi faris la sesion.",
@@ -403,11 +404,16 @@
  "words written, waiting for the AI review": "vortoj skribitaj, atendantaj la AI-takson",
  "words written": "skribitaj vortoj",
  "words you produced from memory a week or more apart": "vortoj, kiujn vi produktis el memoro kun intervalo de semajno aŭ pli",
+ "written by your AI agent": "verkita de via AI-agento",
  "written on this device": "verkita en ĉi tiu aparato",
  "your recording": "via registraĵo",
  "{n} item is due|{n} items are due": {
   "one": "{n} ero ripetendas",
   "other": "{n} eroj ripetendas"
+ },
+ "{n} lesson added|{n} lessons added": {
+  "one": "{n} leciono aldonita",
+  "other": "{n} lecionoj aldonitaj"
  },
  "{n} letter answered|{n} letters answered": {
   "one": "{n} letero respondita",

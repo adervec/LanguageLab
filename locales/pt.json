@@ -148,6 +148,7 @@
  "Meaning": "Significado",
  "Mine": "Minhas",
  "More input": "Mais conteúdo",
+ "More lessons: with AI cowork (Settings) your own AI agent writes the next ones, when your level is A1 and fewer than three are left to do.": "Mais lições: com IA cowork (Configurações), o seu próprio agente de IA escreve as seguintes quando o seu nível é A1 e restam menos de três por fazer.",
  "My level": "Meu nível",
  "Natural speed": "Velocidade natural",
  "Nature and seasons": "Natureza e estações",
@@ -299,7 +300,7 @@
  "The words you tapped come back in the sentence you met them in, and your corrected mistakes come back to be fixed. You type them; nothing to tap.": "As palavras em que você tocou voltam na frase em que as encontrou, e seus erros corrigidos voltam para serem refeitos. Você as digita; não há nada para tocar.",
  "Things and places": "Coisas e lugares",
  "This device has no {language} voice installed, so listening may not work here.": "Este dispositivo não tem uma voz instalada para este idioma ({language}), então a escuta pode não funcionar aqui.",
- "This language has no first lessons yet. It still works with your own texts and with stories from AI cowork.": "Este idioma ainda não tem primeiras lições. Ele funciona mesmo assim com seus próprios textos e com histórias do IA cowork.",
+ "This language has no first lessons of its own. With AI cowork (Settings) your own AI agent writes them while your level is A1. It also works with your own texts.": "Este idioma não tem primeiras lições próprias. Com IA cowork (Configurações), o seu próprio agente de IA as escreve enquanto o seu nível for A1. Também funciona com os seus próprios textos.",
  "This link could not be read. Ask for it to be sent again.": "Não foi possível ler este link. Peça que seja enviado de novo.",
  "This needs a browser with a built-in AI model (Chrome on a recent computer) or an AI cowork folder (Settings).": "É preciso um navegador com um modelo de IA integrado (Chrome num computador recente) ou uma pasta do AI cowork (Definições).",
  "This reply is for a sitting that is not on this device. Open the link on the device where you did the sitting.": "Esta resposta é para uma sessão que não está neste dispositivo. Abra o link no dispositivo em que você fez a sessão.",
@@ -405,12 +406,18 @@
  "words written, waiting for the AI review": "palavras escritas, aguardando a avaliação da IA",
  "words written": "palavras escritas",
  "words you produced from memory a week or more apart": "palavras que você produziu de memória com uma semana ou mais de intervalo",
+ "written by your AI agent": "escrita pelo seu agente de IA",
  "written on this device": "escrita neste dispositivo",
  "your recording": "sua gravação",
  "{n} item is due|{n} items are due": {
   "one": "{n} item para revisar",
   "many": "{n} itens para revisar",
   "other": "{n} itens para revisar"
+ },
+ "{n} lesson added|{n} lessons added": {
+  "one": "{n} lição adicionada",
+  "many": "{n} lições adicionadas",
+  "other": "{n} lições adicionadas"
  },
  "{n} letter answered|{n} letters answered": {
   "one": "{n} carta respondida",

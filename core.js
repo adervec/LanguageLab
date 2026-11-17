@@ -360,6 +360,14 @@ export function lessonStories(first, code, ui = 'en') {
     back: all.slice(i * 8, i * 8 + 8).map((p, j) => { const n = i * 8 + j, named = String(en[n]).includes('{language}');
       return Array.isArray(p) ? [p[0], p[1], read[n]] : [p, !named && typeof mine[n] === 'string' ? mine[n] : String(en[n]).replace('{language}', name), read[n]]; }) })).filter(s => s.back.length);
 }
+// A first lesson that an AI wrote (cowork): a title and four to twelve phrases [phrase, meaning, reading?], each short, with no digits,
+// said once, and one the app can mark. It becomes a story with phrases, like the bundled lessons.
+export function cleanLesson(o, lang) {
+  o = obj(o);
+  const seen = new Set(), back = arr(o.phrases).slice(0, 12).map(p => [str(arr(p)[0], 81).trim(), str(arr(p)[1], 200).trim(), str(arr(p)[2], 200).trim()])
+    .filter(([p, m]) => p && m && p.length <= 80 && !/\d/.test(p) && !seen.has(p) && seen.add(p) && plainWords(p, lang).length && dictationScore(p, p, lang).score === 1);
+  return back.length >= 4 ? cleanStory({ title: o.title, phrases: true, back }, lang) : null;
+}
 // The letters a lesson needs that a Latin keyboard lacks; with a space and a delete key when the script is not Latin at all.
 export function lessonKeys(text, lang) {
   const ch = [...new Set([...String(text).normalize('NFC').toLocaleLowerCase(lang)].filter(c => /[\p{L}\p{M}]/u.test(c) && !/[a-z]/.test(c)))].sort();

@@ -144,6 +144,7 @@
  "Meaning": "Arti",
  "Mine": "Milik saya",
  "More input": "Lebih banyak masukan",
+ "More lessons: with AI cowork (Settings) your own AI agent writes the next ones, when your level is A1 and fewer than three are left to do.": "Pelajaran lainnya: dengan AI cowork (Pengaturan), agen AI Anda sendiri menulis pelajaran berikutnya, saat tingkat Anda A1 dan tersisa kurang dari tiga.",
  "My level": "Tingkat saya",
  "Natural speed": "Kecepatan alami",
  "Nature and seasons": "Alam dan musim",
@@ -295,7 +296,7 @@
  "The words you tapped come back in the sentence you met them in, and your corrected mistakes come back to be fixed. You type them; nothing to tap.": "Kata yang Anda ketuk kembali dalam kalimat tempat Anda menemukannya, dan kesalahan yang sudah Anda perbaiki kembali untuk diperbaiki lagi. Anda mengetiknya; tidak ada yang perlu diketuk.",
  "Things and places": "Benda dan tempat",
  "This device has no {language} voice installed, so listening may not work here.": "Perangkat ini tidak memiliki suara {language} terpasang, jadi fitur mendengarkan mungkin tidak berfungsi di sini.",
- "This language has no first lessons yet. It still works with your own texts and with stories from AI cowork.": "Bahasa ini belum memiliki pelajaran pertama. Bahasa ini tetap dapat dipakai dengan teks Anda sendiri dan cerita dari AI cowork.",
+ "This language has no first lessons of its own. With AI cowork (Settings) your own AI agent writes them while your level is A1. It also works with your own texts.": "Bahasa ini tidak punya pelajaran pertama sendiri. Dengan AI cowork (Pengaturan), agen AI Anda sendiri menulisnya selama tingkat Anda A1. Bahasa ini juga bisa dipakai dengan teks Anda sendiri.",
  "This link could not be read. Ask for it to be sent again.": "Tautan ini tidak dapat dibaca. Mintalah agar dikirim ulang.",
  "This needs a browser with a built-in AI model (Chrome on a recent computer) or an AI cowork folder (Settings).": "Ini memerlukan peramban dengan model AI bawaan (Chrome di komputer baru) atau folder AI cowork (Pengaturan).",
  "This reply is for a sitting that is not on this device. Open the link on the device where you did the sitting.": "Balasan ini untuk sesi yang tidak ada di perangkat ini. Buka tautan di perangkat tempat Anda mengerjakan sesi itu.",
@@ -401,10 +402,14 @@
  "words written, waiting for the AI review": "kata ditulis, menunggu ulasan AI",
  "words written": "kata ditulis",
  "words you produced from memory a week or more apart": "kata yang Anda hasilkan dari ingatan dengan jarak seminggu atau lebih",
+ "written by your AI agent": "ditulis oleh agen AI Anda",
  "written on this device": "ditulis di perangkat ini",
  "your recording": "rekaman Anda",
  "{n} item is due|{n} items are due": {
   "other": "{n} butir jatuh tempo"
+ },
+ "{n} lesson added|{n} lessons added": {
+  "other": "{n} pelajaran ditambahkan"
  },
  "{n} letter answered|{n} letters answered": {
   "other": "{n} surat dibalas"

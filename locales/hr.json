@@ -148,6 +148,7 @@
  "Meaning": "Značenje",
  "Mine": "Moje",
  "More input": "Više ulaza",
+ "More lessons: with AI cowork (Settings) your own AI agent writes the next ones, when your level is A1 and fewer than three are left to do.": "Još lekcija: uz AI cowork (Postavke) vaš vlastiti AI agent piše sljedeće, kad vam je razina A1 i kad ih je ostalo manje od tri.",
  "My level": "Moja razina",
  "Natural speed": "Prirodna brzina",
  "Nature and seasons": "Priroda i godišnja doba",
@@ -299,7 +300,7 @@
  "The words you tapped come back in the sentence you met them in, and your corrected mistakes come back to be fixed. You type them; nothing to tap.": "Riječi koje si dodirnuo vraćaju se u rečenici u kojoj si ih susreo, a tvoje ispravljene pogreške vraćaju se da ih ispraviš. Upisuješ ih; ništa za dodirivanje.",
  "Things and places": "Stvari i mjesta",
  "This device has no {language} voice installed, so listening may not work here.": "Na ovom uređaju nije instaliran glas za ovaj jezik ({language}), pa slušanje ovdje možda neće raditi.",
- "This language has no first lessons yet. It still works with your own texts and with stories from AI cowork.": "Ovaj jezik još nema prve lekcije. Ipak radi s tvojim tekstovima i s pričama iz AI coworka.",
+ "This language has no first lessons of its own. With AI cowork (Settings) your own AI agent writes them while your level is A1. It also works with your own texts.": "Ovaj jezik nema vlastite prve lekcije. Uz AI cowork (Postavke) vaš ih vlastiti AI agent piše dok vam je razina A1. Radi i s vašim vlastitim tekstovima.",
  "This link could not be read. Ask for it to be sent again.": "Ovu poveznicu nije bilo moguće pročitati. Zamoli da ti je ponovno pošalju.",
  "This needs a browser with a built-in AI model (Chrome on a recent computer) or an AI cowork folder (Settings).": "Potreban je preglednik s ugrađenim AI modelom (Chrome na novijem računalu) ili mapa AI cowork (Postavke).",
  "This reply is for a sitting that is not on this device. Open the link on the device where you did the sitting.": "Ovaj odgovor odnosi se na sesiju koja nije na ovom uređaju. Otvori poveznicu na uređaju na kojem si odradio sesiju.",
@@ -405,12 +406,18 @@
  "words written, waiting for the AI review": "riječi napisano, čeka AI ocjenu",
  "words written": "napisanih riječi",
  "words you produced from memory a week or more apart": "riječi koje ste napisali po sjećanju u razmaku od tjedan dana ili više",
+ "written by your AI agent": "napisao vaš AI agent",
  "written on this device": "napisano na ovom uređaju",
  "your recording": "tvoja snimka",
  "{n} item is due|{n} items are due": {
   "one": "{n} stavka dospijeva",
   "few": "{n} stavke dospijevaju",
   "other": "{n} stavki dospijeva"
+ },
+ "{n} lesson added|{n} lessons added": {
+  "one": "{n} lekcija dodana",
+  "few": "{n} lekcije dodane",
+  "other": "{n} lekcija dodano"
  },
  "{n} letter answered|{n} letters answered": {
   "one": "{n} pismo odgovoreno",

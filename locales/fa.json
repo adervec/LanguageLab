@@ -146,6 +146,7 @@
  "Meaning": "معنی",
  "Mine": "مال من",
  "More input": "ورودی بیشتر",
+ "More lessons: with AI cowork (Settings) your own AI agent writes the next ones, when your level is A1 and fewer than three are left to do.": "درس‌های بیشتر: با AI cowork (تنظیمات)، وقتی سطح شما A1 است و کمتر از سه درس مانده، عامل هوش مصنوعی خودتان درس‌های بعدی را می‌نویسد.",
  "My level": "سطح من",
  "Natural speed": "سرعت طبیعی",
  "Nature and seasons": "طبیعت و فصل‌ها",
@@ -297,7 +298,7 @@
  "The words you tapped come back in the sentence you met them in, and your corrected mistakes come back to be fixed. You type them; nothing to tap.": "واژه‌هایی که رویشان زدید در همان جمله‌ای که دیده بودید برمی‌گردند، و اشتباه‌های اصلاح‌شدهٔ شما هم برای رفع دوباره برمی‌گردند. آن‌ها را تایپ می‌کنید؛ چیزی برای لمس کردن نیست.",
  "Things and places": "چیزها و جاها",
  "This device has no {language} voice installed, so listening may not work here.": "روی این دستگاه صدای {language} نصب نیست، پس شاید گوش دادن اینجا کار نکند.",
- "This language has no first lessons yet. It still works with your own texts and with stories from AI cowork.": "این زبان هنوز درس نخست ندارد. با این حال با متن‌های خودتان و داستان‌های AI cowork کار می‌کند.",
+ "This language has no first lessons of its own. With AI cowork (Settings) your own AI agent writes them while your level is A1. It also works with your own texts.": "این زبان درس‌های آغازین خودش را ندارد. با AI cowork (تنظیمات)، تا وقتی سطح شما A1 است، عامل هوش مصنوعی خودتان آن‌ها را می‌نویسد. با متن‌های خودتان هم کار می‌کند.",
  "This link could not be read. Ask for it to be sent again.": "این پیوند خوانده نشد. بخواهید دوباره فرستاده شود.",
  "This needs a browser with a built-in AI model (Chrome on a recent computer) or an AI cowork folder (Settings).": "این کار به مرورگری با مدل هوش مصنوعی داخلی (Chrome روی رایانهٔ تازه) یا یک پوشهٔ AI cowork (تنظیمات) نیاز دارد.",
  "This reply is for a sitting that is not on this device. Open the link on the device where you did the sitting.": "این پاسخ برای جلسه‌ای است که روی این دستگاه نیست. پیوند را روی دستگاهی باز کنید که جلسه را در آن انجام داده‌اید.",
@@ -403,11 +404,16 @@
  "words written, waiting for the AI review": "واژه نوشته شد، در انتظار بازبینی هوش مصنوعی",
  "words written": "واژه نوشته‌شده",
  "words you produced from memory a week or more apart": "واژه‌ای که با فاصلهٔ یک هفته یا بیشتر از حافظه نوشتید",
+ "written by your AI agent": "نوشته‌ی عامل هوش مصنوعی شما",
  "written on this device": "نوشته‌شده روی این دستگاه",
  "your recording": "ضبط شما",
  "{n} item is due|{n} items are due": {
   "one": "{n} مورد موعدش رسیده",
   "other": "{n} مورد موعدشان رسیده"
+ },
+ "{n} lesson added|{n} lessons added": {
+  "one": "{n} درس اضافه شد",
+  "other": "{n} درس اضافه شد"
  },
  "{n} letter answered|{n} letters answered": {
   "one": "{n} نامه پاسخ داده شد",

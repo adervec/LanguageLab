@@ -146,6 +146,7 @@
  "Meaning": "अर्थ",
  "Mine": "मेरे",
  "More input": "और सामग्री",
+ "More lessons: with AI cowork (Settings) your own AI agent writes the next ones, when your level is A1 and fewer than three are left to do.": "और पाठ: AI cowork (सेटिंग) के साथ आपका अपना AI एजेंट अगले पाठ लिखता है, जब आपका स्तर A1 हो और तीन से कम पाठ बचे हों।",
  "My level": "मेरा स्तर",
  "Natural speed": "सामान्य गति",
  "Nature and seasons": "प्रकृति और ऋतुएँ",
@@ -297,7 +298,7 @@
  "The words you tapped come back in the sentence you met them in, and your corrected mistakes come back to be fixed. You type them; nothing to tap.": "आपके टैप किए शब्द उसी वाक्य में लौटते हैं जिसमें वे मिले थे, और आपकी सुधारी हुई गलतियाँ ठीक करने के लिए लौटती हैं। आप उन्हें टाइप करते हैं; टैप करने को कुछ नहीं।",
  "Things and places": "चीज़ें और जगहें",
  "This device has no {language} voice installed, so listening may not work here.": "इस डिवाइस में {language} की कोई आवाज़ इंस्टॉल नहीं है, इसलिए यहाँ सुनना शायद काम न करे।",
- "This language has no first lessons yet. It still works with your own texts and with stories from AI cowork.": "इस भाषा के लिए अभी पहले सबक नहीं हैं। यह फिर भी आपके अपने पाठों और AI cowork की कहानियों के साथ काम करती है।",
+ "This language has no first lessons of its own. With AI cowork (Settings) your own AI agent writes them while your level is A1. It also works with your own texts.": "इस भाषा के अपने पहले पाठ नहीं हैं। AI cowork (सेटिंग) के साथ, जब तक आपका स्तर A1 है, आपका अपना AI एजेंट उन्हें लिखता है। यह आपके अपने पाठों के साथ भी काम करती है।",
  "This link could not be read. Ask for it to be sent again.": "यह लिंक पढ़ा नहीं जा सका। इसे दोबारा भेजने को कहें।",
  "This needs a browser with a built-in AI model (Chrome on a recent computer) or an AI cowork folder (Settings).": "इसके लिए ऐसा ब्राउज़र चाहिए जिसमें एआई मॉडल बना हो (नए कंप्यूटर पर Chrome) या AI cowork फ़ोल्डर (सेटिंग्स)।",
  "This reply is for a sitting that is not on this device. Open the link on the device where you did the sitting.": "यह जवाब उस सत्र के लिए है जो इस डिवाइस पर नहीं है। लिंक उसी डिवाइस पर खोलें जिस पर आपने सत्र किया था।",
@@ -403,11 +404,16 @@
  "words written, waiting for the AI review": "शब्द लिखे, AI समीक्षा की प्रतीक्षा में",
  "words written": "शब्द लिखे",
  "words you produced from memory a week or more apart": "शब्द जो आपने एक हफ़्ते या अधिक के अंतर पर याद से लिखे",
+ "written by your AI agent": "आपके AI एजेंट ने लिखा",
  "written on this device": "इस डिवाइस पर लिखी गई",
  "your recording": "आपकी रिकॉर्डिंग",
  "{n} item is due|{n} items are due": {
   "one": "{n} आइटम देय है",
   "other": "{n} आइटम देय हैं"
+ },
+ "{n} lesson added|{n} lessons added": {
+  "one": "{n} पाठ जोड़ा गया",
+  "other": "{n} पाठ जोड़े गए"
  },
  "{n} letter answered|{n} letters answered": {
   "one": "{n} पत्र का उत्तर मिला",

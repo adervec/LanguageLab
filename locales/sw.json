@@ -146,6 +146,7 @@
  "Meaning": "Maana",
  "Mine": "Yangu",
  "More input": "Ingizo zaidi",
+ "More lessons: with AI cowork (Settings) your own AI agent writes the next ones, when your level is A1 and fewer than three are left to do.": "Masomo zaidi: kwa AI cowork (Mipangilio) wakala wako mwenyewe wa AI huandika yanayofuata, kiwango chako kikiwa A1 na yakibaki chini ya matatu.",
  "My level": "Kiwango changu",
  "Natural speed": "Kasi ya kawaida",
  "Nature and seasons": "Mazingira na majira",
@@ -297,7 +298,7 @@
  "The words you tapped come back in the sentence you met them in, and your corrected mistakes come back to be fixed. You type them; nothing to tap.": "Maneno uliyoyagusa hurudi ndani ya sentensi ulimoyakuta, na makosa yako yaliyosahihishwa hurudi ili yarekebishwe. Unayaandika; hakuna cha kugusa.",
  "Things and places": "Vitu na mahali",
  "This device has no {language} voice installed, so listening may not work here.": "Kifaa hiki hakina sauti ya {language} iliyosakinishwa, kwa hiyo huenda kusikiliza kusifanye kazi hapa.",
- "This language has no first lessons yet. It still works with your own texts and with stories from AI cowork.": "Lugha hii bado haina masomo ya kwanza. Bado inafanya kazi na maandishi yako mwenyewe na hadithi kutoka AI cowork.",
+ "This language has no first lessons of its own. With AI cowork (Settings) your own AI agent writes them while your level is A1. It also works with your own texts.": "Lugha hii haina masomo yake ya kwanza. Kwa AI cowork (Mipangilio) wakala wako mwenyewe wa AI huyaandika kiwango chako kikiwa A1. Pia inafanya kazi na maandishi yako mwenyewe.",
  "This link could not be read. Ask for it to be sent again.": "Kiungo hiki hakikuweza kusomwa. Omba kitumwe tena.",
  "This needs a browser with a built-in AI model (Chrome on a recent computer) or an AI cowork folder (Settings).": "Hii inahitaji kivinjari chenye modeli ya AI ndani yake (Chrome kwenye kompyuta ya karibuni) au folda ya AI cowork (Mipangilio).",
  "This reply is for a sitting that is not on this device. Open the link on the device where you did the sitting.": "Jibu hili ni la kipindi ambacho hakipo kwenye kifaa hiki. Fungua kiungo kwenye kifaa ulichofanyia kipindi.",
@@ -403,11 +404,16 @@
  "words written, waiting for the AI review": "maneno yameandikwa, yanasubiri tathmini ya AI",
  "words written": "maneno yaliyoandikwa",
  "words you produced from memory a week or more apart": "maneno uliyoyatoa kwa kumbukumbu kwa tofauti ya wiki moja au zaidi",
+ "written by your AI agent": "limeandikwa na wakala wako wa AI",
  "written on this device": "imeandikwa kwenye kifaa hiki",
  "your recording": "rekodi yako",
  "{n} item is due|{n} items are due": {
   "one": "Kipengee {n} kinasubiri",
   "other": "Vipengee {n} vinasubiri"
+ },
+ "{n} lesson added|{n} lessons added": {
+  "one": "Somo {n} limeongezwa",
+  "other": "Masomo {n} yameongezwa"
  },
  "{n} letter answered|{n} letters answered": {
   "one": "Barua {n} imejibiwa",

@@ -144,6 +144,7 @@
  "Meaning": "意思",
  "Mine": "我的",
  "More input": "更多输入",
+ "More lessons: with AI cowork (Settings) your own AI agent writes the next ones, when your level is A1 and fewer than three are left to do.": "更多课程：使用 AI cowork（设置），当你的级别是 A1 且剩下不到三课时，你自己的 AI 代理会编写后面的课。",
  "My level": "我的级别",
  "Natural speed": "自然语速",
  "Nature and seasons": "自然和季节",
@@ -295,7 +296,7 @@
  "The words you tapped come back in the sentence you met them in, and your corrected mistakes come back to be fixed. You type them; nothing to tap.": "你点按过的单词会在你遇到它们的句子中回来复习，你改正过的错误也会回来再改。你只需输入，无需点按。",
  "Things and places": "东西和地方",
  "This device has no {language} voice installed, so listening may not work here.": "此设备未安装{language}语音，因此这里可能无法收听。",
- "This language has no first lessons yet. It still works with your own texts and with stories from AI cowork.": "这种语言还没有入门课。但仍可以使用你自己的文本和 AI cowork 写的故事。",
+ "This language has no first lessons of its own. With AI cowork (Settings) your own AI agent writes them while your level is A1. It also works with your own texts.": "这种语言没有自带的入门课。使用 AI cowork（设置），只要你的级别是 A1，你自己的 AI 代理就会编写入门课。它也可以配合你自己的文本使用。",
  "This link could not be read. Ask for it to be sent again.": "无法读取这个链接。请让对方重新发送。",
  "This needs a browser with a built-in AI model (Chrome on a recent computer) or an AI cowork folder (Settings).": "这需要带内置 AI 模型的浏览器（较新电脑上的 Chrome）或 AI cowork 文件夹（设置）。",
  "This reply is for a sitting that is not on this device. Open the link on the device where you did the sitting.": "这条回复对应的练习不在这台设备上。请在做练习的那台设备上打开链接。",
@@ -401,10 +402,14 @@
  "words written, waiting for the AI review": "个单词已写，等待 AI 点评",
  "words written": "个单词已写",
  "words you produced from memory a week or more apart": "个单词在相隔一周或更久后仍能凭记忆写出",
+ "written by your AI agent": "由你的 AI 代理编写",
  "written on this device": "在这台设备上写的",
  "your recording": "你的录音",
  "{n} item is due|{n} items are due": {
   "other": "{n} 项到期"
+ },
+ "{n} lesson added|{n} lessons added": {
+  "other": "已添加 {n} 课"
  },
  "{n} letter answered|{n} letters answered": {
   "other": "已回复 {n} 封信"

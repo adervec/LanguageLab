@@ -146,6 +146,7 @@
  "Meaning": "Bedeutung",
  "Mine": "Meine",
  "More input": "Mehr Input",
+ "More lessons: with AI cowork (Settings) your own AI agent writes the next ones, when your level is A1 and fewer than three are left to do.": "Weitere Lektionen: Mit KI-Cowork (Einstellungen) schreibt dein eigener KI-Agent die nächsten, wenn dein Niveau A1 ist und weniger als drei übrig sind.",
  "My level": "Mein Niveau",
  "Natural speed": "Natürliches Tempo",
  "Nature and seasons": "Natur und Jahreszeiten",
@@ -297,7 +298,7 @@
  "The words you tapped come back in the sentence you met them in, and your corrected mistakes come back to be fixed. You type them; nothing to tap.": "Die Wörter, auf die du getippt hast, kommen in dem Satz zurück, in dem du ihnen begegnet bist, und deine korrigierten Fehler kommen zurück, damit du sie behebst. Du tippst sie ein; nichts zum Antippen.",
  "Things and places": "Dinge und Orte",
  "This device has no {language} voice installed, so listening may not work here.": "Auf diesem Gerät ist keine Stimme für diese Sprache ({language}) installiert, daher funktioniert das Hören hier vielleicht nicht.",
- "This language has no first lessons yet. It still works with your own texts and with stories from AI cowork.": "Für diese Sprache gibt es noch keine ersten Lektionen. Sie funktioniert trotzdem mit deinen eigenen Texten und mit Geschichten von KI-Cowork.",
+ "This language has no first lessons of its own. With AI cowork (Settings) your own AI agent writes them while your level is A1. It also works with your own texts.": "Diese Sprache hat keine eigenen ersten Lektionen. Mit KI-Cowork (Einstellungen) schreibt dein eigener KI-Agent sie, solange dein Niveau A1 ist. Sie funktioniert auch mit deinen eigenen Texten.",
  "This link could not be read. Ask for it to be sent again.": "Dieser Link konnte nicht gelesen werden. Bitte darum, dass er noch einmal geschickt wird.",
  "This needs a browser with a built-in AI model (Chrome on a recent computer) or an AI cowork folder (Settings).": "Dafür braucht es einen Browser mit eingebautem KI-Modell (Chrome auf einem neueren Computer) oder einen AI-cowork-Ordner (Einstellungen).",
  "This reply is for a sitting that is not on this device. Open the link on the device where you did the sitting.": "Diese Antwort gehört zu einer Sitzung, die nicht auf diesem Gerät ist. Öffne den Link auf dem Gerät, auf dem du die Sitzung gemacht hast.",
@@ -403,11 +404,16 @@
  "words written, waiting for the AI review": "Wörter geschrieben, warten auf die KI-Bewertung",
  "words written": "geschriebene Wörter",
  "words you produced from memory a week or more apart": "Wörter, die du im Abstand von einer Woche oder mehr aus dem Gedächtnis abgerufen hast",
+ "written by your AI agent": "von deinem KI-Agenten geschrieben",
  "written on this device": "auf diesem Gerät geschrieben",
  "your recording": "deine Aufnahme",
  "{n} item is due|{n} items are due": {
   "one": "{n} Element ist fällig",
   "other": "{n} Elemente sind fällig"
+ },
+ "{n} lesson added|{n} lessons added": {
+  "one": "{n} Lektion hinzugefügt",
+  "other": "{n} Lektionen hinzugefügt"
  },
  "{n} letter answered|{n} letters answered": {
   "one": "{n} Brief beantwortet",
