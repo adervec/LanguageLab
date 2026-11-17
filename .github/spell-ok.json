@@ -78,6 +78,7 @@
   "Priya",
   "Rossi",
   "café",
+  "colour",
   "kilometres",
   "neighbour",
   "neighbours",
@@ -100,11 +101,15 @@
   "민지예요",
   "민지의",
   "분쯤",
+  "새들이",
   "숟가락씩",
   "시쯤",
+  "안나는",
   "안나예요",
+  "알람",
   "열두",
   "열한",
+  "인출기가",
   "준호는",
   "준호예요",
   "천만에요",
@@ -114,7 +119,8 @@
   "한강식당입니다"
  ],
  "ru": [
-  "Берг"
+  "Берг",
+  "банкомат"
  ],
  "cs": [
   "Sofiině",
@@ -145,6 +151,7 @@
   "pokucala",
   "presednete",
   "rezervaciju",
+  "s",
   "supermarketu"
  ],
  "bg": [
@@ -173,6 +180,7 @@
   "Алену",
   "Алё",
   "Берг",
+  "банкамат",
   "павольней",
   "ператэлефаную"
  ],
@@ -180,8 +188,10 @@
   "Elenával",
   "Max",
   "Nyáron",
+  "Segítséget",
   "Szofia",
   "Szofiának",
+  "boldogan",
   "csillagok",
   "húgom",
   "könyvet",
@@ -190,7 +200,9 @@
   "pályaudvaron",
   "rendőrséget",
   "szabadságon",
+  "szemüveget",
   "téren",
+  "virágok",
   "zöldséget",
   "égen"
  ],
@@ -203,6 +215,7 @@
   "Anna",
   "Berg",
   "Büyükanne",
+  "Büyükannem",
   "Büyükannemin",
   "Daniel",
   "Daniel'in",
@@ -214,6 +227,7 @@
   "Max",
   "Sofia",
   "Sofia'nın",
+  "bozdurabilirim",
   "büyükannem",
   "büyükannemin",
   "büyükannemle",
@@ -226,7 +240,8 @@
   "Elena",
   "Naboene",
   "naboen",
-  "noe"
+  "noe",
+  "skoene"
  ],
  "vi": [
   "Anna",
@@ -238,11 +253,13 @@
   "Maria",
   "Max",
   "Sofia",
+  "Taxi",
   "hóa",
   "hỏa",
   "khóa",
   "khỏe",
   "salad",
+  "taxi",
   "tòa"
  ],
  "eo": [
@@ -264,6 +281,8 @@
   "رفت‌وبرگشت",
   "شماست",
   "صوفیا",
+  "عابربانک",
+  "قدبلند",
   "متأسفم",
   "می‌بینمتان",
   "نوش",
@@ -273,5 +292,11 @@
  "uk": [
   "Івано",
   "Поліцейський"
+ ],
+ "ca": [
+  "lícula"
+ ],
+ "gl": [
+  "Coñecémonos"
  ]
 }

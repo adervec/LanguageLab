@@ -63,7 +63,9 @@ problem; keep fixing until it prints `ok`.
 One file for every language: `meanings` (the English meanings), `lessons` (the titles, eight phrases each), and per
 language code in `langs` the phrases in the same order. Lessons eleven to twenty are everyday situations (a market, home, travel, yesterday, plans, health, describing, work, the
 phone, help): the past is told with "we", and a feeling without an adjective for "I" ("I do not feel well"), so they too work
-for any speaker. Lessons one to five are set phrases; six to ten are first
+for any speaker. Lessons 21 to 30 go on to shopping, a restaurant, free time, reasons ("because"), people, and can, must and may: they keep
+"I" in the present, where few languages mark who is speaking, and tell the past about Anna or an old fisherman (lessons 27 and 30 are
+each a story of eight sentences, so a habit in the past takes the form for a habit). Lessons one to five are set phrases; six to ten are first
 sentences, written so that they do not depend on who is speaking (no "I am tired", no past tense in the first person).
 Where a language cannot avoid that, give the feminine with a note, as in Hindi. A meaning with `{language}` in it names
 the language being learned. Keep each phrase short (80 characters at most), natural and
