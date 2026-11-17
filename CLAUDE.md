@@ -21,9 +21,12 @@ logic, no DOM, tested), `content/<lang>.json` (starter stories and dialogues; ru
 Drive sync uses font.js's shared sign-in (`appFont.google`).
 
 - **Languages.** Forty-four have starter content (`LANGS` in `core.js`): full sets for French, Spanish, German, Italian,
-  Portuguese, Dutch, Croatian and English; half sets for Chinese, Japanese, Korean and Swedish (`small`); and a first handful
-  (`mini`: four stories and two dialogues, the same six texts in each, built from one shared gloss list) for the other 32.
-  Thai is `seg` too, glossed on the pieces `Intl.Segmenter` cuts, with a zero-width space where it would cut across a name.
+  Portuguese, Dutch, Croatian and English; half sets (`small`: 8 stories and 4 dialogues, A1 to B1) for the other 36. Chinese,
+  Japanese, Korean and Swedish have sets of their own; the other 32 share one set of twelve texts, the same in each, translated
+  sentence for sentence from one English master and built from shared gloss lists (`mini`, four stories and two dialogues, is
+  how a new language may start; none is at that size now).
+  Thai is `seg` too, glossed on the pieces `Intl.Segmenter` cuts, with a zero-width space where it would cut wrongly (`.tmp/thseg.mjs` lists
+  glosses no tap would reach).
   Arabic-script marking forgives vowel marks and letter shapes; a Persian word around a zero-width non-joiner is one token.
   Chinese and Japanese are `seg`: words for reading come from `Intl.Segmenter`, scoring is by character. Any other language code works with pasted texts and AI cowork stories:
   `langInfo()` fills in names from Intl, and languages written without spaces are split with

@@ -657,7 +657,7 @@
     ]
    }
   ],
-  "notice": "Ukrainian says \"there was no wallet\" with the genitive: \"гаманця не було\". \"Бо\" is the everyday word for \"because\", and \"й\" stands for \"і\" between vowels: \"на касі й пішов\".",
+  "notice": "Ukrainian says \"there was no wallet\" with the genitive: \"гаманця не було\". \"Бо\" is the everyday word for \"because\", and \"й\" stands for \"і\" after a vowel: \"на касі й пішов\".",
   "back": [
    [
     "Він шукав усюди, на тротуарі й на автобусній зупинці, але нічого не знайшов.",
@@ -798,7 +798,7 @@
    ],
    [
     0,
-    "Відкрийте рота, будь ласка. Так, горло дуже червоне."
+    "Відкрийте рот, будь ласка. Так, горло дуже червоне."
    ],
    [
     1,
@@ -839,7 +839,7 @@
    "болить": "hurts",
    "особливо": "especially",
    "сплю": "I sleep",
-   "рота": "mouth",
+   "рот": "mouth",
    "червоне": "red",
    "серйозно": "serious",
    "відпочинок": "rest",

@@ -81,7 +81,12 @@ A language in a script that is not Latin also needs a reading in Latin letters f
   An answer key passes when it appears anywhere in what was typed. Avoid quoted speech.
 - Korean is split at its spaces, so a gloss key is the whole word with its particles (`"학교에": "to school (학교)"`). Its texts are
   0.6 times as long in words.
-- A language marked `small` in `LANGS` needs 8 stories and 4 dialogues, not 16 and 8; one marked `mini` needs 4 and 2.
+- A language marked `small` in `LANGS` needs 8 stories and 4 dialogues, not 16 and 8; one marked `mini` needs 4 and 2 (a
+  new language may start there; none is at that size now).
+- Thirty-two languages share one set of twelve texts, translated sentence for sentence from one English master, so their
+  English glosses and write-back meanings are shared. A text there must work for any learner: the lines a learner speaks
+  do not depend on the speaker's gender (or the notice says what the other form is), and a first-person story names its
+  teller.
 - After writing or changing texts, run `node .github/spell.mjs <code>` (its first lines say how to install the
   dictionaries). Read every word it does not know before accepting it with `--write`.
 

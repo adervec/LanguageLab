@@ -40,8 +40,8 @@ snapshot). LanguageLab is ahead in some rows and behind in others.
 | Something new to read | New lessons as the course goes on | The course | The course and a daily lesson | A new text on request, written on your device in a few seconds (five languages, a small model: about one slip a text); stories with questions and meanings from your own AI agent, in any language |
 | Feedback on free writing | Explanations of an answer | No | No | An AI review with a grade, corrected forms and the rule; your mistakes come back as review cards. With no agent, where the browser has its own model, suggestions on your retelling a few seconds after the sitting ends: a small model that misses some mistakes and is sometimes wrong, so each one is yours to keep or leave |
 | Measure of progress | XP, streak, leagues, a course score | Units completed | Points and a leaderboard | The level your own numbers support, for reading, for listening and for speaking |
-| Languages with ready lessons | 40 or more | 25 | 41 | 44, each with first lessons (twenty lessons, 160 phrases) and graded stories and dialogues: 8 with a full set (A1 to B2), 4 with half a set, 32 with a first handful of six texts (A1 and A2); any other language with your own texts or AI-written stories |
-| Course for complete beginners | Yes, from the alphabet | Yes | Yes | A short one: twenty lessons of eight phrases in each of 44 languages, charts of the letters for 14 scripts, then graded stories from A1 in all 44. Much shorter than their courses; after it the material is your own texts and the stories an AI agent writes to your level |
+| Languages with ready lessons | 40 or more | 25 | 41 | 44, each with first lessons (twenty lessons, 160 phrases) and graded stories and dialogues: 8 with a full set (24 texts, A1 to B2) and 36 with half a set (12 texts, A1 to B1); any other language with your own texts or AI-written stories |
+| Course for complete beginners | Yes, from the alphabet | Yes | Yes | A short one: twenty lessons of eight phrases in each of 44 languages, charts of the letters for 14 scripts, then graded stories from A1 in all 44, twelve texts or more in each. Much shorter than their courses; after it the material is your own texts and the stories an AI agent writes to your level |
 | Speech scoring | Its own engine | TruAccent | Speech recognition | The browser's speech recognition, word by word: understood at its first guess, only its second guess (nearly right) or missed, with how sure it was; it listens through your pauses. A speaking level from those numbers, and a recording of yourself to compare by ear. It judges whole words, not each sound |
 | Human teachers | No | Live coaching (premium) | No | None of its own, but it works with any teacher you have: a teacher hands out a text as a link that each learner adds to their library, a link carries the learner's writing back to them, and another brings their corrections into the learner's review. Nobody needs more than a browser |
 | Content checked by people | Yes | Yes | Yes | No native speaker has read it, and the app says so. It was written by an AI; every word of the texts in 31 languages is checked against an open spelling dictionary, and the newer texts were read by a second AI model (see "What has been checked") |
@@ -59,16 +59,18 @@ Rosetta Stone reviews of [features and plans](https://learnenglish.life/reviews/
 Forty-four languages come with first lessons and with graded stories and dialogues.
 
 French, Spanish, German, Italian, Portuguese, Dutch, Croatian and English have 16 stories and
-8 dialogues each (French has more), from A1 to B2. Mandarin Chinese, Japanese, Korean and Swedish have
-half that (8 stories and 4 dialogues, A1 to B1); in Chinese and Japanese a tapped word shows its
-reading first, and dictation is marked character by character.
+8 dialogues each (French has more), from A1 to B2.
 
-Thirty-two more have a first handful, four stories and two dialogues at A1 and A2 (a market, a day, a
-weekend by the sea, a new neighbour; a café and a hotel): Russian, Ukrainian, Polish, Czech, Slovak,
-Slovenian, Serbian, Bulgarian, Macedonian, Belarusian, Romanian, Hungarian, Greek, Turkish, Norwegian,
-Danish, Finnish, Catalan, Galician, Afrikaans, Indonesian, Malay, Vietnamese, Filipino, Swahili,
-Esperanto, Arabic, Persian, Hindi, Urdu, Bengali and Thai. Six texts are a start, not a course: after
-them the material is your own texts and the stories an AI agent writes to your level.
+The other 36 have half that: 8 stories and 4 dialogues, from A1 to B1. Mandarin Chinese, Japanese,
+Korean and Swedish have sets of their own; in Chinese and Japanese a tapped word shows its reading
+first, and dictation is marked character by character. Thirty-two share one set of twelve texts, the
+same in each language (a market, a day, a family, a town, a weekend by the sea, a new neighbour, a
+birthday, a lost wallet; a café, a hotel, a ticket office and a doctor's): Russian, Ukrainian, Polish,
+Czech, Slovak, Slovenian, Serbian, Bulgarian, Macedonian, Belarusian, Romanian, Hungarian, Greek,
+Turkish, Norwegian, Danish, Finnish, Catalan, Galician, Afrikaans, Indonesian, Malay, Vietnamese,
+Filipino, Swahili, Esperanto, Arabic, Persian, Hindi, Urdu, Bengali and Thai. Twelve texts are a
+start, not a course: after them the material is your own texts and the stories an AI agent writes to
+your level.
 
 All 44 have first lessons for complete beginners (twenty lessons, 160 phrases and first sentences).
 Where the script is not Latin each phrase has a reading in Latin letters, the letters a text uses are
@@ -155,15 +157,19 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   things: 12 phrases were changed or given a note (Afrikaans word order and the "om" before a time, also in one story; a
   Finnish form; a clearer Greek word; two Filipino phrases), and three were judged right as written.
 - **Spelling** (`.github/spell.mjs`, November 2026): every word of every story, dialogue, question and first lesson in the
-  31 languages that have an open spelling dictionary, 21,648 different word forms. 169 were not in a dictionary. Each was
-  read: one colloquial word was replaced with the standard one, and the other 168 were names, loanwords, regional words
-  or correct forms the dictionary lacks (they are listed in `.github/spell-ok.json`). A spelling dictionary knows no
+  31 languages that have an open spelling dictionary, 29,160 different word forms. 230 were not in a dictionary. Each was
+  read: three were replaced with the standard form (a colloquial word and two Belarusian words), and the other 227 were
+  names, loanwords, regional words or correct forms the dictionary lacks (they are listed in `.github/spell-ok.json`). A spelling dictionary knows no
   grammar, and there is none for Chinese, Japanese, Finnish, Afrikaans, Indonesian, Malay, Filipino, Swahili, Arabic,
   Hindi, Urdu, Bengali or Thai.
-- **A second reader** for the 192 texts in the 32 newer languages: another AI model (Claude Sonnet) read each one with
-  its glosses, questions and notes and marked eight things. Six were changed (a Macedonian greeting, also in the first
-  lessons, and a word order; an Afrikaans question; a Vietnamese and a Swahili phrase); two were judged right as
-  written. It reported nothing in 27 of the languages, which is weaker evidence than a native reader finding nothing.
+- **A second reader** for the 384 texts in the 32 newer languages: another AI model (Claude Sonnet) read each one with
+  its glosses, questions and notes. In the first six texts of each language it marked eight things: six were changed (a
+  Macedonian greeting, also in the first lessons, and a word order; an Afrikaans question; a Vietnamese and a Swahili
+  phrase) and two were judged right as written. In the six texts added later it marked sixteen: fourteen were changed
+  (among them a Finnish idiom that said "came visiting" where the text meant "the village", an ungrammatical Filipino
+  question, a Persian word that read as "no longer", and four grammar notes that misquoted their own text) and two were
+  judged right as written. Both times it reported nothing in most of the languages (27 and 19 of the 32), which is
+  weaker evidence than a native reader finding nothing.
 - **Not checked**: a physical microphone, how the voices sound to a native ear, Google sign-in, and phones. The texts and phrases were written by an AI and no native speaker
   has read them.
 

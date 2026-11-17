@@ -22,12 +22,13 @@ export const LANGS = {
   nl: { name: 'Nederlands', english: 'Dutch', bcp: 'nl-NL', keys: 'éëïöü' },
   hr: { name: 'Hrvatski', english: 'Croatian', bcp: 'hr-HR', keys: 'čćšžđ' },
   en: { name: 'English', english: 'English', bcp: 'en', keys: '' }, // no region: the chosen voice decides the accent
-  // small: a starter set half the usual size. seg: written without spaces, so words come from Intl.Segmenter.
+  // small: a starter set half the usual size (8 stories and 4 dialogues, A1 to B1). seg: written without spaces, so words come from Intl.Segmenter.
   zh: { name: '中文', english: 'Mandarin Chinese (simplified characters)', bcp: 'zh-CN', keys: '', seg: true, small: true },
   ja: { name: '日本語', english: 'Japanese', bcp: 'ja-JP', keys: '', seg: true, small: true },
   ko: { name: '한국어', english: 'Korean', bcp: 'ko-KR', keys: '', small: true },
   sv: { name: 'Svenska', english: 'Swedish', bcp: 'sv-SE', keys: 'åäö', small: true },
-  // mini: a first handful (four stories, two dialogues, A1 and A2), the same six texts in every one of these languages
+  // The 32 below share one set of twelve texts (the same stories and dialogues in every one, built from shared gloss lists).
+  // mini: a first handful (four stories and two dialogues) is how a new language may start; none is left at that size.
   ru: { name: 'Русский', english: 'Russian', bcp: 'ru-RU', keys: '', small: true },
   uk: { name: 'Українська', english: 'Ukrainian', bcp: 'uk-UA', keys: '', small: true },
   pl: { name: 'Polski', english: 'Polish', bcp: 'pl-PL', keys: 'ąćęłńóśźż', small: true },

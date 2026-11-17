@@ -209,7 +209,7 @@ function langSelect() {
   const first = Object.keys(FIRST?.langs || {}).filter(c => C.isLangCode(c) && !C.LANGS[c]).sort(byName);
   const extra = [...new Set([...Object.keys(S.langs), S.lang, ...dev])].filter(c => C.isLangCode(c) && !C.LANGS[c] && !first.includes(c)).sort(byName);
   const opt = c => H`<option value="${c}" ${c === S.lang ? 'selected' : ''}>${C.langInfo(c).name}</option>`;
-  const all = Object.keys(C.LANGS), big = all.filter(c => !C.LANGS[c].mini); // the fuller sets lead; the first handfuls follow by name
+  const all = Object.keys(C.LANGS), big = all.filter(c => !C.LANGS[c].mini && !C.LANGS[c].small); // the full sets lead; the half sets follow by name
   return H`<select data-change="lang" aria-label="${t('Language to learn')}"><optgroup label="${t('With starter stories')}">${[...big, ...all.filter(c => !big.includes(c)).sort(byName)].map(opt)}</optgroup>
     ${first.length ? H`<optgroup label="${t('With first lessons')}">${first.map(opt)}</optgroup>` : ''}
     ${extra.length ? H`<optgroup label="${t('With your own texts or AI cowork')}">${extra.map(opt)}</optgroup>` : ''}</select>`;

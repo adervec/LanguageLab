@@ -278,7 +278,7 @@ console.log('core.test: ok');
     let list = [];
     try { list = JSON.parse(readFileSync(new URL(`./content/${code}.json`, import.meta.url), 'utf8')); } catch { /* reported below */ }
     const dialogues = list.filter(x => x.lines).length;
-    const [stories, talks] = c.LANGS[code].mini ? [4, 2] : c.LANGS[code].small ? [8, 4] : [16, 8]; // a full set, a small one, a first handful
+    const [stories, talks] = c.LANGS[code].mini ? [4, 2] : c.LANGS[code].small ? [8, 4] : [16, 8]; // a full set, half a set, a first handful (how a new language may start)
     if (list.length - dialogues < stories || dialogues < talks) bad.push(`content/${code}.json needs ${stories} stories and ${talks} dialogues (has ${list.length - dialogues} and ${dialogues})`);
   }
   if (bad.length) { console.log(bad.slice(0, 40).join('\n')); assert.fail(`${bad.length} content problem(s)`); }
