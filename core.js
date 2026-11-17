@@ -213,6 +213,37 @@ export function letterDiff(a, b) {
   return [runs(A, ma), runs(B, mb)];
 }
 
+// ---- the sound itself, beside the recogniser's words: when a voice was there, and how high ----
+// The pitch of one frame of samples in Hz, by autocorrelation: 0 where there is none to speak of (silence, noise, a consonant).
+// ponytail: the first clear peak of the autocorrelation, enough for one voice in a quiet room; a real pitch tracker if it is not.
+export function pitchOf(x, rate, lo = 70, hi = 500) {
+  const n = x.length, from = Math.max(2, Math.floor(rate / hi)), to = Math.min(n - 2, Math.ceil(rate / lo));
+  let e = 0; for (let i = 0; i < n; i++) e += x[i] * x[i];
+  if (!(e / n > 1e-6) || to <= from) return 0;
+  const ac = new Float32Array(to + 2); let best = 0;
+  for (let lag = from - 1; lag <= to + 1; lag++) { let s = 0; for (let i = 0; i + lag < n; i++) s += x[i] * x[i + lag];
+    ac[lag] = s / (n - lag); if (lag >= from && lag <= to && ac[lag] > best) best = ac[lag]; }
+  if (best < 0.5 * e / n) return 0;
+  for (let lag = from; lag <= to; lag++) if (ac[lag] >= 0.9 * best && ac[lag] >= ac[lag - 1] && ac[lag] >= ac[lag + 1]) return rate / lag;
+  return 0;
+}
+// Frames of [seconds, loudness, pitch] -> how long the voice spoke, the long pauses inside, and its pitch as it went: [[seconds, Hz]].
+// ponytail: "louder than the room" is speaking; a real voice detector if rooms get noisy.
+export function voiceStats(frames, gap = 0.45) {
+  const loud = frames.map(f => f[1]).sort((a, b) => a - b), room = loud[Math.floor(loud.length / 10)] || 0, top = loud[loud.length - 1] || 0;
+  const on = frames.filter(f => f[1] > Math.max(room * 3, top * 0.15, 0.003));
+  if (on.length < 4) return { sec: 0, pauses: 0, pitch: [] };
+  return { sec: on[on.length - 1][0] - on[0][0], pauses: on.filter((f, i) => i && f[0] - on[i - 1][0] > gap).length, pitch: on.filter(f => f[2] > 0).map(f => [f[0] - on[0][0], f[2]]) };
+}
+// How a pitch contour moved: 'level', 'rising', 'falling' or 'dipping' (down, then up again); '' when there is too little of it.
+// In semitones between its first, middle and last thirds, so that a high voice and a low one read alike.
+export function pitchShape(pitch) {
+  if (pitch.length < 6) return '';
+  const st = pitch.map(p => 12 * Math.log2(p[1])), k = Math.floor(st.length / 3), mid = a => [...a].sort((x, y) => x - y)[a.length >> 1];
+  const a = mid(st.slice(0, k)), b = mid(st.slice(k, st.length - k)), c = mid(st.slice(st.length - k));
+  return b < a - 1.5 && c > b + 1.5 ? 'dipping' : c - a > 2 ? 'rising' : a - c > 2 ? 'falling' : 'level';
+}
+
 // ---- review cards ----
 // Blank a word out of the sentence it was met in.
 export function cloze(sentence, word, lang) {

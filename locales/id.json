@@ -91,6 +91,7 @@
  "Here is what it means. Write it in {language}.": "Inilah artinya. Tulis dalam bahasa {language}.",
  "Hiragana": "Hiragana",
  "How it sounds, in Latin letters": "Bunyinya, dalam huruf Latin",
+ "How your pitch moved": "Gerak nada suara Anda",
  "I know this": "Saya tahu ini",
  "I want to learn": "Saya ingin belajar",
  "Import a backup": "Impor cadangan",
@@ -104,6 +105,7 @@
  "It heard:": "Yang terdengar:",
  "It is installed on this device.": "Sudah terpasang di perangkat ini.",
  "It is marked against the sentence in the text, so another correct wording scores lower.": "Penilaiannya dibandingkan dengan kalimat dalam teks, jadi susunan kata lain yang benar mendapat nilai lebih rendah.",
+ "It recognised no word.": "Tidak ada kata yang dikenalinya.",
  "It runs on this device: nothing you say leaves it. The first time, the browser may download its language model, which is large.": "Ini berjalan di perangkat ini: tidak ada ucapan Anda yang keluar darinya. Pertama kali, peramban mungkin mengunduh model bahasanya, yang berukuran besar.",
  "It runs through your AI cowork folder: each reply comes when your agent answers, so keep the agent watching the folder.": "Ini berjalan lewat folder AI cowork Anda: setiap balasan datang saat agen Anda menjawab, jadi biarkan agen terus memantau folder itu.",
  "It was {pct} sure of what it heard.": "Keyakinan atas apa yang didengar: {pct}.",
@@ -358,6 +360,8 @@
  "You have read every story. Ask for more through AI cowork in Settings, or add a text of your own in the Library.": "Anda sudah membaca semua cerita. Minta lebih banyak lewat AI cowork di Pengaturan, atau tambahkan teks Anda sendiri di Pustaka.",
  "You hear a number at natural speed and type it in digits, ten at a time. Nothing of it is kept.": "Anda mendengar sebuah angka dengan kecepatan alami lalu mengetiknya dalam digit, sepuluh sekaligus. Tidak ada yang disimpan.",
  "You play {role}.": "Anda berperan sebagai {role}.",
+ "You took about {you} seconds. Play the line to compare with the voice.": "Anda perlu sekitar {you} detik. Putar kalimatnya untuk membandingkan dengan suara itu.",
+ "You took about {you} seconds; the voice takes {voice}.": "Anda perlu sekitar {you} detik; suara itu perlu {voice}.",
  "You wrote this. Type it again, corrected.": "Ini tulisan Anda. Ketik lagi dengan perbaikan.",
  "You wrote:": "Anda menulis:",
  "You, {date}": "Anda, {date}",
@@ -368,12 +372,15 @@
  "Your line": "Baris Anda",
  "Your message": "Pesan Anda",
  "Your retelling": "Cerita ulang Anda",
+ "Your voice: {shape}.": "Suara Anda: {shape}.",
  "conversation": "percakapan",
  "corrections to relearn": "koreksi untuk dipelajari ulang",
  "dictation {pct}": "dikte {pct}",
  "different words read without help": "kata berbeda dibaca tanpa bantuan",
  "due now": "jatuh tempo sekarang",
  "due {date}": "jatuh tempo {date}",
+ "falling, then rising": "turun, lalu naik",
+ "falling": "turun",
  "last done {date}": "terakhir dikerjakan: {date}",
  "minutes of listening": "menit mendengarkan",
  "new words in your review": "kata baru dalam tinjau ulang Anda",
@@ -393,8 +400,10 @@
  "questions {pct}": "pertanyaan {pct}",
  "read aloud {pct}": "membaca lantang {pct}",
  "read {date}": "dibaca {date}",
+ "rising": "naik",
  "role-play {pct}": "bermain peran {pct}",
  "sentences spoken": "kalimat diucapkan",
+ "stays level": "tetap datar",
  "words in review": "kata dalam tinjau ulang",
  "words of reading in total": "kata dibaca secara total",
  "words read without help": "kata dibaca tanpa bantuan",
@@ -419,6 +428,9 @@
  },
  "{n} line|{n} lines": {
   "other": "{n} baris"
+ },
+ "{n} long pause.|{n} long pauses.": {
+  "other": "{n} jeda panjang."
  },
  "{n} minute listened|{n} minutes listened": {
   "other": "{n} menit didengarkan"

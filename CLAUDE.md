@@ -75,7 +75,11 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   `estimate()` in `core.js`), a table by level, totals of input. A spoken line is marked by `speechMarks()`: the recogniser's
   first guess is the score, a word only its second or third guess holds is `near`, and `sure` is its confidence; `subs` pairs a word
   with what the first guess had in its place, shown letter against letter (`letterDiff()`, "rue → roue"). In First steps each
-  sound to notice can be said on its own (`sndsay`: understood, nearly, or what was heard instead; nothing of it is saved). No streak, no points: do not add them.
+  sound to notice can be said on its own (`sndsay`: understood, nearly, or what was heard instead; nothing of it is saved).
+  On a computer (`canProbe`) a second listener on the microphone runs beside the recogniser (`probe`, frames every 30 ms): `voiceStats()`
+  gives the time a spoken line took and its long pauses (`d.sec`, `d.pauses`, shown beside the voice's own time `d.voiceSec`; in the page
+  only, never saved), and in zh, th and vi `pitchShape()` names how the pitch moved on a word said alone (`spark` draws it), also when
+  no word was recognised. Checked only with sounds played in place of the microphone. No streak, no points: do not add them.
 - **Meanings**: bundled glosses are English. Where the browser has the Translator API (Chrome and Edge
   on desktop) a tapped word with no meaning is translated on the device into the interface language;
   otherwise the learner can type one, or AI cowork fills it in. Each bundled text carries a `notice`

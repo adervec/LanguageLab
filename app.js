@@ -84,13 +84,15 @@ function voice(other) {
 function say(what, { rate = 1, onend } = {}) {
   if (!window.speechSynthesis) return;
   const tok = ++speakTok, t0 = Date.now(), mine = voice(), alt = voice(true);
+  let began = 0; // when the first words really sounded: a voice takes a moment to start
   const parts = (Array.isArray(what) ? what : [[1, what]]).flatMap(([who, text]) => C.sentences(text, S.lang).map(p => [who, p]));
   speechSynthesis.cancel(); player.pause();
   parts.forEach(([who, p], i) => {
     const u = new SpeechSynthesisUtterance(p), v = who ? mine : alt;
     u.lang = v?.lang || lang().bcp; if (v) u.voice = v; u.rate = rate;
     if (!who && alt === mine) u.pitch = 0.7; // one voice on this device: the other speaker is the same voice, lower
-    if (i === parts.length - 1) u.onend = () => { if (tok === speakTok) onend?.((Date.now() - t0) / 1000); };
+    if (!i) u.onstart = () => { began = Date.now(); };
+    if (i === parts.length - 1) u.onend = () => { if (tok === speakTok) onend?.((Date.now() - (began || t0)) / 1000); };
     speechSynthesis.speak(u);
   });
 }
@@ -161,6 +163,24 @@ function hear(b, continuous, onText, onDone, rest) {
   recog.start(); b.textContent = t('Stop listening'); b.setAttribute('aria-pressed', 'true');
   if (rest) wait(10000);
 }
+
+// The sound itself, beside the recogniser's words: how long the voice spoke, its long pauses and how its pitch moved. Nothing of the
+// sound is kept or sent: only these numbers, in the page.
+// ponytail: a second listener on the same microphone, on a computer only. Phones do not all let two listen at once, so there the
+// recogniser stays alone.
+const canProbe = () => !!(navigator.mediaDevices?.getUserMedia && window.AudioContext) && matchMedia('(hover: hover) and (pointer: fine)').matches;
+let ear = null; // the listener now running: a promise of its stop(), which gives the frames it took
+const probe = () => ear = navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false } }).then(stream => {
+  const ctx = new AudioContext(), an = ctx.createAnalyser(), frames = [], t0 = performance.now();
+  an.fftSize = 2048; ctx.createMediaStreamSource(stream).connect(an);
+  const buf = new Float32Array(2048), small = new Float32Array(512);
+  const tick = setInterval(() => { an.getFloatTimeDomainData(buf); let e = 0; // a quarter of the samples is plenty for the pitch of a voice
+    for (let i = 0; i < 512; i++) { small[i] = (buf[4 * i] + buf[4 * i + 1] + buf[4 * i + 2] + buf[4 * i + 3]) / 4; e += small[i] * small[i]; }
+    frames.push([(performance.now() - t0) / 1000, Math.sqrt(e / 512), C.pitchOf(small, ctx.sampleRate / 4)]); }, 30);
+  return () => { clearInterval(tick); stream.getTracks().forEach(tr => tr.stop()); ctx.close(); return frames; };
+}, () => null);
+// what the listener made of it, once the recogniser is done: { sec, pauses, pitch }, or null where there was nothing to go by
+const probed = async () => { const mine = ear, stop = await mine; if (ear === mine) ear = null; const v = stop ? C.voiceStats(stop()) : null; return v?.sec ? v : null; };
 
 // ---------- meanings on this device: the browser's own translator (Chrome and Edge on desktop), nothing sent anywhere ----------
 const here = () => A.lang().split('-')[0];
@@ -485,10 +505,19 @@ const pairHtml = (word, heard) => { const [a, b] = C.letterDiff(word, heard), ro
   return H`<span lang="${S.lang}">${row(a)}</span> → <span lang="${S.lang}">${row(b)}</span>`; };
 const heardInstead = d => { const subs = d.typed ? [] : C.speechMarks(d.target, [d.heard], S.lang).subs.slice(0, 4);
   return subs.length ? H`<p class="sub">${t('What it heard instead')}: ${subs.map(([w, h], k) => H`${k ? ' · ' : ''}${pairHtml(w, h)}`)}</p>` : ''; };
+// How the pitch of a voice moved, as a small line (time across; pitch up, in semitones over its own range) and in a word.
+// i18n-keys: stays level | rising | falling | falling, then rising
+const SHAPES = { level: 'stays level', rising: 'rising', falling: 'falling', dipping: 'falling, then rising' };
+const spark = pitch => { const st = pitch.map(p => 12 * Math.log2(p[1])), lo = Math.min(...st), span = Math.max(4, Math.max(...st) - lo), end = pitch[pitch.length - 1][0] || 1, r = x => Math.round(x * 10) / 10;
+  return H`<svg class="pitch" viewBox="0 0 100 32" role="img" aria-label="${t('How your pitch moved')}"><polyline fill="none" stroke="currentColor" stroke-width="2" points="${pitch.map((p, i) => r(100 * p[0] / end) + ',' + r(30 - 28 * (st[i] - lo) / span)).join(' ')}"/></svg>`; };
+const TONAL = ['zh', 'th', 'vi']; // where the pitch of a word is part of the word
 // What the recogniser makes of one word said on its own: up to three guesses, the first the one it believes.
-const guess3 = (b, done) => { const got = []; hear(b, false, (text, res) => got.push(...[...(res || [])].slice(0, 3).map(a => String(a?.transcript || '').trim()).filter(Boolean)), () => done(got), () => 1200); };
+// In a tone language done is called a second time, with what the listener made of the voice.
+const guess3 = (b, done) => { const got = []; if (!recog && TONAL.includes(S.lang) && canProbe()) probe();
+  hear(b, false, (text, res) => got.push(...[...(res || [])].slice(0, 3).map(a => String(a?.transcript || '').trim()).filter(Boolean)), () => { done(got); probed().then(v => v && done(got, v)); }, () => 1200); };
 const heardAs = (word, got, k = w => C.wordKeys(w, S.lang).join(' ')) => k(got[0]) === k(word) ? 'hit' : got.some(g => k(g) === k(word)) ? 'near' : 'miss';
-const tryHtml = (word, tr) => tr.state === 'hit' ? H`<b class="hit">${t('Understood.')}</b>` : tr.state === 'near' ? H`<b class="near">${t('Nearly: it was only its second guess.')}</b>` : H`${t('It heard instead')}: ${pairHtml(word, tr.heard)}`;
+const tryHtml = (word, tr) => H`${tr.state === 'none' ? t('It recognised no word.') : tr.state === 'hit' ? H`<b class="hit">${t('Understood.')}</b>` : tr.state === 'near' ? H`<b class="near">${t('Nearly: it was only its second guess.')}</b>` : H`${t('It heard instead')}: ${pairHtml(word, tr.heard)}`}${
+  tr.shape ? H` <span class="sub">${t('Your voice: {shape}.', { shape: t(SHAPES[tr.shape]) })} ${spark(tr.pitch)}</span>` : ''}`;
 const sndTry = {}; // a "sound to notice" said aloud: language:word -> { state: 'hit' | 'near' | 'miss', heard } (kept for the visit only)
 // A tappable word is a box of its own, so left alone the browser may break the line between it and what is written against it: a
 // full stop would start the next line, and "J'" would part from "ai". What touches a word (and the spaced ? ! : ; » of French)
@@ -569,6 +598,8 @@ function vSitting() {
       : H`<p>${t('Sentence {i} of {n}. Read it aloud. The score is the share of your words that speech recognition understood.', { i: sit.si + 1, n: sit.speak.length })}</p>
       <p class="big" lang="${S.lang}">${d.score == null ? d.target : spokenMarks(d)}</p>${d.meaning ? H`<p class="sub">${d.meaning}</p>` : ''}`}
     ${d.score == null ? '' : H`<p class="sub">${d.typed ? t('You wrote:') : t('It heard:')} <span lang="${S.lang}">${d.heard}</span></p>${heardInstead(d)}<p><b>${t('{pct} of the words', { pct: pct(d.score) })}</b></p>
+      ${d.sec && !d.typed ? H`<p class="sub">${d.voiceSec ? t('You took about {you} seconds; the voice takes {voice}.', { you: A.fmt.number(d.sec, { max: 1 }), voice: A.fmt.number(d.voiceSec, { max: 1 }) })
+        : t('You took about {you} seconds. Play the line to compare with the voice.', { you: A.fmt.number(d.sec, { max: 1 }) })} ${d.pauses ? t.n('{n} long pause.', '{n} long pauses.', d.pauses) : ''}</p>` : ''}
       ${d.typed || !(d.near || d.sure) ? '' : H`<p class="sub">${d.near ? t.n('{n} word was only its second guess (dotted): nearly right.', '{n} words were only its second guess (dotted): nearly right.', d.near) : ''} ${d.sure ? t('It was {pct} sure of what it heard.', { pct: pct(d.sure) }) : ''}</p>`}`}
     <div class="row">${SR ? H`<button class="primary" data-act="sayit" aria-pressed="false">${d.score == null ? t('Speak') : t('Try again')}</button>` : ''}
       ${hidden ? H`<button data-act="peek">${t('Show my line')}</button>` : H`<button data-act="play">▶ ${t('Hear it')}</button>`}
@@ -938,7 +969,7 @@ function vPairs() {
   <p class="sub">${t('Pair {i} of {n}', { i: quiz.i + 1, n: quiz.cards.length })}</p>
   ${c.say ? H`<p class="sub">${t('Say the word in bold.')}</p><p class="big" lang="${S.lang}">${[0, 1].map(k => H`${k ? ' · ' : ''}${k === c.want ? H`<b>${c.pair[k]}</b>` : H`<span class="sub">${c.pair[k]}</span>`}`)}</p>`
     : H`<p><button data-act="sayx" data-x="${want}">▶ ${t('Hear it again')}</button></p><p class="sub">${t('Which one did you hear?')}</p>`}
-  ${quiz.verdict ? H`<p class="big" role="status">${c.say ? tryHtml(want, { state: quiz.verdict, heard: quiz.heard }) : H`<span class="${quiz.verdict === 'hit' ? 'hit' : 'miss'}">${quiz.verdict === 'hit' ? t('Right') : t('Not yet')}: <b lang="${S.lang}">${want}</b></span>`}</p>
+  ${quiz.verdict ? H`<p class="big" role="status">${c.say ? tryHtml(want, { state: quiz.verdict, heard: quiz.heard, shape: quiz.shape, pitch: quiz.pitch }) : H`<span class="${quiz.verdict === 'hit' ? 'hit' : 'miss'}">${quiz.verdict === 'hit' ? t('Right') : t('Not yet')}: <b lang="${S.lang}">${want}</b></span>`}</p>
       <p class="sub">${c.pair[2]}</p><button class="primary" data-act="qznext" data-focus>${t('Next')}</button>`
     : c.say ? H`<p class="sub" id="micmsg" role="status"></p><p><button class="primary" data-act="pairsay" aria-pressed="false">${t('Say it')}</button></p>`
     : H`<div class="row">${[0, 1].map(k => H`<button class="primary" data-act="pairpick" data-k="${k}" lang="${S.lang}">${c.pair[k]}</button>`)}</div>`}
@@ -1066,7 +1097,8 @@ const ACT = {
   rtext() { radio.text = !radio.text; render(); },
   play() {
     if (sit.step === 'dictate') return playDictation();
-    if (sit.step === 'speak') return say(sit.speak[sit.si].target);
+    if (sit.step === 'speak') { const d = sit.speak[sit.si]; // how long the voice takes over the line, to set beside the learner's own time
+      return say(d.target, { onend: sec => { d.voiceSec = sec; if (d.sec && sit?.step === 'speak' && sit.speak[sit.si] === d) render(true); } }); }
     sit.plays++;
     playStory(story(sit.storyId), { rate: sit.slow ? 0.8 : 1, onend: sec => { if (sit) sit.listenSec += sec; } });
   },
@@ -1146,7 +1178,7 @@ const ACT = {
     render(); scrollTo(0, 0); say(quiz.cards[0][0]);
   },
   qzcheck() { const [ch, r] = quiz.cards[quiz.i], ok = quiz.ear ? C.digits($('#ans').value) === ch : C.readingOk($('#ans').value, r); quiz.verdict = ok ? 'exact' : 'wrong'; if (ok) quiz.right++; render(); say(ch); },
-  qznext() { hush(); quiz.i++; quiz.verdict = ''; render(); if (quiz.ear && quiz.cards[quiz.i]) say(quiz.cards[quiz.i][0]);
+  qznext() { hush(); quiz.i++; quiz.verdict = quiz.shape = ''; render(); if (quiz.ear && quiz.cards[quiz.i]) say(quiz.cards[quiz.i][0]);
     if (quiz.pair && quiz.cards[quiz.i] && !quiz.cards[quiz.i].say) say(quiz.cards[quiz.i].pair[quiz.cards[quiz.i].want]); },
   qzend() { hush(); quiz = null; render(); },
   addfix() { // a correction from a human teacher joins the same deck as the AI's
@@ -1208,10 +1240,11 @@ const ACT = {
   // It also writes numbers as digits ("five" comes back as "5"): the scoring lets a number stand for one word of the line.
   sayit(b) {
     const d = sit.speak[sit.si];
-    if (!recog) { d.said = ''; d.segs = []; }
+    if (!recog) { d.said = ''; d.segs = []; d.sec = 0; if (canProbe()) probe(); }
     const all = C.plainWords(d.target, S.lang).length; // once every word of the line has been heard a short silence ends it; before that, a longer one
     // each stretch of speech comes with up to three guesses [text, how sure]; the first guesses joined are what it heard
     hear(b, false, (text, res) => { d.said = (d.said + ' ' + text).trim(); d.segs.push([...(res || [])].slice(0, 3).map(a => [String(a?.transcript || ''), Number(a?.confidence) || 0])); }, () => {
+      probed().then(v => { if (v && d.score != null && sit?.step === 'speak' && sit.speak[sit.si] === d) { d.sec = v.sec; d.pauses = v.pauses; render(true); } });
       if (!d.said || sit?.step !== 'speak' || sit.speak[sit.si] !== d) return;
       const guess = k => d.segs.map(g => (g[k] || g[0] || [''])[0]).join(' ').trim().slice(0, 600);
       d.heard = d.said.slice(0, 600); d.alts = [1, 2].map(guess).filter(a => a && a !== d.heard); d.typed = false;
@@ -1290,7 +1323,8 @@ const ACT = {
   chatsay(b) { const x = chat()?.turns.find(y => y.id === b.dataset.id); if (x) say([[0, x.text]]); },
   sndsay(b) { // a word chosen for one sound: was it understood, and if not, what was heard in its place?
     const word = b.dataset.x;
-    guess3(b, got => { if (view !== 'first' || !got.length) return; sndTry[S.lang + ':' + word] = { state: heardAs(word, got), heard: got[0].slice(0, 60) }; render(true); }); },
+    guess3(b, (got, v) => { if (view !== 'first' || !(got.length || v)) return;
+      sndTry[S.lang + ':' + word] = { state: got.length ? heardAs(word, got) : 'none', heard: (got[0] || '').slice(0, 60), ...(v ? { shape: C.pitchShape(v.pitch), pitch: v.pitch } : {}) }; render(true); }); },
   pairs() { // each pair once by ear; then, where the browser recognises speech, once aloud
     const all = list(FIRST?.pairs?.[S.lang]), round = aloud => shuffle(all.slice()).map(pair => ({ pair, want: Math.random() < 0.5 ? 0 : 1, say: aloud }));
     quiz = { pair: true, cards: [...round(false), ...(SR ? round(true) : [])], i: 0, right: 0, verdict: '' };
@@ -1298,7 +1332,9 @@ const ACT = {
   },
   pairpick(b) { const c = quiz.cards[quiz.i], ok = +b.dataset.k === c.want; quiz.verdict = ok ? 'hit' : 'miss'; if (ok) quiz.right++; render(); say(c.pair[c.want]); },
   pairsay(b) { const c = quiz.cards[quiz.i], want = c.pair[c.want];
-    guess3(b, got => { if (!quiz?.pair || quiz.cards[quiz.i] !== c || !got.length) return; quiz.verdict = heardAs(want, got); quiz.heard = got[0].slice(0, 60); if (quiz.verdict === 'hit') quiz.right++; render(true); }); },
+    guess3(b, (got, v) => { if (!quiz?.pair || quiz.cards[quiz.i] !== c || !(got.length || v)) return;
+      if (v) { quiz.shape = C.pitchShape(v.pitch); quiz.pitch = v.pitch; quiz.verdict ||= 'none'; return render(true); } // the second call: how the voice moved
+      quiz.verdict = heardAs(want, got); quiz.heard = got[0].slice(0, 60); quiz.shape = ''; if (quiz.verdict === 'hit') quiz.right++; render(true); }); },
   hintkeep(b) { // the same for a suggestion on a retelling
     const id = b.dataset.id, at = id.lastIndexOf(':'), f = S.sittings.find(x => x.id === id.slice(0, at))?.hints?.[id.slice(at + 1)];
     if (f) { L().fixes['h:' + id] = { ...f, added: Date.now(), srs: null }; save(); render(true); } },

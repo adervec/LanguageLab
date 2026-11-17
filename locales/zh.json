@@ -91,6 +91,7 @@
  "Here is what it means. Write it in {language}.": "这是它的意思。用{language}写出来。",
  "Hiragana": "平假名",
  "How it sounds, in Latin letters": "用拉丁字母写出读音",
+ "How your pitch moved": "你的音高变化",
  "I know this": "我会了",
  "I want to learn": "我想学",
  "Import a backup": "导入备份",
@@ -104,6 +105,7 @@
  "It heard:": "听到的是：",
  "It is installed on this device.": "已安装在此设备上。",
  "It is marked against the sentence in the text, so another correct wording scores lower.": "评分以课文中的原句为准，其他正确的说法得分会低一些。",
+ "It recognised no word.": "它没有识别出任何词。",
  "It runs on this device: nothing you say leaves it. The first time, the browser may download its language model, which is large.": "它在这台设备上运行：你说的话不会离开设备。第一次使用时，浏览器可能要下载较大的语言模型。",
  "It runs through your AI cowork folder: each reply comes when your agent answers, so keep the agent watching the folder.": "它通过你的 AI cowork 文件夹运行：你的代理回答后回复才会到，所以请让代理一直留意这个文件夹。",
  "It was {pct} sure of what it heard.": "对听到内容的把握：{pct}。",
@@ -358,6 +360,8 @@
  "You have read every story. Ask for more through AI cowork in Settings, or add a text of your own in the Library.": "你读完了所有故事。请在设置中通过 AI cowork 申请更多，或在书库中添加自己的文本。",
  "You hear a number at natural speed and type it in digits, ten at a time. Nothing of it is kept.": "你会听到一个以自然语速说出的数字，然后用阿拉伯数字输入，每次十个。不会保存任何记录。",
  "You play {role}.": "你扮演{role}。",
+ "You took about {you} seconds. Play the line to compare with the voice.": "你用了大约 {you} 秒。播放这一句，和语音比较一下。",
+ "You took about {you} seconds; the voice takes {voice}.": "你用了大约 {you} 秒；语音用 {voice} 秒。",
  "You wrote this. Type it again, corrected.": "这是你写的。请改正后再输入一遍。",
  "You wrote:": "你写的是：",
  "You, {date}": "你，{date}",
@@ -368,12 +372,15 @@
  "Your line": "你的台词",
  "Your message": "你的消息",
  "Your retelling": "你的复述",
+ "Your voice: {shape}.": "你的声调：{shape}。",
  "conversation": "对话",
  "corrections to relearn": "个更正待重学",
  "dictation {pct}": "听写 {pct}",
  "different words read without help": "个不同的单词无需帮助即可读懂",
  "due now": "现在到期",
  "due {date}": "{date}到期",
+ "falling, then rising": "先降后升",
+ "falling": "下降",
  "last done {date}": "上次完成：{date}",
  "minutes of listening": "分钟听力",
  "new words in your review": "个新单词加入复习",
@@ -393,8 +400,10 @@
  "questions {pct}": "问题 {pct}",
  "read aloud {pct}": "朗读 {pct}",
  "read {date}": "已读 {date}",
+ "rising": "上升",
  "role-play {pct}": "角色扮演 {pct}",
  "sentences spoken": "个句子已说",
+ "stays level": "平",
  "words in review": "个单词在复习中",
  "words of reading in total": "个单词的总阅读量",
  "words read without help": "个单词无需帮助读懂",
@@ -419,6 +428,9 @@
  },
  "{n} line|{n} lines": {
   "other": "{n} 行"
+ },
+ "{n} long pause.|{n} long pauses.": {
+  "other": "{n} 次长停顿。"
  },
  "{n} minute listened|{n} minutes listened": {
   "other": "已听 {n} 分钟"

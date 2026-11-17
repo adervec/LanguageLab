@@ -27,7 +27,7 @@ await page.addInitScript(() => { self.Translator = { create: async () => ({ tran
 // and speech recognition, which needs a microphone: a stand-in that "hears" whatever the test says was said (and, when the test
 // gives them, its second guesses and how sure it was of the first)
 await page.addInitScript(() => { self.SpeechRecognition = self.webkitSpeechRecognition = class {
-  start() { setTimeout(() => { if (self.heard) this.onresult({ resultIndex: 0, results: [Object.assign([{ transcript: self.heard, confidence: self.heardSure }, ...(self.heardAlt || []).map(t => ({ transcript: t, confidence: 0.3 }))], { isFinal: true })] }); else this.onerror({ error: 'no-speech' }); this.onend(); }, 20); }
+  start() { setTimeout(() => { if (self.heard) this.onresult({ resultIndex: 0, results: [Object.assign([{ transcript: self.heard, confidence: self.heardSure }, ...(self.heardAlt || []).map(t => ({ transcript: t, confidence: 0.3 }))], { isFinal: true })] }); else this.onerror({ error: 'no-speech' }); this.onend(); }, self.srDelay || 20); }
   stop() { this.onend(); } }; });
 // likewise the browser's own language model: it opens, answers once with a correction, and never answers a message that says "attends".
 // It does not speak Spanish, so a Spanish conversation has to go through the cowork folder.
@@ -480,6 +480,15 @@ await page.waitForFunction(() => /Sentence 1 of \d+\. Read it aloud\./.test(docu
 await page.evaluate(() => { self.heard = 'bonjour'; self.heardAlt = self.heardSure = undefined; });
 await click('Speak');
 await page.waitForFunction(() => document.querySelector('#main').innerText.includes('It heard: bonjour'));
+// the sound itself, beside the words: a stand-in audio layer gives a quiet room and then a steady voice, and the line says how long it spoke
+await page.evaluate(() => { self.srDelay = 700; self.realAC = window.AudioContext;
+  window.AudioContext = class { constructor() { this.sampleRate = 48000; }
+    createAnalyser() { return { getFloatTimeDomainData: buf => { const on = performance.now() - self.micT0 > 200; for (let i = 0; i < buf.length; i++) buf[i] = on ? 0.3 * Math.sin(2 * Math.PI * 220 * i / 48000) : 0.001 * Math.sin(i); } }; }
+    createMediaStreamSource() { return { connect() {} }; } close() {} };
+  navigator.mediaDevices.getUserMedia = async () => { self.micT0 = performance.now(); return { getTracks: () => [] }; }; });
+await click('Try again');
+await page.waitForFunction(() => /You took about 0[.,][3-6] seconds\. Play the line to compare with the voice\./.test(document.querySelector('#main').innerText));
+await page.evaluate(() => { self.srDelay = 0; window.AudioContext = self.realAC; delete navigator.mediaDevices.getUserMedia; });
 for (let i = 0; i < 8 && await has('Next sentence'); i++) await click('Next sentence');
 await click('Finish');
 assert.match(await main(), /Reading aloud done[\s\S]*of your words understood when you spoke/);

@@ -247,6 +247,19 @@ assert.deepEqual([state.sittings.length, state.sittings[0].score, state.sittings
   assert.equal(c.cleanLesson({ title: 'Too short', phrases: [['שלום', 'Hello'], ['כן', 'Yes']] }, 'he'), null);
   assert.equal(c.cleanLesson({ phrases: [['a b', 'x'], ['c d', 'x'], ['e f', 'x'], ['g h', 'x']] }, 'fr'), null);
   assert.equal(c.cleanLesson(null, 'fr'), null); }
+// the sound itself: the pitch of a frame, when a voice was there, and how its pitch moved
+{ const tone = (hz, rate = 12000, n = 512) => Float32Array.from({ length: n }, (_, i) => 0.3 * Math.sin(2 * Math.PI * hz * i / rate));
+  for (const hz of [110, 220, 330]) assert.ok(Math.abs(c.pitchOf(tone(hz), 12000) - hz) < hz * 0.04, 'the pitch of ' + hz + ' Hz: ' + c.pitchOf(tone(hz), 12000));
+  assert.equal(c.pitchOf(new Float32Array(512), 12000), 0);                                   // silence
+  let seed = 7; const noise = Float32Array.from({ length: 512 }, () => ((seed = (seed * 16807) % 2147483647) / 2147483647 - 0.5) * 0.3);
+  assert.equal(c.pitchOf(noise, 12000), 0);                                                   // noise has no pitch
+  // half a second of room, a second of voice, a pause of 0.6 s, half a second of voice, room again
+  const fr = []; for (let k = 0; k < 107; k++) { const s = k * 0.03, on = (s >= 0.5 && s < 1.5) || (s >= 2.1 && s < 2.6); fr.push([s, on ? 0.2 : 0.004, on ? 180 + 60 * s : 0]); }
+  const v = c.voiceStats(fr);
+  assert.ok(Math.abs(v.sec - 2.07) < 0.1 && v.pauses === 1 && v.pitch.length > 40, JSON.stringify([v.sec, v.pauses, v.pitch.length]));
+  assert.deepEqual(c.voiceStats([[0, 0.001, 0], [0.03, 0.001, 0]]), { sec: 0, pauses: 0, pitch: [] });
+  const line = f => Array.from({ length: 20 }, (_, i) => [i * 0.03, f(i / 19)]);
+  assert.deepEqual([line(() => 200), line(x => 150 + 150 * x), line(x => 300 - 150 * x), line(x => 200 - 240 * x * (1 - x)), [[0, 200]]].map(c.pitchShape), ['level', 'rising', 'falling', 'dipping', '']); }
 console.log('core.test: ok');
 
 // merging this device with Drive loses nothing from either side
