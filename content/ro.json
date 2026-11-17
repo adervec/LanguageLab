@@ -407,5 +407,464 @@
    }
   ],
   "notice": "\"Dumneavoastră\" is the polite word for \"you\" and \"your\": \"Camera dumneavoastră este la etajul trei\". With a friend it would be \"camera ta\"."
+ },
+ {
+  "id": "ro-family",
+  "title": "Familia mea",
+  "level": "A1",
+  "text": "Mă numesc Anna. Locuiesc cu familia mea într-o casă mică lângă râu. Mama mea este profesoară, iar tatăl meu lucrează într-un magazin. Am un frate și o soră. Fratele meu are zece ani și îi place fotbalul. Sora mea este încă mică: are trei ani. Avem și un câine, iar numele lui este Max. În fiecare dimineață, tata se plimbă cu câinele. Seara mâncăm împreună și vorbim despre ziua noastră. După cină, eu și fratele meu spălăm vasele. Duminica vine bunica și aduce o prăjitură. Îmi iubesc foarte mult familia.",
+  "gloss": {
+   "familia": "family",
+   "casă": "house",
+   "râu": "river",
+   "mama": "mother",
+   "profesoară": "teacher",
+   "tatăl": "father",
+   "magazin": "shop",
+   "frate": "brother",
+   "soră": "sister",
+   "ani": "years",
+   "fotbalul": "football",
+   "mică": "small",
+   "câine": "dog",
+   "dimineață": "morning",
+   "plimbă": "(se plimbă: goes for a walk)",
+   "seara": "in the evening",
+   "mâncăm": "we eat",
+   "împreună": "together",
+   "cină": "dinner",
+   "vasele": "dishes",
+   "duminica": "on Sundays",
+   "bunica": "grandmother",
+   "prăjitură": "cake"
+  },
+  "questions": [
+   {
+    "q": "Unde lucrează tatăl?",
+    "a": [
+     "magazin"
+    ]
+   },
+   {
+    "q": "Câți ani are fratele?",
+    "a": [
+     "zece",
+     "10"
+    ]
+   },
+   {
+    "q": "Cine vine duminica?",
+    "a": [
+     "bunic"
+    ]
+   }
+  ],
+  "notice": "Romanian puts \"the\" at the end of the noun: \"fratele\" (the brother), \"câinele\" (the dog), \"vasele\" (the dishes). Age is said with \"have\": \"are zece ani\" (has ten years).",
+  "back": [
+   [
+    "Mama mea este profesoară, iar tatăl meu lucrează într-un magazin.",
+    "My mother is a teacher and my father works in a shop."
+   ],
+   [
+    "Duminica vine bunica și aduce o prăjitură.",
+    "On Sunday my grandmother comes and brings a cake."
+   ]
+  ]
+ },
+ {
+  "id": "ro-town",
+  "title": "Orașul nostru",
+  "level": "A1",
+  "text": "Orașul nostru este mic, dar frumos. În centru se află o piață veche cu o fântână. Lângă piață sunt o școală, o farmacie și două cafenele. Gara este în spatele parcului. În fiecare dimineață, mulți oameni iau trenul spre orașul mare. După-amiaza, copiii se joacă în parc, iar bătrânii joacă șah. Vara vin turiști și fotografiază podul. Iarna, orașul este liniștit. Sâmbăta este târg în piață. Acolo puteți cumpăra legume, miere și flori. Seara îmi place să mă plimb pe lângă râu. Nu vreau să locuiesc într-un oraș mare.",
+  "gloss": {
+   "orașul": "town",
+   "frumos": "beautiful",
+   "centru": "centre",
+   "piață": "square",
+   "fântână": "fountain",
+   "școală": "school",
+   "farmacie": "pharmacy",
+   "gara": "station",
+   "spatele": "(în spatele: behind)",
+   "parcului": "park",
+   "trenul": "train",
+   "amiaza": "(după-amiaza: in the afternoon)",
+   "copiii": "children",
+   "șah": "chess",
+   "vara": "in summer",
+   "turiști": "tourists",
+   "podul": "bridge",
+   "iarna": "in winter",
+   "liniștit": "quiet",
+   "sâmbăta": "on Saturdays",
+   "legume": "vegetables",
+   "miere": "honey",
+   "flori": "flowers",
+   "râu": "river"
+  },
+  "questions": [
+   {
+    "q": "Ce se află în centrul orașului?",
+    "a": [
+     "piață",
+     "piaț"
+    ]
+   },
+   {
+    "q": "Unde este gara?",
+    "a": [
+     "parc"
+    ]
+   },
+   {
+    "q": "Când vin turiștii?",
+    "a": [
+     "vara"
+    ]
+   }
+  ],
+  "notice": "Romanian puts \"the\" at the end of the noun: \"orașul\" (the town), \"gara\" (the station), \"copiii\" (the children). Seasons and days with that ending mean \"in\" or \"every\": \"vara\", \"iarna\", \"sâmbăta\".",
+  "back": [
+   [
+    "Gara este în spatele parcului.",
+    "The station is behind the park."
+   ],
+   [
+    "Iarna, orașul este liniștit.",
+    "In winter the town is quiet."
+   ]
+  ]
+ },
+ {
+  "id": "ro-birthday",
+  "title": "Ziua bunicii",
+  "level": "A2",
+  "text": "Ieri a fost ziua de naștere a bunicii mele. Acum are optzeci de ani. Toată familia a venit la casa ei din sat. Mătușa mea a făcut un tort mare, iar unchiul meu a adus flori. I-am dăruit un fular călduros și o carte despre grădini. Înainte de prânz am cântat un cântec, iar bunica a râs. Pe masă erau supă, pui cu cartofi și multă salată. După prânz ne-a arătat fotografii vechi. Într-o fotografie era o femeie tânără cu o bicicletă. Ne-a povestit că mergea cu ea la serviciu în fiecare zi. Apoi vărul meu a cântat la chitară și toată lumea a dansat. Chiar și fratele meu cel mic a dansat cu bunica. Seara era obosită, dar fericită. A spus că a fost cea mai frumoasă zi de naștere din viața ei. Am plecat acasă târziu, când stelele erau deja pe cer.",
+  "gloss": {
+   "ieri": "yesterday",
+   "naștere": "birth (ziua de naștere: birthday)",
+   "optzeci": "eighty",
+   "toată": "whole",
+   "sat": "village",
+   "mătușa": "aunt",
+   "făcut": "made",
+   "unchiul": "uncle",
+   "flori": "flowers",
+   "dăruit": "given as a present",
+   "fular": "scarf",
+   "grădini": "gardens",
+   "cântat": "sang",
+   "cântec": "song",
+   "râs": "laughed",
+   "pui": "chicken",
+   "cartofi": "potatoes",
+   "arătat": "showed",
+   "tânără": "young",
+   "bicicletă": "bicycle",
+   "vărul": "cousin",
+   "chitară": "guitar",
+   "dansat": "danced",
+   "obosită": "tired",
+   "frumoasă": "beautiful (cea mai frumoasă: the best, the most beautiful)",
+   "viața": "life",
+   "stelele": "stars"
+  },
+  "questions": [
+   {
+    "q": "Câți ani are bunica?",
+    "a": [
+     "optzeci",
+     "80"
+    ]
+   },
+   {
+    "q": "Cine a adus flori?",
+    "a": [
+     "unchi"
+    ]
+   },
+   {
+    "q": "La ce a cântat vărul?",
+    "a": [
+     "chitar"
+    ]
+   }
+  ],
+  "notice": "The everyday past is \"have\" plus a participle: \"a venit\" (came), \"am cântat\" (we sang), \"a adus\" (brought). Short pronouns join with a hyphen: \"i-am dăruit\" (we gave her), \"ne-a arătat\" (she showed us).",
+  "back": [
+   [
+    "Mătușa mea a făcut un tort mare, iar unchiul meu a adus flori.",
+    "My aunt baked a big cake and my uncle brought flowers."
+   ],
+   [
+    "După prânz ne-a arătat fotografii vechi.",
+    "After lunch she showed us old photos."
+   ]
+  ]
+ },
+ {
+  "id": "ro-wallet",
+  "title": "Portofelul pierdut",
+  "level": "B1",
+  "text": "Vinerea trecută, Daniel voia să plătească la supermarket, dar portofelul nu era în buzunar. Era foarte îngrijorat, pentru că avea în el cardul bancar și permisul de conducere. Și-a lăsat cumpărăturile la casă și s-a întors pe același drum. A căutat peste tot, pe trotuar și în stația de autobuz, dar nu a găsit nimic. Acasă a sunat la bancă și a blocat cardul. În noaptea aceea nu a putut dormi, pentru că se gândea la toate actele lui. După două zile a sosit o scrisoare de la poliție. O femeie găsise portofelul în autobuz și îl dusese la secția de poliție. Daniel s-a dus imediat acolo. Nu lipsea nimic, nici măcar banii. Polițistul i-a dat adresa femeii, pentru că Daniel voia să-i mulțumească. A doua zi a cumpărat flori și i-a scris o felicitare. Ea a fost surprinsă și l-a invitat la o cafea. Au vorbit o oră, iar acum sunt prieteni buni. De atunci, Daniel își verifică mereu buzunarul înainte să coboare din autobuz.",
+  "gloss": {
+   "vinerea": "Friday",
+   "plătească": "pay",
+   "supermarket": "supermarket",
+   "portofelul": "wallet",
+   "buzunar": "pocket",
+   "îngrijorat": "worried",
+   "cardul": "the card (cardul bancar: the bank card)",
+   "permisul": "the licence (permisul de conducere: the driving licence)",
+   "cumpărăturile": "shopping",
+   "casă": "till; house",
+   "același": "same",
+   "tot": "(peste tot: everywhere)",
+   "trotuar": "pavement",
+   "stația": "the stop (stația de autobuz: the bus stop)",
+   "găsit": "found",
+   "blocat": "blocked",
+   "actele": "documents",
+   "scrisoare": "letter",
+   "poliție": "police",
+   "lipsea": "was missing",
+   "banii": "money",
+   "adresa": "address",
+   "mulțumească": "thank",
+   "surprinsă": "surprised",
+   "invitat": "invited",
+   "verifică": "checks",
+   "coboare": "gets off"
+  },
+  "questions": [
+   {
+    "q": "Ce nu era în buzunarul lui Daniel?",
+    "a": [
+     "portofel"
+    ]
+   },
+   {
+    "q": "Unde găsise femeia portofelul?",
+    "a": [
+     "autobuz"
+    ]
+   },
+   {
+    "q": "Ce a cumpărat Daniel?",
+    "a": [
+     "flori"
+    ]
+   }
+  ],
+  "notice": "Romanian has a one-word \"had done\": \"găsise\" (had found), \"dusese\" (had taken). After \"să\" the verb takes its own form: \"voia să plătească\" (wanted to pay), \"înainte să coboare\" (before he gets off).",
+  "back": [
+   [
+    "A căutat peste tot, pe trotuar și în stația de autobuz, dar nu a găsit nimic.",
+    "He looked everywhere, on the pavement and at the bus stop, but he found nothing."
+   ],
+   [
+    "O femeie găsise portofelul în autobuz și îl dusese la secția de poliție.",
+    "A woman had found the wallet on the bus and had taken it to the police station."
+   ]
+  ]
+ },
+ {
+  "id": "ro-station",
+  "title": "La gară",
+  "level": "A2",
+  "roles": [
+   "Casiera",
+   "Călătorul"
+  ],
+  "lines": [
+   [
+    0,
+    "Bună dimineața. Cu ce vă pot ajuta?"
+   ],
+   [
+    1,
+    "Bună dimineața. Aș dori un bilet până la Sibiu, vă rog."
+   ],
+   [
+    0,
+    "Dus sau dus-întors?"
+   ],
+   [
+    1,
+    "Dus-întors, vă rog. Când pleacă următorul tren?"
+   ],
+   [
+    0,
+    "La zece și un sfert, de la linia trei."
+   ],
+   [
+    1,
+    "Cât durează călătoria?"
+   ],
+   [
+    0,
+    "Cam patru ore. Trebuie să schimbați trenul la Teiuș."
+   ],
+   [
+    1,
+    "Cât timp am acolo?"
+   ],
+   [
+    0,
+    "Douăzeci de minute. Este de ajuns."
+   ],
+   [
+    1,
+    "Bine. Cât costă biletul?"
+   ],
+   [
+    0,
+    "Șaptezeci de lei. Doriți să plătiți cu cardul?"
+   ],
+   [
+    1,
+    "Da, cu cardul. Mulțumesc mult!"
+   ]
+  ],
+  "gloss": {
+   "ajuta": "help",
+   "bilet": "ticket",
+   "dus": "one way",
+   "întors": "(dus-întors: return)",
+   "următorul": "next",
+   "tren": "train",
+   "pleacă": "leave",
+   "linia": "the line, the platform",
+   "călătoria": "journey",
+   "ore": "hours",
+   "schimbați": "change",
+   "timp": "time",
+   "minute": "minutes",
+   "ajuns": "(de ajuns: enough)",
+   "costă": "cost",
+   "plătiți": "pay",
+   "cardul": "card"
+  },
+  "questions": [
+   {
+    "q": "De la ce linie pleacă trenul?",
+    "a": [
+     "trei",
+     "3"
+    ]
+   },
+   {
+    "q": "Cum plătește călătorul?",
+    "a": [
+     "card"
+    ]
+   }
+  ],
+  "notice": "A polite request uses \"aș dori\" (I would like) and \"vă rog\" (please). To a stranger the verb is in the plural: \"doriți\", \"trebuie să schimbați\". \"The\" sits at the end of the noun: \"biletul\", \"trenul\"."
+ },
+ {
+  "id": "ro-doctor",
+  "title": "La doctor",
+  "level": "B1",
+  "roles": [
+   "Doctorița",
+   "Pacientul"
+  ],
+  "lines": [
+   [
+    0,
+    "Bună dimineața. Ce problemă aveți?"
+   ],
+   [
+    1,
+    "Bună dimineața, doamna doctor. De trei zile mă doare gâtul și tușesc."
+   ],
+   [
+    0,
+    "Aveți și febră?"
+   ],
+   [
+    1,
+    "Da, aseară am avut treizeci și opt și jumătate."
+   ],
+   [
+    0,
+    "Vă doare și capul?"
+   ],
+   [
+    1,
+    "Puțin, mai ales seara. Și dorm prost."
+   ],
+   [
+    0,
+    "Deschideți gura, vă rog. Da, gâtul este foarte roșu."
+   ],
+   [
+    1,
+    "Este grav? Trebuie să lucrez săptămâna aceasta."
+   ],
+   [
+    0,
+    "Nu, dar aveți nevoie de odihnă. Stați acasă trei zile și beți mult ceai."
+   ],
+   [
+    1,
+    "Am nevoie de medicamente?"
+   ],
+   [
+    0,
+    "Vă dau o rețetă pentru pastile. Luați una după fiecare masă."
+   ],
+   [
+    1,
+    "Mulțumesc. Să mai vin dacă nu mă simt mai bine?"
+   ],
+   [
+    0,
+    "Da, veniți săptămâna viitoare dacă mai aveți febră."
+   ],
+   [
+    1,
+    "Bine. La revedere, doamna doctor."
+   ]
+  ],
+  "gloss": {
+   "problemă": "problem",
+   "gâtul": "the throat (mă doare gâtul: I have a sore throat)",
+   "tușesc": "I cough",
+   "zile": "days",
+   "febră": "fever",
+   "capul": "head",
+   "doare": "hurts",
+   "ales": "(mai ales: especially)",
+   "dorm": "I sleep",
+   "gura": "mouth",
+   "roșu": "red",
+   "grav": "serious",
+   "odihnă": "rest",
+   "stați": "stay",
+   "medicamente": "medicine",
+   "rețetă": "prescription",
+   "pastile": "tablets",
+   "masă": "meal",
+   "vin": "I come",
+   "bine": "well (mai bine: better)"
+  },
+  "questions": [
+   {
+    "q": "De câte zile îl doare gâtul pe pacient?",
+    "a": [
+     "trei",
+     "3"
+    ]
+   },
+   {
+    "q": "Pentru ce este rețeta?",
+    "a": [
+     "pastile"
+    ]
+   }
+  ],
+  "notice": "What hurts is the subject: \"mă doare gâtul\" (the throat hurts me), \"vă doare capul\". \"A avea nevoie de\" is \"to need\": \"aveți nevoie de odihnă\". Polite commands end in -ți: \"deschideți\", \"stați\", \"luați\"."
  }
 ]

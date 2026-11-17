@@ -407,5 +407,463 @@
    }
   ],
   "notice": "Hungarian shows \"my\" and \"your\" with an ending on the noun: \"útlevelem\" (my passport), \"bőröndöm\" (my suitcase), \"szobája\" (your room, said politely), \"kulcsa\" (your key)."
+ },
+ {
+  "id": "hu-family",
+  "title": "A családom",
+  "level": "A1",
+  "text": "Anna vagyok. A családommal egy kis házban lakom a folyó mellett. Az anyukám tanárnő, az apukám pedig egy boltban dolgozik. Van egy öcsém és egy húgom. Az öcsém tízéves, és szereti a focit. A húgom még kicsi: hároméves. Van egy kutyánk is, Max a neve. Apukám minden reggel sétálni megy a kutyával. Este együtt vacsorázunk, és a napunkról beszélgetünk. Vacsora után az öcsémmel elmosogatunk. Vasárnap eljön a nagymamám, és hoz egy tortát. Nagyon szeretem a családomat.",
+  "gloss": {
+   "családommal": "with my family",
+   "házban": "in a house",
+   "folyó": "river",
+   "anyukám": "my mum",
+   "tanárnő": "teacher",
+   "apukám": "my dad",
+   "boltban": "in a shop",
+   "öcsém": "my younger brother",
+   "húgom": "my younger sister",
+   "tízéves": "ten years old",
+   "focit": "football",
+   "kicsi": "small",
+   "kutyánk": "our dog",
+   "reggel": "morning",
+   "sétálni": "to walk",
+   "este": "in the evening",
+   "vacsorázunk": "we have dinner",
+   "együtt": "together",
+   "vacsora": "dinner",
+   "elmosogatunk": "we wash the dishes",
+   "vasárnap": "Sunday",
+   "nagymamám": "my grandmother",
+   "tortát": "cake"
+  },
+  "questions": [
+   {
+    "q": "Hol dolgozik Anna apukája?",
+    "a": [
+     "bolt"
+    ]
+   },
+   {
+    "q": "Mit szeret Anna öccse?",
+    "a": [
+     "foci"
+    ]
+   },
+   {
+    "q": "Ki jön el vasárnap?",
+    "a": [
+     "nagymam"
+    ]
+   }
+  ],
+  "notice": "Hungarian puts \"my\" at the end of the noun: \"anyukám\" (my mum), \"öcsém\" (my younger brother), \"kutyánk\" (our dog). \"With\" is an ending too, -val or -vel, whose v copies the consonant before it: \"családommal\", \"öcsémmel\".",
+  "back": [
+   [
+    "Az anyukám tanárnő, az apukám pedig egy boltban dolgozik.",
+    "My mother is a teacher and my father works in a shop."
+   ],
+   [
+    "Vasárnap eljön a nagymamám, és hoz egy tortát.",
+    "On Sunday my grandmother comes and brings a cake."
+   ]
+  ]
+ },
+ {
+  "id": "hu-town",
+  "title": "A mi városunk",
+  "level": "A1",
+  "text": "A városunk kicsi, de szép. A központban van egy régi tér egy szökőkúttal. A tér mellett van egy iskola, egy gyógyszertár és két kávézó. Az állomás a park mögött van. Minden reggel sok ember vonattal megy a nagyvárosba. Délután a gyerekek a parkban játszanak, az öreg bácsik pedig sakkoznak. Nyáron turisták jönnek, és lefényképezik a hidat. Télen csendes a város. Szombaton piac van a téren. Ott zöldséget, mézet és virágot lehet venni. Este szeretek a folyó partján sétálni. Nem akarok nagyvárosban élni.",
+  "gloss": {
+   "városunk": "our town",
+   "szép": "beautiful",
+   "központban": "in the centre",
+   "tér": "square",
+   "szökőkúttal": "with a fountain",
+   "iskola": "school",
+   "gyógyszertár": "pharmacy",
+   "állomás": "station",
+   "mögött": "behind",
+   "park": "park",
+   "vonattal": "by train",
+   "délután": "afternoon",
+   "gyerekek": "children",
+   "sakkoznak": "they play chess",
+   "nyáron": "in summer",
+   "turisták": "tourists",
+   "hidat": "bridge",
+   "télen": "in winter",
+   "csendes": "quiet",
+   "szombaton": "on Saturday",
+   "zöldséget": "vegetables",
+   "mézet": "honey",
+   "virágot": "flowers",
+   "folyó": "river"
+  },
+  "questions": [
+   {
+    "q": "Mi van a város központjában?",
+    "a": [
+     "tér"
+    ]
+   },
+   {
+    "q": "Hol van az állomás?",
+    "a": [
+     "park"
+    ]
+   },
+   {
+    "q": "Mikor jönnek a turisták?",
+    "a": [
+     "nyáron",
+     "nyár"
+    ]
+   }
+  ],
+  "notice": "Hungarian puts \"in\", \"on\" and \"with\" on the end of the noun: \"a parkban\" (in the park), \"a téren\" (on the square), \"vonattal\" (by train). Seasons take their own endings: \"nyáron\" (in summer), \"télen\" (in winter).",
+  "back": [
+   [
+    "Az állomás a park mögött van.",
+    "The station is behind the park."
+   ],
+   [
+    "Télen csendes a város.",
+    "In winter the town is quiet."
+   ]
+  ]
+ },
+ {
+  "id": "hu-birthday",
+  "title": "A nagymamám születésnapja",
+  "level": "A2",
+  "text": "Tegnap volt a nagymamám születésnapja. Most nyolcvanéves. Az egész család eljött a falusi házába. A nagynéném nagy tortát sütött, a nagybátyám pedig virágot hozott. Egy meleg sálat és egy kertekről szóló könyvet adtunk neki. Ebéd előtt énekeltünk egy dalt, és a nagymama nevetett. Az asztalon leves, krumplis csirke és sok saláta volt. Ebéd után régi fényképeket mutatott nekünk. Az egyik képen fiatal nő volt egy biciklivel. Elmesélte, hogy minden nap azzal járt dolgozni. Aztán az unokatestvérem gitározott, és mindenki táncolt. Még a kisöcsém is táncolt a nagymamával. Este fáradt volt, de boldog. Azt mondta, hogy ez volt élete legszebb születésnapja. Későn mentünk haza, amikor már csillagok voltak az égen.",
+  "gloss": {
+   "tegnap": "yesterday",
+   "születésnapja": "her birthday",
+   "nyolcvanéves": "eighty years old",
+   "egész": "whole",
+   "falusi": "village (as an adjective)",
+   "nagynéném": "my aunt",
+   "sütött": "baked",
+   "nagybátyám": "my uncle",
+   "virágot": "flowers",
+   "adtunk": "we gave",
+   "sálat": "scarf",
+   "kertekről": "about gardens",
+   "énekeltünk": "we sang",
+   "dalt": "song",
+   "nevetett": "laughed",
+   "csirke": "chicken",
+   "krumplis": "with potatoes",
+   "mutatott": "showed",
+   "fiatal": "young",
+   "biciklivel": "with a bicycle",
+   "unokatestvérem": "my cousin",
+   "gitározott": "played the guitar",
+   "táncolt": "danced",
+   "fáradt": "tired",
+   "legszebb": "the most beautiful, the best",
+   "élete": "her life",
+   "csillagok": "stars"
+  },
+  "questions": [
+   {
+    "q": "Hány éves a nagymama?",
+    "a": [
+     "nyolcvan",
+     "80"
+    ]
+   },
+   {
+    "q": "Ki hozott virágot?",
+    "a": [
+     "nagybáty"
+    ]
+   },
+   {
+    "q": "Min játszott az unokatestvér?",
+    "a": [
+     "gitár"
+    ]
+   }
+  ],
+  "notice": "The past ends in -t or -tt: \"sütött\" (baked), \"hozott\" (brought), \"táncolt\" (danced); \"we\" adds -unk or -ünk: \"adtunk\", \"énekeltünk\". \"Volt\" is \"was\", and also \"there was\".",
+  "back": [
+   [
+    "A nagynéném nagy tortát sütött, a nagybátyám pedig virágot hozott.",
+    "My aunt baked a big cake and my uncle brought flowers."
+   ],
+   [
+    "Ebéd után régi fényképeket mutatott nekünk.",
+    "After lunch she showed us old photos."
+   ]
+  ]
+ },
+ {
+  "id": "hu-wallet",
+  "title": "Az elveszett pénztárca",
+  "level": "B1",
+  "text": "Múlt pénteken Dániel fizetni akart a szupermarketben, de a pénztárcája nem volt a zsebében. Nagyon aggódott, mert benne volt a bankkártyája és a jogosítványa. A pénztárnál hagyta a bevásárlást, és ugyanazon az úton visszament. Mindenhol kereste, a járdán és a buszmegállóban is, de nem talált semmit. Otthon felhívta a bankot, és letiltatta a kártyát. Aznap éjjel nem tudott aludni, mert az összes iratára gondolt. Két nappal később levél érkezett a rendőrségtől. Egy nő megtalálta a pénztárcát a buszon, és bevitte a rendőrségre. Dániel azonnal odament. Semmi sem hiányzott, még a pénz sem. A rendőr megadta neki a nő címét, mert Dániel meg akarta köszönni neki. Másnap virágot vett, és írt neki egy képeslapot. A nő meglepődött, és meghívta egy kávéra. Egy órát beszélgettek, és most jó barátok. Azóta Dániel mindig megnézi a zsebét, mielőtt leszáll a buszról.",
+  "gloss": {
+   "pénteken": "on Friday",
+   "fizetni": "pay",
+   "szupermarketben": "supermarket",
+   "pénztárcája": "his wallet",
+   "zsebében": "in his pocket",
+   "aggódott": "was worried",
+   "bankkártyája": "his bank card",
+   "jogosítványa": "his driving licence",
+   "bevásárlást": "shopping",
+   "pénztárnál": "at the till",
+   "ugyanazon": "same",
+   "mindenhol": "everywhere",
+   "járdán": "on the pavement",
+   "buszmegállóban": "at the bus stop",
+   "talált": "found",
+   "letiltatta": "had it blocked",
+   "iratára": "(az összes iratára: about all his documents)",
+   "levél": "letter",
+   "rendőrségtől": "from the police",
+   "hiányzott": "was missing",
+   "pénz": "money",
+   "címét": "her address",
+   "köszönni": "(meg akarta köszönni: wanted to thank)",
+   "meglepődött": "was surprised",
+   "meghívta": "invited",
+   "megnézi": "looks at, checks",
+   "leszáll": "gets off"
+  },
+  "questions": [
+   {
+    "q": "Mi nem volt Dániel zsebében?",
+    "a": [
+     "pénztárc"
+    ]
+   },
+   {
+    "q": "Hol találta meg a nő a pénztárcát?",
+    "a": [
+     "busz"
+    ]
+   },
+   {
+    "q": "Mit vett Dániel?",
+    "a": [
+     "virág"
+    ]
+   }
+  ],
+  "notice": "A verb prefix shows that the action is finished, and it moves away before \"akart\": \"megtalálta\" (found), but \"meg akarta köszönni\" (wanted to thank). \"His\" is an ending: \"pénztárcája\" (his wallet), \"zsebe\" (his pocket).",
+  "back": [
+   [
+    "Mindenhol kereste, a járdán és a buszmegállóban is, de nem talált semmit.",
+    "He looked everywhere, on the pavement and at the bus stop, but he found nothing."
+   ],
+   [
+    "Egy nő megtalálta a pénztárcát a buszon, és bevitte a rendőrségre.",
+    "A woman had found the wallet on the bus and had taken it to the police station."
+   ]
+  ]
+ },
+ {
+  "id": "hu-station",
+  "title": "A pályaudvaron",
+  "level": "A2",
+  "roles": [
+   "Pénztáros",
+   "Utas"
+  ],
+  "lines": [
+   [
+    0,
+    "Jó reggelt kívánok. Miben segíthetek?"
+   ],
+   [
+    1,
+    "Jó reggelt. Egy jegyet kérek Egerbe."
+   ],
+   [
+    0,
+    "Csak oda, vagy oda-vissza?"
+   ],
+   [
+    1,
+    "Oda-vissza kérem. Mikor indul a következő vonat?"
+   ],
+   [
+    0,
+    "Negyed tizenegykor, a harmadik vágányról."
+   ],
+   [
+    1,
+    "Mennyi ideig tart az út?"
+   ],
+   [
+    0,
+    "Körülbelül két óra. Füzesabonyban át kell szállnia."
+   ],
+   [
+    1,
+    "Mennyi időm van ott?"
+   ],
+   [
+    0,
+    "Húsz perc. Az elég."
+   ],
+   [
+    1,
+    "Jó. Mennyibe kerül a jegy?"
+   ],
+   [
+    0,
+    "Ötezer forint. Kártyával szeretne fizetni?"
+   ],
+   [
+    1,
+    "Igen, kártyával. Köszönöm szépen!"
+   ]
+  ],
+  "gloss": {
+   "segíthetek": "can I help",
+   "jegyet": "ticket",
+   "oda": "there (csak oda: one way)",
+   "vissza": "back (oda-vissza: return)",
+   "következő": "next",
+   "vonat": "train",
+   "indul": "leave",
+   "vágányról": "from platform",
+   "út": "journey",
+   "óra": "hours",
+   "szállnia": "(át kell szállnia: you have to change)",
+   "ideig": "(mennyi ideig: how long)",
+   "perc": "minutes",
+   "elég": "enough",
+   "kerül": "(mennyibe kerül: how much does it cost)",
+   "fizetni": "pay",
+   "kártyával": "by card"
+  },
+  "questions": [
+   {
+    "q": "Melyik vágányról indul a vonat?",
+    "a": [
+     "harmadik",
+     "3"
+    ]
+   },
+   {
+    "q": "Hogyan fizet az utas?",
+    "a": [
+     "kártyá"
+    ]
+   }
+  ],
+  "notice": "Hungarian tells a quarter by the hour that is coming: \"negyed tizenegy\" is a quarter past ten. \"To\" and \"in\" a town are endings: \"Egerbe\" (to Eger), \"Füzesabonyban\" (in Füzesabony). The polite \"you\" uses the third person: \"szeretne\"."
+ },
+ {
+  "id": "hu-doctor",
+  "title": "Az orvosnál",
+  "level": "B1",
+  "roles": [
+   "Orvos",
+   "Beteg"
+  ],
+  "lines": [
+   [
+    0,
+    "Jó reggelt kívánok. Mi a panasza?"
+   ],
+   [
+    1,
+    "Jó reggelt, doktor úr. Három napja fáj a torkom, és köhögök."
+   ],
+   [
+    0,
+    "Láza is van?"
+   ],
+   [
+    1,
+    "Igen, tegnap este harmincnyolc és fél volt."
+   ],
+   [
+    0,
+    "A feje is fáj?"
+   ],
+   [
+    1,
+    "Egy kicsit, főleg este. Rosszul is alszom."
+   ],
+   [
+    0,
+    "Nyissa ki a száját, kérem. Igen, a torka nagyon piros."
+   ],
+   [
+    1,
+    "Súlyos? Ezen a héten dolgoznom kell."
+   ],
+   [
+    0,
+    "Nem, de pihenésre van szüksége. Maradjon otthon három napig, és igyon sok teát."
+   ],
+   [
+    1,
+    "Kell gyógyszert szednem?"
+   ],
+   [
+    0,
+    "Felírok önnek egy tablettát. Minden étkezés után vegyen be egyet."
+   ],
+   [
+    1,
+    "Köszönöm. Jöjjek vissza, ha nem leszek jobban?"
+   ],
+   [
+    0,
+    "Igen, jöjjön vissza a jövő héten, ha még mindig lázas."
+   ],
+   [
+    1,
+    "Rendben. Viszontlátásra, doktor úr."
+   ]
+  ],
+  "gloss": {
+   "panasza": "your complaint",
+   "torkom": "my throat (fáj a torkom: I have a sore throat)",
+   "köhögök": "I cough",
+   "napja": "(három napja: for three days)",
+   "láza": "your fever",
+   "feje": "your head",
+   "fáj": "hurts",
+   "főleg": "especially",
+   "alszom": "I sleep",
+   "száját": "your mouth",
+   "piros": "red",
+   "súlyos": "serious",
+   "pihenésre": "(pihenésre van szüksége: you need rest)",
+   "maradjon": "stay",
+   "gyógyszert": "medicine",
+   "felírok": "I prescribe",
+   "tablettát": "tablets",
+   "étkezés": "meal",
+   "vissza": "back (jöjjek vissza: shall I come back)",
+   "jobban": "better"
+  },
+  "questions": [
+   {
+    "q": "Hány napja fáj a beteg torka?",
+    "a": [
+     "három",
+     "3"
+    ]
+   },
+   {
+    "q": "Mit ír fel az orvos?",
+    "a": [
+     "tablett"
+    ]
+   }
+  ],
+  "notice": "The polite \"you\" is the third person: \"Mi a panasza?\", \"Nyissa ki a száját\". \"Have to\" is \"kell\" with a personal ending on the infinitive: \"dolgoznom kell\" (I have to work), \"szednem\" (for me to take)."
  }
 ]

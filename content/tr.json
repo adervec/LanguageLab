@@ -407,5 +407,462 @@
    }
   ],
   "notice": "A yes-or-no question is made with the little word \"mi\" (also \"mı\", \"mu\", \"mü\") after the word asked about: \"dahil mi?\", \"Asansör var mı?\"."
+ },
+ {
+  "id": "tr-family",
+  "title": "Ailem",
+  "level": "A1",
+  "text": "Benim adım Anna. Ailemle birlikte nehrin yakınında küçük bir evde yaşıyorum. Annem öğretmen, babam ise bir dükkânda çalışıyor. Bir erkek kardeşim ve bir kız kardeşim var. Erkek kardeşim on yaşında ve futbolu seviyor. Kız kardeşim daha küçük: o üç yaşında. Bir de köpeğimiz var, adı Max. Babam her sabah köpekle yürüyüşe çıkıyor. Akşam birlikte yemek yiyoruz ve günümüzün nasıl geçtiğini anlatıyoruz. Akşam yemeğinden sonra kardeşimle bulaşıkları yıkıyoruz. Pazar günü büyükannem geliyor ve pasta getiriyor. Ailemi çok seviyorum.",
+  "gloss": {
+   "ailemle": "with my family",
+   "evde": "in a house",
+   "nehrin": "river",
+   "annem": "my mother",
+   "öğretmen": "teacher",
+   "babam": "my father",
+   "dükkânda": "in a shop",
+   "kardeşim": "my brother or sister (erkek kardeşim: my brother)",
+   "kız": "girl (kız kardeşim: my sister)",
+   "yaşında": "years old",
+   "futbolu": "football",
+   "küçük": "small",
+   "köpeğimiz": "our dog",
+   "sabah": "morning",
+   "yürüyüşe": "for a walk",
+   "akşam": "evening",
+   "yiyoruz": "we eat",
+   "birlikte": "together",
+   "yemeğinden": "(akşam yemeğinden sonra: after dinner)",
+   "bulaşıkları": "dishes",
+   "pazar": "Sunday",
+   "büyükannem": "my grandmother",
+   "pasta": "cake"
+  },
+  "questions": [
+   {
+    "q": "Babası nerede çalışıyor?",
+    "a": [
+     "dükkân"
+    ]
+   },
+   {
+    "q": "Erkek kardeşi kaç yaşında?",
+    "a": [
+     "on",
+     "10"
+    ]
+   },
+   {
+    "q": "Pazar günü kim geliyor?",
+    "a": [
+     "büyükanne"
+    ]
+   }
+  ],
+  "notice": "Turkish puts endings where English has small words: \"evde\" (in the house), \"ailemle\" (with my family), \"annem\" (my mother). \"Var\" at the end says \"there is\" or \"I have\": \"Bir kız kardeşim var\".",
+  "back": [
+   [
+    "Annem öğretmen, babam ise bir dükkânda çalışıyor.",
+    "My mother is a teacher and my father works in a shop."
+   ],
+   [
+    "Pazar günü büyükannem geliyor ve pasta getiriyor.",
+    "On Sunday my grandmother comes and brings a cake."
+   ]
+  ]
+ },
+ {
+  "id": "tr-town",
+  "title": "Kasabamız",
+  "level": "A1",
+  "text": "Bizim kasabamız küçük ama çok güzel. Merkezde çeşmeli eski bir meydan var. Meydanın yanında bir okul, bir eczane ve iki kafe var. Tren istasyonu parkın arkasında. Her sabah birçok insan trenle büyük şehre gidiyor. Öğleden sonra çocuklar parkta oynuyor, yaşlı adamlar da satranç oynuyor. Yazın turistler geliyor ve köprünün fotoğrafını çekiyor. Kışın kasaba sessiz. Cumartesi günü meydanda pazar kuruluyor. Orada sebze, bal ve çiçek alabilirsiniz. Akşamları nehir kenarında yürümeyi seviyorum. Büyük bir şehirde yaşamak istemiyorum.",
+  "gloss": {
+   "kasabamız": "our town",
+   "güzel": "beautiful",
+   "merkezde": "in the centre",
+   "meydan": "square",
+   "çeşmeli": "with a fountain",
+   "okul": "school",
+   "eczane": "pharmacy",
+   "istasyonu": "station",
+   "arkasında": "behind",
+   "parkın": "park",
+   "trenle": "by train",
+   "öğleden": "(öğleden sonra: in the afternoon)",
+   "çocuklar": "children",
+   "satranç": "chess",
+   "yazın": "in summer",
+   "turistler": "tourists",
+   "köprünün": "bridge",
+   "kışın": "in winter",
+   "sessiz": "quiet",
+   "cumartesi": "Saturday",
+   "sebze": "vegetables",
+   "bal": "honey",
+   "çiçek": "flowers",
+   "nehir": "river"
+  },
+  "questions": [
+   {
+    "q": "Kasabanın merkezinde ne var?",
+    "a": [
+     "meydan"
+    ]
+   },
+   {
+    "q": "Tren istasyonu nerede?",
+    "a": [
+     "park"
+    ]
+   },
+   {
+    "q": "Turistler ne zaman geliyor?",
+    "a": [
+     "yazın"
+    ]
+   }
+  ],
+  "notice": "Turkish has no \"the\" and no \"is\" in the present: \"kasaba sessiz\" (the town quiet). \"-de/-da/-te/-ta\" means in or at: \"merkezde\", \"parkta\", \"meydanda\". \"Yazın\" and \"kışın\" mean in summer and in winter.",
+  "back": [
+   [
+    "Tren istasyonu parkın arkasında.",
+    "The station is behind the park."
+   ],
+   [
+    "Kışın kasaba sessiz.",
+    "In winter the town is quiet."
+   ]
+  ]
+ },
+ {
+  "id": "tr-birthday",
+  "title": "Büyükannemin doğum günü",
+  "level": "A2",
+  "text": "Dün büyükannemin doğum günüydü. O şimdi seksen yaşında. Bütün aile onun köydeki evine geldi. Teyzem büyük bir pasta yaptı, amcam da çiçek getirdi. Ona sıcak bir atkı ve bahçeler hakkında bir kitap hediye ettik. Öğle yemeğinden önce bir şarkı söyledik ve büyükannem güldü. Masada çorba, patatesli tavuk ve bol bol salata vardı. Öğle yemeğinden sonra bize eski fotoğraflar gösterdi. Bir fotoğrafta bisikletli genç bir kadındı. Bize her gün işe bisikletle gittiğini anlattı. Sonra kuzenim gitar çaldı ve herkes dans etti. Küçük kardeşim bile büyükannemle dans etti. Akşam yorgun ama mutluydu. Bunun hayatının en güzel doğum günü olduğunu söyledi. Eve geç döndük; gökyüzünde yıldızlar çoktan çıkmıştı.",
+  "gloss": {
+   "dün": "yesterday",
+   "doğum": "birth (doğum günü: birthday)",
+   "seksen": "eighty",
+   "bütün": "whole",
+   "köydeki": "in the village",
+   "teyzem": "my aunt (mother's sister)",
+   "yaptı": "made",
+   "amcam": "my uncle (father's brother)",
+   "çiçek": "flowers",
+   "hediye": "gift (hediye ettik: we gave)",
+   "atkı": "scarf",
+   "bahçeler": "gardens",
+   "söyledik": "(şarkı söyledik: we sang a song)",
+   "şarkı": "song",
+   "güldü": "laughed",
+   "tavuk": "chicken",
+   "patatesli": "with potatoes",
+   "gösterdi": "showed",
+   "genç": "young",
+   "bisikletle": "by bicycle",
+   "kuzenim": "my cousin",
+   "gitar": "guitar",
+   "dans": "dance (dans etti: danced)",
+   "yorgun": "tired",
+   "güzel": "beautiful (en güzel: the best, the most beautiful)",
+   "hayatının": "of her life",
+   "yıldızlar": "stars"
+  },
+  "questions": [
+   {
+    "q": "Büyükanne kaç yaşında?",
+    "a": [
+     "seksen",
+     "80"
+    ]
+   },
+   {
+    "q": "Çiçekleri kim getirdi?",
+    "a": [
+     "amca"
+    ]
+   },
+   {
+    "q": "Kuzen ne çaldı?",
+    "a": [
+     "gitar"
+    ]
+   }
+  ],
+  "notice": "The past ends in -di (also -dı, -du, -dü, -ti...) with the person after it: \"geldi\" (came), \"söyledik\" (we sang), \"döndük\" (we returned). After a noun or adjective \"-ydi\" is \"was\": \"doğum günüydü\", \"mutluydu\".",
+  "back": [
+   [
+    "Teyzem büyük bir pasta yaptı, amcam da çiçek getirdi.",
+    "My aunt baked a big cake and my uncle brought flowers."
+   ],
+   [
+    "Öğle yemeğinden sonra bize eski fotoğraflar gösterdi.",
+    "After lunch she showed us old photos."
+   ]
+  ]
+ },
+ {
+  "id": "tr-wallet",
+  "title": "Kayıp cüzdan",
+  "level": "B1",
+  "text": "Geçen cuma Daniel süpermarkette ödeme yapmak istedi ama cüzdanı cebinde yoktu. Çok endişelendi, çünkü banka kartı ve ehliyeti cüzdanın içindeydi. Aldıklarını kasada bıraktı ve aynı yoldan geri döndü. Her yere baktı, kaldırıma ve otobüs durağına, ama hiçbir şey bulamadı. Evde bankayı aradı ve kartı bloke ettirdi. O gece uyuyamadı, çünkü bütün belgelerini düşünüyordu. İki gün sonra polisten bir mektup geldi. Bir kadın cüzdanı otobüste bulmuş ve karakola götürmüştü. Daniel hemen oraya gitti. Hiçbir şey eksik değildi, para bile yerindeydi. Polis memuru ona kadının adresini verdi, çünkü Daniel ona teşekkür etmek istiyordu. Ertesi gün çiçek aldı ve ona bir kart yazdı. Kadın şaşırdı ve onu kahve içmeye davet etti. Bir saat konuştular ve şimdi iyi arkadaşlar. O günden beri Daniel otobüsten inmeden önce her zaman cebini kontrol ediyor.",
+  "gloss": {
+   "cuma": "Friday",
+   "ödeme": "payment (ödeme yapmak: to pay)",
+   "süpermarkette": "supermarket",
+   "cüzdanı": "wallet",
+   "cebinde": "in his pocket",
+   "endişelendi": "was worried",
+   "kartı": "card (banka kartı: bank card)",
+   "ehliyeti": "his driving licence",
+   "aldıklarını": "what he had bought",
+   "kasada": "till",
+   "aynı": "same",
+   "yere": "(her yere: everywhere)",
+   "kaldırıma": "pavement",
+   "durağına": "stop (otobüs durağı: bus stop)",
+   "bulamadı": "could not find",
+   "bloke": "(bloke ettirdi: had it blocked)",
+   "belgelerini": "documents",
+   "mektup": "letter",
+   "polisten": "from the police",
+   "eksik": "missing",
+   "para": "money",
+   "adresini": "address",
+   "teşekkür": "(teşekkür etmek: to thank)",
+   "şaşırdı": "was surprised",
+   "davet": "(davet etti: invited)",
+   "kontrol": "(kontrol ediyor: checks)",
+   "inmeden": "(inmeden önce: before getting off)"
+  },
+  "questions": [
+   {
+    "q": "Daniel'in cebinde ne yoktu?",
+    "a": [
+     "cüzdan"
+    ]
+   },
+   {
+    "q": "Kadın cüzdanı nerede buldu?",
+    "a": [
+     "otobüs"
+    ]
+   },
+   {
+    "q": "Daniel kadın için ne aldı?",
+    "a": [
+     "çiçek"
+    ]
+   }
+  ],
+  "notice": "Turkish says \"was not there\" with \"yoktu\" and \"was not\" with \"değildi\": \"cüzdanı cebinde yoktu\", \"eksik değildi\". \"-miş\" marks what one learns only afterwards: \"bulmuş\", \"götürmüştü\" (had found, had taken).",
+  "back": [
+   [
+    "Her yere baktı, kaldırıma ve otobüs durağına, ama hiçbir şey bulamadı.",
+    "He looked everywhere, on the pavement and at the bus stop, but he found nothing."
+   ],
+   [
+    "Bir kadın cüzdanı otobüste bulmuş ve karakola götürmüştü.",
+    "A woman had found the wallet on the bus and had taken it to the police station."
+   ]
+  ]
+ },
+ {
+  "id": "tr-station",
+  "title": "İstasyonda",
+  "level": "A2",
+  "roles": [
+   "Gişe görevlisi",
+   "Yolcu"
+  ],
+  "lines": [
+   [
+    0,
+    "Günaydın. Size nasıl yardımcı olabilirim?"
+   ],
+   [
+    1,
+    "Günaydın. Konya'ya bir bilet istiyorum, lütfen."
+   ],
+   [
+    0,
+    "Tek yön mü, gidiş dönüş mü?"
+   ],
+   [
+    1,
+    "Gidiş dönüş, lütfen. Bir sonraki tren ne zaman kalkıyor?"
+   ],
+   [
+    0,
+    "Onu çeyrek geçe, üçüncü perondan."
+   ],
+   [
+    1,
+    "Yolculuk ne kadar sürüyor?"
+   ],
+   [
+    0,
+    "Yaklaşık iki saat. Polatlı'da aktarma yapmanız gerekiyor."
+   ],
+   [
+    1,
+    "Orada ne kadar vaktim var?"
+   ],
+   [
+    0,
+    "Yirmi dakika. Bu yeterli."
+   ],
+   [
+    1,
+    "Tamam. Bilet ne kadar?"
+   ],
+   [
+    0,
+    "Üç yüz lira. Kartla mı ödemek istersiniz?"
+   ],
+   [
+    1,
+    "Evet, kartla. Çok teşekkür ederim!"
+   ]
+  ],
+  "gloss": {
+   "yardımcı": "helpful (yardımcı olabilirim: I can help)",
+   "bilet": "ticket",
+   "tek": "single (tek yön: one way)",
+   "dönüş": "(gidiş dönüş: return)",
+   "sonraki": "next",
+   "tren": "train",
+   "kalkıyor": "leave",
+   "perondan": "from platform",
+   "yolculuk": "journey",
+   "saat": "hours",
+   "aktarma": "change",
+   "vaktim": "my time",
+   "dakika": "minutes",
+   "yeterli": "enough",
+   "ödemek": "pay",
+   "kartla": "by card"
+  },
+  "questions": [
+   {
+    "q": "Tren hangi perondan kalkıyor?",
+    "a": [
+     "üçüncü",
+     "3"
+    ]
+   },
+   {
+    "q": "Yolcu nasıl ödüyor?",
+    "a": [
+     "kart"
+    ]
+   }
+  ],
+  "notice": "A place name takes its ending after an apostrophe: \"Konya'ya\" (to Konya), \"Polatlı'da\" (in Polatlı). \"Mı / mi / mu / mü\" makes a yes-or-no question and stands after the word it asks about: \"Kartla mı?\"."
+ },
+ {
+  "id": "tr-doctor",
+  "title": "Doktorda",
+  "level": "B1",
+  "roles": [
+   "Doktor",
+   "Hasta"
+  ],
+  "lines": [
+   [
+    0,
+    "Günaydın. Şikâyetiniz nedir?"
+   ],
+   [
+    1,
+    "Günaydın, doktor bey. Üç gündür boğazım ağrıyor ve öksürüyorum."
+   ],
+   [
+    0,
+    "Ateşiniz de var mı?"
+   ],
+   [
+    1,
+    "Evet, dün gece otuz sekiz buçuktu."
+   ],
+   [
+    0,
+    "Başınız da ağrıyor mu?"
+   ],
+   [
+    1,
+    "Biraz, özellikle akşamları. Ayrıca kötü uyuyorum."
+   ],
+   [
+    0,
+    "Ağzınızı açın, lütfen. Evet, boğazınız çok kırmızı."
+   ],
+   [
+    1,
+    "Ciddi bir şey mi? Bu hafta çalışmam gerekiyor."
+   ],
+   [
+    0,
+    "Hayır, ama dinlenmeniz gerekiyor. Üç gün evde kalın ve bol bol çay için."
+   ],
+   [
+    1,
+    "Bir ilaç almam gerekiyor mu?"
+   ],
+   [
+    0,
+    "Size tablet için bir reçete yazacağım. Her yemekten sonra bir tane alın."
+   ],
+   [
+    1,
+    "Teşekkür ederim. Düzelmezsem tekrar geleyim mi?"
+   ],
+   [
+    0,
+    "Evet, ateşiniz hâlâ düşmezse gelecek hafta tekrar gelin."
+   ],
+   [
+    1,
+    "Tamam. İyi günler, doktor bey."
+   ]
+  ],
+  "gloss": {
+   "şikâyetiniz": "your complaint",
+   "boğazım": "my throat (boğazım ağrıyor: I have a sore throat)",
+   "öksürüyorum": "I cough",
+   "gündür": "(üç gündür: for three days)",
+   "ateşiniz": "your fever",
+   "başınız": "your head",
+   "ağrıyor": "hurts",
+   "özellikle": "especially",
+   "uyuyorum": "I sleep",
+   "ağzınızı": "your mouth",
+   "kırmızı": "red",
+   "ciddi": "serious",
+   "dinlenmeniz": "your resting",
+   "kalın": "stay",
+   "ilaç": "medicine",
+   "reçete": "prescription",
+   "tablet": "tablets",
+   "yemekten": "(yemekten sonra: after a meal)",
+   "geleyim": "shall I come",
+   "düzelmezsem": "if I do not get better"
+  },
+  "questions": [
+   {
+    "q": "Hastanın boğazı kaç gündür ağrıyor?",
+    "a": [
+     "üç",
+     "3"
+    ]
+   },
+   {
+    "q": "Doktor ne için reçete yazıyor?",
+    "a": [
+     "tablet"
+    ]
+   }
+  ],
+  "notice": "Possession is an ending: \"boğazım\" (my throat), \"ateşiniz\" (your fever), \"başınız\" (your head). \"Gerekiyor\" after a verbal noun means \"have to\": \"çalışmam gerekiyor\" (I have to work)."
  }
 ]
