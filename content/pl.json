@@ -407,5 +407,467 @@
    }
   ],
   "notice": "A stranger is addressed as \"pan\" (to a man) or \"pani\" (to a woman) with the verb in the third person: \"Jak się pani nazywa?\", \"Oto pani klucz\"."
+ },
+ {
+  "id": "pl-family",
+  "title": "Moja rodzina",
+  "level": "A1",
+  "text": "Mam na imię Anna. Mieszkam z rodziną w małym domu nad rzeką. Moja mama jest nauczycielką, a tata pracuje w sklepie. Mam brata i siostrę. Mój brat ma dziesięć lat i lubi piłkę nożną. Moja siostra jest jeszcze mała: ma trzy lata. Mamy też psa, który nazywa się Max. Codziennie rano tata idzie z psem na spacer. Wieczorem jemy razem kolację i rozmawiamy o tym, jak minął dzień. Po kolacji zmywam z bratem naczynia. W niedzielę przychodzi babcia i przynosi ciasto. Bardzo kocham moją rodzinę.",
+  "gloss": {
+   "rodziną": "family",
+   "domu": "house",
+   "rzeką": "river",
+   "mama": "mother",
+   "nauczycielką": "teacher",
+   "tata": "father",
+   "sklepie": "shop",
+   "brat": "brother",
+   "siostra": "sister",
+   "lat": "years",
+   "piłkę": "ball (piłka nożna: football)",
+   "mała": "small",
+   "psa": "dog",
+   "rano": "in the morning",
+   "spacer": "walk",
+   "wieczorem": "in the evening",
+   "jemy": "we eat",
+   "razem": "together",
+   "kolacji": "dinner",
+   "naczynia": "dishes",
+   "niedzielę": "Sunday",
+   "babcia": "grandmother",
+   "ciasto": "cake",
+   "lata": "years",
+   "psem": "dog"
+  },
+  "questions": [
+   {
+    "q": "Gdzie pracuje tata?",
+    "a": [
+     "sklep"
+    ]
+   },
+   {
+    "q": "Ile lat ma brat?",
+    "a": [
+     "dziesięć",
+     "10"
+    ]
+   },
+   {
+    "q": "Kto przychodzi w niedzielę?",
+    "a": [
+     "babci"
+    ]
+   }
+  ],
+  "notice": "Polish says age with \"have\": \"Mój brat ma dziesięć lat\". After 2, 3 and 4 the word is \"lata\", after 5 and more \"lat\". A job after \"jest\" takes the instrumental: \"jest nauczycielką\".",
+  "back": [
+   [
+    "Moja mama jest nauczycielką, a tata pracuje w sklepie.",
+    "My mother is a teacher and my father works in a shop."
+   ],
+   [
+    "W niedzielę przychodzi babcia i przynosi ciasto.",
+    "On Sunday my grandmother comes and brings a cake."
+   ]
+  ]
+ },
+ {
+  "id": "pl-town",
+  "title": "Nasze miasto",
+  "level": "A1",
+  "text": "Nasze miasto jest małe, ale piękne. W centrum jest stary rynek z fontanną. Obok rynku są szkoła, apteka i dwie kawiarnie. Dworzec jest za parkiem. Codziennie rano wiele osób jedzie pociągiem do dużego miasta. Po południu dzieci bawią się w parku, a starsi panowie grają w szachy. Latem przyjeżdżają turyści i robią zdjęcia mostu. Zimą w mieście jest cicho. W sobotę na rynku jest targ. Można tam kupić warzywa, miód i kwiaty. Wieczorem lubię spacerować nad rzeką. Nie chcę mieszkać w dużym mieście.",
+  "gloss": {
+   "miasto": "town",
+   "piękne": "beautiful",
+   "centrum": "centre",
+   "rynek": "market square",
+   "fontanną": "fountain",
+   "szkoła": "school",
+   "apteka": "pharmacy",
+   "dworzec": "station",
+   "za": "behind",
+   "parkiem": "park",
+   "pociągiem": "by train",
+   "południu": "noon (po południu: in the afternoon)",
+   "dzieci": "children",
+   "szachy": "chess",
+   "latem": "in summer",
+   "turyści": "tourists",
+   "mostu": "bridge",
+   "zimą": "in winter",
+   "cicho": "quiet",
+   "sobotę": "Saturday",
+   "warzywa": "vegetables",
+   "miód": "honey",
+   "kwiaty": "flowers",
+   "rzeką": "river"
+  },
+  "questions": [
+   {
+    "q": "Co jest w centrum miasta?",
+    "a": [
+     "rynek",
+     "rynk"
+    ]
+   },
+   {
+    "q": "Gdzie jest dworzec?",
+    "a": [
+     "park"
+    ]
+   },
+   {
+    "q": "Kiedy przyjeżdżają turyści?",
+    "a": [
+     "latem"
+    ]
+   }
+  ],
+  "notice": "Polish has no \"the\" or \"a\". \"When?\" is often one word in the instrumental: \"latem\" (in summer), \"zimą\" (in winter), \"wieczorem\". After \"w\" and \"na\" a place takes the locative: \"w parku\", \"na rynku\", \"w mieście\".",
+  "back": [
+   [
+    "Dworzec jest za parkiem.",
+    "The station is behind the park."
+   ],
+   [
+    "Zimą w mieście jest cicho.",
+    "In winter the town is quiet."
+   ]
+  ]
+ },
+ {
+  "id": "pl-birthday",
+  "title": "Urodziny babci",
+  "level": "A2",
+  "text": "Wczoraj były urodziny mojej babci. Ma teraz osiemdziesiąt lat. Cała rodzina przyjechała do jej domu na wsi. Moja ciocia upiekła duży tort, a wujek przyniósł kwiaty. Daliśmy jej ciepły szalik i książkę o ogrodach. Przed obiadem zaśpiewaliśmy piosenkę, a babcia się śmiała. Na stole była zupa, kurczak z ziemniakami i dużo sałatki. Po obiedzie pokazała nam stare zdjęcia. Na jednym zdjęciu była młodą kobietą z rowerem. Opowiedziała nam, że codziennie jeździła nim do pracy. Potem mój kuzyn grał na gitarze i wszyscy tańczyli. Nawet mój młodszy brat tańczył z babcią. Wieczorem była zmęczona, ale szczęśliwa. Powiedziała, że to były najlepsze urodziny w jej życiu. Wróciliśmy do domu późno, kiedy na niebie były już gwiazdy.",
+  "gloss": {
+   "wczoraj": "yesterday",
+   "urodziny": "birthday",
+   "osiemdziesiąt": "eighty",
+   "cała": "whole",
+   "wsi": "village",
+   "ciocia": "aunt",
+   "upiekła": "baked",
+   "wujek": "uncle",
+   "kwiaty": "flowers",
+   "daliśmy": "we gave",
+   "szalik": "scarf",
+   "ogrodach": "gardens",
+   "zaśpiewaliśmy": "we sang",
+   "piosenkę": "song",
+   "śmiała": "(śmiała się: laughed)",
+   "kurczak": "chicken",
+   "ziemniakami": "potatoes",
+   "pokazała": "showed",
+   "młodą": "young",
+   "rowerem": "bicycle",
+   "kuzyn": "cousin",
+   "gitarze": "guitar",
+   "tańczyli": "danced",
+   "zmęczona": "tired",
+   "najlepsze": "best",
+   "życiu": "life",
+   "gwiazdy": "stars"
+  },
+  "questions": [
+   {
+    "q": "Ile lat ma babcia?",
+    "a": [
+     "osiemdziesiąt",
+     "80"
+    ]
+   },
+   {
+    "q": "Kto przyniósł kwiaty?",
+    "a": [
+     "wujek"
+    ]
+   },
+   {
+    "q": "Na czym grał kuzyn?",
+    "a": [
+     "gitar"
+    ]
+   }
+  ],
+  "notice": "In the past the Polish verb shows who did it and their gender: \"ciocia upiekła\", \"wujek przyniósł\", \"zaśpiewaliśmy\" (we sang). \"Urodziny\" is always plural: \"były urodziny\".",
+  "back": [
+   [
+    "Moja ciocia upiekła duży tort, a wujek przyniósł kwiaty.",
+    "My aunt baked a big cake and my uncle brought flowers."
+   ],
+   [
+    "Po obiedzie pokazała nam stare zdjęcia.",
+    "After lunch she showed us old photos."
+   ]
+  ]
+ },
+ {
+  "id": "pl-wallet",
+  "title": "Zgubiony portfel",
+  "level": "B1",
+  "text": "W zeszły piątek Daniel chciał zapłacić w supermarkecie, ale w kieszeni nie było portfela. Bardzo się martwił, bo miał w nim kartę bankową i prawo jazdy. Zostawił zakupy przy kasie i wrócił tą samą drogą. Szukał wszędzie, na chodniku i na przystanku autobusowym, ale nic nie znalazł. W domu zadzwonił do banku i zablokował kartę. Tej nocy nie mógł spać, bo myślał o wszystkich swoich dokumentach. Dwa dni później przyszedł list z policji. Pewna kobieta znalazła portfel w autobusie i zaniosła go na komisariat. Daniel od razu tam pojechał. Niczego nie brakowało, nawet pieniędzy. Policjant dał mu adres tej kobiety, bo Daniel chciał jej podziękować. Następnego dnia kupił kwiaty i napisał do niej kartkę. Była zaskoczona i zaprosiła go na kawę. Rozmawiali przez godzinę i teraz są dobrymi przyjaciółmi. Od tamtej pory Daniel zawsze sprawdza kieszeń, zanim wysiądzie z autobusu.",
+  "gloss": {
+   "piątek": "Friday",
+   "zapłacić": "pay",
+   "supermarkecie": "supermarket",
+   "portfel": "wallet",
+   "kieszeni": "pocket",
+   "martwił": "(martwił się: was worried)",
+   "kartę": "card (karta bankowa: bank card)",
+   "jazdy": "(prawo jazdy: driving licence)",
+   "zakupy": "shopping",
+   "kasie": "till",
+   "samą": "(tą samą drogą: the same way)",
+   "wszędzie": "everywhere",
+   "chodniku": "pavement",
+   "przystanku": "stop (przystanek autobusowy: bus stop)",
+   "znalazł": "found",
+   "zablokował": "blocked",
+   "dokumentach": "documents",
+   "list": "letter",
+   "policji": "police",
+   "brakowało": "was missing",
+   "pieniędzy": "money",
+   "adres": "address",
+   "podziękować": "thank",
+   "zaskoczona": "surprised",
+   "zaprosiła": "invited",
+   "sprawdza": "checks",
+   "wysiądzie": "gets off"
+  },
+  "questions": [
+   {
+    "q": "Czego nie było w kieszeni Daniela?",
+    "a": [
+     "portfel"
+    ]
+   },
+   {
+    "q": "Gdzie kobieta znalazła portfel?",
+    "a": [
+     "autobus"
+    ]
+   },
+   {
+    "q": "Co kupił Daniel?",
+    "a": [
+     "kwiaty"
+    ]
+   }
+  ],
+  "notice": "Polish says \"there was no wallet\" with the genitive: \"nie było portfela\", and \"nothing was missing\" likewise: \"niczego nie brakowało\". The word for \"he\" is left out: \"szukał\", \"zadzwonił\".",
+  "back": [
+   [
+    "Szukał wszędzie, na chodniku i na przystanku autobusowym, ale nic nie znalazł.",
+    "He looked everywhere, on the pavement and at the bus stop, but he found nothing."
+   ],
+   [
+    "Pewna kobieta znalazła portfel w autobusie i zaniosła go na komisariat.",
+    "A woman had found the wallet on the bus and had taken it to the police station."
+   ]
+  ]
+ },
+ {
+  "id": "pl-station",
+  "title": "Na dworcu",
+  "level": "A2",
+  "roles": [
+   "Kasjerka",
+   "Podróżny"
+  ],
+  "lines": [
+   [
+    0,
+    "Dzień dobry. W czym mogę pomóc?"
+   ],
+   [
+    1,
+    "Dzień dobry. Poproszę bilet do Gdańska."
+   ],
+   [
+    0,
+    "W jedną stronę czy powrotny?"
+   ],
+   [
+    1,
+    "Powrotny, proszę. O której odjeżdża następny pociąg?"
+   ],
+   [
+    0,
+    "O dziesiątej piętnaście, z peronu trzeciego."
+   ],
+   [
+    1,
+    "Jak długo trwa podróż?"
+   ],
+   [
+    0,
+    "Około dwóch godzin. Musi pan się przesiąść w Bydgoszczy."
+   ],
+   [
+    1,
+    "Ile mam tam czasu?"
+   ],
+   [
+    0,
+    "Dwadzieścia minut. To wystarczy."
+   ],
+   [
+    1,
+    "Dobrze. Ile kosztuje bilet?"
+   ],
+   [
+    0,
+    "Sześćdziesiąt złotych. Czy chce pan zapłacić kartą?"
+   ],
+   [
+    1,
+    "Tak, kartą. Dziękuję bardzo!"
+   ]
+  ],
+  "gloss": {
+   "pomóc": "help",
+   "bilet": "ticket",
+   "stronę": "direction (w jedną stronę: one way)",
+   "powrotny": "return",
+   "następny": "next",
+   "pociąg": "train",
+   "odjeżdża": "leave",
+   "peronu": "platform",
+   "podróż": "journey",
+   "godzin": "hours",
+   "przesiąść": "(przesiąść się: to change)",
+   "czasu": "time",
+   "minut": "minutes",
+   "wystarczy": "is enough",
+   "kosztuje": "cost",
+   "zapłacić": "pay",
+   "kartą": "card"
+  },
+  "questions": [
+   {
+    "q": "Z którego peronu odjeżdża pociąg?",
+    "a": [
+     "trzeci",
+     "3"
+    ]
+   },
+   {
+    "q": "Jak podróżny płaci za bilet?",
+    "a": [
+     "kart"
+    ]
+   }
+  ],
+  "notice": "Polish addresses a stranger as \"pan\" (a man) or \"pani\" (a woman) with the verb in the third person: \"Musi pan się przesiąść\". A time takes the ordinal: \"o dziesiątej\"."
+ },
+ {
+  "id": "pl-doctor",
+  "title": "U lekarza",
+  "level": "B1",
+  "roles": [
+   "Lekarka",
+   "Pacjent"
+  ],
+  "lines": [
+   [
+    0,
+    "Dzień dobry. Co panu dolega?"
+   ],
+   [
+    1,
+    "Dzień dobry, pani doktor. Od trzech dni boli mnie gardło i mam kaszel."
+   ],
+   [
+    0,
+    "Czy ma pan też gorączkę?"
+   ],
+   [
+    1,
+    "Tak, wczoraj wieczorem było trzydzieści osiem i pół."
+   ],
+   [
+    0,
+    "Czy głowa też pana boli?"
+   ],
+   [
+    1,
+    "Trochę, zwłaszcza wieczorem. Poza tym źle śpię."
+   ],
+   [
+    0,
+    "Proszę otworzyć usta. Tak, gardło jest bardzo czerwone."
+   ],
+   [
+    1,
+    "Czy to coś poważnego? Muszę w tym tygodniu pracować."
+   ],
+   [
+    0,
+    "Nie, ale potrzebuje pan odpoczynku. Proszę zostać trzy dni w domu i pić dużo herbaty."
+   ],
+   [
+    1,
+    "Czy potrzebuję leków?"
+   ],
+   [
+    0,
+    "Wypiszę panu receptę na tabletki. Proszę brać jedną po każdym posiłku."
+   ],
+   [
+    1,
+    "Dziękuję. Czy mam przyjść jeszcze raz, jeśli nie będzie lepiej?"
+   ],
+   [
+    0,
+    "Tak, proszę przyjść w przyszłym tygodniu, jeśli nadal będzie pan miał gorączkę."
+   ],
+   [
+    1,
+    "Dobrze. Do widzenia, pani doktor."
+   ]
+  ],
+  "gloss": {
+   "dolega": "ails (co panu dolega: what is the problem)",
+   "gardło": "throat (boli mnie gardło: I have a sore throat)",
+   "kaszel": "cough",
+   "dni": "days",
+   "gorączkę": "fever",
+   "głowa": "head",
+   "boli": "hurts",
+   "zwłaszcza": "especially",
+   "śpię": "I sleep",
+   "usta": "mouth",
+   "czerwone": "red",
+   "poważnego": "serious",
+   "odpoczynku": "rest",
+   "zostać": "stay",
+   "leków": "medicine",
+   "receptę": "prescription",
+   "tabletki": "tablets",
+   "posiłku": "meal",
+   "przyjść": "to come",
+   "lepiej": "better"
+  },
+  "questions": [
+   {
+    "q": "Od ilu dni pacjenta boli gardło?",
+    "a": [
+     "trzech",
+     "trzy",
+     "3"
+    ]
+   },
+   {
+    "q": "Na co lekarka wypisuje receptę?",
+    "a": [
+     "tabletk"
+    ]
+   }
+  ],
+  "notice": "To a patient the doctor says \"pan\" (to a woman \"pani\") and asks with \"proszę\" and the infinitive: \"Proszę otworzyć usta\". What hurts is the subject: \"boli mnie gardło\" (the throat hurts me)."
  }
 ]

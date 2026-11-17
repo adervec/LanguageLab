@@ -406,5 +406,465 @@
    }
   ],
   "notice": "A stranger is addressed with the plural \"vy\" forms: \"Jak se jmenujete?\", \"váš pokoj\", \"váš klíč\". Friends use \"ty\"."
+ },
+ {
+  "id": "cs-family",
+  "title": "Moje rodina",
+  "level": "A1",
+  "text": "Jmenuji se Anna. Bydlím s rodinou v malém domě u řeky. Moje maminka je učitelka a tatínek pracuje v obchodě. Mám bratra a sestru. Mému bratrovi je deset let a má rád fotbal. Moje sestra je ještě malá: jsou jí tři roky. Máme také psa, který se jmenuje Max. Každé ráno chodí tatínek se psem na procházku. Večer spolu večeříme a povídáme si o tom, jaký byl den. Po večeři s bratrem myjeme nádobí. V neděli přichází babička a přináší dort. Mám svou rodinu moc ráda.",
+  "gloss": {
+   "rodinou": "family",
+   "domě": "house",
+   "řeky": "river",
+   "maminka": "mother",
+   "učitelka": "teacher",
+   "tatínek": "father",
+   "obchodě": "shop",
+   "bratra": "brother",
+   "sestra": "sister",
+   "let": "years",
+   "fotbal": "football",
+   "malá": "small",
+   "psa": "dog",
+   "ráno": "morning",
+   "procházku": "walk",
+   "večer": "in the evening",
+   "večeříme": "we have dinner",
+   "spolu": "together",
+   "večeři": "dinner",
+   "nádobí": "dishes",
+   "neděli": "Sunday",
+   "babička": "grandmother",
+   "dort": "cake",
+   "roky": "years",
+   "psem": "dog"
+  },
+  "questions": [
+   {
+    "q": "Kde pracuje tatínek?",
+    "a": [
+     "obchod"
+    ]
+   },
+   {
+    "q": "Kolik let je bratrovi?",
+    "a": [
+     "deset",
+     "10"
+    ]
+   },
+   {
+    "q": "Kdo přichází v neděli?",
+    "a": [
+     "babičk"
+    ]
+   }
+  ],
+  "notice": "Czech says age with \"to be\" and the dative: \"Mému bratrovi je deset let\". After 2, 3 and 4 the word is \"roky\", after 5 and more \"let\". \"Mám rád\" (a woman says \"mám ráda\") is how you like something.",
+  "back": [
+   [
+    "Moje maminka je učitelka a tatínek pracuje v obchodě.",
+    "My mother is a teacher and my father works in a shop."
+   ],
+   [
+    "V neděli přichází babička a přináší dort.",
+    "On Sunday my grandmother comes and brings a cake."
+   ]
+  ]
+ },
+ {
+  "id": "cs-town",
+  "title": "Naše město",
+  "level": "A1",
+  "text": "Naše město je malé, ale krásné. V centru je staré náměstí s kašnou. Vedle náměstí jsou škola, lékárna a dvě kavárny. Nádraží je za parkem. Každé ráno jezdí hodně lidí vlakem do velkého města. Odpoledne si děti hrají v parku a staří pánové hrají šachy. V létě přijíždějí turisté a fotí most. V zimě je ve městě klid. V sobotu je na náměstí trh. Můžete tam koupit zeleninu, med a květiny. Večer mě baví procházky u řeky. Nechci bydlet ve velkém městě.",
+  "gloss": {
+   "město": "town",
+   "krásné": "beautiful",
+   "centru": "centre",
+   "náměstí": "square",
+   "kašnou": "fountain",
+   "škola": "school",
+   "lékárna": "pharmacy",
+   "nádraží": "station",
+   "za": "behind",
+   "parkem": "park",
+   "vlakem": "by train",
+   "odpoledne": "in the afternoon",
+   "děti": "children",
+   "šachy": "chess",
+   "létě": "summer",
+   "turisté": "tourists",
+   "most": "bridge",
+   "zimě": "winter",
+   "klid": "calm, quiet",
+   "sobotu": "Saturday",
+   "zeleninu": "vegetables",
+   "med": "honey",
+   "květiny": "flowers",
+   "řeky": "river"
+  },
+  "questions": [
+   {
+    "q": "Co je v centru města?",
+    "a": [
+     "náměstí"
+    ]
+   },
+   {
+    "q": "Kde je nádraží?",
+    "a": [
+     "park"
+    ]
+   },
+   {
+    "q": "Kdy přijíždějí turisté?",
+    "a": [
+     "létě"
+    ]
+   }
+  ],
+  "notice": "Czech has no \"the\" or \"a\". After \"v\" and \"na\" a place takes the locative: \"v centru\", \"v parku\", \"ve městě\"; \"v\" becomes \"ve\" before a group of consonants. Seasons take \"v\": \"v létě\", \"v zimě\".",
+  "back": [
+   [
+    "Nádraží je za parkem.",
+    "The station is behind the park."
+   ],
+   [
+    "V zimě je ve městě klid.",
+    "In winter the town is quiet."
+   ]
+  ]
+ },
+ {
+  "id": "cs-birthday",
+  "title": "Babiččiny narozeniny",
+  "level": "A2",
+  "text": "Včera měla moje babička narozeniny. Je jí teď osmdesát let. Celá rodina přijela do jejího domu na vesnici. Moje teta upekla velký dort a strýc přinesl květiny. Dali jsme jí teplou šálu a knihu o zahradách. Před obědem jsme zazpívali písničku a babička se smála. Na stole byla polévka, kuře s bramborami a hodně salátu. Po obědě nám ukázala staré fotografie. Na jedné fotografii byla mladá žena s kolem. Vyprávěla nám, že na něm každý den jezdila do práce. Potom můj bratranec hrál na kytaru a všichni tančili. Dokonce i můj malý bratr tančil s babičkou. Večer byla unavená, ale šťastná. Řekla, že to byly nejlepší narozeniny v jejím životě. Domů jsme jeli pozdě, když už byly na nebi hvězdy.",
+  "gloss": {
+   "včera": "yesterday",
+   "narozeniny": "birthday",
+   "osmdesát": "eighty",
+   "celá": "whole",
+   "vesnici": "village",
+   "teta": "aunt",
+   "upekla": "baked",
+   "strýc": "uncle",
+   "květiny": "flowers",
+   "dali": "gave",
+   "šálu": "scarf",
+   "zahradách": "gardens",
+   "zazpívali": "sang",
+   "písničku": "song",
+   "smála": "(se smála: laughed)",
+   "kuře": "chicken",
+   "bramborami": "potatoes",
+   "ukázala": "showed",
+   "mladá": "young",
+   "kolem": "bicycle (kolo)",
+   "bratranec": "cousin",
+   "kytaru": "guitar",
+   "tančili": "danced",
+   "unavená": "tired",
+   "nejlepší": "best",
+   "životě": "life",
+   "hvězdy": "stars"
+  },
+  "questions": [
+   {
+    "q": "Kolik let je babičce?",
+    "a": [
+     "osmdesát",
+     "80"
+    ]
+   },
+   {
+    "q": "Kdo přinesl květiny?",
+    "a": [
+     "strýc"
+    ]
+   },
+   {
+    "q": "Na co hrál bratranec?",
+    "a": [
+     "kytar"
+    ]
+   }
+  ],
+  "notice": "The Czech past is \"to be\" plus a form in -l that agrees with who did it: \"dali jsme\" (we gave), \"teta upekla\". With \"he\" and \"she\" the \"to be\" is left out: \"ukázala\".",
+  "back": [
+   [
+    "Moje teta upekla velký dort a strýc přinesl květiny.",
+    "My aunt baked a big cake and my uncle brought flowers."
+   ],
+   [
+    "Po obědě nám ukázala staré fotografie.",
+    "After lunch she showed us old photos."
+   ]
+  ]
+ },
+ {
+  "id": "cs-wallet",
+  "title": "Ztracená peněženka",
+  "level": "B1",
+  "text": "Minulý pátek chtěl Daniel zaplatit v supermarketu, ale v kapse neměl peněženku. Měl velké starosti, protože v ní měl platební kartu a řidičský průkaz. Nechal nákup u pokladny a vrátil se stejnou cestou. Hledal všude, na chodníku i na autobusové zastávce, ale nic nenašel. Doma zavolal do banky a zablokoval kartu. Tu noc nemohl spát, protože myslel na všechny své doklady. O dva dny později přišel dopis od policie. Jedna žena našla peněženku v autobuse a odnesla ji na policejní stanici. Daniel tam hned jel. Nic nechybělo, dokonce ani peníze. Policista mu dal adresu té ženy, protože jí Daniel chtěl poděkovat. Druhý den koupil květiny a napsal jí kartičku. Byla překvapená a pozvala ho na kávu. Povídali si hodinu a teď jsou dobří přátelé. Od té doby si Daniel vždycky zkontroluje kapsu, než vystoupí z autobusu.",
+  "gloss": {
+   "pátek": "Friday",
+   "zaplatit": "pay",
+   "supermarketu": "supermarket",
+   "peněženku": "wallet",
+   "kapse": "pocket",
+   "starosti": "worries (měl starosti: was worried)",
+   "kartu": "card (platební karta: bank card)",
+   "průkaz": "card, licence (řidičský průkaz: driving licence)",
+   "nákup": "shopping",
+   "pokladny": "till",
+   "stejnou": "same",
+   "všude": "everywhere",
+   "chodníku": "pavement",
+   "zastávce": "stop (autobusová zastávka: bus stop)",
+   "nenašel": "did not find",
+   "zablokoval": "blocked",
+   "doklady": "documents",
+   "dopis": "letter",
+   "policie": "police",
+   "nechybělo": "was not missing",
+   "peníze": "money",
+   "adresu": "address",
+   "poděkovat": "thank",
+   "překvapená": "surprised",
+   "pozvala": "invited",
+   "zkontroluje": "checks",
+   "vystoupí": "gets off"
+  },
+  "questions": [
+   {
+    "q": "Co neměl Daniel v kapse?",
+    "a": [
+     "peněženk"
+    ]
+   },
+   {
+    "q": "Kde našla žena peněženku?",
+    "a": [
+     "autobus"
+    ]
+   },
+   {
+    "q": "Co koupil Daniel?",
+    "a": [
+     "květiny"
+    ]
+   }
+  ],
+  "notice": "Czech puts \"ne-\" on the verb and keeps the other negative word too: \"nic nenašel\" (found nothing), \"nic nechybělo\". Short words like \"se\", \"si\", \"mu\", \"jí\" stand in second place: \"vrátil se\", \"Policista mu dal\".",
+  "back": [
+   [
+    "Hledal všude, na chodníku i na autobusové zastávce, ale nic nenašel.",
+    "He looked everywhere, on the pavement and at the bus stop, but he found nothing."
+   ],
+   [
+    "Jedna žena našla peněženku v autobuse a odnesla ji na policejní stanici.",
+    "A woman had found the wallet on the bus and had taken it to the police station."
+   ]
+  ]
+ },
+ {
+  "id": "cs-station",
+  "title": "Na nádraží",
+  "level": "A2",
+  "roles": [
+   "Pokladní",
+   "Cestující"
+  ],
+  "lines": [
+   [
+    0,
+    "Dobrý den. Jak vám mohu pomoci?"
+   ],
+   [
+    1,
+    "Dobrý den. Prosím jednu jízdenku do Českého Krumlova."
+   ],
+   [
+    0,
+    "Jednosměrnou, nebo zpáteční?"
+   ],
+   [
+    1,
+    "Zpáteční, prosím. Kdy jede další vlak?"
+   ],
+   [
+    0,
+    "Ve čtvrt na jedenáct, z třetího nástupiště."
+   ],
+   [
+    1,
+    "Jak dlouho trvá cesta?"
+   ],
+   [
+    0,
+    "Asi tři hodiny. Musíte přestoupit v Českých Budějovicích."
+   ],
+   [
+    1,
+    "Kolik času tam mám?"
+   ],
+   [
+    0,
+    "Dvacet minut. To stačí."
+   ],
+   [
+    1,
+    "Dobře. Kolik stojí jízdenka?"
+   ],
+   [
+    0,
+    "Tři sta korun. Chcete platit kartou?"
+   ],
+   [
+    1,
+    "Ano, kartou. Mockrát děkuji!"
+   ]
+  ],
+  "gloss": {
+   "pomoci": "help",
+   "jízdenku": "ticket",
+   "jednosměrnou": "one way",
+   "zpáteční": "return",
+   "další": "next",
+   "vlak": "train",
+   "jede": "goes",
+   "nástupiště": "platform",
+   "cesta": "journey",
+   "hodiny": "hours",
+   "přestoupit": "change",
+   "času": "time",
+   "minut": "minutes",
+   "stačí": "is enough",
+   "stojí": "cost",
+   "platit": "pay",
+   "kartou": "card"
+  },
+  "questions": [
+   {
+    "q": "Z kterého nástupiště jede vlak?",
+    "a": [
+     "třetí",
+     "3"
+    ]
+   },
+   {
+    "q": "Jak cestující platí?",
+    "a": [
+     "kart"
+    ]
+   }
+  ],
+  "notice": "Czech tells a quarter hour by the hour that is coming: \"ve čtvrt na jedenáct\" is a quarter past ten. To a stranger the verb is in the plural: \"musíte\", \"chcete\"."
+ },
+ {
+  "id": "cs-doctor",
+  "title": "U lékaře",
+  "level": "B1",
+  "roles": [
+   "Lékařka",
+   "Pacient"
+  ],
+  "lines": [
+   [
+    0,
+    "Dobrý den. Co vás trápí?"
+   ],
+   [
+    1,
+    "Dobrý den, paní doktorko. Už tři dny mě bolí v krku a mám kašel."
+   ],
+   [
+    0,
+    "Máte také horečku?"
+   ],
+   [
+    1,
+    "Ano, včera večer to bylo třicet osm a půl."
+   ],
+   [
+    0,
+    "Bolí vás také hlava?"
+   ],
+   [
+    1,
+    "Trochu, hlavně večer. Také špatně spím."
+   ],
+   [
+    0,
+    "Otevřete ústa, prosím. Ano, krk je hodně červený."
+   ],
+   [
+    1,
+    "Je to vážné? Tento týden musím pracovat."
+   ],
+   [
+    0,
+    "Ne, ale potřebujete klid. Zůstaňte tři dny doma a pijte hodně čaje."
+   ],
+   [
+    1,
+    "Potřebuji léky?"
+   ],
+   [
+    0,
+    "Napíšu vám recept na tablety. Berte jednu po každém jídle."
+   ],
+   [
+    1,
+    "Děkuji. Mám přijít znovu, když to nebude lepší?"
+   ],
+   [
+    0,
+    "Ano, přijďte příští týden, jestli budete mít pořád horečku."
+   ],
+   [
+    1,
+    "Dobře. Na shledanou, paní doktorko."
+   ]
+  ],
+  "gloss": {
+   "trápí": "troubles (co vás trápí: what is the problem)",
+   "krku": "throat (bolí mě v krku: I have a sore throat)",
+   "kašel": "cough",
+   "dny": "days",
+   "horečku": "fever",
+   "hlava": "head",
+   "bolí": "hurts",
+   "hlavně": "especially",
+   "spím": "I sleep",
+   "ústa": "mouth",
+   "červený": "red",
+   "vážné": "serious",
+   "klid": "rest",
+   "zůstaňte": "stay",
+   "léky": "medicine",
+   "recept": "prescription",
+   "tablety": "tablets",
+   "jídle": "meal",
+   "přijít": "to come",
+   "lepší": "better"
+  },
+  "questions": [
+   {
+    "q": "Kolik dní bolí pacienta v krku?",
+    "a": [
+     "tři",
+     "3"
+    ]
+   },
+   {
+    "q": "Na co dostane pacient recept?",
+    "a": [
+     "tablet"
+    ]
+   }
+  ],
+  "notice": "To a stranger Czech uses \"vy\" and the plural command: \"otevřete\", \"zůstaňte\", \"pijte\". A person is called in the vocative: \"paní doktorko\". What hurts is the subject: \"bolí mě v krku\"."
  }
 ]
