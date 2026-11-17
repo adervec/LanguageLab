@@ -155,7 +155,7 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   phrase in every language but English (whose phrases are the English meanings themselves). Lessons 1 to 10 in the
   sixteen languages most likely to hide mistakes: two phrases changed. Lessons 11 to 20 in 32 languages: 15 things
   marked, 12 changed or given a note (Afrikaans word order and the "om" before a time, also in one story; a Finnish
-  form; a clearer Greek word; two Filipino phrases), three judged right as written. The remaining 3,200 phrases, in 31
+  form; a clearer Greek word; two Filipino phrases), three judged right as written. The remaining 3,200 phrases, in 32
   languages: two things marked, one changed (a Korean ending) and one judged right as written.
 - **What a clean report from that reader is worth**: one of its inputs (880 phrases in thirteen languages) was copied
   with ten mistakes planted in it: a Czech word in Slovak, wrong cases in Slovak, Slovenian and Finnish, a wrong
