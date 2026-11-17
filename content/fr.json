@@ -230,7 +230,7 @@
     ]
    }
   ],
-  "notice": "Jusqu'à means as far as or until. Before a noun, à joins le to make au: \"jusqu'au pont\". Before a verb it becomes jusqu'à ce que, followed by the subjunctive: \"jusqu'à ce qu'elle y arrive\".",
+  "notice": "Jusqu'à means as far as or until. Before a noun, à joins le to make au: \"jusqu'au pont\". Before a clause with its own subject and verb it becomes jusqu'à ce que, followed by the subjunctive: \"jusqu'à ce qu'elle y arrive\".",
   "back": [
    [
     "Le premier jour, tout s'est bien passé jusqu'au pont.",
@@ -1068,7 +1068,7 @@
     ]
    }
   ],
-  "notice": "To look ahead from a moment in the past, French uses aller in the imparfait or the conditional: \"Qui allait arroser pendant les vacances ?\", \"Qui profiterait des récoltes ?\"",
+  "notice": "To look ahead from a moment in the past, French uses aller in the imparfait with an infinitive, or puts the verb itself in the conditional: \"Qui allait arroser pendant les vacances ?\", \"Qui profiterait des récoltes ?\"",
   "back": [
    [
     "Qui allait arroser pendant les vacances ?",
