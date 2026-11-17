@@ -503,9 +503,13 @@ await click('First steps, letters and sounds');
 await page.evaluate(() => { self.heard = 'été'; });
 await page.locator('.ph', { hasText: 'été' }).locator('button', { hasText: 'Say it' }).click();
 await page.waitForFunction(() => document.querySelector('#main').innerText.includes('Understood.'));
+assert.match(await page.locator('.ph', { hasText: 'été' }).innerText(), /Said: understood 1 of 1/);   // and the try is counted, in the word's record
 await page.evaluate(() => { self.heard = 'roue'; });
-await page.locator('.ph', { hasText: 'rue' }).locator('button', { hasText: 'Say it' }).click();
-await page.waitForFunction(() => document.querySelector('#main').innerText.includes('It heard instead: rue → roue'));
+for (const n of [1, 2, 3]) {                              // three tries, none understood: enough to be named on Progress
+  await page.locator('.ph', { hasText: 'rue' }).locator('button', { hasText: 'Say it' }).click();
+  await page.waitForFunction(n => document.querySelector('#main').innerText.includes('Said: understood 0 of ' + n), n);
+}
+assert.match(await main(), /It heard instead: rue → roue/);
 // numbers by ear: the voice says a number and it is typed in digits (headless Chrome has no voice, so one stands in and is taken away again)
 await page.evaluate(() => { self.realU = self.SpeechSynthesisUtterance; self.SpeechSynthesisUtterance = function (text) { this.text = text; };
   speechSynthesis.getVoices = () => [{ lang: 'fr-FR', voiceURI: 'stand-in' }]; speechSynthesis.speak = u => { self.spoken = u.text; }; });
@@ -550,9 +554,16 @@ await click('Say it');
 await page.waitForFunction(() => document.querySelector('#main').innerText.includes('Understood.'));
 await click('Stop');
 assert.match(await main(), /Sounds apart[\s\S]*▶ dessus\s*▶ dessous\s+on top \/ underneath/);
+// every try was counted: the eight pairs once by ear, one word taken for the other of its pair, one understood
+const counted = await main();
+assert.equal((counted.match(/By ear: 1 of 1/g) || []).length, 8);
+assert.match(counted, /By ear: 1 of 1 · Said: understood 0 of 1 · taken for the other word: 1/);
+assert.match(counted, /By ear: 1 of 1 · Said: understood 1 of 1/);
 await page.evaluate(() => { self.SpeechSynthesisUtterance = self.realU; delete speechSynthesis.getVoices; delete speechSynthesis.speak; });
 await click('Progress');                                 // the suggestion is still beside its sitting; kept, it becomes a review card
 assert.match(await main(), /read aloud \d+%/);
+// where the sounds stand: 8 of 8 by ear; été and one word of a pair understood out of six said; rue never, in three tries
+assert.match(await main(), /Sounds[\s\S]*100%\s+of the words one sound apart told apart by ear \(tries: 8\)[\s\S]*33%\s+of the words you said on their own understood by speech recognition \(tries: 6\)[\s\S]*Understood least\s+u · rue\s+Said: understood 0 of 3/);
 await click('Keep for review');
 assert.equal(await page.locator('button', { hasText: 'Keep for review' }).count(), 0);
 await click('Words');

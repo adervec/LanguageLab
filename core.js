@@ -244,6 +244,25 @@ export function pitchShape(pitch) {
   return b < a - 1.5 && c > b + 1.5 ? 'dipping' : c - a > 2 ? 'rising' : a - c > 2 ? 'falling' : 'level';
 }
 
+// ---- one sound at a time: a word practised on its own (a sound to notice, one word of a pair one sound apart) ----
+// Its record: [times heard, picked rightly by ear, times said, understood, only a second guess, taken for the other word of its pair, when].
+// how: 'ear' (with ok), or what the recogniser made of the word said: 'hit' | 'near' | 'other' | 'miss'.
+// ponytail: a recogniser of words judges one word, so this is "was this sound understood in this word", not a measure of the sound.
+export function aloneAdd(rec, how, ok, now = Date.now()) {
+  const r = Array.from({ length: 7 }, (_, i) => rec?.[i] || 0), at = { hit: 3, near: 4, other: 5 }[how];
+  if (how === 'ear') { r[0]++; if (ok) r[1]++; } else { r[2]++; if (at) r[at]++; }
+  r[6] = now;
+  return r;
+}
+// Where the sounds stand: every try by ear and aloud, and the words understood least (three tries or more, fewer than two in
+// three understood), the worst first.
+export function aloneStats(alone) {
+  const rows = Object.entries(alone || {}).map(([word, r]) => ({ word, ear: r[0], earOk: r[1], said: r[2], hit: r[3], near: r[4], other: r[5] }));
+  const sum = k => rows.reduce((n, r) => n + r[k], 0);
+  return { ear: sum('ear'), earOk: sum('earOk'), said: sum('said'), hit: sum('hit'),
+    weak: rows.filter(r => r.said >= 3 && r.hit / r.said < 2 / 3).sort((a, b) => a.hit / a.said - b.hit / b.said || b.said - a.said).slice(0, 6) };
+}
+
 // ---- review cards ----
 // Blank a word out of the sentence it was met in.
 export function cloze(sentence, word, lang) {
@@ -496,7 +515,7 @@ export function cleanChatReply(r) {
   const reply = str(r.reply, 1500).trim();
   return reply ? { turnId: str(r.turnId, 80), reply, corrections: aiFixes(r.corrections).slice(0, 3) } : null;
 }
-export const emptyLang = () => ({ known: {}, cards: {}, fixes: {}, level: 'A2', pal: { persona: '', msgs: [] }, chat: null });
+export const emptyLang = () => ({ known: {}, cards: {}, fixes: {}, level: 'A2', pal: { persona: '', msgs: [] }, chat: null, alone: {} });
 // A whole saved state (an import file, the Drive copy). Throws when it is not one.
 // Older saves (one level for every language, no corrections or letters) come through with the gaps filled.
 export function cleanState(o) {
@@ -517,6 +536,11 @@ export function cleanState(o) {
     out.level = LEVELS.includes(L.level) ? L.level : LEVELS.includes(o.level) ? o.level : 'A2';
     out.pal = { persona: str(pal.persona, 400), msgs: arr(pal.msgs).slice(-500).map(cleanMsg).filter(Boolean) };
     out.chat = cleanChat(L.chat);
+    for (const [w, rec] of Object.entries(obj(L.alone)).slice(0, 3000)) { // counts that cannot contradict each other
+      const r = Array.from({ length: 7 }, (_, i) => Math.max(0, Math.floor(num(arr(rec)[i]))));
+      r[1] = Math.min(r[1], r[0]); r[3] = Math.min(r[3], r[2]); r[4] = Math.min(r[4], r[2] - r[3]); r[5] = Math.min(r[5], r[2] - r[3] - r[4]);
+      if (w && w.length <= 60 && r[0] + r[2]) out.alone[w] = r;
+    }
     langs[code] = out;
   }
   for (const [id, t] of Object.entries(obj(o.gone)).slice(0, 5000)) if (id.length <= 80) gone[id] = num(t);
@@ -529,7 +553,7 @@ export function cleanState(o) {
 
 // Two copies of the state (this device, Drive) become one. Nothing either side recorded is lost:
 // sittings, stories and letters are joined by id, word lists are joined, a card keeps its most recent
-// change. A removed story stays removed (gone); a word marked "I know this" stays known (retired).
+// change, a word practised on its own keeps the longer record. A removed story stays removed (gone); a word marked "I know this" stays known (retired).
 export function mergeState(a, b) {
   const [hi, lo] = a.updatedAt >= b.updatedAt ? [a, b] : [b, a];
   const join = (x, y, fix) => [...new Map([...y, ...x].map(v => [v.id, v])).values()]
@@ -545,7 +569,10 @@ export function mergeState(a, b) {
     const H = hi.langs[code] || emptyLang(), L = lo.langs[code] || emptyLang();
     const cards = newest(H.cards, L.cards), known = { ...L.known, ...H.known };
     for (const k in cards) if (cards[k].retired) known[k] = 1; else delete known[k];
-    langs[code] = { known, cards, fixes: newest(H.fixes, L.fixes), level: (hi.langs[code] || L).level,
+    // a word practised on its own: the copy with more tries. ponytail: tries made on two devices between two syncs are not added up.
+    const alone = { ...L.alone, ...H.alone };
+    for (const k in L.alone) if (H.alone?.[k] && L.alone[k][0] + L.alone[k][2] > H.alone[k][0] + H.alone[k][2]) alone[k] = L.alone[k];
+    langs[code] = { known, cards, fixes: newest(H.fixes, L.fixes), level: (hi.langs[code] || L).level, alone,
       chat: talk(H.chat, L.chat),
       pal: { persona: H.pal.persona || L.pal.persona, msgs: join(H.pal.msgs, L.pal.msgs, (v, o) => (v.reply || !o.reply ? v : o)).sort((x, y) => x.at - y.at) } };
   }

@@ -45,6 +45,10 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   Sounds apart (`pairs`: `[word, another one sound away, what each means]`, for 24 languages) is `vPairs`: each pair once by ear, then,
   where the browser recognises speech, once aloud (`guess3`, `heardAs`: was it the word wanted, the other, or neither). A Japanese pair
   is written in kana for the same reason as the sounds.
+  Every try at a pair, by ear or aloud, and every try at a sound to notice is counted in `S.langs[code].alone[word]` =
+  `[times heard, picked rightly, times said, understood, only a second guess, taken for the other word of its pair, when]`
+  (`C.aloneAdd`). First steps shows the count beside the sound or the pair (`aloneNote`); Progress shows the totals and the words
+  understood least (`C.aloneStats`: three tries or more, fewer than two in three understood). A merge keeps the longer record of a word.
   The `stories` cowork channel also brings first lessons: `wantLessons` in the request while the level is A1 and fewer than three are
   left to do (also for a language with none bundled), `lessons` in the reply, each checked by `cleanLesson` and added as a story with
   `phrases` and source `cowork`. They are listed after the bundled ones and are kept at start-up (only `source: 'first'` lessons are
@@ -76,7 +80,7 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   `estimate()` in `core.js`), a table by level, totals of input. A spoken line is marked by `speechMarks()`: the recogniser's
   first guess is the score, a word only its second or third guess holds is `near`, and `sure` is its confidence; `subs` pairs a word
   with what the first guess had in its place, shown letter against letter (`letterDiff()`, "rue → roue"). In First steps each
-  sound to notice can be said on its own (`sndsay`: understood, nearly, or what was heard instead; nothing of it is saved).
+  sound to notice can be said on its own (`sndsay`: understood, nearly, or what was heard instead; counted in `alone`).
   In Chromium on a computer (`canProbe`) a second listener on the microphone runs beside the recogniser (`probe`, frames every 30 ms): `voiceStats()`
   gives the time a spoken line took and its long pauses (`d.sec`, `d.pauses`, shown beside the voice's own time `d.voiceSec`; in the page
   only, never saved), and in zh, th and vi `pitchShape()` names how the pitch moved on a word said alone (`spark` draws it), also when

@@ -260,6 +260,18 @@ assert.deepEqual([state.sittings.length, state.sittings[0].score, state.sittings
   assert.deepEqual(c.voiceStats([[0, 0.001, 0], [0.03, 0.001, 0]]), { sec: 0, pauses: 0, pitch: [] });
   const line = f => Array.from({ length: 20 }, (_, i) => [i * 0.03, f(i / 19)]);
   assert.deepEqual([line(() => 200), line(x => 150 + 150 * x), line(x => 300 - 150 * x), line(x => 200 - 240 * x * (1 - x)), [[0, 200]]].map(c.pitchShape), ['level', 'rising', 'falling', 'dipping', '']); }
+// a word practised on its own: by ear, and aloud (understood, nearly, taken for the other word of its pair, or missed)
+{ let r; for (const [how, ok] of [['ear', true], ['ear', false], ['hit'], ['near'], ['other'], ['other'], ['miss']]) r = c.aloneAdd(r, how, ok, 9);
+  assert.deepEqual(r, [2, 1, 5, 1, 1, 2, 9]);
+  const st = c.aloneStats({ rue: r, roue: [0, 0, 3, 3, 0, 0, 1], chat: [0, 0, 2, 0, 0, 0, 1], vin: [4, 4, 4, 2, 0, 0, 1] });
+  assert.deepEqual([st.ear, st.earOk, st.said, st.hit, st.weak.map(x => x.word)], [6, 5, 14, 6, ['rue', 'vin']]); // two tries are too few to say
+  assert.deepEqual(c.aloneStats(undefined), { ear: 0, earOk: 0, said: 0, hit: 0, weak: [] });
+  // from outside: counts that cannot be are cut down, an empty record is dropped; a merge keeps the longer record of each word
+  const mk = (updatedAt, alone) => c.cleanState({ app: 'languagelab', v: 1, updatedAt, langs: { fr: { alone } } });
+  const a = mk(2, { rue: [1, 5, 2, 9, 9, 9, 3], vide: [0, 0, 0, 0, 0, 0, 0], bad: 'x', lac: [0, 0, 1, 1] }), b = mk(1, { rue: [2, 2, 6, 1, 0, 4, 1], roue: [1, 1, 0, 0, 0, 0, 1] });
+  assert.deepEqual(a.langs.fr.alone, { rue: [1, 1, 2, 2, 0, 0, 3], lac: [0, 0, 1, 1, 0, 0, 0] });
+  for (const m of [c.mergeState(a, b), c.mergeState(b, a)]) assert.deepEqual(m.langs.fr.alone, { rue: [2, 2, 6, 1, 0, 4, 1], roue: [1, 1, 0, 0, 0, 0, 1], lac: [0, 0, 1, 1, 0, 0, 0] });
+  assert.deepEqual(c.mergeState(c.cleanState({ app: 'languagelab', v: 1, updatedAt: 3, langs: { fr: {} } }), b).langs.fr.alone.rue, [2, 2, 6, 1, 0, 4, 1]); }
 console.log('core.test: ok');
 
 // merging this device with Drive loses nothing from either side

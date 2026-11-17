@@ -368,6 +368,7 @@ function vProgress() {
   const mine = S.sittings.filter(s => s.lang === S.lang), got = f => mine.map(f).filter(x => x != null);
   const avg = f => { const v = got(f).slice(-5); return v.length ? pct(v.reduce((n, x) => n + x, 0) / v.length) : '–'; };
   const trend = got(s => s.breakdown.listening).slice(-30), rows = C.abilities(S, S.lang), est = C.estimate(rows), cards = Object.values(L().cards);
+  const snd = C.aloneStats(L().alone), sndOf = new Map(list(FIRST?.sounds?.[S.lang]).map(([letters, word]) => [word, letters]));
   const bits = s => [A.fmt.date(s.day + 'T00:00:00'),
     s.mode === 'chat' ? t('conversation') : s.mode === 'talk' ? (story(s.storyId) && !isTalk(story(s.storyId)) ? t('read aloud {pct}', { pct: pct(s.breakdown.speaking) }) : t('role-play {pct}', { pct: pct(s.breakdown.speaking) })) : s.score == null ? t('no dictation') : t('dictation {pct}', { pct: pct(s.score / 100) }),
     s.breakdown.comprehension == null ? '' : t('questions {pct}', { pct: pct(s.breakdown.comprehension) }),
@@ -397,6 +398,12 @@ function vProgress() {
   ${trend.length > 1 ? H`<svg class="spark" viewBox="0 0 300 60" preserveAspectRatio="none" role="img" aria-label="${t('Words caught in dictation, sitting by sitting')}">
     <polyline points="${trend.map((v, i) => Math.round(i * 300 / (trend.length - 1)) + ',' + Math.round(57 - v * 54)).join(' ')}"/></svg>
     <p class="sub">${t('Words caught in dictation, sitting by sitting')}</p>` : ''}
+  ${snd.ear + snd.said ? H`<h2>${t('Sounds')}</h2>
+    <p class="sub">${t('Words practised on their own in First steps: the sounds to notice, and the pairs of words one sound apart. One word alone is hard for speech recognition, so read this as a pointer, not a verdict.')}</p>
+    <div class="tiles">${snd.ear ? tile(pct(snd.earOk / snd.ear), t('of the words one sound apart told apart by ear (tries: {n})', { n: nf(snd.ear) })) : ''}
+      ${snd.said ? tile(pct(snd.hit / snd.said), t('of the words you said on their own understood by speech recognition (tries: {n})', { n: nf(snd.said) })) : ''}</div>
+    ${snd.weak.length ? H`<div class="card"><b>${t('Understood least')}</b><ul>${snd.weak.map(r => H`<li><b lang="${S.lang}">${sndOf.has(r.word) ? sndOf.get(r.word) + ' · ' : ''}${r.word}</b> <span class="sub">${aloneNote([r.word])}</span></li>`)}</ul>
+      <p><button data-act="go" data-v="first">${t('Practise them in First steps')}</button></p></div>` : ''}` : ''}
   <h2>${t('Sittings')}</h2>
   ${mine.some(s => ['sitting', 'talk', 'chat', 'first'].includes(s.mode)) ? '' : H`<p class="sub">${t('None yet.')}</p>`}
   ${mine.filter(s => ['sitting', 'talk', 'chat', 'first'].includes(s.mode)).slice(-30).reverse().map(s => H`<div class="card">${s.mode === 'first' ? H`<b>${ttl(s)}</b>` : H`<b lang="${S.lang}">${s.title}</b>`}
@@ -518,6 +525,14 @@ const guess3 = (b, done) => { const got = []; if (!recog && TONAL.includes(S.lan
 const heardAs = (word, got, k = w => C.wordKeys(w, S.lang).join(' ')) => k(got[0]) === k(word) ? 'hit' : got.some(g => k(g) === k(word)) ? 'near' : 'miss';
 const tryHtml = (word, tr) => H`${tr.state === 'none' ? t('It recognised no word.') : tr.state === 'hit' ? H`<b class="hit">${t('Understood.')}</b>` : tr.state === 'near' ? H`<b class="near">${t('Nearly: it was only its second guess.')}</b>` : H`${t('It heard instead')}: ${pairHtml(word, tr.heard)}`}${
   tr.shape ? H` <span class="sub">${t('Your voice: {shape}.', { shape: t(SHAPES[tr.shape]) })} ${spark(tr.pitch)}</span>` : ''}`;
+// A word said on its own goes into the record of its sound: understood, nearly, taken for the other word of its pair, or missed.
+const pairOf = word => { const p = list(FIRST?.pairs?.[S.lang]).find(p => p[0] === word || p[1] === word); return p ? p[p[0] === word ? 1 : 0] : ''; }; // the word one sound away, if it has one
+const saidAlone = (word, got) => { const other = pairOf(word), how = heardAs(word, got);
+  L().alone[word] = C.aloneAdd(L().alone[word], how !== 'hit' && other && heardAs(other, got.slice(0, 1)) === 'hit' ? 'other' : how); save(); };
+// What the record says of a word, or of the two words of a pair, in a few words ('' while there is none).
+const aloneNote = words => { const recs = words.map(w => L().alone[w]).filter(Boolean), n = k => recs.reduce((s, r) => s + r[k], 0), other = words.length === 1 ? pairOf(words[0]) : '';
+  return [n(0) ? t('By ear: {right} of {n}', { right: nf(n(1)), n: nf(n(0)) }) : '', n(2) ? t('Said: understood {hit} of {n}', { hit: nf(n(3)), n: nf(n(2)) }) : '',
+    n(5) ? other ? t('taken for “{word}”: {n}', { word: other, n: nf(n(5)) }) : t('taken for the other word: {n}', { n: nf(n(5)) }) : ''].filter(Boolean).join(' · '); };
 let tenOpen = -1; // which ten of the first lessons is open on the First steps screen: -1 the ten with the next lesson to do, -2 none
 const openTen = ls => tenOpen === -1 ? Math.floor(Math.max(0, ls.findIndex(x => !x.readAt)) / 10) : tenOpen;
 const sndTry = {}; // a "sound to notice" said aloud: language:word -> { state: 'hit' | 'near' | 'miss', heard } (kept for the visit only)
@@ -963,7 +978,7 @@ function vChat() {
 // ---------- first steps: lessons from nothing, the letters of a new script, the sounds that surprise ----------
 // ponytail: the letter practice keeps no record. Put the letters in the review deck if they turn out to need spacing.
 // Sounds apart: two words one sound apart. First by ear (which of the two was said?); then, where the browser recognises speech,
-// aloud (which of the two did it hear?): the nearest this app comes to marking a single sound. Nothing of it is saved.
+// aloud (which of the two did it hear?): the nearest this app comes to marking a single sound. Each try is kept in the word's record (`alone`), shown here and on Progress.
 function vPairs() {
   const c = quiz.cards[quiz.i];
   if (!c) return H`<h1>${t('Sounds apart')}</h1><p class="big">${t('{right} of {n} right', { right: nf(quiz.right), n: nf(quiz.cards.length) })}</p><button class="primary" data-act="qzend" data-focus>${t('Done')}</button>`;
@@ -1007,14 +1022,14 @@ function vFirst() {
       <div class="abc">${C.chartPairs(src).map(([ch, r]) => H`<button data-act="sayx" data-x="${ch}"><b lang="${S.lang}">${ch}</b><span class="sub">${r[0]}</span></button>`)}</div></div>`)}` : ''}
   ${voices().length ? H`<h2>${t('Numbers by ear')}</h2><p class="sub">${t('You hear a number at natural speed and type it in digits, ten at a time. Nothing of it is kept.')}</p>
     <div class="row">${[20, 100, 1000, 10000].map(n => H`<button data-act="nums" data-n="${n}">${t('Up to {n}', { n: nf(n) })}</button>`)}</div>` : ''}
-  ${snd.length ? H`<h2>${t('Sounds to notice')}</h2><p class="sub">${SR ? t('Where the spelling does not sound the way you might expect. Tap ▶ to hear the word, then say it: speech recognition shows whether it understood you, or what it heard instead. One word alone is hard for it, so try more than once.') : t('Where the spelling does not sound the way you might expect. Tap to hear the word.')}</p>
+  ${snd.length ? H`<h2>${t('Sounds to notice')}</h2><p class="sub">${SR ? t('Where the spelling does not sound the way you might expect. Tap ▶ to hear the word, then say it: speech recognition shows whether it understood you, or what it heard instead. One word alone is hard for it, so try more than once.') + ' ' + t('Each try is counted.') : t('Where the spelling does not sound the way you might expect. Tap to hear the word.')}</p>
     <p class="sub" id="micmsg" role="status"></p>
     <div class="card">${snd.map(([letters, word, hint]) => H`<div class="ph"><button class="mini" data-act="sayx" data-x="${word}" aria-label="${t('Hear it')}">▶</button>
-      <div class="grow"><b lang="${S.lang}">${letters}</b> · <span lang="${S.lang}">${word}</span><span class="sub">${hint}</span>${sndTry[S.lang + ':' + word] ? H`<span class="sub" role="status">${tryHtml(word, sndTry[S.lang + ':' + word])}</span>` : ''}</div>
+      <div class="grow"><b lang="${S.lang}">${letters}</b> · <span lang="${S.lang}">${word}</span><span class="sub">${hint}</span>${aloneNote([word]) ? H`<span class="sub">${aloneNote([word])}</span>` : ''}${sndTry[S.lang + ':' + word] ? H`<span class="sub" role="status">${tryHtml(word, sndTry[S.lang + ':' + word])}</span>` : ''}</div>
       ${SR ? H`<button class="mini" data-act="sndsay" data-x="${word}" aria-pressed="false">${t('Say it')}</button>` : ''}</div>`)}</div>` : ''}
-  ${prs.length ? H`<h2>${t('Sounds apart')}</h2><p class="sub">${t('Pairs of words one sound apart. First you hear one and choose which it was; then, where your browser recognises speech, you say the one in bold and see which it heard.')}</p>
+  ${prs.length ? H`<h2>${t('Sounds apart')}</h2><p class="sub">${t('Pairs of words one sound apart. First you hear one and choose which it was; then, where your browser recognises speech, you say the one in bold and see which it heard.')} ${t('Each try is counted.')}</p>
     ${voices().length ? H`<p><button data-act="pairs">${t('Practise')}</button></p>` : ''}
-    <div class="card">${prs.map(([a, b, hint]) => H`<div class="ph"><div class="grow"><div class="row">${[a, b].map(w => H`<button class="mini" data-act="sayx" data-x="${w}" lang="${S.lang}">▶ ${w}</button>`)}</div><span class="sub">${hint}</span></div></div>`)}</div>` : ''}`;
+    <div class="card">${prs.map(([a, b, hint]) => H`<div class="ph"><div class="grow"><div class="row">${[a, b].map(w => H`<button class="mini" data-act="sayx" data-x="${w}" lang="${S.lang}">▶ ${w}</button>`)}</div><span class="sub">${hint}</span>${aloneNote([a, b]) ? H`<span class="sub">${aloneNote([a, b])}</span>` : ''}</div></div>`)}</div>` : ''}`;
 }
 
 // ---------- a human teacher, with no server: the learner's writing travels to them inside a link, their corrections come back inside another ----------
@@ -1331,17 +1346,19 @@ const ACT = {
   sndsay(b) { // a word chosen for one sound: was it understood, and if not, what was heard in its place?
     const word = b.dataset.x;
     guess3(b, (got, v) => { if (view !== 'first' || !(got.length || v)) return;
+      if (!v && got.length) saidAlone(word, got);
       sndTry[S.lang + ':' + word] = { state: got.length ? heardAs(word, got) : 'none', heard: (got[0] || '').slice(0, 60), ...(v ? { shape: C.pitchShape(v.pitch), pitch: v.pitch } : {}) }; render(true); }); },
   pairs() { // each pair once by ear; then, where the browser recognises speech, once aloud
     const all = list(FIRST?.pairs?.[S.lang]), round = aloud => shuffle(all.slice()).map(pair => ({ pair, want: Math.random() < 0.5 ? 0 : 1, say: aloud }));
     quiz = { pair: true, cards: [...round(false), ...(SR ? round(true) : [])], i: 0, right: 0, verdict: '' };
     render(); scrollTo(0, 0); say(quiz.cards[0].pair[quiz.cards[0].want]);
   },
-  pairpick(b) { const c = quiz.cards[quiz.i], ok = +b.dataset.k === c.want; quiz.verdict = ok ? 'hit' : 'miss'; if (ok) quiz.right++; render(); say(c.pair[c.want]); },
+  pairpick(b) { const c = quiz.cards[quiz.i], ok = +b.dataset.k === c.want, want = c.pair[c.want]; quiz.verdict = ok ? 'hit' : 'miss'; if (ok) quiz.right++;
+    L().alone[want] = C.aloneAdd(L().alone[want], 'ear', ok); save(); render(); say(want); },
   pairsay(b) { const c = quiz.cards[quiz.i], want = c.pair[c.want];
     guess3(b, (got, v) => { if (!quiz?.pair || quiz.cards[quiz.i] !== c || !(got.length || v)) return;
       if (v) { quiz.shape = C.pitchShape(v.pitch); quiz.pitch = v.pitch; quiz.verdict ||= 'none'; return render(true); } // the second call: how the voice moved
-      quiz.verdict = heardAs(want, got); quiz.heard = got[0].slice(0, 60); quiz.shape = ''; if (quiz.verdict === 'hit') quiz.right++; render(true); }); },
+      saidAlone(want, got); quiz.verdict = heardAs(want, got); quiz.heard = got[0].slice(0, 60); quiz.shape = ''; if (quiz.verdict === 'hit') quiz.right++; render(true); }); },
   hintkeep(b) { // the same for a suggestion on a retelling
     const id = b.dataset.id, at = id.lastIndexOf(':'), f = S.sittings.find(x => x.id === id.slice(0, at))?.hints?.[id.slice(at + 1)];
     if (f) { L().fixes['h:' + id] = { ...f, added: Date.now(), srs: null }; save(); render(true); } },
