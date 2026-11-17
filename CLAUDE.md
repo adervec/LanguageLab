@@ -13,7 +13,7 @@ For this app:
   headless Chrome; the offline test stops the server after one visit and opens the app again).
 - Work on `main`; push your own work when it passes. Add user-visible changes to `whatsnew.json`.
 
-## What is built (v0.4)
+## What is built (v0.5)
 
 No build step: `index.html` (shell, CSS), `app.js` (screens, speech, sync, cowork), `core.js` (all the
 logic, no DOM, tested), `content/<lang>.json` (starter stories and dialogues; rules in
