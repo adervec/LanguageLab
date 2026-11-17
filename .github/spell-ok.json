@@ -158,7 +158,10 @@
   "вай"
  ],
  "cs": [
+  "Fi",
   "Sofiině",
+  "Wi",
+  "e",
   "zač"
  ],
  "sk": [
@@ -242,7 +245,12 @@
   "égen"
  ],
  "el": [
+  "Fi",
+  "Wi",
+  "Λέο",
   "Μπεργκ",
+  "βιντεοκλήση",
+  "μέιλ",
   "ξάδελφός",
   "ξανάρθω"
  ],
@@ -257,11 +265,15 @@
   "Dükkân",
   "Düzelmezsem",
   "Elena",
+  "Fi",
+  "Leo",
   "Maria",
   "Maria'nın",
   "Max",
   "Sofia",
   "Sofia'nın",
+  "Söyleyebildiğimden",
+  "Wi",
   "bozdurabilirim",
   "büyükannem",
   "büyükannemin",
@@ -269,14 +281,23 @@
   "dükkâna",
   "dükkânda",
   "hikâyeler",
+  "internet",
+  "kâğıt",
+  "rüzgârlı",
   "Şikâyetiniz"
  ],
  "nb": [
   "Elena",
+  "Leo",
+  "Naboen",
   "Naboene",
+  "e",
   "naboen",
   "noe",
-  "skoene"
+  "noen",
+  "pastaen",
+  "skoene",
+  "wifi"
  ],
  "vi": [
   "Anna",
@@ -326,7 +347,8 @@
  ],
  "uk": [
   "Івано",
-  "Поліцейський"
+  "Поліцейський",
+  "прийом"
  ],
  "ca": [
   "lícula"
@@ -339,5 +361,8 @@
  ],
  "pl": [
   "Wi"
+ ],
+ "da": [
+  "wi"
  ]
 }
