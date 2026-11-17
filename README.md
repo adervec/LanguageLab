@@ -216,8 +216,10 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   spelt as the other word.
 - **Find my level by ear** (November 2026): the choice of sentences and the rule (start at the first level where less
   than 80% of the words were caught) are covered by the logic test; the flow test takes the check with a stand-in
-  voice, typing the two A1 sentences as given and missing the two of A2, and is told to start at A2. Nobody has taken
-  it with a real voice. It is two sentences a level, heard cold, so it is rough and errs low, and the page says so; it
+  voice, typing the two A1 sentences as given and missing the two of A2, and is told to start at A2. In Chrome 157, with
+  its own French voice, the first sentence was spoken on the tap and each Next spoke the following one, and the same
+  answers gave the same result. Nobody has taken it by ear: the sentences were typed from the page, not from
+  listening. It is two sentences a level, heard cold, so it is rough and errs low, and the page says so; it
   is offered only where the device has a voice for the language and the language has bundled stories.
 - **The record of each sound** (November 2026): the counting is covered by the logic test (a try by ear; a try aloud
   understood, nearly, taken for the other word of its pair, or missed; what a merge of two devices keeps) and by the
