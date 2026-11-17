@@ -1,6 +1,8 @@
 {
  "fr": [
+  "Leo",
   "Vasseur",
+  "Wi",
   "end",
   "week"
  ],
@@ -10,6 +12,7 @@
   "Dani",
   "Daniela",
   "Hernando",
+  "Maria",
   "Matías",
   "Medellín",
   "Meyer",
@@ -34,6 +37,7 @@
   "Jonas",
   "Körnerbrötchen",
   "Lea",
+  "Leo",
   "Lukas",
   "Lutschtabletten",
   "Mia",
@@ -47,15 +51,21 @@
   "krempelte",
   "losging",
   "meterhoch",
+  "wegzog",
   "wehgetan",
   "zurückbuchen"
  ],
  "it": [
-  "Bellinzona"
+  "Bellinzona",
+  "Fi",
+  "Wi"
  ],
  "pt": [
   "Anna",
-  "Zuleide"
+  "Leo",
+  "Zuleide",
+  "mail",
+  "wi"
  ],
  "hr": [
   "Airesu",
@@ -64,21 +74,29 @@
   "Bruno",
   "Buenos",
   "Emilio",
+  "Fi",
+  "Leo",
   "Marić",
+  "Wi",
   "bend",
   "kroasan",
   "kroasana",
   "kroasane",
   "pastile",
   "pizze",
-  "svijetao"
+  "svijetao",
+  "videopozivom"
  ],
  "en": [
   "Costa",
+  "Fi",
   "Priya",
   "Rossi",
+  "Wi",
   "café",
+  "centre",
   "colour",
+  "kilometre",
   "kilometres",
   "neighbour",
   "neighbours",
@@ -298,5 +316,8 @@
  ],
  "gl": [
   "Coñecémonos"
+ ],
+ "nl": [
+  "videobel"
  ]
 }

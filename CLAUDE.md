@@ -34,7 +34,8 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   language is one `LANGS` entry plus `content/<code>.json` (the test requires 16 stories and 8 dialogues, 8 and 4 for `small`,
   4 and 2 for `mini`) and its file in the `sw.js` offline list (the test checks that too). After changing content run
   `node .github/spell.mjs` (see its first lines): a word no dictionary knows fails until it is read and accepted.
-- **First steps** (from nothing): `content/first.json` holds 240 phrases in thirty lessons for 44 languages
+- **First steps** (from nothing): `content/first.json` holds 480 meanings in sixty lessons: each of the 44 languages has the first 240 phrases (thirty lessons), and the eight with full sets
+  of stories have all 480
   (`langs`: a phrase is a string, or `[phrase, its own meaning]` where the shared English `meanings` do not fit), a meaning with `{language}` in it names the language being learned and is always shown in English), a reading in
   Latin letters for each phrase in a script that is not Latin (`readings`), script charts (`scripts`: `"letter=reading"` pairs)
   and sounds to notice (`sounds`, for every language: `[letters, a word, a hint]`; where the script is not Latin the hint starts with
@@ -47,7 +48,7 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   The `stories` cowork channel also brings first lessons: `wantLessons` in the request while the level is A1 and fewer than three are
   left to do (also for a language with none bundled), `lessons` in the reply, each checked by `cleanLesson` and added as a story with
   `phrases` and source `cowork`. They are listed after the bundled ones and are kept at start-up (only `source: 'first'` lessons are
-  replaced from the file). `lessonStories()` turns a language's phrases into thirty stories (one a lesson) with `phrases: true`, no
+  replaced from the file). `lessonStories()` turns a language's phrases into one story a lesson (thirty of them, or sixty) with `phrases: true`, no
   level (so they never count in `abilities()`) and `back` = every phrase with its meaning, shown in the interface language
   where the file has that language. A lesson is a session with `mode: 'first'`: study the phrases, type half from the ear,
   write the other half from their meaning and say them (the halves swap next time). Its phrases become review cards in the

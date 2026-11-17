@@ -317,13 +317,13 @@ console.log('core.test: ok');
   console.log(`content: ok (${files.length} files)`);
 }
 
-// first steps (content/first.json): 240 phrases a language, each one scoreable; a reading where the script is not Latin; charts and sounds well formed
+// first steps (content/first.json): 240 phrases a language (480 in the eight with full sets of stories), each one scoreable; a reading where the script is not Latin; charts and sounds well formed
 {
   const first = JSON.parse(readFileSync(new URL('./content/first.json', import.meta.url), 'utf8')), bad = [];
   const latin = s => /^[\p{Script=Latin}\p{Script=Common}\p{Script=Inherited}]+$/u.test(s);
-  assert.deepEqual([first.meanings.length, first.lessons.length], [240, 30]);
+  assert.deepEqual([first.meanings.length, first.lessons.length], [480, 60]);
   for (const [code, list] of Object.entries(first.langs)) {
-    if (!c.isLangCode(code) || list.length !== first.meanings.length) bad.push(`${code}: needs ${first.meanings.length} phrases (has ${list.length})`);
+    if (!c.isLangCode(code) || ![240, first.meanings.length].includes(list.length)) bad.push(`${code}: needs 240 or ${first.meanings.length} phrases (has ${list.length})`);
     const seen = new Set(), read = first.readings[code];
     list.forEach((p, i) => {
       const [text, own] = Array.isArray(p) ? p : [p, 'x'];
@@ -362,6 +362,9 @@ console.log('core.test: ok');
   assert.deepEqual(c.cleanStory(c.lessonStories(first, 'es')[0], 'es').back[1], ['Buenas tardes.', 'Good afternoon.']); // a phrase with its own meaning
   assert.equal(c.lessonStories(first, 'ru', 'es')[0].back[1][1], 'Good evening.');   // the reader's own phrase there means something else: English instead
   assert.equal(c.lessonStories(first, 'ru', 'ru')[0].back[0][1], 'Hello.');
+  // a language with all sixty lessons: a meaning beyond what the reader's own language has is the English one
+  assert.deepEqual([c.lessonStories(first, 'fr', 'ru').length, c.lessonStories(first, 'fr', 'ru')[30].back[0][1], c.lessonStories(first, 'fr', 'es')[30].back[0][1], c.lessonStories(first, 'fr', 'es')[59].title],
+    [60, 'I am looking for a flat with two rooms.', 'Busco un piso de dos habitaciones.', 'The old tree']);
   assert.deepEqual([c.storySentences(ru[0]).length, c.lessonStories(first, 'xx').length, c.lessonStories(null, 'ru').length], [8, 0, 0]);
   // lessons have no level, so they never count towards what the numbers say you can read
   const S = c.cleanState({ app: 'languagelab', v: 1, stories: ru, sittings: [{ id: 'f1', lang: 'ru', mode: 'first', level: '' }] });
