@@ -409,5 +409,462 @@
    }
   ],
   "notice": "Before a vowel, \"el\" and \"la\" shorten to \"l'\": \"l'esmorzar\", \"l'ascensor\", \"l'escala\". \"Hi ha\" means \"there is\" or \"there are\"."
+ },
+ {
+  "id": "ca-family",
+  "title": "La meva família",
+  "level": "A1",
+  "text": "Em dic Anna. Visc amb la meva família en una casa petita a prop del riu. La meva mare és mestra i el meu pare treballa en una botiga. Tinc un germà i una germana. El meu germà té deu anys i li agrada el futbol. La meva germana encara és petita: té tres anys. També tenim un gos, que es diu Max. Cada matí el meu pare surt a passejar amb el gos. Al vespre sopem junts i parlem del dia. Després de sopar, el meu germà i jo rentem els plats. El diumenge ve l'àvia i porta un pastís. Estimo molt la meva família.",
+  "gloss": {
+   "família": "family",
+   "casa": "house",
+   "riu": "river",
+   "mare": "mother",
+   "mestra": "teacher",
+   "pare": "father",
+   "botiga": "shop",
+   "germà": "brother",
+   "germana": "sister",
+   "anys": "years",
+   "futbol": "football",
+   "petita": "small",
+   "gos": "dog",
+   "matí": "morning",
+   "passejar": "to go for a walk",
+   "vespre": "evening",
+   "sopem": "we have dinner",
+   "junts": "together",
+   "sopar": "to have dinner; dinner",
+   "plats": "dishes",
+   "diumenge": "Sunday",
+   "àvia": "grandmother",
+   "pastís": "cake"
+  },
+  "questions": [
+   {
+    "q": "On treballa el pare?",
+    "a": [
+     "botiga"
+    ]
+   },
+   {
+    "q": "Quants anys té el germà?",
+    "a": [
+     "deu",
+     "10"
+    ]
+   },
+   {
+    "q": "Qui ve el diumenge?",
+    "a": [
+     "àvia"
+    ]
+   }
+  ],
+  "notice": "Catalan keeps the article before \"my\": \"la meva mare\" (the my mother), \"el meu germà\". Age is said with \"have\": \"té deu anys\". Before a vowel \"la\" and \"el\" become \"l'\": \"l'àvia\".",
+  "back": [
+   [
+    "La meva mare és mestra i el meu pare treballa en una botiga.",
+    "My mother is a teacher and my father works in a shop."
+   ],
+   [
+    "El diumenge ve l'àvia i porta un pastís.",
+    "On Sunday my grandmother comes and brings a cake."
+   ]
+  ]
+ },
+ {
+  "id": "ca-town",
+  "title": "El nostre poble",
+  "level": "A1",
+  "text": "El nostre poble és petit, però és bonic. Al centre hi ha una plaça antiga amb una font. Al costat de la plaça hi ha una escola, una farmàcia i dos cafès. L'estació és darrere del parc. Cada matí molta gent agafa el tren per anar a la ciutat. A la tarda els nens juguen al parc i els avis juguen a escacs. A l'estiu venen turistes i fan fotos del pont. A l'hivern el poble és tranquil. El dissabte hi ha mercat a la plaça. Allà podeu comprar verdures, mel i flors. Al vespre m'agrada passejar a la vora del riu. No vull viure en una ciutat gran.",
+  "gloss": {
+   "poble": "town",
+   "bonic": "beautiful",
+   "centre": "centre",
+   "plaça": "square",
+   "font": "fountain",
+   "escola": "school",
+   "farmàcia": "pharmacy",
+   "estació": "station",
+   "darrere": "behind",
+   "parc": "park",
+   "tren": "train",
+   "tarda": "afternoon",
+   "nens": "children",
+   "escacs": "chess",
+   "estiu": "summer",
+   "turistes": "tourists",
+   "pont": "bridge",
+   "hivern": "winter",
+   "tranquil": "quiet",
+   "dissabte": "Saturday",
+   "verdures": "vegetables",
+   "mel": "honey",
+   "flors": "flowers",
+   "riu": "river"
+  },
+  "questions": [
+   {
+    "q": "Què hi ha al centre del poble?",
+    "a": [
+     "plaça"
+    ]
+   },
+   {
+    "q": "On és l'estació?",
+    "a": [
+     "parc"
+    ]
+   },
+   {
+    "q": "Quan venen els turistes?",
+    "a": [
+     "estiu"
+    ]
+   }
+  ],
+  "notice": "\"Hi ha\" means \"there is\" or \"there are\": \"hi ha una plaça\". \"A\" joins the article: \"al centre\", \"al parc\"; before a vowel the article is \"l'\": \"a l'estiu\", \"a l'hivern\".",
+  "back": [
+   [
+    "L'estació és darrere del parc.",
+    "The station is behind the park."
+   ],
+   [
+    "A l'hivern el poble és tranquil.",
+    "In winter the town is quiet."
+   ]
+  ]
+ },
+ {
+  "id": "ca-birthday",
+  "title": "L'aniversari de l'àvia",
+  "level": "A2",
+  "text": "Ahir va ser l'aniversari de la meva àvia. Ara té vuitanta anys. Tota la família va venir a casa seva, al poble. La meva tia va fer un pastís gran i el meu oncle va portar flors. Li vam regalar una bufanda calenta i un llibre sobre jardins. Abans de dinar vam cantar una cançó i l'àvia va riure. A taula hi havia sopa, pollastre amb patates i molta amanida. Després de dinar ens va ensenyar fotos antigues. En una foto era una dona jove amb una bicicleta. Ens va explicar que cada dia anava a treballar amb bicicleta. Després el meu cosí va tocar la guitarra i tothom va ballar. Fins i tot el meu germà petit va ballar amb l'àvia. Al vespre estava cansada però contenta. Va dir que era el millor aniversari de la seva vida. Vam tornar a casa tard, quan les estrelles ja eren al cel.",
+  "gloss": {
+   "ahir": "yesterday",
+   "aniversari": "birthday",
+   "vuitanta": "eighty",
+   "tota": "whole",
+   "poble": "village",
+   "tia": "aunt",
+   "fer": "to make (va fer: made)",
+   "oncle": "uncle",
+   "flors": "flowers",
+   "regalar": "to give as a present (vam regalar: we gave)",
+   "bufanda": "scarf",
+   "jardins": "gardens",
+   "cantar": "to sing (vam cantar: we sang)",
+   "cançó": "song",
+   "riure": "to laugh (va riure: laughed)",
+   "pollastre": "chicken",
+   "patates": "potatoes",
+   "ensenyar": "to show (va ensenyar: showed)",
+   "jove": "young",
+   "bicicleta": "bicycle",
+   "cosí": "cousin",
+   "guitarra": "guitar",
+   "ballar": "to dance (va ballar: danced)",
+   "cansada": "tired",
+   "millor": "best",
+   "vida": "life",
+   "estrelles": "stars"
+  },
+  "questions": [
+   {
+    "q": "Quants anys té l'àvia?",
+    "a": [
+     "vuitanta",
+     "80"
+    ]
+   },
+   {
+    "q": "Qui va portar flors?",
+    "a": [
+     "oncle"
+    ]
+   },
+   {
+    "q": "Què va tocar el cosí?",
+    "a": [
+     "guitarra"
+    ]
+   }
+  ],
+  "notice": "The everyday past is \"anar\" (to go) plus the infinitive: \"va venir\" (came), \"vam cantar\" (we sang), \"va portar\" (brought). \"Era\" and \"estava\" are \"was\" for how things were.",
+  "back": [
+   [
+    "La meva tia va fer un pastís gran i el meu oncle va portar flors.",
+    "My aunt baked a big cake and my uncle brought flowers."
+   ],
+   [
+    "Després de dinar ens va ensenyar fotos antigues.",
+    "After lunch she showed us old photos."
+   ]
+  ]
+ },
+ {
+  "id": "ca-wallet",
+  "title": "La cartera perduda",
+  "level": "B1",
+  "text": "Divendres passat en Daniel volia pagar al supermercat, però la cartera no era a la butxaca. Estava molt preocupat, perquè hi tenia la targeta del banc i el carnet de conduir. Va deixar la compra a la caixa i va tornar pel mateix camí. Va buscar pertot arreu, a la vorera i a la parada de l'autobús, però no va trobar res. A casa va trucar al banc i va bloquejar la targeta. Aquella nit no va poder dormir, perquè pensava en tots els seus documents. Dos dies després va arribar una carta de la policia. Una dona havia trobat la cartera a l'autobús i l'havia portada a la comissaria. En Daniel hi va anar de seguida. No hi faltava res, ni tan sols els diners. El policia li va donar l'adreça de la dona, perquè en Daniel li volia donar les gràcies. L'endemà va comprar flors i li va escriure una targeta. Ella es va sorprendre i el va convidar a prendre un cafè. Van parlar una hora i ara són bons amics. Des d'aleshores en Daniel sempre es mira la butxaca abans de baixar de l'autobús.",
+  "gloss": {
+   "divendres": "Friday",
+   "pagar": "pay",
+   "supermercat": "supermarket",
+   "cartera": "wallet",
+   "butxaca": "pocket",
+   "preocupat": "worried",
+   "targeta": "card (targeta del banc: bank card)",
+   "carnet": "(carnet de conduir: driving licence)",
+   "compra": "shopping",
+   "caixa": "till",
+   "mateix": "same",
+   "arreu": "(pertot arreu: everywhere)",
+   "vorera": "pavement",
+   "parada": "stop (parada de l'autobús: bus stop)",
+   "trobar": "to find (va trobar: found)",
+   "bloquejar": "to block (va bloquejar: blocked)",
+   "documents": "documents",
+   "carta": "letter",
+   "policia": "police",
+   "faltava": "was missing",
+   "diners": "money",
+   "adreça": "address",
+   "gràcies": "thanks (donar les gràcies: to thank)",
+   "sorprendre": "(es va sorprendre: was surprised)",
+   "convidar": "to invite (va convidar: invited)",
+   "mira": "looks at, checks",
+   "baixar": "to get off"
+  },
+  "questions": [
+   {
+    "q": "Què no era a la butxaca d'en Daniel?",
+    "a": [
+     "cartera"
+    ]
+   },
+   {
+    "q": "On havia trobat la dona la cartera?",
+    "a": [
+     "autobús"
+    ]
+   },
+   {
+    "q": "Què va comprar en Daniel?",
+    "a": [
+     "flors"
+    ]
+   }
+  ],
+  "notice": "Catalan puts \"en\" or \"la\" before a first name: \"en Daniel\". \"Hi\" stands for a place already mentioned: \"hi tenia la targeta\" (he had the card in it), \"hi va anar\" (he went there). \"Havia trobat\" is \"had found\".",
+  "back": [
+   [
+    "Va buscar pertot arreu, a la vorera i a la parada de l'autobús, però no va trobar res.",
+    "He looked everywhere, on the pavement and at the bus stop, but he found nothing."
+   ],
+   [
+    "Una dona havia trobat la cartera a l'autobús i l'havia portada a la comissaria.",
+    "A woman had found the wallet on the bus and had taken it to the police station."
+   ]
+  ]
+ },
+ {
+  "id": "ca-station",
+  "title": "A l'estació",
+  "level": "A2",
+  "roles": [
+   "Taquillera",
+   "Viatger"
+  ],
+  "lines": [
+   [
+    0,
+    "Bon dia. En què el puc ajudar?"
+   ],
+   [
+    1,
+    "Bon dia. Voldria un bitllet per a Girona, si us plau."
+   ],
+   [
+    0,
+    "Només anada o anada i tornada?"
+   ],
+   [
+    1,
+    "Anada i tornada, si us plau. Quan surt el pròxim tren?"
+   ],
+   [
+    0,
+    "A un quart d'onze, de la via tres."
+   ],
+   [
+    1,
+    "Quant dura el viatge?"
+   ],
+   [
+    0,
+    "Unes dues hores i mitja. Ha de fer transbord a Barcelona."
+   ],
+   [
+    1,
+    "Quant de temps hi tinc?"
+   ],
+   [
+    0,
+    "Vint minuts. N'hi ha prou."
+   ],
+   [
+    1,
+    "Molt bé. Quant costa el bitllet?"
+   ],
+   [
+    0,
+    "Trenta-quatre euros. Vol pagar amb targeta?"
+   ],
+   [
+    1,
+    "Sí, amb targeta. Moltes gràcies!"
+   ]
+  ],
+  "gloss": {
+   "ajudar": "help",
+   "bitllet": "ticket",
+   "anada": "(només anada: one way)",
+   "tornada": "(anada i tornada: return)",
+   "pròxim": "next",
+   "tren": "train",
+   "surt": "leave",
+   "via": "track, platform",
+   "viatge": "journey",
+   "hores": "hours",
+   "transbord": "change",
+   "temps": "time",
+   "minuts": "minutes",
+   "prou": "enough",
+   "costa": "cost",
+   "pagar": "pay",
+   "targeta": "card"
+  },
+  "questions": [
+   {
+    "q": "De quina via surt el tren?",
+    "a": [
+     "tres",
+     "3"
+    ]
+   },
+   {
+    "q": "Com paga el viatger?",
+    "a": [
+     "targeta"
+    ]
+   }
+  ],
+  "notice": "Catalan tells the quarters towards the coming hour: \"un quart d'onze\" is a quarter past ten. The polite \"you\" is \"vostè\", with the verb in the third person: \"ha de fer transbord\", \"vol pagar\"."
+ },
+ {
+  "id": "ca-doctor",
+  "title": "A cal metge",
+  "level": "B1",
+  "roles": [
+   "Metgessa",
+   "Pacient"
+  ],
+  "lines": [
+   [
+    0,
+    "Bon dia. Què li passa?"
+   ],
+   [
+    1,
+    "Bon dia, doctora. Fa tres dies que tinc mal de coll i tos."
+   ],
+   [
+    0,
+    "També té febre?"
+   ],
+   [
+    1,
+    "Sí, ahir al vespre tenia trenta-vuit i mig."
+   ],
+   [
+    0,
+    "També li fa mal el cap?"
+   ],
+   [
+    1,
+    "Una mica, sobretot al vespre. A més, dormo malament."
+   ],
+   [
+    0,
+    "Obri la boca, si us plau. Sí, té el coll molt vermell."
+   ],
+   [
+    1,
+    "És greu? Aquesta setmana he de treballar."
+   ],
+   [
+    0,
+    "No, però necessita descansar. Quedi's a casa tres dies i begui molt de te."
+   ],
+   [
+    1,
+    "Necessito medicaments?"
+   ],
+   [
+    0,
+    "Li faré una recepta de pastilles. Prengui'n una després de cada àpat."
+   ],
+   [
+    1,
+    "Gràcies. He de tornar si no millora?"
+   ],
+   [
+    0,
+    "Sí, torni la setmana que ve si encara té febre."
+   ],
+   [
+    1,
+    "D'acord. Adeu, doctora."
+   ]
+  ],
+  "gloss": {
+   "passa": "(què li passa: what is the matter)",
+   "coll": "throat (mal de coll: a sore throat)",
+   "tos": "cough",
+   "dies": "days",
+   "febre": "fever",
+   "cap": "head",
+   "mal": "pain (fa mal: it hurts)",
+   "sobretot": "especially",
+   "dormo": "I sleep",
+   "boca": "mouth",
+   "vermell": "red",
+   "greu": "serious",
+   "descansar": "to rest",
+   "medicaments": "medicine",
+   "recepta": "prescription",
+   "pastilles": "tablets",
+   "àpat": "meal",
+   "tornar": "to come back",
+   "millora": "gets better"
+  },
+  "questions": [
+   {
+    "q": "Quants dies fa que el pacient té mal de coll?",
+    "a": [
+     "tres",
+     "3"
+    ]
+   },
+   {
+    "q": "De què és la recepta?",
+    "a": [
+     "pastilles"
+    ]
+   }
+  ],
+  "notice": "\"Fa tres dies que\" says how long something has lasted: \"fa tres dies que tinc mal de coll\". \"He de\" plus the infinitive is \"I have to\". Polite commands end in -i: \"obri\", \"begui\", \"torni\"."
  }
 ]

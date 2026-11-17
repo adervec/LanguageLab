@@ -411,5 +411,464 @@
    }
   ],
   "notice": "Polite \"your\" is the ending -nne: \"huoneenne\" (your room), \"avaimenne\" (your key). \"My\" is -ni: \"nimeni\" (my name), \"passini\" (my passport). \"Minulla on\" (at me is) means \"I have\"."
+ },
+ {
+  "id": "fi-family",
+  "title": "Minun perheeni",
+  "level": "A1",
+  "text": "Nimeni on Anna. Asun perheeni kanssa pienessä talossa joen lähellä. Äitini on opettaja, ja isäni on töissä kaupassa. Minulla on veli ja sisko. Veljeni on kymmenen vuotta vanha, ja hän pitää jalkapallosta. Siskoni on vielä pieni: hän on kolme vuotta vanha. Meillä on myös koira, ja sen nimi on Max. Joka aamu isäni käy koiran kanssa kävelyllä. Illalla syömme yhdessä ja puhumme päivästä. Illallisen jälkeen tiskaamme veljeni kanssa astiat. Sunnuntaina isoäitini tulee ja tuo kakun. Rakastan perhettäni hyvin paljon.",
+  "gloss": {
+   "perheeni": "my family",
+   "talossa": "in a house",
+   "joen": "of the river",
+   "äitini": "my mother",
+   "opettaja": "teacher",
+   "isäni": "my father",
+   "kaupassa": "in a shop",
+   "veli": "brother",
+   "sisko": "sister",
+   "vuotta": "years",
+   "jalkapallosta": "football",
+   "pieni": "small",
+   "koira": "dog",
+   "aamu": "morning",
+   "kävelyllä": "on a walk",
+   "illalla": "in the evening",
+   "syömme": "we eat",
+   "yhdessä": "together",
+   "illallisen": "dinner",
+   "astiat": "dishes",
+   "sunnuntaina": "on Sunday",
+   "isoäitini": "my grandmother",
+   "kakun": "cake"
+  },
+  "questions": [
+   {
+    "q": "Missä isä on töissä?",
+    "a": [
+     "kaupa"
+    ]
+   },
+   {
+    "q": "Kuinka vanha veli on?",
+    "a": [
+     "kymmenen",
+     "10"
+    ]
+   },
+   {
+    "q": "Kuka tulee sunnuntaina?",
+    "a": [
+     "isoäi"
+    ]
+   }
+  ],
+  "notice": "Finnish has no \"have\": \"Minulla on veli\" is \"on me is a brother\". Endings do the work of small words: \"talossa\" (in a house), \"kaupassa\" (in a shop), and \"-ni\" is \"my\": \"äitini\", \"veljeni\".",
+  "back": [
+   [
+    "Äitini on opettaja, ja isäni on töissä kaupassa.",
+    "My mother is a teacher and my father works in a shop."
+   ],
+   [
+    "Sunnuntaina isoäitini tulee ja tuo kakun.",
+    "On Sunday my grandmother comes and brings a cake."
+   ]
+  ]
+ },
+ {
+  "id": "fi-town",
+  "title": "Meidän kaupunkimme",
+  "level": "A1",
+  "text": "Meidän kaupunkimme on pieni mutta kaunis. Keskustassa on vanha tori, jolla on suihkulähde. Torin vieressä on koulu, apteekki ja kaksi kahvilaa. Asema on puiston takana. Joka aamu moni ihminen matkustaa junalla suureen kaupunkiin. Iltapäivällä lapset leikkivät puistossa, ja vanhat miehet pelaavat shakkia. Kesällä tulee turisteja, ja he ottavat kuvia sillasta. Talvella kaupunki on hiljainen. Lauantaisin torilla on markkinat. Sieltä voi ostaa vihanneksia, hunajaa ja kukkia. Illalla kävelen mielelläni joen rannalla. En halua asua suuressa kaupungissa.",
+  "gloss": {
+   "kaupunkimme": "our town",
+   "kaunis": "beautiful",
+   "keskustassa": "in the centre",
+   "tori": "square, market place",
+   "suihkulähde": "fountain",
+   "koulu": "school",
+   "apteekki": "pharmacy",
+   "asema": "station",
+   "takana": "behind",
+   "puiston": "of the park",
+   "junalla": "by train",
+   "iltapäivällä": "in the afternoon",
+   "lapset": "children",
+   "shakkia": "chess",
+   "kesällä": "in summer",
+   "turisteja": "tourists",
+   "sillasta": "of the bridge",
+   "talvella": "in winter",
+   "hiljainen": "quiet",
+   "lauantaisin": "on Saturdays",
+   "vihanneksia": "vegetables",
+   "hunajaa": "honey",
+   "kukkia": "flowers",
+   "joen": "of the river"
+  },
+  "questions": [
+   {
+    "q": "Mitä kaupungin keskustassa on?",
+    "a": [
+     "tori"
+    ]
+   },
+   {
+    "q": "Missä asema on?",
+    "a": [
+     "puisto"
+    ]
+   },
+   {
+    "q": "Milloin turisteja tulee?",
+    "a": [
+     "kesällä",
+     "kesä"
+    ]
+   }
+  ],
+  "notice": "Finnish has no \"the\" or \"a\" and no word for \"in\": the ending -ssa or -ssä means in (\"puistossa\", \"keskustassa\"), -lla or -llä means on or at (\"torilla\"), and also when: \"kesällä\" (in summer), \"illalla\" (in the evening).",
+  "back": [
+   [
+    "Asema on puiston takana.",
+    "The station is behind the park."
+   ],
+   [
+    "Talvella kaupunki on hiljainen.",
+    "In winter the town is quiet."
+   ]
+  ]
+ },
+ {
+  "id": "fi-birthday",
+  "title": "Isoäidin syntymäpäivä",
+  "level": "A2",
+  "text": "Eilen oli isoäitini syntymäpäivä. Hän on nyt kahdeksankymmentä vuotta vanha. Koko perhe tuli hänen taloonsa kylään. Tätini leipoi suuren kakun, ja setäni toi kukkia. Annoimme hänelle lämpimän kaulahuivin ja kirjan puutarhoista. Ennen lounasta lauloimme laulun, ja isoäiti nauroi. Pöydässä oli keittoa, kanaa ja perunoita sekä paljon salaattia. Lounaan jälkeen hän näytti meille vanhoja valokuvia. Yhdessä kuvassa hän oli nuori nainen polkupyörän kanssa. Hän kertoi, että hän ajoi sillä töihin joka päivä. Sitten serkkuni soitti kitaraa, ja kaikki tanssivat. Jopa pikkuveljeni tanssi isoäidin kanssa. Illalla hän oli väsynyt mutta onnellinen. Hän sanoi, että se oli hänen elämänsä paras syntymäpäivä. Lähdimme kotiin myöhään, kun tähdet olivat jo taivaalla.",
+  "gloss": {
+   "eilen": "yesterday",
+   "syntymäpäivä": "birthday",
+   "kahdeksankymmentä": "eighty",
+   "koko": "whole",
+   "kylään": "to the village",
+   "tätini": "my aunt",
+   "leipoi": "baked",
+   "setäni": "my uncle (father's brother)",
+   "kukkia": "flowers",
+   "annoimme": "we gave",
+   "kaulahuivin": "scarf",
+   "puutarhoista": "about gardens",
+   "lauloimme": "we sang",
+   "laulun": "song",
+   "nauroi": "laughed",
+   "kanaa": "chicken",
+   "perunoita": "potatoes",
+   "näytti": "showed",
+   "nuori": "young",
+   "polkupyörän": "bicycle",
+   "serkkuni": "my cousin",
+   "kitaraa": "guitar",
+   "tanssivat": "danced",
+   "väsynyt": "tired",
+   "paras": "best",
+   "elämänsä": "of her life",
+   "tähdet": "stars"
+  },
+  "questions": [
+   {
+    "q": "Kuinka vanha isoäiti on?",
+    "a": [
+     "kahdeksankymmentä",
+     "80"
+    ]
+   },
+   {
+    "q": "Kuka toi kukkia?",
+    "a": [
+     "setä"
+    ]
+   },
+   {
+    "q": "Mitä serkku soitti?",
+    "a": [
+     "kitara"
+    ]
+   }
+  ],
+  "notice": "The past is marked by -i-: \"leipoi\" (baked), \"toi\" (brought), \"lauloimme\" (we sang), \"tanssivat\" (they danced). An amount that is not counted takes the partitive: \"kukkia\" (flowers), \"keittoa\" (soup).",
+  "back": [
+   [
+    "Tätini leipoi suuren kakun, ja setäni toi kukkia.",
+    "My aunt baked a big cake and my uncle brought flowers."
+   ],
+   [
+    "Lounaan jälkeen hän näytti meille vanhoja valokuvia.",
+    "After lunch she showed us old photos."
+   ]
+  ]
+ },
+ {
+  "id": "fi-wallet",
+  "title": "Kadonnut lompakko",
+  "level": "B1",
+  "text": "Viime perjantaina Daniel halusi maksaa supermarketissa, mutta lompakko ei ollut hänen taskussaan. Hän oli hyvin huolissaan, koska lompakossa olivat hänen pankkikorttinsa ja ajokorttinsa. Hän jätti ostokset kassalle ja palasi samaa tietä takaisin. Hän etsi kaikkialta, jalkakäytävältä ja bussipysäkiltä, mutta ei löytänyt mitään. Kotona hän soitti pankkiin ja sulki kortin. Sinä yönä hän ei saanut unta, koska hän ajatteli kaikkia papereitaan. Kahden päivän kuluttua poliisilta tuli kirje. Eräs nainen oli löytänyt lompakon bussista ja vienyt sen poliisiasemalle. Daniel lähti sinne heti. Mitään ei puuttunut, eivät edes rahat. Poliisi antoi hänelle naisen osoitteen, koska Daniel halusi kiittää häntä. Seuraavana päivänä hän osti kukkia ja kirjoitti naiselle kortin. Nainen yllättyi ja kutsui hänet kahville. He juttelivat tunnin, ja nyt he ovat hyviä ystäviä. Siitä lähtien Daniel tarkistaa aina taskunsa, ennen kuin hän jää pois bussista.",
+  "gloss": {
+   "perjantaina": "on Friday",
+   "maksaa": "pay",
+   "supermarketissa": "supermarket",
+   "lompakko": "wallet",
+   "taskussaan": "in his pocket",
+   "huolissaan": "worried",
+   "pankkikorttinsa": "his bank card",
+   "ajokorttinsa": "his driving licence",
+   "ostokset": "shopping",
+   "kassalle": "at the till",
+   "samaa": "same",
+   "kaikkialta": "everywhere",
+   "jalkakäytävältä": "pavement",
+   "bussipysäkiltä": "bus stop",
+   "löytänyt": "found",
+   "sulki": "closed, blocked",
+   "papereitaan": "his papers",
+   "kirje": "letter",
+   "poliisilta": "from the police",
+   "puuttunut": "been missing",
+   "rahat": "money",
+   "osoitteen": "address",
+   "kiittää": "thank",
+   "yllättyi": "was surprised",
+   "kutsui": "invited",
+   "tarkistaa": "checks",
+   "jää": "(jää pois: gets off)"
+  },
+  "questions": [
+   {
+    "q": "Mikä ei ollut Danielin taskussa?",
+    "a": [
+     "lompak"
+    ]
+   },
+   {
+    "q": "Mistä nainen oli löytänyt lompakon?",
+    "a": [
+     "buss"
+    ]
+   },
+   {
+    "q": "Mitä Daniel osti?",
+    "a": [
+     "kukkia",
+     "kukk"
+    ]
+   }
+  ],
+  "notice": "The Finnish \"not\" is a verb that takes the person: \"ei ollut\" (was not), \"ei löytänyt\" (did not find), \"eivät\" for \"they\". \"Had found\" is \"oli löytänyt\". Where from is the ending -sta or -lta: \"bussista\", \"poliisilta\".",
+  "back": [
+   [
+    "Hän etsi kaikkialta, jalkakäytävältä ja bussipysäkiltä, mutta ei löytänyt mitään.",
+    "He looked everywhere, on the pavement and at the bus stop, but he found nothing."
+   ],
+   [
+    "Eräs nainen oli löytänyt lompakon bussista ja vienyt sen poliisiasemalle.",
+    "A woman had found the wallet on the bus and had taken it to the police station."
+   ]
+  ]
+ },
+ {
+  "id": "fi-station",
+  "title": "Asemalla",
+  "level": "A2",
+  "roles": [
+   "Lipunmyyjä",
+   "Matkustaja"
+  ],
+  "lines": [
+   [
+    0,
+    "Hyvää huomenta. Kuinka voin auttaa?"
+   ],
+   [
+    1,
+    "Hyvää huomenta. Haluaisin lipun Poriin, kiitos."
+   ],
+   [
+    0,
+    "Menolippu vai meno-paluu?"
+   ],
+   [
+    1,
+    "Meno-paluu, kiitos. Milloin seuraava juna lähtee?"
+   ],
+   [
+    0,
+    "Varttia yli kymmenen, raiteelta kolme."
+   ],
+   [
+    1,
+    "Kuinka kauan matka kestää?"
+   ],
+   [
+    0,
+    "Noin kolme tuntia. Sinun täytyy vaihtaa junaa Tampereella."
+   ],
+   [
+    1,
+    "Kuinka paljon aikaa minulla on siellä?"
+   ],
+   [
+    0,
+    "Kaksikymmentä minuuttia. Se riittää."
+   ],
+   [
+    1,
+    "Hyvä. Paljonko lippu maksaa?"
+   ],
+   [
+    0,
+    "Kolmekymmentäneljä euroa. Haluatko maksaa kortilla?"
+   ],
+   [
+    1,
+    "Kyllä, kortilla. Kiitos paljon!"
+   ]
+  ],
+  "gloss": {
+   "auttaa": "help",
+   "lipun": "ticket",
+   "menolippu": "a one-way ticket",
+   "paluu": "return (meno-paluu: there and back)",
+   "seuraava": "next",
+   "juna": "train",
+   "lähtee": "leave",
+   "raiteelta": "from track, from platform",
+   "matka": "journey",
+   "tuntia": "hours",
+   "vaihtaa": "change",
+   "aikaa": "time",
+   "minuuttia": "minutes",
+   "riittää": "is enough",
+   "maksaa": "costs; to pay",
+   "kortilla": "by card"
+  },
+  "questions": [
+   {
+    "q": "Miltä raiteelta juna lähtee?",
+    "a": [
+     "kolme",
+     "3"
+    ]
+   },
+   {
+    "q": "Miten matkustaja maksaa?",
+    "a": [
+     "korti"
+    ]
+   }
+  ],
+  "notice": "Finnish says \"sinä\" to almost everyone, also to a stranger: \"haluatko\", \"sinun täytyy\". \"Where to\" is an ending: \"Poriin\" (to Pori); \"where\" is another: \"Tampereella\" (in Tampere). \"Haluaisin\" is the polite \"I would like\"."
+ },
+ {
+  "id": "fi-doctor",
+  "title": "Lääkärissä",
+  "level": "B1",
+  "roles": [
+   "Lääkäri",
+   "Potilas"
+  ],
+  "lines": [
+   [
+    0,
+    "Hyvää huomenta. Mikä sinua vaivaa?"
+   ],
+   [
+    1,
+    "Hyvää huomenta. Kurkkuni on ollut kipeä kolme päivää, ja minulla on yskä."
+   ],
+   [
+    0,
+    "Onko sinulla myös kuumetta?"
+   ],
+   [
+    1,
+    "On, eilen illalla se oli kolmekymmentäkahdeksan ja puoli."
+   ],
+   [
+    0,
+    "Onko sinulla myös päänsärkyä?"
+   ],
+   [
+    1,
+    "Vähän, varsinkin iltaisin. Nukun myös huonosti."
+   ],
+   [
+    0,
+    "Avaa suusi, ole hyvä. Kyllä, kurkkusi on hyvin punainen."
+   ],
+   [
+    1,
+    "Onko se vakavaa? Minun täytyy tehdä töitä tällä viikolla."
+   ],
+   [
+    0,
+    "Ei, mutta tarvitset lepoa. Pysy kotona kolme päivää ja juo paljon teetä."
+   ],
+   [
+    1,
+    "Tarvitsenko lääkettä?"
+   ],
+   [
+    0,
+    "Määrään sinulle tabletteja. Ota yksi jokaisen aterian jälkeen."
+   ],
+   [
+    1,
+    "Kiitos. Tulenko uudestaan, jos olo ei parane?"
+   ],
+   [
+    0,
+    "Kyllä, tule ensi viikolla uudestaan, jos sinulla on vielä kuumetta."
+   ],
+   [
+    1,
+    "Selvä. Näkemiin."
+   ]
+  ],
+  "gloss": {
+   "vaivaa": "troubles (mikä sinua vaivaa: what is the problem)",
+   "kurkkuni": "my throat",
+   "yskä": "cough",
+   "päivää": "days",
+   "kuumetta": "fever",
+   "päänsärkyä": "a headache",
+   "kipeä": "sore",
+   "varsinkin": "especially",
+   "nukun": "I sleep",
+   "suusi": "your mouth",
+   "punainen": "red",
+   "vakavaa": "serious",
+   "lepoa": "rest",
+   "pysy": "stay",
+   "lääkettä": "medicine",
+   "määrään": "I prescribe",
+   "tabletteja": "tablets",
+   "aterian": "meal",
+   "uudestaan": "again",
+   "parane": "get better"
+  },
+  "questions": [
+   {
+    "q": "Kuinka monta päivää potilaan kurkku on ollut kipeä?",
+    "a": [
+     "kolme",
+     "3"
+    ]
+   },
+   {
+    "q": "Mitä lääkäri määrää?",
+    "a": [
+     "tablet"
+    ]
+   }
+  ],
+  "notice": "\"I have\" is \"minulla on\": \"minulla on yskä\" (I have a cough), \"onko sinulla kuumetta?\". \"-ni\" is my and \"-si\" is your: \"kurkkuni\", \"suusi\". A command is the bare stem: \"avaa\", \"pysy\", \"juo\", \"ota\"."
  }
 ]

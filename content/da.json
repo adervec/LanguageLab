@@ -410,5 +410,462 @@
    }
   ],
   "notice": "Danish has two words for \"a\", \"en\" and \"et\", and the same letters go on the end for \"the\": \"en elevator\", \"elevatoren\"; \"et værelse\", \"værelset\". \"Jeg hedder\" means \"my name is\"."
+ },
+ {
+  "id": "da-family",
+  "title": "Min familie",
+  "level": "A1",
+  "text": "Jeg hedder Anna. Jeg bor sammen med min familie i et lille hus ved åen. Min mor er lærer, og min far arbejder i en butik. Jeg har en bror og en søster. Min bror er ti år gammel, og han kan godt lide fodbold. Min søster er stadig lille: hun er tre år. Vi har også en hund, og han hedder Max. Hver morgen går min far tur med hunden. Om aftenen spiser vi sammen og taler om dagen. Efter aftensmaden vasker min bror og jeg op. Om søndagen kommer min bedstemor og har en kage med. Jeg elsker min familie meget højt.",
+  "gloss": {
+   "familie": "family",
+   "hus": "house",
+   "åen": "the stream, the river",
+   "mor": "mother",
+   "lærer": "teacher",
+   "far": "father",
+   "butik": "shop",
+   "bror": "brother",
+   "søster": "sister",
+   "år": "years",
+   "fodbold": "football",
+   "lille": "small",
+   "hund": "dog",
+   "morgen": "morning",
+   "tur": "walk",
+   "aftenen": "evening",
+   "spiser": "eat",
+   "sammen": "together",
+   "aftensmaden": "dinner",
+   "vasker": "(vasker op: wash the dishes)",
+   "søndagen": "Sunday",
+   "bedstemor": "grandmother",
+   "kage": "cake"
+  },
+  "questions": [
+   {
+    "q": "Hvor arbejder faren?",
+    "a": [
+     "butik"
+    ]
+   },
+   {
+    "q": "Hvor gammel er broren?",
+    "a": [
+     "ti",
+     "10"
+    ]
+   },
+   {
+    "q": "Hvem kommer om søndagen?",
+    "a": [
+     "bedstemor"
+    ]
+   }
+  ],
+  "notice": "After a time expression the verb comes before the subject: \"Hver morgen går min far tur\", \"Om aftenen spiser vi\". \"Kan godt lide\" is how Danish says \"likes\".",
+  "back": [
+   [
+    "Min mor er lærer, og min far arbejder i en butik.",
+    "My mother is a teacher and my father works in a shop."
+   ],
+   [
+    "Om søndagen kommer min bedstemor og har en kage med.",
+    "On Sunday my grandmother comes and brings a cake."
+   ]
+  ]
+ },
+ {
+  "id": "da-town",
+  "title": "Vores by",
+  "level": "A1",
+  "text": "Vores by er lille, men den er smuk. I centrum ligger der et gammelt torv med et springvand. Ved siden af torvet ligger en skole, et apotek og to caféer. Stationen ligger bag parken. Hver morgen tager mange mennesker toget til storbyen. Om eftermiddagen leger børnene i parken, og gamle mænd spiller skak. Om sommeren kommer turisterne og tager billeder af broen. Om vinteren er byen stille. Om lørdagen er der marked på torvet. Der kan man købe grøntsager, honning og blomster. Om aftenen kan jeg godt lide at gå tur langs åen. Jeg vil ikke bo i en stor by.",
+  "gloss": {
+   "by": "town",
+   "smuk": "beautiful",
+   "centrum": "centre",
+   "torv": "square",
+   "springvand": "fountain",
+   "skole": "school",
+   "apotek": "pharmacy",
+   "stationen": "station",
+   "bag": "behind",
+   "parken": "park",
+   "toget": "train",
+   "eftermiddagen": "afternoon",
+   "børnene": "children",
+   "skak": "chess",
+   "sommeren": "summer",
+   "turisterne": "tourists",
+   "broen": "bridge",
+   "vinteren": "winter",
+   "stille": "quiet",
+   "lørdagen": "Saturday",
+   "grøntsager": "vegetables",
+   "honning": "honey",
+   "blomster": "flowers",
+   "åen": "the stream, the river"
+  },
+  "questions": [
+   {
+    "q": "Hvad ligger der i centrum af byen?",
+    "a": [
+     "torv"
+    ]
+   },
+   {
+    "q": "Hvor ligger stationen?",
+    "a": [
+     "park"
+    ]
+   },
+   {
+    "q": "Hvornår kommer turisterne?",
+    "a": [
+     "sommer"
+    ]
+   }
+  ],
+  "notice": "\"The\" is an ending: \"byen\" (the town), \"torvet\" (the square), \"børnene\" (the children). Times of day and seasons take \"om\": \"om aftenen\", \"om sommeren\". \"Der er\" means \"there is\".",
+  "back": [
+   [
+    "Stationen ligger bag parken.",
+    "The station is behind the park."
+   ],
+   [
+    "Om vinteren er byen stille.",
+    "In winter the town is quiet."
+   ]
+  ]
+ },
+ {
+  "id": "da-birthday",
+  "title": "Bedstemors fødselsdag",
+  "level": "A2",
+  "text": "I går havde min bedstemor fødselsdag. Hun er firs år nu. Hele familien kom til hendes hus i landsbyen. Min tante bagte en stor kage, og min onkel havde blomster med. Vi gav hende et varmt halstørklæde og en bog om haver. Før frokost sang vi en sang, og bedstemor lo. På bordet stod der suppe, kylling med kartofler og en masse salat. Efter frokost viste hun os gamle billeder. På et af billederne var hun en ung kvinde med en cykel. Hun fortalte, at hun cyklede på arbejde hver dag. Så spillede min fætter guitar, og alle dansede. Selv min lillebror dansede med bedstemor. Om aftenen var hun træt, men glad. Hun sagde, at det var den bedste fødselsdag i hendes liv. Vi tog sent hjem, da stjernerne allerede var på himlen.",
+  "gloss": {
+   "går": "(i går: yesterday)",
+   "fødselsdag": "birthday",
+   "firs": "eighty",
+   "hele": "whole",
+   "landsbyen": "village",
+   "tante": "aunt",
+   "bagte": "baked",
+   "onkel": "uncle",
+   "blomster": "flowers",
+   "gav": "gave",
+   "halstørklæde": "scarf",
+   "haver": "gardens",
+   "sang": "sang; a song",
+   "lo": "laughed",
+   "kylling": "chicken",
+   "kartofler": "potatoes",
+   "viste": "showed",
+   "ung": "young",
+   "cykel": "bicycle",
+   "fætter": "cousin",
+   "guitar": "guitar",
+   "dansede": "danced",
+   "træt": "tired",
+   "bedste": "best",
+   "liv": "life",
+   "stjernerne": "stars"
+  },
+  "questions": [
+   {
+    "q": "Hvor gammel er bedstemoren?",
+    "a": [
+     "firs",
+     "80"
+    ]
+   },
+   {
+    "q": "Hvem havde blomster med?",
+    "a": [
+     "onkel"
+    ]
+   },
+   {
+    "q": "Hvad spillede fætteren?",
+    "a": [
+     "guitar"
+    ]
+   }
+  ],
+  "notice": "The past of most verbs ends in -ede or -te: \"dansede\" (danced), \"spillede\" (played), \"viste\" (showed); some change the vowel: \"sang\", \"kom\", \"gav\". Danish counts in twenties: \"firs\" is eighty (four twenties).",
+  "back": [
+   [
+    "Min tante bagte en stor kage, og min onkel havde blomster med.",
+    "My aunt baked a big cake and my uncle brought flowers."
+   ],
+   [
+    "Efter frokost viste hun os gamle billeder.",
+    "After lunch she showed us old photos."
+   ]
+  ]
+ },
+ {
+  "id": "da-wallet",
+  "title": "Den tabte pung",
+  "level": "B1",
+  "text": "Sidste fredag ville Daniel betale i supermarkedet, men pungen var ikke i lommen. Han blev meget bekymret, for både hans bankkort og hans kørekort lå i den. Han lod varerne stå ved kassen og gik den samme vej tilbage. Han ledte overalt, på fortovet og ved busstoppestedet, men han fandt ingenting. Hjemme ringede han til banken og spærrede kortet. Den nat kunne han ikke sove, fordi han tænkte på alle sine papirer. To dage senere kom der et brev fra politiet. En kvinde havde fundet pungen i bussen og afleveret den på politistationen. Daniel tog derhen med det samme. Der manglede ingenting, ikke engang pengene. Betjenten gav ham kvindens adresse, fordi han ville takke hende. Næste dag købte han blomster og skrev et kort til hende. Hun blev overrasket og inviterede ham på kaffe. De talte sammen i en time, og nu er de gode venner. Siden da tjekker Daniel altid lommen, før han står af bussen.",
+  "gloss": {
+   "fredag": "Friday",
+   "betale": "pay",
+   "supermarkedet": "supermarket",
+   "pungen": "wallet",
+   "lommen": "pocket",
+   "bekymret": "worried",
+   "bankkort": "bank card",
+   "kørekort": "driving licence",
+   "varerne": "the goods",
+   "kassen": "till",
+   "samme": "same",
+   "overalt": "everywhere",
+   "fortovet": "pavement",
+   "busstoppestedet": "bus stop",
+   "fandt": "found",
+   "spærrede": "blocked",
+   "papirer": "papers",
+   "brev": "letter",
+   "politiet": "police",
+   "manglede": "was missing",
+   "pengene": "money",
+   "adresse": "address",
+   "takke": "thank",
+   "overrasket": "surprised",
+   "inviterede": "invited",
+   "tjekker": "checks",
+   "af": "off (står af: gets off)"
+  },
+  "questions": [
+   {
+    "q": "Hvad var ikke i Daniels lomme?",
+    "a": [
+     "pung"
+    ]
+   },
+   {
+    "q": "Hvor havde kvinden fundet pungen?",
+    "a": [
+     "buss"
+    ]
+   },
+   {
+    "q": "Hvad købte Daniel?",
+    "a": [
+     "blomster"
+    ]
+   }
+  ],
+  "notice": "\"Had found\" is \"havde fundet\": \"havde\" plus the participle. When a sentence starts with something other than the subject, the verb still comes second: \"Hjemme ringede han\", \"Næste dag købte han blomster\".",
+  "back": [
+   [
+    "Han ledte overalt, på fortovet og ved busstoppestedet, men han fandt ingenting.",
+    "He looked everywhere, on the pavement and at the bus stop, but he found nothing."
+   ],
+   [
+    "En kvinde havde fundet pungen i bussen og afleveret den på politistationen.",
+    "A woman had found the wallet on the bus and had taken it to the police station."
+   ]
+  ]
+ },
+ {
+  "id": "da-station",
+  "title": "På stationen",
+  "level": "A2",
+  "roles": [
+   "Billetsælger",
+   "Rejsende"
+  ],
+  "lines": [
+   [
+    0,
+    "Godmorgen. Hvad kan jeg hjælpe med?"
+   ],
+   [
+    1,
+    "Godmorgen. Jeg vil gerne have en billet til Svendborg, tak."
+   ],
+   [
+    0,
+    "Enkelt eller retur?"
+   ],
+   [
+    1,
+    "Retur, tak. Hvornår kører det næste tog?"
+   ],
+   [
+    0,
+    "Kvart over ti, fra spor tre."
+   ],
+   [
+    1,
+    "Hvor lang tid tager rejsen?"
+   ],
+   [
+    0,
+    "Cirka to timer. Du skal skifte tog i Odense."
+   ],
+   [
+    1,
+    "Hvor lang tid har jeg der?"
+   ],
+   [
+    0,
+    "Tyve minutter. Det er nok."
+   ],
+   [
+    1,
+    "Godt. Hvad koster billetten?"
+   ],
+   [
+    0,
+    "Tre hundrede kroner. Vil du betale med kort?"
+   ],
+   [
+    1,
+    "Ja, med kort. Mange tak!"
+   ]
+  ],
+  "gloss": {
+   "hjælpe": "help",
+   "billet": "ticket",
+   "enkelt": "single, one way",
+   "retur": "return",
+   "næste": "next",
+   "tog": "train",
+   "kører": "runs, leaves",
+   "spor": "track, platform",
+   "rejsen": "journey",
+   "timer": "hours",
+   "skifte": "change",
+   "tid": "time",
+   "minutter": "minutes",
+   "nok": "enough",
+   "koster": "cost",
+   "betale": "pay",
+   "kort": "card"
+  },
+  "questions": [
+   {
+    "q": "Fra hvilket spor kører toget?",
+    "a": [
+     "tre",
+     "3"
+    ]
+   },
+   {
+    "q": "Hvordan betaler den rejsende?",
+    "a": [
+     "kort"
+    ]
+   }
+  ],
+  "notice": "Danish says \"du\" to everyone, also to a stranger. \"Jeg vil gerne have\" is the polite \"I would like\". \"Skal\" is \"have to\": \"Du skal skifte tog\"."
+ },
+ {
+  "id": "da-doctor",
+  "title": "Hos lægen",
+  "level": "B1",
+  "roles": [
+   "Læge",
+   "Patient"
+  ],
+  "lines": [
+   [
+    0,
+    "Godmorgen. Hvad er der i vejen?"
+   ],
+   [
+    1,
+    "Godmorgen. Jeg har haft ondt i halsen og hostet i tre dage."
+   ],
+   [
+    0,
+    "Har du også feber?"
+   ],
+   [
+    1,
+    "Ja, i går aftes var den otteogtredive en halv."
+   ],
+   [
+    0,
+    "Har du også ondt i hovedet?"
+   ],
+   [
+    1,
+    "Lidt, især om aftenen. Jeg sover også dårligt."
+   ],
+   [
+    0,
+    "Luk munden op, tak. Ja, halsen er meget rød."
+   ],
+   [
+    1,
+    "Er det alvorligt? Jeg skal arbejde i denne uge."
+   ],
+   [
+    0,
+    "Nej, men du har brug for hvile. Bliv hjemme i tre dage, og drik meget te."
+   ],
+   [
+    1,
+    "Skal jeg have medicin?"
+   ],
+   [
+    0,
+    "Jeg giver dig en recept på tabletter. Tag én efter hvert måltid."
+   ],
+   [
+    1,
+    "Tak. Skal jeg komme igen, hvis det ikke bliver bedre?"
+   ],
+   [
+    0,
+    "Ja, kom igen i næste uge, hvis du stadig har feber."
+   ],
+   [
+    1,
+    "Fint. Farvel og tak."
+   ]
+  ],
+  "gloss": {
+   "vejen": "(hvad er der i vejen: what is the problem)",
+   "halsen": "the throat (ondt i halsen: a sore throat)",
+   "hostet": "coughed",
+   "dage": "days",
+   "feber": "fever",
+   "hovedet": "head",
+   "ondt": "pain (har ondt: it hurts)",
+   "især": "especially",
+   "sover": "sleep",
+   "munden": "mouth",
+   "rød": "red",
+   "alvorligt": "serious",
+   "hvile": "rest",
+   "bliv": "stay",
+   "medicin": "medicine",
+   "recept": "prescription",
+   "tabletter": "tablets",
+   "måltid": "meal",
+   "igen": "again (komme igen: come back)",
+   "bedre": "better"
+  },
+  "questions": [
+   {
+    "q": "Hvor mange dage har patienten haft ondt i halsen?",
+    "a": [
+     "tre",
+     "3"
+    ]
+   },
+   {
+    "q": "Hvad får patienten recept på?",
+    "a": [
+     "tablet"
+    ]
+   }
+  ],
+  "notice": "\"Ondt i\" says where it hurts: \"ondt i halsen\" (a sore throat), \"ondt i hovedet\" (a headache). A command is the bare verb: \"luk op\", \"bliv\", \"drik\", \"kom\". Numbers put the ones first: \"otteogtredive\" is eight-and-thirty."
  }
 ]
