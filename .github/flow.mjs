@@ -578,6 +578,15 @@ const counted = await main();
 assert.equal((counted.match(/By ear: 1 of 1/g) || []).length, 8);
 assert.match(counted, /By ear: 1 of 1 · Said: understood 0 of 1 · taken for the other word: 1/);
 assert.match(counted, /By ear: 1 of 1 · Said: understood 1 of 1/);
+// find a phrase: the lessons as a phrasebook, searched by a word of either language
+await page.fill('#pq', 'station');
+await page.waitForFunction(() => /Find a phrase[^]*gare[^]*Lesson/.test(document.querySelector('#main').innerText));
+await page.fill('#pq', 'GARE');
+await page.waitForFunction(() => /Find a phrase[^]*station[^]*Lesson/.test(document.querySelector('#main').innerText));
+await fits('the phrases found');
+await page.fill('#pq', 'qqqq');
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('No phrase in the lessons has that.'));
+await page.fill('#pq', '');
 await page.evaluate(() => { self.SpeechSynthesisUtterance = self.realU; delete speechSynthesis.getVoices; delete speechSynthesis.speak; });
 await click('Progress');                                 // the suggestion is still beside its sitting; kept, it becomes a review card
 assert.match(await main(), /read aloud \d+%/);

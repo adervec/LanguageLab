@@ -45,6 +45,7 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   Sounds apart (`pairs`: `[word, another one sound away, what each means]`, for 24 languages) is `vPairs`: each pair once by ear, then,
   where the browser recognises speech, once aloud (`guess3`, `heardAs`: was it the word wanted, the other, or neither). A Japanese pair
   is written in kana for the same reason as the sounds.
+  Find a phrase (`findPhrases`, `#pq`) searches every lesson phrase, its meaning and its reading (accents and case aside) and shows up to twenty.
   Every try at a pair, by ear or aloud, and every try at a sound to notice is counted in `S.langs[code].alone[word]` =
   `[times heard, picked rightly, times said, understood, only a second guess, taken for the other word of its pair, when]`
   (`C.aloneAdd`). First steps shows the count beside the sound or the pair (`aloneNote`); Progress shows the totals and the words

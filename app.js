@@ -533,6 +533,10 @@ const saidAlone = (word, got) => { const other = pairOf(word), how = heardAs(wor
 const aloneNote = words => { const recs = words.map(w => L().alone[w]).filter(Boolean), n = k => recs.reduce((s, r) => s + r[k], 0), other = words.length === 1 ? pairOf(words[0]) : '';
   return [n(0) ? t('By ear: {right} of {n}', { right: nf(n(1)), n: nf(n(0)) }) : '', n(2) ? t('Said: understood {hit} of {n}', { hit: nf(n(3)), n: nf(n(2)) }) : '',
     n(5) ? other ? t('taken for “{word}”: {n}', { word: other, n: nf(n(5)) }) : t('taken for the other word: {n}', { n: nf(n(5)) }) : ''].filter(Boolean).join(' · '); };
+// The lessons as a phrasebook: every phrase whose words, meaning or reading hold what was typed (accents and case aside), twenty at most.
+let phraseQuery = '';
+const fold = s => String(s || '').normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
+const findPhrases = (ls, q) => q.length < 2 ? [] : ls.flatMap((s, i) => s.back.filter(b => b.some(x => fold(x).includes(q))).map(b => [b, i + 1])).slice(0, 20);
 let tenOpen = -1; // which ten of the first lessons is open on the First steps screen: -1 the ten with the next lesson to do, -2 none
 const openTen = ls => tenOpen === -1 ? Math.floor(Math.max(0, ls.findIndex(x => !x.readAt)) / 10) : tenOpen;
 const sndTry = {}; // a "sound to notice" said aloud: language:word -> { state: 'hit' | 'near' | 'miss', heard } (kept for the visit only)
@@ -1031,7 +1035,7 @@ function vFirst() {
         : H`<p><input type="text" id="ans" inputmode="${quiz.ear ? 'numeric' : 'text'}" autocomplete="off" autocapitalize="off" spellcheck="false" data-enter="qzcheck" aria-label="${ask}" placeholder="${ask}" data-focus></p>
         <p><button class="primary" data-act="qzcheck">${t('Check')}</button></p>`}
       <div class="bar"><button data-act="qzend">${t('Stop')}</button></div>`}`; }
-  const next = ls.find(x => !x.readAt), ten = openTen(ls);
+  const next = ls.find(x => !x.readAt), ten = openTen(ls), pq = fold(phraseQuery.trim()), found = findPhrases(ls, pq);
   return H`<h1>${t('First steps')} <span class="sub">${lang().name}</span></h1>
   ${ls.length ? H`<p class="sub">${t('Short lessons of everyday phrases, starting from nothing. You hear each phrase, write it and say it; then the phrases come back in your review.')}</p>
     ${Array.from({ length: Math.ceil(ls.length / 10) }, (_, g) => { const part = ls.slice(g * 10, g * 10 + 10), a = g * 10 + 1, b = g * 10 + part.length, open = ls.length <= 10 || g === ten;
@@ -1041,6 +1045,11 @@ function vFirst() {
         <div class="row acts"><button class="${s === next ? 'primary' : ''}" data-act="start" data-id="${s.id}">${s.readAt ? t('Do it again') : t('Start')}</button></div></div>`) : ''}`; })}
     <p class="sub">${t('More lessons: with AI cowork (Settings) your own AI agent writes the next ones, when your level is A1 and fewer than three are left to do.')}</p>`
     : H`<p>${t('This language has no first lessons of its own. With AI cowork (Settings) your own AI agent writes them while your level is A1. It also works with your own texts.')}</p>`}
+  ${ls.length ? H`<h2>${t('Find a phrase')}</h2>
+    <p><input type="search" id="pq" value="${phraseQuery}" data-input="pq" placeholder="${t('A word, in {language} or in your own language', { language: langName() })}" aria-label="${t('Find a phrase')}"></p>
+    ${found.length ? H`<div class="card">${found.map(([b, n]) => H`<div class="ph"><button class="mini" data-act="sayx" data-x="${b[0]}" aria-label="${t('Hear it')}">▶</button>
+      <div class="grow"><b lang="${S.lang}">${b[0]}</b>${b[2] ? H`<span class="sub">${b[2]}</span>` : ''}<span class="sub">${b[1]} · ${t('Lesson {a}', { a: n })}</span></div></div>`)}</div>`
+      : pq.length >= 2 ? H`<p class="sub" role="status">${t('No phrase in the lessons has that.')}</p>` : ''}` : ''}
   ${abc.length ? H`<h2>${t('Letters')}</h2><p class="sub">${t('Tap a letter to hear it. Then practise: you see a letter and type how it sounds.')}</p>
     ${abc.map(([name, src], n) => H`<div class="card"><div class="row"><b class="grow">${t(String(name))}</b><button data-act="quiz" data-i="${n}">${t('Practise')}</button></div>
       <div class="abc">${C.chartPairs(src).map(([ch, r]) => H`<button data-act="sayx" data-x="${ch}"><b lang="${S.lang}">${ch}</b><span class="sub">${r[0]}</span></button>`)}</div></div>`)}` : ''}
@@ -1130,7 +1139,7 @@ const ACT = {
       sit.leaving = true; flash = t('Leave this sitting? It is not saved until you finish it. Tap again to leave.'); return render(true);
     }
     if (radio) endRadio();
-    hush(); sit = rev = quiz = null; confirmErase = false; confirmRemove = ''; view = b.dataset.v; palT0 = Date.now(); tenOpen = -1;
+    hush(); sit = rev = quiz = null; confirmErase = false; confirmRemove = ''; view = b.dataset.v; palT0 = Date.now(); tenOpen = -1; phraseQuery = '';
     if (view === 'chat') { checkModel(); if (chat()?.wait && chatEngine() === 'cowork') pollChat(); }
     render(); scrollTo(0, 0);
   },
@@ -1358,6 +1367,7 @@ const ACT = {
     await kv('readwrite', st => st.put(audio, 'audio:' + id));
     S.stories.push(s); save(); flash = t('Added “{title}”.', { title: s.title }); lib.kind = 'mine'; render();
   },
+  pq(el) { phraseQuery = el.value.slice(0, 60); render(); const box = $('#pq'); box.focus(); box.setSelectionRange(box.value.length, box.value.length); },
   wq(el) { wordQuery = el.value.slice(0, 60); render(); const box = $('#wq'); box.focus(); box.setSelectionRange(box.value.length, box.value.length); },
   gloss(el) { const c = L().cards[el.dataset.k]; if (c) { c.gloss = el.value.trim().slice(0, 120); c.edited = Date.now(); save(); } },
   retire(b) { const k = b.dataset.k, c = L().cards[k]; if (c) { c.retired = Date.now(); L().known[k] = 1; save(); render(); } },
