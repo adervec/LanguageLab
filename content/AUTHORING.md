@@ -115,3 +115,61 @@ A language in a script that is not Latin also needs a reading in Latin letters f
   (the baker, the receptionist) keeps the exchange moving.
 - A real exchange with a small turn: something is out of stock, a misunderstanding, a choice to make.
 - `gloss` 5 to 60 entries, exactly two `questions`, a `notice`: the same rules as for a story.
+
+## The shared twelve (32 languages)
+
+Russian to Thai (see `LANGS`) share twelve texts: a market, a day, a weekend by the sea, a new neighbour, a café and a
+hotel (the first six, ids `<code>-market` ... `<code>-hotel`), and the six below. To add a language, translate these
+sentence for sentence, keep the levels, and write the glosses for the same words. Names and places may be local;
+numbers are written as words; nothing a learner says may depend on whether a man or a woman says it, unless the notice
+gives the other form. In a language written without spaces (Thai) a sentence is one run, sentences are set apart by a
+space, and a gloss sits on a piece the word-cutter really makes.
+
+- **family** (A1, "My family", Anna tells it). My name is Anna. I live with my family in a small house near the river.
+  My mother is a teacher and my father works in a shop. I have a brother and a sister. My brother is ten years old and
+  he likes football. My sister is still small: she is three years old. We also have a dog, and his name is Max. Every
+  morning my father goes for a walk with the dog. In the evening we eat together and talk about the day. After dinner
+  my brother and I wash the dishes. On Sunday my grandmother comes and brings a cake. I love my family very much.
+  Write back: sentences 3 and 11. Questions: where the father works, how old the brother is, who comes on Sunday.
+- **town** (A1, "Our town"). Our town is small, but it is beautiful. In the centre there is an old square with a
+  fountain. Next to the square there are a school, a pharmacy and two cafés. The station is behind the park. Every
+  morning many people take the train to the city. In the afternoon children play in the park, and old men play chess.
+  In summer tourists come and take photos of the bridge. In winter the town is quiet. On Saturday there is a market in
+  the square. There you can buy vegetables, honey and flowers. In the evening I like to walk by the river. I do not
+  want to live in a big city. Write back: sentences 4 and 8. Questions: what is in the centre, where the station is,
+  when the tourists come.
+- **birthday** (A2, "Grandmother's birthday"). Yesterday was my grandmother's birthday. She is eighty years old now.
+  The whole family came to her house in the village. My aunt baked a big cake and my uncle brought flowers. We gave
+  her a warm scarf and a book about gardens. Before lunch we sang a song, and Grandmother laughed. On the table there
+  was soup, chicken with potatoes and a lot of salad. After lunch she showed us old photos. In one photo she was a
+  young woman with a bicycle. She told us that she rode it to work every day. Then my cousin played the guitar and
+  everybody danced. Even my little brother danced with Grandmother. In the evening she was tired but happy. She said
+  that it was the best birthday of her life. We went home late, when the stars were already in the sky. Write back:
+  sentences 4 and 8. Questions: how old she is, who brought flowers, what the cousin played.
+- **wallet** (B1, "The lost wallet"). Last Friday Daniel wanted to pay at the supermarket, but his wallet was not in
+  his pocket. He was very worried, because his bank card and his driving licence were in it. He left his shopping at
+  the till and went back the same way. He looked everywhere, on the pavement and at the bus stop, but he found
+  nothing. At home he called the bank and blocked the card. That night he could not sleep, because he was thinking
+  about all his documents. Two days later a letter from the police arrived. A woman had found the wallet on the bus
+  and had taken it to the police station. Daniel went there immediately. Nothing was missing, not even the money. The
+  police officer gave him the woman's address, because he wanted to thank her. The next day he bought flowers and
+  wrote her a card. She was surprised and invited him for a coffee. They talked for an hour, and now they are good
+  friends. Since then Daniel always checks his pocket before he gets off the bus. Write back: sentences 4 and 8.
+  Questions: what was not in his pocket, where the woman found it, what Daniel bought.
+- **station** (A2 dialogue, the clerk and then the traveller, who is the learner; 12 lines). Good morning. How can I
+  help you? / Good morning. I would like a ticket to X, please. / One way or return? / Return, please. When does the
+  next train leave? / At quarter past ten, from platform three. / How long does the journey take? / About two hours.
+  You have to change in Y. / How much time do I have there? / Twenty minutes. That is enough. / Good. How much does
+  the ticket cost? / Thirty-four euros. Would you like to pay by card? / Yes, by card. Thank you very much!
+  Questions: which platform, how the traveller pays.
+- **doctor** (B1 dialogue, the doctor and then the patient, who is the learner; 14 lines). Good morning. What is the
+  problem? / Good morning, doctor. I have had a sore throat and a cough for three days. / Do you also have a fever? /
+  Yes, last night it was thirty-eight and a half. / Does your head hurt too? / A little, especially in the evening. I
+  also sleep badly. / Open your mouth, please. Yes, your throat is very red. / Is it serious? I have to work this
+  week. / No, but you need rest. Stay at home for three days and drink a lot of tea. / Do I need medicine? / I will
+  give you a prescription for tablets. Take one after every meal. / Thank you. Should I come back if it does not get
+  better? / Yes, come back next week if you still have a fever. / All right. Goodbye, doctor. Questions: for how many
+  days the patient has been ill, what the prescription is for.
+
+The words glossed in each (in English, the same list in every language) are those of any one of these languages'
+files, for example `content/ru.json`.
