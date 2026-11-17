@@ -38,7 +38,7 @@ await page.addInitScript(() => { self.LanguageModel = { availability: async o =>
   // (a third session writes a story when asked: markup in its title, a field nobody asked for)
   const s = { clone: async () => s, destroy() {}, prompt: text => tale ? (self.lmStory = text, Promise.resolve(JSON.stringify({ title: 'Le chat <b>perdu</b>', evil: 1,
       text: 'Claire cherche son chat depuis ce matin.   Elle regarde sous le lit et dans le jardin. Le voisin arrive avec le chat dans les bras. Claire est très contente et elle remercie le voisin. Le soir, le chat dort sur le canapé.' }))) : proof
-    ? Promise.resolve(JSON.stringify({ corrections: text.includes('allé bien') ? [{ wrong: 'je suis allé bien', right: 'je vais bien', why: 'present tense', x: 1 }, { wrong: 'no right form' }, { wrong: 'Je suis', right: 'je suis', why: 'changes nothing' }] : [] }))
+    ? Promise.resolve(JSON.stringify({ corrections: text.includes('va au marché') ? [{ wrong: 'va au marché', right: 'va <i>au</i> marché', why: 'only a test', x: 1 }, { wrong: 'Claire', right: 'Claire' }] : text.includes('allé bien') ? [{ wrong: 'je suis allé bien', right: 'je vais bien', why: 'present tense', x: 1 }, { wrong: 'no right form' }, { wrong: 'Je suis', right: 'je suis', why: 'changes nothing' }] : [] }))
     : text.includes('attends') ? new Promise(() => {}) : Promise.resolve(JSON.stringify(n++ ? { reply: 'Très bien. Et que faites-vous demain ?', evil: '<b>' } : { reply: 'Bonjour ! Comment allez-vous ?' })) };
   return s; } }; });
 // and the folder picker, which only a person can answer: the browser's own private file system is handed over instead. From
@@ -122,6 +122,9 @@ assert.match(done, new RegExp(`${Math.round(100 / total)}%\\s+of the words caugh
 assert.match(done, /8\s+words written/);
 assert.match(done, /100%\s+of the words right when you wrote a sentence back/);
 assert.match(done, /86%\s+of your words understood when you spoke/);
+// the browser's own model reads the retelling a moment later: suggestions, never markup, none that changes nothing
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('Suggestions from the model in your browser'));
+assert.match(await main(), /sometimes wrong: keep only what you are sure of\.\s+va au marché\s*→\s*va <i>au<\/i> marché\s*only a test\s*Keep for review\s+Done$/);
 await click('Done');
 
 assert.match(await main(), /1 item is due/);            // review: accents forgiven, word scheduled
@@ -462,7 +465,11 @@ assert.match(await main(), /Added “Le chat <b>perdu<\/b>”\./, 'a background 
 assert.match(await page.evaluate(() => self.lmStory), /^Write a text of \d+ to \d+ words for a learner at level [ABC][12]: .* Work in these words where they fit naturally: \p{L}/u); // the words in review are named
 assert.equal(await page.locator('.card', { hasText: 'written on this device' }).count(), 1);
 assert.equal(await page.locator('#main b', { hasText: /^perdu$/ }).count(), 0, 'a model\'s title is never markup');
+await click('Progress');                                 // the suggestion is still beside its sitting; kept, it becomes a review card
+await click('Keep for review');
+assert.equal(await page.locator('button', { hasText: 'Keep for review' }).count(), 0);
 await click('Words');
+assert.match(await main(), /va au marché\s*→\s*va <i>au<\/i> marché/);
 assert.match(await main(), /Elle achète du fromage\s*→\s*Elle achète des fromages/);
 await page.locator('summary', { hasText: 'Add a correction from a teacher' }).click();
 await click('Add the correction');

@@ -38,7 +38,7 @@ snapshot). LanguageLab is ahead in some rows and behind in others.
 | What you produce | Varies by exercise: word banks, matching, short typed and spoken answers | Speaking and choosing, without translation | Short phrases and chatbot replies | Typed dictation, sentences written back from their meaning, role-play from memory, and a free retelling in every sitting |
 | Your own material | No | No | No | Any text; any recording with its subtitles |
 | Something new to read | New lessons as the course goes on | The course | The course and a daily lesson | A new text on request, written on your device in a few seconds (five languages, a small model: about one slip a text); stories with questions and meanings from your own AI agent, in any language |
-| Feedback on free writing | Explanations of an answer | No | No | An AI review with a grade, corrected forms and the rule; your mistakes come back as review cards |
+| Feedback on free writing | Explanations of an answer | No | No | An AI review with a grade, corrected forms and the rule; your mistakes come back as review cards. With no agent, where the browser has its own model, suggestions on your retelling a few seconds after the sitting ends: a small model that misses some mistakes and is sometimes wrong, so each one is yours to keep or leave |
 | Measure of progress | XP, streak, leagues, a course score | Units completed | Points and a leaderboard | The level your own numbers support, for reading, for listening and for speaking |
 | Languages with ready lessons | 40 or more | 25 | 41 | 44, each with first lessons (twenty lessons, 160 phrases) and graded stories and dialogues: 8 with a full set (A1 to B2), 4 with half a set, 32 with a first handful of six texts (A1 and A2); any other language with your own texts or AI-written stories |
 | Course for complete beginners | Yes, from the alphabet | Yes | Yes | A short one: twenty lessons of eight phrases in each of 44 languages, charts of the letters for 14 scripts, then graded stories from A1 in all 44. Much shorter than their courses; after it the material is your own texts and the stories an AI agent writes to your level |
@@ -140,6 +140,9 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   fit, a missing preposition), two or three in German (a case ending, a verb wrongly made reflexive), an awkward sentence
   in Japanese. That is why these texts carry no level, never count towards what Progress says you can do, and are
   labelled as written on the device.
+- **A retelling read on the device** (the same model): a French retelling with three mistakes planted in it. Sixteen
+  seconds after the sitting ended the app showed two of them corrected rightly, one with the wrong reason given; the third
+  was missed. That is why these are shown as suggestions to keep or leave, and never as a grade.
 - **With a real AI agent** (Claude, November 2026), answering from the instruction files in the folder and nothing else: a
   sitting graded and corrected, a pen-pal letter answered, a two-turn conversation, and five stories and two dialogues in
   Swedish (a language that had no bundled stories then), which passed the same checker as the bundled texts

@@ -46,7 +46,9 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   API is there), speaking (a story: three sentences read aloud; a dialogue: a role-play, your
   lines aloud and then from memory), and a retelling from memory. A session is saved only when
   finished. The retelling is graded only by the `sitting-review` cowork channel, stored beside the
-  app's score; the channel's `corrections` become review cards.
+  app's score; the channel's `corrections` become review cards. Where the browser's model is on the device already (`lmReady`: nothing nobody
+  tapped for may start a download), `deviceHints` puts its suggestions beside the sitting (`hints`, three at most); one becomes a
+  review card only when the learner keeps it (ids `h:…`).
 - **Other sessions** reuse the same steps: free reading (`mode: 'read'`), a role-play alone
   (`'talk'`), and Just listen (`'listen'`, stories played one after another). All are rows in
   `S.sittings` with a `mode`, and each is logged once with `appFont.logSession`.

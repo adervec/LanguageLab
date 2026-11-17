@@ -388,6 +388,7 @@ function vProgress() {
       ${s.ai.fixes.length ? H`<b>${t('To fix')}</b><ul>${s.ai.fixes.map(x => H`<li>${x}</li>`)}</ul>` : ''}
       ${s.ai.next ? H`<p><b>${t('Next')}</b> ${s.ai.next}</p>` : ''}</div>`
       : s.mode === 'sitting' ? H`<p class="sub">${t('Waiting for the AI review.')}</p>` : ''}
+    ${hintList(s)}
   </div>`)}`;
 }
 
@@ -581,6 +582,7 @@ function vSitting() {
       ${sit.mode === 'first' ? tile(nf(s.back.length), t('phrases in your review')) : sit.mode === 'talk' ? '' : tile(nf(sit.rec.tapped.length), t('new words in your review'))}
       ${sit.mode === 'sitting' ? tile(nf(b.wordsWritten), t('words written, waiting for the AI review')) : ''}
     </div>
+    ${hintList(sit.rec)}
     <button class="primary" data-act="go" data-v="today" data-focus>${t('Done')}</button>`;
 }
 
@@ -622,6 +624,20 @@ function cueLines() {
   const them = s.lines.slice(prev && prev.li < d.li ? prev.li + 1 : 0, d.li).filter(l => l[0] === 0);
   if (them.length) say(them.map(l => [0, l[1]]));
 }
+// A retelling read by the browser's own model where it is on the device already: the conversation's proofreader, with the same
+// caution (it also "corrects" what was right). So: suggestions shown beside the sitting a moment later, each kept or not, never a
+// grade. The honest grade of a retelling is still the AI review's or a teacher's.
+function deviceHints(id, text) {
+  proofread(text).then(list => {
+    const row = S.sittings.find(x => x.id === id), hints = C.cleanChatReply({ reply: '-', corrections: list })?.corrections || [];
+    if (!row || !hints.length) return;
+    row.hints = hints; save();
+    if ((sit?.rec?.id === id && sit.step === 'done') || view === 'progress') render(true);
+  });
+}
+const hintList = s => s.hints?.length ? H`<div data-clamp="6"><p><b>${t('Suggestions from the model in your browser')}</b> <span class="sub">${t('A small model, sometimes wrong: keep only what you are sure of.')}</span></p>
+  <ul>${s.hints.map((f, n) => H`<li><span class="miss" lang="${s.lang}">${f.wrong}</span> → <span class="hit" lang="${s.lang}">${f.right}</span> <span class="sub">${f.why}</span>
+    ${L().fixes['h:' + s.id + ':' + n] ? '' : H` <button class="mini" data-act="hintkeep" data-id="${s.id}:${n}">${t('Keep for review')}</button>`}</li>`)}</ul></div>` : '';
 function finishSitting() {
   const s = story(sit.storyId);
   const rec = { id: sit.id, lang: S.lang, mode: sit.mode, level: s.level, day: C.dayStr(), at: Date.now(), storyId: s.id, title: s.title, listenSec: Math.round(sit.listenSec),
@@ -638,6 +654,7 @@ function finishSitting() {
     s.back.forEach(([p, meaning], n) => { L().fixes[`first:${s.id}:${n}`] ??= { wrong: meaning, right: p, why: '', added: Date.now(), srs: got.get(p.normalize('NFC')) === 1 ? C.schedule(null, true) : null }; });
   }
   S.sittings.push(rec); sit.rec = rec; sit.step = 'done';
+  if (rec.writing.text && lmReady[S.lang]) deviceHints(rec.id, rec.writing.text);
   save();
   A.logSession({ kind: { sitting: 'study', read: 'read', talk: 'speak', first: 'study' }[sit.mode], minutes: rec.minutes, id: rec.id }); // house standard 25: one row per finished session
   if (sit.mode === 'sitting') panel?.push?.('sitting-review', true); // house standard 18: sent when a session ends (no-op without a folder)
@@ -739,11 +756,12 @@ function vPal() {
 
 // ---------- conversation: a live partner. On this device where the browser has its own language model (the Prompt API), else through the cowork folder ----------
 const lmOk = {}; // per language: can the browser's model talk in it?
+const lmReady = {}; // ...and is it on this device already? Work nobody tapped for never starts a download.
 const lmOpts = () => ({ expectedInputs: [{ type: 'text', languages: ['en', S.lang] }], expectedOutputs: [{ type: 'text', languages: [S.lang] }] });
 function checkModel() {
   const code = S.lang;
   if ('LanguageModel' in self && lmOk[code] === undefined) Promise.resolve().then(() => self.LanguageModel.availability(lmOpts()))
-    .then(a => { lmOk[code] = a !== 'unavailable'; if (['chat', 'library', 'today'].includes(view)) render(true); }, () => { lmOk[code] = false; });
+    .then(a => { lmOk[code] = a !== 'unavailable'; lmReady[code] = a === 'available'; if (['chat', 'library', 'today'].includes(view)) render(true); }, () => { lmOk[code] = false; });
 }
 const chatEngine = () => lmOk[S.lang] ? 'device' : panel?._root ? 'cowork' : '';
 const chat = () => L().chat;
@@ -1222,6 +1240,9 @@ const ACT = {
   chatretry() { const c = chat(), me = c.turns.find(x => x.id === c.wait); return chatAsk(me ? me.text : ''); },
   chatmic(b) { const box = $('#ans'); hear(b, false, text => { box.value = (box.value + ' ' + text).trim(); }, () => { if (view === 'chat' && box.isConnected && box.value.trim()) run('chatsend'); }, () => 2500); },
   chatsay(b) { const x = chat()?.turns.find(y => y.id === b.dataset.id); if (x) say([[0, x.text]]); },
+  hintkeep(b) { // the same for a suggestion on a retelling
+    const id = b.dataset.id, at = id.lastIndexOf(':'), f = S.sittings.find(x => x.id === id.slice(0, at))?.hints?.[id.slice(at + 1)];
+    if (f) { L().fixes['h:' + id] = { ...f, added: Date.now(), srs: null }; save(); render(true); } },
   chatkeep(b) { // a correction from the on-device model, kept by the learner: now it is a review card
     const id = b.dataset.id, at = id.lastIndexOf(':'), f = chat()?.turns.find(x => x.id === id.slice(0, at))?.fixes?.[id.slice(at + 1)];
     if (f) { L().fixes[id] = { ...f, added: Date.now(), srs: null }; save(); render(true); }

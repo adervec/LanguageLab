@@ -223,6 +223,11 @@ assert.deepEqual([state.sittings.length, state.sittings[0].score, state.sittings
   assert.deepEqual(rows.map(r => [r.level, r.reading, r.listening, r.sittings]), [['A1', 1, 0.9, 2], ['A2', 0.25, null, 0]]);
   assert.deepEqual(c.estimate(rows), { reading: 'A1', listening: 'A1', speaking: '' }); // (nothing was spoken in those sittings)
 }
+// suggestions from the browser's own model on a retelling stay beside the sitting: three at most, known fields only, none that changes nothing
+{ const rows = c.cleanState({ app: 'languagelab', v: 1, sittings: [{ id: 's1', hints: [{ wrong: ' je suis allé bien ', right: 'je vais bien', why: 'present', evil: 1 }, { wrong: 'no right form' }, 'junk',
+    { wrong: 'Je suis', right: 'je suis' }, { wrong: 'a', right: 'b' }, { wrong: 'c', right: 'd' }, { wrong: 'e', right: 'f' }] }, { id: 's2', hints: 'none' }] }).sittings;
+  assert.deepEqual(rows[0].hints, [{ wrong: 'je suis allé bien', right: 'je vais bien', why: 'present' }, { wrong: 'a', right: 'b', why: '' }, { wrong: 'c', right: 'd', why: '' }]);
+  assert.ok(!('hints' in rows[1])); }
 console.log('core.test: ok');
 
 // merging this device with Drive loses nothing from either side

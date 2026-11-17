@@ -387,6 +387,7 @@ function cleanSitting(s) {
   if (!str(s.id, 80)) return null;
   const b = obj(s.breakdown), ai = s.ai ? cleanReview({ ...obj(s.ai), sessionId: s.id }) : null;
   const teacher = s.teacher ? cleanTeacher({ ...obj(s.teacher), id: s.id }) : null;
+  const hints = aiFixes(s.hints).slice(0, 3); // what the browser's own model would change in the retelling: suggestions, kept one by one
   const unit = v => v == null ? null : Math.min(1, Math.max(0, num(v)));
   return {
     id: s.id, lang: str(s.lang, 8), mode: MODES.includes(s.mode) ? s.mode : 'sitting', level: LEVELS.includes(s.level) ? s.level : '',
@@ -408,6 +409,7 @@ function cleanSitting(s) {
       replays: num(b.replays), wordsRead: num(b.wordsRead), wordsWritten: num(b.wordsWritten) },
     ...(ai ? { ai } : {}),
     ...(teacher ? { teacher: { note: teacher.note, corrections: teacher.corrections, at: num(obj(s.teacher).at) } } : {}),
+    ...(hints.length ? { hints } : {}),
   };
 }
 function cleanMsg(m) {
