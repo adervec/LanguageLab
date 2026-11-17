@@ -407,5 +407,465 @@
    }
   ],
   "notice": "A stranger is addressed with the plural \"vi\" forms: \"Kako vam je ime?\", \"vaša soba\", \"Ali imate dvigalo?\". Friends use \"ti\"."
+ },
+ {
+  "id": "sl-family",
+  "title": "Moja družina",
+  "level": "A1",
+  "text": "Ime mi je Anna. Z družino živim v majhni hiši ob reki. Moja mama je učiteljica, oče pa dela v trgovini. Imam brata in sestro. Moj brat ima deset let in ima rad nogomet. Moja sestra je še majhna: stara je tri leta. Imamo tudi psa, ki mu je ime Max. Vsako jutro gre oče s psom na sprehod. Zvečer skupaj večerjamo in se pogovarjamo o dnevu. Po večerji z bratom pomivava posodo. V nedeljo pride babica in prinese torto. Svojo družino imam zelo rada.",
+  "gloss": {
+   "družino": "family",
+   "hiši": "house",
+   "reki": "river",
+   "mama": "mother",
+   "učiteljica": "teacher",
+   "oče": "father",
+   "trgovini": "shop",
+   "brata": "brother",
+   "sestra": "sister",
+   "let": "years",
+   "nogomet": "football",
+   "majhna": "small",
+   "psa": "dog",
+   "jutro": "morning",
+   "sprehod": "walk",
+   "zvečer": "in the evening",
+   "večerjamo": "we have dinner",
+   "skupaj": "together",
+   "večerji": "dinner",
+   "posodo": "dishes",
+   "nedeljo": "Sunday",
+   "babica": "grandmother",
+   "torto": "cake",
+   "leta": "years",
+   "psom": "dog"
+  },
+  "questions": [
+   {
+    "q": "Kje dela oče?",
+    "a": [
+     "trgovin"
+    ]
+   },
+   {
+    "q": "Koliko je star brat?",
+    "a": [
+     "deset",
+     "10"
+    ]
+   },
+   {
+    "q": "Kdo pride v nedeljo?",
+    "a": [
+     "babic"
+    ]
+   }
+  ],
+  "notice": "Slovenian has a special form for two: \"z bratom pomivava\" (my brother and I, the two of us, wash). Age is said with \"have\": \"ima deset let\". \"Imam rad\" (a woman says \"imam rada\") is how you like something.",
+  "back": [
+   [
+    "Moja mama je učiteljica, oče pa dela v trgovini.",
+    "My mother is a teacher and my father works in a shop."
+   ],
+   [
+    "V nedeljo pride babica in prinese torto.",
+    "On Sunday my grandmother comes and brings a cake."
+   ]
+  ]
+ },
+ {
+  "id": "sl-town",
+  "title": "Naše mesto",
+  "level": "A1",
+  "text": "Naše mesto je majhno, vendar lepo. V središču je star trg z vodnjakom. Ob trgu so šola, lekarna in dve kavarni. Postaja je za parkom. Vsako jutro se veliko ljudi pelje z vlakom v veliko mesto. Popoldne se otroci igrajo v parku, starejši gospodje pa igrajo šah. Poleti pridejo turisti in fotografirajo most. Pozimi je v mestu mirno. V soboto je na trgu tržnica. Tam lahko kupite zelenjavo, med in rože. Zvečer grem najraje na sprehod ob reki. Nočem živeti v velikem mestu.",
+  "gloss": {
+   "mesto": "town",
+   "lepo": "beautiful",
+   "središču": "centre",
+   "trg": "square",
+   "vodnjakom": "fountain",
+   "šola": "school",
+   "lekarna": "pharmacy",
+   "postaja": "station",
+   "za": "behind",
+   "parkom": "park",
+   "vlakom": "train",
+   "popoldne": "in the afternoon",
+   "otroci": "children",
+   "šah": "chess",
+   "poleti": "in summer",
+   "turisti": "tourists",
+   "most": "bridge",
+   "pozimi": "in winter",
+   "mirno": "quiet",
+   "soboto": "Saturday",
+   "zelenjavo": "vegetables",
+   "med": "honey",
+   "rože": "flowers",
+   "reki": "river"
+  },
+  "questions": [
+   {
+    "q": "Kaj je v središču mesta?",
+    "a": [
+     "trg"
+    ]
+   },
+   {
+    "q": "Kje je postaja?",
+    "a": [
+     "park"
+    ]
+   },
+   {
+    "q": "Kdaj pridejo turisti?",
+    "a": [
+     "poleti"
+    ]
+   }
+  ],
+  "notice": "Slovenian has no \"the\" or \"a\". One word says when: \"poleti\" (in summer), \"pozimi\" (in winter), \"zvečer\" (in the evening), \"popoldne\". After \"v\" and \"na\" a place takes the locative: \"v parku\", \"na trgu\", \"v mestu\".",
+  "back": [
+   [
+    "Postaja je za parkom.",
+    "The station is behind the park."
+   ],
+   [
+    "Pozimi je v mestu mirno.",
+    "In winter the town is quiet."
+   ]
+  ]
+ },
+ {
+  "id": "sl-birthday",
+  "title": "Babičin rojstni dan",
+  "level": "A2",
+  "text": "Včeraj je imela moja babica rojstni dan. Zdaj je stara osemdeset let. Vsa družina je prišla v njeno hišo na vasi. Moja teta je spekla veliko torto, stric pa je prinesel rože. Podarili smo ji topel šal in knjigo o vrtovih. Pred kosilom smo zapeli pesem in babica se je smejala. Na mizi so bili juha, piščanec s krompirjem in veliko solate. Po kosilu nam je pokazala stare fotografije. Na eni fotografiji je bila mlada ženska s kolesom. Povedala nam je, da se je z njim vsak dan vozila v službo. Potem je moj bratranec igral kitaro in vsi so plesali. Celo moj mlajši brat je plesal z babico. Zvečer je bila utrujena, a srečna. Rekla je, da je bil to najlepši rojstni dan v njenem življenju. Domov smo šli pozno, ko so bile na nebu že zvezde.",
+  "gloss": {
+   "včeraj": "yesterday",
+   "rojstni": "(rojstni dan: birthday)",
+   "osemdeset": "eighty",
+   "vsa": "whole",
+   "vasi": "village",
+   "teta": "aunt",
+   "spekla": "baked",
+   "stric": "uncle",
+   "rože": "flowers",
+   "podarili": "gave",
+   "šal": "scarf",
+   "vrtovih": "gardens",
+   "zapeli": "sang",
+   "pesem": "song",
+   "smejala": "(se je smejala: laughed)",
+   "piščanec": "chicken",
+   "krompirjem": "potatoes",
+   "pokazala": "showed",
+   "mlada": "young",
+   "kolesom": "bicycle",
+   "bratranec": "cousin",
+   "kitaro": "guitar",
+   "plesali": "danced",
+   "utrujena": "tired",
+   "najlepši": "the most beautiful, the best",
+   "življenju": "life",
+   "zvezde": "stars"
+  },
+  "questions": [
+   {
+    "q": "Koliko je stara babica?",
+    "a": [
+     "osemdeset",
+     "80"
+    ]
+   },
+   {
+    "q": "Kdo je prinesel rože?",
+    "a": [
+     "stric"
+    ]
+   },
+   {
+    "q": "Kaj je igral bratranec?",
+    "a": [
+     "kitar"
+    ]
+   }
+  ],
+  "notice": "The Slovenian past is \"to be\" plus a form in -l that agrees with who did it: \"je spekla\" (she baked), \"je prinesel\" (he brought), \"smo zapeli\" (we sang). The little word \"je\" stands in second place.",
+  "back": [
+   [
+    "Moja teta je spekla veliko torto, stric pa je prinesel rože.",
+    "My aunt baked a big cake and my uncle brought flowers."
+   ],
+   [
+    "Po kosilu nam je pokazala stare fotografije.",
+    "After lunch she showed us old photos."
+   ]
+  ]
+ },
+ {
+  "id": "sl-wallet",
+  "title": "Izgubljena denarnica",
+  "level": "B1",
+  "text": "Prejšnji petek je Daniel hotel plačati v supermarketu, vendar denarnice ni bilo v žepu. Zelo ga je skrbelo, ker je imel v njej bančno kartico in vozniško dovoljenje. Nakup je pustil pri blagajni in se vrnil po isti poti. Iskal je povsod, na pločniku in na avtobusni postaji, a ni našel ničesar. Doma je poklical banko in blokiral kartico. Tisto noč ni mogel spati, ker je mislil na vse svoje dokumente. Dva dni pozneje je prišlo pismo s policije. Neka ženska je našla denarnico na avtobusu in jo odnesla na policijsko postajo. Daniel je takoj šel tja. Nič ni manjkalo, niti denar ne. Policist mu je dal naslov te ženske, ker se ji je Daniel hotel zahvaliti. Naslednji dan je kupil rože in ji napisal voščilnico. Bila je presenečena in ga je povabila na kavo. Pogovarjala sta se eno uro in zdaj sta dobra prijatelja. Od takrat Daniel vedno preveri žep, preden izstopi z avtobusa.",
+  "gloss": {
+   "petek": "Friday",
+   "plačati": "pay",
+   "supermarketu": "supermarket",
+   "denarnico": "wallet",
+   "žepu": "pocket",
+   "skrbelo": "(ga je skrbelo: he was worried)",
+   "kartico": "card (bančna kartica: bank card)",
+   "dovoljenje": "permit (vozniško dovoljenje: driving licence)",
+   "nakup": "shopping",
+   "blagajni": "till",
+   "isti": "same",
+   "povsod": "everywhere",
+   "pločniku": "pavement",
+   "postaji": "stop, station (avtobusna postaja: bus stop)",
+   "našel": "found",
+   "blokiral": "blocked",
+   "dokumente": "documents",
+   "pismo": "letter",
+   "policije": "police",
+   "manjkalo": "was missing",
+   "denar": "money",
+   "naslov": "address",
+   "zahvaliti": "thank",
+   "presenečena": "surprised",
+   "povabila": "invited",
+   "preveri": "checks",
+   "izstopi": "gets off"
+  },
+  "questions": [
+   {
+    "q": "Česa ni bilo v Danielovem žepu?",
+    "a": [
+     "denarnic"
+    ]
+   },
+   {
+    "q": "Kje je ženska našla denarnico?",
+    "a": [
+     "avtobus"
+    ]
+   },
+   {
+    "q": "Kaj je kupil Daniel?",
+    "a": [
+     "rože"
+    ]
+   }
+  ],
+  "notice": "Slovenian says \"there was no wallet\" with the genitive: \"denarnice ni bilo\", and \"found nothing\" with a double negative: \"ni našel ničesar\". For two people the verb has its own form: \"pogovarjala sta se\" (the two of them talked).",
+  "back": [
+   [
+    "Iskal je povsod, na pločniku in na avtobusni postaji, a ni našel ničesar.",
+    "He looked everywhere, on the pavement and at the bus stop, but he found nothing."
+   ],
+   [
+    "Neka ženska je našla denarnico na avtobusu in jo odnesla na policijsko postajo.",
+    "A woman had found the wallet on the bus and had taken it to the police station."
+   ]
+  ]
+ },
+ {
+  "id": "sl-station",
+  "title": "Na postaji",
+  "level": "A2",
+  "roles": [
+   "Prodajalka",
+   "Potnik"
+  ],
+  "lines": [
+   [
+    0,
+    "Dobro jutro. Kako vam lahko pomagam?"
+   ],
+   [
+    1,
+    "Dobro jutro. Prosim eno vozovnico do Murske Sobote."
+   ],
+   [
+    0,
+    "Enosmerno ali povratno?"
+   ],
+   [
+    1,
+    "Povratno, prosim. Kdaj odpelje naslednji vlak?"
+   ],
+   [
+    0,
+    "Ob četrt čez deset, s tretjega tira."
+   ],
+   [
+    1,
+    "Kako dolgo traja vožnja?"
+   ],
+   [
+    0,
+    "Približno tri ure. Prestopiti morate v Pragerskem."
+   ],
+   [
+    1,
+    "Koliko časa imam tam?"
+   ],
+   [
+    0,
+    "Dvajset minut. To je dovolj."
+   ],
+   [
+    1,
+    "Dobro. Koliko stane vozovnica?"
+   ],
+   [
+    0,
+    "Šestnajst evrov. Želite plačati s kartico?"
+   ],
+   [
+    1,
+    "Da, s kartico. Najlepša hvala!"
+   ]
+  ],
+  "gloss": {
+   "pomagam": "I help",
+   "vozovnico": "ticket",
+   "enosmerno": "one way",
+   "povratno": "return",
+   "naslednji": "next",
+   "vlak": "train",
+   "odpelje": "leave",
+   "tira": "track, platform",
+   "vožnja": "journey",
+   "ure": "hours",
+   "prestopiti": "change",
+   "časa": "time",
+   "minut": "minutes",
+   "dovolj": "enough",
+   "stane": "cost",
+   "plačati": "pay",
+   "kartico": "card"
+  },
+  "questions": [
+   {
+    "q": "S katerega tira odpelje vlak?",
+    "a": [
+     "tretj",
+     "3"
+    ]
+   },
+   {
+    "q": "Kako plača potnik?",
+    "a": [
+     "kartic"
+    ]
+   }
+  ],
+  "notice": "To a stranger Slovenian uses \"vi\" and the plural verb: \"morate\", \"želite\". The clock: \"ob četrt čez deset\" is at a quarter past ten. The platform takes an ordinal: \"s tretjega tira\" (from the third track)."
+ },
+ {
+  "id": "sl-doctor",
+  "title": "Pri zdravniku",
+  "level": "B1",
+  "roles": [
+   "Zdravnica",
+   "Bolnik"
+  ],
+  "lines": [
+   [
+    0,
+    "Dobro jutro. Kaj vas muči?"
+   ],
+   [
+    1,
+    "Dobro jutro, gospa doktor. Že tri dni me boli grlo in kašljam."
+   ],
+   [
+    0,
+    "Ali imate tudi vročino?"
+   ],
+   [
+    1,
+    "Da, sinoči je bila osemintrideset in pol."
+   ],
+   [
+    0,
+    "Ali vas boli tudi glava?"
+   ],
+   [
+    1,
+    "Malo, posebno zvečer. Tudi spim slabo."
+   ],
+   [
+    0,
+    "Odprite usta, prosim. Da, grlo je zelo rdeče."
+   ],
+   [
+    1,
+    "Je resno? Ta teden moram delati."
+   ],
+   [
+    0,
+    "Ne, vendar potrebujete počitek. Ostanite tri dni doma in pijte veliko čaja."
+   ],
+   [
+    1,
+    "Ali potrebujem zdravila?"
+   ],
+   [
+    0,
+    "Napisala vam bom recept za tablete. Vzemite eno po vsakem obroku."
+   ],
+   [
+    1,
+    "Hvala. Naj pridem še enkrat, če ne bo bolje?"
+   ],
+   [
+    0,
+    "Da, pridite naslednji teden, če boste še imeli vročino."
+   ],
+   [
+    1,
+    "Dobro. Na svidenje, gospa doktor."
+   ]
+  ],
+  "gloss": {
+   "muči": "troubles (kaj vas muči: what is the problem)",
+   "grlo": "throat (boli me grlo: I have a sore throat)",
+   "kašljam": "I cough",
+   "dni": "days",
+   "vročino": "fever",
+   "glava": "head",
+   "boli": "hurts",
+   "posebno": "especially",
+   "spim": "I sleep",
+   "usta": "mouth",
+   "rdeče": "red",
+   "resno": "serious",
+   "počitek": "rest",
+   "ostanite": "stay",
+   "zdravila": "medicine",
+   "recept": "prescription",
+   "tablete": "tablets",
+   "obroku": "meal",
+   "pridem": "I come",
+   "bolje": "better"
+  },
+  "questions": [
+   {
+    "q": "Koliko dni bolnika boli grlo?",
+    "a": [
+     "tri",
+     "3"
+    ]
+   },
+   {
+    "q": "Za kaj je recept?",
+    "a": [
+     "tablet"
+    ]
+   }
+  ],
+  "notice": "What hurts is the subject: \"boli me grlo\" (the throat hurts me), \"vas boli glava\". The future is \"bom, boš, bo\" plus the form in -l: \"napisala bom\" (I will write, said by a woman), \"boste imeli\"."
  }
 ]

@@ -406,5 +406,465 @@
    }
   ],
   "notice": "A stranger is addressed with the plural \"vy\" forms: \"Ako sa voláte?\", \"vaša izba\", \"váš kľúč\". Friends use \"ty\"."
+ },
+ {
+  "id": "sk-family",
+  "title": "Moja rodina",
+  "level": "A1",
+  "text": "Volám sa Anna. Bývam s rodinou v malom dome pri rieke. Moja mama je učiteľka a otec pracuje v obchode. Mám brata a sestru. Môj brat má desať rokov a má rád futbal. Moja sestra je ešte malá: má tri roky. Máme aj psa, ktorý sa volá Max. Každé ráno chodí otec so psom na prechádzku. Večer spolu večeriame a rozprávame sa o tom, aký bol deň. Po večeri s bratom umývame riad. V nedeľu prichádza babka a prináša tortu. Svoju rodinu mám veľmi rada.",
+  "gloss": {
+   "rodinou": "family",
+   "dome": "house",
+   "rieke": "river",
+   "mama": "mother",
+   "učiteľka": "teacher",
+   "otec": "father",
+   "obchode": "shop",
+   "brata": "brother",
+   "sestra": "sister",
+   "rokov": "years",
+   "futbal": "football",
+   "malá": "small",
+   "psa": "dog",
+   "ráno": "morning",
+   "prechádzku": "walk",
+   "večer": "in the evening",
+   "večeriame": "we have dinner",
+   "spolu": "together",
+   "večeri": "dinner",
+   "riad": "dishes",
+   "nedeľu": "Sunday",
+   "babka": "grandmother",
+   "tortu": "cake",
+   "roky": "years",
+   "psom": "dog"
+  },
+  "questions": [
+   {
+    "q": "Kde pracuje otec?",
+    "a": [
+     "obchod"
+    ]
+   },
+   {
+    "q": "Koľko rokov má brat?",
+    "a": [
+     "desať",
+     "10"
+    ]
+   },
+   {
+    "q": "Kto prichádza v nedeľu?",
+    "a": [
+     "babk"
+    ]
+   }
+  ],
+  "notice": "Slovak says age with \"have\": \"Môj brat má desať rokov\". After 2, 3 and 4 the word is \"roky\", after 5 and more \"rokov\". \"Mám rád\" (a woman says \"mám rada\") is how you like something.",
+  "back": [
+   [
+    "Moja mama je učiteľka a otec pracuje v obchode.",
+    "My mother is a teacher and my father works in a shop."
+   ],
+   [
+    "V nedeľu prichádza babka a prináša tortu.",
+    "On Sunday my grandmother comes and brings a cake."
+   ]
+  ]
+ },
+ {
+  "id": "sk-town",
+  "title": "Naše mesto",
+  "level": "A1",
+  "text": "Naše mesto je malé, ale pekné. V centre je staré námestie s fontánou. Vedľa námestia sú škola, lekáreň a dve kaviarne. Stanica je za parkom. Každé ráno cestuje veľa ľudí vlakom do veľkého mesta. Popoludní sa deti hrajú v parku a starí páni hrajú šach. V lete prichádzajú turisti a fotia most. V zime je v meste ticho. V sobotu je na námestí trh. Môžete tam kúpiť zeleninu, med a kvety. Večer ma baví prechádzať sa pri rieke. Nechcem bývať vo veľkom meste.",
+  "gloss": {
+   "mesto": "town",
+   "pekné": "beautiful",
+   "centre": "centre",
+   "námestie": "square",
+   "fontánou": "fountain",
+   "škola": "school",
+   "lekáreň": "pharmacy",
+   "stanica": "station",
+   "za": "behind",
+   "parkom": "park",
+   "vlakom": "by train",
+   "popoludní": "in the afternoon",
+   "deti": "children",
+   "šach": "chess",
+   "lete": "summer",
+   "turisti": "tourists",
+   "most": "bridge",
+   "zime": "winter",
+   "ticho": "quiet",
+   "sobotu": "Saturday",
+   "zeleninu": "vegetables",
+   "med": "honey",
+   "kvety": "flowers",
+   "rieke": "river"
+  },
+  "questions": [
+   {
+    "q": "Čo je v centre mesta?",
+    "a": [
+     "námest"
+    ]
+   },
+   {
+    "q": "Kde je stanica?",
+    "a": [
+     "park"
+    ]
+   },
+   {
+    "q": "Kedy prichádzajú turisti?",
+    "a": [
+     "lete"
+    ]
+   }
+  ],
+  "notice": "Slovak has no \"the\" or \"a\". After \"v\" and \"na\" a place takes the locative: \"v centre\", \"v parku\", \"na námestí\"; \"v\" becomes \"vo\" before v or f: \"vo veľkom meste\". Seasons take \"v\": \"v lete\", \"v zime\".",
+  "back": [
+   [
+    "Stanica je za parkom.",
+    "The station is behind the park."
+   ],
+   [
+    "V zime je v meste ticho.",
+    "In winter the town is quiet."
+   ]
+  ]
+ },
+ {
+  "id": "sk-birthday",
+  "title": "Babkine narodeniny",
+  "level": "A2",
+  "text": "Včera mala moja babka narodeniny. Má teraz osemdesiat rokov. Celá rodina prišla do jej domu na dedine. Moja teta upiekla veľkú tortu a strýko priniesol kvety. Dali sme jej teplý šál a knihu o záhradách. Pred obedom sme zaspievali pesničku a babka sa smiala. Na stole bola polievka, kura so zemiakmi a veľa šalátu. Po obede nám ukázala staré fotografie. Na jednej fotografii bola mladá žena s bicyklom. Rozprávala nám, že na ňom každý deň jazdila do práce. Potom môj bratranec hral na gitare a všetci tancovali. Dokonca aj môj malý brat tancoval s babkou. Večer bola unavená, ale šťastná. Povedala, že to boli najlepšie narodeniny v jej živote. Domov sme išli neskoro, keď už boli na nebi hviezdy.",
+  "gloss": {
+   "včera": "yesterday",
+   "narodeniny": "birthday",
+   "osemdesiat": "eighty",
+   "celá": "whole",
+   "dedine": "village",
+   "teta": "aunt",
+   "upiekla": "baked",
+   "strýko": "uncle",
+   "kvety": "flowers",
+   "dali": "gave",
+   "šál": "scarf",
+   "záhradách": "gardens",
+   "zaspievali": "sang",
+   "pesničku": "song",
+   "smiala": "(sa smiala: laughed)",
+   "kura": "chicken",
+   "zemiakmi": "potatoes",
+   "ukázala": "showed",
+   "mladá": "young",
+   "bicyklom": "bicycle",
+   "bratranec": "cousin",
+   "gitare": "guitar",
+   "tancovali": "danced",
+   "unavená": "tired",
+   "najlepšie": "best",
+   "živote": "life",
+   "hviezdy": "stars"
+  },
+  "questions": [
+   {
+    "q": "Koľko rokov má babka?",
+    "a": [
+     "osemdesiat",
+     "80"
+    ]
+   },
+   {
+    "q": "Kto priniesol kvety?",
+    "a": [
+     "strýk"
+    ]
+   },
+   {
+    "q": "Na čom hral bratranec?",
+    "a": [
+     "gitar"
+    ]
+   }
+  ],
+  "notice": "The Slovak past is a form in -l that agrees with who did it, plus \"som\", \"si\", \"sme\" for I, you and we: \"dali sme\" (we gave), \"teta upiekla\". With \"he\" and \"she\" nothing is added: \"ukázala\".",
+  "back": [
+   [
+    "Moja teta upiekla veľkú tortu a strýko priniesol kvety.",
+    "My aunt baked a big cake and my uncle brought flowers."
+   ],
+   [
+    "Po obede nám ukázala staré fotografie.",
+    "After lunch she showed us old photos."
+   ]
+  ]
+ },
+ {
+  "id": "sk-wallet",
+  "title": "Stratená peňaženka",
+  "level": "B1",
+  "text": "Minulý piatok chcel Daniel zaplatiť v supermarkete, ale vo vrecku nemal peňaženku. Mal veľké starosti, pretože v nej mal platobnú kartu a vodičský preukaz. Nechal nákup pri pokladni a vrátil sa tou istou cestou. Hľadal všade, na chodníku aj na autobusovej zastávke, ale nič nenašiel. Doma zavolal do banky a zablokoval kartu. V tú noc nemohol spať, pretože myslel na všetky svoje doklady. O dva dni neskôr prišiel list od polície. Jedna žena našla peňaženku v autobuse a odniesla ju na policajnú stanicu. Daniel tam hneď išiel. Nič nechýbalo, dokonca ani peniaze. Policajt mu dal adresu tej ženy, pretože sa jej Daniel chcel poďakovať. Na druhý deň kúpil kvety a napísal jej pohľadnicu. Bola prekvapená a pozvala ho na kávu. Rozprávali sa hodinu a teraz sú dobrí priatelia. Odvtedy si Daniel vždy skontroluje vrecko, skôr ako vystúpi z autobusu.",
+  "gloss": {
+   "piatok": "Friday",
+   "zaplatiť": "pay",
+   "supermarkete": "supermarket",
+   "peňaženku": "wallet",
+   "vrecku": "pocket",
+   "starosti": "worries (mal starosti: was worried)",
+   "kartu": "card (platobná karta: bank card)",
+   "preukaz": "card, licence (vodičský preukaz: driving licence)",
+   "nákup": "shopping",
+   "pokladni": "till",
+   "istou": "(tou istou cestou: the same way)",
+   "všade": "everywhere",
+   "chodníku": "pavement",
+   "zastávke": "stop (autobusová zastávka: bus stop)",
+   "nenašiel": "did not find",
+   "zablokoval": "blocked",
+   "doklady": "documents",
+   "list": "letter",
+   "polície": "police",
+   "nechýbalo": "was not missing",
+   "peniaze": "money",
+   "adresu": "address",
+   "poďakovať": "thank",
+   "prekvapená": "surprised",
+   "pozvala": "invited",
+   "skontroluje": "checks",
+   "vystúpi": "gets off"
+  },
+  "questions": [
+   {
+    "q": "Čo nemal Daniel vo vrecku?",
+    "a": [
+     "peňaženk"
+    ]
+   },
+   {
+    "q": "Kde našla žena peňaženku?",
+    "a": [
+     "autobus"
+    ]
+   },
+   {
+    "q": "Čo kúpil Daniel?",
+    "a": [
+     "kvety"
+    ]
+   }
+  ],
+  "notice": "Slovak puts \"ne-\" on the verb and keeps the other negative word too: \"nič nenašiel\" (found nothing), \"nič nechýbalo\". Short words like \"sa\", \"si\", \"mu\", \"jej\" stand in second place: \"vrátil sa\", \"Policajt mu dal\".",
+  "back": [
+   [
+    "Hľadal všade, na chodníku aj na autobusovej zastávke, ale nič nenašiel.",
+    "He looked everywhere, on the pavement and at the bus stop, but he found nothing."
+   ],
+   [
+    "Jedna žena našla peňaženku v autobuse a odniesla ju na policajnú stanicu.",
+    "A woman had found the wallet on the bus and had taken it to the police station."
+   ]
+  ]
+ },
+ {
+  "id": "sk-station",
+  "title": "Na stanici",
+  "level": "A2",
+  "roles": [
+   "Pokladníčka",
+   "Cestujúci"
+  ],
+  "lines": [
+   [
+    0,
+    "Dobrý deň. Ako vám môžem pomôcť?"
+   ],
+   [
+    1,
+    "Dobrý deň. Prosím si jeden lístok do Banskej Štiavnice."
+   ],
+   [
+    0,
+    "Jednosmerný, alebo spiatočný?"
+   ],
+   [
+    1,
+    "Spiatočný, prosím. Kedy ide ďalší vlak?"
+   ],
+   [
+    0,
+    "O štvrť na jedenásť, z tretieho nástupišťa."
+   ],
+   [
+    1,
+    "Ako dlho trvá cesta?"
+   ],
+   [
+    0,
+    "Asi tri hodiny. Musíte prestúpiť v Hronskej Dúbrave."
+   ],
+   [
+    1,
+    "Koľko času tam mám?"
+   ],
+   [
+    0,
+    "Dvadsať minút. To stačí."
+   ],
+   [
+    1,
+    "Dobre. Koľko stojí lístok?"
+   ],
+   [
+    0,
+    "Pätnásť eur. Chcete platiť kartou?"
+   ],
+   [
+    1,
+    "Áno, kartou. Ďakujem pekne!"
+   ]
+  ],
+  "gloss": {
+   "pomôcť": "help",
+   "lístok": "ticket",
+   "jednosmerný": "one way",
+   "spiatočný": "return",
+   "ďalší": "next",
+   "vlak": "train",
+   "ide": "goes",
+   "nástupišťa": "platform",
+   "cesta": "journey",
+   "hodiny": "hours",
+   "prestúpiť": "change",
+   "času": "time",
+   "minút": "minutes",
+   "stačí": "is enough",
+   "stojí": "cost",
+   "platiť": "pay",
+   "kartou": "card"
+  },
+  "questions": [
+   {
+    "q": "Z ktorého nástupišťa ide vlak?",
+    "a": [
+     "tretie",
+     "3"
+    ]
+   },
+   {
+    "q": "Ako cestujúci platí?",
+    "a": [
+     "kart"
+    ]
+   }
+  ],
+  "notice": "Slovak tells a quarter hour by the hour that is coming: \"o štvrť na jedenásť\" is at a quarter past ten. To a stranger the verb is in the plural: \"musíte\", \"chcete\"."
+ },
+ {
+  "id": "sk-doctor",
+  "title": "U lekára",
+  "level": "B1",
+  "roles": [
+   "Lekárka",
+   "Pacient"
+  ],
+  "lines": [
+   [
+    0,
+    "Dobrý deň. Čo vás trápi?"
+   ],
+   [
+    1,
+    "Dobrý deň, pani doktorka. Už tri dni ma bolí hrdlo a mám kašeľ."
+   ],
+   [
+    0,
+    "Máte aj horúčku?"
+   ],
+   [
+    1,
+    "Áno, včera večer to bolo tridsaťosem a pol."
+   ],
+   [
+    0,
+    "Bolí vás aj hlava?"
+   ],
+   [
+    1,
+    "Trochu, hlavne večer. Tiež zle spím."
+   ],
+   [
+    0,
+    "Otvorte ústa, prosím. Áno, hrdlo máte veľmi červené."
+   ],
+   [
+    1,
+    "Je to vážne? Tento týždeň musím pracovať."
+   ],
+   [
+    0,
+    "Nie, ale potrebujete pokoj. Zostaňte tri dni doma a pite veľa čaju."
+   ],
+   [
+    1,
+    "Potrebujem lieky?"
+   ],
+   [
+    0,
+    "Napíšem vám recept na tablety. Užívajte jednu po každom jedle."
+   ],
+   [
+    1,
+    "Ďakujem. Mám prísť znova, ak to nebude lepšie?"
+   ],
+   [
+    0,
+    "Áno, príďte budúci týždeň, ak budete mať stále horúčku."
+   ],
+   [
+    1,
+    "Dobre. Dovidenia, pani doktorka."
+   ]
+  ],
+  "gloss": {
+   "trápi": "troubles (čo vás trápi: what is the problem)",
+   "hrdlo": "throat (bolí ma hrdlo: I have a sore throat)",
+   "kašeľ": "cough",
+   "dni": "days",
+   "horúčku": "fever",
+   "hlava": "head",
+   "bolí": "hurts",
+   "hlavne": "especially",
+   "spím": "I sleep",
+   "ústa": "mouth",
+   "červené": "red",
+   "vážne": "serious",
+   "pokoj": "rest, quiet",
+   "zostaňte": "stay",
+   "lieky": "medicine",
+   "recept": "prescription",
+   "tablety": "tablets",
+   "jedle": "meal",
+   "prísť": "to come",
+   "lepšie": "better"
+  },
+  "questions": [
+   {
+    "q": "Koľko dní bolí pacienta hrdlo?",
+    "a": [
+     "tri",
+     "3"
+    ]
+   },
+   {
+    "q": "Na čo dostane pacient recept?",
+    "a": [
+     "tablet"
+    ]
+   }
+  ],
+  "notice": "To a stranger Slovak uses \"vy\" and the plural command: \"otvorte\", \"zostaňte\", \"pite\". What hurts is the subject: \"bolí ma hrdlo\" (the throat hurts me), \"bolí vás hlava\"."
  }
 ]
