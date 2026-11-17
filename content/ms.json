@@ -409,5 +409,462 @@
    }
   ],
   "notice": "A stranger is addressed by a title, not by \"you\": \"puan\" is madam and \"encik\" is sir, so \"bilik puan\" is \"your room, madam\". \"Adakah\" at the start turns a sentence into a yes-or-no question."
+ },
+ {
+  "id": "ms-family",
+  "title": "Keluarga saya",
+  "level": "A1",
+  "text": "Nama saya Anna. Saya tinggal bersama keluarga saya di sebuah rumah kecil berhampiran sungai. Ibu saya seorang guru dan bapa saya bekerja di sebuah kedai. Saya ada seorang adik lelaki dan seorang adik perempuan. Adik lelaki saya berumur sepuluh tahun dan dia suka bola sepak. Adik perempuan saya masih kecil: umurnya tiga tahun. Kami juga ada seekor anjing, namanya Max. Setiap pagi bapa saya berjalan-jalan dengan anjing itu. Pada waktu malam kami makan bersama dan bercerita tentang hari kami. Selepas makan malam, saya dan adik saya membasuh pinggan. Pada hari Ahad nenek saya datang dan membawa kek. Saya sangat sayang akan keluarga saya.",
+  "gloss": {
+   "keluarga": "family",
+   "rumah": "house",
+   "sungai": "river",
+   "ibu": "mother",
+   "guru": "teacher",
+   "bapa": "father",
+   "kedai": "shop",
+   "adik": "younger brother or sister (adik lelaki: younger brother)",
+   "perempuan": "female (adik perempuan: younger sister)",
+   "tahun": "years",
+   "bola": "ball (bola sepak: football)",
+   "kecil": "small",
+   "anjing": "dog",
+   "pagi": "morning",
+   "berjalan": "(berjalan-jalan: to go for a walk)",
+   "malam": "evening, night (makan malam: dinner)",
+   "makan": "eat",
+   "bersama": "together",
+   "pinggan": "plates (membasuh pinggan: to wash the dishes)",
+   "ahad": "Sunday",
+   "nenek": "grandmother",
+   "kek": "cake"
+  },
+  "questions": [
+   {
+    "q": "Di manakah bapa Anna bekerja?",
+    "a": [
+     "kedai"
+    ]
+   },
+   {
+    "q": "Berapakah umur adik lelaki Anna?",
+    "a": [
+     "sepuluh",
+     "10"
+    ]
+   },
+   {
+    "q": "Siapakah yang datang pada hari Ahad?",
+    "a": [
+     "nenek"
+    ]
+   }
+  ],
+  "notice": "Malay verbs do not change for person or time, and nouns have no \"the\": \"bapa saya bekerja\" (my father works). \"My\" comes after the noun: \"ibu saya\". A counting word comes with \"one\": \"seorang guru\", \"seekor anjing\", \"sebuah rumah\".",
+  "back": [
+   [
+    "Ibu saya seorang guru dan bapa saya bekerja di sebuah kedai.",
+    "My mother is a teacher and my father works in a shop."
+   ],
+   [
+    "Pada hari Ahad nenek saya datang dan membawa kek.",
+    "On Sunday my grandmother comes and brings a cake."
+   ]
+  ]
+ },
+ {
+  "id": "ms-town",
+  "title": "Pekan kami",
+  "level": "A1",
+  "text": "Pekan kami kecil, tetapi cantik. Di pusat pekan ada sebuah dataran lama dengan air pancut. Di sebelah dataran itu ada sebuah sekolah, sebuah farmasi dan dua buah kafe. Stesen kereta api terletak di belakang taman. Setiap pagi ramai orang menaiki kereta api ke bandar besar. Pada waktu petang kanak-kanak bermain di taman, dan orang tua bermain catur. Pada musim panas pelancong datang dan mengambil gambar jambatan. Pada musim sejuk pekan ini sunyi. Pada hari Sabtu ada pasar di dataran itu. Di sana anda boleh membeli sayur, madu dan bunga. Pada waktu malam saya suka berjalan-jalan di tepi sungai. Saya tidak mahu tinggal di bandar besar.",
+  "gloss": {
+   "pekan": "town",
+   "cantik": "beautiful",
+   "pusat": "centre",
+   "dataran": "square",
+   "pancut": "(air pancut: fountain)",
+   "sekolah": "school",
+   "farmasi": "pharmacy",
+   "stesen": "station",
+   "belakang": "behind",
+   "taman": "park",
+   "kereta": "(kereta api: train)",
+   "petang": "afternoon",
+   "kanak": "(kanak-kanak: children)",
+   "catur": "chess",
+   "panas": "hot (musim panas: summer)",
+   "pelancong": "tourists",
+   "jambatan": "bridge",
+   "sejuk": "cold (musim sejuk: winter)",
+   "sunyi": "quiet",
+   "sabtu": "Saturday",
+   "sayur": "vegetables",
+   "madu": "honey",
+   "bunga": "flowers",
+   "sungai": "river"
+  },
+  "questions": [
+   {
+    "q": "Apakah yang ada di pusat pekan?",
+    "a": [
+     "dataran"
+    ]
+   },
+   {
+    "q": "Di manakah stesen kereta api?",
+    "a": [
+     "taman"
+    ]
+   },
+   {
+    "q": "Bilakah pelancong datang?",
+    "a": [
+     "panas"
+    ]
+   }
+  ],
+  "notice": "A doubled word can be a plural or a word of its own: \"kanak-kanak\" (children), \"berjalan-jalan\" (to stroll). \"Ada\" means \"there is\": \"ada sebuah sekolah\". \"Di\" is in or at: \"di taman\", \"di belakang taman\".",
+  "back": [
+   [
+    "Stesen kereta api terletak di belakang taman.",
+    "The station is behind the park."
+   ],
+   [
+    "Pada musim sejuk pekan ini sunyi.",
+    "In winter the town is quiet."
+   ]
+  ]
+ },
+ {
+  "id": "ms-birthday",
+  "title": "Hari jadi Nenek",
+  "level": "A2",
+  "text": "Semalam ialah hari jadi nenek saya. Sekarang Nenek berumur lapan puluh tahun. Seluruh keluarga datang ke rumahnya di kampung. Mak cik saya membuat kek yang besar dan pak cik saya membawa bunga. Kami memberinya sehelai selendang yang tebal dan sebuah buku tentang kebun bunga. Sebelum makan tengah hari kami menyanyikan sebuah lagu, dan Nenek ketawa. Di atas meja ada sup, ayam dengan kentang dan banyak salad. Selepas makan tengah hari, Nenek menunjukkan gambar-gambar lama kepada kami. Dalam salah satu gambar, Nenek seorang wanita muda dengan basikal. Nenek bercerita bahawa dia menunggang basikal itu ke tempat kerja setiap hari. Kemudian sepupu saya bermain gitar dan semua orang menari. Malah adik lelaki saya pun menari dengan Nenek. Pada waktu malam Nenek letih tetapi gembira. Katanya, itulah hari jadi yang terbaik dalam hidupnya. Kami pulang lewat malam, ketika bintang-bintang sudah ada di langit.",
+  "gloss": {
+   "semalam": "yesterday",
+   "jadi": "(hari jadi: birthday)",
+   "lapan": "eight (lapan puluh: eighty)",
+   "seluruh": "whole",
+   "kampung": "village",
+   "mak": "(mak cik: aunt)",
+   "membuat": "made",
+   "pak": "(pak cik: uncle)",
+   "bunga": "flowers",
+   "memberinya": "gave her",
+   "selendang": "shawl, scarf",
+   "kebun": "gardens",
+   "menyanyikan": "sang",
+   "lagu": "song",
+   "ketawa": "laughed",
+   "ayam": "chicken",
+   "kentang": "potatoes",
+   "menunjukkan": "showed",
+   "muda": "young",
+   "basikal": "bicycle",
+   "sepupu": "cousin",
+   "gitar": "guitar",
+   "menari": "danced",
+   "letih": "tired",
+   "terbaik": "best",
+   "hidupnya": "her life",
+   "bintang": "stars"
+  },
+  "questions": [
+   {
+    "q": "Berapakah umur Nenek sekarang?",
+    "a": [
+     "lapan",
+     "80"
+    ]
+   },
+   {
+    "q": "Siapakah yang membawa bunga?",
+    "a": [
+     "pak"
+    ]
+   },
+   {
+    "q": "Sepupu bermain apa?",
+    "a": [
+     "gitar"
+    ]
+   }
+  ],
+  "notice": "Malay has no past tense: \"semalam\" (yesterday) and \"sudah\" (already) show the time, and the verb stays the same: \"datang\", \"membawa\". \"-nya\" means his, her or its: \"rumahnya\" (her house), \"hidupnya\" (her life).",
+  "back": [
+   [
+    "Mak cik saya membuat kek yang besar dan pak cik saya membawa bunga.",
+    "My aunt baked a big cake and my uncle brought flowers."
+   ],
+   [
+    "Selepas makan tengah hari, Nenek menunjukkan gambar-gambar lama kepada kami.",
+    "After lunch she showed us old photos."
+   ]
+  ]
+ },
+ {
+  "id": "ms-wallet",
+  "title": "Dompet yang hilang",
+  "level": "B1",
+  "text": "Jumaat lepas Daniel mahu membayar di pasar raya, tetapi dompetnya tiada di dalam poketnya. Dia sangat risau, kerana kad bank dan lesen memandunya ada di dalam dompet itu. Dia meninggalkan barang-barangnya di kaunter dan berpatah balik melalui jalan yang sama. Dia mencari di merata-rata tempat, di kaki lima dan di perhentian bas, tetapi tidak menjumpai apa-apa. Di rumah dia menelefon bank dan menyekat kadnya. Malam itu dia tidak dapat tidur, kerana memikirkan semua dokumennya. Dua hari kemudian sepucuk surat daripada polis tiba. Seorang wanita telah menjumpai dompet itu di dalam bas dan membawanya ke balai polis. Daniel terus pergi ke sana. Tiada apa-apa yang hilang, malah wangnya pun masih ada. Pegawai polis memberinya alamat wanita itu, kerana Daniel mahu mengucapkan terima kasih kepadanya. Keesokan harinya dia membeli bunga dan menulis sekeping kad untuknya. Wanita itu terkejut dan mengajaknya minum kopi. Mereka berbual selama sejam, dan sekarang mereka berkawan baik. Sejak itu Daniel selalu memeriksa poketnya sebelum turun dari bas.",
+  "gloss": {
+   "jumaat": "Friday",
+   "membayar": "pay",
+   "pasar": "(pasar raya: supermarket)",
+   "dompetnya": "his wallet",
+   "poketnya": "his pocket",
+   "risau": "worried",
+   "kad": "card (kad bank: bank card)",
+   "lesen": "licence (lesen memandu: driving licence)",
+   "barang": "things, goods",
+   "kaunter": "till",
+   "sama": "same",
+   "merata": "(di merata-rata tempat: everywhere)",
+   "kaki": "(kaki lima: pavement)",
+   "perhentian": "stop (perhentian bas: bus stop)",
+   "menjumpai": "found",
+   "menyekat": "blocked",
+   "dokumennya": "his documents",
+   "surat": "letter",
+   "polis": "police",
+   "hilang": "missing",
+   "wangnya": "his money",
+   "alamat": "address",
+   "terima": "(terima kasih: thanks)",
+   "terkejut": "surprised",
+   "mengajaknya": "invited him",
+   "memeriksa": "checks",
+   "turun": "gets off"
+  },
+  "questions": [
+   {
+    "q": "Apakah yang tiada di dalam poket Daniel?",
+    "a": [
+     "dompet"
+    ]
+   },
+   {
+    "q": "Di manakah wanita itu menjumpai dompet?",
+    "a": [
+     "bas"
+    ]
+   },
+   {
+    "q": "Apakah yang dibeli oleh Daniel?",
+    "a": [
+     "bunga"
+    ]
+   }
+  ],
+  "notice": "\"Telah\" and \"sudah\" mark what is already done: \"telah menjumpai\" (had found). \"Tiada\" is \"is not there\" or \"there is no\"; \"tidak\" makes a verb negative: \"tidak dapat tidur\" (could not sleep).",
+  "back": [
+   [
+    "Dia mencari di merata-rata tempat, di kaki lima dan di perhentian bas, tetapi tidak menjumpai apa-apa.",
+    "He looked everywhere, on the pavement and at the bus stop, but he found nothing."
+   ],
+   [
+    "Seorang wanita telah menjumpai dompet itu di dalam bas dan membawanya ke balai polis.",
+    "A woman had found the wallet on the bus and had taken it to the police station."
+   ]
+  ]
+ },
+ {
+  "id": "ms-station",
+  "title": "Di stesen kereta api",
+  "level": "A2",
+  "roles": [
+   "Kerani tiket",
+   "Penumpang"
+  ],
+  "lines": [
+   [
+    0,
+    "Selamat pagi. Boleh saya bantu?"
+   ],
+   [
+    1,
+    "Selamat pagi. Saya mahu membeli satu tiket ke Seremban."
+   ],
+   [
+    0,
+    "Sehala atau pergi balik?"
+   ],
+   [
+    1,
+    "Pergi balik. Bilakah kereta api seterusnya bertolak?"
+   ],
+   [
+    0,
+    "Pukul sepuluh suku, dari platform tiga."
+   ],
+   [
+    1,
+    "Berapa lamakah perjalanan itu?"
+   ],
+   [
+    0,
+    "Kira-kira dua jam setengah. Anda perlu menukar kereta api di KL Sentral."
+   ],
+   [
+    1,
+    "Berapa lamakah masa saya di sana?"
+   ],
+   [
+    0,
+    "Dua puluh minit. Itu cukup."
+   ],
+   [
+    1,
+    "Baik. Berapakah harga tiket itu?"
+   ],
+   [
+    0,
+    "Tiga puluh empat ringgit. Adakah anda mahu membayar dengan kad?"
+   ],
+   [
+    1,
+    "Ya, dengan kad. Terima kasih banyak!"
+   ]
+  ],
+  "gloss": {
+   "bantu": "help",
+   "tiket": "ticket",
+   "sehala": "one way",
+   "balik": "(pergi balik: return)",
+   "seterusnya": "next",
+   "kereta": "(kereta api: train)",
+   "bertolak": "leave",
+   "platform": "platform",
+   "perjalanan": "journey",
+   "jam": "hours",
+   "menukar": "change",
+   "masa": "time",
+   "minit": "minutes",
+   "cukup": "enough",
+   "harga": "price",
+   "membayar": "pay",
+   "kad": "card"
+  },
+  "questions": [
+   {
+    "q": "Dari platform manakah kereta api bertolak?",
+    "a": [
+     "tiga",
+     "3"
+    ]
+   },
+   {
+    "q": "Penumpang membayar dengan apa?",
+    "a": [
+     "kad"
+    ]
+   }
+  ],
+  "notice": "\"-kah\" marks the word a question asks about: \"bilakah\" (when), \"berapakah\" (how much). The clock uses \"pukul\": \"pukul sepuluh suku\" is a quarter past ten. A train is \"kereta api\" (fire carriage); \"kereta\" alone is a car."
+ },
+ {
+  "id": "ms-doctor",
+  "title": "Di klinik",
+  "level": "B1",
+  "roles": [
+   "Doktor",
+   "Pesakit"
+  ],
+  "lines": [
+   [
+    0,
+    "Selamat pagi. Apa masalah anda?"
+   ],
+   [
+    1,
+    "Selamat pagi, doktor. Sudah tiga hari saya sakit tekak dan batuk."
+   ],
+   [
+    0,
+    "Adakah anda demam juga?"
+   ],
+   [
+    1,
+    "Ya, malam tadi suhu saya tiga puluh lapan setengah."
+   ],
+   [
+    0,
+    "Adakah kepala anda sakit juga?"
+   ],
+   [
+    1,
+    "Sedikit, terutamanya pada waktu malam. Saya juga susah tidur."
+   ],
+   [
+    0,
+    "Sila buka mulut anda. Ya, tekak anda sangat merah."
+   ],
+   [
+    1,
+    "Adakah ini serius? Saya perlu bekerja minggu ini."
+   ],
+   [
+    0,
+    "Tidak, tetapi anda perlu berehat. Duduklah di rumah selama tiga hari dan minum banyak teh."
+   ],
+   [
+    1,
+    "Adakah saya perlu makan ubat?"
+   ],
+   [
+    0,
+    "Saya akan beri anda preskripsi untuk pil. Makan sebiji selepas setiap kali makan."
+   ],
+   [
+    1,
+    "Terima kasih. Perlukah saya datang lagi jika belum sembuh?"
+   ],
+   [
+    0,
+    "Ya, datanglah lagi minggu depan jika anda masih demam."
+   ],
+   [
+    1,
+    "Baik. Jumpa lagi, doktor."
+   ]
+  ],
+  "gloss": {
+   "masalah": "problem",
+   "tekak": "throat (sakit tekak: a sore throat)",
+   "batuk": "cough",
+   "hari": "days",
+   "demam": "fever",
+   "kepala": "head",
+   "sakit": "hurt",
+   "terutamanya": "especially",
+   "tidur": "sleep",
+   "mulut": "mouth",
+   "merah": "red",
+   "serius": "serious",
+   "berehat": "to rest",
+   "duduklah": "stay",
+   "ubat": "medicine",
+   "preskripsi": "prescription",
+   "pil": "tablets",
+   "makan": "to eat (selepas makan: after a meal)",
+   "datang": "come (datang lagi: come back)",
+   "sembuh": "recovered"
+  },
+  "questions": [
+   {
+    "q": "Sudah berapa hari pesakit sakit tekak?",
+    "a": [
+     "tiga",
+     "3"
+    ]
+   },
+   {
+    "q": "Doktor memberi preskripsi untuk apa?",
+    "a": [
+     "pil"
+    ]
+   }
+  ],
+  "notice": "\"Makan ubat\" is \"to take medicine\" (to eat it). \"-lah\" softens a command: \"duduklah\" (stay), \"datanglah\" (come). \"Sudah tiga hari\" (already three days) says how long something has lasted."
  }
 ]

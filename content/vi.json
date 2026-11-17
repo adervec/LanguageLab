@@ -407,5 +407,461 @@
    }
   ],
   "notice": "A yes-or-no question ends with \"không\" (not) or, when asking whether something is already done, with \"chưa\" (yet): \"có thang máy không?\", \"đã bao gồm bữa sáng chưa?\". The answers are \"có\" (yes) and \"rồi\" (already)."
+ },
+ {
+  "id": "vi-family",
+  "title": "Gia đình tôi",
+  "level": "A1",
+  "text": "Tôi tên là Anna. Tôi sống cùng gia đình trong một ngôi nhà nhỏ gần sông. Mẹ tôi là giáo viên và bố tôi làm việc ở một cửa hàng. Tôi có một em trai và một em gái. Em trai tôi mười tuổi và thích bóng đá. Em gái tôi còn nhỏ: em mới ba tuổi. Chúng tôi cũng có một con chó, tên nó là Max. Mỗi buổi sáng bố tôi dắt chó đi dạo. Buổi tối chúng tôi ăn cơm cùng nhau và nói chuyện về một ngày của mình. Sau bữa tối, tôi và em trai rửa bát. Chủ nhật bà tôi đến và mang theo một chiếc bánh. Tôi rất yêu gia đình mình.",
+  "gloss": {
+   "gia": "(gia đình: family)",
+   "nhà": "house",
+   "sông": "river",
+   "mẹ": "mother",
+   "giáo": "(giáo viên: teacher)",
+   "bố": "father",
+   "cửa": "(cửa hàng: shop)",
+   "trai": "(em trai: younger brother)",
+   "gái": "(em gái: younger sister)",
+   "tuổi": "years old",
+   "bóng": "(bóng đá: football)",
+   "nhỏ": "small",
+   "chó": "dog",
+   "sáng": "morning",
+   "dạo": "(đi dạo: to go for a walk)",
+   "tối": "evening",
+   "ăn": "eat",
+   "nhau": "(cùng nhau: together)",
+   "bữa": "meal (bữa tối: dinner)",
+   "bát": "bowls (rửa bát: to wash the dishes)",
+   "nhật": "(chủ nhật: Sunday)",
+   "bà": "grandmother",
+   "bánh": "cake"
+  },
+  "questions": [
+   {
+    "q": "Bố Anna làm việc ở đâu?",
+    "a": [
+     "cửa"
+    ]
+   },
+   {
+    "q": "Em trai Anna bao nhiêu tuổi?",
+    "a": [
+     "mười",
+     "10"
+    ]
+   },
+   {
+    "q": "Ai đến vào chủ nhật?",
+    "a": [
+     "bà"
+    ]
+   }
+  ],
+  "notice": "Vietnamese words never change: no endings for person, number or time. Family words stand for \"I\", \"you\", \"he\" and \"she\": \"em\" is a younger brother or sister, \"bà\" a grandmother. \"My\" follows the noun: \"mẹ tôi\" (mother I).",
+  "back": [
+   [
+    "Mẹ tôi là giáo viên và bố tôi làm việc ở một cửa hàng.",
+    "My mother is a teacher and my father works in a shop."
+   ],
+   [
+    "Chủ nhật bà tôi đến và mang theo một chiếc bánh.",
+    "On Sunday my grandmother comes and brings a cake."
+   ]
+  ]
+ },
+ {
+  "id": "vi-town",
+  "title": "Thị trấn của chúng tôi",
+  "level": "A1",
+  "text": "Thị trấn của chúng tôi nhỏ nhưng đẹp. Ở trung tâm có một quảng trường cổ với một đài phun nước. Bên cạnh quảng trường có một trường học, một hiệu thuốc và hai quán cà phê. Nhà ga ở phía sau công viên. Mỗi buổi sáng nhiều người đi tàu lên thành phố lớn. Buổi chiều trẻ em chơi trong công viên, còn các cụ ông chơi cờ. Mùa hè khách du lịch đến và chụp ảnh cây cầu. Mùa đông thị trấn yên tĩnh. Thứ bảy có chợ ở quảng trường. Ở đó bạn có thể mua rau, mật ong và hoa. Buổi tối tôi thích đi dạo bên bờ sông. Tôi không muốn sống ở thành phố lớn.",
+  "gloss": {
+   "trấn": "(thị trấn: town)",
+   "đẹp": "beautiful",
+   "tâm": "(trung tâm: centre)",
+   "quảng": "(quảng trường: square)",
+   "phun": "(đài phun nước: fountain)",
+   "học": "(trường học: school)",
+   "thuốc": "medicine (hiệu thuốc: pharmacy)",
+   "ga": "(nhà ga: station)",
+   "sau": "(phía sau: behind)",
+   "viên": "(công viên: park)",
+   "tàu": "train",
+   "chiều": "afternoon",
+   "trẻ": "(trẻ em: children)",
+   "cờ": "chess",
+   "hè": "(mùa hè: summer)",
+   "khách": "guest (khách du lịch: tourist)",
+   "cầu": "bridge",
+   "đông": "(mùa đông: winter)",
+   "yên": "(yên tĩnh: quiet)",
+   "bảy": "seven (thứ bảy: Saturday)",
+   "rau": "vegetables",
+   "mật": "(mật ong: honey)",
+   "hoa": "flowers",
+   "sông": "river"
+  },
+  "questions": [
+   {
+    "q": "Ở trung tâm thị trấn có gì?",
+    "a": [
+     "quảng"
+    ]
+   },
+   {
+    "q": "Nhà ga ở đâu?",
+    "a": [
+     "viên"
+    ]
+   },
+   {
+    "q": "Khi nào khách du lịch đến?",
+    "a": [
+     "hè"
+    ]
+   }
+  ],
+  "notice": "\"Có\" means \"there is\": \"có một quảng trường\", \"có chợ\". Many words are two syllables written apart: \"thị trấn\" (town), \"công viên\" (park), \"nhà ga\" (station). The describing word comes after: \"thành phố lớn\" (city big).",
+  "back": [
+   [
+    "Nhà ga ở phía sau công viên.",
+    "The station is behind the park."
+   ],
+   [
+    "Mùa đông thị trấn yên tĩnh.",
+    "In winter the town is quiet."
+   ]
+  ]
+ },
+ {
+  "id": "vi-birthday",
+  "title": "Sinh nhật của bà",
+  "level": "A2",
+  "text": "Hôm qua là sinh nhật của bà tôi. Năm nay bà tám mươi tuổi. Cả gia đình đã đến nhà bà ở làng. Dì tôi làm một chiếc bánh to và chú tôi mang hoa đến. Chúng tôi tặng bà một chiếc khăn ấm và một cuốn sách về vườn. Trước bữa trưa chúng tôi hát một bài hát, và bà cười. Trên bàn có súp, thịt gà với khoai tây và rất nhiều salad. Sau bữa trưa bà cho chúng tôi xem những bức ảnh cũ. Trong một bức ảnh, bà là một cô gái trẻ với chiếc xe đạp. Bà kể rằng ngày nào bà cũng đạp xe đi làm. Sau đó anh họ tôi chơi ghi ta và mọi người nhảy múa. Ngay cả em trai tôi cũng nhảy với bà. Buổi tối bà mệt nhưng vui. Bà nói đó là sinh nhật tuyệt nhất trong đời bà. Chúng tôi về nhà muộn, khi sao đã lên đầy trời.",
+  "gloss": {
+   "qua": "(hôm qua: yesterday)",
+   "sinh": "(sinh nhật: birthday)",
+   "tám": "eight (tám mươi: eighty)",
+   "cả": "whole",
+   "làng": "village",
+   "dì": "aunt (mother's younger sister)",
+   "làm": "make, do (đi làm: go to work)",
+   "chú": "uncle (father's younger brother)",
+   "hoa": "flowers",
+   "tặng": "gave",
+   "khăn": "scarf",
+   "vườn": "gardens",
+   "hát": "sing (bài hát: song)",
+   "cười": "laughed",
+   "gà": "chicken",
+   "khoai": "(khoai tây: potato)",
+   "xem": "see (cho ... xem: showed)",
+   "trẻ": "young",
+   "đạp": "(xe đạp: bicycle)",
+   "họ": "(anh họ: older male cousin)",
+   "ghi": "(ghi ta: guitar)",
+   "nhảy": "danced",
+   "mệt": "tired",
+   "tuyệt": "(tuyệt nhất: the best)",
+   "đời": "life",
+   "sao": "stars"
+  },
+  "questions": [
+   {
+    "q": "Năm nay bà bao nhiêu tuổi?",
+    "a": [
+     "tám",
+     "80"
+    ]
+   },
+   {
+    "q": "Ai mang hoa đến?",
+    "a": [
+     "chú"
+    ]
+   },
+   {
+    "q": "Anh họ chơi gì?",
+    "a": [
+     "ghi"
+    ]
+   }
+  ],
+  "notice": "\"Đã\" before a verb marks the past: \"đã đến\" (came). \"Bà\" is the grandmother and is also how she is spoken of instead of \"she\": \"bà cười\" (she laughed). Counting words stand before a thing: \"một chiếc bánh\", \"một cuốn sách\".",
+  "back": [
+   [
+    "Dì tôi làm một chiếc bánh to và chú tôi mang hoa đến.",
+    "My aunt baked a big cake and my uncle brought flowers."
+   ],
+   [
+    "Sau bữa trưa bà cho chúng tôi xem những bức ảnh cũ.",
+    "After lunch she showed us old photos."
+   ]
+  ]
+ },
+ {
+  "id": "vi-wallet",
+  "title": "Chiếc ví bị mất",
+  "level": "B1",
+  "text": "Thứ sáu tuần trước, Daniel muốn trả tiền ở siêu thị, nhưng chiếc ví không có trong túi. Anh rất lo lắng, vì trong ví có thẻ ngân hàng và bằng lái xe. Anh để hàng lại ở quầy thu ngân và quay lại theo đường cũ. Anh tìm khắp nơi, trên vỉa hè và ở trạm xe buýt, nhưng không tìm thấy gì. Về nhà, anh gọi điện cho ngân hàng và khóa thẻ. Đêm đó anh không ngủ được, vì anh nghĩ đến tất cả giấy tờ của mình. Hai ngày sau, một lá thư của công an được gửi đến. Một người phụ nữ đã tìm thấy chiếc ví trên xe buýt và mang đến đồn công an. Daniel đến đó ngay lập tức. Không mất thứ gì, kể cả tiền. Anh công an đưa cho anh địa chỉ của người phụ nữ, vì Daniel muốn cảm ơn cô ấy. Ngày hôm sau anh mua hoa và viết cho cô ấy một tấm thiệp. Cô ấy ngạc nhiên và mời anh đi uống cà phê. Họ nói chuyện một tiếng, và bây giờ họ là bạn tốt. Từ đó, Daniel luôn kiểm tra túi trước khi xuống xe buýt.",
+  "gloss": {
+   "sáu": "six (thứ sáu: Friday)",
+   "trả": "(trả tiền: to pay)",
+   "siêu": "(siêu thị: supermarket)",
+   "ví": "wallet",
+   "túi": "pocket",
+   "lo": "(lo lắng: worried)",
+   "thẻ": "card (thẻ ngân hàng: bank card)",
+   "bằng": "(bằng lái xe: driving licence)",
+   "quầy": "(quầy thu ngân: till)",
+   "cũ": "old (đường cũ: the same way back)",
+   "khắp": "(khắp nơi: everywhere)",
+   "vỉa": "(vỉa hè: pavement)",
+   "trạm": "(trạm xe buýt: bus stop)",
+   "thấy": "(tìm thấy: found)",
+   "khóa": "locked, blocked",
+   "giấy": "(giấy tờ: papers, documents)",
+   "thư": "letter",
+   "công": "(công an: police)",
+   "mất": "lost, missing",
+   "tiền": "money",
+   "địa": "(địa chỉ: address)",
+   "cảm": "(cảm ơn: to thank)",
+   "ngạc": "(ngạc nhiên: surprised)",
+   "mời": "invited",
+   "kiểm": "(kiểm tra: to check)",
+   "xuống": "gets off"
+  },
+  "questions": [
+   {
+    "q": "Cái gì không có trong túi Daniel?",
+    "a": [
+     "ví"
+    ]
+   },
+   {
+    "q": "Người phụ nữ tìm thấy chiếc ví ở đâu?",
+    "a": [
+     "buýt"
+    ]
+   },
+   {
+    "q": "Daniel mua gì?",
+    "a": [
+     "hoa"
+    ]
+   }
+  ],
+  "notice": "\"Không ... được\" is \"could not\": \"không ngủ được\" (could not sleep). \"Anh\" (older brother) is how a young man is spoken of, and \"cô ấy\" a young woman. \"Đã\" marks what is already done: \"đã tìm thấy\".",
+  "back": [
+   [
+    "Anh tìm khắp nơi, trên vỉa hè và ở trạm xe buýt, nhưng không tìm thấy gì.",
+    "He looked everywhere, on the pavement and at the bus stop, but he found nothing."
+   ],
+   [
+    "Một người phụ nữ đã tìm thấy chiếc ví trên xe buýt và mang đến đồn công an.",
+    "A woman had found the wallet on the bus and had taken it to the police station."
+   ]
+  ]
+ },
+ {
+  "id": "vi-station",
+  "title": "Ở nhà ga",
+  "level": "A2",
+  "roles": [
+   "Nhân viên bán vé",
+   "Hành khách"
+  ],
+  "lines": [
+   [
+    0,
+    "Chào anh. Tôi có thể giúp gì cho anh?"
+   ],
+   [
+    1,
+    "Chào chị. Tôi muốn mua một vé đi Huế."
+   ],
+   [
+    0,
+    "Một chiều hay khứ hồi?"
+   ],
+   [
+    1,
+    "Khứ hồi. Khi nào chuyến tàu tiếp theo khởi hành?"
+   ],
+   [
+    0,
+    "Lúc mười giờ mười lăm, ở sân ga số ba."
+   ],
+   [
+    1,
+    "Chuyến đi mất bao lâu?"
+   ],
+   [
+    0,
+    "Khoảng ba tiếng. Anh phải đổi tàu ở Đà Nẵng."
+   ],
+   [
+    1,
+    "Tôi có bao nhiêu thời gian ở đó?"
+   ],
+   [
+    0,
+    "Hai mươi phút. Như vậy là đủ."
+   ],
+   [
+    1,
+    "Tốt. Giá vé là bao nhiêu?"
+   ],
+   [
+    0,
+    "Ba trăm nghìn đồng. Anh có muốn trả bằng thẻ không?"
+   ],
+   [
+    1,
+    "Có, bằng thẻ. Cảm ơn chị nhiều!"
+   ]
+  ],
+  "gloss": {
+   "giúp": "help",
+   "vé": "ticket",
+   "chiều": "direction (một chiều: one way)",
+   "khứ": "(khứ hồi: return)",
+   "tiếp": "(tiếp theo: next)",
+   "tàu": "train",
+   "khởi": "(khởi hành: to depart)",
+   "sân": "(sân ga: platform)",
+   "chuyến": "trip (chuyến đi: the journey)",
+   "tiếng": "hours",
+   "đổi": "change",
+   "thời": "(thời gian: time)",
+   "phút": "minutes",
+   "đủ": "enough",
+   "giá": "price",
+   "trả": "pay",
+   "thẻ": "card"
+  },
+  "questions": [
+   {
+    "q": "Tàu khởi hành ở sân ga số mấy?",
+    "a": [
+     "ba",
+     "3"
+    ]
+   },
+   {
+    "q": "Hành khách trả tiền bằng gì?",
+    "a": [
+     "thẻ"
+    ]
+   }
+  ],
+  "notice": "Vietnamese speakers choose \"you\" by age and sex: here the clerk says \"anh\" (to a man of about her age) and the traveller says \"chị\" (to a woman). \"Có ... không?\" makes a yes-or-no question: \"Anh có muốn trả bằng thẻ không?\"."
+ },
+ {
+  "id": "vi-doctor",
+  "title": "Ở phòng khám",
+  "level": "B1",
+  "roles": [
+   "Bác sĩ",
+   "Bệnh nhân"
+  ],
+  "lines": [
+   [
+    0,
+    "Chào anh. Anh bị làm sao?"
+   ],
+   [
+    1,
+    "Chào bác sĩ. Tôi bị đau họng và ho ba ngày rồi."
+   ],
+   [
+    0,
+    "Anh có bị sốt không?"
+   ],
+   [
+    1,
+    "Có, tối qua tôi sốt ba mươi tám độ rưỡi."
+   ],
+   [
+    0,
+    "Anh có bị đau đầu không?"
+   ],
+   [
+    1,
+    "Hơi đau, nhất là vào buổi tối. Tôi cũng ngủ không ngon."
+   ],
+   [
+    0,
+    "Anh há miệng ra nào. Vâng, họng anh rất đỏ."
+   ],
+   [
+    1,
+    "Có nặng không ạ? Tuần này tôi phải đi làm."
+   ],
+   [
+    0,
+    "Không, nhưng anh cần nghỉ ngơi. Anh ở nhà ba ngày và uống nhiều trà nhé."
+   ],
+   [
+    1,
+    "Tôi có cần uống thuốc không?"
+   ],
+   [
+    0,
+    "Tôi sẽ kê đơn thuốc viên cho anh. Sau mỗi bữa ăn anh uống một viên."
+   ],
+   [
+    1,
+    "Cảm ơn bác sĩ. Nếu không đỡ thì tôi có phải quay lại không?"
+   ],
+   [
+    0,
+    "Có, tuần sau anh quay lại nếu vẫn còn sốt."
+   ],
+   [
+    1,
+    "Vâng ạ. Chào bác sĩ."
+   ]
+  ],
+  "gloss": {
+   "sao": "(bị làm sao: what is the matter)",
+   "họng": "throat (đau họng: a sore throat)",
+   "ho": "cough",
+   "ngày": "days",
+   "sốt": "fever",
+   "đầu": "head",
+   "đau": "hurt",
+   "nhất": "(nhất là: especially)",
+   "ngủ": "sleep",
+   "miệng": "mouth",
+   "đỏ": "red",
+   "nặng": "heavy, serious",
+   "nghỉ": "(nghỉ ngơi: to rest)",
+   "nhà": "home (ở nhà: stay at home)",
+   "thuốc": "medicine",
+   "đơn": "(kê đơn: to prescribe)",
+   "viên": "tablet",
+   "bữa": "meal (bữa ăn)",
+   "quay": "(quay lại: to come back)",
+   "đỡ": "get better"
+  },
+  "questions": [
+   {
+    "q": "Bệnh nhân bị đau họng mấy ngày rồi?",
+    "a": [
+     "ba",
+     "3"
+    ]
+   },
+   {
+    "q": "Bác sĩ kê đơn thuốc gì?",
+    "a": [
+     "viên"
+    ]
+   }
+  ],
+  "notice": "\"Bị\" marks something unpleasant that happens to you: \"bị đau họng\" (to have a sore throat), \"bị sốt\" (to have a fever). \"Rồi\" at the end means \"already\": \"ba ngày rồi\". \"Ạ\" and \"vâng\" make an answer polite."
  }
 ]
