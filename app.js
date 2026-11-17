@@ -484,7 +484,7 @@ const pairHtml = (word, heard) => { const [a, b] = C.letterDiff(word, heard), ro
   return H`<span lang="${S.lang}">${row(a)}</span> → <span lang="${S.lang}">${row(b)}</span>`; };
 const heardInstead = d => { const subs = d.typed ? [] : C.speechMarks(d.target, [d.heard], S.lang).subs.slice(0, 4);
   return subs.length ? H`<p class="sub">${t('What it heard instead')}: ${subs.map(([w, h], k) => H`${k ? ' · ' : ''}${pairHtml(w, h)}`)}</p>` : ''; };
-const sndTry = {}; // a "sound to notice" said aloud: word -> { state: 'hit' | 'near' | 'miss', heard } (kept for the visit only)
+const sndTry = {}; // a "sound to notice" said aloud: language:word -> { state: 'hit' | 'near' | 'miss', heard } (kept for the visit only)
 // A tappable word is a box of its own, so left alone the browser may break the line between it and what is written against it: a
 // full stop would start the next line, and "J'" would part from "ai". What touches a word (and the spaced ? ! : ; » of French)
 // is kept on its line with it.
@@ -947,7 +947,7 @@ function vFirst() {
   ${snd.length ? H`<h2>${t('Sounds to notice')}</h2><p class="sub">${SR ? t('Where the spelling does not sound the way you might expect. Tap ▶ to hear the word, then say it: speech recognition shows whether it understood you, or what it heard instead. One word alone is hard for it, so try more than once.') : t('Where the spelling does not sound the way you might expect. Tap to hear the word.')}</p>
     <p class="sub" id="micmsg" role="status"></p>
     <div class="card">${snd.map(([letters, word, hint]) => H`<div class="ph"><button class="mini" data-act="sayx" data-x="${word}" aria-label="${t('Hear it')}">▶</button>
-      <div class="grow"><b lang="${S.lang}">${letters}</b> · <span lang="${S.lang}">${word}</span><span class="sub">${hint}</span>${sndTry[word] ? H`<span class="sub" role="status">${sndTry[word].state === 'hit' ? H`<b class="hit">${t('Understood.')}</b>` : sndTry[word].state === 'near' ? H`<b class="near">${t('Nearly: it was only its second guess.')}</b>` : H`${t('It heard instead')}: ${pairHtml(word, sndTry[word].heard)}`}</span>` : ''}</div>
+      <div class="grow"><b lang="${S.lang}">${letters}</b> · <span lang="${S.lang}">${word}</span><span class="sub">${hint}</span>${sndTry[S.lang + ':' + word] ? H`<span class="sub" role="status">${sndTry[S.lang + ':' + word].state === 'hit' ? H`<b class="hit">${t('Understood.')}</b>` : sndTry[S.lang + ':' + word].state === 'near' ? H`<b class="near">${t('Nearly: it was only its second guess.')}</b>` : H`${t('It heard instead')}: ${pairHtml(word, sndTry[S.lang + ':' + word].heard)}`}</span>` : ''}</div>
       ${SR ? H`<button class="mini" data-act="sndsay" data-x="${word}" aria-pressed="false">${t('Say it')}</button>` : ''}</div>`)}</div>` : ''}`;
 }
 
@@ -1256,7 +1256,7 @@ const ACT = {
     const word = b.dataset.x, got = [], k = w => C.wordKeys(w, S.lang).join(' ');
     hear(b, false, (text, res) => got.push(...[...(res || [])].slice(0, 3).map(a => String(a?.transcript || '').trim()).filter(Boolean)), () => {
       if (view !== 'first' || !got.length) return;
-      sndTry[word] = { state: k(got[0]) === k(word) ? 'hit' : got.some(g => k(g) === k(word)) ? 'near' : 'miss', heard: got[0].slice(0, 60) };
+      sndTry[S.lang + ':' + word] = { state: k(got[0]) === k(word) ? 'hit' : got.some(g => k(g) === k(word)) ? 'near' : 'miss', heard: got[0].slice(0, 60) };
       render(true); }, () => 1200); },
   hintkeep(b) { // the same for a suggestion on a retelling
     const id = b.dataset.id, at = id.lastIndexOf(':'), f = S.sittings.find(x => x.id === id.slice(0, at))?.hints?.[id.slice(at + 1)];

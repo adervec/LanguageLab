@@ -37,7 +37,8 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
 - **First steps** (from nothing): `content/first.json` holds 160 phrases in twenty lessons for 44 languages
   (`langs`: a phrase is a string, or `[phrase, its own meaning]` where the shared English `meanings` do not fit), a meaning with `{language}` in it names the language being learned and is always shown in English), a reading in
   Latin letters for each phrase in a script that is not Latin (`readings`), script charts (`scripts`: `"letter=reading"` pairs)
-  and sounds to notice (`sounds`). `lessonStories()` turns a language's phrases into ten stories with `phrases: true`, no
+  and sounds to notice (`sounds`, for every language: `[letters, a word, a hint]`; where the script is not Latin the hint starts with
+  the word in Latin letters, and a Japanese example is a word written in kana, so that a recogniser writes it as the list does). `lessonStories()` turns a language's phrases into ten stories with `phrases: true`, no
   level (so they never count in `abilities()`) and `back` = every phrase with its meaning, shown in the interface language
   where the file has that language. A lesson is a session with `mode: 'first'`: study the phrases, type half from the ear,
   write the other half from their meaning and say them (the halves swap next time). Its phrases become review cards in the

@@ -316,6 +316,7 @@ console.log('core.test: ok');
     if (!first.langs[code] || !letters || !word || !hint) bad.push(`${code}: a sound is [letters, example word, what to listen for]`);
     else if (!c.langInfo(code).seg && !letters.split(' ').some(x => word.toLowerCase().includes(x.replace(/-/g, '')))) bad.push(`${code}: "${word}" does not show "${letters}"`);
   }
+  for (const code of Object.keys(first.langs)) if (!(first.sounds[code]?.length >= 5)) bad.push(`${code}: needs its sounds to notice`);
   for (const [code, charts] of Object.entries(first.scripts)) for (const [name, src] of charts) {
     const pairs = c.chartPairs(src);
     if (!first.langs[code] || !name || pairs.length < 5 || pairs.length !== src.split(' ').length) bad.push(`${code} ${name}: a chart is "letter=reading" pairs`);
