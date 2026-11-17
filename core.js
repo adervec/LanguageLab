@@ -367,6 +367,9 @@ export function lessonKeys(text, lang) {
 }
 // A script chart "あ=a し=shi/si" -> [[letter, [accepted readings]]]. A typed reading passes when it is one of them (case and accents forgiven).
 export const chartPairs = src => String(src ?? '').split(/\s+/).map(x => x.split('=')).filter(x => x.length === 2 && x[0] && x[1]).map(([ch, r]) => [ch, r.split('/')]);
+// The digits someone typed, whichever digits their keyboard has (٤٧, ४७ and ４７ are all 47); anything else is dropped.
+const ZEROS = [0x30, 0x660, 0x6f0, 0x966, 0x9e6, 0xe50, 0xff10];
+export const digits = s => [...String(s ?? '')].map(ch => { const c = ch.codePointAt(0), z = ZEROS.find(z => c >= z && c < z + 10); return z == null ? '' : String(c - z); }).join('');
 export const readingOk = (typed, readings) => arr(readings).some(r => strip(r) === strip(String(typed).trim()));
 export function cleanReview(r) {
   r = obj(r);

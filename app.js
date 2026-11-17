@@ -926,13 +926,14 @@ function vChat() {
 function vFirst() {
   const ls = lessons(), abc = list(FIRST?.scripts?.[S.lang]), snd = list(FIRST?.sounds?.[S.lang]);
   if (quiz) { const over = quiz.i >= quiz.cards.length, [ch, r] = over ? [] : quiz.cards[quiz.i];
-    return H`<h1>${t('Letters')} <span class="sub">${t(quiz.name)}</span></h1>
+    const ask = quiz.ear ? t('The number, in digits') : t('How it sounds, in Latin letters');
+    return H`<h1>${quiz.ear ? t('Numbers by ear') : t('Letters')} <span class="sub">${quiz.name}</span></h1>
     ${over ? H`<p class="big">${t('{right} of {n} right', { right: nf(quiz.right), n: nf(quiz.cards.length) })}</p><button class="primary" data-act="qzend" data-focus>${t('Done')}</button>`
-      : H`<p class="sub">${t('Letter {i} of {n}', { i: quiz.i + 1, n: quiz.cards.length })}</p>
-      <p class="letter" lang="${S.lang}">${ch}</p>
+      : H`<p class="sub">${quiz.ear ? t('Number {i} of {n}', { i: quiz.i + 1, n: quiz.cards.length }) : t('Letter {i} of {n}', { i: quiz.i + 1, n: quiz.cards.length })}</p>
+      ${quiz.ear ? H`<p><button data-act="sayx" data-x="${ch}">▶ ${t('Hear it again')}</button></p>` : H`<p class="letter" lang="${S.lang}">${ch}</p>`}
       ${quiz.verdict ? H`<p class="big ${quiz.verdict === 'wrong' ? 'miss' : 'hit'}">${quiz.verdict === 'wrong' ? t('Not yet') : t('Right')}: <b>${r.join(' / ')}</b></p>
         <button class="primary" data-act="qznext" data-focus>${t('Next')}</button>`
-        : H`<p><input type="text" id="ans" autocomplete="off" autocapitalize="off" spellcheck="false" data-enter="qzcheck" aria-label="${t('How it sounds, in Latin letters')}" placeholder="${t('How it sounds, in Latin letters')}" data-focus></p>
+        : H`<p><input type="text" id="ans" inputmode="${quiz.ear ? 'numeric' : 'text'}" autocomplete="off" autocapitalize="off" spellcheck="false" data-enter="qzcheck" aria-label="${ask}" placeholder="${ask}" data-focus></p>
         <p><button class="primary" data-act="qzcheck">${t('Check')}</button></p>`}
       <div class="bar"><button data-act="qzend">${t('Stop')}</button></div>`}`; }
   return H`<h1>${t('First steps')} <span class="sub">${lang().name}</span></h1>
@@ -944,6 +945,8 @@ function vFirst() {
   ${abc.length ? H`<h2>${t('Letters')}</h2><p class="sub">${t('Tap a letter to hear it. Then practise: you see a letter and type how it sounds.')}</p>
     ${abc.map(([name, src], n) => H`<div class="card"><div class="row"><b class="grow">${t(String(name))}</b><button data-act="quiz" data-i="${n}">${t('Practise')}</button></div>
       <div class="abc">${C.chartPairs(src).map(([ch, r]) => H`<button data-act="sayx" data-x="${ch}"><b lang="${S.lang}">${ch}</b><span class="sub">${r[0]}</span></button>`)}</div></div>`)}` : ''}
+  ${voices().length ? H`<h2>${t('Numbers by ear')}</h2><p class="sub">${t('You hear a number at natural speed and type it in digits, ten at a time. Nothing of it is kept.')}</p>
+    <div class="row">${[20, 100, 1000, 10000].map(n => H`<button data-act="nums" data-n="${n}">${t('Up to {n}', { n: nf(n) })}</button>`)}</div>` : ''}
   ${snd.length ? H`<h2>${t('Sounds to notice')}</h2><p class="sub">${SR ? t('Where the spelling does not sound the way you might expect. Tap ▶ to hear the word, then say it: speech recognition shows whether it understood you, or what it heard instead. One word alone is hard for it, so try more than once.') : t('Where the spelling does not sound the way you might expect. Tap to hear the word.')}</p>
     <p class="sub" id="micmsg" role="status"></p>
     <div class="card">${snd.map(([letters, word, hint]) => H`<div class="ph"><button class="mini" data-act="sayx" data-x="${word}" aria-label="${t('Hear it')}">▶</button>
@@ -1107,11 +1110,17 @@ const ACT = {
   sayx(b) { say(b.dataset.x); },
   quiz(b) { // twenty letters of a chart, shuffled: see the letter, type how it sounds
     const [name, src] = list(FIRST?.scripts?.[S.lang])[b.dataset.i] || [];
-    quiz = { name: String(name), cards: shuffle(C.chartPairs(src)).slice(0, 20), i: 0, right: 0, verdict: '' };
+    quiz = { name: t(String(name)), cards: shuffle(C.chartPairs(src)).slice(0, 20), i: 0, right: 0, verdict: '' };
     render(); scrollTo(0, 0);
   },
-  qzcheck() { const [ch, r] = quiz.cards[quiz.i], ok = C.readingOk($('#ans').value, r); quiz.verdict = ok ? 'exact' : 'wrong'; if (ok) quiz.right++; render(); say(ch); },
-  qznext() { hush(); quiz.i++; quiz.verdict = ''; render(); },
+  nums(b) { // ten numbers, said by the device's voice for this language (it reads digits aloud) and typed from the ear
+    const max = +b.dataset.n, set = new Set();
+    while (set.size < 10) set.add(String(Math.floor(Math.random() * (max + 1))));
+    quiz = { ear: true, name: t('Up to {n}', { n: nf(max) }), cards: [...set].map(n => [n, [n]]), i: 0, right: 0, verdict: '' };
+    render(); scrollTo(0, 0); say(quiz.cards[0][0]);
+  },
+  qzcheck() { const [ch, r] = quiz.cards[quiz.i], ok = quiz.ear ? C.digits($('#ans').value) === ch : C.readingOk($('#ans').value, r); quiz.verdict = ok ? 'exact' : 'wrong'; if (ok) quiz.right++; render(); say(ch); },
+  qznext() { hush(); quiz.i++; quiz.verdict = ''; render(); if (quiz.ear && quiz.cards[quiz.i]) say(quiz.cards[quiz.i][0]); },
   qzend() { hush(); quiz = null; render(); },
   addfix() { // a correction from a human teacher joins the same deck as the AI's
     const c = C.cleanFixes([{ wrong: $('#fxWrong').value, right: $('#fxRight').value, why: $('#fxWhy').value }])[0];
@@ -1328,7 +1337,7 @@ document.addEventListener('focusin', e => { if (e.target.matches?.('input[type=t
 document.addEventListener('app-account-click', () => run('go', { dataset: { v: 'settings' } }));
 let installEvt = null; // the browser's offer to install the app, kept for the button in Settings
 addEventListener('beforeinstallprompt', e => { e.preventDefault(); installEvt = e; if (view === 'settings') render(); });
-if (window.speechSynthesis) speechSynthesis.onvoiceschanged = () => { if (view === 'settings' || (view === 'today' && !S.welcomed)) render(); };
+if (window.speechSynthesis) speechSynthesis.onvoiceschanged = () => { if (view === 'settings' || (view === 'first' && !quiz) || (view === 'today' && !S.welcomed)) render(); };
 
 // ---------- AI cowork: new stories at your level, a review of each sitting, a pen pal (house standards 3, 18) ----------
 const MANIFEST = { protocol: 'cowork-manifest', protocolVersion: 1, app: 'languagelab', channels: [

@@ -493,6 +493,28 @@ await page.waitForFunction(() => document.querySelector('#main').innerText.inclu
 await page.evaluate(() => { self.heard = 'roue'; });
 await page.locator('.ph', { hasText: 'rue' }).locator('button', { hasText: 'Say it' }).click();
 await page.waitForFunction(() => document.querySelector('#main').innerText.includes('It heard instead: rue → roue'));
+// numbers by ear: the voice says a number and it is typed in digits (headless Chrome has no voice, so one stands in and is taken away again)
+await page.evaluate(() => { self.realU = self.SpeechSynthesisUtterance; self.SpeechSynthesisUtterance = function (text) { this.text = text; };
+  speechSynthesis.getVoices = () => [{ lang: 'fr-FR', voiceURI: 'stand-in' }]; speechSynthesis.speak = u => { self.spoken = u.text; }; });
+await click('Library');
+await click('First steps, letters and sounds');
+await fits('numbers by ear');
+await click('Up to 100');
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('Number 1 of 10'));
+const said = await page.evaluate(() => self.spoken);
+assert.match(said, /^(\d|[1-9]\d|100)$/);
+await page.fill('#ans', said);
+await click('Check');
+assert.match(await main(), new RegExp('Right: ' + said + '\\b'));
+await click('Next');
+const said2 = await page.evaluate(() => self.spoken);
+assert.notEqual(said2, said);                             // the next one was said, and it is another number
+await page.fill('#ans', said2 + '0');
+await click('Check');
+assert.match(await main(), new RegExp('Not yet: ' + said2 + '\\b'));
+await click('Stop');
+assert.match(await main(), /Numbers by ear[\s\S]*Up to 10,000/);
+await page.evaluate(() => { self.SpeechSynthesisUtterance = self.realU; delete speechSynthesis.getVoices; delete speechSynthesis.speak; });
 await click('Progress');                                 // the suggestion is still beside its sitting; kept, it becomes a review card
 assert.match(await main(), /read aloud \d+%/);
 await click('Keep for review');

@@ -236,6 +236,9 @@ assert.deepEqual([state.sittings.length, state.sittings[0].score, state.sittings
   assert.deepEqual(c.letterDiff('rue', 'roue'), [[['rue', true]], [['r', true], ['o', false], ['ue', true]]]);
   assert.deepEqual(c.letterDiff('Été', 'étais'), [[['Ét', true], ['é', false]], [['ét', true], ['ais', false]]]);
   assert.deepEqual(c.letterDiff('chat', ''), [[['chat', false]], []]); }
+// a number typed in any script's digits
+{ assert.equal(c.digits(' ٤٧ '), '47'); assert.equal(c.digits('१२०'), '120'); assert.equal(c.digits('۱۹۸۴'), '1984'); assert.equal(c.digits('๕๐'), '50');
+  assert.equal(c.digits('1 000'), '1000'); assert.equal(c.digits('４７'), '47'); assert.equal(c.digits('abc'), ''); assert.equal(c.digits(null), ''); }
 console.log('core.test: ok');
 
 // merging this device with Drive loses nothing from either side
