@@ -77,7 +77,7 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   first guess is the score, a word only its second or third guess holds is `near`, and `sure` is its confidence; `subs` pairs a word
   with what the first guess had in its place, shown letter against letter (`letterDiff()`, "rue → roue"). In First steps each
   sound to notice can be said on its own (`sndsay`: understood, nearly, or what was heard instead; nothing of it is saved).
-  On a computer (`canProbe`) a second listener on the microphone runs beside the recogniser (`probe`, frames every 30 ms): `voiceStats()`
+  In Chromium on a computer (`canProbe`) a second listener on the microphone runs beside the recogniser (`probe`, frames every 30 ms): `voiceStats()`
   gives the time a spoken line took and its long pauses (`d.sec`, `d.pauses`, shown beside the voice's own time `d.voiceSec`; in the page
   only, never saved), and in zh, th and vi `pitchShape()` names how the pitch moved on a word said alone (`spark` draws it), also when
   no word was recognised. Checked only with sounds played in place of the microphone. No streak, no points: do not add them.

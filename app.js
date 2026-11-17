@@ -166,9 +166,9 @@ function hear(b, continuous, onText, onDone, rest) {
 
 // The sound itself, beside the recogniser's words: how long the voice spoke, its long pauses and how its pitch moved. Nothing of the
 // sound is kept or sent: only these numbers, in the page.
-// ponytail: a second listener on the same microphone, on a computer only. Phones do not all let two listen at once, so there the
-// recogniser stays alone.
-const canProbe = () => !!(navigator.mediaDevices?.getUserMedia && window.AudioContext) && matchMedia('(hover: hover) and (pointer: fine)').matches;
+// ponytail: a second listener on the same microphone, in Chrome and its kin on a computer only: that is where it was tried. Phones do
+// not all let two listen at once, and another browser would ask for the microphone a second time; there the recogniser stays alone.
+const canProbe = () => !!(navigator.userAgentData && navigator.mediaDevices?.getUserMedia && window.AudioContext) && matchMedia('(hover: hover) and (pointer: fine)').matches;
 let ear = null; // the listener now running: a promise of its stop(), which gives the frames it took
 const probe = () => ear = navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false } }).then(stream => {
   const ctx = new AudioContext(), an = ctx.createAnalyser(), frames = [], t0 = performance.now();
@@ -608,7 +608,7 @@ function vSitting() {
       ${canRecord ? H`<button data-act="record" aria-pressed="false">${t('Record yourself')}</button>` : ''}${take ? H`<button data-act="mine">▶ ${t('Hear yourself')}</button>` : ''}</div>
     ${hidden ? H`<p>${field('ans', 'saycheck', t('Your line'), SR ? t('Or type your line') : t('Type your line'), '')}</p>${keysBar()}<p><button data-act="saycheck">${t('Check')}</button></p>` : ''}
     <p class="sub" id="micmsg" role="status"></p>
-    ${SR ? H`<p class="sub">${t('Speaking uses the speech recognition built into your browser, which may send the audio to the browser maker.')}</p>` : ''}
+    ${SR ? H`<p class="sub">${t('Speaking uses the speech recognition built into your browser, which may send the audio to the browser maker.')}${canProbe() ? ' ' + t('Here the app also listens itself, to tell how long you spoke and how your pitch moved: that sound stays in this page and is not kept.') : ''}</p>` : ''}
     ${canRecord ? H`<p class="sub">${t('A recording of yourself stays in this page: it is not saved or sent anywhere.')}</p>` : ''}
     <div class="bar"><button data-act="next">${last ? after : s.lines ? t('Next line') : t('Next sentence')}</button></div>`; }
   if (sit.step === 'write') return H`${head(t('Write'))}
@@ -616,7 +616,7 @@ function vSitting() {
     <p><textarea id="ans" lang="${S.lang}" dir="auto" spellcheck="false" autocapitalize="off" data-focus aria-label="${t('Your retelling')}"></textarea></p>
     ${keysBar()}
     ${SR ? H`<p><button data-act="mic" aria-pressed="false">${t('Speak instead')}</button></p>
-      <p class="sub" id="micmsg" role="status"></p><p class="sub">${t('Speaking uses the speech recognition built into your browser, which may send the audio to the browser maker.')}</p>` : ''}
+      <p class="sub" id="micmsg" role="status"></p><p class="sub">${t('Speaking uses the speech recognition built into your browser, which may send the audio to the browser maker.')}${canProbe() ? ' ' + t('Here the app also listens itself, to tell how long you spoke and how your pitch moved: that sound stays in this page and is not kept.') : ''}</p>` : ''}
     <p class="sub">${t('The app does not grade writing. The AI review does, honestly.')}</p>
     <div class="bar"><button class="primary" data-act="next">${t('Finish the sitting')}</button></div>`;
   const b = sit.rec.breakdown;

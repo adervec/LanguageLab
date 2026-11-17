@@ -192,8 +192,8 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   sentence, "the voice takes 1.9". Four glides of a plain tone played to the listener on the four Chinese tone rows
   (rising from 150 to 300 Hz, falling, down and up again, steady): each was named and drawn rightly, while the
   recogniser made no word of them. A glide is not a voice: nobody has spoken a tone into it, and a noisy room, a
-  creaky voice or a second voice will mislead it. It listens on a computer only, where two listeners may share a
-  microphone; nothing of the sound is kept or sent, only those numbers in the page.
+  creaky voice or a second voice will mislead it. It listens only in Chrome and browsers built on it, on a computer, where it was tried and where two listeners
+  may share a microphone; the page says so where it does; nothing of the sound is kept or sent, only those numbers in the page.
 - **Sounds apart** (November 2026): the 174 pairs were read by a second model in a copy with six plain mistakes
   planted (wrong meanings, a pair two sounds apart, a wrong tone). It found all six and marked two more. One was right
   (a Chinese pair that differs in two tones) and was replaced; one was wrong (it took the French "chevaux" for
