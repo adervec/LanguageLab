@@ -187,9 +187,11 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   French, 44 texts: two grammar notes were misleading and were reworded. French first lessons, 480 phrases: nothing.
   Spanish, 24 texts: two meanings of sentences to write back (one said who knocked at whose door the wrong way
   round) and a grammar note. German, 24 texts: nothing. Italian, 24 texts: one meaning. Portuguese, 24 texts: a
-  grammar note. Dutch, Croatian and English, and the other 36 languages, have not had this read.
-  Every planted mistake was found. What it found besides was never in the texts themselves, always in what is said
-  about them in English. It is still a model reading a model's writing, not a person.
+  grammar note. Dutch, 24 texts: two sentences that were correct but not what a Dutch speaker says, and a grammar
+  note. Croatian, 24 texts: one such sentence, and a second remark judged right as written. English and the other
+  36 languages have not had this read.
+  Every planted mistake was found. In five of the seven languages nothing was wrong in the texts themselves, only
+  in what is said about them in English. It is still a model reading a model's writing, not a person.
 - **The sounds to notice** (November 2026): the lists for the 25 languages that had none (322 notes) were read by a
   second model, in copies with ten plain mistakes planted. It found nine of the ten and marked nothing else; the one it
   missed gave the Ukrainian г as a hard g. A second look by their writer changed one more: a Belarusian example whose
