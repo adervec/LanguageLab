@@ -180,6 +180,16 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   replaced, a Vietnamese word without its marks. A fresh reader found all ten and marked nothing else. Planted
   mistakes are plain ones: this says nothing about how many subtle ones pass, and nothing about the languages it was
   not tried in.
+- **A slower read by a larger model** (November 2026). The readers above took some twenty seconds over a file. For
+  the languages most used, a larger model was told to go sentence by sentence through everything a text carries (the
+  text, its questions, its grammar note, the sentences to write back, the meanings), in copies with three or four
+  subtle mistakes planted: an agreement, a false friend among the meanings, a grammar note turned round.
+  French, 44 texts: two grammar notes were misleading and were reworded. French first lessons, 480 phrases: nothing.
+  Spanish, 24 texts: two meanings of sentences to write back (one said who knocked at whose door the wrong way
+  round) and a grammar note. German, 24 texts: nothing. Italian, 24 texts: one meaning. Portuguese, 24 texts: a
+  grammar note. Dutch, Croatian and English, and the other 36 languages, have not had this read.
+  Every planted mistake was found. What it found besides was never in the texts themselves, always in what is said
+  about them in English. It is still a model reading a model's writing, not a person.
 - **The sounds to notice** (November 2026): the lists for the 25 languages that had none (322 notes) were read by a
   second model, in copies with ten plain mistakes planted. It found nine of the ten and marked nothing else; the one it
   missed gave the Ukrainian г as a hard g. A second look by their writer changed one more: a Belarusian example whose
