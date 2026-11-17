@@ -260,6 +260,16 @@ assert.deepEqual([state.sittings.length, state.sittings[0].score, state.sittings
   assert.deepEqual(c.voiceStats([[0, 0.001, 0], [0.03, 0.001, 0]]), { sec: 0, pauses: 0, pitch: [] });
   const line = f => Array.from({ length: 20 }, (_, i) => [i * 0.03, f(i / 19)]);
   assert.deepEqual([line(() => 200), line(x => 150 + 150 * x), line(x => 300 - 150 * x), line(x => 200 - 240 * x * (1 - x)), [[0, 200]]].map(c.pitchShape), ['level', 'rising', 'falling', 'dipping', '']); }
+// a placement by ear: two sentences from one bundled story of each level; it says to start where less than 80% was caught
+{ const text = n => `Voici une première phrase assez simple. Elle marche tous les jours avec ${n} au bord de la mer. Le soir, nous mangeons ensemble dans le jardin. Demain, il fera beau partout.`;
+  const st = (id, level, extra) => ({ id, lang: 'fr', level, source: 'starter', text: text(id), ...extra });
+  const cards = c.placeCards([st('b', 'B1'), st('a', 'A1'), st('a2', 'A1'), st('t', 'A2', { lines: [[0, 'Bonjour.']] }), st('p', 'A2', { source: 'pasted' }), st('x', 'B2', { text: 'Trop court.' }), { ...st('d', 'A2'), lang: 'de' }], 'fr', l => l[l.length - 1]);
+  assert.deepEqual(cards.map(x => x.level), ['A1', 'A1', 'B1', 'B1']);                       // a dialogue, a pasted text, a text too short and another language give none
+  assert.ok(cards[0].target.includes('avec a2') && cards[0].target !== cards[1].target);  // the story the caller picked, two different sentences
+  const r = (level, score) => ({ level, score });
+  assert.deepEqual(c.placeLevel([r('A1', 1), r('A1', 0.9), r('A2', 0.9), r('A2', 0.6)]), { by: [{ level: 'A1', score: 0.95 }, { level: 'A2', score: 0.75 }], level: 'A2', all: false });
+  assert.deepEqual([c.placeLevel([r('A1', 0.2), r('A1', 0.5)]).level, c.placeLevel([r('A1', 1), r('A1', 1), r('B1', 0.8), r('B1', 0.8)]), c.placeLevel([]).level],
+    ['A1', { by: [{ level: 'A1', score: 1 }, { level: 'B1', score: 0.8 }], level: 'B1', all: true }, '']); }
 // a word practised on its own: by ear, and aloud (understood, nearly, taken for the other word of its pair, or missed)
 { let r; for (const [how, ok] of [['ear', true], ['ear', false], ['hit'], ['near'], ['other'], ['other'], ['miss']]) r = c.aloneAdd(r, how, ok, 9);
   assert.deepEqual(r, [2, 1, 5, 1, 1, 2, 9]);

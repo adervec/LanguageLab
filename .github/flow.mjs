@@ -531,6 +531,25 @@ await click('Check');
 assert.match(await main(), new RegExp('Not yet: ' + said2 + '\\b'));
 await click('Stop');
 assert.match(await main(), /Numbers by ear[\s\S]*Up to 10,000/);
+// find my level by ear: two sentences a level. Both of A1 are typed as the voice was given them, those of A2 are not: start at A2
+await click('Settings');
+const levelWas = await page.locator('select[data-change=level]').inputValue();
+await fits('settings with the placement button');
+await click('Find my level by ear');
+for (const [lv, n, caught] of [['A1', 1, true], ['A1', 2, true], ['A2', 1, false], ['A2', 2, false]]) {
+  await page.waitForFunction(([lv, n]) => document.querySelector('#main').innerText.includes(`Level ${lv}: sentence ${n} of 2`), [lv, n]);
+  await page.fill('#ans', caught ? await page.evaluate(() => self.spoken) : 'xyz');
+  await click('Check');
+  assert.match(await main(), caught ? /100% of the words/ : /\b0% of the words/);
+  await click('Next');
+}
+assert.match(await main(), /Find your level[\s\S]*A1: 100% · A2: 0%[\s\S]*It gets hard at A2: start there\./);
+await fits('the placement result');
+await click('Start at A2');
+assert.equal(await page.locator('select[data-change=level]').inputValue(), 'A2');   // back in Settings, with the level taken
+await page.locator('select[data-change=level]').selectOption(levelWas);
+await click('Library');
+await click('First steps, letters and sounds');
 // sounds apart: eight pairs by ear (the word the voice was given is the one to tap), then aloud: the other word of the pair, then the right one
 await fits('sounds apart');
 await page.locator('#main button[data-act=pairs]').click();

@@ -349,6 +349,23 @@ export function estimate(rows) {
   };
 }
 
+// ---- where to start: a placement by ear ----
+// Two sentences worth dictating from one bundled story of each level that has one, the lowest level first. pick chooses the story.
+export function placeCards(stories, lang, pick = list => list[0]) {
+  return LEVELS.flatMap(level => {
+    const fit = stories.filter(s => s.lang === lang && s.level === level && s.source === 'starter' && s.text && !s.lines && pickDictation(storySentences(s), 2, lang).length === 2);
+    return fit.length ? pickDictation(storySentences(pick(fit)), 2, lang).map(target => ({ level, target: target.normalize('NFC') })) : [];
+  });
+}
+// What the sentences say: the share of words caught at each level, in the order tried, and where to start: the first level where
+// less than 80% was caught (that is where there is something to learn), or the highest level tried when none failed (all).
+// ponytail: two sentences a level, heard cold, so it is rough and errs low; the sittings measure properly afterwards.
+export function placeLevel(rows) {
+  const by = [...new Set(rows.map(r => r.level))].map(level => { const v = rows.filter(r => r.level === level).map(r => r.score); return { level, score: v.reduce((a, b) => a + b, 0) / v.length }; });
+  const fail = by.find(r => r.score < 0.8);
+  return { by, level: (fail || by[by.length - 1])?.level || '', all: !fail };
+}
+
 // Timed text (.srt or .vtt) -> [[startSec, endSec, text]]. Tags and positioning are dropped.
 export function parseSubs(src) {
   const sec = t => t.replace(',', '.').split(':').reduce((n, x) => n * 60 + Number(x), 0), out = [];

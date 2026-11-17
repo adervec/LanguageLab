@@ -245,7 +245,7 @@ function vToday() {
   return H`${S.welcomed ? '' : H`<div class="card"><h2>${t('Welcome')}</h2>
     <p>${t('LanguageLab works the way languages are really picked up: a lot of listening and reading you can follow, real speaking and writing, and an honest measure of what you can do. No points, no streak.')}</p>
     <p><label>${t('I want to learn')} ${langSelect()}</label></p>
-    <p><label>${t('My level')} ${levelSelect()}</label></p>
+    <p><label>${t('My level')} ${levelSelect()}</label> ${canPlace() ? H`<button class="mini" data-act="place">${t('Find my level by ear')}</button>` : ''}</p>
     <p class="sub">${t('A1: a few words. A2: simple everyday sentences. B1: you get by on familiar subjects. B2: you follow most things. C1: you want polish.')}</p>
     ${ls.length ? H`<p class="sub">${t('Starting from nothing? Choose A1: the first lessons, with the letters and sounds, come before anything else.')}</p>` : ''}
     <button class="primary" data-act="welcome">${t('Begin')}</button></div>`}
@@ -425,8 +425,8 @@ function vSettings() {
   return H`<h1>${t('Settings')}</h1>
   <div class="card"><h2>${t('Language and level')}</h2>
     <p class="sub">${t('The languages at the top of the list come with starter stories. Any other language works with your own texts and with stories from AI cowork. Each language keeps its own words and progress.')}</p>
-    <div class="row">${langSelect()}${levelSelect()}</div>
-    <p class="sub">${t('The level is used to choose the next story and when asking for new ones. Pick the level where you understand most of a text.')}</p>
+    <div class="row">${langSelect()}${levelSelect()}${canPlace() ? H`<button data-act="place">${t('Find my level by ear')}</button>` : ''}</div>
+    <p class="sub">${t('The level is used to choose the next story and when asking for new ones. Pick the level where you understand most of a text.')}${canPlace() ? ' ' + t('Not sure? Find my level by ear plays two sentences at each level and says where it gets hard.') : ''}</p>
     <p class="sub">${t('Every language at the top of the list also has first lessons for complete beginners: phrases to hear, write and say, and a chart of the letters where the script is new.')}</p>
     <p class="sub">${t('The starter stories and dialogues were written by an AI and have not been checked by native speakers.')} ${t('The same goes for the first lessons.')}</p>
   </div>
@@ -993,6 +993,30 @@ function vPairs() {
     : H`<div class="row">${[0, 1].map(k => H`<button class="primary" data-act="pairpick" data-k="${k}" lang="${S.lang}">${c.pair[k]}</button>`)}</div>`}
   <div class="bar"><button data-act="qzend">${t('Stop')}</button></div>`;
 }
+// ---------- where to start: a placement by ear ----------
+// Two sentences from one bundled story of each level, the lowest first, at natural speed. It stops after the first level where less
+// than 80% of the words were caught. Nothing of it is kept but the level, and that only if the learner takes it.
+const canPlace = () => voices().length > 0 && stories().some(s => s.source === 'starter' && s.level && !s.lines);
+function vPlace() {
+  if (!quiz?.place) { view = 'today'; return vToday(); }
+  const c = quiz.cards[quiz.i], per = quiz.cards.filter(x => x.level === c?.level);
+  if (!c) { const r = C.placeLevel(quiz.rows);
+    return H`<h1>${t('Find your level')}</h1>
+    <p class="sub">${t('Words caught by ear, at natural speed')}</p>
+    <p class="big">${r.by.map((x, k) => H`${k ? ' · ' : ''}${x.level}: ${pct(x.score)}`)}</p>
+    <p>${r.all ? t('You caught 80% or more at every level tried. Start at {level}.', { level: r.level }) : t('It gets hard at {level}: start there.', { level: r.level })}</p>
+    <p class="sub">${t('A sentence heard cold is harder than one from a story you have just read, so this errs on the low side. You can change your level in Settings at any time.')}</p>
+    <div class="row"><button class="primary" data-act="placeset" data-level="${r.level}" data-focus>${t('Start at {level}', { level: r.level })}</button>${r.level === L().level ? '' : H`<button data-act="placeend">${t('Keep {level}', { level: L().level })}</button>`}</div>`; }
+  return H`<h1>${t('Find your level')}</h1>
+  <p class="sub">${t('Level {level}: sentence {i} of {n}. Type what you hear.', { level: c.level, i: per.indexOf(c) + 1, n: per.length })}</p>
+  <p><button data-act="sayx" data-x="${c.target}">▶ ${t('Hear it again')}</button></p>
+  ${quiz.verdict ? H`<p class="big" lang="${S.lang}">${marked(c.target, quiz.typed)}</p>
+      <p class="sub">${t('You wrote:')} <span lang="${S.lang}">${quiz.typed || '–'}</span></p>
+      <p><b>${t('{pct} of the words', { pct: pct(quiz.score) })}</b></p>
+      <button class="primary" data-act="placenext" data-focus>${t('Next')}</button>`
+    : H`<p>${field('ans', 'placecheck', t('What you hear'))}</p>${keysBar()}<p><button class="primary" data-act="placecheck">${t('Check')}</button></p>`}
+  <div class="bar"><button data-act="placeend">${t('Stop')}</button></div>`;
+}
 function vFirst() {
   const ls = lessons(), abc = list(FIRST?.scripts?.[S.lang]), snd = list(FIRST?.sounds?.[S.lang]), prs = list(FIRST?.pairs?.[S.lang]);
   if (quiz?.pair) return vPairs();
@@ -1087,7 +1111,7 @@ let shown = ''; // the message now on screen
 function render(keep) { // keep: a redraw nobody asked for (something arrived): a half-typed answer and the message on screen stay
   const was = keep && $('#ans')?.value;
   if (keep && !flash) flash = shown;
-  const markup = { today: vToday, library: vLibrary, words: vWords, progress: vProgress, settings: vSettings, sitting: vSitting, review: vReview, pal: vPal, chat: vChat, radio: vRadio, first: vFirst, teach: vTeach, taught: vTaught, gift: vGift }[view]();
+  const markup = { today: vToday, library: vLibrary, words: vWords, progress: vProgress, settings: vSettings, sitting: vSitting, review: vReview, pal: vPal, chat: vChat, radio: vRadio, first: vFirst, place: vPlace, teach: vTeach, taught: vTaught, gift: vGift }[view]();
   const main = $('#main');
   const body = flash ? H`<p class="flash" role="status">${flash}</p>${markup}` : markup; // H escapes every ${}
   main.innerHTML = body;
@@ -1187,6 +1211,17 @@ const ACT = {
   },
   sayp(b) { say(story(sit.storyId).back[b.dataset.i][0], { rate: sit.slow ? 0.8 : 1 }); },
   sayx(b) { say(b.dataset.x); },
+  place() { // the story of each level least likely to be met soon: the last one not read yet
+    const cards = C.placeCards(S.stories, S.lang, fit => fit.filter(s => !s.readAt).pop() || fit[fit.length - 1]);
+    if (!cards.length) return;
+    hush(); quiz = { place: true, back: view, cards, i: 0, rows: [], verdict: '' }; view = 'place'; render(); scrollTo(0, 0); say(cards[0].target); },
+  placecheck() { const c = quiz.cards[quiz.i]; quiz.typed = $('#ans').value.trim().slice(0, 600); quiz.score = C.dictationScore(c.target, quiz.typed, S.lang).score;
+    quiz.rows.push({ level: c.level, score: quiz.score }); quiz.verdict = 'done'; render(); },
+  placenext() { hush(); const c = quiz.cards[quiz.i], next = quiz.cards[quiz.i + 1]; quiz.verdict = '';
+    quiz.i = next?.level !== c.level && !C.placeLevel(quiz.rows).all ? quiz.cards.length : quiz.i + 1; // a level not caught ends it
+    render(); scrollTo(0, 0); if (quiz.cards[quiz.i]) say(quiz.cards[quiz.i].target); },
+  placeset(b) { if (LEVELS.includes(b.dataset.level)) { L().level = b.dataset.level; save(); } ACT.placeend(); },
+  placeend() { hush(); view = quiz?.back || 'today'; quiz = null; render(); scrollTo(0, 0); },
   quiz(b) { // twenty letters of a chart, shuffled: see the letter, type how it sounds
     const [name, src] = list(FIRST?.scripts?.[S.lang])[b.dataset.i] || [];
     quiz = { name: t(String(name)), cards: shuffle(C.chartPairs(src)).slice(0, 20), i: 0, right: 0, verdict: '' };

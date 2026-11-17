@@ -76,6 +76,12 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   undo it) and puts a known word back.
 - **Pen pal** (`penpal` cowork channel): the learner writes, the agent answers at their level with
   meanings and corrections. A reply is also a story (source `penpal`) so it can be read with taps.
+- **Where to start** (`vPlace`, "Find my level by ear" on the welcome card and in Settings, where the device has a voice and the
+  language has bundled stories): `C.placeCards()` takes two sentences worth dictating from one bundled story of each level (the last
+  one not read yet), the lowest level first; the learner types each from the ear; it stops after the first level where less than 80%
+  of the words were caught, and `C.placeLevel()` names that level as the place to start (the highest tried when none failed).
+  Nothing is saved but the level, and that only when the learner takes it. It lives in `quiz` (`place: true`, `back`: the screen to
+  return to).
 - **Progress** shows ability only: the level the numbers support for reading, listening and speaking (`abilities()` and
   `estimate()` in `core.js`), a table by level, totals of input. A spoken line is marked by `speechMarks()`: the recogniser's
   first guess is the score, a word only its second or third guess holds is `near`, and `sure` is its confidence; `subs` pairs a word
