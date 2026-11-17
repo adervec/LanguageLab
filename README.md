@@ -133,8 +133,9 @@ with replies written as files; `offline.mjs` stops the server after one visit an
 - **The first lessons** (3,520 phrases) were read a second time by their author, which changed six of them, and the
   sixteen languages most likely to hide mistakes were read by a second AI model, which changed two more.
 - **Lessons 11 to 20** (another 3,520 phrases, added later) passed the same checker and the spelling check (15 more
-  words no dictionary knew, all names or correct forms). A second AI reader was asked to read them in 32 languages; its
-  findings had not been applied when this was written.
+  words no dictionary knew, all names or correct forms). A second AI reader then read them in 32 languages and marked 15
+  things: 12 phrases were changed or given a note (Afrikaans word order and the "om" before a time, also in one story; a
+  Finnish form; a clearer Greek word; two Filipino phrases), and three were judged right as written.
 - **Spelling** (`.github/spell.mjs`, November 2026): every word of every story, dialogue, question and first lesson in the
   31 languages that have an open spelling dictionary, 21,648 different word forms. 169 were not in a dictionary. Each was
   read: one colloquial word was replaced with the standard one, and the other 168 were names, loanwords, regional words
