@@ -60,6 +60,9 @@ problem; keep fixing until it prints `ok`.
 
 ## First steps (`first.json`)
 
+`pairs` holds, for the languages that have them, pairs of ordinary words exactly one sound apart (a vowel or a consonant, its length, a
+tone, the stress), with what each means: not homophones, and not words that differ in a second sound in a standard pronunciation.
+
 One file for every language: `meanings` (the English meanings), `lessons` (the titles, eight phrases each), and per
 language code in `langs` the phrases in the same order. Lessons eleven to twenty are everyday situations (a market, home, travel, yesterday, plans, health, describing, work, the
 phone, help): the past is told with "we", and a feeling without an adjective for "I" ("I do not feel well"), so they too work

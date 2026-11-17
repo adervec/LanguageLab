@@ -484,6 +484,10 @@ const pairHtml = (word, heard) => { const [a, b] = C.letterDiff(word, heard), ro
   return H`<span lang="${S.lang}">${row(a)}</span> → <span lang="${S.lang}">${row(b)}</span>`; };
 const heardInstead = d => { const subs = d.typed ? [] : C.speechMarks(d.target, [d.heard], S.lang).subs.slice(0, 4);
   return subs.length ? H`<p class="sub">${t('What it heard instead')}: ${subs.map(([w, h], k) => H`${k ? ' · ' : ''}${pairHtml(w, h)}`)}</p>` : ''; };
+// What the recogniser makes of one word said on its own: up to three guesses, the first the one it believes.
+const guess3 = (b, done) => { const got = []; hear(b, false, (text, res) => got.push(...[...(res || [])].slice(0, 3).map(a => String(a?.transcript || '').trim()).filter(Boolean)), () => done(got), () => 1200); };
+const heardAs = (word, got, k = w => C.wordKeys(w, S.lang).join(' ')) => k(got[0]) === k(word) ? 'hit' : got.some(g => k(g) === k(word)) ? 'near' : 'miss';
+const tryHtml = (word, tr) => tr.state === 'hit' ? H`<b class="hit">${t('Understood.')}</b>` : tr.state === 'near' ? H`<b class="near">${t('Nearly: it was only its second guess.')}</b>` : H`${t('It heard instead')}: ${pairHtml(word, tr.heard)}`;
 const sndTry = {}; // a "sound to notice" said aloud: language:word -> { state: 'hit' | 'near' | 'miss', heard } (kept for the visit only)
 // A tappable word is a box of its own, so left alone the browser may break the line between it and what is written against it: a
 // full stop would start the next line, and "J'" would part from "ai". What touches a word (and the spaced ? ! : ; » of French)
@@ -923,8 +927,25 @@ function vChat() {
 
 // ---------- first steps: lessons from nothing, the letters of a new script, the sounds that surprise ----------
 // ponytail: the letter practice keeps no record. Put the letters in the review deck if they turn out to need spacing.
+// Sounds apart: two words one sound apart. First by ear (which of the two was said?); then, where the browser recognises speech,
+// aloud (which of the two did it hear?): the nearest this app comes to marking a single sound. Nothing of it is saved.
+function vPairs() {
+  const c = quiz.cards[quiz.i];
+  if (!c) return H`<h1>${t('Sounds apart')}</h1><p class="big">${t('{right} of {n} right', { right: nf(quiz.right), n: nf(quiz.cards.length) })}</p><button class="primary" data-act="qzend" data-focus>${t('Done')}</button>`;
+  const want = c.pair[c.want];
+  return H`<h1>${t('Sounds apart')}</h1>
+  <p class="sub">${t('Pair {i} of {n}', { i: quiz.i + 1, n: quiz.cards.length })}</p>
+  ${c.say ? H`<p class="sub">${t('Say the word in bold.')}</p><p class="big" lang="${S.lang}">${[0, 1].map(k => H`${k ? ' · ' : ''}${k === c.want ? H`<b>${c.pair[k]}</b>` : H`<span class="sub">${c.pair[k]}</span>`}`)}</p>`
+    : H`<p><button data-act="sayx" data-x="${want}">▶ ${t('Hear it again')}</button></p><p class="sub">${t('Which one did you hear?')}</p>`}
+  ${quiz.verdict ? H`<p class="big" role="status">${c.say ? tryHtml(want, { state: quiz.verdict, heard: quiz.heard }) : H`<span class="${quiz.verdict === 'hit' ? 'hit' : 'miss'}">${quiz.verdict === 'hit' ? t('Right') : t('Not yet')}: <b lang="${S.lang}">${want}</b></span>`}</p>
+      <p class="sub">${c.pair[2]}</p><button class="primary" data-act="qznext" data-focus>${t('Next')}</button>`
+    : c.say ? H`<p class="sub" id="micmsg" role="status"></p><p><button class="primary" data-act="pairsay" aria-pressed="false">${t('Say it')}</button></p>`
+    : H`<div class="row">${[0, 1].map(k => H`<button class="primary" data-act="pairpick" data-k="${k}" lang="${S.lang}">${c.pair[k]}</button>`)}</div>`}
+  <div class="bar"><button data-act="qzend">${t('Stop')}</button></div>`;
+}
 function vFirst() {
-  const ls = lessons(), abc = list(FIRST?.scripts?.[S.lang]), snd = list(FIRST?.sounds?.[S.lang]);
+  const ls = lessons(), abc = list(FIRST?.scripts?.[S.lang]), snd = list(FIRST?.sounds?.[S.lang]), prs = list(FIRST?.pairs?.[S.lang]);
+  if (quiz?.pair) return vPairs();
   if (quiz) { const over = quiz.i >= quiz.cards.length, [ch, r] = over ? [] : quiz.cards[quiz.i];
     const ask = quiz.ear ? t('The number, in digits') : t('How it sounds, in Latin letters');
     return H`<h1>${quiz.ear ? t('Numbers by ear') : t('Letters')} <span class="sub">${quiz.name}</span></h1>
@@ -950,8 +971,11 @@ function vFirst() {
   ${snd.length ? H`<h2>${t('Sounds to notice')}</h2><p class="sub">${SR ? t('Where the spelling does not sound the way you might expect. Tap ▶ to hear the word, then say it: speech recognition shows whether it understood you, or what it heard instead. One word alone is hard for it, so try more than once.') : t('Where the spelling does not sound the way you might expect. Tap to hear the word.')}</p>
     <p class="sub" id="micmsg" role="status"></p>
     <div class="card">${snd.map(([letters, word, hint]) => H`<div class="ph"><button class="mini" data-act="sayx" data-x="${word}" aria-label="${t('Hear it')}">▶</button>
-      <div class="grow"><b lang="${S.lang}">${letters}</b> · <span lang="${S.lang}">${word}</span><span class="sub">${hint}</span>${sndTry[S.lang + ':' + word] ? H`<span class="sub" role="status">${sndTry[S.lang + ':' + word].state === 'hit' ? H`<b class="hit">${t('Understood.')}</b>` : sndTry[S.lang + ':' + word].state === 'near' ? H`<b class="near">${t('Nearly: it was only its second guess.')}</b>` : H`${t('It heard instead')}: ${pairHtml(word, sndTry[S.lang + ':' + word].heard)}`}</span>` : ''}</div>
-      ${SR ? H`<button class="mini" data-act="sndsay" data-x="${word}" aria-pressed="false">${t('Say it')}</button>` : ''}</div>`)}</div>` : ''}`;
+      <div class="grow"><b lang="${S.lang}">${letters}</b> · <span lang="${S.lang}">${word}</span><span class="sub">${hint}</span>${sndTry[S.lang + ':' + word] ? H`<span class="sub" role="status">${tryHtml(word, sndTry[S.lang + ':' + word])}</span>` : ''}</div>
+      ${SR ? H`<button class="mini" data-act="sndsay" data-x="${word}" aria-pressed="false">${t('Say it')}</button>` : ''}</div>`)}</div>` : ''}
+  ${prs.length ? H`<h2>${t('Sounds apart')}</h2><p class="sub">${t('Pairs of words one sound apart. First you hear one and choose which it was; then, where your browser recognises speech, you say the one in bold and see which it heard.')}</p>
+    ${voices().length ? H`<p><button data-act="pairs">${t('Practise')}</button></p>` : ''}
+    <div class="card">${prs.map(([a, b, hint]) => H`<div class="ph"><div class="grow"><div class="row">${[a, b].map(w => H`<button class="mini" data-act="sayx" data-x="${w}" lang="${S.lang}">▶ ${w}</button>`)}</div><span class="sub">${hint}</span></div></div>`)}</div>` : ''}`;
 }
 
 // ---------- a human teacher, with no server: the learner's writing travels to them inside a link, their corrections come back inside another ----------
@@ -1120,7 +1144,8 @@ const ACT = {
     render(); scrollTo(0, 0); say(quiz.cards[0][0]);
   },
   qzcheck() { const [ch, r] = quiz.cards[quiz.i], ok = quiz.ear ? C.digits($('#ans').value) === ch : C.readingOk($('#ans').value, r); quiz.verdict = ok ? 'exact' : 'wrong'; if (ok) quiz.right++; render(); say(ch); },
-  qznext() { hush(); quiz.i++; quiz.verdict = ''; render(); if (quiz.ear && quiz.cards[quiz.i]) say(quiz.cards[quiz.i][0]); },
+  qznext() { hush(); quiz.i++; quiz.verdict = ''; render(); if (quiz.ear && quiz.cards[quiz.i]) say(quiz.cards[quiz.i][0]);
+    if (quiz.pair && quiz.cards[quiz.i] && !quiz.cards[quiz.i].say) say(quiz.cards[quiz.i].pair[quiz.cards[quiz.i].want]); },
   qzend() { hush(); quiz = null; render(); },
   addfix() { // a correction from a human teacher joins the same deck as the AI's
     const c = C.cleanFixes([{ wrong: $('#fxWrong').value, right: $('#fxRight').value, why: $('#fxWhy').value }])[0];
@@ -1262,11 +1287,16 @@ const ACT = {
   chatmic(b) { const box = $('#ans'); hear(b, false, text => { box.value = (box.value + ' ' + text).trim(); }, () => { if (view === 'chat' && box.isConnected && box.value.trim()) run('chatsend'); }, () => 2500); },
   chatsay(b) { const x = chat()?.turns.find(y => y.id === b.dataset.id); if (x) say([[0, x.text]]); },
   sndsay(b) { // a word chosen for one sound: was it understood, and if not, what was heard in its place?
-    const word = b.dataset.x, got = [], k = w => C.wordKeys(w, S.lang).join(' ');
-    hear(b, false, (text, res) => got.push(...[...(res || [])].slice(0, 3).map(a => String(a?.transcript || '').trim()).filter(Boolean)), () => {
-      if (view !== 'first' || !got.length) return;
-      sndTry[S.lang + ':' + word] = { state: k(got[0]) === k(word) ? 'hit' : got.some(g => k(g) === k(word)) ? 'near' : 'miss', heard: got[0].slice(0, 60) };
-      render(true); }, () => 1200); },
+    const word = b.dataset.x;
+    guess3(b, got => { if (view !== 'first' || !got.length) return; sndTry[S.lang + ':' + word] = { state: heardAs(word, got), heard: got[0].slice(0, 60) }; render(true); }); },
+  pairs() { // each pair once by ear; then, where the browser recognises speech, once aloud
+    const all = list(FIRST?.pairs?.[S.lang]), round = aloud => shuffle(all.slice()).map(pair => ({ pair, want: Math.random() < 0.5 ? 0 : 1, say: aloud }));
+    quiz = { pair: true, cards: [...round(false), ...(SR ? round(true) : [])], i: 0, right: 0, verdict: '' };
+    render(); scrollTo(0, 0); say(quiz.cards[0].pair[quiz.cards[0].want]);
+  },
+  pairpick(b) { const c = quiz.cards[quiz.i], ok = +b.dataset.k === c.want; quiz.verdict = ok ? 'hit' : 'miss'; if (ok) quiz.right++; render(); say(c.pair[c.want]); },
+  pairsay(b) { const c = quiz.cards[quiz.i], want = c.pair[c.want];
+    guess3(b, got => { if (!quiz?.pair || quiz.cards[quiz.i] !== c || !got.length) return; quiz.verdict = heardAs(want, got); quiz.heard = got[0].slice(0, 60); if (quiz.verdict === 'hit') quiz.right++; render(true); }); },
   hintkeep(b) { // the same for a suggestion on a retelling
     const id = b.dataset.id, at = id.lastIndexOf(':'), f = S.sittings.find(x => x.id === id.slice(0, at))?.hints?.[id.slice(at + 1)];
     if (f) { L().fixes['h:' + id] = { ...f, added: Date.now(), srs: null }; save(); render(true); } },

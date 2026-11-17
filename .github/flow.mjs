@@ -514,6 +514,29 @@ await click('Check');
 assert.match(await main(), new RegExp('Not yet: ' + said2 + '\\b'));
 await click('Stop');
 assert.match(await main(), /Numbers by ear[\s\S]*Up to 10,000/);
+// sounds apart: eight pairs by ear (the word the voice was given is the one to tap), then aloud: the other word of the pair, then the right one
+await fits('sounds apart');
+await page.locator('#main button[data-act=pairs]').click();
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('Pair 1 of 16'));
+for (let n = 1; n <= 8; n++) {
+  const word = await page.evaluate(() => self.spoken);
+  await page.locator('#main button[data-act=pairpick]').filter({ hasText: new RegExp('^' + word + '$') }).click();
+  assert.match(await main(), new RegExp(`Pair ${n} of 16[\\s\\S]*Right: ${word}`));
+  await click('Next');
+}
+assert.match(await main(), /Pair 9 of 16\s+Say the word in bold\./);
+const [bold, other] = await page.evaluate(() => [document.querySelector('#main p.big b').innerText, document.querySelector('#main p.big span.sub').innerText]);
+await page.evaluate(w => { self.heard = w; }, other);
+await click('Say it');
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('It heard instead'));
+assert.match(await main(), new RegExp(`It heard instead: ${bold} → ${other}`));
+await click('Next');
+const bold2 = await page.innerText('#main p.big b');
+await page.evaluate(w => { self.heard = w; }, bold2);
+await click('Say it');
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('Understood.'));
+await click('Stop');
+assert.match(await main(), /Sounds apart[\s\S]*▶ dessus\s*▶ dessous\s+on top \/ underneath/);
 await page.evaluate(() => { self.SpeechSynthesisUtterance = self.realU; delete speechSynthesis.getVoices; delete speechSynthesis.speak; });
 await click('Progress');                                 // the suggestion is still beside its sitting; kept, it becomes a review card
 assert.match(await main(), /read aloud \d+%/);

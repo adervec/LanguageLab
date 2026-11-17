@@ -40,7 +40,10 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   and sounds to notice (`sounds`, for every language: `[letters, a word, a hint]`; where the script is not Latin the hint starts with
   the word in Latin letters, and a Japanese example is a word written in kana, so that a recogniser writes it as the list does).
   Numbers by ear (`nums`) is the letter quiz with `ear: true`: the device's voice reads a bare number, `C.digits()` reads the answer in any
-  script's digits, and it is offered only where the device has a voice for the language. Nothing of it is saved. `lessonStories()` turns a language's phrases into thirty stories (one a lesson) with `phrases: true`, no
+  script's digits, and it is offered only where the device has a voice for the language. Nothing of it is saved.
+  Sounds apart (`pairs`: `[word, another one sound away, what each means]`, for 24 languages) is `vPairs`: each pair once by ear, then,
+  where the browser recognises speech, once aloud (`guess3`, `heardAs`: was it the word wanted, the other, or neither). A Japanese pair
+  is written in kana for the same reason as the sounds. `lessonStories()` turns a language's phrases into thirty stories (one a lesson) with `phrases: true`, no
   level (so they never count in `abilities()`) and `back` = every phrase with its meaning, shown in the interface language
   where the file has that language. A lesson is a session with `mode: 'first'`: study the phrases, type half from the ear,
   write the other half from their meaning and say them (the halves swap next time). Its phrases become review cards in the

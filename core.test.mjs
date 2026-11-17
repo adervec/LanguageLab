@@ -320,6 +320,10 @@ console.log('core.test: ok');
     else if (!c.langInfo(code).seg && !letters.split(' ').some(x => word.toLowerCase().includes(x.replace(/-/g, '')))) bad.push(`${code}: "${word}" does not show "${letters}"`);
   }
   for (const code of Object.keys(first.langs)) if (!(first.sounds[code]?.length >= 5)) bad.push(`${code}: needs its sounds to notice`);
+  for (const [code, rows] of Object.entries(first.pairs)) for (const [a, b, hint] of rows) { // two different single words, and what each means
+    const k = w => c.wordKeys(String(w), code);
+    if (!first.langs[code] || !hint || k(a).length !== 1 || k(b).length !== 1 || k(a)[0] === k(b)[0]) bad.push(`${code}: a pair is [word, another word, what each means]: ${a} / ${b}`);
+  }
   for (const [code, charts] of Object.entries(first.scripts)) for (const [name, src] of charts) {
     const pairs = c.chartPairs(src);
     if (!first.langs[code] || !name || pairs.length < 5 || pairs.length !== src.split(' ').length) bad.push(`${code} ${name}: a chart is "letter=reading" pairs`);
