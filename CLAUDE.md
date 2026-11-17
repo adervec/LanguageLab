@@ -112,7 +112,9 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   Two ways that worked in the maker's own Chrome (157): the built-in model (`LanguageModel`) was already there, so the
   conversation can be driven for real from the console; and Chrome's recogniser takes an audio track
   (`recognition.start(track)`), so a recording played into a `MediaStreamAudioDestinationNode` (with a silent
-  `ConstantSourceNode` kept connected, or it never hears the speaker stop) tests the speaking step with no microphone.
+  `ConstantSourceNode` kept connected, or it never hears the speaker stop) tests the speaking step with no microphone. The second listener (`probe`) is tried the same way:
+  replace `navigator.mediaDevices.getUserMedia` in the page with a function that returns such a node's stream, fed by a recording (for
+  the time and the pauses) or by an oscillator whose frequency glides (for the movement of the pitch).
   Speech synthesis needs a real click first. The model stalls when it is given many requests at once: the app times out
   and gives its sessions back (`dropLm`). To try the real
   translator from Playwright, launch a visible Chrome with
