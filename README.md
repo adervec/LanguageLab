@@ -44,7 +44,7 @@ snapshot). LanguageLab is ahead in some rows and behind in others.
 | Course for complete beginners | Yes, from the alphabet | Yes | Yes | A short one: twenty lessons of eight phrases in each of 44 languages, charts of the letters for 14 scripts, then graded stories from A1 in all 44, twelve texts or more in each. Much shorter than their courses; after it the material is your own texts and the stories an AI agent writes to your level |
 | Speech scoring | Its own engine | TruAccent | Speech recognition | The browser's speech recognition, word by word: understood at its first guess, only its second guess (nearly right) or missed, with how sure it was; it listens through your pauses. A speaking level from those numbers, and a recording of yourself to compare by ear. It judges whole words, not each sound |
 | Human teachers | No | Live coaching (premium) | No | None of its own, but it works with any teacher you have: a teacher hands out a text as a link that each learner adds to their library, a link carries the learner's writing back to them, and another brings their corrections into the learner's review. Nobody needs more than a browser |
-| Content checked by people | Yes | Yes | Yes | No native speaker has read it, and the app says so. It was written by an AI; every word of the texts in 31 languages is checked against an open spelling dictionary, and the newer texts were read by a second AI model (see "What has been checked") |
+| Content checked by people | Yes | Yes | Yes | No native speaker has read it, and the app says so. It was written by an AI; every word of the texts in 31 languages is checked against an open spelling dictionary, and every text was read by a second AI model (see "What has been checked") |
 | Apps | iOS, Android, web | iOS, Android, web | iOS, Android, web, AR and VR | A web app that installs to the home screen of a phone or a computer and opens without a connection after one visit. Its manifest carries what a store wrapper would need (icons, screenshots, shortcuts), but it is in no app store |
 
 Sources: Duolingo on [Duolingo Max](https://blog.duolingo.com/duolingo-max), a 2026 review of
@@ -162,14 +162,20 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   names, loanwords, regional words or correct forms the dictionary lacks (they are listed in `.github/spell-ok.json`). A spelling dictionary knows no
   grammar, and there is none for Chinese, Japanese, Finnish, Afrikaans, Indonesian, Malay, Filipino, Swahili, Arabic,
   Hindi, Urdu, Bengali or Thai.
-- **A second reader** for the 384 texts in the 32 newer languages: another AI model (Claude Sonnet) read each one with
-  its glosses, questions and notes. In the first six texts of each language it marked eight things: six were changed (a
+- **A second reader** for every bundled text, all 644: another AI model (Claude Sonnet) read each one with its glosses,
+  questions and notes, and was told to mark only what it was confident was wrong.
+  In the twelve older sets (260 texts, French among them) it marked 22 things. Nineteen were changed: twelve are notes
+  added to dialogues where a line the learner speaks depends on whether a man or a woman says it (Portuguese
+  "obrigado" and "obrigada", Croatian past forms), and a search for the same thing found one more in Italian; the rest
+  are a Spanish meaning given in the wrong tense, a Dutch preposition, a Croatian reflexive, a Japanese reading and a
+  Swedish note. Three were judged right as written. It marked nothing in French, German, Italian, Chinese or Korean.
+  In the first six texts of each of the 32 newer languages it marked eight things: six were changed (a
   Macedonian greeting, also in the first lessons, and a word order; an Afrikaans question; a Vietnamese and a Swahili
   phrase) and two were judged right as written. In the six texts added later it marked sixteen: fourteen were changed
   (among them a Finnish idiom that said "came visiting" where the text meant "the village", an ungrammatical Filipino
   question, a Persian word that read as "no longer", and four grammar notes that misquoted their own text) and two were
-  judged right as written. Both times it reported nothing in most of the languages (27 and 19 of the 32), which is
-  weaker evidence than a native reader finding nothing.
+  judged right as written. Both times it reported nothing in most of those languages (27 and 19 of the 32). A second model finding nothing
+  is weaker evidence than a native reader finding nothing.
 - **Not checked**: a physical microphone, how the voices sound to a native ear, Google sign-in, and phones. The texts and phrases were written by an AI and no native speaker
   has read them.
 
