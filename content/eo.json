@@ -410,5 +410,467 @@
    }
   ],
   "notice": "Numbers become \"first, second, third\" by taking the adjective ending -a: \"tri\" (three) gives \"tria\" (third), \"sep\" gives \"la sepa\" (seven o'clock, the seventh hour). \"Jen\" points at something: \"Jen mia pasporto\"."
+ },
+ {
+  "id": "eo-family",
+  "title": "Mia familio",
+  "level": "A1",
+  "text": "Mia nomo estas Anna. Mi loĝas kun mia familio en malgranda domo apud la rivero. Mia patrino estas instruistino kaj mia patro laboras en vendejo. Mi havas fraton kaj fratinon. Mia frato aĝas dek jarojn kaj li ŝatas futbalon. Mia fratino estas ankoraŭ malgranda: ŝi aĝas tri jarojn. Ni havas ankaŭ hundon, kaj lia nomo estas Max. Ĉiumatene mia patro promenas kun la hundo. Vespere ni manĝas kune kaj parolas pri la tago. Post la vespermanĝo mia frato kaj mi lavas la telerojn. Dimanĉe mia avino venas kaj alportas kukon. Mi tre amas mian familion.",
+  "gloss": {
+   "familio": "family",
+   "domo": "house",
+   "rivero": "river",
+   "patrino": "mother",
+   "instruistino": "teacher",
+   "patro": "father",
+   "vendejo": "shop",
+   "frato": "brother",
+   "fratino": "sister",
+   "jarojn": "years",
+   "futbalon": "football",
+   "malgranda": "small",
+   "hundon": "dog",
+   "ĉiumatene": "every morning",
+   "promenas": "goes for a walk",
+   "vespere": "in the evening",
+   "manĝas": "eat",
+   "kune": "together",
+   "vespermanĝo": "dinner",
+   "telerojn": "plates",
+   "dimanĉe": "on Sunday",
+   "avino": "grandmother",
+   "kukon": "cake"
+  },
+  "questions": [
+   {
+    "q": "Kie laboras la patro?",
+    "a": [
+     "vendej"
+    ]
+   },
+   {
+    "q": "Kiom aĝas la frato?",
+    "a": [
+     "dek",
+     "10"
+    ]
+   },
+   {
+    "q": "Kiu venas dimanĉe?",
+    "a": [
+     "avino"
+    ]
+   }
+  ],
+  "notice": "Every noun ends in -o and takes -n when it is the object: \"Mi havas fraton\", \"alportas kukon\". \"-in-\" makes the female: \"patro\" (father), \"patrino\" (mother); \"mal-\" makes the opposite: \"granda\" (big), \"malgranda\" (small).",
+  "back": [
+   [
+    "Mia patrino estas instruistino kaj mia patro laboras en vendejo.",
+    "My mother is a teacher and my father works in a shop."
+   ],
+   [
+    "Dimanĉe mia avino venas kaj alportas kukon.",
+    "On Sunday my grandmother comes and brings a cake."
+   ]
+  ]
+ },
+ {
+  "id": "eo-town",
+  "title": "Nia urbeto",
+  "level": "A1",
+  "text": "Nia urbeto estas malgranda, sed bela. En la centro estas malnova placo kun fontano. Apud la placo estas lernejo, apoteko kaj du kafejoj. La stacidomo estas malantaŭ la parko. Ĉiumatene multaj homoj veturas per trajno al la granda urbo. Posttagmeze la infanoj ludas en la parko, kaj maljunaj viroj ludas ŝakon. Somere venas turistoj kaj fotas la ponton. Vintre la urbeto estas trankvila. Sabate estas bazaro sur la placo. Tie vi povas aĉeti legomojn, mielon kaj florojn. Vespere mi ŝatas promeni apud la rivero. Mi ne volas loĝi en granda urbo.",
+  "gloss": {
+   "urbeto": "town",
+   "bela": "beautiful",
+   "centro": "centre",
+   "placo": "square",
+   "fontano": "fountain",
+   "lernejo": "school",
+   "apoteko": "pharmacy",
+   "stacidomo": "station",
+   "malantaŭ": "behind",
+   "parko": "park",
+   "trajno": "train",
+   "posttagmeze": "in the afternoon",
+   "infanoj": "children",
+   "ŝakon": "chess",
+   "somere": "in summer",
+   "turistoj": "tourists",
+   "ponton": "bridge",
+   "vintre": "in winter",
+   "trankvila": "quiet",
+   "sabate": "on Saturday",
+   "legomojn": "vegetables",
+   "mielon": "honey",
+   "florojn": "flowers",
+   "rivero": "river"
+  },
+  "questions": [
+   {
+    "q": "Kio estas en la centro de la urbeto?",
+    "a": [
+     "placo"
+    ]
+   },
+   {
+    "q": "Kie estas la stacidomo?",
+    "a": [
+     "parko",
+     "park"
+    ]
+   },
+   {
+    "q": "Kiam venas la turistoj?",
+    "a": [
+     "somere",
+     "somer"
+    ]
+   }
+  ],
+  "notice": "An ending -e turns a word into \"when\" or \"how\": \"somere\" (in summer), \"vintre\" (in winter), \"vespere\" (in the evening), \"sabate\" (on Saturday). \"-ej-\" makes a place: \"lernejo\" (school), \"kafejo\" (café).",
+  "back": [
+   [
+    "La stacidomo estas malantaŭ la parko.",
+    "The station is behind the park."
+   ],
+   [
+    "Vintre la urbeto estas trankvila.",
+    "In winter the town is quiet."
+   ]
+  ]
+ },
+ {
+  "id": "eo-birthday",
+  "title": "La naskiĝtago de la avino",
+  "level": "A2",
+  "text": "Hieraŭ estis la naskiĝtago de mia avino. Ŝi nun aĝas okdek jarojn. La tuta familio venis al ŝia domo en la vilaĝo. Mia onklino bakis grandan kukon kaj mia onklo alportis florojn. Ni donacis al ŝi varman koltukon kaj libron pri ĝardenoj. Antaŭ la tagmanĝo ni kantis kanton, kaj la avino ridis. Sur la tablo estis supo, kokaĵo kun terpomoj kaj multe da salato. Post la tagmanĝo ŝi montris al ni malnovajn fotojn. En unu foto ŝi estis juna virino kun biciklo. Ŝi rakontis, ke ŝi ĉiutage veturis per ĝi al la laboro. Poste mia kuzo ludis gitaron kaj ĉiuj dancis. Eĉ mia frateto dancis kun la avino. Vespere ŝi estis laca sed feliĉa. Ŝi diris, ke tio estis la plej bona naskiĝtago de ŝia vivo. Ni iris hejmen malfrue, kiam la steloj jam estis en la ĉielo.",
+  "gloss": {
+   "hieraŭ": "yesterday",
+   "naskiĝtago": "birthday",
+   "okdek": "eighty",
+   "tuta": "whole",
+   "vilaĝo": "village",
+   "onklino": "aunt",
+   "bakis": "baked",
+   "onklo": "uncle",
+   "florojn": "flowers",
+   "donacis": "gave as a present",
+   "koltukon": "scarf",
+   "ĝardenoj": "gardens",
+   "kantis": "sang",
+   "kanton": "song",
+   "ridis": "laughed",
+   "kokaĵo": "chicken",
+   "terpomoj": "potatoes",
+   "montris": "showed",
+   "juna": "young",
+   "biciklo": "bicycle",
+   "kuzo": "cousin",
+   "gitaron": "guitar",
+   "dancis": "danced",
+   "laca": "tired",
+   "bona": "good (la plej bona: the best)",
+   "vivo": "life",
+   "steloj": "stars"
+  },
+  "questions": [
+   {
+    "q": "Kiom aĝas la avino nun?",
+    "a": [
+     "okdek",
+     "80"
+    ]
+   },
+   {
+    "q": "Kiu alportis florojn?",
+    "a": [
+     "onklo"
+    ]
+   },
+   {
+    "q": "Kion ludis la kuzo?",
+    "a": [
+     "gitaro"
+    ]
+   }
+  ],
+  "notice": "The past ends in -is for everyone: \"venis\" (came), \"bakis\" (baked), \"ni kantis\" (we sang). \"Ke\" is \"that\": \"ŝi diris, ke ...\" (she said that ...). \"La plej\" makes \"the most\": \"la plej bona\".",
+  "back": [
+   [
+    "Mia onklino bakis grandan kukon kaj mia onklo alportis florojn.",
+    "My aunt baked a big cake and my uncle brought flowers."
+   ],
+   [
+    "Post la tagmanĝo ŝi montris al ni malnovajn fotojn.",
+    "After lunch she showed us old photos."
+   ]
+  ]
+ },
+ {
+  "id": "eo-wallet",
+  "title": "La perdita monujo",
+  "level": "B1",
+  "text": "Lastan vendredon Daniel volis pagi en la superbazaro, sed lia monujo ne estis en lia poŝo. Li tre maltrankviliĝis, ĉar en ĝi estis lia bankokarto kaj lia stirpermesilo. Li lasis siajn aĉetaĵojn ĉe la kaso kaj reiris laŭ la sama vojo. Li serĉis ĉie, sur la trotuaro kaj ĉe la bushaltejo, sed li trovis nenion. Hejme li telefonis al la banko kaj blokis la karton. Tiun nokton li ne povis dormi, ĉar li pensis pri ĉiuj siaj dokumentoj. Du tagojn poste alvenis letero de la polico. Virino estis trovinta la monujon en la buso kaj portinta ĝin al la policejo. Daniel tuj iris tien. Nenio mankis, eĉ ne la mono. La policano donis al li la adreson de la virino, ĉar li volis danki ŝin. La sekvan tagon li aĉetis florojn kaj skribis al ŝi karton. Ŝi surpriziĝis kaj invitis lin al kafo. Ili parolis dum unu horo, kaj nun ili estas bonaj amikoj. De tiam Daniel ĉiam kontrolas sian poŝon, antaŭ ol li eliras el la buso.",
+  "gloss": {
+   "vendredon": "Friday",
+   "pagi": "pay",
+   "superbazaro": "supermarket",
+   "monujo": "wallet",
+   "poŝo": "pocket",
+   "maltrankviliĝis": "got worried",
+   "bankokarto": "bank card",
+   "stirpermesilo": "driving licence",
+   "aĉetaĵojn": "shopping",
+   "kaso": "till",
+   "sama": "same",
+   "ĉie": "everywhere",
+   "trotuaro": "pavement",
+   "bushaltejo": "bus stop",
+   "trovis": "found",
+   "blokis": "blocked",
+   "dokumentoj": "documents",
+   "letero": "letter",
+   "polico": "police",
+   "mankis": "was missing",
+   "mono": "money",
+   "adreson": "address",
+   "danki": "thank",
+   "surpriziĝis": "was surprised",
+   "invitis": "invited",
+   "kontrolas": "checks",
+   "eliras": "gets out"
+  },
+  "questions": [
+   {
+    "q": "Kio ne estis en la poŝo de Daniel?",
+    "a": [
+     "monujo"
+    ]
+   },
+   {
+    "q": "Kie la virino trovis la monujon?",
+    "a": [
+     "buso"
+    ]
+   },
+   {
+    "q": "Kion Daniel aĉetis?",
+    "a": [
+     "florojn",
+     "floro"
+    ]
+   }
+  ],
+  "notice": "\"Estis trovinta\" is \"had found\": \"estis\" plus a form in -inta. \"Sia\" means his own or her own: \"sian poŝon\" (his own pocket). \"-iĝ-\" makes \"become\": \"surpriziĝis\" (became surprised), \"maltrankviliĝis\".",
+  "back": [
+   [
+    "Li serĉis ĉie, sur la trotuaro kaj ĉe la bushaltejo, sed li trovis nenion.",
+    "He looked everywhere, on the pavement and at the bus stop, but he found nothing."
+   ],
+   [
+    "Virino estis trovinta la monujon en la buso kaj portinta ĝin al la policejo.",
+    "A woman had found the wallet on the bus and had taken it to the police station."
+   ]
+  ]
+ },
+ {
+  "id": "eo-station",
+  "title": "En la stacidomo",
+  "level": "A2",
+  "roles": [
+   "Vendisto",
+   "Vojaĝanto"
+  ],
+  "lines": [
+   [
+    0,
+    "Bonan matenon. Kiel mi povas helpi vin?"
+   ],
+   [
+    1,
+    "Bonan matenon. Mi ŝatus bileton al Bjalistoko, mi petas."
+   ],
+   [
+    0,
+    "Nur iran aŭ iran kaj revenan?"
+   ],
+   [
+    1,
+    "Iran kaj revenan, mi petas. Kiam foriras la sekva trajno?"
+   ],
+   [
+    0,
+    "Je la deka kaj kvarono, de la tria kajo."
+   ],
+   [
+    1,
+    "Kiom longe daŭras la vojaĝo?"
+   ],
+   [
+    0,
+    "Ĉirkaŭ du horojn. Vi devas ŝanĝi trajnon en Varsovio."
+   ],
+   [
+    1,
+    "Kiom da tempo mi havos tie?"
+   ],
+   [
+    0,
+    "Dudek minutojn. Tio sufiĉas."
+   ],
+   [
+    1,
+    "Bone. Kiom kostas la bileto?"
+   ],
+   [
+    0,
+    "Tridek kvar eŭrojn. Ĉu vi volas pagi per karto?"
+   ],
+   [
+    1,
+    "Jes, per karto. Koran dankon!"
+   ]
+  ],
+  "gloss": {
+   "helpi": "help",
+   "bileton": "ticket",
+   "iran": "(nur iran: one way)",
+   "revenan": "(iran kaj revenan: return)",
+   "sekva": "next",
+   "trajno": "train",
+   "foriras": "leave",
+   "kajo": "platform",
+   "vojaĝo": "journey",
+   "horojn": "hours",
+   "ŝanĝi": "change",
+   "tempo": "time",
+   "minutojn": "minutes",
+   "sufiĉas": "is enough",
+   "kostas": "cost",
+   "pagi": "pay",
+   "karto": "card"
+  },
+  "questions": [
+   {
+    "q": "De kiu kajo foriras la trajno?",
+    "a": [
+     "tria",
+     "3"
+    ]
+   },
+   {
+    "q": "Kiel la vojaĝanto pagas?",
+    "a": [
+     "karto",
+     "kart"
+    ]
+   }
+  ],
+  "notice": "\"Ĉu\" opens a yes-or-no question: \"Ĉu vi volas pagi per karto?\". \"Mi petas\" is \"please\" (I ask). An amount of time or money takes -n: \"du horojn\", \"dudek minutojn\", \"tridek kvar eŭrojn\"."
+ },
+ {
+  "id": "eo-doctor",
+  "title": "Ĉe la kuracisto",
+  "level": "B1",
+  "roles": [
+   "Kuracisto",
+   "Paciento"
+  ],
+  "lines": [
+   [
+    0,
+    "Bonan matenon. Kio estas la problemo?"
+   ],
+   [
+    1,
+    "Bonan matenon, doktoro. De tri tagoj mi havas gorĝdoloron kaj mi tusas."
+   ],
+   [
+    0,
+    "Ĉu vi havas ankaŭ febron?"
+   ],
+   [
+    1,
+    "Jes, hieraŭ vespere ĝi estis tridek ok kaj duono."
+   ],
+   [
+    0,
+    "Ĉu ankaŭ la kapo doloras?"
+   ],
+   [
+    1,
+    "Iomete, precipe vespere. Mi ankaŭ dormas malbone."
+   ],
+   [
+    0,
+    "Malfermu la buŝon, mi petas. Jes, via gorĝo estas tre ruĝa."
+   ],
+   [
+    1,
+    "Ĉu ĝi estas grava? Mi devas labori ĉi-semajne."
+   ],
+   [
+    0,
+    "Ne, sed vi bezonas ripozon. Restu hejme dum tri tagoj kaj trinku multe da teo."
+   ],
+   [
+    1,
+    "Ĉu mi bezonas medikamentojn?"
+   ],
+   [
+    0,
+    "Mi donos al vi recepton por tablojdoj. Prenu unu post ĉiu manĝo."
+   ],
+   [
+    1,
+    "Dankon. Ĉu mi revenu, se ĝi ne pliboniĝos?"
+   ],
+   [
+    0,
+    "Jes, revenu venontsemajne, se vi ankoraŭ havos febron."
+   ],
+   [
+    1,
+    "Bone. Ĝis revido, doktoro."
+   ]
+  ],
+  "gloss": {
+   "problemo": "problem",
+   "gorĝdoloron": "a sore throat",
+   "tusas": "cough",
+   "tagoj": "days",
+   "febron": "fever",
+   "kapo": "head",
+   "doloras": "hurt",
+   "precipe": "especially",
+   "dormas": "sleep",
+   "buŝon": "mouth",
+   "ruĝa": "red",
+   "grava": "serious",
+   "ripozon": "rest",
+   "restu": "stay",
+   "medikamentojn": "medicine",
+   "recepton": "prescription",
+   "tablojdoj": "tablets",
+   "manĝo": "meal",
+   "revenu": "come back",
+   "pliboniĝos": "will get better"
+  },
+  "questions": [
+   {
+    "q": "De kiom da tagoj la paciento havas gorĝdoloron?",
+    "a": [
+     "tri",
+     "3"
+    ]
+   },
+   {
+    "q": "Por kio estas la recepto?",
+    "a": [
+     "tablojdo"
+    ]
+   }
+  ],
+  "notice": "A command ends in -u: \"malfermu\" (open), \"restu\" (stay), \"trinku\" (drink), \"prenu\" (take). The future ends in -os: \"mi donos\" (I will give), \"vi havos\". Words are built from parts: \"gorĝ-doloro\" (throat pain), \"venont-semajne\" (next week)."
  }
 ]

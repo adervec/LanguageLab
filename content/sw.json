@@ -411,5 +411,464 @@
    }
   ],
   "notice": "A yes-or-no question can start with \"Je\": \"Je, kuna lifti?\" (Is there a lift?). \"Kuna\" means \"there is\". Breakfast from \"saa moja\" to \"saa nne\" is from seven to ten: Swahili hours are counted from sunrise."
+ },
+ {
+  "id": "sw-family",
+  "title": "Familia yangu",
+  "level": "A1",
+  "text": "Jina langu ni Anna. Ninaishi na familia yangu katika nyumba ndogo karibu na mto. Mama yangu ni mwalimu na baba yangu anafanya kazi dukani. Nina kaka mmoja na dada mmoja. Kaka yangu ana miaka kumi na anapenda mpira wa miguu. Dada yangu bado ni mdogo: ana miaka mitatu. Pia tuna mbwa, na jina lake ni Max. Kila asubuhi baba yangu hutembea na mbwa. Jioni tunakula pamoja na kuzungumza kuhusu siku yetu. Baada ya chakula cha jioni, mimi na kaka yangu tunaosha vyombo. Jumapili bibi yangu huja na kuleta keki. Ninaipenda familia yangu sana.",
+  "gloss": {
+   "familia": "family",
+   "nyumba": "house",
+   "mto": "river",
+   "mama": "mother",
+   "mwalimu": "teacher",
+   "baba": "father",
+   "dukani": "in a shop",
+   "kaka": "brother",
+   "dada": "sister",
+   "miaka": "years",
+   "mpira": "ball (mpira wa miguu: football)",
+   "mdogo": "small",
+   "mbwa": "dog",
+   "asubuhi": "morning",
+   "hutembea": "walks (every day)",
+   "jioni": "evening",
+   "tunakula": "we eat",
+   "pamoja": "together",
+   "chakula": "food (chakula cha jioni: dinner)",
+   "vyombo": "dishes",
+   "jumapili": "Sunday",
+   "bibi": "grandmother",
+   "keki": "cake"
+  },
+  "questions": [
+   {
+    "q": "Baba anafanya kazi wapi?",
+    "a": [
+     "duka"
+    ]
+   },
+   {
+    "q": "Kaka ana miaka mingapi?",
+    "a": [
+     "kumi",
+     "10"
+    ]
+   },
+   {
+    "q": "Nani huja Jumapili?",
+    "a": [
+     "bibi"
+    ]
+   }
+  ],
+  "notice": "Swahili builds the verb from pieces: \"ni-na-ishi\" (I-now-live), \"a-na-penda\" (he-now-likes), \"tu-na-kula\" (we-now-eat). \"Hu-\" marks a habit: \"hutembea\" (walks every day), \"huja\" (comes). \"-ni\" on a noun means \"in\" or \"at\": \"dukani\".",
+  "back": [
+   [
+    "Mama yangu ni mwalimu na baba yangu anafanya kazi dukani.",
+    "My mother is a teacher and my father works in a shop."
+   ],
+   [
+    "Jumapili bibi yangu huja na kuleta keki.",
+    "On Sunday my grandmother comes and brings a cake."
+   ]
+  ]
+ },
+ {
+  "id": "sw-town",
+  "title": "Mji wetu",
+  "level": "A1",
+  "text": "Mji wetu ni mdogo, lakini ni mzuri. Katikati ya mji kuna uwanja wa zamani wenye chemchemi. Karibu na uwanja kuna shule, duka la dawa na mikahawa miwili. Kituo cha treni kiko nyuma ya bustani. Kila asubuhi watu wengi hupanda treni kwenda jijini. Alasiri watoto hucheza bustanini, na wazee hucheza chesi. Wakati wa kiangazi watalii huja na kupiga picha za daraja. Wakati wa baridi mji huwa kimya. Jumamosi kuna soko uwanjani. Hapo unaweza kununua mboga, asali na maua. Jioni ninapenda kutembea kando ya mto. Sitaki kuishi katika jiji kubwa.",
+  "gloss": {
+   "mji": "town",
+   "mzuri": "beautiful",
+   "katikati": "centre",
+   "uwanja": "open ground, square",
+   "chemchemi": "fountain",
+   "shule": "school",
+   "dawa": "medicine (duka la dawa: pharmacy)",
+   "kituo": "station",
+   "nyuma": "behind",
+   "bustani": "park",
+   "treni": "train",
+   "alasiri": "afternoon",
+   "watoto": "children",
+   "chesi": "chess",
+   "kiangazi": "the hot, dry season",
+   "watalii": "tourists",
+   "daraja": "bridge",
+   "baridi": "cold (wakati wa baridi: the cold season, winter)",
+   "kimya": "quiet",
+   "jumamosi": "Saturday",
+   "mboga": "vegetables",
+   "asali": "honey",
+   "maua": "flowers",
+   "mto": "river"
+  },
+  "questions": [
+   {
+    "q": "Katikati ya mji kuna nini?",
+    "a": [
+     "uwanja"
+    ]
+   },
+   {
+    "q": "Kituo cha treni kiko wapi?",
+    "a": [
+     "bustani"
+    ]
+   },
+   {
+    "q": "Watalii huja lini?",
+    "a": [
+     "kiangazi"
+    ]
+   }
+  ],
+  "notice": "\"Kuna\" means \"there is\" or \"there are\": \"kuna shule\", \"kuna soko\". Each noun belongs to a class, and the words about it copy its prefix: \"mji mdogo\" (a small town), \"jiji kubwa\" (a big city), \"mikahawa miwili\" (two cafés).",
+  "back": [
+   [
+    "Kituo cha treni kiko nyuma ya bustani.",
+    "The station is behind the park."
+   ],
+   [
+    "Wakati wa baridi mji huwa kimya.",
+    "In winter the town is quiet."
+   ]
+  ]
+ },
+ {
+  "id": "sw-birthday",
+  "title": "Siku ya kuzaliwa ya Bibi",
+  "level": "A2",
+  "text": "Jana ilikuwa siku ya kuzaliwa ya bibi yangu. Sasa ana miaka themanini. Familia nzima ilikuja nyumbani kwake kijijini. Shangazi yangu alioka keki kubwa na mjomba wangu alileta maua. Tulimpa skafu ya joto na kitabu kuhusu bustani. Kabla ya chakula cha mchana tuliimba wimbo, na Bibi alicheka. Mezani kulikuwa na supu, kuku na viazi, na saladi nyingi. Baada ya chakula cha mchana alituonyesha picha za zamani. Katika picha moja alikuwa msichana mwenye baiskeli. Alituambia kwamba aliiendesha kwenda kazini kila siku. Kisha binamu yangu alipiga gitaa na kila mtu alicheza dansi. Hata kaka yangu mdogo alicheza na Bibi. Jioni alikuwa amechoka lakini mwenye furaha. Alisema kwamba ilikuwa siku bora ya kuzaliwa maishani mwake. Tulirudi nyumbani tumechelewa, nyota zikiwa tayari angani.",
+  "gloss": {
+   "jana": "yesterday",
+   "kuzaliwa": "to be born (siku ya kuzaliwa: birthday)",
+   "themanini": "eighty",
+   "nzima": "whole",
+   "kijijini": "in the village",
+   "shangazi": "aunt (father's sister)",
+   "alioka": "baked",
+   "mjomba": "uncle (mother's brother)",
+   "maua": "flowers",
+   "tulimpa": "we gave her",
+   "skafu": "scarf",
+   "bustani": "garden, gardens",
+   "tuliimba": "we sang",
+   "wimbo": "song",
+   "alicheka": "laughed",
+   "kuku": "chicken",
+   "viazi": "potatoes",
+   "alituonyesha": "she showed us",
+   "msichana": "girl, young woman",
+   "baiskeli": "bicycle",
+   "binamu": "cousin",
+   "gitaa": "guitar",
+   "alicheza": "danced, played",
+   "amechoka": "tired",
+   "bora": "best",
+   "maishani": "in life",
+   "nyota": "stars"
+  },
+  "questions": [
+   {
+    "q": "Bibi ana miaka mingapi sasa?",
+    "a": [
+     "themanini",
+     "80"
+    ]
+   },
+   {
+    "q": "Nani alileta maua?",
+    "a": [
+     "mjomba"
+    ]
+   },
+   {
+    "q": "Binamu alipiga nini?",
+    "a": [
+     "gitaa"
+    ]
+   }
+  ],
+  "notice": "The past has \"-li-\" after the person: \"a-li-oka\" (she baked), \"tu-li-imba\" (we sang), \"i-li-kuwa\" (it was). The one something is done to sits inside the verb too: \"tu-li-m-pa\" (we gave her), \"a-li-tu-onyesha\" (she showed us).",
+  "back": [
+   [
+    "Shangazi yangu alioka keki kubwa na mjomba wangu alileta maua.",
+    "My aunt baked a big cake and my uncle brought flowers."
+   ],
+   [
+    "Baada ya chakula cha mchana alituonyesha picha za zamani.",
+    "After lunch she showed us old photos."
+   ]
+  ]
+ },
+ {
+  "id": "sw-wallet",
+  "title": "Pochi iliyopotea",
+  "level": "B1",
+  "text": "Ijumaa iliyopita Daniel alitaka kulipa katika duka kubwa, lakini pochi yake haikuwa mfukoni. Alikuwa na wasiwasi sana, kwa sababu kadi yake ya benki na leseni yake ya udereva zilikuwa ndani yake. Aliacha bidhaa zake kwenye kaunta na akarudi kwa njia ileile. Alitafuta kila mahali, kando ya barabara na kwenye kituo cha basi, lakini hakupata chochote. Nyumbani alipiga simu benki na akaifunga kadi. Usiku ule hakuweza kulala, kwa sababu alikuwa akifikiria hati zake zote. Siku mbili baadaye barua kutoka polisi ilifika. Mwanamke mmoja alikuwa ameipata pochi ndani ya basi na kuipeleka kituo cha polisi. Daniel alikwenda huko mara moja. Hakuna kilichopotea, hata pesa. Polisi alimpa anwani ya mwanamke huyo, kwa sababu Daniel alitaka kumshukuru. Siku iliyofuata alinunua maua na kumwandikia kadi. Alishangaa na akamkaribisha kunywa kahawa. Walizungumza kwa saa moja, na sasa ni marafiki wazuri. Tangu hapo Daniel huangalia mfuko wake kila mara kabla ya kushuka kwenye basi.",
+  "gloss": {
+   "ijumaa": "Friday",
+   "kulipa": "pay",
+   "duka": "shop (duka kubwa: supermarket)",
+   "pochi": "wallet",
+   "mfukoni": "in the pocket",
+   "wasiwasi": "worry (alikuwa na wasiwasi: was worried)",
+   "kadi": "card (kadi ya benki: bank card)",
+   "leseni": "licence (leseni ya udereva: driving licence)",
+   "bidhaa": "goods",
+   "kaunta": "till",
+   "ileile": "the very same",
+   "mahali": "place (kila mahali: everywhere)",
+   "kando": "side (kando ya barabara: by the roadside)",
+   "kituo": "stop, station (kituo cha basi: bus stop)",
+   "hakupata": "did not find",
+   "akaifunga": "and closed it, blocked it",
+   "hati": "documents",
+   "barua": "letter",
+   "polisi": "police",
+   "kilichopotea": "that was lost",
+   "pesa": "money",
+   "anwani": "address",
+   "kumshukuru": "to thank her",
+   "alishangaa": "was surprised",
+   "akamkaribisha": "and invited him",
+   "huangalia": "looks at",
+   "kushuka": "gets off"
+  },
+  "questions": [
+   {
+    "q": "Nini hakikuwa mfukoni mwa Daniel?",
+    "a": [
+     "pochi"
+    ]
+   },
+   {
+    "q": "Mwanamke aliipata pochi wapi?",
+    "a": [
+     "basi"
+    ]
+   },
+   {
+    "q": "Daniel alinunua nini?",
+    "a": [
+     "maua"
+    ]
+   }
+  ],
+  "notice": "\"Not\" changes the front of the verb: \"haikuwa\" (it was not), \"hakupata\" (he did not find), \"hakuweza\" (he could not). \"-ka-\" tells the next step of a story: \"akarudi\" (and he went back), \"akaifunga\" (and he blocked it).",
+  "back": [
+   [
+    "Alitafuta kila mahali, kando ya barabara na kwenye kituo cha basi, lakini hakupata chochote.",
+    "He looked everywhere, on the pavement and at the bus stop, but he found nothing."
+   ],
+   [
+    "Mwanamke mmoja alikuwa ameipata pochi ndani ya basi na kuipeleka kituo cha polisi.",
+    "A woman had found the wallet on the bus and had taken it to the police station."
+   ]
+  ]
+ },
+ {
+  "id": "sw-station",
+  "title": "Kwenye kituo cha treni",
+  "level": "A2",
+  "roles": [
+   "Karani",
+   "Msafiri"
+  ],
+  "lines": [
+   [
+    0,
+    "Habari za asubuhi. Nikusaidie nini?"
+   ],
+   [
+    1,
+    "Nzuri. Ninaomba tiketi moja ya kwenda Dodoma."
+   ],
+   [
+    0,
+    "Kwenda tu au kwenda na kurudi?"
+   ],
+   [
+    1,
+    "Kwenda na kurudi, tafadhali. Treni ijayo inaondoka lini?"
+   ],
+   [
+    0,
+    "Saa nne na robo asubuhi, kutoka jukwaa namba tatu."
+   ],
+   [
+    1,
+    "Safari inachukua muda gani?"
+   ],
+   [
+    0,
+    "Kama saa nne. Utahitaji kubadilisha treni Morogoro."
+   ],
+   [
+    1,
+    "Nitakuwa na muda gani pale?"
+   ],
+   [
+    0,
+    "Dakika ishirini. Zinatosha."
+   ],
+   [
+    1,
+    "Sawa. Tiketi ni shilingi ngapi?"
+   ],
+   [
+    0,
+    "Shilingi elfu thelathini. Unataka kulipa kwa kadi?"
+   ],
+   [
+    1,
+    "Ndiyo, kwa kadi. Asante sana!"
+   ]
+  ],
+  "gloss": {
+   "nikusaidie": "shall I help you",
+   "tiketi": "ticket",
+   "tu": "only (kwenda tu: one way)",
+   "kurudi": "to come back (kwenda na kurudi: return)",
+   "ijayo": "next",
+   "treni": "train",
+   "inaondoka": "leave",
+   "jukwaa": "platform",
+   "safari": "journey",
+   "saa": "hour; o'clock",
+   "kubadilisha": "change",
+   "muda": "time",
+   "dakika": "minutes",
+   "zinatosha": "they are enough",
+   "ngapi": "how many (shilingi ngapi: how much)",
+   "kulipa": "pay",
+   "kadi": "card"
+  },
+  "questions": [
+   {
+    "q": "Treni inaondoka kutoka jukwaa namba ngapi?",
+    "a": [
+     "tatu",
+     "3"
+    ]
+   },
+   {
+    "q": "Msafiri analipa kwa nini?",
+    "a": [
+     "kadi"
+    ]
+   }
+  ],
+  "notice": "Swahili counts the hours from sunrise: \"saa nne\" (hour four) is ten o'clock, so \"saa nne na robo asubuhi\" is a quarter past ten in the morning. The future has \"-ta-\": \"utahitaji\" (you will need), \"nitakuwa\" (I will be)."
+ },
+ {
+  "id": "sw-doctor",
+  "title": "Kwa daktari",
+  "level": "B1",
+  "roles": [
+   "Daktari",
+   "Mgonjwa"
+  ],
+  "lines": [
+   [
+    0,
+    "Habari za asubuhi. Una tatizo gani?"
+   ],
+   [
+    1,
+    "Nzuri, daktari. Koo linaniuma kwa siku tatu sasa, na ninakohoa."
+   ],
+   [
+    0,
+    "Una homa pia?"
+   ],
+   [
+    1,
+    "Ndiyo, jana usiku ilikuwa nyuzi thelathini na nane na nusu."
+   ],
+   [
+    0,
+    "Kichwa kinauma pia?"
+   ],
+   [
+    1,
+    "Kidogo, hasa jioni. Pia silali vizuri."
+   ],
+   [
+    0,
+    "Fungua mdomo, tafadhali. Ndiyo, koo lako ni jekundu sana."
+   ],
+   [
+    1,
+    "Ni tatizo kubwa? Lazima nifanye kazi wiki hii."
+   ],
+   [
+    0,
+    "Hapana, lakini unahitaji kupumzika. Kaa nyumbani kwa siku tatu na unywe chai nyingi."
+   ],
+   [
+    1,
+    "Ninahitaji dawa?"
+   ],
+   [
+    0,
+    "Nitakuandikia dawa ya vidonge. Meza kimoja baada ya kila mlo."
+   ],
+   [
+    1,
+    "Asante. Nirudi tena nisipopata nafuu?"
+   ],
+   [
+    0,
+    "Ndiyo, rudi wiki ijayo ikiwa bado una homa."
+   ],
+   [
+    1,
+    "Sawa. Kwa heri, daktari."
+   ]
+  ],
+  "gloss": {
+   "tatizo": "problem",
+   "koo": "throat (koo linaniuma: I have a sore throat)",
+   "ninakohoa": "I cough",
+   "siku": "days",
+   "homa": "fever",
+   "kichwa": "head",
+   "kinauma": "it hurts",
+   "hasa": "especially",
+   "silali": "I do not sleep",
+   "mdomo": "mouth",
+   "jekundu": "red",
+   "kubwa": "big (tatizo kubwa: a serious problem)",
+   "kupumzika": "to rest",
+   "kaa": "stay",
+   "dawa": "medicine",
+   "nitakuandikia": "I will prescribe for you",
+   "vidonge": "tablets",
+   "mlo": "meal",
+   "nirudi": "shall I come back",
+   "nafuu": "relief (kupata nafuu: to get better)",
+   "linaniuma": "it hurts me"
+  },
+  "questions": [
+   {
+    "q": "Koo limemuuma mgonjwa kwa siku ngapi?",
+    "a": [
+     "tatu",
+     "3"
+    ]
+   },
+   {
+    "q": "Daktari anaandika dawa gani?",
+    "a": [
+     "vidonge"
+    ]
+   }
+  ],
+  "notice": "What hurts is the subject, and the verb copies its class: \"kichwa kinauma\" (the head hurts), \"koo linaniuma\" (the throat hurts me). A command to one person is the bare verb: \"fungua\" (open), \"kaa\" (stay), \"meza\" (swallow)."
  }
 ]
