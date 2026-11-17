@@ -45,7 +45,7 @@ assert.match(await main(), /Today[\s\S]*Le marché du samedi/, 'the French stori
 await click('Settings');
 await page.selectOption('#main select[data-change="lang"]', 'ru');
 await click('Today');
-assert.match(await main(), /Lesson 1 of 30: Hello and goodbye/, 'so are the first lessons of another language');
+assert.match(await main(), /Lesson 1 of 60: Hello and goodbye/, 'so are the first lessons of another language');
 await click('Settings');
 await page.selectOption('#main select[data-change="lang"]', 'es');
 await click('Today');

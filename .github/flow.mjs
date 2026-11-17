@@ -341,7 +341,7 @@ await click('Settings'); await click('Settings');               // leave the sit
 // written back from its meaning and said aloud; the phrases then come back in review; the alphabet is practised letter by letter
 await page.selectOption('#main select[data-change="lang"]', 'ru');
 await click('Today');
-assert.match(await main(), /Русский[\s\S]*First steps[\s\S]*Lesson 1 of 30: Hello and goodbye/);
+assert.match(await main(), /Русский[\s\S]*First steps[\s\S]*Lesson 1 of 60: Hello and goodbye/);
 await click('Start the lesson');
 assert.match(await main(), /Step 1 of 4[\s\S]*Listen and repeat[\s\S]*Здравствуйте\.\s*Zdravstvuyte\.\s*Hello\./);
 await fits('a first lesson');
@@ -376,7 +376,7 @@ for (let i = 2; i < 4; i++) await click('Next sentence');
 await click('Finish');
 assert.match(await main(), /Lesson done[\s\S]*25%\s+of the words caught[\s\S]*100%\s+of the words right when you wrote[\s\S]*100%\s+of your words understood[\s\S]*8\s+phrases in your review/);
 await click('Done');
-assert.match(await main(), /Lesson 2 of 30: Getting to know you[\s\S]*6 items are due/);   // the two phrases got right wait a day
+assert.match(await main(), /Lesson 2 of 60: Getting to know you[\s\S]*6 items are due/);   // the two phrases got right wait a day
 await click('Review now');
 assert.match(await main(), /A phrase[\s\S]*Good night\./);
 await page.fill('#ans', 'спокойной ночи');
