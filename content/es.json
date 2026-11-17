@@ -903,7 +903,7 @@
   "back": [
    [
     "Aquella misma tarde llamaron a su puerta.",
-    "That same afternoon, someone knocked at their door."
+    "That same afternoon they knocked at his door."
    ],
    [
     "Nunca había sido piloto: había conducido el autobús del pueblo durante cuarenta años.",
@@ -1135,7 +1135,7 @@
   "back": [
    [
     "Los primeros meses fueron más duros de lo que había imaginado.",
-    "The first months were tougher than expected."
+    "The first months were harder than he had imagined."
    ],
    [
     "Poco a poco, sin embargo, las cosas cambiaron.",
@@ -1827,7 +1827,7 @@
     ]
    }
   ],
-  "notice": "Spanish does not repeat a noun that is already clear; it keeps only the article: \"la del jardín\" (the one that looks onto the garden), \"una con vista al mar\" (one with a sea view)."
+  "notice": "Spanish does not repeat a noun that is already clear; it keeps the article, or says una (one): \"la del jardín\" (the one that looks onto the garden), \"una con vista al mar\" (one with a sea view)."
  },
  {
   "id": "es-d-reserva",
