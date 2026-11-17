@@ -150,12 +150,19 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   Swedish (a language that had no bundled stories then), which passed the same checker as the bundled texts
   and have since joined the app. The replies waited
   for approval across a browser restart and were applied once.
-- **The first lessons** (3,520 phrases) were read a second time by their author, which changed six of them, and the
-  sixteen languages most likely to hide mistakes were read by a second AI model, which changed two more.
-- **Lessons 11 to 20** (another 3,520 phrases, added later) passed the same checker and the spelling check (15 more
-  words no dictionary knew, all names or correct forms). A second AI reader then read them in 32 languages and marked 15
-  things: 12 phrases were changed or given a note (Afrikaans word order and the "om" before a time, also in one story; a
-  Finnish form; a clearer Greek word; two Filipino phrases), and three were judged right as written.
+- **The first lessons** (7,040 phrases, 160 in each of 44 languages). Lessons 1 to 10 were read a second time by their
+  author, which changed six phrases. A second AI model then read them in three rounds that between them cover every
+  phrase in every language but English (whose phrases are the English meanings themselves). Lessons 1 to 10 in the
+  sixteen languages most likely to hide mistakes: two phrases changed. Lessons 11 to 20 in 32 languages: 15 things
+  marked, 12 changed or given a note (Afrikaans word order and the "om" before a time, also in one story; a Finnish
+  form; a clearer Greek word; two Filipino phrases), three judged right as written. The remaining 3,200 phrases, in 31
+  languages: two things marked, one changed (a Korean ending) and one judged right as written.
+- **What a clean report from that reader is worth**: one of its inputs (880 phrases in thirteen languages) was copied
+  with ten mistakes planted in it: a Czech word in Slovak, wrong cases in Slovak, Slovenian and Finnish, a wrong
+  gender in Swedish, a wrong preposition and a wrong agreement in Romanian, two Danish meanings swapped and a third
+  replaced, a Vietnamese word without its marks. A fresh reader found all ten and marked nothing else. Planted
+  mistakes are plain ones: this says nothing about how many subtle ones pass, and nothing about the languages it was
+  not tried in.
 - **Spelling** (`.github/spell.mjs`, November 2026): every word of every story, dialogue, question and first lesson in the
   31 languages that have an open spelling dictionary, 29,160 different word forms. 230 were not in a dictionary. Each was
   read: three were replaced with the standard form (a colloquial word and two Belarusian words), and the other 227 were
