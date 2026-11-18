@@ -280,9 +280,12 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   table "for two people" where one says how many one is, a Korean 그들 and 그녀 that nobody says aloud, a Russian
   river that "is" behind a house. Fourteen Korean readings wrote kh where a stop meets ㅎ and one hears k. Ukrainian,
   Polish, Arabic and Hindi followed: 6 and 17 of 480, 10 and 23 of 240, and 52 phrases reworded (all 6, 15, all 10,
-  21). In Hindi the name Anna had been spelt आना, which reads as the verb "to come"; it is अन्ना now. So the sixteen
-  languages read this way came out between 6 and 50 remarks each, the fewest where the first writing was best, and
-  the 28 not yet read this way should be expected to hold as many.
+  21). In Hindi the name Anna had been spelt आना, which reads as the verb "to come"; it is अन्ना now. Then the
+  four other languages whose phrases are also shown as meanings to learners who use that interface: Indonesian 28
+  and Esperanto 13 of 480, Persian 10 and Urdu 20 of 240; 70 reworded. The Indonesian had "tolong" tacked on
+  wherever English says please, the Urdu did the same with براہِ مہربانی, and both asked for the toilet in a word
+  from signs. So the twenty languages read this way came out between 6 and 50 remarks each, the fewest where the
+  first writing was best, and the 24 not yet read this way should be expected to hold as many.
   The same question about the 44 French stories and dialogues (which sentence of each would a native speaker most
   object to?) marked 13 sentences, none of them wrong; 12 were reworded ("perdre la voix", a pronoun that pointed
   at the wrong grandmother, "encore en pyjama" at eleven at night) and one kept. The texts of the other languages
