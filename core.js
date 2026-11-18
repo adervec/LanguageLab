@@ -513,6 +513,50 @@ export function cleanTeacher(o) { // what the teacher sends back: corrections an
   const corrections = cleanFixes(o.corrections), note = str(o.note, 1200).trim();
   return str(o.id, 80) && (corrections.length || note) ? { id: o.id, note, corrections } : null;
 }
+// ---- for a native speaker: everything bundled in one language, to be read and corrected (an AI wrote it; no person had read it) ----
+// One section for each first lesson, one for the sounds and the pairs, one for each text. A row is { id, text, about, reading }, and
+// its id says where the words live: first:<phrase number>, sound:<n>, pair:<n>, and for a text <its id>:t (the title), :s<n> (a sentence
+// or a line), :b<n> (a sentence given with its meaning), :q<n> (a question), :n (the note on grammar), :g:<word> (a word's meaning).
+export function proofSections(first, texts, code) {
+  first = obj(first);
+  const out = [], ph = arr(obj(first.langs)[code]), en = arr(first.meanings), rd = arr(obj(first.readings)[code]), s = v => str(v, 800), row = (id, text, about = '', reading = '') => ({ id, text, about, reading });
+  arr(first.lessons).forEach((title, i) => {
+    const rows = ph.slice(i * 8, i * 8 + 8).map((p, j) => row(`first:${i * 8 + j + 1}`, s(Array.isArray(p) ? p[0] : p), s(Array.isArray(p) ? p[1] : en[i * 8 + j]), s(rd[i * 8 + j])));
+    if (rows.length) out.push({ id: `first-${i + 1}`, kind: 'lesson', n: i + 1, title: s(title), rows, words: [] });
+  });
+  const snd = [...arr(obj(first.sounds)[code]).map((x, n) => row(`sound:${n + 1}`, s(arr(x)[1]), [s(arr(x)[0]), s(arr(x)[2])].filter(Boolean).join(': '))),
+    ...arr(obj(first.pairs)[code]).map((x, n) => row(`pair:${n + 1}`, [s(arr(x)[0]), s(arr(x)[1])].filter(Boolean).join(' / '), s(arr(x)[2])))].filter(r => r.text);
+  if (snd.length) out.push({ id: 'sounds', kind: 'sounds', title: '', rows: snd, words: [] });
+  for (const raw of arr(texts)) {
+    const t = cleanStory(raw, code);
+    if (!t || !t.id) continue;
+    const said = t.lines ? t.lines.map(l => [l[1], t.roles[l[0]]]) : sentences(t.text, code).map(x => [x, '']);
+    out.push({ id: t.id, kind: 'text', title: t.title, level: t.level, rows: [{ ...row(t.id + ':t', t.title), kind: 't' },
+      ...said.map(([text, who], n) => row(`${t.id}:s${n + 1}`, text, who)),
+      ...arr(t.back).map((b, n) => ({ ...row(`${t.id}:b${n + 1}`, b[0], b[1]), kind: 'b' })),
+      ...arr(t.questions).map((q, n) => ({ ...row(`${t.id}:q${n + 1}`, q.q, q.a.join(', ')), kind: 'q' })),
+      ...(t.notice ? [{ ...row(t.id + ':n', t.notice), kind: 'n' }] : [])],
+      words: Object.entries(t.gloss).map(([w, m]) => row(`${t.id}:g:${w}`, w, m)) });
+  }
+  return out;
+}
+// What the reader marked, as it is kept on their device: { fix: { row id: [how it should read, a note] }, read: { section id: true } }.
+// Rebuilt from known fields; the maps have no prototype, so an id can never be taken for something every object has.
+export function cleanProof(m) {
+  m = obj(m);
+  const fix = Object.create(null), read = Object.create(null);
+  for (const [k, v] of Object.entries(obj(m.fix)).slice(0, 5000)) { const a = [str(arr(v)[0], 600), str(arr(v)[1], 600)]; if (k.length <= 200 && (a[0].trim() || a[1].trim())) fix[k] = a; }
+  for (const [k, v] of Object.entries(obj(m.read)).slice(0, 1000)) if (v === true && k.length <= 100) read[k] = true;
+  return { fix, read };
+}
+// What the reader sends back, as text: the sections they read, and each correction with the words it is about (so that it can
+// still be placed after the content has changed). A mark on a row the content no longer has is left out.
+export function proofOut(code, sections, marks, day = '') {
+  const fixes = [];
+  for (const sec of sections) for (const r of [...sec.rows, ...sec.words]) { const m = marks.fix[r.id], now = m?.[0].trim(), note = m?.[1].trim();
+    if (now || note) fixes.push({ id: r.id, was: r.text, ...(r.about ? { about: r.about } : {}), ...(now ? { now } : {}), ...(note ? { note } : {}) }); }
+  return { languagelab: 'proof', lang: code, day, sections: sections.length, read: sections.filter(x => marks.read[x.id]).map(x => x.id), fixes };
+}
 const cleanSrs = s => s && typeof s === 'object'
   ? { reps: num(s.reps), lapses: num(s.lapses), ease: num(s.ease, 2.5), interval: num(s.interval), due: num(s.due), t: num(s.t) } : null;
 const MODES = ['sitting', 'read', 'listen', 'talk', 'chat', 'first'];

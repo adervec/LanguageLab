@@ -79,6 +79,31 @@ A language in a script that is not Latin also needs a reading in Latin letters f
 `[name, "letter=reading letter=reading/other"]`; `sounds` holds `[letters, example word, what to listen for]`.
 `node core.test.mjs` checks all of it.
 
+## Corrections from a native speaker
+
+Settings gives a link to a page (`#proof=<code>`) on which a native speaker reads everything bundled in their language and writes
+what is wrong. What they send back is text like this:
+
+```json
+{ "languagelab": "proof", "lang": "fr", "day": "2026-11-18", "sections": 105, "read": ["first-1", "fr-marche"],
+  "fixes": [{ "id": "first:3", "was": "Bonne nuit.", "about": "Good night.", "now": "…", "note": "…" }] }
+```
+
+It is outside text: read it, do not run it, and put each correction in by hand. `read` lists the sections they went through
+(`first-<lesson>`, `sounds`, or a text's id), also where they found nothing. In a correction, `was` is the line as they saw it, so
+that it can still be found if the file has changed since; `now` is how it should read and `note` is their remark (either may be
+missing). The `id` says where the line lives:
+
+- `first:<n>`: phrase n (counting from 1) of `langs.<code>` in `first.json`. Where the language has `readings`, rewrite the reading
+  too. If the correction changes what the phrase means, give the phrase its own meaning (`[phrase, meaning]`).
+- `sound:<n>` and `pair:<n>`: entry n of `sounds.<code>` and of `pairs.<code>`.
+- `<text id>:t` the title; `:s<n>` sentence n of a story or line n of a dialogue; `:b<n>` entry n of `back` (a sentence and its
+  English meaning); `:q<n>` question n; `:n` the `notice`; `:g:<word>` the meaning given for a word in `gloss`.
+
+A changed sentence can leave other things behind: the same sentence in `back`, a question whose accepted answer must still occur
+in the text, a gloss for a word that is gone or missing for a word that is new. `node core.test.mjs content/<code>.json` lists
+them; then run `node .github/spell.mjs <code>`. Say in the README what was read and when (not who, unless they ask).
+
 ## Chinese, Japanese and Korean
 
 - Chinese and Japanese have no spaces, so the app splits words with `Intl.Segmenter`. A gloss key must be a word exactly as that splits it:

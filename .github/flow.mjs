@@ -448,6 +448,48 @@ assert.match(await main(), /From your teacher\s+Bon travail, continue ![\s\S]*El
 assert.equal(await page.locator('#main b').filter({ hasText: /^$/ }).count(), 0, 'a teacher\'s text is never markup');
 await page.goto(answer.replace(/#fix=.*/, '#fix=not-a-reply'));    // a link that is not one says so and changes nothing
 await page.waitForFunction(() => document.querySelector('#main').innerText.includes('This link could not be read'));
+// the page for a native speaker (#proof=fr): every lesson and text of a language, to read; a line shows its fields only when asked;
+// what is marked stays on the device, comes out as text, and survives a reload; the menu leaves the page
+const proofAt = page.url().replace(/#.*$/, '') + '#proof=';
+await page.goto(proofAt + 'fr');
+await page.waitForSelector('#proofsec');
+assert.match(await main(), /For a native speaker\s+LanguageLab teaches French[\s\S]*Lesson 1 of 60: Hello and goodbye\s+Bonjour\.\s+✎\s+Hello\.[\s\S]*Sections read: 0 of \d+ · corrections: 0/);
+assert.equal(await page.locator('#proofsec input[type=text]').count(), 0, 'a line shows no field until it is asked for');
+await click('Copy my corrections');
+assert.match(await page.innerText('#proofout'), /Nothing is marked yet/);
+await page.locator('#proofsec [data-act=proofedit]').first().click();
+assert.equal(await page.evaluate(() => document.activeElement.dataset.id), 'first:1', 'the field that opened is the one to type in');
+await page.locator('#proofsec input[data-k="0"]').fill('Bonjour <b>!</b>');
+await page.locator('#proofsec [data-act=proofedit]').nth(1).click();                       // (the third line: the second keeps its pencil)
+await page.locator('#proofsec input[data-k="1"]').nth(1).fill('only at bedtime');
+assert.deepEqual([await page.locator('#proofsec input[type=text]').count(), await page.locator('#proofsec input[data-k="0"]').first().inputValue()], [4, 'Bonjour <b>!</b>']);
+await page.locator('[data-change=proofread]').check();
+assert.match(await page.innerText('#proofn'), /^Sections read: 1 of \d+ · corrections: 2$/);
+await click('Copy my corrections');
+await page.waitForFunction(() => document.querySelector('#proofout').innerText.includes('Copied.'));
+const sent = JSON.parse(await page.evaluate(() => navigator.clipboard.readText()));
+assert.deepEqual([sent.languagelab, sent.lang, sent.read, sent.fixes], ['proof', 'fr', ['first-1'], [{ id: 'first:1', was: 'Bonjour.', about: 'Hello.', now: 'Bonjour <b>!</b>' }, { id: 'first:3', was: 'Bonne nuit.', about: 'Good night.', note: 'only at bedtime' }]]);
+assert.match(sent.day, /^\d{4}-\d\d-\d\d$/);
+await page.reload();                                               // (the link stays in the address: a reload comes back to the page)
+await page.waitForSelector('#proofsec');
+assert.match(await main(), /Lesson 2 of 60: Getting to know you[\s\S]*Sections read: 1 of \d+ · corrections: 2/);   // the first one not read yet
+await page.getByRole('button', { name: /^Lesson 1 of 60: Hello and goodbye ✓ ✎$/ }).click();
+assert.deepEqual([await page.locator('#proofsec input[data-k="0"]').first().inputValue(), await page.locator('#proofsec input[data-k="1"]').nth(1).inputValue(), await page.locator('#proofsec b').count()], ['Bonjour <b>!</b>', 'only at bedtime', 0]);
+await page.getByRole('button', { name: 'Le marché du samedi · A2', exact: true }).click();   // a text: its title, its sentences, what two of them mean, its questions, its note
+assert.match(await main(), /Le marché du samedi · A2\s+Le marché du samedi\s+✎\s+Title\s+Chaque samedi matin, Claire va au marché avec son panier\.[\s\S]*Accepted answers: [\s\S]*The note on grammar shown with this text[\s\S]*Meanings given for words \(\d+\)/);
+await click('Next section');
+assert.doesNotMatch(await page.innerText('#proofsec h2'), /Le marché du samedi/);
+await page.locator('.top [data-v=settings]').click();              // the menu leaves the page and takes its link out of the address
+assert.equal(new URL(page.url()).hash, '');
+await click('Copy its link');
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('Whoever opens the link can read the French lessons'));
+assert.match(await page.evaluate(() => navigator.clipboard.readText()), /#proof=fr$/);
+await click('Open the page for a native speaker');
+await page.waitForSelector('#proofsec');
+for (const odd of ['xx', 'constructor', 'fr/../x']) {              // a language the app has nothing for, or no language at all
+  await page.goto(proofAt + odd);
+  await page.waitForFunction(() => document.querySelector('#main').innerText.includes('a language the app has nothing written for'));
+}
 // a text of your own as a link (a teacher handing out a text): it shows first, is added on a tap, and twice is still one text
 await click('Library');
 await page.fill('#newTitle', 'Texte <b>partagé</b>');

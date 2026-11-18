@@ -430,6 +430,8 @@ function vSettings() {
     <p class="sub">${t('The level is used to choose the next story and when asking for new ones. Pick the level where you understand most of a text.')}${canPlace() ? ' ' + t('Not sure? Find my level by ear plays two sentences at each level and says where it gets hard.') : ''}</p>
     <p class="sub">${t('Every language at the top of the list also has first lessons for complete beginners: phrases to hear, write and say, and a chart of the letters where the script is new.')}</p>
     <p class="sub">${t('The starter stories and dialogues were written by an AI and have not been checked by native speakers.')} ${t('The same goes for the first lessons.')}</p>
+    ${Object.hasOwn(C.LANGS, S.lang) ? H`<p class="sub">${t('Someone whose own language is {language} can check it: on a page of their own they read the lessons and the texts, write what is wrong, and send their corrections back to you.', { language: langName() })}</p>
+    <div class="row"><button data-act="proofgo">${t('Open the page for a native speaker')}</button><button data-act="prooflink">${t('Copy its link')}</button></div>` : ''}
   </div>
   <div class="card"><h2>${t('Install')}</h2>
     <p class="sub">${t('LanguageLab installs like an app, on a phone or a computer. Once it has been opened with a connection, it also opens without one.')}</p>
@@ -1121,6 +1123,62 @@ function vGift() { // a text someone sent as a link (a teacher setting work, a f
   <div class="card"><b lang="${gift.lang}">${gift.title}</b><div class="letter" lang="${gift.lang}" data-clamp>${gift.text}</div></div>
   <div class="bar"><button class="primary" data-act="giftkeep">${t('Add it to my library')}</button></div>`;
 }
+// ---- for a native speaker (#proof=<language>): everything bundled in that language, to read and correct. An AI wrote it and no person
+// had read it; this is how one can. Nothing of a learner's is touched. What the reader marks is kept on this device
+// (ll-proof-<language>) until they copy it and send it themselves: there is no server to send it to.
+// ponytail: the corrections come back as text and are put into the content by hand (each names its row and the words it was about).
+// A script that applies them when they come in numbers.
+let proof = null; // { lang, sections (null while they load), marks, open: the id of the section shown, edit: the id of the line whose fields were just opened }
+async function openProof(code) {
+  const mine = proof = { lang: code, sections: null, marks: C.cleanProof(null), open: '' };
+  FIRST ||= await fetch('content/first.json').then(r => r.json()).catch(() => null);
+  const texts = await fetch(`content/${code}.json`).then(r => r.json()).catch(() => []);
+  if (proof !== mine) return;
+  let saved = null;
+  try { saved = A.parseJSON(ls.get('ll-proof-' + code) || 'null', 2e6); } catch { /* unreadable: the reader starts again */ }
+  mine.sections = C.proofSections(FIRST, texts, code); mine.marks = C.cleanProof(saved);
+  mine.open = (mine.sections.find(s => !mine.marks.read[s.id]) || mine.sections[0])?.id || '';
+  if (view === 'proof') render(true);
+}
+const proofName = s => s.kind === 'lesson' ? t('Lesson {i} of {n}: {title}', { i: s.n, n: proof.sections.filter(x => x.kind === 'lesson').length, title: t(s.title) })
+  : s.kind === 'sounds' ? t('Sounds') : [s.title, s.level].filter(Boolean).join(' · ');
+const proofCount = () => { const o = C.proofOut(proof.lang, proof.sections, proof.marks);
+  return t('Sections read: {read} of {n} · corrections: {fixes}', { read: nf(o.read.length), n: nf(o.sections), fixes: nf(o.fixes.length) }); };
+function proofSave() { ls.set('ll-proof-' + proof.lang, JSON.stringify(proof.marks)); const n = $('#proofn'); if (n) n.textContent = proofCount(); }
+function proofText() { // what the reader sends: '' (and a word why) while nothing is marked
+  const o = C.proofOut(proof.lang, proof.sections, proof.marks, C.dayStr());
+  if (!o.read.length && !o.fixes.length) { $('#proofout').textContent = t('Nothing is marked yet: tick a section you have read, or write a correction.'); return ''; }
+  return JSON.stringify(o, null, 1);
+}
+function vProof() {
+  const p = proof, head = H`<h1>${t('For a native speaker')}</h1>`;
+  if (!p) return H`${head}<p>${t('This link names a language the app has nothing written for.')}</p>`;
+  if (!p.sections) return H`${head}<p class="sub">${t('Loading…')}</p>`;
+  const language = nameOf(p.lang), sec = p.sections.find(s => s.id === p.open);
+  const state = s => (p.marks.read[s.id] ? ' ✓' : '') + ([...s.rows, ...s.words].some(r => p.marks.fix[r.id]) ? ' ✎' : '');
+  const pick = s => H`<button class="mini" data-act="proofopen" data-id="${s.id}" aria-pressed="${s.id === p.open}" aria-label="${proofName(s) + state(s)}">${(s.kind === 'lesson' ? nf(s.n) : proofName(s)) + state(s)}</button>`;
+  // a line reads as text; its two fields show once the pencil is tapped, and stay while it holds a correction
+  const row = r => { const m = p.marks.fix[r.id], open = m || p.edit === r.id, own = r.kind === 'n' ? 'en' : p.lang;
+    const about = r.kind === 'q' ? t('Accepted answers: {words}', { words: r.about }) : r.kind === 't' ? t('Title') : r.kind === 'n' ? t('The note on grammar shown with this text') : r.about;
+    return H`<div class="pr"><div class="row"><div class="grow" lang="${own}" dir="auto">${r.text}</div>${open ? '' : H`<button class="mini" data-act="proofedit" data-id="${r.id}" aria-label="${t('Correct this') + ': ' + r.text}">✎</button>`}</div>
+      ${r.reading ? H`<div class="sub" lang="${p.lang}-Latn">${r.reading}</div>` : ''}${about ? H`<div class="sub">${about}</div>` : ''}
+      ${open ? H`<div class="row"><input type="text" class="grow" lang="${own}" dir="auto" maxlength="600" value="${m?.[0] || ''}" data-input="prooffix" data-id="${r.id}" data-k="0" ${p.edit === r.id ? 'data-focus' : ''} placeholder="${t('How it should read')}" aria-label="${t('How it should read') + ': ' + r.text}">
+      <input type="text" class="grow" dir="auto" maxlength="600" value="${m?.[1] || ''}" data-input="prooffix" data-id="${r.id}" data-k="1" placeholder="${t('A note (optional)')}" aria-label="${t('A note (optional)') + ': ' + r.text}"></div>` : ''}</div>`; };
+  return H`${head}
+  <p>${t('LanguageLab teaches {language} with the phrases and texts below. An AI wrote them, and no person who speaks {language} has read them. If it is your language, your corrections are the check it lacks.', { language })}</p>
+  <p>${t('Read as much or as little as you like. Where something is wrong, or is not what people say, tap ✎ and write how it should read; add a note if you wish. Tick a section when you have read it, also when nothing in it was wrong.')}</p>
+  <p class="sub">${t('What you mark is kept on this device only. Nothing is sent: when you are done, copy your corrections and send them to whoever gave you this link.')}</p>
+  ${sec ? H`<div class="card" id="proofsec"><h2>${proofName(sec)}</h2>
+    ${sec.rows.map(row)}
+    ${sec.words.length ? H`<details class="notice" ${sec.words.some(r => p.marks.fix[r.id] || p.edit === r.id) ? 'open' : ''}><summary>${t('Meanings given for words ({n})', { n: nf(sec.words.length) })}</summary>${sec.words.map(row)}</details>` : ''}
+    <p><label><input type="checkbox" data-change="proofread" data-id="${sec.id}" ${p.marks.read[sec.id] ? 'checked' : ''}> ${t('I have read this section')}</label></p>
+    <p><button data-act="proofnext">${t('Next section')}</button></p></div>` : ''}
+  <div class="row"><button class="primary" data-act="proofcopy">${t('Copy my corrections')}</button><button data-act="prooffile">${t('Save them as a file')}</button></div>
+  <p class="sub" id="proofn">${proofCount()}</p><p class="sub" id="proofout" role="status"></p>
+  <h2>${t('First lessons')}</h2>
+  <div class="row">${p.sections.filter(s => s.kind !== 'text').map(pick)}</div>
+  ${p.sections.some(s => s.kind === 'text') ? H`<h2>${t('Stories and dialogues')}</h2><div class="row">${p.sections.filter(s => s.kind === 'text').map(pick)}</div>` : ''}`;
+}
 // A link can open a screen. A teacher's link (#teach=), a teacher's reply (#fix=) and a shared text (#text=) carry their text after
 // the #: it never reaches a server, and it is outside text, so it is parsed with a size limit and rebuilt from known fields.
 function route() {
@@ -1129,9 +1187,10 @@ function route() {
   else if (h.startsWith('fix=')) { taught = C.cleanTeacher(data(h.slice(4))); view = 'taught'; }
   else if (h.startsWith('text=')) { const d = data(h.slice(5)) || {}; // (never its id, its dates, a recording's cues or a lesson's flag)
     gift = C.isLangCode(d.lang) ? C.cleanStory({ title: d.title, level: d.level, text: d.text, roles: d.roles, lines: d.lines, gloss: d.gloss, questions: d.questions, notice: d.notice, back: d.back, source: 'pasted' }, d.lang) : null; view = 'gift'; }
+  else if (h.startsWith('proof=')) { view = 'proof'; if (Object.hasOwn(C.LANGS, h.slice(6))) openProof(h.slice(6)); else proof = null; }
   else if (['library', 'words', 'progress', 'settings', 'pal', 'chat', 'first'].includes(h)) view = h;
   else return false;
-  if (h.includes('=')) history.replaceState(null, '', location.pathname + location.search); // taken in: a reload does not replay it
+  if (h.includes('=') && view !== 'proof') history.replaceState(null, '', location.pathname + location.search); // taken in: a reload does not replay it
   return true;
 }
 
@@ -1139,7 +1198,7 @@ let shown = ''; // the message now on screen
 function render(keep) { // keep: a redraw nobody asked for (something arrived): a half-typed answer and the message on screen stay
   const was = keep && $('#ans')?.value;
   if (keep && !flash) flash = shown;
-  const markup = { today: vToday, library: vLibrary, words: vWords, progress: vProgress, settings: vSettings, sitting: vSitting, review: vReview, pal: vPal, chat: vChat, radio: vRadio, first: vFirst, place: vPlace, teach: vTeach, taught: vTaught, gift: vGift }[view]();
+  const markup = { today: vToday, library: vLibrary, words: vWords, progress: vProgress, settings: vSettings, sitting: vSitting, review: vReview, pal: vPal, chat: vChat, radio: vRadio, first: vFirst, place: vPlace, teach: vTeach, taught: vTaught, gift: vGift, proof: vProof }[view]();
   const main = $('#main');
   const body = flash ? H`<p class="flash" role="status">${flash}</p>${markup}` : markup; // H escapes every ${}
   main.innerHTML = body;
@@ -1158,6 +1217,7 @@ const ACT = {
       sit.leaving = true; flash = t('Leave this sitting? It is not saved until you finish it. Tap again to leave.'); return render(true);
     }
     if (radio) endRadio();
+    if (view === 'proof') history.replaceState(null, '', location.pathname + location.search);
     hush(); sit = rev = quiz = null; confirmErase = false; confirmRemove = ''; view = b.dataset.v; palT0 = Date.now(); tenOpen = -1; phraseQuery = ''; vowelTry = null;
     if (view === 'chat') { checkModel(); if (chat()?.wait && chatEngine() === 'cowork') pollChat(); }
     render(); scrollTo(0, 0);
@@ -1302,6 +1362,22 @@ const ACT = {
     save(); dropLm(); checkPair(); checkModel(); render(); return addStarters();
   },
   devstory() { return deviceStory(); },
+  proofgo() { location.hash = 'proof=' + S.lang; },
+  async prooflink() { await navigator.clipboard.writeText(location.origin + location.pathname + '#proof=' + S.lang);
+    flash = t('Copied. Whoever opens the link can read the {language} lessons and texts and send you their corrections.', { language: langName() }); render(); },
+  proofopen(b) { proof.edit = ''; proof.open = b.dataset.id; render(); scrollTo(0, 0); $('#proofsec')?.scrollIntoView(); },
+  proofnext() { const all = proof.sections; proof.edit = ''; proof.open = all[all.findIndex(s => s.id === proof.open) + 1]?.id || ''; render(); scrollTo(0, 0); $('#proofsec')?.scrollIntoView(); },
+  proofedit(b) { proof.edit = b.dataset.id; render(); },
+  prooffix(el) { const f = proof.marks.fix, m = f[el.dataset.id] || ['', '']; m[el.dataset.k === '1' ? 1 : 0] = el.value;
+    if (m[0].trim() || m[1].trim()) f[el.dataset.id] = m; else delete f[el.dataset.id];
+    proofSave(); },
+  proofread(el) { if (el.checked) proof.marks.read[el.dataset.id] = true; else delete proof.marks.read[el.dataset.id];
+    proof.edit = ''; proofSave(); render(); $('[data-change=proofread]')?.focus(); },
+  async proofcopy() { const out = proofText(); if (!out) return;
+    await navigator.clipboard.writeText(out); $('#proofout').textContent = t('Copied. Send it to whoever gave you this link.'); },
+  prooffile() { const out = proofText(); if (!out) return;
+    const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([out], { type: 'application/json' }));
+    a.download = `languagelab-${proof.lang}-corrections-${C.dayStr()}.json`; a.click(); $('#proofout').textContent = t('Saved. Send the file to whoever gave you this link.'); },
   async teachcopy() { // the teacher's reply, as a link for the learner
     const reply = C.cleanTeacher({ id: teach.id, note: $('#tNote').value, corrections: [0, 1, 2, 3, 4, 5].map(n => ({ wrong: $('#tw' + n).value, right: $('#tr' + n).value, why: $('#ty' + n).value })) });
     if (!reply) { $('#teachout').textContent = t('Write a correction or a word for the learner first.'); return; }

@@ -24,6 +24,7 @@ LanguageLab is built to be the opposite on each count.
 | **More input** | Just listen (the stories you have read and the first lessons you have done, one after another) and free reading, with a tap for the meaning of any word. Where the browser has its own AI model, "Write me a story" adds a new short text at your level in a few seconds, written on your device around the words you are reviewing (in Chrome 157: French, Spanish, German, English and Japanese). It is a small model's writing, with about one slip a text, and the app says so. |
 | **Progress** | Which level your numbers support for reading, for listening and for speaking, a table level by level, your totals of reading and listening, and where each sound stands. If you are not starting from nothing, Find my level by ear plays two sentences at each level at natural speed and says where it gets hard: that is where you begin. |
 | **With a teacher** | Send a sitting to a teacher or a tutor as a link. They open it in any browser, write their corrections and send a link back, which puts the corrections beside your sitting and into your review. No account and no server: the text travels inside the links. You can also copy a sitting as plain text and type corrections in by hand. |
+| **With a native speaker** | The lessons and texts were written by an AI. Settings gives you a link for someone whose own language it is: on their page they read as much as they like, lesson by lesson and text by text, write how a line should read where it is wrong or not what people say, tick what they have read, and send the result back to you as text. No account and no server. Nobody has done this for any language yet. |
 
 ## How it compares
 
@@ -44,7 +45,7 @@ snapshot). LanguageLab is ahead in some rows and behind in others.
 | Course for complete beginners | Yes, from the alphabet | Yes | Yes | A short one: thirty lessons of eight phrases in each of 44 languages (sixty in 32 of them), charts of the letters for 14 scripts, the sounds that surprise and numbers to catch by ear in every language, then graded stories from A1 in all 44, twelve texts or more in each. Much shorter than their courses. Only a learner with an AI agent of their own has no fixed end: it writes further lessons and stories on request. Without one, the material after the lessons and the bundled stories is your own texts |
 | Speech scoring | Its own engine | TruAccent | Speech recognition | The browser's speech recognition, word by word: understood at its first guess, only its second guess (nearly right) or missed, with how sure it was; it listens through your pauses. A speaking level from those numbers, and a recording of yourself to compare by ear. When it hears another word in place of yours it shows both, with the letters they do not share marked ("rue → roue" points at the vowel), and in every language each sound that surprises (536 in all) has a word to say on its own. In 24 languages there are pairs of words one sound apart: you say one of the two and see which one it heard, which is as near as a recogniser of words comes to judging a single sound. Beside the words, on a computer, it measures the sound itself: the time you took over a line against the model voice's, your long pauses, and in Chinese, Thai and Vietnamese the movement of your pitch on a word (level, rising, falling, or falling then rising), drawn and named whether or not a word was recognised. It keeps a record for each of those sounds and pairs: how often its word, said on its own, was understood, how often it was taken for the other word of its pair, and how often you told the two apart by ear; Progress names the sounds understood least. That is a count of words as a recogniser heard them, kept sound by sound; One contrast is judged from the sound itself and not through words: in French, German, Dutch, Turkish, Hungarian, Finnish, Danish and Chinese a held u or ou (ü or u, y or u) is placed by where its second resonance lies, which says whether the tongue was forward, back or in between. It cannot hear whether the lips are round, it has been tried with synthetic voices only, and nothing scores any other vowel or any consonant |
 | Human teachers | No | Live coaching (premium) | No | None of its own, but it works with any teacher you have: a teacher hands out a text as a link that each learner adds to their library, a link carries the learner's writing back to them, and another brings their corrections into the learner's review. Nobody needs more than a browser |
-| Content checked by people | Yes | Yes | Yes | No native speaker has read it, and the app says so. It was written by an AI; every word of the texts in 31 languages is checked against an open spelling dictionary, and every text was read by a second AI model (see "What has been checked") |
+| Content checked by people | Yes | Yes | Yes | No native speaker has read it, and the app says so. There is a page built for one to do it (a link from Settings: they read a language's lessons and texts, write what is wrong and send it back), but no one has yet. It was written by an AI; every word of the texts in 31 languages is checked against an open spelling dictionary, and every text was read by a second AI model (see "What has been checked") |
 | Apps | iOS, Android, web | iOS, Android, web | iOS, Android, web, AR and VR | A web app that installs to the home screen of a phone or a computer and opens without a connection after one visit. Its manifest carries what a store wrapper would need (icons, screenshots, shortcuts), but it is in no app store |
 
 Sources: Duolingo on [Duolingo Max](https://blog.duolingo.com/duolingo-max), a 2026 review of
@@ -83,7 +84,8 @@ Every other language works with your own texts and with stories written to your 
 through the cowork folder.
 
 The starter stories, the dialogues and the first lessons were written by an AI and have not been
-checked by native speakers; the app says so in Settings. The interface is in English and 16 other
+checked by native speakers; the app says so in Settings, and gives a link there to a page on which a native
+speaker can read all of it and write what is wrong. The interface is in English and 16 other
 languages (machine translated, as the app also says).
 
 ## The AI parts
@@ -243,6 +245,12 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   and the wrong one, and showed what each word means. The half that is said aloud has only been driven by the flow
   test's stand-in recogniser: a single word is hard for a real one, and a word with a homophone can come back
   spelt as the other word.
+- **The page for a native speaker** (November 2026) was tried in headless Chrome only: the French page (60 lessons, the
+  sounds, 44 texts), the Arabic one (right to left, with readings) and the Japanese one opened; a correction and a
+  note typed, a section ticked, the result copied (it names each line by where it lives and gives the words it was
+  about), all of it still there after a reload; a link naming no language says so. No native speaker has used it,
+  so what it is like to read 105 sections on it is not known, and nothing has been corrected through it yet. The
+  corrections are put into the content by hand (`content/AUTHORING.md`); no script applies them.
 - **Tongue forward or back** (November 2026), the one thing judged from the sound itself. What it measures is where the
   strongest stretch of a held vowel's spectrum lies between 600 and 3,600 Hz, which is about where the second
   resonance of the mouth is: low with the tongue back, high with it forward. It was tried in Chrome with the app's
@@ -293,7 +301,7 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   judged right as written. Both times it reported nothing in most of those languages (27 and 19 of the 32). A second model finding nothing
   is weaker evidence than a native reader finding nothing.
 - **Not checked**: a physical microphone, how the voices sound to a native ear, Google sign-in, and phones. The texts and phrases were written by an AI and no native speaker
-  has read them.
+  has read them. The page for a native speaker makes that read possible; until someone has done it, nothing more can be claimed.
 
 ## Licence
 

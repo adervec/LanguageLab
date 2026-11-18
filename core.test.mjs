@@ -421,5 +421,26 @@ console.log('core.test: ok');
   assert.deepEqual(c.lessonKeys('İstasyon nerede?', 'tr'), []);
   assert.deepEqual(c.chartPairs('あ=a し=shi/si junk'), [['あ', ['a']], ['し', ['shi', 'si']]]);
   assert.ok(c.readingOk(' SHI ', ['shi', 'si']) && c.readingOk('si', ['shi', 'si']) && !c.readingOk('su', ['shi', 'si']) && !c.readingOk('', ['a']));
+  // for a native speaker: every lesson, the sounds and every text of a language as rows to read, each with an id that says where it lives
+  const frTexts = JSON.parse(readFileSync(new URL('./content/fr.json', import.meta.url), 'utf8')), secs = c.proofSections(first, frTexts, 'fr');
+  assert.deepEqual([secs.length, secs.filter(x => x.kind === 'lesson').length, secs.filter(x => x.kind === 'text').length, secs[60].id], [60 + 1 + frTexts.length, 60, frTexts.length, 'sounds']);
+  assert.deepEqual(secs[0].rows[0], { id: 'first:1', text: 'Bonjour.', about: 'Hello.', reading: '' });
+  assert.deepEqual([secs[0].id, secs[0].n, secs[0].title, secs[0].rows.length, secs[59].rows[7].id], ['first-1', 1, 'Hello and goodbye', 8, 'first:480']);
+  assert.deepEqual(secs[60].rows.filter(r => r.id === 'sound:1' || r.id === 'pair:1'), [{ id: 'sound:1', text: 'été', about: 'é: like ay in day, cut short', reading: '' }, { id: 'pair:1', text: 'dessus / dessous', about: 'on top / underneath', reading: '' }]);
+  const marche = secs.find(x => x.id === 'fr-marche'), boul = secs.find(x => x.kind === 'text' && x.rows.some(r => r.about === 'La boulangère'));
+  assert.deepEqual([marche.title, marche.level, marche.rows[0], marche.rows[1].text], ['Le marché du samedi', 'A2', { id: 'fr-marche:t', text: 'Le marché du samedi', about: '', reading: '', kind: 't' }, 'Chaque samedi matin, Claire va au marché avec son panier.']);
+  assert.deepEqual(['b', 'q', 'n'].map(k => marche.rows.filter(r => r.kind === k).length > 0), [true, true, true]);
+  assert.ok(marche.rows.find(r => r.kind === 'b').about && marche.rows.find(r => r.kind === 'q').about && marche.words.length > 10 && marche.words.every(r => r.id.startsWith('fr-marche:g:') && r.about));
+  assert.deepEqual(boul.rows.find(r => r.id.endsWith(':s1')), { id: boul.id + ':s1', text: 'Bonjour monsieur ! Vous désirez ?', about: 'La boulangère', reading: '' });
+  const ids = secs.flatMap(x => [...x.rows, ...x.words].map(r => r.id)); assert.equal(new Set(ids).size, ids.length); // no two rows share an id
+  // a script that is not Latin brings its reading; a phrase with a meaning of its own shows that one; a language with nothing has no sections
+  assert.deepEqual(c.proofSections(first, [], 'ru')[0].rows[0], { id: 'first:1', text: 'Здравствуйте.', about: 'Hello.', reading: 'Zdravstvuyte.' });
+  assert.deepEqual([c.proofSections(first, [], 'xx'), c.proofSections(null, null, 'fr'), c.proofSections(first, [{ id: 'x', title: 'T' }, null, 7], 'fr').filter(x => x.kind === 'text')], [[], [], []]);
+  // what the reader marked is rebuilt from known fields; the result names the sections read and gives each correction with what it was about
+  const marks = c.cleanProof({ fix: { 'first:1': ['Bonjour !', ' the usual greeting '], 'fr-marche:g:panier': ['', 'a shopping basket'], 'first:2': ['  ', ''], 'first:3': 'no', 'gone:1': ['x', ''], ['k'.repeat(201)]: ['x', ''] }, read: { 'first-1': true, sounds: 1, 'fr-marche': true }, evil: 1 });
+  assert.deepEqual([Object.keys(marks.fix), Object.keys(marks.read), Object.getPrototypeOf(marks.fix), marks.read.constructor], [['first:1', 'fr-marche:g:panier', 'gone:1'], ['first-1', 'fr-marche'], null, undefined]);
+  assert.deepEqual(c.proofOut('fr', secs, marks, '2026-11-18'), { languagelab: 'proof', lang: 'fr', day: '2026-11-18', sections: secs.length, read: ['first-1', 'fr-marche'],
+    fixes: [{ id: 'first:1', was: 'Bonjour.', about: 'Hello.', now: 'Bonjour !', note: 'the usual greeting' }, { id: 'fr-marche:g:panier', was: 'panier', about: marche.words.find(r => r.text === 'panier').about, note: 'a shopping basket' }] });
+  assert.deepEqual([c.cleanProof(null), c.cleanProof('x'), c.proofOut('fr', secs, c.cleanProof(null)).fixes].map(x => JSON.stringify(x)), ['{"fix":{},"read":{}}', '{"fix":{},"read":{}}', '[]']);
   console.log(`first steps: ok (${Object.keys(first.langs).length} languages)`);
 }

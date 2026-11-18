@@ -112,6 +112,15 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   teacher's page (`vTeach`); their reply is another link (`#fix=`) that `vTaught` keeps beside the sitting (`teacher`) and
   turns into review cards (ids `t:…`). Both are outside text (`cleanTeach`, `cleanTeacher`). Progress also copies a sitting as
   plain text, and Words takes a correction typed in by hand (ids `own:…`).
+- **For a native speaker** (`#proof=<code>`, `vProof`; Settings opens the page and copies its link): `proofSections()` lists
+  everything bundled in a language, a section for each first lesson, one for the sounds and pairs, one for each text. A row's id says
+  where it lives: `first:<phrase number>`, `sound:<n>`, `pair:<n>`, and for a text `<its id>:t` (title), `:s<n>` (sentence or line),
+  `:b<n>` (a sentence with its meaning), `:q<n>` (question), `:n` (the note), `:g:<word>` (a word's meaning). A line shows its two
+  fields (how it should read, a note) once its pencil is tapped. What the reader marks is kept in `localStorage` under
+  `ll-proof-<code>` (`cleanProof`); nothing of `S` is touched, and the link stays in the address so that a reload comes back.
+  `proofOut()` is what they copy or save: `{ languagelab: 'proof', lang, day, sections, read, fixes: [{ id, was, about, now, note }] }`.
+  Nothing in the app reads that text back: corrections go into the content by hand (`content/AUTHORING.md`, "Corrections from a
+  native speaker"). No language has been read by a person yet; when one has, say in the README what was read and when.
 - **Letters to tap**: a lesson shows its own letters; any text in an alphabet that is not Latin shows the letters it uses
   (`tapKeys`), for dictation and review without a keyboard for that script.
 - **A text written on the device** (`deviceStory`, "Write me a story" in the Library and on Today when everything is read): where
