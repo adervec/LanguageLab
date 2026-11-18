@@ -12,7 +12,6 @@
   "Dani",
   "Daniela",
   "Hernando",
-  "Maria",
   "Matías",
   "Medellín",
   "Meyer",
@@ -28,6 +27,7 @@
   "chiles",
   "jitomates",
   "reembolsos",
+  "videollamada",
   "videollamadas"
  ],
  "de": [
@@ -58,7 +58,8 @@
  "it": [
   "Bellinzona",
   "Fi",
-  "Wi"
+  "Wi",
+  "videochiamata"
  ],
  "pt": [
   "Anna",

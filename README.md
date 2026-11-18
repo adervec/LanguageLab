@@ -245,6 +245,21 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   and the wrong one, and showed what each word means. The half that is said aloud has only been driven by the flow
   test's stand-in recogniser: a single word is hard for a real one, and a word with a homophone can come back
   spelt as the other word.
+- **Two more reads of the sixty lessons in the eight main languages** (November 2026), both by a larger AI model, neither by a
+  person. The first asked whether anything was wrong, with three mistakes planted in each copy (French, Spanish,
+  German, Italian; one of the three a wrong preposition, the kind such a reader had missed before): all twelve were
+  found, and one real thing, the accent on the Spanish name María. The second asked a different question, one
+  language a reader: for each lesson, which phrase would a native speaker most object to, and is it wrong,
+  unnatural or fine? That brought back 160 phrases (French 21, Spanish 25, German 16, Italian 8, Portuguese 24,
+  Dutch 15, Croatian 18, English 33), of which 149 were taken and 11 judged right as written. Nearly all were correct
+  but stiff or translated: "Cela dépend" where people say "Ça dépend", "Vendez-vous" for "Est-ce que vous vendez",
+  a German "Es ist" for "Das ist", "¡Buen provecho!" for the "¡Que aproveche!" of Spain, "met de kaart betalen" for
+  "pinnen", an English "At what time". A few were more than that: a Brazilian lamp that was a light bulb, a Croatian
+  pronoun out of its place, an Italian idiom with the wrong meaning beside it. 27 of the English meanings shown to
+  every learner were made plainer at the same time. What this shows about the rest is not flattering: a read that
+  only asks "is it wrong?" had passed all of these, and the other 36 languages have had only that kind of read.
+  A learner who had already done one of these lessons finds the corrected wording in review; the card keeps its
+  schedule.
 - **The page for a native speaker** (November 2026) was tried in headless Chrome only: the French page (60 lessons, the
   sounds, 44 texts), the Arabic one (right to left, with readings) and the Japanese one opened; a correction and a
   note typed, a section ticked, the result copied (it names each line by where it lives and gives the words it was

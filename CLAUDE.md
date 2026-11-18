@@ -60,7 +60,7 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   level (so they never count in `abilities()`) and `back` = every phrase with its meaning, shown in the interface language
   where the file has that language. A lesson is a session with `mode: 'first'`: study the phrases, type half from the ear,
   write the other half from their meaning and say them (the halves swap next time). Its phrases become review cards in the
-  corrections deck under ids `first:<story id>:<n>`. `lessonKeys()` gives the letters to tap. The First steps screen
+  corrections deck under ids `first:<story id>:<n>` (`syncPhraseCards` gives a card the corrected wording when the file changes a phrase; the schedule stays). `lessonKeys()` gives the letters to tap. The First steps screen
   (`vFirst`, `#first`) lists the lessons ten at a time (`tenOpen`: the ten with the next lesson is open), the charts with a "type how it sounds" practice, and the sounds.
 - **A sitting** is the graded session: one story through listen (text hidden), questions answered
   from the ear alone (typed, keyword-checked), read (tap unknown words), dictation at natural speed

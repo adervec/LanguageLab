@@ -421,6 +421,11 @@ console.log('core.test: ok');
   assert.deepEqual(c.lessonKeys('İstasyon nerede?', 'tr'), []);
   assert.deepEqual(c.chartPairs('あ=a し=shi/si junk'), [['あ', ['a']], ['し', ['shi', 'si']]]);
   assert.ok(c.readingOk(' SHI ', ['shi', 'si']) && c.readingOk('si', ['shi', 'si']) && !c.readingOk('su', ['shi', 'si']) && !c.readingOk('', ['a']));
+  // a phrase corrected in the file is corrected in the card a learner already has; the card keeps its schedule, and other cards are left alone
+  const deck = { 'first:fr-first-42:5': { wrong: 'That depends on the weather.', right: 'Cela dépend du temps.', why: '', added: 1, srs: { reps: 2 } }, 'first:fr-first-42:0': { wrong: 'b', right: 'a' }, 't:x:0': { wrong: 'a', right: 'z' } };
+  const l42 = { id: 'fr-first-42', back: [['a', 'b'], ['c', 'd'], ['e', 'f'], ['g', 'h'], ['i', 'j'], ['Ça dépend du temps.', 'That depends on the weather.']] };
+  assert.deepEqual([c.syncPhraseCards(deck, l42), deck['first:fr-first-42:5'], deck['t:x:0'], Object.keys(deck).length], [1, { wrong: 'That depends on the weather.', right: 'Ça dépend du temps.', why: '', added: 1, srs: { reps: 2 } }, { wrong: 'a', right: 'z' }, 3]);
+  assert.deepEqual([c.syncPhraseCards(deck, l42), c.syncPhraseCards(null, l42), c.syncPhraseCards(deck, null), c.syncPhraseCards(deck, { id: 'x' })], [0, 0, 0, 0]);
   // for a native speaker: every lesson, the sounds and every text of a language as rows to read, each with an id that says where it lives
   const frTexts = JSON.parse(readFileSync(new URL('./content/fr.json', import.meta.url), 'utf8')), secs = c.proofSections(first, frTexts, 'fr');
   assert.deepEqual([secs.length, secs.filter(x => x.kind === 'lesson').length, secs.filter(x => x.kind === 'text').length, secs[60].id], [60 + 1 + frTexts.length, 60, frTexts.length, 'sounds']);

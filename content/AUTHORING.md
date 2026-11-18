@@ -79,6 +79,15 @@ A language in a script that is not Latin also needs a reading in Latin letters f
 `[name, "letter=reading letter=reading/other"]`; `sounds` holds `[letters, example word, what to listen for]`.
 `node core.test.mjs` checks all of it.
 
+## Reading lesson phrases a second time
+
+Two questions find different things. "Is anything wrong here?" finds mistakes (plant a few in the copy to know what a clean
+report is worth). "For each lesson, which phrase would a native speaker most object to, and is it wrong, unnatural or fine?" finds
+what is correct but stiff or translated, and in the eight main languages that was twenty phrases in 480 on average. Give the second
+question to a reader of another model, one language at a time, with a clean copy; judge each answer yourself; keep the meaning shown
+to the learner true (a phrase that no longer matches the shared English meaning needs a meaning of its own, and then it is no
+longer shown in the learner's own language). A corrected phrase reaches the cards a learner already has (`syncPhraseCards`).
+
 ## Corrections from a native speaker
 
 Settings gives a link to a page (`#proof=<code>`) on which a native speaker reads everything bundled in their language and writes

@@ -513,6 +513,14 @@ export function cleanTeacher(o) { // what the teacher sends back: corrections an
   const corrections = cleanFixes(o.corrections), note = str(o.note, 1200).trim();
   return str(o.id, 80) && (corrections.length || note) ? { id: o.id, note, corrections } : null;
 }
+// A first lesson's phrases live in review as cards first:<story id>:<n>, each holding the phrase and its meaning as they were when
+// the lesson was done. When the file corrects a phrase, the card takes the new wording and keeps its schedule: what comes back in
+// review is then what people say, not what the app first taught. Returns how many cards changed.
+export function syncPhraseCards(fixes, s) {
+  let n = 0;
+  arr(obj(s).back).forEach(([p, meaning], i) => { const f = obj(fixes)[`first:${s.id}:${i}`]; if (f && (f.right !== p || f.wrong !== meaning)) { f.right = p; f.wrong = meaning; n++; } });
+  return n;
+}
 // ---- for a native speaker: everything bundled in one language, to be read and corrected (an AI wrote it; no person had read it) ----
 // One section for each first lesson, one for the sounds and the pairs, one for each text. A row is { id, text, about, reading }, and
 // its id says where the words live: first:<phrase number>, sound:<n>, pair:<n>, and for a text <its id>:t (the title), :s<n> (a sentence

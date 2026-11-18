@@ -1889,6 +1889,7 @@ async function addStarters() {
     if (!c || !c.id || S.gone[c.id]) continue;
     if (old) Object.assign(old, c, { gloss: { ...old.gloss, ...c.gloss }, readAt: old.readAt, added: old.added });
     else S.stories.push(c);
+    if (c.phrases && c.source === 'first') C.syncPhraseCards(S.langs[code]?.fixes, c); // a phrase corrected in the file is corrected in review too
   }
   render(true);
 }
