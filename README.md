@@ -274,6 +274,13 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   only asks "is it wrong?" had passed all of these, and the other 36 languages have had only that kind of read.
   A learner who had already done one of these lessons finds the corrected wording in review; the card keeps its
   schedule.
+  Russian, Japanese, Chinese and Korean were asked the same question next, and it marked more there: 20, 32, 42 and
+  50 phrases of 480. 124 were reworded (17, 31, 39 and 37), each with its reading, and 15 readings corrected. Most
+  were English shapes in another language: a Japanese 彼女 for one's own mother, a Chinese 是 for a plain yes and a
+  table "for two people" where one says how many one is, a Korean 그들 and 그녀 that nobody says aloud, a Russian
+  river that "is" behind a house. Fourteen Korean readings wrote kh where a stop meets ㅎ and one hears k. So the
+  twelve languages read this way came out between 8 and 50 remarks each, and the fewest where the first writing
+  was best; the 32 not yet read this way are likely to be nearer the high end than the low.
   The same question about the 44 French stories and dialogues (which sentence of each would a native speaker most
   object to?) marked 13 sentences, none of them wrong; 12 were reworded ("perdre la voix", a pronoun that pointed
   at the wrong grandmother, "encore en pyjama" at eleven at night) and one kept. The texts of the other languages
