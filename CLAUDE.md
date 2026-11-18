@@ -42,9 +42,9 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   and `phrases: true`, so the lesson session, the review cards and `syncPhraseCards` treat them as lessons; `lessons()` leaves them out,
   so the count of phrase lessons and the request for AI-written lessons do not change. The meaning starts with the picture (`pic()`
   shows it large and hides it from a screen reader, which would read its name as well).
-- **First steps** (from nothing): `content/first.json` holds 480 meanings in sixty lessons: each of the 44 languages has the first 240 phrases (thirty lessons), and 34 have all 480 (the eight with full sets
-  of stories, and zh, ja, ko, vi, id, ms, ru, uk, bg, pl, cs, sk, sr, ro, hu, el, tr, ca, gl, sv, nb, da, af, eo, ar, hi; the ten still at 240
-  are fa, ur, bn, th, fi, sl, mk, be, fil, sw)
+- **First steps** (from nothing): `content/first.json` holds 480 meanings in sixty lessons: each of the 44 languages has the first 240 phrases (thirty lessons), and 36 have all 480 (the eight with full sets
+  of stories, and zh, ja, ko, vi, id, ms, ru, uk, bg, pl, cs, sk, sr, ro, hu, el, tr, ca, gl, sv, nb, da, af, eo, ar, hi, fa, ur; the eight still at 240
+  are bn, th, fi, sl, mk, be, fil, sw)
   (`langs`: a phrase is a string, or `[phrase, its own meaning]` where the shared English `meanings` do not fit), a meaning with `{language}` in it names the language being learned and is always shown in English), a reading in
   Latin letters for each phrase in a script that is not Latin (`readings`), script charts (`scripts`: `"letter=reading"` pairs)
   and sounds to notice (`sounds`, for every language: `[letters, a word, a hint]`; where the script is not Latin the hint starts with
