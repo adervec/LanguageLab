@@ -415,8 +415,9 @@ console.log('core.test: ok');
   // a meaning of its own that is the shared one with a note after it: the reader's language for the meaning, the note kept
   assert.deepEqual([c.lessonStories(first, 'hi', 'en')[6].back[0][1], c.lessonStories(first, 'hi', 'fr')[6].back[0][1]],
     ['I get up early. (A man says उठता हूँ.)', first.langs.fr[48] + ' (A man says उठता हूँ.)']);
-  // a language with all sixty lessons: a meaning beyond what the reader's own language has is the English one
-  assert.deepEqual([c.lessonStories(first, 'fr', 'fi').length, c.lessonStories(first, 'fr', 'fi')[30].back[0][1], c.lessonStories(first, 'fr', 'es')[30].back[0][1], c.lessonStories(first, 'fr', 'es')[59].title],
+  // a meaning beyond what the reader's own language has is the English one (every bundled language has all sixty lessons now, so one is cut short here)
+  const short = { ...first, langs: { ...first.langs, fi: first.langs.fi.slice(0, 240) } };
+  assert.deepEqual([c.lessonStories(short, 'fr', 'fi').length, c.lessonStories(short, 'fr', 'fi')[30].back[0][1], c.lessonStories(first, 'fr', 'es')[30].back[0][1], c.lessonStories(first, 'fr', 'es')[59].title],
     [60, 'I am looking for a flat with two rooms.', 'Busco un piso de dos habitaciones.', 'The old tree']);
   assert.deepEqual([c.storySentences(ru[0]).length, c.lessonStories(first, 'xx').length, c.lessonStories(null, 'ru').length], [8, 0, 0]);
   // lessons have no level, so they never count towards what the numbers say you can read

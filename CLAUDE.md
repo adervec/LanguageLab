@@ -43,9 +43,7 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   and `phrases: true`, so the lesson session, the review cards and `syncPhraseCards` treat them as lessons; `lessons()` leaves them out,
   so the count of phrase lessons and the request for AI-written lessons do not change. The meaning starts with the picture (`pic()`
   shows it large and hides it from a screen reader, which would read its name as well).
-- **First steps** (from nothing): `content/first.json` holds 480 meanings in sixty lessons: each of the 44 languages has the first 240 phrases (thirty lessons), and 38 have all 480 (the eight with full sets
-  of stories, and zh, ja, ko, vi, id, ms, ru, uk, bg, pl, cs, sk, sr, ro, hu, el, tr, ca, gl, sv, nb, da, af, eo, ar, hi, fa, ur, bn, sw; the six still at 240
-  are th, fi, sl, mk, be, fil)
+- **First steps** (from nothing): `content/first.json` holds 480 meanings in sixty lessons: each of the 44 languages has all 480 phrases (a new language may start with the first 240, thirty lessons: the test takes either)
   (`langs`: a phrase is a string, or `[phrase, its own meaning]` where the shared English `meanings` do not fit; an own meaning that is the shared one with a note in brackets after it,
   "… (A man says X.)", is shown in the interface language with the note kept, so write notes that way), a meaning with `{language}` in it names the language being learned and is always shown in English), a reading in
   Latin letters for each phrase in a script that is not Latin (`readings`), script charts (`scripts`: `"letter=reading"` pairs)
@@ -66,7 +64,7 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   The `stories` cowork channel also brings first lessons: `wantLessons` in the request while the level is A1 and fewer than three are
   left to do (also for a language with none bundled), `lessons` in the reply, each checked by `cleanLesson` and added as a story with
   `phrases` and source `cowork`. They are listed after the bundled ones and are kept at start-up (only `source: 'first'` lessons are
-  replaced from the file). `lessonStories()` turns a language's phrases into one story a lesson (thirty of them, or sixty) with `phrases: true`, no
+  replaced from the file). `lessonStories()` turns a language's phrases into one story a lesson (sixty of them) with `phrases: true`, no
   level (so they never count in `abilities()`) and `back` = every phrase with its meaning, shown in the interface language
   where the file has that language. A lesson is a session with `mode: 'first'`: study the phrases, type half from the ear,
   write the other half from their meaning and say them (the halves swap next time). Its phrases become review cards in the
