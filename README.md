@@ -329,9 +329,19 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   "you are welcome", two Vietnamese words of the south in a course that is otherwise Hanoi's, and three Greek
   pronouns that need their accent to say "for me" and "to him". The rest were the usual: a subject pronoun where the
   language drops it (Greek εκείνη, Czech ona, Turkish o), a "please" tacked on, the written "this" in speech (Czech
-  tento), "is there a" for "is there any". So the 34 languages read this way came out between 6 and 50 remarks
-  each, the fewest where the first writing was best, and the 10 not yet read this way should be expected to hold
-  as many. Reading for this also showed that "the second floor" of lesson 12 is one
+  tento), "is there a" for "is there any". Bulgarian, Slovak, Serbian, Hungarian and Galician followed (21, 19, 21, 31 and
+  22 of 480, all taken but a Galician word for a birthday that the dictionary did not know), then Norwegian, Danish,
+  Afrikaans and Malay (44, 29, 33 and 42, all taken but one). The Norwegian wrote "klokken" and "klokka" side by
+  side and put the subject before the verb after "så"; the Afrikaans had a café that in South Africa is a corner
+  shop, a shirt that "fits" for one that suits, and "gelukkig" where it reads as "luckily"; the Hungarian asked "who
+  is this" for "who is that" and named a sticking plaster as tape; the Malay called a bank's customer "awak" and
+  said "tolong" for every please. Catalan needed more than phrases. Its reader pointed out that the lessons spoke to
+  everyone in the second person plural ("Com us dieu?"), which Barcelona keeps for several people: some 75 lines
+  changed how they address someone, "vostè" to a stranger in the wording the reader gave for each, "tu" to a friend
+  or a colleague, and the plural only where a shop is asked what it has. With the reader's other remarks that made
+  104 Catalan changes. So all 44 languages have now been read this way, and came out between 6 and 50 remarks each
+  (Catalan apart), the fewest where the first writing was best. That is the measure of what one such read finds,
+  not of what is left: a second reader of the same kind would find more, and none of them is a person. Reading for this also showed that "the second floor" of lesson 12 is one
   floor lower in Finnish, Belarusian, Thai, Filipino and Bengali than a British reader takes it to be; the meaning
   now says so there, as it did in nine languages already.
   The same question about the 44 French stories and dialogues (which sentence of each would a native speaker most
