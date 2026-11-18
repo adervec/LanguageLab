@@ -260,6 +260,10 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   only asks "is it wrong?" had passed all of these, and the other 36 languages have had only that kind of read.
   A learner who had already done one of these lessons finds the corrected wording in review; the card keeps its
   schedule.
+  The same question about the 44 French stories and dialogues (which sentence of each would a native speaker most
+  object to?) marked 13 sentences, none of them wrong; 12 were reworded ("perdre la voix", a pronoun that pointed
+  at the wrong grandmother, "encore en pyjama" at eleven at night) and one kept. The texts of the other languages
+  have not been asked this.
 - **The page for a native speaker** (November 2026) was tried in headless Chrome only: the French page (60 lessons, the
   sounds, 44 texts), the Arabic one (right to left, with readings) and the Japanese one opened; a correction and a
   note typed, a section ticked, the result copied (it names each line by where it lives and gives the words it was

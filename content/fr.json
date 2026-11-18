@@ -63,7 +63,7 @@
   "id": "fr-train",
   "title": "Le train du matin",
   "level": "A2",
-  "text": "Marc prend le même train tous les matins. Aujourd'hui, il arrive à la gare en retard et il doit courir. Les portes se ferment juste derrière lui. Il cherche une place et s'assoit en face d'une femme qui lit un gros livre. Marc reconnaît la couverture : c'est son roman préféré. Il hésite, puis il lui demande si elle aime l'histoire. Elle lève les yeux et répond qu'elle ne peut plus s'arrêter de lire. Ils parlent des personnages pendant tout le voyage. Quand le train entre en ville, la femme range son livre dans son sac. « Demain, je vous dirai comment ça finit », dit-elle en riant. Marc descend du train de très bonne humeur. Pour une fois, il espère que demain arrivera vite.",
+  "text": "Marc prend le même train tous les matins. Aujourd'hui, il arrive à la gare en retard et il doit courir. Les portes se ferment juste derrière lui. Il cherche une place et s'assoit en face d'une femme qui lit un gros livre. Marc reconnaît la couverture : c'est son roman préféré. Il hésite, puis il lui demande si elle aime l'histoire. Elle lève les yeux et répond qu'elle ne peut plus s'arrêter de lire. Ils parlent des personnages pendant tout le voyage. Quand le train entre en ville, la femme range son livre dans son sac. « Demain, je vous dirai comment ça finit », dit-elle en riant. Marc descend du train de très bonne humeur. Pour une fois, il a hâte d'être à demain.",
   "gloss": {
    "gare": "train station",
    "retard": "delay (en retard: late)",
@@ -83,7 +83,7 @@
    "dirai": "will tell",
    "riant": "laughing",
    "humeur": "mood",
-   "espère": "hopes"
+   "hâte": "il a hâte: he cannot wait"
   },
   "questions": [
    {
@@ -643,7 +643,7 @@
   "id": "fr-concert",
   "title": "Le concert sous la pluie",
   "level": "B1",
-  "text": "Nous attendions ce concert depuis des mois. Les billets étaient chers, mais c'était le groupe préféré de ma sœur, et je voulais lui faire plaisir pour son anniversaire. Le concert avait lieu en plein air, dans un ancien théâtre romain. Dès notre arrivée, de gros nuages noirs ont couvert le ciel. La première chanson commençait à peine quand l'orage a éclaté. En quelques minutes, nous étions trempés jusqu'aux os. Certains spectateurs sont partis en courant, mais la plupart sont restés. Le chanteur a ri, il a enlevé sa veste et il a continué à chanter sous la pluie. Alors tout le public s'est mis à danser dans les flaques. Ma sœur avait perdu sa voix à force de crier. Je crois que nous n'oublierons jamais cette soirée, justement parce que rien ne s'est passé comme prévu.",
+  "text": "Nous attendions ce concert depuis des mois. Les billets étaient chers, mais c'était le groupe préféré de ma sœur, et je voulais lui faire plaisir pour son anniversaire. Le concert avait lieu en plein air, dans un ancien théâtre romain. Dès notre arrivée, de gros nuages noirs ont couvert le ciel. La première chanson commençait à peine quand l'orage a éclaté. En quelques minutes, nous étions trempés jusqu'aux os. Certains spectateurs sont partis en courant, mais la plupart sont restés. Le chanteur a ri, il a enlevé sa veste et il a continué à chanter sous la pluie. Alors tout le public s'est mis à danser dans les flaques. À la fin, ma sœur avait perdu la voix à force de crier. Je crois que nous n'oublierons jamais cette soirée, justement parce que rien ne s'est passé comme prévu.",
   "gloss": {
    "attendions": "had been waiting for",
    "billets": "tickets",
@@ -715,7 +715,7 @@
   "id": "fr-lettre",
   "title": "La lettre retrouvée",
   "level": "B1",
-  "text": "En vidant le grenier de ses parents, Camille a trouvé une boîte en métal cachée derrière de vieux livres. À l'intérieur, il y avait des photos jaunies et une lettre qui n'avait jamais été ouverte. L'enveloppe portait le nom de sa grand-mère et un timbre d'Argentine. Camille a hésité longtemps. Avait-elle le droit de lire une lettre qui ne lui était pas adressée ? Finalement, la curiosité a été la plus forte. La lettre venait d'un certain Emilio, qui racontait sa nouvelle vie à Buenos Aires et demandait à sa grand-mère de le rejoindre. Camille n'avait jamais entendu ce prénom. Le soir même, elle a téléphoné à sa mère pour lui poser des questions. Il y a eu un long silence au bout du fil. « Viens dimanche, a répondu sa mère. Je crois qu'il est temps que je te raconte cette histoire. »",
+  "text": "En vidant le grenier de ses parents, Camille a trouvé une boîte en métal cachée derrière de vieux livres. À l'intérieur, il y avait des photos jaunies et une lettre qui n'avait jamais été ouverte. L'enveloppe portait le nom de sa grand-mère et un timbre d'Argentine. Camille a hésité longtemps. Avait-elle le droit de lire une lettre qui ne lui était pas adressée ? Finalement, la curiosité a été la plus forte. La lettre venait d'un certain Emilio, qui racontait sa nouvelle vie à Buenos Aires et demandait à la grand-mère de Camille de le rejoindre. Camille n'avait jamais entendu ce prénom. Le soir même, elle a téléphoné à sa mère pour lui poser des questions. Il y a eu un long silence au bout du fil. « Viens dimanche, a répondu sa mère. Je crois qu'il est temps que je te raconte cette histoire. »",
   "gloss": {
    "vidant": "emptying",
    "grenier": "attic",
@@ -850,7 +850,7 @@
   "id": "fr-libraire",
   "title": "Le dernier libraire",
   "level": "B2",
-  "text": "Depuis que la grande surface s'est installée à la sortie de la ville, la librairie de monsieur Vasseur perd des clients chaque année. Pourtant, il refuse de baisser les bras. Selon lui, un libraire ne vend pas seulement des livres : il conseille, il écoute, il devine parfois ce dont un lecteur a besoin avant que celui-ci le sache. L'hiver dernier, alors que la fermeture semblait inévitable, une habituée a lancé une pétition, puis une collecte en ligne. À la surprise générale, des centaines de personnes ont répondu, dont certaines n'avaient jamais mis les pieds dans la boutique. Grâce à cet argent, monsieur Vasseur a pu rénover la vitrine et organiser des rencontres avec des auteurs. Il reste lucide : rien ne garantit que cet élan durera. Mais il a compris que sa librairie comptait bien davantage qu'il ne l'imaginait pour le quartier.",
+  "text": "Depuis que la grande surface s'est installée à la sortie de la ville, la librairie de monsieur Vasseur perd des clients chaque année. Pourtant, il refuse de baisser les bras. Selon lui, un libraire ne vend pas seulement des livres : il conseille, il écoute, il devine parfois ce dont un lecteur a besoin avant que celui-ci le sache. L'hiver dernier, alors que la fermeture semblait inévitable, une habituée a lancé une pétition, puis une collecte en ligne. À la surprise générale, des centaines de personnes ont répondu, dont certaines n'avaient jamais mis les pieds dans la boutique. Grâce à cet argent, monsieur Vasseur a pu rénover la vitrine et organiser des rencontres avec des auteurs. Il reste lucide : rien ne garantit que cet élan durera. Mais il a compris que sa librairie comptait pour le quartier bien plus qu'il ne l'imaginait.",
   "gloss": {
    "surface": "grande surface: big-box store",
    "installée": "set up",
@@ -891,7 +891,6 @@
    "durera": "will last",
    "compris": "understood",
    "comptait": "mattered",
-   "davantage": "more",
    "quartier": "neighbourhood"
   },
   "questions": [
@@ -931,7 +930,7 @@
   "id": "fr-teletravail",
   "title": "Le télétravail",
   "level": "B2",
-  "text": "Lorsque son entreprise a généralisé le télétravail, Nadia s'en est d'abord réjouie. Finis les embouteillages, les réunions interminables et les déjeuners avalés en dix minutes. Elle s'imaginait déjà travailler au calme, une tasse de thé à portée de main. Les premiers mois lui ont donné raison. Peu à peu, cependant, quelque chose s'est déréglé. Les journées s'allongeaient sans qu'elle s'en aperçoive, et la frontière entre vie professionnelle et vie privée devenait floue. Il lui arrivait de répondre à des courriels à onze heures du soir, encore en pyjama. Surtout, les conversations sans importance autour de la machine à café lui manquaient plus qu'elle ne l'aurait cru. Elle a fini par négocier un compromis avec sa responsable : trois jours chez elle, deux au bureau. Ce n'est pas la solution idéale, reconnaît-elle, mais c'est celle qui lui permet de ne pas perdre le fil.",
+  "text": "Lorsque son entreprise a généralisé le télétravail, Nadia s'en est d'abord réjouie. Finis les embouteillages, les réunions interminables et les déjeuners avalés en dix minutes. Elle s'imaginait déjà travailler au calme, une tasse de thé à portée de main. Les premiers mois lui ont donné raison. Peu à peu, cependant, quelque chose s'est déréglé. Les journées s'allongeaient sans qu'elle s'en aperçoive, et la frontière entre vie professionnelle et vie privée devenait floue. Il lui arrivait de répondre à des courriels à onze heures du soir, déjà en pyjama. Surtout, les conversations sans importance autour de la machine à café lui manquaient plus qu'elle ne l'aurait cru. Elle a fini par négocier un compromis avec sa responsable : trois jours chez elle, deux au bureau. Ce n'est pas la solution idéale, reconnaît-elle, mais c'est celle qui lui permet de ne pas perdre le fil.",
   "gloss": {
    "lorsque": "when",
    "entreprise": "company",
@@ -1156,7 +1155,7 @@
   "id": "fr-surprise",
   "title": "Une surprise pour Fatou",
   "level": "A1",
-  "text": "Aujourd'hui, c'est l'anniversaire de Fatou. Elle a trente ans. Elle habite à Dakar et elle travaille dans une banque. Le matin, elle regarde son téléphone. Il n'y a pas de message. Au bureau, ses collègues disent bonjour, mais personne ne parle de son anniversaire. À midi, Fatou mange seule. Ses amis ne téléphonent pas. Elle est un peu triste. Le soir, elle rentre chez elle à pied. Elle ouvre la porte de son appartement. Tout est noir. Soudain, la lumière s'allume. « Joyeux anniversaire ! » crient ses amis. Sa sœur et ses collègues sont là aussi. Sur la table, il y a un grand gâteau au chocolat et des jus de fruits. Fatou rit et elle pleure en même temps. C'est le plus beau jour de l'année.",
+  "text": "Aujourd'hui, c'est l'anniversaire de Fatou. Elle a trente ans. Elle habite à Dakar et elle travaille dans une banque. Le matin, elle regarde son téléphone. Il n'y a pas de message. Au bureau, ses collègues lui disent bonjour, mais personne ne parle de son anniversaire. À midi, Fatou mange seule. Ses amis ne téléphonent pas. Elle est un peu triste. Le soir, elle rentre chez elle à pied. Elle ouvre la porte de son appartement. Tout est noir. Soudain, la lumière s'allume. « Joyeux anniversaire ! » crient ses amis. Sa sœur et ses collègues sont là aussi. Sur la table, il y a un grand gâteau au chocolat et des jus de fruits. Fatou rit et elle pleure en même temps. C'est le plus beau jour de l'année.",
   "gloss": {
    "aujourd'hui": "today",
    "anniversaire": "birthday",
@@ -1215,7 +1214,7 @@
   "notice": "Il y a means there is or there are: \"il y a un grand gâteau\". In the negative, un, une and des become de: \"Il n'y a pas de message\".",
   "back": [
    [
-    "Au bureau, ses collègues disent bonjour, mais personne ne parle de son anniversaire.",
+    "Au bureau, ses collègues lui disent bonjour, mais personne ne parle de son anniversaire.",
     "At the office, her colleagues say hello, but nobody mentions her birthday."
    ],
    [
@@ -1371,7 +1370,7 @@
   "id": "fr-gateau",
   "title": "Le gâteau raté",
   "level": "A2",
-  "text": "Dimanche dernier, à Toulouse, Hugo a invité les parents de sa copine Manon pour la première fois. Il voulait faire bonne impression, alors il a préparé un gâteau au chocolat. Il a suivi la recette : de la farine, des œufs, du beurre, du chocolat et du sucre. Après le repas, Hugo a servi le dessert, très fier de lui. Le père de Manon a goûté le premier. Il a fait une drôle de tête, mais il n'a rien dit. Manon a goûté à son tour et elle a éclaté de rire. Dans le gâteau, il y avait du sel à la place du sucre ! Hugo voulait disparaître sous la table. Heureusement, la mère de Manon a eu une idée. « Il y a un bon glacier au coin de la rue et je vous invite », a-t-elle dit. Ils ont mangé des glaces au soleil, et tout le monde a oublié le gâteau raté. Enfin, presque : Manon en parle encore à chaque anniversaire.",
+  "text": "Dimanche dernier, à Toulouse, Hugo a invité les parents de sa copine Manon pour la première fois. Il voulait faire bonne impression, alors il a préparé un gâteau au chocolat. Il a suivi la recette : de la farine, des œufs, du beurre, du chocolat et du sucre. Après le repas, Hugo a servi le dessert, très fier de lui. Le père de Manon a goûté le premier. Il a fait une drôle de tête, mais il n'a rien dit. Manon a goûté à son tour et elle a éclaté de rire. Dans le gâteau, il y avait du sel à la place du sucre ! Hugo voulait disparaître sous la table. Heureusement, la mère de Manon a eu une idée. « Il y a un bon glacier au coin de la rue et je vous invite », a-t-elle dit. Ils ont mangé des glaces au soleil, et tout le monde a oublié le gâteau raté. Enfin, presque : Manon en parle encore à chaque repas de famille.",
   "gloss": {
    "dernier": "last",
    "invité": "invited",
@@ -1445,9 +1444,9 @@
   "id": "fr-voisin",
   "title": "Le voisin du dessus",
   "level": "B1",
-  "text": "J'habitais alors à Nantes, au deuxième étage d'un vieil immeuble très calme. Mais depuis que le nouveau voisin s'était installé au-dessus de chez moi, je ne dormais plus. Tous les soirs, vers dix heures, j'entendais des coups au plafond, comme si quelqu'un tapait du pied. J'ai d'abord essayé les bouchons d'oreilles, sans succès. Au bout de deux semaines, j'étais tellement en colère que j'ai écrit un mot très sec pour le glisser sous sa porte. Puis j'ai changé d'avis : il valait mieux lui parler en face. Je suis monté et j'ai sonné. Un homme d'une soixantaine d'années m'a ouvert, essoufflé, des chaussures de claquettes aux pieds. Il m'a expliqué en rougissant qu'il apprenait à danser pour faire une surprise à sa fille le jour de son mariage. Ma colère est tombée d'un coup. Nous avons trouvé un arrangement : il s'entraînerait avant huit heures du soir, sur un vieux tapis. Trois mois plus tard, il est venu me montrer la vidéo du mariage. Il dansait comme s'il avait fait ça toute sa vie, et sa fille pleurait de joie.",
+  "text": "À l'époque, j'habitais à Nantes, au deuxième étage d'un vieil immeuble très calme. Mais depuis que le nouveau voisin s'était installé au-dessus de chez moi, je ne dormais plus. Tous les soirs, vers dix heures, j'entendais des coups au plafond, comme si quelqu'un tapait du pied. J'ai d'abord essayé les bouchons d'oreilles, sans succès. Au bout de deux semaines, j'étais tellement en colère que j'ai écrit un mot très sec pour le glisser sous sa porte. Puis j'ai changé d'avis : il valait mieux lui parler en face. Je suis monté et j'ai sonné. Un homme d'une soixantaine d'années m'a ouvert, essoufflé, des chaussures de claquettes aux pieds. Il m'a expliqué en rougissant qu'il apprenait à danser pour faire une surprise à sa fille le jour de son mariage. Ma colère est tombée d'un coup. Nous avons trouvé un arrangement : il s'entraînerait avant huit heures du soir, sur un vieux tapis. Trois mois plus tard, il est venu me montrer la vidéo du mariage. Il dansait comme s'il avait fait ça toute sa vie, et sa fille pleurait de joie.",
   "gloss": {
-   "alors": "at that time",
+   "époque": "à l'époque: at that time, back then",
    "étage": "floor, storey",
    "immeuble": "apartment building",
    "voisin": "neighbour",
@@ -1664,7 +1663,7 @@
   "id": "fr-sucres",
   "title": "Le temps des sucres",
   "level": "B1",
-  "text": "Quand j'étais petite, je passais une semaine chaque printemps chez mes grands-parents, qui possédaient une érablière au sud de Québec. À cette époque de l'année, la neige fond le jour et il gèle encore la nuit : c'est le temps des sucres. Mon grand-père accrochait des seaux aux érables pour recueillir leur eau, claire et à peine sucrée. Je le suivais partout avec mes bottes trop grandes. Dans la cabane à sucre, ma grand-mère surveillait le feu pendant des heures, jusqu'à ce que l'eau devienne du sirop. Mais ce que j'attendais surtout, c'était la tire. On versait le sirop bouillant sur la neige propre et on l'enroulait autour d'un bâton avant qu'il durcisse. L'année de mes huit ans, j'ai voulu porter un seau toute seule. J'ai glissé, et l'eau de toute une matinée s'est répandue dans la neige. J'ai fondu en larmes. Mon grand-père s'est mis à rire et m'a dit que les érables en donneraient d'autres. Aujourd'hui encore, l'odeur du sirop d'érable suffit à me ramener dans cette cabane.",
+  "text": "Quand j'étais petite, je passais une semaine chaque printemps chez mes grands-parents, qui possédaient une érablière au sud de Québec. À cette époque de l'année, la neige fond le jour et il gèle encore la nuit : c'est le temps des sucres. Mon grand-père accrochait des seaux aux érables pour recueillir leur eau, claire et à peine sucrée. Je le suivais partout avec mes bottes trop grandes. Dans la cabane à sucre, ma grand-mère surveillait le feu pendant des heures, jusqu'à ce que l'eau devienne du sirop. Mais ce que j'attendais surtout, c'était la tire. On versait le sirop bouillant sur la neige propre et on l'enroulait autour d'un bâton avant qu'il durcisse. L'année de mes huit ans, j'ai voulu porter un seau toute seule. J'ai glissé, et l'eau de toute une matinée s'est répandue dans la neige. J'ai fondu en larmes. Mon grand-père s'est mis à rire et m'a dit que les érables en donneraient encore. Aujourd'hui encore, l'odeur du sirop d'érable suffit à me ramener dans cette cabane.",
   "gloss": {
    "printemps": "spring",
    "possédaient": "owned",
@@ -1744,7 +1743,7 @@
   "id": "fr-greve",
   "title": "Un matin de grève",
   "level": "B2",
-  "text": "Ce mardi-là, quand Sébastien est arrivé devant la station, les grilles étaient baissées. Une affiche annonçait une grève du métro pour toute la journée. Autour de lui, les gens soupiraient, téléphonaient à leur bureau ou se disputaient les rares taxis. Lui qui traversait Paris sous terre depuis douze ans, sans jamais lever les yeux de son écran, a failli rentrer chez lui. Puis il a calculé qu'il lui faudrait à peine plus d'une heure à pied, et il s'est mis en route, de mauvaise humeur. Il a d'abord marché vite, comme s'il était encore pressé. Mais à mesure qu'il avançait, son pas ralentissait. À dix minutes de chez lui, il a découvert un marché dont il ignorait l'existence, et il s'est arrêté pour acheter des clémentines. Plus loin, il a longé le canal, qu'il ne connaissait que par son nom sur le plan. Dans une cour pavée, un luthier travaillait, la fenêtre grande ouverte. Quand il est enfin arrivé au bureau, en retard mais de bonne humeur, ses collègues se plaignaient encore de leur trajet. Sébastien, lui, n'a rien dit. Bien que le trafic ait repris normalement dès le lendemain, il a gardé l'habitude de descendre trois stations plus tôt. Il prétend que c'est pour sa santé, mais il sait bien que ce n'est pas la seule raison.",
+  "text": "Ce mardi-là, quand Sébastien est arrivé devant la station, les grilles étaient baissées. Une affiche annonçait une grève du métro pour toute la journée. Autour de lui, les gens soupiraient, téléphonaient à leur bureau ou se disputaient les rares taxis. Lui qui traversait Paris sous terre depuis douze ans, sans jamais lever les yeux de son écran, a failli rentrer chez lui. Puis il a calculé qu'il lui faudrait à peine plus d'une heure à pied, et il s'est mis en route, de mauvaise humeur. Il a d'abord marché vite, comme s'il était encore pressé. Mais à mesure qu'il avançait, son pas ralentissait. À dix minutes de chez lui, il a découvert un marché dont il ignorait l'existence, et il s'est arrêté pour acheter des clémentines. Plus loin, il a longé le canal, qu'il ne connaissait que de nom. Dans une cour pavée, un luthier travaillait, la fenêtre grande ouverte. Quand il est enfin arrivé au bureau, en retard mais de bonne humeur, ses collègues se plaignaient encore de leur trajet. Sébastien, lui, n'a rien dit. Bien que le trafic ait repris normalement dès le lendemain, il a gardé l'habitude de descendre trois stations plus tôt. Il prétend que c'est pour sa santé, mais il sait bien que ce n'est pas la seule raison.",
   "gloss": {
    "grilles": "gates, shutters",
    "baissées": "lowered, pulled down",
@@ -1773,7 +1772,7 @@
    "ignorait": "did not know of",
    "clémentines": "clementines (small oranges)",
    "longé": "walked along",
-   "plan": "map",
+   "nom": "ne connaître que de nom: to know only by name",
    "cour": "courtyard",
    "pavée": "cobbled",
    "luthier": "maker of violins and guitars",
@@ -2084,7 +2083,7 @@
   "id": "fr-carnets",
   "title": "Les carnets d'Odile",
   "level": "C1",
-  "text": "À la mort de ma grand-tante Odile, nous avons trouvé dans son appartement de Namur une armoire remplie de carnets. Il y en avait un par année, soigneusement daté, depuis ses dix-sept ans. Je m'attendais à des confidences, voire à quelque secret de famille. Or ces pages ne contenaient presque rien de remarquable : le temps qu'il faisait, le prix du beurre, une visite, une phrase entendue au marché. Et pourtant, à mesure que je lisais, cette vie minuscule prenait un relief que nulle photographie n'aurait su lui donner. On y voyait une écriture ferme se mettre peu à peu à trembler. Des mots étaient rayés, puis repris, comme si la pensée hésitait encore sous mes yeux. J'ai compris alors pourquoi tant de gens s'obstinent à écrire à la main, bien que leurs téléphones leur offrent des outils autrement plus commodes. Le papier impose une lenteur qui oblige à choisir. Il ne réclame ni mot de passe ni approbation, et nul ne viendra compter ses lecteurs. Surtout, il conserve les ratures, alors que l'écran efface nos repentirs sans laisser la moindre trace. Je ne suis pas sûr qu'Odile ait jamais songé à être lue. Peut-être écrivait-elle simplement pour que ses journées ne s'évanouissent pas tout à fait. Quoi qu'il en soit, j'ai acheté le lendemain un carnet à couverture noire. Je n'y note rien d'extraordinaire, et il m'arrive de sauter une semaine. Mais pour peu que je le rouvre au hasard, j'y retrouve un homme que j'avais déjà oublié, et qui pourtant était moi.",
+  "text": "À la mort de ma grand-tante Odile, nous avons trouvé dans son appartement de Namur une armoire remplie de carnets. Il y en avait un par année, soigneusement daté, depuis ses dix-sept ans. Je m'attendais à des confidences, voire à quelque secret de famille. Or ces pages ne contenaient presque rien de remarquable : le temps qu'il faisait, le prix du beurre, une visite, une phrase entendue au marché. Et pourtant, à mesure que je lisais, cette vie minuscule prenait un relief que nulle photographie n'aurait su lui donner. On y voyait une écriture ferme se mettre peu à peu à trembler. Des mots étaient rayés, puis repris, comme si la pensée hésitait encore sous mes yeux. J'ai compris alors pourquoi tant de gens s'obstinent à écrire à la main, bien que leurs téléphones leur offrent des outils autrement plus commodes. Le papier impose une lenteur qui oblige à choisir. Il ne réclame ni mot de passe ni mise à jour, et nul ne viendra compter ses lecteurs. Surtout, il conserve les ratures, alors que l'écran efface nos repentirs sans laisser la moindre trace. Je ne suis pas sûr qu'Odile ait jamais songé à être lue. Peut-être écrivait-elle simplement pour que ses journées ne s'évanouissent pas tout à fait. Quoi qu'il en soit, j'ai acheté le lendemain un carnet à couverture noire. Je n'y note rien d'extraordinaire, et il m'arrive de sauter une semaine. Mais pour peu que je le rouvre au hasard, j'y retrouve un homme que j'avais déjà oublié, et qui pourtant était moi.",
   "gloss": {
    "tante": "aunt (grand-tante: great-aunt)",
    "remplie": "filled",
@@ -2113,7 +2112,7 @@
    "lenteur": "slowness",
    "réclame": "demands",
    "passe": "mot de passe: password",
-   "approbation": "approval",
+   "mise": "mise à jour: update",
    "nul": "nobody (literary, with ne)",
    "ratures": "crossings-out",
    "efface": "erases",
@@ -3531,7 +3530,7 @@
    ],
    [
     1,
-    "J'ai mis de côté environ un cinquième du prix, grâce à mes économies."
+    "J'ai mis de côté environ un cinquième du prix, en économisant depuis des années."
    ],
    [
     0,
@@ -3585,7 +3584,7 @@
    "apport": "contribution (apport personnel: deposit)",
    "côté": "side (mettre de côté: to put aside)",
    "cinquième": "fifth",
-   "économies": "savings",
+   "économisant": "by saving (économiser)",
    "contrat": "contract",
    "indéterminée": "open-ended",
    "entreprise": "company",
