@@ -92,7 +92,12 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   In Chromium on a computer (`canProbe`) a second listener on the microphone runs beside the recogniser (`probe`, frames every 30 ms): `voiceStats()`
   gives the time a spoken line took and its long pauses (`d.sec`, `d.pauses`, shown beside the voice's own time `d.voiceSec`; in the page
   only, never saved), and in zh, th and vi `pitchShape()` names how the pitch moved on a word said alone (`spark` draws it), also when
-  no word was recognised. Checked only with sounds played in place of the microphone. No streak, no points: do not add them.
+  no word was recognised. The listener also keeps each frame's brightness (`brightOf()`: where the strongest stretch of its spectrum lies
+  between 600 and 3600 Hz, about the second resonance of the mouth). On First steps, in the eight languages of `TONGUE` (a front round
+  vowel against a back one: French u and ou, German ü and u), `vowel` runs the listener alone for two seconds on a held vowel and
+  `heldVowel()` with `tongueSpot()` say whether the tongue was back, in between or forward (`vowelTry`, in the page only). It cannot
+  hear lip rounding. `.tmp/vowel-real.mjs` shows how it was tried: synthetic vowels and recordings of the machine's own voices played
+  in place of the microphone. Checked only with sounds played in place of the microphone. No streak, no points: do not add them.
 - **Meanings**: bundled glosses are English. Where the browser has the Translator API (Chrome and Edge
   on desktop) a tapped word with no meaning is translated on the device into the interface language;
   otherwise the learner can type one, or AI cowork fills it in. Each bundled text carries a `notice`

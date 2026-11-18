@@ -587,6 +587,28 @@ await fits('the phrases found');
 await page.fill('#pq', 'qqqq');
 await page.waitForFunction(() => document.querySelector('#main').innerText.includes('No phrase in the lessons has that.'));
 await page.fill('#pq', '');
+// tongue forward or back: the app's own listener on a held vowel. A stand-in microphone hums a note with one overtone: a low one is
+// the ou of "tout", a high one the u of "tu", one in the middle neither; silence gives no answer.
+await page.evaluate(() => { self.realAC = window.AudioContext; self.over = 840;
+  window.AudioContext = class { constructor() { this.sampleRate = 48000; }
+    createAnalyser() { return { getFloatTimeDomainData: buf => { for (let i = 0; i < buf.length; i++) buf[i] = self.over ? 0.2 * Math.sin(2 * Math.PI * 140 * i / 48000) + 0.2 * Math.sin(2 * Math.PI * self.over * i / 48000) : 0; } }; }
+    createMediaStreamSource() { return { connect() {} }; } close() {} };
+  navigator.mediaDevices.getUserMedia = async () => ({ getTracks: () => [] }); });
+assert.match(await main(), /Tongue forward or back[^]*▶ tu\s*▶ tout[^]*Hold u\s*Hold ou/);
+const hold = async (which, over, expected) => { await page.evaluate(v => { self.over = v; }, over);
+  await page.locator('#main button[data-act=vowel]').nth(which).click();
+  await page.waitForFunction(() => document.querySelector('#main').innerText.includes('Listening: hold the vowel.'));
+  await page.waitForFunction(text => document.querySelector('#main').innerText.includes(text), expected, { timeout: 10000 }); };
+await hold(1, 840, 'Far back, where ou is said.');
+assert.match(await main(), /Brightness: about 840 Hz\./);
+await hold(1, 1260, 'A little too far forward for ou: pull the tongue back.');
+await hold(1, 1960, 'That was nearer u: the tongue was forward.');
+await hold(0, 1960, 'Forward, where u is said.');
+await hold(0, 1260, 'Not far enough forward for u.');
+await hold(0, 840, 'That was ou: the tongue was far back.');
+await hold(0, 0, 'It heard no steady vowel.');
+await fits('the held vowel');
+await page.evaluate(() => { window.AudioContext = self.realAC; delete navigator.mediaDevices.getUserMedia; });
 await page.evaluate(() => { self.SpeechSynthesisUtterance = self.realU; delete speechSynthesis.getVoices; delete speechSynthesis.speak; });
 await click('Progress');                                 // the suggestion is still beside its sitting; kept, it becomes a review card
 assert.match(await main(), /read aloud \d+%/);

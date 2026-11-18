@@ -258,6 +258,30 @@ assert.deepEqual([state.sittings.length, state.sittings[0].score, state.sittings
   const v = c.voiceStats(fr);
   assert.ok(Math.abs(v.sec - 2.07) < 0.1 && v.pauses === 1 && v.pitch.length > 40, JSON.stringify([v.sec, v.pauses, v.pitch.length]));
   assert.deepEqual(c.voiceStats([[0, 0.001, 0], [0.03, 0.001, 0]]), { sec: 0, pauses: 0, pitch: [] });
+  // a vowel made of a pulse train through four resonances: the back vowel is dark, the front ones bright, a half-fronted one between
+  const vowel = (f0, formants, rate = 12000) => { const n = rate * 0.6, x = new Float64Array(n); for (let t = 0; t < n; t += rate / f0) x[Math.round(t)] = 1;
+    let lp = 0; for (let i = 0; i < n; i++) { lp = 0.9 * lp + x[i]; x[i] = lp; }
+    for (const [F, B] of formants) { const C = -Math.exp(-2 * Math.PI * B / rate), Bc = 2 * Math.exp(-Math.PI * B / rate) * Math.cos(2 * Math.PI * F / rate), A = 1 - Bc - C; let y1 = 0, y2 = 0;
+      for (let i = 0; i < n; i++) { const y = A * x[i] + Bc * y1 + C * y2; y2 = y1; y1 = y; x[i] = y; } }
+    const peak = x.reduce((m, s) => Math.max(m, Math.abs(s)), 0); return x.map(s => 0.3 * s / peak); };
+  const heard = (f0, formants, rate = 12000) => { const x = vowel(f0, formants, rate), fr = [];                                 // the vowel from the first frame to the last: no quiet room
+    for (let at = 0, k = 0; at + 512 <= x.length; at += Math.round(rate * 0.03), k++) { const f = x.subarray(at, at + 512); fr.push([k * 0.03, 0.2, c.pitchOf(f, rate), c.brightOf(f, rate)]); }
+    return c.heldVowel(fr); };
+  const U = [[290, 60], [750, 90], [2300, 150], [3300, 200]], Y = [[250, 60], [1750, 90], [2150, 150], [3300, 200]], I = [[250, 60], [2250, 90], [3000, 150], [3500, 200]], MID = [[320, 60], [1400, 90], [2300, 150], [3300, 200]];
+  for (const f0 of [110, 140, 220]) for (const rate of [12000, 11025])
+    assert.deepEqual([U, MID, Y, I].map(f => c.tongueSpot(heard(f0, f, rate))), ['back', 'between', 'front', 'front'], `vowels at ${f0} Hz, ${rate} samples a second`);
+  assert.ok(heard(140, U) < 900 && heard(140, Y) > 1650, JSON.stringify([heard(140, U), heard(140, Y)]));
+  assert.deepEqual([c.brightOf(new Float32Array(512), 12000), c.tongueSpot(0), c.tongueSpot(820), c.tongueSpot(1300), c.tongueSpot(2100)], [0, '', 'back', 'between', 'front']);
+  // a front vowel made another way (a sawtooth through filters side by side), where the first resonance tails off slowly: still front
+  const side = (f0, formants, rate = 12000) => { const n = rate * 0.6, out = new Float64Array(n);
+    for (const [F, g] of formants) { const w0 = 2 * Math.PI * F / rate, al = Math.sin(w0) / (2 * F / 90), a1 = -2 * Math.cos(w0); let x1 = 0, x2 = 0, y1 = 0, y2 = 0;
+      for (let i = 0; i < n; i++) { const s = 2 * ((i * f0 / rate) % 1) - 1, y = (al * s - al * x2 - a1 * y1 - (1 - al) * y2) / (1 + al); x2 = x1; x1 = s; y2 = y1; y1 = y; out[i] += g * y; } }
+    const fr2 = []; for (let at = 0, k = 0; at + 512 <= n; at += Math.round(rate * 0.03), k++) { const f = out.subarray(at, at + 512); fr2.push([k * 0.03, 0.2, c.pitchOf(f, rate), c.brightOf(f, rate)]); }
+    return c.heldVowel(fr2); };
+  assert.deepEqual([[[290, 1], [750, 0.6], [2300, 0.05]], [[320, 1], [1400, 0.5], [2300, 0.15]], [[250, 1], [1750, 0.5], [2150, 0.35]]].map(f => c.tongueSpot(side(140, f))), ['back', 'between', 'front']);
+  // too short a sound, or one with no pitch, gives no answer; a quiet stretch before the vowel changes nothing
+  const held = n => Array.from({ length: n }, (_, k) => [k * 0.03, 0.2, 140, 800]);
+  assert.deepEqual([c.heldVowel(held(7)), c.heldVowel(held(8)), c.heldVowel(held(20).map(f => [f[0], f[1], 0, f[3]])), c.heldVowel([[0, 0.004, 0, 0], [0.03, 0.004, 90, 3000], ...held(12)]), c.heldVowel([])], [0, 800, 0, 800, 0]);
   const line = f => Array.from({ length: 20 }, (_, i) => [i * 0.03, f(i / 19)]);
   assert.deepEqual([line(() => 200), line(x => 150 + 150 * x), line(x => 300 - 150 * x), line(x => 200 - 240 * x * (1 - x)), [[0, 200]]].map(c.pitchShape), ['level', 'rising', 'falling', 'dipping', '']); }
 // a placement by ear: two sentences from one bundled story of each level; it says to start where less than 80% was caught

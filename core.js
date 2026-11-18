@@ -227,6 +227,41 @@ export function pitchOf(x, rate, lo = 70, hi = 500) {
   for (let lag = from; lag <= to; lag++) if (ac[lag] >= 0.9 * best && ac[lag] >= ac[lag - 1] && ac[lag] >= ac[lag + 1]) return rate / lag;
   return 0;
 }
+// How bright a vowel is: where, in Hz, the strongest stretch of a frame's spectrum lies between 600 and 3600 Hz (a window some 300 Hz
+// wide, the highs lifted by 6 dB an octave): about where the second resonance of the mouth is. With the tongue far back (the ou of
+// French "roue", the u of German "gut") that is near 800; with the tongue forward (the u of "rue", ü, and i too) it is 1700 or more.
+// 0 where the frame is silent or has next to nothing in that band.
+// (The centre of gravity of the band was tried first: it sank by 300 Hz when the first resonance tailed off slowly, and took a u for
+// something halfway to ou. The strongest stretch does not care.)
+// ponytail: one number for one contrast (tongue forward or back), by Goertzel over the band. It cannot hear whether the lips are
+// round, so it does not tell u from i; a formant tracker if more vowels are ever to be told apart.
+export function brightOf(x, rate, lo = 600, hi = 3600, half = 6) {
+  const n = x.length, w = new Float64Array(n); let all = 0;
+  for (let i = 0; i < n; i++) { w[i] = x[i] * (0.5 - 0.5 * Math.cos(2 * Math.PI * i / (n - 1))); all += w[i] * w[i]; }
+  if (!(all / n > 1e-7)) return 0;
+  const k0 = Math.ceil(lo * n / rate), k1 = Math.floor(hi * n / rate), p = [];
+  for (let k = k0; k <= k1; k++) {
+    const c = 2 * Math.cos(2 * Math.PI * k / n); let s1 = 0, s2 = 0;
+    for (let i = 0; i < n; i++) { const s0 = w[i] + c * s1 - s2; s2 = s1; s1 = s0; }
+    p.push((s1 * s1 + s2 * s2 - c * s1 * s2) * k * k);                        // the power at that pitch, the highs lifted
+  }
+  let best = -1, at = 0, sum = 0;
+  for (let i = 0; i < p.length; i++) { let s = 0, m = 0;
+    for (let j = Math.max(0, i - half); j <= Math.min(p.length - 1, i + half); j++) { s += p[j]; m += p[j] * (k0 + j); }
+    sum += p[i]; if (s > best) { best = s; at = m / s; } }
+  return sum > all * n * k0 * k0 * 1e-5 ? at * rate / n : 0;
+}
+// Where the tongue was for a held vowel, from its brightness: 'back', 'between' or 'front' ('' when there was none to go by).
+// The limits come from synthetic vowels and two synthetic voices (a held "oo" at 740 to 970, the half-fronted vowel of English "food"
+// at 1250 to 1570, front vowels from 1670 up), not from people.
+export const tongueSpot = hz => !(hz > 0) ? '' : hz < 1150 ? 'back' : hz < 1600 ? 'between' : 'front';
+// The brightness of a vowel held for a second or two, from frames of [seconds, loudness, pitch, brightness]: the middle value over the
+// frames that are voiced and at least a third as loud as the loudest; 0 with less than a quarter of a second of them. (Not by way of
+// voiceStats: a vowel held for the whole take leaves no quiet room to measure the voice against.)
+export function heldVowel(frames) {
+  const top = frames.reduce((m, f) => Math.max(m, f[1]), 0), br = frames.filter(f => f[1] > Math.max(0.003, top / 3) && f[2] > 0 && f[3] > 0).map(f => f[3]).sort((a, b) => a - b);
+  return br.length >= 8 ? br[br.length >> 1] : 0;
+}
 // Frames of [seconds, loudness, pitch] -> how long the voice spoke, the long pauses inside, and its pitch as it went: [[seconds, Hz]].
 // ponytail: "louder than the room" is speaking; a real voice detector if rooms get noisy.
 export function voiceStats(frames, gap = 0.45) {

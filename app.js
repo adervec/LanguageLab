@@ -169,6 +169,7 @@ function hear(b, continuous, onText, onDone, rest) {
 // ponytail: a second listener on the same microphone, in Chrome and its kin on a computer only: that is where it was tried. Phones do
 // not all let two listen at once, and another browser would ask for the microphone a second time; there the recogniser stays alone.
 const canProbe = () => !!(navigator.userAgentData && navigator.mediaDevices?.getUserMedia && window.AudioContext) && matchMedia('(hover: hover) and (pointer: fine)').matches;
+let earWhy = ''; // why the listener last could not start
 let ear = null; // the listener now running: a promise of its stop(), which gives the frames it took
 const probe = () => ear = navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false } }).then(stream => {
   const ctx = new AudioContext(), an = ctx.createAnalyser(), frames = [], t0 = performance.now();
@@ -176,9 +177,9 @@ const probe = () => ear = navigator.mediaDevices.getUserMedia({ audio: { echoCan
   const buf = new Float32Array(2048), small = new Float32Array(512);
   const tick = setInterval(() => { an.getFloatTimeDomainData(buf); let e = 0; // a quarter of the samples is plenty for the pitch of a voice
     for (let i = 0; i < 512; i++) { small[i] = (buf[4 * i] + buf[4 * i + 1] + buf[4 * i + 2] + buf[4 * i + 3]) / 4; e += small[i] * small[i]; }
-    frames.push([(performance.now() - t0) / 1000, Math.sqrt(e / 512), C.pitchOf(small, ctx.sampleRate / 4)]); }, 30);
+    frames.push([(performance.now() - t0) / 1000, Math.sqrt(e / 512), C.pitchOf(small, ctx.sampleRate / 4), C.brightOf(small, ctx.sampleRate / 4)]); }, 30);
   return () => { clearInterval(tick); stream.getTracks().forEach(tr => tr.stop()); ctx.close(); return frames; };
-}, () => null);
+}, e => { earWhy = e?.name || 'Error'; return null; });
 // what the listener made of it, once the recogniser is done: { sec, pauses, pitch }, or null where there was nothing to go by
 const probed = async () => { const mine = ear, stop = await mine; if (ear === mine) ear = null; const v = stop ? C.voiceStats(stop()) : null; return v?.sec ? v : null; };
 
@@ -537,6 +538,16 @@ const aloneNote = words => { const recs = words.map(w => L().alone[w]).filter(Bo
 let phraseQuery = '';
 const fold = s => String(s || '').normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
 const findPhrases = (ls, q) => q.length < 2 ? [] : ls.flatMap((s, i) => s.back.filter(b => b.some(x => fold(x).includes(q))).map(b => [b, i + 1])).slice(0, 20);
+// Two vowels said with round lips that differ in where the tongue is: [the front one, a word with it, the back one, a word with it].
+// Where the listener runs (canProbe) a learner holds one of them and sees where the tongue was: C.heldVowel, C.tongueSpot.
+// ponytail: eight languages where the letters stand for just these two sounds. Swedish and Norwegian u is a third sound and is left out.
+const TONGUE = { fr: ['u', 'tu', 'ou', 'tout'], de: ['ü', 'für', 'u', 'gut'], nl: ['uu', 'nu', 'oe', 'koe'], tr: ['ü', 'gül', 'u', 'su'], hu: ['ü', 'ül', 'u', 'fut'], fi: ['y', 'syy', 'u', 'suu'], da: ['y', 'ny', 'u', 'nu'], zh: ['ü', '绿', 'u', '路'] };
+let vowelTry = null; // a held vowel: { lang, k: 0 the front one | 1 the back one, state: 'wait' | 'on' | 'done', hz } (kept for the visit only)
+const tongueScale = (hz, front, back) => { const x = v => Math.round(Math.max(0, Math.min(1, (v - 600) / 2200)) * 200) + 10;
+  return H`<svg class="tongue" viewBox="0 0 220 34" role="img" aria-label="${t('Where your vowel sat, from {back} on the left to {front} on the right', { back, front })}"><rect x="10" y="9" width="${x(1050) - 10}" height="6"/><rect class="mid" x="${x(1050)}" y="9" width="${x(1600) - x(1050)}" height="6"/><rect x="${x(1600)}" y="9" width="${210 - x(1600)}" height="6"/><circle cx="${x(hz)}" cy="12" r="6"/><text x="10" y="31">${back}</text><text x="210" y="31" text-anchor="end">${front}</text></svg>`; };
+const tongueLine = (k, spot, front, back) => k === 0
+  ? (spot === 'front' ? t('Forward, where {front} is said.', { front }) : spot === 'between' ? t('Not far enough forward for {front}. Say i, then round the lips without moving the tongue.', { front }) : t('That was {back}: the tongue was far back.', { back }))
+  : (spot === 'back' ? t('Far back, where {back} is said.', { back }) : spot === 'between' ? t('A little too far forward for {back}: pull the tongue back.', { back }) : t('That was nearer {front}: the tongue was forward.', { front }));
 let tenOpen = -1; // which ten of the first lessons is open on the First steps screen: -1 the ten with the next lesson to do, -2 none
 const openTen = ls => tenOpen === -1 ? Math.floor(Math.max(0, ls.findIndex(x => !x.readAt)) / 10) : tenOpen;
 const sndTry = {}; // a "sound to notice" said aloud: language:word -> { state: 'hit' | 'near' | 'miss', heard } (kept for the visit only)
@@ -1062,7 +1073,15 @@ function vFirst() {
       ${SR ? H`<button class="mini" data-act="sndsay" data-x="${word}" aria-pressed="false">${t('Say it')}</button>` : ''}</div>`)}</div>` : ''}
   ${prs.length ? H`<h2>${t('Sounds apart')}</h2><p class="sub">${t('Pairs of words one sound apart. First you hear one and choose which it was; then, where your browser recognises speech, you say the one in bold and see which it heard.')} ${t('Each try is counted.')}</p>
     ${voices().length ? H`<p><button data-act="pairs">${t('Practise')}</button></p>` : ''}
-    <div class="card">${prs.map(([a, b, hint]) => H`<div class="ph"><div class="grow"><div class="row">${[a, b].map(w => H`<button class="mini" data-act="sayx" data-x="${w}" lang="${S.lang}">▶ ${w}</button>`)}</div><span class="sub">${hint}</span>${aloneNote([a, b]) ? H`<span class="sub">${aloneNote([a, b])}</span>` : ''}</div></div>`)}</div>` : ''}`;
+    <div class="card">${prs.map(([a, b, hint]) => H`<div class="ph"><div class="grow"><div class="row">${[a, b].map(w => H`<button class="mini" data-act="sayx" data-x="${w}" lang="${S.lang}">▶ ${w}</button>`)}</div><span class="sub">${hint}</span>${aloneNote([a, b]) ? H`<span class="sub">${aloneNote([a, b])}</span>` : ''}</div></div>`)}</div>` : ''}
+  ${TONGUE[S.lang] && canProbe() ? (() => { const [front, fw, back, bw] = TONGUE[S.lang], vt = vowelTry?.lang === S.lang ? vowelTry : null, spot = vt?.state === 'done' ? C.tongueSpot(vt.hz) : '';
+    return H`<h2>${t('Tongue forward or back')}</h2>
+    <p class="sub">${t('{front} and {back} are both said with round lips. What differs is the tongue: forward for {front}, far back for {back}. Here the app listens to the sound itself, not to words. Tap a button, then hold the vowel on its own for two seconds.', { front, back })}</p>
+    <p class="row">${[fw, bw].map(w => H`<button class="mini" data-act="sayx" data-x="${w}" lang="${S.lang}">▶ ${w}</button>`)}</p>
+    <p class="row">${[front, back].map((v, k) => H`<button data-act="vowel" data-k="${k}" aria-pressed="${!!vt && vt.k === k && vt.state !== 'done'}">${t('Hold {vowel}', { vowel: v })}</button>`)}</p>
+    <p role="status">${!vt ? '' : vt.state === 'wait' ? t('Waiting for the microphone.') : vt.state === 'on' ? t('Listening: hold the vowel.') : !spot ? t('It heard no steady vowel. Hold it a little longer, nearer the microphone.')
+      : H`<b>${tongueLine(vt.k, spot, front, back)}</b> ${tongueScale(vt.hz, front, back)} <span class="sub">${t('Brightness: about {hz} Hz.', { hz: nf(Math.round(vt.hz / 10) * 10) })}</span>`}</p>
+    <p class="sub">${t('Tried with synthetic voices only, not with people: take it as a hint. It cannot hear whether the lips are round, so it does not tell {front} from i.', { front })}</p>`; })() : ''}`;
 }
 
 // ---------- a human teacher, with no server: the learner's writing travels to them inside a link, their corrections come back inside another ----------
@@ -1139,7 +1158,7 @@ const ACT = {
       sit.leaving = true; flash = t('Leave this sitting? It is not saved until you finish it. Tap again to leave.'); return render(true);
     }
     if (radio) endRadio();
-    hush(); sit = rev = quiz = null; confirmErase = false; confirmRemove = ''; view = b.dataset.v; palT0 = Date.now(); tenOpen = -1; phraseQuery = '';
+    hush(); sit = rev = quiz = null; confirmErase = false; confirmRemove = ''; view = b.dataset.v; palT0 = Date.now(); tenOpen = -1; phraseQuery = ''; vowelTry = null;
     if (view === 'chat') { checkModel(); if (chat()?.wait && chatEngine() === 'cowork') pollChat(); }
     render(); scrollTo(0, 0);
   },
@@ -1393,6 +1412,14 @@ const ACT = {
     guess3(b, (got, v) => { if (view !== 'first' || !(got.length || v)) return;
       if (!v && got.length) saidAlone(word, got);
       sndTry[S.lang + ':' + word] = { state: got.length ? heardAs(word, got) : 'none', heard: (got[0] || '').slice(0, 60), ...(v ? { shape: C.pitchShape(v.pitch), pitch: v.pitch } : {}) }; render(true); }); },
+  vowel(b) { // a held vowel: the listener alone, for two seconds from the moment the microphone is there
+    if (ear || recog || (vowelTry && vowelTry.state !== 'done')) return;
+    const mine = vowelTry = { lang: S.lang, k: +b.dataset.k, state: 'wait', hz: 0 }; hush(); render(true);
+    const listening = probe();
+    listening.then(stop => { if (!stop) { if (ear === listening) ear = null; if (vowelTry === mine) { vowelTry = null; flash = t('The microphone did not work here ({why}). You can carry on without it.', { why: earWhy }); render(true); } return; }
+      if (vowelTry === mine) { mine.state = 'on'; render(true); }
+      setTimeout(() => { const frames = stop(); if (ear === listening) ear = null; // the microphone is let go whatever became of the try
+        if (vowelTry !== mine) return; mine.state = 'done'; mine.hz = C.heldVowel(frames); if (view === 'first') render(true); }, 2200); }); },
   pairs() { // each pair once by ear; then, where the browser recognises speech, once aloud
     const all = list(FIRST?.pairs?.[S.lang]), round = aloud => shuffle(all.slice()).map(pair => ({ pair, want: Math.random() < 0.5 ? 0 : 1, say: aloud }));
     quiz = { pair: true, cards: [...round(false), ...(SR ? round(true) : [])], i: 0, right: 0, verdict: '' };
