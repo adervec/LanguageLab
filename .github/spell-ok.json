@@ -166,7 +166,9 @@
  ],
  "sk": [
   "Berg",
-  "Sofiinej"
+  "Sofiinej",
+  "Wi",
+  "vyhláskovať"
  ],
  "sl": [
   "Anna",
@@ -182,26 +184,38 @@
   "Annu",
   "Berg",
   "Danijelovom",
+  "Iznajmićemo",
   "Sofijinoj",
   "fontanom",
   "fotografišu",
+  "imejlom",
   "plesali",
   "pokucala",
+  "presedam",
   "presednete",
   "rezervaciju",
   "s",
-  "supermarketu"
+  "supermarketu",
+  "zakažem"
  ],
  "bg": [
+  "Fi",
+  "Wi",
   "Берг",
   "Двайсет",
   "Дванайсет",
+  "Елате",
+  "Интернетът",
+  "Лео",
   "Макс",
   "Оряховица",
   "Трийсет",
   "Уикенд",
+  "болят",
+  "двайсет",
   "единайсет",
   "елате",
+  "имейл",
   "петнайсет",
   "трийсет",
   "уикенд",
@@ -224,6 +238,8 @@
  ],
  "hu": [
   "Elenával",
+  "Leo",
+  "Maria",
   "Max",
   "Nyáron",
   "Segítséget",
@@ -233,8 +249,10 @@
   "csillagok",
   "húgom",
   "könyvet",
+  "mailben",
   "nekem",
   "nekünk",
+  "nyáron",
   "pályaudvaron",
   "rendőrséget",
   "szabadságon",
@@ -242,7 +260,8 @@
   "téren",
   "virágok",
   "zöldséget",
-  "égen"
+  "égen",
+  "őket"
  ],
  "el": [
   "Fi",
@@ -351,7 +370,12 @@
   "прийом"
  ],
  "ca": [
-  "lícula"
+  "Wi",
+  "il",
+  "lusionats",
+  "lèrgia",
+  "lícula",
+  "ne"
  ],
  "gl": [
   "Coñecémonos"
@@ -364,5 +388,9 @@
  ],
  "da": [
   "wi"
+ ],
+ "ro": [
+  "Wi",
+  "geacă"
  ]
 }
