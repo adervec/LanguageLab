@@ -166,6 +166,13 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   spelling dictionaries cover 31 of the languages. A few choices are loans or the less usual of two words (Filipino
   "fountain", Swahili "eropleni" for the plane). The pictures are emoji: they look different on each device, and an
   old device shows an empty box for some. Tried in headless Chrome only.
+  A larger model then read all of them, five readers by family of languages, each copy with one mistake planted per
+  language (a wrong gender, a missing diacritic, a neighbour's word): 42 of the 44 were found (missed: an Esperanto ĉ
+  without its circumflex, and a Russian soft sign on a Bulgarian word), with eleven real remarks, of which eight were
+  taken (Galician "as gafas", Swedish "en tv", Afrikaans "handsak", Malay "baju-T", Filipino "hotel", Hindi
+  "चिड़िया" for the bird and a nukta, and the Arabic قميص now said to mean a shirt) and three left as written
+  (Dutch "de zitbank", because "de bank" is also the bank; the formal Hungarian word for a motorbike; a Bengali
+  reading that was right). Nouns are the kind of content such a read checks best; it is still not a person.
 - **The first lessons** (18,240 phrases: 240 in each of 44 languages, and 240 more in 32 of them). Lessons 1 to 10 were read a second time by their
   author, which changed six phrases. A second AI model then read them in three rounds that between them cover every
   phrase in every language but English (whose phrases are the English meanings themselves). Lessons 1 to 10 in the
