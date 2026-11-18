@@ -8,6 +8,8 @@ const c = await import('./core.js');
 
 // ---- what every bundled story and dialogue must satisfy (content/AUTHORING.md) ----
 const WORDS = { A1: [70, 170], A2: [90, 210], B1: [110, 250], B2: [130, 290], C1: [170, 360] };
+// a word with letters of two of these scripts: a Latin e inside a Cyrillic word looks right, and what is typed or said is marked wrong
+const mixedWord = s => String(s).split(/[^\p{L}\p{M}]+/u).find(w => [/\p{Script=Latin}/u, /\p{Script=Cyrillic}/u, /\p{Script=Greek}/u].filter(r => r.test(w)).length > 1);
 function contentProblems(file) {
   const lang = file.match(/([a-z]{2,3})(-\w+)?\.json$/)[1], out = [];
   let list;
@@ -23,6 +25,7 @@ function contentProblems(file) {
     ids.add(raw.id); titles.add(s.title);
     if (!WORDS[s.level]) bad('level must be one of ' + Object.keys(WORDS).join(', '));
     if (/\d/.test(s.text)) bad('no digits: write numbers as words');
+    if (mixedWord(s.text)) bad('a word mixes two scripts: ' + mixedWord(s.text));
     const words = c.plainWords(s.text, lang), keys = new Set(c.wordKeys(s.text, lang));
     const inText = k => c.answerOk(s.text, [k], lang); // the same test a learner's answer gets
     const L = c.langInfo(lang), scale = { ko: 0.6, ja: 1.5, th: 3 }[lang] || 1; // a Korean word carries what takes two words elsewhere; Japanese and Thai need more characters than Chinese
@@ -375,6 +378,7 @@ console.log('core.test: ok');
       const [text, own] = Array.isArray(p) ? p : [p, 'x'];
       if (typeof text !== 'string' || !text.trim() || text.length > 80 || typeof own !== 'string' || !own) bad.push(`${code} #${i}: a phrase is a short string, or [phrase, its own meaning]`);
       else if (/\d/.test(text)) bad.push(`${code} #${i}: no digits`);
+      else if (mixedWord(text)) bad.push(`${code} #${i}: a word mixes two scripts: ${mixedWord(text)}`);
       else if (!c.plainWords(text, code).length || c.dictationScore(text, text, code).score !== 1) bad.push(`${code} #${i}: cannot be scored: ${text}`);
       else if (seen.has(text)) bad.push(`${code} #${i}: the same phrase twice: ${text}`);
       seen.add(text);
@@ -408,6 +412,9 @@ console.log('core.test: ok');
   assert.deepEqual(c.cleanStory(c.lessonStories(first, 'es')[0], 'es').back[1], ['Buenas tardes.', 'Good afternoon.']); // a phrase with its own meaning
   assert.equal(c.lessonStories(first, 'ru', 'es')[0].back[1][1], 'Good evening.');   // the reader's own phrase there means something else: English instead
   assert.equal(c.lessonStories(first, 'ru', 'ru')[0].back[0][1], 'Hello.');
+  // a meaning of its own that is the shared one with a note after it: the reader's language for the meaning, the note kept
+  assert.deepEqual([c.lessonStories(first, 'hi', 'en')[6].back[0][1], c.lessonStories(first, 'hi', 'fr')[6].back[0][1]],
+    ['I get up early. (A man says उठता हूँ.)', first.langs.fr[48] + ' (A man says उठता हूँ.)']);
   // a language with all sixty lessons: a meaning beyond what the reader's own language has is the English one
   assert.deepEqual([c.lessonStories(first, 'fr', 'fi').length, c.lessonStories(first, 'fr', 'fi')[30].back[0][1], c.lessonStories(first, 'fr', 'es')[30].back[0][1], c.lessonStories(first, 'fr', 'es')[59].title],
     [60, 'I am looking for a flat with two rooms.', 'Busco un piso de dos habitaciones.', 'The old tree']);

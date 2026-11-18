@@ -27,6 +27,7 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   how a new language may start; none is at that size now).
   Thai is `seg` too, glossed on the pieces `Intl.Segmenter` cuts, with a zero-width space where it would cut wrongly (`.tmp/thseg.mjs` lists
   glosses no tap would reach).
+  No word may mix Latin letters with Cyrillic or Greek ones (a Latin e in a Cyrillic word looks right and is marked wrong): the test refuses it.
   Arabic-script marking forgives vowel marks and letter shapes; a Persian word around a zero-width non-joiner is one token.
   Chinese and Japanese are `seg`: words for reading come from `Intl.Segmenter`, scoring is by character. Any other language code works with pasted texts and AI cowork stories:
   `langInfo()` fills in names from Intl, and languages written without spaces are split with
@@ -45,7 +46,8 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
 - **First steps** (from nothing): `content/first.json` holds 480 meanings in sixty lessons: each of the 44 languages has the first 240 phrases (thirty lessons), and 38 have all 480 (the eight with full sets
   of stories, and zh, ja, ko, vi, id, ms, ru, uk, bg, pl, cs, sk, sr, ro, hu, el, tr, ca, gl, sv, nb, da, af, eo, ar, hi, fa, ur, bn, sw; the six still at 240
   are th, fi, sl, mk, be, fil)
-  (`langs`: a phrase is a string, or `[phrase, its own meaning]` where the shared English `meanings` do not fit), a meaning with `{language}` in it names the language being learned and is always shown in English), a reading in
+  (`langs`: a phrase is a string, or `[phrase, its own meaning]` where the shared English `meanings` do not fit; an own meaning that is the shared one with a note in brackets after it,
+  "… (A man says X.)", is shown in the interface language with the note kept, so write notes that way), a meaning with `{language}` in it names the language being learned and is always shown in English), a reading in
   Latin letters for each phrase in a script that is not Latin (`readings`), script charts (`scripts`: `"letter=reading"` pairs)
   and sounds to notice (`sounds`, for every language: `[letters, a word, a hint]`; where the script is not Latin the hint starts with
   the word in Latin letters, and a Japanese example is a word written in kana, so that a recogniser writes it as the list does).

@@ -229,6 +229,11 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   hours of the morning; a Bengali "very long" that should have been "too long"; three Bengali readings that did not
   follow the sound. That a read finds as much in the second thirty as in the first says these two are the least
   sure of the 38, and a clean lesson in them is worth less than one in French. The other six are still at thirty.
+- **A mistake no reader could see** (November 2026): two Macedonian phrases wrote "сѐ" with a Latin è after the
+  Cyrillic с. It looks the same, so four reads passed it, and a learner who typed or said the word rightly was
+  marked wrong. It was found by chance, when the readings were being made by rule. The whole of the content was
+  then searched for words that mix Latin letters with Cyrillic or Greek ones (those two were the only ones), and
+  the test now refuses any.
 - **What a clean report from that reader is worth**: one of its inputs (880 phrases in thirteen languages) was copied
   with ten mistakes planted in it: a Czech word in Slovak, wrong cases in Slovak, Slovenian and Finnish, a wrong
   gender in Swedish, a wrong preposition and a wrong agreement in Romanian, two Danish meanings swapped and a third
@@ -299,9 +304,16 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   (all 26, and 16). The Bengali ordered a coffee with a tacked-on দয়া করে where a polite verb does the work, asked
   for the toilet in a word from signs, said goodbye as if for ever (বিদায়) and spoke of one's own mother with the
   written তিনি; the Swahili said "mkahawa" for a restaurant where Tanzania says "mgahawa" (changed in three stories
-  too), introduced a mother with "yeye" and shouted the noun "msaada" for help. So the 22 languages read this way
-  came out between 6 and 50 remarks each, the fewest where the first writing was best, and the 22 not yet read this
-  way should be expected to hold as many. Reading for this also showed that "the second floor" of lesson 12 is one
+  too), introduced a mother with "yeye" and shouted the noun "msaada" for help. Then the six languages that still had
+  thirty lessons: Thai 24 of 240, Finnish 19, Slovene 12, Macedonian 15, Belarusian 11, Filipino 25, and every one
+  taken. The Finnish taught "Ole hyvä" as please, which it never is (the meaning now says so), and tacked "kiitos" on
+  to questions; the Belarusian asked the time and said "straight ahead" in Russian words; the Macedonian said "my
+  mother" where people say "mother to me"; the Filipino said "pakiusap" for every please, where "po" does that work,
+  and used words from books for a bill, a baby and homework. The Thai had no polite word at all: the reader marked
+  nine phrases as abrupt, at most one a lesson, so the same rule was then applied to every phrase said to a
+  stranger, 52 in all (ค่ะ after a statement or a request, คะ after a question, the man's ครับ named in the
+  meaning). So the 28 languages read this way came out between 6 and 50 remarks each, the fewest where the first
+  writing was best, and the 16 not yet read this way should be expected to hold as many. Reading for this also showed that "the second floor" of lesson 12 is one
   floor lower in Finnish, Belarusian, Thai, Filipino and Bengali than a British reader takes it to be; the meaning
   now says so there, as it did in nine languages already.
   The same question about the 44 French stories and dialogues (which sentence of each would a native speaker most

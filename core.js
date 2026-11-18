@@ -459,8 +459,11 @@ export function lessonStories(first, code, ui = 'en') {
   let name = code;
   try { name = new Intl.DisplayNames(['en'], { type: 'language' }).of(code) || code; } catch { /* an unknown code stands for itself */ }
   return arr(first.lessons).map((title, i) => ({ id: `${code}-first-${String(i + 1).padStart(2, '0')}`, lang: code, title, source: 'first', phrases: true,
-    back: all.slice(i * 8, i * 8 + 8).map((p, j) => { const n = i * 8 + j, named = String(en[n]).includes('{language}');
-      return Array.isArray(p) ? [p[0], p[1], read[n]] : [p, !named && typeof mine[n] === 'string' ? mine[n] : String(en[n]).replace('{language}', name), read[n]]; }) })).filter(s => s.back.length);
+    back: all.slice(i * 8, i * 8 + 8).map((p, j) => { const n = i * 8 + j, named = String(en[n]).includes('{language}'), theirs = !named && typeof mine[n] === 'string';
+      // A meaning of its own that is the shared one with a note after it ("I get up early. (A man says X.)") takes the reader's
+      // language for the meaning and keeps the note. ponytail: the note itself stays English; its few fixed wordings could be translated.
+      if (Array.isArray(p)) return [p[0], theirs && String(p[1]).startsWith(en[n] + ' (') ? mine[n] + String(p[1]).slice(String(en[n]).length) : p[1], read[n]];
+      return [p, theirs ? mine[n] : String(en[n]).replace('{language}', name), read[n]]; }) })).filter(s => s.back.length);
 }
 // A first lesson that an AI wrote (cowork): a title and four to twelve phrases [phrase, meaning, reading?], each short, with no digits,
 // said once, and one the app can mark. It becomes a story with phrases, like the bundled lessons.

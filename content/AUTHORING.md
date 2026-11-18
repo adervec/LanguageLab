@@ -72,7 +72,10 @@ each a story of eight sentences, so a habit in the past takes the form for a hab
 with full sets, and Chinese, Japanese, Korean, Vietnamese, Indonesian, Malay, Russian, Ukrainian, Bulgarian, Polish, Czech, Slovak, Serbian, Romanian, Hungarian, Greek, Turkish, Catalan, Galician, Swedish, Norwegian, Danish, Afrikaans, Esperanto, Arabic, Hindi, Persian, Urdu, Bengali and Swahili (a language's list in `langs` is 240 or 480 long; a language with readings has one for each phrase). Each is a scene of eight lines, a conversation in the polite form or a
 story, and "I" stays out of the past and of adjectives, which in many of those languages depend on who is speaking (where such a form cannot be avoided, the woman's is given, since the speaker is Anna, and the phrase's own meaning names the man's). Lessons one to five are set phrases; six to ten are first
 sentences, written so that they do not depend on who is speaking (no "I am tired", no past tense in the first person).
-Where a language cannot avoid that, give the feminine with a note, as in Hindi. A meaning with `{language}` in it names
+Where a language cannot avoid that, give the feminine with a note, as in Hindi. Write such a note in brackets after the shared meaning, word for word as the file has it
+(`["…", "I get up early. (A man says उठता हूँ.)"]`): a learner who uses the app in another language then sees the meaning in that language with the note after it. A meaning of its own
+that is worded differently is shown in English to everyone. Type every letter in the script of the language: a Latin e or a inside a Cyrillic or Greek word looks right and is marked
+wrong, and the test refuses a word that mixes them. A meaning with `{language}` in it names
 the language being learned. Keep each phrase short (80 characters at most), natural and
 polite, with no digits. Where a language does not say it that way, give the pair `["phrase", "what it really means"]`.
 A language in a script that is not Latin also needs a reading in Latin letters for every phrase (`readings`). `scripts` holds charts as
