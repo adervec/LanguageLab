@@ -409,7 +409,7 @@ console.log('core.test: ok');
   assert.equal(c.lessonStories(first, 'ru', 'es')[0].back[1][1], 'Good evening.');   // the reader's own phrase there means something else: English instead
   assert.equal(c.lessonStories(first, 'ru', 'ru')[0].back[0][1], 'Hello.');
   // a language with all sixty lessons: a meaning beyond what the reader's own language has is the English one
-  assert.deepEqual([c.lessonStories(first, 'fr', 'sw').length, c.lessonStories(first, 'fr', 'sw')[30].back[0][1], c.lessonStories(first, 'fr', 'es')[30].back[0][1], c.lessonStories(first, 'fr', 'es')[59].title],
+  assert.deepEqual([c.lessonStories(first, 'fr', 'fi').length, c.lessonStories(first, 'fr', 'fi')[30].back[0][1], c.lessonStories(first, 'fr', 'es')[30].back[0][1], c.lessonStories(first, 'fr', 'es')[59].title],
     [60, 'I am looking for a flat with two rooms.', 'Busco un piso de dos habitaciones.', 'The old tree']);
   assert.deepEqual([c.storySentences(ru[0]).length, c.lessonStories(first, 'xx').length, c.lessonStories(null, 'ru').length], [8, 0, 0]);
   // lessons have no level, so they never count towards what the numbers say you can read

@@ -41,8 +41,8 @@ snapshot). LanguageLab is ahead in some rows and behind in others.
 | Something new to read | New lessons as the course goes on | The course | The course and a daily lesson | A new text on request, written on your device in a few seconds (five languages, a small model: about one slip a text); stories with questions and meanings from your own AI agent, in any language |
 | Feedback on free writing | Explanations of an answer | No | No | An AI review with a grade, corrected forms and the rule; your mistakes come back as review cards. With no agent, where the browser has its own model, suggestions on your retelling a few seconds after the sitting ends: a small model that misses some mistakes and is sometimes wrong, so each one is yours to keep or leave |
 | Measure of progress | XP, streak, leagues, a course score | Units completed | Points and a leaderboard | The level your own numbers support, for reading, for listening and for speaking; on the first day, a short placement by ear in place of a guess |
-| Languages with ready lessons | 40 or more | 25 | 41 | 44, each with first lessons (thirty lessons, 240 phrases; sixty lessons, 480 phrases, in 36 of them; and in all 44 twelve more lessons of everyday nouns, 96 words, each with a picture) and graded stories and dialogues: 8 with a full set (24 texts, A1 to B2) and 36 with half a set (12 texts, A1 to B1); any other language with your own texts, or with first lessons and stories written by your own AI agent |
-| Course for complete beginners | Yes, from the alphabet | Yes | Yes | A short one: thirty lessons of eight phrases in each of 44 languages (sixty in 36 of them), twelve lessons of words with pictures (the pictures are emoji, shown beside the meaning, not in place of it), charts of the letters for 14 scripts, the sounds that surprise and numbers to catch by ear in every language, then graded stories from A1 in all 44, twelve texts or more in each. Much shorter than their courses. Only a learner with an AI agent of their own has no fixed end: it writes further lessons and stories on request. Without one, the material after the lessons and the bundled stories is your own texts |
+| Languages with ready lessons | 40 or more | 25 | 41 | 44, each with first lessons (thirty lessons, 240 phrases; sixty lessons, 480 phrases, in 38 of them; and in all 44 twelve more lessons of everyday nouns, 96 words, each with a picture) and graded stories and dialogues: 8 with a full set (24 texts, A1 to B2) and 36 with half a set (12 texts, A1 to B1); any other language with your own texts, or with first lessons and stories written by your own AI agent |
+| Course for complete beginners | Yes, from the alphabet | Yes | Yes | A short one: thirty lessons of eight phrases in each of 44 languages (sixty in 38 of them), twelve lessons of words with pictures (the pictures are emoji, shown beside the meaning, not in place of it), charts of the letters for 14 scripts, the sounds that surprise and numbers to catch by ear in every language, then graded stories from A1 in all 44, twelve texts or more in each. Much shorter than their courses. Only a learner with an AI agent of their own has no fixed end: it writes further lessons and stories on request. Without one, the material after the lessons and the bundled stories is your own texts |
 | Speech scoring | Its own engine | TruAccent | Speech recognition | The browser's speech recognition, word by word: understood at its first guess, only its second guess (nearly right) or missed, with how sure it was; it listens through your pauses. A speaking level from those numbers, and a recording of yourself to compare by ear. When it hears another word in place of yours it shows both, with the letters they do not share marked ("rue → roue" points at the vowel), and in every language each sound that surprises (536 in all) has a word to say on its own. In 24 languages there are pairs of words one sound apart: you say one of the two and see which one it heard, which is as near as a recogniser of words comes to judging a single sound. Beside the words, on a computer, it measures the sound itself: the time you took over a line against the model voice's, your long pauses, and in Chinese, Thai and Vietnamese the movement of your pitch on a word (level, rising, falling, or falling then rising), drawn and named whether or not a word was recognised. It keeps a record for each of those sounds and pairs: how often its word, said on its own, was understood, how often it was taken for the other word of its pair, and how often you told the two apart by ear; Progress names the sounds understood least. That is a count of words as a recogniser heard them, kept sound by sound; One contrast is judged from the sound itself and not through words: in French, German, Dutch, Turkish, Hungarian, Finnish, Danish and Chinese a held u or ou (ü or u, y or u) is placed by where its second resonance lies, which says whether the tongue was forward, back or in between. It cannot hear whether the lips are round, it has been tried with synthetic voices only, and nothing scores any other vowel or any consonant |
 | Human teachers | No | Live coaching (premium) | No | None of its own, but it works with any teacher you have: a teacher hands out a text as a link that each learner adds to their library, a link carries the learner's writing back to them, and another brings their corrections into the learner's review. Nobody needs more than a browser |
 | Content checked by people | Yes | Yes | Yes | No native speaker has read it, and the app says so. There is a page built for one to do it (a link from Settings: they read a language's lessons and texts, write what is wrong and send it back), but no one has yet. It was written by an AI; every word of the texts in 31 languages is checked against an open spelling dictionary, and every text was read by a second AI model (see "What has been checked") |
@@ -73,7 +73,7 @@ Filipino, Swahili, Esperanto, Arabic, Persian, Hindi, Urdu, Bengali and Thai. Tw
 start, not a course: after them the material is your own texts and the stories an AI agent writes to
 your level.
 
-All 44 have twelve lessons of words with pictures (96 everyday nouns: food, animals, the house, clothes, the body, the town; with the article in the languages where that is how the gender shows). All 44 have first lessons for complete beginners (thirty lessons, 240 phrases and first sentences; sixty lessons in the eight with full sets and in 28 more: Chinese, Japanese, Korean, Vietnamese, Indonesian, Malay, Russian, Ukrainian, Bulgarian, Polish, Czech, Slovak, Serbian, Romanian, Hungarian, Greek, Turkish, Catalan, Galician, Swedish, Norwegian, Danish, Afrikaans, Esperanto, Arabic, Hindi, Persian and Urdu).
+All 44 have twelve lessons of words with pictures (96 everyday nouns: food, animals, the house, clothes, the body, the town; with the article in the languages where that is how the gender shows). All 44 have first lessons for complete beginners (thirty lessons, 240 phrases and first sentences; sixty lessons in the eight with full sets and in 30 more: Chinese, Japanese, Korean, Vietnamese, Indonesian, Malay, Russian, Ukrainian, Bulgarian, Polish, Czech, Slovak, Serbian, Romanian, Hungarian, Greek, Turkish, Catalan, Galician, Swedish, Norwegian, Danish, Afrikaans, Esperanto, Arabic, Hindi, Persian, Urdu, Bengali and Swahili).
 Where the script is not Latin each phrase has a reading in Latin letters, the letters a text uses are
 on screen to tap, and there is a chart of the letters to hear and practise. The meaning of a phrase is
 shown in the language of the interface where that is one of the seventeen, else in English. Marking
@@ -173,7 +173,7 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   "चिड़िया" for the bird and a nukta, and the Arabic قميص now said to mean a shirt) and three left as written
   (Dutch "de zitbank", because "de bank" is also the bank; the formal Hungarian word for a motorbike; a Bengali
   reading that was right). Nouns are the kind of content such a read checks best; it is still not a person.
-- **The first lessons** (19,200 phrases: 240 in each of 44 languages, and 240 more in 36 of them). Lessons 1 to 10 were read a second time by their
+- **The first lessons** (19,680 phrases: 240 in each of 44 languages, and 240 more in 38 of them). Lessons 1 to 10 were read a second time by their
   author, which changed six phrases. A second AI model then read them in three rounds that between them cover every
   phrase in every language but English (whose phrases are the English meanings themselves). Lessons 1 to 10 in the
   sixteen languages most likely to hide mistakes: two phrases changed. Lessons 11 to 20 in 32 languages: 15 things
@@ -222,8 +222,13 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   by it, and read the same way before they went in, they came back with 4 and 8 phrases of 240 marked, where the
   first thirty had had 10 and 23. Eleven of the twelve were reworded. Persian and Urdu followed the same way (10 and 8
   of 240 marked in the new lessons, 10 and 20 in the first thirty; seventeen reworded, and a slip the Urdu read
-  found, "today" and "yesterday" side by side reading as "nowadays", was put right in the Hindi too). The other
-  eight are still at thirty.
+  found, "today" and "yesterday" side by side reading as "nowadays", was put right in the Hindi too). Bengali and Swahili came next, the two their writer knows least: 17 of 240 marked
+  in each new set (26 and 18 in the first thirty), seven of them called wrong and not only stiff, and all 34 changed.
+  Among them: a man called Leo, whose name at the start of a Swahili sentence reads as "today" (he is Juma there, and
+  the meaning says why); "mwakani", which in Tanzania is next year; a dinner at "saa moja" whose note explained the
+  hours of the morning; a Bengali "very long" that should have been "too long"; three Bengali readings that did not
+  follow the sound. That a read finds as much in the second thirty as in the first says these two are the least
+  sure of the 38, and a clean lesson in them is worth less than one in French. The other six are still at thirty.
 - **What a clean report from that reader is worth**: one of its inputs (880 phrases in thirteen languages) was copied
   with ten mistakes planted in it: a Czech word in Slovak, wrong cases in Slovak, Slovenian and Finnish, a wrong
   gender in Swedish, a wrong preposition and a wrong agreement in Romanian, two Danish meanings swapped and a third
@@ -290,8 +295,15 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   four other languages whose phrases are also shown as meanings to learners who use that interface: Indonesian 28
   and Esperanto 13 of 480, Persian 10 and Urdu 20 of 240; 70 reworded. The Indonesian had "tolong" tacked on
   wherever English says please, the Urdu did the same with براہِ مہربانی, and both asked for the toilet in a word
-  from signs. So the twenty languages read this way came out between 6 and 50 remarks each, the fewest where the
-  first writing was best, and the 24 not yet read this way should be expected to hold as many.
+  from signs. Bengali and Swahili were asked next: 26 and 18 of 240, and 42 reworded
+  (all 26, and 16). The Bengali ordered a coffee with a tacked-on দয়া করে where a polite verb does the work, asked
+  for the toilet in a word from signs, said goodbye as if for ever (বিদায়) and spoke of one's own mother with the
+  written তিনি; the Swahili said "mkahawa" for a restaurant where Tanzania says "mgahawa" (changed in three stories
+  too), introduced a mother with "yeye" and shouted the noun "msaada" for help. So the 22 languages read this way
+  came out between 6 and 50 remarks each, the fewest where the first writing was best, and the 22 not yet read this
+  way should be expected to hold as many. Reading for this also showed that "the second floor" of lesson 12 is one
+  floor lower in Finnish, Belarusian, Thai, Filipino and Bengali than a British reader takes it to be; the meaning
+  now says so there, as it did in nine languages already.
   The same question about the 44 French stories and dialogues (which sentence of each would a native speaker most
   object to?) marked 13 sentences, none of them wrong; 12 were reworded ("perdre la voix", a pronoun that pointed
   at the wrong grandmother, "encore en pyjama" at eleven at night) and one kept. The texts of the other languages
