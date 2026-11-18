@@ -322,8 +322,16 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   and used words from books for a bill, a baby and homework. The Thai had no polite word at all: the reader marked
   nine phrases as abrupt, at most one a lesson, so the same rule was then applied to every phrase said to a
   stranger, 52 in all (ค่ะ after a statement or a request, คะ after a question, the man's ครับ named in the
-  meaning). So the 28 languages read this way came out between 6 and 50 remarks each, the fewest where the first
-  writing was best, and the 16 not yet read this way should be expected to hold as many. Reading for this also showed that "the second floor" of lesson 12 is one
+  meaning). Turkish, Swedish, Greek, Vietnamese, Czech and Romanian were next, all sixty
+  lessons, the question asked both ways (every line that is wrong, and the weakest phrase of each lesson): 30, 32,
+  22, 37, 27 and 24 of 480, and all but one taken (a Swedish word for a video call that could not be confirmed).
+  Seven were called wrong: a Swedish sentence with its verb in third place after "tyvärr", a "varsågod" given as
+  "you are welcome", two Vietnamese words of the south in a course that is otherwise Hanoi's, and three Greek
+  pronouns that need their accent to say "for me" and "to him". The rest were the usual: a subject pronoun where the
+  language drops it (Greek εκείνη, Czech ona, Turkish o), a "please" tacked on, the written "this" in speech (Czech
+  tento), "is there a" for "is there any". So the 34 languages read this way came out between 6 and 50 remarks
+  each, the fewest where the first writing was best, and the 10 not yet read this way should be expected to hold
+  as many. Reading for this also showed that "the second floor" of lesson 12 is one
   floor lower in Finnish, Belarusian, Thai, Filipino and Bengali than a British reader takes it to be; the meaning
   now says so there, as it did in nine languages already.
   The same question about the 44 French stories and dialogues (which sentence of each would a native speaker most
