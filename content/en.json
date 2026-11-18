@@ -502,7 +502,7 @@
   ],
   "gloss": {
    "get": "what can I get you: what do you want", "loaf": "one whole bread",
-   "brown": "dark, like the colour of chocolate", "sorry": "a word you say when something is not good",
+   "brown": "dark, like the colour of chocolate", "sorry": "a polite word you say before bad news",
    "gone": "all gone: there is no more", "fresh": "made today",
    "rolls": "small round breads for one person (roll)", "okay": "all right, good",
    "else": "anything else: one more thing", "much": "how much: what is the price",
@@ -571,7 +571,7 @@
    [1, "I'm from Spain, but I work here in Leeds now."],
    [0, "Welcome to Leeds! Do you live alone?"],
    [1, "No, I live with my wife and our little dog."],
-   [0, "A little dog? Is it small and white?"],
+   [0, "A little dog? Is it white?"],
    [1, "Yes, she is. Her name is Coco. Why?"],
    [0, "Because there is a small white dog in my garden right now!"],
    [1, "Oh no! I'm so sorry. She loves gardens."],
