@@ -186,10 +186,13 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   Danish, a Greek reading and a Greek meaning). The Turkish and Norwegian readers marked nothing but the planted
   mistakes. Each reader took some twenty seconds over its 240 phrases, so a clean report is worth what finding
   three planted mistakes is worth, and no more. Romanian, Catalan, Slovak, Serbian, Bulgarian and Hungarian (1,440
-  phrases) were then read two languages a reader: 17 of the 18 planted mistakes were found (a wrong Slovak case
-  ending was not, so the Slovak has been read less well than the rest), and three other things were marked and
-  changed (the Romanian for a flat battery, a Catalan tense, a Bulgarian verb). Their writer reworded one Slovak
-  phrase besides.
+  phrases) were then read two languages a reader: 17 of the 18 planted mistakes were found, and three other things were marked and
+  changed (the Romanian for a flat battery, a Catalan tense, a Bulgarian verb). The one missed was a wrong Slovak
+  case ending ("na poschodiu" for "na poschodí"). A second reader was given the Slovak alone, told what had been
+  missed, with two fresh planted mistakes beside the same one: it found the two and missed the case ending again.
+  So the model that reads does not see every Slovak case ending, and its clean report says less for Slovak than
+  for the others. Their writer read the 240 Slovak phrases once more for case endings, found none wrong, and
+  reworded one phrase.
 - **What a clean report from that reader is worth**: one of its inputs (880 phrases in thirteen languages) was copied
   with ten mistakes planted in it: a Czech word in Slovak, wrong cases in Slovak, Slovenian and Finnish, a wrong
   gender in Swedish, a wrong preposition and a wrong agreement in Romanian, two Danish meanings swapped and a third
