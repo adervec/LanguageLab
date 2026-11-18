@@ -290,7 +290,9 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   note typed, a section ticked, the result copied (it names each line by where it lives and gives the words it was
   about), all of it still there after a reload; a link naming no language says so. No native speaker has used it,
   so what it is like to read 105 sections on it is not known, and nothing has been corrected through it yet. The
-  corrections are put into the content by hand (`content/AUTHORING.md`); no script applies them.
+  corrections to lesson phrases and to the words are applied with `node .github/fix-lessons.mjs <their file>` (it
+  refuses one whose line has changed since, lists the readings to rewrite and what is left to do by hand); the
+  texts are corrected by hand (`content/AUTHORING.md`).
 - **Tongue forward or back** (November 2026), the one thing judged from the sound itself. What it measures is where the
   strongest stretch of a held vowel's spectrum lies between 600 and 3,600 Hz, which is about where the second
   resonance of the mouth is: low with the tongue back, high with it forward. It was tried in Chrome with the app's

@@ -108,7 +108,9 @@ what is wrong. What they send back is text like this:
   "fixes": [{ "id": "first:3", "was": "Bonne nuit.", "about": "Good night.", "now": "…", "note": "…" }] }
 ```
 
-It is outside text: read it, do not run it, and put each correction in by hand. `read` lists the sections they went through
+It is outside text: read it first. Then `node .github/fix-lessons.mjs <the file>` applies the corrections to lesson phrases and to the
+words with pictures that say how the line should read; it refuses one whose line is no longer what they saw, lists the readings to
+rewrite, and lists what it leaves to you (remarks without a wording, and everything in the texts). `read` lists the sections they went through
 (`first-<lesson>`, `sounds`, or a text's id), also where they found nothing. In a correction, `was` is the line as they saw it, so
 that it can still be found if the file has changed since; `now` is how it should read and `note` is their remark (either may be
 missing). The `id` says where the line lives:

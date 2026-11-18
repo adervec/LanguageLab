@@ -1132,8 +1132,8 @@ function vGift() { // a text someone sent as a link (a teacher setting work, a f
 // ---- for a native speaker (#proof=<language>): everything bundled in that language, to read and correct. An AI wrote it and no person
 // had read it; this is how one can. Nothing of a learner's is touched. What the reader marks is kept on this device
 // (ll-proof-<language>) until they copy it and send it themselves: there is no server to send it to.
-// ponytail: the corrections come back as text and are put into the content by hand (each names its row and the words it was about).
-// A script that applies them when they come in numbers.
+// The corrections come back as text; .github/fix-lessons.mjs applies those to lesson phrases and words, the texts are done by hand
+// (each correction names its row and the words it was about).
 let proof = null; // { lang, sections (null while they load), marks, open: the id of the section shown, edit: the id of the line whose fields were just opened }
 async function openProof(code) {
   const mine = proof = { lang: code, sections: null, marks: C.cleanProof(null), open: '' };

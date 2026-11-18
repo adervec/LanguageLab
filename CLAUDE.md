@@ -129,7 +129,8 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   fields (how it should read, a note) once its pencil is tapped. What the reader marks is kept in `localStorage` under
   `ll-proof-<code>` (`cleanProof`); nothing of `S` is touched, and the link stays in the address so that a reload comes back.
   `proofOut()` is what they copy or save: `{ languagelab: 'proof', lang, day, sections, read, fixes: [{ id, was, about, now, note }] }`.
-  Nothing in the app reads that text back: corrections go into the content by hand (`content/AUTHORING.md`, "Corrections from a
+  Nothing in the app reads that text back: `node .github/fix-lessons.mjs <file>` applies the corrections to lesson phrases and words (the same
+  tool takes a plain list `[[code, n, was, now, reading]]`, used for the corrections after a second read); the texts are done by hand (`content/AUTHORING.md`, "Corrections from a
   native speaker"). No language has been read by a person yet; when one has, say in the README what was read and when.
 - **Letters to tap**: a lesson shows its own letters; any text in an alphabet that is not Latin shows the letters it uses
   (`tapKeys`), for dictation and review without a keyboard for that script.
