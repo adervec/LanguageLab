@@ -24,9 +24,11 @@ const langName = () => { try { return new Intl.DisplayNames([A.lang()], { type: 
 // The first lessons (phrases) are kept apart from the stories: they have no level and a screen of their own.
 const stories = () => S.stories.filter(s => s.lang === S.lang && !s.phrases);
 // the bundled lessons in their order, then the ones an AI agent wrote, oldest first
-const lessons = () => S.stories.filter(s => s.lang === S.lang && s.phrases).sort((a, b) => (a.source !== 'first') - (b.source !== 'first') || (a.source === 'first' ? 0 : a.added - b.added) || a.id.localeCompare(b.id));
+const wordLessons = () => S.stories.filter(s => s.lang === S.lang && C.isWordLesson(s)).sort((a, b) => a.id.localeCompare(b.id)); // the words with pictures
+const lessons = () => S.stories.filter(s => s.lang === S.lang && s.phrases && !C.isWordLesson(s)).sort((a, b) => (a.source !== 'first') - (b.source !== 'first') || (a.source === 'first' ? 0 : a.added - b.added) || a.id.localeCompare(b.id));
 let FIRST = null; // content/first.json: the phrases of the first lessons, sounds to notice, script charts
 // A lesson's title and a chart's name are interface strings.
+// i18n-keys: Words: food | Words: fruit and vegetables | Words: at the table | Words: animals | Words: sky and weather | Words: nature | Words: at home | Words: things to carry | Words: clothes | Words: the body | Words: vehicles | Words: in town
 // i18n-keys: Hello and goodbye | Getting to know you | Numbers and prices | Eating and drinking | Getting around | People and family | Every day | Likes and wishes | Things and places | Time and weather | At the market | At home | Travelling | Yesterday | Plans | Feeling well and unwell | Describing things | Work and study | On the phone | Help and good wishes | Clothes and shopping | At the restaurant | Free time | Why and because | People | Can, must, may | A bad morning | In town | Nature and seasons | Once upon a time | Looking for a flat | At the doctor's | At the station | Making an appointment | The weekend | Asking the way | A problem at the hotel | At the supermarket | My family | The lost bag | At work | What do you think? | Holiday plans | At the bank | A birthday | Sport | The weather tomorrow | Learning a language | An invitation | The key | What people wear | In the kitchen | By bus | Feelings | Phones and computers | Comparing | At the pharmacy | What happened? | Wishes | The old tree | Hiragana | Katakana | Consonants | Vowels | Alphabet
 const ttl = s => s.phrases || s.mode === 'first' ? t(s.title) : s.title;
 const story = id => S.stories.find(s => s.id === id);
@@ -538,8 +540,9 @@ const aloneNote = words => { const recs = words.map(w => L().alone[w]).filter(Bo
     n(5) ? other ? t('taken for “{word}”: {n}', { word: other, n: nf(n(5)) }) : t('taken for the other word: {n}', { n: nf(n(5)) }) : ''].filter(Boolean).join(' · '); };
 // The lessons as a phrasebook: every phrase whose words, meaning or reading hold what was typed (accents and case aside), twenty at most.
 let phraseQuery = '';
+const pic = m => { const [, icon, rest] = /^(\p{Extended_Pictographic}\uFE0F?) (.+)$/u.exec(m || '') || []; return icon ? H`<span class="pic" aria-hidden="true">${icon}</span> ${rest}` : m; };
 const fold = s => String(s || '').normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
-const findPhrases = (ls, q) => q.length < 2 ? [] : ls.flatMap((s, i) => s.back.filter(b => b.some(x => fold(x).includes(q))).map(b => [b, i + 1])).slice(0, 20);
+const findPhrases = (ls, q) => q.length < 2 ? [] : ls.flatMap((s, i) => s.back.filter(b => b.some(x => fold(x).includes(q))).map(b => [b, C.isWordLesson(s) ? 0 : i + 1, s])).slice(0, 20);
 // Two vowels said with round lips that differ in where the tongue is: [the front one, a word with it, the back one, a word with it].
 // Where the listener runs (canProbe) a learner holds one of them and sees where the tongue was: C.heldVowel, C.tongueSpot.
 // ponytail: eight languages where the letters stand for just these two sounds. Swedish and Norwegian u is a third sound and is left out.
@@ -580,7 +583,7 @@ function vSitting() {
   if (sit.step === 'learn') return H`${head(t('Listen and repeat'))}
     <p>${t('Play each phrase and say it aloud after the voice. Take your time: next you write these phrases and say them.')}</p>
     ${s.back.map(([p, meaning, reading], n) => H`<div class="ph"><button class="mini" data-act="sayp" data-i="${n}" aria-label="${t('Hear it')}">▶</button>
-      <div><b class="big" lang="${S.lang}">${p}</b>${reading ? H`<span class="sub" lang="${S.lang}-Latn">${reading}</span>` : ''}<div>${meaning}</div></div></div>`)}
+      <div><b class="big" lang="${S.lang}">${p}</b>${reading ? H`<span class="sub" lang="${S.lang}-Latn">${reading}</span>` : ''}<div>${pic(meaning)}</div></div></div>`)}
     ${playRow()}
     <div class="bar"><button class="primary" data-act="next">${after}</button></div>`;
   if (sit.step === 'listen') return H`${head(t('Listen'))}
@@ -615,7 +618,7 @@ function vSitting() {
   if (sit.step === 'rebuild') { const d = sit.rebuild[sit.ri], onward = sit.ri + 1 < sit.rebuild.length ? t('Next sentence') : after;
     return H`${head(t('Write it back'))}
     <p>${t('Sentence {i} of {n}. Here is what it means. Write the sentence in {language}.', { i: sit.ri + 1, n: sit.rebuild.length, language: langName() })}</p>
-    <p class="big">${d.shown || H`<span class="sub">${d.shown === '' ? t('No translation is available on this device.') : t('Looking it up on this device…')}</span>`}</p>
+    <p class="big">${d.shown ? pic(d.shown) : H`<span class="sub">${d.shown === '' ? t('No translation is available on this device.') : t('Looking it up on this device…')}</span>`}</p>
     <p class="sub">${t('It is marked against the sentence in the text, so another correct wording scores lower.')}</p>
     ${d.score != null ? H`<p class="big" lang="${S.lang}">${marked(d.target, d.typed)}</p>
       <p class="sub">${t('You wrote:')} <span lang="${S.lang}">${d.typed || '–'}</span></p>
@@ -799,7 +802,7 @@ function vReview() {
   if (it.id) { const f = L().fixes[it.id], ph = it.id.startsWith('first:'), from = ph && story(it.id.split(':')[1]); // a phrase of a first lesson: its meaning is shown
     return H`${count}<h1>${ph ? t('A phrase') : t('Fix your sentence')}</h1>
     <p class="sub">${ph ? t('Here is what it means. Write it in {language}.', { language: langName() }) : t('You wrote this. Type it again, corrected.')}</p>
-    ${ph ? H`<p class="big">${f.wrong}</p>` : H`<p class="big miss" lang="${S.lang}">${f.wrong}</p>`}
+    ${ph ? H`<p class="big">${pic(f.wrong)}</p>` : H`<p class="big miss" lang="${S.lang}">${f.wrong}</p>`}
     ${rev.verdict ? H`<p class="big" lang="${S.lang}">${marked(f.right, rev.typed)}</p>${f.why ? H`<p class="sub">${f.why}</p>` : ''}
       <p class="big ${rev.verdict === 'wrong' ? 'miss' : 'hit'}">${rev.verdict === 'wrong' ? t('Not yet') : t('Right')}</p>
       <button class="primary" data-act="rnext" data-focus>${t('Next')}</button>`
@@ -1048,7 +1051,7 @@ function vFirst() {
         : H`<p><input type="text" id="ans" inputmode="${quiz.ear ? 'numeric' : 'text'}" autocomplete="off" autocapitalize="off" spellcheck="false" data-enter="qzcheck" aria-label="${ask}" placeholder="${ask}" data-focus></p>
         <p><button class="primary" data-act="qzcheck">${t('Check')}</button></p>`}
       <div class="bar"><button data-act="qzend">${t('Stop')}</button></div>`}`; }
-  const next = ls.find(x => !x.readAt), ten = openTen(ls), pq = fold(phraseQuery.trim()), found = findPhrases(ls, pq);
+  const wls = wordLessons(), next = ls.find(x => !x.readAt), ten = openTen(ls), pq = fold(phraseQuery.trim()), found = findPhrases([...ls, ...wls], pq);
   return H`<h1>${t('First steps')} <span class="sub">${lang().name}</span></h1>
   ${ls.length ? H`<p class="sub">${t('Short lessons of everyday phrases, starting from nothing. You hear each phrase, write it and say it; then the phrases come back in your review.')}</p>
     ${Array.from({ length: Math.ceil(ls.length / 10) }, (_, g) => { const part = ls.slice(g * 10, g * 10 + 10), a = g * 10 + 1, b = g * 10 + part.length, open = ls.length <= 10 || g === ten;
@@ -1058,10 +1061,13 @@ function vFirst() {
         <div class="row acts"><button class="${s === next ? 'primary' : ''}" data-act="start" data-id="${s.id}">${s.readAt ? t('Do it again') : t('Start')}</button></div></div>`) : ''}`; })}
     <p class="sub">${t('More lessons: with AI cowork (Settings) your own AI agent writes the next ones, when your level is A1 and fewer than three are left to do.')}</p>`
     : H`<p>${t('This language has no first lessons of its own. With AI cowork (Settings) your own AI agent writes them while your level is A1. It also works with your own texts.')}</p>`}
+  ${wls.length ? H`<h2>${t('Words with pictures')}</h2>
+    <p class="sub">${t('Eight everyday words a lesson, each with a picture. You hear the word, write it and say it; then it comes back in your review.')}</p>
+    <div class="row">${wls.map(s => H`<button data-act="start" data-id="${s.id}" aria-label="${ttl(s) + (s.readAt ? ' ✓' : '')}"><span aria-hidden="true">${s.back[0][1].split(' ')[0]}</span> ${ttl(s).split(/\s*[:：]\s*/).pop()}${s.readAt ? ' ✓' : ''}</button>`)}</div>` : ''}
   ${ls.length ? H`<h2>${t('Find a phrase')}</h2>
     <p><input type="search" id="pq" value="${phraseQuery}" data-input="pq" placeholder="${t('A word, in {language} or in your own language', { language: langName() })}" aria-label="${t('Find a phrase')}"></p>
-    ${found.length ? H`<div class="card">${found.map(([b, n]) => H`<div class="ph"><button class="mini" data-act="sayx" data-x="${b[0]}" aria-label="${t('Hear it')}">▶</button>
-      <div class="grow"><b lang="${S.lang}">${b[0]}</b>${b[2] ? H`<span class="sub">${b[2]}</span>` : ''}<span class="sub">${b[1]} · ${t('Lesson {a}', { a: n })}</span></div></div>`)}</div>`
+    ${found.length ? H`<div class="card">${found.map(([b, n, from]) => H`<div class="ph"><button class="mini" data-act="sayx" data-x="${b[0]}" aria-label="${t('Hear it')}">▶</button>
+      <div class="grow"><b lang="${S.lang}">${b[0]}</b>${b[2] ? H`<span class="sub">${b[2]}</span>` : ''}<span class="sub">${b[1]} · ${n ? t('Lesson {a}', { a: n }) : ttl(from)}</span></div></div>`)}</div>`
       : pq.length >= 2 ? H`<p class="sub" role="status">${t('No phrase in the lessons has that.')}</p>` : ''}` : ''}
   ${abc.length ? H`<h2>${t('Letters')}</h2><p class="sub">${t('Tap a letter to hear it. Then practise: you see a letter and type how it sounds.')}</p>
     ${abc.map(([name, src], n) => H`<div class="card"><div class="row"><b class="grow">${t(String(name))}</b><button data-act="quiz" data-i="${n}">${t('Practise')}</button></div>
@@ -1141,7 +1147,7 @@ async function openProof(code) {
   if (view === 'proof') render(true);
 }
 const proofName = s => s.kind === 'lesson' ? t('Lesson {i} of {n}: {title}', { i: s.n, n: proof.sections.filter(x => x.kind === 'lesson').length, title: t(s.title) })
-  : s.kind === 'sounds' ? t('Sounds') : [s.title, s.level].filter(Boolean).join(' · ');
+  : s.kind === 'sounds' ? t('Sounds') : s.kind === 'words' ? t(s.title) : [s.title, s.level].filter(Boolean).join(' · ');
 const proofCount = () => { const o = C.proofOut(proof.lang, proof.sections, proof.marks);
   return t('Sections read: {read} of {n} · corrections: {fixes}', { read: nf(o.read.length), n: nf(o.sections), fixes: nf(o.fixes.length) }); };
 function proofSave() { ls.set('ll-proof-' + proof.lang, JSON.stringify(proof.marks)); const n = $('#proofn'); if (n) n.textContent = proofCount(); }
@@ -1881,7 +1887,7 @@ async function addStarters() {
   const code = S.lang;
   FIRST ||= await fetch('content/first.json').then(r => r.json()).catch(() => null);
   const starter = C.LANGS[code] ? await fetch(`content/${code}.json`).then(r => r.json()).catch(() => []) : [];
-  const first = C.lessonStories(FIRST, code, here());
+  const first = [...C.lessonStories(FIRST, code, here()), ...C.wordStories(FIRST, code, here())];
   // a saved lesson that the file no longer has (renumbered, withdrawn) goes; its phrases stay in review. One an AI agent wrote stays.
   if (first.length) S.stories = S.stories.filter(s => !(s.lang === code && s.phrases && s.source === 'first' && !first.some(x => x.id === s.id)));
   for (const raw of [...list(starter).map(x => ({ ...x, source: 'starter' })), ...first]) {

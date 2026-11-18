@@ -43,6 +43,7 @@
   "Mia",
   "Mias",
   "Minka",
+  "Shirt",
   "Wiederhören",
   "auschecken",
   "gegenübersaß",
@@ -311,6 +312,7 @@
   "Leo",
   "Naboen",
   "Naboene",
+  "T",
   "e",
   "naboen",
   "noe",
@@ -339,6 +341,7 @@
   "khỏe",
   "salad",
   "taxi",
+  "thủy",
   "tòa",
   "tùy",
   "video"
@@ -351,6 +354,7 @@
   "Leo",
   "Maria",
   "Max",
+  "T",
   "bankokarto",
   "fiŝbudo",
   "gorĝdoloron",
@@ -400,10 +404,14 @@
   "Wi"
  ],
  "da": [
+  "shirt",
   "wi"
  ],
  "ro": [
   "Wi",
   "geacă"
+ ],
+ "sv": [
+  "shirt"
  ]
 }

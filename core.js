@@ -513,6 +513,18 @@ export function cleanTeacher(o) { // what the teacher sends back: corrections an
   const corrections = cleanFixes(o.corrections), note = str(o.note, 1200).trim();
   return str(o.id, 80) && (corrections.length || note) ? { id: o.id, note, corrections } : null;
 }
+// Words with pictures: twelve more lessons of eight nouns (content/first.json: wordLessons, wordIcons, wordMeanings, words,
+// wordReadings), each word shown with a picture (an emoji) before what it means. Where the gender of a noun shows on its article
+// the word comes with it (le pain, das Brot); a word whose usual form would stand for two pictures is said another way.
+// Their ids say what they are (<code>-words-NN) so that they can be listed apart; in every other way they are first lessons.
+export const isWordLesson = s => !!s && s.source === 'first' && /-words-\d\d$/.test(s.id || '');
+export function wordStories(first, code, ui = 'en') {
+  first = obj(first);
+  const all = arr(obj(first.words)[code]), mine = ui === code ? [] : arr(obj(first.words)[ui]), read = arr(obj(first.wordReadings)[code]), en = arr(first.wordMeanings), pic = arr(first.wordIcons);
+  return arr(first.wordLessons).map((title, i) => ({ id: `${code}-words-${String(i + 1).padStart(2, '0')}`, lang: code, title, source: 'first', phrases: true,
+    back: all.slice(i * 8, i * 8 + 8).map((p, j) => { const n = i * 8 + j, means = Array.isArray(p) ? p[1] : typeof mine[n] === 'string' ? mine[n] : en[n];
+      return [Array.isArray(p) ? p[0] : p, `${str(pic[n], 8)} ${means}`.trim(), read[n]]; }) })).filter(s => s.back.length);
+}
 // A first lesson's phrases live in review as cards first:<story id>:<n>, each holding the phrase and its meaning as they were when
 // the lesson was done. When the file corrects a phrase, the card takes the new wording and keeps its schedule: what comes back in
 // review is then what people say, not what the app first taught. Returns how many cards changed.
@@ -523,7 +535,7 @@ export function syncPhraseCards(fixes, s) {
 }
 // ---- for a native speaker: everything bundled in one language, to be read and corrected (an AI wrote it; no person had read it) ----
 // One section for each first lesson, one for the sounds and the pairs, one for each text. A row is { id, text, about, reading }, and
-// its id says where the words live: first:<phrase number>, sound:<n>, pair:<n>, and for a text <its id>:t (the title), :s<n> (a sentence
+// its id says where the words live: first:<phrase number>, sound:<n>, pair:<n>, word:<n> (a word with a picture), and for a text <its id>:t (the title), :s<n> (a sentence
 // or a line), :b<n> (a sentence given with its meaning), :q<n> (a question), :n (the note on grammar), :g:<word> (a word's meaning).
 export function proofSections(first, texts, code) {
   first = obj(first);
@@ -535,6 +547,11 @@ export function proofSections(first, texts, code) {
   const snd = [...arr(obj(first.sounds)[code]).map((x, n) => row(`sound:${n + 1}`, s(arr(x)[1]), [s(arr(x)[0]), s(arr(x)[2])].filter(Boolean).join(': '))),
     ...arr(obj(first.pairs)[code]).map((x, n) => row(`pair:${n + 1}`, [s(arr(x)[0]), s(arr(x)[1])].filter(Boolean).join(' / '), s(arr(x)[2])))].filter(r => r.text);
   if (snd.length) out.push({ id: 'sounds', kind: 'sounds', title: '', rows: snd, words: [] });
+  const wd = arr(obj(first.words)[code]), wr = arr(obj(first.wordReadings)[code]), we = arr(first.wordMeanings), wi = arr(first.wordIcons);
+  arr(first.wordLessons).forEach((title, i) => {
+    const rows = wd.slice(i * 8, i * 8 + 8).map((p, j) => row(`word:${i * 8 + j + 1}`, s(Array.isArray(p) ? p[0] : p), `${s(wi[i * 8 + j])} ${s(Array.isArray(p) ? p[1] : we[i * 8 + j])}`.trim(), s(wr[i * 8 + j])));
+    if (rows.length) out.push({ id: `words-${i + 1}`, kind: 'words', n: i + 1, title: s(title), rows, words: [] });
+  });
   for (const raw of arr(texts)) {
     const t = cleanStory(raw, code);
     if (!t || !t.id) continue;

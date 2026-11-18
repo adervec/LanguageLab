@@ -448,6 +448,24 @@ assert.match(await main(), /From your teacher\s+Bon travail, continue ![\s\S]*El
 assert.equal(await page.locator('#main b').filter({ hasText: /^$/ }).count(), 0, 'a teacher\'s text is never markup');
 await page.goto(answer.replace(/#fix=.*/, '#fix=not-a-reply'));    // a link that is not one says so and changes nothing
 await page.waitForFunction(() => document.querySelector('#main').innerText.includes('This link could not be read'));
+// words with pictures: twelve lessons listed apart on First steps, found by the phrase search, each word shown with its picture;
+// they are lessons in every other way, and the count of the phrase lessons does not change
+await page.goto(page.url().replace(/#.*$/, '') + '#first');
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('Words with pictures'));
+assert.equal(await page.locator('#main button[data-id*="-words-"]').count(), 12);
+assert.match((await page.locator('#main button[data-id*="-words-"]').allInnerTexts()).join(' | '), /^🍞 food \| 🍎 fruit and vegetables \| [^|]+\| 🐕 animals \|/);
+assert.match(await main(), /Lessons 51 to 60/);
+await page.fill('#pq', 'bread');
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('Words: food'));
+assert.match(await main(), /le pain\s+🍞 bread · Words: food/);
+await page.fill('#pq', '');
+await page.locator('#main button[data-id="fr-words-04"]').click();
+await page.waitForFunction(() => document.querySelector('#main').innerText.includes('Listen and repeat'));
+assert.match(await main(), /Words: animals\s+Listen and repeat[\s\S]*le chien\s+🐕\s+dog[\s\S]*l'oiseau\s+🐦\s+bird/);
+assert.deepEqual([await page.locator('#main .pic').count(), await page.locator('#main .pic').first().getAttribute('aria-hidden')], [8, 'true']);
+await page.locator('.top [data-v=today]').click();                 // (a lesson begun is not saved: leaving asks once)
+await page.locator('.top [data-v=today]').click();
+await page.waitForFunction(() => !document.querySelector('#main').innerText.includes('Listen and repeat'));
 // the page for a native speaker (#proof=fr): every lesson and text of a language, to read; a line shows its fields only when asked;
 // what is marked stays on the device, comes out as text, and survives a reload; the menu leaves the page
 const proofAt = page.url().replace(/#.*$/, '') + '#proof=';

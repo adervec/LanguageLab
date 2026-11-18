@@ -421,6 +421,31 @@ console.log('core.test: ok');
   assert.deepEqual(c.lessonKeys('İstasyon nerede?', 'tr'), []);
   assert.deepEqual(c.chartPairs('あ=a し=shi/si junk'), [['あ', ['a']], ['し', ['shi', 'si']]]);
   assert.ok(c.readingOk(' SHI ', ['shi', 'si']) && c.readingOk('si', ['shi', 'si']) && !c.readingOk('su', ['shi', 'si']) && !c.readingOk('', ['a']));
+  // words with pictures: twelve lessons of eight nouns in every language, a picture for each, a reading where the script is not Latin,
+  // no word twice in a language (a learner must be able to tell two cards apart), every word one the app can mark
+  {
+    const badWords = [], icons = first.wordIcons;
+    assert.deepEqual([first.wordLessons.length, icons.length, new Set(icons).size, first.wordMeanings.length, icons.every(x => /^\p{Extended_Pictographic}\uFE0F?$/u.test(x))], [12, 96, 96, 96, true]);
+    assert.deepEqual(Object.keys(first.words).sort(), Object.keys(first.langs).sort());
+    assert.deepEqual(Object.keys(first.wordReadings).sort(), Object.keys(first.readings).sort());
+    for (const [code, list] of Object.entries(first.words)) { const seen = new Set();
+      if (list.length !== 96) badWords.push(`${code}: ${list.length} words`);
+      if (first.wordReadings[code] && (first.wordReadings[code].length !== 96 || !first.wordReadings[code].every(r => typeof r === 'string' && r.trim() && !/[^\u0000-\u024f\u1e00-\u1eff\u02bc]/.test(r)))) badWords.push(`${code}: a reading is missing or not in Latin letters`);
+      list.forEach((p, n) => { const w = Array.isArray(p) ? p[0] : p;
+        if (typeof w !== 'string' || !w.trim() || w.length > 80 || /\d/.test(w) || (Array.isArray(p) && !(p.length === 2 && typeof p[1] === 'string' && p[1].trim()))) badWords.push(`${code} word ${n + 1}: ${JSON.stringify(p)}`);
+        else if (seen.has(w.toLowerCase())) badWords.push(`${code} word ${n + 1}: "${w}" stands for two pictures`);
+        else if (c.dictationScore(w, w, code).score !== 1) badWords.push(`${code} word ${n + 1}: cannot be marked: ${w}`);
+        seen.add(String(w).toLowerCase()); });
+    }
+    assert.deepEqual(badWords, []);
+    const fw = c.wordStories(first, 'fr'), dw = c.wordStories(first, 'fr', 'de'), kw = c.wordStories(first, 'ko'), rw = c.wordStories(first, 'ru', 'fr');
+    assert.deepEqual([fw.length, fw[0].id, fw[11].id, fw[0].title, fw[0].back.length, fw[0].back[0], dw[0].back[0][1], fw.every(s => c.isWordLesson(s) && s.phrases && s.source === 'first')],
+      [12, 'fr-words-01', 'fr-words-12', 'Words: food', 8, ['le pain', '🍞 bread', undefined], '🍞 das Brot', true]);
+    assert.deepEqual([rw[0].back[0], kw[4].back[5], c.wordStories(first, 'en')[0].back[0][1]], [['хлеб', '🍞 le pain', 'khleb'], ['눈송이', '❄️ snowflake', 'nunsongi'], '🍞 bread']);   // (a word said another way keeps a meaning of its own)
+    const clean = c.cleanStory(fw[0], 'fr');
+    assert.deepEqual([clean.id, clean.phrases, clean.back[0], c.isWordLesson(clean), c.isWordLesson(c.lessonStories(first, 'fr')[0]), c.isWordLesson({ id: 'fr-words-01', source: 'cowork' }), c.isWordLesson(null)], ['fr-words-01', true, ['le pain', '🍞 bread'], true, false, false, false]);
+    assert.deepEqual([c.wordStories(first, 'xx'), c.wordStories(null, 'fr')], [[], []]);
+  }
   // a phrase corrected in the file is corrected in the card a learner already has; the card keeps its schedule, and other cards are left alone
   const deck = { 'first:fr-first-42:5': { wrong: 'That depends on the weather.', right: 'Cela dépend du temps.', why: '', added: 1, srs: { reps: 2 } }, 'first:fr-first-42:0': { wrong: 'b', right: 'a' }, 't:x:0': { wrong: 'a', right: 'z' } };
   const l42 = { id: 'fr-first-42', back: [['a', 'b'], ['c', 'd'], ['e', 'f'], ['g', 'h'], ['i', 'j'], ['Ça dépend du temps.', 'That depends on the weather.']] };
@@ -428,7 +453,8 @@ console.log('core.test: ok');
   assert.deepEqual([c.syncPhraseCards(deck, l42), c.syncPhraseCards(null, l42), c.syncPhraseCards(deck, null), c.syncPhraseCards(deck, { id: 'x' })], [0, 0, 0, 0]);
   // for a native speaker: every lesson, the sounds and every text of a language as rows to read, each with an id that says where it lives
   const frTexts = JSON.parse(readFileSync(new URL('./content/fr.json', import.meta.url), 'utf8')), secs = c.proofSections(first, frTexts, 'fr');
-  assert.deepEqual([secs.length, secs.filter(x => x.kind === 'lesson').length, secs.filter(x => x.kind === 'text').length, secs[60].id], [60 + 1 + frTexts.length, 60, frTexts.length, 'sounds']);
+  assert.deepEqual([secs.length, secs.filter(x => x.kind === 'lesson').length, secs.filter(x => x.kind === 'text').length, secs[60].id], [60 + 1 + 12 + frTexts.length, 60, frTexts.length, 'sounds']);
+  assert.deepEqual([secs[61].id, secs[61].kind, secs[61].title, secs[61].rows[0], secs[72].rows[7].id], ['words-1', 'words', 'Words: food', { id: 'word:1', text: 'le pain', about: '🍞 bread', reading: '' }, 'word:96']);
   assert.deepEqual(secs[0].rows[0], { id: 'first:1', text: 'Bonjour.', about: 'Hello.', reading: '' });
   assert.deepEqual([secs[0].id, secs[0].n, secs[0].title, secs[0].rows.length, secs[59].rows[7].id], ['first-1', 1, 'Hello and goodbye', 8, 'first:480']);
   assert.deepEqual(secs[60].rows.filter(r => r.id === 'sound:1' || r.id === 'pair:1'), [{ id: 'sound:1', text: 'été', about: 'é: like ay in day, cut short', reading: '' }, { id: 'pair:1', text: 'dessus / dessous', about: 'on top / underneath', reading: '' }]);

@@ -34,6 +34,14 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   language is one `LANGS` entry plus `content/<code>.json` (the test requires 16 stories and 8 dialogues, 8 and 4 for `small`,
   4 and 2 for `mini`) and its file in the `sw.js` offline list (the test checks that too). After changing content run
   `node .github/spell.mjs` (see its first lines): a word no dictionary knows fails until it is read and accepted.
+- **Words with pictures** (`wordStories()`, listed apart on First steps by `wordLessons()`): `content/first.json` also holds twelve lessons of
+  eight nouns for every language (`wordLessons` the titles, `wordIcons` 96 emoji, `wordMeanings` the English, `words.<code>` the 96 words,
+  a word being a string or `[word, its own meaning]`, and `wordReadings.<code>` where the script is not Latin). A word comes with its
+  article where that is how the gender shows (fr es de it pt nl ca gl el; sv nb da give en/ett on what can be counted). No word may
+  stand for two pictures in a language: the test refuses it. Their stories have ids `<code>-words-NN` (`isWordLesson`), `source: 'first'`
+  and `phrases: true`, so the lesson session, the review cards and `syncPhraseCards` treat them as lessons; `lessons()` leaves them out,
+  so the count of phrase lessons and the request for AI-written lessons do not change. The meaning starts with the picture (`pic()`
+  shows it large and hides it from a screen reader, which would read its name as well).
 - **First steps** (from nothing): `content/first.json` holds 480 meanings in sixty lessons: each of the 44 languages has the first 240 phrases (thirty lessons), and 32 have all 480 (the eight with full sets
   of stories, and zh, ja, ko, vi, id, ms, ru, uk, bg, pl, cs, sk, sr, ro, hu, el, tr, ca, gl, sv, nb, da, af, eo; the twelve still at 240
   are ar, fa, hi, ur, bn, th, fi, sl, mk, be, fil, sw)

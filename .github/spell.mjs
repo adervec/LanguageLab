@@ -38,6 +38,7 @@ for (const code of codes) {
     for (const b of s.back || []) take(b[0], s.id + ' back');
   }
   (first.langs[code] || []).forEach((p, i) => take(Array.isArray(p) ? p[0] : p, 'first lesson phrase ' + (i + 1)));
+  (first.words?.[code] || []).forEach((p, i) => take(Array.isArray(p) ? p[0] : p, 'word with a picture ' + (i + 1)));
   // (a word joined by an apostrophe, a hyphen or a zero-width non-joiner may be known only in its parts)
   const flagged = [...seen].filter(([w]) => !known(w) && !w.split(/['’‌-]/).every(p => p && known(p)));
   const fresh = flagged.filter(([w]) => !(accepted[code] || []).includes(w));

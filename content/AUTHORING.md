@@ -79,6 +79,16 @@ A language in a script that is not Latin also needs a reading in Latin letters f
 `[name, "letter=reading letter=reading/other"]`; `sounds` holds `[letters, example word, what to listen for]`.
 `node core.test.mjs` checks all of it.
 
+## Words with pictures (`first.json`)
+
+`wordLessons` (twelve titles), `wordIcons` (96 emoji, one a word), `wordMeanings` (the English), `words.<code>` (96 words, in the same
+order for every language) and `wordReadings.<code>` (where the language has `readings`). Rules the test checks: 96 words, each
+markable, no digits, a reading in Latin letters where one is wanted, and **no word twice in a language**: the learner must be able to
+tell two cards apart, so where one word stands for two of the pictures, say one of them another way, with a meaning of its own if it
+no longer means quite the same (`["눈송이", "snowflake"]`). Give the article where that is how a learner sees the gender (le pain, das
+Brot, het brood, το ψωμί; Swedish, Norwegian and Danish en/ett on what can be counted, bare for what cannot); elsewhere the bare
+noun. Pick emoji from before 2018, or older devices show a box. `node .tmp/w1.cjs` is how the lists were checked and written.
+
 ## Reading lesson phrases a second time
 
 Two questions find different things. "Is anything wrong here?" finds mistakes (plant a few in the copy to know what a clean
@@ -105,7 +115,7 @@ missing). The `id` says where the line lives:
 
 - `first:<n>`: phrase n (counting from 1) of `langs.<code>` in `first.json`. Where the language has `readings`, rewrite the reading
   too. If the correction changes what the phrase means, give the phrase its own meaning (`[phrase, meaning]`).
-- `sound:<n>` and `pair:<n>`: entry n of `sounds.<code>` and of `pairs.<code>`.
+- `sound:<n>` and `pair:<n>`: entry n of `sounds.<code>` and of `pairs.<code>`. `word:<n>`: word n of `words.<code>` (and its reading).
 - `<text id>:t` the title; `:s<n>` sentence n of a story or line n of a dialogue; `:b<n>` entry n of `back` (a sentence and its
   English meaning); `:q<n>` question n; `:n` the `notice`; `:g:<word>` the meaning given for a word in `gloss`.
 
