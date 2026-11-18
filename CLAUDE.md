@@ -51,6 +51,8 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
   `[times heard, picked rightly, times said, understood, only a second guess, taken for the other word of its pair, when]`
   (`C.aloneAdd`). First steps shows the count beside the sound or the pair (`aloneNote`); Progress shows the totals and the words
   understood least (`C.aloneStats`: three tries or more, fewer than two in three understood). A merge keeps the longer record of a word.
+  The `stories` request carries `hardWords` (the words of `aloneStats().weak`, with the word each was taken for), and its instructions ask
+  for those sounds in the learner's lines of a dialogue and in a few phrases of a lesson.
   The `stories` cowork channel also brings first lessons: `wantLessons` in the request while the level is A1 and fewer than three are
   left to do (also for a language with none bundled), `lessons` in the reply, each checked by `cleanLesson` and added as a story with
   `phrases` and source `cowork`. They are listed after the bundled ones and are kept at start-up (only `source: 'first'` lessons are

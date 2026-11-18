@@ -1612,6 +1612,9 @@ Only when \`payload.wantLessons\` is above 0: the learner is a beginner and has 
 - \`meaning\`: what the phrase means, in \`payload.glossLanguage\`. Where the words depend on who is speaking (a man or a woman), give one form and name the other in brackets in the meaning.
 - \`reading\`: the phrase in Latin letters, only where \`payload.language\` is not written in Latin letters; otherwise "".
 
+## Sounds the learner finds hard
+\`payload.hardWords\` (often empty) lists words the learner said aloud on their own that speech recognition did not understand: \`said\` is how many times they said the word, \`understood\` how many of those it was understood, \`takenFor\` the word it was taken for. Each holds a sound that is hard for them. Where it fits, let two or three of the learner's lines in a dialogue (speaker 1), and two or three phrases of a first lesson, hold one of these words or another everyday word with the same sound, so that they say it inside a sentence. Never bend a text around them, and no tongue-twisters.
+
 ## Meanings
 \`glosses\`: a short meaning, in \`payload.glossLanguage\`, for every entry of \`payload.needGloss\` (\`{ word, sentence }\`: words they tapped that had no meaning), keyed by the word.
 
@@ -1743,6 +1746,8 @@ function mountCowork() {
           // first lessons: asked for while the level is A1 and fewer than three are left to do; also where the app brings none of its own
           wantLessons: level === 'A1' ? Math.max(0, 3 - lessons().filter(s => !s.readAt).length) : 0,
           lessonsDone: lessons().map(s => s.title), lastPhrases: lessons().slice(-3).flatMap(s => s.back.map(b => b[0])),
+          // the words said on their own that the recogniser understood least: the sounds to bring back in what the learner says next
+          hardWords: C.aloneStats(L().alone).weak.map(w => ({ word: w.word, said: w.said, understood: w.hit, ...(w.other && pairOf(w.word) ? { takenFor: pairOf(w.word) } : {}) })),
         }),
         'stories/INSTRUCTIONS.md': STORIES_MD,
       };

@@ -689,6 +689,8 @@ assert.match(await until(() => inFolder('chat/INSTRUCTIONS.md'), 'the instructio
 const sq = await request('stories');
 assert.deepEqual([sq.payload.language, sq.payload.level, typeof sq.requestHash], ['French', 'A2', 'string']);
 assert.deepEqual([sq.payload.wantLessons, sq.payload.lessonsDone.length, sq.payload.lastPhrases.length], [0, 60, 24]);   // (no more first lessons are asked for above A1)
+assert.deepEqual(sq.payload.hardWords, [{ word: 'rue', said: 3, understood: 0 }]);   // the word said three times and never understood: its sound is asked for again
+assert.match(await until(() => inFolder('stories/INSTRUCTIONS.md'), 'the instructions'), /Sounds the learner finds hard\s+`payload\.hardWords`/);
 // a first lesson from the agent: a phrase with a digit is left out, and so would one the learner already has
 const bakery = { title: 'À la boulangerie', evil: '<script>', phrases: [['Une baguette bien cuite, s\'il vous plaît.', 'A well-baked baguette, please.', ''], ['Je voudrais deux croissants au beurre.', 'I would like two butter croissants.'],
   ['Avez-vous du pain complet ?', 'Do you have wholemeal bread?'], ['Ce gâteau a l\'air délicieux.', 'This cake looks delicious.'], ['Je prends aussi une tarte aux pommes.', 'I will take an apple tart too.'],
