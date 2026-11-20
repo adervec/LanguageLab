@@ -1223,6 +1223,234 @@
   ]
  },
  {
+  "id": "es-paraguas",
+  "title": "El paraguas amarillo",
+  "level": "A2",
+  "text": "Esta mañana llueve mucho y Lucía no encuentra su paraguas. Mira en la entrada, debajo de la cama y en el coche, pero no está en ninguna parte. Entonces coge el viejo paraguas amarillo de su abuela, que es muy grande y un poco ridículo. En la calle, la gente sonríe cuando la ve pasar. En la parada del autobús, una niña le pregunta si puede ponerse debajo, porque ha olvidado el suyo. Después llega un señor mayor, y luego una mujer con un bebé. Pronto son cinco debajo del paraguas amarillo y todos se ríen. Cuando llega el autobús, deja de llover. Por la noche, Lucía encuentra su pequeño paraguas negro en la bolsa de deporte. Lo guarda en un armario y decide quedarse con el amarillo.",
+  "gloss": {
+   "llueve": "it is raining",
+   "paraguas": "umbrella",
+   "entrada": "hall, entrance",
+   "ninguna": "en ninguna parte: nowhere",
+   "coge": "takes",
+   "amarillo": "yellow",
+   "ridículo": "silly-looking",
+   "sonríe": "smiles",
+   "parada": "stop",
+   "debajo": "underneath",
+   "olvidado": "forgotten",
+   "suyo": "el suyo: hers, his",
+   "mayor": "elderly",
+   "pronto": "soon",
+   "deja": "deja de llover: it stops raining",
+   "guarda": "puts away",
+   "quedarse": "quedarse con: to keep"
+  },
+  "questions": [
+   {
+    "q": "¿De qué color es el paraguas de la abuela?",
+    "a": [
+     "amarillo"
+    ]
+   },
+   {
+    "q": "¿Cuántas personas hay debajo al final?",
+    "a": [
+     "cinco",
+     "5"
+    ]
+   },
+   {
+    "q": "¿Dónde encuentra Lucía su paraguas pequeño?",
+    "a": [
+     "bolsa"
+    ]
+   }
+  ],
+  "notice": "\"Ha olvidado el suyo\": el mío, el tuyo, el suyo stand for a noun with its owner (mi paraguas → el mío). They agree with the thing owned: la mía, los suyos.",
+  "back": [
+   [
+    "En la calle, la gente sonríe cuando la ve pasar.",
+    "In the street, people smile when they see her go by."
+   ],
+   [
+    "Cuando llega el autobús, deja de llover.",
+    "When the bus arrives, it stops raining."
+   ]
+  ]
+ },
+ {
+  "id": "es-perro-parque",
+  "title": "El perro del parque",
+  "level": "A2",
+  "text": "El sábado por la tarde, Hugo y su hermana juegan a la pelota en el parque. Un perro pequeño y marrón llega corriendo y coge la pelota con la boca. Los niños se ríen, pero no ven a nadie con él. El perro lleva un collar rojo con un número de teléfono. Hugo llama con el móvil de su madre. Una mujer contesta enseguida: busca a su perro desde por la mañana y está muy preocupada. Diez minutos después llega al parque en bicicleta. El perro salta a sus brazos y le lame la cara. Para dar las gracias a los niños, la mujer les compra dos helados de chocolate. Antes de irse, les dice que el perro se llama Galleta y que le encantan las pelotas. El sábado siguiente, Galleta vuelve al parque, pero esta vez con su dueña.",
+  "gloss": {
+   "pelota": "ball",
+   "marrón": "brown",
+   "corriendo": "running",
+   "boca": "mouth",
+   "collar": "collar",
+   "número": "number",
+   "llama": "calls",
+   "contesta": "answers",
+   "enseguida": "straight away",
+   "preocupada": "worried",
+   "bicicleta": "bike",
+   "salta": "jumps",
+   "brazos": "arms",
+   "lame": "licks",
+   "cara": "face",
+   "helados": "ice creams",
+   "siguiente": "following, next",
+   "dueña": "owner (a woman)"
+  },
+  "questions": [
+   {
+    "q": "¿Qué coge el perro con la boca?",
+    "a": [
+     "pelota"
+    ]
+   },
+   {
+    "q": "¿De qué color es el collar?",
+    "a": [
+     "rojo"
+    ]
+   },
+   {
+    "q": "¿Cómo llega la mujer al parque?",
+    "a": [
+     "bicicleta"
+    ]
+   }
+  ],
+  "notice": "\"Busca a su perro\", \"no ven a nadie\": Spanish puts \"a\" before a direct object that is a person, and often before a pet. \"Desde por la mañana\" with the present means she has been looking since the morning.",
+  "back": [
+   [
+    "El perro lleva un collar rojo con un número de teléfono.",
+    "The dog is wearing a red collar with a phone number."
+   ],
+   [
+    "Diez minutos después llega al parque en bicicleta.",
+    "Ten minutes later she arrives at the park by bike."
+   ]
+  ]
+ },
+ {
+  "id": "es-caja-fotos",
+  "title": "La caja olvidada",
+  "level": "B1",
+  "text": "Cuando nos mudamos a Sevilla, alquilamos una furgoneta para llevar nuestras cosas. Mi hermano conducía mientras yo vigilaba las cajas de atrás. Viajamos todo el día y llegamos cuando ya era de noche. Al vaciar la furgoneta, me di cuenta de que faltaba una caja: la que tenía todas las fotos de la familia. Seguramente la habíamos dejado en la acera, delante del piso antiguo. Llamé a nuestra antigua vecina sin mucha esperanza, porque ya era tarde. Me contestó que la había visto al sacar al perro y que la había guardado en su garaje. Incluso se ofreció a mandárnosla por correo. Una semana más tarde, la caja llegó con una nota muy amable y un bote de mermelada. Desde entonces, le escribimos todos los años en Navidad.",
+  "gloss": {
+   "mudamos": "moved house",
+   "alquilamos": "rented",
+   "furgoneta": "van",
+   "conducía": "was driving",
+   "vigilaba": "kept an eye on",
+   "cajas": "boxes",
+   "atrás": "de atrás: in the back",
+   "vaciar": "to empty",
+   "cuenta": "me di cuenta: I realised",
+   "faltaba": "was missing",
+   "seguramente": "probably",
+   "acera": "pavement",
+   "esperanza": "hope",
+   "guardado": "put away, kept safe",
+   "ofreció": "se ofreció: offered",
+   "correo": "post",
+   "bote": "jar",
+   "mermelada": "jam"
+  },
+  "questions": [
+   {
+    "q": "¿A qué ciudad se mudaron?",
+    "a": [
+     "Sevilla"
+    ]
+   },
+   {
+    "q": "¿Qué tenía la caja que faltaba?",
+    "a": [
+     "fotos"
+    ]
+   },
+   {
+    "q": "¿Dónde la había guardado la vecina?",
+    "a": [
+     "garaje"
+    ]
+   }
+  ],
+  "notice": "\"Al vaciar la furgoneta\", \"al sacar al perro\": al + infinitive means when or while doing something. \"La habíamos dejado\" (pluperfect) goes one step back from the past of the story.",
+  "back": [
+   [
+    "Mi hermano conducía mientras yo vigilaba las cajas de atrás.",
+    "My brother drove while I kept an eye on the boxes in the back."
+   ],
+   [
+    "Incluso se ofreció a mandárnosla por correo.",
+    "She even offered to send it to us by post."
+   ]
+  ]
+ },
+ {
+  "id": "es-clase-cocina",
+  "title": "La clase de cocina",
+  "level": "B1",
+  "text": "Por su cumpleaños, los hijos de Bernardo le regalaron una clase de cocina. Al principio se molestó, porque pensaba que cocinaba muy bien. El día de la clase se encontró con otros ocho alumnos delante de un cocinero joven y sonriente. Había que preparar una tortilla de patatas, algo que Bernardo hacía desde hacía cuarenta años. Así que trabajó deprisa, sin escuchar las explicaciones. Pero cuando terminaron, su tortilla estaba demasiado hecha y seca por dentro. La de su compañera, que nunca había cocinado, estaba perfecta. El cocinero probó las dos sin decir nada y luego le enseñó a Bernardo a cocinar las patatas más despacio. Bernardo empezó de nuevo, esta vez siguiendo cada paso. Por la noche llevó su segunda tortilla a sus hijos. Reconoció que todavía se puede aprender algo a los setenta años.",
+  "gloss": {
+   "cumpleaños": "birthday",
+   "regalaron": "gave (as a present)",
+   "molestó": "se molestó: he was offended",
+   "alumnos": "pupils, students",
+   "cocinero": "cook, chef",
+   "sonriente": "smiling",
+   "tortilla": "Spanish omelette",
+   "deprisa": "fast",
+   "explicaciones": "explanations",
+   "hecha": "cooked (demasiado hecha: overcooked)",
+   "seca": "dry",
+   "compañera": "classmate (a woman)",
+   "probó": "tasted",
+   "enseñó": "showed, taught",
+   "despacio": "slowly",
+   "paso": "step",
+   "reconoció": "admitted"
+  },
+  "questions": [
+   {
+    "q": "¿Qué había que preparar en la clase?",
+    "a": [
+     "tortilla"
+    ]
+   },
+   {
+    "q": "¿Cómo estaba la tortilla de Bernardo por dentro?",
+    "a": [
+     "seca"
+    ]
+   },
+   {
+    "q": "¿Cuántos años tiene Bernardo?",
+    "a": [
+     "setenta",
+     "70"
+    ]
+   }
+  ],
+  "notice": "\"Hacía desde hacía cuarenta años\": desde hace / desde hacía with a verb says how long something has (or had) been going on. \"La de su compañera\": la de, el de stand for a noun already named (the one of).",
+  "back": [
+   [
+    "Así que trabajó deprisa, sin escuchar las explicaciones.",
+    "So he worked fast, without listening to the explanations."
+   ],
+   [
+    "Por la noche llevó su segunda tortilla a sus hijos.",
+    "In the evening he took his second omelette to his children."
+   ]
+  ]
+ },
+ {
   "id": "es-d-panaderia",
   "title": "En la panadería",
   "level": "A1",
