@@ -3,7 +3,7 @@
   "id": "ca-market",
   "title": "Al mercat",
   "level": "A1",
-  "text": "Cada dissabte la Maria va al mercat. El mercat és al centre de la ciutat. Fa sol i hi ha molta gent. A la Maria li agrada el mercat, perquè la fruita és fresca i barata. Primer compra pomes i taronges. Després compra pa, formatge i una mica de peix. L'home de la parada del peix és molt amable. Sempre li pregunta per la seva família. Al mercat, la Maria sovint es troba amb la seva amiga Elena. Avui prenen un cafè juntes i parlen molta estona. Al migdia la Maria torna a casa amb dues bosses pesades. Està cansada, però contenta.",
+  "text": "Cada dissabte la Maria va al mercat. El mercat és al centre de la ciutat. Fa sol i hi ha molta gent. A la Maria li agrada el mercat, perquè la fruita és fresca i barata. Primer compra pomes i taronges. Després compra pa, formatge i una mica de peix. L'home de la parada del peix és molt amable. Sempre li pregunta per la família. Al mercat, la Maria sovint es troba amb la seva amiga Elena. Avui prenen un cafè juntes i parlen molta estona. Al migdia la Maria torna a casa amb dues bosses pesades. Està cansada, però contenta.",
   "gloss": {
    "mercat": "market",
    "centre": "centre",
@@ -54,7 +54,7 @@
     "First she buys apples and oranges."
    ],
    [
-    "Sempre li pregunta per la seva família.",
+    "Sempre li pregunta per la família.",
     "He always asks about her family."
    ]
   ]
@@ -124,7 +124,7 @@
   "id": "ca-sea",
   "title": "Un cap de setmana al mar",
   "level": "A2",
-  "text": "El cap de setmana passat el meu germà i jo vam anar al mar. Vam agafar el tren de bon matí i el viatge va durar tres hores. Feia un temps magnífic: el cel era blau i l'aigua era calenta. Vam nedar molta estona i després ens vam estirar a la platja. Al migdia vam menjar peix fresc en un restaurant petit a prop del port. El cambrer va ser amable i ens va portar aigua freda. A la tarda vam passejar per la ciutat vella i vam comprar postals. El meu germà va fer moltes fotos de les barques. Al vespre estàvem molt cansats, però no volíem tornar a casa. Vam perdre l'últim tren i vam haver d'esperar una hora. Va ser el millor dia de l'estiu. La pròxima vegada volem quedar-nos una setmana sencera.",
+  "text": "El cap de setmana passat el meu germà i jo vam anar al mar. Vam agafar el tren de bon matí i el viatge va durar tres hores. Feia un temps magnífic: el cel era blau i l'aigua estava bona. Vam nedar molta estona i després ens vam estirar a la platja. Al migdia vam menjar peix fresc en un restaurant petit a prop del port. El cambrer va ser amable i ens va portar aigua freda. A la tarda vam passejar per la ciutat vella i vam comprar postals. El meu germà va fer moltes fotos de les barques. Al vespre estàvem molt cansats, però no volíem tornar a casa. Vam perdre el tren i vam haver d'esperar una hora. Va ser el millor dia de l'estiu. La pròxima vegada volem quedar-nos una setmana sencera.",
   "gloss": {
    "setmana": "week (cap de setmana: weekend)",
    "germà": "brother",
@@ -136,7 +136,6 @@
    "cel": "sky",
    "blau": "blue",
    "aigua": "water",
-   "calenta": "warm",
    "nedar": "to swim (vam nedar: we swam)",
    "platja": "beach",
    "cambrer": "waiter",
@@ -178,7 +177,7 @@
     "In the afternoon we walked through the old town and bought postcards."
    ],
    [
-    "Vam perdre l'últim tren i vam haver d'esperar una hora.",
+    "Vam perdre el tren i vam haver d'esperar una hora.",
     "We missed the last train and had to wait an hour."
    ]
   ]
@@ -187,7 +186,7 @@
   "id": "ca-neighbour",
   "title": "La veïna nova",
   "level": "A2",
-  "text": "El mes passat una veïna nova es va mudar al nostre edifici. Es diu Sofia i ve d'una altra ciutat. Al principi no coneixia ningú aquí. Un vespre va trucar a la nostra porta, perquè el llum de la seva cuina estava espatllat. El meu pare va pujar i el va arreglar en deu minuts. La Sofia estava molt agraïda i l'endemà ens va portar un pastís. El pastís era deliciós i el meu germà petit en va menjar tres trossos. Ara la Sofia sovint pren te amb la meva mare. Treballa en un hospital i explica històries interessants. Ahir em va ajudar amb els deures. Diumenge li vam ensenyar el parc i el mercat vell. Diu que ja se sent com a casa. Crec que hem trobat una amiga nova.",
+  "text": "El mes passat una veïna nova es va mudar al nostre edifici. Es diu Sofia i ve d'una altra ciutat. Al principi no hi coneixia ningú. Un vespre va trucar a la nostra porta, perquè el llum de la seva cuina estava espatllat. El meu pare va pujar i el va arreglar en deu minuts. La Sofia estava molt agraïda i l'endemà ens va portar un pastís. El pastís era deliciós i el meu germà petit en va menjar tres trossos. Ara la Sofia sovint pren te amb la meva mare. Treballa en un hospital i explica històries interessants. Ahir em va ajudar amb els deures. Diumenge li vam ensenyar el parc i el mercat vell. Diu que ja se sent com a casa. Crec que hem trobat una amiga nova.",
   "gloss": {
    "veïna": "neighbour",
    "mudar": "to move (es va mudar: she moved)",
@@ -279,7 +278,7 @@
    ],
    [
     0,
-    "Aquí ho té. Alguna cosa més?"
+    "Aquí té. Alguna cosa més?"
    ],
    [
     1,
@@ -343,7 +342,7 @@
    ],
    [
     0,
-    "Com es diu, si us plau?"
+    "A nom de qui, si us plau?"
    ],
    [
     1,
@@ -414,7 +413,7 @@
   "id": "ca-family",
   "title": "La meva família",
   "level": "A1",
-  "text": "Em dic Anna. Visc amb la meva família en una casa petita a prop del riu. La meva mare és mestra i el meu pare treballa en una botiga. Tinc un germà i una germana. El meu germà té deu anys i li agrada el futbol. La meva germana encara és petita: té tres anys. També tenim un gos, que es diu Max. Cada matí el meu pare surt a passejar amb el gos. Al vespre sopem junts i parlem del dia. Després de sopar, el meu germà i jo rentem els plats. El diumenge ve l'àvia i porta un pastís. Estimo molt la meva família.",
+  "text": "Em dic Anna. Visc amb la meva família en una casa petita a prop del riu. La meva mare és mestra i el meu pare treballa en una botiga. Tinc un germà i una germana. El meu germà té deu anys i li agrada el futbol. La meva germana encara és petita: té tres anys. També tenim un gos, que es diu Max. Cada matí el meu pare surt a passejar el gos. Al vespre sopem junts i parlem del dia. Després de sopar, el meu germà i jo rentem els plats. El diumenge ve l'àvia i porta un pastís. Estimo molt la meva família.",
   "gloss": {
    "família": "family",
    "casa": "house",
@@ -477,7 +476,7 @@
   "id": "ca-town",
   "title": "El nostre poble",
   "level": "A1",
-  "text": "El nostre poble és petit, però és bonic. Al centre hi ha una plaça antiga amb una font. Al costat de la plaça hi ha una escola, una farmàcia i dos cafès. L'estació és darrere del parc. Cada matí molta gent agafa el tren per anar a la ciutat. A la tarda els nens juguen al parc i els avis juguen a escacs. A l'estiu venen turistes i fan fotos del pont. A l'hivern el poble és tranquil. El dissabte hi ha mercat a la plaça. Allà podeu comprar verdures, mel i flors. Al vespre m'agrada passejar a la vora del riu. No vull viure en una ciutat gran.",
+  "text": "El nostre poble és petit, però bonic. Al centre hi ha una plaça antiga amb una font. Al costat de la plaça hi ha una escola, una farmàcia i dos cafès. L'estació és darrere del parc. Cada matí molta gent agafa el tren per anar a la ciutat. A la tarda els nens juguen al parc i els avis juguen a escacs. A l'estiu venen turistes i fan fotos del pont. A l'hivern el poble és tranquil. El dissabte hi ha mercat a la plaça. Allà podeu comprar verdures, mel i flors. Al vespre m'agrada passejar a la vora del riu. No vull viure en una ciutat gran.",
   "gloss": {
    "poble": "town",
    "bonic": "beautiful",
@@ -540,7 +539,7 @@
   "id": "ca-birthday",
   "title": "L'aniversari de l'àvia",
   "level": "A2",
-  "text": "Ahir va ser l'aniversari de la meva àvia. Ara té vuitanta anys. Tota la família va venir a casa seva, al poble. La meva tia va fer un pastís gran i el meu oncle va portar flors. Li vam regalar una bufanda calenta i un llibre sobre jardins. Abans de dinar vam cantar una cançó i l'àvia va riure. A taula hi havia sopa, pollastre amb patates i molta amanida. Després de dinar ens va ensenyar fotos antigues. En una foto era una dona jove amb una bicicleta. Ens va explicar que cada dia anava a treballar amb bicicleta. Després el meu cosí va tocar la guitarra i tothom va ballar. Fins i tot el meu germà petit va ballar amb l'àvia. Al vespre estava cansada però contenta. Va dir que era el millor aniversari de la seva vida. Vam tornar a casa tard, quan les estrelles ja eren al cel.",
+  "text": "Ahir va ser l'aniversari de la meva àvia. Ara té vuitanta anys. Tota la família va venir a casa seva, al poble. La meva tia va fer un pastís gran i el meu oncle va portar flors. Li vam regalar una bufanda calenta i un llibre sobre jardins. Abans de dinar vam cantar una cançó i l'àvia va riure. A taula hi havia sopa, pollastre amb patates i molta amanida. Després de dinar ens va ensenyar fotos antigues. En una foto sortia de jove, amb una bicicleta. Ens va explicar que cada dia anava a treballar amb bicicleta. Després el meu cosí va tocar la guitarra i tothom va ballar. Fins i tot el meu germà petit va ballar amb l'àvia. Al vespre estava cansada però contenta. Va dir que era el millor aniversari de la seva vida. Vam tornar a casa tard, quan les estrelles ja eren al cel.",
   "gloss": {
    "ahir": "yesterday",
    "aniversari": "birthday",
@@ -607,7 +606,7 @@
   "id": "ca-wallet",
   "title": "La cartera perduda",
   "level": "B1",
-  "text": "Divendres passat en Daniel volia pagar al supermercat, però la cartera no era a la butxaca. Estava molt preocupat, perquè hi tenia la targeta del banc i el carnet de conduir. Va deixar la compra a la caixa i va tornar pel mateix camí. Va buscar pertot arreu, a la vorera i a la parada de l'autobús, però no va trobar res. A casa va trucar al banc i va bloquejar la targeta. Aquella nit no va poder dormir, perquè pensava en tots els seus documents. Dos dies després va arribar una carta de la policia. Una dona havia trobat la cartera a l'autobús i l'havia portada a la comissaria. En Daniel hi va anar de seguida. No hi faltava res, ni tan sols els diners. El policia li va donar l'adreça de la dona, perquè en Daniel li volia donar les gràcies. L'endemà va comprar flors i li va escriure una targeta. Ella es va sorprendre i el va convidar a prendre un cafè. Van parlar una hora i ara són bons amics. Des d'aleshores en Daniel sempre es mira la butxaca abans de baixar de l'autobús.",
+  "text": "Divendres passat en Daniel volia pagar al supermercat, però la cartera no era a la butxaca. Estava molt preocupat, perquè hi tenia la targeta del banc i el carnet de conduir. Va deixar la compra a la caixa i va tornar pel mateix camí. Va buscar pertot arreu, a la vorera i a la parada de l'autobús, però no va trobar res. A casa va trucar al banc i va bloquejar la targeta. Aquella nit no va poder dormir, perquè pensava en tots els seus documents. Dos dies després va arribar una carta de la policia. Una dona havia trobat la cartera a l'autobús i l'havia portada a la comissaria. En Daniel hi va anar de seguida. No hi faltava res, ni tan sols els diners. El policia li va donar l'adreça de la dona, perquè en Daniel li volia donar les gràcies. L'endemà va comprar flors i li va escriure una targeta. Ella es va sorprendre i el va convidar a prendre un cafè. Van parlar una hora i ara són bons amics. Des d'aleshores en Daniel sempre es toca la butxaca abans de baixar de l'autobús.",
   "gloss": {
    "divendres": "Friday",
    "pagar": "pay",
@@ -634,7 +633,6 @@
    "gràcies": "thanks (donar les gràcies: to thank)",
    "sorprendre": "(es va sorprendre: was surprised)",
    "convidar": "to invite (va convidar: invited)",
-   "mira": "looks at, checks",
    "baixar": "to get off"
   },
   "questions": [

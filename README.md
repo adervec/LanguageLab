@@ -365,7 +365,10 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   driving licence that showed an address, which it does not; a Romanian card of congratulation sent as thanks; a
   Thai customer taking leave of a cashier as if for ever). Norwegian, Danish, Finnish, Slovak, Serbian and Bulgarian
   followed: 74 sentences changed (the train again; Norwegian commas before "fordi"; Bulgarian prices still in leva).
-  The twelve texts of each of the remaining 12 languages have not been read this way.
+  The last twelve (Slovene, Macedonian, Belarusian, Catalan, Galician, Urdu, Bengali, Malay,
+  Filipino, Swahili, Esperanto, Afrikaans) followed, 161 sentences changed, so the texts of all 44 languages have
+  now had this read. Glosses that no longer matched a changed sentence were dropped, not always replaced, so a
+  few new words have no meaning to tap until the device or an agent fills it in.
 - **The page for a native speaker** (November 2026) was tried in headless Chrome only: the French page (60 lessons, the
   sounds, 44 texts), the Arabic one (right to left, with readings) and the Japanese one opened; a correction and a
   note typed, a section ticked, the result copied (it names each line by where it lives and gives the words it was

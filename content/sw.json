@@ -3,7 +3,7 @@
   "id": "sw-market",
   "title": "Sokoni",
   "level": "A1",
-  "text": "Kila Jumamosi Maria huenda sokoni. Soko liko katikati ya mji. Jua linawaka na kuna watu wengi sana. Maria anapenda soko hili kwa sababu matunda ni freshi na bei ni nafuu. Kwanza ananunua matofaa na machungwa. Kisha ananunua mkate, jibini na samaki kidogo. Muuzaji wa samaki ni mchangamfu sana. Kila mara anamuuliza habari za familia yake. Sokoni Maria hukutana mara nyingi na rafiki yake Elena. Leo wanakunywa kahawa pamoja na kuzungumza kwa muda mrefu. Saa sita mchana Maria anarudi nyumbani na mifuko miwili mizito. Amechoka lakini ana furaha.",
+  "text": "Kila Jumamosi Maria huenda sokoni. Soko liko katikati ya mji. Jua linawaka na kuna watu wengi sana. Maria anapenda soko hili kwa sababu matunda ni mazuri na bei ni nafuu. Kwanza ananunua matofaa na machungwa. Kisha ananunua mkate, jibini na samaki kidogo. Muuzaji wa samaki ni mchangamfu sana. Kila mara anamuuliza habari za familia yake. Sokoni Maria hukutana mara nyingi na rafiki yake Elena. Leo wanakunywa kahawa pamoja na kuzungumza kwa muda mrefu. Saa sita mchana Maria anarudi nyumbani na mifuko miwili mizito. Amechoka lakini ana furaha.",
   "gloss": {
    "soko": "market",
    "katikati": "middle, centre",
@@ -11,7 +11,6 @@
    "jua": "sun",
    "watu": "people",
    "matunda": "fruit",
-   "freshi": "fresh",
    "nafuu": "cheap, affordable",
    "matofaa": "apples",
    "machungwa": "oranges",
@@ -125,7 +124,7 @@
   "id": "sw-sea",
   "title": "Wikendi baharini",
   "level": "A2",
-  "text": "Wikendi iliyopita mimi na kaka yangu tulikwenda baharini. Tulipanda treni asubuhi na mapema, na safari ilichukua saa tatu. Hali ya hewa ilikuwa nzuri sana: anga lilikuwa la buluu na maji yalikuwa ya vuguvugu. Tuliogelea kwa muda mrefu, kisha tukalala ufukweni. Saa sita mchana tulikula samaki freshi katika mgahawa mdogo karibu na bandari. Mhudumu alikuwa mchangamfu na alituletea maji baridi. Alasiri tulitembea katika mji wa kale na kununua postikadi. Kaka yangu alipiga picha nyingi za mashua. Jioni tulikuwa tumechoka sana, lakini hatukutaka kurudi nyumbani. Tulikosa treni ya mwisho na ilitubidi kusubiri saa moja. Ilikuwa siku bora kabisa ya kiangazi. Wakati ujao tunataka kukaa wiki nzima.",
+  "text": "Wikendi iliyopita mimi na kaka yangu tulikwenda baharini. Tulipanda treni asubuhi na mapema, na safari ilichukua saa tatu. Hali ya hewa ilikuwa nzuri sana: anga lilikuwa la buluu na maji yalikuwa ya vuguvugu. Tuliogelea kwa muda mrefu, kisha tukalala ufukweni. Saa sita mchana tulikula samaki wabichi katika mgahawa mdogo karibu na bandari. Mhudumu alikuwa mchangamfu na alituletea maji baridi. Alasiri tulitembea katika mji wa kale na kununua postikadi. Kaka yangu alipiga picha nyingi za mashua. Jioni tulikuwa tumechoka sana, lakini hatukutaka kurudi nyumbani. Tulikosa treni na ilitubidi kusubiri treni ya mwisho kwa saa moja. Ilikuwa siku bora kabisa ya kiangazi. Wakati ujao tunataka kukaa wiki nzima.",
   "gloss": {
    "wikendi": "weekend",
    "kaka": "brother",
@@ -180,7 +179,7 @@
     "In the afternoon we walked through the old town and bought postcards."
    ],
    [
-    "Tulikosa treni ya mwisho na ilitubidi kusubiri saa moja.",
+    "Tulikosa treni na ilitubidi kusubiri treni ya mwisho kwa saa moja.",
     "We missed the last train and had to wait an hour."
    ]
   ]
@@ -261,7 +260,7 @@
    ],
    [
     1,
-    "Nzuri, asante. Naomba kahawa ya maziwa, tafadhali."
+    "Nzuri, asante. Naomba kahawa ya maziwa."
    ],
    [
     0,
@@ -357,7 +356,7 @@
    ],
    [
     1,
-    "Je, kifungua kinywa kimo ndani ya bei?"
+    "Je, bei inajumuisha kifungua kinywa?"
    ],
    [
     0,
@@ -385,7 +384,6 @@
    "chumba": "room",
    "ghorofa": "floor",
    "kifungua": "(kifungua kinywa: breakfast)",
-   "ndani": "inside (kimo ndani ya bei: it is included in the price)",
    "bei": "price",
    "lifti": "lift",
    "sanduku": "suitcase",
@@ -416,7 +414,7 @@
   "id": "sw-family",
   "title": "Familia yangu",
   "level": "A1",
-  "text": "Jina langu ni Anna. Ninaishi na familia yangu katika nyumba ndogo karibu na mto. Mama yangu ni mwalimu na baba yangu anafanya kazi dukani. Nina kaka mmoja na dada mmoja. Kaka yangu ana miaka kumi na anapenda mpira wa miguu. Dada yangu bado ni mdogo: ana miaka mitatu. Pia tuna mbwa, na jina lake ni Max. Kila asubuhi baba yangu hutembea na mbwa. Jioni tunakula pamoja na kuzungumza kuhusu siku yetu. Baada ya chakula cha jioni, mimi na kaka yangu tunaosha vyombo. Jumapili bibi yangu huja na kuleta keki. Ninaipenda familia yangu sana.",
+  "text": "Jina langu ni Anna. Ninaishi na familia yangu katika nyumba ndogo karibu na mto. Mama yangu ni mwalimu na baba yangu anafanya kazi dukani. Nina kaka mmoja na dada mmoja. Kaka yangu ana miaka kumi na anapenda mpira wa miguu. Dada yangu bado ni mdogo: ana miaka mitatu. Pia tuna mbwa, anaitwa Max. Kila asubuhi baba yangu hutembea na mbwa. Jioni tunakula pamoja na kuzungumza kuhusu siku yetu. Baada ya chakula cha jioni, mimi na kaka yangu tunaosha vyombo. Jumapili bibi yangu huja na kuleta keki. Ninaipenda familia yangu sana.",
   "gloss": {
    "familia": "family",
    "nyumba": "house",
@@ -542,7 +540,7 @@
   "id": "sw-birthday",
   "title": "Siku ya kuzaliwa ya Bibi",
   "level": "A2",
-  "text": "Jana ilikuwa siku ya kuzaliwa ya bibi yangu. Sasa ana miaka themanini. Familia nzima ilikuja nyumbani kwake kijijini. Shangazi yangu alioka keki kubwa na mjomba wangu alileta maua. Tulimpa skafu ya joto na kitabu kuhusu bustani. Kabla ya chakula cha mchana tuliimba wimbo, na Bibi alicheka. Mezani kulikuwa na supu, kuku na viazi, na saladi nyingi. Baada ya chakula cha mchana alituonyesha picha za zamani. Katika picha moja alikuwa msichana mwenye baiskeli. Alituambia kwamba aliiendesha kwenda kazini kila siku. Kisha binamu yangu alipiga gitaa na kila mtu alicheza dansi. Hata kaka yangu mdogo alicheza na Bibi. Jioni alikuwa amechoka lakini mwenye furaha. Alisema kwamba ilikuwa siku bora ya kuzaliwa maishani mwake. Tulirudi nyumbani tumechelewa, nyota zikiwa tayari angani.",
+  "text": "Jana ilikuwa siku ya kuzaliwa ya bibi yangu. Sasa ana miaka themanini. Familia nzima ilikuja nyumbani kwake kijijini. Shangazi yangu alioka keki kubwa na mjomba wangu alileta maua. Tulimpa skafu ya joto na kitabu kuhusu bustani. Kabla ya chakula cha mchana tuliimba wimbo, na Bibi alicheka. Mezani kulikuwa na supu, kuku na viazi, na saladi nyingi. Baada ya chakula cha mchana alituonyesha picha za zamani. Katika picha moja alikuwa msichana mwenye baiskeli. Alituambia kwamba aliiendesha kwenda kazini kila siku. Kisha binamu yangu alipiga gitaa na kila mtu alicheza dansi. Hata kaka yangu mdogo alicheza na Bibi. Jioni alikuwa amechoka lakini alikuwa na furaha. Alisema kwamba ilikuwa siku bora ya kuzaliwa maishani mwake. Tulirudi nyumbani tumechelewa, nyota zikiwa tayari angani.",
   "gloss": {
    "jana": "yesterday",
    "kuzaliwa": "to be born (siku ya kuzaliwa: birthday)",
@@ -609,7 +607,7 @@
   "id": "sw-wallet",
   "title": "Pochi iliyopotea",
   "level": "B1",
-  "text": "Ijumaa iliyopita Daniel alitaka kulipa katika duka kubwa, lakini pochi yake haikuwa mfukoni. Alikuwa na wasiwasi sana, kwa sababu kadi yake ya benki na leseni yake ya udereva zilikuwa ndani yake. Aliacha bidhaa zake kwenye kaunta na akarudi kwa njia ileile. Alitafuta kila mahali, kando ya barabara na kwenye kituo cha basi, lakini hakupata chochote. Nyumbani alipiga simu benki na akaifunga kadi. Usiku ule hakuweza kulala, kwa sababu alikuwa akifikiria hati zake zote. Siku mbili baadaye barua kutoka polisi ilifika. Mwanamke mmoja alikuwa ameipata pochi ndani ya basi na kuipeleka kituo cha polisi. Daniel alikwenda huko mara moja. Hakuna kilichopotea, hata pesa. Polisi alimpa anwani ya mwanamke huyo, kwa sababu Daniel alitaka kumshukuru. Siku iliyofuata alinunua maua na kumwandikia kadi. Alishangaa na akamkaribisha kunywa kahawa. Walizungumza kwa saa moja, na sasa ni marafiki wazuri. Tangu hapo Daniel huangalia mfuko wake kila mara kabla ya kushuka kwenye basi.",
+  "text": "Ijumaa iliyopita Daniel alitaka kulipa katika duka kubwa, lakini pochi yake haikuwa mfukoni. Alikuwa na wasiwasi sana, kwa sababu kadi yake ya benki na leseni yake ya udereva zilikuwa ndani yake. Aliacha bidhaa zake kwenye kaunta na akarudi kwa njia ileile. Alitafuta kila mahali, kando ya barabara na kwenye kituo cha basi, lakini hakupata chochote. Nyumbani alipiga simu benki na akaifunga kadi. Usiku ule hakuweza kulala, kwa sababu alikuwa akifikiria hati zake zote. Siku mbili baadaye barua kutoka polisi ilifika. Mwanamke mmoja alikuwa ameipata pochi ndani ya basi na kuipeleka kituo cha polisi. Daniel alikwenda huko mara moja. Hakuna kilichopotea, hata pesa. Polisi alimpa anwani ya mwanamke huyo, kwa sababu Daniel alitaka kumshukuru. Siku iliyofuata alinunua maua na kumwandikia kadi. Mwanamke huyo alishangaa na akamkaribisha kunywa kahawa. Walizungumza kwa saa moja, na sasa ni marafiki wazuri. Tangu hapo Daniel huangalia mfuko wake kila mara kabla ya kushuka kwenye basi.",
   "gloss": {
    "ijumaa": "Friday",
    "kulipa": "pay",
@@ -780,7 +778,7 @@
    ],
    [
     1,
-    "Nzuri, daktari. Koo linaniuma kwa siku tatu sasa, na ninakohoa."
+    "Nzuri, daktari. Koo limekuwa likiniuma kwa siku tatu sasa, na ninakohoa."
    ],
    [
     0,
@@ -851,8 +849,7 @@
    "vidonge": "tablets",
    "mlo": "meal",
    "nirudi": "shall I come back",
-   "nafuu": "relief (kupata nafuu: to get better)",
-   "linaniuma": "it hurts me"
+   "nafuu": "relief (kupata nafuu: to get better)"
   },
   "questions": [
    {

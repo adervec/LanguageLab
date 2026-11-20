@@ -3,7 +3,7 @@
   "id": "gl-market",
   "title": "No mercado",
   "level": "A1",
-  "text": "Todos os sábados María vai ao mercado. O mercado está no centro da cidade. Vai sol e hai moita xente. A María gústalle o mercado, porque a froita é fresca e barata. Primeiro merca mazás e laranxas. Despois merca pan, queixo e un pouco de peixe. O home do posto do peixe é moi amable. Sempre lle pregunta pola súa familia. No mercado María atopa a miúdo a súa amiga Elena. Hoxe toman un café xuntas e falan moito tempo. Ao mediodía María volve á casa con dúas bolsas pesadas. Está cansa, pero contenta.",
+  "text": "Todos os sábados María vai ao mercado. O mercado está no centro da cidade. Vai sol e hai moita xente. A María gústalle o mercado, porque a froita é fresca e barata. Primeiro merca mazás e laranxas. Despois merca pan, queixo e un pouco de peixe. O home do posto do peixe é moi amable. Sempre lle pregunta pola súa familia. No mercado María atopa a miúdo a súa amiga Elena. Hoxe toman un café xuntas e falan durante moito tempo. Ao mediodía María volve á casa con dúas bolsas pesadas. Está cansa, pero contenta.",
   "gloss": {
    "mercado": "market",
    "centro": "centre",
@@ -124,7 +124,7 @@
   "id": "gl-sea",
   "title": "Unha fin de semana no mar",
   "level": "A2",
-  "text": "A fin de semana pasada o meu irmán e mais eu fomos ao mar. Collemos o tren pola mañá cedo e a viaxe durou tres horas. O tempo era marabilloso: o ceo estaba azul e a auga quente. Nadamos moito tempo e despois deitámonos na praia. Ao mediodía comemos peixe fresco nun restaurante pequeno preto do porto. O camareiro foi amable e tróuxonos auga fría. Pola tarde paseamos pola cidade vella e mercamos postais. O meu irmán sacou moitas fotos dos barcos. Á noite estabamos moi cansos, pero non queriamos volver á casa. Perdemos o último tren e tivemos que agardar unha hora. Foi o mellor día do verán. A próxima vez queremos quedar unha semana enteira.",
+  "text": "A fin de semana pasada o meu irmán e mais eu fomos ao mar. Collemos o tren pola mañá cedo e a viaxe durou tres horas. Fixo un tempo marabilloso: o ceo estaba azul e a auga quente. Nadamos moito tempo e despois deitámonos na praia. Ao mediodía comemos peixe fresco nun restaurante pequeno preto do porto. O camareiro foi amable e tróuxonos auga fría. Pola tarde paseamos pola cidade vella e mercamos postais. O meu irmán sacou moitas fotos dos barcos. Á noite estabamos moi cansos, pero non queriamos volver á casa. Perdemos o tren e tivemos que agardar unha hora polo seguinte. Foi o mellor día do verán. A próxima vez queremos quedar unha semana enteira.",
   "gloss": {
    "semana": "week (fin de semana: weekend)",
    "irmán": "brother",
@@ -178,7 +178,7 @@
     "In the afternoon we walked through the old town and bought postcards."
    ],
    [
-    "Perdemos o último tren e tivemos que agardar unha hora.",
+    "Perdemos o tren e tivemos que agardar unha hora polo seguinte.",
     "We missed the last train and had to wait an hour."
    ]
   ]
@@ -187,7 +187,7 @@
   "id": "gl-neighbour",
   "title": "A nova veciña",
   "level": "A2",
-  "text": "O mes pasado mudouse unha nova veciña ao noso edificio. Chámase Sofía e vén doutra cidade. Ao principio non coñecía a ninguén aquí. Unha noite petou na nosa porta, porque a lámpada da súa cociña estaba estragada. O meu pai subiu e arranxouna en dez minutos. Sofía estaba moi agradecida e ao día seguinte tróuxonos unha torta. A torta estaba deliciosa e o meu irmán pequeno comeu tres anacos. Agora Sofía toma té a miúdo coa miña nai. Traballa nun hospital e conta historias interesantes. Onte axudoume cos deberes. O domingo ensinámoslle o parque e o mercado vello. Di que xa se sente coma na casa. Creo que atopamos unha nova amiga.",
+  "text": "O mes pasado mudouse unha nova veciña ao noso edificio. Chámase Sofía e vén doutra cidade. Ao principio non coñecía a ninguén aquí. Unha noite petou á nosa porta, porque a lámpada da súa cociña estaba estragada. O meu pai subiu e arranxouna en dez minutos. Sofía estaba moi agradecida e ao día seguinte tróuxonos unha torta. A torta estaba deliciosa e o meu irmán pequeno comeu tres anacos. Agora Sofía toma té a miúdo coa miña nai. Traballa nun hospital e conta historias interesantes. Onte axudoume cos deberes. O domingo ensinámoslle o parque e o mercado vello. Di que xa se sente coma na casa. Creo que atopamos unha nova amiga.",
   "gloss": {
    "veciña": "neighbour",
    "mudouse": "moved",
@@ -371,7 +371,7 @@
    ],
    [
     1,
-    "Moitas grazas. Boa noite!"
+    "Moitas grazas. Boas noites!"
    ]
   ],
   "gloss": {
@@ -413,7 +413,7 @@
   "id": "gl-family",
   "title": "A miña familia",
   "level": "A1",
-  "text": "Chámome Anna. Vivo coa miña familia nunha casa pequena preto do río. A miña nai é mestra e o meu pai traballa nunha tenda. Teño un irmán e unha irmá. O meu irmán ten dez anos e gústalle o fútbol. A miña irmá aínda é pequena: ten tres anos. Tamén temos un can, que se chama Max. Todas as mañás o meu pai sae pasear co can. Á noite ceamos xuntos e falamos do día. Despois de cear, o meu irmán e mais eu lavamos os pratos. O domingo vén a avoa e trae unha torta. Quero moito á miña familia.",
+  "text": "Chámome Anna. Vivo coa miña familia nunha casa pequena preto do río. A miña nai é mestra e o meu pai traballa nunha tenda. Teño un irmán e unha irmá. O meu irmán ten dez anos e gústalle o fútbol. A miña irmá aínda é pequena: ten tres anos. Tamén temos un can, que se chama Max. Todas as mañás o meu pai sae a pasear co can. Á noite ceamos xuntos e falamos do día. Despois de cear, o meu irmán e mais eu fregamos os pratos. Os domingos vén a avoa e trae unha torta. Quero moito a miña familia.",
   "gloss": {
    "familia": "family",
    "casa": "house",
@@ -435,7 +435,6 @@
    "xuntos": "together",
    "cear": "to have dinner",
    "pratos": "dishes",
-   "domingo": "Sunday",
    "avoa": "grandmother",
    "torta": "cake"
   },
@@ -467,7 +466,7 @@
     "My mother is a teacher and my father works in a shop."
    ],
    [
-    "O domingo vén a avoa e trae unha torta.",
+    "Os domingos vén a avoa e trae unha torta.",
     "On Sunday my grandmother comes and brings a cake."
    ]
   ]
@@ -476,7 +475,7 @@
   "id": "gl-town",
   "title": "A nosa vila",
   "level": "A1",
-  "text": "A nosa vila é pequena, pero é fermosa. No centro hai unha praza antiga cunha fonte. Ao lado da praza hai unha escola, unha farmacia e dous cafés. A estación está detrás do parque. Todas as mañás moita xente colle o tren para ir á cidade. Pola tarde os nenos xogan no parque e os vellos xogan ao xadrez. No verán veñen turistas e sacan fotos da ponte. No inverno a vila é tranquila. O sábado hai mercado na praza. Alí podedes mercar verduras, mel e flores. Á noite gústame pasear á beira do río. Non quero vivir nunha cidade grande.",
+  "text": "A nosa vila é pequena, pero é fermosa. No centro hai unha praza antiga cunha fonte. Ao lado da praza hai unha escola, unha farmacia e dous cafés. A estación está detrás do parque. Todas as mañás moita xente colle o tren para ir á cidade. Pola tarde os nenos xogan no parque e os vellos xogan ao xadrez. No verán veñen turistas e sacan fotos da ponte. No inverno a vila é tranquila. Os sábados hai mercado na praza. Alí pódense mercar verduras, mel e flores. Á noite gústame pasear á beira do río. Non quero vivir nunha cidade grande.",
   "gloss": {
    "vila": "town",
    "fermosa": "beautiful",
@@ -497,7 +496,6 @@
    "ponte": "bridge",
    "inverno": "winter",
    "tranquila": "quiet",
-   "sábado": "Saturday",
    "verduras": "vegetables",
    "mel": "honey",
    "flores": "flowers",
@@ -539,7 +537,7 @@
   "id": "gl-birthday",
   "title": "O aniversario da avoa",
   "level": "A2",
-  "text": "Onte foi o aniversario da miña avoa. Agora ten oitenta anos. Toda a familia veu á súa casa da aldea. A miña tía fixo unha torta grande e o meu tío trouxo flores. Regalámoslle unha bufanda quente e un libro sobre xardíns. Antes de xantar cantamos unha canción e a avoa riu. Na mesa había sopa, polo con patacas e moita ensalada. Despois de xantar ensinounos fotos antigas. Nunha foto era unha muller nova cunha bicicleta. Contounos que ía traballar nela todos os días. Despois o meu curmán tocou a guitarra e todos bailaron. Mesmo o meu irmán pequeno bailou coa avoa. Á noite estaba cansa pero contenta. Dixo que era o mellor aniversario da súa vida. Volvemos á casa tarde, cando as estrelas xa estaban no ceo.",
+  "text": "Onte foi o aniversario da miña avoa. Fixo oitenta anos. Toda a familia veu á súa casa da aldea. A miña tía fixo unha torta grande e o meu tío trouxo flores. Regalámoslle unha bufanda quente e un libro sobre xardíns. Antes de xantar cantamos unha canción e a avoa riu. Na mesa había sopa, polo con patacas e moita ensalada. Despois de xantar ensinounos fotos antigas. Nunha foto era unha muller nova cunha bicicleta. Contounos que ía traballar nela todos os días. Despois o meu curmán tocou a guitarra e todos bailaron. Mesmo o meu irmán pequeno bailou coa avoa. Á noite estaba cansa pero contenta. Dixo que era o mellor aniversario da súa vida. Volvemos á casa tarde, cando as estrelas xa estaban no ceo.",
   "gloss": {
    "onte": "yesterday",
    "aniversario": "birthday",
@@ -606,7 +604,7 @@
   "id": "gl-wallet",
   "title": "A carteira perdida",
   "level": "B1",
-  "text": "O venres pasado Daniel quería pagar no supermercado, pero a carteira non estaba no peto. Estaba moi preocupado, porque dentro tiña a tarxeta do banco e o carné de conducir. Deixou a compra na caixa e volveu polo mesmo camiño. Buscou por todas partes, na beirarrúa e na parada do autobús, pero non atopou nada. Na casa chamou ao banco e bloqueou a tarxeta. Aquela noite non puido durmir, porque pensaba en todos os seus documentos. Dous días despois chegou unha carta da policía. Unha muller atopara a carteira no autobús e leváraa á comisaría. Daniel foi alí de seguida. Non faltaba nada, nin sequera os cartos. O policía deulle o enderezo da muller, porque Daniel quería darlle as grazas. Ao día seguinte mercou flores e escribiulle unha tarxeta. Ela sorprendeuse e convidouno a un café. Falaron unha hora e agora son bos amigos. Desde entón Daniel sempre mira o peto antes de baixar do autobús.",
+  "text": "O venres pasado Daniel quería pagar no supermercado, pero a carteira non estaba no peto. Estaba moi preocupado, porque dentro tiña a tarxeta do banco e o carné de conducir. Deixou a compra na caixa e volveu polo mesmo camiño. Buscou por todas partes, na beirarrúa e na parada do autobús, pero non atopou nada. Na casa chamou ao banco e bloqueou a tarxeta. Aquela noite non puido durmir, porque pensaba en todos os seus documentos. Dous días despois chegou unha carta da policía. Unha muller atopara a carteira no autobús e leváraa á comisaría. Daniel foi alí de seguida. Non faltaba nada, nin sequera os cartos. O policía deulle o enderezo da muller, porque Daniel quería darlle as grazas. Ao día seguinte mercou flores e escribiulle unha tarxeta. Ela sorprendeuse e convidouno a un café. Falaron unha hora e agora son bos amigos. Desde entón Daniel sempre mira no peto antes de baixar do autobús.",
   "gloss": {
    "venres": "Friday",
    "pagar": "pay",
@@ -711,7 +709,7 @@
    ],
    [
     0,
-    "Vinte minutos. Abonda."
+    "Vinte minutos. Dá tempo."
    ],
    [
     1,
@@ -740,7 +738,6 @@
    "transbordo": "change",
    "tempo": "time",
    "minutos": "minutes",
-   "abonda": "it is enough",
    "custa": "cost",
    "pagar": "pay",
    "tarxeta": "card"
@@ -809,7 +806,7 @@
    ],
    [
     1,
-    "Preciso medicamentos?"
+    "Teño que tomar medicamentos?"
    ],
    [
     0,

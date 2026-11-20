@@ -3,7 +3,7 @@
   "id": "ms-market",
   "title": "Di pasar",
   "level": "A1",
-  "text": "Setiap hari Sabtu Maria pergi ke pasar. Pasar itu terletak di pusat bandar. Matahari bersinar dan ada ramai orang di sana. Maria suka pasar itu kerana buah-buahannya segar dan murah. Mula-mula dia membeli epal dan oren. Kemudian dia membeli roti, keju dan sedikit ikan. Penjual ikan di situ sangat peramah. Dia selalu bertanya tentang keluarganya. Di pasar Maria sering berjumpa dengan kawannya, Elena. Hari ini mereka minum kopi bersama-sama dan berbual lama. Pada tengah hari Maria pulang ke rumah dengan dua beg yang berat. Dia penat, tetapi gembira.",
+  "text": "Setiap hari Sabtu Maria pergi ke pasar. Pasar itu terletak di pusat bandar. Matahari bersinar dan ada ramai orang di sana. Maria suka pasar itu kerana buah-buahannya segar dan murah. Mula-mula dia membeli epal dan oren. Kemudian dia membeli roti, keju dan sedikit ikan. Penjual ikan di situ sangat peramah. Dia selalu bertanya khabar keluarga Maria. Di pasar Maria sering berjumpa dengan kawannya, Elena. Hari ini mereka minum kopi bersama-sama dan berbual lama. Pada tengah hari Maria pulang ke rumah dengan dua beg yang berat. Dia penat, tetapi gembira.",
   "gloss": {
    "pasar": "market",
    "pusat": "centre",
@@ -19,7 +19,6 @@
    "keju": "cheese",
    "ikan": "fish",
    "peramah": "friendly",
-   "keluarganya": "her family (keluarga: family)",
    "kawannya": "her friend (kawan: friend)",
    "bersama": "together",
    "berat": "heavy",
@@ -54,7 +53,7 @@
     "First she buys apples and oranges."
    ],
    [
-    "Dia selalu bertanya tentang keluarganya.",
+    "Dia selalu bertanya khabar keluarga Maria.",
     "He always asks about her family."
    ]
   ]
@@ -123,7 +122,7 @@
   "id": "ms-sea",
   "title": "Hujung minggu di tepi laut",
   "level": "A2",
-  "text": "Hujung minggu lalu saya dan abang saya pergi ke laut. Kami menaiki kereta api pada awal pagi dan perjalanan itu mengambil masa tiga jam. Cuaca sangat baik: langit biru dan airnya suam. Kami berenang lama, kemudian berbaring di pantai. Pada tengah hari kami makan ikan segar di sebuah restoran kecil berhampiran pelabuhan. Pelayan di situ peramah dan membawakan kami air sejuk. Pada waktu petang kami berjalan-jalan di bandar lama dan membeli poskad. Abang saya mengambil banyak gambar bot. Pada waktu malam kami sangat penat, tetapi kami belum mahu pulang. Kami terlepas kereta api terakhir dan terpaksa menunggu selama sejam. Itulah hari yang paling seronok pada musim panas ini. Lain kali kami mahu tinggal seminggu penuh.",
+  "text": "Hujung minggu lalu saya dan abang saya pergi ke tepi laut. Kami menaiki kereta api pada awal pagi dan perjalanan itu mengambil masa tiga jam. Cuaca sangat baik: langit biru dan air lautnya suam. Kami berenang lama, kemudian berbaring di pantai. Pada tengah hari kami makan ikan segar di sebuah restoran kecil berhampiran pelabuhan. Pelayan di situ peramah dan membawakan kami air sejuk. Pada waktu petang kami berjalan-jalan di bandar lama dan membeli poskad. Abang saya mengambil banyak gambar bot. Pada waktu malam kami sangat penat, tetapi kami belum mahu pulang. Kami terlepas kereta api dan terpaksa menunggu selama sejam. Itulah hari yang paling seronok pada musim panas ini. Lain kali kami mahu tinggal seminggu penuh.",
   "gloss": {
    "minggu": "week (hujung minggu: weekend)",
    "abang": "older brother",
@@ -134,7 +133,6 @@
    "cuaca": "weather",
    "langit": "sky",
    "biru": "blue",
-   "airnya": "the water (air: water)",
    "suam": "warm",
    "berenang": "swam",
    "pantai": "beach",
@@ -178,7 +176,7 @@
     "In the afternoon we walked through the old town and bought postcards."
    ],
    [
-    "Kami terlepas kereta api terakhir dan terpaksa menunggu selama sejam.",
+    "Kami terlepas kereta api dan terpaksa menunggu selama sejam.",
     "We missed the last train and had to wait an hour."
    ]
   ]
@@ -187,7 +185,7 @@
   "id": "ms-neighbour",
   "title": "Jiran baharu",
   "level": "A2",
-  "text": "Bulan lalu seorang jiran baharu berpindah ke bangunan kami. Namanya Sofia dan dia berasal dari bandar lain. Pada mulanya dia tidak mengenali sesiapa pun di sini. Pada suatu malam dia mengetuk pintu kami kerana lampu di dapurnya rosak. Ayah saya naik ke atas dan membaikinya dalam masa sepuluh minit. Sofia sangat berterima kasih dan pada keesokan harinya dia membawakan kami sebiji kek. Kek itu sangat sedap dan adik lelaki saya makan tiga potong. Sekarang Sofia sering minum teh bersama ibu saya. Dia bekerja di hospital dan menceritakan kisah-kisah yang menarik. Semalam dia membantu saya membuat kerja rumah. Pada hari Ahad kami menunjukkan taman dan pasar lama kepadanya. Dia berkata bahawa dia sudah berasa seperti di rumah sendiri. Saya rasa kami sudah mendapat kawan baharu.",
+  "text": "Bulan lalu seorang jiran baharu berpindah ke bangunan kami. Namanya Sofia dan dia berasal dari bandar lain. Pada mulanya dia tidak mengenali sesiapa pun di sini. Pada suatu malam dia mengetuk pintu kami kerana lampu di dapurnya rosak. Ayah saya naik ke atas dan membaikinya dalam masa sepuluh minit. Sofia sangat berterima kasih dan pada keesokan harinya dia membawakan kami sebiji kek. Kek itu sangat sedap dan adik lelaki saya makan tiga potong. Sekarang Sofia sering minum teh bersama ibu saya. Dia bekerja di hospital dan menceritakan kisah-kisah yang menarik. Semalam dia membantu saya membuat kerja rumah. Pada hari Ahad kami membawanya melihat taman dan pasar lama. Dia berkata bahawa dia sudah berasa seperti di rumah sendiri. Saya rasa kami sudah mendapat kawan baharu.",
   "gloss": {
    "jiran": "neighbour",
    "berpindah": "moved",
@@ -283,7 +281,7 @@
    ],
    [
     1,
-    "Tidak, terima kasih. Berapa harganya semua?"
+    "Tidak, terima kasih. Semuanya berapa?"
    ],
    [
     0,
@@ -363,7 +361,7 @@
    ],
    [
     1,
-    "Bagus. Adakah lif di sini? Beg pakaian saya berat."
+    "Bagus. Ada lif di sini? Beg pakaian saya berat."
    ],
    [
     0,
@@ -414,7 +412,7 @@
   "id": "ms-family",
   "title": "Keluarga saya",
   "level": "A1",
-  "text": "Nama saya Anna. Saya tinggal bersama keluarga saya di sebuah rumah kecil berhampiran sungai. Ibu saya seorang guru dan bapa saya bekerja di sebuah kedai. Saya ada seorang adik lelaki dan seorang adik perempuan. Adik lelaki saya berumur sepuluh tahun dan dia suka bola sepak. Adik perempuan saya masih kecil: umurnya tiga tahun. Kami juga ada seekor anjing, namanya Max. Setiap pagi bapa saya berjalan-jalan dengan anjing itu. Pada waktu malam kami makan bersama dan bercerita tentang hari kami. Selepas makan malam, saya dan adik saya membasuh pinggan. Pada hari Ahad nenek saya datang dan membawa kek. Saya sangat sayang akan keluarga saya.",
+  "text": "Nama saya Anna. Saya tinggal bersama keluarga saya di sebuah rumah kecil berhampiran sungai. Ibu saya seorang guru dan bapa saya bekerja di sebuah kedai. Saya ada seorang adik lelaki dan seorang adik perempuan. Adik lelaki saya berumur sepuluh tahun dan dia suka bola sepak. Adik perempuan saya masih kecil: umurnya tiga tahun. Kami juga ada seekor anjing, namanya Max. Setiap pagi bapa saya berjalan-jalan dengan anjing itu. Pada waktu malam kami makan bersama dan bercerita tentang apa yang kami buat pada hari itu. Selepas makan malam, saya dan adik saya membasuh pinggan. Pada hari Ahad nenek saya datang dan membawa kek. Saya sangat sayang akan keluarga saya.",
   "gloss": {
    "keluarga": "family",
    "rumah": "house",
@@ -539,7 +537,7 @@
   "id": "ms-birthday",
   "title": "Hari jadi Nenek",
   "level": "A2",
-  "text": "Semalam ialah hari jadi nenek saya. Sekarang Nenek berumur lapan puluh tahun. Seluruh keluarga datang ke rumahnya di kampung. Mak cik saya membuat kek yang besar dan pak cik saya membawa bunga. Kami memberinya sehelai selendang yang tebal dan sebuah buku tentang kebun bunga. Sebelum makan tengah hari kami menyanyikan sebuah lagu, dan Nenek ketawa. Di atas meja ada sup, ayam dengan kentang dan banyak salad. Selepas makan tengah hari, Nenek menunjukkan gambar-gambar lama kepada kami. Dalam salah satu gambar, Nenek seorang wanita muda dengan basikal. Nenek bercerita bahawa dia menunggang basikal itu ke tempat kerja setiap hari. Kemudian sepupu saya bermain gitar dan semua orang menari. Malah adik lelaki saya pun menari dengan Nenek. Pada waktu malam Nenek letih tetapi gembira. Katanya, itulah hari jadi yang terbaik dalam hidupnya. Kami pulang lewat malam, ketika bintang-bintang sudah ada di langit.",
+  "text": "Semalam ialah hari jadi nenek saya. Sekarang Nenek berumur lapan puluh tahun. Seluruh keluarga datang ke rumahnya di kampung. Mak cik saya membuat kek yang besar dan pak cik saya membawa bunga. Kami memberinya sehelai selendang yang tebal dan sebuah buku tentang kebun bunga. Sebelum makan tengah hari kami menyanyikan sebuah lagu, dan Nenek ketawa. Di atas meja ada sup, ayam dengan kentang dan banyak salad. Selepas makan tengah hari, Nenek menunjukkan gambar-gambar lama kepada kami. Dalam salah satu gambar, Nenek kelihatan muda bersama sebuah basikal. Nenek bercerita bahawa dia menunggang basikal itu ke tempat kerja setiap hari. Kemudian sepupu saya bermain gitar dan semua orang menari. Malah adik lelaki saya pun menari dengan Nenek. Pada waktu malam Nenek letih tetapi gembira. Katanya, itulah hari jadi yang terbaik dalam hidupnya. Kami pulang lewat malam, ketika bintang-bintang sudah ada di langit.",
   "gloss": {
    "semalam": "yesterday",
    "jadi": "(hari jadi: birthday)",
@@ -606,7 +604,7 @@
   "id": "ms-wallet",
   "title": "Dompet yang hilang",
   "level": "B1",
-  "text": "Jumaat lepas Daniel mahu membayar di pasar raya, tetapi dompetnya tiada di dalam poketnya. Dia sangat risau, kerana kad bank dan lesen memandunya ada di dalam dompet itu. Dia meninggalkan barang-barangnya di kaunter dan berpatah balik melalui jalan yang sama. Dia mencari di merata-rata tempat, di kaki lima dan di perhentian bas, tetapi tidak menjumpai apa-apa. Di rumah dia menelefon bank dan menyekat kadnya. Malam itu dia tidak dapat tidur, kerana memikirkan semua dokumennya. Dua hari kemudian sepucuk surat daripada polis tiba. Seorang wanita telah menjumpai dompet itu di dalam bas dan membawanya ke balai polis. Daniel terus pergi ke sana. Tiada apa-apa yang hilang, malah wangnya pun masih ada. Pegawai polis memberinya alamat wanita itu, kerana Daniel mahu mengucapkan terima kasih kepadanya. Keesokan harinya dia membeli bunga dan menulis sekeping kad untuknya. Wanita itu terkejut dan mengajaknya minum kopi. Mereka berbual selama sejam, dan sekarang mereka berkawan baik. Sejak itu Daniel selalu memeriksa poketnya sebelum turun dari bas.",
+  "text": "Jumaat lepas Daniel mahu membayar di pasar raya, tetapi dompetnya tiada di dalam poketnya. Dia sangat risau, kerana kad bank dan lesen memandunya ada di dalam dompet itu. Dia meninggalkan barang-barangnya di kaunter dan berpatah balik melalui jalan yang sama. Dia mencari di merata-rata tempat, di kaki lima dan di perhentian bas, tetapi tidak menjumpai apa-apa. Di rumah dia menelefon bank dan menyekat kadnya. Malam itu dia tidak dapat tidur, kerana memikirkan semua dokumennya. Dua hari kemudian dia menerima sepucuk surat daripada polis. Seorang wanita telah menjumpai dompet itu di dalam bas dan membawanya ke balai polis. Daniel terus pergi ke sana. Tiada apa-apa yang hilang, malah wangnya pun masih ada. Pegawai polis memberinya alamat wanita itu, kerana Daniel mahu mengucapkan terima kasih kepadanya. Keesokan harinya dia membeli bunga dan menulis sekeping kad untuknya. Wanita itu terkejut dan mengajaknya minum kopi. Mereka berbual selama sejam, dan sekarang mereka berkawan baik. Sejak itu Daniel selalu memeriksa poketnya sebelum turun dari bas.",
   "gloss": {
    "jumaat": "Friday",
    "membayar": "pay",
@@ -707,7 +705,7 @@
    ],
    [
     1,
-    "Berapa lamakah masa saya di sana?"
+    "Berapa lama masa yang saya ada di sana?"
    ],
    [
     0,
@@ -789,7 +787,7 @@
    ],
    [
     0,
-    "Adakah kepala anda sakit juga?"
+    "Adakah anda sakit kepala juga?"
    ],
    [
     1,
