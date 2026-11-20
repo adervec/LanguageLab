@@ -3,7 +3,7 @@
   "id": "fi-market",
   "title": "Torilla",
   "level": "A1",
-  "text": "Maria käy torilla joka lauantai. Tori on kaupungin keskustassa. Aurinko paistaa, ja torilla on paljon ihmisiä. Maria pitää torista, koska hedelmät ovat siellä tuoreita ja halpoja. Ensin hän ostaa omenoita ja appelsiineja. Sitten hän ostaa leipää, juustoa ja vähän kalaa. Kalakauppias on hyvin ystävällinen mies. Hän kysyy aina Marian perheen kuulumisia. Torilla Maria tapaa usein ystävänsä Elenan. Tänään he juovat yhdessä kahvia ja juttelevat pitkään. He puhuvat työstä, lapsista ja kesästä. Kello kaksitoista Maria lähtee kotiin kaksi painavaa kassia kädessään. Hän on väsynyt mutta onnellinen.",
+  "text": "Maria käy torilla joka lauantai. Tori on kaupungin keskustassa. Aurinko paistaa, ja torilla on paljon ihmisiä. Maria pitää torista, koska hedelmät ovat siellä tuoreita ja halpoja. Ensin hän ostaa omenoita ja appelsiineja. Sitten hän ostaa leipää, juustoa ja vähän kalaa. Kalakauppias on hyvin ystävällinen mies. Hän kysyy aina Marian perheen kuulumisia. Torilla Maria tapaa usein ystävänsä Elenan. Tänään he juovat yhdessä kahvia ja juttelevat pitkään. He puhuvat työstä, lapsista ja kesästä. Kello kaksitoista Maria lähtee kotiin kaksi painavaa kassia käsissään. Hän on väsynyt mutta onnellinen.",
   "gloss": {
    "tori": "market",
    "keskustassa": "centre",
@@ -63,13 +63,12 @@
   "id": "fi-day",
   "title": "Minun päiväni",
   "level": "A1",
-  "text": "Nimeni on Daniel, ja asun pienessä asunnossa. Herään joka aamu kello seitsemän. Aamulla minulla ei ole koskaan kiire. Ensin juon teetä ja syön leipää ja voita. Sitten menen töihin bussilla. Olen töissä kirjakaupassa kaupungin keskustassa. Pidän työstäni, koska rakastan kirjoja. Kello kaksitoista syön keittoa pienessä ravintolassa. Iltapäivällä kauppaan tulee paljon asiakkaita. Juttelen heidän kanssaan mielelläni kirjoista. Illalla menen kotiin ja laitan päivällistä. Päivällisen jälkeen soitan äidilleni tai luen kirjaa. Menen nukkumaan kello yksitoista. Sunnuntaina en ole töissä, ja silloin nukun pidempään.",
+  "text": "Nimeni on Daniel, ja asun pienessä asunnossa. Herään joka aamu kello seitsemän. Aamulla minulla ei ole koskaan kiire. Ensin juon teetä ja syön voileipää. Sitten menen töihin bussilla. Olen töissä kirjakaupassa kaupungin keskustassa. Pidän työstäni, koska rakastan kirjoja. Kello kaksitoista syön keittoa pienessä ravintolassa. Iltapäivällä kauppaan tulee paljon asiakkaita. Juttelen heidän kanssaan mielelläni kirjoista. Illalla menen kotiin ja laitan päivällistä. Päivällisen jälkeen soitan äidilleni tai luen kirjaa. Menen nukkumaan kello yksitoista. Sunnuntaina en ole töissä, ja silloin nukun pidempään.",
   "gloss": {
    "asunnossa": "flat",
    "herään": "I wake up",
    "aamu": "morning",
    "teetä": "tea",
-   "voita": "butter",
    "töihin": "to work",
    "bussilla": "bus",
    "kirjakaupassa": "bookshop",
@@ -124,11 +123,10 @@
   "id": "fi-sea",
   "title": "Viikonloppu meren rannalla",
   "level": "A2",
-  "text": "Viime viikonloppuna lähdimme veljeni kanssa merelle. Nousimme junaan aikaisin aamulla, ja matka kesti kolme tuntia. Sää oli ihana: taivas oli sininen ja vesi lämmintä. Meri oli tyyni, ja rannalla oli vain vähän ihmisiä. Uimme pitkään ja makasimme sitten rannalla. Kello kaksitoista söimme tuoretta kalaa pienessä ravintolassa sataman lähellä. Tarjoilija oli ystävällinen ja toi meille kylmää vettä. Iltapäivällä kävelimme vanhassa kaupungissa ja ostimme postikortteja. Veljeni otti paljon valokuvia veneistä. Illalla olimme hyvin väsyneitä, mutta emme halunneet lähteä kotiin. Myöhästyimme viimeisestä junasta, ja meidän piti odottaa tunti. Asemalla joimme vielä kupin kahvia. Se oli kesän paras päivä. Ensi kerralla haluamme jäädä kokonaiseksi viikoksi.",
+  "text": "Viime viikonloppuna lähdimme veljeni kanssa meren rannalle. Nousimme junaan aikaisin aamulla, ja matka kesti kolme tuntia. Sää oli ihana: taivas oli sininen ja vesi lämmintä. Meri oli tyyni, ja rannalla oli vain vähän ihmisiä. Uimme pitkään ja makasimme sitten rannalla. Kello kaksitoista söimme tuoretta kalaa pienessä ravintolassa sataman lähellä. Tarjoilija oli ystävällinen ja toi meille kylmää vettä. Iltapäivällä kävelimme vanhassa kaupungissa ja ostimme postikortteja. Veljeni otti paljon valokuvia veneistä. Illalla olimme hyvin väsyneitä, mutta emme halunneet lähteä kotiin. Myöhästyimme junasta, ja meidän piti odottaa seuraavaa junaa tunnin. Asemalla joimme vielä kahvit. Se oli kesän paras päivä. Ensi kerralla haluamme jäädä kokonaiseksi viikoksi.",
   "gloss": {
    "viikonloppuna": "weekend",
    "veljeni": "brother",
-   "merelle": "sea",
    "junaan": "train",
    "matka": "journey",
    "tuntia": "hours",
@@ -179,7 +177,7 @@
     "In the afternoon we walked through the old town and bought postcards."
    ],
    [
-    "Myöhästyimme viimeisestä junasta, ja meidän piti odottaa tunti.",
+    "Myöhästyimme junasta, ja meidän piti odottaa seuraavaa junaa tunnin.",
     "We missed the last train and had to wait an hour."
    ]
   ]
@@ -188,7 +186,7 @@
   "id": "fi-neighbour",
   "title": "Uusi naapuri",
   "level": "A2",
-  "text": "Viime kuussa taloomme muutti uusi naapuri. Hänen nimensä on Sofia, ja hän on kotoisin toisesta kaupungista. Aluksi hän ei tuntenut täällä ketään. Eräänä iltana hän koputti oveemme, koska hänen keittiönsä lamppu oli rikki. Isäni meni yläkertaan ja korjasi sen kymmenessä minuutissa. Sofia oli hyvin kiitollinen ja toi meille seuraavana päivänä kakun. Kakku oli herkullinen, ja pikkuveljeni söi kolme palaa. Nykyään Sofia juo usein teetä äitini kanssa. Hän on töissä sairaalassa ja kertoo kiinnostavia tarinoita. Eilen hän auttoi minua läksyissä. Sunnuntaina näytimme hänelle puiston ja vanhan torin. Hän sanoo, että tuntee jo olevansa kotonaan. Luulen, että olemme saaneet uuden ystävän.",
+  "text": "Viime kuussa taloomme muutti uusi naapuri. Hänen nimensä on Sofia, ja hän on kotoisin toisesta kaupungista. Aluksi hän ei tuntenut täällä ketään. Eräänä iltana hän koputti oveemme, koska hänen keittiönsä lamppu oli rikki. Isäni meni yläkertaan ja korjasi sen kymmenessä minuutissa. Sofia oli hyvin kiitollinen ja toi meille seuraavana päivänä kakun. Kakku oli herkullinen, ja pikkuveljeni söi kolme palaa. Nykyään Sofia juo usein teetä äitini kanssa. Hän on töissä sairaalassa ja kertoo kiinnostavia tarinoita. Eilen hän auttoi minua läksyissä. Sunnuntaina näytimme hänelle puiston ja vanhan torin. Hän sanoo, että hänellä on täällä jo kotoisa olo. Luulen, että olemme saaneet uuden ystävän.",
   "gloss": {
    "naapuri": "neighbour",
    "muutti": "moved",
@@ -269,7 +267,7 @@
    ],
    [
     1,
-    "Kyllä, mitä kakkuja teillä on tänään?"
+    "Kyllä kiitos. Mitä kakkuja teillä on tänään?"
    ],
    [
     0,
@@ -365,7 +363,7 @@
    ],
    [
     1,
-    "Oikein hyvä. Onko täällä hissi? Matkalaukkuni on painava."
+    "Hienoa. Onko täällä hissi? Matkalaukkuni on painava."
    ],
    [
     0,
@@ -479,7 +477,7 @@
   "id": "fi-town",
   "title": "Meidän kaupunkimme",
   "level": "A1",
-  "text": "Meidän kaupunkimme on pieni mutta kaunis. Keskustassa on vanha tori, jolla on suihkulähde. Torin vieressä on koulu, apteekki ja kaksi kahvilaa. Asema on puiston takana. Joka aamu moni ihminen matkustaa junalla suureen kaupunkiin. Iltapäivällä lapset leikkivät puistossa, ja vanhat miehet pelaavat shakkia. Kesällä tulee turisteja, ja he ottavat kuvia sillasta. Talvella kaupunki on hiljainen. Lauantaisin torilla on markkinat. Sieltä voi ostaa vihanneksia, hunajaa ja kukkia. Illalla kävelen mielelläni joen rannalla. En halua asua suuressa kaupungissa.",
+  "text": "Meidän kaupunkimme on pieni mutta kaunis. Keskustassa on vanha tori, jonka keskellä on suihkulähde. Torin vieressä on koulu, apteekki ja kaksi kahvilaa. Asema on puiston takana. Joka aamu moni ihminen matkustaa junalla suureen kaupunkiin. Iltapäivällä lapset leikkivät puistossa, ja vanhat miehet pelaavat shakkia. Kesällä tulee turisteja, ja he ottavat kuvia sillasta. Talvella kaupunki on hiljainen. Lauantaisin torilla on markkinat. Sieltä voi ostaa vihanneksia, hunajaa ja kukkia. Illalla kävelen mielelläni joen rannalla. En halua asua suuressa kaupungissa.",
   "gloss": {
    "kaupunkimme": "our town",
    "kaunis": "beautiful",
@@ -543,7 +541,7 @@
   "id": "fi-birthday",
   "title": "Isoäidin syntymäpäivä",
   "level": "A2",
-  "text": "Eilen oli isoäitini syntymäpäivä. Hän on nyt kahdeksankymmentä vuotta vanha. Koko perhe tuli hänen taloonsa, joka on pienessä kylässä. Tätini leipoi suuren kakun, ja setäni toi kukkia. Annoimme hänelle lämpimän kaulahuivin ja kirjan puutarhoista. Ennen lounasta lauloimme laulun, ja isoäiti nauroi. Pöydässä oli keittoa, kanaa ja perunoita sekä paljon salaattia. Lounaan jälkeen hän näytti meille vanhoja valokuvia. Yhdessä kuvassa hän oli nuori nainen polkupyörän kanssa. Hän kertoi, että hän ajoi sillä töihin joka päivä. Sitten serkkuni soitti kitaraa, ja kaikki tanssivat. Jopa pikkuveljeni tanssi isoäidin kanssa. Illalla hän oli väsynyt mutta onnellinen. Hän sanoi, että se oli hänen elämänsä paras syntymäpäivä. Lähdimme kotiin myöhään, kun tähdet olivat jo taivaalla.",
+  "text": "Eilen oli isoäitini syntymäpäivä. Hän on nyt kahdeksankymmentä vuotta vanha. Koko perhe tuli hänen taloonsa, joka on pienessä kylässä. Tätini leipoi suuren kakun, ja setäni toi kukkia. Annoimme hänelle lämpimän kaulahuivin ja kirjan puutarhoista. Ennen lounasta lauloimme laulun, ja isoäiti nauroi. Pöydällä oli keittoa, kanaa ja perunoita sekä paljon salaattia. Lounaan jälkeen hän näytti meille vanhoja valokuvia. Yhdessä kuvassa hän oli nuori nainen, ja hänellä oli polkupyörä. Hän kertoi, että hän ajoi sillä töihin joka päivä. Sitten serkkuni soitti kitaraa, ja kaikki tanssivat. Jopa pikkuveljeni tanssi isoäidin kanssa. Illalla hän oli väsynyt mutta onnellinen. Hän sanoi, että se oli hänen elämänsä paras syntymäpäivä. Lähdimme kotiin myöhään, kun tähdet olivat jo taivaalla.",
   "gloss": {
    "eilen": "yesterday",
    "syntymäpäivä": "birthday",
@@ -564,7 +562,6 @@
    "perunoita": "potatoes",
    "näytti": "showed",
    "nuori": "young",
-   "polkupyörän": "bicycle",
    "serkkuni": "my cousin",
    "kitaraa": "guitar",
    "tanssivat": "danced",
@@ -610,7 +607,7 @@
   "id": "fi-wallet",
   "title": "Kadonnut lompakko",
   "level": "B1",
-  "text": "Viime perjantaina Daniel halusi maksaa supermarketissa, mutta lompakko ei ollut hänen taskussaan. Hän oli hyvin huolissaan, koska lompakossa olivat hänen pankkikorttinsa ja ajokorttinsa. Hän jätti ostokset kassalle ja palasi samaa tietä takaisin. Hän etsi kaikkialta, jalkakäytävältä ja bussipysäkiltä, mutta ei löytänyt mitään. Kotona hän soitti pankkiin ja sulki kortin. Sinä yönä hän ei saanut unta, koska hän ajatteli kaikkia papereitaan. Kahden päivän kuluttua poliisilta tuli kirje. Eräs nainen oli löytänyt lompakon bussista ja vienyt sen poliisiasemalle. Daniel lähti sinne heti. Mitään ei puuttunut, eivät edes rahat. Poliisi antoi hänelle naisen osoitteen, koska Daniel halusi kiittää häntä. Seuraavana päivänä hän osti kukkia ja kirjoitti naiselle kortin. Nainen yllättyi ja kutsui hänet kahville. He juttelivat tunnin, ja nyt he ovat hyviä ystäviä. Siitä lähtien Daniel tarkistaa aina taskunsa, ennen kuin hän jää pois bussista.",
+  "text": "Viime perjantaina Daniel halusi maksaa supermarketissa, mutta lompakko ei ollut hänen taskussaan. Hän oli hyvin huolissaan, koska lompakossa olivat hänen pankkikorttinsa ja ajokorttinsa. Hän jätti ostokset kassalle ja palasi samaa tietä takaisin. Hän etsi kaikkialta, jalkakäytävältä ja bussipysäkiltä, mutta ei löytänyt mitään. Kotona hän soitti pankkiin ja sulki kortin. Sinä yönä hän ei saanut unta, koska hän ajatteli kaikkia papereitaan. Kahden päivän kuluttua poliisilta tuli kirje. Eräs nainen oli löytänyt lompakon bussista ja vienyt sen poliisiasemalle. Daniel lähti sinne heti. Mitään ei puuttunut, rahatkin olivat tallella. Poliisi antoi hänelle naisen osoitteen, koska Daniel halusi kiittää häntä. Seuraavana päivänä hän osti kukkia ja kirjoitti naiselle kortin. Nainen yllättyi ja kutsui hänet kahville. He juttelivat tunnin, ja nyt he ovat hyviä ystäviä. Siitä lähtien Daniel tarkistaa aina taskunsa, ennen kuin hän jää pois bussista.",
   "gloss": {
    "perjantaina": "on Friday",
    "maksaa": "pay",
@@ -632,7 +629,6 @@
    "kirje": "letter",
    "poliisilta": "from the police",
    "puuttunut": "been missing",
-   "rahat": "money",
    "osoitteen": "address",
    "kiittää": "thank",
    "yllättyi": "was surprised",
@@ -724,7 +720,7 @@
    ],
    [
     0,
-    "Kolmekymmentäneljä euroa. Haluatko maksaa kortilla?"
+    "Kolmekymmentäneljä euroa. Maksatko kortilla?"
    ],
    [
     1,
@@ -801,7 +797,7 @@
    ],
    [
     0,
-    "Avaa suusi, ole hyvä. Kyllä, kurkkusi on hyvin punainen."
+    "Avaa suu. Niin, kurkkusi on hyvin punainen."
    ],
    [
     1,
@@ -842,7 +838,6 @@
    "kipeä": "sore",
    "varsinkin": "especially",
    "nukun": "I sleep",
-   "suusi": "your mouth",
    "punainen": "red",
    "vakavaa": "serious",
    "lepoa": "rest",

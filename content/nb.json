@@ -3,7 +3,7 @@
   "id": "nb-market",
   "title": "På markedet",
   "level": "A1",
-  "text": "Hver lørdag går Maria på markedet. Markedet ligger i sentrum av byen. Solen skinner, og det er mange mennesker der. Maria liker markedet, fordi frukten er fersk og billig. Først kjøper hun epler og appelsiner. Så kjøper hun brød, ost og litt fisk. Mannen i fiskeboden er veldig vennlig. Han spør alltid om familien hennes. På markedet treffer Maria ofte venninnen sin, Elena. I dag drikker de kaffe sammen og snakker lenge. Klokken tolv går Maria hjem med to tunge poser. Hun er trøtt, men glad.",
+  "text": "Hver lørdag går Maria på markedet. Markedet ligger i sentrum av byen. Solen skinner, og det er mange mennesker der. Maria liker markedet fordi frukten er fersk og billig. Først kjøper hun epler og appelsiner. Så kjøper hun brød, ost og litt fisk. Mannen i fiskeboden er veldig vennlig. Han spør alltid om familien hennes. På markedet treffer Maria ofte venninnen sin, Elena. I dag drikker de kaffe sammen og snakker lenge. Klokken tolv går Maria hjem med to tunge poser. Hun er trøtt, men glad.",
   "gloss": {
    "markedet": "market",
    "sentrum": "centre",
@@ -63,7 +63,7 @@
   "id": "nb-day",
   "title": "Dagen min",
   "level": "A1",
-  "text": "Jeg heter Daniel og bor i en liten leilighet. Hver morgen står jeg opp klokken sju. Først drikker jeg te og spiser brød med smør. Så drar jeg til jobben med buss. Jeg jobber i en bokhandel i sentrum av byen. Jeg liker jobben min, fordi jeg elsker bøker. Klokken tolv spiser jeg suppe på en liten restaurant. Om ettermiddagen kommer det mange kunder til butikken. Om kvelden drar jeg hjem og lager middag. Etter middagen ringer jeg til moren min eller leser en bok. Jeg legger meg klokken elleve. På søndager jobber jeg ikke, og da sover jeg lenger.",
+  "text": "Jeg heter Daniel og bor i en liten leilighet. Hver morgen står jeg opp klokken sju. Først drikker jeg te og spiser brød med smør. Så tar jeg bussen til jobben. Jeg jobber i en bokhandel i sentrum av byen. Jeg liker jobben min fordi jeg elsker bøker. Klokken tolv spiser jeg suppe på en liten restaurant. Om ettermiddagen kommer det mange kunder til butikken. Om kvelden drar jeg hjem og lager middag. Etter middagen ringer jeg til moren min eller leser en bok. Jeg legger meg klokken elleve. På søndager jobber jeg ikke, og da sover jeg lenger.",
   "gloss": {
    "leilighet": "flat",
    "står": "(står opp: get up)",
@@ -71,7 +71,6 @@
    "te": "tea",
    "smør": "butter",
    "jobben": "work",
-   "buss": "bus",
    "bokhandel": "bookshop",
    "byen": "city",
    "bøker": "books",
@@ -111,7 +110,7 @@
   "notice": "The verb always takes the second place in a Norwegian sentence. When the sentence starts with a time, the subject moves behind the verb: \"Hver morgen står jeg opp\", \"Så drar jeg til jobben\".",
   "back": [
    [
-    "Så drar jeg til jobben med buss.",
+    "Så tar jeg bussen til jobben.",
     "Then I go to work by bus."
    ],
    [
@@ -124,7 +123,7 @@
   "id": "nb-sea",
   "title": "En helg ved sjøen",
   "level": "A2",
-  "text": "Forrige helg dro broren min og jeg til sjøen. Vi tok et tog tidlig om morgenen, og reisen varte i tre timer. Været var nydelig: himmelen var blå og vannet varmt. Vi svømte lenge, og etterpå lå vi på stranden. Klokken tolv spiste vi fersk fisk på en liten restaurant ved havnen. Servitøren var vennlig og kom med kaldt vann til oss. Om ettermiddagen gikk vi gjennom gamlebyen og kjøpte postkort. Broren min tok mange bilder av båtene. Om kvelden var vi veldig trøtte, men vi ville ikke dra hjem. Vi mistet det siste toget og måtte vente en time. Det var den beste dagen i sommer. Neste gang vil vi bli en hel uke.",
+  "text": "Forrige helg dro broren min og jeg til sjøen. Vi tok et tog tidlig om morgenen, og reisen varte i tre timer. Været var nydelig: himmelen var blå og vannet varmt. Vi svømte lenge, og etterpå lå vi på stranden. Klokken tolv spiste vi fersk fisk på en liten restaurant ved havnen. Servitøren var vennlig og kom med kaldt vann til oss. Om ettermiddagen gikk vi gjennom gamlebyen og kjøpte postkort. Broren min tok mange bilder av båtene. Om kvelden var vi veldig trøtte, men vi ville ikke dra hjem. Vi mistet toget og måtte vente en time på det neste. Det var den beste dagen i sommer. Neste gang vil vi bli der en hel uke.",
   "gloss": {
    "helg": "weekend",
    "broren": "brother",
@@ -180,7 +179,7 @@
     "In the afternoon we walked through the old town and bought postcards."
    ],
    [
-    "Vi mistet det siste toget og måtte vente en time.",
+    "Vi mistet toget og måtte vente en time på det neste.",
     "We missed the last train and had to wait an hour."
    ]
   ]
@@ -189,7 +188,7 @@
   "id": "nb-neighbour",
   "title": "Den nye naboen",
   "level": "A2",
-  "text": "Forrige måned flyttet en ny nabo inn i huset vårt. Hun heter Sofia og kommer fra en annen by. I begynnelsen kjente hun ingen her. En kveld banket hun på døren vår, fordi lampen på kjøkkenet hennes var ødelagt. Faren min gikk opp og reparerte den på ti minutter. Sofia var veldig takknemlig, og neste dag kom hun med en kake til oss. Kaken var deilig, og lillebroren min spiste tre stykker. Nå drikker Sofia ofte te sammen med moren min. Hun jobber på et sykehus og forteller interessante historier. I går hjalp hun meg med leksene. På søndag viste vi henne parken og det gamle markedet. Hun sier at hun allerede føler seg hjemme. Jeg tror vi har funnet en ny venn.",
+  "text": "Forrige måned flyttet det en ny nabo inn i huset vårt. Hun heter Sofia og kommer fra en annen by. I begynnelsen kjente hun ingen her. En kveld banket hun på døren vår fordi lampen på kjøkkenet hennes var ødelagt. Faren min gikk opp og reparerte den på ti minutter. Sofia var veldig takknemlig, og neste dag kom hun med en kake til oss. Kaken var deilig, og lillebroren min spiste tre stykker. Nå drikker Sofia ofte te sammen med moren min. Hun jobber på et sykehus og forteller interessante historier. I går hjalp hun meg med leksene. På søndag viste vi henne parken og det gamle markedet. Hun sier at hun allerede føler seg hjemme. Jeg tror vi har funnet en ny venn.",
   "gloss": {
    "nabo": "neighbour",
    "flyttet": "moved",
@@ -281,7 +280,7 @@
    ],
    [
     0,
-    "Vær så god. Var det noe annet?"
+    "Vær så god. Var det noe mer?"
    ],
    [
     1,
@@ -306,7 +305,6 @@
    "eplekake": "apple cake",
    "sjokoladekake": "chocolate cake",
    "stykke": "piece",
-   "annet": "else",
    "mye": "much",
    "kroner": "kroner (Norwegian money)"
   },
@@ -345,7 +343,7 @@
    ],
    [
     0,
-    "Hva er navnet ditt?"
+    "Hvilket navn står reservasjonen på?"
    ],
    [
     1,
@@ -380,7 +378,6 @@
    "hjelpe": "help",
    "reservasjon": "reservation",
    "netter": "nights",
-   "navnet": "name",
    "passet": "passport",
    "rommet": "room",
    "etasje": "floor",
@@ -416,7 +413,7 @@
   "id": "nb-family",
   "title": "Familien min",
   "level": "A1",
-  "text": "Jeg heter Anna. Jeg bor sammen med familien min i et lite hus ved elva. Moren min er lærer, og faren min jobber i en butikk. Jeg har en bror og en søster. Broren min er ti år gammel, og han liker fotball. Søsteren min er fortsatt liten: hun er tre år. Vi har også en hund, og han heter Max. Hver morgen går faren min tur med hunden. Om kvelden spiser vi sammen og snakker om dagen. Etter middag vasker broren min og jeg opp. På søndag kommer bestemoren min og tar med en kake. Jeg er veldig glad i familien min.",
+  "text": "Jeg heter Anna. Jeg bor sammen med familien min i et lite hus ved elva. Moren min er lærer, og faren min jobber i en butikk. Jeg har en bror og en søster. Broren min er ti år gammel, og han liker fotball. Søsteren min er fortsatt liten: hun er tre år. Vi har også en hund, og han heter Max. Hver morgen går faren min tur med hunden. Om kvelden spiser vi sammen og snakker om dagen. Etter middag vasker broren min og jeg opp. På søndager kommer bestemoren min og tar med en kake. Jeg er veldig glad i familien min.",
   "gloss": {
    "familien": "family",
    "hus": "house",
@@ -438,7 +435,6 @@
    "sammen": "together",
    "middag": "dinner",
    "vasker": "(vasker opp: wash the dishes)",
-   "søndag": "Sunday",
    "bestemoren": "grandmother",
    "kake": "cake"
   },
@@ -470,7 +466,7 @@
     "My mother is a teacher and my father works in a shop."
    ],
    [
-    "På søndag kommer bestemoren min og tar med en kake.",
+    "På søndager kommer bestemoren min og tar med en kake.",
     "On Sunday my grandmother comes and brings a cake."
    ]
   ]
@@ -479,7 +475,7 @@
   "id": "nb-town",
   "title": "Byen vår",
   "level": "A1",
-  "text": "Byen vår er liten, men den er vakker. I sentrum er det et gammelt torg med en fontene. Ved siden av torget ligger en skole, et apotek og to kafeer. Stasjonen ligger bak parken. Hver morgen tar mange mennesker toget til storbyen. Om ettermiddagen leker barna i parken, og gamle menn spiller sjakk. Om sommeren kommer turistene og tar bilder av brua. Om vinteren er byen stille. På lørdag er det marked på torget. Der kan du kjøpe grønnsaker, honning og blomster. Om kvelden liker jeg å gå tur langs elva. Jeg vil ikke bo i en stor by.",
+  "text": "Byen vår er liten, men den er vakker. I sentrum er det et gammelt torg med en fontene. Ved siden av torget ligger det en skole, et apotek og to kafeer. Stasjonen ligger bak parken. Hver morgen tar mange mennesker toget til storbyen. Om ettermiddagen leker barna i parken, og gamle menn spiller sjakk. Om sommeren kommer turistene og tar bilder av brua. Om vinteren er byen stille. På lørdager er det marked på torget. Der kan du kjøpe grønnsaker, honning og blomster. Om kvelden liker jeg å gå tur langs elva. Jeg vil ikke bo i en stor by.",
   "gloss": {
    "byen": "town",
    "vakker": "beautiful",
@@ -500,7 +496,6 @@
    "brua": "bridge",
    "vinteren": "winter",
    "stille": "quiet",
-   "lørdag": "Saturday",
    "grønnsaker": "vegetables",
    "honning": "honey",
    "blomster": "flowers",
@@ -542,7 +537,7 @@
   "id": "nb-birthday",
   "title": "Bestemors bursdag",
   "level": "A2",
-  "text": "I går hadde bestemoren min bursdag. Hun er åtti år nå. Hele familien kom til huset hennes i landsbyen. Tanten min bakte en stor kake, og onkelen min tok med blomster. Vi ga henne et varmt skjerf og en bok om hager. Før lunsj sang vi en sang, og bestemor lo. På bordet sto det suppe, kylling med poteter og mye salat. Etter lunsj viste hun oss gamle bilder. På ett bilde var hun en ung kvinne med en sykkel. Hun fortalte at hun syklet til jobb hver dag. Så spilte fetteren min gitar, og alle danset. Til og med lillebroren min danset med bestemor. Om kvelden var hun trøtt, men glad. Hun sa at det var den beste bursdagen i hennes liv. Vi dro sent hjem, da stjernene allerede var på himmelen.",
+  "text": "I går hadde bestemoren min bursdag. Hun er åtti år nå. Hele familien kom til huset hennes i landsbyen. Tanten min bakte en stor kake, og onkelen min tok med blomster. Vi ga henne et varmt skjerf og en bok om hager. Før lunsj sang vi en sang, og bestemor lo. På bordet sto det suppe, kylling med poteter og mye salat. Etter lunsj viste hun oss gamle bilder. På ett bilde var hun en ung kvinne med en sykkel. Hun fortalte at hun syklet til jobb hver dag. Så spilte fetteren min gitar, og alle danset. Til og med lillebroren min danset med bestemor. Om kvelden var hun trøtt, men glad. Hun sa at det var den beste bursdagen i livet hennes. Vi dro sent hjem, da stjernene allerede var på himmelen.",
   "gloss": {
    "går": "(i går: yesterday)",
    "bursdag": "birthday",
@@ -568,7 +563,6 @@
    "danset": "danced",
    "trøtt": "tired",
    "beste": "best",
-   "liv": "life",
    "stjernene": "stars"
   },
   "questions": [
@@ -608,7 +602,7 @@
   "id": "nb-wallet",
   "title": "Den tapte lommeboka",
   "level": "B1",
-  "text": "Sist fredag skulle Daniel betale på supermarkedet, men lommeboka var ikke i lomma. Han ble veldig bekymret, for både bankkortet og førerkortet lå i den. Han lot varene stå ved kassen og gikk den samme veien tilbake. Han lette overalt, på fortauet og ved bussholdeplassen, men han fant ingenting. Hjemme ringte han banken og sperret kortet. Den natten fikk han ikke sove, fordi han tenkte på alle dokumentene sine. To dager senere kom det et brev fra politiet. En kvinne hadde funnet lommeboka på bussen og levert den på politistasjonen. Daniel dro dit med en gang. Ingenting manglet, ikke engang pengene. Politibetjenten ga ham adressen til kvinnen, fordi han ville takke henne. Neste dag kjøpte han blomster og skrev et kort til henne. Hun ble overrasket og inviterte ham på kaffe. De snakket sammen i en time, og nå er de gode venner. Siden den gang sjekker Daniel alltid lomma før han går av bussen.",
+  "text": "Sist fredag skulle Daniel betale på supermarkedet, men lommeboka var ikke i lomma. Han ble veldig bekymret, for både bankkortet og førerkortet lå i den. Han lot varene stå ved kassen og gikk samme vei tilbake. Han lette overalt, på fortauet og ved bussholdeplassen, men han fant ingenting. Hjemme ringte han banken og sperret kortet. Den natten fikk han ikke sove fordi han tenkte på alle dokumentene sine. To dager senere kom det et brev fra politiet. En kvinne hadde funnet lommeboka på bussen og levert den på politistasjonen. Daniel dro dit med en gang. Ingenting manglet, ikke engang pengene. Politibetjenten ga ham adressen til kvinnen fordi han ville takke henne. Neste dag kjøpte han blomster og skrev et kort til henne. Hun ble overrasket og inviterte ham på kaffe. De snakket sammen i en time, og nå er de gode venner. Siden den gang sjekker Daniel alltid lomma før han går av bussen.",
   "gloss": {
    "fredag": "Friday",
    "betale": "pay",
@@ -713,7 +707,7 @@
    ],
    [
     0,
-    "Tjue minutter. Det er nok."
+    "Tjue minutter. Det holder."
    ],
    [
     1,
@@ -742,7 +736,6 @@
    "bytte": "change",
    "tid": "time",
    "minutter": "minutes",
-   "nok": "enough",
    "koster": "cost",
    "betale": "pay",
    "kort": "card"
@@ -787,7 +780,7 @@
    ],
    [
     1,
-    "Ja, i går kveld var den trettiåtte og en halv."
+    "Ja, i går kveld hadde jeg trettiåtte og en halv."
    ],
    [
     0,

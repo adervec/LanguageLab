@@ -363,8 +363,9 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   Vietnamese. Swedish, Czech, Romanian, Hungarian, Thai and Persian came
   next: 10, 10, 10, 8, 16 and 11 marked, 65 changed, twelve of them called wrong (the train in five; a Swedish
   driving licence that showed an address, which it does not; a Romanian card of congratulation sent as thanks; a
-  Thai customer taking leave of a cashier as if for ever). The twelve texts of each of the remaining 18
-  languages have not been read this way.
+  Thai customer taking leave of a cashier as if for ever). Norwegian, Danish, Finnish, Slovak, Serbian and Bulgarian
+  followed: 74 sentences changed (the train again; Norwegian commas before "fordi"; Bulgarian prices still in leva).
+  The twelve texts of each of the remaining 12 languages have not been read this way.
 - **The page for a native speaker** (November 2026) was tried in headless Chrome only: the French page (60 lessons, the
   sounds, 44 texts), the Arabic one (right to left, with readings) and the Japanese one opened; a correction and a
   note typed, a section ticked, the result copied (it names each line by where it lives and gives the words it was

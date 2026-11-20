@@ -3,7 +3,7 @@
   "id": "sk-market",
   "title": "Na trhu",
   "level": "A1",
-  "text": "Každú sobotu chodí Mária na trh. Trh je v centre mesta. Svieti slnko a je tam veľa ľudí. Mária má trh rada, lebo ovocie je tam čerstvé a lacné. Najprv kupuje jablká a pomaranče. Potom kupuje chlieb, syr a trochu ryby. Pán pri stánku s rybami je veľmi milý. Vždy sa pýta na jej rodinu. Na trhu Mária často stretáva svoju kamarátku Elenu. Dnes spolu pijú kávu a dlho sa rozprávajú. Na poludnie ide Mária domov s dvoma ťažkými taškami. Je unavená, ale šťastná.",
+  "text": "Každú sobotu chodí Mária na trh. Trh je v centre mesta. Svieti slnko a je tam veľa ľudí. Mária má trh rada, lebo ovocie je tam čerstvé a lacné. Najprv kupuje jablká a pomaranče. Potom kupuje chlieb, syr a trochu ryby. Pán pri stánku s rybami je veľmi milý. Vždy sa jej pýta na rodinu. Na trhu Mária často stretáva svoju kamarátku Elenu. Dnes spolu pijú kávu a dlho sa rozprávajú. Na poludnie ide Mária domov s dvoma ťažkými taškami. Je unavená, ale šťastná.",
   "gloss": {
    "trh": "market",
    "centre": "centre",
@@ -54,7 +54,7 @@
     "First she buys apples and oranges."
    ],
    [
-    "Vždy sa pýta na jej rodinu.",
+    "Vždy sa jej pýta na rodinu.",
     "He always asks about her family."
    ]
   ]
@@ -63,7 +63,7 @@
   "id": "sk-day",
   "title": "Môj deň",
   "level": "A1",
-  "text": "Volám sa Daniel a bývam v malom byte. Každé ráno vstávam o siedmej. Najprv pijem čaj a jem chlieb s maslom. Potom idem do práce autobusom. Pracujem v kníhkupectve v centre mesta. Svoju prácu mám rád, lebo milujem knihy. Na poludnie jem polievku v malej reštaurácii. Popoludní prichádza do obchodu veľa zákazníkov. Večer sa vraciam domov a varím večeru. Po večeri volám mame alebo čítam knihu. Do postele chodím o jedenástej. V nedeľu nepracujem a spím dlhšie.",
+  "text": "Volám sa Daniel a bývam v malom byte. Každé ráno vstávam o siedmej. Najprv pijem čaj a jem chlieb s maslom. Potom idem do práce autobusom. Pracujem v kníhkupectve v centre mesta. Prácu mám rád, lebo milujem knihy. Na poludnie jem polievku v malej reštaurácii. Popoludní prichádza do obchodu veľa zákazníkov. Večer sa vraciam domov a varím večeru. Po večeri volám mame alebo čítam knihu. Do postele chodím o jedenástej. V nedeľu nepracujem a spím dlhšie.",
   "gloss": {
    "byte": "flat",
    "vstávam": "get up",
@@ -124,7 +124,7 @@
   "id": "sk-sea",
   "title": "Víkend pri mori",
   "level": "A2",
-  "text": "Minulý víkend sme s bratom išli k moru. Skoro ráno sme nastúpili do vlaku a cesta trvala tri hodiny. Počasie bolo krásne: nebo bolo modré a voda teplá. Dlho sme plávali a potom sme ležali na pláži. Na poludnie sme jedli čerstvú rybu v malej reštaurácii blízko prístavu. Čašník bol milý a priniesol nám studenú vodu. Popoludní sme sa prechádzali starým mestom a kúpili sme pohľadnice. Môj brat urobil veľa fotografií lodí. Večer sme boli veľmi unavení, ale nechceli sme ísť domov. Zmeškali sme posledný vlak a museli sme hodinu čakať. Bol to najlepší deň leta. Nabudúce chceme zostať celý týždeň.",
+  "text": "Minulý víkend sme s bratom išli k moru. Skoro ráno sme nastúpili do vlaku a cesta trvala tri hodiny. Počasie bolo krásne: nebo bolo modré a voda teplá. Dlho sme plávali a potom sme ležali na pláži. Na poludnie sme jedli čerstvú rybu v malej reštaurácii blízko prístavu. Čašník bol milý a priniesol nám studenú vodu. Popoludní sme sa prechádzali starým mestom a kúpili sme pohľadnice. Brat odfotil veľa lodí. Večer sme boli veľmi unavení, ale nechceli sme ísť domov. Zmeškali sme vlak a museli sme hodinu čakať na ďalší. Bol to najlepší deň leta. Nabudúce chceme zostať celý týždeň.",
   "gloss": {
    "víkend": "weekend",
    "bratom": "brother",
@@ -143,7 +143,6 @@
    "prístavu": "harbour",
    "prechádzali": "walked",
    "pohľadnice": "postcards",
-   "fotografií": "photos",
    "lodí": "boats",
    "unavení": "tired",
    "zmeškali": "missed",
@@ -178,7 +177,7 @@
     "In the afternoon we walked through the old town and bought postcards."
    ],
    [
-    "Zmeškali sme posledný vlak a museli sme hodinu čakať.",
+    "Zmeškali sme vlak a museli sme hodinu čakať na ďalší.",
     "We missed the last train and had to wait an hour."
    ]
   ]
@@ -187,7 +186,7 @@
   "id": "sk-neighbour",
   "title": "Nová suseda",
   "level": "A2",
-  "text": "Minulý mesiac sa do nášho domu nasťahovala nová suseda. Volá sa Sofia a pochádza z iného mesta. Spočiatku tu nikoho nepoznala. Raz večer zaklopala na naše dvere, lebo lampa v jej kuchyni bola pokazená. Môj otec išiel hore a za desať minút ju opravil. Sofia bola veľmi vďačná a na druhý deň nám priniesla koláč. Koláč bol výborný a môj mladší brat zjedol tri kúsky. Teraz Sofia často pije čaj s mojou mamou. Pracuje v nemocnici a rozpráva zaujímavé príbehy. Včera mi pomohla s domácou úlohou. V nedeľu sme jej ukázali park a starý trh. Hovorí, že sa tu už cíti ako doma. Myslím, že sme našli novú kamarátku.",
+  "text": "Minulý mesiac sa do nášho domu nasťahovala nová suseda. Volá sa Sofia a pochádza z iného mesta. Spočiatku tu nikoho nepoznala. Raz večer zaklopala na naše dvere, lebo sa jej v kuchyni pokazila lampa. Môj otec išiel hore a za desať minút ju opravil. Sofia bola veľmi vďačná a na druhý deň nám priniesla koláč. Koláč bol výborný a môj mladší brat zjedol tri kúsky. Teraz Sofia často pije čaj s mojou mamou. Pracuje v nemocnici a rozpráva zaujímavé príbehy. Včera mi pomohla s domácou úlohou. V nedeľu sme jej ukázali park a starý trh. Hovorí, že sa tu už cíti ako doma. Myslím, že sme našli novú kamarátku.",
   "gloss": {
    "suseda": "neighbour",
    "nasťahovala": "moved",
@@ -198,7 +197,6 @@
    "dvere": "door",
    "kuchyni": "kitchen",
    "lampa": "lamp",
-   "pokazená": "broken",
    "opravil": "repaired",
    "minút": "minutes",
    "vďačná": "grateful",
@@ -263,7 +261,7 @@
    ],
    [
     0,
-    "Dáte si niečo na jedenie?"
+    "Dáte si aj niečo na jedenie?"
    ],
    [
     1,
@@ -411,7 +409,7 @@
   "id": "sk-family",
   "title": "Moja rodina",
   "level": "A1",
-  "text": "Volám sa Anna. Bývam s rodinou v malom dome pri rieke. Moja mama je učiteľka a otec pracuje v obchode. Mám brata a sestru. Môj brat má desať rokov a má rád futbal. Moja sestra je ešte malá: má tri roky. Máme aj psa, ktorý sa volá Max. Každé ráno chodí otec so psom na prechádzku. Večer spolu večeriame a rozprávame sa o tom, aký bol deň. Po večeri s bratom umývame riad. V nedeľu prichádza babka a prináša tortu. Svoju rodinu mám veľmi rada.",
+  "text": "Volám sa Anna. Bývam s rodinou v malom dome pri rieke. Moja mama je učiteľka a otec pracuje v obchode. Mám brata a sestru. Môj brat má desať rokov a má rád futbal. Moja sestra je ešte malá: má tri roky. Máme aj psa, ktorý sa volá Max. Každé ráno chodí otec so psom na prechádzku. Večer spolu večeriame a rozprávame sa o tom, aký bol deň. Po večeri s bratom umývame riad. V nedeľu k nám chodí babka a nosí tortu. Svoju rodinu mám veľmi rada.",
   "gloss": {
    "rodinou": "family",
    "dome": "house",
@@ -467,7 +465,7 @@
     "My mother is a teacher and my father works in a shop."
    ],
    [
-    "V nedeľu prichádza babka a prináša tortu.",
+    "V nedeľu k nám chodí babka a nosí tortu.",
     "On Sunday my grandmother comes and brings a cake."
    ]
   ]
@@ -476,7 +474,7 @@
   "id": "sk-town",
   "title": "Naše mesto",
   "level": "A1",
-  "text": "Naše mesto je malé, ale pekné. V centre je staré námestie s fontánou. Vedľa námestia sú škola, lekáreň a dve kaviarne. Stanica je za parkom. Každé ráno cestuje veľa ľudí vlakom do veľkého mesta. Popoludní sa deti hrajú v parku a starí páni hrajú šach. V lete prichádzajú turisti a fotia most. V zime je v meste ticho. V sobotu je na námestí trh. Môžete tam kúpiť zeleninu, med a kvety. Večer ma baví prechádzať sa pri rieke. Nechcem bývať vo veľkom meste.",
+  "text": "Naše mesto je malé, ale pekné. V centre je staré námestie s fontánou. Vedľa námestia sú škola, lekáreň a dve kaviarne. Stanica je za parkom. Každé ráno cestuje veľa ľudí vlakom do veľkého mesta. Popoludní sa deti hrajú v parku a starí páni hrajú šach. V lete prichádzajú turisti a fotia most. V zime je v meste ticho. V sobotu je na námestí trh. Môžete si tam kúpiť zeleninu, med a kvety. Večer ma baví prechádzať sa pri rieke. Nechcem bývať vo veľkom meste.",
   "gloss": {
    "mesto": "town",
    "pekné": "beautiful",
@@ -539,13 +537,12 @@
   "id": "sk-birthday",
   "title": "Babkine narodeniny",
   "level": "A2",
-  "text": "Včera mala moja babka narodeniny. Má teraz osemdesiat rokov. Celá rodina prišla do jej domu na dedine. Moja teta upiekla veľkú tortu a strýko priniesol kvety. Dali sme jej teplý šál a knihu o záhradách. Pred obedom sme zaspievali pesničku a babka sa smiala. Na stole bola polievka, kura so zemiakmi a veľa šalátu. Po obede nám ukázala staré fotografie. Na jednej fotografii bola mladá žena s bicyklom. Rozprávala nám, že na ňom každý deň jazdila do práce. Potom môj bratranec hral na gitare a všetci tancovali. Dokonca aj môj malý brat tancoval s babkou. Večer bola unavená, ale šťastná. Povedala, že to boli najlepšie narodeniny v jej živote. Domov sme išli neskoro, keď už boli na nebi hviezdy.",
+  "text": "Včera mala moja babka narodeniny. Má teraz osemdesiat rokov. Celá rodina prišla k nej na dedinu. Moja teta upiekla veľkú tortu a strýko priniesol kvety. Dali sme jej teplý šál a knihu o záhradách. Pred obedom sme zaspievali pesničku a babka sa smiala. Na stole bola polievka, kura so zemiakmi a veľa šalátu. Po obede nám ukázala staré fotografie. Na jednej fotografii bola mladá žena s bicyklom. Rozprávala nám, že na ňom každý deň jazdila do práce. Potom môj bratranec hral na gitare a všetci tancovali. Dokonca aj môj malý brat tancoval s babkou. Večer bola unavená, ale šťastná. Povedala, že to boli najlepšie narodeniny v jej živote. Domov sme išli neskoro, keď už boli na nebi hviezdy.",
   "gloss": {
    "včera": "yesterday",
    "narodeniny": "birthday",
    "osemdesiat": "eighty",
    "celá": "whole",
-   "dedine": "village",
    "teta": "aunt",
    "upiekla": "baked",
    "strýko": "uncle",
@@ -606,14 +603,13 @@
   "id": "sk-wallet",
   "title": "Stratená peňaženka",
   "level": "B1",
-  "text": "Minulý piatok chcel Daniel zaplatiť v supermarkete, ale vo vrecku nemal peňaženku. Mal veľké starosti, pretože v nej mal platobnú kartu a vodičský preukaz. Nechal nákup pri pokladni a vrátil sa tou istou cestou. Hľadal všade, na chodníku aj na autobusovej zastávke, ale nič nenašiel. Doma zavolal do banky a zablokoval kartu. V tú noc nemohol spať, pretože myslel na všetky svoje doklady. O dva dni neskôr prišiel list od polície. Jedna žena našla peňaženku v autobuse a odniesla ju na policajnú stanicu. Daniel tam hneď išiel. Nič nechýbalo, dokonca ani peniaze. Policajt mu dal adresu tej ženy, pretože sa jej Daniel chcel poďakovať. Na druhý deň kúpil kvety a napísal jej pohľadnicu. Bola prekvapená a pozvala ho na kávu. Rozprávali sa hodinu a teraz sú dobrí priatelia. Odvtedy si Daniel vždy skontroluje vrecko, skôr ako vystúpi z autobusu.",
+  "text": "Minulý piatok chcel Daniel zaplatiť v supermarkete, ale vo vrecku nemal peňaženku. Veľmi sa zľakol, pretože v nej mal platobnú kartu a vodičský preukaz. Nechal nákup pri pokladni a vrátil sa tou istou cestou. Hľadal všade, na chodníku aj na autobusovej zastávke, ale nič nenašiel. Doma zavolal do banky a zablokoval kartu. V tú noc nemohol spať, pretože myslel na všetky svoje doklady. O dva dni neskôr prišiel list od polície. Jedna žena našla peňaženku v autobuse a odniesla ju na policajnú stanicu. Daniel tam hneď išiel. Nič nechýbalo, dokonca ani peniaze. Policajt mu dal adresu tej ženy, pretože sa jej Daniel chcel poďakovať. Na druhý deň kúpil kvety a napísal jej pohľadnicu. Bola prekvapená a pozvala ho na kávu. Rozprávali sa hodinu a teraz sú dobrí priatelia. Odvtedy si Daniel vždy skontroluje vrecko, skôr ako vystúpi z autobusu.",
   "gloss": {
    "piatok": "Friday",
    "zaplatiť": "pay",
    "supermarkete": "supermarket",
    "peňaženku": "wallet",
    "vrecku": "pocket",
-   "starosti": "worries (mal starosti: was worried)",
    "kartu": "card (platobná karta: bank card)",
    "preukaz": "card, licence (vodičský preukaz: driving licence)",
    "nákup": "shopping",
@@ -719,7 +715,7 @@
    ],
    [
     0,
-    "Pätnásť eur. Chcete platiť kartou?"
+    "Pätnásť eur. Budete platiť kartou?"
    ],
    [
     1,

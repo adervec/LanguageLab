@@ -63,7 +63,7 @@
   "id": "da-day",
   "title": "Min dag",
   "level": "A1",
-  "text": "Jeg hedder Daniel og bor i en lille lejlighed. Hver morgen står jeg op klokken syv. Først drikker jeg te og spiser brød med smør. Så tager jeg på arbejde med bus. Jeg arbejder i en boghandel i centrum af byen. Jeg er glad for mit arbejde, fordi jeg elsker bøger. Klokken tolv spiser jeg suppe på en lille restaurant. Om eftermiddagen kommer der mange kunder i butikken. Om aftenen tager jeg hjem og laver aftensmad. Efter aftensmaden ringer jeg til min mor eller læser en bog. Jeg går i seng klokken elleve. Om søndagen arbejder jeg ikke, og så sover jeg længere.",
+  "text": "Jeg hedder Daniel og bor i en lille lejlighed. Hver morgen står jeg op klokken syv. Først drikker jeg te og spiser brød med smør. Så tager jeg bussen på arbejde. Jeg arbejder i en boghandel i centrum af byen. Jeg er glad for mit arbejde, fordi jeg elsker bøger. Klokken tolv spiser jeg suppe på en lille restaurant. Om eftermiddagen kommer der mange kunder i butikken. Om aftenen tager jeg hjem og laver aftensmad. Efter aftensmaden ringer jeg til min mor eller læser en bog. Jeg går i seng klokken elleve. Om søndagen arbejder jeg ikke, og så sover jeg længere.",
   "gloss": {
    "lejlighed": "flat",
    "står": "(står op: get up)",
@@ -71,7 +71,6 @@
    "te": "tea",
    "smør": "butter",
    "arbejde": "work",
-   "bus": "bus",
    "boghandel": "bookshop",
    "byen": "city",
    "bøger": "books",
@@ -86,7 +85,8 @@
    "mor": "mother",
    "seng": "bed",
    "sover": "sleep",
-   "længere": "longer"
+   "længere": "longer",
+   "bussen": "the bus"
   },
   "questions": [
    {
@@ -98,7 +98,7 @@
    {
     "q": "Hvordan kommer Daniel på arbejde?",
     "a": [
-     "bus"
+     "bussen"
     ]
    },
    {
@@ -111,7 +111,7 @@
   "notice": "The verb always takes the second place in a Danish sentence. When the sentence starts with a time, the subject moves behind the verb: \"Hver morgen står jeg op\", \"Så tager jeg på arbejde\".",
   "back": [
    [
-    "Så tager jeg på arbejde med bus.",
+    "Så tager jeg bussen på arbejde.",
     "Then I go to work by bus."
    ],
    [
@@ -124,13 +124,12 @@
   "id": "da-sea",
   "title": "En weekend ved havet",
   "level": "A2",
-  "text": "Sidste weekend tog min bror og jeg til havet. Vi tog et tog tidligt om morgenen, og rejsen varede tre timer. Vejret var dejligt: himlen var blå, og vandet var varmt. Vi svømmede længe, og bagefter lå vi på stranden. Klokken tolv spiste vi frisk fisk på en lille restaurant ved havnen. Tjeneren var venlig og kom med koldt vand til os. Om eftermiddagen gik vi gennem den gamle by og købte postkort. Min bror tog mange billeder af bådene. Om aftenen var vi meget trætte, men vi ville ikke hjem. Vi nåede ikke det sidste tog og måtte vente en time. Det var sommerens bedste dag. Næste gang vil vi blive en hel uge.",
+  "text": "Sidste weekend tog min bror og jeg til havet. Vi tog toget tidligt om morgenen, og turen tog tre timer. Vejret var dejligt: himlen var blå, og vandet var varmt. Vi svømmede længe, og bagefter lå vi på stranden. Klokken tolv spiste vi frisk fisk på en lille restaurant ved havnen. Tjeneren var venlig og kom med koldt vand til os. Om eftermiddagen gik vi gennem den gamle by og købte postkort. Min bror tog mange billeder af bådene. Om aftenen var vi meget trætte, men vi ville ikke hjem. Vi nåede ikke toget og måtte vente en time. Det var sommerens bedste dag. Næste gang vil vi blive en hel uge.",
   "gloss": {
    "weekend": "weekend",
    "bror": "brother",
    "havet": "sea",
    "tog": "train (also: took)",
-   "rejsen": "journey",
    "timer": "hours",
    "vejret": "weather",
    "himlen": "sky",
@@ -179,7 +178,7 @@
     "In the afternoon we walked through the old town and bought postcards."
    ],
    [
-    "Vi nåede ikke det sidste tog og måtte vente en time.",
+    "Vi nåede ikke toget og måtte vente en time.",
     "We missed the last train and had to wait an hour."
    ]
   ]
@@ -344,7 +343,7 @@
    ],
    [
     0,
-    "Hvad er dit navn?"
+    "Hvad var navnet?"
    ],
    [
     1,
@@ -379,7 +378,6 @@
    "hjælpe": "help",
    "reservation": "reservation",
    "nætter": "nights",
-   "navn": "name",
    "pas": "passport",
    "værelse": "room",
    "sal": "floor (tredje sal: third floor)",
@@ -541,7 +539,7 @@
   "id": "da-birthday",
   "title": "Bedstemors fødselsdag",
   "level": "A2",
-  "text": "I går havde min bedstemor fødselsdag. Hun er firs år nu. Hele familien kom til hendes hus i landsbyen. Min tante bagte en stor kage, og min onkel havde blomster med. Vi gav hende et varmt halstørklæde og en bog om haver. Før frokost sang vi en sang, og bedstemor lo. På bordet stod der suppe, kylling med kartofler og en masse salat. Efter frokost viste hun os gamle billeder. På et af billederne var hun en ung kvinde med en cykel. Hun fortalte, at hun cyklede på arbejde hver dag. Så spillede min fætter guitar, og alle dansede. Selv min lillebror dansede med bedstemor. Om aftenen var hun træt, men glad. Hun sagde, at det var den bedste fødselsdag i hendes liv. Vi tog sent hjem, da stjernerne allerede var på himlen.",
+  "text": "I går havde min bedstemor fødselsdag. Hun er firs år nu. Hele familien kom til hendes hus i landsbyen. Min tante bagte en stor kage, og min onkel havde blomster med. Vi gav hende et varmt halstørklæde og en bog om haver. Før frokost sang vi en sang, og bedstemor lo. På bordet stod der suppe, kylling med kartofler og en masse salat. Efter frokost viste hun os gamle billeder. På et af billederne var hun en ung kvinde med en cykel. Hun fortalte, at hun cyklede på arbejde hver dag. Så spillede min fætter guitar, og alle dansede. Selv min lillebror dansede med bedstemor. Om aftenen var hun træt, men glad. Hun sagde, at det var den bedste fødselsdag i hendes liv. Vi tog sent hjem, da stjernerne allerede var kommet frem.",
   "gloss": {
    "går": "(i går: yesterday)",
    "fødselsdag": "birthday",
@@ -798,7 +796,7 @@
    ],
    [
     0,
-    "Luk munden op, tak. Ja, halsen er meget rød."
+    "Luk lige munden op. Ja, halsen er meget rød."
    ],
    [
     1,
