@@ -345,7 +345,7 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   floor lower in Finnish, Belarusian, Thai, Filipino and Bengali than a British reader takes it to be; the meaning
   now says so there, as it did in nine languages already.
   Four French stories were added on 20 November 2026 (a camera from a flea market, a shared car to Lyon, a week
-  without a phone, a lighthouse keeper; two at B1, two at B2), and four more the same day (a yellow umbrella and a lost dog at A2, a forgotten box and a cooking class at B1), which makes 52 French texts. Spanish got the same four easier stories in its own words (28 Spanish texts), and so did German, Italian and Portuguese (28 each). They were written after
+  without a phone, a lighthouse keeper; two at B1, two at B2), and four more the same day (a yellow umbrella and a lost dog at A2, a forgotten box and a cooking class at B1), which makes 52 French texts. Spanish got the same four easier stories in its own words (28 Spanish texts), and so did German, Italian, Portuguese and Dutch (28 each). They were written after
   the reads described here and have not themselves been read by a second model or a person.
   The same question about the 44 French stories and dialogues (which sentence of each would a native speaker most
   object to?) marked 13 sentences, none of them wrong; 12 were reworded ("perdre la voix", a pronoun that pointed
