@@ -356,8 +356,11 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   Japanese, Korean, Russian, Arabic and Hindi have (twelve texts each): 11, 14, 9, 14, 10 and 14 sentences marked,
   71 changed. Eleven were called wrong, among them a Japanese particle, a Hindi verb that did not agree, and a
   slip that comes from the shared English text and so stands in the other languages built from it: a family
-  misses "the last train" and then waits an hour for the next (put right in Russian and Arabic only). The twelve
-  texts of each of the remaining 30 languages have not been read this way.
+  misses "the last train" and then waits an hour for the next (put right where a read has reached). Turkish, Polish, Ukrainian, Vietnamese,
+  Indonesian and Greek followed: 9, 12, 13, 15, 13 and 11 sentences marked, 73 changed. Eighteen were called wrong:
+  the train in all six, three Polish verbs of motion in the form for one trip where a habit was meant, a
+  Ukrainian friend in the wrong gender and five places where Ukrainian wants "й" for "і", two southern words in the
+  Vietnamese. The twelve texts of each of the remaining 24 languages have not been read this way.
 - **The page for a native speaker** (November 2026) was tried in headless Chrome only: the French page (60 lessons, the
   sounds, 44 texts), the Arabic one (right to left, with readings) and the Japanese one opened; a correction and a
   note typed, a section ticked, the result copied (it names each line by where it lives and gives the words it was

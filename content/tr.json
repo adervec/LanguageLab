@@ -124,7 +124,7 @@
   "id": "tr-sea",
   "title": "Deniz kenarında bir hafta sonu",
   "level": "A2",
-  "text": "Geçen hafta sonu erkek kardeşimle denize gittik. Sabah erkenden trene bindik ve yolculuk üç saat sürdü. Hava çok güzeldi: gökyüzü maviydi ve su ılıktı. Deniz çok sakindi. Uzun süre yüzdük, sonra kumsalda uzandık. Öğlen limanın yakınındaki küçük bir lokantada taze balık yedik. Yemek çok lezzetliydi. Garson güler yüzlüydü ve bize soğuk su getirdi. Öğleden sonra eski şehirde yürüdük ve kartpostal aldık. Kardeşim teknelerin bir sürü fotoğrafını çekti. Akşam çok yorgunduk ama eve dönmek istemiyorduk. Son treni kaçırdık ve bir saat beklemek zorunda kaldık. Yazın en güzel günüydü. Gelecek sefer bütün bir hafta kalmak istiyoruz.",
+  "text": "Geçen hafta sonu erkek kardeşimle denize gittik. Sabah erkenden trene bindik ve yolculuk üç saat sürdü. Hava çok güzeldi: gökyüzü maviydi ve su ılıktı. Deniz çok sakindi. Uzun süre yüzdük, sonra kumsalda uzandık. Öğlen limanın yakınındaki küçük bir lokantada taze balık yedik. Yemek çok lezzetliydi. Garson güler yüzlüydü ve bize soğuk su getirdi. Öğleden sonra eski şehirde yürüdük ve kartpostal aldık. Kardeşim teknelerin bir sürü fotoğrafını çekti. Akşam çok yorgunduk ama eve dönmek istemiyorduk. Treni kaçırdık ve bir saat beklemek zorunda kaldık. Yazın en güzel günüydü. Bir dahaki sefere bütün bir hafta kalmak istiyoruz.",
   "gloss": {
    "hafta": "week (hafta sonu: weekend)",
    "kardeşimle": "with my brother",
@@ -178,7 +178,7 @@
     "In the afternoon we walked through the old town and bought postcards."
    ],
    [
-    "Son treni kaçırdık ve bir saat beklemek zorunda kaldık.",
+    "Treni kaçırdık ve bir saat beklemek zorunda kaldık.",
     "We missed the last train and had to wait an hour."
    ]
   ]
@@ -187,7 +187,7 @@
   "id": "tr-neighbour",
   "title": "Yeni komşu",
   "level": "A2",
-  "text": "Geçen ay apartmanımıza yeni bir komşu taşındı. Adı Sofia ve başka bir şehirden geliyor. Başlangıçta burada kimseyi tanımıyordu. Bir akşam kapımızı çaldı, çünkü mutfağındaki lamba bozulmuştu. Babam yukarı çıktı ve lambayı on dakikada tamir etti. Sofia çok memnun oldu ve ertesi gün bize bir pasta getirdi. Pasta çok lezzetliydi ve küçük kardeşim üç dilim yedi. Şimdi Sofia sık sık annemle çay içiyor. Bir hastanede çalışıyor ve ilginç hikâyeler anlatıyor. Dün bana ödevimde yardım etti. Pazar günü ona parkı ve eski pazarı gösterdik. Kendini artık evinde gibi hissettiğini söylüyor. Bence yeni bir arkadaş bulduk.",
+  "text": "Geçen ay apartmanımıza yeni bir komşu taşındı. Adı Sofia ve başka bir şehirden geliyor. İlk başta burada kimseyi tanımıyordu. Bir akşam kapımızı çaldı, çünkü mutfağındaki lamba bozulmuştu. Babam yukarı çıktı ve lambayı on dakikada tamir etti. Sofia çok memnun oldu ve ertesi gün bize bir pasta getirdi. Pasta çok lezzetliydi ve küçük kardeşim üç dilim yedi. Şimdi Sofia sık sık annemle çay içiyor. Bir hastanede çalışıyor ve ilginç hikâyeler anlatıyor. Dün bana ödevimde yardım etti. Pazar günü ona parkı ve eski pazarı gösterdik. Kendini artık evinde gibi hissettiğini söylüyor. Bence yeni bir arkadaş bulduk.",
   "gloss": {
    "komşu": "neighbour",
    "taşındı": "moved",
@@ -343,7 +343,7 @@
    ],
    [
     0,
-    "Adınız nedir, lütfen?"
+    "Adınızı alabilir miyim?"
    ],
    [
     1,
@@ -412,7 +412,7 @@
   "id": "tr-family",
   "title": "Ailem",
   "level": "A1",
-  "text": "Benim adım Anna. Ailemle birlikte nehrin yakınında küçük bir evde yaşıyorum. Annem öğretmen, babam ise bir dükkânda çalışıyor. Bir erkek kardeşim ve bir kız kardeşim var. Erkek kardeşim on yaşında ve futbolu seviyor. Kız kardeşim daha küçük: o üç yaşında. Bir de köpeğimiz var, adı Max. Babam her sabah köpekle yürüyüşe çıkıyor. Akşam birlikte yemek yiyoruz ve günümüzün nasıl geçtiğini anlatıyoruz. Akşam yemeğinden sonra kardeşimle bulaşıkları yıkıyoruz. Pazar günü büyükannem geliyor ve pasta getiriyor. Ailemi çok seviyorum.",
+  "text": "Benim adım Anna. Ailemle birlikte nehrin yakınında küçük bir evde yaşıyorum. Annem öğretmen, babam ise bir dükkânda çalışıyor. Bir erkek kardeşim ve bir kız kardeşim var. Erkek kardeşim on yaşında ve futbolu seviyor. Kız kardeşim daha küçük, üç yaşında. Bir de köpeğimiz var, adı Max. Babam her sabah köpekle yürüyüşe çıkıyor. Akşam birlikte yemek yiyoruz ve günümüzün nasıl geçtiğini anlatıyoruz. Akşam yemeğinden sonra kardeşimle bulaşıkları yıkıyoruz. Pazar günü büyükannem geliyor ve pasta getiriyor. Ailemi çok seviyorum.",
   "gloss": {
    "ailemle": "with my family",
    "evde": "in a house",
@@ -538,7 +538,7 @@
   "id": "tr-birthday",
   "title": "Büyükannemin doğum günü",
   "level": "A2",
-  "text": "Dün büyükannemin doğum günüydü. O şimdi seksen yaşında. Bütün aile onun köydeki evine geldi. Teyzem büyük bir pasta yaptı, amcam da çiçek getirdi. Ona sıcak bir atkı ve bahçeler hakkında bir kitap hediye ettik. Öğle yemeğinden önce bir şarkı söyledik ve büyükannem güldü. Masada çorba, patatesli tavuk ve bol bol salata vardı. Öğle yemeğinden sonra bize eski fotoğraflar gösterdi. Bir fotoğrafta bisikletli genç bir kadındı. Bize her gün işe bisikletle gittiğini anlattı. Sonra kuzenim gitar çaldı ve herkes dans etti. Küçük kardeşim bile büyükannemle dans etti. Akşam yorgun ama mutluydu. Bunun hayatının en güzel doğum günü olduğunu söyledi. Eve geç döndük; gökyüzünde yıldızlar çoktan çıkmıştı.",
+  "text": "Dün büyükannemin doğum günüydü. Artık seksen yaşında. Bütün aile onun köydeki evine geldi. Teyzem büyük bir pasta yaptı, amcam da çiçek getirdi. Ona sıcak bir atkı ve bahçeler hakkında bir kitap hediye ettik. Öğle yemeğinden önce bir şarkı söyledik ve büyükannem güldü. Masada çorba, patatesli tavuk ve bol bol salata vardı. Öğle yemeğinden sonra bize eski fotoğraflar gösterdi. Bir fotoğrafta bisikletli genç bir kadındı. Bize her gün işe bisikletle gittiğini anlattı. Sonra kuzenim gitar çaldı ve herkes dans etti. Küçük kardeşim bile büyükannemle dans etti. Akşam yorgun ama mutluydu. Bunun hayatının en güzel doğum günü olduğunu söyledi. Eve geç döndük; gökyüzünde yıldızlar çoktan çıkmıştı.",
   "gloss": {
    "dün": "yesterday",
    "doğum": "birth (doğum günü: birthday)",
@@ -605,7 +605,7 @@
   "id": "tr-wallet",
   "title": "Kayıp cüzdan",
   "level": "B1",
-  "text": "Geçen cuma Daniel süpermarkette ödeme yapmak istedi ama cüzdanı cebinde yoktu. Çok endişelendi, çünkü banka kartı ve ehliyeti cüzdanın içindeydi. Aldıklarını kasada bıraktı ve aynı yoldan geri döndü. Her yere baktı, kaldırıma ve otobüs durağına, ama hiçbir şey bulamadı. Evde bankayı aradı ve kartı bloke ettirdi. O gece uyuyamadı, çünkü bütün belgelerini düşünüyordu. İki gün sonra polisten bir mektup geldi. Bir kadın cüzdanı otobüste bulmuş ve karakola götürmüştü. Daniel hemen oraya gitti. Hiçbir şey eksik değildi, para bile yerindeydi. Polis memuru ona kadının adresini verdi, çünkü Daniel ona teşekkür etmek istiyordu. Ertesi gün çiçek aldı ve ona bir kart yazdı. Kadın şaşırdı ve onu kahve içmeye davet etti. Bir saat konuştular ve şimdi iyi arkadaşlar. O günden beri Daniel otobüsten inmeden önce her zaman cebini kontrol ediyor.",
+  "text": "Geçen cuma Daniel süpermarkette ödeme yapmak istedi ama cüzdanı cebinde yoktu. Çok endişelendi, çünkü banka kartı ve ehliyeti cüzdanın içindeydi. Aldıklarını kasada bıraktı ve aynı yoldan geri döndü. Kaldırıma, otobüs durağına, her yere baktı ama hiçbir şey bulamadı. Evde bankayı aradı ve kartı bloke ettirdi. O gece uyuyamadı, çünkü bütün belgelerini düşünüyordu. İki gün sonra polisten bir mektup geldi. Bir kadın cüzdanı otobüste bulmuş ve karakola götürmüştü. Daniel hemen oraya gitti. Hiçbir şey eksik değildi, para bile yerindeydi. Polis memuru ona kadının adresini verdi, çünkü Daniel ona teşekkür etmek istiyordu. Ertesi gün çiçek aldı ve ona bir kart yazdı. Kadın şaşırdı ve onu kahve içmeye davet etti. Bir saat konuştular ve şimdi iyi arkadaşlar. O günden beri Daniel otobüsten inmeden önce her zaman cebini kontrol ediyor.",
   "gloss": {
    "cuma": "Friday",
    "ödeme": "payment (ödeme yapmak: to pay)",
@@ -658,7 +658,7 @@
   "notice": "Turkish says \"was not there\" with \"yoktu\" and \"was not\" with \"değildi\": \"cüzdanı cebinde yoktu\", \"eksik değildi\". \"-miş\" marks what one learns only afterwards: \"bulmuş\", \"götürmüştü\" (had found, had taken).",
   "back": [
    [
-    "Her yere baktı, kaldırıma ve otobüs durağına, ama hiçbir şey bulamadı.",
+    "Kaldırıma, otobüs durağına, her yere baktı ama hiçbir şey bulamadı.",
     "He looked everywhere, on the pavement and at the bus stop, but he found nothing."
    ],
    [
@@ -710,7 +710,7 @@
    ],
    [
     0,
-    "Yirmi dakika. Bu yeterli."
+    "Yirmi dakika. Bu süre yeterli."
    ],
    [
     1,
@@ -811,7 +811,7 @@
    ],
    [
     0,
-    "Size tablet için bir reçete yazacağım. Her yemekten sonra bir tane alın."
+    "Size bir reçete yazacağım. Her yemekten sonra bir tablet alın."
    ],
    [
     1,

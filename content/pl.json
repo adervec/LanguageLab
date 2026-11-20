@@ -3,7 +3,7 @@
   "id": "pl-market",
   "title": "Na targu",
   "level": "A1",
-  "text": "W każdą sobotę Maria idzie na targ. Targ jest w centrum miasta. Świeci słońce i jest tam dużo ludzi. Maria lubi targ, bo owoce są świeże i tanie. Najpierw kupuje jabłka i pomarańcze. Potem kupuje chleb, ser i trochę ryby. Pan przy stoisku z rybami jest bardzo miły. Zawsze pyta o jej rodzinę. Na targu Maria często spotyka swoją koleżankę Elenę. Dzisiaj piją razem kawę i długo rozmawiają. W południe Maria wraca do domu z dwiema ciężkimi torbami. Jest zmęczona, ale szczęśliwa.",
+  "text": "W każdą sobotę Maria chodzi na targ. Targ jest w centrum miasta. Świeci słońce i jest tam dużo ludzi. Maria lubi targ, bo owoce są świeże i tanie. Najpierw kupuje jabłka i pomarańcze. Potem kupuje chleb, ser i trochę ryby. Pan przy stoisku z rybami jest bardzo miły. Zawsze pyta ją o rodzinę. Na targu Maria często spotyka swoją koleżankę Elenę. Dzisiaj piją razem kawę i długo rozmawiają. W południe Maria wraca do domu z dwiema ciężkimi torbami. Jest zmęczona, ale szczęśliwa.",
   "gloss": {
    "targ": "market",
    "centrum": "centre",
@@ -54,7 +54,7 @@
     "First she buys apples and oranges."
    ],
    [
-    "Zawsze pyta o jej rodzinę.",
+    "Zawsze pyta ją o rodzinę.",
     "He always asks about her family."
    ]
   ]
@@ -124,7 +124,7 @@
   "id": "pl-sea",
   "title": "Weekend nad morzem",
   "level": "A2",
-  "text": "W zeszły weekend pojechaliśmy z bratem nad morze. Wsiedliśmy do pociągu wcześnie rano, a podróż trwała trzy godziny. Pogoda była piękna: niebo było niebieskie, a woda ciepła. Długo pływaliśmy, a potem leżeliśmy na plaży. W południe jedliśmy świeżą rybę w małej restauracji blisko portu. Kelner był miły i przyniósł nam zimną wodę. Po południu spacerowaliśmy po starym mieście i kupiliśmy pocztówki. Mój brat zrobił dużo zdjęć łodzi. Wieczorem byliśmy bardzo zmęczeni, ale nie chcieliśmy wracać do domu. Spóźniliśmy się na ostatni pociąg i musieliśmy czekać godzinę. To był najlepszy dzień lata. Następnym razem chcemy zostać na cały tydzień.",
+  "text": "W zeszły weekend pojechaliśmy z bratem nad morze. Wsiedliśmy do pociągu wcześnie rano, a podróż trwała trzy godziny. Pogoda była piękna: niebo było niebieskie, a woda ciepła. Długo pływaliśmy, a potem leżeliśmy na plaży. W południe jedliśmy świeżą rybę w małej restauracji blisko portu. Kelner był miły i przyniósł nam zimną wodę. Po południu spacerowaliśmy po starym mieście i kupiliśmy pocztówki. Mój brat zrobił dużo zdjęć łodzi. Wieczorem byliśmy bardzo zmęczeni, ale nie chcieliśmy wracać do domu. Spóźniliśmy się na pociąg i musieliśmy czekać godzinę na następny. To był najlepszy dzień lata. Następnym razem chcemy zostać na cały tydzień.",
   "gloss": {
    "weekend": "weekend",
    "bratem": "brother",
@@ -178,7 +178,7 @@
     "In the afternoon we walked through the old town and bought postcards."
    ],
    [
-    "Spóźniliśmy się na ostatni pociąg i musieliśmy czekać godzinę.",
+    "Spóźniliśmy się na pociąg i musieliśmy czekać godzinę na następny.",
     "We missed the last train and had to wait an hour."
    ]
   ]
@@ -187,7 +187,7 @@
   "id": "pl-neighbour",
   "title": "Nowa sąsiadka",
   "level": "A2",
-  "text": "W zeszłym miesiącu do naszego domu wprowadziła się nowa sąsiadka. Ma na imię Sofia i pochodzi z innego miasta. Na początku nikogo tutaj nie znała. Pewnego wieczoru zapukała do naszych drzwi, bo lampa w jej kuchni była zepsuta. Mój tata poszedł na górę i naprawił ją w dziesięć minut. Sofia była bardzo wdzięczna i następnego dnia przyniosła nam ciasto. Ciasto było pyszne, a mój młodszy brat zjadł trzy kawałki. Teraz Sofia często pije herbatę z moją mamą. Pracuje w szpitalu i opowiada ciekawe historie. Wczoraj pomogła mi w zadaniu domowym. W niedzielę pokazaliśmy jej park i stary targ. Mówi, że już czuje się tu jak w domu. Myślę, że znaleźliśmy nową przyjaciółkę.",
+  "text": "W zeszłym miesiącu do naszego domu wprowadziła się nowa sąsiadka. Ma na imię Sofia i pochodzi z innego miasta. Na początku nikogo tutaj nie znała. Pewnego wieczoru zapukała do naszych drzwi, bo zepsuła jej się lampa w kuchni. Mój tata poszedł na górę i naprawił ją w dziesięć minut. Sofia była bardzo wdzięczna i następnego dnia przyniosła nam ciasto. Ciasto było pyszne, a mój młodszy brat zjadł trzy kawałki. Teraz Sofia często pije herbatę z moją mamą. Pracuje w szpitalu i opowiada ciekawe historie. Wczoraj pomogła mi w zadaniu domowym. W niedzielę pokazaliśmy jej park i stary targ. Mówi, że już czuje się tu jak w domu. Myślę, że znaleźliśmy nową przyjaciółkę.",
   "gloss": {
    "sąsiadka": "neighbour",
    "wprowadziła": "moved",
@@ -198,7 +198,6 @@
    "drzwi": "door",
    "kuchni": "kitchen",
    "lampa": "lamp",
-   "zepsuta": "broken",
    "naprawił": "repaired",
    "minut": "minutes",
    "wdzięczna": "grateful",
@@ -267,7 +266,7 @@
    ],
    [
     1,
-    "Tak, jakie ciasta są dzisiaj?"
+    "Tak, jakie macie dzisiaj ciasta?"
    ],
    [
     0,
@@ -343,7 +342,7 @@
    ],
    [
     0,
-    "Jak się pani nazywa?"
+    "Na jakie nazwisko?"
    ],
    [
     1,
@@ -406,13 +405,13 @@
     ]
    }
   ],
-  "notice": "A stranger is addressed as \"pan\" (to a man) or \"pani\" (to a woman) with the verb in the third person: \"Jak się pani nazywa?\", \"Oto pani klucz\"."
+  "notice": "A stranger is addressed as \"pan\" (to a man) or \"pani\" (to a woman) with the verb in the third person: \"Na jakie nazwisko?\", \"Oto pani klucz\"."
  },
  {
   "id": "pl-family",
   "title": "Moja rodzina",
   "level": "A1",
-  "text": "Mam na imię Anna. Mieszkam z rodziną w małym domu nad rzeką. Moja mama jest nauczycielką, a tata pracuje w sklepie. Mam brata i siostrę. Mój brat ma dziesięć lat i lubi piłkę nożną. Moja siostra jest jeszcze mała: ma trzy lata. Mamy też psa, który nazywa się Max. Codziennie rano tata idzie z psem na spacer. Wieczorem jemy razem kolację i rozmawiamy o tym, jak minął dzień. Po kolacji zmywam z bratem naczynia. W niedzielę przychodzi babcia i przynosi ciasto. Bardzo kocham moją rodzinę.",
+  "text": "Mam na imię Anna. Mieszkam z rodziną w małym domu nad rzeką. Moja mama jest nauczycielką, a tata pracuje w sklepie. Mam brata i siostrę. Mój brat ma dziesięć lat i lubi piłkę nożną. Moja siostra jest jeszcze mała: ma trzy lata. Mamy też psa, który nazywa się Max. Codziennie rano tata chodzi z psem na spacer. Wieczorem jemy razem kolację i rozmawiamy o tym, jak minął dzień. Po kolacji zmywam z bratem naczynia. W niedzielę przychodzi babcia i przynosi ciasto. Bardzo kocham swoją rodzinę.",
   "gloss": {
    "rodziną": "family",
    "domu": "house",
@@ -477,7 +476,7 @@
   "id": "pl-town",
   "title": "Nasze miasto",
   "level": "A1",
-  "text": "Nasze miasto jest małe, ale piękne. W centrum jest stary rynek z fontanną. Obok rynku są szkoła, apteka i dwie kawiarnie. Dworzec jest za parkiem. Codziennie rano wiele osób jedzie pociągiem do dużego miasta. Po południu dzieci bawią się w parku, a starsi panowie grają w szachy. Latem przyjeżdżają turyści i robią zdjęcia mostu. Zimą w mieście jest cicho. W sobotę na rynku jest targ. Można tam kupić warzywa, miód i kwiaty. Wieczorem lubię spacerować nad rzeką. Nie chcę mieszkać w dużym mieście.",
+  "text": "Nasze miasto jest małe, ale piękne. W centrum jest stary rynek z fontanną. Obok rynku są szkoła, apteka i dwie kawiarnie. Dworzec jest za parkiem. Codziennie rano wiele osób jeździ pociągiem do dużego miasta. Po południu dzieci bawią się w parku, a starsi panowie grają w szachy. Latem przyjeżdżają turyści i robią zdjęcia mostu. Zimą w mieście jest cicho. W sobotę na rynku jest targ. Można tam kupić warzywa, miód i kwiaty. Wieczorem lubię spacerować nad rzeką. Nie chcę mieszkać w dużym mieście.",
   "gloss": {
    "miasto": "town",
    "piękne": "beautiful",
@@ -541,7 +540,7 @@
   "id": "pl-birthday",
   "title": "Urodziny babci",
   "level": "A2",
-  "text": "Wczoraj były urodziny mojej babci. Ma teraz osiemdziesiąt lat. Cała rodzina przyjechała do jej domu na wsi. Moja ciocia upiekła duży tort, a wujek przyniósł kwiaty. Daliśmy jej ciepły szalik i książkę o ogrodach. Przed obiadem zaśpiewaliśmy piosenkę, a babcia się śmiała. Na stole była zupa, kurczak z ziemniakami i dużo sałatki. Po obiedzie pokazała nam stare zdjęcia. Na jednym zdjęciu była młodą kobietą z rowerem. Opowiedziała nam, że codziennie jeździła nim do pracy. Potem mój kuzyn grał na gitarze i wszyscy tańczyli. Nawet mój młodszy brat tańczył z babcią. Wieczorem była zmęczona, ale szczęśliwa. Powiedziała, że to były najlepsze urodziny w jej życiu. Wróciliśmy do domu późno, kiedy na niebie były już gwiazdy.",
+  "text": "Wczoraj były urodziny mojej babci. Skończyła osiemdziesiąt lat. Cała rodzina przyjechała do jej domu na wsi. Moja ciocia upiekła duży tort, a wujek przyniósł kwiaty. Daliśmy jej ciepły szalik i książkę o ogrodach. Przed obiadem zaśpiewaliśmy piosenkę, a babcia się śmiała. Na stole była zupa, kurczak z ziemniakami i dużo sałatki. Po obiedzie pokazała nam stare zdjęcia. Na jednym zdjęciu była młodą kobietą z rowerem. Opowiedziała nam, że codziennie jeździła nim do pracy. Potem mój kuzyn grał na gitarze i wszyscy tańczyli. Nawet mój młodszy brat tańczył z babcią. Wieczorem była zmęczona, ale szczęśliwa. Powiedziała, że to były najlepsze urodziny w jej życiu. Wróciliśmy do domu późno, kiedy na niebie były już gwiazdy.",
   "gloss": {
    "wczoraj": "yesterday",
    "urodziny": "birthday",
@@ -705,7 +704,7 @@
    ],
    [
     0,
-    "Około dwóch godzin. Musi pan się przesiąść w Bydgoszczy."
+    "Około dwóch godzin. Musi się pan przesiąść w Bydgoszczy."
    ],
    [
     1,
@@ -811,7 +810,7 @@
    ],
    [
     1,
-    "Czy potrzebuję leków?"
+    "Czy muszę brać jakieś leki?"
    ],
    [
     0,
@@ -845,7 +844,6 @@
    "poważnego": "serious",
    "odpoczynku": "rest",
    "zostać": "stay",
-   "leków": "medicine",
    "receptę": "prescription",
    "tabletki": "tablets",
    "posiłku": "meal",

@@ -3,7 +3,7 @@
   "id": "id-market",
   "title": "Di pasar",
   "level": "A1",
-  "text": "Setiap hari Sabtu Maria pergi ke pasar. Pasar itu ada di pusat kota. Matahari bersinar dan ada banyak orang di sana. Maria suka pasar itu karena buahnya segar dan murah. Pertama dia membeli apel dan jeruk. Lalu dia membeli roti, keju, dan sedikit ikan. Penjual ikan di sana sangat ramah. Dia selalu bertanya tentang keluarganya. Di pasar Maria sering bertemu dengan temannya, Elena. Hari ini mereka minum kopi bersama dan mengobrol lama. Pada tengah hari Maria pulang dengan dua tas yang berat. Dia lelah, tetapi senang.",
+  "text": "Setiap hari Sabtu Maria pergi ke pasar. Pasar itu ada di pusat kota. Matahari bersinar dan ada banyak orang di sana. Maria suka pasar itu karena buahnya segar dan murah. Pertama dia membeli apel dan jeruk. Lalu dia membeli roti, keju, dan sedikit ikan. Penjual ikan di sana sangat ramah. Dia selalu menanyakan kabar keluarganya. Di pasar Maria sering bertemu dengan temannya, Elena. Hari ini mereka minum kopi bersama dan mengobrol lama. Pada tengah hari Maria pulang dengan dua tas yang berat. Dia lelah, tetapi senang.",
   "gloss": {
    "pasar": "market",
    "pusat": "centre",
@@ -54,7 +54,7 @@
     "First she buys apples and oranges."
    ],
    [
-    "Dia selalu bertanya tentang keluarganya.",
+    "Dia selalu menanyakan kabar keluarganya.",
     "He always asks about her family."
    ]
   ]
@@ -63,7 +63,7 @@
   "id": "id-day",
   "title": "Hari saya",
   "level": "A1",
-  "text": "Nama saya Daniel dan saya tinggal di apartemen kecil. Setiap pagi saya bangun pukul tujuh. Pertama saya minum teh dan makan roti dengan mentega. Lalu saya pergi bekerja naik bus. Saya bekerja di toko buku di pusat kota. Saya suka pekerjaan saya karena saya suka buku. Pada tengah hari saya makan sup di restoran kecil. Pada sore hari banyak pelanggan datang ke toko. Pada malam hari saya pulang dan memasak makan malam. Sesudah makan malam saya menelepon ibu saya atau membaca buku. Saya tidur pukul sebelas. Pada hari Minggu saya tidak bekerja dan tidur lebih lama.",
+  "text": "Nama saya Daniel dan saya tinggal di apartemen kecil. Setiap pagi saya bangun pukul tujuh. Pertama saya minum teh dan makan roti dengan mentega. Lalu saya pergi bekerja naik bus. Saya bekerja di toko buku di pusat kota. Saya suka pekerjaan saya karena saya suka buku. Pada siang hari saya makan sup di restoran kecil. Pada sore hari banyak pelanggan datang ke toko. Pada malam hari saya pulang dan memasak makan malam. Sesudah makan malam saya menelepon ibu saya atau membaca buku. Saya tidur pukul sebelas. Pada hari Minggu saya tidak bekerja dan tidur lebih lama.",
   "gloss": {
    "apartemen": "flat",
    "bangun": "get up",
@@ -123,11 +123,10 @@
   "id": "id-sea",
   "title": "Akhir pekan di tepi laut",
   "level": "A2",
-  "text": "Akhir pekan lalu saya dan kakak laki-laki saya pergi ke laut. Kami naik kereta pagi-pagi sekali dan perjalanannya memakan waktu tiga jam. Cuacanya bagus sekali: langit biru dan airnya hangat. Kami berenang lama, lalu berbaring di pantai. Pada tengah hari kami makan ikan segar di restoran kecil dekat pelabuhan. Pelayannya ramah dan membawakan kami air dingin. Pada sore hari kami berjalan-jalan di kota tua dan membeli kartu pos. Kakak saya mengambil banyak foto perahu. Pada malam hari kami sangat lelah, tetapi kami belum mau pulang. Kami ketinggalan kereta terakhir dan harus menunggu satu jam. Itu hari terbaik pada musim panas ini. Lain kali kami mau tinggal seminggu penuh.",
+  "text": "Akhir pekan lalu saya dan kakak laki-laki saya pergi ke pantai. Kami naik kereta pagi-pagi sekali dan perjalanannya memakan waktu tiga jam. Cuacanya bagus sekali: langit biru dan airnya hangat. Kami berenang lama, lalu berbaring di pantai. Pada tengah hari kami makan ikan segar di restoran kecil dekat pelabuhan. Pelayannya ramah dan membawakan kami air dingin. Pada sore hari kami berjalan-jalan di kota tua dan membeli kartu pos. Kakak saya mengambil banyak foto perahu. Pada malam hari kami sangat lelah, tetapi kami belum mau pulang. Kami ketinggalan kereta dan harus menunggu kereta berikutnya satu jam. Itu hari terbaik pada musim panas ini. Lain kali kami mau tinggal seminggu penuh.",
   "gloss": {
    "pekan": "week (akhir pekan: weekend)",
    "kakak": "older brother or sister",
-   "laut": "sea",
    "kereta": "train",
    "perjalanannya": "the journey",
    "jam": "hours",
@@ -178,7 +177,7 @@
     "In the afternoon we walked through the old town and bought postcards."
    ],
    [
-    "Kami ketinggalan kereta terakhir dan harus menunggu satu jam.",
+    "Kami ketinggalan kereta dan harus menunggu kereta berikutnya satu jam.",
     "We missed the last train and had to wait an hour."
    ]
   ]
@@ -187,7 +186,7 @@
   "id": "id-neighbour",
   "title": "Tetangga baru",
   "level": "A2",
-  "text": "Bulan lalu seorang tetangga baru pindah ke gedung kami. Namanya Sofia dan dia berasal dari kota lain. Pada awalnya dia tidak mengenal siapa pun di sini. Suatu malam dia mengetuk pintu kami karena lampu di dapurnya rusak. Ayah saya naik ke atas dan memperbaikinya dalam sepuluh menit. Sofia sangat berterima kasih dan keesokan harinya dia membawakan kami kue. Kuenya enak sekali dan adik laki-laki saya makan tiga potong. Sekarang Sofia sering minum teh bersama ibu saya. Dia bekerja di rumah sakit dan menceritakan kisah-kisah yang menarik. Kemarin dia membantu saya mengerjakan pekerjaan rumah. Pada hari Minggu kami menunjukkan taman dan pasar lama kepadanya. Dia berkata bahwa dia sudah merasa seperti di rumah sendiri. Saya rasa kami sudah mendapat teman baru.",
+  "text": "Bulan lalu seorang tetangga baru pindah ke gedung kami. Namanya Sofia dan dia berasal dari kota lain. Pada awalnya dia tidak mengenal siapa pun di sini. Suatu malam dia mengetuk pintu kami karena lampu di dapurnya rusak. Ayah saya naik ke atas dan memperbaikinya dalam sepuluh menit. Sofia sangat berterima kasih dan keesokan harinya dia membawakan kami kue. Kuenya enak sekali dan adik laki-laki saya makan tiga potong. Sekarang Sofia sering minum teh bersama ibu saya. Dia bekerja di rumah sakit dan menceritakan kisah-kisah yang menarik. Kemarin dia membantu saya mengerjakan pekerjaan rumah. Pada hari Minggu kami menunjukkan taman dan pasar lama kepadanya. Katanya, dia sudah merasa seperti di rumah sendiri. Saya rasa kami sudah mendapat teman baru.",
   "gloss": {
    "tetangga": "neighbour",
    "pindah": "moved",
@@ -279,7 +278,7 @@
    ],
    [
     0,
-    "Silakan. Ada lagi yang lain?"
+    "Baik. Ada lagi yang lain?"
    ],
    [
     1,
@@ -351,7 +350,7 @@
    ],
    [
     0,
-    "Terima kasih. Kamar Anda ada di lantai tiga."
+    "Terima kasih, Bu. Kamar Ibu ada di lantai tiga."
    ],
    [
     1,
@@ -413,7 +412,7 @@
   "id": "id-family",
   "title": "Keluarga saya",
   "level": "A1",
-  "text": "Nama saya Anna. Saya tinggal bersama keluarga saya di sebuah rumah kecil dekat sungai. Ibu saya seorang guru dan ayah saya bekerja di sebuah toko. Saya punya seorang adik laki-laki dan seorang adik perempuan. Adik laki-laki saya berumur sepuluh tahun dan dia suka sepak bola. Adik perempuan saya masih kecil: umurnya tiga tahun. Kami juga punya seekor anjing, namanya Max. Setiap pagi ayah saya berjalan-jalan dengan anjing itu. Pada malam hari kami makan bersama dan bercerita tentang hari kami. Sesudah makan malam, saya dan adik saya mencuci piring. Pada hari Minggu nenek saya datang dan membawa kue. Saya sangat sayang kepada keluarga saya.",
+  "text": "Nama saya Anna. Saya tinggal bersama keluarga saya di sebuah rumah kecil dekat sungai. Ibu saya seorang guru dan ayah saya bekerja di sebuah toko. Saya punya seorang adik laki-laki dan seorang adik perempuan. Adik laki-laki saya berumur sepuluh tahun dan dia suka sepak bola. Adik perempuan saya masih kecil: umurnya tiga tahun. Kami juga punya seekor anjing, namanya Max. Setiap pagi ayah saya berjalan-jalan dengan anjing itu. Pada malam hari kami makan bersama dan bercerita tentang kegiatan kami hari itu. Sesudah makan malam, saya dan adik saya mencuci piring. Pada hari Minggu nenek saya datang dan membawa kue. Saya sangat sayang kepada keluarga saya.",
   "gloss": {
    "keluarga": "family",
    "rumah": "house",
@@ -475,7 +474,7 @@
   "id": "id-town",
   "title": "Kota kami",
   "level": "A1",
-  "text": "Kota kami kecil, tetapi indah. Di pusat kota ada sebuah alun-alun tua dengan air mancur. Di sebelah alun-alun ada sebuah sekolah, sebuah apotek, dan dua kafe. Stasiun ada di belakang taman. Setiap pagi banyak orang naik kereta ke kota besar. Pada sore hari anak-anak bermain di taman, dan para kakek bermain catur. Pada musim panas turis datang dan memotret jembatan. Pada musim dingin kota ini sepi. Pada hari Sabtu ada pasar di alun-alun. Di sana Anda bisa membeli sayur, madu, dan bunga. Pada malam hari saya suka berjalan-jalan di tepi sungai. Saya tidak mau tinggal di kota besar.",
+  "text": "Kota kami kecil, tetapi indah. Di pusat kota ada sebuah alun-alun tua dengan air mancur. Di sebelah alun-alun ada sebuah sekolah, sebuah apotek, dan dua kafe. Stasiun ada di belakang taman. Setiap pagi banyak orang naik kereta ke kota besar. Pada sore hari anak-anak bermain di taman, dan para kakek bermain catur. Pada musim panas turis datang dan memotret jembatan. Pada musim dingin kota ini sepi. Pada hari Sabtu ada pasar di alun-alun. Di sana kita bisa membeli sayur, madu, dan bunga. Pada malam hari saya suka berjalan-jalan di tepi sungai. Saya tidak mau tinggal di kota besar.",
   "gloss": {
    "kota": "town",
    "indah": "beautiful",
@@ -538,7 +537,7 @@
   "id": "id-birthday",
   "title": "Ulang tahun Nenek",
   "level": "A2",
-  "text": "Kemarin adalah hari ulang tahun nenek saya. Sekarang Nenek berumur delapan puluh tahun. Seluruh keluarga datang ke rumahnya di desa. Bibi saya membuat kue yang besar dan paman saya membawa bunga. Kami memberinya syal yang hangat dan sebuah buku tentang kebun. Sebelum makan siang kami menyanyikan sebuah lagu, dan Nenek tertawa. Di atas meja ada sup, ayam dengan kentang, dan banyak salad. Sesudah makan siang, Nenek menunjukkan foto-foto lama kepada kami. Di salah satu foto, Nenek adalah seorang perempuan muda dengan sepeda. Nenek bercerita bahwa dia naik sepeda itu ke tempat kerja setiap hari. Lalu sepupu saya bermain gitar dan semua orang menari. Bahkan adik laki-laki saya menari dengan Nenek. Pada malam hari Nenek lelah tetapi bahagia. Katanya, itu ulang tahun terbaik dalam hidupnya. Kami pulang larut malam, ketika bintang-bintang sudah ada di langit.",
+  "text": "Kemarin adalah hari ulang tahun nenek saya. Sekarang Nenek berumur delapan puluh tahun. Seluruh keluarga datang ke rumahnya di desa. Bibi saya membuat kue yang besar dan paman saya membawa bunga. Kami memberinya syal yang hangat dan sebuah buku tentang kebun. Sebelum makan siang kami menyanyikan sebuah lagu, dan Nenek tertawa. Di atas meja ada sup, ayam dengan kentang, dan banyak salad. Sesudah makan siang, Nenek menunjukkan foto-foto lama kepada kami. Di salah satu foto, Nenek masih muda dan berdiri dengan sepedanya. Nenek bercerita bahwa dia naik sepeda itu ke tempat kerja setiap hari. Lalu sepupu saya bermain gitar dan semua orang menari. Bahkan adik laki-laki saya menari dengan Nenek. Pada malam hari Nenek lelah tetapi bahagia. Katanya, itu ulang tahun terbaik dalam hidupnya. Kami pulang larut malam, ketika bintang-bintang sudah ada di langit.",
   "gloss": {
    "kemarin": "yesterday",
    "ulang": "(ulang tahun: birthday)",
@@ -605,7 +604,7 @@
   "id": "id-wallet",
   "title": "Dompet yang hilang",
   "level": "B1",
-  "text": "Jumat lalu Daniel mau membayar di supermarket, tetapi dompetnya tidak ada di sakunya. Dia sangat khawatir, karena kartu bank dan SIM-nya ada di dalam dompet itu. Dia meninggalkan belanjaannya di kasir dan kembali lewat jalan yang sama. Dia mencari di mana-mana, di trotoar dan di halte bus, tetapi tidak menemukan apa-apa. Di rumah dia menelepon bank dan memblokir kartunya. Malam itu dia tidak bisa tidur, karena memikirkan semua dokumennya. Dua hari kemudian datang sepucuk surat dari polisi. Seorang perempuan telah menemukan dompet itu di bus dan membawanya ke kantor polisi. Daniel langsung pergi ke sana. Tidak ada yang hilang, bahkan uangnya pun masih ada. Polisi memberinya alamat perempuan itu, karena Daniel ingin berterima kasih kepadanya. Keesokan harinya dia membeli bunga dan menulis sebuah kartu untuknya. Perempuan itu terkejut dan mengajaknya minum kopi. Mereka mengobrol selama satu jam, dan sekarang mereka berteman baik. Sejak itu Daniel selalu memeriksa sakunya sebelum turun dari bus.",
+  "text": "Jumat lalu Daniel mau membayar di supermarket, tetapi dompetnya tidak ada di sakunya. Dia sangat khawatir, karena kartu ATM dan SIM-nya ada di dalam dompet itu. Dia meninggalkan belanjaannya di kasir dan kembali lewat jalan yang sama. Dia mencari di mana-mana, di trotoar dan di halte bus, tetapi tidak menemukan apa-apa. Di rumah dia menelepon bank dan memblokir kartunya. Malam itu dia tidak bisa tidur, karena memikirkan semua dokumennya. Dua hari kemudian datang sepucuk surat dari polisi. Seorang perempuan telah menemukan dompet itu di bus dan membawanya ke kantor polisi. Daniel langsung pergi ke sana. Tidak ada yang hilang, bahkan uangnya pun masih ada. Polisi memberinya alamat perempuan itu, karena Daniel ingin berterima kasih kepadanya. Keesokan harinya dia membeli bunga dan menulis sebuah kartu untuknya. Perempuan itu terkejut dan mengajaknya minum kopi. Mereka mengobrol selama satu jam, dan sekarang mereka berteman baik. Sejak itu Daniel selalu memeriksa sakunya sebelum turun dari bus.",
   "gloss": {
    "jumat": "Friday",
    "membayar": "pay",
@@ -706,7 +705,7 @@
    ],
    [
     1,
-    "Berapa lama waktu saya di sana?"
+    "Saya punya waktu berapa lama di sana?"
    ],
    [
     0,
@@ -796,7 +795,7 @@
    ],
    [
     0,
-    "Tolong buka mulut Anda. Ya, tenggorokan Anda sangat merah."
+    "Coba buka mulutnya. Ya, tenggorokannya merah sekali."
    ],
    [
     1,
@@ -837,7 +836,6 @@
    "sakit": "hurt",
    "terutama": "especially",
    "tidur": "sleep",
-   "mulut": "mouth",
    "merah": "red",
    "serius": "serious",
    "istirahat": "rest",
