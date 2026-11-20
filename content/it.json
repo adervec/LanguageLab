@@ -462,7 +462,7 @@
    ],
    [
     1,
-    "Certo, volentieri. Tu abiti qui da molto tempo?"
+    "Certo, volentieri. E tu abiti qui da molto tempo?"
    ],
    [
     0,
@@ -618,7 +618,7 @@
   "id": "it-mare",
   "title": "Un fine settimana al mare",
   "level": "A2",
-  "text": "Il fine settimana scorso sono andata al mare con mio fratello Matteo. Abbiamo preso il treno per la Liguria sabato mattina presto. Il viaggio è durato due ore, e dal finestrino si vedeva già il mare. Quando siamo arrivati in spiaggia, Matteo ha aperto lo zaino e ha fatto una faccia strana. Il suo costume da bagno non c'era: era ancora a casa, sul letto! Nel paese c'era un solo negozio aperto. Aveva soltanto un costume da uomo: arancione, con dei grandi pesci verdi. Matteo non voleva comprarlo, ma l'acqua era troppo bella. Alla fine l'ha comprato e abbiamo fatto il bagno per tutto il pomeriggio. La sera abbiamo mangiato la focaccia calda sul molo e abbiamo guardato il tramonto. Domenica faceva più fresco, così abbiamo camminato lungo la costa. Adesso Matteo dice che quel costume gli porta fortuna. Lo vuole mettere anche l'estate prossima.",
+  "text": "Il fine settimana scorso sono andata al mare con mio fratello Matteo. Abbiamo preso il treno per la Liguria sabato mattina presto. Il viaggio è durato due ore, e dal finestrino si vedeva già il mare. Quando siamo arrivati in spiaggia, Matteo ha aperto lo zaino e ha fatto una faccia strana. Il costume da bagno non c'era: era ancora a casa, sul letto! Nel paese c'era un solo negozio aperto. Aveva soltanto un costume da uomo: arancione, con dei grandi pesci verdi. Matteo non voleva comprarlo, ma l'acqua era troppo bella. Alla fine l'ha comprato e abbiamo fatto il bagno per tutto il pomeriggio. La sera abbiamo mangiato la focaccia calda sul molo e abbiamo guardato il tramonto. Domenica faceva più fresco, così abbiamo camminato lungo la costa. Adesso Matteo dice che quel costume gli porta fortuna. Lo vuole mettere anche l'estate prossima.",
   "gloss": {
    "fine": "end (il fine settimana: the weekend)",
    "scorso": "last",
@@ -763,7 +763,7 @@
   "id": "it-medico",
   "title": "Dal medico",
   "level": "A2",
-  "text": "Da una settimana Stefano aveva mal di testa ogni sera. All'inizio ha pensato di essere solo stanco. Poi però si è preoccupato e ha telefonato alla dottoressa Ferri. Lei gli ha dato un appuntamento per il giorno dopo. Nella sala d'attesa c'erano molte persone, e Stefano ha aspettato quasi un'ora. La dottoressa gli ha misurato la pressione e gli ha fatto molte domande. Dorme bene? Beve abbastanza acqua? Quante ore passa davanti al computer? «Dieci ore al giorno», ha risposto Stefano. Allora la dottoressa gli ha chiesto di leggere alcune lettere sul muro. Stefano ne ha sbagliate molte. «Lei non è malato», ha detto la dottoressa sorridendo. «Ha solo bisogno di un paio di occhiali». Così Stefano è andato subito dall'ottico. Con gli occhiali nuovi, il mal di testa è sparito in pochi giorni.",
+  "text": "Da una settimana Stefano aveva mal di testa ogni sera. All'inizio ha pensato di essere solo stanco. Poi però si è preoccupato e ha telefonato alla dottoressa Ferri. Lei gli ha dato un appuntamento per il giorno dopo. Nella sala d'attesa c'erano molte persone, e Stefano ha aspettato quasi un'ora. La dottoressa gli ha misurato la pressione e gli ha fatto molte domande. Dorme bene? Beve abbastanza acqua? Quante ore passa davanti al computer? «Dieci ore al giorno», ha risposto Stefano. Allora la dottoressa gli ha chiesto di leggere alcune lettere sul muro. Stefano ne ha sbagliate molte. «Non è malato», ha detto la dottoressa sorridendo. «Ha solo bisogno di un paio di occhiali». Così Stefano è andato subito dall'ottico. Con gli occhiali nuovi, il mal di testa è sparito in pochi giorni.",
   "gloss": {
    "mal": "pain (mal di testa: headache)",
    "testa": "head",
@@ -1255,7 +1255,7 @@
   "id": "it-telefono",
   "title": "Senza telefono",
   "level": "B1",
-  "text": "Sabato scorso, scendendo dal vaporetto a Venezia, Andrea si è accorto di non avere più il telefono. Ha controllato tutte le tasche e lo zaino, ma niente. Forse gli era caduto dalla tasca durante il viaggio. All'inizio si è sentito perso. Doveva incontrare la sua amica Irene, ma non ricordava il suo numero a memoria. Non sapeva nemmeno come arrivare al ristorante senza la mappa. Così ha fatto una cosa che non faceva da anni: ha chiesto la strada ai passanti. Un anziano signore l'ha accompagnato per un tratto e gli ha raccontato la storia del quartiere. Andrea è arrivato al ristorante in ritardo, ma di ottimo umore. Irene lo aspettava con una bella notizia. Aveva provato a chiamarlo, e al telefono aveva risposto una turista. L'aveva trovato su un sedile del vaporetto. Un'ora dopo, davanti alla stazione, Andrea aveva di nuovo il telefono in mano. Però, tornando a casa, l'ha lasciato in tasca e ha guardato la città.",
+  "text": "Sabato scorso, scendendo dal vaporetto a Venezia, Andrea si è accorto di non avere più il telefono. Ha controllato tutte le tasche e lo zaino, ma niente. Forse gli era caduto dalla tasca durante il viaggio. All'inizio si è sentito perso. Doveva incontrare la sua amica Irene, ma non sapeva il suo numero a memoria. Non sapeva nemmeno come arrivare al ristorante senza la mappa. Così ha fatto una cosa che non faceva da anni: ha chiesto la strada ai passanti. Un anziano signore l'ha accompagnato per un tratto e gli ha raccontato la storia del quartiere. Andrea è arrivato al ristorante in ritardo, ma di ottimo umore. Irene lo aspettava con una bella notizia. Aveva provato a chiamarlo, e al telefono aveva risposto una turista. L'aveva trovato su un sedile del vaporetto. Un'ora dopo, davanti alla stazione, Andrea aveva di nuovo il telefono in mano. Però, tornando a casa, l'ha lasciato in tasca e ha guardato la città.",
   "gloss": {
    "scendendo": "getting off (scendere)",
    "vaporetto": "water bus",
@@ -1269,7 +1269,7 @@
    "sentito": "felt (sentirsi)",
    "perso": "lost",
    "incontrare": "to meet",
-   "ricordava": "remembered",
+   "sapeva": "knew (sapere a memoria: to know by heart)",
    "memoria": "memory (a memoria: by heart)",
    "nemmeno": "not even",
    "chiesto": "asked (chiedere)",
@@ -1476,7 +1476,7 @@
   "id": "it-concerto",
   "title": "Il concerto sotto la pioggia",
   "level": "B1",
-  "text": "L'estate scorsa io e Silvia siamo andate a un concerto all'aperto in una piazza di Bologna. Aspettavamo quella sera da mesi, perché suonava il nostro gruppo preferito. Verso le nove, però, il cielo è diventato nero e ha cominciato a piovere forte. Dopo due canzoni si sono spente le luci del palco. Un tecnico ha annunciato che il concerto era sospeso per motivi di sicurezza. Tutti sono corsi a ripararsi sotto i portici, bagnati e delusi. Molti protestavano, altri chiedevano già il rimborso del biglietto. Stavamo per andare via quando abbiamo sentito una chitarra. I musicisti erano scesi dal palco con gli strumenti acustici e si erano seduti sui gradini, in mezzo alla gente. Hanno suonato per più di un'ora, senza microfoni, mentre il pubblico cantava piano insieme a loro. Qualcuno ha acceso la luce del telefono, e presto i portici sembravano pieni di stelle. Fuori continuava a diluviare, ma nessuno ci faceva più caso. Con il sole sarebbe stato un concerto come tanti. Invece ne abbiamo vissuto uno che non dimenticheremo mai.",
+  "text": "L'estate scorsa io e Silvia siamo andate a un concerto all'aperto in una piazza di Bologna. Aspettavamo quella sera da mesi, perché suonava il nostro gruppo preferito. Verso le nove, però, il cielo è diventato nero e ha cominciato a piovere forte. Dopo due canzoni si sono spente le luci del palco. Un tecnico ha annunciato che il concerto era sospeso per motivi di sicurezza. Tutti sono corsi a ripararsi sotto i portici, bagnati e delusi. Molti protestavano, altri chiedevano già il rimborso del biglietto. Stavamo per andare via quando abbiamo sentito una chitarra. I musicisti erano scesi dal palco con gli strumenti acustici e si erano seduti sui gradini, in mezzo alla gente. Hanno suonato per più di un'ora, senza microfoni, mentre il pubblico cantava piano insieme a loro. Qualcuno ha acceso la luce del telefono, poi altri, e presto i portici sembravano pieni di stelle. Fuori continuava a diluviare, ma nessuno ci faceva più caso. Con il sole sarebbe stato un concerto come tanti. Invece ne abbiamo vissuto uno che non dimenticheremo mai.",
   "gloss": {
    "aperto": "open (all'aperto: in the open air)",
    "suonava": "was playing",
@@ -1549,7 +1549,7 @@
   "id": "it-nuotare",
   "title": "Imparare a nuotare",
   "level": "B1",
-  "text": "Rosa è cresciuta in un paese di montagna, lontano dal mare, e da bambina nessuno le aveva insegnato a nuotare. Per anni, in vacanza, è rimasta sulla riva a guardare gli altri. Diceva che l'acqua non le interessava, ma in realtà si vergognava. A cinquantotto anni, appena andata in pensione, si è iscritta a un corso di nuoto nella piscina comunale. Il primo giorno voleva scappare. Gli altri allievi avevano la metà dei suoi anni e l'istruttore sembrava un ragazzino. Lui però le ha parlato con calma e le ha chiesto soltanto di mettere il viso sott'acqua. La settimana dopo le ha insegnato a galleggiare, poi a muovere le gambe. Ogni lezione era una piccola vittoria. A giugno Rosa ha fatto la sua prima vasca senza fermarsi, e tutto il gruppo ha applaudito. Quell'estate, in Sardegna, è entrata in mare con i nipoti. Ha nuotato fino alla boa e ritorno, piano, respirando bene. «Nonna, ma tu sai nuotare!» ha gridato il più piccolo. Rosa ha risposto che non è mai troppo tardi per imparare.",
+  "text": "Rosa è cresciuta in un paese di montagna, lontano dal mare, e da bambina nessuno le aveva insegnato a nuotare. Per anni, in vacanza, è rimasta sulla riva a guardare gli altri. Diceva che l'acqua non le interessava, ma in realtà si vergognava. A cinquantotto anni, appena andata in pensione, si è iscritta a un corso di nuoto nella piscina comunale. Il primo giorno voleva scappare. Gli altri allievi avevano la metà dei suoi anni e l'istruttore sembrava un ragazzino. Lui però le ha parlato con calma e le ha chiesto soltanto di mettere il viso sott'acqua. La settimana dopo le ha insegnato a galleggiare, poi a muovere le gambe. Ogni lezione era una piccola vittoria. A giugno Rosa ha fatto la sua prima vasca senza fermarsi, e tutto il gruppo ha applaudito. Quell'estate, in Sardegna, è entrata in mare con i nipoti. Ha nuotato fino alla boa e poi indietro, piano, respirando bene. «Nonna, ma tu sai nuotare!» ha gridato il più piccolo. Rosa ha risposto che non è mai troppo tardi per imparare.",
   "gloss": {
    "cresciuta": "grown up (crescere)",
    "paese": "village",
@@ -1580,7 +1580,7 @@
    "applaudito": "clapped",
    "nipoti": "grandchildren",
    "boa": "buoy",
-   "ritorno": "way back",
+   "indietro": "back",
    "piano": "slowly",
    "respirando": "breathing",
    "gridato": "shouted",
@@ -1614,7 +1614,7 @@
     "The following week he taught her to float, then to move her legs."
    ],
    [
-    "Ha nuotato fino alla boa e ritorno, piano, respirando bene.",
+    "Ha nuotato fino alla boa e poi indietro, piano, respirando bene.",
     "She swam to the buoy and back, slowly, breathing well."
    ]
   ]
@@ -1819,7 +1819,7 @@
    ],
    [
     1,
-    "La ringrazio per il suo tempo. Arrivederci!"
+    "La ringrazio per il tempo che mi ha dedicato. Arrivederci!"
    ]
   ],
   "gloss": {
@@ -1960,7 +1960,7 @@
   "id": "it-lettera",
   "title": "La lettera in soffitta",
   "level": "B2",
-  "text": "Dopo la morte del nonno, Elisa e suo fratello avevano deciso di vendere la vecchia casa di famiglia. Si trovava in un paesino delle colline piemontesi, lontano dalle città in cui vivevano. Nessuno dei due aveva il tempo di occuparsene, e i lavori sarebbero costati una fortuna. Un fine settimana di novembre sono saliti in soffitta per svuotarla. Tra bauli polverosi e sedie rotte, Elisa ha notato una busta ingiallita, infilata in una fessura tra due travi. Sopra c'era scritto soltanto: «A chi troverà questa lettera». Dentro, con la sua calligrafia ordinata, il nonno raccontava di aver costruito quella casa con le proprie mani. L'aveva tirata su mattone dopo mattone, nell'anno in cui si era sposato. Spiegava dove aveva piantato il ciliegio e perché la cucina guardava a est. Chiedeva una cosa sola: che chiunque abitasse lì dopo di lui lasciasse sempre la porta aperta agli amici. I due fratelli hanno letto in silenzio, seduti sul pavimento. Per un po' nessuno ha osato dire ad alta voce quello che entrambi pensavano. Se non avessero trovato quella lettera, il lunedì seguente avrebbero firmato il contratto con l'agenzia. Invece hanno telefonato per annullare tutto. Sistemare la casa richiederà anni, ma a primavera il ciliegio fiorirà ancora per la famiglia.",
+  "text": "Dopo la morte del nonno, Elisa e suo fratello avevano deciso di vendere la vecchia casa di famiglia. Si trovava in un paesino delle colline piemontesi, lontano dalle città in cui vivevano. Nessuno dei due aveva il tempo di occuparsene, e i lavori sarebbero costati una fortuna. Un fine settimana di novembre sono saliti in soffitta per svuotarla. Tra bauli polverosi e sedie rotte, Elisa ha notato una busta ingiallita, infilata in una fessura tra due travi. Sopra c'era scritto soltanto: «A chi troverà questa lettera». Dentro, con la sua calligrafia ordinata, il nonno raccontava di aver costruito quella casa con le proprie mani. L'aveva tirata su mattone dopo mattone, nell'anno in cui si era sposato. Spiegava dove aveva piantato il ciliegio e perché la cucina guardava a est. Chiedeva una cosa sola: che chiunque abitasse lì dopo di lui lasciasse sempre la porta aperta agli amici. I due fratelli hanno letto in silenzio, seduti sul pavimento. Per un po' nessuno ha osato dire ad alta voce quello che entrambi pensavano. Se non avessero trovato quella lettera, il lunedì seguente avrebbero firmato il contratto con l'agenzia. Invece hanno telefonato per annullare tutto. Sistemare la casa richiederà anni, ma a primavera il ciliegio fiorirà ancora, e la famiglia sarà lì.",
   "gloss": {
    "morte": "death",
    "paesino": "small village",

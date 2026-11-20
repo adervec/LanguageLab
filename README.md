@@ -346,8 +346,11 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   now says so there, as it did in nine languages already.
   The same question about the 44 French stories and dialogues (which sentence of each would a native speaker most
   object to?) marked 13 sentences, none of them wrong; 12 were reworded ("perdre la voix", a pronoun that pointed
-  at the wrong grandmother, "encore en pyjama" at eleven at night) and one kept. The texts of the other languages
-  have not been asked this.
+  at the wrong grandmother, "encore en pyjama" at eleven at night) and one kept. The Spanish, German and Italian texts (24 each) were asked next, both ways:
+  19, 8 and 8 sentences marked, all 35 changed. Seven Spanish ones were mistakes for a course in the Spanish of
+  Spain: one dialogue gave directions in Latin American words (cuadras, derecho, doble, buses), and two others had
+  "resfrío" and "audífonos", which in Spain is a hearing aid. The reads of the Portuguese, Dutch, Croatian and
+  English texts, and of the twelve texts of each of the other 36 languages, have not been done.
 - **The page for a native speaker** (November 2026) was tried in headless Chrome only: the French page (60 lessons, the
   sounds, 44 texts), the Arabic one (right to left, with readings) and the Japanese one opened; a correction and a
   note typed, a section ticked, the result copied (it names each line by where it lives and gives the words it was

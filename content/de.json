@@ -168,7 +168,7 @@
   "id": "de-cafe",
   "title": "Im Café",
   "level": "A1",
-  "text": "Es ist Nachmittag und es regnet in Wien. Lisa hat keinen Regenschirm. Sie geht schnell in ein kleines Café. Dort ist es warm und es riecht nach Kaffee. Lisa setzt sich an einen Tisch am Fenster. „Was möchten Sie?“, fragt der Kellner. Lisa bestellt einen Kaffee mit Milch und ein Stück Apfelstrudel. Aber der Kellner bringt einen Tee und ein Stück Schokoladentorte. „Entschuldigung, das habe ich nicht bestellt“, sagt Lisa. Der Kellner wird rot. „Oh, das tut mir leid“, antwortet er. Zwei Minuten später kommt er mit dem Kaffee und dem Apfelstrudel zurück. Die Torte darf Lisa auch behalten. Sie kostet nichts. Lisa probiert beide Kuchen und findet sie sehr gut. Draußen regnet es immer noch, aber das ist ihr jetzt egal.",
+  "text": "Es ist Nachmittag und es regnet in Wien. Lisa hat keinen Regenschirm. Sie geht schnell in ein kleines Café. Dort ist es warm und es riecht nach Kaffee. Lisa setzt sich an einen Tisch am Fenster. „Was möchten Sie?“, fragt der Kellner. Lisa bestellt einen Kaffee mit Milch und ein Stück Apfelstrudel. Aber der Kellner bringt einen Tee und ein Stück Schokoladentorte. „Entschuldigung, das habe ich nicht bestellt“, sagt Lisa. Der Kellner wird rot. „Oh, das tut mir leid“, antwortet er. Zwei Minuten später kommt er mit dem Kaffee und dem Apfelstrudel zurück. Die Torte darf Lisa auch behalten. Sie kostet nichts. Lisa probiert beide Stücke und findet sie sehr gut. Draußen regnet es immer noch, aber das ist ihr jetzt egal.",
   "gloss": {
    "nachmittag": "afternoon",
    "regnet": "is raining",
@@ -205,7 +205,7 @@
    "nichts": "nothing",
    "probiert": "tries, tastes",
    "beide": "both",
-   "kuchen": "cakes",
+   "stücke": "pieces (ein Stück: a piece, a slice)",
    "findet": "finds, thinks",
    "draußen": "outside",
    "immer": "always (immer noch: still)",
@@ -229,8 +229,7 @@
     "q": "Was darf Lisa am Ende behalten?",
     "a": [
      "Schokoladentorte",
-     "Torte",
-     "Kuchen"
+     "Torte"
     ]
    }
   ],
@@ -250,7 +249,7 @@
   "id": "de-markt",
   "title": "Auf dem Wochenmarkt",
   "level": "A2",
-  "text": "Jeden Samstag geht Clara in Freiburg auf den Wochenmarkt. Sie kennt dort fast alle Verkäufer. Heute Abend kommen Freunde zum Essen, und sie möchte eine Gemüsesuppe kochen. Zuerst kauft sie Kartoffeln, Karotten und Zwiebeln bei einem Bauern aus der Region. Das Gemüse ist frisch und nicht teuer. Dann geht sie zum Brotstand, aber heute ist er nicht da. Clara ist enttäuscht, denn dort gibt es das beste Brot der Stadt. Die Verkäuferin am Käsestand nebenan sieht ihr trauriges Gesicht. „Der Bäcker ist krank, aber probieren Sie doch unseren Bergkäse“, sagt sie. Clara probiert ihn und ist begeistert. Sie kauft gleich ein großes Stück. Auf dem Weg nach Hause hat sie eine neue Idee. Am Abend gibt es keine Suppe. Clara macht Kartoffeln und Gemüse mit geschmolzenem Käse aus dem Ofen. Ihre Freunde essen alles auf und fragen sofort nach dem Rezept.",
+  "text": "Jeden Samstag geht Clara in Freiburg auf den Wochenmarkt. Sie kennt dort fast alle Verkäufer. Heute Abend kommen Freunde zum Essen, und sie möchte eine Gemüsesuppe kochen. Zuerst kauft sie Kartoffeln, Karotten und Zwiebeln bei einem Bauern aus der Region. Das Gemüse ist frisch und nicht teuer. Dann geht sie zum Brotstand, aber heute ist er nicht da. Clara ist enttäuscht, denn dort gibt es das beste Brot der Stadt. Die Verkäuferin am Käsestand nebenan sieht ihr trauriges Gesicht. „Der Bäcker ist krank, aber probieren Sie doch unseren Bergkäse“, sagt sie. Clara probiert ihn und ist begeistert. Sie kauft gleich ein großes Stück. Auf dem Weg nach Hause hat sie eine neue Idee. Am Abend gibt es keine Suppe. Clara macht im Ofen Kartoffeln und Gemüse mit geschmolzenem Käse. Ihre Freunde essen alles auf und fragen sofort nach dem Rezept.",
   "gloss": {
    "wochenmarkt": "weekly market",
    "kennt": "knows",
@@ -327,7 +326,7 @@
   "id": "de-see",
   "title": "Ein Wochenende am See",
   "level": "A2",
-  "text": "Letztes Wochenende sind wir an den Bodensee gefahren. Wir wohnen in Stuttgart, und die Fahrt hat nur zwei Stunden gedauert. Meine Tochter Emma wollte zuerst nicht mitkommen. Sie ist fünfzehn und fand die Idee langweilig. „Dort gibt es bestimmt kein Internet“, hat sie gesagt. Wir haben auf einem Campingplatz direkt am Wasser gezeltet. Am Samstag hat es den ganzen Vormittag geregnet, und Emma hat kaum ein Wort gesprochen. Am Nachmittag ist endlich die Sonne herausgekommen. Wir haben ein kleines Boot gemietet und sind auf den See hinausgefahren. Emma durfte rudern, und plötzlich hat sie gelacht. Später sind wir alle ins kalte Wasser gesprungen. Am Abend haben wir Würstchen gegrillt und die Sterne angeschaut. Am Sonntag mussten wir wieder nach Hause fahren. Im Auto war Emma lange still. Dann hat sie gefragt: „Können wir nächstes Jahr wieder hinfahren?“",
+  "text": "Letztes Wochenende sind wir an den Bodensee gefahren. Wir wohnen in Stuttgart, und die Fahrt hat nur zwei Stunden gedauert. Meine Tochter Emma wollte zuerst nicht mitkommen. Sie ist fünfzehn und fand die Idee langweilig. „Dort gibt es bestimmt kein Internet“, hat sie gesagt. Wir haben auf einem Campingplatz direkt am Wasser gezeltet. Am Samstag hat es den ganzen Vormittag geregnet, und Emma hat kaum ein Wort gesagt. Am Nachmittag ist endlich die Sonne herausgekommen. Wir haben ein kleines Boot gemietet und sind auf den See hinausgefahren. Emma durfte rudern, und plötzlich hat sie gelacht. Später sind wir alle ins kalte Wasser gesprungen. Am Abend haben wir Würstchen gegrillt und die Sterne angeschaut. Am Sonntag mussten wir wieder nach Hause fahren. Im Auto war Emma lange still. Dann hat sie gefragt: „Können wir nächstes Jahr wieder hinfahren?“",
   "gloss": {
    "letztes": "last",
    "wochenende": "weekend",
@@ -347,7 +346,7 @@
    "vormittag": "morning",
    "geregnet": "rained (regnen)",
    "kaum": "hardly",
-   "gesprochen": "spoken (sprechen)",
+   "gesagt": "said (sagen)",
    "endlich": "at last",
    "herausgekommen": "come out (herauskommen)",
    "boot": "boat",
@@ -405,7 +404,7 @@
   "id": "de-umzug",
   "title": "Der Umzug",
   "level": "A2",
-  "text": "Am Samstag ist Tim in seine neue Wohnung in Hamburg gezogen. Die Wohnung liegt im vierten Stock, und es gibt keinen Aufzug. Zum Glück haben ihm drei Freunde beim Umzug geholfen. Sie haben den ganzen Vormittag Kartons die Treppe hinaufgetragen. Mit dem Bett und dem Tisch gab es keine Probleme. Aber das große rote Sofa war zu breit für das enge Treppenhaus. Die Freunde haben es gedreht und geschoben, aber es hat nicht gepasst. Tim war müde und hatte keine Idee mehr. Da ist eine Nachbarin aus dem Erdgeschoss gekommen. Sie hat gesagt, dass sie so ein Sofa schon lange sucht. Ihr eigenes Sofa war klein, aber noch sehr schön. „Wollen wir tauschen?“, hat sie gefragt. Tim hat sofort Ja gesagt. Am Abend haben alle zusammen auf dem kleinen Sofa und auf Kartons gesessen und Nudeln gegessen. Die Nachbarin hat einen Kuchen mitgebracht.",
+  "text": "Am Samstag ist Tim in seine neue Wohnung in Hamburg gezogen. Die Wohnung liegt im vierten Stock, und es gibt keinen Aufzug. Zum Glück haben ihm drei Freunde beim Umzug geholfen. Sie haben den ganzen Vormittag Kartons die Treppe hinaufgetragen. Mit dem Bett und dem Tisch gab es keine Probleme. Aber das große rote Sofa war zu breit für das enge Treppenhaus. Die Freunde haben es gedreht und geschoben, aber es hat nicht gepasst. Tim war müde und hatte keine Idee mehr. Da ist eine Nachbarin aus dem Erdgeschoss vorbeigekommen. Sie hat gesagt, dass sie so ein Sofa schon lange sucht. Ihr eigenes Sofa war klein, aber noch sehr schön. „Wollen wir tauschen?“, hat sie gefragt. Tim hat sofort Ja gesagt. Am Abend haben alle zusammen auf dem kleinen Sofa und auf Kartons gesessen und Nudeln gegessen. Die Nachbarin hat einen Kuchen mitgebracht.",
   "gloss": {
    "wohnung": "flat, apartment",
    "gezogen": "moved (ziehen)",
@@ -467,7 +466,7 @@
     "There were no problems with the bed and the table."
    ],
    [
-    "Da ist eine Nachbarin aus dem Erdgeschoss gekommen.",
+    "Da ist eine Nachbarin aus dem Erdgeschoss vorbeigekommen.",
     "Then a neighbour from the ground floor came."
    ]
   ]
@@ -710,7 +709,7 @@
   "id": "de-geburtstag",
   "title": "Die Überraschungsparty",
   "level": "B1",
-  "text": "Letzten Monat wurde meine Schwester Paula dreißig. Weil sie eigentlich gar nicht feiern wollte, organisierten ihr Freund Stefan und ich heimlich eine Überraschungsparty. Der Plan war einfach. Stefan sollte mit Paula ins Kino gehen, während wir ihre Wohnung in Graz schmückten. Den Schlüssel hatte er mir schon am Vortag gegeben. Zwanzig Gäste bliesen Luftballons auf, und im Ofen stand noch der Kuchen. Da bekam ich eine Nachricht von Stefan. Der Film war ausverkauft, und die beiden waren schon auf dem Heimweg. Wir hatten nur noch zehn Minuten! Alle rannten durcheinander, jemand machte das Licht aus, und wir versteckten uns hinter dem Sofa. Dann hörten wir den Schlüssel in der Tür. „Überraschung!“, riefen wir, als das Licht anging. Paula lachte, aber sie sah überhaupt nicht überrascht aus. Sie umarmte einen Gast nach dem anderen und bedankte sich bei allen. Später erzählte sie mir, dass unsere Mutter sich am Telefon verplappert hatte. Paula hatte also alles gewusst und Stefan zuliebe mitgespielt. Der Kuchen war leider ein bisschen schwarz geworden, aber die Party wurde trotzdem sehr schön.",
+  "text": "Letzten Monat wurde meine Schwester Paula dreißig. Weil sie eigentlich gar nicht feiern wollte, organisierten ihr Freund Stefan und ich heimlich eine Überraschungsparty. Der Plan war einfach. Stefan sollte mit Paula ins Kino gehen, während wir ihre Wohnung in Graz schmückten. Den Schlüssel hatte er mir schon am Vortag gegeben. Zwanzig Gäste bliesen Luftballons auf, und im Ofen stand noch der Kuchen. Da bekam ich eine Nachricht von Stefan. Die Vorstellung war ausverkauft, und die beiden waren schon auf dem Heimweg. Wir hatten nur noch zehn Minuten! Alle rannten durcheinander, jemand machte das Licht aus, und wir versteckten uns hinter dem Sofa. Dann hörten wir den Schlüssel in der Tür. „Überraschung!“, riefen wir, als das Licht anging. Paula lachte, aber sie sah überhaupt nicht überrascht aus. Sie umarmte einen Gast nach dem anderen und bedankte sich bei allen. Später erzählte sie mir, dass unsere Mutter sich am Telefon verplappert hatte. Paula hatte also alles gewusst und Stefan zuliebe mitgespielt. Der Kuchen war leider ein bisschen schwarz geworden, aber die Party wurde trotzdem sehr schön.",
   "gloss": {
    "wurde": "turned, became (werden)",
    "eigentlich": "actually",
@@ -963,7 +962,7 @@
   "id": "de-arbeit",
   "title": "Der erste Arbeitstag",
   "level": "B1",
-  "text": "An meinem ersten Arbeitstag bei einem Verlag in Frankfurt war ich viel zu früh da. Ich hatte kaum geschlafen und mir dreimal überlegt, was ich anziehen sollte. Der Empfang war noch nicht besetzt, also suchte ich die Küche, um mir einen Kaffee zu holen. Dort kniete ein Mann in Jeans und Turnschuhen vor der Kaffeemaschine und versuchte, sie zu reparieren. Ich hielt ihn für den Hausmeister und half ihm, den Wassertank wieder einzusetzen. Dabei kamen wir ins Gespräch. Ich gab zu, dass ich ziemlich aufgeregt war. Ich erzählte ihm auch, dass der Chef sehr streng sein sollte. Der Mann lächelte nur und wünschte mir viel Glück. Um neun Uhr versammelte sich die ganze Abteilung, um mich zu begrüßen. Als Letzter kam der Mann aus der Küche herein, und alle wurden still. „Wir kennen uns ja schon, Lea. Ich bin Martin, der strenge Geschäftsführer“, sagte er freundlich. Ich wurde knallrot, aber er lachte herzlich. Seit diesem Morgen duzen wir uns, wie alle im Verlag. Heute, zwei Jahre später, repariere ich die Kaffeemaschine meistens selbst.",
+  "text": "An meinem ersten Arbeitstag bei einem Verlag in Frankfurt war ich viel zu früh da. Ich hatte kaum geschlafen und mir dreimal überlegt, was ich anziehen sollte. Der Empfang war noch nicht besetzt, also suchte ich die Küche, um mir einen Kaffee zu holen. Dort kniete ein Mann in Jeans und Turnschuhen vor der Kaffeemaschine und versuchte, sie zu reparieren. Ich hielt ihn für den Hausmeister und half ihm, den Wassertank wieder einzusetzen. Dabei kamen wir ins Gespräch. Ich gab zu, dass ich ziemlich aufgeregt war. Ich erzählte ihm auch, dass der Chef sehr streng sein soll. Der Mann lächelte nur und wünschte mir viel Glück. Um neun Uhr versammelte sich die ganze Abteilung, um mich zu begrüßen. Als Letzter kam der Mann aus der Küche herein, und alle wurden still. „Wir kennen uns ja schon, Lea. Ich bin Martin, der strenge Geschäftsführer“, sagte er freundlich. Ich wurde knallrot, aber er lachte herzlich. Seit diesem Morgen duzen wir uns, wie alle im Verlag. Heute, zwei Jahre später, repariere ich die Kaffeemaschine meistens selbst.",
   "gloss": {
    "arbeitstag": "day at work",
    "verlag": "publishing house",
@@ -1045,7 +1044,7 @@
   "id": "de-buchhandlung",
   "title": "Die letzte Buchhandlung im Viertel",
   "level": "B2",
-  "text": "Fast vierzig Jahre lang führte Herr Albrecht eine kleine Buchhandlung in einem Wohnviertel von Bremen, und jeder dort kannte ihn. Als er im vergangenen Winter ankündigte, er wolle zum Jahresende aufhören, reagierten viele Kunden bestürzt. Ein Nachfolger war nicht in Sicht, denn mit Büchern lässt sich heute kaum noch Geld verdienen. Die Miete war gestiegen, und immer mehr Leute bestellten ihre Lektüre lieber im Internet. Es schien nur eine Frage der Zeit zu sein, bis in den Räumen ein weiteres Handygeschäft eröffnen würde. Doch eine Stammkundin wollte sich damit nicht abfinden. Sie lud die Nachbarschaft zu einem Treffen ein und schlug vor, gemeinsam eine Genossenschaft zu gründen. Jedes Mitglied würde einen Anteil kaufen, und mit diesem Geld sollte der Laden weitergeführt werden. Anfangs hielten manche die Idee für naiv. Selbst Herr Albrecht bezweifelte, dass sich genug Leute finden würden. Innerhalb von drei Monaten hatten sich jedoch über zweihundert Menschen beteiligt, darunter auch solche, die seit Jahren kein Buch mehr gekauft hatten. Inzwischen gehört die Buchhandlung dem Viertel selbst. Über wichtige Fragen entscheiden die Mitglieder gemeinsam, vom Sortiment bis zu den Öffnungszeiten. Eine junge Buchhändlerin wurde eingestellt, abends finden Lesungen statt, und samstags steht Herr Albrecht wieder hinter der Kasse. Er behauptet, er sei nur zu Besuch, aber das glaubt ihm niemand.",
+  "text": "Fast vierzig Jahre lang führte Herr Albrecht eine kleine Buchhandlung in einem Wohnviertel von Bremen, und jeder dort kannte ihn. Als er im vergangenen Winter ankündigte, er wolle zum Jahresende aufhören, reagierten viele Kunden bestürzt. Ein Nachfolger war nicht in Sicht, denn mit Büchern lässt sich heute kaum noch Geld verdienen. Die Miete war gestiegen, und immer mehr Leute bestellten ihre Lektüre lieber im Internet. Es schien nur eine Frage der Zeit zu sein, bis in den Räumen ein weiteres Handygeschäft aufmachen würde. Doch eine Stammkundin wollte sich damit nicht abfinden. Sie lud die Nachbarschaft zu einem Treffen ein und schlug vor, gemeinsam eine Genossenschaft zu gründen. Jedes Mitglied würde einen Anteil kaufen, und mit diesem Geld sollte der Laden weitergeführt werden. Anfangs hielten manche die Idee für naiv. Selbst Herr Albrecht bezweifelte, dass sich genug Leute finden würden. Innerhalb von drei Monaten hatten sich jedoch über zweihundert Menschen beteiligt, darunter auch solche, die seit Jahren kein Buch mehr gekauft hatten. Inzwischen gehört die Buchhandlung dem Viertel selbst. Über wichtige Fragen entscheiden die Mitglieder gemeinsam, vom Sortiment bis zu den Öffnungszeiten. Eine junge Buchhändlerin wurde eingestellt, abends finden Lesungen statt, und samstags steht Herr Albrecht wieder hinter der Kasse. Er behauptet, er sei nur zu Besuch, aber das glaubt ihm niemand.",
   "gloss": {
    "führte": "ran (führen)",
    "buchhandlung": "bookshop",
@@ -1064,7 +1063,7 @@
    "schien": "seemed (scheinen)",
    "räumen": "rooms, premises",
    "handygeschäft": "mobile phone shop",
-   "eröffnen": "to open (a business)",
+   "aufmachen": "to open (of a shop)",
    "stammkundin": "regular customer (a woman)",
    "abfinden": "sich abfinden mit: to resign oneself to",
    "lud": "invited (einladen)",
@@ -1627,7 +1626,7 @@
    ],
    [
     1,
-    "Am Samstag passt es gut. Bis dann!"
+    "Samstag passt mir gut. Bis dann!"
    ],
    [
     0,
