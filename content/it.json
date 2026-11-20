@@ -210,6 +210,236 @@
   ]
  },
  {
+  "id": "it-ombrello",
+  "title": "L'ombrello giallo",
+  "level": "A2",
+  "text": "Stamattina piove forte e Giulia non trova il suo ombrello. Guarda nell'ingresso, sotto il letto e in macchina, ma non c'è da nessuna parte. Allora prende il vecchio ombrello giallo della nonna, che è molto grande e un po' ridicolo. Per strada la gente sorride quando la vede passare. Alla fermata dell'autobus una bambina le chiede se può mettersi sotto, perché ha dimenticato il suo. Poi arriva un signore anziano, e dopo una donna con un bambino piccolo. Presto sono in cinque sotto l'ombrello giallo e tutti ridono. Quando arriva l'autobus, smette di piovere. La sera Giulia ritrova il suo piccolo ombrello nero nella borsa della palestra. Lo mette in un armadio e decide di tenere quello giallo.",
+  "gloss": {
+   "piove": "it is raining",
+   "ombrello": "umbrella",
+   "ingresso": "hall, entrance",
+   "nessuna": "da nessuna parte: nowhere",
+   "giallo": "yellow",
+   "ridicolo": "silly-looking",
+   "sorride": "smiles",
+   "fermata": "stop",
+   "sotto": "under",
+   "dimenticato": "forgotten",
+   "anziano": "elderly",
+   "presto": "soon",
+   "smette": "smette di piovere: it stops raining",
+   "ritrova": "finds again",
+   "palestra": "gym",
+   "armadio": "cupboard, wardrobe",
+   "tenere": "to keep"
+  },
+  "questions": [
+   {
+    "q": "Di che colore è l'ombrello della nonna?",
+    "a": [
+     "giallo"
+    ]
+   },
+   {
+    "q": "Quante persone ci sono sotto alla fine?",
+    "a": [
+     "cinque",
+     "5"
+    ]
+   },
+   {
+    "q": "Dove ritrova Giulia il suo ombrello piccolo?",
+    "a": [
+     "borsa"
+    ]
+   }
+  ],
+  "notice": "\"Ha dimenticato il suo\", \"quello giallo\": il mio, il tuo, il suo stand for a noun with its owner, and quello / quella stand for a noun already named (the yellow one).",
+  "back": [
+   [
+    "Per strada la gente sorride quando la vede passare.",
+    "In the street, people smile when they see her go by."
+   ],
+   [
+    "Quando arriva l'autobus, smette di piovere.",
+    "When the bus arrives, it stops raining."
+   ]
+  ]
+ },
+ {
+  "id": "it-cane-parco",
+  "title": "Il cane del parco",
+  "level": "A2",
+  "text": "Sabato pomeriggio Luca e sua sorella giocano a palla nel parco. Un cagnolino marrone arriva di corsa e prende la palla in bocca. I bambini ridono, ma non vedono nessuno con lui. Il cane porta un collare rosso con un numero di telefono. Luca chiama con il cellulare della mamma. Una signora risponde subito: cerca il suo cane da stamattina ed è molto preoccupata. Dieci minuti dopo arriva al parco in bicicletta. Il cane le salta in braccio e le lecca la faccia. Per ringraziare i bambini, la signora compra loro due gelati al cioccolato. Prima di andare via dice che il cane si chiama Biscotto e che adora le palle. Il sabato dopo Biscotto torna al parco, ma questa volta con la sua padrona.",
+  "gloss": {
+   "palla": "ball",
+   "cagnolino": "little dog",
+   "marrone": "brown",
+   "corsa": "di corsa: running",
+   "bocca": "mouth",
+   "collare": "collar",
+   "numero": "number",
+   "chiama": "calls",
+   "subito": "straight away",
+   "preoccupata": "worried",
+   "bicicletta": "bike",
+   "salta": "jumps",
+   "braccio": "in braccio: into her arms",
+   "lecca": "licks",
+   "faccia": "face",
+   "ringraziare": "to thank",
+   "gelati": "ice creams",
+   "padrona": "owner (a woman)"
+  },
+  "questions": [
+   {
+    "q": "Che cosa prende il cane in bocca?",
+    "a": [
+     "palla"
+    ]
+   },
+   {
+    "q": "Di che colore è il collare?",
+    "a": [
+     "rosso"
+    ]
+   },
+   {
+    "q": "Come arriva la signora al parco?",
+    "a": [
+     "bicicletta"
+    ]
+   }
+  ],
+  "notice": "\"Cerca il suo cane da stamattina\": with \"da\" Italian uses the present for something that began in the past and is still going on (she has been looking since this morning).",
+  "back": [
+   [
+    "Il cane porta un collare rosso con un numero di telefono.",
+    "The dog is wearing a red collar with a phone number."
+   ],
+   [
+    "Dieci minuti dopo arriva al parco in bicicletta.",
+    "Ten minutes later she arrives at the park by bike."
+   ]
+  ]
+ },
+ {
+  "id": "it-scatolone",
+  "title": "Lo scatolone dimenticato",
+  "level": "B1",
+  "text": "Quando ci siamo trasferiti a Torino, abbiamo noleggiato un furgone per portare le nostre cose. Mio fratello guidava mentre io controllavo gli scatoloni dietro. Abbiamo viaggiato tutto il giorno e siamo arrivati quando era già buio. Svuotando il furgone, mi sono accorto che mancava uno scatolone: quello con tutte le foto di famiglia. Probabilmente l'avevamo lasciato sul marciapiede, davanti al vecchio appartamento. Ho chiamato la nostra ex vicina senza molte speranze, perché era già tardi. Mi ha risposto che l'aveva visto mentre portava fuori il cane e che l'aveva messo al sicuro nel suo garage. Si è perfino offerta di spedircelo per posta. Una settimana dopo lo scatolone è arrivato con un biglietto gentile e un vasetto di marmellata. Da allora le scriviamo ogni anno a Natale.",
+  "gloss": {
+   "trasferiti": "moved (house)",
+   "noleggiato": "rented",
+   "furgone": "van",
+   "guidava": "was driving",
+   "controllavo": "kept an eye on",
+   "scatoloni": "cardboard boxes",
+   "buio": "dark",
+   "svuotando": "emptying",
+   "accorto": "mi sono accorto: I realised",
+   "mancava": "was missing",
+   "marciapiede": "pavement",
+   "vicina": "neighbour (a woman)",
+   "speranze": "hopes",
+   "sicuro": "al sicuro: safe",
+   "offerta": "si è offerta: she offered",
+   "spedircelo": "to send it to us",
+   "vasetto": "jar",
+   "marmellata": "jam"
+  },
+  "questions": [
+   {
+    "q": "In quale città si sono trasferiti?",
+    "a": [
+     "Torino"
+    ]
+   },
+   {
+    "q": "Che cosa c'era nello scatolone che mancava?",
+    "a": [
+     "foto"
+    ]
+   },
+   {
+    "q": "Dove l'aveva messo la vicina?",
+    "a": [
+     "garage"
+    ]
+   }
+  ],
+  "notice": "\"Svuotando il furgone\": the gerund (-ando, -endo) says that two things happen at the same time, done by the same person. \"L'avevamo lasciato\" (trapassato prossimo) goes one step back from the past of the story.",
+  "back": [
+   [
+    "Mio fratello guidava mentre io controllavo gli scatoloni dietro.",
+    "My brother drove while I kept an eye on the boxes in the back."
+   ],
+   [
+    "Si è perfino offerta di spedircelo per posta.",
+    "She even offered to send it to us by post."
+   ]
+  ]
+ },
+ {
+  "id": "it-corso-cucina",
+  "title": "Il corso di cucina",
+  "level": "B1",
+  "text": "Per il suo compleanno i figli di Bernardo gli hanno regalato un corso di cucina. All'inizio si è offeso, perché pensava di cucinare benissimo. Il giorno del corso si è trovato con altri otto allievi davanti a un cuoco giovane e sorridente. Bisognava preparare un risotto, cosa che Bernardo faceva da quarant'anni. Così ha lavorato in fretta, senza ascoltare le spiegazioni. Ma alla fine il suo risotto era troppo cotto e un po' asciutto. Quello della sua vicina, che non aveva mai cucinato, era perfetto. Il cuoco li ha assaggiati tutti e due senza dire niente, poi ha mostrato a Bernardo come aggiungere il brodo più lentamente. Bernardo ha ricominciato, questa volta seguendo ogni passaggio. La sera ha portato il suo secondo risotto ai figli. Ha ammesso che si può ancora imparare qualcosa a settant'anni.",
+  "gloss": {
+   "compleanno": "birthday",
+   "regalato": "given (as a present)",
+   "corso": "class, course",
+   "offeso": "si è offeso: he was offended",
+   "allievi": "pupils, students",
+   "cuoco": "cook, chef",
+   "sorridente": "smiling",
+   "bisognava": "it was necessary",
+   "risotto": "a rice dish",
+   "fretta": "in fretta: in a hurry",
+   "spiegazioni": "explanations",
+   "cotto": "cooked (troppo cotto: overcooked)",
+   "asciutto": "dry",
+   "assaggiati": "tasted",
+   "brodo": "stock, broth",
+   "lentamente": "slowly",
+   "passaggio": "step",
+   "ammesso": "admitted"
+  },
+  "questions": [
+   {
+    "q": "Che cosa bisognava preparare al corso?",
+    "a": [
+     "risotto"
+    ]
+   },
+   {
+    "q": "Com'era il risotto di Bernardo?",
+    "a": [
+     "cotto",
+     "asciutto"
+    ]
+   },
+   {
+    "q": "Quanti anni ha Bernardo?",
+    "a": [
+     "settant",
+     "70"
+    ]
+   }
+  ],
+  "notice": "\"Pensava di cucinare benissimo\": when the subject is the same, Italian uses di + infinitive after pensare, credere, decidere. \"Faceva da quarant'anni\": da with the imperfect says how long something had been going on.",
+  "back": [
+   [
+    "Così ha lavorato in fretta, senza ascoltare le spiegazioni.",
+    "So he worked in a hurry, without listening to the explanations."
+   ],
+   [
+    "La sera ha portato il suo secondo risotto ai figli.",
+    "In the evening he took his second risotto to his children."
+   ]
+  ]
+ },
+ {
   "id": "it-d-panetteria",
   "title": "In panetteria",
   "level": "A1",
