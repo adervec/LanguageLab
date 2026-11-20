@@ -2387,6 +2387,231 @@
   ]
  },
  {
+  "id": "fr-parapluie",
+  "title": "Le parapluie jaune",
+  "level": "A2",
+  "text": "Ce matin, il pleut beaucoup et Léa ne trouve pas son parapluie. Elle regarde dans l'entrée, sous le lit et dans la voiture, mais il n'est nulle part. Elle prend donc le vieux parapluie jaune de sa grand-mère, qui est très grand et un peu ridicule. Dans la rue, les gens sourient quand ils la voient passer. À l'arrêt de bus, une petite fille lui demande si elle peut venir dessous, parce qu'elle a oublié le sien. Ensuite, un monsieur âgé les rejoint, puis une dame avec un bébé. Bientôt, ils sont cinq sous le parapluie jaune et tout le monde rit. Quand le bus arrive, la pluie s'arrête. Le soir, Léa retrouve son petit parapluie noir dans son sac de sport. Elle le range dans un placard et décide de garder le jaune.",
+  "gloss": {
+   "pleut": "it is raining",
+   "parapluie": "umbrella",
+   "entrée": "hall, entrance",
+   "nulle": "nulle part: nowhere",
+   "jaune": "yellow",
+   "ridicule": "silly-looking",
+   "sourient": "smile",
+   "arrêt": "stop",
+   "dessous": "underneath",
+   "oublié": "forgotten",
+   "sien": "le sien: hers, his",
+   "âgé": "elderly",
+   "rejoint": "joins",
+   "bientôt": "soon",
+   "retrouve": "finds again",
+   "range": "puts away",
+   "garder": "to keep"
+  },
+  "questions": [
+   {
+    "q": "De quelle couleur est le parapluie de la grand-mère ?",
+    "a": [
+     "jaune"
+    ]
+   },
+   {
+    "q": "Combien de personnes sont dessous à la fin ?",
+    "a": [
+     "cinq",
+     "5"
+    ]
+   },
+   {
+    "q": "Où Léa retrouve-t-elle son petit parapluie ?",
+    "a": [
+     "sac"
+    ]
+   }
+  ],
+  "notice": "\"Elle a oublié le sien\": le mien, le tien, le sien stand for a noun with its owner (mon parapluie → le mien). They agree with the thing owned: la mienne, les siens.",
+  "back": [
+   [
+    "Dans la rue, les gens sourient quand ils la voient passer.",
+    "In the street, people smile when they see her go by."
+   ],
+   [
+    "Quand le bus arrive, la pluie s'arrête.",
+    "When the bus arrives, the rain stops."
+   ]
+  ]
+ },
+ {
+  "id": "fr-chien-perdu",
+  "title": "Le chien du parc",
+  "level": "A2",
+  "text": "Samedi après-midi, Hugo et sa sœur jouent au ballon dans le parc. Un petit chien marron arrive en courant et prend le ballon dans sa gueule. Les enfants rient, mais ils ne voient personne avec lui. Le chien porte un collier rouge avec un numéro de téléphone. Hugo appelle avec le téléphone de sa mère. Une dame répond tout de suite : elle cherche son chien depuis le matin et elle a très peur. Dix minutes plus tard, elle arrive au parc à vélo. Le chien saute dans ses bras et lui lèche le visage. Pour remercier les enfants, la dame leur achète deux glaces au chocolat. Avant de partir, elle leur dit que le chien s'appelle Biscuit et qu'il adore les ballons. Le samedi suivant, Biscuit revient au parc, mais cette fois avec sa maîtresse.",
+  "gloss": {
+   "ballon": "ball",
+   "marron": "brown",
+   "courant": "en courant: running",
+   "gueule": "mouth (of an animal)",
+   "collier": "collar",
+   "numéro": "number",
+   "appelle": "calls",
+   "peur": "fear (avoir peur: to be afraid)",
+   "vélo": "bike",
+   "saute": "jumps",
+   "bras": "arms",
+   "lèche": "licks",
+   "visage": "face",
+   "remercier": "to thank",
+   "glaces": "ice creams",
+   "suivant": "following, next",
+   "maîtresse": "owner (of a pet, a woman)"
+  },
+  "questions": [
+   {
+    "q": "Que prend le chien dans sa gueule ?",
+    "a": [
+     "ballon"
+    ]
+   },
+   {
+    "q": "De quelle couleur est le collier ?",
+    "a": [
+     "rouge"
+    ]
+   },
+   {
+    "q": "Comment la dame arrive-t-elle au parc ?",
+    "a": [
+     "vélo"
+    ]
+   }
+  ],
+  "notice": "\"Elle cherche son chien depuis le matin\": with \"depuis\", French uses the present for something that began in the past and is still going on (she has been looking since the morning).",
+  "back": [
+   [
+    "Le chien porte un collier rouge avec un numéro de téléphone.",
+    "The dog is wearing a red collar with a phone number."
+   ],
+   [
+    "Dix minutes plus tard, elle arrive au parc à vélo.",
+    "Ten minutes later, she arrives at the park by bike."
+   ]
+  ]
+ },
+ {
+  "id": "fr-demenagement",
+  "title": "Le carton oublié",
+  "level": "B1",
+  "text": "Quand nous avons déménagé à Nantes, nous avons loué une camionnette pour transporter nos affaires. Mon frère conduisait pendant que je surveillais les cartons à l'arrière. Nous avons roulé toute la journée et nous sommes arrivés à la nuit tombée. En vidant la camionnette, je me suis rendu compte qu'il manquait un carton : celui qui contenait toutes nos photos de famille. Nous l'avions sans doute laissé sur le trottoir, devant l'ancien appartement. J'ai appelé notre ancienne voisine, sans grand espoir, car il était déjà tard. Elle m'a répondu qu'elle l'avait vu en sortant son chien et qu'elle l'avait mis à l'abri dans son garage. Elle a même proposé de nous l'envoyer par la poste. Une semaine plus tard, le carton est arrivé avec un mot gentil et un pot de confiture. Depuis, nous lui écrivons chaque année pour le Nouvel An.",
+  "gloss": {
+   "déménagé": "moved house",
+   "loué": "rented",
+   "camionnette": "van",
+   "affaires": "belongings",
+   "surveillais": "kept an eye on",
+   "cartons": "cardboard boxes",
+   "arrière": "à l'arrière: in the back",
+   "roulé": "driven",
+   "tombée": "à la nuit tombée: after dark",
+   "vidant": "emptying",
+   "manquait": "was missing",
+   "contenait": "contained",
+   "trottoir": "pavement",
+   "espoir": "hope",
+   "abri": "à l'abri: under cover, safe",
+   "confiture": "jam"
+  },
+  "questions": [
+   {
+    "q": "Dans quelle ville ont-ils déménagé ?",
+    "a": [
+     "Nantes"
+    ]
+   },
+   {
+    "q": "Que contenait le carton qui manquait ?",
+    "a": [
+     "photos"
+    ]
+   },
+   {
+    "q": "Où la voisine l'avait-elle mis ?",
+    "a": [
+     "garage"
+    ]
+   }
+  ],
+  "notice": "\"En vidant la camionnette\", \"en sortant son chien\": en + the -ant form says that two things happen at the same time, done by the same person (while emptying, while taking out).",
+  "back": [
+   [
+    "Mon frère conduisait pendant que je surveillais les cartons à l'arrière.",
+    "My brother drove while I kept an eye on the boxes in the back."
+   ],
+   [
+    "Elle a même proposé de nous l'envoyer par la poste.",
+    "She even offered to send it to us by post."
+   ]
+  ]
+ },
+ {
+  "id": "fr-cours-de-cuisine",
+  "title": "Le cours de cuisine",
+  "level": "B1",
+  "text": "Pour son anniversaire, les enfants de Bernard lui ont offert un cours de cuisine. Il a d'abord été vexé, parce qu'il pensait cuisiner très bien. Le jour du cours, il s'est retrouvé avec huit autres élèves devant un chef jeune et souriant. Il fallait préparer une tarte aux pommes, ce que Bernard faisait depuis quarante ans. Il a donc travaillé vite, sans écouter les explications. Mais quand les tartes sont sorties du four, la sienne était trop cuite et la pâte était dure. Celle de sa voisine, qui n'avait jamais cuisiné, était parfaite. Le chef a goûté les deux sans rien dire, puis il a montré à Bernard comment étaler la pâte plus doucement. Bernard a recommencé, cette fois en suivant chaque étape. Le soir, il a apporté sa deuxième tarte à ses enfants. Il a reconnu qu'on pouvait encore apprendre quelque chose à soixante-dix ans.",
+  "gloss": {
+   "offert": "given (as a present)",
+   "cours": "class, lesson",
+   "vexé": "offended",
+   "retrouvé": "found himself",
+   "élèves": "pupils, students",
+   "souriant": "smiling",
+   "tarte": "tart",
+   "explications": "explanations",
+   "four": "oven",
+   "cuite": "cooked (trop cuite: overcooked)",
+   "pâte": "pastry, dough",
+   "dure": "hard",
+   "goûté": "tasted",
+   "étaler": "to roll out, to spread",
+   "doucement": "gently",
+   "étape": "step",
+   "reconnu": "admitted"
+  },
+  "questions": [
+   {
+    "q": "Que fallait-il préparer pendant le cours ?",
+    "a": [
+     "tarte"
+    ]
+   },
+   {
+    "q": "Comment était la pâte de Bernard ?",
+    "a": [
+     "dure"
+    ]
+   },
+   {
+    "q": "Quel âge a Bernard ?",
+    "a": [
+     "soixante-dix",
+     "70"
+    ]
+   }
+  ],
+  "notice": "\"La sienne était trop cuite. Celle de sa voisine était parfaite.\": celui, celle, ceux, celles stand for a noun already named and are followed by \"de\" or \"qui\" (the one of, the one that).",
+  "back": [
+   [
+    "Il a donc travaillé vite, sans écouter les explications.",
+    "So he worked fast, without listening to the explanations."
+   ],
+   [
+    "Le soir, il a apporté sa deuxième tarte à ses enfants.",
+    "In the evening, he took his second tart to his children."
+   ]
+  ]
+ },
+ {
   "id": "fr-d-boulangerie",
   "title": "À la boulangerie",
   "level": "A1",
