@@ -345,8 +345,10 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   floor lower in Finnish, Belarusian, Thai, Filipino and Bengali than a British reader takes it to be; the meaning
   now says so there, as it did in nine languages already.
   Four French stories were added on 20 November 2026 (a camera from a flea market, a shared car to Lyon, a week
-  without a phone, a lighthouse keeper; two at B1, two at B2), and four more the same day (a yellow umbrella and a lost dog at A2, a forgotten box and a cooking class at B1), which makes 52 French texts. Spanish got the same four easier stories in its own words (28 Spanish texts), and so did German, Italian, Portuguese, Dutch, Croatian and English (28 each). They were written after
-  the reads described here and have not themselves been read by a second model or a person.
+  without a phone, a lighthouse keeper; two at B1, two at B2), and four more the same day (a yellow umbrella and a lost dog at A2, a forgotten box and a cooking class at B1), which makes 52 French texts. Spanish got the same four easier stories in its own words (28 Spanish texts), and so did German, Italian, Portuguese, Dutch, Croatian and English (28 each). All 36 new stories were then read by a second model, one language a reader, with their
+  glosses, grammar notes and sentence meanings: 35 sentences marked, none called wrong, 34 changed (one French image
+  left as written), and twelve glosses or notes put right. The one that mattered most was Italian: a dog that
+  "adora le palle", which reads as a vulgar joke, now "adora giocare a palla". No person has read them.
   The same question about the 44 French stories and dialogues (which sentence of each would a native speaker most
   object to?) marked 13 sentences, none of them wrong; 12 were reworded ("perdre la voix", a pronoun that pointed
   at the wrong grandmother, "encore en pyjama" at eleven at night) and one kept. The Spanish, German and Italian texts (24 each) were asked next, both ways:

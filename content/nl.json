@@ -1087,7 +1087,7 @@
   "id": "nl-paraplu",
   "title": "De gele paraplu",
   "level": "A2",
-  "text": "Vanochtend regent het hard en Lotte kan haar paraplu niet vinden. Ze zoekt in de gang, onder het bed en in de auto, maar hij is nergens. Dan pakt ze de oude gele paraplu van haar oma, die erg groot en een beetje gek is. Op straat glimlachen de mensen als ze langsloopt. Bij de bushalte vraagt een meisje of ze eronder mag staan, want ze is haar eigen paraplu vergeten. Daarna komt er een oudere meneer bij, en later een vrouw met een baby. Al snel staan er vijf mensen onder de gele paraplu en iedereen lacht. Als de bus komt, houdt het op met regenen. Die avond vindt Lotte haar kleine zwarte paraplu in haar sporttas. Ze legt hem in de kast en besluit de gele te houden.",
+  "text": "Vanochtend regent het hard en Lotte kan haar paraplu niet vinden. Ze zoekt in de gang, onder het bed en in de auto, maar hij is nergens. Dan pakt ze de oude gele paraplu van haar oma; hij is erg groot en een beetje gek. Op straat glimlachen de mensen als ze langsloopt. Bij de bushalte vraagt een meisje of ze eronder mag staan, want ze is haar eigen paraplu vergeten. Daarna komt er een oudere meneer bij, en later een vrouw met een baby. Al snel staan er vijf mensen onder de gele paraplu en iedereen lacht. Als de bus komt, houdt het op met regenen. Die avond vindt Lotte haar kleine zwarte paraplu in haar sporttas. Ze legt hem in de kast en besluit de gele te houden.",
   "gloss": {
    "regent": "it is raining",
    "paraplu": "umbrella",
@@ -1145,7 +1145,7 @@
   "id": "nl-hond-park",
   "title": "De hond in het park",
   "level": "A2",
-  "text": "Zaterdagmiddag spelen Daan en zijn zus met een bal in het park. Een klein bruin hondje komt aanrennen en pakt de bal in zijn bek. De kinderen lachen, maar ze zien niemand die bij hem hoort. De hond draagt een rode halsband met een telefoonnummer. Daan belt met de telefoon van zijn moeder. Een vrouw neemt meteen op: ze zoekt haar hond al sinds vanochtend en maakt zich grote zorgen. Tien minuten later komt ze op de fiets naar het park. De hond springt in haar armen en likt haar gezicht. Om de kinderen te bedanken koopt de vrouw twee chocolade-ijsjes voor hen. Voordat ze weggaat, vertelt ze dat de hond Koekje heet en dol is op ballen. De volgende zaterdag komt Koekje weer naar het park, maar deze keer met zijn baasje.",
+  "text": "Zaterdagmiddag spelen Daan en zijn zus met een bal in het park. Een klein bruin hondje komt aanrennen en neemt de bal in zijn bek. De kinderen lachen, maar ze zien niemand die bij hem hoort. De hond draagt een rode halsband met een telefoonnummer. Daan belt het nummer met de telefoon van zijn moeder. Een vrouw neemt meteen op: ze zoekt haar hond al sinds vanochtend en maakt zich grote zorgen. Tien minuten later komt ze op de fiets naar het park. De hond springt in haar armen en likt haar gezicht. Om de kinderen te bedanken koopt de vrouw twee chocolade-ijsjes voor hen. Voordat ze weggaat, vertelt ze dat de hond Koekje heet en dol is op ballen. De volgende zaterdag komt Koekje weer naar het park, maar deze keer met zijn baasje.",
   "gloss": {
    "bal": "ball",
    "bruin": "brown",
@@ -1202,7 +1202,7 @@
   "id": "nl-doos",
   "title": "De vergeten doos",
   "level": "B1",
-  "text": "Toen we naar Groningen verhuisden, hebben we een busje gehuurd om onze spullen mee te nemen. Mijn broer reed, terwijl ik achterin op de dozen lette. We waren de hele dag onderweg en kwamen pas aan toen het al donker was. Bij het uitladen merkte ik dat er een doos ontbrak: die met al onze familiefoto's. Waarschijnlijk hadden we hem op de stoep laten staan, voor het oude appartement. Ik heb onze vroegere buurvrouw gebeld, zonder veel hoop, want het was al laat. Ze vertelde dat ze hem had gezien toen ze de hond uitliet, en dat ze hem in haar garage had gezet. Ze bood zelfs aan om hem met de post op te sturen. Een week later kwam de doos aan, met een lief briefje en een pot jam. Sindsdien schrijven we haar elk jaar met kerst.",
+  "text": "Toen we naar Groningen verhuisden, hebben we een busje gehuurd om onze spullen mee te nemen. Mijn broer reed, terwijl ik achterin op de dozen lette. We waren de hele dag onderweg en kwamen pas aan toen het al donker was. Bij het uitladen merkte ik dat er een doos ontbrak: die met al onze familiefoto's. Waarschijnlijk hadden we hem op de stoep laten staan, voor het oude appartement. Ik heb onze vroegere buurvrouw gebeld, zonder veel hoop, want het was al laat. Ze vertelde dat ze hem had gezien toen ze de hond uitliet, en dat ze hem in haar garage had gezet. Ze bood zelfs aan om hem met de post op te sturen. Een week later kwam de doos aan, met een lief briefje en een pot jam. Sindsdien sturen we haar elk jaar met kerst een kaart.",
   "gloss": {
    "verhuisden": "moved (house)",
    "busje": "van",
@@ -1245,7 +1245,7 @@
     ]
    }
   ],
-  "notice": "\"Bij het uitladen\": bij het + infinitive says while doing something. \"Hadden we hem laten staan\", \"had ze hem gezien\": the pluperfect (had / hadden + participle) goes one step back from the past of the story.",
+  "notice": "\"Bij het uitladen\": bij het + infinitive says while doing something. \"Hadden we hem laten staan\", \"had ze hem gezien\": the pluperfect (had / hadden + participle) goes one step back from the past of the story; with a second verb the participle becomes an infinitive (laten staan, not gelaten).",
   "back": [
    [
     "Mijn broer reed, terwijl ik achterin op de dozen lette.",
@@ -1267,7 +1267,7 @@
    "kookcursus": "cooking class",
    "cadeau": "as a present",
    "beledigd": "offended",
-   "cursisten": "course members",
+   "cursisten": "participants (on a course)",
    "vrolijke": "cheerful",
    "kok": "cook, chef",
    "appeltaart": "apple tart",

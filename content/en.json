@@ -1001,7 +1001,7 @@
   "id": "en-umbrella",
   "title": "The yellow umbrella",
   "level": "A2",
-  "text": "It is raining hard this morning and Lucy cannot find her umbrella. She looks in the hall, under the bed and in the car, but it is not anywhere. So she takes her grandmother's old yellow umbrella, which is very big and looks a bit silly. In the street, people smile when she walks past. At the bus stop, a little girl asks if she can stand under it, because she has forgotten hers. Then an old man joins them, and later a woman with a baby. Soon there are five people under the yellow umbrella and everybody is laughing. When the bus comes, the rain stops. That evening Lucy finds her small black umbrella in her sports bag. She puts it away in a cupboard and decides to keep the yellow one.",
+  "text": "It is raining hard this morning and Lucy cannot find her umbrella. She looks in the hall, under the bed and in the car, but she cannot see it anywhere. So she takes her grandmother's old yellow umbrella, which is very big and looks a bit silly. In the street, people smile when she walks past. At the bus stop, a little girl asks if she can stand under it, because she has forgotten hers. Then an old man joins them, and later a woman with a baby. Soon there are five people under the yellow umbrella and everybody is laughing. When the bus comes, the rain stops. That evening Lucy finds her small black umbrella in her sports bag. She puts it away in a cupboard and decides to keep the yellow one.",
   "gloss": {
    "raining": "water is falling from the sky",
    "umbrella": "a thing you hold over your head in the rain",
@@ -1009,7 +1009,7 @@
    "anywhere": "in any place",
    "silly": "a little stupid or funny",
    "smile": "look happy with your mouth",
-   "forgotten": "not remembered to bring",
+   "forgotten": "did not remember to bring",
    "joins": "comes to be with",
    "soon": "after a short time",
    "cupboard": "a piece of furniture with doors, for keeping things",
@@ -1042,7 +1042,7 @@
   "id": "en-dog-park",
   "title": "The dog in the park",
   "level": "A2",
-  "text": "On Saturday afternoon, Harry and his sister are playing with a ball in the park. A small brown dog runs up and takes the ball in its mouth. The children laugh, but they cannot see anybody with it. The dog is wearing a red collar with a phone number on it. Harry rings the number on his mother's phone. A woman answers straight away: she has been looking for her dog since the morning and she is very worried. Ten minutes later she arrives at the park on her bike. The dog jumps into her arms and licks her face. To thank the children, the woman buys them two chocolate ice creams. Before she leaves, she tells them that the dog is called Biscuit and that he loves balls. The next Saturday Biscuit comes back to the park, but this time with his owner.",
+  "text": "On Saturday afternoon, Harry and his sister are playing with a ball in the park. A small brown dog runs up and takes the ball in its mouth. The children laugh, but they cannot see anybody with it. The dog is wearing a red collar with a phone number on it. Harry rings the number on his mother's phone. A woman answers straight away: she has been looking for her dog since this morning and she is very worried. Ten minutes later she arrives at the park on her bike. The dog jumps into her arms and licks her face. To thank the children, the woman buys them two chocolate ice creams. Before she leaves, she tells them that the dog is called Biscuit and that he loves balls. The next Saturday Biscuit comes back to the park, but this time with his owner.",
   "gloss": {
    "ball": "a round thing you play with",
    "mouth": "the part of the face you eat with",
@@ -1076,13 +1076,13 @@
     ]
    }
   ],
-  "notice": "\"She has been looking for her dog since the morning\": have / has been + -ing says that something began in the past and is still going on. \"Since\" gives the moment it began, \"for\" the length of time."
+  "notice": "\"She has been looking for her dog since this morning\": have / has been + -ing says that something began in the past and is still going on. \"Since\" gives the moment it began, \"for\" the length of time."
  },
  {
   "id": "en-box",
   "title": "The forgotten box",
   "level": "B1",
-  "text": "When we moved to Leeds, we hired a van to carry our things. My brother drove while I kept an eye on the boxes in the back. We travelled all day and arrived after dark. As I was emptying the van, I realised that one box was missing: the one with all our family photos in it. We had probably left it on the pavement outside the old flat. I rang our old neighbour without much hope, because it was already late. She told me that she had seen it when she took the dog out and had put it safely in her garage. She even offered to post it to us. A week later the box arrived, with a kind note and a jar of jam. Since then we have written to her every year at Christmas.",
+  "text": "When we moved to Leeds, we hired a van to carry our things. My brother drove while I kept an eye on the boxes in the back. We travelled all day and arrived after dark. As I was emptying the van, I realised that one box was missing: the one with all our family photos in it. We had probably left it on the pavement outside the old flat. It was already late, but I rang our old neighbour, without much hope. She told me that she had seen it when she took the dog out and had put it safely in her garage. She even offered to post it to us. A week later the box arrived, with a kind note and a jar of jam. Since then we have written to her every year at Christmas.",
   "gloss": {
    "hired": "paid to use for a short time",
    "van": "a vehicle for carrying things",
@@ -1124,7 +1124,7 @@
   "id": "en-cookery-class",
   "title": "The cookery class",
   "level": "B1",
-  "text": "For his birthday, Bernard's children gave him a cookery class. At first he was offended, because he thought he was a very good cook. On the day of the class he found himself with eight other students in front of a young, cheerful chef. They had to make an apple pie, which Bernard had been making for forty years. So he worked quickly and did not listen to the instructions. But when the pies came out of the oven, his was burnt at the edges and the pastry was hard. The pie made by the woman next to him, who had never baked before, was perfect. The chef tasted both without saying anything, and then showed Bernard how to roll out the pastry more gently. Bernard started again, this time following every step. That evening he took his second pie to his children. He admitted that you can still learn something at seventy.",
+  "text": "For his birthday, Bernard's children gave him a cookery class. At first he was offended, because he thought he was a very good cook. On the day of the class he found himself with eight other students in front of a young, cheerful chef. They had to make an apple pie, something Bernard had been making for forty years. So he worked quickly and did not listen to the instructions. But when the pies came out of the oven, his was burnt at the edges and the pastry was hard. The pie made by the woman next to him, who had never baked before, was perfect. The chef tasted both without saying anything, and then showed Bernard how to roll out the pastry more gently. Bernard started again, this time following every step. That evening he took his second pie to his children. He admitted that you can still learn something at seventy.",
   "gloss": {
    "cookery": "the skill of cooking",
    "offended": "upset because he felt criticised",
@@ -1163,7 +1163,7 @@
     ]
    }
   ],
-  "notice": "\"Which Bernard had been making for forty years\": had been + -ing says how long something had been going on before a moment in the past. \"His was burnt\": his, hers, mine stand for a noun with its owner."
+  "notice": "\"Something Bernard had been making for forty years\": had been + -ing says how long something had been going on before a moment in the past. \"His was burnt\": his, hers, mine stand for a noun with its owner."
  },
  {
   "id": "en-d-bakery",

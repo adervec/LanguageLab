@@ -1283,7 +1283,7 @@
   "id": "es-perro-parque",
   "title": "El perro del parque",
   "level": "A2",
-  "text": "El sábado por la tarde, Hugo y su hermana juegan a la pelota en el parque. Un perro pequeño y marrón llega corriendo y coge la pelota con la boca. Los niños se ríen, pero no ven a nadie con él. El perro lleva un collar rojo con un número de teléfono. Hugo llama con el móvil de su madre. Una mujer contesta enseguida: busca a su perro desde por la mañana y está muy preocupada. Diez minutos después llega al parque en bicicleta. El perro salta a sus brazos y le lame la cara. Para dar las gracias a los niños, la mujer les compra dos helados de chocolate. Antes de irse, les dice que el perro se llama Galleta y que le encantan las pelotas. El sábado siguiente, Galleta vuelve al parque, pero esta vez con su dueña.",
+  "text": "El sábado por la tarde, Hugo y su hermana juegan a la pelota en el parque. Un perro pequeño y marrón llega corriendo y coge la pelota con la boca. Los niños se ríen, pero no ven a nadie con él. El perro lleva un collar rojo con un número de teléfono. Hugo llama al número con el móvil de su madre. Una mujer contesta enseguida: busca a su perro desde por la mañana y está muy preocupada. Diez minutos después llega al parque en bicicleta. El perro salta a sus brazos y le lame la cara. Para dar las gracias a los niños, la mujer les compra dos helados de chocolate. Antes de irse, les dice que el perro se llama Galleta y que le encantan las pelotas. El sábado siguiente, Galleta vuelve al parque, pero esta vez con su dueña.",
   "gloss": {
    "pelota": "ball",
    "marrón": "brown",
@@ -1340,7 +1340,7 @@
   "id": "es-caja-fotos",
   "title": "La caja olvidada",
   "level": "B1",
-  "text": "Cuando nos mudamos a Sevilla, alquilamos una furgoneta para llevar nuestras cosas. Mi hermano conducía mientras yo vigilaba las cajas de atrás. Viajamos todo el día y llegamos cuando ya era de noche. Al vaciar la furgoneta, me di cuenta de que faltaba una caja: la que tenía todas las fotos de la familia. Seguramente la habíamos dejado en la acera, delante del piso antiguo. Llamé a nuestra antigua vecina sin mucha esperanza, porque ya era tarde. Me contestó que la había visto al sacar al perro y que la había guardado en su garaje. Incluso se ofreció a mandárnosla por correo. Una semana más tarde, la caja llegó con una nota muy amable y un bote de mermelada. Desde entonces, le escribimos todos los años en Navidad.",
+  "text": "Cuando nos mudamos a Sevilla, alquilamos una furgoneta para llevar nuestras cosas. Mi hermano conducía mientras yo vigilaba las cajas de atrás. Viajamos todo el día y llegamos cuando ya era de noche. Al descargar la furgoneta, me di cuenta de que faltaba una caja: la que tenía todas las fotos de la familia. Seguramente la habíamos dejado en la acera, delante del piso antiguo. Llamé a nuestra antigua vecina sin mucha esperanza, porque ya era tarde. Me contestó que la había visto al sacar al perro y que la había guardado en su garaje. Incluso se ofreció a mandárnosla por correo. Una semana más tarde, la caja llegó con una nota muy amable y un bote de mermelada. Desde entonces, le escribimos todos los años en Navidad.",
   "gloss": {
    "mudamos": "moved house",
    "alquilamos": "rented",
@@ -1349,7 +1349,6 @@
    "vigilaba": "kept an eye on",
    "cajas": "boxes",
    "atrás": "de atrás: in the back",
-   "vaciar": "to empty",
    "cuenta": "me di cuenta: I realised",
    "faltaba": "was missing",
    "seguramente": "probably",
@@ -1359,7 +1358,8 @@
    "ofreció": "se ofreció: offered",
    "correo": "post",
    "bote": "jar",
-   "mermelada": "jam"
+   "mermelada": "jam",
+   "descargar": "to unload"
   },
   "questions": [
    {
@@ -1381,7 +1381,7 @@
     ]
    }
   ],
-  "notice": "\"Al vaciar la furgoneta\", \"al sacar al perro\": al + infinitive means when or while doing something. \"La habíamos dejado\" (pluperfect) goes one step back from the past of the story.",
+  "notice": "\"Al descargar la furgoneta\", \"al sacar al perro\": al + infinitive means when or while doing something. \"La habíamos dejado\" (pluperfect) goes one step back from the past of the story.",
   "back": [
    [
     "Mi hermano conducía mientras yo vigilaba las cajas de atrás.",
@@ -1397,7 +1397,7 @@
   "id": "es-clase-cocina",
   "title": "La clase de cocina",
   "level": "B1",
-  "text": "Por su cumpleaños, los hijos de Bernardo le regalaron una clase de cocina. Al principio se molestó, porque pensaba que cocinaba muy bien. El día de la clase se encontró con otros ocho alumnos delante de un cocinero joven y sonriente. Había que preparar una tortilla de patatas, algo que Bernardo hacía desde hacía cuarenta años. Así que trabajó deprisa, sin escuchar las explicaciones. Pero cuando terminaron, su tortilla estaba demasiado hecha y seca por dentro. La de su compañera, que nunca había cocinado, estaba perfecta. El cocinero probó las dos sin decir nada y luego le enseñó a Bernardo a cocinar las patatas más despacio. Bernardo empezó de nuevo, esta vez siguiendo cada paso. Por la noche llevó su segunda tortilla a sus hijos. Reconoció que todavía se puede aprender algo a los setenta años.",
+  "text": "Por su cumpleaños, los hijos de Bernardo le regalaron una clase de cocina. Al principio se molestó, porque pensaba que cocinaba muy bien. El día de la clase se encontró con otros ocho alumnos delante de un cocinero joven y sonriente. Había que preparar una tortilla de patatas, algo que Bernardo hacía desde hacía cuarenta años. Así que trabajó deprisa, sin escuchar las explicaciones. Pero cuando terminaron, su tortilla estaba demasiado hecha y seca por dentro. La de su compañera, que nunca había cocinado, estaba perfecta. El cocinero probó las dos sin decir nada y luego le enseñó a Bernardo a freír las patatas a fuego lento. Bernardo empezó de nuevo, esta vez siguiendo cada paso. Por la noche llevó su segunda tortilla a sus hijos. Reconoció que todavía se puede aprender algo a los setenta años.",
   "gloss": {
    "cumpleaños": "birthday",
    "regalaron": "gave (as a present)",
@@ -1413,9 +1413,10 @@
    "compañera": "classmate (a woman)",
    "probó": "tasted",
    "enseñó": "showed, taught",
-   "despacio": "slowly",
    "paso": "step",
-   "reconoció": "admitted"
+   "reconoció": "admitted",
+   "freír": "to fry",
+   "lento": "a fuego lento: on a low heat"
   },
   "questions": [
    {

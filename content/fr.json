@@ -2221,7 +2221,7 @@
   "id": "fr-covoiturage",
   "title": "Le covoiturage",
   "level": "B1",
-  "text": "Pour aller à Lyon, Inès a décidé de faire du covoiturage, parce que le train était trop cher. Le conducteur, un homme d'une cinquantaine d'années, est arrivé avec dix minutes de retard et s'est excusé plusieurs fois. Il y avait déjà deux autres passagers dans la voiture : une étudiante qui dormait et un cuisinier qui rentrait chez ses parents. Au début, personne ne parlait. Puis le conducteur a mis de la musique, et le cuisinier a commencé à chanter très faux. Tout le monde a ri, même l'étudiante, qui s'est réveillée. Pendant le reste du trajet, ils ont parlé de leurs métiers, de leurs villes et de leurs plats préférés. Le cuisinier a même promis d'envoyer une recette à Inès. Quand ils sont arrivés, elle était presque triste de les quitter. Elle s'est dit que le voyage avait passé beaucoup plus vite qu'en train.",
+  "text": "Pour aller à Lyon, Inès a décidé de faire du covoiturage, parce que le train était trop cher. Le conducteur, un homme d'une cinquantaine d'années, est arrivé avec dix minutes de retard et s'est excusé plusieurs fois. Il y avait déjà deux autres passagers dans la voiture : une étudiante qui dormait et un cuisinier qui rentrait chez ses parents. Au début, personne ne parlait. Puis le conducteur a mis de la musique, et le cuisinier a commencé à chanter très faux. Tout le monde a ri, même l'étudiante, qui venait de se réveiller. Pendant le reste du trajet, ils ont parlé de leurs métiers, de leurs villes et de leurs plats préférés. Le cuisinier a même promis d'envoyer une recette à Inès. Quand ils sont arrivés, elle était presque triste de les quitter. Elle s'est dit que le voyage était passé beaucoup plus vite qu'en train.",
   "gloss": {
    "covoiturage": "car sharing",
    "cher": "expensive",
@@ -2233,12 +2233,12 @@
    "étudiante": "student (a woman)",
    "cuisinier": "cook",
    "faux": "out of tune",
-   "réveillée": "woken up",
    "trajet": "journey",
    "métiers": "jobs",
    "promis": "promised",
    "recette": "recipe",
-   "quitter": "to leave (someone)"
+   "quitter": "to leave (someone)",
+   "réveiller": "se réveiller: to wake up"
   },
   "questions": [
    {
@@ -2317,7 +2317,7 @@
     ]
    }
   ],
-  "notice": "After verbs of saying, French can use an infinitive when the subject is the same: \"ils avouaient s'être ennuyés\", \"d'autres disaient avoir mieux dormi\" (they admitted having been bored, others said they had slept better).",
+  "notice": "After verbs of saying, French can use an infinitive when the subject is the same: \"certains avouaient s'être ennuyés\", \"d'autres disaient avoir mieux dormi\" (some admitted having been bored, others said they had slept better).",
   "back": [
    [
     "Je ne savais plus quoi faire de mes mains dans le bus.",
@@ -2390,7 +2390,7 @@
   "id": "fr-parapluie",
   "title": "Le parapluie jaune",
   "level": "A2",
-  "text": "Ce matin, il pleut beaucoup et Léa ne trouve pas son parapluie. Elle regarde dans l'entrée, sous le lit et dans la voiture, mais il n'est nulle part. Elle prend donc le vieux parapluie jaune de sa grand-mère, qui est très grand et un peu ridicule. Dans la rue, les gens sourient quand ils la voient passer. À l'arrêt de bus, une petite fille lui demande si elle peut venir dessous, parce qu'elle a oublié le sien. Ensuite, un monsieur âgé les rejoint, puis une dame avec un bébé. Bientôt, ils sont cinq sous le parapluie jaune et tout le monde rit. Quand le bus arrive, la pluie s'arrête. Le soir, Léa retrouve son petit parapluie noir dans son sac de sport. Elle le range dans un placard et décide de garder le jaune.",
+  "text": "Ce matin, il pleut beaucoup et Léa ne trouve pas son parapluie. Elle regarde dans l'entrée, sous le lit et dans la voiture, mais il n'est nulle part. Elle prend donc le vieux parapluie jaune de sa grand-mère, qui est très grand et un peu ridicule. Dans la rue, les gens sourient quand ils la voient passer. À l'arrêt de bus, une petite fille lui demande si elle peut se mettre dessous, parce qu'elle a oublié le sien. Ensuite, un monsieur âgé les rejoint, puis une dame avec un bébé. Bientôt, ils sont cinq sous le parapluie jaune et tout le monde rit. Quand le bus arrive, la pluie s'arrête. Le soir, Léa retrouve son petit parapluie noir dans son sac de sport. Elle le range dans un placard et décide de garder le jaune.",
   "gloss": {
    "pleut": "it is raining",
    "parapluie": "umbrella",
@@ -2447,7 +2447,7 @@
   "id": "fr-chien-perdu",
   "title": "Le chien du parc",
   "level": "A2",
-  "text": "Samedi après-midi, Hugo et sa sœur jouent au ballon dans le parc. Un petit chien marron arrive en courant et prend le ballon dans sa gueule. Les enfants rient, mais ils ne voient personne avec lui. Le chien porte un collier rouge avec un numéro de téléphone. Hugo appelle avec le téléphone de sa mère. Une dame répond tout de suite : elle cherche son chien depuis le matin et elle a très peur. Dix minutes plus tard, elle arrive au parc à vélo. Le chien saute dans ses bras et lui lèche le visage. Pour remercier les enfants, la dame leur achète deux glaces au chocolat. Avant de partir, elle leur dit que le chien s'appelle Biscuit et qu'il adore les ballons. Le samedi suivant, Biscuit revient au parc, mais cette fois avec sa maîtresse.",
+  "text": "Samedi après-midi, Hugo et sa sœur jouent au ballon dans le parc. Un petit chien marron arrive en courant et prend le ballon dans sa gueule. Les enfants rient, mais ils ne voient personne avec lui. Le chien porte un collier rouge avec un numéro de téléphone. Hugo appelle le numéro avec le téléphone de sa mère. Une dame répond tout de suite : elle cherche son chien depuis le matin et elle a très peur. Dix minutes plus tard, elle arrive au parc à vélo. Le chien saute dans ses bras et lui lèche le visage. Pour remercier les enfants, la dame leur achète deux glaces au chocolat. Avant de partir, elle leur dit que le chien s'appelle Biscuit et qu'il adore les ballons. Le samedi suivant, Biscuit revient au parc, mais cette fois avec sa maîtresse.",
   "gloss": {
    "ballon": "ball",
    "marron": "brown",
@@ -2503,7 +2503,7 @@
   "id": "fr-demenagement",
   "title": "Le carton oublié",
   "level": "B1",
-  "text": "Quand nous avons déménagé à Nantes, nous avons loué une camionnette pour transporter nos affaires. Mon frère conduisait pendant que je surveillais les cartons à l'arrière. Nous avons roulé toute la journée et nous sommes arrivés à la nuit tombée. En vidant la camionnette, je me suis rendu compte qu'il manquait un carton : celui qui contenait toutes nos photos de famille. Nous l'avions sans doute laissé sur le trottoir, devant l'ancien appartement. J'ai appelé notre ancienne voisine, sans grand espoir, car il était déjà tard. Elle m'a répondu qu'elle l'avait vu en sortant son chien et qu'elle l'avait mis à l'abri dans son garage. Elle a même proposé de nous l'envoyer par la poste. Une semaine plus tard, le carton est arrivé avec un mot gentil et un pot de confiture. Depuis, nous lui écrivons chaque année pour le Nouvel An.",
+  "text": "Quand nous avons déménagé à Nantes, nous avons loué une camionnette pour transporter nos affaires. Mon frère conduisait pendant que je surveillais les cartons à l'arrière. Nous avons roulé toute la journée et nous sommes arrivés à la nuit tombée. En vidant la camionnette, je me suis rendu compte qu'il manquait un carton : celui qui contenait toutes nos photos de famille. Nous l'avions sans doute laissé sur le trottoir, devant notre ancien appartement. J'ai appelé notre ancienne voisine, sans grand espoir, car il était déjà tard. Elle m'a répondu qu'elle l'avait vu en sortant son chien et qu'elle l'avait mis à l'abri dans son garage. Elle a même proposé de nous l'envoyer par la poste. Une semaine plus tard, le carton est arrivé avec un mot gentil et un pot de confiture. Depuis, nous lui écrivons chaque année pour le Nouvel An.",
   "gloss": {
    "déménagé": "moved house",
    "loué": "rented",
@@ -2558,7 +2558,7 @@
   "id": "fr-cours-de-cuisine",
   "title": "Le cours de cuisine",
   "level": "B1",
-  "text": "Pour son anniversaire, les enfants de Bernard lui ont offert un cours de cuisine. Il a d'abord été vexé, parce qu'il pensait cuisiner très bien. Le jour du cours, il s'est retrouvé avec huit autres élèves devant un chef jeune et souriant. Il fallait préparer une tarte aux pommes, ce que Bernard faisait depuis quarante ans. Il a donc travaillé vite, sans écouter les explications. Mais quand les tartes sont sorties du four, la sienne était trop cuite et la pâte était dure. Celle de sa voisine, qui n'avait jamais cuisiné, était parfaite. Le chef a goûté les deux sans rien dire, puis il a montré à Bernard comment étaler la pâte plus doucement. Bernard a recommencé, cette fois en suivant chaque étape. Le soir, il a apporté sa deuxième tarte à ses enfants. Il a reconnu qu'on pouvait encore apprendre quelque chose à soixante-dix ans.",
+  "text": "Pour son anniversaire, les enfants de Bernard lui ont offert un cours de cuisine. Il a d'abord été vexé, parce qu'il pensait déjà très bien cuisiner. Le jour du cours, il s'est retrouvé avec huit autres élèves devant un jeune chef souriant. Il fallait préparer une tarte aux pommes, ce que Bernard faisait depuis quarante ans. Il a donc travaillé vite, sans écouter les explications. Mais quand les tartes sont sorties du four, la sienne était trop cuite et la pâte était dure. Celle de sa voisine, qui n'avait jamais cuisiné, était parfaite. Le chef a goûté les deux sans rien dire, puis il a montré à Bernard comment étaler la pâte plus doucement. Bernard a recommencé, cette fois en suivant chaque étape. Le soir, il a apporté sa deuxième tarte à ses enfants. Il a reconnu qu'on pouvait encore apprendre quelque chose à soixante-dix ans.",
   "gloss": {
    "offert": "given (as a present)",
    "cours": "class, lesson",

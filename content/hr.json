@@ -1137,7 +1137,7 @@
   "id": "hr-kisobran",
   "title": "Žuti kišobran",
   "level": "A2",
-  "text": "Jutros jako pada kiša i Petra ne može naći svoj kišobran. Traži ga u hodniku, ispod kreveta i u autu, ali nema ga nigdje. Zato uzima stari žuti kišobran svoje bake, koji je vrlo velik i malo smiješan. Na ulici se ljudi smiješe kad prolazi. Na autobusnoj stanici jedna djevojčica pita smije li stati ispod njega, jer je svoj zaboravila. Zatim dolazi jedan stariji gospodin, a poslije i žena s bebom. Uskoro ih je petero ispod žutog kišobrana i svi se smiju. Kad autobus stigne, kiša prestane. Navečer Petra nalazi svoj mali crni kišobran u sportskoj torbi. Sprema ga u ormar i odlučuje zadržati žuti.",
+  "text": "Jutros jako pada kiša i Petra ne može naći svoj kišobran. Traži ga u hodniku, ispod kreveta i u autu, ali nema ga nigdje. Zato uzima stari žuti kišobran svoje bake, koji je vrlo velik i malo smiješan. Na ulici joj se ljudi smiješe dok prolazi. Na autobusnoj stanici jedna djevojčica pita smije li stati ispod njega, jer je svoj zaboravila. Zatim dolazi jedan stariji gospodin, a poslije i žena s bebom. Uskoro ih je petero ispod žutog kišobrana i svi se smiju. Kad autobus stigne, kiša prestane. Navečer Petra nalazi svoj mali crni kišobran u sportskoj torbi. Sprema ga u ormar i odlučuje zadržati žuti.",
   "gloss": {
    "pada": "pada kiša: it is raining",
    "kišobran": "umbrella",
@@ -1182,8 +1182,8 @@
   "notice": "\"Nema ga nigdje\": Croatian piles up negatives (nema ... nigdje), and what is missing stands in the genitive (ga). \"Svoj\" is used instead of moj / njezin when the owner is the subject of the sentence.",
   "back": [
    [
-    "Na ulici se ljudi smiješe kad prolazi.",
-    "In the street, people smile when she goes by."
+    "Na ulici joj se ljudi smiješe dok prolazi.",
+    "In the street, people smile at her as she goes by."
    ],
    [
     "Kad autobus stigne, kiša prestane.",
@@ -1195,7 +1195,7 @@
   "id": "hr-pas-park",
   "title": "Pas u parku",
   "level": "A2",
-  "text": "U subotu poslijepodne Luka i njegova sestra igraju se loptom u parku. Mali smeđi pas dotrči i uzme loptu u usta. Djeca se smiju, ali ne vide nikoga uz njega. Pas nosi crvenu ogrlicu s telefonskim brojem. Luka zove maminim mobitelom. Javlja se jedna gospođa: traži psa od jutra i jako je zabrinuta. Deset minuta poslije dolazi u park biciklom. Pas joj skače u naručje i liže joj lice. Da zahvali djeci, gospođa im kupuje dva sladoleda od čokolade. Prije nego što ode, kaže im da se pas zove Keks i da obožava lopte. Sljedeće subote Keks opet dolazi u park, ali ovaj put sa svojom vlasnicom.",
+  "text": "U subotu poslijepodne Luka i njegova sestra igraju se loptom u parku. Mali smeđi pas dotrči i uzme loptu u usta. Djeca se smiju, ali ne vide nikoga uz njega. Pas nosi crvenu ogrlicu s telefonskim brojem. Luka nazove taj broj s maminog mobitela. Javlja se jedna gospođa: traži psa od jutra i jako je zabrinuta. Deset minuta poslije dolazi u park biciklom. Pas joj skače u naručje i liže joj lice. Da zahvali djeci, gospođa im kupuje dva sladoleda od čokolade. Prije nego što ode, kaže im da se pas zove Keks i da obožava lopte. Sljedeće subote Keks opet dolazi u park, ali ovaj put sa svojom vlasnicom.",
   "gloss": {
    "loptom": "with a ball (lopta)",
    "smeđi": "brown",
@@ -1203,17 +1203,17 @@
    "usta": "mouth",
    "ogrlicu": "collar (ogrlica)",
    "brojem": "number (broj)",
-   "mobitelom": "on the mobile phone (mobitel)",
    "javlja": "javlja se: answers",
    "zabrinuta": "worried",
    "biciklom": "by bike",
    "skače": "jumps",
-   "naručje": "arms, lap",
+   "naručje": "arms (u naručje: into her arms)",
    "liže": "licks",
    "lice": "face",
    "zahvali": "thanks",
    "sladoleda": "ice creams (sladoled)",
-   "vlasnicom": "owner (a woman; vlasnica)"
+   "vlasnicom": "owner (a woman; vlasnica)",
+   "mobitela": "s mobitela: from the mobile phone (mobitel)"
   },
   "questions": [
    {
@@ -1235,7 +1235,7 @@
     ]
    }
   ],
-  "notice": "\"Dolazi biciklom\", \"zove mobitelom\", \"igraju se loptom\": the instrumental alone, with no preposition, says by what means something is done. With a person or company it takes \"s\": \"sa svojom vlasnicom\".",
+  "notice": "\"Dolazi biciklom\", \"igraju se loptom\": the instrumental alone, with no preposition, says by what means something is done. With a person or company it takes \"s\": \"sa svojom vlasnicom\".",
   "back": [
    [
     "Pas nosi crvenu ogrlicu s telefonskim brojem.",
@@ -1251,7 +1251,7 @@
   "id": "hr-kutija",
   "title": "Zaboravljena kutija",
   "level": "B1",
-  "text": "Kad smo se selili u Rijeku, unajmili smo kombi da prevezemo svoje stvari. Brat je vozio, a ja sam straga pazio na kutije. Putovali smo cijeli dan i stigli kad je već pao mrak. Dok sam praznio kombi, shvatio sam da jedna kutija nedostaje: ona sa svim našim obiteljskim fotografijama. Vjerojatno smo je ostavili na pločniku ispred starog stana. Nazvao sam našu bivšu susjedu bez puno nade, jer je već bilo kasno. Rekla mi je da ju je vidjela kad je izvodila psa i da ju je spremila u svoju garažu. Čak se ponudila da nam je pošalje poštom. Tjedan dana poslije kutija je stigla, uz lijepu poruku i staklenku pekmeza. Otada joj svake godine pišemo za Božić.",
+  "text": "Kad smo se selili u Rijeku, unajmili smo kombi da prevezemo svoje stvari. Brat je vozio, a ja sam straga pazio na kutije. Putovali smo cijeli dan i stigli kad je već pao mrak. Dok sam praznio kombi, shvatio sam da nedostaje jedna kutija: ona sa svim našim obiteljskim fotografijama. Vjerojatno smo je ostavili na pločniku ispred starog stana. Nazvao sam našu bivšu susjedu bez puno nade, jer je već bilo kasno. Rekla mi je da ju je vidjela kad je izvodila psa i da ju je spremila u svoju garažu. Čak se ponudila da nam je pošalje poštom. Tjedan dana poslije kutija je stigla, uz lijepu poruku i staklenku pekmeza. Otada joj svake godine pišemo za Božić.",
   "gloss": {
    "selili": "were moving (house)",
    "unajmili": "rented",
@@ -1308,7 +1308,7 @@
   "id": "hr-tecaj-kuhanja",
   "title": "Tečaj kuhanja",
   "level": "B1",
-  "text": "Za rođendan su Bernardu djeca poklonila tečaj kuhanja. Najprije se uvrijedio, jer je mislio da kuha vrlo dobro. Na dan tečaja našao se s još osam polaznika pred mladim i nasmijanim kuharom. Trebalo je ispeći pitu od jabuka, a Bernard ju je pekao već četrdeset godina. Zato je radio brzo i nije slušao upute. No kad su pite izašle iz pećnice, njegova je bila zagorjela, a tijesto tvrdo. Pita njegove susjede, koja nikad prije nije pekla, bila je savršena. Kuhar je kušao obje bez riječi, a onda je Bernardu pokazao kako se tijesto nježnije razvlači. Bernard je počeo ispočetka i ovaj put pratio svaki korak. Navečer je odnio svoju drugu pitu djeci. Priznao je da se i sa sedamdeset godina još može nešto naučiti.",
+  "text": "Za rođendan su Bernardu djeca poklonila tečaj kuhanja. Najprije se uvrijedio, jer je mislio da kuha vrlo dobro. Na dan tečaja našao se s još osam polaznika pred mladim i nasmijanim kuharom. Trebalo je ispeći pitu od jabuka, a Bernard ju je pekao već četrdeset godina. Zato je radio brzo i nije slušao upute. No kad su pite izvadili iz pećnice, njegova je bila zagorjela, a tijesto tvrdo. Pita polaznice do njega, koja nikad prije nije pekla, bila je savršena. Kuhar je kušao obje bez riječi, a onda je Bernardu pokazao kako se tijesto nježnije razvlači. Bernard je počeo ispočetka i ovaj put pratio svaki korak. Navečer je odnio svoju drugu pitu djeci. Priznao je da se i sa sedamdeset godina još može nešto naučiti.",
   "gloss": {
    "rođendan": "birthday",
    "poklonila": "gave (as a present)",
@@ -1325,7 +1325,7 @@
    "tijesto": "pastry, dough",
    "tvrdo": "hard",
    "kušao": "tasted",
-   "razvlači": "is rolled out, stretched",
+   "razvlači": "is stretched out thin",
    "korak": "step",
    "priznao": "admitted"
   },
