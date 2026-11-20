@@ -1150,6 +1150,239 @@
   ]
  },
  {
+  "id": "pt-guarda-chuva",
+  "title": "O guarda-chuva amarelo",
+  "level": "A2",
+  "text": "Hoje de manhã está chovendo muito e Júlia não encontra o guarda-chuva dela. Ela procura na entrada, embaixo da cama e no carro, mas ele não está em lugar nenhum. Então ela pega o velho guarda-chuva amarelo da avó, que é muito grande e um pouco ridículo. Na rua, as pessoas sorriem quando ela passa. No ponto de ônibus, uma menina pergunta se pode ficar embaixo, porque esqueceu o dela. Depois chega um senhor idoso, e mais tarde uma mulher com um bebê. Logo são cinco pessoas embaixo do guarda-chuva amarelo e todo mundo ri. Quando o ônibus chega, para de chover. À noite, Júlia acha o pequeno guarda-chuva preto na mochila da academia. Ela guarda o preto no armário e decide ficar com o amarelo.",
+  "gloss": {
+   "chovendo": "raining",
+   "procura": "looks for",
+   "entrada": "hall, entrance",
+   "embaixo": "underneath",
+   "nenhum": "em lugar nenhum: nowhere",
+   "pega": "takes",
+   "amarelo": "yellow",
+   "ridículo": "silly-looking",
+   "sorriem": "smile",
+   "ponto": "ponto de ônibus: bus stop",
+   "esqueceu": "forgot",
+   "idoso": "elderly",
+   "logo": "soon",
+   "para": "para de chover: it stops raining",
+   "acha": "finds",
+   "mochila": "backpack",
+   "academia": "gym",
+   "armário": "cupboard"
+  },
+  "questions": [
+   {
+    "q": "De que cor é o guarda-chuva da avó?",
+    "a": [
+     "amarelo"
+    ]
+   },
+   {
+    "q": "Quantas pessoas ficam embaixo no final?",
+    "a": [
+     "cinco",
+     "5"
+    ]
+   },
+   {
+    "q": "Onde Júlia acha o guarda-chuva pequeno?",
+    "a": [
+     "mochila"
+    ]
+   }
+  ],
+  "notice": "\"Está chovendo\": Brazilian Portuguese uses estar + the -ndo form for something happening now. \"O guarda-chuva dela\", \"o dela\": dele / dela after the noun says whose it is without the doubt that \"seu\" can leave.",
+  "back": [
+   [
+    "Na rua, as pessoas sorriem quando ela passa.",
+    "In the street, people smile when she goes by."
+   ],
+   [
+    "Quando o ônibus chega, para de chover.",
+    "When the bus arrives, it stops raining."
+   ]
+  ]
+ },
+ {
+  "id": "pt-cachorro-parque",
+  "title": "O cachorro do parque",
+  "level": "A2",
+  "text": "No sábado à tarde, Hugo e a irmã jogam bola no parque. Um cachorrinho marrom chega correndo e pega a bola com a boca. As crianças riem, mas não veem ninguém com ele. O cachorro usa uma coleira vermelha com um número de telefone. Hugo liga com o celular da mãe. Uma mulher atende na hora: ela procura o cachorro desde cedo e está muito preocupada. Dez minutos depois, ela chega ao parque de bicicleta. O cachorro pula no colo dela e lambe o rosto dela. Para agradecer, a mulher compra dois sorvetes de chocolate para as crianças. Antes de ir embora, ela conta que o cachorro se chama Biscoito e adora bolas. No sábado seguinte, Biscoito volta ao parque, mas dessa vez com a dona.",
+  "gloss": {
+   "bola": "ball",
+   "cachorrinho": "little dog",
+   "marrom": "brown",
+   "correndo": "running",
+   "boca": "mouth",
+   "coleira": "collar",
+   "liga": "phones",
+   "atende": "answers (the phone)",
+   "hora": "na hora: at once",
+   "cedo": "early (desde cedo: since early morning)",
+   "preocupada": "worried",
+   "bicicleta": "bike",
+   "pula": "jumps",
+   "colo": "lap, arms",
+   "lambe": "licks",
+   "rosto": "face",
+   "agradecer": "to thank",
+   "sorvetes": "ice creams",
+   "dona": "owner (a woman)"
+  },
+  "questions": [
+   {
+    "q": "O que o cachorro pega com a boca?",
+    "a": [
+     "bola"
+    ]
+   },
+   {
+    "q": "De que cor é a coleira?",
+    "a": [
+     "vermelha"
+    ]
+   },
+   {
+    "q": "Como a mulher chega ao parque?",
+    "a": [
+     "bicicleta"
+    ]
+   }
+  ],
+  "notice": "\"Ela procura o cachorro desde cedo\": with \"desde\" Portuguese uses the present for something that began in the past and is still going on (she has been looking since early morning).",
+  "back": [
+   [
+    "O cachorro usa uma coleira vermelha com um número de telefone.",
+    "The dog is wearing a red collar with a phone number."
+   ],
+   [
+    "Dez minutos depois, ela chega ao parque de bicicleta.",
+    "Ten minutes later, she arrives at the park by bike."
+   ]
+  ]
+ },
+ {
+  "id": "pt-caixa-esquecida",
+  "title": "A caixa esquecida",
+  "level": "B1",
+  "text": "Quando nos mudamos para Curitiba, alugamos uma van para levar as nossas coisas. Meu irmão dirigia enquanto eu cuidava das caixas no fundo. Viajamos o dia inteiro e chegamos quando já estava escuro. Ao esvaziar a van, percebi que faltava uma caixa: a que tinha todas as fotos da família. Provavelmente tínhamos deixado a caixa na calçada, em frente ao apartamento antigo. Liguei para a nossa antiga vizinha sem muita esperança, porque já era tarde. Ela respondeu que tinha visto a caixa ao sair com o cachorro e que tinha guardado tudo na garagem dela. Ela até se ofereceu para mandar pelo correio. Uma semana depois, a caixa chegou com um bilhete carinhoso e um pote de geleia. Desde então, escrevemos para ela todo ano no Natal.",
+  "gloss": {
+   "mudamos": "moved (house)",
+   "alugamos": "rented",
+   "van": "van",
+   "dirigia": "was driving",
+   "cuidava": "looked after",
+   "caixas": "boxes",
+   "fundo": "no fundo: in the back",
+   "escuro": "dark",
+   "esvaziar": "to empty",
+   "percebi": "I realised",
+   "faltava": "was missing",
+   "calçada": "pavement",
+   "vizinha": "neighbour (a woman)",
+   "esperança": "hope",
+   "guardado": "put away, kept safe",
+   "ofereceu": "se ofereceu: offered",
+   "correio": "post",
+   "bilhete": "note",
+   "geleia": "jam"
+  },
+  "questions": [
+   {
+    "q": "Para que cidade eles se mudaram?",
+    "a": [
+     "Curitiba"
+    ]
+   },
+   {
+    "q": "O que tinha na caixa que faltava?",
+    "a": [
+     "fotos"
+    ]
+   },
+   {
+    "q": "Onde a vizinha tinha guardado a caixa?",
+    "a": [
+     "garagem"
+    ]
+   }
+  ],
+  "notice": "\"Ao esvaziar a van\", \"ao sair com o cachorro\": ao + infinitive means when or while doing something. \"Tínhamos deixado\", \"tinha visto\" (ter in the imperfect + participle) go one step back from the past of the story.",
+  "back": [
+   [
+    "Meu irmão dirigia enquanto eu cuidava das caixas no fundo.",
+    "My brother drove while I looked after the boxes in the back."
+   ],
+   [
+    "Ela até se ofereceu para mandar pelo correio.",
+    "She even offered to send it by post."
+   ]
+  ]
+ },
+ {
+  "id": "pt-aula-culinaria",
+  "title": "A aula de culinária",
+  "level": "B1",
+  "text": "No aniversário de Bernardo, os filhos deram a ele uma aula de culinária de presente. No começo ele ficou chateado, porque achava que cozinhava muito bem. No dia da aula, ele se viu com outros oito alunos diante de um cozinheiro jovem e sorridente. Era preciso fazer um bolo de cenoura, coisa que Bernardo fazia havia quarenta anos. Por isso ele trabalhou depressa, sem prestar atenção nas explicações. Mas quando os bolos saíram do forno, o dele estava queimado por fora e duro por dentro. O da colega ao lado, que nunca tinha cozinhado, estava perfeito. O cozinheiro provou os dois sem dizer nada e depois mostrou a Bernardo como misturar a massa com mais calma. Bernardo começou de novo, dessa vez seguindo cada passo. À noite, levou o segundo bolo para os filhos. Ele admitiu que ainda dá para aprender alguma coisa aos setenta anos.",
+  "gloss": {
+   "aniversário": "birthday",
+   "presente": "de presente: as a present",
+   "chateado": "upset, offended",
+   "achava": "thought",
+   "alunos": "pupils, students",
+   "cozinheiro": "cook, chef",
+   "sorridente": "smiling",
+   "bolo": "cake",
+   "cenoura": "carrot",
+   "depressa": "fast",
+   "explicações": "explanations",
+   "forno": "oven",
+   "queimado": "burnt",
+   "duro": "hard",
+   "provou": "tasted",
+   "massa": "batter, dough",
+   "calma": "com mais calma: more gently",
+   "passo": "step",
+   "admitiu": "admitted"
+  },
+  "questions": [
+   {
+    "q": "O que era preciso fazer na aula?",
+    "a": [
+     "bolo"
+    ]
+   },
+   {
+    "q": "Como estava o bolo de Bernardo por dentro?",
+    "a": [
+     "duro"
+    ]
+   },
+   {
+    "q": "Quantos anos Bernardo tem?",
+    "a": [
+     "setenta",
+     "70"
+    ]
+   }
+  ],
+  "notice": "\"O dele estava queimado. O da colega estava perfeito.\": o / a + de stand for a noun already named (his one, the classmate's one). \"Fazia havia quarenta anos\": he had been making it for forty years.",
+  "back": [
+   [
+    "Por isso ele trabalhou depressa, sem prestar atenção nas explicações.",
+    "So he worked fast, without paying attention to the explanations."
+   ],
+   [
+    "À noite, levou o segundo bolo para os filhos.",
+    "In the evening, he took the second cake to his children."
+   ]
+  ]
+ },
+ {
   "id": "pt-d-lanchonete",
   "title": "Na lanchonete",
   "level": "A1",
