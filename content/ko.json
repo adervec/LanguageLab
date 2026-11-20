@@ -1,98 +1,967 @@
 [
  {
-  "id": "ko-gajok", "title": "우리 가족", "level": "A1",
-  "text": "제 이름은 민지예요. 저는 열 살이에요. 우리 가족은 서울에 살아요. 아버지는 키가 크고 요리를 좋아해요. 어머니는 학교에서 일해요. 저는 남동생이 한 명 있어요. 이름은 준호예요. 준호는 여섯 살이고 말이 많아요. 우리 집에는 검은 고양이도 있어요. 고양이는 하루 종일 소파에서 자요. 저녁에는 가족이 모두 같이 밥을 먹어요. 아버지는 자주 찌개를 끓여요. 밥을 먹은 후에 저는 책을 읽고 준호는 만화를 봐요. 일요일에는 할머니 집에 가요. 할머니 집에는 꽃이 많은 마당이 있어요. 저는 우리 가족을 정말 사랑해요.",
-  "gloss": { "가족은": "family (가족)", "살아요": "live (살다)", "키가": "height (키가 크다: to be tall)", "요리를": "cooking (요리)", "좋아해요": "likes (좋아하다)", "일해요": "works (일하다)", "남동생이": "younger brother (남동생)", "말이": "words (말이 많다: to talk a lot)", "검은": "black", "고양이도": "a cat too (고양이)", "종일": "all day (하루 종일)", "소파에서": "on the sofa (소파)", "저녁에는": "in the evening (저녁)", "같이": "together", "자주": "often", "찌개를": "stew (찌개)", "끓여요": "cooks, boils (끓이다)", "후에": "after", "만화를": "cartoons (만화)", "일요일에는": "on Sundays (일요일)", "할머니": "grandmother", "꽃이": "flowers (꽃)", "마당이": "yard (마당)", "사랑해요": "love (사랑하다)" },
-  "questions": [ { "q": "민지의 가족은 어디에 살아요?", "a": ["서울"] }, { "q": "하루 종일 소파에서 자는 것은 무엇이에요?", "a": ["고양이"] }, { "q": "일요일에는 누구 집에 가요?", "a": ["할머니"] } ],
-  "back": [["어머니는 학교에서 일해요.", "Mother works at a school."], ["고양이는 하루 종일 소파에서 자요.", "The cat sleeps on the sofa all day."]],
+  "id": "ko-gajok",
+  "title": "우리 가족",
+  "level": "A1",
+  "text": "제 이름은 민지예요. 저는 열 살이에요. 우리 가족은 서울에 살아요. 아버지는 키가 크고 요리를 좋아해요. 어머니는 학교에서 일해요. 저는 남동생이 한 명 있어요. 이름은 준호예요. 준호는 여섯 살이고 말이 많아요. 우리 집에는 검은 고양이도 있어요. 고양이는 하루 종일 소파에서 자요. 저녁에는 가족이 모두 같이 밥을 먹어요. 아버지는 자주 찌개를 끓여요. 밥을 먹은 후에 저는 책을 읽고 준호는 만화를 봐요. 일요일에는 할머니 댁에 가요. 할머니 집에는 꽃이 많은 마당이 있어요. 저는 우리 가족을 정말 사랑해요.",
+  "gloss": {
+   "가족은": "family (가족)",
+   "살아요": "live (살다)",
+   "키가": "height (키가 크다: to be tall)",
+   "요리를": "cooking (요리)",
+   "좋아해요": "likes (좋아하다)",
+   "일해요": "works (일하다)",
+   "남동생이": "younger brother (남동생)",
+   "말이": "words (말이 많다: to talk a lot)",
+   "검은": "black",
+   "고양이도": "a cat too (고양이)",
+   "종일": "all day (하루 종일)",
+   "소파에서": "on the sofa (소파)",
+   "저녁에는": "in the evening (저녁)",
+   "같이": "together",
+   "자주": "often",
+   "찌개를": "stew (찌개)",
+   "끓여요": "cooks, boils (끓이다)",
+   "후에": "after",
+   "만화를": "cartoons (만화)",
+   "일요일에는": "on Sundays (일요일)",
+   "할머니": "grandmother",
+   "꽃이": "flowers (꽃)",
+   "마당이": "yard (마당)",
+   "사랑해요": "love (사랑하다)"
+  },
+  "questions": [
+   {
+    "q": "민지의 가족은 어디에 살아요?",
+    "a": [
+     "서울"
+    ]
+   },
+   {
+    "q": "하루 종일 소파에서 자는 것은 무엇이에요?",
+    "a": [
+     "고양이"
+    ]
+   },
+   {
+    "q": "일요일에는 누구 집에 가요?",
+    "a": [
+     "할머니"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "어머니는 학교에서 일해요.",
+    "Mother works at a school."
+   ],
+   [
+    "고양이는 하루 종일 소파에서 자요.",
+    "The cat sleeps on the sofa all day."
+   ]
+  ],
   "notice": "Particles mark each word's job: 은/는 the topic, 이/가 the subject, 을/를 the object, 에서 the place of an action: \"아버지는 자주 찌개를 끓여요\" (Father often makes stew), \"어머니는 학교에서 일해요\" (Mother works at a school)."
  },
  {
-  "id": "ko-cafe", "title": "카페에서", "level": "A1",
-  "text": "아침 아홉 시예요. 수진 씨는 역 근처의 작은 카페에 들어가요. 배가 고프고 조금 추워요. 직원이 웃으면서 인사해요. 수진 씨는 메뉴를 봐요. 따뜻한 우유 커피 한 잔과 빵 하나를 주문해요. 직원이 큰 컵과 따뜻한 빵을 가져와요. 수진 씨는 천천히 커피를 마셔요. 창밖에는 비가 와요. 사람들이 우산을 쓰고 빨리 걸어가요. 수진 씨는 바쁘지 않아요. 가방을 열고 신문을 꺼내요. 뉴스를 읽으면서 빵을 먹어요. 열 시에 돈을 내고 카페에서 나와요. 밖에는 이제 비가 오지 않아요.",
-  "gloss": { "근처의": "near (근처)", "들어가요": "goes in (들어가다)", "배가": "stomach (배가 고프다: to be hungry)", "고프고": "hungry and (고프다)", "추워요": "is cold (춥다)", "직원이": "the staff member (직원)", "웃으면서": "smiling (웃다)", "인사해요": "greets (인사하다)", "따뜻한": "warm", "잔과": "a cup and (잔)", "주문해요": "orders (주문하다)", "가져와요": "brings (가져오다)", "천천히": "slowly", "마셔요": "drinks (마시다)", "창밖에는": "outside the window (창밖)", "비가": "rain (비가 오다: to rain)", "우산을": "umbrella (우산)", "빨리": "quickly", "걸어가요": "walk along (걸어가다)", "바쁘지": "busy (바쁘다; 바쁘지 않다: not busy)", "가방을": "bag (가방)", "신문을": "newspaper (신문)", "꺼내요": "takes out (꺼내다)", "돈을": "money (돈을 내다: to pay)", "밖에는": "outside (밖)" },
-  "questions": [ { "q": "수진 씨는 무엇을 마셔요?", "a": ["커피"] }, { "q": "사람들은 무엇을 쓰고 걸어가요?", "a": ["우산"] }, { "q": "수진 씨는 가방에서 무엇을 꺼내요?", "a": ["신문"] } ],
-  "back": [["수진 씨는 천천히 커피를 마셔요.", "Sujin drinks her coffee slowly."], ["사람들이 우산을 쓰고 빨리 걸어가요.", "People walk quickly under their umbrellas."]],
+  "id": "ko-cafe",
+  "title": "카페에서",
+  "level": "A1",
+  "text": "아침 아홉 시예요. 수진 씨는 역 근처의 작은 카페에 들어가요. 배가 고프고 조금 추워요. 직원이 웃으면서 인사해요. 수진 씨는 메뉴를 봐요. 따뜻한 카페라테 한 잔과 빵 하나를 주문해요. 직원이 큰 컵과 따뜻한 빵을 가져와요. 수진 씨는 천천히 커피를 마셔요. 창밖에는 비가 와요. 사람들이 우산을 쓰고 빨리 걸어가요. 수진 씨는 바쁘지 않아요. 가방을 열고 신문을 꺼내요. 뉴스를 읽으면서 빵을 먹어요. 열 시에 돈을 내고 카페에서 나와요. 밖에는 이제 비가 오지 않아요.",
+  "gloss": {
+   "근처의": "near (근처)",
+   "들어가요": "goes in (들어가다)",
+   "배가": "stomach (배가 고프다: to be hungry)",
+   "고프고": "hungry and (고프다)",
+   "추워요": "is cold (춥다)",
+   "직원이": "the staff member (직원)",
+   "웃으면서": "smiling (웃다)",
+   "인사해요": "greets (인사하다)",
+   "따뜻한": "warm",
+   "잔과": "a cup and (잔)",
+   "주문해요": "orders (주문하다)",
+   "가져와요": "brings (가져오다)",
+   "천천히": "slowly",
+   "마셔요": "drinks (마시다)",
+   "창밖에는": "outside the window (창밖)",
+   "비가": "rain (비가 오다: to rain)",
+   "우산을": "umbrella (우산)",
+   "빨리": "quickly",
+   "걸어가요": "walk along (걸어가다)",
+   "바쁘지": "busy (바쁘다; 바쁘지 않다: not busy)",
+   "가방을": "bag (가방)",
+   "신문을": "newspaper (신문)",
+   "꺼내요": "takes out (꺼내다)",
+   "돈을": "money (돈을 내다: to pay)",
+   "밖에는": "outside (밖)"
+  },
+  "questions": [
+   {
+    "q": "수진 씨는 무엇을 마셔요?",
+    "a": [
+     "커피"
+    ]
+   },
+   {
+    "q": "사람들은 무엇을 쓰고 걸어가요?",
+    "a": [
+     "우산"
+    ]
+   },
+   {
+    "q": "수진 씨는 가방에서 무엇을 꺼내요?",
+    "a": [
+     "신문"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "수진 씨는 천천히 커피를 마셔요.",
+    "Sujin drinks her coffee slowly."
+   ],
+   [
+    "사람들이 우산을 쓰고 빨리 걸어가요.",
+    "People walk quickly under their umbrellas."
+   ]
+  ],
   "notice": "Two actions are joined with -고 (and) or -(으)면서 (while): \"가방을 열고 신문을 꺼내요\" (she opens her bag and takes out a newspaper), \"뉴스를 읽으면서 빵을 먹어요\" (she eats bread while reading the news)."
  },
  {
-  "id": "ko-haru", "title": "나의 하루", "level": "A1",
+  "id": "ko-haru",
+  "title": "나의 하루",
+  "level": "A1",
   "text": "저는 매일 아침 일곱 시에 일어나요. 샤워를 하고 옷을 입어요. 그리고 빵을 먹고 차를 마셔요. 여덟 시에 버스를 타고 회사에 가요. 저는 시내에 있는 사무실에서 일해요. 회사 사람들은 모두 친절해요. 열두 시에 동료들과 같이 점심을 먹어요. 오후에는 이메일을 쓰고 전화를 해요. 다섯 시에 일이 끝나요. 퇴근 후에 마트에서 장을 봐요. 저녁에는 요리를 하고 음악을 들어요. 가끔 친구에게 전화해요. 밤 열한 시쯤 자요. 피곤하지만 기분이 좋아요.",
-  "gloss": { "매일": "every day", "일어나요": "get up (일어나다)", "샤워를": "a shower (샤워를 하다: to shower)", "옷을": "clothes (옷)", "입어요": "put on (입다)", "차를": "tea (차)", "타고": "ride and (타다)", "회사에": "to work, to the company (회사)", "시내에": "downtown (시내)", "사무실에서": "in an office (사무실)", "친절해요": "are kind (친절하다)", "동료들과": "with colleagues (동료)", "점심을": "lunch (점심)", "오후에는": "in the afternoon (오후)", "끝나요": "ends (끝나다)", "퇴근": "leaving work", "장을": "장을 보다: to do the shopping", "음악을": "music (음악)", "들어요": "listen to (듣다)", "가끔": "sometimes", "친구에게": "to a friend (친구)", "피곤하지만": "tired, but (피곤하다)", "기분이": "mood (기분이 좋다: to feel good)" },
-  "questions": [ { "q": "무엇을 타고 회사에 가요?", "a": ["버스"] }, { "q": "어디에서 일해요?", "a": ["사무실"] }, { "q": "저녁에 무엇을 들어요?", "a": ["음악"] } ],
-  "back": [["저는 시내에 있는 사무실에서 일해요.", "I work in an office downtown."], ["퇴근 후에 마트에서 장을 봐요.", "After work I do the shopping at the supermarket."]],
+  "gloss": {
+   "매일": "every day",
+   "일어나요": "get up (일어나다)",
+   "샤워를": "a shower (샤워를 하다: to shower)",
+   "옷을": "clothes (옷)",
+   "입어요": "put on (입다)",
+   "차를": "tea (차)",
+   "타고": "ride and (타다)",
+   "회사에": "to work, to the company (회사)",
+   "시내에": "downtown (시내)",
+   "사무실에서": "in an office (사무실)",
+   "친절해요": "are kind (친절하다)",
+   "동료들과": "with colleagues (동료)",
+   "점심을": "lunch (점심)",
+   "오후에는": "in the afternoon (오후)",
+   "끝나요": "ends (끝나다)",
+   "퇴근": "leaving work",
+   "장을": "장을 보다: to do the shopping",
+   "음악을": "music (음악)",
+   "들어요": "listen to (듣다)",
+   "가끔": "sometimes",
+   "친구에게": "to a friend (친구)",
+   "피곤하지만": "tired, but (피곤하다)",
+   "기분이": "mood (기분이 좋다: to feel good)"
+  },
+  "questions": [
+   {
+    "q": "무엇을 타고 회사에 가요?",
+    "a": [
+     "버스"
+    ]
+   },
+   {
+    "q": "어디에서 일해요?",
+    "a": [
+     "사무실"
+    ]
+   },
+   {
+    "q": "저녁에 무엇을 들어요?",
+    "a": [
+     "음악"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "저는 시내에 있는 사무실에서 일해요.",
+    "I work in an office downtown."
+   ],
+   [
+    "퇴근 후에 마트에서 장을 봐요.",
+    "After work I do the shopping at the supermarket."
+   ]
+  ],
   "notice": "A time or a destination takes 에, the place where something is done takes 에서: \"여덟 시에 버스를 타고 회사에 가요\" (at eight I take the bus to work), \"사무실에서 일해요\" (I work in an office)."
  },
  {
-  "id": "ko-sijang", "title": "토요일 시장", "level": "A2",
-  "text": "토요일 아침마다 지은 씨는 바구니를 들고 시장에 가요. 지은 씨는 이 시간을 아주 좋아해요. 상인들은 큰 소리로 가격을 외치고, 시장에서는 갓 구운 빵 냄새가 나요. 먼저 할아버지 가게에서 토마토와 호박을 사요. 할아버지는 언제나 사과를 하나 더 주세요. 그다음에 지은 씨는 떡집 앞에서 멈춰요. 아주머니가 따뜻한 떡을 맛보라고 주세요. 떡이 정말 맛있어서 지은 씨는 두 개를 사요. 집에 가기 전에 카페 테라스에서 커피를 마시면서 지나가는 사람들을 구경해요. 한 아이가 강아지를 따라 뛰어가요. 지은 씨는 웃어요. 돈은 많이 쓰지 않았지만 바구니는 가득하고 아침은 완벽했어요.",
-  "gloss": { "아침마다": "every morning (-마다: every)", "바구니를": "basket (바구니)", "들고": "carrying (들다)", "시장에": "to the market (시장)", "상인들은": "the sellers (상인)", "소리로": "in a voice (큰 소리로: loudly)", "가격을": "prices (가격)", "외치고": "shout and (외치다)", "갓": "just, freshly", "구운": "baked (굽다)", "냄새가": "smell (냄새가 나다: to smell of)", "먼저": "first", "가게에서": "at the shop (가게)", "호박을": "squash (호박)", "언제나": "always", "주세요": "gives (주시다, respectful)", "그다음에": "after that", "떡집": "rice cake shop", "멈춰요": "stops (멈추다)", "아주머니가": "the lady (아주머니)", "떡을": "rice cake (떡)", "맛보라고": "to have a taste (맛보다)", "맛있어서": "because it is delicious (맛있다)", "전에": "before", "지나가는": "passing (지나가다)", "구경해요": "watches (구경하다)", "강아지를": "puppy (강아지)", "따라": "after, following", "뛰어가요": "runs (뛰어가다)", "가득하고": "is full and (가득하다)", "완벽했어요": "was perfect (완벽하다)" },
-  "questions": [ { "q": "지은 씨는 토요일 아침마다 어디에 가요?", "a": ["시장"] }, { "q": "할아버지는 언제나 무엇을 하나 더 주세요?", "a": ["사과"] }, { "q": "아이는 무엇을 따라 뛰어가요?", "a": ["강아지"] } ],
-  "back": [["할아버지는 언제나 사과를 하나 더 주세요.", "The old man always gives her one more apple."], ["한 아이가 강아지를 따라 뛰어가요.", "A child runs after a puppy."]],
+  "id": "ko-sijang",
+  "title": "토요일 시장",
+  "level": "A2",
+  "text": "토요일 아침마다 지은 씨는 바구니를 들고 시장에 가요. 지은 씨는 이 시간을 아주 좋아해요. 상인들은 큰 소리로 가격을 외치고, 시장에서는 갓 구운 빵 냄새가 나요. 먼저 할아버지 가게에서 토마토와 호박을 사요. 할아버지는 언제나 사과를 하나 더 주세요. 그다음에 지은 씨는 떡집 앞에서 멈춰요. 아주머니가 따뜻한 떡을 맛보라고 주세요. 떡이 정말 맛있어서 지은 씨는 두 개를 사요. 집에 가기 전에 카페 테라스에서 커피를 마시면서 지나가는 사람들을 구경해요. 한 아이가 강아지를 따라 뛰어가요. 지은 씨는 웃어요. 돈은 많이 쓰지 않았지만 바구니는 가득하고 정말 즐거운 아침이었어요.",
+  "gloss": {
+   "아침마다": "every morning (-마다: every)",
+   "바구니를": "basket (바구니)",
+   "들고": "carrying (들다)",
+   "시장에": "to the market (시장)",
+   "상인들은": "the sellers (상인)",
+   "소리로": "in a voice (큰 소리로: loudly)",
+   "가격을": "prices (가격)",
+   "외치고": "shout and (외치다)",
+   "갓": "just, freshly",
+   "구운": "baked (굽다)",
+   "냄새가": "smell (냄새가 나다: to smell of)",
+   "먼저": "first",
+   "가게에서": "at the shop (가게)",
+   "호박을": "squash (호박)",
+   "언제나": "always",
+   "주세요": "gives (주시다, respectful)",
+   "그다음에": "after that",
+   "떡집": "rice cake shop",
+   "멈춰요": "stops (멈추다)",
+   "아주머니가": "the lady (아주머니)",
+   "떡을": "rice cake (떡)",
+   "맛보라고": "to have a taste (맛보다)",
+   "맛있어서": "because it is delicious (맛있다)",
+   "전에": "before",
+   "지나가는": "passing (지나가다)",
+   "구경해요": "watches (구경하다)",
+   "강아지를": "puppy (강아지)",
+   "따라": "after, following",
+   "뛰어가요": "runs (뛰어가다)",
+   "가득하고": "is full and (가득하다)",
+   "즐거운": "pleasant, enjoyable"
+  },
+  "questions": [
+   {
+    "q": "지은 씨는 토요일 아침마다 어디에 가요?",
+    "a": [
+     "시장"
+    ]
+   },
+   {
+    "q": "할아버지는 언제나 무엇을 하나 더 주세요?",
+    "a": [
+     "사과"
+    ]
+   },
+   {
+    "q": "아이는 무엇을 따라 뛰어가요?",
+    "a": [
+     "강아지"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "할아버지는 언제나 사과를 하나 더 주세요.",
+    "The old man always gives her one more apple."
+   ],
+   [
+    "한 아이가 강아지를 따라 뛰어가요.",
+    "A child runs after a puppy."
+   ]
+  ],
   "notice": "-아서/어서 gives a reason and -지만 a contrast: \"떡이 정말 맛있어서 지은 씨는 두 개를 사요\" (the rice cake is so good that she buys two), \"돈은 많이 쓰지 않았지만 바구니는 가득하고\" (she did not spend much, but the basket is full)."
  },
  {
-  "id": "ko-jihacheol", "title": "아침 지하철", "level": "A2",
-  "text": "민수 씨는 매일 아침 같은 지하철을 타요. 오늘은 늦어서 승강장까지 뛰어갔어요. 하지만 민수 씨가 도착했을 때 문이 닫혔어요. 다음 지하철은 십 분 후에 와요. 민수 씨는 의자에 앉았어요. 옆에는 두꺼운 책을 읽는 할머니가 계셨어요. 민수 씨가 책이 재미있느냐고 물었어요. 할머니는 웃으면서 아직 범인을 모른다고 대답하셨어요. 두 사람은 책 이야기를 하고, 여행 이야기도 했어요. 십 분이 아주 빨리 지나갔어요. 지하철이 오자 두 사람은 나란히 앉아서 이야기를 계속했어요. 민수 씨는 회사에 조금 늦었지만 기분이 좋았어요. 내일도 조금 늦을지 몰라요.",
-  "gloss": { "같은": "the same", "지하철을": "the underground train (지하철)", "늦어서": "because he is late (늦다)", "승강장까지": "as far as the platform (승강장)", "뛰어갔어요": "ran (뛰어가다)", "도착했을": "arrived (도착하다; 도착했을 때: when he arrived)", "때": "time, when", "문이": "the door (문)", "닫혔어요": "closed (닫히다)", "다음": "next", "의자에": "on a seat (의자)", "앉았어요": "sat down (앉다)", "옆에는": "beside him (옆)", "두꺼운": "thick", "계셨어요": "was there (계시다, respectful)", "재미있느냐고": "whether it was interesting (재미있다)", "물었어요": "asked (묻다)", "아직": "yet, still", "범인을": "the culprit (범인)", "모른다고": "that she does not know (모르다)", "대답하셨어요": "answered (대답하다, respectful)", "이야기를": "talk, story (이야기)", "여행": "travel", "지나갔어요": "went by (지나가다)", "오자": "as soon as it came (오다)", "나란히": "side by side", "계속했어요": "went on (계속하다)", "늦을지": "늦을지 모르다: may be late" },
-  "questions": [ { "q": "다음 지하철은 몇 분 후에 와요?", "a": ["십", "10"] }, { "q": "할머니는 무엇을 읽고 계셨어요?", "a": ["책"] }, { "q": "두 사람은 책 이야기 다음에 무슨 이야기를 했어요?", "a": ["여행"] } ],
-  "back": [["다음 지하철은 십 분 후에 와요.", "The next train comes in ten minutes."], ["십 분이 아주 빨리 지나갔어요.", "The ten minutes went by very quickly."]],
+  "id": "ko-jihacheol",
+  "title": "아침 지하철",
+  "level": "A2",
+  "text": "민수 씨는 매일 아침 같은 지하철을 타요. 오늘은 늦어서 승강장까지 뛰어갔어요. 하지만 민수 씨가 도착했을 때 문이 닫혔어요. 다음 지하철은 십 분 후에 와요. 민수 씨는 의자에 앉았어요. 옆에는 두꺼운 책을 읽는 할머니가 계셨어요. 민수 씨가 책이 재미있느냐고 물었어요. 할머니는 웃으면서 아직 범인을 모른다고 대답하셨어요. 두 사람은 책 이야기를 하고, 여행 이야기도 했어요. 십 분이 아주 빨리 지나갔어요. 지하철이 오자 두 사람은 나란히 앉아서 이야기를 계속했어요. 민수 씨는 회사에 조금 늦었지만 기분이 좋았어요. 내일도 조금 늦을지도 몰라요.",
+  "gloss": {
+   "같은": "the same",
+   "지하철을": "the underground train (지하철)",
+   "늦어서": "because he is late (늦다)",
+   "승강장까지": "as far as the platform (승강장)",
+   "뛰어갔어요": "ran (뛰어가다)",
+   "도착했을": "arrived (도착하다; 도착했을 때: when he arrived)",
+   "때": "time, when",
+   "문이": "the door (문)",
+   "닫혔어요": "closed (닫히다)",
+   "다음": "next",
+   "의자에": "on a seat (의자)",
+   "앉았어요": "sat down (앉다)",
+   "옆에는": "beside him (옆)",
+   "두꺼운": "thick",
+   "계셨어요": "was there (계시다, respectful)",
+   "재미있느냐고": "whether it was interesting (재미있다)",
+   "물었어요": "asked (묻다)",
+   "아직": "yet, still",
+   "범인을": "the culprit (범인)",
+   "모른다고": "that she does not know (모르다)",
+   "대답하셨어요": "answered (대답하다, respectful)",
+   "이야기를": "talk, story (이야기)",
+   "여행": "travel",
+   "지나갔어요": "went by (지나가다)",
+   "오자": "as soon as it came (오다)",
+   "나란히": "side by side",
+   "계속했어요": "went on (계속하다)",
+   "늦을지도": "might be late (늦을지도 몰라요)"
+  },
+  "questions": [
+   {
+    "q": "다음 지하철은 몇 분 후에 와요?",
+    "a": [
+     "십",
+     "10"
+    ]
+   },
+   {
+    "q": "할머니는 무엇을 읽고 계셨어요?",
+    "a": [
+     "책"
+    ]
+   },
+   {
+    "q": "두 사람은 책 이야기 다음에 무슨 이야기를 했어요?",
+    "a": [
+     "여행"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "다음 지하철은 십 분 후에 와요.",
+    "The next train comes in ten minutes."
+   ],
+   [
+    "십 분이 아주 빨리 지나갔어요.",
+    "The ten minutes went by very quickly."
+   ]
+  ],
   "notice": "Reported speech ends in -다고, a reported question in -(으)냐고: \"아직 범인을 모른다고 대답하셨어요\" (she answered that she did not know the culprit yet), \"책이 재미있느냐고 물었어요\" (he asked whether the book was interesting)."
  },
  {
-  "id": "ko-byeongwon", "title": "병원에서", "level": "A2",
-  "text": "태호 씨는 사흘 전부터 목이 아프고 기침을 많이 해요. 그래서 오늘 아침에 병원에 갔어요. 대기실에는 할머니 한 분과 우는 아이가 있었어요. 태호 씨는 삼십 분 동안 기다리면서 오래된 잡지를 읽었어요. 드디어 간호사가 태호 씨의 이름을 불렀어요. 의사 선생님이 어디가 아프냐고 물으셨어요. 태호 씨는 피곤하고 잠을 잘 못 잔다고 말했어요. 선생님은 목을 보고 숨소리를 들으셨어요. 그리고 심각하지 않은 감기라고 하셨어요. 물을 많이 마시고 푹 쉬라고 하셨어요. 태호 씨는 약국에 들른 후에 집에 돌아왔어요. 꿀차를 마시고 일찍 잤어요. 내일은 아마 괜찮을 거예요.",
-  "gloss": { "사흘": "three days", "전부터": "since ... ago (전: before)", "목이": "throat (목)", "아프고": "hurts and (아프다)", "기침을": "cough (기침을 하다: to cough)", "병원에": "to the clinic (병원)", "대기실에는": "in the waiting room (대기실)", "분과": "person and (분: respectful counter for people)", "우는": "crying (울다)", "동안": "for, during", "기다리면서": "while waiting (기다리다)", "오래된": "old", "잡지를": "magazine (잡지)", "드디어": "at last", "간호사가": "the nurse (간호사)", "불렀어요": "called (부르다)", "의사": "doctor", "선생님이": "the doctor (선생님: a polite title)", "아프냐고": "whether it hurts (아프다)", "물으셨어요": "asked (묻다, respectful)", "잠을": "sleep (잠을 자다: to sleep)", "숨소리를": "the sound of breathing (숨소리)", "들으셨어요": "listened to (듣다, respectful)", "심각하지": "serious (심각하다; 심각하지 않은: not serious)", "감기라고": "that it is a cold (감기)", "푹": "well, soundly", "쉬라고": "to rest (쉬다)", "약국에": "at the pharmacy (약국)", "들른": "dropped in (들르다)", "돌아왔어요": "came back (돌아오다)", "꿀차를": "honey tea (꿀차)", "일찍": "early", "아마": "probably", "괜찮을": "be all right (괜찮다)" },
-  "questions": [ { "q": "태호 씨는 어디가 아파요?", "a": ["목"] }, { "q": "태호 씨는 몇 분 동안 기다렸어요?", "a": ["삼십", "30"] }, { "q": "의사 선생님은 무슨 병이라고 하셨어요?", "a": ["감기"] } ],
-  "back": [["그래서 오늘 아침에 병원에 갔어요.", "So he went to the clinic this morning."], ["꿀차를 마시고 일찍 잤어요.", "He drank honey tea and went to bed early."]],
+  "id": "ko-byeongwon",
+  "title": "병원에서",
+  "level": "A2",
+  "text": "태호 씨는 사흘 전부터 목이 아프고 기침을 많이 해요. 그래서 오늘 아침에 병원에 갔어요. 대기실에는 할머니 한 분과 우는 아이가 있었어요. 태호 씨는 삼십 분 동안 기다리면서 오래된 잡지를 읽었어요. 드디어 간호사가 태호 씨의 이름을 불렀어요. 의사 선생님이 어디가 아프냐고 물으셨어요. 태호 씨는 피곤하고 잠을 잘 못 잔다고 말했어요. 선생님은 목을 보고 숨소리를 들으셨어요. 그리고 심한 감기는 아니라고 하셨어요. 물을 많이 마시고 푹 쉬라고 하셨어요. 태호 씨는 약국에 들른 후에 집에 돌아왔어요. 꿀차를 마시고 일찍 잤어요. 내일은 아마 괜찮을 거예요.",
+  "gloss": {
+   "사흘": "three days",
+   "전부터": "since ... ago (전: before)",
+   "목이": "throat (목)",
+   "아프고": "hurts and (아프다)",
+   "기침을": "cough (기침을 하다: to cough)",
+   "병원에": "to the clinic (병원)",
+   "대기실에는": "in the waiting room (대기실)",
+   "분과": "person and (분: respectful counter for people)",
+   "우는": "crying (울다)",
+   "동안": "for, during",
+   "기다리면서": "while waiting (기다리다)",
+   "오래된": "old",
+   "잡지를": "magazine (잡지)",
+   "드디어": "at last",
+   "간호사가": "the nurse (간호사)",
+   "불렀어요": "called (부르다)",
+   "의사": "doctor",
+   "선생님이": "the doctor (선생님: a polite title)",
+   "아프냐고": "whether it hurts (아프다)",
+   "물으셨어요": "asked (묻다, respectful)",
+   "잠을": "sleep (잠을 자다: to sleep)",
+   "숨소리를": "the sound of breathing (숨소리)",
+   "들으셨어요": "listened to (듣다, respectful)",
+   "푹": "well, soundly",
+   "쉬라고": "to rest (쉬다)",
+   "약국에": "at the pharmacy (약국)",
+   "들른": "dropped in (들르다)",
+   "돌아왔어요": "came back (돌아오다)",
+   "꿀차를": "honey tea (꿀차)",
+   "일찍": "early",
+   "아마": "probably",
+   "괜찮을": "be all right (괜찮다)",
+   "심한": "bad, severe",
+   "감기는": "a cold (감기)"
+  },
+  "questions": [
+   {
+    "q": "태호 씨는 어디가 아파요?",
+    "a": [
+     "목"
+    ]
+   },
+   {
+    "q": "태호 씨는 몇 분 동안 기다렸어요?",
+    "a": [
+     "삼십",
+     "30"
+    ]
+   },
+   {
+    "q": "의사 선생님은 무슨 병이라고 하셨어요?",
+    "a": [
+     "감기"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "그래서 오늘 아침에 병원에 갔어요.",
+    "So he went to the clinic this morning."
+   ],
+   [
+    "꿀차를 마시고 일찍 잤어요.",
+    "He drank honey tea and went to bed early."
+   ]
+  ],
   "notice": "The honorific -(으)시- shows respect for the person acting, here the doctor: \"물으셨어요\" (asked), \"들으셨어요\" (listened), \"쉬라고 하셨어요\" (told him to rest). Tae-ho's own actions have none: \"말했어요\"."
  },
  {
-  "id": "ko-concert", "title": "비 오는 날의 콘서트", "level": "B1",
-  "text": "우리는 몇 달 전부터 그 콘서트를 기다렸다. 표는 비쌌지만 동생이 가장 좋아하는 밴드였고, 나는 동생의 생일을 축하해 주고 싶었다. 콘서트는 오래된 야외 극장에서 열렸다. 우리가 도착하자마자 하늘에 검은 구름이 몰려왔다. 첫 번째 노래가 시작되었을 때 소나기가 쏟아지기 시작했다. 몇 분 만에 우리는 완전히 젖어 버렸다. 몇몇 관객은 출구 쪽으로 뛰어갔지만 대부분은 자리를 지켰다. 가수는 웃으면서 재킷을 벗고 빗속에서 계속 노래했다. 그러자 관객들도 물웅덩이 위에서 춤을 추기 시작했다. 동생은 너무 소리를 질러서 목이 쉬었다. 계획대로 된 일은 하나도 없었지만, 그래서 우리는 그날 밤을 절대 잊지 못할 것이다.",
-  "gloss": { "달": "month", "기다렸다": "waited for (기다리다)", "표는": "the tickets (표)", "비쌌지만": "were expensive, but (비싸다)", "동생이": "younger sibling (동생)", "가장": "most", "축하해": "celebrate (축하하다; 축하해 주다: to celebrate for someone)", "싶었다": "wanted to (-고 싶다)", "야외": "open-air", "극장에서": "in a theatre (극장)", "열렸다": "was held (열리다)", "도착하자마자": "as soon as we arrived (도착하다)", "구름이": "clouds (구름)", "몰려왔다": "rolled in (몰려오다)", "소나기가": "a shower (소나기)", "쏟아지기": "pouring down (쏟아지다)", "만에": "within, after only", "완전히": "completely", "젖어": "wet (젖다; 젖어 버리다: to get soaked)", "관객은": "spectators (관객)", "출구": "exit", "쪽으로": "towards (쪽)", "대부분은": "most (대부분)", "자리를": "place (자리를 지키다: to stay put)", "지켰다": "kept (지키다)", "가수는": "the singer (가수)", "벗고": "took off and (벗다)", "빗속에서": "in the rain (빗속)", "그러자": "at that", "물웅덩이": "puddle", "춤을": "dance (춤을 추다: to dance)", "질러서": "소리를 지르다: to shout", "쉬었다": "목이 쉬다: to go hoarse", "계획대로": "according to plan (계획)", "절대": "never, absolutely", "잊지": "forget (잊다; 잊지 못하다: cannot forget)" },
-  "questions": [ { "q": "누구의 생일을 축하하려고 콘서트에 갔어요?", "a": ["동생"] }, { "q": "가수는 무엇을 벗었어요?", "a": ["재킷"] }, { "q": "관객들은 어디 위에서 춤을 췄어요?", "a": ["물웅덩이"] } ],
-  "back": [["콘서트는 오래된 야외 극장에서 열렸다.", "The concert was held in an old open-air theatre."], ["몇 분 만에 우리는 완전히 젖어 버렸다.", "Within a few minutes we were completely soaked."]],
+  "id": "ko-concert",
+  "title": "비 오는 날의 콘서트",
+  "level": "B1",
+  "text": "우리는 몇 달 전부터 그 콘서트를 기다렸다. 표는 비쌌지만 동생이 가장 좋아하는 밴드였고, 나는 동생의 생일을 축하해 주고 싶었다. 콘서트는 오래된 야외 극장에서 열렸다. 우리가 도착하자마자 하늘에 검은 구름이 몰려왔다. 첫 번째 노래가 시작되었을 때 소나기가 쏟아지기 시작했다. 몇 분 만에 우리는 완전히 젖어 버렸다. 몇몇 관객은 출구 쪽으로 뛰어갔지만 대부분은 자리를 지켰다. 가수는 웃으면서 재킷을 벗고 빗속에서 계속 노래했다. 그러자 관객들도 물웅덩이 위에서 춤을 추기 시작했다. 동생은 너무 소리를 질러서 목이 쉬었다. 계획대로 된 일은 하나도 없었지만, 오히려 그래서 우리는 그날 밤을 절대 잊지 못할 것이다.",
+  "gloss": {
+   "달": "month",
+   "기다렸다": "waited for (기다리다)",
+   "표는": "the tickets (표)",
+   "비쌌지만": "were expensive, but (비싸다)",
+   "동생이": "younger sibling (동생)",
+   "가장": "most",
+   "축하해": "celebrate (축하하다; 축하해 주다: to celebrate for someone)",
+   "싶었다": "wanted to (-고 싶다)",
+   "야외": "open-air",
+   "극장에서": "in a theatre (극장)",
+   "열렸다": "was held (열리다)",
+   "도착하자마자": "as soon as we arrived (도착하다)",
+   "구름이": "clouds (구름)",
+   "몰려왔다": "rolled in (몰려오다)",
+   "소나기가": "a shower (소나기)",
+   "쏟아지기": "pouring down (쏟아지다)",
+   "만에": "within, after only",
+   "완전히": "completely",
+   "젖어": "wet (젖다; 젖어 버리다: to get soaked)",
+   "관객은": "spectators (관객)",
+   "출구": "exit",
+   "쪽으로": "towards (쪽)",
+   "대부분은": "most (대부분)",
+   "자리를": "place (자리를 지키다: to stay put)",
+   "지켰다": "kept (지키다)",
+   "가수는": "the singer (가수)",
+   "벗고": "took off and (벗다)",
+   "빗속에서": "in the rain (빗속)",
+   "그러자": "at that",
+   "물웅덩이": "puddle",
+   "춤을": "dance (춤을 추다: to dance)",
+   "질러서": "소리를 지르다: to shout",
+   "쉬었다": "목이 쉬다: to go hoarse",
+   "계획대로": "according to plan (계획)",
+   "절대": "never, absolutely",
+   "잊지": "forget (잊다; 잊지 못하다: cannot forget)"
+  },
+  "questions": [
+   {
+    "q": "누구의 생일을 축하하려고 콘서트에 갔어요?",
+    "a": [
+     "동생"
+    ]
+   },
+   {
+    "q": "가수는 무엇을 벗었어요?",
+    "a": [
+     "재킷"
+    ]
+   },
+   {
+    "q": "관객들은 어디 위에서 춤을 췄어요?",
+    "a": [
+     "물웅덩이"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "콘서트는 오래된 야외 극장에서 열렸다.",
+    "The concert was held in an old open-air theatre."
+   ],
+   [
+    "몇 분 만에 우리는 완전히 젖어 버렸다.",
+    "Within a few minutes we were completely soaked."
+   ]
+  ],
   "notice": "Written stories use the plain style ending in -다, not -요: \"콘서트는 오래된 야외 극장에서 열렸다\". -자마자 means as soon as: \"우리가 도착하자마자 하늘에 검은 구름이 몰려왔다\"."
  },
  {
-  "id": "ko-phone", "title": "잃어버린 휴대폰", "level": "B1",
-  "text": "금요일 밤에 동현 씨는 친구들과 저녁을 먹고 택시를 타고 집에 돌아왔다. 집 문 앞에 도착해서야 휴대폰이 없다는 것을 알았다. 주머니와 가방을 모두 찾아보았지만 소용없었다. 휴대폰에는 여행 사진과 외우지 못한 전화번호가 모두 들어 있었다. 이웃의 전화를 빌려서 자기 번호로 전화했지만 아무도 받지 않았다. 동현 씨는 휴대폰을 다시 찾지 못할 것이라고 생각하며 잠이 들었다. 다음 날 아침에 누군가 초인종을 눌렀다. 택시 기사였다. 기사는 좌석 사이에서 휴대폰을 발견하고 주소를 기억해 냈다고 했다. 동현 씨가 돈을 드리려고 했지만 기사는 받지 않았다. 커피 한 잔과 케이크 한 조각만 받았다. 그 후로 동현 씨는 언제나 그 기사에게 전화한다.",
-  "gloss": { "돌아왔다": "came back (돌아오다)", "도착해서야": "only on arriving (도착하다)", "휴대폰이": "mobile phone (휴대폰)", "없다는": "that there is none (없다)", "알았다": "realised (알다)", "주머니와": "pockets and (주머니)", "찾아보았지만": "searched, but (찾아보다)", "소용없었다": "it was no use (소용없다)", "사진과": "photos and (사진)", "외우지": "memorise (외우다; 외우지 못한: not memorised)", "전화번호가": "phone numbers (전화번호)", "이웃의": "the neighbour's (이웃)", "빌려서": "borrowed and (빌리다)", "자기": "his own", "번호로": "to the number (번호)", "아무도": "nobody", "받지": "answer, accept (받다; 받지 않다: not to)", "생각하며": "thinking (생각하다)", "잠이": "잠이 들다: to fall asleep", "누군가": "someone", "초인종을": "the doorbell (초인종)", "눌렀다": "pressed (누르다)", "기사였다": "it was the driver (기사)", "좌석": "seat", "사이에서": "between (사이)", "발견하고": "found and (발견하다)", "주소를": "the address (주소)", "기억해": "remember (기억하다; 기억해 내다: to recall)", "드리려고": "to give (드리다, humble)", "조각만": "only a piece (조각)", "후로": "since then (그 후로)" },
-  "questions": [ { "q": "동현 씨는 무엇을 타고 집에 돌아왔어요?", "a": ["택시"] }, { "q": "다음 날 아침에 누가 초인종을 눌렀어요?", "a": ["기사"] }, { "q": "기사는 어디에서 휴대폰을 발견했어요?", "a": ["좌석"] } ],
-  "back": [["주머니와 가방을 모두 찾아보았지만 소용없었다.", "He searched all his pockets and his bag, but it was no use."], ["다음 날 아침에 누군가 초인종을 눌렀다.", "The next morning someone rang the doorbell."]],
+  "id": "ko-phone",
+  "title": "잃어버린 휴대폰",
+  "level": "B1",
+  "text": "금요일 밤에 동현 씨는 친구들과 저녁을 먹고 택시를 타고 집에 돌아왔다. 집 문 앞에 도착해서야 휴대폰이 없다는 것을 알았다. 주머니와 가방을 모두 찾아보았지만 소용없었다. 휴대폰에는 여행 사진과 외우지 못한 전화번호가 모두 들어 있었다. 이웃의 전화를 빌려서 자기 번호로 전화했지만 아무도 받지 않았다. 동현 씨는 휴대폰을 다시 찾지 못할 것이라고 생각하며 잠이 들었다. 다음 날 아침에 누군가 초인종을 눌렀다. 택시 기사였다. 기사는 좌석 사이에서 휴대폰을 발견하고 주소를 기억해 냈다고 했다. 동현 씨가 돈을 드리려고 했지만 기사는 받지 않았다. 커피 한 잔과 케이크 한 조각만 받았다. 그 후로 동현 씨는 택시가 필요하면 언제나 그 기사에게 전화한다.",
+  "gloss": {
+   "돌아왔다": "came back (돌아오다)",
+   "도착해서야": "only on arriving (도착하다)",
+   "휴대폰이": "mobile phone (휴대폰)",
+   "없다는": "that there is none (없다)",
+   "알았다": "realised (알다)",
+   "주머니와": "pockets and (주머니)",
+   "찾아보았지만": "searched, but (찾아보다)",
+   "소용없었다": "it was no use (소용없다)",
+   "사진과": "photos and (사진)",
+   "외우지": "memorise (외우다; 외우지 못한: not memorised)",
+   "전화번호가": "phone numbers (전화번호)",
+   "이웃의": "the neighbour's (이웃)",
+   "빌려서": "borrowed and (빌리다)",
+   "자기": "his own",
+   "번호로": "to the number (번호)",
+   "아무도": "nobody",
+   "받지": "answer, accept (받다; 받지 않다: not to)",
+   "생각하며": "thinking (생각하다)",
+   "잠이": "잠이 들다: to fall asleep",
+   "누군가": "someone",
+   "초인종을": "the doorbell (초인종)",
+   "눌렀다": "pressed (누르다)",
+   "기사였다": "it was the driver (기사)",
+   "좌석": "seat",
+   "사이에서": "between (사이)",
+   "발견하고": "found and (발견하다)",
+   "주소를": "the address (주소)",
+   "기억해": "remember (기억하다; 기억해 내다: to recall)",
+   "드리려고": "to give (드리다, humble)",
+   "조각만": "only a piece (조각)",
+   "후로": "since then (그 후로)"
+  },
+  "questions": [
+   {
+    "q": "동현 씨는 무엇을 타고 집에 돌아왔어요?",
+    "a": [
+     "택시"
+    ]
+   },
+   {
+    "q": "다음 날 아침에 누가 초인종을 눌렀어요?",
+    "a": [
+     "기사"
+    ]
+   },
+   {
+    "q": "기사는 어디에서 휴대폰을 발견했어요?",
+    "a": [
+     "좌석"
+    ]
+   }
+  ],
+  "back": [
+   [
+    "주머니와 가방을 모두 찾아보았지만 소용없었다.",
+    "He searched all his pockets and his bag, but it was no use."
+   ],
+   [
+    "다음 날 아침에 누군가 초인종을 눌렀다.",
+    "The next morning someone rang the doorbell."
+   ]
+  ],
   "notice": "-지만 joins two clauses that contrast: \"자기 번호로 전화했지만 아무도 받지 않았다\" (he called his own number, but nobody answered), \"돈을 드리려고 했지만 기사는 받지 않았다\" (he tried to give him money, but the driver would not take it)."
  },
  {
-  "id": "ko-d-ppangjip", "title": "빵집에서", "level": "A1",
-  "roles": ["점원", "손님"],
-  "lines": [ [0, "어서 오세요! 뭘 드릴까요?"], [1, "안녕하세요. 식빵 하나 주세요."], [0, "네, 여기 있어요. 더 필요한 거 있으세요?"], [1, "크루아상도 있어요?"], [0, "죄송해요, 크루아상은 다 팔렸어요. 대신 갓 나온 단팥빵이 있어요."], [1, "그럼 단팥빵 두 개 주세요."], [0, "네. 모두 육천 원이에요."], [1, "카드로 계산해도 돼요?"], [0, "그럼요. 영수증 드릴까요?"], [1, "아니요, 괜찮아요. 감사합니다."], [0, "감사합니다. 좋은 하루 보내세요!"], [1, "네, 안녕히 계세요."] ],
-  "gloss": { "드릴까요": "shall I give you (드리다)", "식빵": "sandwich loaf", "주세요": "please give me (주다)", "필요한": "needed (필요하다)", "거": "thing (것)", "죄송해요": "I am sorry (죄송하다)", "팔렸어요": "has sold out (팔리다)", "대신": "instead", "나온": "come out (갓 나온: fresh out of the oven)", "단팥빵이": "red bean bun (단팥빵)", "그럼": "then", "모두": "altogether", "원이에요": "won (the currency)", "카드로": "by card (카드)", "계산해도": "pay (계산하다; 계산해도 돼요?: may I pay?)", "돼요": "is all right (되다)", "영수증": "receipt", "괜찮아요": "it is fine, no thank you (괜찮다)", "보내세요": "spend (좋은 하루 보내세요: have a nice day)", "계세요": "stay (안녕히 계세요: goodbye, said by the one leaving)" },
-  "questions": [ { "q": "손님은 처음에 무엇을 하나 달라고 해요?", "a": ["식빵"] }, { "q": "다 팔린 빵은 무엇이에요?", "a": ["크루아상"] } ],
+  "id": "ko-d-ppangjip",
+  "title": "빵집에서",
+  "level": "A1",
+  "roles": [
+   "점원",
+   "손님"
+  ],
+  "lines": [
+   [
+    0,
+    "어서 오세요! 뭘 드릴까요?"
+   ],
+   [
+    1,
+    "안녕하세요. 식빵 하나 주세요."
+   ],
+   [
+    0,
+    "네, 여기 있어요. 더 필요한 거 있으세요?"
+   ],
+   [
+    1,
+    "크루아상도 있어요?"
+   ],
+   [
+    0,
+    "죄송해요, 크루아상은 다 팔렸어요. 대신 갓 나온 단팥빵이 있어요."
+   ],
+   [
+    1,
+    "그럼 단팥빵 두 개 주세요."
+   ],
+   [
+    0,
+    "네. 모두 육천 원이에요."
+   ],
+   [
+    1,
+    "카드로 계산해도 돼요?"
+   ],
+   [
+    0,
+    "그럼요. 영수증 드릴까요?"
+   ],
+   [
+    1,
+    "아니요, 괜찮아요. 감사합니다."
+   ],
+   [
+    0,
+    "감사합니다. 좋은 하루 보내세요!"
+   ],
+   [
+    1,
+    "네, 안녕히 계세요."
+   ]
+  ],
+  "gloss": {
+   "드릴까요": "shall I give you (드리다)",
+   "식빵": "sandwich loaf",
+   "주세요": "please give me (주다)",
+   "필요한": "needed (필요하다)",
+   "거": "thing (것)",
+   "죄송해요": "I am sorry (죄송하다)",
+   "팔렸어요": "has sold out (팔리다)",
+   "대신": "instead",
+   "나온": "come out (갓 나온: fresh out of the oven)",
+   "단팥빵이": "red bean bun (단팥빵)",
+   "그럼": "then",
+   "모두": "altogether",
+   "원이에요": "won (the currency)",
+   "카드로": "by card (카드)",
+   "계산해도": "pay (계산하다; 계산해도 돼요?: may I pay?)",
+   "돼요": "is all right (되다)",
+   "영수증": "receipt",
+   "괜찮아요": "it is fine, no thank you (괜찮다)",
+   "보내세요": "spend (좋은 하루 보내세요: have a nice day)",
+   "계세요": "stay (안녕히 계세요: goodbye, said by the one leaving)"
+  },
+  "questions": [
+   {
+    "q": "손님은 처음에 무엇을 하나 달라고 해요?",
+    "a": [
+     "식빵"
+    ]
+   },
+   {
+    "q": "다 팔린 빵은 무엇이에요?",
+    "a": [
+     "크루아상"
+    ]
+   }
+  ],
   "notice": "Ask for things with a noun, a number and 주세요: \"식빵 하나 주세요\" (one loaf, please), \"단팥빵 두 개 주세요\" (two red bean buns, please). -아도/어도 돼요? asks permission: \"카드로 계산해도 돼요?\""
  },
  {
-  "id": "ko-d-gil", "title": "길 묻기", "level": "A1",
-  "roles": ["행인", "관광객"],
-  "lines": [ [1, "실례합니다. 지하철역이 어디에 있어요?"], [0, "별로 멀지 않아요. 이 길로 쭉 가세요."], [1, "쭉 가요? 그다음에는요?"], [0, "신호등에서 왼쪽으로 가세요."], [1, "죄송하지만 천천히 다시 말해 주세요."], [0, "네. 쭉 가다가 신호등에서 왼쪽으로 가세요."], [1, "감사합니다. 역은 길 오른쪽에 있어요?"], [0, "네, 오른쪽에 있어요. 은행 맞은편이에요."], [1, "걸어서 얼마나 걸려요?"], [0, "십 분쯤 걸려요."], [1, "도와주셔서 정말 감사합니다."], [0, "천만에요. 좋은 여행 되세요!"] ],
-  "gloss": { "실례합니다": "excuse me", "지하철역이": "underground station (지하철역)", "별로": "not particularly", "멀지": "far (멀다; 멀지 않다: not far)", "길로": "along the road (길)", "쭉": "straight on", "가세요": "go (가다, polite command)", "그다음에는요": "and after that?", "신호등에서": "at the traffic lights (신호등)", "왼쪽으로": "to the left (왼쪽)", "죄송하지만": "I am sorry, but", "천천히": "slowly", "다시": "again", "말해": "say (말하다; 말해 주세요: please say)", "가다가": "going along, and then (가다)", "오른쪽에": "on the right (오른쪽)", "은행": "bank", "맞은편이에요": "it is opposite (맞은편)", "걸어서": "on foot (걷다)", "얼마나": "how long, how much", "걸려요": "takes (걸리다)", "도와주셔서": "for helping (도와주다)", "천만에요": "you are welcome", "여행": "trip" },
-  "questions": [ { "q": "관광객은 무엇을 찾고 있어요?", "a": ["지하철역", "역"] }, { "q": "신호등에서 어느 쪽으로 가야 해요?", "a": ["왼쪽"] } ],
+  "id": "ko-d-gil",
+  "title": "길 묻기",
+  "level": "A1",
+  "roles": [
+   "행인",
+   "관광객"
+  ],
+  "lines": [
+   [
+    1,
+    "실례합니다. 지하철역이 어디에 있어요?"
+   ],
+   [
+    0,
+    "별로 멀지 않아요. 이 길로 쭉 가세요."
+   ],
+   [
+    1,
+    "쭉 가요? 그다음에는요?"
+   ],
+   [
+    0,
+    "신호등에서 왼쪽으로 가세요."
+   ],
+   [
+    1,
+    "죄송하지만 천천히 다시 말씀해 주세요."
+   ],
+   [
+    0,
+    "네. 쭉 가다가 신호등에서 왼쪽으로 가세요."
+   ],
+   [
+    1,
+    "감사합니다. 역은 길 오른쪽에 있어요?"
+   ],
+   [
+    0,
+    "네, 오른쪽에 있어요. 은행 맞은편이에요."
+   ],
+   [
+    1,
+    "걸어서 얼마나 걸려요?"
+   ],
+   [
+    0,
+    "십 분쯤 걸려요."
+   ],
+   [
+    1,
+    "도와주셔서 정말 감사합니다."
+   ],
+   [
+    0,
+    "천만에요. 좋은 여행 되세요!"
+   ]
+  ],
+  "gloss": {
+   "실례합니다": "excuse me",
+   "지하철역이": "underground station (지하철역)",
+   "별로": "not particularly",
+   "멀지": "far (멀다; 멀지 않다: not far)",
+   "길로": "along the road (길)",
+   "쭉": "straight on",
+   "가세요": "go (가다, polite command)",
+   "그다음에는요": "and after that?",
+   "신호등에서": "at the traffic lights (신호등)",
+   "왼쪽으로": "to the left (왼쪽)",
+   "죄송하지만": "I am sorry, but",
+   "천천히": "slowly",
+   "다시": "again",
+   "가다가": "going along, and then (가다)",
+   "오른쪽에": "on the right (오른쪽)",
+   "은행": "bank",
+   "맞은편이에요": "it is opposite (맞은편)",
+   "걸어서": "on foot (걷다)",
+   "얼마나": "how long, how much",
+   "걸려요": "takes (걸리다)",
+   "도와주셔서": "for helping (도와주다)",
+   "천만에요": "you are welcome",
+   "여행": "trip",
+   "말씀해": "say (polite; 말씀해 주세요: please say)"
+  },
+  "questions": [
+   {
+    "q": "관광객은 무엇을 찾고 있어요?",
+    "a": [
+     "지하철역",
+     "역"
+    ]
+   },
+   {
+    "q": "신호등에서 어느 쪽으로 가야 해요?",
+    "a": [
+     "왼쪽"
+    ]
+   }
+  ],
   "notice": "Polite directions end in -(으)세요: \"이 길로 쭉 가세요\" (go straight along this road), \"왼쪽으로 가세요\" (go left). -아/어 주세요 asks someone to do something for you: \"천천히 다시 말해 주세요\"."
  },
  {
-  "id": "ko-d-yakguk", "title": "약국에서", "level": "A2",
-  "roles": ["약사", "손님"],
-  "lines": [ [0, "안녕하세요. 어디가 불편하세요?"], [1, "사흘 전부터 목이 아프고 기침이 나요."], [0, "열도 있으세요?"], [1, "어젯밤에는 열이 조금 있었는데 오늘은 없어요."], [0, "기침할 때 가래가 나와요?"], [1, "아니요, 마른기침이에요. 밤에 잠을 잘 못 자요."], [0, "그럼 이 시럽과 목 사탕을 드릴게요."], [1, "항생제도 살 수 있어요?"], [0, "항생제는 처방전이 있어야 해요. 그리고 감기에는 효과가 없어요."], [1, "알겠습니다. 시럽은 하루에 몇 번 먹어야 해요?"], [0, "하루에 세 번, 식사 후에 한 숟가락씩 드세요."], [1, "네, 시럽과 사탕을 주세요."], [0, "여기 있습니다. 사흘 후에도 낫지 않으면 병원에 가 보세요."], [1, "그렇게 할게요. 감사합니다."] ],
-  "gloss": { "불편하세요": "are you unwell (불편하다)", "사흘": "three days", "목이": "throat (목)", "기침이": "a cough (기침이 나다: to have a cough)", "열도": "a fever too (열)", "어젯밤에는": "last night (어젯밤)", "있었는데": "there was, but (있다)", "가래가": "phlegm (가래)", "마른기침이에요": "it is a dry cough (마른기침)", "잠을": "sleep (잠을 자다: to sleep)", "시럽과": "syrup and (시럽)", "사탕을": "lozenges, sweets (사탕)", "드릴게요": "I will give you (드리다)", "항생제도": "antibiotics too (항생제)", "수": "살 수 있다: can buy", "처방전이": "a prescription (처방전)", "있어야": "must have (있어야 하다)", "감기에는": "for a cold (감기)", "효과가": "effect (효과가 없다: to have no effect)", "알겠습니다": "I understand", "번": "times (몇 번: how many times)", "먹어야": "must take (먹어야 하다)", "식사": "meal", "숟가락씩": "a spoonful each time (숟가락)", "드세요": "take, eat (드시다, respectful)", "낫지": "get better (낫다; 낫지 않으면: if it does not)", "병원에": "to a clinic (병원)", "그렇게": "like that (그렇게 할게요: I will do so)" },
-  "questions": [ { "q": "손님은 어디가 아파요?", "a": ["목"] }, { "q": "항생제를 사려면 무엇이 있어야 해요?", "a": ["처방전"] } ],
+  "id": "ko-d-yakguk",
+  "title": "약국에서",
+  "level": "A2",
+  "roles": [
+   "약사",
+   "손님"
+  ],
+  "lines": [
+   [
+    0,
+    "안녕하세요. 어디가 불편하세요?"
+   ],
+   [
+    1,
+    "사흘 전부터 목이 아프고 기침이 나요."
+   ],
+   [
+    0,
+    "열도 있으세요?"
+   ],
+   [
+    1,
+    "어젯밤에는 열이 조금 있었는데 오늘은 없어요."
+   ],
+   [
+    0,
+    "기침할 때 가래가 나와요?"
+   ],
+   [
+    1,
+    "아니요, 마른기침이에요. 밤에 잠을 잘 못 자요."
+   ],
+   [
+    0,
+    "그럼 이 시럽과 목 사탕을 드릴게요."
+   ],
+   [
+    1,
+    "항생제도 살 수 있어요?"
+   ],
+   [
+    0,
+    "항생제는 처방전이 있어야 해요. 그리고 감기에는 효과가 없어요."
+   ],
+   [
+    1,
+    "알겠습니다. 시럽은 하루에 몇 번 먹어야 해요?"
+   ],
+   [
+    0,
+    "하루에 세 번, 식사 후에 한 숟가락씩 드세요."
+   ],
+   [
+    1,
+    "네, 시럽과 사탕을 주세요."
+   ],
+   [
+    0,
+    "여기 있습니다. 사흘 후에도 낫지 않으면 병원에 가 보세요."
+   ],
+   [
+    1,
+    "그렇게 할게요. 감사합니다."
+   ]
+  ],
+  "gloss": {
+   "불편하세요": "are you unwell (불편하다)",
+   "사흘": "three days",
+   "목이": "throat (목)",
+   "기침이": "a cough (기침이 나다: to have a cough)",
+   "열도": "a fever too (열)",
+   "어젯밤에는": "last night (어젯밤)",
+   "있었는데": "there was, but (있다)",
+   "가래가": "phlegm (가래)",
+   "마른기침이에요": "it is a dry cough (마른기침)",
+   "잠을": "sleep (잠을 자다: to sleep)",
+   "시럽과": "syrup and (시럽)",
+   "사탕을": "lozenges, sweets (사탕)",
+   "드릴게요": "I will give you (드리다)",
+   "항생제도": "antibiotics too (항생제)",
+   "수": "살 수 있다: can buy",
+   "처방전이": "a prescription (처방전)",
+   "있어야": "must have (있어야 하다)",
+   "감기에는": "for a cold (감기)",
+   "효과가": "effect (효과가 없다: to have no effect)",
+   "알겠습니다": "I understand",
+   "번": "times (몇 번: how many times)",
+   "먹어야": "must take (먹어야 하다)",
+   "식사": "meal",
+   "숟가락씩": "a spoonful each time (숟가락)",
+   "드세요": "take, eat (드시다, respectful)",
+   "낫지": "get better (낫다; 낫지 않으면: if it does not)",
+   "병원에": "to a clinic (병원)",
+   "그렇게": "like that (그렇게 할게요: I will do so)"
+  },
+  "questions": [
+   {
+    "q": "손님은 어디가 아파요?",
+    "a": [
+     "목"
+    ]
+   },
+   {
+    "q": "항생제를 사려면 무엇이 있어야 해요?",
+    "a": [
+     "처방전"
+    ]
+   }
+  ],
   "notice": "-아야/어야 하다 means must: \"처방전이 있어야 해요\" (you must have a prescription), \"몇 번 먹어야 해요?\" (how many times must I take it?). -(으)면 means if: \"낫지 않으면 병원에 가 보세요\"."
  },
  {
-  "id": "ko-d-yeyak", "title": "식당 예약", "level": "A2",
-  "roles": ["직원", "손님"],
-  "lines": [ [0, "감사합니다, 한강식당입니다."], [1, "안녕하세요. 토요일 저녁에 자리를 예약하고 싶어요."], [0, "몇 분이세요?"], [1, "어른 두 명하고 아이 두 명이에요."], [0, "몇 시에 오실 거예요?"], [1, "저녁 일곱 시쯤 가능할까요?"], [0, "죄송하지만 일곱 시에는 자리가 없어요. 여섯 시나 여덟 시는 괜찮아요."], [1, "그럼 여섯 시로 해 주세요. 창가 자리도 있어요?"], [0, "네, 창가 자리로 준비하겠습니다. 성함이 어떻게 되세요?"], [1, "김민수입니다. 고기가 없는 음식도 있어요?"], [0, "네, 채소와 생선으로 만든 음식이 몇 가지 있어요."], [1, "잘됐네요. 전화번호를 알려 드릴까요?"], [0, "네, 혹시 모르니까 말씀해 주세요."], [1, "문자로 보내 드릴게요. 토요일에 뵙겠습니다."] ],
-  "gloss": { "자리를": "a table, a place (자리)", "예약하고": "book (예약하다; 예약하고 싶다: to want to book)", "분이세요": "how many people (분: respectful counter)", "어른": "adult", "명하고": "people and (명: counter for people)", "오실": "will come (오시다, respectful)", "가능할까요": "would it be possible (가능하다)", "죄송하지만": "I am sorry, but", "창가": "by the window", "준비하겠습니다": "I will prepare (준비하다)", "성함이": "your name (성함, respectful)", "고기가": "meat (고기)", "음식도": "dishes too (음식)", "채소와": "vegetables and (채소)", "생선으로": "with fish (생선)", "만든": "made (만들다)", "가지": "kinds (몇 가지: a few kinds)", "잘됐네요": "that is good (잘되다)", "전화번호를": "phone number (전화번호)", "알려": "let know (알려 드리다: to tell, humble)", "혹시": "just in case, by any chance", "모르니까": "혹시 모르니까: just in case", "말씀해": "say (말씀하다, respectful)", "문자로": "by text message (문자)", "보내": "send (보내다)", "뵙겠습니다": "I will see you (뵙다, humble)" },
-  "questions": [ { "q": "손님은 무슨 요일에 예약하고 싶어 해요?", "a": ["토요일"] }, { "q": "손님은 어떤 자리를 원해요?", "a": ["창가"] } ],
+  "id": "ko-d-yeyak",
+  "title": "식당 예약",
+  "level": "A2",
+  "roles": [
+   "직원",
+   "손님"
+  ],
+  "lines": [
+   [
+    0,
+    "감사합니다, 한강식당입니다."
+   ],
+   [
+    1,
+    "안녕하세요. 토요일 저녁에 자리를 예약하고 싶어요."
+   ],
+   [
+    0,
+    "몇 분이세요?"
+   ],
+   [
+    1,
+    "어른 두 명하고 아이 두 명이에요."
+   ],
+   [
+    0,
+    "몇 시에 오시겠어요?"
+   ],
+   [
+    1,
+    "저녁 일곱 시쯤 가능할까요?"
+   ],
+   [
+    0,
+    "죄송하지만 일곱 시에는 자리가 없어요. 여섯 시나 여덟 시는 괜찮아요."
+   ],
+   [
+    1,
+    "그럼 여섯 시로 해 주세요. 창가 자리도 있어요?"
+   ],
+   [
+    0,
+    "네, 창가 자리로 준비하겠습니다. 성함이 어떻게 되세요?"
+   ],
+   [
+    1,
+    "김민수입니다. 고기가 없는 음식도 있어요?"
+   ],
+   [
+    0,
+    "네, 채소와 생선으로 만든 음식이 몇 가지 있어요."
+   ],
+   [
+    1,
+    "잘됐네요. 전화번호를 알려 드릴까요?"
+   ],
+   [
+    0,
+    "네, 혹시 모르니까 말씀해 주세요."
+   ],
+   [
+    1,
+    "문자로 보내 드릴게요. 토요일에 뵙겠습니다."
+   ]
+  ],
+  "gloss": {
+   "자리를": "a table, a place (자리)",
+   "예약하고": "book (예약하다; 예약하고 싶다: to want to book)",
+   "분이세요": "how many people (분: respectful counter)",
+   "어른": "adult",
+   "명하고": "people and (명: counter for people)",
+   "가능할까요": "would it be possible (가능하다)",
+   "죄송하지만": "I am sorry, but",
+   "창가": "by the window",
+   "준비하겠습니다": "I will prepare (준비하다)",
+   "성함이": "your name (성함, respectful)",
+   "고기가": "meat (고기)",
+   "음식도": "dishes too (음식)",
+   "채소와": "vegetables and (채소)",
+   "생선으로": "with fish (생선)",
+   "만든": "made (만들다)",
+   "가지": "kinds (몇 가지: a few kinds)",
+   "잘됐네요": "that is good (잘되다)",
+   "전화번호를": "phone number (전화번호)",
+   "알려": "let know (알려 드리다: to tell, humble)",
+   "혹시": "just in case, by any chance",
+   "모르니까": "혹시 모르니까: just in case",
+   "말씀해": "say (말씀하다, respectful)",
+   "문자로": "by text message (문자)",
+   "보내": "send (보내다)",
+   "뵙겠습니다": "I will see you (뵙다, humble)",
+   "오시겠어요": "will you come (polite)"
+  },
+  "questions": [
+   {
+    "q": "손님은 무슨 요일에 예약하고 싶어 해요?",
+    "a": [
+     "토요일"
+    ]
+   },
+   {
+    "q": "손님은 어떤 자리를 원해요?",
+    "a": [
+     "창가"
+    ]
+   }
+  ],
   "notice": "-고 싶다 says what you want to do: \"자리를 예약하고 싶어요\" (I would like to book a table). -아/어 드리다 is the humble way to offer to do something: \"전화번호를 알려 드릴까요?\", \"문자로 보내 드릴게요\"."
  }
 ]
