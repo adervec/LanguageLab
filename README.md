@@ -344,6 +344,9 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   not of what is left: a second reader of the same kind would find more, and none of them is a person. Reading for this also showed that "the second floor" of lesson 12 is one
   floor lower in Finnish, Belarusian, Thai, Filipino and Bengali than a British reader takes it to be; the meaning
   now says so there, as it did in nine languages already.
+  Four French stories were added on 20 November 2026 (a camera from a flea market, a shared car to Lyon, a week
+  without a phone, a lighthouse keeper; two at B1, two at B2), which makes 48 French texts. They were written after
+  the reads described here and have not themselves been read by a second model or a person.
   The same question about the 44 French stories and dialogues (which sentence of each would a native speaker most
   object to?) marked 13 sentences, none of them wrong; 12 were reworded ("perdre la voix", a pronoun that pointed
   at the wrong grandmother, "encore en pyjama" at eleven at night) and one kept. The Spanish, German and Italian texts (24 each) were asked next, both ways:
