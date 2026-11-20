@@ -173,7 +173,7 @@
   "id": "sv-lordag",
   "title": "Lördag i stan",
   "level": "A1",
-  "text": "På lördag åker Lisa och Karin in till stan. De tar tåget, för det är snabbt och billigt. Först går de till en bokhandel. Lisa köper en bok om Italien. Sedan blir de hungriga och går till en liten restaurang. Karin äter fisk med potatis och Lisa äter soppa. Maten är god och inte dyr. Efter lunchen går de på bio och ser en rolig film. På kvällen åker de hem igen. Det är en bra dag, tycker de.",
+  "text": "På lördag åker Lisa och Karin in till stan. De tar tåget, för det är snabbt och billigt. Först går de till en bokhandel. Lisa köper en bok om Italien. Sedan blir de hungriga och går till en liten restaurang. Karin äter fisk med potatis och Lisa äter soppa. Maten är god och inte dyr. Efter lunchen går de på bio och ser en rolig film. På kvällen åker de hem igen. Det har varit en bra dag, tycker de.",
   "gloss": {
    "åker": "goes, travels",
    "stan": "town",
@@ -231,7 +231,7 @@
   "id": "sv-familj",
   "title": "Min familj",
   "level": "A1",
-  "text": "Jag heter Oskar och jag är tio år. Jag bor i ett hus med min familj. Min mamma heter Eva och hon är lärare. Min pappa heter Nils och han kör buss. Jag har en syster som heter Maja. Hon är sex år och går i skolan. Vi har också en katt som sover hela dagen. På helgen besöker vi mormor och morfar. De bor på landet och har många djur. Jag tycker om att mata hönsen. Min familj är inte stor, men vi har roligt.",
+  "text": "Jag heter Oskar och jag är tio år. Jag bor i ett hus med min familj. Min mamma heter Eva och hon är lärare. Min pappa heter Nils och han kör buss. Jag har en syster som heter Maja. Hon är sex år och går i skolan. Vi har också en katt som sover hela dagen. På helgen besöker vi mormor och morfar. De bor på landet och har många djur. Jag tycker om att mata hönsen. Min familj är inte stor, men vi har roligt tillsammans.",
   "gloss": {
    "hus": "house",
    "familj": "family",
@@ -288,14 +288,13 @@
   "id": "sv-kiruna",
   "title": "Ett brev från Kiruna",
   "level": "A2",
-  "text": "Hej Emma! Nu har jag bott i Kiruna i två veckor. Staden ligger långt norrut och det är mycket kallt här. På morgonen är det mörkt när jag går till jobbet, men snön gör allt ljust. Mina kollegor är vänliga och hjälper mig med svenskan. I går åkte vi skidor efter jobbet och sedan drack vi varm choklad. På lördag ska jag åka hundspann för första gången. Jag är lite nervös, men det ska bli roligt. Jag saknar dig och hoppas att du kan komma hit i vinter. Då kan vi titta på norrskenet tillsammans. Kram, Sofia",
+  "text": "Hej Emma! Nu har jag bott i Kiruna i två veckor. Staden ligger långt norrut och det är mycket kallt här. På morgonen är det mörkt när jag går till jobbet, men snön lyser upp allt. Mina kollegor är vänliga och hjälper mig med svenskan. I går åkte vi skidor efter jobbet och sedan drack vi varm choklad. På lördag ska jag åka hundspann för första gången. Jag är lite nervös, men det ska bli roligt. Jag saknar dig och hoppas att du kan komma hit i vinter. Då kan vi titta på norrskenet tillsammans. Kram, Sofia",
   "gloss": {
    "bott": "lived",
    "veckor": "weeks",
    "norrut": "to the north",
    "mörkt": "dark",
    "snön": "the snow",
-   "ljust": "light, bright",
    "kollegor": "colleagues",
    "vänliga": "friendly",
    "åkte": "went (by vehicle or on skis)",
@@ -347,12 +346,11 @@
   "id": "sv-midsommar",
   "title": "Midsommar",
   "level": "A2",
-  "text": "I juni firar svenskarna midsommar. Det är årets längsta dag och solen går nästan inte ner. Familjen Lind åker till sin stuga vid sjön. På förmiddagen plockar barnen blommor och binder kransar. Sedan reser alla en hög stång och dansar runt den. Man sjunger en rolig sång om små grodor. Till lunch äter de sill, färsk potatis och jordgubbar med grädde. Farfar berättar samma historier som varje år, men alla skrattar ändå. På kvällen badar de i sjön fast vattnet är kallt. Ingen vill gå och lägga sig, för natten är ljus och varm.",
+  "text": "I juni firar svenskarna midsommar. Det är årets ljusaste tid och solen går nästan inte ner. Familjen Lind åker till sin stuga vid sjön. På förmiddagen plockar barnen blommor och binder kransar. Sedan reser alla en hög stång och dansar runt den. Man sjunger en rolig sång om små grodor. Till lunch äter de sill, färskpotatis och jordgubbar med grädde. Farfar berättar samma historier som varje år, men alla skrattar ändå. På kvällen badar de i sjön fast vattnet är kallt. Ingen vill gå och lägga sig, för natten är ljus och varm.",
   "gloss": {
    "firar": "celebrate",
    "midsommar": "Midsummer",
    "årets": "the year's",
-   "längsta": "longest",
    "nästan": "almost",
    "stuga": "cottage",
    "plockar": "pick",
@@ -364,7 +362,6 @@
    "sjunger": "sing",
    "grodor": "frogs",
    "sill": "herring",
-   "färsk": "new, fresh",
    "jordgubbar": "strawberries",
    "grädde": "cream",
    "farfar": "grandfather (father's father)",
@@ -372,7 +369,8 @@
    "skrattar": "laugh",
    "ändå": "anyway",
    "badar": "bathe, swim",
-   "fast": "although"
+   "fast": "although",
+   "färskpotatis": "new potatoes"
   },
   "questions": [
    {
@@ -397,7 +395,7 @@
   "notice": "The subject comes after the verb when something else begins the sentence: \"På förmiddagen plockar barnen blommor\" and \"Till lunch äter de sill\".",
   "back": [
    [
-    "Det är årets längsta dag och solen går nästan inte ner.",
+    "Det är årets ljusaste tid och solen går nästan inte ner.",
     "It is the longest day of the year and the sun hardly goes down."
    ],
    [
@@ -410,12 +408,11 @@
   "id": "sv-planboken",
   "title": "Den borttappade plånboken",
   "level": "B1",
-  "text": "I fredags upptäckte Jonas att hans plånbok var borta. Han hade betalat för en kaffe på stationen och sedan sprungit till tåget. När han kom hem letade han överallt, men plånboken fanns ingenstans. I den låg hans körkort, två bankkort och ett foto av hans mormor. Jonas ringde banken och spärrade korten, och sedan gick han och lade sig på dåligt humör. Nästa morgon ringde det på dörren. Utanför stod en äldre kvinna med plånboken i handen. Hon hade hittat den under en bänk och sett adressen på körkortet. Jonas blev så glad att han bjöd in henne på frukost. Det visade sig att hon hade arbetat som lärare på hans gamla skola. Nu dricker de kaffe tillsammans varje fredag.",
+  "text": "I fredags upptäckte Jonas att hans plånbok var borta. Han hade köpt en kaffe på stationen och sedan sprungit till tåget. När han kom hem letade han överallt, men plånboken fanns ingenstans. I den låg hans körkort, två bankkort och ett foto av hans mormor. Jonas ringde banken och spärrade korten, och sedan gick han och lade sig på dåligt humör. Nästa morgon ringde det på dörren. Utanför stod en äldre kvinna med plånboken i handen. Hon hade hittat den under en bänk och letat upp adressen med hjälp av körkortet. Jonas blev så glad att han bjöd in henne på frukost. Det visade sig att hon hade arbetat som lärare på hans gamla skola. Nu dricker de kaffe tillsammans varje fredag.",
   "gloss": {
    "upptäckte": "discovered",
    "plånbok": "wallet",
    "borta": "gone",
-   "betalat": "paid",
    "sprungit": "run",
    "letade": "searched",
    "överallt": "everywhere",
@@ -482,7 +479,7 @@
    ],
    [
     1,
-    "Hej! Jag vill ha en kopp kaffe, tack."
+    "Hej! Jag tar en kopp kaffe, tack."
    ],
    [
     0,
@@ -595,7 +592,7 @@
    ],
    [
     1,
-    "Finns det en buss också?"
+    "Går det en buss också?"
    ],
    [
     0,
@@ -682,7 +679,7 @@
    ],
    [
     1,
-    "Ja, jag kan nästan inte sova."
+    "Ja, jag kan knappt sova."
    ],
    [
     0,
@@ -716,7 +713,6 @@
    "länge": "long",
    "feber": "fever",
    "hostar": "cough",
-   "nästan": "almost",
    "sova": "sleep",
    "munnen": "the mouth",
    "allvarligt": "serious",

@@ -124,7 +124,7 @@
   "id": "cs-sea",
   "title": "Víkend u moře",
   "level": "A2",
-  "text": "Minulý víkend jsme s bratrem jeli k moři. Brzy ráno jsme nastoupili do vlaku a cesta trvala tři hodiny. Počasí bylo krásné: nebe bylo modré a voda teplá. Dlouho jsme plavali a potom jsme leželi na pláži. V poledne jsme jedli čerstvou rybu v malé restauraci blízko přístavu. Číšník byl milý a přinesl nám studenou vodu. Odpoledne jsme se procházeli starým městem a koupili jsme pohlednice. Můj bratr udělal hodně fotek lodí. Večer jsme byli velmi unavení, ale nechtěli jsme jet domů. Zmeškali jsme poslední vlak a museli jsme hodinu čekat. Byl to nejlepší den léta. Příště chceme zůstat celý týden.",
+  "text": "Minulý víkend jsme s bratrem jeli k moři. Brzy ráno jsme nastoupili do vlaku a cesta trvala tři hodiny. Počasí bylo krásné: nebe bylo modré a voda teplá. Dlouho jsme plavali a potom jsme leželi na pláži. V poledne jsme jedli čerstvou rybu v malé restauraci blízko přístavu. Číšník byl milý a přinesl nám studenou vodu. Odpoledne jsme se procházeli starým městem a koupili jsme pohlednice. Bratr udělal hodně fotek lodí. Večer jsme byli velmi unavení, ale nechtěli jsme jet domů. Zmeškali jsme vlak a na další jsme museli hodinu čekat. Byl to nejlepší den léta. Příště chceme zůstat celý týden.",
   "gloss": {
    "víkend": "weekend",
    "bratrem": "brother",
@@ -178,7 +178,7 @@
     "In the afternoon we walked through the old town and bought postcards."
    ],
    [
-    "Zmeškali jsme poslední vlak a museli jsme hodinu čekat.",
+    "Zmeškali jsme vlak a na další jsme museli hodinu čekat.",
     "We missed the last train and had to wait an hour."
    ]
   ]
@@ -187,7 +187,7 @@
   "id": "cs-neighbour",
   "title": "Nová sousedka",
   "level": "A2",
-  "text": "Minulý měsíc se do našeho domu nastěhovala nová sousedka. Jmenuje se Sofie a pochází z jiného města. Zpočátku tady nikoho neznala. Jednou večer zaklepala na naše dveře, protože lampa v její kuchyni byla rozbitá. Můj táta šel nahoru a za deset minut ji opravil. Sofie byla velmi vděčná a druhý den nám přinesla koláč. Koláč byl výborný a můj mladší bratr snědl tři kousky. Teď Sofie často pije čaj s mou maminkou. Pracuje v nemocnici a vypráví zajímavé příběhy. Včera mi pomohla s domácím úkolem. V neděli jsme jí ukázali park a starý trh. Říká, že se tu už cítí jako doma. Myslím, že jsme našli novou kamarádku.",
+  "text": "Minulý měsíc se do našeho domu nastěhovala nová sousedka. Jmenuje se Sofie a pochází z jiného města. Zpočátku tady nikoho neznala. Jednou večer zaklepala na naše dveře, protože měla v kuchyni rozbitou lampu. Můj táta šel nahoru a za deset minut ji opravil. Sofie byla velmi vděčná a druhý den nám přinesla koláč. Koláč byl výborný a můj mladší bratr snědl tři kousky. Teď Sofie často pije čaj s mou maminkou. Pracuje v nemocnici a vypráví zajímavé příběhy. Včera mi pomohla s domácím úkolem. V neděli jsme jí ukázali park a starý trh. Říká, že se tu už cítí jako doma. Myslím, že jsme našli novou kamarádku.",
   "gloss": {
    "sousedka": "neighbour",
    "nastěhovala": "moved",
@@ -197,8 +197,6 @@
    "zaklepala": "knocked",
    "dveře": "door",
    "kuchyni": "kitchen",
-   "lampa": "lamp",
-   "rozbitá": "broken",
    "opravil": "repaired",
    "minut": "minutes",
    "vděčná": "grateful",
@@ -335,7 +333,7 @@
   "lines": [
    [
     0,
-    "Dobrý večer. Jak vám mohu pomoci?"
+    "Dobrý večer. Co pro vás mohu udělat?"
    ],
    [
     1,
@@ -375,7 +373,6 @@
    ]
   ],
   "gloss": {
-   "pomoci": "help",
    "rezervaci": "reservation",
    "noci": "nights",
    "jmenuji": "(jmenuji se: my name is)",
@@ -411,7 +408,7 @@
   "id": "cs-family",
   "title": "Moje rodina",
   "level": "A1",
-  "text": "Jmenuji se Anna. Bydlím s rodinou v malém domě u řeky. Moje maminka je učitelka a tatínek pracuje v obchodě. Mám bratra a sestru. Mému bratrovi je deset let a má rád fotbal. Moje sestra je ještě malá: jsou jí tři roky. Máme také psa, který se jmenuje Max. Každé ráno chodí tatínek se psem na procházku. Večer spolu večeříme a povídáme si o tom, jaký byl den. Po večeři s bratrem myjeme nádobí. V neděli přichází babička a přináší dort. Mám svou rodinu moc ráda.",
+  "text": "Jmenuji se Anna. Bydlím s rodinou v malém domě u řeky. Moje maminka je učitelka a tatínek pracuje v obchodě. Mám bratra a sestru. Mému bratrovi je deset let a má rád fotbal. Moje sestra je ještě malá: jsou jí tři roky. Máme také psa, který se jmenuje Max. Každé ráno chodí tatínek se psem na procházku. Večer spolu večeříme a povídáme si o tom, jaký byl den. Po večeři s bratrem myjeme nádobí. V neděli k nám chodí babička a nosí dort. Mám svou rodinu moc ráda.",
   "gloss": {
    "rodinou": "family",
    "domě": "house",
@@ -467,7 +464,7 @@
     "My mother is a teacher and my father works in a shop."
    ],
    [
-    "V neděli přichází babička a přináší dort.",
+    "V neděli k nám chodí babička a nosí dort.",
     "On Sunday my grandmother comes and brings a cake."
    ]
   ]
@@ -476,7 +473,7 @@
   "id": "cs-town",
   "title": "Naše město",
   "level": "A1",
-  "text": "Naše město je malé, ale krásné. V centru je staré náměstí s kašnou. Vedle náměstí jsou škola, lékárna a dvě kavárny. Nádraží je za parkem. Každé ráno jezdí hodně lidí vlakem do velkého města. Odpoledne si děti hrají v parku a staří pánové hrají šachy. V létě přijíždějí turisté a fotí most. V zimě je ve městě klid. V sobotu je na náměstí trh. Můžete tam koupit zeleninu, med a květiny. Večer mě baví procházky u řeky. Nechci bydlet ve velkém městě.",
+  "text": "Naše město je malé, ale krásné. V centru je staré náměstí s kašnou. Vedle náměstí jsou škola, lékárna a dvě kavárny. Nádraží je za parkem. Každé ráno jezdí hodně lidí vlakem do velkého města. Odpoledne si děti hrají v parku a staří pánové hrají šachy. V létě přijíždějí turisté a fotí most. V zimě je ve městě klid. V sobotu je na náměstí trh. Můžete si tam koupit zeleninu, med a květiny. Večer mě baví procházky u řeky. Nechci bydlet ve velkém městě.",
   "gloss": {
    "město": "town",
    "krásné": "beautiful",
@@ -539,7 +536,7 @@
   "id": "cs-birthday",
   "title": "Babiččiny narozeniny",
   "level": "A2",
-  "text": "Včera měla moje babička narozeniny. Je jí teď osmdesát let. Celá rodina přijela do jejího domu na vesnici. Moje teta upekla velký dort a strýc přinesl květiny. Dali jsme jí teplou šálu a knihu o zahradách. Před obědem jsme zazpívali písničku a babička se smála. Na stole byla polévka, kuře s bramborami a hodně salátu. Po obědě nám ukázala staré fotografie. Na jedné fotografii byla mladá žena s kolem. Vyprávěla nám, že na něm každý den jezdila do práce. Potom můj bratranec hrál na kytaru a všichni tančili. Dokonce i můj malý bratr tančil s babičkou. Večer byla unavená, ale šťastná. Řekla, že to byly nejlepší narozeniny v jejím životě. Domů jsme jeli pozdě, když už byly na nebi hvězdy.",
+  "text": "Včera měla moje babička narozeniny. Je jí teď osmdesát let. Celá rodina k ní přijela na vesnici. Moje teta upekla velký dort a strýc přinesl květiny. Dali jsme jí teplou šálu a knihu o zahradách. Před obědem jsme zazpívali písničku a babička se smála. Na stole byla polévka, kuře s bramborami a hodně salátu. Po obědě nám ukázala staré fotografie. Na jedné fotografii byla mladá žena s kolem. Vyprávěla nám, že na něm každý den jezdila do práce. Potom můj bratranec hrál na kytaru a všichni tančili. Dokonce i můj malý bratr tančil s babičkou. Večer byla unavená, ale šťastná. Řekla, že to byly nejlepší narozeniny v jejím životě. Domů jsme jeli pozdě, když už byly na nebi hvězdy.",
   "gloss": {
    "včera": "yesterday",
    "narozeniny": "birthday",
@@ -606,14 +603,13 @@
   "id": "cs-wallet",
   "title": "Ztracená peněženka",
   "level": "B1",
-  "text": "Minulý pátek chtěl Daniel zaplatit v supermarketu, ale v kapse neměl peněženku. Měl velké starosti, protože v ní měl platební kartu a řidičský průkaz. Nechal nákup u pokladny a vrátil se stejnou cestou. Hledal všude, na chodníku i na autobusové zastávce, ale nic nenašel. Doma zavolal do banky a zablokoval kartu. Tu noc nemohl spát, protože myslel na všechny své doklady. O dva dny později přišel dopis od policie. Jedna žena našla peněženku v autobuse a odnesla ji na policejní stanici. Daniel tam hned jel. Nic nechybělo, dokonce ani peníze. Policista mu dal adresu té ženy, protože jí Daniel chtěl poděkovat. Druhý den koupil květiny a napsal jí kartičku. Byla překvapená a pozvala ho na kávu. Povídali si hodinu a teď jsou dobří přátelé. Od té doby si Daniel vždycky zkontroluje kapsu, než vystoupí z autobusu.",
+  "text": "Minulý pátek chtěl Daniel zaplatit v supermarketu, ale v kapse neměl peněženku. Dostal velký strach, protože v ní měl platební kartu a řidičský průkaz. Nechal nákup u pokladny a vrátil se stejnou cestou. Hledal všude, na chodníku i na autobusové zastávce, ale nic nenašel. Doma zavolal do banky a zablokoval kartu. Tu noc nemohl spát, protože myslel na všechny své doklady. O dva dny později přišel dopis od policie. Jedna žena našla peněženku v autobuse a odnesla ji na policejní stanici. Daniel tam hned jel. Nic nechybělo, dokonce ani peníze. Policista mu dal adresu té ženy, protože jí Daniel chtěl poděkovat. Druhý den koupil květiny a napsal jí kartičku. Byla překvapená a pozvala ho na kávu. Povídali si hodinu a teď jsou dobří přátelé. Od té doby si Daniel vždycky zkontroluje kapsu, než vystoupí z autobusu.",
   "gloss": {
    "pátek": "Friday",
    "zaplatit": "pay",
    "supermarketu": "supermarket",
    "peněženku": "wallet",
    "kapse": "pocket",
-   "starosti": "worries (měl starosti: was worried)",
    "kartu": "card (platební karta: bank card)",
    "průkaz": "card, licence (řidičský průkaz: driving licence)",
    "nákup": "shopping",
@@ -687,7 +683,7 @@
    ],
    [
     0,
-    "Jednosměrnou, nebo zpáteční?"
+    "Jen tam, nebo zpáteční?"
    ],
    [
     1,
@@ -729,7 +725,6 @@
   "gloss": {
    "pomoci": "help",
    "jízdenku": "ticket",
-   "jednosměrnou": "one way",
    "zpáteční": "return",
    "další": "next",
    "vlak": "train",
@@ -801,7 +796,7 @@
    ],
    [
     1,
-    "Je to vážné? Tento týden musím pracovat."
+    "Je to vážné? Tenhle týden musím pracovat."
    ],
    [
     0,

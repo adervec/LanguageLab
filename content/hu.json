@@ -3,7 +3,7 @@
   "id": "hu-market",
   "title": "A piacon",
   "level": "A1",
-  "text": "Mária minden szombaton a piacra megy. A piac a város központjában van. Süt a nap, és sok ember van ott. Mária szereti a piacot, mert a gyümölcs friss és olcsó. Először almát és narancsot vesz. Aztán kenyeret, sajtot és egy kevés halat vásárol. A halárus nagyon kedves ember. Mindig megkérdezi, hogy van a családja. A piacon Mária gyakran találkozik a barátnőjével, Elenával. Ma együtt isznak egy kávét, és sokáig beszélgetnek. Délben Mária két nehéz szatyorral megy haza. Fáradt, de boldog.",
+  "text": "Mária minden szombaton a piacra megy. A piac a város központjában van. Süt a nap, és sok ember van ott. Mária szereti a piacot, mert a gyümölcs friss és olcsó. Először almát és narancsot vesz. Aztán kenyeret, sajtot és egy kis halat vásárol. A halárus nagyon kedves ember. Mindig megkérdezi, hogy van a családja. A piacon Mária gyakran találkozik a barátnőjével, Elenával. Ma együtt isznak egy kávét, és sokáig beszélgetnek. Délben Mária két nehéz szatyorral megy haza. Fáradt, de boldog.",
   "gloss": {
    "piac": "market",
    "központjában": "centre",
@@ -124,14 +124,13 @@
   "id": "hu-sea",
   "title": "Hétvége a tengernél",
   "level": "A2",
-  "text": "Múlt hétvégén a bátyámmal a tengerhez utaztunk. Kora reggel szálltunk fel a vonatra, és az út három óráig tartott. Az idő gyönyörű volt: az ég kék volt, a víz pedig meleg. Sokáig úsztunk, aztán a strandon feküdtünk. Délben friss halat ettünk egy kis étteremben a kikötő közelében. A pincér kedves volt, és hideg vizet hozott nekünk. Délután az óvárosban sétáltunk, és képeslapokat vettünk. A bátyám sok fényképet készített a csónakokról. Este nagyon fáradtak voltunk, de nem akartunk hazamenni. Lekéstük az utolsó vonatot, és egy órát kellett várnunk. Ez volt a nyár legszebb napja. Legközelebb egy egész hétig szeretnénk maradni.",
+  "text": "Múlt hétvégén a bátyámmal a tengerhez utaztunk. Kora reggel szálltunk fel a vonatra, és az út három óra hosszat tartott. Az idő gyönyörű volt: az ég kék volt, a víz pedig meleg. Sokáig úsztunk, aztán a strandon feküdtünk. Délben friss halat ettünk egy kis étteremben a kikötő közelében. A pincér kedves volt, és hideg vizet hozott nekünk. Délután az óvárosban sétáltunk, és képeslapokat vettünk. A bátyám sok fényképet készített a csónakokról. Este nagyon fáradtak voltunk, de nem akartunk hazamenni. Lekéstük a vonatot, és egy órát kellett várnunk a következőre. Ez volt a nyár legszebb napja. Legközelebb egy egész hétig szeretnénk maradni.",
   "gloss": {
    "hétvégén": "weekend",
    "bátyámmal": "with my older brother",
    "tengerhez": "sea",
    "vonatra": "train",
    "út": "journey",
-   "óráig": "hours",
    "idő": "weather",
    "ég": "sky",
    "kék": "blue",
@@ -178,7 +177,7 @@
     "In the afternoon we walked through the old town and bought postcards."
    ],
    [
-    "Lekéstük az utolsó vonatot, és egy órát kellett várnunk.",
+    "Lekéstük a vonatot, és egy órát kellett várnunk a következőre.",
     "We missed the last train and had to wait an hour."
    ]
   ]
@@ -187,7 +186,7 @@
   "id": "hu-neighbour",
   "title": "Az új szomszéd",
   "level": "A2",
-  "text": "Múlt hónapban új szomszéd költözött a házunkba. Szofiának hívják, és egy másik városból jött. Eleinte senkit sem ismert itt. Egy este bekopogott az ajtónkon, mert a konyhájában elromlott a lámpa. Az apám felment, és tíz perc alatt megjavította. Szofia nagyon hálás volt, és másnap süteményt hozott nekünk. A sütemény finom volt, és az öcsém három szeletet evett meg. Most Szofia gyakran teázik az anyámmal. Egy kórházban dolgozik, és érdekes történeteket mesél. Tegnap segített nekem a házi feladatban. Vasárnap megmutattuk neki a parkot és a régi piacot. Azt mondja, hogy már otthon érzi magát. Azt hiszem, új barátot találtunk.",
+  "text": "Múlt hónapban új szomszéd költözött a házunkba. Szofiának hívják, és egy másik városból jött. Eleinte senkit sem ismert itt. Egy este bekopogott az ajtónkon, mert a konyhájában elromlott a lámpa. Az apám felment, és tíz perc alatt megjavította. Szofia nagyon hálás volt, és másnap süteményt hozott nekünk. A sütemény finom volt, és az öcsém három szeletet evett meg. Most Szofia gyakran teázik az anyámmal. Egy kórházban dolgozik, és érdekes történeteket mesél. Tegnap segített nekem a házi feladatban. Vasárnap megmutattuk neki a parkot és a régi piacot. Azt mondja, hogy már otthon érzi magát. Azt hiszem, új barátra találtunk.",
   "gloss": {
    "szomszéd": "neighbour",
    "költözött": "moved",
@@ -474,7 +473,7 @@
   "id": "hu-town",
   "title": "A mi városunk",
   "level": "A1",
-  "text": "A városunk kicsi, de szép. A központban van egy régi tér egy szökőkúttal. A tér mellett van egy iskola, egy gyógyszertár és két kávézó. Az állomás a park mögött van. Minden reggel sok ember vonattal megy a nagyvárosba. Délután a gyerekek a parkban játszanak, az öreg bácsik pedig sakkoznak. Nyáron turisták jönnek, és lefényképezik a hidat. Télen csendes a város. Szombaton piac van a téren. Ott zöldséget, mézet és virágot lehet venni. Este szeretek a folyó partján sétálni. Nem akarok nagyvárosban élni.",
+  "text": "A városunk kicsi, de szép. A központban van egy régi tér szökőkúttal. A tér mellett van egy iskola, egy gyógyszertár és két kávézó. Az állomás a park mögött van. Minden reggel sok ember vonattal megy a nagyvárosba. Délután a gyerekek a parkban játszanak, az öreg bácsik pedig sakkoznak. Nyáron turisták jönnek, és lefényképezik a hidat. Télen csendes a város. Szombaton piac van a téren. Ott zöldséget, mézet és virágot lehet venni. Este szeretek a folyó partján sétálni. Nem akarok nagyvárosban élni.",
   "gloss": {
    "városunk": "our town",
    "szép": "beautiful",
@@ -538,7 +537,7 @@
   "id": "hu-birthday",
   "title": "A nagymamám születésnapja",
   "level": "A2",
-  "text": "Tegnap volt a nagymamám születésnapja. Most nyolcvanéves. Az egész család eljött a falusi házába. A nagynéném nagy tortát sütött, a nagybátyám pedig virágot hozott. Egy meleg sálat és egy kertekről szóló könyvet adtunk neki. Ebéd előtt énekeltünk egy dalt, és a nagymama nevetett. Az asztalon leves, krumplis csirke és sok saláta volt. Ebéd után régi fényképeket mutatott nekünk. Az egyik képen fiatal nő volt egy biciklivel. Elmesélte, hogy minden nap azzal járt dolgozni. Aztán az unokatestvérem gitározott, és mindenki táncolt. Még a kisöcsém is táncolt a nagymamával. Este fáradt volt, de boldog. Azt mondta, hogy ez volt élete legszebb születésnapja. Későn mentünk haza, amikor már csillagok voltak az égen.",
+  "text": "Tegnap volt a nagymamám születésnapja. Most nyolcvanéves. Az egész család eljött a falusi házába. A nagynéném nagy tortát sütött, a nagybátyám pedig virágot hozott. Egy meleg sálat és egy kertekről szóló könyvet adtunk neki. Ebéd előtt énekeltünk egy dalt, és a nagymama nevetett. Az asztalon leves, krumplis csirke és sok saláta volt. Ebéd után régi fényképeket mutatott nekünk. Az egyik képen ő volt fiatal nőként, egy biciklivel. Elmesélte, hogy minden nap azzal járt dolgozni. Aztán az unokatestvérem gitározott, és mindenki táncolt. Még a kisöcsém is táncolt a nagymamával. Este fáradt volt, de boldog. Azt mondta, hogy ez volt élete legszebb születésnapja. Későn mentünk haza, amikor már csillagok voltak az égen.",
   "gloss": {
    "tegnap": "yesterday",
    "születésnapja": "her birthday",
@@ -605,7 +604,7 @@
   "id": "hu-wallet",
   "title": "Az elveszett pénztárca",
   "level": "B1",
-  "text": "Múlt pénteken Dániel fizetni akart a szupermarketben, de a pénztárcája nem volt a zsebében. Nagyon aggódott, mert benne volt a bankkártyája és a jogosítványa. A pénztárnál hagyta a bevásárlást, és ugyanazon az úton visszament. Mindenhol kereste, a járdán és a buszmegállóban is, de nem talált semmit. Otthon felhívta a bankot, és letiltatta a kártyát. Aznap éjjel nem tudott aludni, mert az összes iratára gondolt. Két nappal később levél érkezett a rendőrségtől. Egy nő megtalálta a pénztárcát a buszon, és bevitte a rendőrségre. Dániel azonnal odament. Semmi sem hiányzott, még a pénz sem. A rendőr megadta neki a nő címét, mert Dániel meg akarta köszönni neki. Másnap virágot vett, és írt neki egy képeslapot. A nő meglepődött, és meghívta egy kávéra. Egy órát beszélgettek, és most jó barátok. Azóta Dániel mindig megnézi a zsebét, mielőtt leszáll a buszról.",
+  "text": "Múlt pénteken Dániel fizetni akart a szupermarketben, de a pénztárcája nem volt a zsebében. Nagyon aggódott, mert benne volt a bankkártyája és a jogosítványa. Otthagyta a bevásárlást a pénztárnál, és ugyanazon az úton visszament. Mindenhol kereste, a járdán és a buszmegállóban is, de nem talált semmit. Otthon felhívta a bankot, és letiltatta a kártyát. Aznap éjjel nem tudott aludni, mert az összes iratára gondolt. Két nappal később levél érkezett a rendőrségtől. Egy nő megtalálta a pénztárcát a buszon, és bevitte a rendőrségre. Dániel azonnal odament. Semmi sem hiányzott, még a pénz sem. A rendőr megadta neki a nő címét, mert Dániel meg akarta köszönni neki. Másnap virágot vett, és írt neki egy képeslapot. A nő meglepődött, és meghívta egy kávéra. Egy órát beszélgettek, és most jó barátok. Azóta Dániel mindig megnézi a zsebét, mielőtt leszáll a buszról.",
   "gloss": {
    "pénteken": "on Friday",
    "fizetni": "pay",
@@ -812,7 +811,7 @@
    ],
    [
     0,
-    "Felírok önnek egy tablettát. Minden étkezés után vegyen be egyet."
+    "Felírok egy tablettát. Minden étkezés után vegyen be egyet."
    ],
    [
     1,

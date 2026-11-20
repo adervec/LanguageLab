@@ -360,7 +360,11 @@ with replies written as files; `offline.mjs` stops the server after one visit an
   Indonesian and Greek followed: 9, 12, 13, 15, 13 and 11 sentences marked, 73 changed. Eighteen were called wrong:
   the train in all six, three Polish verbs of motion in the form for one trip where a habit was meant, a
   Ukrainian friend in the wrong gender and five places where Ukrainian wants "й" for "і", two southern words in the
-  Vietnamese. The twelve texts of each of the remaining 24 languages have not been read this way.
+  Vietnamese. Swedish, Czech, Romanian, Hungarian, Thai and Persian came
+  next: 10, 10, 10, 8, 16 and 11 marked, 65 changed, twelve of them called wrong (the train in five; a Swedish
+  driving licence that showed an address, which it does not; a Romanian card of congratulation sent as thanks; a
+  Thai customer taking leave of a cashier as if for ever). The twelve texts of each of the remaining 18
+  languages have not been read this way.
 - **The page for a native speaker** (November 2026) was tried in headless Chrome only: the French page (60 lessons, the
   sounds, 44 texts), the Arabic one (right to left, with readings) and the Japanese one opened; a correction and a
   note typed, a section ticked, the result copied (it names each line by where it lives and gives the words it was

@@ -3,7 +3,7 @@
   "id": "ro-market",
   "title": "La piață",
   "level": "A1",
-  "text": "În fiecare sâmbătă, Maria merge la piață. Piața este în centrul orașului. Soarele strălucește și acolo sunt mulți oameni. Mariei îi place piața, pentru că fructele sunt proaspete și ieftine. Mai întâi cumpără mere și portocale. Apoi cumpără pâine, brânză și puțin pește. Omul de la taraba cu pește este foarte amabil. El întreabă mereu de familia ei. La piață, Maria se întâlnește des cu prietena ei Elena. Astăzi beau împreună o cafea și vorbesc mult. La prânz, Maria merge acasă cu două pungi grele. Este obosită, dar fericită.",
+  "text": "În fiecare sâmbătă, Maria merge la piață. Piața este în centrul orașului. Soarele strălucește și acolo sunt mulți oameni. Mariei îi place piața, pentru că fructele sunt proaspete și ieftine. Mai întâi cumpără mere și portocale. Apoi cumpără pâine, brânză și puțin pește. Omul de la taraba cu pește este foarte amabil. O întreabă mereu de familie. La piață, Maria se întâlnește des cu prietena ei Elena. Astăzi beau împreună o cafea și vorbesc mult. La prânz, Maria merge acasă cu două pungi grele. Este obosită, dar fericită.",
   "gloss": {
    "piață": "market",
    "centrul": "centre",
@@ -19,7 +19,6 @@
    "brânză": "cheese",
    "pește": "fish",
    "amabil": "friendly",
-   "familia": "family",
    "prietena": "friend",
    "împreună": "together",
    "grele": "heavy",
@@ -54,7 +53,7 @@
     "First she buys apples and oranges."
    ],
    [
-    "El întreabă mereu de familia ei.",
+    "O întreabă mereu de familie.",
     "He always asks about her family."
    ]
   ]
@@ -124,7 +123,7 @@
   "id": "ro-sea",
   "title": "Un weekend la mare",
   "level": "A2",
-  "text": "Weekendul trecut am mers cu fratele meu la mare. Am luat trenul dimineața devreme, iar călătoria a durat trei ore. Vremea a fost frumoasă: cerul era albastru și apa era caldă. Am înotat mult și apoi am stat întinși pe plajă. La prânz am mâncat pește proaspăt într-un restaurant mic lângă port. Chelnerul a fost amabil și ne-a adus apă rece. După-amiaza ne-am plimbat prin orașul vechi și am cumpărat cărți poștale. Fratele meu a făcut multe fotografii cu bărcile. Seara eram foarte obosiți, dar nu voiam să mergem acasă. Am pierdut ultimul tren și a trebuit să așteptăm o oră. A fost cea mai frumoasă zi a verii. Data viitoare vrem să rămânem o săptămână întreagă.",
+  "text": "Weekendul trecut am mers cu fratele meu la mare. Am luat trenul dimineața devreme, iar călătoria a durat trei ore. Vremea a fost frumoasă: cerul era albastru și apa era caldă. Am înotat mult și apoi am stat întinși pe plajă. La prânz am mâncat pește proaspăt într-un restaurant mic lângă port. Chelnerul a fost amabil și ne-a adus apă rece. După-amiaza ne-am plimbat prin orașul vechi și am cumpărat cărți poștale. Fratele meu a făcut multe fotografii cu bărcile. Seara eram foarte obosiți, dar nu voiam să plecăm acasă. Am pierdut trenul și a trebuit să așteptăm o oră. A fost cea mai frumoasă zi a verii. Data viitoare vrem să rămânem o săptămână întreagă.",
   "gloss": {
    "weekendul": "weekend",
    "fratele": "brother",
@@ -178,7 +177,7 @@
     "In the afternoon we walked through the old town and bought postcards."
    ],
    [
-    "Am pierdut ultimul tren și a trebuit să așteptăm o oră.",
+    "Am pierdut trenul și a trebuit să așteptăm o oră.",
     "We missed the last train and had to wait an hour."
    ]
   ]
@@ -187,7 +186,7 @@
   "id": "ro-neighbour",
   "title": "Vecina cea nouă",
   "level": "A2",
-  "text": "Luna trecută s-a mutat în blocul nostru o vecină nouă. O cheamă Sofia și vine din alt oraș. La început nu cunoștea pe nimeni aici. Într-o seară a bătut la ușa noastră, pentru că lampa din bucătăria ei era stricată. Tatăl meu a urcat și a reparat-o în zece minute. Sofia a fost foarte recunoscătoare și a doua zi ne-a adus o prăjitură. Prăjitura a fost delicioasă, iar fratele meu mai mic a mâncat trei bucăți. Acum Sofia bea des ceai cu mama mea. Lucrează la un spital și povestește lucruri interesante. Ieri m-a ajutat la teme. Duminică i-am arătat parcul și piața veche. Ea spune că se simte deja ca acasă. Cred că am găsit o prietenă nouă.",
+  "text": "Luna trecută s-a mutat în blocul nostru o vecină nouă. O cheamă Sofia și vine din alt oraș. La început nu cunoștea pe nimeni aici. Într-o seară a bătut la ușa noastră, pentru că lampa din bucătăria ei era stricată. Tatăl meu a urcat și a reparat-o în zece minute. Sofia a fost foarte recunoscătoare și a doua zi ne-a adus o prăjitură. Prăjitura a fost delicioasă, iar fratele meu mai mic a mâncat trei bucăți. Acum Sofia bea des ceai cu mama mea. Lucrează la un spital și povestește lucruri interesante. Ieri m-a ajutat la teme. Duminică i-am arătat parcul și piața veche. Spune că se simte deja ca acasă. Cred că am găsit o prietenă nouă.",
   "gloss": {
    "vecină": "neighbour",
    "mutat": "moved",
@@ -347,7 +346,7 @@
    ],
    [
     1,
-    "Mă numesc Anna Berg. Poftiți pașaportul meu."
+    "Mă numesc Anna Berg. Poftiți pașaportul."
    ],
    [
     0,
@@ -412,7 +411,7 @@
   "id": "ro-family",
   "title": "Familia mea",
   "level": "A1",
-  "text": "Mă numesc Anna. Locuiesc cu familia mea într-o casă mică lângă râu. Mama mea este profesoară, iar tatăl meu lucrează într-un magazin. Am un frate și o soră. Fratele meu are zece ani și îi place fotbalul. Sora mea este încă mică: are trei ani. Avem și un câine, iar numele lui este Max. În fiecare dimineață, tata se plimbă cu câinele. Seara mâncăm împreună și vorbim despre ziua noastră. După cină, eu și fratele meu spălăm vasele. Duminica vine bunica și aduce o prăjitură. Îmi iubesc foarte mult familia.",
+  "text": "Mă numesc Anna. Locuiesc cu familia mea într-o casă mică lângă râu. Mama mea este profesoară, iar tatăl meu lucrează într-un magazin. Am un frate și o soră. Fratele meu are zece ani și îi place fotbalul. Sora mea este încă mică: are trei ani. Avem și un câine, care se numește Max. În fiecare dimineață, tata se plimbă cu câinele. Seara mâncăm împreună și vorbim despre ziua noastră. După cină, eu și fratele meu spălăm vasele. Duminica vine bunica și aduce o prăjitură. Îmi iubesc foarte mult familia.",
   "gloss": {
    "familia": "family",
    "casă": "house",
@@ -539,7 +538,7 @@
   "id": "ro-birthday",
   "title": "Ziua bunicii",
   "level": "A2",
-  "text": "Ieri a fost ziua de naștere a bunicii mele. Acum are optzeci de ani. Toată familia a venit la casa ei din sat. Mătușa mea a făcut un tort mare, iar unchiul meu a adus flori. I-am dăruit un fular călduros și o carte despre grădini. Înainte de prânz am cântat un cântec, iar bunica a râs. Pe masă erau supă, pui cu cartofi și multă salată. După prânz ne-a arătat fotografii vechi. Într-o fotografie era o femeie tânără cu o bicicletă. Ne-a povestit că mergea cu ea la serviciu în fiecare zi. Apoi vărul meu a cântat la chitară și toată lumea a dansat. Chiar și fratele meu cel mic a dansat cu bunica. Seara era obosită, dar fericită. A spus că a fost cea mai frumoasă zi de naștere din viața ei. Am plecat acasă târziu, când stelele erau deja pe cer.",
+  "text": "Ieri a fost ziua de naștere a bunicii mele. A împlinit optzeci de ani. Toată familia a venit la casa ei din sat. Mătușa mea a făcut un tort mare, iar unchiul meu a adus flori. I-am dăruit un fular călduros și o carte despre grădini. Înainte de prânz am cântat un cântec, iar bunica a râs. Pe masă erau supă, pui cu cartofi și multă salată. După prânz ne-a arătat fotografii vechi. Într-o fotografie era o femeie tânără cu o bicicletă. Ne-a povestit că mergea cu ea la serviciu în fiecare zi. Apoi vărul meu a cântat la chitară și toată lumea a dansat. Chiar și fratele meu cel mic a dansat cu bunica. Seara era obosită, dar fericită. A spus că a fost cea mai frumoasă zi de naștere din viața ei. Am plecat acasă târziu, când stelele erau deja pe cer.",
   "gloss": {
    "ieri": "yesterday",
    "naștere": "birth (ziua de naștere: birthday)",
@@ -606,7 +605,7 @@
   "id": "ro-wallet",
   "title": "Portofelul pierdut",
   "level": "B1",
-  "text": "Vinerea trecută, Daniel voia să plătească la supermarket, dar portofelul nu era în buzunar. Era foarte îngrijorat, pentru că avea în el cardul bancar și permisul de conducere. Și-a lăsat cumpărăturile la casă și s-a întors pe același drum. A căutat peste tot, pe trotuar și în stația de autobuz, dar nu a găsit nimic. Acasă a sunat la bancă și a blocat cardul. În noaptea aceea nu a putut dormi, pentru că se gândea la toate actele lui. După două zile a sosit o scrisoare de la poliție. O femeie găsise portofelul în autobuz și îl dusese la secția de poliție. Daniel s-a dus imediat acolo. Nu lipsea nimic, nici măcar banii. Polițistul i-a dat adresa femeii, pentru că Daniel voia să-i mulțumească. A doua zi a cumpărat flori și i-a scris o felicitare. Ea a fost surprinsă și l-a invitat la o cafea. Au vorbit o oră, iar acum sunt prieteni buni. De atunci, Daniel își verifică mereu buzunarul înainte să coboare din autobuz.",
+  "text": "Vinerea trecută, Daniel voia să plătească la supermarket, dar portofelul nu era în buzunar. Era foarte îngrijorat, pentru că avea în el cardul bancar și permisul de conducere. Și-a lăsat cumpărăturile la casă și s-a întors pe același drum. A căutat peste tot, pe trotuar și în stația de autobuz, dar nu a găsit nimic. Acasă a sunat la bancă și a blocat cardul. În noaptea aceea nu a putut dormi, pentru că se gândea la toate actele. După două zile a sosit o scrisoare de la poliție. O femeie găsise portofelul în autobuz și îl dusese la secția de poliție. Daniel s-a dus imediat acolo. Nu lipsea nimic, nici măcar banii. Polițistul i-a dat adresa femeii, pentru că Daniel voia să-i mulțumească. A doua zi a cumpărat flori și i-a scris un bilet de mulțumire. Ea a fost surprinsă și l-a invitat la o cafea. Au vorbit o oră, iar acum sunt prieteni buni. De atunci, Daniel își verifică mereu buzunarul înainte să coboare din autobuz.",
   "gloss": {
    "vinerea": "Friday",
    "plătească": "pay",
@@ -773,7 +772,7 @@
   "lines": [
    [
     0,
-    "Bună dimineața. Ce problemă aveți?"
+    "Bună dimineața. Ce vă supără?"
    ],
    [
     1,
@@ -829,7 +828,6 @@
    ]
   ],
   "gloss": {
-   "problemă": "problem",
    "gâtul": "the throat (mă doare gâtul: I have a sore throat)",
    "tușesc": "I cough",
    "zile": "days",
