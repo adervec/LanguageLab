@@ -1,194 +1,2196 @@
 [
  {
-  "id": "hr-obitelj", "title": "Moja obitelj", "level": "A1",
+  "id": "hr-obitelj",
+  "title": "Moja obitelj",
+  "level": "A1",
   "text": "Zovem se Ivana i imam deset godina. Živim u Splitu s obitelji. Moj tata se zove Marko. On je visok i voli kuhati. Moja mama se zove Ana. Ona radi u školi. Imam mlađeg brata, Luku. On ima šest godina i puno priča. Imamo i crnu mačku. Ona cijeli dan spava na kauču. Navečer jedemo zajedno u kuhinji. Tata često kuha juhu ili tjesteninu. Poslije večere čitam knjigu, a Luka gleda crtani film. Nedjeljom idemo k baki. Baka ima velik vrt s cvijećem. Jako volim svoju obitelj.",
-  "gloss": { "obitelji": "family (obitelj)", "visok": "tall", "kuhati": "to cook", "radi": "works", "školi": "school (škola)", "mlađeg": "younger", "brata": "brother (brat)", "priča": "talks", "crnu": "black", "mačku": "cat (mačka)", "spava": "sleeps", "kauču": "sofa (kauč)", "navečer": "in the evening", "jedemo": "we eat", "zajedno": "together", "kuhinji": "kitchen (kuhinja)", "često": "often", "juhu": "soup (juha)", "tjesteninu": "pasta (tjestenina)", "večere": "dinner (večera)", "knjigu": "book (knjiga)", "crtani": "cartoon (crtani film)", "nedjeljom": "on Sundays", "baki": "grandmother (baka; k baki: to grandma's)", "vrt": "garden", "cvijećem": "flowers (cvijeće)" },
-  "questions": [ { "q": "Gdje živi Ivana?", "a": ["Split"] }, { "q": "Tko cijeli dan spava na kauču?", "a": ["mačk"] }, { "q": "Kamo obitelj ide nedjeljom?", "a": ["baki", "baka"] } ],
+  "gloss": {
+   "obitelji": "family (obitelj)",
+   "visok": "tall",
+   "kuhati": "to cook",
+   "radi": "works",
+   "školi": "school (škola)",
+   "mlađeg": "younger",
+   "brata": "brother (brat)",
+   "priča": "talks",
+   "crnu": "black",
+   "mačku": "cat (mačka)",
+   "spava": "sleeps",
+   "kauču": "sofa (kauč)",
+   "navečer": "in the evening",
+   "jedemo": "we eat",
+   "zajedno": "together",
+   "kuhinji": "kitchen (kuhinja)",
+   "često": "often",
+   "juhu": "soup (juha)",
+   "tjesteninu": "pasta (tjestenina)",
+   "večere": "dinner (večera)",
+   "knjigu": "book (knjiga)",
+   "crtani": "cartoon (crtani film)",
+   "nedjeljom": "on Sundays",
+   "baki": "grandmother (baka; k baki: to grandma's)",
+   "vrt": "garden",
+   "cvijećem": "flowers (cvijeće)"
+  },
+  "questions": [
+   {
+    "q": "Gdje živi Ivana?",
+    "a": [
+     "Split"
+    ]
+   },
+   {
+    "q": "Tko cijeli dan spava na kauču?",
+    "a": [
+     "mačk"
+    ]
+   },
+   {
+    "q": "Kamo obitelj ide nedjeljom?",
+    "a": [
+     "baki",
+     "baka"
+    ]
+   }
+  ],
   "notice": "Croatian has no articles, and a noun changes its ending with its job in the sentence: \"Imamo i crnu mačku\" (mačka becomes mačku as the object), \"Tata često kuha juhu\" (juha becomes juhu).",
-  "back": [ ["On ima šest godina i puno priča.", "He is six years old and talks a lot."], ["Tata često kuha juhu ili tjesteninu.", "Dad often cooks soup or pasta."] ]
+  "back": [
+   [
+    "On ima šest godina i puno priča.",
+    "He is six years old and talks a lot."
+   ],
+   [
+    "Tata često kuha juhu ili tjesteninu.",
+    "Dad often cooks soup or pasta."
+   ]
+  ]
  },
  {
-  "id": "hr-kafic", "title": "U kafiću", "level": "A1",
+  "id": "hr-kafic",
+  "title": "U kafiću",
+  "level": "A1",
   "text": "Devet je sati. Marija ulazi u mali kafić blizu kolodvora. Gladna je i malo joj je hladno. „Dobro jutro”, kaže konobar. „Izvolite?” Marija gleda cjenik. „Molim vas kavu s mlijekom i jedan kroasan.” Konobar donosi veliku šalicu i topli kroasan. Marija polako pije kavu. Kroz prozor vidi kišu na ulici. Ljudi brzo hodaju s kišobranima. Marija se ne žuri. Otvara torbu i vadi novine. Čita vijesti i jede kroasan. U deset sati plaća i kaže doviđenja. Vani više ne pada kiša.",
-  "gloss": { "ulazi": "goes in", "kafić": "café", "blizu": "near", "kolodvora": "station (kolodvor)", "gladna": "hungry", "hladno": "cold", "konobar": "waiter", "izvolite": "what would you like? (also: here you are)", "cjenik": "price list, menu", "mlijekom": "milk (mlijeko)", "donosi": "brings", "šalicu": "cup (šalica)", "topli": "warm", "polako": "slowly", "pije": "drinks", "prozor": "window", "kišu": "rain (kiša)", "ulici": "street (ulica)", "hodaju": "walk", "kišobranima": "umbrellas (kišobran)", "žuri": "hurries (ne žuri se: is in no hurry)", "otvara": "opens", "torbu": "bag (torba)", "novine": "newspaper", "vijesti": "news", "plaća": "pays", "vani": "outside", "pada": "falls (pada kiša: it is raining)" },
-  "questions": [ { "q": "Tko donosi kavu i kroasan?", "a": ["konobar"] }, { "q": "S čim ljudi hodaju po ulici?", "a": ["kišobran"] }, { "q": "Što Marija uzima iz torbe?", "a": ["novin"] } ],
+  "gloss": {
+   "ulazi": "goes in",
+   "kafić": "café",
+   "blizu": "near",
+   "kolodvora": "station (kolodvor)",
+   "gladna": "hungry",
+   "hladno": "cold",
+   "konobar": "waiter",
+   "izvolite": "what would you like? (also: here you are)",
+   "cjenik": "price list, menu",
+   "mlijekom": "milk (mlijeko)",
+   "donosi": "brings",
+   "šalicu": "cup (šalica)",
+   "topli": "warm",
+   "polako": "slowly",
+   "pije": "drinks",
+   "prozor": "window",
+   "kišu": "rain (kiša)",
+   "ulici": "street (ulica)",
+   "hodaju": "walk",
+   "kišobranima": "umbrellas (kišobran)",
+   "žuri": "hurries (ne žuri se: is in no hurry)",
+   "otvara": "opens",
+   "torbu": "bag (torba)",
+   "novine": "newspaper",
+   "vijesti": "news",
+   "plaća": "pays",
+   "vani": "outside",
+   "pada": "falls (pada kiša: it is raining)"
+  },
+  "questions": [
+   {
+    "q": "Tko donosi kavu i kroasan?",
+    "a": [
+     "konobar"
+    ]
+   },
+   {
+    "q": "S čim ljudi hodaju po ulici?",
+    "a": [
+     "kišobran"
+    ]
+   },
+   {
+    "q": "Što Marija uzima iz torbe?",
+    "a": [
+     "novin"
+    ]
+   }
+  ],
   "notice": "The verb ending shows who is acting, so the pronoun is usually left out: \"Čita vijesti i jede kroasan\" (she reads, she eats), \"Otvara torbu i uzima novine\".",
-  "back": [ ["Marija ulazi u mali kafić blizu kolodvora.", "Marija goes into a small café near the station."], ["Otvara torbu i vadi novine.", "She opens her bag and takes out a newspaper."] ]
+  "back": [
+   [
+    "Marija ulazi u mali kafić blizu kolodvora.",
+    "Marija goes into a small café near the station."
+   ],
+   [
+    "Otvara torbu i vadi novine.",
+    "She opens her bag and takes out a newspaper."
+   ]
+  ]
  },
  {
-  "id": "hr-dan", "title": "Moj dan", "level": "A1",
+  "id": "hr-dan",
+  "title": "Moj dan",
+  "level": "A1",
   "text": "Svaki dan ustajem u sedam sati. Tuširam se i oblačim. Zatim jedem kruh s maslacem i pijem čaj. U osam sati idem autobusom na posao. Radim u uredu u centru grada. Moji kolege su ljubazni. U podne zajedno ručamo u malom restoranu. Poslijepodne pišem poruke i razgovaram telefonom. Završavam u pet sati. Poslije posla kupujem hranu u trgovini. Navečer kuham večeru i slušam glazbu. Ponekad zovem prijateljicu Petru. Idem spavati oko jedanaest sati. Umoran sam, ali zadovoljan svojim danom.",
-  "gloss": { "ustajem": "I get up", "tuširam": "I shower (tuširati se)", "oblačim": "I get dressed (oblačiti se)", "zatim": "then", "kruh": "bread", "maslacem": "butter (maslac)", "čaj": "tea", "autobusom": "by bus", "posao": "work", "uredu": "office (ured)", "grada": "town (grad)", "kolege": "colleagues", "ljubazni": "kind", "podne": "noon", "ručamo": "we have lunch", "poslijepodne": "in the afternoon", "poruke": "messages", "razgovaram": "I talk", "završavam": "I finish", "hranu": "food (hrana)", "trgovini": "shop (trgovina)", "glazbu": "music (glazba)", "ponekad": "sometimes", "prijateljicu": "friend (a woman; prijateljica)", "umoran": "tired", "zadovoljan": "content" },
-  "questions": [ { "q": "Čime pripovjedač ide na posao?", "a": ["autobus"] }, { "q": "Gdje pripovjedač radi?", "a": ["ured", "centr"] }, { "q": "Što pripovjedač sluša navečer?", "a": ["glazb"] } ],
+  "gloss": {
+   "ustajem": "I get up",
+   "tuširam": "I shower (tuširati se)",
+   "oblačim": "I get dressed (oblačiti se)",
+   "zatim": "then",
+   "kruh": "bread",
+   "maslacem": "butter (maslac)",
+   "čaj": "tea",
+   "autobusom": "by bus",
+   "posao": "work",
+   "uredu": "office (ured)",
+   "grada": "town (grad)",
+   "kolege": "colleagues",
+   "ljubazni": "kind",
+   "podne": "noon",
+   "ručamo": "we have lunch",
+   "poslijepodne": "in the afternoon",
+   "poruke": "messages",
+   "razgovaram": "I talk",
+   "završavam": "I finish",
+   "hranu": "food (hrana)",
+   "trgovini": "shop (trgovina)",
+   "glazbu": "music (glazba)",
+   "ponekad": "sometimes",
+   "prijateljicu": "friend (a woman; prijateljica)",
+   "umoran": "tired",
+   "zadovoljan": "content"
+  },
+  "questions": [
+   {
+    "q": "Čime pripovjedač ide na posao?",
+    "a": [
+     "autobus"
+    ]
+   },
+   {
+    "q": "Gdje pripovjedač radi?",
+    "a": [
+     "ured",
+     "centr"
+    ]
+   },
+   {
+    "q": "Što pripovjedač sluša navečer?",
+    "a": [
+     "glazb"
+    ]
+   }
+  ],
   "notice": "The instrumental case, usually ending in -om or -em, says by what means or with what: \"idem autobusom\" (by bus), \"kruh s maslacem\" (with butter).",
-  "back": [ ["U osam sati idem autobusom na posao.", "At eight o'clock I go to work by bus."], ["Poslije posla kupujem hranu u trgovini.", "After work I buy food in the shop."] ]
+  "back": [
+   [
+    "U osam sati idem autobusom na posao.",
+    "At eight o'clock I go to work by bus."
+   ],
+   [
+    "Poslije posla kupujem hranu u trgovini.",
+    "After work I buy food in the shop."
+   ]
+  ]
  },
  {
-  "id": "hr-trznica", "title": "Subotnja tržnica", "level": "A2",
+  "id": "hr-trznica",
+  "title": "Subotnja tržnica",
+  "level": "A2",
   "text": "Svake subote ujutro Ana ide na tržnicu s košarom. Voli taj dio tjedna. Prodavači viču cijene, a zrak miriše na svježi kruh. Prvo kupuje rajčice i tikvice kod starog gospodina koji joj uvijek pokloni jednu jabuku. Zatim staje pred štandom sa sirom. Prodavačica joj daje da kuša mladi kozji sir. „Odličan je”, kaže Ana, „uzet ću dva komada.” Prije povratka kući pije kavu na terasi i gleda ljude kako prolaze. Jedna djevojčica trči za psom, a jedan čovjek nosi golem buket cvijeća. Ana se smiješi. Nije potrošila puno novca, ali košara joj je puna i jutro je bilo savršeno.",
-  "gloss": { "tržnicu": "market (tržnica)", "košarom": "basket (košara)", "dio": "part", "tjedna": "week (tjedan)", "prodavači": "sellers", "viču": "shout", "cijene": "prices", "zrak": "air", "miriše": "smells", "svježi": "fresh", "rajčice": "tomatoes", "tikvice": "zucchini", "gospodina": "gentleman (gospodin)", "uvijek": "always", "pokloni": "gives (as a present)", "staje": "stops", "štandom": "stall (štand)", "sirom": "cheese (sir)", "kuša": "tastes", "kozji": "goat's", "odličan": "excellent", "komada": "pieces (komad)", "povratka": "return (povratak)", "terasi": "terrace", "prolaze": "pass by", "djevojčica": "little girl", "trči": "runs", "psom": "dog (pas)", "golem": "huge", "buket": "bunch", "smiješi": "smiles (smiješiti se)", "potrošila": "spent", "novca": "money (novac)", "puna": "full", "savršeno": "perfect" },
-  "questions": [ { "q": "Kamo Ana ide svake subote ujutro?", "a": ["tržnic"] }, { "q": "Što joj stari gospodin uvijek daruje?", "a": ["jabuk"] }, { "q": "Gdje Ana pije kavu prije povratka kući?", "a": ["teras"] } ],
+  "gloss": {
+   "tržnicu": "market (tržnica)",
+   "košarom": "basket (košara)",
+   "dio": "part",
+   "tjedna": "week (tjedan)",
+   "prodavači": "sellers",
+   "viču": "shout",
+   "cijene": "prices",
+   "zrak": "air",
+   "miriše": "smells",
+   "svježi": "fresh",
+   "rajčice": "tomatoes",
+   "tikvice": "zucchini",
+   "gospodina": "gentleman (gospodin)",
+   "uvijek": "always",
+   "pokloni": "gives (as a present)",
+   "staje": "stops",
+   "štandom": "stall (štand)",
+   "sirom": "cheese (sir)",
+   "kuša": "tastes",
+   "kozji": "goat's",
+   "odličan": "excellent",
+   "komada": "pieces (komad)",
+   "povratka": "return (povratak)",
+   "terasi": "terrace",
+   "prolaze": "pass by",
+   "djevojčica": "little girl",
+   "trči": "runs",
+   "psom": "dog (pas)",
+   "golem": "huge",
+   "buket": "bunch",
+   "smiješi": "smiles (smiješiti se)",
+   "potrošila": "spent",
+   "novca": "money (novac)",
+   "puna": "full",
+   "savršeno": "perfect"
+  },
+  "questions": [
+   {
+    "q": "Kamo Ana ide svake subote ujutro?",
+    "a": [
+     "tržnic"
+    ]
+   },
+   {
+    "q": "Što joj stari gospodin uvijek daruje?",
+    "a": [
+     "jabuk"
+    ]
+   },
+   {
+    "q": "Gdje Ana pije kavu prije povratka kući?",
+    "a": [
+     "teras"
+    ]
+   }
+  ],
   "notice": "After the same preposition the case changes with the meaning: \"na tržnicu\" (to the market: accusative for movement) but \"na terasi\" (on the terrace: locative for place).",
-  "back": [ ["Prodavači viču cijene, a zrak miriše na svježi kruh.", "The sellers shout their prices, and the air smells of fresh bread."], ["Prije povratka kući pije kavu na terasi i gleda ljude kako prolaze.", "Before going back home she drinks coffee on the terrace and watches people pass by."] ]
+  "back": [
+   [
+    "Prodavači viču cijene, a zrak miriše na svježi kruh.",
+    "The sellers shout their prices, and the air smells of fresh bread."
+   ],
+   [
+    "Prije povratka kući pije kavu na terasi i gleda ljude kako prolaze.",
+    "Before going back home she drinks coffee on the terrace and watches people pass by."
+   ]
+  ]
  },
  {
-  "id": "hr-vlak", "title": "Jutarnji vlak", "level": "A2",
+  "id": "hr-vlak",
+  "title": "Jutarnji vlak",
+  "level": "A2",
   "text": "Ivan svako jutro putuje istim vlakom. Danas kasni i trči prema peronu. Vrata se zatvaraju baš kad stiže. Ivan uzdiše i gleda na sat: sljedeći vlak dolazi za dvadeset minuta. Sjeda na klupu pokraj starije gospođe koja čita debelu knjigu. „Je li dobra?” pita Ivan. Gospođa podiže pogled i smiješi se. „Još ne znam tko je ubojica”, odgovara. Počinju razgovarati o knjigama, zatim o putovanjima. Dvadeset minuta prolazi vrlo brzo. Kad vlak stigne, sjedaju jedno do drugoga i nastavljaju razgovor. Ivan stiže na posao sa zakašnjenjem, ali dobre volje. Sutra će možda opet malo zakasniti.",
-  "gloss": { "putuje": "travels", "istim": "the same", "vlakom": "by train (vlak)", "kasni": "is late", "prema": "towards", "peronu": "platform (peron)", "vrata": "door", "zatvaraju": "close", "baš": "just", "stiže": "arrives", "uzdiše": "sighs", "sljedeći": "next", "klupu": "bench (klupa)", "pokraj": "beside", "gospođe": "lady (gospođa)", "debelu": "thick", "podiže": "raises", "pogled": "look, gaze", "ubojica": "murderer", "odgovara": "answers", "putovanjima": "travels (putovanje)", "nastavljaju": "continue", "razgovor": "conversation", "zakašnjenjem": "delay (zakašnjenje)", "volje": "mood (dobre volje: in a good mood)", "sutra": "tomorrow", "možda": "maybe", "opet": "again", "zakasniti": "to be late" },
-  "questions": [ { "q": "Za koliko minuta dolazi sljedeći vlak?", "a": ["dvadeset", "20"] }, { "q": "Što čita starija gospođa?", "a": ["knjig"] }, { "q": "O čemu razgovaraju nakon knjiga?", "a": ["putovanj"] } ],
+  "gloss": {
+   "putuje": "travels",
+   "istim": "the same",
+   "vlakom": "by train (vlak)",
+   "kasni": "is late",
+   "prema": "towards",
+   "peronu": "platform (peron)",
+   "vrata": "door",
+   "zatvaraju": "close",
+   "baš": "just",
+   "stiže": "arrives",
+   "uzdiše": "sighs",
+   "sljedeći": "next",
+   "klupu": "bench (klupa)",
+   "pokraj": "beside",
+   "gospođe": "lady (gospođa)",
+   "debelu": "thick",
+   "podiže": "raises",
+   "pogled": "look, gaze",
+   "ubojica": "murderer",
+   "odgovara": "answers",
+   "putovanjima": "travels (putovanje)",
+   "nastavljaju": "continue",
+   "razgovor": "conversation",
+   "zakašnjenjem": "delay (zakašnjenje)",
+   "volje": "mood (dobre volje: in a good mood)",
+   "sutra": "tomorrow",
+   "možda": "maybe",
+   "opet": "again",
+   "zakasniti": "to be late"
+  },
+  "questions": [
+   {
+    "q": "Za koliko minuta dolazi sljedeći vlak?",
+    "a": [
+     "dvadeset",
+     "20"
+    ]
+   },
+   {
+    "q": "Što čita starija gospođa?",
+    "a": [
+     "knjig"
+    ]
+   },
+   {
+    "q": "O čemu razgovaraju nakon knjiga?",
+    "a": [
+     "putovanj"
+    ]
+   }
+  ],
   "notice": "The little word se goes with many verbs and sits in second place in its clause: \"Vrata se zatvaraju\" (the doors close), \"Gospođa podiže pogled i smiješi se\" (she smiles).",
-  "back": [ ["Vrata se zatvaraju baš kad stiže.", "The doors close just as he arrives."], ["Sutra će možda opet malo zakasniti.", "Tomorrow he will perhaps be a little late again."] ]
+  "back": [
+   [
+    "Vrata se zatvaraju baš kad stiže.",
+    "The doors close just as he arrives."
+   ],
+   [
+    "Sutra će možda opet malo zakasniti.",
+    "Tomorrow he will perhaps be a little late again."
+   ]
+  ]
  },
  {
-  "id": "hr-more", "title": "Vikend na moru", "level": "A2",
+  "id": "hr-more",
+  "title": "Vikend na moru",
+  "level": "A2",
   "text": "Prošlog vikenda išli smo autom na more s cijelom obitelji. Put je trajao tri sata, a djeca su gotovo cijelo vrijeme spavala. Kad smo stigli, sunce je sjalo i na plaži je bilo malo ljudi. Stavili smo ručnike blizu stijena. More je bilo hladno, ali sin je bez razmišljanja utrčao u valove. Kći je radije tražila školjke. U podne smo jeli sendviče i voće. Poslijepodne je zapuhao vjetar i nebo je postalo sivo. Pokupili smo stvari baš prije kiše. Na povratku su svi pjevali u autu. Bio je to običan dan, ali bili smo sretni.",
-  "gloss": { "prošlog": "last", "autom": "by car (auto)", "more": "sea", "trajao": "lasted", "gotovo": "almost", "vrijeme": "time", "sunce": "sun", "sjalo": "was shining", "plaži": "beach (plaža)", "ručnike": "towels (ručnik)", "stijena": "rocks (stijena: rock)", "razmišljanja": "thinking (bez razmišljanja: without a second thought)", "utrčao": "ran into", "valove": "waves (val)", "kći": "daughter", "radije": "rather, preferred to", "tražila": "looked for", "školjke": "shells (školjka)", "voće": "fruit", "zapuhao": "started to blow", "vjetar": "wind", "nebo": "sky", "postalo": "became", "sivo": "grey", "pokupili": "gathered up", "stvari": "things", "povratku": "way back (povratak)", "pjevali": "sang", "običan": "ordinary", "sretni": "happy" },
-  "questions": [ { "q": "Koliko je sati trajao put?", "a": ["tri", "3"] }, { "q": "Što je kći tražila na plaži?", "a": ["školjk"] }, { "q": "Što su svi radili u autu na povratku?", "a": ["pjeva"] } ],
+  "gloss": {
+   "prošlog": "last",
+   "autom": "by car (auto)",
+   "more": "sea",
+   "trajao": "lasted",
+   "gotovo": "almost",
+   "vrijeme": "time",
+   "sunce": "sun",
+   "sjalo": "was shining",
+   "plaži": "beach (plaža)",
+   "ručnike": "towels (ručnik)",
+   "stijena": "rocks (stijena: rock)",
+   "razmišljanja": "thinking (bez razmišljanja: without a second thought)",
+   "utrčao": "ran into",
+   "valove": "waves (val)",
+   "kći": "daughter",
+   "radije": "rather, preferred to",
+   "tražila": "looked for",
+   "školjke": "shells (školjka)",
+   "voće": "fruit",
+   "zapuhao": "started to blow",
+   "vjetar": "wind",
+   "nebo": "sky",
+   "postalo": "became",
+   "sivo": "grey",
+   "pokupili": "gathered up",
+   "stvari": "things",
+   "povratku": "way back (povratak)",
+   "pjevali": "sang",
+   "običan": "ordinary",
+   "sretni": "happy"
+  },
+  "questions": [
+   {
+    "q": "Koliko je sati trajao put?",
+    "a": [
+     "tri",
+     "3"
+    ]
+   },
+   {
+    "q": "Što je kći tražila na plaži?",
+    "a": [
+     "školjk"
+    ]
+   },
+   {
+    "q": "Što su svi radili u autu na povratku?",
+    "a": [
+     "pjeva"
+    ]
+   }
+  ],
   "notice": "The past tense is a short form of biti (sam, si, je, smo, ste, su) plus a participle that agrees with the subject: \"išli smo\" (we went), \"djeca su gotovo cijelo vrijeme spavala\" (the children slept), \"moj sin je bez razmišljanja utrčao\" (my son ran in).",
-  "back": [ ["Stavili smo ručnike blizu stijena.", "We put our towels near the rocks."], ["Poslijepodne je zapuhao vjetar i nebo je postalo sivo.", "In the afternoon the wind started to blow and the sky turned grey."] ]
+  "back": [
+   [
+    "Stavili smo ručnike blizu stijena.",
+    "We put our towels near the rocks."
+   ],
+   [
+    "Poslijepodne je zapuhao vjetar i nebo je postalo sivo.",
+    "In the afternoon the wind started to blow and the sky turned grey."
+   ]
+  ]
  },
  {
-  "id": "hr-stan", "title": "Novi stan", "level": "A2",
+  "id": "hr-stan",
+  "title": "Novi stan",
+  "level": "A2",
   "text": "Petra se upravo preselila u novi stan. Nalazi se na trećem katu, bez dizala, a kutije su teške. Srećom, došli su joj pomoći brat i dvoje prijatelja. Unijeli su krevet, stol i stari ormar koji nije mogao proći kroz vrata. Morali su skinuti vrata ormara da bi ga unijeli. Oko dva sata svi su bili gladni. Petra je naručila pizze i jeli su na podu, među kutijama. Stan je malen, ali svijetao i gleda na park. Navečer je Petra objesila fotografije na zid. Sjela je na krevet i pogledala oko sebe. Prvi put se osjećala kao kod kuće.",
-  "gloss": { "upravo": "just", "preselila": "moved (preseliti se)", "stan": "flat", "nalazi": "is located (nalaziti se)", "katu": "floor (kat)", "dizala": "lift (dizalo)", "kutije": "boxes", "teške": "heavy", "srećom": "luckily", "pomoći": "to help", "dvoje": "two (people)", "unijeli": "carried in", "krevet": "bed", "ormar": "wardrobe", "proći": "to get through", "skinuti": "to take off", "naručila": "ordered", "podu": "floor (pod)", "među": "among", "svijetao": "bright", "objesila": "hung", "zid": "wall", "sjela": "sat down", "pogledala": "looked", "sebe": "herself (oko sebe: around her)", "osjećala": "felt", "kuće": "home (kod kuće: at home)" },
-  "questions": [ { "q": "Na kojem je katu novi stan?", "a": ["treć", "3"] }, { "q": "Što nije moglo proći kroz vrata?", "a": ["ormar"] }, { "q": "Što je Petra naručila za jelo?", "a": ["pizz"] } ],
+  "gloss": {
+   "upravo": "just",
+   "preselila": "moved (preseliti se)",
+   "stan": "flat",
+   "nalazi": "is located (nalaziti se)",
+   "katu": "floor (kat)",
+   "dizala": "lift (dizalo)",
+   "kutije": "boxes",
+   "teške": "heavy",
+   "srećom": "luckily",
+   "pomoći": "to help",
+   "dvoje": "two (people)",
+   "unijeli": "carried in",
+   "krevet": "bed",
+   "ormar": "wardrobe",
+   "proći": "to get through",
+   "skinuti": "to take off",
+   "naručila": "ordered",
+   "podu": "floor (pod)",
+   "među": "among",
+   "svijetao": "bright",
+   "objesila": "hung",
+   "zid": "wall",
+   "sjela": "sat down",
+   "pogledala": "looked",
+   "sebe": "herself (oko sebe: around her)",
+   "osjećala": "felt",
+   "kuće": "home (kod kuće: at home)"
+  },
+  "questions": [
+   {
+    "q": "Na kojem je katu novi stan?",
+    "a": [
+     "treć",
+     "3"
+    ]
+   },
+   {
+    "q": "Što nije moglo proći kroz vrata?",
+    "a": [
+     "ormar"
+    ]
+   },
+   {
+    "q": "Što je Petra naručila za jelo?",
+    "a": [
+     "pizz"
+    ]
+   }
+  ],
   "notice": "Adjectives agree with their noun in gender and number: \"kutije su teške\" (feminine plural), \"Stan je malen, ali svijetao\" (masculine singular).",
-  "back": [ ["Stan je malen, ali svijetao i gleda na park.", "The flat is small, but bright, and it looks out on the park."], ["Prvi put se osjećala kao kod kuće.", "For the first time she felt at home."] ]
+  "back": [
+   [
+    "Stan je malen, ali svijetao i gleda na park.",
+    "The flat is small, but bright, and it looks out on the park."
+   ],
+   [
+    "Prvi put se osjećala kao kod kuće.",
+    "For the first time she felt at home."
+   ]
+  ]
  },
  {
-  "id": "hr-lijecnik", "title": "Kod liječnice", "level": "A2",
+  "id": "hr-lijecnik",
+  "title": "Kod liječnice",
+  "level": "A2",
   "text": "Tomislav već tri dana jako kašlje i boli ga grlo. Jutros je odlučio otići liječniku. U čekaonici sjede jedna starija gospođa i dijete koje plače. Tomislav čeka pola sata i lista stari časopis. Napokon ga liječnica zove. „Što vas muči?” Tomislav objašnjava da je umoran i da loše spava. Liječnica mu pregledava grlo i sluša disanje. „Nije ništa ozbiljno”, kaže. „To je jaka prehlada.” Savjetuje mu da pije puno vode, da se odmara i da ostane na toplom. Tomislav svraća u ljekarnu, a zatim se vraća kući. Kuha čaj s medom i liježe u krevet. Sutra će mu sigurno biti bolje.",
-  "gloss": { "boli": "hurts", "grlo": "throat", "kašlje": "coughs", "jutros": "this morning", "odlučio": "decided", "liječniku": "doctor (liječnik)", "čekaonici": "waiting room (čekaonica)", "dijete": "child", "plače": "is crying", "lista": "leafs through", "časopis": "magazine", "napokon": "at last", "liječnica": "doctor (a woman)", "muči": "troubles (što vas muči: what is the trouble)", "objašnjava": "explains", "pregledava": "examines", "disanje": "breathing", "ozbiljno": "serious", "jaka": "bad, strong", "prehlada": "cold", "savjetuje": "advises", "odmara": "rests (odmarati se)", "ostane": "stays", "toplom": "warm (na toplom: in the warm)", "svraća": "drops in", "ljekarnu": "pharmacy (ljekarna)", "medom": "honey (med)", "liježe": "lies down", "sigurno": "surely", "bolje": "better" },
-  "questions": [ { "q": "Što Tomislava boli već tri dana?", "a": ["grlo"] }, { "q": "Koliko dugo Tomislav čeka u čekaonici?", "a": ["pola sata", "pola"] }, { "q": "Što liječnica kaže da Tomislav ima?", "a": ["prehlad"] } ],
+  "gloss": {
+   "boli": "hurts",
+   "grlo": "throat",
+   "kašlje": "coughs",
+   "jutros": "this morning",
+   "odlučio": "decided",
+   "liječniku": "doctor (liječnik)",
+   "čekaonici": "waiting room (čekaonica)",
+   "dijete": "child",
+   "plače": "is crying",
+   "lista": "leafs through",
+   "časopis": "magazine",
+   "napokon": "at last",
+   "liječnica": "doctor (a woman)",
+   "muči": "troubles (što vas muči: what is the trouble)",
+   "objašnjava": "explains",
+   "pregledava": "examines",
+   "disanje": "breathing",
+   "ozbiljno": "serious",
+   "jaka": "bad, strong",
+   "prehlada": "cold",
+   "savjetuje": "advises",
+   "odmara": "rests (odmarati se)",
+   "ostane": "stays",
+   "toplom": "warm (na toplom: in the warm)",
+   "svraća": "drops in",
+   "ljekarnu": "pharmacy (ljekarna)",
+   "medom": "honey (med)",
+   "liježe": "lies down",
+   "sigurno": "surely",
+   "bolje": "better"
+  },
+  "questions": [
+   {
+    "q": "Što Tomislava boli već tri dana?",
+    "a": [
+     "grlo"
+    ]
+   },
+   {
+    "q": "Koliko dugo Tomislav čeka u čekaonici?",
+    "a": [
+     "pola sata",
+     "pola"
+    ]
+   },
+   {
+    "q": "Što liječnica kaže da Tomislav ima?",
+    "a": [
+     "prehlad"
+    ]
+   }
+  ],
   "notice": "The person who feels something is often not the subject: \"Tomislava već tri dana boli grlo\" (word for word: the throat has been hurting Tomislav for three days), \"Sutra će mu sigurno biti bolje\" (it will be better for him).",
-  "back": [ ["Tomislav objašnjava da je umoran i da loše spava.", "Tomislav explains that he is tired and that he sleeps badly."], ["Sutra će mu sigurno biti bolje.", "Tomorrow he will surely feel better."] ]
+  "back": [
+   [
+    "Tomislav objašnjava da je umoran i da loše spava.",
+    "Tomislav explains that he is tired and that he sleeps badly."
+   ],
+   [
+    "Sutra će mu sigurno biti bolje.",
+    "Tomorrow he will surely feel better."
+   ]
+  ]
  },
  {
-  "id": "hr-koncert", "title": "Koncert na kiši", "level": "B1",
+  "id": "hr-koncert",
+  "title": "Koncert na kiši",
+  "level": "B1",
   "text": "Mjesecima smo čekali taj koncert. Ulaznice su bile skupe, ali to je bio omiljeni bend moje sestre i htio sam je razveseliti za rođendan. Koncert se održavao na otvorenom, u staroj rimskoj areni. Čim smo stigli, nebo su prekrili teški crni oblaci. Prva pjesma tek je počela kad se sručio pljusak. Za nekoliko minuta bili smo mokri do kože. Neki su gledatelji otrčali prema izlazu, ali većina je ostala. Pjevač se nasmijao, skinuo jaknu i nastavio pjevati na kiši. Tada je cijela publika počela plesati po lokvama. Sestra je od vikanja izgubila glas, ali se cijelim putem kući smijala. Mislim da tu večer nikada nećemo zaboraviti, upravo zato što ništa nije išlo po planu.",
-  "gloss": { "mjesecima": "for months", "ulaznice": "tickets (ulaznica)", "skupe": "expensive", "omiljeni": "favourite", "razveseliti": "to delight, cheer up", "rođendan": "birthday", "održavao": "was held (održavati se)", "otvorenom": "open air (na otvorenom)", "rimskoj": "Roman", "čim": "as soon as", "prekrili": "covered", "oblaci": "clouds", "pjesma": "song", "tek": "only just", "sručio": "came pouring down (sručiti se)", "pljusak": "downpour", "mokri": "wet", "kože": "skin (do kože: to the skin)", "gledatelji": "spectators", "izlazu": "exit (izlaz)", "većina": "most", "pjevač": "singer", "nasmijao": "laughed (nasmijati se)", "jaknu": "jacket (jakna)", "nastavio": "went on", "publika": "audience", "lokvama": "puddles (lokva)", "vikanja": "shouting (vikanje)", "izgubila": "lost", "glas": "voice", "zaboraviti": "to forget", "planu": "plan (po planu: according to plan)" },
-  "questions": [ { "q": "Za koga je pripovjedač kupio ulaznice?", "a": ["sestr"] }, { "q": "Gdje se održavao koncert?", "a": ["aren", "otvoren"] }, { "q": "Što je pjevač skinuo?", "a": ["jakn"] } ],
+  "gloss": {
+   "mjesecima": "for months",
+   "ulaznice": "tickets (ulaznica)",
+   "skupe": "expensive",
+   "omiljeni": "favourite",
+   "razveseliti": "to delight, cheer up",
+   "rođendan": "birthday",
+   "održavao": "was held (održavati se)",
+   "otvorenom": "open air (na otvorenom)",
+   "rimskoj": "Roman",
+   "čim": "as soon as",
+   "prekrili": "covered",
+   "oblaci": "clouds",
+   "pjesma": "song",
+   "tek": "only just",
+   "sručio": "came pouring down (sručiti se)",
+   "pljusak": "downpour",
+   "mokri": "wet",
+   "kože": "skin (do kože: to the skin)",
+   "gledatelji": "spectators",
+   "izlazu": "exit (izlaz)",
+   "većina": "most",
+   "pjevač": "singer",
+   "nasmijao": "laughed (nasmijati se)",
+   "jaknu": "jacket (jakna)",
+   "nastavio": "went on",
+   "publika": "audience",
+   "lokvama": "puddles (lokva)",
+   "vikanja": "shouting (vikanje)",
+   "izgubila": "lost",
+   "glas": "voice",
+   "zaboraviti": "to forget",
+   "planu": "plan (po planu: according to plan)"
+  },
+  "questions": [
+   {
+    "q": "Za koga je pripovjedač kupio ulaznice?",
+    "a": [
+     "sestr"
+    ]
+   },
+   {
+    "q": "Gdje se održavao koncert?",
+    "a": [
+     "aren",
+     "otvoren"
+    ]
+   },
+   {
+    "q": "Što je pjevač skinuo?",
+    "a": [
+     "jakn"
+    ]
+   }
+  ],
   "notice": "Verbs come in pairs. The imperfective one shows a process, the perfective one a single finished event: \"Mjesecima smo čekali\" (we waited and waited) but \"kad se spustio pljusak\" and \"skinuo jaknu\" (it came down, he took it off: once, done).",
-  "back": [ ["Za nekoliko minuta bili smo mokri do kože.", "In a few minutes we were wet to the skin."], ["Pjevač se nasmijao, skinuo jaknu i nastavio pjevati na kiši.", "The singer laughed, took off his jacket and went on singing in the rain."] ]
+  "back": [
+   [
+    "Za nekoliko minuta bili smo mokri do kože.",
+    "In a few minutes we were wet to the skin."
+   ],
+   [
+    "Pjevač se nasmijao, skinuo jaknu i nastavio pjevati na kiši.",
+    "The singer laughed, took off his jacket and went on singing in the rain."
+   ]
+  ]
  },
  {
-  "id": "hr-pismo", "title": "Pronađeno pismo", "level": "B1",
+  "id": "hr-pismo",
+  "title": "Pronađeno pismo",
+  "level": "B1",
   "text": "Dok je praznila tavan svojih roditelja, Maja je pronašla limenu kutiju skrivenu iza starih knjiga. Unutra su bile požutjele fotografije i pismo koje nikada nije bilo otvoreno. Na omotnici je pisalo bakino ime, a marka je bila iz Argentine. Maja je dugo oklijevala. Smije li čitati pismo koje nije bilo upućeno njoj? Na kraju je znatiželja pobijedila. Pismo je napisao neki Emilio, koji je opisivao svoj novi život u Buenos Airesu i molio baku da mu se pridruži. Maja to ime nikada nije čula. Iste večeri nazvala je majku da je pita o tome. S druge strane žice dugo je vladala tišina. „Dođi u nedjelju”, odgovorila je majka. „Mislim da je vrijeme da ti ispričam tu priču.”",
-  "gloss": { "praznila": "was emptying", "tavan": "attic", "pronašla": "found", "limenu": "tin", "skrivenu": "hidden", "iza": "behind", "unutra": "inside", "požutjele": "yellowed", "otvoreno": "opened", "omotnici": "envelope (omotnica)", "bakino": "grandmother's", "marka": "stamp", "oklijevala": "hesitated", "smije": "may (smije li: is she allowed to)", "upućeno": "addressed", "kraju": "end (na kraju: in the end)", "znatiželja": "curiosity", "pobijedila": "won", "opisivao": "described", "život": "life", "molio": "asked, begged", "pridruži": "joins (pridružiti se)", "čula": "heard", "nazvala": "phoned", "strane": "side", "žice": "of the wire (s druge strane žice: at the other end of the line)", "tišina": "silence", "ispričam": "I tell", "priču": "story (priča)" },
-  "questions": [ { "q": "Gdje je Maja pronašla limenu kutiju?", "a": ["tavan", "knjig"] }, { "q": "Iz koje je zemlje bila marka?", "a": ["Argentin"] }, { "q": "Kako se zvao čovjek koji je napisao pismo?", "a": ["Emilio"] } ],
+  "gloss": {
+   "praznila": "was emptying",
+   "tavan": "attic",
+   "pronašla": "found",
+   "limenu": "tin",
+   "skrivenu": "hidden",
+   "iza": "behind",
+   "unutra": "inside",
+   "požutjele": "yellowed",
+   "otvoreno": "opened",
+   "omotnici": "envelope (omotnica)",
+   "bakino": "grandmother's",
+   "marka": "stamp",
+   "oklijevala": "hesitated",
+   "smije": "may (smije li: is she allowed to)",
+   "upućeno": "addressed",
+   "kraju": "end (na kraju: in the end)",
+   "znatiželja": "curiosity",
+   "pobijedila": "won",
+   "opisivao": "described",
+   "život": "life",
+   "molio": "asked, begged",
+   "pridruži": "joins (pridružiti se)",
+   "čula": "heard",
+   "nazvala": "phoned",
+   "strane": "side",
+   "žice": "of the wire (s druge strane žice: at the other end of the line)",
+   "tišina": "silence",
+   "ispričam": "I tell",
+   "priču": "story (priča)"
+  },
+  "questions": [
+   {
+    "q": "Gdje je Maja pronašla limenu kutiju?",
+    "a": [
+     "tavan",
+     "knjig"
+    ]
+   },
+   {
+    "q": "Iz koje je zemlje bila marka?",
+    "a": [
+     "Argentin"
+    ]
+   },
+   {
+    "q": "Kako se zvao čovjek koji je napisao pismo?",
+    "a": [
+     "Emilio"
+    ]
+   }
+  ],
   "notice": "Possessive adjectives are made from names and family words with -in or -ov: \"bakino ime\" (grandmother's name). A relative clause begins with koji, koja or koje, agreeing with its noun: \"pismo koje nikada nije bilo otvoreno\".",
-  "back": [ ["Na omotnici je pisalo bakino ime, a marka je bila iz Argentine.", "Grandmother's name was written on the envelope, and the stamp was from Argentina."], ["Iste večeri nazvala je majku da je pita o tome.", "That same evening she phoned her mother to ask her about it."] ]
+  "back": [
+   [
+    "Na omotnici je pisalo bakino ime, a marka je bila iz Argentine.",
+    "Grandmother's name was written on the envelope, and the stamp was from Argentina."
+   ],
+   [
+    "Iste večeri nazvala je majku da je pita o tome.",
+    "That same evening she phoned her mother to ask her about it."
+   ]
+  ]
  },
  {
-  "id": "hr-plivanje", "title": "Naučiti plivati", "level": "B1",
+  "id": "hr-plivanje",
+  "title": "Naučiti plivati",
+  "level": "B1",
   "text": "S četrdeset godina Bruno još uvijek nije znao plivati. Kao dijete jako se prestrašio u jednoj rijeci i otada je izbjegavao vodu koliko god je mogao. No prošlog ljeta sedmogodišnja kći zamolila ga je da se dođe igrati s njom u bazenu. Bilo ga je sram što sjedi na rubu. U rujnu se zato upisao na tečaj za odrasle početnike. Prvi sat bio je težak. Držao se za rub tako čvrsto da su ga boljele ruke. Učiteljica, mirna i strpljiva žena, naučila ga je samo disati i plutati. Iz tjedna u tjedan strah je bio sve manji. Nakon tri mjeseca Bruno je sam preplivao cijeli bazen, polako i bez zaustavljanja. Kći ga je čekala na drugoj strani i pljeskala. Dugo nije bio tako ponosan.",
-  "gloss": { "znao": "knew how", "plivati": "to swim", "prestrašio": "got a fright (prestrašiti se)", "rijeci": "river (rijeka)", "otada": "since then", "izbjegavao": "avoided", "ljeta": "summer (ljeto)", "sedmogodišnja": "seven-year-old", "zamolila": "asked", "bazenu": "pool (bazen)", "sram": "shame (bilo ga je sram: he was ashamed)", "rubu": "edge (rub)", "rujnu": "September (rujan)", "upisao": "enrolled (upisati se)", "tečaj": "course", "odrasle": "adult, grown-up (odrastao)", "početnike": "beginners (početnik)", "težak": "hard", "držao": "held on (držati se)", "čvrsto": "tightly", "boljele": "hurt", "učiteljica": "teacher (a woman)", "strpljiva": "patient", "disati": "to breathe", "plutati": "to float", "strah": "fear", "manji": "smaller", "preplivao": "swam across", "zaustavljanja": "stopping (bez zaustavljanja: without stopping)", "pljeskala": "clapped", "ponosan": "proud" },
-  "questions": [ { "q": "Gdje se Bruno prestrašio kao dijete?", "a": ["rijec"] }, { "q": "U kojem se mjesecu upisao na tečaj?", "a": ["rujn"] }, { "q": "Što ga je učiteljica prvo naučila?", "a": ["disati", "plutati"] } ],
+  "gloss": {
+   "znao": "knew how",
+   "plivati": "to swim",
+   "prestrašio": "got a fright (prestrašiti se)",
+   "rijeci": "river (rijeka)",
+   "otada": "since then",
+   "izbjegavao": "avoided",
+   "ljeta": "summer (ljeto)",
+   "sedmogodišnja": "seven-year-old",
+   "zamolila": "asked",
+   "bazenu": "pool (bazen)",
+   "sram": "shame (bilo ga je sram: he was ashamed)",
+   "rubu": "edge (rub)",
+   "rujnu": "September (rujan)",
+   "upisao": "enrolled (upisati se)",
+   "tečaj": "course",
+   "odrasle": "adult, grown-up (odrastao)",
+   "početnike": "beginners (početnik)",
+   "težak": "hard",
+   "držao": "held on (držati se)",
+   "čvrsto": "tightly",
+   "boljele": "hurt",
+   "učiteljica": "teacher (a woman)",
+   "strpljiva": "patient",
+   "disati": "to breathe",
+   "plutati": "to float",
+   "strah": "fear",
+   "manji": "smaller",
+   "preplivao": "swam across",
+   "zaustavljanja": "stopping (bez zaustavljanja: without stopping)",
+   "pljeskala": "clapped",
+   "ponosan": "proud"
+  },
+  "questions": [
+   {
+    "q": "Gdje se Bruno prestrašio kao dijete?",
+    "a": [
+     "rijec"
+    ]
+   },
+   {
+    "q": "U kojem se mjesecu upisao na tečaj?",
+    "a": [
+     "rujn"
+    ]
+   },
+   {
+    "q": "Što ga je učiteljica prvo naučila?",
+    "a": [
+     "disati",
+     "plutati"
+    ]
+   }
+  ],
   "notice": "Sve with a comparative means more and more: \"strah je bio sve manji\" (the fear grew smaller and smaller). Koliko god je mogao means as much as he possibly could.",
-  "back": [ ["Držao se za rub tako čvrsto da su ga boljele ruke.", "He held on to the edge so tightly that his hands hurt."], ["Iz tjedna u tjedan strah je bio sve manji.", "From week to week the fear grew smaller and smaller."] ]
+  "back": [
+   [
+    "Držao se za rub tako čvrsto da su ga boljele ruke.",
+    "He held on to the edge so tightly that his hands hurt."
+   ],
+   [
+    "Iz tjedna u tjedan strah je bio sve manji.",
+    "From week to week the fear grew smaller and smaller."
+   ]
+  ]
  },
  {
-  "id": "hr-posao", "title": "Prvi dan na novom poslu", "level": "B1",
+  "id": "hr-posao",
+  "title": "Prvi dan na novom poslu",
+  "level": "B1",
   "text": "Lucija je cijelu noć loše spavala jer je sutradan počinjala raditi u novoj tvrtki. Ujutro je odjenula najbolju košulju i krenula sat vremena ranije, za svaki slučaj. Naravno, tramvaj je stao zbog kvara i morala je pješačiti dvadeset minuta po kiši. U ured je stigla mokra i zadihana. Očekivala je stroge poglede, ali direktorica se samo nasmijala i pružila joj ručnik. „I ja sam prvi dan zakasnila”, rekla je. Kolege su joj pokazali stol, aparat za kavu i najbolju pekarnicu u ulici. Do podneva je već znala sva imena. Kad se navečer vratila kući, bila je umorna, ali mirna. Shvatila je da se cijelu noć brinula bez razloga. Sutradan je došla na vrijeme i donijela kolače za sve.",
-  "gloss": { "sutradan": "the next day", "tvrtki": "company (tvrtka)", "odjenula": "put on", "košulju": "shirt (košulja)", "krenula": "set off", "ranije": "earlier", "slučaj": "case (za svaki slučaj: just in case)", "naravno": "of course", "tramvaj": "tram", "kvara": "breakdown (kvar)", "pješačiti": "to walk", "zadihana": "out of breath", "očekivala": "expected", "stroge": "stern", "poglede": "looks (pogled)", "direktorica": "manager (a woman)", "pružila": "handed", "ručnik": "towel", "zakasnila": "was late", "pokazali": "showed", "pekarnicu": "bakery (pekarnica)", "podneva": "noon (do podneva: by noon)", "imena": "names (ime)", "shvatila": "realised", "brinula": "worried (brinuti se)", "razloga": "reason (bez razloga: for no reason)", "donijela": "brought (donijeti)", "kolače": "cakes (kolač)" },
-  "questions": [ { "q": "Zašto je tramvaj stao?", "a": ["kvar"] }, { "q": "Što je direktorica pružila Luciji?", "a": ["ručnik"] }, { "q": "Što je Lucija sutradan donijela za sve?", "a": ["kolač"] } ],
+  "gloss": {
+   "sutradan": "the next day",
+   "tvrtki": "company (tvrtka)",
+   "odjenula": "put on",
+   "košulju": "shirt (košulja)",
+   "krenula": "set off",
+   "ranije": "earlier",
+   "slučaj": "case (za svaki slučaj: just in case)",
+   "naravno": "of course",
+   "tramvaj": "tram",
+   "kvara": "breakdown (kvar)",
+   "pješačiti": "to walk",
+   "zadihana": "out of breath",
+   "očekivala": "expected",
+   "stroge": "stern",
+   "poglede": "looks (pogled)",
+   "direktorica": "manager (a woman)",
+   "pružila": "handed",
+   "ručnik": "towel",
+   "zakasnila": "was late",
+   "pokazali": "showed",
+   "pekarnicu": "bakery (pekarnica)",
+   "podneva": "noon (do podneva: by noon)",
+   "imena": "names (ime)",
+   "shvatila": "realised",
+   "brinula": "worried (brinuti se)",
+   "razloga": "reason (bez razloga: for no reason)",
+   "donijela": "brought (donijeti)",
+   "kolače": "cakes (kolač)"
+  },
+  "questions": [
+   {
+    "q": "Zašto je tramvaj stao?",
+    "a": [
+     "kvar"
+    ]
+   },
+   {
+    "q": "Što je direktorica pružila Luciji?",
+    "a": [
+     "ručnik"
+    ]
+   },
+   {
+    "q": "Što je Lucija sutradan donijela za sve?",
+    "a": [
+     "kolač"
+    ]
+   }
+  ],
   "notice": "Small linking words carry the logic: jer gives the reason, ali contrasts, da introduces what someone says or realises: \"loše spavala jer je sutradan počinjala raditi\", \"Shvatila je da se cijelu noć brinula bez razloga\".",
-  "back": [ ["Do podneva je već znala sva imena.", "By noon she already knew all the names."], ["Sutradan je došla na vrijeme i donijela kolače za sve.", "The next day she came on time and brought cakes for everyone."] ]
+  "back": [
+   [
+    "Do podneva je već znala sva imena.",
+    "By noon she already knew all the names."
+   ],
+   [
+    "Sutradan je došla na vrijeme i donijela kolače za sve.",
+    "The next day she came on time and brought cakes for everyone."
+   ]
+  ]
  },
  {
-  "id": "hr-mobitel", "title": "Izgubljeni mobitel", "level": "B1",
+  "id": "hr-mobitel",
+  "title": "Izgubljeni mobitel",
+  "level": "B1",
   "text": "U petak navečer Dario se vraćao taksijem s večere kod prijatelja. Tek pred vratima stana shvatio je da mu nema mobitela. Pretražio je sve džepove i torbu, ali uzalud. U mobitelu su mu bile sve fotografije s putovanja i brojevi koje nije znao napamet. Nazvao je vlastiti broj sa susjedova telefona, no nitko se nije javljao. Legao je uvjeren da ga više nikada neće vidjeti. Sutradan ujutro netko je pozvonio na vrata. Bio je to vozač taksija, s mobitelom u ruci. Našao ga je između sjedala i sjetio se adrese. Dario mu je htio dati novac, ali vozač je odbio. Prihvatio je samo šalicu kave i komad kolača. Otada Dario uvijek zove istog taksista.",
-  "gloss": { "taksijem": "by taxi", "shvatio": "realised", "mobitela": "mobile phone (mobitel)", "pretražio": "searched", "džepove": "pockets (džep)", "uzalud": "in vain", "brojevi": "numbers", "napamet": "by heart", "vlastiti": "own", "susjedova": "the neighbour's", "nitko": "nobody", "javljao": "answered (javljati se)", "legao": "went to bed", "uvjeren": "convinced", "pozvonio": "rang the bell", "vozač": "driver", "ruci": "hand (ruka)", "našao": "found", "između": "between", "sjedala": "seats (sjedalo)", "sjetio": "remembered (sjetiti se)", "adrese": "address", "novac": "money", "odbio": "refused", "prihvatio": "accepted", "šalicu": "cup (šalica)", "komad": "piece", "otada": "since then", "taksista": "taxi driver (taksist)" },
-  "questions": [ { "q": "Čime se Dario vraćao s večere?", "a": ["taksi"] }, { "q": "Tko je sutradan pozvonio na vrata?", "a": ["vozač", "taksist"] }, { "q": "Između čega je vozač našao mobitel?", "a": ["sjedal"] } ],
+  "gloss": {
+   "taksijem": "by taxi",
+   "shvatio": "realised",
+   "mobitela": "mobile phone (mobitel)",
+   "pretražio": "searched",
+   "džepove": "pockets (džep)",
+   "uzalud": "in vain",
+   "brojevi": "numbers",
+   "napamet": "by heart",
+   "vlastiti": "own",
+   "susjedova": "the neighbour's",
+   "nitko": "nobody",
+   "javljao": "answered (javljati se)",
+   "legao": "went to bed",
+   "uvjeren": "convinced",
+   "pozvonio": "rang the bell",
+   "vozač": "driver",
+   "ruci": "hand (ruka)",
+   "našao": "found",
+   "između": "between",
+   "sjedala": "seats (sjedalo)",
+   "sjetio": "remembered (sjetiti se)",
+   "adrese": "address",
+   "novac": "money",
+   "odbio": "refused",
+   "prihvatio": "accepted",
+   "šalicu": "cup (šalica)",
+   "komad": "piece",
+   "otada": "since then",
+   "taksista": "taxi driver (taksist)"
+  },
+  "questions": [
+   {
+    "q": "Čime se Dario vraćao s večere?",
+    "a": [
+     "taksi"
+    ]
+   },
+   {
+    "q": "Tko je sutradan pozvonio na vrata?",
+    "a": [
+     "vozač",
+     "taksist"
+    ]
+   },
+   {
+    "q": "Između čega je vozač našao mobitel?",
+    "a": [
+     "sjedal"
+    ]
+   }
+  ],
   "notice": "Nema with the genitive means there is none of something: \"da mu nema mobitela\" (that his phone was gone). Two negatives in one clause are normal: \"nitko se nije javljao\", \"nikada neće vidjeti\".",
-  "back": [ ["Legao je uvjeren da ga više nikada neće vidjeti.", "He went to bed convinced that he would never see it again."], ["Dario mu je htio dati novac, ali vozač je odbio.", "Dario wanted to give him money, but the driver refused."] ]
+  "back": [
+   [
+    "Legao je uvjeren da ga više nikada neće vidjeti.",
+    "He went to bed convinced that he would never see it again."
+   ],
+   [
+    "Dario mu je htio dati novac, ali vozač je odbio.",
+    "Dario wanted to give him money, but the driver refused."
+   ]
+  ]
  },
  {
-  "id": "hr-knjizara", "title": "Posljednja knjižara", "level": "B2",
+  "id": "hr-knjizara",
+  "title": "Posljednja knjižara",
+  "level": "B2",
   "text": "Otkako se na rubu grada otvorio veliki trgovački centar, knjižara gospodina Horvata iz godine u godinu gubi kupce. Unatoč tomu, on ne namjerava odustati. Prema njegovu mišljenju, knjižar ne prodaje samo knjige: on savjetuje, sluša i katkad pogodi što čitatelju treba prije nego što to i sam shvati. Prošle zime, kad se zatvaranje činilo neizbježnim, jedna je stalna mušterija pokrenula peticiju, a zatim i prikupljanje novca putem interneta. Na opće iznenađenje, odazvale su se stotine ljudi, među njima i oni koji u knjižaru nikada nisu kročili. Zahvaljujući tom novcu, gospodin Horvat obnovio je izlog i počeo organizirati susrete s piscima. Svake subote sada u knjižari nema slobodnog mjesta. Ipak ostaje trijezan: ništa ne jamči da će taj zanos potrajati. No shvatio je da njegova knjižara četvrti znači mnogo više nego što je mislio.",
-  "gloss": { "otkako": "ever since", "rubu": "edge (rub)", "trgovački": "shopping (trgovački centar: shopping centre)", "knjižara": "bookshop", "gubi": "loses", "kupce": "customers (kupac)", "unatoč": "despite", "namjerava": "intends", "odustati": "to give up", "mišljenju": "opinion (mišljenje)", "knjižar": "bookseller", "katkad": "sometimes", "pogodi": "guesses", "čitatelju": "reader (čitatelj)", "zatvaranje": "closing", "činilo": "seemed (činiti se)", "neizbježnim": "inevitable", "stalna": "regular", "mušterija": "customer", "pokrenula": "started", "prikupljanje": "collecting", "putem": "by way of", "iznenađenje": "surprise", "odazvale": "responded (odazvati se)", "stotine": "hundreds", "kročili": "set foot", "zahvaljujući": "thanks to", "obnovio": "renovated", "izlog": "shop window", "susrete": "meetings (susret)", "piscima": "writers (pisac)", "slobodnog": "free", "mjesta": "place, seat (mjesto)", "trijezan": "sober, level-headed", "jamči": "guarantees", "zanos": "enthusiasm", "potrajati": "to last", "četvrti": "neighbourhood (četvrt)" },
-  "questions": [ { "q": "Što se otvorilo na rubu grada?", "a": ["trgovački centar", "centar"] }, { "q": "Što je stalna mušterija prvo pokrenula?", "a": ["peticij"] }, { "q": "Što je gospodin Horvat obnovio zahvaljujući novcu?", "a": ["izlog"] } ],
+  "gloss": {
+   "otkako": "ever since",
+   "rubu": "edge (rub)",
+   "trgovački": "shopping (trgovački centar: shopping centre)",
+   "knjižara": "bookshop",
+   "gubi": "loses",
+   "kupce": "customers (kupac)",
+   "unatoč": "despite",
+   "namjerava": "intends",
+   "odustati": "to give up",
+   "mišljenju": "opinion (mišljenje)",
+   "knjižar": "bookseller",
+   "katkad": "sometimes",
+   "pogodi": "guesses",
+   "čitatelju": "reader (čitatelj)",
+   "zatvaranje": "closing",
+   "činilo": "seemed (činiti se)",
+   "neizbježnim": "inevitable",
+   "stalna": "regular",
+   "mušterija": "customer",
+   "pokrenula": "started",
+   "prikupljanje": "collecting",
+   "putem": "by way of",
+   "iznenađenje": "surprise",
+   "odazvale": "responded (odazvati se)",
+   "stotine": "hundreds",
+   "kročili": "set foot",
+   "zahvaljujući": "thanks to",
+   "obnovio": "renovated",
+   "izlog": "shop window",
+   "susrete": "meetings (susret)",
+   "piscima": "writers (pisac)",
+   "slobodnog": "free",
+   "mjesta": "place, seat (mjesto)",
+   "trijezan": "sober, level-headed",
+   "jamči": "guarantees",
+   "zanos": "enthusiasm",
+   "potrajati": "to last",
+   "četvrti": "neighbourhood (četvrt)"
+  },
+  "questions": [
+   {
+    "q": "Što se otvorilo na rubu grada?",
+    "a": [
+     "trgovački centar",
+     "centar"
+    ]
+   },
+   {
+    "q": "Što je stalna mušterija prvo pokrenula?",
+    "a": [
+     "peticij"
+    ]
+   },
+   {
+    "q": "Što je gospodin Horvat obnovio zahvaljujući novcu?",
+    "a": [
+     "izlog"
+    ]
+   }
+  ],
   "notice": "Formal linking phrases: unatoč tomu (despite that), zahvaljujući with the dative (thanks to), prije nego što (before): \"Unatoč tomu, on ne namjerava odustati\", \"Zahvaljujući tom novcu, gospodin Horvat obnovio je izlog\".",
-  "back": [ ["Unatoč tomu, on ne namjerava odustati.", "Despite that, he does not intend to give up."], ["Ipak ostaje trijezan: ništa ne jamči da će taj zanos potrajati.", "Still, he stays level-headed: nothing guarantees that this enthusiasm will last."] ]
+  "back": [
+   [
+    "Unatoč tomu, on ne namjerava odustati.",
+    "Despite that, he does not intend to give up."
+   ],
+   [
+    "Ipak ostaje trijezan: ništa ne jamči da će taj zanos potrajati.",
+    "Still, he stays level-headed: nothing guarantees that this enthusiasm will last."
+   ]
+  ]
  },
  {
-  "id": "hr-radodkuce", "title": "Rad od kuće", "level": "B2",
+  "id": "hr-radodkuce",
+  "title": "Rad od kuće",
+  "level": "B2",
   "text": "Kad je njezina tvrtka svima omogućila rad od kuće, Nina se isprva obradovala. Nema više gužvi u prometu, beskrajnih sastanaka ni ručka progutanog u deset minuta. Već je zamišljala kako radi u miru, sa šalicom čaja nadohvat ruke. Prvi mjeseci dali su joj za pravo. Malo-pomalo, međutim, nešto se poremetilo. Dani su se produljivali, a da to nije ni primijetila, i granica između poslovnog i privatnog života postajala je sve nejasnija. Događalo joj se da na poruke odgovara u jedanaest navečer, još u pidžami. Ponajviše su joj nedostajali nevažni razgovori uz aparat za kavu, više nego što je mogla zamisliti. Na kraju je sa šeficom dogovorila kompromis: tri dana kod kuće, dva u uredu. Petkom se sada čak veseli odlasku u ured. To nije savršeno rješenje, priznaje, ali joj omogućuje da ne izgubi nit.",
-  "gloss": { "omogućila": "made possible", "isprva": "at first", "obradovala": "was glad (obradovati se)", "gužvi": "jams, crowds (gužva)", "prometu": "traffic (promet)", "beskrajnih": "endless", "sastanaka": "meetings (sastanak)", "progutanog": "gulped down", "zamišljala": "imagined", "miru": "peace (mir)", "nadohvat": "within reach", "pravo": "right (dati za pravo: to prove right)", "međutim": "however", "poremetilo": "went wrong (poremetiti se)", "produljivali": "grew longer (produljivati se)", "primijetila": "noticed", "granica": "boundary", "poslovnog": "working", "privatnog": "private", "postajala": "was becoming", "nejasnija": "more blurred", "događalo": "happened (događati se)", "pidžami": "pyjamas (pidžama)", "ponajviše": "most of all", "nedostajali": "were missed (nedostajati)", "nevažni": "unimportant", "šeficom": "boss (a woman; šefica)", "dogovorila": "agreed", "veseli": "looks forward (veseliti se)", "odlasku": "going (odlazak)", "rješenje": "solution", "priznaje": "admits", "omogućuje": "allows", "nit": "thread (izgubiti nit: to lose the thread)" },
-  "questions": [ { "q": "Što je tvrtka svima omogućila?", "a": ["rad od kuće", "kuće"] }, { "q": "U koliko je sati navečer Nina odgovarala na poruke?", "a": ["jedanaest", "11"] }, { "q": "Koliko dana tjedno Nina sada radi u uredu?", "a": ["dva", "2"] } ],
+  "gloss": {
+   "omogućila": "made possible",
+   "isprva": "at first",
+   "obradovala": "was glad (obradovati se)",
+   "gužvi": "jams, crowds (gužva)",
+   "prometu": "traffic (promet)",
+   "beskrajnih": "endless",
+   "sastanaka": "meetings (sastanak)",
+   "progutanog": "gulped down",
+   "zamišljala": "imagined",
+   "miru": "peace (mir)",
+   "nadohvat": "within reach",
+   "pravo": "right (dati za pravo: to prove right)",
+   "međutim": "however",
+   "poremetilo": "went wrong (poremetiti se)",
+   "produljivali": "grew longer (produljivati se)",
+   "primijetila": "noticed",
+   "granica": "boundary",
+   "poslovnog": "working",
+   "privatnog": "private",
+   "postajala": "was becoming",
+   "nejasnija": "more blurred",
+   "događalo": "happened (događati se)",
+   "pidžami": "pyjamas (pidžama)",
+   "ponajviše": "most of all",
+   "nedostajali": "were missed (nedostajati)",
+   "nevažni": "unimportant",
+   "šeficom": "boss (a woman; šefica)",
+   "dogovorila": "agreed",
+   "veseli": "looks forward (veseliti se)",
+   "odlasku": "going (odlazak)",
+   "rješenje": "solution",
+   "priznaje": "admits",
+   "omogućuje": "allows",
+   "nit": "thread (izgubiti nit: to lose the thread)"
+  },
+  "questions": [
+   {
+    "q": "Što je tvrtka svima omogućila?",
+    "a": [
+     "rad od kuće",
+     "kuće"
+    ]
+   },
+   {
+    "q": "U koliko je sati navečer Nina odgovarala na poruke?",
+    "a": [
+     "jedanaest",
+     "11"
+    ]
+   },
+   {
+    "q": "Koliko dana tjedno Nina sada radi u uredu?",
+    "a": [
+     "dva",
+     "2"
+    ]
+   }
+  ],
   "notice": "Sve with a comparative: \"postajala je sve nejasnija\" (it was becoming more and more blurred). Nedostajati works like 'to be missing to someone': \"Ponajviše su joj nedostajali nevažni razgovori\" means that most of all she missed the small talk.",
-  "back": [ ["Već je zamišljala kako radi u miru, sa šalicom čaja nadohvat ruke.", "She was already imagining herself working in peace, with a cup of tea within reach."], ["Prvi mjeseci dali su joj za pravo.", "The first months proved her right."] ]
+  "back": [
+   [
+    "Već je zamišljala kako radi u miru, sa šalicom čaja nadohvat ruke.",
+    "She was already imagining herself working in peace, with a cup of tea within reach."
+   ],
+   [
+    "Prvi mjeseci dali su joj za pravo.",
+    "The first months proved her right."
+   ]
+  ]
  },
  {
-  "id": "hr-vrt", "title": "Zajednički vrt", "level": "B2",
+  "id": "hr-vrt",
+  "title": "Zajednički vrt",
+  "level": "B2",
   "text": "Pokraj naše zgrade nekoć je bila zapuštena ledina na koju se nitko nije usuđivao stupiti. Prije dvije godine jedna je umirovljena susjeda predložila da je pretvorimo u zajednički povrtnjak. Zamisao je isprva izazvala više nepovjerenja nego oduševljenja. Tko će zalijevati za vrijeme praznika? Tko će ubirati plodove? Unatoč sumnjama, desetak stanara zasukalo je rukave. Očistili su zemljište od otpada, dovezli zemlju i sagradili drvene gredice. U početku su sadili bez ikakva reda, pa su neke biljke brzo propale. Danas ondje rastu rajčice, mahune i začinsko bilje. No najviše iznenađuje nešto drugo. Susjedi koji su se deset godina mimoilazili bez riječi sada satima razgovaraju. Ljeti se ondje navečer okupi pola ulice. Djeca uče odakle dolazi povrće, a stariji prenose svoje male tajne. Na kraju je taj vrt uzgojio mnogo više od povrća.",
-  "gloss": { "pokraj": "beside", "zgrade": "building (zgrada)", "nekoć": "once", "zapuštena": "neglected", "ledina": "patch of waste ground", "usuđivao": "dared (usuđivati se)", "stupiti": "to step", "umirovljena": "retired", "susjeda": "neighbour (a woman)", "predložila": "suggested", "pretvorimo": "we turn into", "zajednički": "shared", "povrtnjak": "vegetable garden", "zamisao": "idea", "izazvala": "aroused", "nepovjerenja": "mistrust (nepovjerenje)", "oduševljenja": "enthusiasm (oduševljenje)", "zalijevati": "to water", "praznika": "holidays (praznik)", "ubirati": "to gather", "plodove": "produce, fruits (plod)", "sumnjama": "doubts (sumnja)", "desetak": "about ten", "stanara": "residents (stanar)", "zasukalo": "rolled up (zasukati rukave: to roll up one's sleeves)", "rukave": "sleeves (rukav)", "zemljište": "plot of land", "otpada": "rubbish (otpad)", "dovezli": "brought in (by vehicle)", "sagradili": "built", "gredice": "beds (gredica)", "reda": "order (bez reda: in no order)", "biljke": "plants (biljka)", "propale": "died off", "rastu": "grow", "mahune": "green beans", "začinsko": "začinsko bilje: herbs", "iznenađuje": "surprises", "mimoilazili": "passed each other by (mimoilaziti se)", "okupi": "gathers (okupiti se)", "povrće": "vegetables", "prenose": "pass on", "tajne": "secrets (tajna)", "uzgojio": "grew, raised" },
-  "questions": [ { "q": "Tko je predložio zajednički povrtnjak?", "a": ["susjed"] }, { "q": "Od čega su stanari očistili zemljište?", "a": ["otpad"] }, { "q": "Što djeca uče u vrtu?", "a": ["povrć"] } ],
+  "gloss": {
+   "pokraj": "beside",
+   "zgrade": "building (zgrada)",
+   "nekoć": "once",
+   "zapuštena": "neglected",
+   "ledina": "patch of waste ground",
+   "usuđivao": "dared (usuđivati se)",
+   "stupiti": "to step",
+   "umirovljena": "retired",
+   "susjeda": "neighbour (a woman)",
+   "predložila": "suggested",
+   "pretvorimo": "we turn into",
+   "zajednički": "shared",
+   "povrtnjak": "vegetable garden",
+   "zamisao": "idea",
+   "izazvala": "aroused",
+   "nepovjerenja": "mistrust (nepovjerenje)",
+   "oduševljenja": "enthusiasm (oduševljenje)",
+   "zalijevati": "to water",
+   "praznika": "holidays (praznik)",
+   "ubirati": "to gather",
+   "plodove": "produce, fruits (plod)",
+   "sumnjama": "doubts (sumnja)",
+   "desetak": "about ten",
+   "stanara": "residents (stanar)",
+   "zasukalo": "rolled up (zasukati rukave: to roll up one's sleeves)",
+   "rukave": "sleeves (rukav)",
+   "zemljište": "plot of land",
+   "otpada": "rubbish (otpad)",
+   "dovezli": "brought in (by vehicle)",
+   "sagradili": "built",
+   "gredice": "beds (gredica)",
+   "reda": "order (bez reda: in no order)",
+   "biljke": "plants (biljka)",
+   "propale": "died off",
+   "rastu": "grow",
+   "mahune": "green beans",
+   "začinsko": "začinsko bilje: herbs",
+   "iznenađuje": "surprises",
+   "mimoilazili": "passed each other by (mimoilaziti se)",
+   "okupi": "gathers (okupiti se)",
+   "povrće": "vegetables",
+   "prenose": "pass on",
+   "tajne": "secrets (tajna)",
+   "uzgojio": "grew, raised"
+  },
+  "questions": [
+   {
+    "q": "Tko je predložio zajednički povrtnjak?",
+    "a": [
+     "susjed"
+    ]
+   },
+   {
+    "q": "Od čega su stanari očistili zemljište?",
+    "a": [
+     "otpad"
+    ]
+   },
+   {
+    "q": "Što djeca uče u vrtu?",
+    "a": [
+     "povrć"
+    ]
+   }
+  ],
   "notice": "The future is ću, ćeš, će with the infinitive: \"Tko će zalijevati za vrijeme praznika?\", \"Tko će ubirati plodove?\". Words for rough amounts such as desetak (about ten) take the genitive plural: \"desetak stanara\".",
-  "back": [ ["Zamisao je isprva izazvala više nepovjerenja nego oduševljenja.", "At first the idea aroused more mistrust than enthusiasm."],["Na kraju je taj vrt uzgojio mnogo više od povrća.", "In the end that garden grew much more than vegetables."] ]
+  "back": [
+   [
+    "Zamisao je isprva izazvala više nepovjerenja nego oduševljenja.",
+    "At first the idea aroused more mistrust than enthusiasm."
+   ],
+   [
+    "Na kraju je taj vrt uzgojio mnogo više od povrća.",
+    "In the end that garden grew much more than vegetables."
+   ]
+  ]
  },
  {
-  "id": "hr-d-pekarnica", "title": "U pekarnici", "level": "A1",
-  "roles": ["Pekarica", "Kupac"],
-  "lines": [ [0, "Dobro jutro! Izvolite?"], [1, "Dobro jutro. Molim vas jedan kruh."], [0, "Bijeli ili crni?"], [1, "Crni, molim. Imate li kroasane?"], [0, "Nažalost, kroasana više nema. Imamo svježe krafne."], [1, "Dobro, onda uzimam jednu krafnu."], [0, "Izvolite. Još nešto?"], [1, "Ne, hvala, to je sve. Koliko sam dužan?"], [0, "Dva eura i pedeset centi."], [1, "Mogu li platiti karticom?"], [0, "Naravno. Hvala i ugodan dan!"], [1, "Hvala, doviđenja!"] ],
-  "gloss": { "izvolite": "what would you like? (also: here you are)", "kruh": "bread", "bijeli": "white", "crni": "brown, dark", "nažalost": "unfortunately", "svježe": "fresh", "krafne": "doughnuts (krafna)", "uzimam": "I'll take", "dužan": "owing (koliko sam dužan: how much do I owe)", "platiti": "to pay", "karticom": "by card (kartica)", "ugodan": "pleasant" },
-  "questions": [ { "q": "Kakav kruh kupac želi?", "a": ["crni"] }, { "q": "Čega više nema u pekarnici?", "a": ["kroasan"] } ],
+  "id": "hr-kisobran",
+  "title": "Žuti kišobran",
+  "level": "A2",
+  "text": "Jutros jako pada kiša i Petra ne može naći svoj kišobran. Traži ga u hodniku, ispod kreveta i u autu, ali nema ga nigdje. Zato uzima stari žuti kišobran svoje bake, koji je vrlo velik i malo smiješan. Na ulici se ljudi smiješe kad prolazi. Na autobusnoj stanici jedna djevojčica pita smije li stati ispod njega, jer je svoj zaboravila. Zatim dolazi jedan stariji gospodin, a poslije i žena s bebom. Uskoro ih je petero ispod žutog kišobrana i svi se smiju. Kad autobus stigne, kiša prestane. Navečer Petra nalazi svoj mali crni kišobran u sportskoj torbi. Sprema ga u ormar i odlučuje zadržati žuti.",
+  "gloss": {
+   "pada": "pada kiša: it is raining",
+   "kišobran": "umbrella",
+   "hodniku": "hall (hodnik)",
+   "nigdje": "nowhere",
+   "uzima": "takes",
+   "žuti": "yellow",
+   "smiješan": "funny, silly-looking",
+   "smiješe": "smile (smiješiti se)",
+   "stanici": "stop, station (stanica)",
+   "zaboravila": "forgot",
+   "stariji": "elderly",
+   "uskoro": "soon",
+   "petero": "five (people together)",
+   "prestane": "stops",
+   "torbi": "bag (torba)",
+   "sprema": "puts away",
+   "ormar": "cupboard, wardrobe",
+   "zadržati": "to keep"
+  },
+  "questions": [
+   {
+    "q": "Koje je boje bakin kišobran?",
+    "a": [
+     "žuti"
+    ]
+   },
+   {
+    "q": "Koliko ih je na kraju ispod kišobrana?",
+    "a": [
+     "petero",
+     "5"
+    ]
+   },
+   {
+    "q": "Gdje Petra nalazi svoj mali kišobran?",
+    "a": [
+     "torbi"
+    ]
+   }
+  ],
+  "notice": "\"Nema ga nigdje\": Croatian piles up negatives (nema ... nigdje), and what is missing stands in the genitive (ga). \"Svoj\" is used instead of moj / njezin when the owner is the subject of the sentence.",
+  "back": [
+   [
+    "Na ulici se ljudi smiješe kad prolazi.",
+    "In the street, people smile when she goes by."
+   ],
+   [
+    "Kad autobus stigne, kiša prestane.",
+    "When the bus arrives, the rain stops."
+   ]
+  ]
+ },
+ {
+  "id": "hr-pas-park",
+  "title": "Pas u parku",
+  "level": "A2",
+  "text": "U subotu poslijepodne Luka i njegova sestra igraju se loptom u parku. Mali smeđi pas dotrči i uzme loptu u usta. Djeca se smiju, ali ne vide nikoga uz njega. Pas nosi crvenu ogrlicu s telefonskim brojem. Luka zove maminim mobitelom. Javlja se jedna gospođa: traži psa od jutra i jako je zabrinuta. Deset minuta poslije dolazi u park biciklom. Pas joj skače u naručje i liže joj lice. Da zahvali djeci, gospođa im kupuje dva sladoleda od čokolade. Prije nego što ode, kaže im da se pas zove Keks i da obožava lopte. Sljedeće subote Keks opet dolazi u park, ali ovaj put sa svojom vlasnicom.",
+  "gloss": {
+   "loptom": "with a ball (lopta)",
+   "smeđi": "brown",
+   "dotrči": "runs up",
+   "usta": "mouth",
+   "ogrlicu": "collar (ogrlica)",
+   "brojem": "number (broj)",
+   "mobitelom": "on the mobile phone (mobitel)",
+   "javlja": "javlja se: answers",
+   "zabrinuta": "worried",
+   "biciklom": "by bike",
+   "skače": "jumps",
+   "naručje": "arms, lap",
+   "liže": "licks",
+   "lice": "face",
+   "zahvali": "thanks",
+   "sladoleda": "ice creams (sladoled)",
+   "vlasnicom": "owner (a woman; vlasnica)"
+  },
+  "questions": [
+   {
+    "q": "Što pas uzme u usta?",
+    "a": [
+     "loptu"
+    ]
+   },
+   {
+    "q": "Koje je boje ogrlica?",
+    "a": [
+     "crvenu"
+    ]
+   },
+   {
+    "q": "Čime gospođa dolazi u park?",
+    "a": [
+     "biciklom"
+    ]
+   }
+  ],
+  "notice": "\"Dolazi biciklom\", \"zove mobitelom\", \"igraju se loptom\": the instrumental alone, with no preposition, says by what means something is done. With a person or company it takes \"s\": \"sa svojom vlasnicom\".",
+  "back": [
+   [
+    "Pas nosi crvenu ogrlicu s telefonskim brojem.",
+    "The dog is wearing a red collar with a phone number."
+   ],
+   [
+    "Deset minuta poslije dolazi u park biciklom.",
+    "Ten minutes later she arrives at the park by bike."
+   ]
+  ]
+ },
+ {
+  "id": "hr-kutija",
+  "title": "Zaboravljena kutija",
+  "level": "B1",
+  "text": "Kad smo se selili u Rijeku, unajmili smo kombi da prevezemo svoje stvari. Brat je vozio, a ja sam straga pazio na kutije. Putovali smo cijeli dan i stigli kad je već pao mrak. Dok sam praznio kombi, shvatio sam da jedna kutija nedostaje: ona sa svim našim obiteljskim fotografijama. Vjerojatno smo je ostavili na pločniku ispred starog stana. Nazvao sam našu bivšu susjedu bez puno nade, jer je već bilo kasno. Rekla mi je da ju je vidjela kad je izvodila psa i da ju je spremila u svoju garažu. Čak se ponudila da nam je pošalje poštom. Tjedan dana poslije kutija je stigla, uz lijepu poruku i staklenku pekmeza. Otada joj svake godine pišemo za Božić.",
+  "gloss": {
+   "selili": "were moving (house)",
+   "unajmili": "rented",
+   "kombi": "van",
+   "prevezemo": "transport",
+   "straga": "in the back",
+   "pazio": "kept an eye on",
+   "kutije": "boxes",
+   "mrak": "darkness (pao je mrak: it got dark)",
+   "praznio": "was emptying",
+   "shvatio": "realised",
+   "nedostaje": "is missing",
+   "pločniku": "pavement (pločnik)",
+   "susjedu": "neighbour (a woman; susjeda)",
+   "nade": "hope (nada)",
+   "spremila": "put away",
+   "ponudila": "offered",
+   "staklenku": "jar (staklenka)",
+   "pekmeza": "jam (pekmez)"
+  },
+  "questions": [
+   {
+    "q": "U koji su se grad selili?",
+    "a": [
+     "Rijeku"
+    ]
+   },
+   {
+    "q": "Što je bilo u kutiji koja je nedostajala?",
+    "a": [
+     "fotografijama"
+    ]
+   },
+   {
+    "q": "Kamo ju je susjeda spremila?",
+    "a": [
+     "garažu"
+    ]
+   }
+  ],
+  "notice": "\"Rekla mi je da ju je vidjela\": the short words (mi, je, ju, se) come second in their clause and in a fixed order. Here the narrator is a man (pazio, shvatio); a woman would say pazila, shvatila.",
+  "back": [
+   [
+    "Brat je vozio, a ja sam straga pazio na kutije.",
+    "My brother drove, and I kept an eye on the boxes in the back."
+   ],
+   [
+    "Čak se ponudila da nam je pošalje poštom.",
+    "She even offered to send it to us by post."
+   ]
+  ]
+ },
+ {
+  "id": "hr-tecaj-kuhanja",
+  "title": "Tečaj kuhanja",
+  "level": "B1",
+  "text": "Za rođendan su Bernardu djeca poklonila tečaj kuhanja. Najprije se uvrijedio, jer je mislio da kuha vrlo dobro. Na dan tečaja našao se s još osam polaznika pred mladim i nasmijanim kuharom. Trebalo je ispeći pitu od jabuka, a Bernard ju je pekao već četrdeset godina. Zato je radio brzo i nije slušao upute. No kad su pite izašle iz pećnice, njegova je bila zagorjela, a tijesto tvrdo. Pita njegove susjede, koja nikad prije nije pekla, bila je savršena. Kuhar je kušao obje bez riječi, a onda je Bernardu pokazao kako se tijesto nježnije razvlači. Bernard je počeo ispočetka i ovaj put pratio svaki korak. Navečer je odnio svoju drugu pitu djeci. Priznao je da se i sa sedamdeset godina još može nešto naučiti.",
+  "gloss": {
+   "rođendan": "birthday",
+   "poklonila": "gave (as a present)",
+   "tečaj": "course, class",
+   "uvrijedio": "took offence",
+   "polaznika": "course members (polaznik)",
+   "nasmijanim": "smiling",
+   "kuharom": "cook, chef (kuhar)",
+   "ispeći": "to bake",
+   "pitu": "pie (pita)",
+   "upute": "instructions",
+   "pećnice": "oven (pećnica)",
+   "zagorjela": "burnt",
+   "tijesto": "pastry, dough",
+   "tvrdo": "hard",
+   "kušao": "tasted",
+   "razvlači": "is rolled out, stretched",
+   "korak": "step",
+   "priznao": "admitted"
+  },
+  "questions": [
+   {
+    "q": "Što je trebalo ispeći?",
+    "a": [
+     "pitu",
+     "pita"
+    ]
+   },
+   {
+    "q": "Kakvo je bilo Bernardovo tijesto?",
+    "a": [
+     "tvrdo"
+    ]
+   },
+   {
+    "q": "Tko je kušao obje pite?",
+    "a": [
+     "kuhar"
+    ]
+   }
+  ],
+  "notice": "\"Bernard ju je pekao već četrdeset godina\": pekao (imperfective) is what he had been doing for years, ispeći (perfective) is the one pie to be baked that day. Croatian chooses the aspect where English chooses a tense.",
+  "back": [
+   [
+    "Zato je radio brzo i nije slušao upute.",
+    "So he worked fast and did not listen to the instructions."
+   ],
+   [
+    "Navečer je odnio svoju drugu pitu djeci.",
+    "In the evening he took his second pie to his children."
+   ]
+  ]
+ },
+ {
+  "id": "hr-d-pekarnica",
+  "title": "U pekarnici",
+  "level": "A1",
+  "roles": [
+   "Pekarica",
+   "Kupac"
+  ],
+  "lines": [
+   [
+    0,
+    "Dobro jutro! Izvolite?"
+   ],
+   [
+    1,
+    "Dobro jutro. Molim vas jedan kruh."
+   ],
+   [
+    0,
+    "Bijeli ili crni?"
+   ],
+   [
+    1,
+    "Crni, molim. Imate li kroasane?"
+   ],
+   [
+    0,
+    "Nažalost, kroasana više nema. Imamo svježe krafne."
+   ],
+   [
+    1,
+    "Dobro, onda uzimam jednu krafnu."
+   ],
+   [
+    0,
+    "Izvolite. Još nešto?"
+   ],
+   [
+    1,
+    "Ne, hvala, to je sve. Koliko sam dužan?"
+   ],
+   [
+    0,
+    "Dva eura i pedeset centi."
+   ],
+   [
+    1,
+    "Mogu li platiti karticom?"
+   ],
+   [
+    0,
+    "Naravno. Hvala i ugodan dan!"
+   ],
+   [
+    1,
+    "Hvala, doviđenja!"
+   ]
+  ],
+  "gloss": {
+   "izvolite": "what would you like? (also: here you are)",
+   "kruh": "bread",
+   "bijeli": "white",
+   "crni": "brown, dark",
+   "nažalost": "unfortunately",
+   "svježe": "fresh",
+   "krafne": "doughnuts (krafna)",
+   "uzimam": "I'll take",
+   "dužan": "owing (koliko sam dužan: how much do I owe)",
+   "platiti": "to pay",
+   "karticom": "by card (kartica)",
+   "ugodan": "pleasant"
+  },
+  "questions": [
+   {
+    "q": "Kakav kruh kupac želi?",
+    "a": [
+     "crni"
+    ]
+   },
+   {
+    "q": "Čega više nema u pekarnici?",
+    "a": [
+     "kroasan"
+    ]
+   }
+  ],
   "notice": "Molim vas and the thing you want is the simple polite way to ask: \"Molim vas jedan kruh\". Imate li…? asks whether they have something: \"Imate li kroasane?\" The customer here is a man: \"Koliko sam dužan?\"; a woman says \"Koliko sam dužna?\"."
  },
  {
-  "id": "hr-d-put", "title": "Gdje je kolodvor?", "level": "A1",
-  "roles": ["Prolaznica", "Turist"],
-  "lines": [ [1, "Oprostite, gdje je autobusni kolodvor?"], [0, "Nije daleko. Idite ravno do semafora."], [1, "Ravno do semafora. A onda?"], [0, "Onda skrenite lijevo kod ljekarne."], [1, "Molim vas, možete li ponoviti sporije?"], [0, "Naravno. Ravno do semafora, zatim lijevo kod ljekarne."], [1, "Hvala. Je li kolodvor s lijeve ili s desne strane?"], [0, "S desne strane, preko puta parka."], [1, "Koliko mi treba pješice?"], [0, "Oko deset minuta."], [1, "Puno vam hvala na pomoći!"], [0, "Nema na čemu. Sretan put!"] ],
-  "gloss": { "oprostite": "excuse me", "kolodvor": "station", "daleko": "far", "ravno": "straight on", "semafora": "traffic lights (semafor)", "skrenite": "turn", "lijevo": "left", "ljekarne": "pharmacy (ljekarna)", "ponoviti": "to repeat", "sporije": "more slowly", "desne": "right (s desne strane: on the right)", "preko": "across (preko puta: opposite)", "pješice": "on foot", "pomoći": "help (pomoć)", "sretan": "happy (sretan put: have a good trip)" },
-  "questions": [ { "q": "Što turist traži?", "a": ["kolodvor"] }, { "q": "Kod čega treba skrenuti lijevo?", "a": ["ljekarn"] } ],
+  "id": "hr-d-put",
+  "title": "Gdje je kolodvor?",
+  "level": "A1",
+  "roles": [
+   "Prolaznica",
+   "Turist"
+  ],
+  "lines": [
+   [
+    1,
+    "Oprostite, gdje je autobusni kolodvor?"
+   ],
+   [
+    0,
+    "Nije daleko. Idite ravno do semafora."
+   ],
+   [
+    1,
+    "Ravno do semafora. A onda?"
+   ],
+   [
+    0,
+    "Onda skrenite lijevo kod ljekarne."
+   ],
+   [
+    1,
+    "Molim vas, možete li ponoviti sporije?"
+   ],
+   [
+    0,
+    "Naravno. Ravno do semafora, zatim lijevo kod ljekarne."
+   ],
+   [
+    1,
+    "Hvala. Je li kolodvor s lijeve ili s desne strane?"
+   ],
+   [
+    0,
+    "S desne strane, preko puta parka."
+   ],
+   [
+    1,
+    "Koliko mi treba pješice?"
+   ],
+   [
+    0,
+    "Oko deset minuta."
+   ],
+   [
+    1,
+    "Puno vam hvala na pomoći!"
+   ],
+   [
+    0,
+    "Nema na čemu. Sretan put!"
+   ]
+  ],
+  "gloss": {
+   "oprostite": "excuse me",
+   "kolodvor": "station",
+   "daleko": "far",
+   "ravno": "straight on",
+   "semafora": "traffic lights (semafor)",
+   "skrenite": "turn",
+   "lijevo": "left",
+   "ljekarne": "pharmacy (ljekarna)",
+   "ponoviti": "to repeat",
+   "sporije": "more slowly",
+   "desne": "right (s desne strane: on the right)",
+   "preko": "across (preko puta: opposite)",
+   "pješice": "on foot",
+   "pomoći": "help (pomoć)",
+   "sretan": "happy (sretan put: have a good trip)"
+  },
+  "questions": [
+   {
+    "q": "Što turist traži?",
+    "a": [
+     "kolodvor"
+    ]
+   },
+   {
+    "q": "Kod čega treba skrenuti lijevo?",
+    "a": [
+     "ljekarn"
+    ]
+   }
+  ],
   "notice": "Polite commands to a stranger end in -te (-ite or -jte): \"Idite ravno\", \"skrenite lijevo\". Možete li…? (can you…?) softens a request: \"možete li ponoviti polako?\""
  },
  {
-  "id": "hr-d-susjed", "title": "Novi susjed", "level": "A1",
-  "roles": ["Susjeda", "Novi stanar"],
-  "lines": [ [0, "Dobar dan! Vi ste novi susjed?"], [1, "Dobar dan. Da, jučer sam se doselio."], [0, "Dobro došli! Ja sam Vesna, stanujem na prvom katu."], [1, "Drago mi je. Ja sam Robert."], [0, "Odakle ste, Roberte?"], [1, "Iz Kanade sam, ali sada radim u Zagrebu."], [0, "Jako dobro govorite hrvatski!"], [1, "Hvala, još učim. Govorim polako."], [0, "Ako vam nešto treba, samo pozvonite."], [1, "Hvala vam. Gdje je najbliža trgovina?"], [0, "Iza ugla, pokraj pošte. Radi do devet navečer."], [1, "Odlično. Hvala i vidimo se!"] ],
-  "gloss": { "susjed": "neighbour", "jučer": "yesterday", "doselio": "moved in (doseliti se)", "došli": "dobro došli: welcome", "stanujem": "I live", "katu": "floor (kat)", "drago": "glad (drago mi je: pleased to meet you)", "odakle": "where from", "govorite": "you speak", "hrvatski": "Croatian", "učim": "I am learning", "treba": "is needed (ako vam nešto treba: if you need anything)", "pozvonite": "ring the bell", "najbliža": "nearest", "trgovina": "shop", "ugla": "corner (iza ugla: round the corner)", "pošte": "post office (pošta)" },
-  "questions": [ { "q": "Odakle je Robert?", "a": ["Kanad"] }, { "q": "Što Robert traži na kraju razgovora?", "a": ["trgovin"] } ],
+  "id": "hr-d-susjed",
+  "title": "Novi susjed",
+  "level": "A1",
+  "roles": [
+   "Susjeda",
+   "Novi stanar"
+  ],
+  "lines": [
+   [
+    0,
+    "Dobar dan! Vi ste novi susjed?"
+   ],
+   [
+    1,
+    "Dobar dan. Da, jučer sam se doselio."
+   ],
+   [
+    0,
+    "Dobro došli! Ja sam Vesna, stanujem na prvom katu."
+   ],
+   [
+    1,
+    "Drago mi je. Ja sam Robert."
+   ],
+   [
+    0,
+    "Odakle ste, Roberte?"
+   ],
+   [
+    1,
+    "Iz Kanade sam, ali sada radim u Zagrebu."
+   ],
+   [
+    0,
+    "Jako dobro govorite hrvatski!"
+   ],
+   [
+    1,
+    "Hvala, još učim. Govorim polako."
+   ],
+   [
+    0,
+    "Ako vam nešto treba, samo pozvonite."
+   ],
+   [
+    1,
+    "Hvala vam. Gdje je najbliža trgovina?"
+   ],
+   [
+    0,
+    "Iza ugla, pokraj pošte. Radi do devet navečer."
+   ],
+   [
+    1,
+    "Odlično. Hvala i vidimo se!"
+   ]
+  ],
+  "gloss": {
+   "susjed": "neighbour",
+   "jučer": "yesterday",
+   "doselio": "moved in (doseliti se)",
+   "došli": "dobro došli: welcome",
+   "stanujem": "I live",
+   "katu": "floor (kat)",
+   "drago": "glad (drago mi je: pleased to meet you)",
+   "odakle": "where from",
+   "govorite": "you speak",
+   "hrvatski": "Croatian",
+   "učim": "I am learning",
+   "treba": "is needed (ako vam nešto treba: if you need anything)",
+   "pozvonite": "ring the bell",
+   "najbliža": "nearest",
+   "trgovina": "shop",
+   "ugla": "corner (iza ugla: round the corner)",
+   "pošte": "post office (pošta)"
+  },
+  "questions": [
+   {
+    "q": "Odakle je Robert?",
+    "a": [
+     "Kanad"
+    ]
+   },
+   {
+    "q": "Što Robert traži na kraju razgovora?",
+    "a": [
+     "trgovin"
+    ]
+   }
+  ],
   "notice": "Biti (to be): ja sam, vi ste. \"Ja sam iz Kanade\" uses iz with the genitive for where you come from. A name changes when you speak to the person: \"Odakle ste, Roberte?\" The new tenant here is a man: \"doselio\"; a woman says \"jučer sam se doselila\"."
  },
  {
-  "id": "hr-d-ljekarna", "title": "U ljekarni", "level": "A2",
-  "roles": ["Ljekarnica", "Kupac"],
-  "lines": [ [0, "Dobar dan. Kako vam mogu pomoći?"], [1, "Dobar dan. Već tri dana me boli grlo i kašljem."], [0, "Imate li temperaturu?"], [1, "Sinoć sam imao malo povišenu temperaturu, ali danas nemam."], [0, "Je li kašalj suh?"], [1, "Da, suh je i ne da mi spavati."], [0, "Preporučujem vam ovaj sirup i pastile za grlo."], [1, "Mogu li dobiti i antibiotik?"], [0, "Ne, za antibiotik vam treba recept. Osim toga, ne pomaže protiv prehlade."], [1, "Razumijem. Koliko često trebam uzimati sirup?"], [0, "Jednu žlicu tri puta dnevno, poslije jela."], [1, "Dobro. Uzet ću sirup i pastile."], [0, "Izvolite. Ako vam za tri dana ne bude bolje, otiđite liječniku."], [1, "Hoću. Hvala i doviđenja."] ],
-  "gloss": { "pomoći": "to help", "boli": "hurts", "grlo": "throat", "kašljem": "I cough", "temperaturu": "a temperature, fever", "sinoć": "last night", "povišenu": "raised", "kašalj": "cough", "suh": "dry", "preporučujem": "I recommend", "sirup": "syrup", "pastile": "lozenges", "dobiti": "to get", "recept": "prescription", "osim": "besides (osim toga: besides that)", "pomaže": "helps", "prehlade": "cold (prehlada)", "razumijem": "I understand", "često": "often", "žlicu": "spoon (žlica)", "dnevno": "a day", "jela": "meal (poslije jela: after meals)", "otiđite": "go", "liječniku": "doctor (liječnik)" },
-  "questions": [ { "q": "Što kupca boli?", "a": ["grlo"] }, { "q": "Što kupcu treba za antibiotik?", "a": ["recept"] } ],
+  "id": "hr-d-ljekarna",
+  "title": "U ljekarni",
+  "level": "A2",
+  "roles": [
+   "Ljekarnica",
+   "Kupac"
+  ],
+  "lines": [
+   [
+    0,
+    "Dobar dan. Kako vam mogu pomoći?"
+   ],
+   [
+    1,
+    "Dobar dan. Već tri dana me boli grlo i kašljem."
+   ],
+   [
+    0,
+    "Imate li temperaturu?"
+   ],
+   [
+    1,
+    "Sinoć sam imao malo povišenu temperaturu, ali danas nemam."
+   ],
+   [
+    0,
+    "Je li kašalj suh?"
+   ],
+   [
+    1,
+    "Da, suh je i ne da mi spavati."
+   ],
+   [
+    0,
+    "Preporučujem vam ovaj sirup i pastile za grlo."
+   ],
+   [
+    1,
+    "Mogu li dobiti i antibiotik?"
+   ],
+   [
+    0,
+    "Ne, za antibiotik vam treba recept. Osim toga, ne pomaže protiv prehlade."
+   ],
+   [
+    1,
+    "Razumijem. Koliko često trebam uzimati sirup?"
+   ],
+   [
+    0,
+    "Jednu žlicu tri puta dnevno, poslije jela."
+   ],
+   [
+    1,
+    "Dobro. Uzet ću sirup i pastile."
+   ],
+   [
+    0,
+    "Izvolite. Ako vam za tri dana ne bude bolje, otiđite liječniku."
+   ],
+   [
+    1,
+    "Hoću. Hvala i doviđenja."
+   ]
+  ],
+  "gloss": {
+   "pomoći": "to help",
+   "boli": "hurts",
+   "grlo": "throat",
+   "kašljem": "I cough",
+   "temperaturu": "a temperature, fever",
+   "sinoć": "last night",
+   "povišenu": "raised",
+   "kašalj": "cough",
+   "suh": "dry",
+   "preporučujem": "I recommend",
+   "sirup": "syrup",
+   "pastile": "lozenges",
+   "dobiti": "to get",
+   "recept": "prescription",
+   "osim": "besides (osim toga: besides that)",
+   "pomaže": "helps",
+   "prehlade": "cold (prehlada)",
+   "razumijem": "I understand",
+   "često": "often",
+   "žlicu": "spoon (žlica)",
+   "dnevno": "a day",
+   "jela": "meal (poslije jela: after meals)",
+   "otiđite": "go",
+   "liječniku": "doctor (liječnik)"
+  },
+  "questions": [
+   {
+    "q": "Što kupca boli?",
+    "a": [
+     "grlo"
+    ]
+   },
+   {
+    "q": "Što kupcu treba za antibiotik?",
+    "a": [
+     "recept"
+    ]
+   }
+  ],
   "notice": "Trebati has two patterns: \"vam treba recept\" (you need a prescription: the thing needed is the subject) and \"trebam uzimati\" (I should take). The future uses ću: \"Uzet ću sirup\". The customer here is a man: \"imao\"; a woman says \"Sinoć sam imala\"."
  },
  {
-  "id": "hr-d-hotel", "title": "Na recepciji hotela", "level": "A2",
-  "roles": ["Recepcionar", "Gošća"],
-  "lines": [ [0, "Dobra večer, dobro došli. Izvolite?"], [1, "Dobra večer. Imam rezervaciju na ime Kovač."], [0, "Samo trenutak. Da, dvokrevetna soba, tri noćenja."], [1, "Tako je. Rezervirala sam sobu s pogledom na more."], [0, "Žao mi je, ta soba još nije slobodna. Mogu vam ponuditi sobu s pogledom na vrt."], [1, "To mi ne odgovara. Možete li provjeriti još jednom?"], [0, "Naravno. Sutra se oslobađa soba na trećem katu, s balkonom i pogledom na more."], [1, "Dobro, večeras ću uzeti sobu s pogledom na vrt, a sutra se selim."], [0, "Odlično. Zbog neugodnosti vam nudimo besplatan doručak."], [1, "Hvala, to je lijepo od vas. U koliko je sati doručak?"], [0, "Od sedam do deset, u restoranu u prizemlju."], [1, "A ima li u sobi bežičnog interneta?"], [0, "Ima, lozinka je na kartici. Izvolite ključ."], [1, "Hvala vam. Laku noć!"] ],
-  "gloss": { "rezervaciju": "booking (rezervacija)", "trenutak": "moment", "dvokrevetna": "double (room)", "noćenja": "nights (noćenje)", "pogledom": "view (pogled)", "slobodna": "free", "ponuditi": "to offer", "odgovara": "suits (to mi ne odgovara: that does not suit me)", "provjeriti": "to check", "oslobađa": "becomes free (oslobađati se)", "balkonom": "balcony (balkon)", "večeras": "tonight", "selim": "I move (seliti se)", "neugodnosti": "inconvenience (neugodnost)", "besplatan": "free of charge", "doručak": "breakfast", "prizemlju": "ground floor (prizemlje)", "bežičnog": "wireless (bežični)", "lozinka": "password", "ključ": "key" },
-  "questions": [ { "q": "Kakav je pogled gošća rezervirala?", "a": ["more"] }, { "q": "Što hotel nudi besplatno zbog neugodnosti?", "a": ["doručak"] } ],
+  "id": "hr-d-hotel",
+  "title": "Na recepciji hotela",
+  "level": "A2",
+  "roles": [
+   "Recepcionar",
+   "Gošća"
+  ],
+  "lines": [
+   [
+    0,
+    "Dobra večer, dobro došli. Izvolite?"
+   ],
+   [
+    1,
+    "Dobra večer. Imam rezervaciju na ime Kovač."
+   ],
+   [
+    0,
+    "Samo trenutak. Da, dvokrevetna soba, tri noćenja."
+   ],
+   [
+    1,
+    "Tako je. Rezervirala sam sobu s pogledom na more."
+   ],
+   [
+    0,
+    "Žao mi je, ta soba još nije slobodna. Mogu vam ponuditi sobu s pogledom na vrt."
+   ],
+   [
+    1,
+    "To mi ne odgovara. Možete li provjeriti još jednom?"
+   ],
+   [
+    0,
+    "Naravno. Sutra se oslobađa soba na trećem katu, s balkonom i pogledom na more."
+   ],
+   [
+    1,
+    "Dobro, večeras ću uzeti sobu s pogledom na vrt, a sutra se selim."
+   ],
+   [
+    0,
+    "Odlično. Zbog neugodnosti vam nudimo besplatan doručak."
+   ],
+   [
+    1,
+    "Hvala, to je lijepo od vas. U koliko je sati doručak?"
+   ],
+   [
+    0,
+    "Od sedam do deset, u restoranu u prizemlju."
+   ],
+   [
+    1,
+    "A ima li u sobi bežičnog interneta?"
+   ],
+   [
+    0,
+    "Ima, lozinka je na kartici. Izvolite ključ."
+   ],
+   [
+    1,
+    "Hvala vam. Laku noć!"
+   ]
+  ],
+  "gloss": {
+   "rezervaciju": "booking (rezervacija)",
+   "trenutak": "moment",
+   "dvokrevetna": "double (room)",
+   "noćenja": "nights (noćenje)",
+   "pogledom": "view (pogled)",
+   "slobodna": "free",
+   "ponuditi": "to offer",
+   "odgovara": "suits (to mi ne odgovara: that does not suit me)",
+   "provjeriti": "to check",
+   "oslobađa": "becomes free (oslobađati se)",
+   "balkonom": "balcony (balkon)",
+   "večeras": "tonight",
+   "selim": "I move (seliti se)",
+   "neugodnosti": "inconvenience (neugodnost)",
+   "besplatan": "free of charge",
+   "doručak": "breakfast",
+   "prizemlju": "ground floor (prizemlje)",
+   "bežičnog": "wireless (bežični)",
+   "lozinka": "password",
+   "ključ": "key"
+  },
+  "questions": [
+   {
+    "q": "Kakav je pogled gošća rezervirala?",
+    "a": [
+     "more"
+    ]
+   },
+   {
+    "q": "Što hotel nudi besplatno zbog neugodnosti?",
+    "a": [
+     "doručak"
+    ]
+   }
+  ],
   "notice": "The past tense agrees with the speaker: a woman says \"Rezervirala sam sobu\", a man rezervirao sam. S with the instrumental means with: \"s pogledom na more\", \"s balkonom\"."
  },
  {
-  "id": "hr-d-stol", "title": "Rezervacija stola", "level": "A2",
-  "roles": ["Konobar", "Gost"],
-  "lines": [ [0, "Restoran Maslina, dobar dan."], [1, "Dobar dan. Htio bih rezervirati stol za subotu navečer."], [0, "Za koliko osoba?"], [1, "Bit će nas četvero, dvoje odraslih i dvoje djece."], [0, "U koliko sati želite doći?"], [1, "Oko osam, ako je moguće."], [0, "Nažalost, u osam je sve zauzeto. Imam slobodan stol u sedam ili u devet."], [1, "Onda radije u sedam. Može li stol biti na terasi?"], [0, "Može, ako ne bude kiše. Na koje ime?"], [1, "Na ime Babić. Imate li jela bez mesa?"], [0, "Imamo, nekoliko jela s povrćem i ribom."], [1, "Izvrsno. Trebam li ostaviti broj telefona?"], [0, "Da, molim vas, za svaki slučaj."], [1, "Poslat ću vam ga porukom. Hvala i do subote!"] ],
-  "gloss": { "htio": "htio bih: I would like", "rezervirati": "to book", "osoba": "people (osoba: person)", "četvero": "four (people)", "dvoje": "two (people)", "odraslih": "adults", "moguće": "possible", "zauzeto": "taken, full", "slobodan": "free", "radije": "rather", "terasi": "terrace", "ime": "name", "jela": "dishes (jelo)", "mesa": "meat (meso)", "povrćem": "vegetables (povrće)", "ribom": "fish (riba)", "izvrsno": "excellent", "ostaviti": "to leave", "slučaj": "case (za svaki slučaj: just in case)", "poslat": "send (poslat ću: I will send)", "porukom": "by message (poruka)" },
-  "questions": [ { "q": "Za koji dan gost rezervira stol?", "a": ["subot"] }, { "q": "Gdje gost želi sjediti?", "a": ["teras"] } ],
+  "id": "hr-d-stol",
+  "title": "Rezervacija stola",
+  "level": "A2",
+  "roles": [
+   "Konobar",
+   "Gost"
+  ],
+  "lines": [
+   [
+    0,
+    "Restoran Maslina, dobar dan."
+   ],
+   [
+    1,
+    "Dobar dan. Htio bih rezervirati stol za subotu navečer."
+   ],
+   [
+    0,
+    "Za koliko osoba?"
+   ],
+   [
+    1,
+    "Bit će nas četvero, dvoje odraslih i dvoje djece."
+   ],
+   [
+    0,
+    "U koliko sati želite doći?"
+   ],
+   [
+    1,
+    "Oko osam, ako je moguće."
+   ],
+   [
+    0,
+    "Nažalost, u osam je sve zauzeto. Imam slobodan stol u sedam ili u devet."
+   ],
+   [
+    1,
+    "Onda radije u sedam. Može li stol biti na terasi?"
+   ],
+   [
+    0,
+    "Može, ako ne bude kiše. Na koje ime?"
+   ],
+   [
+    1,
+    "Na ime Babić. Imate li jela bez mesa?"
+   ],
+   [
+    0,
+    "Imamo, nekoliko jela s povrćem i ribom."
+   ],
+   [
+    1,
+    "Izvrsno. Trebam li ostaviti broj telefona?"
+   ],
+   [
+    0,
+    "Da, molim vas, za svaki slučaj."
+   ],
+   [
+    1,
+    "Poslat ću vam ga porukom. Hvala i do subote!"
+   ]
+  ],
+  "gloss": {
+   "htio": "htio bih: I would like",
+   "rezervirati": "to book",
+   "osoba": "people (osoba: person)",
+   "četvero": "four (people)",
+   "dvoje": "two (people)",
+   "odraslih": "adults",
+   "moguće": "possible",
+   "zauzeto": "taken, full",
+   "slobodan": "free",
+   "radije": "rather",
+   "terasi": "terrace",
+   "ime": "name",
+   "jela": "dishes (jelo)",
+   "mesa": "meat (meso)",
+   "povrćem": "vegetables (povrće)",
+   "ribom": "fish (riba)",
+   "izvrsno": "excellent",
+   "ostaviti": "to leave",
+   "slučaj": "case (za svaki slučaj: just in case)",
+   "poslat": "send (poslat ću: I will send)",
+   "porukom": "by message (poruka)"
+  },
+  "questions": [
+   {
+    "q": "Za koji dan gost rezervira stol?",
+    "a": [
+     "subot"
+    ]
+   },
+   {
+    "q": "Gdje gost želi sjediti?",
+    "a": [
+     "teras"
+    ]
+   }
+  ],
   "notice": "Htio bih (a woman says htjela bih) is the polite 'I would like': \"Htio bih rezervirati stol\". Može li…? asks whether something is possible: \"Može li stol biti na terasi?\""
  },
  {
-  "id": "hr-d-povrat", "title": "Povrat u trgovini", "level": "B1",
-  "roles": ["Prodavač", "Gospođa Marić"],
-  "lines": [ [0, "Dobar dan. Izvolite?"], [1, "Dobar dan. Prošli tjedan kupila sam ovdje ovo kuhalo za vodu, ali ne radi kako treba."], [0, "Što točno nije u redu?"], [1, "Voda se zagrije, ali se kuhalo ne isključuje samo. To može biti opasno."], [0, "Razumijem. Imate li račun?"], [1, "Imam, evo ga. Kupila sam ga prije šest dana."], [0, "Hvala. Mogu vam ga zamijeniti za isti model."], [1, "Radije bih povrat novca, jer više nemam povjerenja u taj model."], [0, "Povrat novca je moguć samo ako je kutija neoštećena."], [1, "Kutija je u savršenom stanju, donijela sam i sve dijelove."], [0, "U redu. Novac ćemo vam vratiti na karticu kojom ste platili."], [1, "Koliko će to trajati?"], [0, "Obično tri do pet radnih dana."], [1, "Dobro. Hoću li dobiti potvrdu o povratu?"], [0, "Naravno, izvolite. Oprostite na neugodnosti."], [1, "Hvala na razumijevanju. Doviđenja."] ],
-  "gloss": { "kuhalo": "kettle (kuhalo za vodu)", "točno": "exactly", "redu": "order (nije u redu: is wrong; u redu: all right)", "zagrije": "heats up (zagrijati se)", "isključuje": "switches off (isključivati se)", "opasno": "dangerous", "račun": "receipt", "evo": "here (evo ga: here it is)", "zamijeniti": "to exchange", "radije": "rather", "povrat": "refund, return", "novca": "money (novac)", "povjerenja": "trust (povjerenje)", "moguć": "possible", "kutija": "box", "neoštećena": "undamaged", "stanju": "condition (stanje)", "donijela": "brought", "dijelove": "parts (dio)", "vratiti": "to give back", "karticu": "card (kartica)", "trajati": "to take, last", "radnih": "working", "potvrdu": "confirmation (potvrda)", "neugodnosti": "inconvenience (neugodnost)", "razumijevanju": "understanding (razumijevanje)" },
-  "questions": [ { "q": "Što gospođa Marić vraća u trgovinu?", "a": ["kuhalo"] }, { "q": "Što gospođa želi umjesto zamjene?", "a": ["povrat novca", "novac", "povrat"] } ],
+  "id": "hr-d-povrat",
+  "title": "Povrat u trgovini",
+  "level": "B1",
+  "roles": [
+   "Prodavač",
+   "Gospođa Marić"
+  ],
+  "lines": [
+   [
+    0,
+    "Dobar dan. Izvolite?"
+   ],
+   [
+    1,
+    "Dobar dan. Prošli tjedan kupila sam ovdje ovo kuhalo za vodu, ali ne radi kako treba."
+   ],
+   [
+    0,
+    "Što točno nije u redu?"
+   ],
+   [
+    1,
+    "Voda se zagrije, ali se kuhalo ne isključuje samo. To može biti opasno."
+   ],
+   [
+    0,
+    "Razumijem. Imate li račun?"
+   ],
+   [
+    1,
+    "Imam, evo ga. Kupila sam ga prije šest dana."
+   ],
+   [
+    0,
+    "Hvala. Mogu vam ga zamijeniti za isti model."
+   ],
+   [
+    1,
+    "Radije bih povrat novca, jer više nemam povjerenja u taj model."
+   ],
+   [
+    0,
+    "Povrat novca je moguć samo ako je kutija neoštećena."
+   ],
+   [
+    1,
+    "Kutija je u savršenom stanju, donijela sam i sve dijelove."
+   ],
+   [
+    0,
+    "U redu. Novac ćemo vam vratiti na karticu kojom ste platili."
+   ],
+   [
+    1,
+    "Koliko će to trajati?"
+   ],
+   [
+    0,
+    "Obično tri do pet radnih dana."
+   ],
+   [
+    1,
+    "Dobro. Hoću li dobiti potvrdu o povratu?"
+   ],
+   [
+    0,
+    "Naravno, izvolite. Oprostite na neugodnosti."
+   ],
+   [
+    1,
+    "Hvala na razumijevanju. Doviđenja."
+   ]
+  ],
+  "gloss": {
+   "kuhalo": "kettle (kuhalo za vodu)",
+   "točno": "exactly",
+   "redu": "order (nije u redu: is wrong; u redu: all right)",
+   "zagrije": "heats up (zagrijati se)",
+   "isključuje": "switches off (isključivati se)",
+   "opasno": "dangerous",
+   "račun": "receipt",
+   "evo": "here (evo ga: here it is)",
+   "zamijeniti": "to exchange",
+   "radije": "rather",
+   "povrat": "refund, return",
+   "novca": "money (novac)",
+   "povjerenja": "trust (povjerenje)",
+   "moguć": "possible",
+   "kutija": "box",
+   "neoštećena": "undamaged",
+   "stanju": "condition (stanje)",
+   "donijela": "brought",
+   "dijelove": "parts (dio)",
+   "vratiti": "to give back",
+   "karticu": "card (kartica)",
+   "trajati": "to take, last",
+   "radnih": "working",
+   "potvrdu": "confirmation (potvrda)",
+   "neugodnosti": "inconvenience (neugodnost)",
+   "razumijevanju": "understanding (razumijevanje)"
+  },
+  "questions": [
+   {
+    "q": "Što gospođa Marić vraća u trgovinu?",
+    "a": [
+     "kuhalo"
+    ]
+   },
+   {
+    "q": "Što gospođa želi umjesto zamjene?",
+    "a": [
+     "povrat novca",
+     "novac",
+     "povrat"
+    ]
+   }
+  ],
   "notice": "Radije bih with a noun or an infinitive says what you would prefer: \"Radije bih povrat novca\". Ako introduces a condition: \"samo ako je kutija neoštećena\"."
  },
  {
-  "id": "hr-d-stan", "title": "Razgledavanje stana", "level": "B1",
-  "roles": ["Vlasnica", "Najmoprimac"],
-  "lines": [ [0, "Dobar dan, došli ste pogledati stan?"], [1, "Dobar dan. Da, zvao sam jučer zbog oglasa."], [0, "Uđite. Ovo je dnevni boravak, a kuhinja je odmah do njega."], [1, "Stan je svjetliji nego na fotografijama. Koliko ima kvadrata?"], [0, "Pedeset i pet. Spavaća soba gleda na dvorište, pa je vrlo mirna."], [1, "To mi je važno, jer često radim od kuće. Je li grijanje uključeno u cijenu?"], [0, "Nije. Najamnina je šesto eura, a režije se plaćaju posebno."], [1, "Koliko otprilike iznose režije zimi?"], [0, "Oko sto dvadeset eura mjesečno, ovisno o potrošnji."], [1, "A koliki je polog?"], [0, "Dvije najamnine, koje vraćam kad se iselite."], [1, "Smijem li držati mačku?"], [0, "Mačku da, ali psa radije ne."], [1, "Razumijem. Kada bih se mogao useliti?"], [0, "Od prvog sljedećeg mjeseca. Želite li razmisliti?"], [1, "Stan mi se jako sviđa. Mogu li vam se javiti sutra do podneva?"] ],
-  "gloss": { "pogledati": "to have a look at", "oglasa": "advert (oglas)", "uđite": "come in", "dnevni": "dnevni boravak: living room", "svjetliji": "brighter", "kvadrata": "square metres (kvadrat)", "spavaća": "spavaća soba: bedroom", "dvorište": "courtyard", "mirna": "quiet", "važno": "important", "grijanje": "heating", "uključeno": "included", "cijenu": "price (cijena)", "najamnina": "rent", "režije": "utility bills", "posebno": "separately", "otprilike": "roughly", "iznose": "come to", "zimi": "in winter", "mjesečno": "a month", "ovisno": "ovisno o: depending on", "potrošnji": "consumption (potrošnja)", "polog": "deposit", "iselite": "move out (iseliti se)", "smijem": "may I", "držati": "to keep", "useliti": "to move in (useliti se)", "razmisliti": "to think it over", "sviđa": "pleases (sviđa mi se: I like it)", "javiti": "to get in touch (javiti se)" },
-  "questions": [ { "q": "Na što gleda spavaća soba?", "a": ["dvorišt"] }, { "q": "Koju životinju najmoprimac smije držati?", "a": ["mačk"] } ],
+  "id": "hr-d-stan",
+  "title": "Razgledavanje stana",
+  "level": "B1",
+  "roles": [
+   "Vlasnica",
+   "Najmoprimac"
+  ],
+  "lines": [
+   [
+    0,
+    "Dobar dan, došli ste pogledati stan?"
+   ],
+   [
+    1,
+    "Dobar dan. Da, zvao sam jučer zbog oglasa."
+   ],
+   [
+    0,
+    "Uđite. Ovo je dnevni boravak, a kuhinja je odmah do njega."
+   ],
+   [
+    1,
+    "Stan je svjetliji nego na fotografijama. Koliko ima kvadrata?"
+   ],
+   [
+    0,
+    "Pedeset i pet. Spavaća soba gleda na dvorište, pa je vrlo mirna."
+   ],
+   [
+    1,
+    "To mi je važno, jer često radim od kuće. Je li grijanje uključeno u cijenu?"
+   ],
+   [
+    0,
+    "Nije. Najamnina je šesto eura, a režije se plaćaju posebno."
+   ],
+   [
+    1,
+    "Koliko otprilike iznose režije zimi?"
+   ],
+   [
+    0,
+    "Oko sto dvadeset eura mjesečno, ovisno o potrošnji."
+   ],
+   [
+    1,
+    "A koliki je polog?"
+   ],
+   [
+    0,
+    "Dvije najamnine, koje vraćam kad se iselite."
+   ],
+   [
+    1,
+    "Smijem li držati mačku?"
+   ],
+   [
+    0,
+    "Mačku da, ali psa radije ne."
+   ],
+   [
+    1,
+    "Razumijem. Kada bih se mogao useliti?"
+   ],
+   [
+    0,
+    "Od prvog sljedećeg mjeseca. Želite li razmisliti?"
+   ],
+   [
+    1,
+    "Stan mi se jako sviđa. Mogu li vam se javiti sutra do podneva?"
+   ]
+  ],
+  "gloss": {
+   "pogledati": "to have a look at",
+   "oglasa": "advert (oglas)",
+   "uđite": "come in",
+   "dnevni": "dnevni boravak: living room",
+   "svjetliji": "brighter",
+   "kvadrata": "square metres (kvadrat)",
+   "spavaća": "spavaća soba: bedroom",
+   "dvorište": "courtyard",
+   "mirna": "quiet",
+   "važno": "important",
+   "grijanje": "heating",
+   "uključeno": "included",
+   "cijenu": "price (cijena)",
+   "najamnina": "rent",
+   "režije": "utility bills",
+   "posebno": "separately",
+   "otprilike": "roughly",
+   "iznose": "come to",
+   "zimi": "in winter",
+   "mjesečno": "a month",
+   "ovisno": "ovisno o: depending on",
+   "potrošnji": "consumption (potrošnja)",
+   "polog": "deposit",
+   "iselite": "move out (iseliti se)",
+   "smijem": "may I",
+   "držati": "to keep",
+   "useliti": "to move in (useliti se)",
+   "razmisliti": "to think it over",
+   "sviđa": "pleases (sviđa mi se: I like it)",
+   "javiti": "to get in touch (javiti se)"
+  },
+  "questions": [
+   {
+    "q": "Na što gleda spavaća soba?",
+    "a": [
+     "dvorišt"
+    ]
+   },
+   {
+    "q": "Koju životinju najmoprimac smije držati?",
+    "a": [
+     "mačk"
+    ]
+   }
+  ],
   "notice": "The conditional (bih, bi… with a participle) makes a polite question: \"Kada bih se mogao useliti?\". Sviđati se works like 'to please': \"Stan mi se jako sviđa\" means I like the flat very much. The tenant here is a man: \"zvao sam\", \"mogao\"; a woman says \"zvala sam\" and \"Kada bih se mogla useliti?\"."
  }
 ]
