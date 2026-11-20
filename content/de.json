@@ -1316,6 +1316,236 @@
   ]
  },
  {
+  "id": "de-regenschirm",
+  "title": "Der gelbe Regenschirm",
+  "level": "A2",
+  "text": "Heute Morgen regnet es stark, und Lena findet ihren Regenschirm nicht. Sie sucht im Flur, unter dem Bett und im Auto, aber er ist nirgends. Also nimmt sie den alten gelben Regenschirm ihrer Großmutter, der sehr groß und ein bisschen komisch ist. Auf der Straße lächeln die Leute, wenn sie vorbeigeht. An der Bushaltestelle fragt ein kleines Mädchen, ob es mit darunter stehen darf, denn es hat seinen Schirm vergessen. Dann kommt ein älterer Herr dazu und später eine Frau mit einem Baby. Bald stehen fünf Menschen unter dem gelben Regenschirm, und alle lachen. Als der Bus kommt, hört der Regen auf. Am Abend findet Lena ihren kleinen schwarzen Schirm in der Sporttasche. Sie legt ihn in den Schrank und beschließt, den gelben zu behalten.",
+  "gloss": {
+   "regnet": "it is raining",
+   "regenschirm": "umbrella",
+   "flur": "hall",
+   "nirgends": "nowhere",
+   "gelben": "yellow",
+   "komisch": "funny, odd",
+   "lächeln": "smile",
+   "vorbeigeht": "walks past",
+   "bushaltestelle": "bus stop",
+   "darunter": "under it",
+   "vergessen": "forgotten",
+   "älterer": "elderly",
+   "bald": "soon",
+   "hört": "hört auf: stops",
+   "sporttasche": "sports bag",
+   "schrank": "cupboard",
+   "beschließt": "decides",
+   "behalten": "to keep"
+  },
+  "questions": [
+   {
+    "q": "Welche Farbe hat der Schirm der Großmutter?",
+    "a": [
+     "gelb"
+    ]
+   },
+   {
+    "q": "Wie viele Menschen stehen am Ende darunter?",
+    "a": [
+     "fünf",
+     "5"
+    ]
+   },
+   {
+    "q": "Wo findet Lena ihren kleinen Schirm?",
+    "a": [
+     "Sporttasche"
+    ]
+   }
+  ],
+  "notice": "\"Als der Bus kommt, hört der Regen auf\": after a subordinate clause, the verb of the main clause comes straight away (hört), and a separable prefix goes to the end (auf).",
+  "back": [
+   [
+    "Auf der Straße lächeln die Leute, wenn sie vorbeigeht.",
+    "In the street, people smile when she walks past."
+   ],
+   [
+    "Als der Bus kommt, hört der Regen auf.",
+    "When the bus comes, the rain stops."
+   ]
+  ]
+ },
+ {
+  "id": "de-hund-park",
+  "title": "Der Hund im Park",
+  "level": "A2",
+  "text": "Am Samstagnachmittag spielen Jonas und seine Schwester im Park Ball. Ein kleiner brauner Hund kommt angerannt und nimmt den Ball ins Maul. Die Kinder lachen, aber sie sehen niemanden, der zu ihm gehört. Der Hund trägt ein rotes Halsband mit einer Telefonnummer. Jonas ruft mit dem Handy seiner Mutter an. Eine Frau meldet sich sofort: Sie sucht ihren Hund seit dem Morgen und macht sich große Sorgen. Zehn Minuten später kommt sie mit dem Fahrrad in den Park. Der Hund springt ihr in die Arme und leckt ihr das Gesicht. Zum Dank kauft die Frau den Kindern zwei Kugeln Schokoladeneis. Bevor sie geht, erzählt sie, dass der Hund Keks heißt und Bälle liebt. Am nächsten Samstag kommt Keks wieder in den Park, aber diesmal mit seinem Frauchen.",
+  "gloss": {
+   "ball": "ball",
+   "brauner": "brown",
+   "angerannt": "kommt angerannt: comes running up",
+   "maul": "mouth (of an animal)",
+   "gehört": "belongs",
+   "halsband": "collar",
+   "ruft": "ruft an: phones",
+   "meldet": "meldet sich: answers",
+   "sofort": "at once",
+   "sorgen": "macht sich Sorgen: is worried",
+   "fahrrad": "bike",
+   "springt": "jumps",
+   "leckt": "licks",
+   "gesicht": "face",
+   "dank": "zum Dank: as a thank-you",
+   "kugeln": "scoops",
+   "keks": "biscuit",
+   "frauchen": "owner (of a pet, a woman)"
+  },
+  "questions": [
+   {
+    "q": "Was nimmt der Hund ins Maul?",
+    "a": [
+     "Ball"
+    ]
+   },
+   {
+    "q": "Welche Farbe hat das Halsband?",
+    "a": [
+     "rotes"
+    ]
+   },
+   {
+    "q": "Womit kommt die Frau in den Park?",
+    "a": [
+     "Fahrrad"
+    ]
+   }
+  ],
+  "notice": "\"Sie sucht ihren Hund seit dem Morgen\": with \"seit\" German uses the present for something that began in the past and is still going on (she has been looking since the morning). \"Seit\" takes the dative.",
+  "back": [
+   [
+    "Der Hund trägt ein rotes Halsband mit einer Telefonnummer.",
+    "The dog is wearing a red collar with a phone number."
+   ],
+   [
+    "Zehn Minuten später kommt sie mit dem Fahrrad in den Park.",
+    "Ten minutes later she comes to the park by bike."
+   ]
+  ]
+ },
+ {
+  "id": "de-karton",
+  "title": "Der vergessene Karton",
+  "level": "B1",
+  "text": "Als wir nach Leipzig gezogen sind, haben wir einen Transporter gemietet, um unsere Sachen mitzunehmen. Mein Bruder ist gefahren, während ich hinten auf die Kartons aufgepasst habe. Wir waren den ganzen Tag unterwegs und sind erst angekommen, als es schon dunkel war. Beim Ausladen habe ich gemerkt, dass ein Karton fehlte: der mit allen unseren Familienfotos. Wahrscheinlich hatten wir ihn auf dem Gehweg vor der alten Wohnung stehen lassen. Ich habe unsere frühere Nachbarin angerufen, ohne viel Hoffnung, denn es war schon spät. Sie hat gesagt, dass sie ihn beim Spaziergang mit dem Hund gesehen und in ihre Garage gestellt hatte. Sie hat sogar angeboten, ihn uns mit der Post zu schicken. Eine Woche später ist der Karton angekommen, mit einem netten Zettel und einem Glas Marmelade. Seitdem schreiben wir ihr jedes Jahr zu Weihnachten.",
+  "gloss": {
+   "gezogen": "moved (house)",
+   "transporter": "van",
+   "gemietet": "rented",
+   "sachen": "things",
+   "aufgepasst": "kept an eye on",
+   "kartons": "cardboard boxes",
+   "unterwegs": "on the road",
+   "ausladen": "unloading",
+   "gemerkt": "noticed",
+   "fehlte": "was missing",
+   "wahrscheinlich": "probably",
+   "gehweg": "pavement",
+   "frühere": "former",
+   "hoffnung": "hope",
+   "angeboten": "offered",
+   "zettel": "note",
+   "marmelade": "jam",
+   "seitdem": "since then"
+  },
+  "questions": [
+   {
+    "q": "In welche Stadt sind sie gezogen?",
+    "a": [
+     "Leipzig"
+    ]
+   },
+   {
+    "q": "Was war in dem Karton, der fehlte?",
+    "a": [
+     "Familienfotos"
+    ]
+   },
+   {
+    "q": "Wohin hatte die Nachbarin ihn gestellt?",
+    "a": [
+     "Garage"
+    ]
+   }
+  ],
+  "notice": "\"Beim Ausladen\", \"beim Spaziergang\": bei + dem with a noun made from a verb says while doing something. In the spoken past (Perfekt) verbs of movement take \"sein\": wir sind gezogen, er ist angekommen.",
+  "back": [
+   [
+    "Mein Bruder ist gefahren, während ich hinten auf die Kartons aufgepasst habe.",
+    "My brother drove while I kept an eye on the boxes in the back."
+   ],
+   [
+    "Sie hat sogar angeboten, ihn uns mit der Post zu schicken.",
+    "She even offered to send it to us by post."
+   ]
+  ]
+ },
+ {
+  "id": "de-kochkurs",
+  "title": "Der Kochkurs",
+  "level": "B1",
+  "text": "Zum Geburtstag haben Bernds Kinder ihm einen Kochkurs geschenkt. Zuerst war er beleidigt, weil er dachte, dass er sehr gut kochen kann. Am Tag des Kurses stand er mit acht anderen Teilnehmern vor einem jungen, freundlichen Koch. Sie sollten einen Apfelkuchen backen, und das machte Bernd schon seit vierzig Jahren. Deshalb arbeitete er schnell und hörte bei den Erklärungen nicht zu. Aber als die Kuchen aus dem Ofen kamen, war seiner zu dunkel und der Teig war hart. Der Kuchen seiner Nachbarin, die noch nie gebacken hatte, war perfekt. Der Koch probierte beide, ohne etwas zu sagen, und zeigte Bernd dann, wie man den Teig vorsichtiger ausrollt. Bernd fing noch einmal an und hielt sich diesmal an jeden Schritt. Am Abend brachte er seinen zweiten Kuchen zu seinen Kindern. Er gab zu, dass man auch mit siebzig noch etwas lernen kann.",
+  "gloss": {
+   "geschenkt": "given (as a present)",
+   "kochkurs": "cooking class",
+   "beleidigt": "offended",
+   "teilnehmern": "participants",
+   "koch": "cook, chef",
+   "backen": "to bake",
+   "erklärungen": "explanations",
+   "ofen": "oven",
+   "teig": "pastry, dough",
+   "hart": "hard",
+   "probierte": "tasted",
+   "vorsichtiger": "more carefully",
+   "ausrollt": "rolls out",
+   "schritt": "step",
+   "hielt": "hielt sich an: kept to",
+   "brachte": "took, brought",
+   "gab": "gab zu: admitted"
+  },
+  "questions": [
+   {
+    "q": "Was sollten sie im Kurs backen?",
+    "a": [
+     "Apfelkuchen",
+     "Kuchen"
+    ]
+   },
+   {
+    "q": "Wie war der Teig von Bernd?",
+    "a": [
+     "hart"
+    ]
+   },
+   {
+    "q": "Wie alt ist Bernd?",
+    "a": [
+     "siebzig",
+     "70"
+    ]
+   }
+  ],
+  "notice": "\"Als die Kuchen aus dem Ofen kamen, war seiner zu dunkel\": \"seiner\" stands for \"sein Kuchen\"; a possessive used alone takes endings like der, die, das (meiner, meine, meins). The story is told in the written past (Präteritum).",
+  "back": [
+   [
+    "Deshalb arbeitete er schnell und hörte bei den Erklärungen nicht zu.",
+    "So he worked fast and did not listen to the explanations."
+   ],
+   [
+    "Am Abend brachte er seinen zweiten Kuchen zu seinen Kindern.",
+    "In the evening he took his second cake to his children."
+   ]
+  ]
+ },
+ {
   "id": "de-d-baeckerei",
   "title": "In der Bäckerei",
   "level": "A1",

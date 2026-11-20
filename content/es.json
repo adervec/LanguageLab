@@ -534,15 +534,15 @@
  },
  {
   "id": "es-celular",
-  "title": "El celular perdido",
+  "title": "El móvil perdido",
   "level": "A2",
-  "text": "Daniela salió del trabajo y tomó un taxi para ir a su casa, en Lima. Estaba muy cansada. Cuando llegó, buscó su celular en la cartera, pero no lo encontró. ¡Seguro que estaba en el taxi! Su vecino le prestó un teléfono y ella llamó a su propio número. Nadie contestó. Llamó otra vez, y otra. A la cuarta llamada, una voz de mujer dijo: «¿Aló?». Era la señora Rosa, la siguiente pasajera del taxi. «Vi tu celular en el asiento y lo guardé en mi cartera», explicó. Las dos quedaron en verse al día siguiente en un parque. Daniela llegó con una caja de chocolates para darle las gracias. Pero la señora Rosa no quería regalos. Solo tenía una pregunta: «¿Me puedes enseñar a mandar fotos?». Su nieto vivía lejos y ella quería verle la cara. Pasaron toda la tarde juntas en una banca, con los dos teléfonos. Ahora la señora Rosa le manda a Daniela fotos de sus plantas todos los días.",
+  "text": "Daniela salió del trabajo y tomó un taxi para ir a su casa, en Lima. Estaba muy cansada. Cuando llegó, buscó su móvil en la cartera, pero no lo encontró. ¡Seguro que estaba en el taxi! Su vecino le prestó un teléfono y ella llamó a su propio número. Nadie contestó. Llamó otra vez, y otra. A la cuarta llamada, una voz de mujer dijo: «¿Aló?». Era la señora Rosa, la siguiente pasajera del taxi. «Vi tu móvil en el asiento y lo guardé en mi cartera», explicó. Las dos quedaron en verse al día siguiente en un parque. Daniela llegó con una caja de chocolates para darle las gracias. Pero la señora Rosa no quería regalos. Solo tenía una pregunta: «¿Me puedes enseñar a mandar fotos?». Su nieto vivía lejos y ella quería verle la cara. Pasaron toda la tarde juntas en una banca, con los dos teléfonos. Ahora la señora Rosa le manda a Daniela fotos de sus plantas todos los días.",
   "gloss": {
    "salió": "left",
    "tomó": "took",
    "cansada": "tired",
    "buscó": "looked for",
-   "celular": "mobile phone (in Latin America)",
+   "móvil": "mobile phone",
    "cartera": "handbag (in Peru)",
    "encontró": "found",
    "seguro": "sure (seguro que: surely)",
@@ -579,7 +579,7 @@
   },
   "questions": [
    {
-    "q": "¿Dónde perdió Daniela su celular?",
+    "q": "¿Dónde perdió Daniela su móvil?",
     "a": [
      "taxi"
     ]
