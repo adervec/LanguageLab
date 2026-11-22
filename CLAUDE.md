@@ -147,7 +147,8 @@ Drive sync uses font.js's shared sign-in (`appFont.google`).
 - Speech uses the browser's own synthesis and recognition, as SpeechImprover does. Tachyread's
   reading engine is not used.
 - Tests: `core.test.mjs` checks the logic and every bundled content file; `.github/flow.mjs` drives
-  the whole app in headless Chrome, with the browser's private file system standing in for the cowork folder picker. Speech recognition, real voices and the on-device translator
+  the whole app in headless Chrome, with the browser's private file system standing in for the reader's cloud (`appFont.cloud`, patched in as font.js loads; cowork.js lists it at most every 4 s, so the test waits before "Check for replies").
+  Drive sync goes through `appFont.cloud.syncDoc` with `C.mergeState` as the merge. Speech recognition, real voices and the on-device translator
   cannot run there (the flow test stubs `self.Translator`): check those by hand.
   Two ways that worked in the maker's own Chrome (157): the built-in model (`LanguageModel`) was already there, so the
   conversation can be driven for real from the console; and Chrome's recogniser takes an audio track

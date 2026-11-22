@@ -11,7 +11,7 @@ const pct = x => x == null ? '–' : A.fmt.percent(x), nf = n => A.fmt.number(n)
 const list = v => Array.isArray(v) ? v : [];
 // Drive sync goes through font.js's shared sign-in (house standard 1): one backup file in the private
 // app folder (drive.appdata). The token lives in memory, in font.js.
-const G = window.appFont?.google, BACKUP = 'languagelab-backup.json';
+const G = window.appFont?.cloud, BACKUP = 'languagelab-backup.json';
 const driveOk = ['localhost', '127.0.0.1'].includes(location.hostname) || location.origin === 'https://adervec.github.io';
 const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
 const LEVELS = C.LEVELS.slice(0, 5);
@@ -59,11 +59,13 @@ let syncMsg = '';
 async function sync(silent) {
   try {
     if (!driveOk) throw new Error(t('Google Drive sync is not enabled on this address.'));
-    await G.token({ silent });
-    const text = await G.read(BACKUP);
-    if (text) S = C.mergeState(S, C.cleanState(A.parseJSON(text, 30e6)));
-    await kv('readwrite', s => s.put(S, 'state'));
-    await G.write(BACKUP, JSON.stringify(S));
+    await G.signIn({ silent });
+    // syncDoc reads the cloud copy first whenever it changed, merges, and writes only if the result differs
+    await G.syncDoc(BACKUP, {
+      load: () => S,
+      save: doc => { S = doc; return kv('readwrite', s => s.put(S, 'state')); },
+      merge: (local, remote) => C.mergeState(local, C.cleanState(remote)),
+    });
     ls.set('ll-drive', '1');
     syncMsg = t('Synced {when}', { when: A.fmt.time(Date.now()) });
   } catch (e) {
